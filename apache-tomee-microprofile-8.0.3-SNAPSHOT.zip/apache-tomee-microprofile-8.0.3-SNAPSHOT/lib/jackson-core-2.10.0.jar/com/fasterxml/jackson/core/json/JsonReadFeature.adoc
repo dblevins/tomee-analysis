@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/json/JsonReadFeature.class
-
- - link:JsonReadFeature-asmified.java[Asmified]
-
-== References
-

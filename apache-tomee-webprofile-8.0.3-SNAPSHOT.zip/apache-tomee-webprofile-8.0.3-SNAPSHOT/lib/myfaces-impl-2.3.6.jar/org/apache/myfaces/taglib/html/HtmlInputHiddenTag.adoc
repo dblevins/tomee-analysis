@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlInputHiddenTag.class
-
- - link:HtmlInputHiddenTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ImmutableContext$NestedImmutableContext.class
-
- - link:ImmutableContext$NestedImmutableContext-asmified.java[Asmified]
-
-== References
-

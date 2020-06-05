@@ -1,6 +1,0 @@
-= serp/bytecode/GotoInstruction.class
-
- - link:GotoInstruction-asmified.java[Asmified]
-
-== References
-

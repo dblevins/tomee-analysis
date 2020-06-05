@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ScrollableCursorPolicy.class
-
- - link:ScrollableCursorPolicy-asmified.java[Asmified]
-
-== References
-

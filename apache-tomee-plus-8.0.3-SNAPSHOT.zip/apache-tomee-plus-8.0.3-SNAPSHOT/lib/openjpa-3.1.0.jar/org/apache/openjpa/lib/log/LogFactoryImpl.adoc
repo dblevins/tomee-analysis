@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/log/LogFactoryImpl.class
-
- - link:LogFactoryImpl-asmified.java[Asmified]
-
-== References
-

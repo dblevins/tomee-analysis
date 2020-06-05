@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/GroupsType.class
-
- - link:GroupsType-asmified.java[Asmified]
-
-== References
-

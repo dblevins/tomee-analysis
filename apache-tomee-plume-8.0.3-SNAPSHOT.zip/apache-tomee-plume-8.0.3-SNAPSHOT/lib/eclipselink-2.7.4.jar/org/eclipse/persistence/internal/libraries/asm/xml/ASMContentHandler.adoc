@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler.class
-
- - link:ASMContentHandler-asmified.java[Asmified]
-
-== References
-

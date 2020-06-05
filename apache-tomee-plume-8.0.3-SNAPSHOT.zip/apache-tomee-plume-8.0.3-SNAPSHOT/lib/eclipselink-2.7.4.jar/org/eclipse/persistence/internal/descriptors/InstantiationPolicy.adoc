@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/InstantiationPolicy.class
-
- - link:InstantiationPolicy-asmified.java[Asmified]
-
-== References
-

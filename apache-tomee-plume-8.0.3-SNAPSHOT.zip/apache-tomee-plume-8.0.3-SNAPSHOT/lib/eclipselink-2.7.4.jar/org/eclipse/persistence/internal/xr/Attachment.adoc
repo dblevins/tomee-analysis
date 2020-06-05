@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/Attachment.class
-
- - link:Attachment-asmified.java[Asmified]
-
-== References
-

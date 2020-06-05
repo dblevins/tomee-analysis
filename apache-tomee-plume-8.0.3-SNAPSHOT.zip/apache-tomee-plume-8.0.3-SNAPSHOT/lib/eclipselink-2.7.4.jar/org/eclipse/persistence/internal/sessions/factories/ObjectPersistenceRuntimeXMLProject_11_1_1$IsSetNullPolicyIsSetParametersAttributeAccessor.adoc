@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/ObjectPersistenceRuntimeXMLProject_11_1_1$IsSetNullPolicyIsSetParametersAttributeAccessor.class
-
- - link:ObjectPersistenceRuntimeXMLProject_11_1_1$IsSetNullPolicyIsSetParametersAttributeAccessor-asmified.java[Asmified]
-
-== References
-

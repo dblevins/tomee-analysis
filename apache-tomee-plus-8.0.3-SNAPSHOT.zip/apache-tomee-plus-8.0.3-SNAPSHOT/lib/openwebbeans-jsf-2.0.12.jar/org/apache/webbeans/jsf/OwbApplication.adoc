@@ -1,6 +1,0 @@
-= org/apache/webbeans/jsf/OwbApplication.class
-
- - link:OwbApplication-asmified.java[Asmified]
-
-== References
-

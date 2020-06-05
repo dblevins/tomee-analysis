@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/SAXCompiler$CompilationHandler.class
-
- - link:SAXCompiler$CompilationHandler-asmified.java[Asmified]
-
-== References
-

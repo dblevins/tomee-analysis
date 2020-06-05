@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/util/XmlUtil$JstlUriResolver.class
-
- - link:XmlUtil$JstlUriResolver-asmified.java[Asmified]
-
-== References
-

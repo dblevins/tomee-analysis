@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/security/DefaultSecurityContext.class
-
- - link:DefaultSecurityContext-asmified.java[Asmified]
-
-== References
-

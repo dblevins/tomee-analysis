@@ -1,6 +1,0 @@
-= com/sun/faces/spi/ServiceFactoryUtils.class
-
- - link:ServiceFactoryUtils-asmified.java[Asmified]
-
-== References
-

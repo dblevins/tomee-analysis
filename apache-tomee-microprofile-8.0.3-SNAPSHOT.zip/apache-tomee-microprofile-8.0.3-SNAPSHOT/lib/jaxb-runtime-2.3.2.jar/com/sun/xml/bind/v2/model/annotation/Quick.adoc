@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/annotation/Quick.class
-
- - link:Quick-asmified.java[Asmified]
-
-== References
-

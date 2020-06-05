@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/BasePooledObjectFactory.class
-
- - link:BasePooledObjectFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/Channel.class
-
- - link:Channel-asmified.java[Asmified]
-
-== References
-

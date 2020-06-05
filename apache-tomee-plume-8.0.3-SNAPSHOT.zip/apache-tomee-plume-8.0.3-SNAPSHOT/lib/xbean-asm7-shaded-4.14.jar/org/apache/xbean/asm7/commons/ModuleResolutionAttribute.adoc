@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/ModuleResolutionAttribute.class
-
- - link:ModuleResolutionAttribute-asmified.java[Asmified]
-
-== References
-

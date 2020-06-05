@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/Library.class
-
- - link:Library-asmified.java[Asmified]
-
-== References
-

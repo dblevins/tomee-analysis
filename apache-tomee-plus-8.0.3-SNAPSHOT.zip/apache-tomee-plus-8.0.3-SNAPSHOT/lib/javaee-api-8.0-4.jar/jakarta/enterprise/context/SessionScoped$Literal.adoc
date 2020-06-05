@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/SessionScoped$Literal.class
-
- - link:SessionScoped$Literal-asmified.java[Asmified]
-
-== References
-

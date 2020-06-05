@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/jaspic/CallbackHandlerImpl.class
-
- - link:CallbackHandlerImpl-asmified.java[Asmified]
-
-== References
-

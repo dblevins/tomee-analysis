@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/Transient.class
-
- - link:Transient-asmified.java[Asmified]
-
-== References
-

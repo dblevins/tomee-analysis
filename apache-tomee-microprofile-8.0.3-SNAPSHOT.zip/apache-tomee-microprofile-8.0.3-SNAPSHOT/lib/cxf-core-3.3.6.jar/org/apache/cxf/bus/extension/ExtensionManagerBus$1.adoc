@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/extension/ExtensionManagerBus$1.class
-
- - link:ExtensionManagerBus$1-asmified.java[Asmified]
-
-== References
-

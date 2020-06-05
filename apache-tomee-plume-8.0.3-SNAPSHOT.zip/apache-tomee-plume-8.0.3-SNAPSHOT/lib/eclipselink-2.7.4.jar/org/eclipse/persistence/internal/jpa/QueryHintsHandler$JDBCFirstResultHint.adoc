@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/QueryHintsHandler$JDBCFirstResultHint.class
-
- - link:QueryHintsHandler$JDBCFirstResultHint-asmified.java[Asmified]
-
-== References
-

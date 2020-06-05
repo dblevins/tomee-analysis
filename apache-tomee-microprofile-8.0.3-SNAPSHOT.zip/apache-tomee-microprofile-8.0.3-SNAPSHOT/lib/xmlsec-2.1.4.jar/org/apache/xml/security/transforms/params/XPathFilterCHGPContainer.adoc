@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/params/XPathFilterCHGPContainer.class
-
- - link:XPathFilterCHGPContainer-asmified.java[Asmified]
-
-== References
-

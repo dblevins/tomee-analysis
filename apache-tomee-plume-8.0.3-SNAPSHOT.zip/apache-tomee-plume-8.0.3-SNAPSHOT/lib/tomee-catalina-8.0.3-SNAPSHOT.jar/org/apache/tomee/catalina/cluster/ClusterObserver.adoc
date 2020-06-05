@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/cluster/ClusterObserver.class
-
- - link:ClusterObserver-asmified.java[Asmified]
-
-== References
-

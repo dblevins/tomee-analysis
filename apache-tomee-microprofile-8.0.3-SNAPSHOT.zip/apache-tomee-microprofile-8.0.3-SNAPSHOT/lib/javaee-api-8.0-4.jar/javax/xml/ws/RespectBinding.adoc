@@ -1,8 +1,0 @@
-= javax/xml/ws/RespectBinding.class
-
- - link:RespectBinding-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.RespectBindingFeature - 1
- - javax.xml.ws.spi.WebServiceFeatureAnnotation - 1

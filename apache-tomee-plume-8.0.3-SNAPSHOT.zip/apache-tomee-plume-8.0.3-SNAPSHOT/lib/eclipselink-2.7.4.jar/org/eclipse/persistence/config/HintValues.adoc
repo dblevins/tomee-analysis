@@ -1,6 +1,0 @@
-= org/eclipse/persistence/config/HintValues.class
-
- - link:HintValues-asmified.java[Asmified]
-
-== References
-

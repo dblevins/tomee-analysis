@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/config/spi/ConfigSourceProvider.class
-
- - link:ConfigSourceProvider-asmified.java[Asmified]
-
-== References
-

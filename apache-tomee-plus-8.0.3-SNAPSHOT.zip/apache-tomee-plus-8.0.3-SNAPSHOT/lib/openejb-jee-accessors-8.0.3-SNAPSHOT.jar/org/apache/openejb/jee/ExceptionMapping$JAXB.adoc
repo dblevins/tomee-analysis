@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ExceptionMapping$JAXB.class
-
- - link:ExceptionMapping$JAXB-asmified.java[Asmified]
-
-== References
-

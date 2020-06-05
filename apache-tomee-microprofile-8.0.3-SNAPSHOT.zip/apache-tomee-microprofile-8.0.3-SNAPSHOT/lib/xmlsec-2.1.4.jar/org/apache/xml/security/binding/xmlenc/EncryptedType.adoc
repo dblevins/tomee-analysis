@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmlenc/EncryptedType.class
-
- - link:EncryptedType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cmc/CMCPublicationInfo.class
-
- - link:CMCPublicationInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/web/lifecycle/ServletContextBean.class
-
- - link:ServletContextBean-asmified.java[Asmified]
-
-== References
-

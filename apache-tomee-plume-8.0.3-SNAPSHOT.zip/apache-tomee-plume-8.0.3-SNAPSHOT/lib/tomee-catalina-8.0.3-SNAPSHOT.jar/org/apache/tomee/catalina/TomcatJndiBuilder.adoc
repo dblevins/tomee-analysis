@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomcatJndiBuilder.class
-
- - link:TomcatJndiBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/view/ViewScopeCDIMap.class
-
- - link:ViewScopeCDIMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/GenericsClassHelper$DeclaringClassInterfacePair.class
-
- - link:GenericsClassHelper$DeclaringClassInterfacePair-asmified.java[Asmified]
-
-== References
-

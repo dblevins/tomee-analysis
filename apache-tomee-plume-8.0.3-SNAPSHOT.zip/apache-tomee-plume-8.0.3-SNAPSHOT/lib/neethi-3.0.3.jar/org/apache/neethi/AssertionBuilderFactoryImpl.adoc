@@ -1,6 +1,0 @@
-= org/apache/neethi/AssertionBuilderFactoryImpl.class
-
- - link:AssertionBuilderFactoryImpl-asmified.java[Asmified]
-
-== References
-

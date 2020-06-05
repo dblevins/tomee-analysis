@@ -1,6 +1,0 @@
-= org/apache/openejb/config/FinderFactory$1.class
-
- - link:FinderFactory$1-asmified.java[Asmified]
-
-== References
-

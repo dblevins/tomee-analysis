@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sequencing/PreallocationHandler.class
-
- - link:PreallocationHandler-asmified.java[Asmified]
-
-== References
-

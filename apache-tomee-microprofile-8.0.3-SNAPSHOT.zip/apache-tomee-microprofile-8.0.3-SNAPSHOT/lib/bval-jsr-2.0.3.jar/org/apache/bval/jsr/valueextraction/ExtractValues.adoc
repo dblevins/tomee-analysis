@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/ExtractValues.class
-
- - link:ExtractValues-asmified.java[Asmified]
-
-== References
-

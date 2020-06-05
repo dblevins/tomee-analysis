@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/IdentifierRole.class
-
- - link:IdentifierRole-asmified.java[Asmified]
-
-== References
-

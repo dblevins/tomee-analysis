@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/core/ForEachSupport$EnumerationIterator.class
-
- - link:ForEachSupport$EnumerationIterator-asmified.java[Asmified]
-
-== References
-

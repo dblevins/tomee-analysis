@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.class
-
- - link:FiqlSearchConditionBuilder-asmified.java[Asmified]
-
-== References
-

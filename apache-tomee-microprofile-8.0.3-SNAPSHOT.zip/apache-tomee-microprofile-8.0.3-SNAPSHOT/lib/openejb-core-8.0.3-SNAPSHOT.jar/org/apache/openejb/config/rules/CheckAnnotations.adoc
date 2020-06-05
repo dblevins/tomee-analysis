@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckAnnotations.class
-
- - link:CheckAnnotations-asmified.java[Asmified]
-
-== References
-

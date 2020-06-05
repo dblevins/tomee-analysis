@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/EjbLocalReferenceInfo.class
-
- - link:EjbLocalReferenceInfo-asmified.java[Asmified]
-
-== References
-

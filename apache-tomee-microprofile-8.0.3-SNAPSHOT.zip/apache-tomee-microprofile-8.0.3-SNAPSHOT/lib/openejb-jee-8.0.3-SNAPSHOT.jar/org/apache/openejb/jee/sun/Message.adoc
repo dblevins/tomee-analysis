@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/Message.class
-
- - link:Message-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/coordination/corba/CORBARemoteCommandConnection.class
-
- - link:CORBARemoteCommandConnection-asmified.java[Asmified]
-
-== References
-

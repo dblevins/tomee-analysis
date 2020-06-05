@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/TlsAuthentication.class
-
- - link:TlsAuthentication-asmified.java[Asmified]
-
-== References
-

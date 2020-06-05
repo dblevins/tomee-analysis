@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/wrappers/JobWrapper.class
-
- - link:JobWrapper-asmified.java[Asmified]
-
-== References
-

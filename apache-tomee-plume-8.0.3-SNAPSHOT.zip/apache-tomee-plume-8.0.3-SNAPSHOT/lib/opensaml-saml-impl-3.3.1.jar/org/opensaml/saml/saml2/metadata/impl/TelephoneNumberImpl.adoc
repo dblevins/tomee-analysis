@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/TelephoneNumberImpl.class
-
- - link:TelephoneNumberImpl-asmified.java[Asmified]
-
-== References
-

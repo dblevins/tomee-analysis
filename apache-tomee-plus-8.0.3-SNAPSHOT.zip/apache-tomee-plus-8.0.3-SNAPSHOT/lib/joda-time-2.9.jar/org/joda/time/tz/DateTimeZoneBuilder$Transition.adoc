@@ -1,6 +1,0 @@
-= org/joda/time/tz/DateTimeZoneBuilder$Transition.class
-
- - link:DateTimeZoneBuilder$Transition-asmified.java[Asmified]
-
-== References
-

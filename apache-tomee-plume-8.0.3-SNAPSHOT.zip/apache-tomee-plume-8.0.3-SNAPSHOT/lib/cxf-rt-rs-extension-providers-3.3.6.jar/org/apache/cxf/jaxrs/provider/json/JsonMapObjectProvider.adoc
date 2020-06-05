@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/json/JsonMapObjectProvider.class
-
- - link:JsonMapObjectProvider-asmified.java[Asmified]
-
-== References
-

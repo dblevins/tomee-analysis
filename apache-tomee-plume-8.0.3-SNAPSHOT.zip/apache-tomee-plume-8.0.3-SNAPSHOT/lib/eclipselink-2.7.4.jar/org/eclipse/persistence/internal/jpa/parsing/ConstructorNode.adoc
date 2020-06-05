@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/ConstructorNode.class
-
- - link:ConstructorNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/primitive/LazilyFormattedString.class
-
- - link:LazilyFormattedString-asmified.java[Asmified]
-
-== References
-

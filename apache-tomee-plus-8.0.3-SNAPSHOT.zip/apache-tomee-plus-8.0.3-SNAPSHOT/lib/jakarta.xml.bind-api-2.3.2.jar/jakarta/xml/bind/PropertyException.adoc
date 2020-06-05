@@ -1,6 +1,0 @@
-= jakarta/xml/bind/PropertyException.class
-
- - link:PropertyException-asmified.java[Asmified]
-
-== References
-

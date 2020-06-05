@@ -1,8 +1,0 @@
-= javax/json/JsonPatch$Operation.class
-
- - link:JsonPatch$Operation-asmified.java[Asmified]
-
-== References
-
- - javax.json.JsonPatch$Operation - 46
- - javax.json.JsonException - 2

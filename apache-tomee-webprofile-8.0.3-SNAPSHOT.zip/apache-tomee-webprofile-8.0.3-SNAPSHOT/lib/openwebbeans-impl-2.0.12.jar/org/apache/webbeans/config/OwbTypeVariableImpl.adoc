@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/OwbTypeVariableImpl.class
-
- - link:OwbTypeVariableImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TransactionSupportType$JAXB.class
-
- - link:TransactionSupportType$JAXB-asmified.java[Asmified]
-
-== References
-

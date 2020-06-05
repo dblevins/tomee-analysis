@@ -1,6 +1,0 @@
-= com/ctc/wstx/osgi/ValidationSchemaFactoryProviderImpl$W3CSchema.class
-
- - link:ValidationSchemaFactoryProviderImpl$W3CSchema-asmified.java[Asmified]
-
-== References
-

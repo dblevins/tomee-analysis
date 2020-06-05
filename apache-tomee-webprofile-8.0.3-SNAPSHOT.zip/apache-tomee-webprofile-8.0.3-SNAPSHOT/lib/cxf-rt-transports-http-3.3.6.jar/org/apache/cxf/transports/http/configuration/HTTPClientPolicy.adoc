@@ -1,6 +1,0 @@
-= org/apache/cxf/transports/http/configuration/HTTPClientPolicy.class
-
- - link:HTTPClientPolicy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/SecurityConstants.class
-
- - link:SecurityConstants-asmified.java[Asmified]
-
-== References
-

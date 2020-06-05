@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/index/impl/MetadataIndexManager$IdentityExtractionFunction.class
-
- - link:MetadataIndexManager$IdentityExtractionFunction-asmified.java[Asmified]
-
-== References
-

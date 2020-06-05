@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/filter/impl/ScriptedTrustedNamesFunction.class
-
- - link:ScriptedTrustedNamesFunction-asmified.java[Asmified]
-
-== References
-

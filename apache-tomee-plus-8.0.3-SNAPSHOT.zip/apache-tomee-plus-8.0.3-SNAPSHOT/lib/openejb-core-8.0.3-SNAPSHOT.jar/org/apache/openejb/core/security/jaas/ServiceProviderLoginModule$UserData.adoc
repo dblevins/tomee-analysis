@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/jaas/ServiceProviderLoginModule$UserData.class
-
- - link:ServiceProviderLoginModule$UserData-asmified.java[Asmified]
-
-== References
-

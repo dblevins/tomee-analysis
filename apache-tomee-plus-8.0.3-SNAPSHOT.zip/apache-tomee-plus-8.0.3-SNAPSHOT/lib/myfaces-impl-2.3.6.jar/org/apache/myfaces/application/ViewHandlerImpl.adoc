@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/ViewHandlerImpl.class
-
- - link:ViewHandlerImpl-asmified.java[Asmified]
-
-== References
-

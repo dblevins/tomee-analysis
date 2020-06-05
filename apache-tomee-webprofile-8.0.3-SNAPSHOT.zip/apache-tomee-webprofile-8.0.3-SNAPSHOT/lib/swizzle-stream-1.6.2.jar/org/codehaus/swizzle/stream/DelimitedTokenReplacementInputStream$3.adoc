@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/DelimitedTokenReplacementInputStream$3.class
-
- - link:DelimitedTokenReplacementInputStream$3-asmified.java[Asmified]
-
-== References
-

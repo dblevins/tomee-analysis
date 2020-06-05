@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/AnnotationUtils.class
-
- - link:AnnotationUtils-asmified.java[Asmified]
-
-== References
-

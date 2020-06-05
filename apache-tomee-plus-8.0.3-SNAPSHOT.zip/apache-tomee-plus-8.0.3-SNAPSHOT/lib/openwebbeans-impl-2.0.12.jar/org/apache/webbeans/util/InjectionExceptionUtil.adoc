@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/InjectionExceptionUtil.class
-
- - link:InjectionExceptionUtil-asmified.java[Asmified]
-
-== References
-

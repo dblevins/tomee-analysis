@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/JwtTokenSecurityContext.class
-
- - link:JwtTokenSecurityContext-asmified.java[Asmified]
-
-== References
-

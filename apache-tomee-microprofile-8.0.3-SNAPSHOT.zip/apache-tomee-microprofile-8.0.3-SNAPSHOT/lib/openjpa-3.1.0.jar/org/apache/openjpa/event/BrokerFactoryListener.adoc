@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/BrokerFactoryListener.class
-
- - link:BrokerFactoryListener-asmified.java[Asmified]
-
-== References
-

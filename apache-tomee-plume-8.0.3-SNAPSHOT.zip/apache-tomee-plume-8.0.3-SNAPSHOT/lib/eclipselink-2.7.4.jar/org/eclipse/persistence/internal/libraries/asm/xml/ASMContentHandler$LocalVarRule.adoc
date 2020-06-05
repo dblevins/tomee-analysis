@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$LocalVarRule.class
-
- - link:ASMContentHandler$LocalVarRule-asmified.java[Asmified]
-
-== References
-

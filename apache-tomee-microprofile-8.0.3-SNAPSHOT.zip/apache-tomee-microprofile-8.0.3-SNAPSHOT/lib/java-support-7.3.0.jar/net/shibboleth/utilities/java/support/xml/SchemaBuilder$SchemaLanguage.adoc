@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/SchemaBuilder$SchemaLanguage.class
-
- - link:SchemaBuilder$SchemaLanguage-asmified.java[Asmified]
-
-== References
-

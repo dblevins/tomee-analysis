@@ -1,7 +1,0 @@
-= javax/mail/event/FolderListener.class
-
- - link:FolderListener-asmified.java[Asmified]
-
-== References
-
- - javax.mail.event.FolderEvent - 3

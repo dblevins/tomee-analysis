@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AnnotationDeployer.class
-
- - link:AnnotationDeployer-asmified.java[Asmified]
-
-== References
-

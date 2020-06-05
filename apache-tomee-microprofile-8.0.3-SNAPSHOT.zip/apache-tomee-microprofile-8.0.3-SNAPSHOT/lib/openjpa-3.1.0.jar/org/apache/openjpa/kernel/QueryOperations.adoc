@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/QueryOperations.class
-
- - link:QueryOperations-asmified.java[Asmified]
-
-== References
-

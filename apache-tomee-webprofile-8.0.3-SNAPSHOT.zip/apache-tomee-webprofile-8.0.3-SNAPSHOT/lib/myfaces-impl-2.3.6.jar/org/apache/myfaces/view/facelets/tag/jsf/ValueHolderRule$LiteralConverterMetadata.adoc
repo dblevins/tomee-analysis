@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ValueHolderRule$LiteralConverterMetadata.class
-
- - link:ValueHolderRule$LiteralConverterMetadata-asmified.java[Asmified]
-
-== References
-

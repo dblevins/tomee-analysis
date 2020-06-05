@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/handlers/ImageGifHandler.class
-
- - link:ImageGifHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tei/Util.class
-
- - link:Util-asmified.java[Asmified]
-
-== References
-

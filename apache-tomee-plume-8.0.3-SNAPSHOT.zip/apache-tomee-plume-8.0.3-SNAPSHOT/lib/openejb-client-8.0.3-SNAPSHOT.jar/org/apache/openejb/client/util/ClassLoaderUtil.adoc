@@ -1,6 +1,0 @@
-= org/apache/openejb/client/util/ClassLoaderUtil.class
-
- - link:ClassLoaderUtil-asmified.java[Asmified]
-
-== References
-

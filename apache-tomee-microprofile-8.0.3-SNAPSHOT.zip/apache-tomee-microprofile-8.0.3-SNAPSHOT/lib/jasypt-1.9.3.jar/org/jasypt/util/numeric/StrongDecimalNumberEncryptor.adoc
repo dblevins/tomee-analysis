@@ -1,6 +1,0 @@
-= org/jasypt/util/numeric/StrongDecimalNumberEncryptor.class
-
- - link:StrongDecimalNumberEncryptor-asmified.java[Asmified]
-
-== References
-

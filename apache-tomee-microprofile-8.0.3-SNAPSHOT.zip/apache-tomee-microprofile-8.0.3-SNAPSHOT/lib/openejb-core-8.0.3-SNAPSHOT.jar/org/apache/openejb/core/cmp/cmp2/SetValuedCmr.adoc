@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/cmp2/SetValuedCmr.class
-
- - link:SetValuedCmr-asmified.java[Asmified]
-
-== References
-

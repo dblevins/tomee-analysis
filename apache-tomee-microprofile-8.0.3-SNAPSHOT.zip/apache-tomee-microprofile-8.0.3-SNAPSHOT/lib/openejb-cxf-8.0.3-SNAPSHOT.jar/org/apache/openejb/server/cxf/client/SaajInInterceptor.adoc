@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/client/SaajInInterceptor.class
-
- - link:SaajInInterceptor-asmified.java[Asmified]
-
-== References
-

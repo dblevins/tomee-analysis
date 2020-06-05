@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/AnnotatedField.class
-
- - link:AnnotatedField-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.AnnotatedField - 2
- - javax.enterprise.inject.spi.AnnotatedMember - 1

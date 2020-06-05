@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCParameterMetaData.class
-
- - link:JDBCParameterMetaData-asmified.java[Asmified]
-
-== References
-

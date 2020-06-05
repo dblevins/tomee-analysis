@@ -1,6 +1,0 @@
-= org/apache/activemq/management/StatsCapable.class
-
- - link:StatsCapable-asmified.java[Asmified]
-
-== References
-

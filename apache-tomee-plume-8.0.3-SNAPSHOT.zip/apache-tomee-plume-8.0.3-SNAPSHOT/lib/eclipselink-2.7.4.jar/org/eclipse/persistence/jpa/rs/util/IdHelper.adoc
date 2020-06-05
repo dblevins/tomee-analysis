@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/IdHelper.class
-
- - link:IdHelper-asmified.java[Asmified]
-
-== References
-

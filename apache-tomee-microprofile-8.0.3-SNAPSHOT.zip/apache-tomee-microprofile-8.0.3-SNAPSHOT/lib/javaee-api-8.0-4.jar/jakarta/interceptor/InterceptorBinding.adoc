@@ -1,6 +1,0 @@
-= jakarta/interceptor/InterceptorBinding.class
-
- - link:InterceptorBinding-asmified.java[Asmified]
-
-== References
-

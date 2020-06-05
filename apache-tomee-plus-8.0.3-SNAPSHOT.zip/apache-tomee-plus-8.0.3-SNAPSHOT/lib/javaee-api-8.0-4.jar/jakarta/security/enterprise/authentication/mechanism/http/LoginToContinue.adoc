@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/authentication/mechanism/http/LoginToContinue.class
-
- - link:LoginToContinue-asmified.java[Asmified]
-
-== References
-

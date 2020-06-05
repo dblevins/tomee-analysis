@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/JwsUtils.class
-
- - link:JwsUtils-asmified.java[Asmified]
-
-== References
-

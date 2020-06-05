@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/access/Meta.class
-
- - link:Meta-asmified.java[Asmified]
-
-== References
-

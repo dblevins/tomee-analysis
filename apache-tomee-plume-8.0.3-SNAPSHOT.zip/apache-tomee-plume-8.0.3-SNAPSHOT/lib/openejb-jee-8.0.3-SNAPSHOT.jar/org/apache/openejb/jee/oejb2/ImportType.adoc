@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/ImportType.class
-
- - link:ImportType-asmified.java[Asmified]
-
-== References
-

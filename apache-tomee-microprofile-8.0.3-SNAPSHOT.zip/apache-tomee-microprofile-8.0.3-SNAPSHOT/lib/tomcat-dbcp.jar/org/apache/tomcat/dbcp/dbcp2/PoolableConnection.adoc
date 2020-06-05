@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/PoolableConnection.class
-
- - link:PoolableConnection-asmified.java[Asmified]
-
-== References
-

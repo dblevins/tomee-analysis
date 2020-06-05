@@ -1,6 +1,0 @@
-= commonj/sdo/Property.class
-
- - link:Property-asmified.java[Asmified]
-
-== References
-

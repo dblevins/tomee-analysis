@@ -1,6 +1,0 @@
-= org/joda/time/tz/NameProvider.class
-
- - link:NameProvider-asmified.java[Asmified]
-
-== References
-

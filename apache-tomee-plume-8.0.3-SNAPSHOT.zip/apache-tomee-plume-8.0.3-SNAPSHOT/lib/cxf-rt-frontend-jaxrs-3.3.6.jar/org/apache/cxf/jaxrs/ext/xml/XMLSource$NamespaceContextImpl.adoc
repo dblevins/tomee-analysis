@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/xml/XMLSource$NamespaceContextImpl.class
-
- - link:XMLSource$NamespaceContextImpl-asmified.java[Asmified]
-
-== References
-

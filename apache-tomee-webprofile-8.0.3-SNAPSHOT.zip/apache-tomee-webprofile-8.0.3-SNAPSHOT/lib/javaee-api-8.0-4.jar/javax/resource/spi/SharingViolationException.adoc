@@ -1,7 +1,0 @@
-= javax/resource/spi/SharingViolationException.class
-
- - link:SharingViolationException-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 6

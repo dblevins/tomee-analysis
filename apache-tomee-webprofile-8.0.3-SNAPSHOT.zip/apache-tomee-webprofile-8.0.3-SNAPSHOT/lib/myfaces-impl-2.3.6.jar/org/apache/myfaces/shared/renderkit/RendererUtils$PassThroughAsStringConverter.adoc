@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter.class
-
- - link:RendererUtils$PassThroughAsStringConverter-asmified.java[Asmified]
-
-== References
-

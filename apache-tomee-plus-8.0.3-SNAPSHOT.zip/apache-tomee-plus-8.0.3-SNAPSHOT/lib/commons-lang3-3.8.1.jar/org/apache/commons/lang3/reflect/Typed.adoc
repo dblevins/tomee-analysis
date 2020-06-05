@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/reflect/Typed.class
-
- - link:Typed-asmified.java[Asmified]
-
-== References
-

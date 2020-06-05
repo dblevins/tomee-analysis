@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/SimpleConnectionManager.class
-
- - link:SimpleConnectionManager-asmified.java[Asmified]
-
-== References
-

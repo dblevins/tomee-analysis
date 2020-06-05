@@ -1,6 +1,0 @@
-= org/apache/catalina/security/SecurityClassLoad.class
-
- - link:SecurityClassLoad-asmified.java[Asmified]
-
-== References
-

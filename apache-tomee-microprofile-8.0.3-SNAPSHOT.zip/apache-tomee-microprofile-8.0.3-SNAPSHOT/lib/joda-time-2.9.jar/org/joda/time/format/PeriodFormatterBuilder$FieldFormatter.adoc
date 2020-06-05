@@ -1,6 +1,0 @@
-= org/joda/time/format/PeriodFormatterBuilder$FieldFormatter.class
-
- - link:PeriodFormatterBuilder$FieldFormatter-asmified.java[Asmified]
-
-== References
-

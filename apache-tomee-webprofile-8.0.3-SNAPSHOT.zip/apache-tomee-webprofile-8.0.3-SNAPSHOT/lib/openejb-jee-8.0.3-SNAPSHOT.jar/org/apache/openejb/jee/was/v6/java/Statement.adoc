@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/Statement.class
-
- - link:Statement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/ProvisioningUtil.class
-
- - link:ProvisioningUtil-asmified.java[Asmified]
-
-== References
-

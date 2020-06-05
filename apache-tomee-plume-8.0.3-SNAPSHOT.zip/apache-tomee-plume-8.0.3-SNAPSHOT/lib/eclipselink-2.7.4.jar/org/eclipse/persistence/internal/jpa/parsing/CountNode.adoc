@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/CountNode.class
-
- - link:CountNode-asmified.java[Asmified]
-
-== References
-

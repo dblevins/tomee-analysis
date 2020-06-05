@@ -1,6 +1,0 @@
-= jakarta/activation/MimeTypeParseException.class
-
- - link:MimeTypeParseException-asmified.java[Asmified]
-
-== References
-

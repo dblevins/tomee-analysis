@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/SubjectTypeImpl.class
-
- - link:SubjectTypeImpl-asmified.java[Asmified]
-
-== References
-

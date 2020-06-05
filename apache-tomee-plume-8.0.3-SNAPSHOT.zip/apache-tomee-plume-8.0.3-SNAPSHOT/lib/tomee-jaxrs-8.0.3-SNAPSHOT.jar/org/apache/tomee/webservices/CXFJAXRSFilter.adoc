@@ -1,6 +1,0 @@
-= org/apache/tomee/webservices/CXFJAXRSFilter.class
-
- - link:CXFJAXRSFilter-asmified.java[Asmified]
-
-== References
-

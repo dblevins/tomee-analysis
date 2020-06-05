@@ -1,6 +1,0 @@
-= jakarta/ws/rs/sse/SseBroadcaster.class
-
- - link:SseBroadcaster-asmified.java[Asmified]
-
-== References
-

@@ -1,9 +1,0 @@
-= javax/persistence/TableGenerator.class
-
- - link:TableGenerator-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.Index - 1
- - javax.persistence.UniqueConstraint - 1
- - javax.persistence.TableGenerators - 1

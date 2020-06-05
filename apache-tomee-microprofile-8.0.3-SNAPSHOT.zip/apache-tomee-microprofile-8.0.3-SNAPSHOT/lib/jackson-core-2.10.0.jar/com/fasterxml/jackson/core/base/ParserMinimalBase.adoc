@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/base/ParserMinimalBase.class
-
- - link:ParserMinimalBase-asmified.java[Asmified]
-
-== References
-

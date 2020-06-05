@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/KeyTransportAlgorithmPredicate$SelectionInput.class
-
- - link:KeyTransportAlgorithmPredicate$SelectionInput-asmified.java[Asmified]
-
-== References
-

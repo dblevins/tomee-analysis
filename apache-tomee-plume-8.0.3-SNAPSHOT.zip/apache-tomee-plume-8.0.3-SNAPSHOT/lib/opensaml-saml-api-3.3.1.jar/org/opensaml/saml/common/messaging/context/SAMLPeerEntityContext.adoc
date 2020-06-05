@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/context/SAMLPeerEntityContext.class
-
- - link:SAMLPeerEntityContext-asmified.java[Asmified]
-
-== References
-

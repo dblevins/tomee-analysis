@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/component/_FocusBlurProperties.class
-
- - link:_FocusBlurProperties-asmified.java[Asmified]
-
-== References
-

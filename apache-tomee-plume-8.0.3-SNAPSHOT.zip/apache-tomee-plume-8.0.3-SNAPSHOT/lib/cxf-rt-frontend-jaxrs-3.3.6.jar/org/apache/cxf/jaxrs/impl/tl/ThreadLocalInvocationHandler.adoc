@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/ThreadLocalInvocationHandler.class
-
- - link:ThreadLocalInvocationHandler-asmified.java[Asmified]
-
-== References
-

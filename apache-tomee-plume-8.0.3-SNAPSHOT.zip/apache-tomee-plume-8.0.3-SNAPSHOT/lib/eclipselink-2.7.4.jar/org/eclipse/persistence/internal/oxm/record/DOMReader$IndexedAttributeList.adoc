@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/DOMReader$IndexedAttributeList.class
-
- - link:DOMReader$IndexedAttributeList-asmified.java[Asmified]
-
-== References
-

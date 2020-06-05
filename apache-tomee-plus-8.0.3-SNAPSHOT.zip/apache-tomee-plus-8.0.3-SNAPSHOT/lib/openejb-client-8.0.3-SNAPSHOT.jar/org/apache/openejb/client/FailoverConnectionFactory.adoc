@@ -1,6 +1,0 @@
-= org/apache/openejb/client/FailoverConnectionFactory.class
-
- - link:FailoverConnectionFactory-asmified.java[Asmified]
-
-== References
-

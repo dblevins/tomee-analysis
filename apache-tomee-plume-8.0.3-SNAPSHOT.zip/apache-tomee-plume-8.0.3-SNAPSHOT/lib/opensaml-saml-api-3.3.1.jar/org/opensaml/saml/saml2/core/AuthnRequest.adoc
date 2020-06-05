@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/AuthnRequest.class
-
- - link:AuthnRequest-asmified.java[Asmified]
-
-== References
-

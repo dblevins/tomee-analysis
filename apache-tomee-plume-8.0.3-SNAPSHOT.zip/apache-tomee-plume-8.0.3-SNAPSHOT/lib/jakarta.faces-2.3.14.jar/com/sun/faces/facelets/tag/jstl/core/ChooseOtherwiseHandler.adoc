@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/core/ChooseOtherwiseHandler.class
-
- - link:ChooseOtherwiseHandler-asmified.java[Asmified]
-
-== References
-

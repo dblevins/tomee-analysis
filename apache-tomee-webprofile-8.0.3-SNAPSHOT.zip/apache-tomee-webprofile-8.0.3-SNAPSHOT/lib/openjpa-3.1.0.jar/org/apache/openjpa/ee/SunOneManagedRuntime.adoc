@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/SunOneManagedRuntime.class
-
- - link:SunOneManagedRuntime-asmified.java[Asmified]
-
-== References
-

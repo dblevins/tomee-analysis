@@ -1,6 +1,0 @@
-= org/apache/commons/collections/buffer/BoundedBuffer.class
-
- - link:BoundedBuffer-asmified.java[Asmified]
-
-== References
-

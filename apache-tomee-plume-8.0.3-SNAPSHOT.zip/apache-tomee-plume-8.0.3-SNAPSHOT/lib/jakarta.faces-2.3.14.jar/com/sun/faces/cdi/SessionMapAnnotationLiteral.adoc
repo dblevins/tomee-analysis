@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/SessionMapAnnotationLiteral.class
-
- - link:SessionMapAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

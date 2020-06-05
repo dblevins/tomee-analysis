@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/ORMetadata.class
-
- - link:ORMetadata-asmified.java[Asmified]
-
-== References
-

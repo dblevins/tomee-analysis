@@ -1,6 +1,0 @@
-= org/apache/webbeans/ee/beans/ValidatorFactoryProvider.class
-
- - link:ValidatorFactoryProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPBodySection.class
-
- - link:IMAPBodySection-asmified.java[Asmified]
-
-== References
-

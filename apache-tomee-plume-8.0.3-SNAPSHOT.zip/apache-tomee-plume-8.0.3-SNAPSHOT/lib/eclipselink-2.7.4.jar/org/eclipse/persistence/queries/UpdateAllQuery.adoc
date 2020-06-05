@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/UpdateAllQuery.class
-
- - link:UpdateAllQuery-asmified.java[Asmified]
-
-== References
-

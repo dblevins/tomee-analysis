@@ -1,6 +1,0 @@
-= org/hsqldb/server/HsqlSocketFactorySecure.class
-
- - link:HsqlSocketFactorySecure-asmified.java[Asmified]
-
-== References
-

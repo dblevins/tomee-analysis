@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/jpql/InvalidIdentifierException.class
-
- - link:InvalidIdentifierException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource.class
-
- - link:DataSourceXADataSource-asmified.java[Asmified]
-
-== References
-

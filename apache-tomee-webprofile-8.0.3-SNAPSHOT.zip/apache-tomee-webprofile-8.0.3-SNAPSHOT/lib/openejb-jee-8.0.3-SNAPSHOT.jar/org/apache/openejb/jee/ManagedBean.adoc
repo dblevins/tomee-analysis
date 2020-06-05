@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ManagedBean.class
-
- - link:ManagedBean-asmified.java[Asmified]
-
-== References
-

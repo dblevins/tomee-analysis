@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/configurator/InjectionPointConfigurator.class
-
- - link:InjectionPointConfigurator-asmified.java[Asmified]
-
-== References
-

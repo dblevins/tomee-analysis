@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/XMLSignatureInputDebugger.class
-
- - link:XMLSignatureInputDebugger-asmified.java[Asmified]
-
-== References
-

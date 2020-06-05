@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/model/DeployableObject.class
-
- - link:DeployableObject-asmified.java[Asmified]
-
-== References
-

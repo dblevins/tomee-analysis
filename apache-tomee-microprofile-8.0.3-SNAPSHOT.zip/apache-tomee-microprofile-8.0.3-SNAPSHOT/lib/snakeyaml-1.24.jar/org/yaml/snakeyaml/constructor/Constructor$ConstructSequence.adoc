@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/constructor/Constructor$ConstructSequence.class
-
- - link:Constructor$ConstructSequence-asmified.java[Asmified]
-
-== References
-

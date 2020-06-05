@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/EvictionListener$1.class
-
- - link:EvictionListener$1-asmified.java[Asmified]
-
-== References
-

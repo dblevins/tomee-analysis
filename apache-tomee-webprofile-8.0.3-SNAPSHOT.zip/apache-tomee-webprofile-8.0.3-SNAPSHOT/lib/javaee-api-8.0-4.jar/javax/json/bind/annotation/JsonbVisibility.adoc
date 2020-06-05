@@ -1,8 +1,0 @@
-= javax/json/bind/annotation/JsonbVisibility.class
-
- - link:JsonbVisibility-asmified.java[Asmified]
-
-== References
-
- - javax.json.bind.config.PropertyVisibilityStrategy - 1
- - javax.json.bind.annotation.JsonbAnnotation - 1

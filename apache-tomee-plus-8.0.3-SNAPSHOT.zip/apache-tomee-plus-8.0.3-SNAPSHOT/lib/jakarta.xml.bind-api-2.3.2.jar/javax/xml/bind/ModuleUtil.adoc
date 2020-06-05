@@ -1,7 +1,0 @@
-= javax/xml/bind/ModuleUtil.class
-
- - link:ModuleUtil-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.JAXBException - 2

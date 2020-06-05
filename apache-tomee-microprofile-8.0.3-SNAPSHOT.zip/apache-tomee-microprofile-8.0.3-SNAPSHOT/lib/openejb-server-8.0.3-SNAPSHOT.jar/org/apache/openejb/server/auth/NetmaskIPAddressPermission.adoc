@@ -1,6 +1,0 @@
-= org/apache/openejb/server/auth/NetmaskIPAddressPermission.class
-
- - link:NetmaskIPAddressPermission-asmified.java[Asmified]
-
-== References
-

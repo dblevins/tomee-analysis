@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/DataService.class
-
- - link:DataService-asmified.java[Asmified]
-
-== References
-

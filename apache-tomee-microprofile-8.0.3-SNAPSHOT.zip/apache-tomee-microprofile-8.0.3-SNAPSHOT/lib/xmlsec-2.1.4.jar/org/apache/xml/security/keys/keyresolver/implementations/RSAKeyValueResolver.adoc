@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/keyresolver/implementations/RSAKeyValueResolver.class
-
- - link:RSAKeyValueResolver-asmified.java[Asmified]
-
-== References
-

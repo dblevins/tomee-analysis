@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/CrossParameterD.class
-
- - link:CrossParameterD-asmified.java[Asmified]
-
-== References
-

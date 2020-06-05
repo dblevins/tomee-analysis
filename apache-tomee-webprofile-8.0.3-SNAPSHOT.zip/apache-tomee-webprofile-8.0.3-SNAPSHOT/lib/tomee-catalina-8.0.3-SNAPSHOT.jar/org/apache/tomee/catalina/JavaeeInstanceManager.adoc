@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/JavaeeInstanceManager.class
-
- - link:JavaeeInstanceManager-asmified.java[Asmified]
-
-== References
-

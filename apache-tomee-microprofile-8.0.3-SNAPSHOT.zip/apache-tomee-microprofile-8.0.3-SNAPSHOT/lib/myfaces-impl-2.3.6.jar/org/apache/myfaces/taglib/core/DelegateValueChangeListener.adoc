@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/DelegateValueChangeListener.class
-
- - link:DelegateValueChangeListener-asmified.java[Asmified]
-
-== References
-

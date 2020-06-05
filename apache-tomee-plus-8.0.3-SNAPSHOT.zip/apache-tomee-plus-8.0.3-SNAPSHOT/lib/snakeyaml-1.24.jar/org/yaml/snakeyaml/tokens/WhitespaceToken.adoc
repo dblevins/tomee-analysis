@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/WhitespaceToken.class
-
- - link:WhitespaceToken-asmified.java[Asmified]
-
-== References
-

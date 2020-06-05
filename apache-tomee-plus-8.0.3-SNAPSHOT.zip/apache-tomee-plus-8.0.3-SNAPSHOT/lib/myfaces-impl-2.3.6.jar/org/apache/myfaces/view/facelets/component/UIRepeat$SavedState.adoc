@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/component/UIRepeat$SavedState.class
-
- - link:UIRepeat$SavedState-asmified.java[Asmified]
-
-== References
-

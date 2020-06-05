@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/BeanInfoManager.class
-
- - link:BeanInfoManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v7/MessageDispatchMarshaller.class
-
- - link:MessageDispatchMarshaller-asmified.java[Asmified]
-
-== References
-

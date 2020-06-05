@@ -1,6 +1,0 @@
-= org/hsqldb/ParserDDL.class
-
- - link:ParserDDL-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/ImageBasedJDBCAdaptor.class
-
- - link:ImageBasedJDBCAdaptor-asmified.java[Asmified]
-
-== References
-

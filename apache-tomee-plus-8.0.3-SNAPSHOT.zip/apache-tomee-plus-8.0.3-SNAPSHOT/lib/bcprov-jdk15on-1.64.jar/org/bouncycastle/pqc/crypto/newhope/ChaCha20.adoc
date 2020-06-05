@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/crypto/newhope/ChaCha20.class
-
- - link:ChaCha20-asmified.java[Asmified]
-
-== References
-

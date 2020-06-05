@@ -1,6 +1,0 @@
-= org/apache/tomee/webservices/TomcatRsRegistry.class
-
- - link:TomcatRsRegistry-asmified.java[Asmified]
-
-== References
-

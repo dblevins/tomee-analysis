@@ -1,9 +1,0 @@
-= javax/xml/bind/Validator.class
-
- - link:Validator-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.JAXBException - 4
- - javax.xml.bind.ValidationEventHandler - 2
- - javax.xml.bind.PropertyException - 2

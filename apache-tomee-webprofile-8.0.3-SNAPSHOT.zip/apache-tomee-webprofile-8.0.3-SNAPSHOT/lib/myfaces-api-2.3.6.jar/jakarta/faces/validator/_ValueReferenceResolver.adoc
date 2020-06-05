@@ -1,6 +1,0 @@
-= jakarta/faces/validator/_ValueReferenceResolver.class
-
- - link:_ValueReferenceResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/_UIParameter.class
-
- - link:_UIParameter-asmified.java[Asmified]
-
-== References
-

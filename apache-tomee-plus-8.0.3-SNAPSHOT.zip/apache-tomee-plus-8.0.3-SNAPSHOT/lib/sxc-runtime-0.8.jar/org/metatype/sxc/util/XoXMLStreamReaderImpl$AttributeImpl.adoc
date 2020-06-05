@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/XoXMLStreamReaderImpl$AttributeImpl.class
-
- - link:XoXMLStreamReaderImpl$AttributeImpl-asmified.java[Asmified]
-
-== References
-

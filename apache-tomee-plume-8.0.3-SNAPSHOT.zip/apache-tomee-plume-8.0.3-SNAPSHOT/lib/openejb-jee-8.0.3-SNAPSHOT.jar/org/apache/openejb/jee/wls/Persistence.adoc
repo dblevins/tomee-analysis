@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/Persistence.class
-
- - link:Persistence-asmified.java[Asmified]
-
-== References
-

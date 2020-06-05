@@ -1,6 +1,0 @@
-= javax/servlet/jsp/tagext/VariableInfo.class
-
- - link:VariableInfo-asmified.java[Asmified]
-
-== References
-

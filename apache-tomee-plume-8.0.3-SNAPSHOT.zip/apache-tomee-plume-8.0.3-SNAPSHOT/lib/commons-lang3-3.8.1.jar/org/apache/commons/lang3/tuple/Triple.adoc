@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/tuple/Triple.class
-
- - link:Triple-asmified.java[Asmified]
-
-== References
-

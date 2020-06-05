@@ -1,6 +1,0 @@
-= org/apache/activemq/ConnectionFailedException.class
-
- - link:ConnectionFailedException-asmified.java[Asmified]
-
-== References
-

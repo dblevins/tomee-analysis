@@ -1,6 +1,0 @@
-= org/apache/activemq/state/ConnectionStateTracker.class
-
- - link:ConnectionStateTracker-asmified.java[Asmified]
-
-== References
-

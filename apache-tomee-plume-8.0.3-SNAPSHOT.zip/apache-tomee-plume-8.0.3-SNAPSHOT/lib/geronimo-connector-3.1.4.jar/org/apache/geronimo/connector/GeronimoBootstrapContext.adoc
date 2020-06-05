@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/GeronimoBootstrapContext.class
-
- - link:GeronimoBootstrapContext-asmified.java[Asmified]
-
-== References
-

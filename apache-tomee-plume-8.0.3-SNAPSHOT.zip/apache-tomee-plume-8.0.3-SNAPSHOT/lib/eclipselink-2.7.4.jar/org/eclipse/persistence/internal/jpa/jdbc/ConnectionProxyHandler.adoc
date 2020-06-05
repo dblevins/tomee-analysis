@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jdbc/ConnectionProxyHandler.class
-
- - link:ConnectionProxyHandler-asmified.java[Asmified]
-
-== References
-

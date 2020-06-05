@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v6/KeepAliveInfoMarshaller.class
-
- - link:KeepAliveInfoMarshaller-asmified.java[Asmified]
-
-== References
-

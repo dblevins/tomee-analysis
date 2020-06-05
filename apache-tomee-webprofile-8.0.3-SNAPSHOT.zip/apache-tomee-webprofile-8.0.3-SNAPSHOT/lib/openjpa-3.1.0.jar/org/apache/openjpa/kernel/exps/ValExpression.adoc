@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/ValExpression.class
-
- - link:ValExpression-asmified.java[Asmified]
-
-== References
-

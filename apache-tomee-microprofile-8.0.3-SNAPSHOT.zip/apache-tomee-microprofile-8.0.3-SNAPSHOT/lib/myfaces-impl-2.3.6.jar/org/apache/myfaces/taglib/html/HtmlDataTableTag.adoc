@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlDataTableTag.class
-
- - link:HtmlDataTableTag-asmified.java[Asmified]
-
-== References
-

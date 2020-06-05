@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$CheckResult.class
-
- - link:CircuitBreakerInterceptor$CheckResult-asmified.java[Asmified]
-
-== References
-

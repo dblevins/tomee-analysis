@@ -1,6 +1,0 @@
-= org/apache/juli/WebappProperties.class
-
- - link:WebappProperties-asmified.java[Asmified]
-
-== References
-

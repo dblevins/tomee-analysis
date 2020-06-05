@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/util/ParserPool.class
-
- - link:ParserPool-asmified.java[Asmified]
-
-== References
-

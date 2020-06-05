@@ -1,2 +1,0 @@
-= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/wsdl4j-1.6.3.jar
-

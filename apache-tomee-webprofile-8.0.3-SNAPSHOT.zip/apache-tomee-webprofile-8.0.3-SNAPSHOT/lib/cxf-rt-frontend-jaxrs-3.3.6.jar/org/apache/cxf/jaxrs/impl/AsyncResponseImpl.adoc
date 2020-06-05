@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/AsyncResponseImpl.class
-
- - link:AsyncResponseImpl-asmified.java[Asmified]
-
-== References
-

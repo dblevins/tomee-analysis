@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/DiscoveryTransportFactory.class
-
- - link:DiscoveryTransportFactory-asmified.java[Asmified]
-
-== References
-

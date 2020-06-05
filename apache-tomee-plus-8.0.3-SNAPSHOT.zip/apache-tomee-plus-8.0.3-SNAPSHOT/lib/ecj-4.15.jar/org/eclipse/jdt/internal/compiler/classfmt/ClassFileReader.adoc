@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/ClassFileReader.class
-
- - link:ClassFileReader-asmified.java[Asmified]
-
-== References
-

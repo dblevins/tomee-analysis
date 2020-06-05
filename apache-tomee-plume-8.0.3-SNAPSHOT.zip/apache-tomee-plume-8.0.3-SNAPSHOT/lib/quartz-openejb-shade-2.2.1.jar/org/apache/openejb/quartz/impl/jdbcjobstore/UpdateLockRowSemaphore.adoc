@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/UpdateLockRowSemaphore.class
-
- - link:UpdateLockRowSemaphore-asmified.java[Asmified]
-
-== References
-

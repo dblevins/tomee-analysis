@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/JoinSyntax.class
-
- - link:JoinSyntax-asmified.java[Asmified]
-
-== References
-

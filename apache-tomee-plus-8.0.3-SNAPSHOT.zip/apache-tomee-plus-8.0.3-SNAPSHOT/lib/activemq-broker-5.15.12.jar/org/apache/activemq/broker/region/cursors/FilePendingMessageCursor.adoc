@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/cursors/FilePendingMessageCursor.class
-
- - link:FilePendingMessageCursor-asmified.java[Asmified]
-
-== References
-

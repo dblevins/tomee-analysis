@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/AnnotatedMethod.class
-
- - link:AnnotatedMethod-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.AnnotatedMethod - 2
- - javax.enterprise.inject.spi.AnnotatedCallable - 1

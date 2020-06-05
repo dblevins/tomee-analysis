@@ -1,6 +1,0 @@
-= org/apache/jasper/runtime/JspSourceImports.class
-
- - link:JspSourceImports-asmified.java[Asmified]
-
-== References
-

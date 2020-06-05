@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/AlgorithmRegistry$1.class
-
- - link:AlgorithmRegistry$1-asmified.java[Asmified]
-
-== References
-

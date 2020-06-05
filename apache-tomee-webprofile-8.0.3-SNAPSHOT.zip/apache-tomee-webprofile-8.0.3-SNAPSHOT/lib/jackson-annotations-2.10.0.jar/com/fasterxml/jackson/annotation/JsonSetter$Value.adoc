@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonSetter$Value.class
-
- - link:JsonSetter$Value-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/Socket.class
-
- - link:Socket-asmified.java[Asmified]
-
-== References
-

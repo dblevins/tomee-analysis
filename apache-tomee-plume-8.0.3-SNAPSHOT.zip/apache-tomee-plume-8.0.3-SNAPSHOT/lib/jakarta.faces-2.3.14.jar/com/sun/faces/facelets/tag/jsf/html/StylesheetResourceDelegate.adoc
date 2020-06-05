@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/html/StylesheetResourceDelegate.class
-
- - link:StylesheetResourceDelegate-asmified.java[Asmified]
-
-== References
-

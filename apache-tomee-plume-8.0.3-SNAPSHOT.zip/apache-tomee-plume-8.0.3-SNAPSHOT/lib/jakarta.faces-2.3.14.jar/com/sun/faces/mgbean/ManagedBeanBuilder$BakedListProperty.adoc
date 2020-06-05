@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/ManagedBeanBuilder$BakedListProperty.class
-
- - link:ManagedBeanBuilder$BakedListProperty-asmified.java[Asmified]
-
-== References
-

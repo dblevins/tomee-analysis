@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/MariaDBDictionary.class
-
- - link:MariaDBDictionary-asmified.java[Asmified]
-
-== References
-

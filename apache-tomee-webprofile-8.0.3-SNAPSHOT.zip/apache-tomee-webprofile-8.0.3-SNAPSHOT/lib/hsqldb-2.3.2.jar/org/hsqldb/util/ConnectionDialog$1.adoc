@@ -1,6 +1,0 @@
-= org/hsqldb/util/ConnectionDialog$1.class
-
- - link:ConnectionDialog$1-asmified.java[Asmified]
-
-== References
-

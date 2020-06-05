@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/InitMethod$JAXB.class
-
- - link:InitMethod$JAXB-asmified.java[Asmified]
-
-== References
-

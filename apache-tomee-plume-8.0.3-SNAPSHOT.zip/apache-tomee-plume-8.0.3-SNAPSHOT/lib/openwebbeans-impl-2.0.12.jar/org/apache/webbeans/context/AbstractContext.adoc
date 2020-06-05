@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/AbstractContext.class
-
- - link:AbstractContext-asmified.java[Asmified]
-
-== References
-

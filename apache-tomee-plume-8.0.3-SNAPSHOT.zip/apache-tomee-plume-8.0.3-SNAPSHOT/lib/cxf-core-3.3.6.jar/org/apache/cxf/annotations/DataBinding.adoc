@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/DataBinding.class
-
- - link:DataBinding-asmified.java[Asmified]
-
-== References
-

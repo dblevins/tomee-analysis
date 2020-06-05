@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$Structures$StepExecutionInstanceData.class
-
- - link:MemoryPersistenceManagerService$Structures$StepExecutionInstanceData-asmified.java[Asmified]
-
-== References
-

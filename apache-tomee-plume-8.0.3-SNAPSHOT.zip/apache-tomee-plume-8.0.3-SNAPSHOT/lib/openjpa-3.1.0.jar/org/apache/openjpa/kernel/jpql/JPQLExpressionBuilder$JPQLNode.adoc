@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/jpql/JPQLExpressionBuilder$JPQLNode.class
-
- - link:JPQLExpressionBuilder$JPQLNode-asmified.java[Asmified]
-
-== References
-

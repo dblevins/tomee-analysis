@@ -1,7 +1,0 @@
-= javax/management/j2ee/Management.class
-
- - link:Management-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.ListenerRegistration - 1

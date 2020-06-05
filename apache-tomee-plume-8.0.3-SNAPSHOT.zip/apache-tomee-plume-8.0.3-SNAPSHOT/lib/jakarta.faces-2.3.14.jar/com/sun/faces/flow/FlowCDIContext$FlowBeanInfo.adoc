@@ -1,6 +1,0 @@
-= com/sun/faces/flow/FlowCDIContext$FlowBeanInfo.class
-
- - link:FlowCDIContext$FlowBeanInfo-asmified.java[Asmified]
-
-== References
-

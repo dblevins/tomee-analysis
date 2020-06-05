@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/AbstractManagedType$ElementTypeFilter.class
-
- - link:AbstractManagedType$ElementTypeFilter-asmified.java[Asmified]
-
-== References
-

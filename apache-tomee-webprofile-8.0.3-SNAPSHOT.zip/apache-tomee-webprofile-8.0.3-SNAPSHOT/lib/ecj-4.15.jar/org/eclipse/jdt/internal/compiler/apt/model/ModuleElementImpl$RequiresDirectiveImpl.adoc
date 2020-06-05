@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/ModuleElementImpl$RequiresDirectiveImpl.class
-
- - link:ModuleElementImpl$RequiresDirectiveImpl-asmified.java[Asmified]
-
-== References
-

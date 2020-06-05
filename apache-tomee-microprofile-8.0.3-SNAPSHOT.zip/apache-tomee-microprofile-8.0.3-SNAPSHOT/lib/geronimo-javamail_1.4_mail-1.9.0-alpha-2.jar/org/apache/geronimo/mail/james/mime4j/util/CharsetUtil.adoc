@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/util/CharsetUtil.class
-
- - link:CharsetUtil-asmified.java[Asmified]
-
-== References
-

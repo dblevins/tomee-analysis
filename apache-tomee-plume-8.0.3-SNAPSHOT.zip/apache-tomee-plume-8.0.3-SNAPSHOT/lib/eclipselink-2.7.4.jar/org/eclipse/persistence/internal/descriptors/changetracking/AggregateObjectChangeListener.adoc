@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/changetracking/AggregateObjectChangeListener.class
-
- - link:AggregateObjectChangeListener-asmified.java[Asmified]
-
-== References
-

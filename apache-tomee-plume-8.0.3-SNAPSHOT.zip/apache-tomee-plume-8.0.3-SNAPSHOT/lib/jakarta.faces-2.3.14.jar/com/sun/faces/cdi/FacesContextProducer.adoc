@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/FacesContextProducer.class
-
- - link:FacesContextProducer-asmified.java[Asmified]
-
-== References
-

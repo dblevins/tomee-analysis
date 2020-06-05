@@ -1,6 +1,0 @@
-= org/opensaml/security/criteria/KeyAlgorithmCriterion.class
-
- - link:KeyAlgorithmCriterion-asmified.java[Asmified]
-
-== References
-

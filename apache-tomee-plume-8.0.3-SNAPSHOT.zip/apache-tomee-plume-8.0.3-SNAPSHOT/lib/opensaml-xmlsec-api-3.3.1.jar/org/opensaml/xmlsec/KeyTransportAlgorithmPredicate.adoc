@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/KeyTransportAlgorithmPredicate.class
-
- - link:KeyTransportAlgorithmPredicate-asmified.java[Asmified]
-
-== References
-

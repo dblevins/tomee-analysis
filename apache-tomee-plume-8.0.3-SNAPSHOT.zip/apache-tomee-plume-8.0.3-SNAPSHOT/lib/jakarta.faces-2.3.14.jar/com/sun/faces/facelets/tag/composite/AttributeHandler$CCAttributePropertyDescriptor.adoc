@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/AttributeHandler$CCAttributePropertyDescriptor.class
-
- - link:AttributeHandler$CCAttributePropertyDescriptor-asmified.java[Asmified]
-
-== References
-

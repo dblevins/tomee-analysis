@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/TupleImpl.class
-
- - link:TupleImpl-asmified.java[Asmified]
-
-== References
-

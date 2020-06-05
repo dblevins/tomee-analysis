@@ -1,6 +1,0 @@
-= com/sun/faces/application/ValueExpressionValueBindingAdapter.class
-
- - link:ValueExpressionValueBindingAdapter-asmified.java[Asmified]
-
-== References
-

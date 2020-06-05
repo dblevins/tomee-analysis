@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/WSAContextUtils.class
-
- - link:WSAContextUtils-asmified.java[Asmified]
-
-== References
-

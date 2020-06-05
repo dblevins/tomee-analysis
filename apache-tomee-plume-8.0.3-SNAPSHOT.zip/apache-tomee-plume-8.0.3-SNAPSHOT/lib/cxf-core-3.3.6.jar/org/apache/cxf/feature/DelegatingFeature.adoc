@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/DelegatingFeature.class
-
- - link:DelegatingFeature-asmified.java[Asmified]
-
-== References
-

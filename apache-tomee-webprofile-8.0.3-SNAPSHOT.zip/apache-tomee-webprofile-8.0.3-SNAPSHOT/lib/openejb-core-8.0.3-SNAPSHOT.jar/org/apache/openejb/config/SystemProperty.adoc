@@ -1,6 +1,0 @@
-= org/apache/openejb/config/SystemProperty.class
-
- - link:SystemProperty-asmified.java[Asmified]
-
-== References
-

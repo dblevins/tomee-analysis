@@ -1,6 +1,0 @@
-= org/apache/webbeans/configurator/ProducerConfiguratorImpl$ConfiguredProducer.class
-
- - link:ProducerConfiguratorImpl$ConfiguredProducer-asmified.java[Asmified]
-
-== References
-

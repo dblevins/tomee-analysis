@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/FutureOrPresentValidator$ForChronoLocalDateTime.class
-
- - link:FutureOrPresentValidator$ForChronoLocalDateTime-asmified.java[Asmified]
-
-== References
-

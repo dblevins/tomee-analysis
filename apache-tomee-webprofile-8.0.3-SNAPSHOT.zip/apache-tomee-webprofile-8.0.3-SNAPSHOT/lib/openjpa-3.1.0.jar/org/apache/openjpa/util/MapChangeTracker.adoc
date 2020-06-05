@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/MapChangeTracker.class
-
- - link:MapChangeTracker-asmified.java[Asmified]
-
-== References
-

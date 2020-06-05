@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/RequestFacade$GetHeaderNamesPrivilegedAction.class
-
- - link:RequestFacade$GetHeaderNamesPrivilegedAction-asmified.java[Asmified]
-
-== References
-

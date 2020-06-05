@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/HashBin.class
-
- - link:HashBin-asmified.java[Asmified]
-
-== References
-

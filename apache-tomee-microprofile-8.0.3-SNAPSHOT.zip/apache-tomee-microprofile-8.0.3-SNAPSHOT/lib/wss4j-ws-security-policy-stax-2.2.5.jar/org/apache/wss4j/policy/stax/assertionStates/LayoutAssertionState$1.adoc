@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/LayoutAssertionState$1.class
-
- - link:LayoutAssertionState$1-asmified.java[Asmified]
-
-== References
-

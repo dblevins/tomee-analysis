@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/concurrent/BackgroundInitializer.class
-
- - link:BackgroundInitializer-asmified.java[Asmified]
-
-== References
-

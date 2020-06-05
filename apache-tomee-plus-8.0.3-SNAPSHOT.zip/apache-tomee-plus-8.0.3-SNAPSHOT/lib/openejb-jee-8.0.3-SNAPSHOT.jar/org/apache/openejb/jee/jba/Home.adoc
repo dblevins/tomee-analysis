@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/Home.class
-
- - link:Home-asmified.java[Asmified]
-
-== References
-

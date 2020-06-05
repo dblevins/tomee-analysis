@@ -1,6 +1,0 @@
-= io/opentracing/Tracer.class
-
- - link:Tracer-asmified.java[Asmified]
-
-== References
-

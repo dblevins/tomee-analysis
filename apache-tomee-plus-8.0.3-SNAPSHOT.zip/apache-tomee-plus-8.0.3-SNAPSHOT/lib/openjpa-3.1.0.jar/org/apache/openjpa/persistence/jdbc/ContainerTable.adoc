@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/ContainerTable.class
-
- - link:ContainerTable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/JpaQuery.class
-
- - link:JpaQuery-asmified.java[Asmified]
-
-== References
-

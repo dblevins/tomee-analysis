@@ -1,6 +1,0 @@
-= jakarta/xml/soap/SOAPBody.class
-
- - link:SOAPBody-asmified.java[Asmified]
-
-== References
-

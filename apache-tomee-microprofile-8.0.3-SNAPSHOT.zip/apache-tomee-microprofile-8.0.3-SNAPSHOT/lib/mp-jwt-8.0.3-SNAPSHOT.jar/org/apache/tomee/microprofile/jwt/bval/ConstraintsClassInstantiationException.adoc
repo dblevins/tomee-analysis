@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/bval/ConstraintsClassInstantiationException.class
-
- - link:ConstraintsClassInstantiationException-asmified.java[Asmified]
-
-== References
-

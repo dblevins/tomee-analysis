@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/AbstractDynamicHTTPMetadataResolver.class
-
- - link:AbstractDynamicHTTPMetadataResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/ConnectorSF.class
-
- - link:ConnectorSF-asmified.java[Asmified]
-
-== References
-

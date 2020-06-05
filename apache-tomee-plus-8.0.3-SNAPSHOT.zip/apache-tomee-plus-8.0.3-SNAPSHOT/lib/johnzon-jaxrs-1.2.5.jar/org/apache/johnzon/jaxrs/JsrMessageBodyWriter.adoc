@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/JsrMessageBodyWriter.class
-
- - link:JsrMessageBodyWriter-asmified.java[Asmified]
-
-== References
-

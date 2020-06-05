@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/HexadecimalEncodingAlgorithm.class
-
- - link:HexadecimalEncodingAlgorithm-asmified.java[Asmified]
-
-== References
-

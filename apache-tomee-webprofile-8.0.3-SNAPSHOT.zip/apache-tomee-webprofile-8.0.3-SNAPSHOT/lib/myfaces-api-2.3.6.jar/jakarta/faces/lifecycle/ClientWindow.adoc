@@ -1,6 +1,0 @@
-= jakarta/faces/lifecycle/ClientWindow.class
-
- - link:ClientWindow-asmified.java[Asmified]
-
-== References
-

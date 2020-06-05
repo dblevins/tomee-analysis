@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/LinkedListEditor.class
-
- - link:LinkedListEditor-asmified.java[Asmified]
-
-== References
-

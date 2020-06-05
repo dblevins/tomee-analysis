@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/unit/PersistenceUnit.class
-
- - link:PersistenceUnit-asmified.java[Asmified]
-
-== References
-

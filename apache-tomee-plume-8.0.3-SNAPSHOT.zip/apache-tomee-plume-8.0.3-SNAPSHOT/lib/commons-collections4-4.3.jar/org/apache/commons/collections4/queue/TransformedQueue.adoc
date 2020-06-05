@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/queue/TransformedQueue.class
-
- - link:TransformedQueue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Mod.class
-
- - link:Mod-asmified.java[Asmified]
-
-== References
-

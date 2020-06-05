@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/StringContains.class
-
- - link:StringContains-asmified.java[Asmified]
-
-== References
-

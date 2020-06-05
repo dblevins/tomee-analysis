@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/TDirtyState.class
-
- - link:TDirtyState-asmified.java[Asmified]
-
-== References
-

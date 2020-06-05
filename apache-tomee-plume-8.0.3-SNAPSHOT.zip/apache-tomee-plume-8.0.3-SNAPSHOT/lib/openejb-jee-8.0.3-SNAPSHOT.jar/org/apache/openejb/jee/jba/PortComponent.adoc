@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/PortComponent.class
-
- - link:PortComponent-asmified.java[Asmified]
-
-== References
-

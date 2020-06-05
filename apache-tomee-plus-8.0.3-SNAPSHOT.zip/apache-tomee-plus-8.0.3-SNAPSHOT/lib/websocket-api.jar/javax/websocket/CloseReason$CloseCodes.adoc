@@ -1,9 +1,0 @@
-= javax/websocket/CloseReason$CloseCodes.class
-
- - link:CloseReason$CloseCodes-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.CloseReason$CloseCodes - 101
- - javax.websocket.CloseReason$CloseCodes$1 - 2
- - javax.websocket.CloseReason$CloseCode - 2

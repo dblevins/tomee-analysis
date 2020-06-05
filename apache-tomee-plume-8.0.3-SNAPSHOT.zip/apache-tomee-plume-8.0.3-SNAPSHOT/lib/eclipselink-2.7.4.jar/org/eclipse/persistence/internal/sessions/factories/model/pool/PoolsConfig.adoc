@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/pool/PoolsConfig.class
-
- - link:PoolsConfig-asmified.java[Asmified]
-
-== References
-

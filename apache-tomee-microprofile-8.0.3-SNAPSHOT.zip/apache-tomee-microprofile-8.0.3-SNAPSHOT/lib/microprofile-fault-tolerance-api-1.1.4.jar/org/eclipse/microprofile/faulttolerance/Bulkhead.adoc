@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/faulttolerance/Bulkhead.class
-
- - link:Bulkhead-asmified.java[Asmified]
-
-== References
-

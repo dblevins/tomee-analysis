@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/OptimisticException.class
-
- - link:OptimisticException-asmified.java[Asmified]
-
-== References
-

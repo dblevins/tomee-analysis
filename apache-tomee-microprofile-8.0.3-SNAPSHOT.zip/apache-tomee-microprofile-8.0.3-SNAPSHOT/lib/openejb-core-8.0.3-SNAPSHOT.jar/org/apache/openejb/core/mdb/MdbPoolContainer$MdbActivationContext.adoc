@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/MdbPoolContainer$MdbActivationContext.class
-
- - link:MdbPoolContainer$MdbActivationContext-asmified.java[Asmified]
-
-== References
-

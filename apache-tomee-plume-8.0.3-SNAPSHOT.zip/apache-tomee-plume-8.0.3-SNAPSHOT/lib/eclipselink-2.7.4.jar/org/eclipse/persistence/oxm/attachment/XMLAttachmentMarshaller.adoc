@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/attachment/XMLAttachmentMarshaller.class
-
- - link:XMLAttachmentMarshaller-asmified.java[Asmified]
-
-== References
-

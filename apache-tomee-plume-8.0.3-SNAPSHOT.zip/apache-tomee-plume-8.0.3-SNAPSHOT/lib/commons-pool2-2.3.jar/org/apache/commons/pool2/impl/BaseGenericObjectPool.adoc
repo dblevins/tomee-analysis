@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/impl/BaseGenericObjectPool.class
-
- - link:BaseGenericObjectPool-asmified.java[Asmified]
-
-== References
-

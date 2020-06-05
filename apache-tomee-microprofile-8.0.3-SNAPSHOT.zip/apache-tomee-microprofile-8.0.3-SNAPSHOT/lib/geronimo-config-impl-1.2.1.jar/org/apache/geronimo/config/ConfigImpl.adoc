@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/ConfigImpl.class
-
- - link:ConfigImpl-asmified.java[Asmified]
-
-== References
-

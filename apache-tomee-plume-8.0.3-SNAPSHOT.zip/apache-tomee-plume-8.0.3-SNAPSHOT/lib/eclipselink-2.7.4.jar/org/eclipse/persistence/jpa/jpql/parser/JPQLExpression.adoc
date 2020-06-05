@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/JPQLExpression.class
-
- - link:JPQLExpression-asmified.java[Asmified]
-
-== References
-

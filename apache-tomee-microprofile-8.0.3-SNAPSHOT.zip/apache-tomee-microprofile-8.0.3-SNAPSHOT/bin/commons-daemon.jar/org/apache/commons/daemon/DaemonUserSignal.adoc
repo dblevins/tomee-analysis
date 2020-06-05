@@ -1,6 +1,0 @@
-= org/apache/commons/daemon/DaemonUserSignal.class
-
- - link:DaemonUserSignal-asmified.java[Asmified]
-
-== References
-

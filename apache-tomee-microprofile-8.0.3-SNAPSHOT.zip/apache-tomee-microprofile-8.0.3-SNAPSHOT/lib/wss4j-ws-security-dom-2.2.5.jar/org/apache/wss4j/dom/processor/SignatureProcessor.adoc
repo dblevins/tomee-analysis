@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/processor/SignatureProcessor.class
-
- - link:SignatureProcessor-asmified.java[Asmified]
-
-== References
-

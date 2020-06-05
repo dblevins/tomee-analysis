@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/SetCharacterEncodingFilter.class
-
- - link:SetCharacterEncodingFilter-asmified.java[Asmified]
-
-== References
-

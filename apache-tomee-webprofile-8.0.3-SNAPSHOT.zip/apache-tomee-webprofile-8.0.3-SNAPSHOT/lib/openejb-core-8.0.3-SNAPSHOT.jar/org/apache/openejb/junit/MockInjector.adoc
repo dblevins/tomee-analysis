@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/MockInjector.class
-
- - link:MockInjector-asmified.java[Asmified]
-
-== References
-

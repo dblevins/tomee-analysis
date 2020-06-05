@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/concurrent/ConcurrentReferenceHashMap$HashIterator.class
-
- - link:ConcurrentReferenceHashMap$HashIterator-asmified.java[Asmified]
-
-== References
-

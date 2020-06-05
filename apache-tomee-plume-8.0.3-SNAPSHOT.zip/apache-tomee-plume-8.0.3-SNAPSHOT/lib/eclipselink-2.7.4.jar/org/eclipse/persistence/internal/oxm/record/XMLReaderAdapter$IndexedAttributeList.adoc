@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/XMLReaderAdapter$IndexedAttributeList.class
-
- - link:XMLReaderAdapter$IndexedAttributeList-asmified.java[Asmified]
-
-== References
-

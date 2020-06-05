@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/ProducerFactory.class
-
- - link:ProducerFactory-asmified.java[Asmified]
-
-== References
-

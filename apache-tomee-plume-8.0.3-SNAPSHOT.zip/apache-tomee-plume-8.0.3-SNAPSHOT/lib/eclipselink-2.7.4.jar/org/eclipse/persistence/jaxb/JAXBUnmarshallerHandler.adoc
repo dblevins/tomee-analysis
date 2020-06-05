@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBUnmarshallerHandler.class
-
- - link:JAXBUnmarshallerHandler-asmified.java[Asmified]
-
-== References
-

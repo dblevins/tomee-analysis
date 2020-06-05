@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/AnnotationDiscoveryVisitor.class
-
- - link:AnnotationDiscoveryVisitor-asmified.java[Asmified]
-
-== References
-

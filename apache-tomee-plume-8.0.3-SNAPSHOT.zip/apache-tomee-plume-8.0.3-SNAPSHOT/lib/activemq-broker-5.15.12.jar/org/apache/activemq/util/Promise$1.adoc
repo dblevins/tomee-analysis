@@ -1,6 +1,0 @@
-= org/apache/activemq/util/Promise$1.class
-
- - link:Promise$1-asmified.java[Asmified]
-
-== References
-

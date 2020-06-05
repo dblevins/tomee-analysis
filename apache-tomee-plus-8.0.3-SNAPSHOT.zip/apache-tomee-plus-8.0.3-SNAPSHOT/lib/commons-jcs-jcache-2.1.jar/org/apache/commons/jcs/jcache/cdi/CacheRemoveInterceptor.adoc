@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/CacheRemoveInterceptor.class
-
- - link:CacheRemoveInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/auth/DefaultBasicAuthSupplier.class
-
- - link:DefaultBasicAuthSupplier-asmified.java[Asmified]
-
-== References
-

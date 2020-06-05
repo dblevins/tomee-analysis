@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/CacheType.class
-
- - link:CacheType-asmified.java[Asmified]
-
-== References
-

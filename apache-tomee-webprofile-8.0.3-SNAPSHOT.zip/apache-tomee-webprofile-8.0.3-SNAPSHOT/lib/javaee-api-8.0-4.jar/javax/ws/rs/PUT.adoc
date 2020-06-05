@@ -1,7 +1,0 @@
-= javax/ws/rs/PUT.class
-
- - link:PUT-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.HttpMethod - 1

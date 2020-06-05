@@ -1,6 +1,0 @@
-= org/opensaml/security/httpclient/impl/TrustEngineTLSSocketFactory.class
-
- - link:TrustEngineTLSSocketFactory-asmified.java[Asmified]
-
-== References
-

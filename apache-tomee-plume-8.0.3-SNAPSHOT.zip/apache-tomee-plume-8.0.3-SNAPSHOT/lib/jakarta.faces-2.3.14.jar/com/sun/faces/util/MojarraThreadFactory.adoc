@@ -1,6 +1,0 @@
-= com/sun/faces/util/MojarraThreadFactory.class
-
- - link:MojarraThreadFactory-asmified.java[Asmified]
-
-== References
-

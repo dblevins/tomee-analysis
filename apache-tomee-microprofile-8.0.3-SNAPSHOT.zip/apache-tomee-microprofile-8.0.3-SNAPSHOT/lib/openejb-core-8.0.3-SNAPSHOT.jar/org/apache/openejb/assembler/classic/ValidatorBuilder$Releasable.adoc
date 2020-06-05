@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ValidatorBuilder$Releasable.class
-
- - link:ValidatorBuilder$Releasable-asmified.java[Asmified]
-
-== References
-

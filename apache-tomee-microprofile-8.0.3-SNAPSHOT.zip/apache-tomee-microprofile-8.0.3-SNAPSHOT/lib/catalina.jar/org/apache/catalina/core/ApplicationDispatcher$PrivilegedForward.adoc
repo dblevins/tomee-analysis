@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationDispatcher$PrivilegedForward.class
-
- - link:ApplicationDispatcher$PrivilegedForward-asmified.java[Asmified]
-
-== References
-

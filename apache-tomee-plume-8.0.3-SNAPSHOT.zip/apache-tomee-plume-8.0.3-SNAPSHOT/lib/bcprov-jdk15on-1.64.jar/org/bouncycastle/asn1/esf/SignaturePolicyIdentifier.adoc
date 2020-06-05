@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/esf/SignaturePolicyIdentifier.class
-
- - link:SignaturePolicyIdentifier-asmified.java[Asmified]
-
-== References
-

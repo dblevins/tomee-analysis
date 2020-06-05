@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/FormTag.class
-
- - link:FormTag-asmified.java[Asmified]
-
-== References
-

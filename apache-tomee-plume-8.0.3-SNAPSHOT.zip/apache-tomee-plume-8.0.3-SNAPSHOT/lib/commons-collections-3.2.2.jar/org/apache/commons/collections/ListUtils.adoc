@@ -1,6 +1,0 @@
-= org/apache/commons/collections/ListUtils.class
-
- - link:ListUtils-asmified.java[Asmified]
-
-== References
-

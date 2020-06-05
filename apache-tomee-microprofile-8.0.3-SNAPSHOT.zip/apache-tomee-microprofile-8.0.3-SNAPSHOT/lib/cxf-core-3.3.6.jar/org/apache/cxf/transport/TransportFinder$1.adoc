@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/TransportFinder$1.class
-
- - link:TransportFinder$1-asmified.java[Asmified]
-
-== References
-

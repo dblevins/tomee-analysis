@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/AttributeHandler.class
-
- - link:AttributeHandler-asmified.java[Asmified]
-
-== References
-

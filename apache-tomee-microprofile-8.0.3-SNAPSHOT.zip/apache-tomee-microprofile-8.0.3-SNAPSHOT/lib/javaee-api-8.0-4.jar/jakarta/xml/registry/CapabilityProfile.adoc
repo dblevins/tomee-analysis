@@ -1,6 +1,0 @@
-= jakarta/xml/registry/CapabilityProfile.class
-
- - link:CapabilityProfile-asmified.java[Asmified]
-
-== References
-

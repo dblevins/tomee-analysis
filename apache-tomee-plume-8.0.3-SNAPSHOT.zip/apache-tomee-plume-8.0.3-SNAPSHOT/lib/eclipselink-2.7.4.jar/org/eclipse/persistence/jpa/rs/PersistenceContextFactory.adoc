@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/PersistenceContextFactory.class
-
- - link:PersistenceContextFactory-asmified.java[Asmified]
-
-== References
-

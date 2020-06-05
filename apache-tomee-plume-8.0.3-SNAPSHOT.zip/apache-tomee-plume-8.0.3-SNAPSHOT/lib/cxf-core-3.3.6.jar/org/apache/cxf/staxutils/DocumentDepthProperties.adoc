@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/DocumentDepthProperties.class
-
- - link:DocumentDepthProperties-asmified.java[Asmified]
-
-== References
-

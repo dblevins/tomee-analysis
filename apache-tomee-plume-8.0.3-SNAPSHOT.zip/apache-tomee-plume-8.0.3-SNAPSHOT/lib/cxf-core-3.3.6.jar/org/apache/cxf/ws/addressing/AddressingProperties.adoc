@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/AddressingProperties.class
-
- - link:AddressingProperties-asmified.java[Asmified]
-
-== References
-

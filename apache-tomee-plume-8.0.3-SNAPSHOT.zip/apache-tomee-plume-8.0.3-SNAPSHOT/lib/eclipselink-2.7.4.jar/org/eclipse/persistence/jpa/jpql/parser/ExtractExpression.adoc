@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ExtractExpression.class
-
- - link:ExtractExpression-asmified.java[Asmified]
-
-== References
-

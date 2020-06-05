@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/IntegerEditor.class
-
- - link:IntegerEditor-asmified.java[Asmified]
-
-== References
-

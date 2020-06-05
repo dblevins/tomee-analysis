@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/schemaframework/VarrayDefinition.class
-
- - link:VarrayDefinition-asmified.java[Asmified]
-
-== References
-

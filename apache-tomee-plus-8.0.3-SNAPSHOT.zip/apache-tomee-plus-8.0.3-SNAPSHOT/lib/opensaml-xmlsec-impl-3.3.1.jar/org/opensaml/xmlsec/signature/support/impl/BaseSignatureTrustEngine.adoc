@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/support/impl/BaseSignatureTrustEngine.class
-
- - link:BaseSignatureTrustEngine-asmified.java[Asmified]
-
-== References
-

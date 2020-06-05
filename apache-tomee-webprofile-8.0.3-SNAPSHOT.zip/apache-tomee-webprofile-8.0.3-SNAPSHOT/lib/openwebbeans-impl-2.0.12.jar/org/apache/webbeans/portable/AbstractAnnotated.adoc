@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AbstractAnnotated.class
-
- - link:AbstractAnnotated-asmified.java[Asmified]
-
-== References
-

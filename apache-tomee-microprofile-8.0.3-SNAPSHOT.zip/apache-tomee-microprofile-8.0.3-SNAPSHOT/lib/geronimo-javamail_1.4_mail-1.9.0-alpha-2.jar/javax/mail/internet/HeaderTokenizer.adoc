@@ -1,9 +1,0 @@
-= javax/mail/internet/HeaderTokenizer.class
-
- - link:HeaderTokenizer-asmified.java[Asmified]
-
-== References
-
- - javax.mail.internet.HeaderTokenizer$Token - 26
- - javax.mail.internet.HeaderTokenizer - 12
- - javax.mail.internet.ParseException - 12

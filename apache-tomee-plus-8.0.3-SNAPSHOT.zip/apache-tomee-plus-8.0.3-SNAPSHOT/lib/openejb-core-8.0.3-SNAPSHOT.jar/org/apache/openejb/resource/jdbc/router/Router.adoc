@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/router/Router.class
-
- - link:Router-asmified.java[Asmified]
-
-== References
-

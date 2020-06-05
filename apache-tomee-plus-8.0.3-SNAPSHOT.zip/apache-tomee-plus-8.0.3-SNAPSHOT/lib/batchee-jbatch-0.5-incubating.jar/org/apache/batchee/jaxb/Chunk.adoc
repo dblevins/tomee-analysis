@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Chunk.class
-
- - link:Chunk-asmified.java[Asmified]
-
-== References
-

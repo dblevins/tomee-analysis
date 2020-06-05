@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/provisining/ProvisioningResolverAware.class
-
- - link:ProvisioningResolverAware-asmified.java[Asmified]
-
-== References
-

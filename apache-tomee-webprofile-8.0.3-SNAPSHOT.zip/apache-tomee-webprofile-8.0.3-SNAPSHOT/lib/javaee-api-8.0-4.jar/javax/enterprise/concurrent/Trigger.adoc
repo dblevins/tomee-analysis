@@ -1,7 +1,0 @@
-= javax/enterprise/concurrent/Trigger.class
-
- - link:Trigger-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.concurrent.LastExecution - 2

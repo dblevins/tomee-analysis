@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/pool/PoolDataSourceCreator.class
-
- - link:PoolDataSourceCreator-asmified.java[Asmified]
-
-== References
-

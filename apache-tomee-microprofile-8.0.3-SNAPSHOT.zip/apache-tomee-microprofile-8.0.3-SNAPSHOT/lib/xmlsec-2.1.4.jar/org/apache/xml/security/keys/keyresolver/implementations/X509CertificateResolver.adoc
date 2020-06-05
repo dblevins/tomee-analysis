@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/keyresolver/implementations/X509CertificateResolver.class
-
- - link:X509CertificateResolver-asmified.java[Asmified]
-
-== References
-

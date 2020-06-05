@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/RecipientKeyInfoImpl.class
-
- - link:RecipientKeyInfoImpl-asmified.java[Asmified]
-
-== References
-

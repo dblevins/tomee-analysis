@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTExceptionMapper.class
-
- - link:MPJWTFilter$MPJWTExceptionMapper-asmified.java[Asmified]
-
-== References
-

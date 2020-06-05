@@ -1,6 +1,0 @@
-= org/hsqldb/Routine.class
-
- - link:Routine-asmified.java[Asmified]
-
-== References
-

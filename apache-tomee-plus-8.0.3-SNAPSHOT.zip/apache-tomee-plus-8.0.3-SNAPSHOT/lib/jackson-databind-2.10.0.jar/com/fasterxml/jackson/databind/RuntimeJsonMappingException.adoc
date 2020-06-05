@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/RuntimeJsonMappingException.class
-
- - link:RuntimeJsonMappingException-asmified.java[Asmified]
-
-== References
-

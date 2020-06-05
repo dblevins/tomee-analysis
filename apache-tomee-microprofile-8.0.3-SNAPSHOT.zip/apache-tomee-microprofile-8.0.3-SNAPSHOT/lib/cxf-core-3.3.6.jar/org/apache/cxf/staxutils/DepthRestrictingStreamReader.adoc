@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/DepthRestrictingStreamReader.class
-
- - link:DepthRestrictingStreamReader-asmified.java[Asmified]
-
-== References
-

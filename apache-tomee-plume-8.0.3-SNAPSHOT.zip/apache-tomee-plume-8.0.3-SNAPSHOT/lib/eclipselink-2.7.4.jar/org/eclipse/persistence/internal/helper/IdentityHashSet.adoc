@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/IdentityHashSet.class
-
- - link:IdentityHashSet-asmified.java[Asmified]
-
-== References
-

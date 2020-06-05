@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/SQLValue.class
-
- - link:SQLValue-asmified.java[Asmified]
-
-== References
-

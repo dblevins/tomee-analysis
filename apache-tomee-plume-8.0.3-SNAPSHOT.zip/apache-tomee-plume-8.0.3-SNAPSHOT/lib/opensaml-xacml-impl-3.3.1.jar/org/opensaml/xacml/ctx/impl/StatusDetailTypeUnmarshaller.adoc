@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/StatusDetailTypeUnmarshaller.class
-
- - link:StatusDetailTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_HtmlMessages.class
-
- - link:_HtmlMessages-asmified.java[Asmified]
-
-== References
-

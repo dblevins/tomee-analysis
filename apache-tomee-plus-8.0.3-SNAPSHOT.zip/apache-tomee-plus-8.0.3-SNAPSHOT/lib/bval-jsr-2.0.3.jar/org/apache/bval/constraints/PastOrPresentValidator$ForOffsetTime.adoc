@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/PastOrPresentValidator$ForOffsetTime.class
-
- - link:PastOrPresentValidator$ForOffsetTime-asmified.java[Asmified]
-
-== References
-

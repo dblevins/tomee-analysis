@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/EjbQlQuery.class
-
- - link:EjbQlQuery-asmified.java[Asmified]
-
-== References
-

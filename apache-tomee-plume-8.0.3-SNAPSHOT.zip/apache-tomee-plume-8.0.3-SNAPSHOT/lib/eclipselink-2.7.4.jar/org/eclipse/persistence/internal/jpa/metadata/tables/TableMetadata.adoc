@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/tables/TableMetadata.class
-
- - link:TableMetadata-asmified.java[Asmified]
-
-== References
-

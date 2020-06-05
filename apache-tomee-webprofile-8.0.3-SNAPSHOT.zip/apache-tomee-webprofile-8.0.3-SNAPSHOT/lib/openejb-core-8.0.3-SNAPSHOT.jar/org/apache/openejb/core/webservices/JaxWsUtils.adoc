@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/JaxWsUtils.class
-
- - link:JaxWsUtils-asmified.java[Asmified]
-
-== References
-

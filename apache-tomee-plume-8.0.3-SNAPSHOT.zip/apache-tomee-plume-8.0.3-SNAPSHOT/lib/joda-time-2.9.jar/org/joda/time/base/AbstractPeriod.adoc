@@ -1,6 +1,0 @@
-= org/joda/time/base/AbstractPeriod.class
-
- - link:AbstractPeriod-asmified.java[Asmified]
-
-== References
-

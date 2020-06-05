@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/FilterProviderInfo.class
-
- - link:FilterProviderInfo-asmified.java[Asmified]
-
-== References
-

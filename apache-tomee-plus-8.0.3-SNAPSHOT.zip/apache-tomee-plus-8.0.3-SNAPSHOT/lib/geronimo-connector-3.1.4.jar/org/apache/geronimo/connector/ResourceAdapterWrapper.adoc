@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/ResourceAdapterWrapper.class
-
- - link:ResourceAdapterWrapper-asmified.java[Asmified]
-
-== References
-

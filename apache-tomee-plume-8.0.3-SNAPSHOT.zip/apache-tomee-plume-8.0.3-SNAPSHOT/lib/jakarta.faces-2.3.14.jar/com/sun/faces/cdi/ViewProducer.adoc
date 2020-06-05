@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/ViewProducer.class
-
- - link:ViewProducer-asmified.java[Asmified]
-
-== References
-

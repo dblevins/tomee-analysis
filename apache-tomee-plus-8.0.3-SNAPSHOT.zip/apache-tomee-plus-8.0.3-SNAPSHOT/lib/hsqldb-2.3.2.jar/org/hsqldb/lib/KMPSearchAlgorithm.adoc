@@ -1,6 +1,0 @@
-= org/hsqldb/lib/KMPSearchAlgorithm.class
-
- - link:KMPSearchAlgorithm-asmified.java[Asmified]
-
-== References
-

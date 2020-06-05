@@ -1,6 +1,0 @@
-= jakarta/cache/annotation/CacheInvocationParameter.class
-
- - link:CacheInvocationParameter-asmified.java[Asmified]
-
-== References
-

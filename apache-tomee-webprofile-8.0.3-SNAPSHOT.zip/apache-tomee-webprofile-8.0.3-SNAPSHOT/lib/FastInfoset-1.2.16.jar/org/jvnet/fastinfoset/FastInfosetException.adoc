@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/FastInfosetException.class
-
- - link:FastInfosetException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/bag/PredicatedBag.class
-
- - link:PredicatedBag-asmified.java[Asmified]
-
-== References
-

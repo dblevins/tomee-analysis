@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/SimplePropertiesTriggerPersistenceDelegateSupport.class
-
- - link:SimplePropertiesTriggerPersistenceDelegateSupport-asmified.java[Asmified]
-
-== References
-

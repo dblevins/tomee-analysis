@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/logic/MetadataNameIdentifierFormatStrategy$MetadataLookupStrategy.class
-
- - link:MetadataNameIdentifierFormatStrategy$MetadataLookupStrategy-asmified.java[Asmified]
-
-== References
-

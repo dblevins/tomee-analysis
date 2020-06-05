@@ -1,6 +1,0 @@
-= org/apache/activemq/util/HexSupport.class
-
- - link:HexSupport-asmified.java[Asmified]
-
-== References
-

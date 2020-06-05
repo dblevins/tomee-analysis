@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/InternalException.class
-
- - link:InternalException-asmified.java[Asmified]
-
-== References
-

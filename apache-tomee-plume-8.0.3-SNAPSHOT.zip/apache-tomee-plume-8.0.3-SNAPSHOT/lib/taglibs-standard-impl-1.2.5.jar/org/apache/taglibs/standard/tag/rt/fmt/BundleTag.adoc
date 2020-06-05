@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/fmt/BundleTag.class
-
- - link:BundleTag-asmified.java[Asmified]
-
-== References
-

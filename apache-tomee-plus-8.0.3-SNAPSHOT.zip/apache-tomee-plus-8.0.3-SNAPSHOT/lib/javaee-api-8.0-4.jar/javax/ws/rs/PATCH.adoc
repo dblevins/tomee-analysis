@@ -1,7 +1,0 @@
-= javax/ws/rs/PATCH.class
-
- - link:PATCH-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.HttpMethod - 1

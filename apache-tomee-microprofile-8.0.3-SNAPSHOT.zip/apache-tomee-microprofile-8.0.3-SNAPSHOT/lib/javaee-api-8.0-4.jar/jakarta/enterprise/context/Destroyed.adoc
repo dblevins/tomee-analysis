@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/Destroyed.class
-
- - link:Destroyed-asmified.java[Asmified]
-
-== References
-

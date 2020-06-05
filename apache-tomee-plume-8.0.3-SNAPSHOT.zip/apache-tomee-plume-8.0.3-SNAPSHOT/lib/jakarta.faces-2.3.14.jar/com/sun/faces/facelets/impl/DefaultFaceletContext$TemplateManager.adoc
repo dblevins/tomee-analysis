@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/impl/DefaultFaceletContext$TemplateManager.class
-
- - link:DefaultFaceletContext$TemplateManager-asmified.java[Asmified]
-
-== References
-

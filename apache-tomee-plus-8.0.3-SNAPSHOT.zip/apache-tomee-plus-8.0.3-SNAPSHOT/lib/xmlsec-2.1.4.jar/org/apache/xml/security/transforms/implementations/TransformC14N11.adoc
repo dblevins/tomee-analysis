@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/implementations/TransformC14N11.class
-
- - link:TransformC14N11-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/SybaseJDBCAdapter.class
-
- - link:SybaseJDBCAdapter-asmified.java[Asmified]
-
-== References
-

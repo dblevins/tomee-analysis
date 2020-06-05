@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/DotNode.class
-
- - link:DotNode-asmified.java[Asmified]
-
-== References
-

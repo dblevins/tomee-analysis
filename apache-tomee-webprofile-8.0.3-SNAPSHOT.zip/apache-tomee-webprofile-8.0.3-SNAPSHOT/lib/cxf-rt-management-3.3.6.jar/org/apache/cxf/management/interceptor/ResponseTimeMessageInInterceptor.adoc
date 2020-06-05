@@ -1,6 +1,0 @@
-= org/apache/cxf/management/interceptor/ResponseTimeMessageInInterceptor.class
-
- - link:ResponseTimeMessageInInterceptor-asmified.java[Asmified]
-
-== References
-

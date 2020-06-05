@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/LabelRenderer.class
-
- - link:LabelRenderer-asmified.java[Asmified]
-
-== References
-

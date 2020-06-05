@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/math/linearalgebra/PolynomialGF2mSmallM.class
-
- - link:PolynomialGF2mSmallM-asmified.java[Asmified]
-
-== References
-

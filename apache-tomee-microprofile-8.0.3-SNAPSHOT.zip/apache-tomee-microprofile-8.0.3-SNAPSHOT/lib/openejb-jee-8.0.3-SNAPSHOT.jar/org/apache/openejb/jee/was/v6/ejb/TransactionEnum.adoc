@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejb/TransactionEnum.class
-
- - link:TransactionEnum-asmified.java[Asmified]
-
-== References
-

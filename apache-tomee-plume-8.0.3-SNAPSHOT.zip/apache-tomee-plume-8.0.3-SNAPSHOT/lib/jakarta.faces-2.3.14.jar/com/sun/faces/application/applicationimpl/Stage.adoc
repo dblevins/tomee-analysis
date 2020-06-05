@@ -1,6 +1,0 @@
-= com/sun/faces/application/applicationimpl/Stage.class
-
- - link:Stage-asmified.java[Asmified]
-
-== References
-

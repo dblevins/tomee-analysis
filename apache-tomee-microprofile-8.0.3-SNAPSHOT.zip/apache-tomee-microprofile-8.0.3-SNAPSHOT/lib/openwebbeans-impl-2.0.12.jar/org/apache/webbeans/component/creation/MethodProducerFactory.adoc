@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/MethodProducerFactory.class
-
- - link:MethodProducerFactory-asmified.java[Asmified]
-
-== References
-

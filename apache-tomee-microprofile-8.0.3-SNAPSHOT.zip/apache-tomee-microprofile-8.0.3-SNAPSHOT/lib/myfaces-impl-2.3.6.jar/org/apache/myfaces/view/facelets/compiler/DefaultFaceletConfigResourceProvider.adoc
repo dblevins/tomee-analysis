@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/DefaultFaceletConfigResourceProvider.class
-
- - link:DefaultFaceletConfigResourceProvider-asmified.java[Asmified]
-
-== References
-

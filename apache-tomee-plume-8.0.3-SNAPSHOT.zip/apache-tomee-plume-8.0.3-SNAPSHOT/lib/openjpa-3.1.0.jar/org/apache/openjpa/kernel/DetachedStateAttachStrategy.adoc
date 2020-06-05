@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/DetachedStateAttachStrategy.class
-
- - link:DetachedStateAttachStrategy-asmified.java[Asmified]
-
-== References
-

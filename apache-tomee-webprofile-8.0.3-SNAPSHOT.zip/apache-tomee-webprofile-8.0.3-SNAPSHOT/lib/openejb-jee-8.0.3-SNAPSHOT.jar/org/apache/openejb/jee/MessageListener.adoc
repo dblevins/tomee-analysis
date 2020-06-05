@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MessageListener.class
-
- - link:MessageListener-asmified.java[Asmified]
-
-== References
-

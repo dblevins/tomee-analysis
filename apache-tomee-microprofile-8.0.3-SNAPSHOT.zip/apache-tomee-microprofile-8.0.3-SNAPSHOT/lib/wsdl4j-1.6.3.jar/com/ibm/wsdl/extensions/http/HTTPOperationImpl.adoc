@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/http/HTTPOperationImpl.class
-
- - link:HTTPOperationImpl-asmified.java[Asmified]
-
-== References
-

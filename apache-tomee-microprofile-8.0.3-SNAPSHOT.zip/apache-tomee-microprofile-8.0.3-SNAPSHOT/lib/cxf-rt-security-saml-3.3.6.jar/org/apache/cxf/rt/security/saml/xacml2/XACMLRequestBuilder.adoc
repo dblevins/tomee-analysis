@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/saml/xacml2/XACMLRequestBuilder.class
-
- - link:XACMLRequestBuilder-asmified.java[Asmified]
-
-== References
-

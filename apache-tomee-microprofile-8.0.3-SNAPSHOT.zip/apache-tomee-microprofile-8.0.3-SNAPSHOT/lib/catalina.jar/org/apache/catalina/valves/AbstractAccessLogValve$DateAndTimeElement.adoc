@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/AbstractAccessLogValve$DateAndTimeElement.class
-
- - link:AbstractAccessLogValve$DateAndTimeElement-asmified.java[Asmified]
-
-== References
-

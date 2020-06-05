@@ -1,6 +1,0 @@
-= org/apache/cxf/common/xmlschema/InvalidXmlSchemaReferenceException.class
-
- - link:InvalidXmlSchemaReferenceException-asmified.java[Asmified]
-
-== References
-

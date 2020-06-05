@@ -1,6 +1,0 @@
-= jakarta/annotation/Resource$AuthenticationType.class
-
- - link:Resource$AuthenticationType-asmified.java[Asmified]
-
-== References
-

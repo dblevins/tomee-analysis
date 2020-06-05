@@ -1,8 +1,0 @@
-= javax/xml/bind/annotation/adapters/NormalizedStringAdapter.class
-
- - link:NormalizedStringAdapter-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.annotation.adapters.NormalizedStringAdapter - 4
- - javax.xml.bind.annotation.adapters.XmlAdapter - 2

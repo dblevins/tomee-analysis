@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/JwsSignatureVerifier.class
-
- - link:JwsSignatureVerifier-asmified.java[Asmified]
-
-== References
-

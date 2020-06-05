@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Mappings.class
-
- - link:Mappings-asmified.java[Asmified]
-
-== References
-

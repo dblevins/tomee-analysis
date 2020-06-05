@@ -1,6 +1,0 @@
-= org/w3c/dom/xpath/XPathExpression.class
-
- - link:XPathExpression-asmified.java[Asmified]
-
-== References
-

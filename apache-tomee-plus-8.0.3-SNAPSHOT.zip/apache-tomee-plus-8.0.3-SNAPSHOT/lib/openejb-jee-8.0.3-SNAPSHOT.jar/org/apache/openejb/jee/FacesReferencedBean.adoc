@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesReferencedBean.class
-
- - link:FacesReferencedBean-asmified.java[Asmified]
-
-== References
-

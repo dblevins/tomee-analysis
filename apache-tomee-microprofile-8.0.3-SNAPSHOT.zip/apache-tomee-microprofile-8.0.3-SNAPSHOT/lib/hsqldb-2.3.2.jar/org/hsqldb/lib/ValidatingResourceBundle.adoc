@@ -1,6 +1,0 @@
-= org/hsqldb/lib/ValidatingResourceBundle.class
-
- - link:ValidatingResourceBundle-asmified.java[Asmified]
-
-== References
-

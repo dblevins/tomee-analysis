@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/pool/JDBCPooledDataSource.class
-
- - link:JDBCPooledDataSource-asmified.java[Asmified]
-
-== References
-

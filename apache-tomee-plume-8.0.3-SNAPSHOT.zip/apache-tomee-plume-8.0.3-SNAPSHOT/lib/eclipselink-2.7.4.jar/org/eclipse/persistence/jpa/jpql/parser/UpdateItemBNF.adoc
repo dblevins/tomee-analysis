@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/UpdateItemBNF.class
-
- - link:UpdateItemBNF-asmified.java[Asmified]
-
-== References
-

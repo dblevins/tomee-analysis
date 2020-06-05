@@ -1,6 +1,0 @@
-= jakarta/faces/context/PartialResponseWriter.class
-
- - link:PartialResponseWriter-asmified.java[Asmified]
-
-== References
-

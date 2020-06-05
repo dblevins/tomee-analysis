@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/MultiPointSender.class
-
- - link:MultiPointSender-asmified.java[Asmified]
-
-== References
-

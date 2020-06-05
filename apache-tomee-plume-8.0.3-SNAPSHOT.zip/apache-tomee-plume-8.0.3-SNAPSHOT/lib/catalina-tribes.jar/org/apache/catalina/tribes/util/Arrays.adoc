@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/util/Arrays.class
-
- - link:Arrays-asmified.java[Asmified]
-
-== References
-

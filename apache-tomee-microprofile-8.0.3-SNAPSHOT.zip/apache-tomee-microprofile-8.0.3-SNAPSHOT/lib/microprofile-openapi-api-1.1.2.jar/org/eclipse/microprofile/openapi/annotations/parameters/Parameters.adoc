@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/parameters/Parameters.class
-
- - link:Parameters-asmified.java[Asmified]
-
-== References
-

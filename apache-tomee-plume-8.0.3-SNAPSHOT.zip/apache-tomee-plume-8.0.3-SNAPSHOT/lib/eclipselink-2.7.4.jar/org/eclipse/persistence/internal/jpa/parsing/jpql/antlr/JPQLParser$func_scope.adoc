@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser$func_scope.class
-
- - link:JPQLParser$func_scope-asmified.java[Asmified]
-
-== References
-

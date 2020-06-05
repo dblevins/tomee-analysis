@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/Types$Embeddable.class
-
- - link:Types$Embeddable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ee/jmx/jboss/JBoss4RMIRemoteMBeanScheduler.class
-
- - link:JBoss4RMIRemoteMBeanScheduler-asmified.java[Asmified]
-
-== References
-

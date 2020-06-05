@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/reflection/Records.class
-
- - link:Records-asmified.java[Asmified]
-
-== References
-

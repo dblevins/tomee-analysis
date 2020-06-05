@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidateReturnValue$ForConstructor.class
-
- - link:ValidateReturnValue$ForConstructor-asmified.java[Asmified]
-
-== References
-

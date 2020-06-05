@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/cluster/UndeployMessage.class
-
- - link:UndeployMessage-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/JaxbJavaee$JaxbJavaeeSchemaResourceResolver.class
-
- - link:JaxbJavaee$JaxbJavaeeSchemaResourceResolver-asmified.java[Asmified]
-
-== References
-

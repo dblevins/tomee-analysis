@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/ConcreteSubclassFactory.class
-
- - link:ConcreteSubclassFactory-asmified.java[Asmified]
-
-== References
-

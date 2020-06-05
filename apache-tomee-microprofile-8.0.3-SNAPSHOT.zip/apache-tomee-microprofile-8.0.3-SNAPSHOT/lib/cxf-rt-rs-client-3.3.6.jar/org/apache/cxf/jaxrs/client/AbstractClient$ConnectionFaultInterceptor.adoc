@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/AbstractClient$ConnectionFaultInterceptor.class
-
- - link:AbstractClient$ConnectionFaultInterceptor-asmified.java[Asmified]
-
-== References
-

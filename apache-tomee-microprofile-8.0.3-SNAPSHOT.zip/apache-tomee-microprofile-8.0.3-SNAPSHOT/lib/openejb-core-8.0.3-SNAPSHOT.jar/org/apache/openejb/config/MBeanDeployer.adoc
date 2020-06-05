@@ -1,6 +1,0 @@
-= org/apache/openejb/config/MBeanDeployer.class
-
- - link:MBeanDeployer-asmified.java[Asmified]
-
-== References
-

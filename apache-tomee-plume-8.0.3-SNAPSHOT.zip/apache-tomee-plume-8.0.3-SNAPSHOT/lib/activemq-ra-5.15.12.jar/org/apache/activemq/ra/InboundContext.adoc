@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/InboundContext.class
-
- - link:InboundContext-asmified.java[Asmified]
-
-== References
-

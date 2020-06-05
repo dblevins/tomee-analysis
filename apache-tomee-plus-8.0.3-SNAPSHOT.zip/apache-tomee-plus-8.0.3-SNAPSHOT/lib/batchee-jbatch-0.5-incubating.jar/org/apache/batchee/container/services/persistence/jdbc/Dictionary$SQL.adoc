@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/jdbc/Dictionary$SQL.class
-
- - link:Dictionary$SQL-asmified.java[Asmified]
-
-== References
-

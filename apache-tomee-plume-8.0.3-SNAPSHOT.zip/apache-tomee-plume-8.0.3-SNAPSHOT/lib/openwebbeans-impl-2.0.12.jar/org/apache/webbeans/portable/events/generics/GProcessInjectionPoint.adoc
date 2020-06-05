@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessInjectionPoint.class
-
- - link:GProcessInjectionPoint-asmified.java[Asmified]
-
-== References
-

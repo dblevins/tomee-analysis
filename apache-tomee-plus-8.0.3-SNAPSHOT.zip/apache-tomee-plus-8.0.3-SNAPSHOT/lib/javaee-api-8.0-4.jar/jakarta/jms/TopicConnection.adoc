@@ -1,6 +1,0 @@
-= jakarta/jms/TopicConnection.class
-
- - link:TopicConnection-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/dbcp/BasicManagedDataSource$1.class
-
- - link:BasicManagedDataSource$1-asmified.java[Asmified]
-
-== References
-

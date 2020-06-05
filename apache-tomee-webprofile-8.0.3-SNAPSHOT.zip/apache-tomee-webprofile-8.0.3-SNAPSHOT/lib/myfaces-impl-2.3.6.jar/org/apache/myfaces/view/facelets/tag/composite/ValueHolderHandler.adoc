@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/ValueHolderHandler.class
-
- - link:ValueHolderHandler-asmified.java[Asmified]
-
-== References
-

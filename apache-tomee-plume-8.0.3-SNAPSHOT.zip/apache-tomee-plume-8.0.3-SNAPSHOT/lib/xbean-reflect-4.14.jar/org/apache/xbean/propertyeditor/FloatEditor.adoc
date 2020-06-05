@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/FloatEditor.class
-
- - link:FloatEditor-asmified.java[Asmified]
-
-== References
-

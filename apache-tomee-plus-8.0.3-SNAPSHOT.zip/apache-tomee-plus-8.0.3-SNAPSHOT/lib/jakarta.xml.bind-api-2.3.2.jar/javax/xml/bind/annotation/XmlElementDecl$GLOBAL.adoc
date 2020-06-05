@@ -1,6 +1,0 @@
-= javax/xml/bind/annotation/XmlElementDecl$GLOBAL.class
-
- - link:XmlElementDecl$GLOBAL-asmified.java[Asmified]
-
-== References
-

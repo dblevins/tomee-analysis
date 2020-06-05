@@ -1,6 +1,0 @@
-= org/joda/time/field/FieldUtils.class
-
- - link:FieldUtils-asmified.java[Asmified]
-
-== References
-

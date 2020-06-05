@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SimpleResultVariableBNF.class
-
- - link:SimpleResultVariableBNF-asmified.java[Asmified]
-
-== References
-

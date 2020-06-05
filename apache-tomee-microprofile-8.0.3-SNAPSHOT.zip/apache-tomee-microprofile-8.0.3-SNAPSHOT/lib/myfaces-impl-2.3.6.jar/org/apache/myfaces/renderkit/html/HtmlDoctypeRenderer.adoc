@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlDoctypeRenderer.class
-
- - link:HtmlDoctypeRenderer-asmified.java[Asmified]
-
-== References
-

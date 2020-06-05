@@ -1,6 +1,0 @@
-= javax/cache/annotation/CacheDefaults.class
-
- - link:CacheDefaults-asmified.java[Asmified]
-
-== References
-

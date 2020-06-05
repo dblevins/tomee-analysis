@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBUtils$IdentifierType.class
-
- - link:JAXBUtils$IdentifierType-asmified.java[Asmified]
-
-== References
-

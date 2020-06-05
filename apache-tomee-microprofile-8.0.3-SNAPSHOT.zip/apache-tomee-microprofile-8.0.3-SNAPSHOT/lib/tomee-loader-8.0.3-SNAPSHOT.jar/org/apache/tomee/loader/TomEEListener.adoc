@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/TomEEListener.class
-
- - link:TomEEListener-asmified.java[Asmified]
-
-== References
-

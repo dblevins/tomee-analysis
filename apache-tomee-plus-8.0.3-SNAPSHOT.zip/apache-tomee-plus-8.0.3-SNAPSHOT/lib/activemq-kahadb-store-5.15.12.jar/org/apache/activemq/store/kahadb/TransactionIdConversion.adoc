@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/TransactionIdConversion.class
-
- - link:TransactionIdConversion-asmified.java[Asmified]
-
-== References
-

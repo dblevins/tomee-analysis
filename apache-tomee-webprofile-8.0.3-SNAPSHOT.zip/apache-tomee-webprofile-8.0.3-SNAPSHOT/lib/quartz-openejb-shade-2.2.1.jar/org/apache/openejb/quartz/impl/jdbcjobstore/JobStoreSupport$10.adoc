@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreSupport$10.class
-
- - link:JobStoreSupport$10-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/enterprise/concurrent/ManagedThreadFactory.class
-
- - link:ManagedThreadFactory-asmified.java[Asmified]
-
-== References
-

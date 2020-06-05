@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityToken/UsernameSecurityToken.class
-
- - link:UsernameSecurityToken-asmified.java[Asmified]
-
-== References
-

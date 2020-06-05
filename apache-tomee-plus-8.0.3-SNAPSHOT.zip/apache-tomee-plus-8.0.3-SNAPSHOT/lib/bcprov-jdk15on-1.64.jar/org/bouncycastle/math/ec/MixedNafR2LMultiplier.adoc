@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/MixedNafR2LMultiplier.class
-
- - link:MixedNafR2LMultiplier-asmified.java[Asmified]
-
-== References
-

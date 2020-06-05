@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/LiteralXMLInstruction.class
-
- - link:LiteralXMLInstruction-asmified.java[Asmified]
-
-== References
-

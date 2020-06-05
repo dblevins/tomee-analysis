@@ -1,6 +1,0 @@
-= org/hsqldb/StatementSession.class
-
- - link:StatementSession-asmified.java[Asmified]
-
-== References
-

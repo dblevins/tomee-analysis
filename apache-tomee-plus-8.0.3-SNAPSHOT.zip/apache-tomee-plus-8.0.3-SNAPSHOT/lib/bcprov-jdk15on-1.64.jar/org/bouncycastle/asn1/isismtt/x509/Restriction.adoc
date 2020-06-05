@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/isismtt/x509/Restriction.class
-
- - link:Restriction-asmified.java[Asmified]
-
-== References
-

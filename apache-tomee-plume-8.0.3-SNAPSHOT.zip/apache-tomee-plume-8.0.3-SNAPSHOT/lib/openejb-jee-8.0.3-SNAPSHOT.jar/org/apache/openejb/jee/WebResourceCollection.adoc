@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/WebResourceCollection.class
-
- - link:WebResourceCollection-asmified.java[Asmified]
-
-== References
-

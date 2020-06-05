@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/IgnoredStandardContext$1.class
-
- - link:IgnoredStandardContext$1-asmified.java[Asmified]
-
-== References
-

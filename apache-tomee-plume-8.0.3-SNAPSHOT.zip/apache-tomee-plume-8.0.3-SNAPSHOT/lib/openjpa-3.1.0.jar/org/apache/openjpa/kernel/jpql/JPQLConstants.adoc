@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/jpql/JPQLConstants.class
-
- - link:JPQLConstants-asmified.java[Asmified]
-
-== References
-

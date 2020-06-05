@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/ParameterEncoding.class
-
- - link:ParameterEncoding-asmified.java[Asmified]
-
-== References
-

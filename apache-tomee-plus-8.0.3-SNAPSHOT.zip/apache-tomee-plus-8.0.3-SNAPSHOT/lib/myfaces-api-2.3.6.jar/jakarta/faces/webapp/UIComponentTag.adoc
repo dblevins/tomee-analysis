@@ -1,6 +1,0 @@
-= jakarta/faces/webapp/UIComponentTag.class
-
- - link:UIComponentTag-asmified.java[Asmified]
-
-== References
-

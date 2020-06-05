@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/DestinationWithEndpoint.class
-
- - link:DestinationWithEndpoint-asmified.java[Asmified]
-
-== References
-

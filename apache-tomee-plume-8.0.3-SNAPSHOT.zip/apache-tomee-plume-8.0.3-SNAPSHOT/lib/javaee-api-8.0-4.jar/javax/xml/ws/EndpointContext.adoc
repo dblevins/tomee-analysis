@@ -1,7 +1,0 @@
-= javax/xml/ws/EndpointContext.class
-
- - link:EndpointContext-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.Endpoint - 1

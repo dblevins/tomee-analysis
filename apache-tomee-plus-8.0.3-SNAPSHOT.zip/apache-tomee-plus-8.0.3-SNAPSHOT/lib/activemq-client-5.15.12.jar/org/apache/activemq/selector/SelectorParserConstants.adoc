@@ -1,6 +1,0 @@
-= org/apache/activemq/selector/SelectorParserConstants.class
-
- - link:SelectorParserConstants-asmified.java[Asmified]
-
-== References
-

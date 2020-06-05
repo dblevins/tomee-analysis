@@ -1,6 +1,0 @@
-= jakarta/faces/validator/MessageFactory.class
-
- - link:MessageFactory-asmified.java[Asmified]
-
-== References
-

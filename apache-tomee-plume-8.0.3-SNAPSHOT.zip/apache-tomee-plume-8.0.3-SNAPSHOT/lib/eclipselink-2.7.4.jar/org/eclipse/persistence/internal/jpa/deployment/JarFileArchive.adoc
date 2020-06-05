@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/JarFileArchive.class
-
- - link:JarFileArchive-asmified.java[Asmified]
-
-== References
-

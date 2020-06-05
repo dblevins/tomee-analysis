@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/ArrayRecord.class
-
- - link:ArrayRecord-asmified.java[Asmified]
-
-== References
-

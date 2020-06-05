@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/managed/DataSourceXAConnectionFactory.class
-
- - link:DataSourceXAConnectionFactory-asmified.java[Asmified]
-
-== References
-

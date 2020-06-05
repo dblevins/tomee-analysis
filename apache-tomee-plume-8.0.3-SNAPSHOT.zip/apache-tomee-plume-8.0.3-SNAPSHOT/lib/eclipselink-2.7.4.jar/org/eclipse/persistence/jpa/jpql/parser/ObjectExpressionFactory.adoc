@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ObjectExpressionFactory.class
-
- - link:ObjectExpressionFactory-asmified.java[Asmified]
-
-== References
-

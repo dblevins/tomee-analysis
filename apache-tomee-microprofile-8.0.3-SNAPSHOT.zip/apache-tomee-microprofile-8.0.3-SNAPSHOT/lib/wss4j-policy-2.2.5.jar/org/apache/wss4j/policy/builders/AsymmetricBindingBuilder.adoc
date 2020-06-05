@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/AsymmetricBindingBuilder.class
-
- - link:AsymmetricBindingBuilder-asmified.java[Asmified]
-
-== References
-

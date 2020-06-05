@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/FacesConfigDispenser.class
-
- - link:FacesConfigDispenser-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/CodedOutputStream.class
-
- - link:CodedOutputStream-asmified.java[Asmified]
-
-== References
-

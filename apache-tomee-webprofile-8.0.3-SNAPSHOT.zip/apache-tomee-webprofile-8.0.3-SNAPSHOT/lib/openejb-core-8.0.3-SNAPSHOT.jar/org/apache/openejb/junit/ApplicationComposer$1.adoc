@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/ApplicationComposer$1.class
-
- - link:ApplicationComposer$1-asmified.java[Asmified]
-
-== References
-

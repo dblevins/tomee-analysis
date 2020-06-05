@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/DataCache.class
-
- - link:DataCache-asmified.java[Asmified]
-
-== References
-

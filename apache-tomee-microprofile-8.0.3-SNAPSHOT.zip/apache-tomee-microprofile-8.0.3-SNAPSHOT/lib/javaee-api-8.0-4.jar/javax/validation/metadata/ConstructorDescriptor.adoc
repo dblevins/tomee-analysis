@@ -1,7 +1,0 @@
-= javax/validation/metadata/ConstructorDescriptor.class
-
- - link:ConstructorDescriptor-asmified.java[Asmified]
-
-== References
-
- - javax.validation.metadata.ExecutableDescriptor - 1

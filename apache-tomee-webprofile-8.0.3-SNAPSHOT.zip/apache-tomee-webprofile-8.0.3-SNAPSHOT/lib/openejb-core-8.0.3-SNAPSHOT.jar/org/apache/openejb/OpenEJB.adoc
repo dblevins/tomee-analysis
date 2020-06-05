@@ -1,6 +1,0 @@
-= org/apache/openejb/OpenEJB.class
-
- - link:OpenEJB-asmified.java[Asmified]
-
-== References
-

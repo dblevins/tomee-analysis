@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/atom/AtomEntryProvider.class
-
- - link:AtomEntryProvider-asmified.java[Asmified]
-
-== References
-

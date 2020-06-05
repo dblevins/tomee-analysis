@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/EjbUserTransaction.class
-
- - link:EjbUserTransaction-asmified.java[Asmified]
-
-== References
-

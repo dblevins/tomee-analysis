@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/ListUtils$Partition.class
-
- - link:ListUtils$Partition-asmified.java[Asmified]
-
-== References
-

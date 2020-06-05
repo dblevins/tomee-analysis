@@ -1,6 +1,0 @@
-= jakarta/websocket/server/ServerEndpointConfig$Builder.class
-
- - link:ServerEndpointConfig$Builder-asmified.java[Asmified]
-
-== References
-

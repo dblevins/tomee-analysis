@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/se/SeContainerInitializer.class
-
- - link:SeContainerInitializer-asmified.java[Asmified]
-
-== References
-

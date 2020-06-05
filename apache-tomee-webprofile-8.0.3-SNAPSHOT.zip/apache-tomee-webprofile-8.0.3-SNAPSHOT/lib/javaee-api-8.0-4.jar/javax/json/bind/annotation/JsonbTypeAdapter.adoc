@@ -1,8 +1,0 @@
-= javax/json/bind/annotation/JsonbTypeAdapter.class
-
- - link:JsonbTypeAdapter-asmified.java[Asmified]
-
-== References
-
- - javax.json.bind.adapter.JsonbAdapter - 1
- - javax.json.bind.annotation.JsonbAnnotation - 1

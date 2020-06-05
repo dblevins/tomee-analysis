@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/TableVariableDeclarationFactory.class
-
- - link:TableVariableDeclarationFactory-asmified.java[Asmified]
-
-== References
-

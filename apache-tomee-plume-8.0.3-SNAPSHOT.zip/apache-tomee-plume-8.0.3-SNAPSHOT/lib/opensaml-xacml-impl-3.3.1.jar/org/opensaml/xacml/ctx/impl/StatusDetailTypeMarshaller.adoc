@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/StatusDetailTypeMarshaller.class
-
- - link:StatusDetailTypeMarshaller-asmified.java[Asmified]
-
-== References
-

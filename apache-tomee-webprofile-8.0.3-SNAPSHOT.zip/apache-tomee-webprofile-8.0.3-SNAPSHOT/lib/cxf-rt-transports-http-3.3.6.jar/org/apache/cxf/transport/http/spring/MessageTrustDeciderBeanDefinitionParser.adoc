@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/spring/MessageTrustDeciderBeanDefinitionParser.class
-
- - link:MessageTrustDeciderBeanDefinitionParser-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/security/PrivilegedGetMethodReturnType.class
-
- - link:PrivilegedGetMethodReturnType-asmified.java[Asmified]
-
-== References
-

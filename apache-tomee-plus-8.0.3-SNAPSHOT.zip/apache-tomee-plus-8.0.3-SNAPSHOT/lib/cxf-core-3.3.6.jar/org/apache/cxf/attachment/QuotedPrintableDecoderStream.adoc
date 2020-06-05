@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/QuotedPrintableDecoderStream.class
-
- - link:QuotedPrintableDecoderStream-asmified.java[Asmified]
-
-== References
-

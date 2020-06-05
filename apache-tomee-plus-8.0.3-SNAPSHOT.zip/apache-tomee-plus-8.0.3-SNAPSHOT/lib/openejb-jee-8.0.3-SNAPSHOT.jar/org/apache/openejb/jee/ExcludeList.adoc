@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ExcludeList.class
-
- - link:ExcludeList-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/HintHandler.class
-
- - link:HintHandler-asmified.java[Asmified]
-
-== References
-

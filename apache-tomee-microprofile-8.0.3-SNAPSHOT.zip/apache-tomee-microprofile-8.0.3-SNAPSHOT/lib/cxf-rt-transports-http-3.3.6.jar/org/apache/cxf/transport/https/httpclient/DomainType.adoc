@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/httpclient/DomainType.class
-
- - link:DomainType-asmified.java[Asmified]
-
-== References
-

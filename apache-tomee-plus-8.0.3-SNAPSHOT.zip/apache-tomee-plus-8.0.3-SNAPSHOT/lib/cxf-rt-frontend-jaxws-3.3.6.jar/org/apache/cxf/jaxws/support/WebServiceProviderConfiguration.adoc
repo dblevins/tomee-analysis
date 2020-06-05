@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/support/WebServiceProviderConfiguration.class
-
- - link:WebServiceProviderConfiguration-asmified.java[Asmified]
-
-== References
-

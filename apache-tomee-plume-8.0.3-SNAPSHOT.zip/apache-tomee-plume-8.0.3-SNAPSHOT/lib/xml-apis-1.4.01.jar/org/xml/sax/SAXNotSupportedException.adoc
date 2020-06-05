@@ -1,6 +1,0 @@
-= org/xml/sax/SAXNotSupportedException.class
-
- - link:SAXNotSupportedException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/JNDIRequest.class
-
- - link:JNDIRequest-asmified.java[Asmified]
-
-== References
-

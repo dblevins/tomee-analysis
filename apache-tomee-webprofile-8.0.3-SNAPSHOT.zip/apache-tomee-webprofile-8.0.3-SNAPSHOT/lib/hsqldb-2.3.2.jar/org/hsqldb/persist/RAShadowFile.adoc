@@ -1,6 +1,0 @@
-= org/hsqldb/persist/RAShadowFile.class
-
- - link:RAShadowFile-asmified.java[Asmified]
-
-== References
-

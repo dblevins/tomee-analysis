@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HTTPConduit$InterposedMessageObserver.class
-
- - link:HTTPConduit$InterposedMessageObserver-asmified.java[Asmified]
-
-== References
-

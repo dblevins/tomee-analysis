@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/iso/ISOIECObjectIdentifiers.class
-
- - link:ISOIECObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

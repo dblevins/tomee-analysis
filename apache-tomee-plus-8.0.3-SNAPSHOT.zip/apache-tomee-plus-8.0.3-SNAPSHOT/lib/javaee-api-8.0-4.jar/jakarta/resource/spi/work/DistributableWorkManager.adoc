@@ -1,6 +1,0 @@
-= jakarta/resource/spi/work/DistributableWorkManager.class
-
- - link:DistributableWorkManager-asmified.java[Asmified]
-
-== References
-

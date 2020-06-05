@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/ArrayBuilders$FloatBuilder.class
-
- - link:ArrayBuilders$FloatBuilder-asmified.java[Asmified]
-
-== References
-

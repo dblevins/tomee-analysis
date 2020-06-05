@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/mappings/BatchFetchMetadata.class
-
- - link:BatchFetchMetadata-asmified.java[Asmified]
-
-== References
-

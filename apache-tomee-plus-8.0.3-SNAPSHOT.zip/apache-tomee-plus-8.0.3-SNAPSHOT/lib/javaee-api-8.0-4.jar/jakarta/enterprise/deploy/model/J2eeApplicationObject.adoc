@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/model/J2eeApplicationObject.class
-
- - link:J2eeApplicationObject-asmified.java[Asmified]
-
-== References
-

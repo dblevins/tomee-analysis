@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter.class
-
- - link:CacheControlClientRequestFilter-asmified.java[Asmified]
-
-== References
-

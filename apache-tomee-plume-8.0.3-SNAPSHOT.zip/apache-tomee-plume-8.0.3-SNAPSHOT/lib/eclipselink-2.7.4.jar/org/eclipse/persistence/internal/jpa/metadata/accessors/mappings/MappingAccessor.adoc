@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/MappingAccessor.class
-
- - link:MappingAccessor-asmified.java[Asmified]
-
-== References
-

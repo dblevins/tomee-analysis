@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler.class
-
- - link:EditableValueHolderHandler-asmified.java[Asmified]
-
-== References
-

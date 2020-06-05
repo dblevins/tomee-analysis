@@ -1,6 +1,0 @@
-= org/apache/cxf/management/persistence/ExchangeDataFilter.class
-
- - link:ExchangeDataFilter-asmified.java[Asmified]
-
-== References
-

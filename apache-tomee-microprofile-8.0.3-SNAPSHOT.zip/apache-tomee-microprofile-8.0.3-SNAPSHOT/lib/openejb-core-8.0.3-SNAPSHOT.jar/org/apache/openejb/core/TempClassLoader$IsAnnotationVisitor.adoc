@@ -1,6 +1,0 @@
-= org/apache/openejb/core/TempClassLoader$IsAnnotationVisitor.class
-
- - link:TempClassLoader$IsAnnotationVisitor-asmified.java[Asmified]
-
-== References
-

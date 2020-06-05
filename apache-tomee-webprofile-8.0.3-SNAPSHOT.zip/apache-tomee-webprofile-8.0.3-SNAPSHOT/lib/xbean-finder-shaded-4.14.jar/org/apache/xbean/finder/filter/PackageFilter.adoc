@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/filter/PackageFilter.class
-
- - link:PackageFilter-asmified.java[Asmified]
-
-== References
-

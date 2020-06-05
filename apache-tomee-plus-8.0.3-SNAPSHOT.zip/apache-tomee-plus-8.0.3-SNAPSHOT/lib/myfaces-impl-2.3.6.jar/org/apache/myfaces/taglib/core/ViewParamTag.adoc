@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ViewParamTag.class
-
- - link:ViewParamTag-asmified.java[Asmified]
-
-== References
-

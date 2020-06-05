@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/InvalidStateException.class
-
- - link:InvalidStateException-asmified.java[Asmified]
-
-== References
-

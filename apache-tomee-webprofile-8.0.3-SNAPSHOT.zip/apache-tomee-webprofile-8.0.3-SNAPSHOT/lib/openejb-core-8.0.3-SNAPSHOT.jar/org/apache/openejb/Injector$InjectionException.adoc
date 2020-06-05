@@ -1,6 +1,0 @@
-= org/apache/openejb/Injector$InjectionException.class
-
- - link:Injector$InjectionException-asmified.java[Asmified]
-
-== References
-

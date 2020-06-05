@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/ResponseStatus.class
-
- - link:ResponseStatus-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/WildcardConfigurableJohnzonProvider.class
-
- - link:WildcardConfigurableJohnzonProvider-asmified.java[Asmified]
-
-== References
-

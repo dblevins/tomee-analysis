@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/OSGiManagedRuntime.class
-
- - link:OSGiManagedRuntime-asmified.java[Asmified]
-
-== References
-

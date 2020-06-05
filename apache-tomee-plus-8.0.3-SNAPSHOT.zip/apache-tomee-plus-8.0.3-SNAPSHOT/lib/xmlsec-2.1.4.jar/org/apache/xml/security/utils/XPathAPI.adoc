@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/XPathAPI.class
-
- - link:XPathAPI-asmified.java[Asmified]
-
-== References
-

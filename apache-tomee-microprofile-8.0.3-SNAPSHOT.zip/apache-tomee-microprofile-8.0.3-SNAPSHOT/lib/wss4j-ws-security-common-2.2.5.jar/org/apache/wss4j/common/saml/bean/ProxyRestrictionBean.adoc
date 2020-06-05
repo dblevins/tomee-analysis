@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/bean/ProxyRestrictionBean.class
-
- - link:ProxyRestrictionBean-asmified.java[Asmified]
-
-== References
-

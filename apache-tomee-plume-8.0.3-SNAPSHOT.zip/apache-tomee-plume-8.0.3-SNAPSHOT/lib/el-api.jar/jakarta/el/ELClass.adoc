@@ -1,6 +1,0 @@
-= jakarta/el/ELClass.class
-
- - link:ELClass-asmified.java[Asmified]
-
-== References
-

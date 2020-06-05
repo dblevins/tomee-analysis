@@ -1,6 +1,0 @@
-= org/joda/time/chrono/AssembledChronology$Fields.class
-
- - link:AssembledChronology$Fields-asmified.java[Asmified]
-
-== References
-

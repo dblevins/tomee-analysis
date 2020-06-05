@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/FileSchemaFactory.class
-
- - link:FileSchemaFactory-asmified.java[Asmified]
-
-== References
-

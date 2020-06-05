@@ -1,6 +1,0 @@
-= jakarta/resource/spi/work/WorkListener.class
-
- - link:WorkListener-asmified.java[Asmified]
-
-== References
-

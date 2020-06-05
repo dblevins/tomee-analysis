@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/util/stax/LazyEnvelopeStaxReader.class
-
- - link:LazyEnvelopeStaxReader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/OpenJPAEntityManager.class
-
- - link:OpenJPAEntityManager-asmified.java[Asmified]
-
-== References
-

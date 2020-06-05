@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/cluster/ConnectionSplitBroker.class
-
- - link:ConnectionSplitBroker-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ClientLoginModule.class
-
- - link:ClientLoginModule-asmified.java[Asmified]
-
-== References
-

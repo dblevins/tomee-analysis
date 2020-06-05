@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/TxBeanManaged.class
-
- - link:TxBeanManaged-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/SimpleLog.class
-
- - link:SimpleLog-asmified.java[Asmified]
-
-== References
-

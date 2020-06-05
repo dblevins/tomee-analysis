@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

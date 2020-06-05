@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/InjectionTarget$JAXB.class
-
- - link:InjectionTarget$JAXB-asmified.java[Asmified]
-
-== References
-

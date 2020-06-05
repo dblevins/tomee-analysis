@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/HttpRequestImpl$SessionInvalidateListener.class
-
- - link:HttpRequestImpl$SessionInvalidateListener-asmified.java[Asmified]
-
-== References
-

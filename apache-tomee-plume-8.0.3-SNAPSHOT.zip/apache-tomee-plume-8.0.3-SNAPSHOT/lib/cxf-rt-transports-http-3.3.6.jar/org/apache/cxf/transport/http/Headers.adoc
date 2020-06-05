@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/Headers.class
-
- - link:Headers-asmified.java[Asmified]
-
-== References
-

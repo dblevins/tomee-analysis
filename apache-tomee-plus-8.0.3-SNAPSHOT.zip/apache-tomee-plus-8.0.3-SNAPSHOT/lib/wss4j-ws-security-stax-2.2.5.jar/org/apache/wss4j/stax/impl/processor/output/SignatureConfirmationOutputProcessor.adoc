@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/output/SignatureConfirmationOutputProcessor.class
-
- - link:SignatureConfirmationOutputProcessor-asmified.java[Asmified]
-
-== References
-

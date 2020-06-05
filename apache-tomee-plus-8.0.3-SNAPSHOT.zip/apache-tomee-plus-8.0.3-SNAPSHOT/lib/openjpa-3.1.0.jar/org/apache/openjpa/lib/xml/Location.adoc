@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/xml/Location.class
-
- - link:Location-asmified.java[Asmified]
-
-== References
-

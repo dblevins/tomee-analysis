@@ -1,6 +1,0 @@
-= jakarta/xml/ws/ProtocolException.class
-
- - link:ProtocolException-asmified.java[Asmified]
-
-== References
-

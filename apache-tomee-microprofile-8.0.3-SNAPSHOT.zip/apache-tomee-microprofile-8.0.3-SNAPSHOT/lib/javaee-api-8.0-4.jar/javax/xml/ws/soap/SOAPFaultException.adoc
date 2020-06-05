@@ -1,8 +1,0 @@
-= javax/xml/ws/soap/SOAPFaultException.class
-
- - link:SOAPFaultException-asmified.java[Asmified]
-
-== References
-
- - javax.xml.soap.SOAPFault - 6
- - javax.xml.ws.ProtocolException - 2

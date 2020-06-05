@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/websocket/JavaEEDefaultServerEnpointConfigurator.class
-
- - link:JavaEEDefaultServerEnpointConfigurator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/ValuePath.class
-
- - link:ValuePath-asmified.java[Asmified]
-
-== References
-

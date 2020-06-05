@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityToken/SamlSecurityToken.class
-
- - link:SamlSecurityToken-asmified.java[Asmified]
-
-== References
-

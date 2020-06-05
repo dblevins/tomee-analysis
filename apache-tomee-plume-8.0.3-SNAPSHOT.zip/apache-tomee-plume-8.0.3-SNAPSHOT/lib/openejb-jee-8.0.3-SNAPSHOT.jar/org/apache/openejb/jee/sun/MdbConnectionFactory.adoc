@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/MdbConnectionFactory.class
-
- - link:MdbConnectionFactory-asmified.java[Asmified]
-
-== References
-

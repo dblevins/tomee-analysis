@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/PersistenceMappingFactory.class
-
- - link:PersistenceMappingFactory-asmified.java[Asmified]
-
-== References
-

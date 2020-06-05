@@ -1,6 +1,0 @@
-= jakarta/xml/ws/EndpointContext.class
-
- - link:EndpointContext-asmified.java[Asmified]
-
-== References
-

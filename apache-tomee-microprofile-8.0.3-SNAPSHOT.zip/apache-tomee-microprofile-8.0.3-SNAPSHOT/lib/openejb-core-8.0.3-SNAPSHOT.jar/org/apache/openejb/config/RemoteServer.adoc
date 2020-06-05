@@ -1,6 +1,0 @@
-= org/apache/openejb/config/RemoteServer.class
-
- - link:RemoteServer-asmified.java[Asmified]
-
-== References
-

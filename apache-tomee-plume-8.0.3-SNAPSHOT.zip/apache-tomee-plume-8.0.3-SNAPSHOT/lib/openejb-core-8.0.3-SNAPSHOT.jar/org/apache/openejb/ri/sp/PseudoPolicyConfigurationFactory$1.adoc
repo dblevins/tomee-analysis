@@ -1,6 +1,0 @@
-= org/apache/openejb/ri/sp/PseudoPolicyConfigurationFactory$1.class
-
- - link:PseudoPolicyConfigurationFactory$1-asmified.java[Asmified]
-
-== References
-

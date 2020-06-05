@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/KeyStrategy.class
-
- - link:KeyStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/ErrorPageWriter$ErrorPageBean.class
-
- - link:ErrorPageWriter$ErrorPageBean-asmified.java[Asmified]
-
-== References
-

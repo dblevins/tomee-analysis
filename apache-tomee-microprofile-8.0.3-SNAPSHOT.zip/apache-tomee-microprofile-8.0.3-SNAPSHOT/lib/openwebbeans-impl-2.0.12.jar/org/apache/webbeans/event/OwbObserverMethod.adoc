@@ -1,6 +1,0 @@
-= org/apache/webbeans/event/OwbObserverMethod.class
-
- - link:OwbObserverMethod-asmified.java[Asmified]
-
-== References
-

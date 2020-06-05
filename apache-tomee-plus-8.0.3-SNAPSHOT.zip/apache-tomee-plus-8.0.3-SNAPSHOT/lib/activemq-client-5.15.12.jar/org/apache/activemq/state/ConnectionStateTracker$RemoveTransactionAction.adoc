@@ -1,6 +1,0 @@
-= org/apache/activemq/state/ConnectionStateTracker$RemoveTransactionAction.class
-
- - link:ConnectionStateTracker$RemoveTransactionAction-asmified.java[Asmified]
-
-== References
-

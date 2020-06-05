@@ -1,6 +1,0 @@
-= org/hsqldb/persist/LockFile$BaseException.class
-
- - link:LockFile$BaseException-asmified.java[Asmified]
-
-== References
-

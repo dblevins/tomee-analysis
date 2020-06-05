@@ -1,6 +1,0 @@
-= org/apache/openejb/config/event/BeforeAppInfoBuilderEvent.class
-
- - link:BeforeAppInfoBuilderEvent-asmified.java[Asmified]
-
-== References
-

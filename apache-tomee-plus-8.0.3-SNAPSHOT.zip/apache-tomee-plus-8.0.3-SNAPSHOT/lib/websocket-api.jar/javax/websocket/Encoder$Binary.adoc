@@ -1,8 +1,0 @@
-= javax/websocket/Encoder$Binary.class
-
- - link:Encoder$Binary-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.Encoder - 1
- - javax.websocket.EncodeException - 1

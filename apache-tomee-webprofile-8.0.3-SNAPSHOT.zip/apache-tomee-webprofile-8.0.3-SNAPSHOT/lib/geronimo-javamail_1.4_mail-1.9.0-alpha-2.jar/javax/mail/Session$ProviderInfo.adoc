@@ -1,9 +1,0 @@
-= javax/mail/Session$ProviderInfo.class
-
- - link:Session$ProviderInfo-asmified.java[Asmified]
-
-== References
-
- - javax.mail.Session$ProviderInfo - 4
- - javax.mail.Provider - 3
- - javax.mail.Session$1 - 1

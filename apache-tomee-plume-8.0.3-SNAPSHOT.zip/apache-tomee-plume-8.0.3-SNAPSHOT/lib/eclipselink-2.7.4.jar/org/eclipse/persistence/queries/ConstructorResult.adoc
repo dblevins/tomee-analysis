@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ConstructorResult.class
-
- - link:ConstructorResult-asmified.java[Asmified]
-
-== References
-

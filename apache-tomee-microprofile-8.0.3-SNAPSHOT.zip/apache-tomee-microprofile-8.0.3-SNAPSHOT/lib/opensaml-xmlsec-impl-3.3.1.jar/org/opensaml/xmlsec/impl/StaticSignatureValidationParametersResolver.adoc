@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/StaticSignatureValidationParametersResolver.class
-
- - link:StaticSignatureValidationParametersResolver-asmified.java[Asmified]
-
-== References
-

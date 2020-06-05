@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/QueryCompilationCacheValue.class
-
- - link:QueryCompilationCacheValue-asmified.java[Asmified]
-
-== References
-

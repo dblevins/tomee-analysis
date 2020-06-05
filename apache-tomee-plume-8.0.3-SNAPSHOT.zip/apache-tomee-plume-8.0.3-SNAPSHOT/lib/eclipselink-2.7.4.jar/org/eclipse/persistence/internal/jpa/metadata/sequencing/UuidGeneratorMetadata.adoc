@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/sequencing/UuidGeneratorMetadata.class
-
- - link:UuidGeneratorMetadata-asmified.java[Asmified]
-
-== References
-

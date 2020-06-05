@@ -1,7 +1,0 @@
-= javax/mail/event/MessageChangedListener.class
-
- - link:MessageChangedListener-asmified.java[Asmified]
-
-== References
-
- - javax.mail.event.MessageChangedEvent - 1

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesConfigFromViewId.class
-
- - link:FacesConfigFromViewId-asmified.java[Asmified]
-
-== References
-

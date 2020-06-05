@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLSelectElement.class
-
- - link:HTMLSelectElement-asmified.java[Asmified]
-
-== References
-

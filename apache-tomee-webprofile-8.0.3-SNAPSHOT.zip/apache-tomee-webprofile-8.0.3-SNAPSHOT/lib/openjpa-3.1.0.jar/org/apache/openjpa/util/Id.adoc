@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/Id.class
-
- - link:Id-asmified.java[Asmified]
-
-== References
-

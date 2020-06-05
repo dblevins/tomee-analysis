@@ -1,6 +1,0 @@
-= jakarta/faces/component/UISelectBoolean.class
-
- - link:UISelectBoolean-asmified.java[Asmified]
-
-== References
-

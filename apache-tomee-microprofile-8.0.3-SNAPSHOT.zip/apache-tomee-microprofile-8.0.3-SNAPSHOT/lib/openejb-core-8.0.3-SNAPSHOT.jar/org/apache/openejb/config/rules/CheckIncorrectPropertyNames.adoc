@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckIncorrectPropertyNames.class
-
- - link:CheckIncorrectPropertyNames-asmified.java[Asmified]
-
-== References
-

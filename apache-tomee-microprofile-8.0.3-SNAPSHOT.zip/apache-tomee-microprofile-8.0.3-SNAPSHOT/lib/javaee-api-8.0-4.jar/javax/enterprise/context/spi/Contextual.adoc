@@ -1,7 +1,0 @@
-= javax/enterprise/context/spi/Contextual.class
-
- - link:Contextual-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.spi.CreationalContext - 2

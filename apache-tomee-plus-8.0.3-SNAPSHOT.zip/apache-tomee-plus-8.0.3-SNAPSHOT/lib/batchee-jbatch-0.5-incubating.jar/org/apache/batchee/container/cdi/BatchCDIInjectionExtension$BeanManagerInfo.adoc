@@ -1,6 +1,0 @@
-= org/apache/batchee/container/cdi/BatchCDIInjectionExtension$BeanManagerInfo.class
-
- - link:BatchCDIInjectionExtension$BeanManagerInfo-asmified.java[Asmified]
-
-== References
-

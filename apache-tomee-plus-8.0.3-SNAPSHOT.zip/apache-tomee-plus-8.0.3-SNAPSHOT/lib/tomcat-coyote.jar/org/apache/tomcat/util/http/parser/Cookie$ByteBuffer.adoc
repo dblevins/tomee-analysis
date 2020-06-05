@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/parser/Cookie$ByteBuffer.class
-
- - link:Cookie$ByteBuffer-asmified.java[Asmified]
-
-== References
-

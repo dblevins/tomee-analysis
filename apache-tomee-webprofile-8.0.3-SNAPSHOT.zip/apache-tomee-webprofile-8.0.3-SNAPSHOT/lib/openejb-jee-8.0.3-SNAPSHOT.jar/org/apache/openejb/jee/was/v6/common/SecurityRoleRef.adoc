@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/common/SecurityRoleRef.class
-
- - link:SecurityRoleRef-asmified.java[Asmified]
-
-== References
-

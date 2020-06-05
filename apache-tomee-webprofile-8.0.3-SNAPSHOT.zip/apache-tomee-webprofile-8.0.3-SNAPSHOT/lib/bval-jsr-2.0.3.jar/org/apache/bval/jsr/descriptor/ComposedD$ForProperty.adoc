@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/ComposedD$ForProperty.class
-
- - link:ComposedD$ForProperty-asmified.java[Asmified]
-
-== References
-

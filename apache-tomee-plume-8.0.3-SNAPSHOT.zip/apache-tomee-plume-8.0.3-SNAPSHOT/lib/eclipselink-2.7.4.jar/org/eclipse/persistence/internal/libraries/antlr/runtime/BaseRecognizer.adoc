@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/BaseRecognizer.class
-
- - link:BaseRecognizer-asmified.java[Asmified]
-
-== References
-

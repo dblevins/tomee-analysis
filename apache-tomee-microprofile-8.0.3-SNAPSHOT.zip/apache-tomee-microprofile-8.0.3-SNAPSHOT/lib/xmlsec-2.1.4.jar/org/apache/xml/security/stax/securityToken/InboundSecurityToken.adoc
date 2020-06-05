@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityToken/InboundSecurityToken.class
-
- - link:InboundSecurityToken-asmified.java[Asmified]
-
-== References
-

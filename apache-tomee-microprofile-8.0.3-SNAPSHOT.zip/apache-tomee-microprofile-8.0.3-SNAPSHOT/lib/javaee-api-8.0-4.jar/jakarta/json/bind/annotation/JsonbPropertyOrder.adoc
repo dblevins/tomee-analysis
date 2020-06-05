@@ -1,6 +1,0 @@
-= jakarta/json/bind/annotation/JsonbPropertyOrder.class
-
- - link:JsonbPropertyOrder-asmified.java[Asmified]
-
-== References
-

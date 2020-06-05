@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/JaxrsClientCallback.class
-
- - link:JaxrsClientCallback-asmified.java[Asmified]
-
-== References
-

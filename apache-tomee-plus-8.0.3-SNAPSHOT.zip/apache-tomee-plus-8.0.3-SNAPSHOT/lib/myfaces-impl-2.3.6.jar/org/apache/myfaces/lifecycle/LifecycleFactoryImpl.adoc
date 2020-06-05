@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/LifecycleFactoryImpl.class
-
- - link:LifecycleFactoryImpl-asmified.java[Asmified]
-
-== References
-

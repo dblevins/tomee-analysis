@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/types/SDOWrapperType$CharacterObjectWrapperImpl.class
-
- - link:SDOWrapperType$CharacterObjectWrapperImpl-asmified.java[Asmified]
-
-== References
-

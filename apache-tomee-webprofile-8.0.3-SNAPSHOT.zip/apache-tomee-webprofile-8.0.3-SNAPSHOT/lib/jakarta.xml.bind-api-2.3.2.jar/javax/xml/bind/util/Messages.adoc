@@ -1,7 +1,0 @@
-= javax/xml/bind/util/Messages.class
-
- - link:Messages-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.util.Messages - 5

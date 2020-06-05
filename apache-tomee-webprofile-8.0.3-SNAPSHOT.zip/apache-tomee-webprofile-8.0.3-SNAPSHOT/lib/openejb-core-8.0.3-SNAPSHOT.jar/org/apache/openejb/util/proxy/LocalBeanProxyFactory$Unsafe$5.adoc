@@ -1,6 +1,0 @@
-= org/apache/openejb/util/proxy/LocalBeanProxyFactory$Unsafe$5.class
-
- - link:LocalBeanProxyFactory$Unsafe$5-asmified.java[Asmified]
-
-== References
-

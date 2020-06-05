@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/CdiPlugin$InstanceBean.class
-
- - link:CdiPlugin$InstanceBean-asmified.java[Asmified]
-
-== References
-

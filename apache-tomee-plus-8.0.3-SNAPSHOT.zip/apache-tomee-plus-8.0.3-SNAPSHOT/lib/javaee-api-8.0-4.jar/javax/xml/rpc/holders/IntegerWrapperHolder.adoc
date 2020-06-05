@@ -1,7 +1,0 @@
-= javax/xml/rpc/holders/IntegerWrapperHolder.class
-
- - link:IntegerWrapperHolder-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.holders.Holder - 1

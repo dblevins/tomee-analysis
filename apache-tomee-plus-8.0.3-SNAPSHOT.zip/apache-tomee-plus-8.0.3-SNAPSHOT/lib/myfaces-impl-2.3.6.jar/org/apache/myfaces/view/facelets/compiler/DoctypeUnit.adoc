@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/DoctypeUnit.class
-
- - link:DoctypeUnit-asmified.java[Asmified]
-
-== References
-

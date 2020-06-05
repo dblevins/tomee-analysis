@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/WsService$EndpointInfo.class
-
- - link:WsService$EndpointInfo-asmified.java[Asmified]
-
-== References
-

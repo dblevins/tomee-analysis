@@ -1,6 +1,0 @@
-= org/jvnet/staxex/StAxSOAPBody.class
-
- - link:StAxSOAPBody-asmified.java[Asmified]
-
-== References
-

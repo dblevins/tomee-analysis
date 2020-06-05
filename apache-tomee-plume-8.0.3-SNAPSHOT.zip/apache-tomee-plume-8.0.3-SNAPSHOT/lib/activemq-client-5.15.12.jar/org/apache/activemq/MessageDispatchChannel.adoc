@@ -1,6 +1,0 @@
-= org/apache/activemq/MessageDispatchChannel.class
-
- - link:MessageDispatchChannel-asmified.java[Asmified]
-
-== References
-

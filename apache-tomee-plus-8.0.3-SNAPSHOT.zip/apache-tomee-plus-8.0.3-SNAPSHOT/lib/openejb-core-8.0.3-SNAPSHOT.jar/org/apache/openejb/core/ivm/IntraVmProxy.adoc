@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/IntraVmProxy.class
-
- - link:IntraVmProxy-asmified.java[Asmified]
-
-== References
-

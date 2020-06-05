@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ConstraintExpressionFormula.class
-
- - link:ConstraintExpressionFormula-asmified.java[Asmified]
-
-== References
-

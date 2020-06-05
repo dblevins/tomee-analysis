@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MethodPermission.class
-
- - link:MethodPermission-asmified.java[Asmified]
-
-== References
-

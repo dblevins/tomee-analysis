@@ -1,6 +1,0 @@
-= com/sun/xml/bind/api/AccessorException.class
-
- - link:AccessorException-asmified.java[Asmified]
-
-== References
-

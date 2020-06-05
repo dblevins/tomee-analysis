@@ -1,6 +1,0 @@
-= org/apache/myfaces/webapp/ManagedBeanDestroyerListener.class
-
- - link:ManagedBeanDestroyerListener-asmified.java[Asmified]
-
-== References
-

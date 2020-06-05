@@ -1,8 +1,0 @@
-= javax/servlet/jsp/tagext/IterationTag.class
-
- - link:IterationTag-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.jsp.JspException - 1
- - javax.servlet.jsp.tagext.Tag - 1

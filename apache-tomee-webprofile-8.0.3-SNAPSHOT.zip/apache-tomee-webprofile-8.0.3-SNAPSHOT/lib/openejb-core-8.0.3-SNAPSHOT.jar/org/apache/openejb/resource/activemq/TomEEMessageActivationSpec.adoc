@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/TomEEMessageActivationSpec.class
-
- - link:TomEEMessageActivationSpec-asmified.java[Asmified]
-
-== References
-

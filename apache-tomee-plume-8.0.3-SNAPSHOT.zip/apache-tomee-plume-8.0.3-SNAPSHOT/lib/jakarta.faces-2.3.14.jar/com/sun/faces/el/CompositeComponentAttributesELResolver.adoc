@@ -1,6 +1,0 @@
-= com/sun/faces/el/CompositeComponentAttributesELResolver.class
-
- - link:CompositeComponentAttributesELResolver-asmified.java[Asmified]
-
-== References
-

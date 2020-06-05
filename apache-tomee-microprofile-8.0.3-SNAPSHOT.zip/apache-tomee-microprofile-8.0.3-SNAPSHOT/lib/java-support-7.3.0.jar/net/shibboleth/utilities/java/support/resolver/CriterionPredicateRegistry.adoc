@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/resolver/CriterionPredicateRegistry.class
-
- - link:CriterionPredicateRegistry-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/access/AbstractJCSWorkerHelper.class
-
- - link:AbstractJCSWorkerHelper-asmified.java[Asmified]
-
-== References
-

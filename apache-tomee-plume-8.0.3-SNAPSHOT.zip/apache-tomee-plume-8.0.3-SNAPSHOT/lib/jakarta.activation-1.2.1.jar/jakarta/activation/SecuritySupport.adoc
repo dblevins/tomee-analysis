@@ -1,6 +1,0 @@
-= jakarta/activation/SecuritySupport.class
-
- - link:SecuritySupport-asmified.java[Asmified]
-
-== References
-

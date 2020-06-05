@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/token/X509Security.class
-
- - link:X509Security-asmified.java[Asmified]
-
-== References
-

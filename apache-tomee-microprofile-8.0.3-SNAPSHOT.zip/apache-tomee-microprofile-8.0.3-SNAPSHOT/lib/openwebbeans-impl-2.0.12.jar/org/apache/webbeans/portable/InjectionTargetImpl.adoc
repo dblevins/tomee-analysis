@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/InjectionTargetImpl.class
-
- - link:InjectionTargetImpl-asmified.java[Asmified]
-
-== References
-

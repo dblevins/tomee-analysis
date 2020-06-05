@@ -1,6 +1,0 @@
-= org/apache/webbeans/web/lifecycle/test/MockServletContextEvent.class
-
- - link:MockServletContextEvent-asmified.java[Asmified]
-
-== References
-

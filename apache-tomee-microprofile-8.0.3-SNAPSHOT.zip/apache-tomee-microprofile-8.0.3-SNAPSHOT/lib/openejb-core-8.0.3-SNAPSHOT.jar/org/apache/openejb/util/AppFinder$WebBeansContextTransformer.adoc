@@ -1,6 +1,0 @@
-= org/apache/openejb/util/AppFinder$WebBeansContextTransformer.class
-
- - link:AppFinder$WebBeansContextTransformer-asmified.java[Asmified]
-
-== References
-

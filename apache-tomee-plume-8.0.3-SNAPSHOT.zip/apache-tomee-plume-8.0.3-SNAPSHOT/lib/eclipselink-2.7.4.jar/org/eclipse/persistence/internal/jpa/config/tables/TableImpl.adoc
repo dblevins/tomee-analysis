@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/tables/TableImpl.class
-
- - link:TableImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/OwbBean.class
-
- - link:OwbBean-asmified.java[Asmified]
-
-== References
-

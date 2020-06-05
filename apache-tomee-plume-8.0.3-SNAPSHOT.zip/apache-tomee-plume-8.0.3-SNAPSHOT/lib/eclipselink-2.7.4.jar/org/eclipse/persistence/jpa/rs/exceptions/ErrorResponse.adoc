@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/exceptions/ErrorResponse.class
-
- - link:ErrorResponse-asmified.java[Asmified]
-
-== References
-

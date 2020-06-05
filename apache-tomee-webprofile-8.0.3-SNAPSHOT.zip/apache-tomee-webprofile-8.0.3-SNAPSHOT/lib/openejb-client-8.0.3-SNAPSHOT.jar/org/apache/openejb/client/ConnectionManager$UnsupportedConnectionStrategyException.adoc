@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ConnectionManager$UnsupportedConnectionStrategyException.class
-
- - link:ConnectionManager$UnsupportedConnectionStrategyException-asmified.java[Asmified]
-
-== References
-

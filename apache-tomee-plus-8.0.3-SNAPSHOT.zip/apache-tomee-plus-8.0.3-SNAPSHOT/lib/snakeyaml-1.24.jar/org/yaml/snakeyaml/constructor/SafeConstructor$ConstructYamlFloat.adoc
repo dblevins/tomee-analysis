@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlFloat.class
-
- - link:SafeConstructor$ConstructYamlFloat-asmified.java[Asmified]
-
-== References
-

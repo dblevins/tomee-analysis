@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ecore/EParameter.class
-
- - link:EParameter-asmified.java[Asmified]
-
-== References
-

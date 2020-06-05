@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogFile.class
-
- - link:LogFile-asmified.java[Asmified]
-
-== References
-

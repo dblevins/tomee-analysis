@@ -1,6 +1,0 @@
-= org/apache/commons/codec/net/PercentCodec.class
-
- - link:PercentCodec-asmified.java[Asmified]
-
-== References
-

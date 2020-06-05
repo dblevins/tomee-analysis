@@ -1,6 +1,0 @@
-= com/sun/faces/util/copier/MultiStrategyCopier.class
-
- - link:MultiStrategyCopier-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/servlet/http/WebConnection.class
-
- - link:WebConnection-asmified.java[Asmified]
-
-== References
-

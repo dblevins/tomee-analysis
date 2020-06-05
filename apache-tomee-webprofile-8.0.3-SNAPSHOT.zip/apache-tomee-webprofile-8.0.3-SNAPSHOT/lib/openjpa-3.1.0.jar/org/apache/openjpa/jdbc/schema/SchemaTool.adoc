@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/SchemaTool.class
-
- - link:SchemaTool-asmified.java[Asmified]
-
-== References
-

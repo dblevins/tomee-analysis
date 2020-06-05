@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/spring/HttpDestinationBeanDefinitionParser.class
-
- - link:HttpDestinationBeanDefinitionParser-asmified.java[Asmified]
-
-== References
-

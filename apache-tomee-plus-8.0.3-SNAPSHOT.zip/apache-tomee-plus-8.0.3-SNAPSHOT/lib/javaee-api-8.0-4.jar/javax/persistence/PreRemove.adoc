@@ -1,6 +1,0 @@
-= javax/persistence/PreRemove.class
-
- - link:PreRemove-asmified.java[Asmified]
-
-== References
-

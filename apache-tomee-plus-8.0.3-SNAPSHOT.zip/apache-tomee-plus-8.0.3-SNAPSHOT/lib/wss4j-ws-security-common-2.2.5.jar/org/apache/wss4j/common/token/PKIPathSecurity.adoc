@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/token/PKIPathSecurity.class
-
- - link:PKIPathSecurity-asmified.java[Asmified]
-
-== References
-

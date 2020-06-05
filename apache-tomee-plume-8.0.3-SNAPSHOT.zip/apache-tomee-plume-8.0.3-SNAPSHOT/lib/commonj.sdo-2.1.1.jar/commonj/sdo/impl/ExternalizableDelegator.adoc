@@ -1,6 +1,0 @@
-= commonj/sdo/impl/ExternalizableDelegator.class
-
- - link:ExternalizableDelegator-asmified.java[Asmified]
-
-== References
-

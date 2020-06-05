@@ -1,6 +1,0 @@
-= com/sun/faces/push/WebsocketSessionManager$2.class
-
- - link:WebsocketSessionManager$2-asmified.java[Asmified]
-
-== References
-

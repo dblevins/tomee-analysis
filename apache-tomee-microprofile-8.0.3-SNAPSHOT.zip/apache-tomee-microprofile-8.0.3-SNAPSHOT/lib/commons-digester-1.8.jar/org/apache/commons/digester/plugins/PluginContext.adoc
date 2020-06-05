@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/PluginContext.class
-
- - link:PluginContext-asmified.java[Asmified]
-
-== References
-

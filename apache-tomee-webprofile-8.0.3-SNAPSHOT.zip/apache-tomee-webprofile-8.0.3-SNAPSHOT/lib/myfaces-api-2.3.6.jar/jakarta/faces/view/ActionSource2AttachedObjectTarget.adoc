@@ -1,6 +1,0 @@
-= jakarta/faces/view/ActionSource2AttachedObjectTarget.class
-
- - link:ActionSource2AttachedObjectTarget-asmified.java[Asmified]
-
-== References
-

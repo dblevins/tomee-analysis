@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/AbstractTagLibrary$CompositeComponentTagFactory.class
-
- - link:AbstractTagLibrary$CompositeComponentTagFactory-asmified.java[Asmified]
-
-== References
-

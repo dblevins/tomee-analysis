@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/ResponseCallback.class
-
- - link:ResponseCallback-asmified.java[Asmified]
-
-== References
-

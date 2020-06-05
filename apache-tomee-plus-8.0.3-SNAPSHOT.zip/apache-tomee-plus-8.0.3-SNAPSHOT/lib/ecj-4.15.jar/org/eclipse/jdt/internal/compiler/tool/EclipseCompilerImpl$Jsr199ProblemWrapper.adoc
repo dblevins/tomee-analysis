@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/tool/EclipseCompilerImpl$Jsr199ProblemWrapper.class
-
- - link:EclipseCompilerImpl$Jsr199ProblemWrapper-asmified.java[Asmified]
-
-== References
-

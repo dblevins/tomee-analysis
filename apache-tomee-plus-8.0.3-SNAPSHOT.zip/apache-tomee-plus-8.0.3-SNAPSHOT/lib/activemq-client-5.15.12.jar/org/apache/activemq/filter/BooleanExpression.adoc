@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/BooleanExpression.class
-
- - link:BooleanExpression-asmified.java[Asmified]
-
-== References
-

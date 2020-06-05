@@ -1,6 +1,0 @@
-= jakarta/mail/internet/InternetAddress.class
-
- - link:InternetAddress-asmified.java[Asmified]
-
-== References
-

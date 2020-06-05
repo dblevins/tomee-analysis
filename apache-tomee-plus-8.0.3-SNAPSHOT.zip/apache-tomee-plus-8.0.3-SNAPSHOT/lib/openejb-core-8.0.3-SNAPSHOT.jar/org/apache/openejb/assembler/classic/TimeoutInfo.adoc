@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/TimeoutInfo.class
-
- - link:TimeoutInfo-asmified.java[Asmified]
-
-== References
-

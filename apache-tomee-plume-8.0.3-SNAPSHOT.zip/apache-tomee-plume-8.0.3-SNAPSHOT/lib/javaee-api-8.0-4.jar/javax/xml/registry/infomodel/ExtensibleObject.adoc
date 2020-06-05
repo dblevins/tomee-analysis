@@ -1,8 +1,0 @@
-= javax/xml/registry/infomodel/ExtensibleObject.class
-
- - link:ExtensibleObject-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 6
- - javax.xml.registry.infomodel.Slot - 2

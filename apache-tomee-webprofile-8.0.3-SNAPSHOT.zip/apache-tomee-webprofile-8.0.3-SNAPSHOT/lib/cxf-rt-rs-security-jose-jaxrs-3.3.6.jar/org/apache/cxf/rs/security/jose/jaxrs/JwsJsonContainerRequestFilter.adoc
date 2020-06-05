@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/JwsJsonContainerRequestFilter.class
-
- - link:JwsJsonContainerRequestFilter-asmified.java[Asmified]
-
-== References
-

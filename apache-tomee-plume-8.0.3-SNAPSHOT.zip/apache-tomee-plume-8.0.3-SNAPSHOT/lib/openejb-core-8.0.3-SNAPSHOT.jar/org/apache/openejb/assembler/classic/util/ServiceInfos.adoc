@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/util/ServiceInfos.class
-
- - link:ServiceInfos-asmified.java[Asmified]
-
-== References
-

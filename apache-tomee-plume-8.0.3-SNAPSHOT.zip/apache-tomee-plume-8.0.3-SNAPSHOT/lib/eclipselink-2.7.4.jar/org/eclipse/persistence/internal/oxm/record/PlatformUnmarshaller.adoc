@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/PlatformUnmarshaller.class
-
- - link:PlatformUnmarshaller-asmified.java[Asmified]
-
-== References
-

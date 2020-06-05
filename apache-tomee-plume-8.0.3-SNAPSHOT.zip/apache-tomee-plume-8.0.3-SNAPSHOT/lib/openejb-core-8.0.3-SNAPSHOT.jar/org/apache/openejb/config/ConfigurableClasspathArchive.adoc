@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ConfigurableClasspathArchive.class
-
- - link:ConfigurableClasspathArchive-asmified.java[Asmified]
-
-== References
-

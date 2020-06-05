@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/map/StaticBucketMap.class
-
- - link:StaticBucketMap-asmified.java[Asmified]
-
-== References
-

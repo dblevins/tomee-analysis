@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/BasicValue.class
-
- - link:BasicValue-asmified.java[Asmified]
-
-== References
-

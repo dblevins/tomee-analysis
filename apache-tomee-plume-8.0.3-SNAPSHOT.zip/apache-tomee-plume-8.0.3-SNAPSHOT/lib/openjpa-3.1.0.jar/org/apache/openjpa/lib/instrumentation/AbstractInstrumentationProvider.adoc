@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/instrumentation/AbstractInstrumentationProvider.class
-
- - link:AbstractInstrumentationProvider-asmified.java[Asmified]
-
-== References
-

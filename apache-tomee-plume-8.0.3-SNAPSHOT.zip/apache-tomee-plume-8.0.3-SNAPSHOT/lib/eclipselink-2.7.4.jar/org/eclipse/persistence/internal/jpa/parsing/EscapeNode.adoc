@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/EscapeNode.class
-
- - link:EscapeNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/LazyDynaBean.class
-
- - link:LazyDynaBean-asmified.java[Asmified]
-
-== References
-

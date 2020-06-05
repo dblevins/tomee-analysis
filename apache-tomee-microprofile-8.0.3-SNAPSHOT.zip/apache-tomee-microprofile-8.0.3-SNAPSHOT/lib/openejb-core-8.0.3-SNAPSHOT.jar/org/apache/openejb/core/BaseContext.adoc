@@ -1,6 +1,0 @@
-= org/apache/openejb/core/BaseContext.class
-
- - link:BaseContext-asmified.java[Asmified]
-
-== References
-

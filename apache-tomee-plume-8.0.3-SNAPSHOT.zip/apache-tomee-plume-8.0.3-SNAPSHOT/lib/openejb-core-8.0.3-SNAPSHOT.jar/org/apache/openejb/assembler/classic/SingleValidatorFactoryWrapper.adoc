@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper.class
-
- - link:SingleValidatorFactoryWrapper-asmified.java[Asmified]
-
-== References
-

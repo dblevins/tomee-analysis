@@ -1,6 +1,0 @@
-= org/joda/time/format/PeriodFormatterBuilder$RegExAffix.class
-
- - link:PeriodFormatterBuilder$RegExAffix-asmified.java[Asmified]
-
-== References
-

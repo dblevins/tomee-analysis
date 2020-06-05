@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/WireFormat.class
-
- - link:WireFormat-asmified.java[Asmified]
-
-== References
-

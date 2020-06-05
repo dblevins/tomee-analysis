@@ -1,6 +1,0 @@
-= jakarta/xml/bind/ModuleUtil.class
-
- - link:ModuleUtil-asmified.java[Asmified]
-
-== References
-

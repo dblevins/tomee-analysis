@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/ProvidersImpl.class
-
- - link:ProvidersImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/cache/configuration/CompleteConfiguration.class
-
- - link:CompleteConfiguration-asmified.java[Asmified]
-
-== References
-

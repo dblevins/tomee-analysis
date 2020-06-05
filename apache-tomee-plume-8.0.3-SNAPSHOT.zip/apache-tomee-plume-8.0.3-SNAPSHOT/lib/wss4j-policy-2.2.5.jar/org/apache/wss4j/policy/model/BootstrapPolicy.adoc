@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/BootstrapPolicy.class
-
- - link:BootstrapPolicy-asmified.java[Asmified]
-
-== References
-

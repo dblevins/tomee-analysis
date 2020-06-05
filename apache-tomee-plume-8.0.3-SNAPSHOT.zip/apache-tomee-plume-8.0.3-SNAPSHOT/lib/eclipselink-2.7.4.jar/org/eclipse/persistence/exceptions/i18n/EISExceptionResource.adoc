@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/i18n/EISExceptionResource.class
-
- - link:EISExceptionResource-asmified.java[Asmified]
-
-== References
-

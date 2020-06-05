@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure.class
-
- - link:IMAPBodyStructure-asmified.java[Asmified]
-
-== References
-

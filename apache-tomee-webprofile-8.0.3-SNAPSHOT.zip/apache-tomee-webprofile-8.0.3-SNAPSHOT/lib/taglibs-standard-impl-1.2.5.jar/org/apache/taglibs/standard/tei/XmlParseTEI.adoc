@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tei/XmlParseTEI.class
-
- - link:XmlParseTEI-asmified.java[Asmified]
-
-== References
-

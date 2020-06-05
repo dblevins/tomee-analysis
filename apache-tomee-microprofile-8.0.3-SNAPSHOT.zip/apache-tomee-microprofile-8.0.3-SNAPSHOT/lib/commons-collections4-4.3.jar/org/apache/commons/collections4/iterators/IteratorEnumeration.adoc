@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/IteratorEnumeration.class
-
- - link:IteratorEnumeration-asmified.java[Asmified]
-
-== References
-

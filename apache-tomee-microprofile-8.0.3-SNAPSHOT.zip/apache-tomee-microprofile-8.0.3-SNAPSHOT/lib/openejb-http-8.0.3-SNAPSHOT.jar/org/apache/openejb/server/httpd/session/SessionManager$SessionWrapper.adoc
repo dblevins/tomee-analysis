@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/session/SessionManager$SessionWrapper.class
-
- - link:SessionManager$SessionWrapper-asmified.java[Asmified]
-
-== References
-

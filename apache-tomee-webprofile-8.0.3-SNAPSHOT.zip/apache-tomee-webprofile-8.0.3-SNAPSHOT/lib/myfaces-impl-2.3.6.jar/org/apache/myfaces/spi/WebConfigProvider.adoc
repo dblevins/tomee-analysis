@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/WebConfigProvider.class
-
- - link:WebConfigProvider-asmified.java[Asmified]
-
-== References
-

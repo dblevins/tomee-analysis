@@ -1,6 +1,0 @@
-= org/apache/cxf/transports/http/configuration/ProxyServerType.class
-
- - link:ProxyServerType-asmified.java[Asmified]
-
-== References
-

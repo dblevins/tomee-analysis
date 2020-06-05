@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/event/EventListenerSupport$ProxyInvocationHandler.class
-
- - link:EventListenerSupport$ProxyInvocationHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/record/FormattedOutputStreamRecord.class
-
- - link:FormattedOutputStreamRecord-asmified.java[Asmified]
-
-== References
-

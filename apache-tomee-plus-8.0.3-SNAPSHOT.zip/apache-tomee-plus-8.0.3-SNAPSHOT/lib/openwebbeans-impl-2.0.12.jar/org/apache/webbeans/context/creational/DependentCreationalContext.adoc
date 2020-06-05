@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/creational/DependentCreationalContext.class
-
- - link:DependentCreationalContext-asmified.java[Asmified]
-
-== References
-

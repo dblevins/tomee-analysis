@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/httpclient/InMemoryCachingHttpClientBuilder.class
-
- - link:InMemoryCachingHttpClientBuilder-asmified.java[Asmified]
-
-== References
-

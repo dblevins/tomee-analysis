@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/server/ServerLog.class
-
- - link:ServerLog-asmified.java[Asmified]
-
-== References
-

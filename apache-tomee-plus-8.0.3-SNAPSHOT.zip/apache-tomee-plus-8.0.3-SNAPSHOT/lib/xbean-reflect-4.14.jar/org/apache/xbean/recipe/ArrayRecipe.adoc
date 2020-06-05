@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ArrayRecipe.class
-
- - link:ArrayRecipe-asmified.java[Asmified]
-
-== References
-

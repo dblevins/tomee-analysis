@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/NumberLiteral.class
-
- - link:NumberLiteral-asmified.java[Asmified]
-
-== References
-

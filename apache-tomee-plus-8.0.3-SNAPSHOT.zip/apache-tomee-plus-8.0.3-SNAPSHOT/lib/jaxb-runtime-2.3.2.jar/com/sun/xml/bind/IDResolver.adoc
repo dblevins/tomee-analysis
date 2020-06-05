@@ -1,6 +1,0 @@
-= com/sun/xml/bind/IDResolver.class
-
- - link:IDResolver-asmified.java[Asmified]
-
-== References
-

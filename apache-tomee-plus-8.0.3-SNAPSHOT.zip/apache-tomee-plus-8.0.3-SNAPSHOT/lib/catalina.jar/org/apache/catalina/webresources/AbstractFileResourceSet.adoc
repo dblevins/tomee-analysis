@@ -1,6 +1,0 @@
-= org/apache/catalina/webresources/AbstractFileResourceSet.class
-
- - link:AbstractFileResourceSet-asmified.java[Asmified]
-
-== References
-

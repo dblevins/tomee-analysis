@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/stax/XMLSecProcessingInstruction.class
-
- - link:XMLSecProcessingInstruction-asmified.java[Asmified]
-
-== References
-

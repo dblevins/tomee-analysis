@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/ContextClassPath.class
-
- - link:ContextClassPath-asmified.java[Asmified]
-
-== References
-

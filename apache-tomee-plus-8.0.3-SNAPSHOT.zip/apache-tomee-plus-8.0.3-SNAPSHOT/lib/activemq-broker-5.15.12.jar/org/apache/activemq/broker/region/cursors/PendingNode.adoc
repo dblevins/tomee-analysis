@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/cursors/PendingNode.class
-
- - link:PendingNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLCompositeObjectMapping.class
-
- - link:XMLCompositeObjectMapping-asmified.java[Asmified]
-
-== References
-

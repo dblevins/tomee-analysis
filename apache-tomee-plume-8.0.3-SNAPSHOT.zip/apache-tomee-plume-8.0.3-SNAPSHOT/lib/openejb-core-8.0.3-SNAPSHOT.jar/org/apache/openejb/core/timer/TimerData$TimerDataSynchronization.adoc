@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/TimerData$TimerDataSynchronization.class
-
- - link:TimerData$TimerDataSynchronization-asmified.java[Asmified]
-
-== References
-

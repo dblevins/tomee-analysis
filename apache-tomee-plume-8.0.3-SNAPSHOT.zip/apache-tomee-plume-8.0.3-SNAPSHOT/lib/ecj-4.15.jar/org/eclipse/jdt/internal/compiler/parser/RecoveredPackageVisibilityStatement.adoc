@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/RecoveredPackageVisibilityStatement.class
-
- - link:RecoveredPackageVisibilityStatement-asmified.java[Asmified]
-
-== References
-

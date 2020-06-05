@@ -1,6 +1,0 @@
-= jakarta/faces/event/PostConstructViewMapEvent.class
-
- - link:PostConstructViewMapEvent-asmified.java[Asmified]
-
-== References
-

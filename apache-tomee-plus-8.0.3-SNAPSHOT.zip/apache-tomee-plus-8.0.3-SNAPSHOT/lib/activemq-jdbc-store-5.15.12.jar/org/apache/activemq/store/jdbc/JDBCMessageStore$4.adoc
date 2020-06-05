@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JDBCMessageStore$4.class
-
- - link:JDBCMessageStore$4-asmified.java[Asmified]
-
-== References
-

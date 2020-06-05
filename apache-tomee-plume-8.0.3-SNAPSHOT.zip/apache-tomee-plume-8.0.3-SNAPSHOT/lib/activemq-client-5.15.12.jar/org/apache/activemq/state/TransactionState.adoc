@@ -1,6 +1,0 @@
-= org/apache/activemq/state/TransactionState.class
-
- - link:TransactionState-asmified.java[Asmified]
-
-== References
-

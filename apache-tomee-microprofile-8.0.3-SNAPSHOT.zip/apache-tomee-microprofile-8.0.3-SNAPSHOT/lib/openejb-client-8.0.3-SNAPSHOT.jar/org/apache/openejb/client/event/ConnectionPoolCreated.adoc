@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/ConnectionPoolCreated.class
-
- - link:ConnectionPoolCreated-asmified.java[Asmified]
-
-== References
-

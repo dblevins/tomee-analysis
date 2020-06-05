@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/SubjectAttributeDesignatorTypeMarshaller.class
-
- - link:SubjectAttributeDesignatorTypeMarshaller-asmified.java[Asmified]
-
-== References
-

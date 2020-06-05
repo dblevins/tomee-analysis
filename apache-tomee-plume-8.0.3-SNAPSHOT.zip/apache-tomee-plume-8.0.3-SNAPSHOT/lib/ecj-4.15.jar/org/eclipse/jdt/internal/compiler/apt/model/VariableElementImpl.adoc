@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/VariableElementImpl.class
-
- - link:VariableElementImpl-asmified.java[Asmified]
-
-== References
-

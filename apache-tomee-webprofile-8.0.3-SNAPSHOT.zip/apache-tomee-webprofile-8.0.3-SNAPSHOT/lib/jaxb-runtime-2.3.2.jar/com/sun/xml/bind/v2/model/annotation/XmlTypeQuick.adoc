@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/annotation/XmlTypeQuick.class
-
- - link:XmlTypeQuick-asmified.java[Asmified]
-
-== References
-

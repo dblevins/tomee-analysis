@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/json/utils/JSONUtils.class
-
- - link:JSONUtils-asmified.java[Asmified]
-
-== References
-

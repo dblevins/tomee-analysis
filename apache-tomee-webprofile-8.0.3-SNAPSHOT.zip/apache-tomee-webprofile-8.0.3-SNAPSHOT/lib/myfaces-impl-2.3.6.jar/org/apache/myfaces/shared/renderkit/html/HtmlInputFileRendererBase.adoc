@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlInputFileRendererBase.class
-
- - link:HtmlInputFileRendererBase-asmified.java[Asmified]
-
-== References
-

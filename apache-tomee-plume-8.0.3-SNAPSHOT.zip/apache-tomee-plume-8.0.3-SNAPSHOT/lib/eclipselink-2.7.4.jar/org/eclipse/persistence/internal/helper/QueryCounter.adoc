@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/QueryCounter.class
-
- - link:QueryCounter-asmified.java[Asmified]
-
-== References
-

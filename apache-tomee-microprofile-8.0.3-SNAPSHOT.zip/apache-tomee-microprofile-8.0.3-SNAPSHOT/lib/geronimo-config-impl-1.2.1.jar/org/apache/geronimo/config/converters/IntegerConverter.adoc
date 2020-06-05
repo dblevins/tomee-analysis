@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/converters/IntegerConverter.class
-
- - link:IntegerConverter-asmified.java[Asmified]
-
-== References
-

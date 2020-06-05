@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/securityToken/GenericOutboundSecurityToken.class
-
- - link:GenericOutboundSecurityToken-asmified.java[Asmified]
-
-== References
-

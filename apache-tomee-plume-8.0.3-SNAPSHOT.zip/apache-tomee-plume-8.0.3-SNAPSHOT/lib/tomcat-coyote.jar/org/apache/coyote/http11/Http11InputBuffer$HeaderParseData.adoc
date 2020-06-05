@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/Http11InputBuffer$HeaderParseData.class
-
- - link:Http11InputBuffer$HeaderParseData-asmified.java[Asmified]
-
-== References
-

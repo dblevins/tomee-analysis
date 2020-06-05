@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/ForeignReferenceMapping.class
-
- - link:ForeignReferenceMapping-asmified.java[Asmified]
-
-== References
-

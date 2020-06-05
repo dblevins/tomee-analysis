@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/queries/FetchGroupImpl.class
-
- - link:FetchGroupImpl-asmified.java[Asmified]
-
-== References
-

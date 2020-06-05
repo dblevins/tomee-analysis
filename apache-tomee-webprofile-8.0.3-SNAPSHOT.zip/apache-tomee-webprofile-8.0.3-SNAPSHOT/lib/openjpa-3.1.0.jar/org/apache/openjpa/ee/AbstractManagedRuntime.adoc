@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/AbstractManagedRuntime.class
-
- - link:AbstractManagedRuntime-asmified.java[Asmified]
-
-== References
-

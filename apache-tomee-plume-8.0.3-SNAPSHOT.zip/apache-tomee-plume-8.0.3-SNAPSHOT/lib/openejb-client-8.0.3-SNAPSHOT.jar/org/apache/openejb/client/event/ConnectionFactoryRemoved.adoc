@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/ConnectionFactoryRemoved.class
-
- - link:ConnectionFactoryRemoved-asmified.java[Asmified]
-
-== References
-

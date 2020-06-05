@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/InterceptorResolutionService$LifecycleMethodInfo.class
-
- - link:InterceptorResolutionService$LifecycleMethodInfo-asmified.java[Asmified]
-
-== References
-

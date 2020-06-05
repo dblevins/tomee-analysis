@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/xmlschema/ComplexTypeModel.class
-
- - link:ComplexTypeModel-asmified.java[Asmified]
-
-== References
-

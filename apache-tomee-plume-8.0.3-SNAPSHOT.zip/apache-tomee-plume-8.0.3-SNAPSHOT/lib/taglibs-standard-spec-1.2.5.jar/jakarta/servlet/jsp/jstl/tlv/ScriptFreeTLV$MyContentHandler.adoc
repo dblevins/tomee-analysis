@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/jstl/tlv/ScriptFreeTLV$MyContentHandler.class
-
- - link:ScriptFreeTLV$MyContentHandler-asmified.java[Asmified]
-
-== References
-

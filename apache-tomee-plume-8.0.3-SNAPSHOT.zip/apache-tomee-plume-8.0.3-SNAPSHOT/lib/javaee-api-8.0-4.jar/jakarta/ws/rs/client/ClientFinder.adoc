@@ -1,6 +1,0 @@
-= jakarta/ws/rs/client/ClientFinder.class
-
- - link:ClientFinder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/application/FacesServletMapping.class
-
- - link:FacesServletMapping-asmified.java[Asmified]
-
-== References
-

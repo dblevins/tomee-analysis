@@ -1,6 +1,0 @@
-= commonj/sdo/DataGraph.class
-
- - link:DataGraph-asmified.java[Asmified]
-
-== References
-

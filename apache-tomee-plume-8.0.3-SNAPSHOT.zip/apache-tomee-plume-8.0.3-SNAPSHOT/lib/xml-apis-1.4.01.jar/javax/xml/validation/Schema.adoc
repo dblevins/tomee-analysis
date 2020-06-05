@@ -1,6 +1,0 @@
-= javax/xml/validation/Schema.class
-
- - link:Schema-asmified.java[Asmified]
-
-== References
-

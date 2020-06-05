@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/SerializableBeanVault.class
-
- - link:SerializableBeanVault-asmified.java[Asmified]
-
-== References
-

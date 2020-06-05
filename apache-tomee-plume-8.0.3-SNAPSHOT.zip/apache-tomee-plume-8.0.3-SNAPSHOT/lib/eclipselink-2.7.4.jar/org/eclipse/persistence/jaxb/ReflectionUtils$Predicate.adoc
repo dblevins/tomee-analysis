@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/ReflectionUtils$Predicate.class
-
- - link:ReflectionUtils$Predicate-asmified.java[Asmified]
-
-== References
-

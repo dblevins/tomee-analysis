@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/OrderImpl.class
-
- - link:OrderImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/command/DestinationInfo.class
-
- - link:DestinationInfo-asmified.java[Asmified]
-
-== References
-

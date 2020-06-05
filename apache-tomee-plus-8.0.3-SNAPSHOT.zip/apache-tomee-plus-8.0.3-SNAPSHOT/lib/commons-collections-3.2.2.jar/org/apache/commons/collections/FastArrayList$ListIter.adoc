@@ -1,6 +1,0 @@
-= org/apache/commons/collections/FastArrayList$ListIter.class
-
- - link:FastArrayList$ListIter-asmified.java[Asmified]
-
-== References
-

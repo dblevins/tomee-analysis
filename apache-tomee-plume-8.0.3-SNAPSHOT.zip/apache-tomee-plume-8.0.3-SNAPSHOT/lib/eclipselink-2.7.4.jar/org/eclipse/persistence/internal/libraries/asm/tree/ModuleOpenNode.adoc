@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/ModuleOpenNode.class
-
- - link:ModuleOpenNode-asmified.java[Asmified]
-
-== References
-

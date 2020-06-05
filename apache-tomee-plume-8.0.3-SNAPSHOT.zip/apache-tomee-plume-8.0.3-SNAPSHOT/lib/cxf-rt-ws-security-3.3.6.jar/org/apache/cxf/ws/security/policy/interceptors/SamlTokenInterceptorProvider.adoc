@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/interceptors/SamlTokenInterceptorProvider.class
-
- - link:SamlTokenInterceptorProvider-asmified.java[Asmified]
-
-== References
-

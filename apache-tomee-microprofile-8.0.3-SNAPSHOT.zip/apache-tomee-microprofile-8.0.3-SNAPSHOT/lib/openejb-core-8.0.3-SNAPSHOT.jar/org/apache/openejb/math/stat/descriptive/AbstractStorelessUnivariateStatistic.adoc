@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/AbstractStorelessUnivariateStatistic.class
-
- - link:AbstractStorelessUnivariateStatistic-asmified.java[Asmified]
-
-== References
-

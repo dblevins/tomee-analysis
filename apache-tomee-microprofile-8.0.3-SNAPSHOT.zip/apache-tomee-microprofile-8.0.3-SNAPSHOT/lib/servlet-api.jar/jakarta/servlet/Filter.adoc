@@ -1,6 +1,0 @@
-= jakarta/servlet/Filter.class
-
- - link:Filter-asmified.java[Asmified]
-
-== References
-

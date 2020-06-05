@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Node$VariableDirective.class
-
- - link:Node$VariableDirective-asmified.java[Asmified]
-
-== References
-

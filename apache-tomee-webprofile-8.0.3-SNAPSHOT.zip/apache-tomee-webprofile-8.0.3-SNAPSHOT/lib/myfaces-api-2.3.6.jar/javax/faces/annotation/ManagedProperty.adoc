@@ -1,7 +1,0 @@
-= javax/faces/annotation/ManagedProperty.class
-
- - link:ManagedProperty-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Qualifier - 1

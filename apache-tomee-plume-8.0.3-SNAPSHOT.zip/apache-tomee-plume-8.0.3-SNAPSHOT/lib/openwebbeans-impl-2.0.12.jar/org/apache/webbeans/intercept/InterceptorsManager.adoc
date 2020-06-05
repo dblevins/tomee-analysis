@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/InterceptorsManager.class
-
- - link:InterceptorsManager-asmified.java[Asmified]
-
-== References
-

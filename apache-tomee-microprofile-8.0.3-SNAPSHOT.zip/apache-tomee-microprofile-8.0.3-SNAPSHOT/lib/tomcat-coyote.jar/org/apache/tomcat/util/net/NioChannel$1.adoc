@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/NioChannel$1.class
-
- - link:NioChannel$1-asmified.java[Asmified]
-
-== References
-

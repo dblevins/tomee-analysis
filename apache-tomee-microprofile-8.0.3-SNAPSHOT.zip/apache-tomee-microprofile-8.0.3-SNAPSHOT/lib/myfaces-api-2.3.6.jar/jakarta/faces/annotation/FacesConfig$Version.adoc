@@ -1,6 +1,0 @@
-= jakarta/faces/annotation/FacesConfig$Version.class
-
- - link:FacesConfig$Version-asmified.java[Asmified]
-
-== References
-

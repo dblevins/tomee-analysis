@@ -1,6 +1,0 @@
-= org/apache/catalina/loader/ResourceEntry.class
-
- - link:ResourceEntry-asmified.java[Asmified]
-
-== References
-

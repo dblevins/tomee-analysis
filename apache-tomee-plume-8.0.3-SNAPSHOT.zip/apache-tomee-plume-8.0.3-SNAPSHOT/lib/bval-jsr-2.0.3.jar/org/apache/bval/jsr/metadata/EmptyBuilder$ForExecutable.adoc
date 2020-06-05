@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/EmptyBuilder$ForExecutable.class
-
- - link:EmptyBuilder$ForExecutable-asmified.java[Asmified]
-
-== References
-

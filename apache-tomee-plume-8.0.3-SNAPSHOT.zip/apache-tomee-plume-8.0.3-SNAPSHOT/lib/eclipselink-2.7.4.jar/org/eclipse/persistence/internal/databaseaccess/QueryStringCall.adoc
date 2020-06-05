@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/QueryStringCall.class
-
- - link:QueryStringCall-asmified.java[Asmified]
-
-== References
-

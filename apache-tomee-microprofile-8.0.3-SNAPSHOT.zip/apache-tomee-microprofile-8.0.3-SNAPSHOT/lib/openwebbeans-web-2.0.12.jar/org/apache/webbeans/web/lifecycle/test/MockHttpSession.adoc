@@ -1,6 +1,0 @@
-= org/apache/webbeans/web/lifecycle/test/MockHttpSession.class
-
- - link:MockHttpSession-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/persistence/Transient.class
-
- - link:Transient-asmified.java[Asmified]
-
-== References
-

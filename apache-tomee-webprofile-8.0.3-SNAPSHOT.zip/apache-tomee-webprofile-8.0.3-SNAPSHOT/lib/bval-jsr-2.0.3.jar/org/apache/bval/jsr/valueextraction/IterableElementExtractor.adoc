@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/IterableElementExtractor.class
-
- - link:IterableElementExtractor-asmified.java[Asmified]
-
-== References
-

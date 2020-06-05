@@ -1,6 +1,0 @@
-= org/joda/time/base/BaseSingleFieldPeriod.class
-
- - link:BaseSingleFieldPeriod-asmified.java[Asmified]
-
-== References
-

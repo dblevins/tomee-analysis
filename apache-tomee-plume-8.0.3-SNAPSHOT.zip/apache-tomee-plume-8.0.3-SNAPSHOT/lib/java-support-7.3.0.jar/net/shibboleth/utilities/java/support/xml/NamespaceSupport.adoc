@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/NamespaceSupport.class
-
- - link:NamespaceSupport-asmified.java[Asmified]
-
-== References
-

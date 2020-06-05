@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/CookieManager.class
-
- - link:CookieManager-asmified.java[Asmified]
-
-== References
-

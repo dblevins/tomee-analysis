@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Joins.class
-
- - link:Joins-asmified.java[Asmified]
-
-== References
-

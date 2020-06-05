@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/SimpleBufferPool.class
-
- - link:SimpleBufferPool-asmified.java[Asmified]
-
-== References
-

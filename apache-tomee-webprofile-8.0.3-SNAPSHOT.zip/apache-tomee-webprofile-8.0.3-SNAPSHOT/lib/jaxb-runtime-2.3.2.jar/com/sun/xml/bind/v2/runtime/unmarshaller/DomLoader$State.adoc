@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader$State.class
-
- - link:DomLoader$State-asmified.java[Asmified]
-
-== References
-

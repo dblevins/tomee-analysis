@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/tcp/ReplicationValve.class
-
- - link:ReplicationValve-asmified.java[Asmified]
-
-== References
-

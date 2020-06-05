@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/AtomicReferenceSerializer.class
-
- - link:AtomicReferenceSerializer-asmified.java[Asmified]
-
-== References
-

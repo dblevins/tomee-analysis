@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/TransactionBranchInfoImpl.class
-
- - link:TransactionBranchInfoImpl-asmified.java[Asmified]
-
-== References
-

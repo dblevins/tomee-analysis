@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/FacesConfigResourceProviderFactory.class
-
- - link:FacesConfigResourceProviderFactory-asmified.java[Asmified]
-
-== References
-

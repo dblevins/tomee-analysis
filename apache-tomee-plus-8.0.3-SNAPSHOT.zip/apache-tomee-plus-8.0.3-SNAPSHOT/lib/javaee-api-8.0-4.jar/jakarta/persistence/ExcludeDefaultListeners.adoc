@@ -1,6 +1,0 @@
-= jakarta/persistence/ExcludeDefaultListeners.class
-
- - link:ExcludeDefaultListeners-asmified.java[Asmified]
-
-== References
-

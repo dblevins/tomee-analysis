@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/ProducerViewMBean.class
-
- - link:ProducerViewMBean-asmified.java[Asmified]
-
-== References
-

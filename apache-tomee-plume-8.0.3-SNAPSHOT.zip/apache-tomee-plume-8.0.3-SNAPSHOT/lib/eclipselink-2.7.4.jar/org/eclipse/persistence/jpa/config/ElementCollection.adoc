@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/ElementCollection.class
-
- - link:ElementCollection-asmified.java[Asmified]
-
-== References
-

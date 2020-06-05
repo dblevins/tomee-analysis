@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/TextBuffer.class
-
- - link:TextBuffer-asmified.java[Asmified]
-
-== References
-

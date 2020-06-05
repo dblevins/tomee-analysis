@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/ConnectorCallbackHandler.class
-
- - link:ConnectorCallbackHandler-asmified.java[Asmified]
-
-== References
-

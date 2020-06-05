@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/AbstractSinglePoolConnectionInterceptor.class
-
- - link:AbstractSinglePoolConnectionInterceptor-asmified.java[Asmified]
-
-== References
-

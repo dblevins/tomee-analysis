@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/TransformationParameters.class
-
- - link:TransformationParameters-asmified.java[Asmified]
-
-== References
-

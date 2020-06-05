@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/core/CatchTag.class
-
- - link:CatchTag-asmified.java[Asmified]
-
-== References
-

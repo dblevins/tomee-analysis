@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/access/FieldAndMethodAccessMode$CompositeWriter.class
-
- - link:FieldAndMethodAccessMode$CompositeWriter-asmified.java[Asmified]
-
-== References
-

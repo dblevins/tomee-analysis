@@ -1,6 +1,0 @@
-= com/sun/faces/el/ChainAwareVariableResolver.class
-
- - link:ChainAwareVariableResolver-asmified.java[Asmified]
-
-== References
-

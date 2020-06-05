@@ -1,6 +1,0 @@
-= com/sun/faces/flow/builder/NavigationCaseBuilderImpl$RedirectBuilderImpl.class
-
- - link:NavigationCaseBuilderImpl$RedirectBuilderImpl-asmified.java[Asmified]
-
-== References
-

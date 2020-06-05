@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/TypeMirrorImpl.class
-
- - link:TypeMirrorImpl-asmified.java[Asmified]
-
-== References
-

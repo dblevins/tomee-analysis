@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/AbstractThreadSafeAttributeMap$Values.class
-
- - link:AbstractThreadSafeAttributeMap$Values-asmified.java[Asmified]
-
-== References
-

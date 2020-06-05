@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/metrics/MetricFilter$1.class
-
- - link:MetricFilter$1-asmified.java[Asmified]
-
-== References
-

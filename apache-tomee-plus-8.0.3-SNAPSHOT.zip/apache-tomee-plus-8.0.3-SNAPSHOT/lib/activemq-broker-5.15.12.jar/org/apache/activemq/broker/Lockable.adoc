@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/Lockable.class
-
- - link:Lockable-asmified.java[Asmified]
-
-== References
-

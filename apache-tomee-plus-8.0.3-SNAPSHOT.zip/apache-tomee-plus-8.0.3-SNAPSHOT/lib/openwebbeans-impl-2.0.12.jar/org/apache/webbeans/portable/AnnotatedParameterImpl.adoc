@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AnnotatedParameterImpl.class
-
- - link:AnnotatedParameterImpl-asmified.java[Asmified]
-
-== References
-

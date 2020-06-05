@@ -1,6 +1,0 @@
-= org/apache/openjpa/audit/Auditor.class
-
- - link:Auditor-asmified.java[Asmified]
-
-== References
-

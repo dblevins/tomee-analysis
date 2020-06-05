@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/datasources/SharedPoolDataSource.class
-
- - link:SharedPoolDataSource-asmified.java[Asmified]
-
-== References
-

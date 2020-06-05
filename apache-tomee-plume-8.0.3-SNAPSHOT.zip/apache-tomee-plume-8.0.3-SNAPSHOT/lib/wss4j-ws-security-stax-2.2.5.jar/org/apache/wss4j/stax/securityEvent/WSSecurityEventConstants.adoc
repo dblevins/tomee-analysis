@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/WSSecurityEventConstants.class
-
- - link:WSSecurityEventConstants-asmified.java[Asmified]
-
-== References
-

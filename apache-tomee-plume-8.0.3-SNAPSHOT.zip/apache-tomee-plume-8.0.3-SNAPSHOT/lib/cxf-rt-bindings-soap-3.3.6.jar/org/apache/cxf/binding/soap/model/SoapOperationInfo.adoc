@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/model/SoapOperationInfo.class
-
- - link:SoapOperationInfo-asmified.java[Asmified]
-
-== References
-

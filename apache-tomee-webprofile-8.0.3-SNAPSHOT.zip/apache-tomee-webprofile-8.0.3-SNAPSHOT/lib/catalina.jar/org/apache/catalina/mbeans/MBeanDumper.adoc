@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/MBeanDumper.class
-
- - link:MBeanDumper-asmified.java[Asmified]
-
-== References
-

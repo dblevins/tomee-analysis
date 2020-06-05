@@ -1,6 +1,0 @@
-= org/apache/openejb/config/GeneratedClientModules$Prune.class
-
- - link:GeneratedClientModules$Prune-asmified.java[Asmified]
-
-== References
-

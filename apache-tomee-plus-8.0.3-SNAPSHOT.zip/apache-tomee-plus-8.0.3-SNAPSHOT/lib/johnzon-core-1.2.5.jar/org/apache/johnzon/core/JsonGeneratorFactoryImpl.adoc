@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonGeneratorFactoryImpl.class
-
- - link:JsonGeneratorFactoryImpl-asmified.java[Asmified]
-
-== References
-

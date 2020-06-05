@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/ParameterNode.class
-
- - link:ParameterNode-asmified.java[Asmified]
-
-== References
-

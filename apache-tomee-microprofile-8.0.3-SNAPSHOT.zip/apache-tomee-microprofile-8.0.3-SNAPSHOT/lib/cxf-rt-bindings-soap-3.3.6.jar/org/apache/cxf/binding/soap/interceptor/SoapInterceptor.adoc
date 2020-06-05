@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/interceptor/SoapInterceptor.class
-
- - link:SoapInterceptor-asmified.java[Asmified]
-
-== References
-

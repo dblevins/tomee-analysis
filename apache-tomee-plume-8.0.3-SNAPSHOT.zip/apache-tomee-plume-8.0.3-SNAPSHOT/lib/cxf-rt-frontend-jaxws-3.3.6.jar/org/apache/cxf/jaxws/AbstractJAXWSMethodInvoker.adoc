@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker.class
-
- - link:AbstractJAXWSMethodInvoker-asmified.java[Asmified]
-
-== References
-

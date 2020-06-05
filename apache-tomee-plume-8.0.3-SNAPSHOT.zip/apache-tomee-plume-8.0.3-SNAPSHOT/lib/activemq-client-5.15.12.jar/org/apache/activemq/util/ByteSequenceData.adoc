@@ -1,6 +1,0 @@
-= org/apache/activemq/util/ByteSequenceData.class
-
- - link:ByteSequenceData-asmified.java[Asmified]
-
-== References
-

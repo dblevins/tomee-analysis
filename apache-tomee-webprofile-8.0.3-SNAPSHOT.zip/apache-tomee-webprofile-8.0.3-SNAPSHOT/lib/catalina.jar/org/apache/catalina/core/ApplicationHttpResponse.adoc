@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationHttpResponse.class
-
- - link:ApplicationHttpResponse-asmified.java[Asmified]
-
-== References
-

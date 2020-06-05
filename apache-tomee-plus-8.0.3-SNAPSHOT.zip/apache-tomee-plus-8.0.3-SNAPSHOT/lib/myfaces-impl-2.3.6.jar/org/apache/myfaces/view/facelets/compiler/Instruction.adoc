@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/Instruction.class
-
- - link:Instruction-asmified.java[Asmified]
-
-== References
-

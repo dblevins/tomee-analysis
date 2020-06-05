@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/BTreeVisitor$AndVisitor.class
-
- - link:BTreeVisitor$AndVisitor-asmified.java[Asmified]
-
-== References
-

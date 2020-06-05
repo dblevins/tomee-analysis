@@ -1,7 +1,0 @@
-= javax/faces/annotation/HeaderValuesMap.class
-
- - link:HeaderValuesMap-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Qualifier - 1

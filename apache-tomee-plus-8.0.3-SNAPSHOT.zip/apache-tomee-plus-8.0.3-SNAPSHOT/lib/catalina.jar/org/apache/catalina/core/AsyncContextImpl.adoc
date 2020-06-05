@@ -1,6 +1,0 @@
-= org/apache/catalina/core/AsyncContextImpl.class
-
- - link:AsyncContextImpl-asmified.java[Asmified]
-
-== References
-

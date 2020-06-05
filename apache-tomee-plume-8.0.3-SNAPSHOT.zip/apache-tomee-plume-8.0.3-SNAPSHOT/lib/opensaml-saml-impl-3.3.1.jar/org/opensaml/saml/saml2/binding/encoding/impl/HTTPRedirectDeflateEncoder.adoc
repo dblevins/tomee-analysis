@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/binding/encoding/impl/HTTPRedirectDeflateEncoder.class
-
- - link:HTTPRedirectDeflateEncoder-asmified.java[Asmified]
-
-== References
-

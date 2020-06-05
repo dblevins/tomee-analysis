@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JdbcMemoryTransactionStore$LastAckCommand.class
-
- - link:JdbcMemoryTransactionStore$LastAckCommand-asmified.java[Asmified]
-
-== References
-

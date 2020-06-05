@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlTableRendererBase.class
-
- - link:HtmlTableRendererBase-asmified.java[Asmified]
-
-== References
-

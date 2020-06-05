@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/Inheritance.class
-
- - link:Inheritance-asmified.java[Asmified]
-
-== References
-

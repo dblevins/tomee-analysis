@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/LazyMap.class
-
- - link:LazyMap-asmified.java[Asmified]
-
-== References
-

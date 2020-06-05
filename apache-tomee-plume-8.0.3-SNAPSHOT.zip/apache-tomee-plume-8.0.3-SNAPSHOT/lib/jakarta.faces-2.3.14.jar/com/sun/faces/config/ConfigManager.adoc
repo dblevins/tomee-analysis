@@ -1,6 +1,0 @@
-= com/sun/faces/config/ConfigManager.class
-
- - link:ConfigManager-asmified.java[Asmified]
-
-== References
-

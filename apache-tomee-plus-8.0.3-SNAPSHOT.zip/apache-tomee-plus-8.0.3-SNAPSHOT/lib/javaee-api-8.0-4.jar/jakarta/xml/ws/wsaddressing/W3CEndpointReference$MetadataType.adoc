@@ -1,6 +1,0 @@
-= jakarta/xml/ws/wsaddressing/W3CEndpointReference$MetadataType.class
-
- - link:W3CEndpointReference$MetadataType-asmified.java[Asmified]
-
-== References
-

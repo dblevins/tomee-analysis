@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/ThreadLocalClientState$CleanupThread.class
-
- - link:ThreadLocalClientState$CleanupThread-asmified.java[Asmified]
-
-== References
-

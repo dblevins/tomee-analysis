@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/processor/BinarySecurityTokenProcessor.class
-
- - link:BinarySecurityTokenProcessor-asmified.java[Asmified]
-
-== References
-

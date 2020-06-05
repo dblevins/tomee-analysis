@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/ConfiguredBeanLocator.class
-
- - link:ConfiguredBeanLocator-asmified.java[Asmified]
-
-== References
-

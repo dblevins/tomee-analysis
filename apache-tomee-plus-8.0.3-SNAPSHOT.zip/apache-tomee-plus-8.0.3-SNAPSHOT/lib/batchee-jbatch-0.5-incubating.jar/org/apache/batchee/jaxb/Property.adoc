@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Property.class
-
- - link:Property-asmified.java[Asmified]
-
-== References
-

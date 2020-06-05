@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/RequestedTokenCancelled.class
-
- - link:RequestedTokenCancelled-asmified.java[Asmified]
-
-== References
-

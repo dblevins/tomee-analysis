@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/InterceptorBean.class
-
- - link:InterceptorBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/tool/Util$EncodingError.class
-
- - link:Util$EncodingError-asmified.java[Asmified]
-
-== References
-

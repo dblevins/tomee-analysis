@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdrpi/RegistrationPolicy.class
-
- - link:RegistrationPolicy-asmified.java[Asmified]
-
-== References
-

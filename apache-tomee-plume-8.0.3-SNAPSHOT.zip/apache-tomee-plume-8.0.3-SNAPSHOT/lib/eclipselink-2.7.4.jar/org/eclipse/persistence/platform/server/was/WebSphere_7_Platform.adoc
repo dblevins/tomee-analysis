@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/server/was/WebSphere_7_Platform.class
-
- - link:WebSphere_7_Platform-asmified.java[Asmified]
-
-== References
-

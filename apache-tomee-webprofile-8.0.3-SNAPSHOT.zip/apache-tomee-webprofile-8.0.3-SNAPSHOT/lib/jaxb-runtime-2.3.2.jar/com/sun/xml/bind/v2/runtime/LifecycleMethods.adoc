@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/LifecycleMethods.class
-
- - link:LifecycleMethods-asmified.java[Asmified]
-
-== References
-

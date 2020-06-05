@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/remote/ServerClassLoaderLoader$FakeWebAppLoader.class
-
- - link:ServerClassLoaderLoader$FakeWebAppLoader-asmified.java[Asmified]
-
-== References
-

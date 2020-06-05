@@ -1,6 +1,0 @@
-= jakarta/xml/ws/spi/http/HttpHandler.class
-
- - link:HttpHandler-asmified.java[Asmified]
-
-== References
-

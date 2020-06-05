@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ServiceEndpointMethodMapping.class
-
- - link:ServiceEndpointMethodMapping-asmified.java[Asmified]
-
-== References
-

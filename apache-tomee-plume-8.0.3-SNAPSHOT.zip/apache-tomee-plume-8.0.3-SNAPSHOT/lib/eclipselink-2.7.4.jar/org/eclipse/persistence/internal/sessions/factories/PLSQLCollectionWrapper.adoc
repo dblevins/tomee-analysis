@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/PLSQLCollectionWrapper.class
-
- - link:PLSQLCollectionWrapper-asmified.java[Asmified]
-
-== References
-

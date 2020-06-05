@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/IMAPNamespaceFolder.class
-
- - link:IMAPNamespaceFolder-asmified.java[Asmified]
-
-== References
-

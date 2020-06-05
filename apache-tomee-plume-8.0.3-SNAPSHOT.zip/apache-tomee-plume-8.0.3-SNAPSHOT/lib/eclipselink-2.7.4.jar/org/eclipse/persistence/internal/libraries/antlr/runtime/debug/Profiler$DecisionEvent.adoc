@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/Profiler$DecisionEvent.class
-
- - link:Profiler$DecisionEvent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/CookieBufferingFilter.class
-
- - link:CookieBufferingFilter-asmified.java[Asmified]
-
-== References
-

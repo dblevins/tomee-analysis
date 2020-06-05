@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/interceptors/SecureConversationInInterceptor$SecureConversationSTSInvoker.class
-
- - link:SecureConversationInInterceptor$SecureConversationSTSInvoker-asmified.java[Asmified]
-
-== References
-

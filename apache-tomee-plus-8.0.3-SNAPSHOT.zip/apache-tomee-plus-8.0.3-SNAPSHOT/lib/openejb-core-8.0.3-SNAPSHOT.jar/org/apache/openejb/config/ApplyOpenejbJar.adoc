@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ApplyOpenejbJar.class
-
- - link:ApplyOpenejbJar-asmified.java[Asmified]
-
-== References
-

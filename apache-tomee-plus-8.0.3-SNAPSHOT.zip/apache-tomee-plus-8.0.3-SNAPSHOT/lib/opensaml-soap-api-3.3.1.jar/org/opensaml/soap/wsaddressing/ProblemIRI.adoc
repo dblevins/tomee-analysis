@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/ProblemIRI.class
-
- - link:ProblemIRI-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/ArtifactResponseMarshaller.class
-
- - link:ArtifactResponseMarshaller-asmified.java[Asmified]
-
-== References
-

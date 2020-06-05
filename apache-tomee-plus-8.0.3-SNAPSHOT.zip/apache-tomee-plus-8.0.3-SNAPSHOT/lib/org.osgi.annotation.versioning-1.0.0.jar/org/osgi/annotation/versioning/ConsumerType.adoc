@@ -1,6 +1,0 @@
-= org/osgi/annotation/versioning/ConsumerType.class
-
- - link:ConsumerType-asmified.java[Asmified]
-
-== References
-

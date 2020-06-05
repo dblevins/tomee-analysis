@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/helpers/Debug.class
-
- - link:Debug-asmified.java[Asmified]
-
-== References
-

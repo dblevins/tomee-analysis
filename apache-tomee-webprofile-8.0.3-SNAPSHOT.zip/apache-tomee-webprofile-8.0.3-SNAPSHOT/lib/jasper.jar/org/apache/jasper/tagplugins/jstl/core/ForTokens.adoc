@@ -1,6 +1,0 @@
-= org/apache/jasper/tagplugins/jstl/core/ForTokens.class
-
- - link:ForTokens-asmified.java[Asmified]
-
-== References
-

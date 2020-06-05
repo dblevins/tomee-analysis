@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/Mappings$CollectionMapping.class
-
- - link:Mappings$CollectionMapping-asmified.java[Asmified]
-
-== References
-

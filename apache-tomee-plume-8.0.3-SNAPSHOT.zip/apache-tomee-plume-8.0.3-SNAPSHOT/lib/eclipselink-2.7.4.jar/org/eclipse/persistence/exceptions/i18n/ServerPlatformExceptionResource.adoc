@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/i18n/ServerPlatformExceptionResource.class
-
- - link:ServerPlatformExceptionResource-asmified.java[Asmified]
-
-== References
-

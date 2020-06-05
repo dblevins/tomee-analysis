@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/ReplaceStringsInputStream.class
-
- - link:ReplaceStringsInputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesClientBehaviorRenderer.class
-
- - link:FacesClientBehaviorRenderer-asmified.java[Asmified]
-
-== References
-

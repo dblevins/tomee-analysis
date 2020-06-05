@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/ClasspathSourceJar.class
-
- - link:ClasspathSourceJar-asmified.java[Asmified]
-
-== References
-

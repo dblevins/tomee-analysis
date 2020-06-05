@@ -1,6 +1,0 @@
-= com/sun/faces/context/ExternalContextFactoryImpl.class
-
- - link:ExternalContextFactoryImpl-asmified.java[Asmified]
-
-== References
-

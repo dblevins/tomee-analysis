@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl11/ResourceManagerWSDLLocator.class
-
- - link:ResourceManagerWSDLLocator-asmified.java[Asmified]
-
-== References
-

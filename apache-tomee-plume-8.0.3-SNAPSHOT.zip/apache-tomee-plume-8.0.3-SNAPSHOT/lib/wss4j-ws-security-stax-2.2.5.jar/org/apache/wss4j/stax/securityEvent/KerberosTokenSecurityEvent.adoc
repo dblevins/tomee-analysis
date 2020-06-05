@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/KerberosTokenSecurityEvent.class
-
- - link:KerberosTokenSecurityEvent-asmified.java[Asmified]
-
-== References
-

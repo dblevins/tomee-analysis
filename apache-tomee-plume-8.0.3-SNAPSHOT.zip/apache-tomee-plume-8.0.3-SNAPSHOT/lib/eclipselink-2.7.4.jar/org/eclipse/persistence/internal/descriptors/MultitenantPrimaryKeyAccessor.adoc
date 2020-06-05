@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/MultitenantPrimaryKeyAccessor.class
-
- - link:MultitenantPrimaryKeyAccessor-asmified.java[Asmified]
-
-== References
-

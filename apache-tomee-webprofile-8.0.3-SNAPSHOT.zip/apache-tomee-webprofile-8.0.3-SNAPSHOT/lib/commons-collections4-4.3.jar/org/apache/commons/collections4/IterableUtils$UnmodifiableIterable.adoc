@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/IterableUtils$UnmodifiableIterable.class
-
- - link:IterableUtils$UnmodifiableIterable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/realm/event/GssAuthenticationEvent.class
-
- - link:GssAuthenticationEvent-asmified.java[Asmified]
-
-== References
-

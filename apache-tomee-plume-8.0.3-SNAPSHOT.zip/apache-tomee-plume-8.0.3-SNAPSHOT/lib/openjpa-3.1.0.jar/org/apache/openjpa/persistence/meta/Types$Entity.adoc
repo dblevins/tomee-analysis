@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/Types$Entity.class
-
- - link:Types$Entity-asmified.java[Asmified]
-
-== References
-

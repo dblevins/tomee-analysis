@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/codegen/StackMapFrame.class
-
- - link:StackMapFrame-asmified.java[Asmified]
-
-== References
-

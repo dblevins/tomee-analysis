@@ -1,6 +1,0 @@
-= org/apache/naming/ResourceEnvRef.class
-
- - link:ResourceEnvRef-asmified.java[Asmified]
-
-== References
-

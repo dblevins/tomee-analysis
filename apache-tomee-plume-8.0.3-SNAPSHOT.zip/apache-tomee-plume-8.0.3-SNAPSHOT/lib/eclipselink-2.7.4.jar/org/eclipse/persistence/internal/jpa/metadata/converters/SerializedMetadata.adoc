@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/converters/SerializedMetadata.class
-
- - link:SerializedMetadata-asmified.java[Asmified]
-
-== References
-

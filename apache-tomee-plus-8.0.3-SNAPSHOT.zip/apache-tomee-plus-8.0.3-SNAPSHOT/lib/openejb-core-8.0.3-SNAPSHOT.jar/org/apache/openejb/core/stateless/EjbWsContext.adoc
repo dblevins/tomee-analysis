@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateless/EjbWsContext.class
-
- - link:EjbWsContext-asmified.java[Asmified]
-
-== References
-

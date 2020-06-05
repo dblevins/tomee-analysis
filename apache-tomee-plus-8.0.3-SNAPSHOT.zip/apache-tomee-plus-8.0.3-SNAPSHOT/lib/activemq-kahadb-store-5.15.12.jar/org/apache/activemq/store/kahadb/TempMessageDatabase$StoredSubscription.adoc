@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/TempMessageDatabase$StoredSubscription.class
-
- - link:TempMessageDatabase$StoredSubscription-asmified.java[Asmified]
-
-== References
-

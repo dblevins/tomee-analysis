@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/TempMessageDatabase$StoredDestination.class
-
- - link:TempMessageDatabase$StoredDestination-asmified.java[Asmified]
-
-== References
-

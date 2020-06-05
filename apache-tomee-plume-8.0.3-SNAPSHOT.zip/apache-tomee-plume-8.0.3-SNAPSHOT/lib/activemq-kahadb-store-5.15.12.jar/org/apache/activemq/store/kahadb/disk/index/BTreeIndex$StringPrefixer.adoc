@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/BTreeIndex$StringPrefixer.class
-
- - link:BTreeIndex$StringPrefixer-asmified.java[Asmified]
-
-== References
-

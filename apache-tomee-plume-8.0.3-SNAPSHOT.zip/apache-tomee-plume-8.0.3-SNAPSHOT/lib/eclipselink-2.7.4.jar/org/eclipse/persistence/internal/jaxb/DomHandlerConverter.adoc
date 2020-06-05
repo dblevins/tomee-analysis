@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/DomHandlerConverter.class
-
- - link:DomHandlerConverter-asmified.java[Asmified]
-
-== References
-

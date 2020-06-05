@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/MaxFunctionFactory.class
-
- - link:MaxFunctionFactory-asmified.java[Asmified]
-
-== References
-

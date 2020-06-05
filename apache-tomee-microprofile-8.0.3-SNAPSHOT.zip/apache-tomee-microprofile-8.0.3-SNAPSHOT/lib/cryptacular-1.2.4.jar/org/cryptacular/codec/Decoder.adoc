@@ -1,6 +1,0 @@
-= org/cryptacular/codec/Decoder.class
-
- - link:Decoder-asmified.java[Asmified]
-
-== References
-

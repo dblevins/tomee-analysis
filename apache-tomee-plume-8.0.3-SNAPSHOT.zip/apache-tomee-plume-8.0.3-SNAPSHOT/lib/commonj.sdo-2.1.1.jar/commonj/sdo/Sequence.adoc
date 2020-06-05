@@ -1,6 +1,0 @@
-= commonj/sdo/Sequence.class
-
- - link:Sequence-asmified.java[Asmified]
-
-== References
-

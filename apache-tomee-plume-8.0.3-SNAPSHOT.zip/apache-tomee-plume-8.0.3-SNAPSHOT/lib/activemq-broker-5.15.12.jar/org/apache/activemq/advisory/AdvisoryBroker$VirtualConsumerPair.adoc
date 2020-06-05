@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/AdvisoryBroker$VirtualConsumerPair.class
-
- - link:AdvisoryBroker$VirtualConsumerPair-asmified.java[Asmified]
-
-== References
-

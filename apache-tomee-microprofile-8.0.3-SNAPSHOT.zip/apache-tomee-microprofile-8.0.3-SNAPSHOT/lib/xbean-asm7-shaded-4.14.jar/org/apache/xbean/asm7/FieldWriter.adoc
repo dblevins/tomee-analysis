@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/FieldWriter.class
-
- - link:FieldWriter-asmified.java[Asmified]
-
-== References
-

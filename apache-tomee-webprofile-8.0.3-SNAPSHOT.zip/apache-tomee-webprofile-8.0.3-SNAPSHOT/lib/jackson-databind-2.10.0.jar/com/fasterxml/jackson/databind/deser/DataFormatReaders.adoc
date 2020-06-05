@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/DataFormatReaders.class
-
- - link:DataFormatReaders-asmified.java[Asmified]
-
-== References
-

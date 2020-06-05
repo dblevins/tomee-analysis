@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/soap12/SOAP12FaultSerializer.class
-
- - link:SOAP12FaultSerializer-asmified.java[Asmified]
-
-== References
-

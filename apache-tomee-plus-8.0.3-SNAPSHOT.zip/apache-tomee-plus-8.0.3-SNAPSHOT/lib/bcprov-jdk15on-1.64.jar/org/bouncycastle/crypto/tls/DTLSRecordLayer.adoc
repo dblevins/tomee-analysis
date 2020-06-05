@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/DTLSRecordLayer.class
-
- - link:DTLSRecordLayer-asmified.java[Asmified]
-
-== References
-

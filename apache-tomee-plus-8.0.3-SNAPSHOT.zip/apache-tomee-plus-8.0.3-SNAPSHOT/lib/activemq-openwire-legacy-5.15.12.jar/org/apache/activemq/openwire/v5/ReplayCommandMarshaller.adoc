@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v5/ReplayCommandMarshaller.class
-
- - link:ReplayCommandMarshaller-asmified.java[Asmified]
-
-== References
-

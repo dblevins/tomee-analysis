@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/CompositeCacheAttributes.class
-
- - link:CompositeCacheAttributes-asmified.java[Asmified]
-
-== References
-

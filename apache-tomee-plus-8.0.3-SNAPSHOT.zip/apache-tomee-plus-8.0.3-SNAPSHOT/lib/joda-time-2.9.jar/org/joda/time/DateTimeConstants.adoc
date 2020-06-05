@@ -1,6 +1,0 @@
-= org/joda/time/DateTimeConstants.class
-
- - link:DateTimeConstants-asmified.java[Asmified]
-
-== References
-

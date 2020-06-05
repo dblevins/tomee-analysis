@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/ProviderInfo.class
-
- - link:ProviderInfo-asmified.java[Asmified]
-
-== References
-

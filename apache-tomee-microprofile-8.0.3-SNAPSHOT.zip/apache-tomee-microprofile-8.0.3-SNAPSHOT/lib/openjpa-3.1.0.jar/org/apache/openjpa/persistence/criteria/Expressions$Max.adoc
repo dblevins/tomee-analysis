@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Max.class
-
- - link:Expressions$Max-asmified.java[Asmified]
-
-== References
-

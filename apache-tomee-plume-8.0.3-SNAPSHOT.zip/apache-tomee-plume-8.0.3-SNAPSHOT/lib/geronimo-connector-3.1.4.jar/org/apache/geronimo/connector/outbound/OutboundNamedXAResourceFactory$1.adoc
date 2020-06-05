@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/OutboundNamedXAResourceFactory$1.class
-
- - link:OutboundNamedXAResourceFactory$1-asmified.java[Asmified]
-
-== References
-

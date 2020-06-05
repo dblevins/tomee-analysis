@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ConverterTag.class
-
- - link:ConverterTag-asmified.java[Asmified]
-
-== References
-

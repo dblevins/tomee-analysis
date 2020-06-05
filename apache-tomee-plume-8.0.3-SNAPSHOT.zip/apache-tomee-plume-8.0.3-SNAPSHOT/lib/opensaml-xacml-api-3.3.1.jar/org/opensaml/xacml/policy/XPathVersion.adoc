@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/XPathVersion.class
-
- - link:XPathVersion-asmified.java[Asmified]
-
-== References
-

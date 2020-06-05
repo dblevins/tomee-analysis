@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/ContainerMBean.class
-
- - link:ContainerMBean-asmified.java[Asmified]
-
-== References
-

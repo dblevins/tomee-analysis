@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/DataSourceProxy.class
-
- - link:DataSourceProxy-asmified.java[Asmified]
-
-== References
-

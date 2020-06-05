@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/behavior/FacesBehaviorExtension.class
-
- - link:FacesBehaviorExtension-asmified.java[Asmified]
-
-== References
-

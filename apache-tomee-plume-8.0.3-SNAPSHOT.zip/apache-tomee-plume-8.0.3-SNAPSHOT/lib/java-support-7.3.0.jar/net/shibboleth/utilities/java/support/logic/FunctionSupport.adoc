@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/logic/FunctionSupport.class
-
- - link:FunctionSupport-asmified.java[Asmified]
-
-== References
-

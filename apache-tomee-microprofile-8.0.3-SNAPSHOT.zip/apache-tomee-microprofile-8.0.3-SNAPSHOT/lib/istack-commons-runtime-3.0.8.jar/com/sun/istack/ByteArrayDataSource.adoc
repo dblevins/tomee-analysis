@@ -1,6 +1,0 @@
-= com/sun/istack/ByteArrayDataSource.class
-
- - link:ByteArrayDataSource-asmified.java[Asmified]
-
-== References
-

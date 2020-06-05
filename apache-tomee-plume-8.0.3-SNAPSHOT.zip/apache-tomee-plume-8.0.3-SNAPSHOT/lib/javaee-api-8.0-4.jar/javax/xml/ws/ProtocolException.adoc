@@ -1,7 +1,0 @@
-= javax/xml/ws/ProtocolException.class
-
- - link:ProtocolException-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.WebServiceException - 5

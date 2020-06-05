@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/meta/MetaDataSerializer.class
-
- - link:MetaDataSerializer-asmified.java[Asmified]
-
-== References
-

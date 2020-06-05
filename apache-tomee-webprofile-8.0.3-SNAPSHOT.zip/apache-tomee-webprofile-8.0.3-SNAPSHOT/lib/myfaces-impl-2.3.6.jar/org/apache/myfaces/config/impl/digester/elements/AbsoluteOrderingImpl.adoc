@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/AbsoluteOrderingImpl.class
-
- - link:AbsoluteOrderingImpl-asmified.java[Asmified]
-
-== References
-

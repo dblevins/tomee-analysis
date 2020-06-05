@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/symmetric/SipHash.class
-
- - link:SipHash-asmified.java[Asmified]
-
-== References
-

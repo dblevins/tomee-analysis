@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQTempQueue.class
-
- - link:ActiveMQTempQueue-asmified.java[Asmified]
-
-== References
-

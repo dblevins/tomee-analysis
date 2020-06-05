@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/core/descriptors/CoreObjectBuilder.class
-
- - link:CoreObjectBuilder-asmified.java[Asmified]
-
-== References
-

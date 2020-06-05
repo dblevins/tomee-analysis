@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sequencing/NativeSequence.class
-
- - link:NativeSequence-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/IndexExpressionFactory.class
-
- - link:IndexExpressionFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/TransactionServiceInfo.class
-
- - link:TransactionServiceInfo-asmified.java[Asmified]
-
-== References
-

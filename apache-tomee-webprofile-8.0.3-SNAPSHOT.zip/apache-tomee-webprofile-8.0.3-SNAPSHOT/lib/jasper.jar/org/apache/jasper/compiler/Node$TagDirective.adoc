@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Node$TagDirective.class
-
- - link:Node$TagDirective-asmified.java[Asmified]
-
-== References
-

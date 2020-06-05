@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/ExcludeDefaultMappings.class
-
- - link:ExcludeDefaultMappings-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/interceptors/STSTokenOutInterceptor$AuthMode.class
-
- - link:STSTokenOutInterceptor$AuthMode-asmified.java[Asmified]
-
-== References
-

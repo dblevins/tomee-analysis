@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/opt/FieldAccessor_Byte.class
-
- - link:FieldAccessor_Byte-asmified.java[Asmified]
-
-== References
-

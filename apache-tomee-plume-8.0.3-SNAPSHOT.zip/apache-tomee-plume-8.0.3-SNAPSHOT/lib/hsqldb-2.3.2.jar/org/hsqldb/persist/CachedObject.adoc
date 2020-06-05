@@ -1,6 +1,0 @@
-= org/hsqldb/persist/CachedObject.class
-
- - link:CachedObject-asmified.java[Asmified]
-
-== References
-

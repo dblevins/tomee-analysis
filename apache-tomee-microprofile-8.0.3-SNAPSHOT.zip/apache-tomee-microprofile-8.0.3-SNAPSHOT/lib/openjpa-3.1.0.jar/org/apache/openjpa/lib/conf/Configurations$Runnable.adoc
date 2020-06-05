@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/Configurations$Runnable.class
-
- - link:Configurations$Runnable-asmified.java[Asmified]
-
-== References
-

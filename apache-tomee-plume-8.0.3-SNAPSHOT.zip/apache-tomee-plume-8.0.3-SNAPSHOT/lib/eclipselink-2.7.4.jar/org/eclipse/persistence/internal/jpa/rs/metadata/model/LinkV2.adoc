@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/rs/metadata/model/LinkV2.class
-
- - link:LinkV2-asmified.java[Asmified]
-
-== References
-

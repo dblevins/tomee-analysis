@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/FieldResult.class
-
- - link:FieldResult-asmified.java[Asmified]
-
-== References
-

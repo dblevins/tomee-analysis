@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/ServerLifeCycleManager.class
-
- - link:ServerLifeCycleManager-asmified.java[Asmified]
-
-== References
-

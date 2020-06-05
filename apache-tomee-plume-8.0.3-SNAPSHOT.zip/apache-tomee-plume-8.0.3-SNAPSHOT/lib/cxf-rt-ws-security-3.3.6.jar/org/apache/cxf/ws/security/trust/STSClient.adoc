@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/trust/STSClient.class
-
- - link:STSClient-asmified.java[Asmified]
-
-== References
-

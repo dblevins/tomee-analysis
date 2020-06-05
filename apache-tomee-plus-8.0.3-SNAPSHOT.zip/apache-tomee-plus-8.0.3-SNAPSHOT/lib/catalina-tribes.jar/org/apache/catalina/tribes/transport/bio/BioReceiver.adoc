@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/bio/BioReceiver.class
-
- - link:BioReceiver-asmified.java[Asmified]
-
-== References
-

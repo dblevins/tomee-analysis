@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/list/SimpleHomogeneousList.class
-
- - link:SimpleHomogeneousList-asmified.java[Asmified]
-
-== References
-

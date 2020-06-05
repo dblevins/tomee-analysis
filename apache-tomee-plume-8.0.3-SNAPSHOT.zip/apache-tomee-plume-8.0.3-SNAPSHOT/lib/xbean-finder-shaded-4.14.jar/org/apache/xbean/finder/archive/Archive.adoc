@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/archive/Archive.class
-
- - link:Archive-asmified.java[Asmified]
-
-== References
-

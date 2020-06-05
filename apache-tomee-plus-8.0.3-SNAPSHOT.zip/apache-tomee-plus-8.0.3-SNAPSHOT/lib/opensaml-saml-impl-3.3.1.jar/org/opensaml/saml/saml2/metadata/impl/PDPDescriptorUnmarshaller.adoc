@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/PDPDescriptorUnmarshaller.class
-
- - link:PDPDescriptorUnmarshaller-asmified.java[Asmified]
-
-== References
-

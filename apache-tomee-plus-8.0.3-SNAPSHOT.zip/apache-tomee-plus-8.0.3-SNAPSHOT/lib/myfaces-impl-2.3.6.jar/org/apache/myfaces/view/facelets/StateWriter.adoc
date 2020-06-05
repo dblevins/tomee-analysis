@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/StateWriter.class
-
- - link:StateWriter-asmified.java[Asmified]
-
-== References
-

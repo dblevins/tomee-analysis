@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/changetracking/MapChangeEvent.class
-
- - link:MapChangeEvent-asmified.java[Asmified]
-
-== References
-

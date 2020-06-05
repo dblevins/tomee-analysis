@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/misc/LookaheadStream.class
-
- - link:LookaheadStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/JAXBDataBase.class
-
- - link:JAXBDataBase-asmified.java[Asmified]
-
-== References
-

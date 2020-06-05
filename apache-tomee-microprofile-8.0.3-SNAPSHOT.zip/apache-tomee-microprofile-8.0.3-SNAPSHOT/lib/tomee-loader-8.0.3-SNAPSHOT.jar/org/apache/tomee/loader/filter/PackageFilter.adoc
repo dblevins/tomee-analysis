@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/filter/PackageFilter.class
-
- - link:PackageFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/SymbolTable.class
-
- - link:SymbolTable-asmified.java[Asmified]
-
-== References
-

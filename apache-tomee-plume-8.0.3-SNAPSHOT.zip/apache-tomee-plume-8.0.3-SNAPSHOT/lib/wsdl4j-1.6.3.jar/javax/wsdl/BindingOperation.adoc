@@ -1,6 +1,0 @@
-= javax/wsdl/BindingOperation.class
-
- - link:BindingOperation-asmified.java[Asmified]
-
-== References
-

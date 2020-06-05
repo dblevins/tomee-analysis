@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/BrokerPlugin.class
-
- - link:BrokerPlugin-asmified.java[Asmified]
-
-== References
-

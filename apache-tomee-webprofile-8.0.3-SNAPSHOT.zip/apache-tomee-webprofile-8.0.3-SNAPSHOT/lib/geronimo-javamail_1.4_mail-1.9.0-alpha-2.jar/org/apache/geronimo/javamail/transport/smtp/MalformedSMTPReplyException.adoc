@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/smtp/MalformedSMTPReplyException.class
-
- - link:MalformedSMTPReplyException-asmified.java[Asmified]
-
-== References
-

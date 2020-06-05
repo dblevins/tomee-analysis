@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/Factory.class
-
- - link:Factory-asmified.java[Asmified]
-
-== References
-

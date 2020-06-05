@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlClassExtractor.class
-
- - link:XmlClassExtractor-asmified.java[Asmified]
-
-== References
-

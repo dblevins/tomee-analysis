@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/spring/SoapVersionRegistrar.class
-
- - link:SoapVersionRegistrar-asmified.java[Asmified]
-
-== References
-

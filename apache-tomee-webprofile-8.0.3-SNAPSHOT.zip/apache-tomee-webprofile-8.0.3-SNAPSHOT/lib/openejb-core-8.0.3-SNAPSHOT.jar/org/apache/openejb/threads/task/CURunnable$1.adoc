@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/task/CURunnable$1.class
-
- - link:CURunnable$1-asmified.java[Asmified]
-
-== References
-

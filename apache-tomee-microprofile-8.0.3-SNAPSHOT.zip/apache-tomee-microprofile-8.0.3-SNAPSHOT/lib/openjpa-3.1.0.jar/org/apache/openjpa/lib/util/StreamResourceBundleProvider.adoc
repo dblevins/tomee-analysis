@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/StreamResourceBundleProvider.class
-
- - link:StreamResourceBundleProvider-asmified.java[Asmified]
-
-== References
-

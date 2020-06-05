@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/RecipientKeyInfoMarshaller.class
-
- - link:RecipientKeyInfoMarshaller-asmified.java[Asmified]
-
-== References
-

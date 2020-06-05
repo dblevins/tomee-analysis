@@ -1,7 +1,0 @@
-= javax/resource/spi/InvalidPropertyException.class
-
- - link:InvalidPropertyException-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 6

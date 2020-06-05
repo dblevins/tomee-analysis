@@ -1,6 +1,0 @@
-= org/apache/webbeans/web/lifecycle/test/MockServletContext$1.class
-
- - link:MockServletContext$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/LineNumberNode.class
-
- - link:LineNumberNode-asmified.java[Asmified]
-
-== References
-

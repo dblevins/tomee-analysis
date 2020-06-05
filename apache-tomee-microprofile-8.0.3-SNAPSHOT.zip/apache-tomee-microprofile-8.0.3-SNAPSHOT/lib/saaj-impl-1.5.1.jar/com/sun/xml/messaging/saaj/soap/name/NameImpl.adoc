@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/name/NameImpl.class
-
- - link:NameImpl-asmified.java[Asmified]
-
-== References
-

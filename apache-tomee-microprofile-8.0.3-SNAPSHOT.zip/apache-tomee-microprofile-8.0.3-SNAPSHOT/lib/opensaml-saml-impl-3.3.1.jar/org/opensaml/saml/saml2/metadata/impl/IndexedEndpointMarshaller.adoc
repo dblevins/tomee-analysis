@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/IndexedEndpointMarshaller.class
-
- - link:IndexedEndpointMarshaller-asmified.java[Asmified]
-
-== References
-

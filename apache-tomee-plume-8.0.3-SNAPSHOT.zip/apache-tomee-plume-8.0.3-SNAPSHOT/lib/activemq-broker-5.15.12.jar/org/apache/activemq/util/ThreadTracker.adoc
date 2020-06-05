@@ -1,6 +1,0 @@
-= org/apache/activemq/util/ThreadTracker.class
-
- - link:ThreadTracker-asmified.java[Asmified]
-
-== References
-

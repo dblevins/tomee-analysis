@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/TransactionControllingLock.class
-
- - link:TransactionControllingLock-asmified.java[Asmified]
-
-== References
-

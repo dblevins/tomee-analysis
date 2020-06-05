@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/matchers/NameMatcher.class
-
- - link:NameMatcher-asmified.java[Asmified]
-
-== References
-

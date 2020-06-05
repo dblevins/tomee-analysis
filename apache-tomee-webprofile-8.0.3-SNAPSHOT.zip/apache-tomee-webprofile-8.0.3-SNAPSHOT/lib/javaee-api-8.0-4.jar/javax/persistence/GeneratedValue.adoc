@@ -1,7 +1,0 @@
-= javax/persistence/GeneratedValue.class
-
- - link:GeneratedValue-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.GenerationType - 2

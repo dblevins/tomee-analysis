@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/CharArraySource.class
-
- - link:CharArraySource-asmified.java[Asmified]
-
-== References
-

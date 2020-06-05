@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/security/impl/ReceivedEndpointSecurityHandler.class
-
- - link:ReceivedEndpointSecurityHandler-asmified.java[Asmified]
-
-== References
-

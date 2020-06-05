@@ -1,6 +1,0 @@
-= org/slf4j/event/LoggingEvent.class
-
- - link:LoggingEvent-asmified.java[Asmified]
-
-== References
-

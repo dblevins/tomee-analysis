@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/SQLServerPlatform.class
-
- - link:SQLServerPlatform-asmified.java[Asmified]
-
-== References
-

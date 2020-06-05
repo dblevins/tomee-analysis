@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/Future$List.class
-
- - link:Future$List-asmified.java[Asmified]
-
-== References
-

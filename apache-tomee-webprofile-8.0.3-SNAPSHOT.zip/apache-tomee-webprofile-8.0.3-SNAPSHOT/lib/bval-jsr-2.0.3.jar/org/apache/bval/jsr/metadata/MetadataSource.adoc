@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/MetadataSource.class
-
- - link:MetadataSource-asmified.java[Asmified]
-
-== References
-

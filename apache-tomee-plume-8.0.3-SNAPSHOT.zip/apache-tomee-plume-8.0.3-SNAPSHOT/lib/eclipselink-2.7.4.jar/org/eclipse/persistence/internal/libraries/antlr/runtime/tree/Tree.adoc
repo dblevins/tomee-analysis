@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/Tree.class
-
- - link:Tree-asmified.java[Asmified]
-
-== References
-

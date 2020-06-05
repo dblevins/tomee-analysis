@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/converters/ObjectTypeConverterImpl.class
-
- - link:ObjectTypeConverterImpl-asmified.java[Asmified]
-
-== References
-

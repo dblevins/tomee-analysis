@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/BaseNsContext.class
-
- - link:BaseNsContext-asmified.java[Asmified]
-
-== References
-

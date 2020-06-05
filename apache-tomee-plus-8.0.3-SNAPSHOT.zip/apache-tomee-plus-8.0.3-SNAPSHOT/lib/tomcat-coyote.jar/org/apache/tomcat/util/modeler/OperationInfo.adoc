@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/modeler/OperationInfo.class
-
- - link:OperationInfo-asmified.java[Asmified]
-
-== References
-

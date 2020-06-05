@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/EnumTypeInfo.class
-
- - link:EnumTypeInfo-asmified.java[Asmified]
-
-== References
-

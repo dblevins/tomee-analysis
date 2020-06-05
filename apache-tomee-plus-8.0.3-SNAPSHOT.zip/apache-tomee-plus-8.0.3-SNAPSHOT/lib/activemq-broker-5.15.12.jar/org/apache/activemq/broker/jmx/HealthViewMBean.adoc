@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/HealthViewMBean.class
-
- - link:HealthViewMBean-asmified.java[Asmified]
-
-== References
-

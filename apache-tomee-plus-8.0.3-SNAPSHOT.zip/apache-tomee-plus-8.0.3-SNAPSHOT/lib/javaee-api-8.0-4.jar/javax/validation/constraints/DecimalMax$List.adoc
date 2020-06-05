@@ -1,7 +1,0 @@
-= javax/validation/constraints/DecimalMax$List.class
-
- - link:DecimalMax$List-asmified.java[Asmified]
-
-== References
-
- - javax.validation.constraints.DecimalMax - 1

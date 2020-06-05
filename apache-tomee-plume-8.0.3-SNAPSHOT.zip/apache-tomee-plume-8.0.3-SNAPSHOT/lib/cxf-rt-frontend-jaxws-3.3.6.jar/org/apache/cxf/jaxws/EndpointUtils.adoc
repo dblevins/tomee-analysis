@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/EndpointUtils.class
-
- - link:EndpointUtils-asmified.java[Asmified]
-
-== References
-

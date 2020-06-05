@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/AssemblerTool.class
-
- - link:AssemblerTool-asmified.java[Asmified]
-
-== References
-

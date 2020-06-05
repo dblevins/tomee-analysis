@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetHandler.class
-
- - link:AttachedObjectTargetHandler-asmified.java[Asmified]
-
-== References
-

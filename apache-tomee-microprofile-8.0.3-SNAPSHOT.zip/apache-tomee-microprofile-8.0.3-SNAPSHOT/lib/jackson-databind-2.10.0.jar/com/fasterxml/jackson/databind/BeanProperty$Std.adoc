@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/BeanProperty$Std.class
-
- - link:BeanProperty$Std-asmified.java[Asmified]
-
-== References
-

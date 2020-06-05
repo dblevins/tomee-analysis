@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/RemoteHostValve.class
-
- - link:RemoteHostValve-asmified.java[Asmified]
-
-== References
-

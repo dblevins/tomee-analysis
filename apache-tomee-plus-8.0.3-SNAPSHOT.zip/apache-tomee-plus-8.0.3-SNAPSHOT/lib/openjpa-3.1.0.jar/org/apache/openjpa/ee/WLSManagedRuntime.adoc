@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/WLSManagedRuntime.class
-
- - link:WLSManagedRuntime-asmified.java[Asmified]
-
-== References
-

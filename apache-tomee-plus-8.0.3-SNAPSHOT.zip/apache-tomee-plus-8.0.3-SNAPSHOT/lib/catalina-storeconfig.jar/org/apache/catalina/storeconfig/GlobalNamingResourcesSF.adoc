@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/GlobalNamingResourcesSF.class
-
- - link:GlobalNamingResourcesSF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/Mappings$MapUnwrapperWriter.class
-
- - link:Mappings$MapUnwrapperWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/xml/wsdl11/XmlIoPlugin.class
-
- - link:XmlIoPlugin-asmified.java[Asmified]
-
-== References
-

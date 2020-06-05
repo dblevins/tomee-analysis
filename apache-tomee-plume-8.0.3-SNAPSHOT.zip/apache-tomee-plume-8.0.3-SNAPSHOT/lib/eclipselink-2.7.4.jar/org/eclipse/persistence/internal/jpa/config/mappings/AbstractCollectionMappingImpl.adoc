@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/mappings/AbstractCollectionMappingImpl.class
-
- - link:AbstractCollectionMappingImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/InjectableBeanManager.class
-
- - link:InjectableBeanManager-asmified.java[Asmified]
-
-== References
-

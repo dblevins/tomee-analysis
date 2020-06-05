@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesConverterExtension.class
-
- - link:FacesConverterExtension-asmified.java[Asmified]
-
-== References
-

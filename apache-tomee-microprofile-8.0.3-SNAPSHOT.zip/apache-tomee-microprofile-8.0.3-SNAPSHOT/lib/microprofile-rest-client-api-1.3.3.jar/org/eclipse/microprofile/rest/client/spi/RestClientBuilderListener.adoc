@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/rest/client/spi/RestClientBuilderListener.class
-
- - link:RestClientBuilderListener-asmified.java[Asmified]
-
-== References
-

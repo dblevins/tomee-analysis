@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/coordination/ServiceAnnouncement.class
-
- - link:ServiceAnnouncement-asmified.java[Asmified]
-
-== References
-

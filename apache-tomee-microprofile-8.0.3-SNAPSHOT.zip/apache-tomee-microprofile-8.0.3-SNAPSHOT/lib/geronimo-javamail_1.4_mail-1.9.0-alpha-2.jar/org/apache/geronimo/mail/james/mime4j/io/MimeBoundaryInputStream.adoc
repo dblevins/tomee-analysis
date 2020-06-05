@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/io/MimeBoundaryInputStream.class
-
- - link:MimeBoundaryInputStream-asmified.java[Asmified]
-
-== References
-

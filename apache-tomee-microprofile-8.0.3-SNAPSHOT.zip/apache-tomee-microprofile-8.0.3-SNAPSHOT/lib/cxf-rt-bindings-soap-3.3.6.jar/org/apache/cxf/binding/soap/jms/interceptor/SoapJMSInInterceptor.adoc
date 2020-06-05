@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/jms/interceptor/SoapJMSInInterceptor.class
-
- - link:SoapJMSInInterceptor-asmified.java[Asmified]
-
-== References
-

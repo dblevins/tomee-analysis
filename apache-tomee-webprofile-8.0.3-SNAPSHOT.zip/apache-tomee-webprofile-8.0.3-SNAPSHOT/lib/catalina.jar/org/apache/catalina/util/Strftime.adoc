@@ -1,6 +1,0 @@
-= org/apache/catalina/util/Strftime.class
-
- - link:Strftime-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/doc/JavaDocProvider$ClassDocs.class
-
- - link:JavaDocProvider$ClassDocs-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/page/Page.class
-
- - link:Page-asmified.java[Asmified]
-
-== References
-

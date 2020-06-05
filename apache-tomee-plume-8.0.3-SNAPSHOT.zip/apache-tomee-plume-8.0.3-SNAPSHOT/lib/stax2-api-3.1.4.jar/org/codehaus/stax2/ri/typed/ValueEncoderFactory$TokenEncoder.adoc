@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/ValueEncoderFactory$TokenEncoder.class
-
- - link:ValueEncoderFactory$TokenEncoder-asmified.java[Asmified]
-
-== References
-

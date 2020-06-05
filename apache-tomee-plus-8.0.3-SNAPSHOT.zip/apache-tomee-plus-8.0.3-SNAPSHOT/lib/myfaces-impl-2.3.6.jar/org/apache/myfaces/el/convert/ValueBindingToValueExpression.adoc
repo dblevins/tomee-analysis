@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/convert/ValueBindingToValueExpression.class
-
- - link:ValueBindingToValueExpression-asmified.java[Asmified]
-
-== References
-

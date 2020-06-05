@@ -1,6 +1,0 @@
-= com/sun/faces/ext/taglib/FocusTag.class
-
- - link:FocusTag-asmified.java[Asmified]
-
-== References
-

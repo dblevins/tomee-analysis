@@ -1,6 +1,0 @@
-= org/xml/sax/EntityResolver.class
-
- - link:EntityResolver-asmified.java[Asmified]
-
-== References
-

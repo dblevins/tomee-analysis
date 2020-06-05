@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/StrictOrderDispatchPolicy.class
-
- - link:StrictOrderDispatchPolicy-asmified.java[Asmified]
-
-== References
-

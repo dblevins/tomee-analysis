@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/server/WsHandshakeRequest.class
-
- - link:WsHandshakeRequest-asmified.java[Asmified]
-
-== References
-

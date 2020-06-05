@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/ExplicitConstructorCall.class
-
- - link:ExplicitConstructorCall-asmified.java[Asmified]
-
-== References
-

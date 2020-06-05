@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlNameTransformer.class
-
- - link:XmlNameTransformer-asmified.java[Asmified]
-
-== References
-

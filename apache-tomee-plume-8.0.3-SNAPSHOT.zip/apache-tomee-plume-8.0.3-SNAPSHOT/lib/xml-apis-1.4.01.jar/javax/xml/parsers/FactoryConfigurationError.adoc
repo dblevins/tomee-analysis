@@ -1,6 +1,0 @@
-= javax/xml/parsers/FactoryConfigurationError.class
-
- - link:FactoryConfigurationError-asmified.java[Asmified]
-
-== References
-

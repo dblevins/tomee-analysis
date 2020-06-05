@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/logic/EntityIdPredicate.class
-
- - link:EntityIdPredicate-asmified.java[Asmified]
-
-== References
-

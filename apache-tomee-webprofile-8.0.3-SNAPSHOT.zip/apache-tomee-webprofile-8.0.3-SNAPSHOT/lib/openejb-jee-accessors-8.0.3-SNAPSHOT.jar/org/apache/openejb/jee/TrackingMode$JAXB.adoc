@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TrackingMode$JAXB.class
-
- - link:TrackingMode$JAXB-asmified.java[Asmified]
-
-== References
-

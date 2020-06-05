@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/converter/ByteConverter.class
-
- - link:ByteConverter-asmified.java[Asmified]
-
-== References
-

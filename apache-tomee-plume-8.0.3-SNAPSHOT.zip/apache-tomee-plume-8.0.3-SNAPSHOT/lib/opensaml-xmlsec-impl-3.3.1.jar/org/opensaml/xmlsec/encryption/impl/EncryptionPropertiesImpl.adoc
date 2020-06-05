@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/EncryptionPropertiesImpl.class
-
- - link:EncryptionPropertiesImpl-asmified.java[Asmified]
-
-== References
-

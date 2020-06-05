@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/AbstractAttributeMap$1.class
-
- - link:AbstractAttributeMap$1-asmified.java[Asmified]
-
-== References
-

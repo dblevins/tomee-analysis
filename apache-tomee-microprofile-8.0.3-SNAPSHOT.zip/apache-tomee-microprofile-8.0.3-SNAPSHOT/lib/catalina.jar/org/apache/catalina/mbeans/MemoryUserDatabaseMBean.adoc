@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/MemoryUserDatabaseMBean.class
-
- - link:MemoryUserDatabaseMBean-asmified.java[Asmified]
-
-== References
-

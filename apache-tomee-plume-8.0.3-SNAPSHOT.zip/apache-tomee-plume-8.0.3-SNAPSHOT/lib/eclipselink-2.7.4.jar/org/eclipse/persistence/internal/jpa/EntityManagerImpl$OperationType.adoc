@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/EntityManagerImpl$OperationType.class
-
- - link:EntityManagerImpl$OperationType-asmified.java[Asmified]
-
-== References
-

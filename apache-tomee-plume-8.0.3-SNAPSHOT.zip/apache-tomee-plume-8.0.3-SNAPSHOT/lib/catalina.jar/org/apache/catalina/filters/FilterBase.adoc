@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/FilterBase.class
-
- - link:FilterBase-asmified.java[Asmified]
-
-== References
-

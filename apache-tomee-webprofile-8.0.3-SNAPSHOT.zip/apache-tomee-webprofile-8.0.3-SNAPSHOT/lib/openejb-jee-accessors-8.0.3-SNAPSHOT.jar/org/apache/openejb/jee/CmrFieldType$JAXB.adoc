@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/CmrFieldType$JAXB.class
-
- - link:CmrFieldType$JAXB-asmified.java[Asmified]
-
-== References
-

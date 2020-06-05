@@ -1,6 +1,0 @@
-= org/opensaml/soap/client/http/PipelineFactoryHttpSOAPClient.class
-
- - link:PipelineFactoryHttpSOAPClient-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/NumberDeserializers$IntegerDeserializer.class
-
- - link:NumberDeserializers$IntegerDeserializer-asmified.java[Asmified]
-
-== References
-

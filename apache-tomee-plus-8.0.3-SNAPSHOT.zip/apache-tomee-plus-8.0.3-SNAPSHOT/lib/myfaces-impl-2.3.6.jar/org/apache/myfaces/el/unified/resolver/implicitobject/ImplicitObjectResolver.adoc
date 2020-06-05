@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/implicitobject/ImplicitObjectResolver.class
-
- - link:ImplicitObjectResolver-asmified.java[Asmified]
-
-== References
-

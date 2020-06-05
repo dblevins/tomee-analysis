@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/EjbTimerServiceImpl.class
-
- - link:EjbTimerServiceImpl-asmified.java[Asmified]
-
-== References
-

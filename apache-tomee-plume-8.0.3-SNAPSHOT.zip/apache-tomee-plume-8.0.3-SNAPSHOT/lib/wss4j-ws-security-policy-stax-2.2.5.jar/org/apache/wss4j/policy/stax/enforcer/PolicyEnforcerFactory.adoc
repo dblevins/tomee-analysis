@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/enforcer/PolicyEnforcerFactory.class
-
- - link:PolicyEnforcerFactory-asmified.java[Asmified]
-
-== References
-

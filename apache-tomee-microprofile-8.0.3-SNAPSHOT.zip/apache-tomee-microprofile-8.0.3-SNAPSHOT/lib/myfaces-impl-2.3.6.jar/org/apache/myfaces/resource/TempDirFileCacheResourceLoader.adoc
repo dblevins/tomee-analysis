@@ -1,6 +1,0 @@
-= org/apache/myfaces/resource/TempDirFileCacheResourceLoader.class
-
- - link:TempDirFileCacheResourceLoader-asmified.java[Asmified]
-
-== References
-

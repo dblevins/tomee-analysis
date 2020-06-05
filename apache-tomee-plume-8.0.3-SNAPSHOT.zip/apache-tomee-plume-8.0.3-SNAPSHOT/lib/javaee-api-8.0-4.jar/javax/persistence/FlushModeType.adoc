@@ -1,7 +1,0 @@
-= javax/persistence/FlushModeType.class
-
- - link:FlushModeType-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.FlushModeType - 21

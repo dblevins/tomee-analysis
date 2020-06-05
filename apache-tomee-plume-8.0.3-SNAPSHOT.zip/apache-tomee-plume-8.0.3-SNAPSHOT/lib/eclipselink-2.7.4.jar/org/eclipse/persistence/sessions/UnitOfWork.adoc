@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/UnitOfWork.class
-
- - link:UnitOfWork-asmified.java[Asmified]
-
-== References
-

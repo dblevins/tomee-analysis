@@ -1,6 +1,0 @@
-= org/apache/openejb/config/WsDeployer.class
-
- - link:WsDeployer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/log/CommonsLogFactory.class
-
- - link:CommonsLogFactory-asmified.java[Asmified]
-
-== References
-

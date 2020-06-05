@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PreparedQueryCache$Exclusion.class
-
- - link:PreparedQueryCache$Exclusion-asmified.java[Asmified]
-
-== References
-

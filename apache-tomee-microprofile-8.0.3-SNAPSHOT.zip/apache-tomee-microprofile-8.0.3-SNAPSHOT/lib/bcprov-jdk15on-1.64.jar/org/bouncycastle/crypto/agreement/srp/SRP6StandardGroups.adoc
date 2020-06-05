@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/agreement/srp/SRP6StandardGroups.class
-
- - link:SRP6StandardGroups-asmified.java[Asmified]
-
-== References
-

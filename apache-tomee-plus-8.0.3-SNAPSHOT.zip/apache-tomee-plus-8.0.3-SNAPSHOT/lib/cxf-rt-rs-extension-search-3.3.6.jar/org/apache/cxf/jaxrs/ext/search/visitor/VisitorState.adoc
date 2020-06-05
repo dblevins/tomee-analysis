@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/visitor/VisitorState.class
-
- - link:VisitorState-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/persistence/PessimisticLockException.class
-
- - link:PessimisticLockException-asmified.java[Asmified]
-
-== References
-

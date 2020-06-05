@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/SwaRefAdapterMarker.class
-
- - link:SwaRefAdapterMarker-asmified.java[Asmified]
-
-== References
-

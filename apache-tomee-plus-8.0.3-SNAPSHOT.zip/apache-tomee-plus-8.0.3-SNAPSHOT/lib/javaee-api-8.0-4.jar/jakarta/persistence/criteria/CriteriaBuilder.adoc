@@ -1,6 +1,0 @@
-= jakarta/persistence/criteria/CriteriaBuilder.class
-
- - link:CriteriaBuilder-asmified.java[Asmified]
-
-== References
-

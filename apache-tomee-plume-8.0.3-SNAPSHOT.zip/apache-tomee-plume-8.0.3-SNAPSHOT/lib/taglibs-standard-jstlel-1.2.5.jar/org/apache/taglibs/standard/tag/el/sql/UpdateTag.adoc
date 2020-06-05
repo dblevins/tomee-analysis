@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/el/sql/UpdateTag.class
-
- - link:UpdateTag-asmified.java[Asmified]
-
-== References
-

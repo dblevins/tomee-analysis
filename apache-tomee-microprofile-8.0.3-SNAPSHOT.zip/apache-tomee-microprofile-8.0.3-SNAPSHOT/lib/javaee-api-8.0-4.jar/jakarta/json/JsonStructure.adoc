@@ -1,6 +1,0 @@
-= jakarta/json/JsonStructure.class
-
- - link:JsonStructure-asmified.java[Asmified]
-
-== References
-

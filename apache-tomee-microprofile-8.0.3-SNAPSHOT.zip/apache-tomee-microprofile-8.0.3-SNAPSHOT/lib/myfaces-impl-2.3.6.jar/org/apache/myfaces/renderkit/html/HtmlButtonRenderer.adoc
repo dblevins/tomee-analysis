@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlButtonRenderer.class
-
- - link:HtmlButtonRenderer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/keyresolver/implementations/DSAKeyValueResolver.class
-
- - link:DSAKeyValueResolver-asmified.java[Asmified]
-
-== References
-

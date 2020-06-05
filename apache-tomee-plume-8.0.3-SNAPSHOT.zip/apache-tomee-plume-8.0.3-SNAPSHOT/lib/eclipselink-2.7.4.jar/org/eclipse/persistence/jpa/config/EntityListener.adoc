@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/EntityListener.class
-
- - link:EntityListener-asmified.java[Asmified]
-
-== References
-

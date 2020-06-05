@@ -1,6 +1,0 @@
-= org/apache/webbeans/logger/WebBeansLoggerFactory.class
-
- - link:WebBeansLoggerFactory-asmified.java[Asmified]
-
-== References
-

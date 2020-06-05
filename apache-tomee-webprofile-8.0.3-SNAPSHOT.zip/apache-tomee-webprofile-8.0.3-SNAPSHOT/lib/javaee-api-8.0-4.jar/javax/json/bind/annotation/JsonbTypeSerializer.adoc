@@ -1,8 +1,0 @@
-= javax/json/bind/annotation/JsonbTypeSerializer.class
-
- - link:JsonbTypeSerializer-asmified.java[Asmified]
-
-== References
-
- - javax.json.bind.serializer.JsonbSerializer - 1
- - javax.json.bind.annotation.JsonbAnnotation - 1

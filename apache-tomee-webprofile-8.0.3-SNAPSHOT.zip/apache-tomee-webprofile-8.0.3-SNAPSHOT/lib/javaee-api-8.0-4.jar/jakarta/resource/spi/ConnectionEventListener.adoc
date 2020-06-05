@@ -1,6 +1,0 @@
-= jakarta/resource/spi/ConnectionEventListener.class
-
- - link:ConnectionEventListener-asmified.java[Asmified]
-
-== References
-

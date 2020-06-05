@@ -1,6 +1,0 @@
-= org/apache/cxf/bindings/xformat/XMLBindingMessageFormat.class
-
- - link:XMLBindingMessageFormat-asmified.java[Asmified]
-
-== References
-

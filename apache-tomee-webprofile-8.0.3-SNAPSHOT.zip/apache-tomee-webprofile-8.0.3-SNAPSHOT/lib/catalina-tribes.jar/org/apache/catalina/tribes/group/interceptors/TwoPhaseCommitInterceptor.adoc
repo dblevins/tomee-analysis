@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/interceptors/TwoPhaseCommitInterceptor.class
-
- - link:TwoPhaseCommitInterceptor-asmified.java[Asmified]
-
-== References
-

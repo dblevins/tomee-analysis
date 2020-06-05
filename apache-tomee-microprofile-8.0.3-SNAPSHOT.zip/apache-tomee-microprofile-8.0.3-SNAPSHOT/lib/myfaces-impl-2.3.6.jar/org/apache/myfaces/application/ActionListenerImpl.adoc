@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/ActionListenerImpl.class
-
- - link:ActionListenerImpl-asmified.java[Asmified]
-
-== References
-

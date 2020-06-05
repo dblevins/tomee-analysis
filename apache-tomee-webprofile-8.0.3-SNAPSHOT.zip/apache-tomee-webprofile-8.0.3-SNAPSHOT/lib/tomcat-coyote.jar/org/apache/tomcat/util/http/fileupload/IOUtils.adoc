@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/IOUtils.class
-
- - link:IOUtils-asmified.java[Asmified]
-
-== References
-

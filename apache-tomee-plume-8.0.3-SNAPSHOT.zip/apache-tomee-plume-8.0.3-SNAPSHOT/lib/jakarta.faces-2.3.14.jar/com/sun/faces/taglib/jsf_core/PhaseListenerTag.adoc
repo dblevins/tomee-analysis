@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/PhaseListenerTag.class
-
- - link:PhaseListenerTag-asmified.java[Asmified]
-
-== References
-

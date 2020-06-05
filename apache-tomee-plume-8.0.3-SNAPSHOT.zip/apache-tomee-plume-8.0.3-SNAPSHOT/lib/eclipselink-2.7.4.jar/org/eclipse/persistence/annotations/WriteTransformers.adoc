@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/WriteTransformers.class
-
- - link:WriteTransformers-asmified.java[Asmified]
-
-== References
-

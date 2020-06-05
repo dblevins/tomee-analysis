@@ -1,6 +1,0 @@
-= org/apache/activemq/util/IntSequenceGenerator.class
-
- - link:IntSequenceGenerator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBContext$JAXBContextInput.class
-
- - link:JAXBContext$JAXBContextInput-asmified.java[Asmified]
-
-== References
-

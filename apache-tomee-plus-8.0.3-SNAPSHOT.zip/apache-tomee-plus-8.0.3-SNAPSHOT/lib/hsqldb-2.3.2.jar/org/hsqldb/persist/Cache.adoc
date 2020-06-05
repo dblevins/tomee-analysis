@@ -1,6 +1,0 @@
-= org/hsqldb/persist/Cache.class
-
- - link:Cache-asmified.java[Asmified]
-
-== References
-

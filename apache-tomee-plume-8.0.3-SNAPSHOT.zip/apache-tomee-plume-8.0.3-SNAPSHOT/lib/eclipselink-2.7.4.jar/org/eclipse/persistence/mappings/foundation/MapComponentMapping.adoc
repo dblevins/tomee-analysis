@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/foundation/MapComponentMapping.class
-
- - link:MapComponentMapping-asmified.java[Asmified]
-
-== References
-

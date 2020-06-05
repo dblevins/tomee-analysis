@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/Stream.class
-
- - link:Stream-asmified.java[Asmified]
-
-== References
-

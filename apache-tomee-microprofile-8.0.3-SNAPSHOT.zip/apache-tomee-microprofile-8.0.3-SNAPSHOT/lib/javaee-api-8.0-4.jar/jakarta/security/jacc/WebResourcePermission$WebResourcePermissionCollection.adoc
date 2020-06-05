@@ -1,6 +1,0 @@
-= jakarta/security/jacc/WebResourcePermission$WebResourcePermissionCollection.class
-
- - link:WebResourcePermission$WebResourcePermissionCollection-asmified.java[Asmified]
-
-== References
-

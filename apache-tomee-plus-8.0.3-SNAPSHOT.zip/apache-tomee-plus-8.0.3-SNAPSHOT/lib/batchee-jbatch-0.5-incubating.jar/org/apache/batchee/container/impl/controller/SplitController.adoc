@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/controller/SplitController.class
-
- - link:SplitController-asmified.java[Asmified]
-
-== References
-

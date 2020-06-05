@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/login/NoDocumentPreservationPolicyConfig.class
-
- - link:NoDocumentPreservationPolicyConfig-asmified.java[Asmified]
-
-== References
-

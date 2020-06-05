@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/RemoteHostFilter.class
-
- - link:RemoteHostFilter-asmified.java[Asmified]
-
-== References
-

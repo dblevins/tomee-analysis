@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/util/PojoUtil.class
-
- - link:PojoUtil-asmified.java[Asmified]
-
-== References
-

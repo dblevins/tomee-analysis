@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/plugins/BeanValidationPlugin$RegexMutator$1.class
-
- - link:BeanValidationPlugin$RegexMutator$1-asmified.java[Asmified]
-
-== References
-

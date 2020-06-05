@@ -1,6 +1,0 @@
-= org/apache/openejb/bval/ValidatorUtil.class
-
- - link:ValidatorUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/CoyoteOutputStream.class
-
- - link:CoyoteOutputStream-asmified.java[Asmified]
-
-== References
-

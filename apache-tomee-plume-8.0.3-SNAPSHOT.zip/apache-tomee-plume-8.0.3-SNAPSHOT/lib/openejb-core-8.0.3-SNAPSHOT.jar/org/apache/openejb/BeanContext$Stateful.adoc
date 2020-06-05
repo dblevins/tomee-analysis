@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanContext$Stateful.class
-
- - link:BeanContext$Stateful-asmified.java[Asmified]
-
-== References
-

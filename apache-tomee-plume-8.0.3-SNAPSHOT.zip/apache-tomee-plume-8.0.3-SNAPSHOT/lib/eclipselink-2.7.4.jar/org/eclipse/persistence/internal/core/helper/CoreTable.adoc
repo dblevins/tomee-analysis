@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/core/helper/CoreTable.class
-
- - link:CoreTable-asmified.java[Asmified]
-
-== References
-

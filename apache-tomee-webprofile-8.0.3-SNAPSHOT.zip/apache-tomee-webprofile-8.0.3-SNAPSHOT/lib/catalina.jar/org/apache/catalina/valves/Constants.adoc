@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

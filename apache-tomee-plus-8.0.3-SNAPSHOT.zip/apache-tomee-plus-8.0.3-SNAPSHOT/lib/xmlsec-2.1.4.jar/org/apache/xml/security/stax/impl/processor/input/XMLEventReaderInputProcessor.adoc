@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/processor/input/XMLEventReaderInputProcessor.class
-
- - link:XMLEventReaderInputProcessor-asmified.java[Asmified]
-
-== References
-

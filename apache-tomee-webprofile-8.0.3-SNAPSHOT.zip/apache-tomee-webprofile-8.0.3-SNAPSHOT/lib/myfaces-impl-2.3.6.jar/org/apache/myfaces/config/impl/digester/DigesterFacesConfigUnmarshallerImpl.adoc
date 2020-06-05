@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/DigesterFacesConfigUnmarshallerImpl.class
-
- - link:DigesterFacesConfigUnmarshallerImpl-asmified.java[Asmified]
-
-== References
-

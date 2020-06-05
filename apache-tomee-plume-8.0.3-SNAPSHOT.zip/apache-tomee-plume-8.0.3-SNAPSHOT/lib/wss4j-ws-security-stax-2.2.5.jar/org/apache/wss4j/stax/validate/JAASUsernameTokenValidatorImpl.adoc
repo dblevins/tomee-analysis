@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/validate/JAASUsernameTokenValidatorImpl.class
-
- - link:JAASUsernameTokenValidatorImpl-asmified.java[Asmified]
-
-== References
-

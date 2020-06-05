@@ -1,6 +1,0 @@
-= jakarta/xml/bind/JAXBContextFactory.class
-
- - link:JAXBContextFactory-asmified.java[Asmified]
-
-== References
-

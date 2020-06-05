@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/Inet6AddressEditor.class
-
- - link:Inet6AddressEditor-asmified.java[Asmified]
-
-== References
-

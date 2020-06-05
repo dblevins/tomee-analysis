@@ -1,8 +1,0 @@
-= javax/resource/spi/work/WorkException.class
-
- - link:WorkException-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 6
- - javax.resource.spi.work.WorkException - 1

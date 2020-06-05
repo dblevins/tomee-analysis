@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/InjectionPointService.class
-
- - link:InjectionPointService-asmified.java[Asmified]
-
-== References
-

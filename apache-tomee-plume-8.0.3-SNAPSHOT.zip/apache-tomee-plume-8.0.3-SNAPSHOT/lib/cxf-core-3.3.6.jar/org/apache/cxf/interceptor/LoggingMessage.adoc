@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/LoggingMessage.class
-
- - link:LoggingMessage-asmified.java[Asmified]
-
-== References
-

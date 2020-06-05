@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/TreeObjectBuilder.class
-
- - link:TreeObjectBuilder-asmified.java[Asmified]
-
-== References
-

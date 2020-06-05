@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/SqlResultSetMapping.class
-
- - link:SqlResultSetMapping-asmified.java[Asmified]
-
-== References
-

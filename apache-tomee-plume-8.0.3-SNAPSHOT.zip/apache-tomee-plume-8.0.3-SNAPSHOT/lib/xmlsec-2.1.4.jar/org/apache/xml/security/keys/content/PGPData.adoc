@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/content/PGPData.class
-
- - link:PGPData-asmified.java[Asmified]
-
-== References
-

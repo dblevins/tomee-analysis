@@ -1,6 +1,0 @@
-= org/eclipse/persistence/transaction/JTASynchronizationListener.class
-
- - link:JTASynchronizationListener-asmified.java[Asmified]
-
-== References
-

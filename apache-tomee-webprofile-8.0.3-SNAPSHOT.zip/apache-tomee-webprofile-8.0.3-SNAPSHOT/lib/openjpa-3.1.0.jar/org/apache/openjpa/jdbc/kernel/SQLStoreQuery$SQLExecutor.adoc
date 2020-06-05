@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/SQLStoreQuery$SQLExecutor.class
-
- - link:SQLStoreQuery$SQLExecutor-asmified.java[Asmified]
-
-== References
-

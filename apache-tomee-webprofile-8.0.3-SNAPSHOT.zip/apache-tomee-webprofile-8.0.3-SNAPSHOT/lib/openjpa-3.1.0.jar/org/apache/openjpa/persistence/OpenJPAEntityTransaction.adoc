@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/OpenJPAEntityTransaction.class
-
- - link:OpenJPAEntityTransaction-asmified.java[Asmified]
-
-== References
-

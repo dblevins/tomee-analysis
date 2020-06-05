@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/SynchronizedDescriptiveStatistics.class
-
- - link:SynchronizedDescriptiveStatistics-asmified.java[Asmified]
-
-== References
-

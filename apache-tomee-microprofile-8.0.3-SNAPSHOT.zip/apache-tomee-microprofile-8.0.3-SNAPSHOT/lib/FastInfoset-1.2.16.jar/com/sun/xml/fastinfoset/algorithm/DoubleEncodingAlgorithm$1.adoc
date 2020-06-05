@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/DoubleEncodingAlgorithm$1.class
-
- - link:DoubleEncodingAlgorithm$1-asmified.java[Asmified]
-
-== References
-

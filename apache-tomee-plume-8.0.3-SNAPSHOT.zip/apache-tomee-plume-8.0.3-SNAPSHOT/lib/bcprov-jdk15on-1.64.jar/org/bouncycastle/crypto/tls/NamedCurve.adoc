@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/NamedCurve.class
-
- - link:NamedCurve-asmified.java[Asmified]
-
-== References
-

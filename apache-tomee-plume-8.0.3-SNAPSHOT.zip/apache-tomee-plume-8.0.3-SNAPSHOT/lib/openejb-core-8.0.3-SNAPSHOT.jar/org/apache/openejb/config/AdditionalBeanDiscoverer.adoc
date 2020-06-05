@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AdditionalBeanDiscoverer.class
-
- - link:AdditionalBeanDiscoverer-asmified.java[Asmified]
-
-== References
-

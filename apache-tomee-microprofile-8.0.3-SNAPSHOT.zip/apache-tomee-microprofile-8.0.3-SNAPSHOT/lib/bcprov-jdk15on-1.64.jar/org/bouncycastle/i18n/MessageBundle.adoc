@@ -1,6 +1,0 @@
-= org/bouncycastle/i18n/MessageBundle.class
-
- - link:MessageBundle-asmified.java[Asmified]
-
-== References
-

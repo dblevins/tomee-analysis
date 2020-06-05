@@ -1,6 +1,0 @@
-= jakarta/ws/rs/BadRequestException.class
-
- - link:BadRequestException-asmified.java[Asmified]
-
-== References
-

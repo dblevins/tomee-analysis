@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/MPJWTFilter$1.class
-
- - link:MPJWTFilter$1-asmified.java[Asmified]
-
-== References
-

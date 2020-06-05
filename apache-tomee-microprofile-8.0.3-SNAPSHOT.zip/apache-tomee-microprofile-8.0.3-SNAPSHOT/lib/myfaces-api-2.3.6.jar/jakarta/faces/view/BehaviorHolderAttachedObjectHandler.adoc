@@ -1,6 +1,0 @@
-= jakarta/faces/view/BehaviorHolderAttachedObjectHandler.class
-
- - link:BehaviorHolderAttachedObjectHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/ObjectCopyingPolicy.class
-
- - link:ObjectCopyingPolicy-asmified.java[Asmified]
-
-== References
-

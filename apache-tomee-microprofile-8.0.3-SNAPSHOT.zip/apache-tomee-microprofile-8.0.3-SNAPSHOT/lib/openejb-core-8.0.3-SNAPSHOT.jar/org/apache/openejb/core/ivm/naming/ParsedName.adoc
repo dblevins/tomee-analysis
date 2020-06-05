@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/ParsedName.class
-
- - link:ParsedName-asmified.java[Asmified]
-
-== References
-

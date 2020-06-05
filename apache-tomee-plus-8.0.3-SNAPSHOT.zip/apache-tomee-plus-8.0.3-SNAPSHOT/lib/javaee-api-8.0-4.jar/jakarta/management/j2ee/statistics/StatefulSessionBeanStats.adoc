@@ -1,6 +1,0 @@
-= jakarta/management/j2ee/statistics/StatefulSessionBeanStats.class
-
- - link:StatefulSessionBeanStats-asmified.java[Asmified]
-
-== References
-

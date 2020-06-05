@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/foundation/MapKeyMapping.class
-
- - link:MapKeyMapping-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/InitThreadContextClassLoadHelper.class
-
- - link:InitThreadContextClassLoadHelper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/commons_text/StringEscapeUtils.class
-
- - link:StringEscapeUtils-asmified.java[Asmified]
-
-== References
-

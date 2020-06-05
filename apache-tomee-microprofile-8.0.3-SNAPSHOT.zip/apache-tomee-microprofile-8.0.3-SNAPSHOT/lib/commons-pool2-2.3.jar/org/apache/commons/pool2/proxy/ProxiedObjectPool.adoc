@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/proxy/ProxiedObjectPool.class
-
- - link:ProxiedObjectPool-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/PastValidator$ForYearMonth.class
-
- - link:PastValidator$ForYearMonth-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/SQLUpdateAllStatementForTempTable.class
-
- - link:SQLUpdateAllStatementForTempTable-asmified.java[Asmified]
-
-== References
-

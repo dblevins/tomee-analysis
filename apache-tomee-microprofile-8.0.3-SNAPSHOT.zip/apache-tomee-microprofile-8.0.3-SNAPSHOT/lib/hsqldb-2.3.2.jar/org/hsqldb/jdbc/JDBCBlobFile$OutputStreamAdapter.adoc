@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCBlobFile$OutputStreamAdapter.class
-
- - link:JDBCBlobFile$OutputStreamAdapter-asmified.java[Asmified]
-
-== References
-

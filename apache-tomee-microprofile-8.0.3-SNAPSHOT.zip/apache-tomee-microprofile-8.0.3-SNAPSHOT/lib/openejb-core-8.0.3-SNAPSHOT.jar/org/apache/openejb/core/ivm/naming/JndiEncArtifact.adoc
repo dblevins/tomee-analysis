@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/JndiEncArtifact.class
-
- - link:JndiEncArtifact-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/AbstractRecipe.class
-
- - link:AbstractRecipe-asmified.java[Asmified]
-
-== References
-

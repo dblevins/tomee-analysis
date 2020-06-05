@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonArrayImpl$1.class
-
- - link:JsonArrayImpl$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/xmlmodel/XmlValue.class
-
- - link:XmlValue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/sxc/TldTaglibXml$TaglibNamespaceFilter.class
-
- - link:TldTaglibXml$TaglibNamespaceFilter-asmified.java[Asmified]
-
-== References
-

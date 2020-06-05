@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/InMemoryValueOrder.class
-
- - link:InMemoryValueOrder-asmified.java[Asmified]
-
-== References
-

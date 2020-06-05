@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/Asserts.class
-
- - link:Asserts-asmified.java[Asmified]
-
-== References
-

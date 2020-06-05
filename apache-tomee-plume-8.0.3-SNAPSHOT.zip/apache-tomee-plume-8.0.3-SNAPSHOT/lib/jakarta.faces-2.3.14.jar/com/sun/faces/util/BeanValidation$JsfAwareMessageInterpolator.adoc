@@ -1,6 +1,0 @@
-= com/sun/faces/util/BeanValidation$JsfAwareMessageInterpolator.class
-
- - link:BeanValidation$JsfAwareMessageInterpolator-asmified.java[Asmified]
-
-== References
-

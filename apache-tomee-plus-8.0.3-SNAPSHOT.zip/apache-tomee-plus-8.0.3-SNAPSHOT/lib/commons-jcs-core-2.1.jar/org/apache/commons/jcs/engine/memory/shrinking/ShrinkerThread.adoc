@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/memory/shrinking/ShrinkerThread.class
-
- - link:ShrinkerThread-asmified.java[Asmified]
-
-== References
-

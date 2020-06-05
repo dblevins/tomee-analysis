@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/TExtensibilityElementImpl.class
-
- - link:TExtensibilityElementImpl-asmified.java[Asmified]
-
-== References
-

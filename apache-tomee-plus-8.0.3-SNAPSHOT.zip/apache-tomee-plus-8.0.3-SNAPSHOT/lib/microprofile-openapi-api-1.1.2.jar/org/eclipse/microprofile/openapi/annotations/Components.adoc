@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/Components.class
-
- - link:Components-asmified.java[Asmified]
-
-== References
-

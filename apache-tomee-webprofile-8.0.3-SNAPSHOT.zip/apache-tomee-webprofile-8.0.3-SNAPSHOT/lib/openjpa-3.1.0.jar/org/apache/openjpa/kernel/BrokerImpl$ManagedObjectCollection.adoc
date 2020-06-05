@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/BrokerImpl$ManagedObjectCollection.class
-
- - link:BrokerImpl$ManagedObjectCollection-asmified.java[Asmified]
-
-== References
-

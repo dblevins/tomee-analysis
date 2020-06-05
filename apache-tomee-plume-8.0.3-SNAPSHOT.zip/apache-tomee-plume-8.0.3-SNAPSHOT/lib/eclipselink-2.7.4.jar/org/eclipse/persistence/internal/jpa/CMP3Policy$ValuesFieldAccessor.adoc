@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/CMP3Policy$ValuesFieldAccessor.class
-
- - link:CMP3Policy$ValuesFieldAccessor-asmified.java[Asmified]
-
-== References
-

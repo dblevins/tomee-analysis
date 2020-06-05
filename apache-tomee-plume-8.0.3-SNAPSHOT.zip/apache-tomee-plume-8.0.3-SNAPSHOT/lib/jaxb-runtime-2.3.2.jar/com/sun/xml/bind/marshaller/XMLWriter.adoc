@@ -1,6 +1,0 @@
-= com/sun/xml/bind/marshaller/XMLWriter.class
-
- - link:XMLWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/MappingEndEvent.class
-
- - link:MappingEndEvent-asmified.java[Asmified]
-
-== References
-

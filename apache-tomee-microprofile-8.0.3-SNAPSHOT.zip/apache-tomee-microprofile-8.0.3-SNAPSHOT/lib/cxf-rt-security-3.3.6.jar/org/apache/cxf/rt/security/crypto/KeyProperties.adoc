@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/crypto/KeyProperties.class
-
- - link:KeyProperties-asmified.java[Asmified]
-
-== References
-

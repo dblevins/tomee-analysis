@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/ICacheType$CacheType.class
-
- - link:ICacheType$CacheType-asmified.java[Asmified]
-
-== References
-

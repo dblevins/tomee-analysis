@@ -1,6 +1,0 @@
-= org/apache/cxf/io/CachedWriter$5.class
-
- - link:CachedWriter$5-asmified.java[Asmified]
-
-== References
-

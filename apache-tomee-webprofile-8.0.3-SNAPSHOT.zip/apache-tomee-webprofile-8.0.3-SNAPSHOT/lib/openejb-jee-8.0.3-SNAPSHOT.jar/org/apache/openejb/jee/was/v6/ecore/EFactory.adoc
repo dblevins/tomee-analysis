@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ecore/EFactory.class
-
- - link:EFactory-asmified.java[Asmified]
-
-== References
-

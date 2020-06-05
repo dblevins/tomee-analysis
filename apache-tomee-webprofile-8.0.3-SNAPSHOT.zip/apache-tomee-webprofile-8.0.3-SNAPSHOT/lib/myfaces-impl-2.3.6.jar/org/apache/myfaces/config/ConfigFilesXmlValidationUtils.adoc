@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/ConfigFilesXmlValidationUtils.class
-
- - link:ConfigFilesXmlValidationUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/soap/wspolicy/OperatorContentType.class
-
- - link:OperatorContentType-asmified.java[Asmified]
-
-== References
-

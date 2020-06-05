@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/SubqueryDeclaration.class
-
- - link:SubqueryDeclaration-asmified.java[Asmified]
-
-== References
-

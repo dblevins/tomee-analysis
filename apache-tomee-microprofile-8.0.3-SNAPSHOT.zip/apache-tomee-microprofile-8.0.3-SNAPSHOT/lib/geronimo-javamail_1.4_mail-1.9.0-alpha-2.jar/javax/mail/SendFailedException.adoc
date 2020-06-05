@@ -1,9 +1,0 @@
-= javax/mail/SendFailedException.class
-
- - link:SendFailedException-asmified.java[Asmified]
-
-== References
-
- - javax.mail.Address - 15
- - javax.mail.MessagingException - 4
- - javax.mail.SendFailedException - 1

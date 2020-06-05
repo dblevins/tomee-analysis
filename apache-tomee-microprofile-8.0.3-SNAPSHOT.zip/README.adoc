@@ -1,6 +1,0 @@
-= apache-tomee-microprofile-8.0.3-SNAPSHOT.zip
-
- - link:apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/javaee-api-8.0-4.jar/README.adoc[apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/javaee-api-8.0-4.jar] - 1111
- - link:apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-core-8.0.3-SNAPSHOT.jar/README.adoc[apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-core-8.0.3-SNAPSHOT.jar] - 473
- - link:apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/catalina.jar/README.adoc[apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/catalina.jar] - 119
- - link:apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-webservices-8.0.3-SNAPSHOT.jar/README.adoc[apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-webservices-8.0.3-SNAPSHOT.jar] - 35

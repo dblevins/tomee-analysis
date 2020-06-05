@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/DTDSchemaFactory.class
-
- - link:DTDSchemaFactory-asmified.java[Asmified]
-
-== References
-

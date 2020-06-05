@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx.class
-
- - link:LocatorEx-asmified.java[Asmified]
-
-== References
-

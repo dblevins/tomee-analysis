@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/CompletionStageRxInvokerImpl.class
-
- - link:CompletionStageRxInvokerImpl-asmified.java[Asmified]
-
-== References
-

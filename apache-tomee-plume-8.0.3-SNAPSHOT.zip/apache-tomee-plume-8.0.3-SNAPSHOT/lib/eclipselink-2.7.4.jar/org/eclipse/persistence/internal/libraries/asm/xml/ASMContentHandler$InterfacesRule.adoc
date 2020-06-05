@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$InterfacesRule.class
-
- - link:ASMContentHandler$InterfacesRule-asmified.java[Asmified]
-
-== References
-

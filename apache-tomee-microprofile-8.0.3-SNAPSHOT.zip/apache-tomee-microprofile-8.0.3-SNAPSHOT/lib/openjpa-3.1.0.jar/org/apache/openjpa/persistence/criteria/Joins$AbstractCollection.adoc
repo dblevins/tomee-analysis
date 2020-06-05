@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Joins$AbstractCollection.class
-
- - link:Joins$AbstractCollection-asmified.java[Asmified]
-
-== References
-

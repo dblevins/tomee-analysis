@@ -1,6 +1,0 @@
-= jakarta/faces/webapp/TypedCollections.class
-
- - link:TypedCollections-asmified.java[Asmified]
-
-== References
-

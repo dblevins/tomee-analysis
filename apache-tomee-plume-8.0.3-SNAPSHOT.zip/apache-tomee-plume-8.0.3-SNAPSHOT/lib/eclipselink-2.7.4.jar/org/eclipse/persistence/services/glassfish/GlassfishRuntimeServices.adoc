@@ -1,6 +1,0 @@
-= org/eclipse/persistence/services/glassfish/GlassfishRuntimeServices.class
-
- - link:GlassfishRuntimeServices-asmified.java[Asmified]
-
-== References
-

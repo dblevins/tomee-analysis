@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/config/PrefixedConfig.class
-
- - link:PrefixedConfig-asmified.java[Asmified]
-
-== References
-

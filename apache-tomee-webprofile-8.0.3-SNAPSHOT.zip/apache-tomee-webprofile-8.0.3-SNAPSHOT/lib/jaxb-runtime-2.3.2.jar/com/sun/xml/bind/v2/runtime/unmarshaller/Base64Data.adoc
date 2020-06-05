@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/Base64Data.class
-
- - link:Base64Data-asmified.java[Asmified]
-
-== References
-

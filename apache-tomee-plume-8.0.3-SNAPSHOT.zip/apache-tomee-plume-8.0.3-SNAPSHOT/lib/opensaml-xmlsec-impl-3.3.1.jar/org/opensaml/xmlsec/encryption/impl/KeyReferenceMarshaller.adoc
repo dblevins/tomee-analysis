@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/KeyReferenceMarshaller.class
-
- - link:KeyReferenceMarshaller-asmified.java[Asmified]
-
-== References
-

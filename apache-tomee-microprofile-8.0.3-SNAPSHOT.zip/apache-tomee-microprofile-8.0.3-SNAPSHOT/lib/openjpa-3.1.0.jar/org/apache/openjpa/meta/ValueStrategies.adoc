@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/ValueStrategies.class
-
- - link:ValueStrategies-asmified.java[Asmified]
-
-== References
-

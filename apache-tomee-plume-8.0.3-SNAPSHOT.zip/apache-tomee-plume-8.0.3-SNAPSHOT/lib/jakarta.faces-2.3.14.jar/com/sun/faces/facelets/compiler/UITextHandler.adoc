@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/UITextHandler.class
-
- - link:UITextHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/tika/TikaContentExtractor$TikaContent.class
-
- - link:TikaContentExtractor$TikaContent-asmified.java[Asmified]
-
-== References
-

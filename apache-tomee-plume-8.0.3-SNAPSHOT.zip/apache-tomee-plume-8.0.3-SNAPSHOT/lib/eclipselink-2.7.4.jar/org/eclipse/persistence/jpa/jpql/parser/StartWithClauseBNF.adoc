@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/StartWithClauseBNF.class
-
- - link:StartWithClauseBNF-asmified.java[Asmified]
-
-== References
-

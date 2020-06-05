@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/DeleteClauseBNF.class
-
- - link:DeleteClauseBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/RemoteServer$CleanUpThread.class
-
- - link:RemoteServer$CleanUpThread-asmified.java[Asmified]
-
-== References
-

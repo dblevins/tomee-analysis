@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/event/ExtensionProviderRegistration.class
-
- - link:ExtensionProviderRegistration-asmified.java[Asmified]
-
-== References
-

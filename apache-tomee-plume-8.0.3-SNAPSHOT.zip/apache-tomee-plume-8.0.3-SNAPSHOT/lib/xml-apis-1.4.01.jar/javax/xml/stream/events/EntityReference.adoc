@@ -1,6 +1,0 @@
-= javax/xml/stream/events/EntityReference.class
-
- - link:EntityReference-asmified.java[Asmified]
-
-== References
-

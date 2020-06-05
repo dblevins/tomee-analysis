@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/CachePutInterceptor.class
-
- - link:CachePutInterceptor-asmified.java[Asmified]
-
-== References
-

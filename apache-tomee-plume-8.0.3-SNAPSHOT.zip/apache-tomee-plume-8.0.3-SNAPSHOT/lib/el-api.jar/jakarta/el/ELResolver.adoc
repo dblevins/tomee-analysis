@@ -1,6 +1,0 @@
-= jakarta/el/ELResolver.class
-
- - link:ELResolver-asmified.java[Asmified]
-
-== References
-

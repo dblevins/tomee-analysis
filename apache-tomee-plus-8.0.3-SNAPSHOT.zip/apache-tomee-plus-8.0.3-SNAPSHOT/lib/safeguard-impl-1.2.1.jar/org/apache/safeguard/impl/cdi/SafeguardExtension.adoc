@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/cdi/SafeguardExtension.class
-
- - link:SafeguardExtension-asmified.java[Asmified]
-
-== References
-

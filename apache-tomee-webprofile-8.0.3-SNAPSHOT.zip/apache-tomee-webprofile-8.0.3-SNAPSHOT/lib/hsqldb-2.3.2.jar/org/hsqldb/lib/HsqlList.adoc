@@ -1,6 +1,0 @@
-= org/hsqldb/lib/HsqlList.class
-
- - link:HsqlList-asmified.java[Asmified]
-
-== References
-

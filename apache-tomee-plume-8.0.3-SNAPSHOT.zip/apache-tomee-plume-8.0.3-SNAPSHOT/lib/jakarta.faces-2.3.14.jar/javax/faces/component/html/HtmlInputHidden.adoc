@@ -1,9 +1,0 @@
-= javax/faces/component/html/HtmlInputHidden.class
-
- - link:HtmlInputHidden-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.html.HtmlInputHidden - 4
- - javax.faces.component.UIInput - 2
- - javax.el.ValueExpression - 1

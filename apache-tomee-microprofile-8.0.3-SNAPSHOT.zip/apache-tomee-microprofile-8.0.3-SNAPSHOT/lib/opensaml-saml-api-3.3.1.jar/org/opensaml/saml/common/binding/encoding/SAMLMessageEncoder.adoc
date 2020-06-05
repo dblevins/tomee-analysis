@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/encoding/SAMLMessageEncoder.class
-
- - link:SAMLMessageEncoder-asmified.java[Asmified]
-
-== References
-

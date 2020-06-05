@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/FairBlockingQueue$ItemFuture.class
-
- - link:FairBlockingQueue$ItemFuture-asmified.java[Asmified]
-
-== References
-

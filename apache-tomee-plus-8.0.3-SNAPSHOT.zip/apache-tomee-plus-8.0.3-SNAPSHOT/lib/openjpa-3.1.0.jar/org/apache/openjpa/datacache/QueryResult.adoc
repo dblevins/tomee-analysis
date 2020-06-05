@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/QueryResult.class
-
- - link:QueryResult-asmified.java[Asmified]
-
-== References
-

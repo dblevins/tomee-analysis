@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/AnnotationNode.class
-
- - link:AnnotationNode-asmified.java[Asmified]
-
-== References
-

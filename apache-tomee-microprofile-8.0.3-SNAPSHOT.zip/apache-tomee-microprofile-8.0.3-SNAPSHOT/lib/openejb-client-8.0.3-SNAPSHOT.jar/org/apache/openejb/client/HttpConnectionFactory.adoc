@@ -1,6 +1,0 @@
-= org/apache/openejb/client/HttpConnectionFactory.class
-
- - link:HttpConnectionFactory-asmified.java[Asmified]
-
-== References
-

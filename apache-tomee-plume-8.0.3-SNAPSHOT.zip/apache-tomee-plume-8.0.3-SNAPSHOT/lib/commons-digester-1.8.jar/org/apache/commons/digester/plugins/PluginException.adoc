@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/PluginException.class
-
- - link:PluginException-asmified.java[Asmified]
-
-== References
-

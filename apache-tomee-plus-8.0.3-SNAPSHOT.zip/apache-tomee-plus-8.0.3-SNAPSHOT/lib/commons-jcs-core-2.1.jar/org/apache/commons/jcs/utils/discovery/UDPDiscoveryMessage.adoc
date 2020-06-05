@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/discovery/UDPDiscoveryMessage.class
-
- - link:UDPDiscoveryMessage-asmified.java[Asmified]
-
-== References
-

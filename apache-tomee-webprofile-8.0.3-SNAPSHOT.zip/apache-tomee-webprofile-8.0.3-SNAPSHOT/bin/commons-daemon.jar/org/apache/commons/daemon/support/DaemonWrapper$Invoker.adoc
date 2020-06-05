@@ -1,6 +1,0 @@
-= org/apache/commons/daemon/support/DaemonWrapper$Invoker.class
-
- - link:DaemonWrapper$Invoker-asmified.java[Asmified]
-
-== References
-

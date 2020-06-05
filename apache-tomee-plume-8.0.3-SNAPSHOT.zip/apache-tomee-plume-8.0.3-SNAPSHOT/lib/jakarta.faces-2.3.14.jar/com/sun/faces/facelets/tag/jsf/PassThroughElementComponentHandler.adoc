@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/PassThroughElementComponentHandler.class
-
- - link:PassThroughElementComponentHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Pool$Replace.class
-
- - link:Pool$Replace-asmified.java[Asmified]
-
-== References
-

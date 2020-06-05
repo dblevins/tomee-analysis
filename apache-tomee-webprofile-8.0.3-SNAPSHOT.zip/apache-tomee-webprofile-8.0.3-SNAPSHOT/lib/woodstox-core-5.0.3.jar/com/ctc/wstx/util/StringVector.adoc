@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/StringVector.class
-
- - link:StringVector-asmified.java[Asmified]
-
-== References
-

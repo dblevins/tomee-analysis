@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/mappings/OrderByMetadata.class
-
- - link:OrderByMetadata-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/securityToken/SecurityTokenFactoryImpl$1.class
-
- - link:SecurityTokenFactoryImpl$1-asmified.java[Asmified]
-
-== References
-

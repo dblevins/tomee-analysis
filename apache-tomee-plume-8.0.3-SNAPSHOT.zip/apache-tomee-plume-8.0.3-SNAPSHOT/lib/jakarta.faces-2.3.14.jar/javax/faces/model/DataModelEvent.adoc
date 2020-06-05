@@ -1,8 +1,0 @@
-= javax/faces/model/DataModelEvent.class
-
- - link:DataModelEvent-asmified.java[Asmified]
-
-== References
-
- - javax.faces.model.DataModel - 3
- - javax.faces.model.DataModelEvent - 1

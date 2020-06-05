@@ -1,7 +1,0 @@
-= javax/faces/view/facelets/ComponentConfig.class
-
- - link:ComponentConfig-asmified.java[Asmified]
-
-== References
-
- - javax.faces.view.facelets.TagConfig - 1

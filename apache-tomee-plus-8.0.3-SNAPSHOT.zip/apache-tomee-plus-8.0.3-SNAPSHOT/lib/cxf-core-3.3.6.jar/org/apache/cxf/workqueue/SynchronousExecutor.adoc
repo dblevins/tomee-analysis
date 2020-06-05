@@ -1,6 +1,0 @@
-= org/apache/cxf/workqueue/SynchronousExecutor.class
-
- - link:SynchronousExecutor-asmified.java[Asmified]
-
-== References
-

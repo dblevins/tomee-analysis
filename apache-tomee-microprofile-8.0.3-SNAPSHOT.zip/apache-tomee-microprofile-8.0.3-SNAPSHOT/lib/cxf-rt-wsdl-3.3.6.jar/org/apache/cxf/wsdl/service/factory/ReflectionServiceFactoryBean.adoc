@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.class
-
- - link:ReflectionServiceFactoryBean-asmified.java[Asmified]
-
-== References
-

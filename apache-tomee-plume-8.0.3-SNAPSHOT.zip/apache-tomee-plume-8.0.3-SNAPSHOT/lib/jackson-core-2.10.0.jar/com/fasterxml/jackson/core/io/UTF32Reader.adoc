@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/io/UTF32Reader.class
-
- - link:UTF32Reader-asmified.java[Asmified]
-
-== References
-

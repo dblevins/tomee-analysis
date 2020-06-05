@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/osgi/BundleDelegatingClassLoader.class
-
- - link:BundleDelegatingClassLoader-asmified.java[Asmified]
-
-== References
-

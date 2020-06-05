@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/config/GlobalParserPoolInitializer.class
-
- - link:GlobalParserPoolInitializer-asmified.java[Asmified]
-
-== References
-

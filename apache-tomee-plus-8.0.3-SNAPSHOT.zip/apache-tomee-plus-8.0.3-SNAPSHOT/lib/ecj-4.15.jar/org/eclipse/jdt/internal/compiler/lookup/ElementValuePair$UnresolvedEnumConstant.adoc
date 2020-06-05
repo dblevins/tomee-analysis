@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ElementValuePair$UnresolvedEnumConstant.class
-
- - link:ElementValuePair$UnresolvedEnumConstant-asmified.java[Asmified]
-
-== References
-

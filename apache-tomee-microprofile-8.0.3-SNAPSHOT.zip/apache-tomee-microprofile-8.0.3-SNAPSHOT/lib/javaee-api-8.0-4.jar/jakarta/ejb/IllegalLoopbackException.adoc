@@ -1,6 +1,0 @@
-= jakarta/ejb/IllegalLoopbackException.class
-
- - link:IllegalLoopbackException-asmified.java[Asmified]
-
-== References
-

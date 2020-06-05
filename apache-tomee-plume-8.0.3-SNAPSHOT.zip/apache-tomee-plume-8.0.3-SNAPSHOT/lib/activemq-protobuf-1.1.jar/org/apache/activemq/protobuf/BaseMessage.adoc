@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/BaseMessage.class
-
- - link:BaseMessage-asmified.java[Asmified]
-
-== References
-

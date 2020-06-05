@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/SybaseDelegate.class
-
- - link:SybaseDelegate-asmified.java[Asmified]
-
-== References
-

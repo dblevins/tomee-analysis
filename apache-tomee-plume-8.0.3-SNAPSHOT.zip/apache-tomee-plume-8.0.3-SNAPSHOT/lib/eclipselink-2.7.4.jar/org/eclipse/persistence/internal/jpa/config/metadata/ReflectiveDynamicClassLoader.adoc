@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/metadata/ReflectiveDynamicClassLoader.class
-
- - link:ReflectiveDynamicClassLoader-asmified.java[Asmified]
-
-== References
-

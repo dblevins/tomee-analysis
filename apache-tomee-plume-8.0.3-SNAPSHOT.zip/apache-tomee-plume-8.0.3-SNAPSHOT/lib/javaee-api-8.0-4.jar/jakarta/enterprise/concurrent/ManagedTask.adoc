@@ -1,6 +1,0 @@
-= jakarta/enterprise/concurrent/ManagedTask.class
-
- - link:ManagedTask-asmified.java[Asmified]
-
-== References
-

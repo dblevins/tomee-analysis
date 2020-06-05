@@ -1,9 +1,0 @@
-= javax/websocket/server/ServerEndpoint.class
-
- - link:ServerEndpoint-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.server.ServerEndpointConfig$Configurator - 2
- - javax.websocket.Decoder - 1
- - javax.websocket.Encoder - 1

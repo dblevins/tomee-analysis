@@ -1,6 +1,0 @@
-= org/apache/activemq/security/SecurityAdminMBean.class
-
- - link:SecurityAdminMBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/MaxNode.class
-
- - link:MaxNode-asmified.java[Asmified]
-
-== References
-

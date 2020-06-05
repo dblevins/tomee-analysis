@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IModule$IModuleReference.class
-
- - link:IModule$IModuleReference-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/classes/MappedSuperclassAccessor.class
-
- - link:MappedSuperclassAccessor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/Names.class
-
- - link:Names-asmified.java[Asmified]
-
-== References
-

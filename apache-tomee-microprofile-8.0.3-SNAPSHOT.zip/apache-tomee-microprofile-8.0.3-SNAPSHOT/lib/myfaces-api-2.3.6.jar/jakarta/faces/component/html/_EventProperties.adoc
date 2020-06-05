@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_EventProperties.class
-
- - link:_EventProperties-asmified.java[Asmified]
-
-== References
-

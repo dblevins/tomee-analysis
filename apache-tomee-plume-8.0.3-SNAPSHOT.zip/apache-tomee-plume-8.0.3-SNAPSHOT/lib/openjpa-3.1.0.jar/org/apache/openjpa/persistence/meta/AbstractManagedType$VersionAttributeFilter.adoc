@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/AbstractManagedType$VersionAttributeFilter.class
-
- - link:AbstractManagedType$VersionAttributeFilter-asmified.java[Asmified]
-
-== References
-

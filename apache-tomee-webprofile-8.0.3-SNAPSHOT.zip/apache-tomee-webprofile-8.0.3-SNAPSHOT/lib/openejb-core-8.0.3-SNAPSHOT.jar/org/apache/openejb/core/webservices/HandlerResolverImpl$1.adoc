@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/HandlerResolverImpl$1.class
-
- - link:HandlerResolverImpl$1-asmified.java[Asmified]
-
-== References
-

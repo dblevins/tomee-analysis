@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/JRTUtil.class
-
- - link:JRTUtil-asmified.java[Asmified]
-
-== References
-

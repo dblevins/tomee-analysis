@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/HeaderUtil.class
-
- - link:HeaderUtil-asmified.java[Asmified]
-
-== References
-

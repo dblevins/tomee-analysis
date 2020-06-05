@@ -1,6 +1,0 @@
-= org/apache/activemq/command/Command.class
-
- - link:Command-asmified.java[Asmified]
-
-== References
-

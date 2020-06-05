@@ -1,6 +1,0 @@
-= org/apache/openejb/client/proxy/ProxyManager$1.class
-
- - link:ProxyManager$1-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/enterprise/context/spi/AlterableContext.class
-
- - link:AlterableContext-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.spi.Context - 1
- - javax.enterprise.context.spi.Contextual - 1

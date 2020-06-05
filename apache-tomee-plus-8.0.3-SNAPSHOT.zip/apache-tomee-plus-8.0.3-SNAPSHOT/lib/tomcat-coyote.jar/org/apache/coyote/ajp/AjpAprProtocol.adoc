@@ -1,6 +1,0 @@
-= org/apache/coyote/ajp/AjpAprProtocol.class
-
- - link:AjpAprProtocol-asmified.java[Asmified]
-
-== References
-

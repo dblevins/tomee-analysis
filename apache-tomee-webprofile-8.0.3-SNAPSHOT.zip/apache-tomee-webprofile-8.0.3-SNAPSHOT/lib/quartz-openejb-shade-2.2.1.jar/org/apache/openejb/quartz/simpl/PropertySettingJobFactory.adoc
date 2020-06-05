@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/PropertySettingJobFactory.class
-
- - link:PropertySettingJobFactory-asmified.java[Asmified]
-
-== References
-

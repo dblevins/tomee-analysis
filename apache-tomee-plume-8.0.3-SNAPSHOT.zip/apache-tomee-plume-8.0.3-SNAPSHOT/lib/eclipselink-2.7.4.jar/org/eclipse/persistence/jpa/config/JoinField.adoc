@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/JoinField.class
-
- - link:JoinField-asmified.java[Asmified]
-
-== References
-

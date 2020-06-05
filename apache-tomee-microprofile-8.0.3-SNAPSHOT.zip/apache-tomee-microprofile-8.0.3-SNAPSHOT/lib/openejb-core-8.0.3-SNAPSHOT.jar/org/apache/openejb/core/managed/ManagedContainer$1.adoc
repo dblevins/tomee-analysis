@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/ManagedContainer$1.class
-
- - link:ManagedContainer$1-asmified.java[Asmified]
-
-== References
-

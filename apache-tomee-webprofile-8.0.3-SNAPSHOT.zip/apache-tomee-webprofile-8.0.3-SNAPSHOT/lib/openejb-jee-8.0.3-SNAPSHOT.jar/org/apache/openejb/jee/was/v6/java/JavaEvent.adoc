@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/JavaEvent.class
-
- - link:JavaEvent-asmified.java[Asmified]
-
-== References
-

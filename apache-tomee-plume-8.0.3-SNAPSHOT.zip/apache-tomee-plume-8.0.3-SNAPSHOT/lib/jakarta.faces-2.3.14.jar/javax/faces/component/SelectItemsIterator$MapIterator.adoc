@@ -1,9 +1,0 @@
-= javax/faces/component/SelectItemsIterator$MapIterator.class
-
- - link:SelectItemsIterator$MapIterator-asmified.java[Asmified]
-
-== References
-
- - javax.faces.model.SelectItem - 16
- - javax.faces.component.SelectItemsIterator$MapIterator - 5
- - javax.faces.component.SelectItemsIterator$1 - 1

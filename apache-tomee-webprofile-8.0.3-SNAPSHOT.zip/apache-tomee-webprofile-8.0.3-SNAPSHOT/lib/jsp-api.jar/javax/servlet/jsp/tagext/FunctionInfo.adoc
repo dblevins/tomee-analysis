@@ -1,6 +1,0 @@
-= javax/servlet/jsp/tagext/FunctionInfo.class
-
- - link:FunctionInfo-asmified.java[Asmified]
-
-== References
-

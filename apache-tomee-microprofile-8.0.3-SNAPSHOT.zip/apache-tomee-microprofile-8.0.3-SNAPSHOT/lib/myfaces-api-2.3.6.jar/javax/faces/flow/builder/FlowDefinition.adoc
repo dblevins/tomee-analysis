@@ -1,7 +1,0 @@
-= javax/faces/flow/builder/FlowDefinition.class
-
- - link:FlowDefinition-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Qualifier - 1

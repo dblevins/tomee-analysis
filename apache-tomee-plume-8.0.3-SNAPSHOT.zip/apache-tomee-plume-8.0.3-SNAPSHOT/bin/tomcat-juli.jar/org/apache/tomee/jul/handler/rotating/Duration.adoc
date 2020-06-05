@@ -1,6 +1,0 @@
-= org/apache/tomee/jul/handler/rotating/Duration.class
-
- - link:Duration-asmified.java[Asmified]
-
-== References
-

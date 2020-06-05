@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/AnnotationPersistenceMetaDataParser$1.class
-
- - link:AnnotationPersistenceMetaDataParser$1-asmified.java[Asmified]
-
-== References
-

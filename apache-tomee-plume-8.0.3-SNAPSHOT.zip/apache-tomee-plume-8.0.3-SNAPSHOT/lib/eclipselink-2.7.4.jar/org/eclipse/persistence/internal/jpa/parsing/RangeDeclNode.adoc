@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/RangeDeclNode.class
-
- - link:RangeDeclNode-asmified.java[Asmified]
-
-== References
-

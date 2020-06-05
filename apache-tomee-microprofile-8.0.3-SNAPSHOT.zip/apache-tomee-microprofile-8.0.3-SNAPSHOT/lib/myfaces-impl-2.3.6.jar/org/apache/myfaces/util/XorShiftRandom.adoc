@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/XorShiftRandom.class
-
- - link:XorShiftRandom-asmified.java[Asmified]
-
-== References
-

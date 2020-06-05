@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/XMLSecurityEventWriter.class
-
- - link:XMLSecurityEventWriter-asmified.java[Asmified]
-
-== References
-

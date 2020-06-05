@@ -1,7 +1,0 @@
-= javax/json/bind/Jsonb.class
-
- - link:Jsonb-asmified.java[Asmified]
-
-== References
-
- - javax.json.bind.JsonbException - 12

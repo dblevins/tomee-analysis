@@ -1,6 +1,0 @@
-= org/apache/batchee/container/Controller.class
-
- - link:Controller-asmified.java[Asmified]
-
-== References
-

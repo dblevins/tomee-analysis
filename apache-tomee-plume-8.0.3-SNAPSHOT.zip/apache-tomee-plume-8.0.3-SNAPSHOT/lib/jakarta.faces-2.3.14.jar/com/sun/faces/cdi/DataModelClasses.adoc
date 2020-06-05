@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/DataModelClasses.class
-
- - link:DataModelClasses-asmified.java[Asmified]
-
-== References
-

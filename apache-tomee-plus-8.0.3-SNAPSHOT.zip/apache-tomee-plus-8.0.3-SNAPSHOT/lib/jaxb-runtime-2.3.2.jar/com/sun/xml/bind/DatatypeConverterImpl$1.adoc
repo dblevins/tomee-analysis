@@ -1,6 +1,0 @@
-= com/sun/xml/bind/DatatypeConverterImpl$1.class
-
- - link:DatatypeConverterImpl$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/IssuerImpl.class
-
- - link:IssuerImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/FieldWriter.class
-
- - link:FieldWriter-asmified.java[Asmified]
-
-== References
-

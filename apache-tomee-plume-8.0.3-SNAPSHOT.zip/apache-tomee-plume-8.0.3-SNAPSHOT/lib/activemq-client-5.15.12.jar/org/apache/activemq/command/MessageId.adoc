@@ -1,6 +1,0 @@
-= org/apache/activemq/command/MessageId.class
-
- - link:MessageId-asmified.java[Asmified]
-
-== References
-

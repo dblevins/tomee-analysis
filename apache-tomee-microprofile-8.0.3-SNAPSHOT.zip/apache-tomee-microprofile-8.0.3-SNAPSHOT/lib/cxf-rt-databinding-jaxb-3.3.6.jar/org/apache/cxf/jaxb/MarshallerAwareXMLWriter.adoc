@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/MarshallerAwareXMLWriter.class
-
- - link:MarshallerAwareXMLWriter-asmified.java[Asmified]
-
-== References
-

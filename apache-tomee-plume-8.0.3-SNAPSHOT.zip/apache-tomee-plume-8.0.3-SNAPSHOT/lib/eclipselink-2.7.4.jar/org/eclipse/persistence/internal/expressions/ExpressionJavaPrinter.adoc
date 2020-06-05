@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/ExpressionJavaPrinter.class
-
- - link:ExpressionJavaPrinter-asmified.java[Asmified]
-
-== References
-

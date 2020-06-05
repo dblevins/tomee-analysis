@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/AbstractHTTPServlet$1.class
-
- - link:AbstractHTTPServlet$1-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/xml/ws/BindingProvider.class
-
- - link:BindingProvider-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.EndpointReference - 2
- - javax.xml.ws.Binding - 1

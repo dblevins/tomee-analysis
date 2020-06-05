@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/config/Init.class
-
- - link:Init-asmified.java[Asmified]
-
-== References
-

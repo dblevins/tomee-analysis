@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/jcajce/provider/newhope/BCNHPublicKey.class
-
- - link:BCNHPublicKey-asmified.java[Asmified]
-
-== References
-

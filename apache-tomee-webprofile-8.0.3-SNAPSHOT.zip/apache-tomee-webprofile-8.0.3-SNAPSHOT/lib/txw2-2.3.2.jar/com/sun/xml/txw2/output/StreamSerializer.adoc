@@ -1,6 +1,0 @@
-= com/sun/xml/txw2/output/StreamSerializer.class
-
- - link:StreamSerializer-asmified.java[Asmified]
-
-== References
-

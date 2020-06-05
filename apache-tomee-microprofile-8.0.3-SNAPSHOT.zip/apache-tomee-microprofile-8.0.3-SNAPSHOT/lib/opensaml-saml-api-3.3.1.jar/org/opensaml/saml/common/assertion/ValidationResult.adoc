@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/assertion/ValidationResult.class
-
- - link:ValidationResult-asmified.java[Asmified]
-
-== References
-

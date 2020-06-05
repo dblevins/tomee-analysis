@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/task/CUTask$1.class
-
- - link:CUTask$1-asmified.java[Asmified]
-
-== References
-

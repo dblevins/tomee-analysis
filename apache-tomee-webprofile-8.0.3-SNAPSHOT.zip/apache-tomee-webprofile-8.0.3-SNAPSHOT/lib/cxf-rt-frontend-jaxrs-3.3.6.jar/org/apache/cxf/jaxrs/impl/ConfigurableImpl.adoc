@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/ConfigurableImpl.class
-
- - link:ConfigurableImpl-asmified.java[Asmified]
-
-== References
-

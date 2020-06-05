@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/RequiresStatement.class
-
- - link:RequiresStatement-asmified.java[Asmified]
-
-== References
-

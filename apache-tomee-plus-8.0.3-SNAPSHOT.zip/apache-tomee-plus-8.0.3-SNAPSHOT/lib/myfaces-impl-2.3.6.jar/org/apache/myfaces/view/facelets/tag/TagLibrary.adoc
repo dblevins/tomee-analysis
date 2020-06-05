@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/TagLibrary.class
-
- - link:TagLibrary-asmified.java[Asmified]
-
-== References
-

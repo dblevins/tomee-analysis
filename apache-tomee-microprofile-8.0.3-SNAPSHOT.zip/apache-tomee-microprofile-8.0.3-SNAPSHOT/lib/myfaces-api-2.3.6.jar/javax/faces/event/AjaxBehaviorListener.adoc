@@ -1,9 +1,0 @@
-= javax/faces/event/AjaxBehaviorListener.class
-
- - link:AjaxBehaviorListener-asmified.java[Asmified]
-
-== References
-
- - javax.faces.event.AjaxBehaviorEvent - 1
- - javax.faces.event.AbortProcessingException - 1
- - javax.faces.event.BehaviorListener - 1

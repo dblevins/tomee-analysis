@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bidimap/DualTreeBidiMap$ViewMap.class
-
- - link:DualTreeBidiMap$ViewMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb3/PropertiesAdapter$1.class
-
- - link:PropertiesAdapter$1-asmified.java[Asmified]
-
-== References
-

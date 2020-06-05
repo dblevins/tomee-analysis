@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/sym/Name3.class
-
- - link:Name3-asmified.java[Asmified]
-
-== References
-

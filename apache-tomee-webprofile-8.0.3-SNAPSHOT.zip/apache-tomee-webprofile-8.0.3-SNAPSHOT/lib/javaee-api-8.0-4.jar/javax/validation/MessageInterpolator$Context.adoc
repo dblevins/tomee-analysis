@@ -1,7 +1,0 @@
-= javax/validation/MessageInterpolator$Context.class
-
- - link:MessageInterpolator$Context-asmified.java[Asmified]
-
-== References
-
- - javax.validation.metadata.ConstraintDescriptor - 1

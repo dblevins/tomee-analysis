@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/SessionFinalizer.class
-
- - link:SessionFinalizer-asmified.java[Asmified]
-
-== References
-

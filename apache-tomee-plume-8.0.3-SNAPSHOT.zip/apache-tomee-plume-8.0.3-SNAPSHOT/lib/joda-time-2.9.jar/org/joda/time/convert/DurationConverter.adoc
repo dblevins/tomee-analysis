@@ -1,6 +1,0 @@
-= org/joda/time/convert/DurationConverter.class
-
- - link:DurationConverter-asmified.java[Asmified]
-
-== References
-

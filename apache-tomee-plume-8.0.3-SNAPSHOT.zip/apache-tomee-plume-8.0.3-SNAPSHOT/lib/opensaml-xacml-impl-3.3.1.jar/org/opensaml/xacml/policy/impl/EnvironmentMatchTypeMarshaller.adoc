@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/EnvironmentMatchTypeMarshaller.class
-
- - link:EnvironmentMatchTypeMarshaller-asmified.java[Asmified]
-
-== References
-

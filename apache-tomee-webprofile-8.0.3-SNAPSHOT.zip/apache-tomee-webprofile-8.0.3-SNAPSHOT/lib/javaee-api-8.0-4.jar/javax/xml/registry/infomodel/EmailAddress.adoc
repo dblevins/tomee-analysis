@@ -1,7 +1,0 @@
-= javax/xml/registry/infomodel/EmailAddress.class
-
- - link:EmailAddress-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 4

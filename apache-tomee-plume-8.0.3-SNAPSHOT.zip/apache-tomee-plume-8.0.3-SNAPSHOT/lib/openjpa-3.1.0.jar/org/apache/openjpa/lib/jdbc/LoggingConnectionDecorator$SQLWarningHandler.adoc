@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/jdbc/LoggingConnectionDecorator$SQLWarningHandler.class
-
- - link:LoggingConnectionDecorator$SQLWarningHandler-asmified.java[Asmified]
-
-== References
-

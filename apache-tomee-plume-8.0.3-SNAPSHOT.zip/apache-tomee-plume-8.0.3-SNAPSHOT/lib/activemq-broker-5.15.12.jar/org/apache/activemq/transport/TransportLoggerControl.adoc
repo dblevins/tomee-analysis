@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/TransportLoggerControl.class
-
- - link:TransportLoggerControl-asmified.java[Asmified]
-
-== References
-

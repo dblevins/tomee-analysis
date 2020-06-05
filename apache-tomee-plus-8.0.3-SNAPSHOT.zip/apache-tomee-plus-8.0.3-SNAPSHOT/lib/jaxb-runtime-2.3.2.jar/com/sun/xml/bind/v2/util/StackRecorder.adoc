@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/util/StackRecorder.class
-
- - link:StackRecorder-asmified.java[Asmified]
-
-== References
-

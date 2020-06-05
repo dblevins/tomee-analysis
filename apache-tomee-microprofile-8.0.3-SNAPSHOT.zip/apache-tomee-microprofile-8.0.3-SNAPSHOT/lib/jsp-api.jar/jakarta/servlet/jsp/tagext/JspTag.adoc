@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/tagext/JspTag.class
-
- - link:JspTag-asmified.java[Asmified]
-
-== References
-

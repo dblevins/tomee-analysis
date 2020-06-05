@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlSelectBooleanCheckboxTag.class
-
- - link:HtmlSelectBooleanCheckboxTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeFormatterBuilder$TextField.class
-
- - link:DateTimeFormatterBuilder$TextField-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/CollectionExpression.class
-
- - link:CollectionExpression-asmified.java[Asmified]
-
-== References
-

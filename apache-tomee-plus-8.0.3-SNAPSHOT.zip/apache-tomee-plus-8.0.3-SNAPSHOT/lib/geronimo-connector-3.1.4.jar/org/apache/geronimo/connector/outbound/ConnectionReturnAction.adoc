@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/ConnectionReturnAction.class
-
- - link:ConnectionReturnAction-asmified.java[Asmified]
-
-== References
-

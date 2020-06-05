@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/log/HOWLLog.class
-
- - link:HOWLLog-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v3/ConnectionControlMarshaller.class
-
- - link:ConnectionControlMarshaller-asmified.java[Asmified]
-
-== References
-

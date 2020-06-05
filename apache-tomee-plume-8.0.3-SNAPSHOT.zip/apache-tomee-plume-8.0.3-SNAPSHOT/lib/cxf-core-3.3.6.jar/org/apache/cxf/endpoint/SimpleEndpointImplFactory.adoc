@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/SimpleEndpointImplFactory.class
-
- - link:SimpleEndpointImplFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/AlgorithmRegistry$SignatureAlgorithmIndex.class
-
- - link:AlgorithmRegistry$SignatureAlgorithmIndex-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/json/bind/serializer/JsonbSerializer.class
-
- - link:JsonbSerializer-asmified.java[Asmified]
-
-== References
-

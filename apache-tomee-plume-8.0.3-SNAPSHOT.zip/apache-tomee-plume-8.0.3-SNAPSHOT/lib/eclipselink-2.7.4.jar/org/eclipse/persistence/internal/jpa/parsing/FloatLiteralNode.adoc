@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/FloatLiteralNode.class
-
- - link:FloatLiteralNode-asmified.java[Asmified]
-
-== References
-

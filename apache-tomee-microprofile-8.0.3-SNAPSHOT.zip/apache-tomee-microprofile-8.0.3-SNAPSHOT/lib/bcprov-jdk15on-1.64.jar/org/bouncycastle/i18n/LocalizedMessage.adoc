@@ -1,6 +1,0 @@
-= org/bouncycastle/i18n/LocalizedMessage.class
-
- - link:LocalizedMessage-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PNewState.class
-
- - link:PNewState-asmified.java[Asmified]
-
-== References
-

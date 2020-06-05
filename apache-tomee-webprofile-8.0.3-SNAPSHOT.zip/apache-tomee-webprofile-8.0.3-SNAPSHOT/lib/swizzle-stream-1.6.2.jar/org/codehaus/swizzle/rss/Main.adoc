@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/rss/Main.class
-
- - link:Main-asmified.java[Asmified]
-
-== References
-

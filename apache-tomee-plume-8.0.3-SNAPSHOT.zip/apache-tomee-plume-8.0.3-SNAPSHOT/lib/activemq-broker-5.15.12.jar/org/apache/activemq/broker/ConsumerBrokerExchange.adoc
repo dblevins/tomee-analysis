@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/ConsumerBrokerExchange.class
-
- - link:ConsumerBrokerExchange-asmified.java[Asmified]
-
-== References
-

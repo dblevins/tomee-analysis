@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Scan$Exclude.class
-
- - link:Scan$Exclude-asmified.java[Asmified]
-
-== References
-

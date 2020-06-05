@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bag/AbstractSortedBagDecorator.class
-
- - link:AbstractSortedBagDecorator-asmified.java[Asmified]
-
-== References
-

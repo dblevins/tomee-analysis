@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/impl/InnerClassProperty.class
-
- - link:InnerClassProperty-asmified.java[Asmified]
-
-== References
-

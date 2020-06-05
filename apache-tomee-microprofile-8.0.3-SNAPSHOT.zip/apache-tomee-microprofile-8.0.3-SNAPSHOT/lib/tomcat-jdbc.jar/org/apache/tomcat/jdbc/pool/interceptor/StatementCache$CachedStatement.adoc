@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/interceptor/StatementCache$CachedStatement.class
-
- - link:StatementCache$CachedStatement-asmified.java[Asmified]
-
-== References
-

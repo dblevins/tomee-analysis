@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/MdbContext$1.class
-
- - link:MdbContext$1-asmified.java[Asmified]
-
-== References
-

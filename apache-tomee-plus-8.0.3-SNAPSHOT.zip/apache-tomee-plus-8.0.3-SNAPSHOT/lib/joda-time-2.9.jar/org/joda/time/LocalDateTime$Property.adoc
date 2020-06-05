@@ -1,6 +1,0 @@
-= org/joda/time/LocalDateTime$Property.class
-
- - link:LocalDateTime$Property-asmified.java[Asmified]
-
-== References
-

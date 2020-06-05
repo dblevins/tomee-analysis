@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/ParameterType.class
-
- - link:ParameterType-asmified.java[Asmified]
-
-== References
-

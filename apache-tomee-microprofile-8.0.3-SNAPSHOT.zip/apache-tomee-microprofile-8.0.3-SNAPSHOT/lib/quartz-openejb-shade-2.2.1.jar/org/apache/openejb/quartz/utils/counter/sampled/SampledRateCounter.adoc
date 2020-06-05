@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/counter/sampled/SampledRateCounter.class
-
- - link:SampledRateCounter-asmified.java[Asmified]
-
-== References
-

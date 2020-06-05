@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/Adapter1.class
-
- - link:Adapter1-asmified.java[Asmified]
-
-== References
-

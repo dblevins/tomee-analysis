@@ -1,6 +1,0 @@
-= org/apache/cxf/service/invoker/Invoker.class
-
- - link:Invoker-asmified.java[Asmified]
-
-== References
-

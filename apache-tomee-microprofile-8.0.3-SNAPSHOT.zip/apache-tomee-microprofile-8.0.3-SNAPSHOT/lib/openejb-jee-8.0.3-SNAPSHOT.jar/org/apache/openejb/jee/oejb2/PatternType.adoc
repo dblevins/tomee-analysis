@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/PatternType.class
-
- - link:PatternType-asmified.java[Asmified]
-
-== References
-

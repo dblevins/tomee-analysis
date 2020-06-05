@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/tables/JoinTableMetadata.class
-
- - link:JoinTableMetadata-asmified.java[Asmified]
-
-== References
-

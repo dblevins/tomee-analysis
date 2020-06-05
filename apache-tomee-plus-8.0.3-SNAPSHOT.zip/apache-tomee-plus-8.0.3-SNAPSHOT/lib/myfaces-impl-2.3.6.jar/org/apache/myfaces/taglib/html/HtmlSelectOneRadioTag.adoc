@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlSelectOneRadioTag.class
-
- - link:HtmlSelectOneRadioTag-asmified.java[Asmified]
-
-== References
-

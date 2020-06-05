@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/jpa/JPACriteriaQueryVisitor.class
-
- - link:JPACriteriaQueryVisitor-asmified.java[Asmified]
-
-== References
-

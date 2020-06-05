@@ -1,6 +1,0 @@
-= jakarta/faces/convert/ByteConverter.class
-
- - link:ByteConverter-asmified.java[Asmified]
-
-== References
-

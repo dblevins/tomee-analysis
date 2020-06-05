@@ -1,6 +1,0 @@
-= jakarta/persistence/ConstructorResult.class
-
- - link:ConstructorResult-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

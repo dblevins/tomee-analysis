@@ -1,6 +1,0 @@
-= javax/cache/integration/CacheLoader.class
-
- - link:CacheLoader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/http/HTTPConstants.class
-
- - link:HTTPConstants-asmified.java[Asmified]
-
-== References
-

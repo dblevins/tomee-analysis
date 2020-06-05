@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AuthorizationDecisionQueryImpl.class
-
- - link:AuthorizationDecisionQueryImpl-asmified.java[Asmified]
-
-== References
-

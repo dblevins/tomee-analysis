@@ -1,6 +1,0 @@
-= org/jose4j/keys/KeyPersuasion.class
-
- - link:KeyPersuasion-asmified.java[Asmified]
-
-== References
-

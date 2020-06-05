@@ -1,6 +1,0 @@
-= com/sun/faces/util/MessageFactory.class
-
- - link:MessageFactory-asmified.java[Asmified]
-
-== References
-

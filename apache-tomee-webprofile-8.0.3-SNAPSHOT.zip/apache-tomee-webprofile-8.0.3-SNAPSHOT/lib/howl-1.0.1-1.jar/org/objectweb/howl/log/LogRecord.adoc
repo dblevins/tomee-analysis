@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogRecord.class
-
- - link:LogRecord-asmified.java[Asmified]
-
-== References
-

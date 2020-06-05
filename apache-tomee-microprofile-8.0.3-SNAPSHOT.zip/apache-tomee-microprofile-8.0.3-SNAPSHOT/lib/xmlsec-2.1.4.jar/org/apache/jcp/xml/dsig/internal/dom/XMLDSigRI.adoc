@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/XMLDSigRI.class
-
- - link:XMLDSigRI-asmified.java[Asmified]
-
-== References
-

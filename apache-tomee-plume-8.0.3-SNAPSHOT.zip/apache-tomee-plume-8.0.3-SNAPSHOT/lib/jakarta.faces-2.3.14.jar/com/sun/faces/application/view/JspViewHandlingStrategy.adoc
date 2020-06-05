@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/JspViewHandlingStrategy.class
-
- - link:JspViewHandlingStrategy-asmified.java[Asmified]
-
-== References
-

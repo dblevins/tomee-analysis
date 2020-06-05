@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/CheckAllAtCommit.class
-
- - link:CheckAllAtCommit-asmified.java[Asmified]
-
-== References
-

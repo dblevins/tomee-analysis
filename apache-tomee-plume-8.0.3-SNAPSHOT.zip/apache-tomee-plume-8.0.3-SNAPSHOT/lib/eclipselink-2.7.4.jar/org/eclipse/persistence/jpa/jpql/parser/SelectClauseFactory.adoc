@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SelectClauseFactory.class
-
- - link:SelectClauseFactory-asmified.java[Asmified]
-
-== References
-

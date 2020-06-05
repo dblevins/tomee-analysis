@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/AbstractCommentParser.class
-
- - link:AbstractCommentParser-asmified.java[Asmified]
-
-== References
-

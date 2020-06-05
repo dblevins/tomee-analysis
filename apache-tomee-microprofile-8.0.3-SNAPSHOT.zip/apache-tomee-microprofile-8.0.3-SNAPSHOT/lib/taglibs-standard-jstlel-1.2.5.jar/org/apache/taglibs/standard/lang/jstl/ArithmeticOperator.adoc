@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/ArithmeticOperator.class
-
- - link:ArithmeticOperator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/SignedInfo.class
-
- - link:SignedInfo-asmified.java[Asmified]
-
-== References
-

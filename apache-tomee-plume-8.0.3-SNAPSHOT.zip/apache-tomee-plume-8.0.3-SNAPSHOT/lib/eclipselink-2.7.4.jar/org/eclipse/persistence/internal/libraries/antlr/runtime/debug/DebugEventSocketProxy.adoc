@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/DebugEventSocketProxy.class
-
- - link:DebugEventSocketProxy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/core/config/InitializationService.class
-
- - link:InitializationService-asmified.java[Asmified]
-
-== References
-

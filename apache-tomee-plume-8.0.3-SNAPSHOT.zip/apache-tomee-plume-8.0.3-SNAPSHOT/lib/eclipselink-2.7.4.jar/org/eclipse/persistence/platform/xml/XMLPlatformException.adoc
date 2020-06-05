@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/xml/XMLPlatformException.class
-
- - link:XMLPlatformException-asmified.java[Asmified]
-
-== References
-

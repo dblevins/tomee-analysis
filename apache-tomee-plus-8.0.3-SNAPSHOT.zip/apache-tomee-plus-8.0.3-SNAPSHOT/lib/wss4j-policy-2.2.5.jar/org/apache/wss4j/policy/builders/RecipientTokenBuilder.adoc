@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/RecipientTokenBuilder.class
-
- - link:RecipientTokenBuilder-asmified.java[Asmified]
-
-== References
-

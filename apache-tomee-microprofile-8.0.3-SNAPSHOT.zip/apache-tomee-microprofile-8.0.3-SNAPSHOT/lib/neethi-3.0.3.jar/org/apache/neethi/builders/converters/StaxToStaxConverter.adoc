@@ -1,6 +1,0 @@
-= org/apache/neethi/builders/converters/StaxToStaxConverter.class
-
- - link:StaxToStaxConverter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/criteria/entity/EvaluableEntityDescriptorCriterion.class
-
- - link:EvaluableEntityDescriptorCriterion-asmified.java[Asmified]
-
-== References
-

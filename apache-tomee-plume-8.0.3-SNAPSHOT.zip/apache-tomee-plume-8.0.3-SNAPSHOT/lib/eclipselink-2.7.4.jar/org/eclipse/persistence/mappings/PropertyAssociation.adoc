@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/PropertyAssociation.class
-
- - link:PropertyAssociation-asmified.java[Asmified]
-
-== References
-

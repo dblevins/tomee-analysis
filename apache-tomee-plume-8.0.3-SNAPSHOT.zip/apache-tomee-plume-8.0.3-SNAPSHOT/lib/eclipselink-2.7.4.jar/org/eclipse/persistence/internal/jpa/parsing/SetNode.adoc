@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/SetNode.class
-
- - link:SetNode-asmified.java[Asmified]
-
-== References
-

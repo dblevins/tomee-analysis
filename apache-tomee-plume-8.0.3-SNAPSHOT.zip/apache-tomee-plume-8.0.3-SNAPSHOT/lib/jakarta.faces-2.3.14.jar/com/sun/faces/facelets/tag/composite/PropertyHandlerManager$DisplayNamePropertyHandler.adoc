@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/PropertyHandlerManager$DisplayNamePropertyHandler.class
-
- - link:PropertyHandlerManager$DisplayNamePropertyHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/transport/naming/RMIRegistryNamingServiceConfig.class
-
- - link:RMIRegistryNamingServiceConfig-asmified.java[Asmified]
-
-== References
-

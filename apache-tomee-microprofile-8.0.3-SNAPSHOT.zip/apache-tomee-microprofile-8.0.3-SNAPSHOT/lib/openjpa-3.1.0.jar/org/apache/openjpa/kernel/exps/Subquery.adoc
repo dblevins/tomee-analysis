@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Subquery.class
-
- - link:Subquery-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/AjaxBehaviorListenerImpl.class
-
- - link:AjaxBehaviorListenerImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/bval/ReturnValidationGenerator.class
-
- - link:ReturnValidationGenerator-asmified.java[Asmified]
-
-== References
-

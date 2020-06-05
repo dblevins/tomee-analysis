@@ -1,6 +1,0 @@
-= org/apache/cxf/service/model/ServiceInfo.class
-
- - link:ServiceInfo-asmified.java[Asmified]
-
-== References
-

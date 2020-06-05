@@ -1,6 +1,0 @@
-= org/hsqldb/persist/TextFileReader.class
-
- - link:TextFileReader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/FTPBlobUploadStrategy.class
-
- - link:FTPBlobUploadStrategy-asmified.java[Asmified]
-
-== References
-

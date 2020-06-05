@@ -1,6 +1,0 @@
-= jakarta/websocket/server/ServerApplicationConfig.class
-
- - link:ServerApplicationConfig-asmified.java[Asmified]
-
-== References
-

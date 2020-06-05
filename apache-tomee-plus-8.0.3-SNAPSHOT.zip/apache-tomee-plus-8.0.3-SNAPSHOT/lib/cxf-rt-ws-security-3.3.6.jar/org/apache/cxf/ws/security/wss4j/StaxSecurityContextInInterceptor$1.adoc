@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/StaxSecurityContextInInterceptor$1.class
-
- - link:StaxSecurityContextInInterceptor$1-asmified.java[Asmified]
-
-== References
-

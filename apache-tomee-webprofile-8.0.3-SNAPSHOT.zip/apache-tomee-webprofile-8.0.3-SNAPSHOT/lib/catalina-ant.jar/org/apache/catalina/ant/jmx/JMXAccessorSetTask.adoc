@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/jmx/JMXAccessorSetTask.class
-
- - link:JMXAccessorSetTask-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ElementNameRule.class
-
- - link:ElementNameRule-asmified.java[Asmified]
-
-== References
-

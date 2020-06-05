@@ -1,9 +1,0 @@
-= javax/faces/render/Renderer.class
-
- - link:Renderer-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.UIComponent - 9
- - javax.faces.context.FacesContext - 7
- - javax.faces.convert.ConverterException - 1

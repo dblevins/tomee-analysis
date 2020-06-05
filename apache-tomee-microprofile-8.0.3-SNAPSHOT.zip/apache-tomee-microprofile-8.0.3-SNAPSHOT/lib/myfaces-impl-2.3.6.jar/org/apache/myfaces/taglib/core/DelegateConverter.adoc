@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/DelegateConverter.class
-
- - link:DelegateConverter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/PropertySuffix.class
-
- - link:PropertySuffix-asmified.java[Asmified]
-
-== References
-

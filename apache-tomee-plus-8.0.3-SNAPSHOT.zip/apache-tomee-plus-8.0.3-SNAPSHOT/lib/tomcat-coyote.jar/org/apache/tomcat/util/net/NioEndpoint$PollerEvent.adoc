@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/NioEndpoint$PollerEvent.class
-
- - link:NioEndpoint$PollerEvent-asmified.java[Asmified]
-
-== References
-

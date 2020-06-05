@@ -1,6 +1,0 @@
-= org/apache/tomee/webservices/TomcatWsRegistry$Key.class
-
- - link:TomcatWsRegistry$Key-asmified.java[Asmified]
-
-== References
-

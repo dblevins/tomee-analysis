@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/JAXBEncoderDecoder$1.class
-
- - link:JAXBEncoderDecoder$1-asmified.java[Asmified]
-
-== References
-

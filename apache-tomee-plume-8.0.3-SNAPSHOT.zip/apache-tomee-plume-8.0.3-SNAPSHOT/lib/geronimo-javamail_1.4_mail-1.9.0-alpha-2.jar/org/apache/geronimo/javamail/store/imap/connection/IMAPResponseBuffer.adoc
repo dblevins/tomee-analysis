@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPResponseBuffer.class
-
- - link:IMAPResponseBuffer-asmified.java[Asmified]
-
-== References
-

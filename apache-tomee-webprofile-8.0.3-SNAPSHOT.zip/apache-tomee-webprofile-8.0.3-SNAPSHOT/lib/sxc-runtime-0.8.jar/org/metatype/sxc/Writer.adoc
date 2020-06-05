@@ -1,6 +1,0 @@
-= org/metatype/sxc/Writer.class
-
- - link:Writer-asmified.java[Asmified]
-
-== References
-

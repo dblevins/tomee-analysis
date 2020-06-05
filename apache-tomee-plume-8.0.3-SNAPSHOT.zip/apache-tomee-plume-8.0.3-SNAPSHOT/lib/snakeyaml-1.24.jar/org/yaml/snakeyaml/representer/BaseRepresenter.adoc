@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/representer/BaseRepresenter.class
-
- - link:BaseRepresenter-asmified.java[Asmified]
-
-== References
-

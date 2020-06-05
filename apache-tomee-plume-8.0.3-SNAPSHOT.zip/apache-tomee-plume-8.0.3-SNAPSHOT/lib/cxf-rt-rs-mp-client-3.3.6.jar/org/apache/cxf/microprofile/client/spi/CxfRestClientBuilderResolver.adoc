@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/spi/CxfRestClientBuilderResolver.class
-
- - link:CxfRestClientBuilderResolver-asmified.java[Asmified]
-
-== References
-

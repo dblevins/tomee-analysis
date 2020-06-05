@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/types/SDOWrapperType$Bytes_hexBunaryWrapperImpl.class
-
- - link:SDOWrapperType$Bytes_hexBunaryWrapperImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/webapp/FacetTag.class
-
- - link:FacetTag-asmified.java[Asmified]
-
-== References
-

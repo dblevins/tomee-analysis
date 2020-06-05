@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/util/SourceCode$Import.class
-
- - link:SourceCode$Import-asmified.java[Asmified]
-
-== References
-

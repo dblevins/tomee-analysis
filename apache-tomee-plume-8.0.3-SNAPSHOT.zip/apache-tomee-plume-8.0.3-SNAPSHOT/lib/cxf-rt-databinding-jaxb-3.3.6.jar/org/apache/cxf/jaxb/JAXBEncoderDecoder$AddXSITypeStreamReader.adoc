@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/JAXBEncoderDecoder$AddXSITypeStreamReader.class
-
- - link:JAXBEncoderDecoder$AddXSITypeStreamReader-asmified.java[Asmified]
-
-== References
-

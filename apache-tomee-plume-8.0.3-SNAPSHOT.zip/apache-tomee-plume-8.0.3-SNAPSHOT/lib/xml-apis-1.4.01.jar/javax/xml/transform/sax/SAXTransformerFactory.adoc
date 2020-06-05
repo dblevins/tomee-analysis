@@ -1,6 +1,0 @@
-= javax/xml/transform/sax/SAXTransformerFactory.class
-
- - link:SAXTransformerFactory-asmified.java[Asmified]
-
-== References
-

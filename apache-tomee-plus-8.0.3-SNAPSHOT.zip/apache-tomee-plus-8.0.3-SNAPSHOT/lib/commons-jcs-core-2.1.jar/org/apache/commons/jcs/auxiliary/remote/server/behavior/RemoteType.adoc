@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/server/behavior/RemoteType.class
-
- - link:RemoteType-asmified.java[Asmified]
-
-== References
-

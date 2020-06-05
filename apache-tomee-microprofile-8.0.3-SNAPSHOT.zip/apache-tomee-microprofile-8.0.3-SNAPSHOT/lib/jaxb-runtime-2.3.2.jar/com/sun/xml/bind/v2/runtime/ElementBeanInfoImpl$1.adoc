@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl$1.class
-
- - link:ElementBeanInfoImpl$1-asmified.java[Asmified]
-
-== References
-

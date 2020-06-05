@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/UpperExpression.class
-
- - link:UpperExpression-asmified.java[Asmified]
-
-== References
-

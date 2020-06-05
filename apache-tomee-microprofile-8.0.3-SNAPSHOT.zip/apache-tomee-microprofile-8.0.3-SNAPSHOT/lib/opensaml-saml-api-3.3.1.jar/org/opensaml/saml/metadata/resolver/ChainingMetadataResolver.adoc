@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/ChainingMetadataResolver.class
-
- - link:ChainingMetadataResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/map/SingletonMap$SingletonMapIterator.class
-
- - link:SingletonMap$SingletonMapIterator-asmified.java[Asmified]
-
-== References
-

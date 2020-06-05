@@ -1,6 +1,0 @@
-= jakarta/xml/bind/annotation/W3CDomHandler.class
-
- - link:W3CDomHandler-asmified.java[Asmified]
-
-== References
-

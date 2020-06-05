@@ -1,6 +1,0 @@
-= org/jasypt/encryption/BigIntegerEncryptor.class
-
- - link:BigIntegerEncryptor-asmified.java[Asmified]
-
-== References
-

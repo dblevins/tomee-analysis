@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/CompositeTransport.class
-
- - link:CompositeTransport-asmified.java[Asmified]
-
-== References
-

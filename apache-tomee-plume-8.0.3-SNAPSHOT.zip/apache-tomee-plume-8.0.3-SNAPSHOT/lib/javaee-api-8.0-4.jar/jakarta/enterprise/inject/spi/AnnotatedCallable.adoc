@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/AnnotatedCallable.class
-
- - link:AnnotatedCallable-asmified.java[Asmified]
-
-== References
-

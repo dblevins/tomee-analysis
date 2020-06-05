@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/handler/WSHandlerResult.class
-
- - link:WSHandlerResult-asmified.java[Asmified]
-
-== References
-

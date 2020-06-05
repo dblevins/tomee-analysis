@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/endo/GLVTypeAEndomorphism.class
-
- - link:GLVTypeAEndomorphism-asmified.java[Asmified]
-
-== References
-

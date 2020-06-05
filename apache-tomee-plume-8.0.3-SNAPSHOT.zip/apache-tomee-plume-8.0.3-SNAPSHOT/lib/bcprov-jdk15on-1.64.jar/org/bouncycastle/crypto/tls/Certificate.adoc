@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/Certificate.class
-
- - link:Certificate-asmified.java[Asmified]
-
-== References
-

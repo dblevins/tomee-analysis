@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/Interceptor.class
-
- - link:Interceptor-asmified.java[Asmified]
-
-== References
-

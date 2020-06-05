@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/xmlmodel/XmlJoinNodes$XmlJoinNode.class
-
- - link:XmlJoinNodes$XmlJoinNode-asmified.java[Asmified]
-
-== References
-

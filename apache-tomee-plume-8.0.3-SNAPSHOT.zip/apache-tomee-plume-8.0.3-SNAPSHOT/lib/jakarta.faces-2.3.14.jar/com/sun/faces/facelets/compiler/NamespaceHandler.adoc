@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/NamespaceHandler.class
-
- - link:NamespaceHandler-asmified.java[Asmified]
-
-== References
-

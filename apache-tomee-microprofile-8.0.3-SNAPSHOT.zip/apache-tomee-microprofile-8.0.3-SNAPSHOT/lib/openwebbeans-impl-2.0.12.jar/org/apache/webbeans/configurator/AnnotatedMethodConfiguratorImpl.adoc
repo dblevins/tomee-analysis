@@ -1,6 +1,0 @@
-= org/apache/webbeans/configurator/AnnotatedMethodConfiguratorImpl.class
-
- - link:AnnotatedMethodConfiguratorImpl-asmified.java[Asmified]
-
-== References
-

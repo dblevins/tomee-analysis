@@ -1,6 +1,0 @@
-= com/sun/xml/bind/api/impl/NameConverter$1.class
-
- - link:NameConverter$1-asmified.java[Asmified]
-
-== References
-

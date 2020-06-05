@@ -1,9 +1,0 @@
-= javax/ws/rs/ext/MessageBodyWriter.class
-
- - link:MessageBodyWriter-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.MediaType - 3
- - javax.ws.rs.core.MultivaluedMap - 1
- - javax.ws.rs.WebApplicationException - 1

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/dynamic/DynamicEntityImpl$PropertyWrapper.class
-
- - link:DynamicEntityImpl$PropertyWrapper-asmified.java[Asmified]
-
-== References
-

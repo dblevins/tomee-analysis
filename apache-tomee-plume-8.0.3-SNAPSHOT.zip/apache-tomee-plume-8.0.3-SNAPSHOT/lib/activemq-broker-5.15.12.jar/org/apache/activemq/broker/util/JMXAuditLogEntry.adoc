@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/util/JMXAuditLogEntry.class
-
- - link:JMXAuditLogEntry-asmified.java[Asmified]
-
-== References
-

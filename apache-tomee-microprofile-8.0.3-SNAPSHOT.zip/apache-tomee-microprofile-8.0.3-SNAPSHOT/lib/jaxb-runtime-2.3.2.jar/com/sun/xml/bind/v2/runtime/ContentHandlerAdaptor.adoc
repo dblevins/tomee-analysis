@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/ContentHandlerAdaptor.class
-
- - link:ContentHandlerAdaptor-asmified.java[Asmified]
-
-== References
-

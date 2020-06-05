@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CreateDynamicCompositeComponentListener.class
-
- - link:CreateDynamicCompositeComponentListener-asmified.java[Asmified]
-
-== References
-

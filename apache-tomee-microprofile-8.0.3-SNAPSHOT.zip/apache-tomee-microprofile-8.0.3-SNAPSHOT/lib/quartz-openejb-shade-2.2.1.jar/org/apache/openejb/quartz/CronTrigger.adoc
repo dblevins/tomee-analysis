@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/CronTrigger.class
-
- - link:CronTrigger-asmified.java[Asmified]
-
-== References
-

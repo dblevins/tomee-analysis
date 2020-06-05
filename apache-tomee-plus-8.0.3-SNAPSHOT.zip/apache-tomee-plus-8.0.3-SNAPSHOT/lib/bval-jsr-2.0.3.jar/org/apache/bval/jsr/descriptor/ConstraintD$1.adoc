@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/ConstraintD$1.class
-
- - link:ConstraintD$1-asmified.java[Asmified]
-
-== References
-

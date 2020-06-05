@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/ConnectionSettingsRemote.class
-
- - link:ConnectionSettingsRemote-asmified.java[Asmified]
-
-== References
-

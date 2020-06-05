@@ -1,6 +1,0 @@
-= jakarta/validation/ValidationProviderResolver.class
-
- - link:ValidationProviderResolver-asmified.java[Asmified]
-
-== References
-

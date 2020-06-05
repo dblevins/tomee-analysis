@@ -1,6 +1,0 @@
-= serp/bytecode/InstructionPtrStrategy.class
-
- - link:InstructionPtrStrategy-asmified.java[Asmified]
-
-== References
-

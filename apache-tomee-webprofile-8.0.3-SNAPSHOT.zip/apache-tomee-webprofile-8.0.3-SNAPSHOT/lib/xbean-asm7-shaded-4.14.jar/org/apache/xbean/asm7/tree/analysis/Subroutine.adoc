@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/Subroutine.class
-
- - link:Subroutine-asmified.java[Asmified]
-
-== References
-

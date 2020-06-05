@@ -1,6 +1,0 @@
-= javax/cache/Cache$Entry.class
-
- - link:Cache$Entry-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/KeyValueTokenBuilder.class
-
- - link:KeyValueTokenBuilder-asmified.java[Asmified]
-
-== References
-

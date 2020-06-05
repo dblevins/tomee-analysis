@@ -1,6 +1,0 @@
-= org/apache/commons/collections/SortedBidiMap.class
-
- - link:SortedBidiMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckClasses.class
-
- - link:CheckClasses-asmified.java[Asmified]
-
-== References
-

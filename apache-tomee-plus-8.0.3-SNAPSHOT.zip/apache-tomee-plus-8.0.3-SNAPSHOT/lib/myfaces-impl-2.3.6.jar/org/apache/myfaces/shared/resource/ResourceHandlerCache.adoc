@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/resource/ResourceHandlerCache.class
-
- - link:ResourceHandlerCache-asmified.java[Asmified]
-
-== References
-

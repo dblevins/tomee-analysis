@@ -1,6 +1,0 @@
-= jakarta/faces/convert/EnumConverter.class
-
- - link:EnumConverter-asmified.java[Asmified]
-
-== References
-

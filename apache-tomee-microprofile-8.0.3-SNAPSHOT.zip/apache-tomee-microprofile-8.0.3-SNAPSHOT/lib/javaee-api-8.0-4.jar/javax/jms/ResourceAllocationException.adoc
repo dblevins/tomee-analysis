@@ -1,8 +1,0 @@
-= javax/jms/ResourceAllocationException.class
-
- - link:ResourceAllocationException-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSException - 2
- - javax.jms.ResourceAllocationException - 1

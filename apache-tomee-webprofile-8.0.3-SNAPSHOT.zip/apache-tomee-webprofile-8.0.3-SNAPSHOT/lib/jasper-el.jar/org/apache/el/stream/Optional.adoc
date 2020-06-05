@@ -1,6 +1,0 @@
-= org/apache/el/stream/Optional.class
-
- - link:Optional-asmified.java[Asmified]
-
-== References
-

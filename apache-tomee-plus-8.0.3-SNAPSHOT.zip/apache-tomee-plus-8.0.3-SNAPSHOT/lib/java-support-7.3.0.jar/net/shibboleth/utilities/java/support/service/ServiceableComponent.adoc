@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/service/ServiceableComponent.class
-
- - link:ServiceableComponent-asmified.java[Asmified]
-
-== References
-

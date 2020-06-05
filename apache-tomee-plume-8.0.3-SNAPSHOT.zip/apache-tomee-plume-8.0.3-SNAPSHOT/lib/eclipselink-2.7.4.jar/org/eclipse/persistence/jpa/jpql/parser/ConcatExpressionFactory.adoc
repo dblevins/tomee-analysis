@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ConcatExpressionFactory.class
-
- - link:ConcatExpressionFactory-asmified.java[Asmified]
-
-== References
-

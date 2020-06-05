@@ -1,6 +1,0 @@
-= jakarta/resource/cci/ConnectionFactory.class
-
- - link:ConnectionFactory-asmified.java[Asmified]
-
-== References
-

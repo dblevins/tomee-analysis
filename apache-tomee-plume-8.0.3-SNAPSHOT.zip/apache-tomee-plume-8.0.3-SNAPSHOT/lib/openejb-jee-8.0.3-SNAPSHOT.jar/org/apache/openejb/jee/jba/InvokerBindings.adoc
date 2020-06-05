@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/InvokerBindings.class
-
- - link:InvokerBindings-asmified.java[Asmified]
-
-== References
-

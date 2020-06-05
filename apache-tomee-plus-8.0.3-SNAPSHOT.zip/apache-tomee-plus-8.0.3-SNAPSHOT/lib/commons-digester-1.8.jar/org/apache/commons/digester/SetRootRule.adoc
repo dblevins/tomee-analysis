@@ -1,6 +1,0 @@
-= org/apache/commons/digester/SetRootRule.class
-
- - link:SetRootRule-asmified.java[Asmified]
-
-== References
-

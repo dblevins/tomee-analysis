@@ -1,6 +1,0 @@
-= jakarta/persistence/CacheStoreMode.class
-
- - link:CacheStoreMode-asmified.java[Asmified]
-
-== References
-

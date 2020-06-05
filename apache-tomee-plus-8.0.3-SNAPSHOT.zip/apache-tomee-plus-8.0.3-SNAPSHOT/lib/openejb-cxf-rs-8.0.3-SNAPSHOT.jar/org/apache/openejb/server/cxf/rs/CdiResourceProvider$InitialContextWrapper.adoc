@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper.class
-
- - link:CdiResourceProvider$InitialContextWrapper-asmified.java[Asmified]
-
-== References
-

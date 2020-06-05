@@ -1,7 +1,0 @@
-= javax/xml/bind/annotation/XmlElementRefs.class
-
- - link:XmlElementRefs-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.annotation.XmlElementRef - 1

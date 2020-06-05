@@ -1,6 +1,0 @@
-= org/jose4j/jwa/AlgorithmConstraints.class
-
- - link:AlgorithmConstraints-asmified.java[Asmified]
-
-== References
-

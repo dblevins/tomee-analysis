@@ -1,6 +1,0 @@
-= javax/faces/component/html/_LabelProperty.class
-
- - link:_LabelProperty-asmified.java[Asmified]
-
-== References
-

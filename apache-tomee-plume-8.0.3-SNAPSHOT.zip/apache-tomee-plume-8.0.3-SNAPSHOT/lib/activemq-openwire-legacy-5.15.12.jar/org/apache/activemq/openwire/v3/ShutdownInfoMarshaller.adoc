@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v3/ShutdownInfoMarshaller.class
-
- - link:ShutdownInfoMarshaller-asmified.java[Asmified]
-
-== References
-

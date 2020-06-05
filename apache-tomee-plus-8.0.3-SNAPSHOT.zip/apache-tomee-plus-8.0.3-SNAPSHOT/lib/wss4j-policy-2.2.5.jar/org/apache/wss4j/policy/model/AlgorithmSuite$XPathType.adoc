@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/AlgorithmSuite$XPathType.class
-
- - link:AlgorithmSuite$XPathType-asmified.java[Asmified]
-
-== References
-

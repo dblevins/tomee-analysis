@@ -1,6 +1,0 @@
-= org/apache/xml/security/encryption/Reference.class
-
- - link:Reference-asmified.java[Asmified]
-
-== References
-

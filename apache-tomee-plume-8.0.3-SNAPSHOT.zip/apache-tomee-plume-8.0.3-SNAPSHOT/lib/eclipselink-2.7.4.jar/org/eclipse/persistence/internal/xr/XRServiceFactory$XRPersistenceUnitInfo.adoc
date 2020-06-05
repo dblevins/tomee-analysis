@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRServiceFactory$XRPersistenceUnitInfo.class
-
- - link:XRServiceFactory$XRPersistenceUnitInfo-asmified.java[Asmified]
-
-== References
-

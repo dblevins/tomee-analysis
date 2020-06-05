@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_HtmlColumn.class
-
- - link:_HtmlColumn-asmified.java[Asmified]
-
-== References
-

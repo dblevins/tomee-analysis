@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/literal/NamedLiteral.class
-
- - link:NamedLiteral-asmified.java[Asmified]
-
-== References
-

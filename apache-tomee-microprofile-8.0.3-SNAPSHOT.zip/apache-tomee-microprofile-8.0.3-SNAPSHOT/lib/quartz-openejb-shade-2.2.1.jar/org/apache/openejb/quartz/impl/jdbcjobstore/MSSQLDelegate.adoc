@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/MSSQLDelegate.class
-
- - link:MSSQLDelegate-asmified.java[Asmified]
-
-== References
-

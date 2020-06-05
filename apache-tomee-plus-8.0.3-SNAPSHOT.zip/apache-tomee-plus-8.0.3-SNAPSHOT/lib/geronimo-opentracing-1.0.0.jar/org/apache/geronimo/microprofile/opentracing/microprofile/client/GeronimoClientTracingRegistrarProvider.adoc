@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/microprofile/client/GeronimoClientTracingRegistrarProvider.class
-
- - link:GeronimoClientTracingRegistrarProvider-asmified.java[Asmified]
-
-== References
-

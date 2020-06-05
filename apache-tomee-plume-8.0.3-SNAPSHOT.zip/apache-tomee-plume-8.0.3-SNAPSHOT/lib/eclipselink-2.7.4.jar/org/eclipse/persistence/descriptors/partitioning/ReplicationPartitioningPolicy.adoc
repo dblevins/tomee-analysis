@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/partitioning/ReplicationPartitioningPolicy.class
-
- - link:ReplicationPartitioningPolicy-asmified.java[Asmified]
-
-== References
-

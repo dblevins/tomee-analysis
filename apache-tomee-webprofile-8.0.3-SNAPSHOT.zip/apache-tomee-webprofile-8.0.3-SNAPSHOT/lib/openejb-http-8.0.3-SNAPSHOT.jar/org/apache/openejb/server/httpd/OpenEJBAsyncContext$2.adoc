@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/OpenEJBAsyncContext$2.class
-
- - link:OpenEJBAsyncContext$2-asmified.java[Asmified]
-
-== References
-

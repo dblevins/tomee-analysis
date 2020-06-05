@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlHiddenRenderer.class
-
- - link:HtmlHiddenRenderer-asmified.java[Asmified]
-
-== References
-

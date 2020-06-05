@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IGenericType.class
-
- - link:IGenericType-asmified.java[Asmified]
-
-== References
-

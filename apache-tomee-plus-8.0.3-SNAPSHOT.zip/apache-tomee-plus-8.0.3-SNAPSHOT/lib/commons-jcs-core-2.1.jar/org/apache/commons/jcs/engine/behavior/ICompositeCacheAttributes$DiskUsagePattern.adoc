@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/ICompositeCacheAttributes$DiskUsagePattern.class
-
- - link:ICompositeCacheAttributes$DiskUsagePattern-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/visit/VisitCallback.class
-
- - link:VisitCallback-asmified.java[Asmified]
-
-== References
-

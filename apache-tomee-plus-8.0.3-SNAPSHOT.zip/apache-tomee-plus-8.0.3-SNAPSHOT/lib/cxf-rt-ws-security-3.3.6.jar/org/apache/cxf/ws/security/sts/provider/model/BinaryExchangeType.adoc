@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.class
-
- - link:BinaryExchangeType-asmified.java[Asmified]
-
-== References
-

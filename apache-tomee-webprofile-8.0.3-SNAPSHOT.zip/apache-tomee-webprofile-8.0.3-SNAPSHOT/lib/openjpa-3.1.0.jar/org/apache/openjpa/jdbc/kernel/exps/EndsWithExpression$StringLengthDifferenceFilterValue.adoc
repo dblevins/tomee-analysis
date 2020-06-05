@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/EndsWithExpression$StringLengthDifferenceFilterValue.class
-
- - link:EndsWithExpression$StringLengthDifferenceFilterValue-asmified.java[Asmified]
-
-== References
-

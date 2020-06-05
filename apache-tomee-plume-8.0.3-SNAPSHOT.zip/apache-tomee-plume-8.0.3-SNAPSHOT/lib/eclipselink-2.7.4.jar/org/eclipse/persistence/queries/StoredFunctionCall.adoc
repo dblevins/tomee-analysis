@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/StoredFunctionCall.class
-
- - link:StoredFunctionCall-asmified.java[Asmified]
-
-== References
-

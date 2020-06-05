@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/AnnotationFinder$Info.class
-
- - link:AnnotationFinder$Info-asmified.java[Asmified]
-
-== References
-

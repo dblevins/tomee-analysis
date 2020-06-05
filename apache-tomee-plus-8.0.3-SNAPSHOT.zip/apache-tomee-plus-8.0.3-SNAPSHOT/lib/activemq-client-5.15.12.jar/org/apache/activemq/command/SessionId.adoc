@@ -1,6 +1,0 @@
-= org/apache/activemq/command/SessionId.class
-
- - link:SessionId-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/web/context/WebContextsService.class
-
- - link:WebContextsService-asmified.java[Asmified]
-
-== References
-

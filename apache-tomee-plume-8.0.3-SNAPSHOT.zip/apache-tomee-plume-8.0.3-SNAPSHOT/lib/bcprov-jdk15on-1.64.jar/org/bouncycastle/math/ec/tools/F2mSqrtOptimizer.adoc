@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/tools/F2mSqrtOptimizer.class
-
- - link:F2mSqrtOptimizer-asmified.java[Asmified]
-
-== References
-

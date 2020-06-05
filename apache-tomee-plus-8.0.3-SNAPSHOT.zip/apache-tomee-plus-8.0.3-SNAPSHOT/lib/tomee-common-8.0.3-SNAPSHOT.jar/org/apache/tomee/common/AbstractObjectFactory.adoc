@@ -1,6 +1,0 @@
-= org/apache/tomee/common/AbstractObjectFactory.class
-
- - link:AbstractObjectFactory-asmified.java[Asmified]
-
-== References
-

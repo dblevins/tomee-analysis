@@ -1,6 +1,0 @@
-= org/apache/openejb/config/NewLoaderLogic$1.class
-
- - link:NewLoaderLogic$1-asmified.java[Asmified]
-
-== References
-

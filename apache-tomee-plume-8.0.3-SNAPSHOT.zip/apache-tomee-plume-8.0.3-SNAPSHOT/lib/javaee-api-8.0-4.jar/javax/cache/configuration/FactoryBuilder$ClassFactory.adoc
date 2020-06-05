@@ -1,6 +1,0 @@
-= javax/cache/configuration/FactoryBuilder$ClassFactory.class
-
- - link:FactoryBuilder$ClassFactory-asmified.java[Asmified]
-
-== References
-

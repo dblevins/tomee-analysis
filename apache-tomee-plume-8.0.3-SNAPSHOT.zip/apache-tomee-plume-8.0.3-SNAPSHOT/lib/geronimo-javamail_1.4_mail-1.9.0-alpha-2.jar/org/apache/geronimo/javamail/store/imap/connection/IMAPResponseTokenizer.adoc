@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPResponseTokenizer.class
-
- - link:IMAPResponseTokenizer-asmified.java[Asmified]
-
-== References
-

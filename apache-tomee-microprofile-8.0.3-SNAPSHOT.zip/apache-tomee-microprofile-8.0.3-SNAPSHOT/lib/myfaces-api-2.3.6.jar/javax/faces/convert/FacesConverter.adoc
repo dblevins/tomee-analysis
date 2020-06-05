@@ -1,7 +1,0 @@
-= javax/faces/convert/FacesConverter.class
-
- - link:FacesConverter-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Qualifier - 1

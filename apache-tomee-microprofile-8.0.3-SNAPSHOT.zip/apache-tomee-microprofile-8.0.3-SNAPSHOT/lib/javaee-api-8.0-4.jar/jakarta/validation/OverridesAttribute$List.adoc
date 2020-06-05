@@ -1,6 +1,0 @@
-= jakarta/validation/OverridesAttribute$List.class
-
- - link:OverridesAttribute$List-asmified.java[Asmified]
-
-== References
-

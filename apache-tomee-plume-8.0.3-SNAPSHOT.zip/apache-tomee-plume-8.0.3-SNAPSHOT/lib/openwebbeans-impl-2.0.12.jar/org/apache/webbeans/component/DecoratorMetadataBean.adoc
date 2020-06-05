@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/DecoratorMetadataBean.class
-
- - link:DecoratorMetadataBean-asmified.java[Asmified]
-
-== References
-

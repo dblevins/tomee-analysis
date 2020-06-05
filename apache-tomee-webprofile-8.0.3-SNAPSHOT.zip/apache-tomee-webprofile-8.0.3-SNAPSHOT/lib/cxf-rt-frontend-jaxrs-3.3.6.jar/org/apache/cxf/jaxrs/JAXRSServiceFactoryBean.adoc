@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/JAXRSServiceFactoryBean.class
-
- - link:JAXRSServiceFactoryBean-asmified.java[Asmified]
-
-== References
-

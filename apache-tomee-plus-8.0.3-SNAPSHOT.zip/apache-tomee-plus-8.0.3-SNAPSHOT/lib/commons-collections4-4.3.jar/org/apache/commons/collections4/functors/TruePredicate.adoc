@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/TruePredicate.class
-
- - link:TruePredicate-asmified.java[Asmified]
-
-== References
-

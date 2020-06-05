@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/format/InputAccessor$Std.class
-
- - link:InputAccessor$Std-asmified.java[Asmified]
-
-== References
-

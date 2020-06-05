@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/EqualTypeExpression.class
-
- - link:EqualTypeExpression-asmified.java[Asmified]
-
-== References
-

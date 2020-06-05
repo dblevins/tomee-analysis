@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/strategies/FinderFromDfltClass.class
-
- - link:FinderFromDfltClass-asmified.java[Asmified]
-
-== References
-

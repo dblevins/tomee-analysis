@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/Proxies.class
-
- - link:Proxies-asmified.java[Asmified]
-
-== References
-

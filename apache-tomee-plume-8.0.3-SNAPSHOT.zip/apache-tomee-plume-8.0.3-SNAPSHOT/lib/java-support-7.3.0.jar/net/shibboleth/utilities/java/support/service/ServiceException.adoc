@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/service/ServiceException.class
-
- - link:ServiceException-asmified.java[Asmified]
-
-== References
-

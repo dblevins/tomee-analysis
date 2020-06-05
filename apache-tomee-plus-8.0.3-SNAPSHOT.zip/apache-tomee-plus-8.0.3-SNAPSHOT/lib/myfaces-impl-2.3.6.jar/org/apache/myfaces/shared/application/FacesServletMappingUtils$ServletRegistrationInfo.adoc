@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/application/FacesServletMappingUtils$ServletRegistrationInfo.class
-
- - link:FacesServletMappingUtils$ServletRegistrationInfo-asmified.java[Asmified]
-
-== References
-

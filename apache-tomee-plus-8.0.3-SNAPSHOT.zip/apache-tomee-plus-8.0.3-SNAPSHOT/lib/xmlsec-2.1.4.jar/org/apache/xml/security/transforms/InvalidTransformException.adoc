@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/InvalidTransformException.class
-
- - link:InvalidTransformException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/JPAPropertyConverter$Pair.class
-
- - link:JPAPropertyConverter$Pair-asmified.java[Asmified]
-
-== References
-

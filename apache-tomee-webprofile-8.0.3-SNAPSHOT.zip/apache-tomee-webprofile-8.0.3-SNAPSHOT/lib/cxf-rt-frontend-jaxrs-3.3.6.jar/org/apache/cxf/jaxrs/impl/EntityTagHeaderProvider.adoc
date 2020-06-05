@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/EntityTagHeaderProvider.class
-
- - link:EntityTagHeaderProvider-asmified.java[Asmified]
-
-== References
-

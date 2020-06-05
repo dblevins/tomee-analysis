@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateless/StatelessContext$1.class
-
- - link:StatelessContext$1-asmified.java[Asmified]
-
-== References
-

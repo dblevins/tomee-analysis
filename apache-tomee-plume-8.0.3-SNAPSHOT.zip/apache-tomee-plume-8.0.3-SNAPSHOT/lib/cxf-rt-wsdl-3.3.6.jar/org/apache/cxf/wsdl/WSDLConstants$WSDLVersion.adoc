@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/WSDLConstants$WSDLVersion.class
-
- - link:WSDLConstants$WSDLVersion-asmified.java[Asmified]
-
-== References
-

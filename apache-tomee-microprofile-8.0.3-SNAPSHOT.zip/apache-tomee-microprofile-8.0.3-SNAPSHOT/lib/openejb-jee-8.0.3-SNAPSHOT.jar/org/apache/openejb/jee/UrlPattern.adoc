@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/UrlPattern.class
-
- - link:UrlPattern-asmified.java[Asmified]
-
-== References
-

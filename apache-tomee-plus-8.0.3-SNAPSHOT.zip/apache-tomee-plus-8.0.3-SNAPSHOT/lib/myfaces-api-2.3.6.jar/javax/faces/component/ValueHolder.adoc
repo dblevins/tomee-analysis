@@ -1,7 +1,0 @@
-= javax/faces/component/ValueHolder.class
-
- - link:ValueHolder-asmified.java[Asmified]
-
-== References
-
- - javax.faces.convert.Converter - 2

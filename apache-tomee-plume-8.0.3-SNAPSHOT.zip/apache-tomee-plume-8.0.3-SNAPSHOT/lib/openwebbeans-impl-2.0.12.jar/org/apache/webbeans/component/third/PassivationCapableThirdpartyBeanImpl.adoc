@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/third/PassivationCapableThirdpartyBeanImpl.class
-
- - link:PassivationCapableThirdpartyBeanImpl-asmified.java[Asmified]
-
-== References
-

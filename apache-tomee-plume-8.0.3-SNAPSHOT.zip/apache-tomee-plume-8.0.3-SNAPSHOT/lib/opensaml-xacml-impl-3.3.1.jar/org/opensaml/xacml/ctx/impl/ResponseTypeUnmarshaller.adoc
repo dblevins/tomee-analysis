@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ResponseTypeUnmarshaller.class
-
- - link:ResponseTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

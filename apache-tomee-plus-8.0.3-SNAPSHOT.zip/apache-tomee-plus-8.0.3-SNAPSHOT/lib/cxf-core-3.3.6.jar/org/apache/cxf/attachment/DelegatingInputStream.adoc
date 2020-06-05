@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/DelegatingInputStream.class
-
- - link:DelegatingInputStream-asmified.java[Asmified]
-
-== References
-

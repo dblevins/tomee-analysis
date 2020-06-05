@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ComponentTagHandlerDelegate$1.class
-
- - link:ComponentTagHandlerDelegate$1-asmified.java[Asmified]
-
-== References
-

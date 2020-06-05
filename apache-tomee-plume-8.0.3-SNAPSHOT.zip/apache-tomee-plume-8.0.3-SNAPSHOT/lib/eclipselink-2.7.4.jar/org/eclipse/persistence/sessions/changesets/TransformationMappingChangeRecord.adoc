@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/changesets/TransformationMappingChangeRecord.class
-
- - link:TransformationMappingChangeRecord-asmified.java[Asmified]
-
-== References
-

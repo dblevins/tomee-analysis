@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSBase64BinaryBuilder.class
-
- - link:XSBase64BinaryBuilder-asmified.java[Asmified]
-
-== References
-

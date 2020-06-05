@@ -1,7 +1,0 @@
-= javax/validation/Path$ContainerElementNode.class
-
- - link:Path$ContainerElementNode-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Path$Node - 1

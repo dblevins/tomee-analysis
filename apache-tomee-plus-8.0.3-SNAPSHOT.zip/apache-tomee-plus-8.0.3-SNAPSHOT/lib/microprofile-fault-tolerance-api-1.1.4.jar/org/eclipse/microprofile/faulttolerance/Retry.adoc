@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/faulttolerance/Retry.class
-
- - link:Retry-asmified.java[Asmified]
-
-== References
-

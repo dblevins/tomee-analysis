@@ -1,6 +1,0 @@
-= org/apache/batchee/container/util/BatchPartitionWorkUnit.class
-
- - link:BatchPartitionWorkUnit-asmified.java[Asmified]
-
-== References
-

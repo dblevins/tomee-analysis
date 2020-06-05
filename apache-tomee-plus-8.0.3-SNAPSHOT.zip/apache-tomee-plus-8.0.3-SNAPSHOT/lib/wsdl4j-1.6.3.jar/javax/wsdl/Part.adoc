@@ -1,6 +1,0 @@
-= javax/wsdl/Part.class
-
- - link:Part-asmified.java[Asmified]
-
-== References
-

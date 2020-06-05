@@ -1,6 +1,0 @@
-= org/apache/openejb/sxc/WebXml.class
-
- - link:WebXml-asmified.java[Asmified]
-
-== References
-

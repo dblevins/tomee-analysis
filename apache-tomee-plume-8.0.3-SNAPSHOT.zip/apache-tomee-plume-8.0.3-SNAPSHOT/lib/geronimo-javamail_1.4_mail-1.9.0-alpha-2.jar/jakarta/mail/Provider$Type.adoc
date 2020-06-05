@@ -1,6 +1,0 @@
-= jakarta/mail/Provider$Type.class
-
- - link:Provider$Type-asmified.java[Asmified]
-
-== References
-

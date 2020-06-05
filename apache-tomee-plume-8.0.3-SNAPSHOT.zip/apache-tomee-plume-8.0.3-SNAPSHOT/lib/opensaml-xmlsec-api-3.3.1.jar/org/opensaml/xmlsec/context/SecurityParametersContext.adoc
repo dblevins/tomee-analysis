@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/context/SecurityParametersContext.class
-
- - link:SecurityParametersContext-asmified.java[Asmified]
-
-== References
-

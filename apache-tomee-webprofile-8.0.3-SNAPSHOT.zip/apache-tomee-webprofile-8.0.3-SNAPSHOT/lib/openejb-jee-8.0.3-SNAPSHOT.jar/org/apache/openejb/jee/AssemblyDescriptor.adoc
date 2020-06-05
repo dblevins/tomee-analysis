@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/AssemblyDescriptor.class
-
- - link:AssemblyDescriptor-asmified.java[Asmified]
-
-== References
-

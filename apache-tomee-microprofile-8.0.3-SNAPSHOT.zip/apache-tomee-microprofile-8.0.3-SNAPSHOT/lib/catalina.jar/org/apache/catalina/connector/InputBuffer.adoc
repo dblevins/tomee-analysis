@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/InputBuffer.class
-
- - link:InputBuffer-asmified.java[Asmified]
-
-== References
-

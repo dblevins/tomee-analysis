@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/PersistenceAdapterView.class
-
- - link:PersistenceAdapterView-asmified.java[Asmified]
-
-== References
-

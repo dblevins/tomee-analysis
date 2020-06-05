@@ -1,6 +1,0 @@
-= org/xml/sax/ext/DefaultHandler2.class
-
- - link:DefaultHandler2-asmified.java[Asmified]
-
-== References
-

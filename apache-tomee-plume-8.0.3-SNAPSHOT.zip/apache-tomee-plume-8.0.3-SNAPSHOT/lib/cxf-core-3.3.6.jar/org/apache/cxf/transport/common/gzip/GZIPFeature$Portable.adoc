@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/common/gzip/GZIPFeature$Portable.class
-
- - link:GZIPFeature$Portable-asmified.java[Asmified]
-
-== References
-

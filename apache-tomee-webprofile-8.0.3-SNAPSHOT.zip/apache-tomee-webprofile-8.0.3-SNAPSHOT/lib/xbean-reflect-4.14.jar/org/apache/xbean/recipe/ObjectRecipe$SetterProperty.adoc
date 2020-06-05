@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ObjectRecipe$SetterProperty.class
-
- - link:ObjectRecipe$SetterProperty-asmified.java[Asmified]
-
-== References
-

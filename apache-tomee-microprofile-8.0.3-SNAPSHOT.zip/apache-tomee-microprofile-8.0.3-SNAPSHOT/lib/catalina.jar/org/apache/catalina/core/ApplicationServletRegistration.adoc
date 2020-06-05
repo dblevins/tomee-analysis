@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationServletRegistration.class
-
- - link:ApplicationServletRegistration-asmified.java[Asmified]
-
-== References
-

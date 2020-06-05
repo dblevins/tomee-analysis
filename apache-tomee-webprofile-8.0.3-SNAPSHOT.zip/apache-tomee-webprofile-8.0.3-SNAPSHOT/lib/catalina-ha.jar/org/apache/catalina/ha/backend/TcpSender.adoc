@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/backend/TcpSender.class
-
- - link:TcpSender-asmified.java[Asmified]
-
-== References
-

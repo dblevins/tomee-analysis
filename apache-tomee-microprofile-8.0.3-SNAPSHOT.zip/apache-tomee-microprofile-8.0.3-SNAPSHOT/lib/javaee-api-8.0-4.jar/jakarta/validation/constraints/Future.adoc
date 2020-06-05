@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/Future.class
-
- - link:Future-asmified.java[Asmified]
-
-== References
-

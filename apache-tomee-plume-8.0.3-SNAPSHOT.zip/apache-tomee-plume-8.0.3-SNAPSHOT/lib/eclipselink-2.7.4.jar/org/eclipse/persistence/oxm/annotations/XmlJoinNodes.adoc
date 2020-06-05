@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlJoinNodes.class
-
- - link:XmlJoinNodes-asmified.java[Asmified]
-
-== References
-

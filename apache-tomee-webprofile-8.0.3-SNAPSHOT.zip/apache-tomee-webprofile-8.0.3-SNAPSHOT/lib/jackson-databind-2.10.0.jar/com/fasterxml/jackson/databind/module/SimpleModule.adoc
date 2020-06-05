@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/module/SimpleModule.class
-
- - link:SimpleModule-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationFilterRegistration.class
-
- - link:ApplicationFilterRegistration-asmified.java[Asmified]
-
-== References
-

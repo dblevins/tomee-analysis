@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPTaggedResponse.class
-
- - link:IMAPTaggedResponse-asmified.java[Asmified]
-
-== References
-

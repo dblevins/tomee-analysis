@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/InnerClassInfo.class
-
- - link:InnerClassInfo-asmified.java[Asmified]
-
-== References
-

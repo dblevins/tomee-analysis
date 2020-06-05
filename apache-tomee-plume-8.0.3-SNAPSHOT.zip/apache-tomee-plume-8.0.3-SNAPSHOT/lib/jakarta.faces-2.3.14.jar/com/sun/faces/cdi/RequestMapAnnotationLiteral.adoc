@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/RequestMapAnnotationLiteral.class
-
- - link:RequestMapAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

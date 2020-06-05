@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/handlers/MultipartHandler.class
-
- - link:MultipartHandler-asmified.java[Asmified]
-
-== References
-

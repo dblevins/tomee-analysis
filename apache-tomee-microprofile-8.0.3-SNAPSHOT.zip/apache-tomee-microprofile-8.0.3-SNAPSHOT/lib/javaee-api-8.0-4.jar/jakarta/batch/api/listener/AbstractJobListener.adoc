@@ -1,6 +1,0 @@
-= jakarta/batch/api/listener/AbstractJobListener.class
-
- - link:AbstractJobListener-asmified.java[Asmified]
-
-== References
-

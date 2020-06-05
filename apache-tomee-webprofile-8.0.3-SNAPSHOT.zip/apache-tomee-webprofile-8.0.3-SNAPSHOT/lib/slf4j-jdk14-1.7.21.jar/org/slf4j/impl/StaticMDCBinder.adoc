@@ -1,6 +1,0 @@
-= org/slf4j/impl/StaticMDCBinder.class
-
- - link:StaticMDCBinder-asmified.java[Asmified]
-
-== References
-

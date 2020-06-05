@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLInverseReferenceMapping.class
-
- - link:XMLInverseReferenceMapping-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/x9/X962NamedCurves.class
-
- - link:X962NamedCurves-asmified.java[Asmified]
-
-== References
-

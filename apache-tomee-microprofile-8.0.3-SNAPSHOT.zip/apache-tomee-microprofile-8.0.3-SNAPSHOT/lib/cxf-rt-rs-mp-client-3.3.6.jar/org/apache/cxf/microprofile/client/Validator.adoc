@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/Validator.class
-
- - link:Validator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/output/NamespaceContextImpl.class
-
- - link:NamespaceContextImpl-asmified.java[Asmified]
-
-== References
-

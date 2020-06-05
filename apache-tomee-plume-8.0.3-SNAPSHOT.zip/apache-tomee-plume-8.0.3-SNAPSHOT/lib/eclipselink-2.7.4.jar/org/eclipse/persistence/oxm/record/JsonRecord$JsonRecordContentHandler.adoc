@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/record/JsonRecord$JsonRecordContentHandler.class
-
- - link:JsonRecord$JsonRecordContentHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/X509DataType.class
-
- - link:X509DataType-asmified.java[Asmified]
-
-== References
-

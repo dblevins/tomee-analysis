@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/asymmetric/elgamal/AlgorithmParametersSpi.class
-
- - link:AlgorithmParametersSpi-asmified.java[Asmified]
-
-== References
-

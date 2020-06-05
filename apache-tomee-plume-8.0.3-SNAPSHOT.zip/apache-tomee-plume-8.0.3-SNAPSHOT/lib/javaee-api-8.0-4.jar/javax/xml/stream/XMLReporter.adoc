@@ -1,6 +1,0 @@
-= javax/xml/stream/XMLReporter.class
-
- - link:XMLReporter-asmified.java[Asmified]
-
-== References
-

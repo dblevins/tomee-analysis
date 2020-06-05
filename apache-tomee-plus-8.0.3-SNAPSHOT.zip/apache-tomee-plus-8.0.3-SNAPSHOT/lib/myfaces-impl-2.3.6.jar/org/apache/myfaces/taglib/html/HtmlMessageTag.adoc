@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlMessageTag.class
-
- - link:HtmlMessageTag-asmified.java[Asmified]
-
-== References
-

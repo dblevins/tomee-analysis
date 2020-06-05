@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/platform/database/oracle/TIMESTAMPHelper.class
-
- - link:TIMESTAMPHelper-asmified.java[Asmified]
-
-== References
-

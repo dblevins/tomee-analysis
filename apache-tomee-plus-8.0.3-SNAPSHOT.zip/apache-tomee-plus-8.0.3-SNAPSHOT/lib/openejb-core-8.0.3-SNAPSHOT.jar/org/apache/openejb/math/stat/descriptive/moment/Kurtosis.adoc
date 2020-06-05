@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/moment/Kurtosis.class
-
- - link:Kurtosis-asmified.java[Asmified]
-
-== References
-

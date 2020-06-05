@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/util/HttpUtil.class
-
- - link:HttpUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,9 +1,0 @@
-= javax/el/Util$ConstructorWrapper.class
-
- - link:Util$ConstructorWrapper-asmified.java[Asmified]
-
-== References
-
- - javax.el.Util$Wrapper - 2
- - javax.el.Util$ConstructorWrapper - 1
- - javax.el.Util$1 - 1

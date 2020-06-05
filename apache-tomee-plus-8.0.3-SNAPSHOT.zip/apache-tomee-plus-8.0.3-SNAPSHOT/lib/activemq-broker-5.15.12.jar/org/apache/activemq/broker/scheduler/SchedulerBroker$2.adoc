@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/scheduler/SchedulerBroker$2.class
-
- - link:SchedulerBroker$2-asmified.java[Asmified]
-
-== References
-

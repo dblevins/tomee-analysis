@@ -1,6 +1,0 @@
-= com/sun/faces/config/manager/documents/DocumentInfo.class
-
- - link:DocumentInfo-asmified.java[Asmified]
-
-== References
-

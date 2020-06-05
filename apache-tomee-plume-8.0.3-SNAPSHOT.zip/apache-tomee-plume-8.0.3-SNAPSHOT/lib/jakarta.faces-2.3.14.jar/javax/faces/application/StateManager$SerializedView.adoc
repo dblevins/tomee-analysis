@@ -1,7 +1,0 @@
-= javax/faces/application/StateManager$SerializedView.class
-
- - link:StateManager$SerializedView-asmified.java[Asmified]
-
-== References
-
- - javax.faces.application.StateManager - 3

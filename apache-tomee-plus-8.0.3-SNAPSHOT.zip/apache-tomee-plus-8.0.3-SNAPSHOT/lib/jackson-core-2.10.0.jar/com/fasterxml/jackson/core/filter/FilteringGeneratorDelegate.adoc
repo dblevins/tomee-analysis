@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/filter/FilteringGeneratorDelegate.class
-
- - link:FilteringGeneratorDelegate-asmified.java[Asmified]
-
-== References
-

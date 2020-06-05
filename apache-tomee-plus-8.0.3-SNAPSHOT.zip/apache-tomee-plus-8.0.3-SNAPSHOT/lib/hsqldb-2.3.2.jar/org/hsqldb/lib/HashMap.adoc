@@ -1,6 +1,0 @@
-= org/hsqldb/lib/HashMap.class
-
- - link:HashMap-asmified.java[Asmified]
-
-== References
-

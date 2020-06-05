@@ -1,6 +1,0 @@
-= com/sun/istack/localization/Localizable.class
-
- - link:Localizable-asmified.java[Asmified]
-
-== References
-

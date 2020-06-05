@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsWebSocketContainer$HttpResponse.class
-
- - link:WsWebSocketContainer$HttpResponse-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/WeakFastHashMap$CollectionView.class
-
- - link:WeakFastHashMap$CollectionView-asmified.java[Asmified]
-
-== References
-

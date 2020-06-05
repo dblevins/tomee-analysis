@@ -1,6 +1,0 @@
-= org/apache/catalina/util/Introspection$2.class
-
- - link:Introspection$2-asmified.java[Asmified]
-
-== References
-

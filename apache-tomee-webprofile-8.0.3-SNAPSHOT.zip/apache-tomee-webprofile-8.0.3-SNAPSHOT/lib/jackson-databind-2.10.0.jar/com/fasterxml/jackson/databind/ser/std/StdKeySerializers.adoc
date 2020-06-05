@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/StdKeySerializers.class
-
- - link:StdKeySerializers-asmified.java[Asmified]
-
-== References
-

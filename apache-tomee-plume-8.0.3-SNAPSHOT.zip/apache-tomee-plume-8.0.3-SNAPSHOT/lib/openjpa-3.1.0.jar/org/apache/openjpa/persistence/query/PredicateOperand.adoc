@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/PredicateOperand.class
-
- - link:PredicateOperand-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator.class
-
- - link:TrackedConnectionAssociator-asmified.java[Asmified]
-
-== References
-

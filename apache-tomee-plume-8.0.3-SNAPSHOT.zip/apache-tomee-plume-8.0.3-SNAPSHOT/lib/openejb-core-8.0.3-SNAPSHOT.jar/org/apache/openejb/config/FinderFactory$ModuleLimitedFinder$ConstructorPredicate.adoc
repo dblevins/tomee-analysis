@@ -1,6 +1,0 @@
-= org/apache/openejb/config/FinderFactory$ModuleLimitedFinder$ConstructorPredicate.class
-
- - link:FinderFactory$ModuleLimitedFinder$ConstructorPredicate-asmified.java[Asmified]
-
-== References
-

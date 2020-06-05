@@ -1,6 +1,0 @@
-= com/sun/faces/util/copier/SerializationCopier$In.class
-
- - link:SerializationCopier$In-asmified.java[Asmified]
-
-== References
-

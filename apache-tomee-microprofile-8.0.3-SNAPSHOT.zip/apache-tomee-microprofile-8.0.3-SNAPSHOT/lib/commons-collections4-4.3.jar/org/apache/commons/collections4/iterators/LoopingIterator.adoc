@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/LoopingIterator.class
-
- - link:LoopingIterator-asmified.java[Asmified]
-
-== References
-

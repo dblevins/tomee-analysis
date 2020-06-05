@@ -1,6 +1,0 @@
-= org/apache/batchee/util/Batches.class
-
- - link:Batches-asmified.java[Asmified]
-
-== References
-

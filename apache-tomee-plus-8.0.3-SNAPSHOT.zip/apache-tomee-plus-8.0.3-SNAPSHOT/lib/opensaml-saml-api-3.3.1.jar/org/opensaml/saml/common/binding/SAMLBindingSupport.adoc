@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/SAMLBindingSupport.class
-
- - link:SAMLBindingSupport-asmified.java[Asmified]
-
-== References
-

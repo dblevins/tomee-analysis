@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/EnumResolver.class
-
- - link:EnumResolver-asmified.java[Asmified]
-
-== References
-

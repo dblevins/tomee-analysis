@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SqrtExpression.class
-
- - link:SqrtExpression-asmified.java[Asmified]
-
-== References
-

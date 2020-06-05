@@ -1,6 +1,0 @@
-= org/joda/time/chrono/LenientChronology.class
-
- - link:LenientChronology-asmified.java[Asmified]
-
-== References
-

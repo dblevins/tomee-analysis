@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/core/TypeInfo.class
-
- - link:TypeInfo-asmified.java[Asmified]
-
-== References
-

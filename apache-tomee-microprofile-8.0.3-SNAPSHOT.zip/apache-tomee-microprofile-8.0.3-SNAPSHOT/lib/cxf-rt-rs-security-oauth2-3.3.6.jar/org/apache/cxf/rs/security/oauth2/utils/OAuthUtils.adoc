@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/utils/OAuthUtils.class
-
- - link:OAuthUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/NamingResourcesSF.class
-
- - link:NamingResourcesSF-asmified.java[Asmified]
-
-== References
-

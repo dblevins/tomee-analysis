@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAccessibleObject.class
-
- - link:MetadataAccessibleObject-asmified.java[Asmified]
-
-== References
-

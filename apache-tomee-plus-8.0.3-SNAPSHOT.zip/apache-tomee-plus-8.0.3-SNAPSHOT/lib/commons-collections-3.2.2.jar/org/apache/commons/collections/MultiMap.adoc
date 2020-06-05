@@ -1,6 +1,0 @@
-= org/apache/commons/collections/MultiMap.class
-
- - link:MultiMap-asmified.java[Asmified]
-
-== References
-

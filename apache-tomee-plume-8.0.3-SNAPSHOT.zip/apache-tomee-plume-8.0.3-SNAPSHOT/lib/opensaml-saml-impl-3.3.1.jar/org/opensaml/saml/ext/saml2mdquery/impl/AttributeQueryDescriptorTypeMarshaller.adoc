@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdquery/impl/AttributeQueryDescriptorTypeMarshaller.class
-
- - link:AttributeQueryDescriptorTypeMarshaller-asmified.java[Asmified]
-
-== References
-

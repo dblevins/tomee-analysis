@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/work/GeronimoWorkManager.class
-
- - link:GeronimoWorkManager-asmified.java[Asmified]
-
-== References
-

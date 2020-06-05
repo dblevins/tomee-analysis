@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/ByteBufferPool.class
-
- - link:ByteBufferPool-asmified.java[Asmified]
-
-== References
-

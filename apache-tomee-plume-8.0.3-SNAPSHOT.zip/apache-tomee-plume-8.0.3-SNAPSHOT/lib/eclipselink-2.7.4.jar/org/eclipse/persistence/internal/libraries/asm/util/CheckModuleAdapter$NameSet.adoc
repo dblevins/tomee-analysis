@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/CheckModuleAdapter$NameSet.class
-
- - link:CheckModuleAdapter$NameSet-asmified.java[Asmified]
-
-== References
-

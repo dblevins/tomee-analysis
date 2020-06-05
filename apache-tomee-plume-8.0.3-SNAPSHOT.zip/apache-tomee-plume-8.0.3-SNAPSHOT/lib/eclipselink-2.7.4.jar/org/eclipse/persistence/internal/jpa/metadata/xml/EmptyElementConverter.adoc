@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/xml/EmptyElementConverter.class
-
- - link:EmptyElementConverter-asmified.java[Asmified]
-
-== References
-

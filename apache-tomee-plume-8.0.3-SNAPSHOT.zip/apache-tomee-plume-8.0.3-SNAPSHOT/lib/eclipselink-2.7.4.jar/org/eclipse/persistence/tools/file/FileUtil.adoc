@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/file/FileUtil.class
-
- - link:FileUtil-asmified.java[Asmified]
-
-== References
-

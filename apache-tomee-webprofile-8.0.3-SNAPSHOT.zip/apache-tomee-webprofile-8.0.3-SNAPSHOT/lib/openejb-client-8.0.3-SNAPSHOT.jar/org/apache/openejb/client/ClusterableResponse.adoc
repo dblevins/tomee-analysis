@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ClusterableResponse.class
-
- - link:ClusterableResponse-asmified.java[Asmified]
-
-== References
-

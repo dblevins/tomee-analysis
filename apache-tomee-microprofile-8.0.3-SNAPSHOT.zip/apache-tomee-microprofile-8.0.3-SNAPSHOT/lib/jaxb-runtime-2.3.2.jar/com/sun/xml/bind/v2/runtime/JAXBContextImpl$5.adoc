@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/JAXBContextImpl$5.class
-
- - link:JAXBContextImpl$5-asmified.java[Asmified]
-
-== References
-

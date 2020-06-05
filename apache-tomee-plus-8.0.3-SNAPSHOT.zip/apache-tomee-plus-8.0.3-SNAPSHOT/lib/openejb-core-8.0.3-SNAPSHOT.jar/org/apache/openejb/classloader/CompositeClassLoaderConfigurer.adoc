@@ -1,6 +1,0 @@
-= org/apache/openejb/classloader/CompositeClassLoaderConfigurer.class
-
- - link:CompositeClassLoaderConfigurer-asmified.java[Asmified]
-
-== References
-

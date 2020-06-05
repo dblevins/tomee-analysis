@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/LegacyDecorateHandler.class
-
- - link:LegacyDecorateHandler-asmified.java[Asmified]
-
-== References
-

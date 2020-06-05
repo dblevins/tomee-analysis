@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/output/SAMLTokenOutputProcessor$SAMLSecurityTokenProvider.class
-
- - link:SAMLTokenOutputProcessor$SAMLSecurityTokenProvider-asmified.java[Asmified]
-
-== References
-

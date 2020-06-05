@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotationCollector.class
-
- - link:AnnotationCollector-asmified.java[Asmified]
-
-== References
-

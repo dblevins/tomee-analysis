@@ -1,6 +1,0 @@
-= org/apache/webbeans/inject/InjectableField.class
-
- - link:InjectableField-asmified.java[Asmified]
-
-== References
-

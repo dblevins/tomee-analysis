@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/impl/PropertyInfoImpl$1.class
-
- - link:PropertyInfoImpl$1-asmified.java[Asmified]
-
-== References
-

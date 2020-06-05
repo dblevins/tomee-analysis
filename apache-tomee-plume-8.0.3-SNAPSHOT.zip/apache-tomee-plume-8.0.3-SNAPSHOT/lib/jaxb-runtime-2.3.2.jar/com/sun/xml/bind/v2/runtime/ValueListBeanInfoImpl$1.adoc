@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/ValueListBeanInfoImpl$1.class
-
- - link:ValueListBeanInfoImpl$1-asmified.java[Asmified]
-
-== References
-

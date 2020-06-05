@@ -1,6 +1,0 @@
-= com/ctc/wstx/msv/GenericMsvValidator.class
-
- - link:GenericMsvValidator-asmified.java[Asmified]
-
-== References
-

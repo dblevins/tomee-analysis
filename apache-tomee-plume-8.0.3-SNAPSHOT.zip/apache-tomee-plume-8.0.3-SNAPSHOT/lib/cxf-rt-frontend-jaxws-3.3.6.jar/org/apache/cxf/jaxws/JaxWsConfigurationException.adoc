@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/JaxWsConfigurationException.class
-
- - link:JaxWsConfigurationException-asmified.java[Asmified]
-
-== References
-

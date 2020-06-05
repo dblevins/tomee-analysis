@@ -1,9 +1,0 @@
-= javax/ws/rs/sse/InboundSseEvent.class
-
- - link:InboundSseEvent-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.GenericType - 2
- - javax.ws.rs.core.MediaType - 2
- - javax.ws.rs.sse.SseEvent - 1

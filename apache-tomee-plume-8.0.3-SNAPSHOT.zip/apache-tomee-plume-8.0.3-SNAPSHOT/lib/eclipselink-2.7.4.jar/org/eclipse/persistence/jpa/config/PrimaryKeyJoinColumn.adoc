@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/PrimaryKeyJoinColumn.class
-
- - link:PrimaryKeyJoinColumn-asmified.java[Asmified]
-
-== References
-

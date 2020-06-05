@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/config/FacesConfigBeanHolder.class
-
- - link:FacesConfigBeanHolder-asmified.java[Asmified]
-
-== References
-

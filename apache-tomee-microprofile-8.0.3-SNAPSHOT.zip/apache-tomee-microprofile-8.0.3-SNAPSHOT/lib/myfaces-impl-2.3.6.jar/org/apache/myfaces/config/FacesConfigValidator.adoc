@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/FacesConfigValidator.class
-
- - link:FacesConfigValidator-asmified.java[Asmified]
-
-== References
-

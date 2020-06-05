@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/Profiler$DecisionDescriptor.class
-
- - link:Profiler$DecisionDescriptor-asmified.java[Asmified]
-
-== References
-

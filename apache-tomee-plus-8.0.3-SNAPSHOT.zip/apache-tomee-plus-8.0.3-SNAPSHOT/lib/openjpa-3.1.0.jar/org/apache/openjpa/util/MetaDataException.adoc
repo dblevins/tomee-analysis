@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/MetaDataException.class
-
- - link:MetaDataException-asmified.java[Asmified]
-
-== References
-

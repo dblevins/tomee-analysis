@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ConsumerControl.class
-
- - link:ConsumerControl-asmified.java[Asmified]
-
-== References
-

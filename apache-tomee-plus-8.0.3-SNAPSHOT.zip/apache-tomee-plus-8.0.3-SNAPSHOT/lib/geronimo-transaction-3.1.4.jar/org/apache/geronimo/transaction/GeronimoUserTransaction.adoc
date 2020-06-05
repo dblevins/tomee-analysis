@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/GeronimoUserTransaction.class
-
- - link:GeronimoUserTransaction-asmified.java[Asmified]
-
-== References
-

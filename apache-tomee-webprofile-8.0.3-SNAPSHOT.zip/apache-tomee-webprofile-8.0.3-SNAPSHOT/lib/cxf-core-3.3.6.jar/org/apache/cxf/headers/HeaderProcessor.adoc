@@ -1,6 +1,0 @@
-= org/apache/cxf/headers/HeaderProcessor.class
-
- - link:HeaderProcessor-asmified.java[Asmified]
-
-== References
-

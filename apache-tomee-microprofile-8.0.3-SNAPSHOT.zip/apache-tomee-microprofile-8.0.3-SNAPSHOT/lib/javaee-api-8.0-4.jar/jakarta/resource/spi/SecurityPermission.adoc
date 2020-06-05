@@ -1,6 +1,0 @@
-= jakarta/resource/spi/SecurityPermission.class
-
- - link:SecurityPermission-asmified.java[Asmified]
-
-== References
-

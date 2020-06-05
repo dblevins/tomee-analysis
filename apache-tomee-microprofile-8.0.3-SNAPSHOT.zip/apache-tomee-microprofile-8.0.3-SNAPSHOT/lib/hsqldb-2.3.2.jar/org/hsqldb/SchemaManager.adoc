@@ -1,6 +1,0 @@
-= org/hsqldb/SchemaManager.class
-
- - link:SchemaManager-asmified.java[Asmified]
-
-== References
-

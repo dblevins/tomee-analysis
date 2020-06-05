@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/util/TraceBrokerPathPlugin.class
-
- - link:TraceBrokerPathPlugin-asmified.java[Asmified]
-
-== References
-

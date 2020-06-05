@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/handlers/RFC822MessageHandler.class
-
- - link:RFC822MessageHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/JaxbJavaee$1.class
-
- - link:JaxbJavaee$1-asmified.java[Asmified]
-
-== References
-

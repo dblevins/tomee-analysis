@@ -1,6 +1,0 @@
-= org/joda/time/Instant.class
-
- - link:Instant-asmified.java[Asmified]
-
-== References
-

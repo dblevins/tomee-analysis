@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/IndexingObjectStore$StoredObjectWrapper.class
-
- - link:IndexingObjectStore$StoredObjectWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/URITemplate$UriChunk.class
-
- - link:URITemplate$UriChunk-asmified.java[Asmified]
-
-== References
-

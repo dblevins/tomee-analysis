@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Lob.class
-
- - link:Lob-asmified.java[Asmified]
-
-== References
-

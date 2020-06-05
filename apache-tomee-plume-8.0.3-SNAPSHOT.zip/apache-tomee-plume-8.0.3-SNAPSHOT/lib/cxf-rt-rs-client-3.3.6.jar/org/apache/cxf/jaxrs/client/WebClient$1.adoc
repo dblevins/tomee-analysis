@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/WebClient$1.class
-
- - link:WebClient$1-asmified.java[Asmified]
-
-== References
-

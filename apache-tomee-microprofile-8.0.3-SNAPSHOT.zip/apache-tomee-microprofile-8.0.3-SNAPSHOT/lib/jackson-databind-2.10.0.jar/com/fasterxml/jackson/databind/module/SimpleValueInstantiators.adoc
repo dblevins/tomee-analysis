@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/module/SimpleValueInstantiators.class
-
- - link:SimpleValueInstantiators-asmified.java[Asmified]
-
-== References
-

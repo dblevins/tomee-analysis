@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/security/BasicAccessControlService.class
-
- - link:BasicAccessControlService-asmified.java[Asmified]
-
-== References
-

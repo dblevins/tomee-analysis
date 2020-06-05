@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/W3CDOMStreamReader$2.class
-
- - link:W3CDOMStreamReader$2-asmified.java[Asmified]
-
-== References
-

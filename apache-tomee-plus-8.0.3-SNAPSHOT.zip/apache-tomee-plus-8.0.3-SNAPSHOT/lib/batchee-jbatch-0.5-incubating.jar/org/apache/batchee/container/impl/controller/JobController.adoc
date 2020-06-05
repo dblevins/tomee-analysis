@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/controller/JobController.class
-
- - link:JobController-asmified.java[Asmified]
-
-== References
-

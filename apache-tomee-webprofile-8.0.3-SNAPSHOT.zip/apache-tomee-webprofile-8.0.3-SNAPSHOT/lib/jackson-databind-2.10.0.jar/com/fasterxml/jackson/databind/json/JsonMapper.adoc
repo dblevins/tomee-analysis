@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/json/JsonMapper.class
-
- - link:JsonMapper-asmified.java[Asmified]
-
-== References
-

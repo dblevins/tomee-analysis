@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/PropertyUtilsBean.class
-
- - link:PropertyUtilsBean-asmified.java[Asmified]
-
-== References
-

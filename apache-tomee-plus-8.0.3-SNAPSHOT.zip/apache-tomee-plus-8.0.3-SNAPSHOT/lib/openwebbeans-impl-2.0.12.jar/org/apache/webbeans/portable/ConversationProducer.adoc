@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/ConversationProducer.class
-
- - link:ConversationProducer-asmified.java[Asmified]
-
-== References
-

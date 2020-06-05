@@ -1,6 +1,0 @@
-= jakarta/mail/internet/MimeBodyPart.class
-
- - link:MimeBodyPart-asmified.java[Asmified]
-
-== References
-

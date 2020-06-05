@@ -1,6 +1,0 @@
-= com/ctc/wstx/sr/Attribute.class
-
- - link:Attribute-asmified.java[Asmified]
-
-== References
-

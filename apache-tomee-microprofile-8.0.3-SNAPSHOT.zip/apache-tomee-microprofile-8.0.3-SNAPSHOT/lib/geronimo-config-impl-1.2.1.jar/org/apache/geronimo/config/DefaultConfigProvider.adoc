@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/DefaultConfigProvider.class
-
- - link:DefaultConfigProvider-asmified.java[Asmified]
-
-== References
-

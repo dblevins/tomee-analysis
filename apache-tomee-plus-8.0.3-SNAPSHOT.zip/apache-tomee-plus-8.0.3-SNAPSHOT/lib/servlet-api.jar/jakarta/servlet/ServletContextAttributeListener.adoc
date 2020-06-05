@@ -1,6 +1,0 @@
-= jakarta/servlet/ServletContextAttributeListener.class
-
- - link:ServletContextAttributeListener-asmified.java[Asmified]
-
-== References
-

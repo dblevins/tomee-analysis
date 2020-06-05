@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ExtentImpl$FilterNewIterator.class
-
- - link:ExtentImpl$FilterNewIterator-asmified.java[Asmified]
-
-== References
-

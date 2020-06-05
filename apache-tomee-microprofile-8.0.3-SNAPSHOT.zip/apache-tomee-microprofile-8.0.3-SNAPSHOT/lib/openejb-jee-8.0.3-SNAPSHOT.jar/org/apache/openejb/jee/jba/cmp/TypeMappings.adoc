@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/TypeMappings.class
-
- - link:TypeMappings-asmified.java[Asmified]
-
-== References
-

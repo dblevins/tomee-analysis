@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/loader/DefaultLoader.class
-
- - link:DefaultLoader-asmified.java[Asmified]
-
-== References
-

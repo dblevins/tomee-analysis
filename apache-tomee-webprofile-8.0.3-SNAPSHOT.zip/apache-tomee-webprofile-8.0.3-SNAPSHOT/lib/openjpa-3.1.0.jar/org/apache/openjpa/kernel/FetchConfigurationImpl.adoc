@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/FetchConfigurationImpl.class
-
- - link:FetchConfigurationImpl-asmified.java[Asmified]
-
-== References
-

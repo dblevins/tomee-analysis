@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/javamodel/JavaModel.class
-
- - link:JavaModel-asmified.java[Asmified]
-
-== References
-

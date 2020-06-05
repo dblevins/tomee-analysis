@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/schema/model/TypeDefParticleOwner.class
-
- - link:TypeDefParticleOwner-asmified.java[Asmified]
-
-== References
-

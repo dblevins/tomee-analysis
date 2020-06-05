@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/CXFService.class
-
- - link:CXFService-asmified.java[Asmified]
-
-== References
-

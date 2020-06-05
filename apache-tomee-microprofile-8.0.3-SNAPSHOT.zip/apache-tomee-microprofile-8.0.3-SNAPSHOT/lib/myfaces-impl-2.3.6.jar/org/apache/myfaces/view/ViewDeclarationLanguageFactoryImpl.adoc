@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/ViewDeclarationLanguageFactoryImpl.class
-
- - link:ViewDeclarationLanguageFactoryImpl-asmified.java[Asmified]
-
-== References
-

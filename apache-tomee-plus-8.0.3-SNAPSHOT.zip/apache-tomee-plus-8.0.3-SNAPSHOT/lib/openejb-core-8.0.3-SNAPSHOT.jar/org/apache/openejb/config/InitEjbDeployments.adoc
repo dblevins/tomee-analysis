@@ -1,6 +1,0 @@
-= org/apache/openejb/config/InitEjbDeployments.class
-
- - link:InitEjbDeployments-asmified.java[Asmified]
-
-== References
-

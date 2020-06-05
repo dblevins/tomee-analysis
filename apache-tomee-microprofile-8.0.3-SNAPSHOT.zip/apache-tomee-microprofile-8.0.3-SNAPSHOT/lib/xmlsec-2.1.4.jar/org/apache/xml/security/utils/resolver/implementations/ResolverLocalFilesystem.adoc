@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/resolver/implementations/ResolverLocalFilesystem.class
-
- - link:ResolverLocalFilesystem-asmified.java[Asmified]
-
-== References
-

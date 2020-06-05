@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/LineNumberNode.class
-
- - link:LineNumberNode-asmified.java[Asmified]
-
-== References
-

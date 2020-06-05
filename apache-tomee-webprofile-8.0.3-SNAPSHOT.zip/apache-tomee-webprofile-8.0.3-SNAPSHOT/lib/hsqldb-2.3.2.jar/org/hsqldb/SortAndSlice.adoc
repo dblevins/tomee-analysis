@@ -1,6 +1,0 @@
-= org/hsqldb/SortAndSlice.class
-
- - link:SortAndSlice-asmified.java[Asmified]
-
-== References
-

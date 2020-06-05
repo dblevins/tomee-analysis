@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/util/NamespaceContextImplementation.class
-
- - link:NamespaceContextImplementation-asmified.java[Asmified]
-
-== References
-

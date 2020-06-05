@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/ValueHolderRule$DynamicValueBindingMetadata.class
-
- - link:ValueHolderRule$DynamicValueBindingMetadata-asmified.java[Asmified]
-
-== References
-

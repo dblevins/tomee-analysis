@@ -1,6 +1,0 @@
-= org/apache/commons/logging/LogFactory.class
-
- - link:LogFactory-asmified.java[Asmified]
-
-== References
-

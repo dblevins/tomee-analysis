@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/AbstractResourceInfo.class
-
- - link:AbstractResourceInfo-asmified.java[Asmified]
-
-== References
-

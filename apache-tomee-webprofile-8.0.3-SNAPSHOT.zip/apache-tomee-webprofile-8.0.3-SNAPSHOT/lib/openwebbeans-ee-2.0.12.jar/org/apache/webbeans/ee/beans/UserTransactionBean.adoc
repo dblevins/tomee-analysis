@@ -1,6 +1,0 @@
-= org/apache/webbeans/ee/beans/UserTransactionBean.class
-
- - link:UserTransactionBean-asmified.java[Asmified]
-
-== References
-

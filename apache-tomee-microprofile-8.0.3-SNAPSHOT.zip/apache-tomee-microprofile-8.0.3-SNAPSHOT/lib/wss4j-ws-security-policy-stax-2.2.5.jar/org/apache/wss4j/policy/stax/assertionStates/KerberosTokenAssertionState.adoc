@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/KerberosTokenAssertionState.class
-
- - link:KerberosTokenAssertionState-asmified.java[Asmified]
-
-== References
-

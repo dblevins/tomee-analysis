@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/controller/PartitionedStepController.class
-
- - link:PartitionedStepController-asmified.java[Asmified]
-
-== References
-

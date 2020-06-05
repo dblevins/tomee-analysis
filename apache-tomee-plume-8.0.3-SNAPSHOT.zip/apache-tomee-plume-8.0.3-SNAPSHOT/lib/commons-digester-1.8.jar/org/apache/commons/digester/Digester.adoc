@@ -1,6 +1,0 @@
-= org/apache/commons/digester/Digester.class
-
- - link:Digester-asmified.java[Asmified]
-
-== References
-

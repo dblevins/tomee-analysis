@@ -1,6 +1,0 @@
-= org/apache/openejb/config/Undeploy$DeploymentTerminatedException.class
-
- - link:Undeploy$DeploymentTerminatedException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/admin/AdminDaemon.class
-
- - link:AdminDaemon-asmified.java[Asmified]
-
-== References
-

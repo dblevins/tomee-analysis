@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/ver1_1/Body1_1Impl.class
-
- - link:Body1_1Impl-asmified.java[Asmified]
-
-== References
-

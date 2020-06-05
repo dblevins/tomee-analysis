@@ -1,6 +1,0 @@
-= org/apache/activemq/management/RangeStatisticImpl.class
-
- - link:RangeStatisticImpl-asmified.java[Asmified]
-
-== References
-

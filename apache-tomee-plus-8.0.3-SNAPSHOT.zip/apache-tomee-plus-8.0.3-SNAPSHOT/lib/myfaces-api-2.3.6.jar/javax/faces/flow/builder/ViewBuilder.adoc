@@ -1,8 +1,0 @@
-= javax/faces/flow/builder/ViewBuilder.class
-
- - link:ViewBuilder-asmified.java[Asmified]
-
-== References
-
- - javax.faces.flow.builder.ViewBuilder - 3
- - javax.faces.flow.builder.NodeBuilder - 2

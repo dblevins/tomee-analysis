@@ -1,6 +1,0 @@
-= javax/resource/spi/XATerminator.class
-
- - link:XATerminator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/JweJsonWriterInterceptor.class
-
- - link:JweJsonWriterInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/common/injection/ResourceInjector.class
-
- - link:ResourceInjector-asmified.java[Asmified]
-
-== References
-

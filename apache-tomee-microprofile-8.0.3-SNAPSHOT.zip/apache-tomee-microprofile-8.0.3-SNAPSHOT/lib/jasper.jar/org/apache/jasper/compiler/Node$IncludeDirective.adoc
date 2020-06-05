@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Node$IncludeDirective.class
-
- - link:Node$IncludeDirective-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Cast.class
-
- - link:Cast-asmified.java[Asmified]
-
-== References
-

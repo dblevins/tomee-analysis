@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/AbstractEndpointFactory.class
-
- - link:AbstractEndpointFactory-asmified.java[Asmified]
-
-== References
-

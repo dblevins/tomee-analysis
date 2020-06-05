@@ -1,6 +1,0 @@
-= javax/xml/stream/util/EventReaderDelegate.class
-
- - link:EventReaderDelegate-asmified.java[Asmified]
-
-== References
-

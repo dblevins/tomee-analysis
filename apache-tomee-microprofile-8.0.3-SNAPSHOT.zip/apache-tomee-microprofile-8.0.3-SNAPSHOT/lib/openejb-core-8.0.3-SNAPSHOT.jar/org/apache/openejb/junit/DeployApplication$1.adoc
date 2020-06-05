@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/DeployApplication$1.class
-
- - link:DeployApplication$1-asmified.java[Asmified]
-
-== References
-

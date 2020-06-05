@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/wsclient/ServiceRef.class
-
- - link:ServiceRef-asmified.java[Asmified]
-
-== References
-

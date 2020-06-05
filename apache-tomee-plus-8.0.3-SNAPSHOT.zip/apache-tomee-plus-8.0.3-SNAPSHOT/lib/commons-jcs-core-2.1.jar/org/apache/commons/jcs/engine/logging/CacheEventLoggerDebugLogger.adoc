@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/logging/CacheEventLoggerDebugLogger.class
-
- - link:CacheEventLoggerDebugLogger-asmified.java[Asmified]
-
-== References
-

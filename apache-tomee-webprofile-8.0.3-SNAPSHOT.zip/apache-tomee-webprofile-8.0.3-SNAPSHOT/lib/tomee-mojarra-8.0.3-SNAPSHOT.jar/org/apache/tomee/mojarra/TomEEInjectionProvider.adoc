@@ -1,6 +1,0 @@
-= org/apache/tomee/mojarra/TomEEInjectionProvider.class
-
- - link:TomEEInjectionProvider-asmified.java[Asmified]
-
-== References
-

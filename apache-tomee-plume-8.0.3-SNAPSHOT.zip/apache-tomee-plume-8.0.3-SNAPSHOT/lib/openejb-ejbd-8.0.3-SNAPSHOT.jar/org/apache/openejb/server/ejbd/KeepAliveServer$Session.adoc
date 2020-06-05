@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/KeepAliveServer$Session.class
-
- - link:KeepAliveServer$Session-asmified.java[Asmified]
-
-== References
-

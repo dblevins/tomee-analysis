@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/validate/SamlTokenValidatorImpl.class
-
- - link:SamlTokenValidatorImpl-asmified.java[Asmified]
-
-== References
-

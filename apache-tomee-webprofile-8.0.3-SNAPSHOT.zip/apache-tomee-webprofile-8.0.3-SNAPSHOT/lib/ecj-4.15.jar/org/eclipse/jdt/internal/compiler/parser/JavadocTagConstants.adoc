@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/JavadocTagConstants.class
-
- - link:JavadocTagConstants-asmified.java[Asmified]
-
-== References
-

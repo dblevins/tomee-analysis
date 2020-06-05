@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/output/WSSSignatureOutputProcessor.class
-
- - link:WSSSignatureOutputProcessor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/SessionBeanType.class
-
- - link:SessionBeanType-asmified.java[Asmified]
-
-== References
-

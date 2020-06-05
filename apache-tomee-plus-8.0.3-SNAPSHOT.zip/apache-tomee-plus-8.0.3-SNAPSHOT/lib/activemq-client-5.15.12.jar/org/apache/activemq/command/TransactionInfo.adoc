@@ -1,6 +1,0 @@
-= org/apache/activemq/command/TransactionInfo.class
-
- - link:TransactionInfo-asmified.java[Asmified]
-
-== References
-

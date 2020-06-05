@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/DestinationMapNode.class
-
- - link:DestinationMapNode-asmified.java[Asmified]
-
-== References
-

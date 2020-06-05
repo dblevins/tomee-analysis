@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/oracle/jdbc/OracleObjectType.class
-
- - link:OracleObjectType-asmified.java[Asmified]
-
-== References
-

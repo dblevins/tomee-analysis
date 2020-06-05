@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/output/FastInfosetStreamWriterOutput$AppData.class
-
- - link:FastInfosetStreamWriterOutput$AppData-asmified.java[Asmified]
-
-== References
-

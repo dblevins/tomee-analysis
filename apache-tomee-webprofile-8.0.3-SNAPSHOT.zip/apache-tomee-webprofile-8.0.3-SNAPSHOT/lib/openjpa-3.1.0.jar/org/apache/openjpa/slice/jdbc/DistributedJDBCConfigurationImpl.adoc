@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/jdbc/DistributedJDBCConfigurationImpl.class
-
- - link:DistributedJDBCConfigurationImpl-asmified.java[Asmified]
-
-== References
-

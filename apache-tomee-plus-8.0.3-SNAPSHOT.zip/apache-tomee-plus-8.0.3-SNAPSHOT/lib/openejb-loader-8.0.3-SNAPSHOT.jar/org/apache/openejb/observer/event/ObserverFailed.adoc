@@ -1,6 +1,0 @@
-= org/apache/openejb/observer/event/ObserverFailed.class
-
- - link:ObserverFailed-asmified.java[Asmified]
-
-== References
-

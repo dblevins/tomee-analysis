@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/ExtendedAccessLogValve$SessionAttributeElement.class
-
- - link:ExtendedAccessLogValve$SessionAttributeElement-asmified.java[Asmified]
-
-== References
-

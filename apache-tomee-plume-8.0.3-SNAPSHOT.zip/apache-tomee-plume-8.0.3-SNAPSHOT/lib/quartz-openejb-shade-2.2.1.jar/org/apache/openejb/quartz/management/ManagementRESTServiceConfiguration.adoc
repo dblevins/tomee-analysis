@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/management/ManagementRESTServiceConfiguration.class
-
- - link:ManagementRESTServiceConfiguration-asmified.java[Asmified]
-
-== References
-

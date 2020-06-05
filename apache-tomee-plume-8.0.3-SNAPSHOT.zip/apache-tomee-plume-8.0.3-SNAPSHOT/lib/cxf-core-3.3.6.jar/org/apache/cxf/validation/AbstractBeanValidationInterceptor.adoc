@@ -1,6 +1,0 @@
-= org/apache/cxf/validation/AbstractBeanValidationInterceptor.class
-
- - link:AbstractBeanValidationInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/AnalyzerAdapter.class
-
- - link:AnalyzerAdapter-asmified.java[Asmified]
-
-== References
-

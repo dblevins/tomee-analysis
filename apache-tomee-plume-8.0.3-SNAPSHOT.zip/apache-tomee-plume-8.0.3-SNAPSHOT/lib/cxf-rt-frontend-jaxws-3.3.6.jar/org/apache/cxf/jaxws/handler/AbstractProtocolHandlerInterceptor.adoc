@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/AbstractProtocolHandlerInterceptor.class
-
- - link:AbstractProtocolHandlerInterceptor-asmified.java[Asmified]
-
-== References
-

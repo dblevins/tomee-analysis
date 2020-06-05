@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/CglibProxyHelper$1.class
-
- - link:CglibProxyHelper$1-asmified.java[Asmified]
-
-== References
-

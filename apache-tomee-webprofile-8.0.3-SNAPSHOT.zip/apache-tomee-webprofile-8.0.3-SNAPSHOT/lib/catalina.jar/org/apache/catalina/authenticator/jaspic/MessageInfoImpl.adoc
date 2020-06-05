@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/jaspic/MessageInfoImpl.class
-
- - link:MessageInfoImpl-asmified.java[Asmified]
-
-== References
-

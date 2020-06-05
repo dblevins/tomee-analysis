@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/TreeStructureManager.class
-
- - link:TreeStructureManager-asmified.java[Asmified]
-
-== References
-

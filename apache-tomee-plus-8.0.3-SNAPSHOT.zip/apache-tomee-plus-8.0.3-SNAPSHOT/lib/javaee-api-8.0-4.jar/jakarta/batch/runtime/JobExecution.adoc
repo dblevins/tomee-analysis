@@ -1,6 +1,0 @@
-= jakarta/batch/runtime/JobExecution.class
-
- - link:JobExecution-asmified.java[Asmified]
-
-== References
-

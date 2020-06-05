@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/PublishDynamicComponentRefreshTransientBuildCallback.class
-
- - link:PublishDynamicComponentRefreshTransientBuildCallback-asmified.java[Asmified]
-
-== References
-

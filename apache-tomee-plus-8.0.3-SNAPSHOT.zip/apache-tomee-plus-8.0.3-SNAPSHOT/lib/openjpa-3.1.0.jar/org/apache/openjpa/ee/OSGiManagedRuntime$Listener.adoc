@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/OSGiManagedRuntime$Listener.class
-
- - link:OSGiManagedRuntime$Listener-asmified.java[Asmified]
-
-== References
-

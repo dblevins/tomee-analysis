@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/node/POJONode.class
-
- - link:POJONode-asmified.java[Asmified]
-
-== References
-

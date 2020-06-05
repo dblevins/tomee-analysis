@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ParameterizedTypeBinding.class
-
- - link:ParameterizedTypeBinding-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/c14n/implementations/XmlAttrStack$XmlsStackElement.class
-
- - link:XmlAttrStack$XmlsStackElement-asmified.java[Asmified]
-
-== References
-

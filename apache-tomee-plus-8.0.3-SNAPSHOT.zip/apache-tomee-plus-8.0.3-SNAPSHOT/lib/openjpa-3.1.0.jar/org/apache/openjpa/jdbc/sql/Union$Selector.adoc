@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/Union$Selector.class
-
- - link:Union$Selector-asmified.java[Asmified]
-
-== References
-

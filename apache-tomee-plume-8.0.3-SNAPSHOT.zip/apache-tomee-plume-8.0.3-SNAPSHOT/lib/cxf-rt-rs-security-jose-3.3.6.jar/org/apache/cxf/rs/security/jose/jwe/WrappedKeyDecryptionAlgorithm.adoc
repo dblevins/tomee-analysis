@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/WrappedKeyDecryptionAlgorithm.class
-
- - link:WrappedKeyDecryptionAlgorithm-asmified.java[Asmified]
-
-== References
-

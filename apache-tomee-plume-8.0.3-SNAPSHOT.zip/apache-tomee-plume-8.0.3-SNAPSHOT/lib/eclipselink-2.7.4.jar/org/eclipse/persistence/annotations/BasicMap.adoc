@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/BasicMap.class
-
- - link:BasicMap-asmified.java[Asmified]
-
-== References
-

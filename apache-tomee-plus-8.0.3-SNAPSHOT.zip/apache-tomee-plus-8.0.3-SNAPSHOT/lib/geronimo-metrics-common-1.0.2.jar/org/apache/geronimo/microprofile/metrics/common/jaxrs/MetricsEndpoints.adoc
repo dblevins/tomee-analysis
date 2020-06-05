@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints.class
-
- - link:MetricsEndpoints-asmified.java[Asmified]
-
-== References
-

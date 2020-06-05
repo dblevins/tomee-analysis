@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/UpdateStatementFactory.class
-
- - link:UpdateStatementFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/annotation/NoClass.class
-
- - link:NoClass-asmified.java[Asmified]
-
-== References
-

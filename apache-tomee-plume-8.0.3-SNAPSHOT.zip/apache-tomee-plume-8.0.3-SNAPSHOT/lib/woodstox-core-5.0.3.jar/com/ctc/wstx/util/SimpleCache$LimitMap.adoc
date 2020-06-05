@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/SimpleCache$LimitMap.class
-
- - link:SimpleCache$LimitMap-asmified.java[Asmified]
-
-== References
-

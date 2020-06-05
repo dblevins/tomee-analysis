@@ -1,9 +1,0 @@
-= javax/mail/search/AddressStringTerm.class
-
- - link:AddressStringTerm-asmified.java[Asmified]
-
-== References
-
- - javax.mail.Address - 2
- - javax.mail.search.StringTerm - 2
- - javax.mail.search.AddressStringTerm - 1

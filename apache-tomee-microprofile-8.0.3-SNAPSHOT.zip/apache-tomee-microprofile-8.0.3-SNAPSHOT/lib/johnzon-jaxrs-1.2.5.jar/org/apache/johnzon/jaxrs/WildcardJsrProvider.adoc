@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/WildcardJsrProvider.class
-
- - link:WildcardJsrProvider-asmified.java[Asmified]
-
-== References
-

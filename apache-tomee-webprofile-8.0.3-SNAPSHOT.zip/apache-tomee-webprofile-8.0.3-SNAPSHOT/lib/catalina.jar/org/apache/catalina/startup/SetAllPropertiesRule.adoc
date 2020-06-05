@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/SetAllPropertiesRule.class
-
- - link:SetAllPropertiesRule-asmified.java[Asmified]
-
-== References
-

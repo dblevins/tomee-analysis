@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/v200403/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/Namespace.class
-
- - link:Namespace-asmified.java[Asmified]
-
-== References
-

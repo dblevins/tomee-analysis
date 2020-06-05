@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/spnego/DefaultSpnegoServiceAction.class
-
- - link:DefaultSpnegoServiceAction-asmified.java[Asmified]
-
-== References
-

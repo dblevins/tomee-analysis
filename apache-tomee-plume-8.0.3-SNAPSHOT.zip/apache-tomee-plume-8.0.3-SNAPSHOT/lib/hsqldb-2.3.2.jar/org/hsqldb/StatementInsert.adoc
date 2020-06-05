@@ -1,6 +1,0 @@
-= org/hsqldb/StatementInsert.class
-
- - link:StatementInsert-asmified.java[Asmified]
-
-== References
-

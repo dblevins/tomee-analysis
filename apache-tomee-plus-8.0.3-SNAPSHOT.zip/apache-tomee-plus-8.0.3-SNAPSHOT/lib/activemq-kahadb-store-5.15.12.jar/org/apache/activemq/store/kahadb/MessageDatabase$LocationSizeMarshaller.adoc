@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MessageDatabase$LocationSizeMarshaller.class
-
- - link:MessageDatabase$LocationSizeMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/xmlmodel/XmlJavaTypeAdapters.class
-
- - link:XmlJavaTypeAdapters-asmified.java[Asmified]
-
-== References
-

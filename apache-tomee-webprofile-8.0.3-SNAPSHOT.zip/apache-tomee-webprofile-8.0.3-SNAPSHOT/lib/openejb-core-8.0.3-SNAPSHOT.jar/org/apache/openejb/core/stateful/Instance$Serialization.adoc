@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/Instance$Serialization.class
-
- - link:Instance$Serialization-asmified.java[Asmified]
-
-== References
-

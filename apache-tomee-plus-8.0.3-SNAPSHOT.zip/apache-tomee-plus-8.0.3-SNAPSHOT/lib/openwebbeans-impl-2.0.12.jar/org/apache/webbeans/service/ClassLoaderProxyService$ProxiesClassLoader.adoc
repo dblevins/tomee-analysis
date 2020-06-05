@@ -1,6 +1,0 @@
-= org/apache/webbeans/service/ClassLoaderProxyService$ProxiesClassLoader.class
-
- - link:ClassLoaderProxyService$ProxiesClassLoader-asmified.java[Asmified]
-
-== References
-

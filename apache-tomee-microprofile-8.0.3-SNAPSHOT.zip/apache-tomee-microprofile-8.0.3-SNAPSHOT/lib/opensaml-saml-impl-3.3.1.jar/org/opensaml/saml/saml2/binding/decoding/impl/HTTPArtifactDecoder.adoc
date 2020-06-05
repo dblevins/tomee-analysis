@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/binding/decoding/impl/HTTPArtifactDecoder.class
-
- - link:HTTPArtifactDecoder-asmified.java[Asmified]
-
-== References
-

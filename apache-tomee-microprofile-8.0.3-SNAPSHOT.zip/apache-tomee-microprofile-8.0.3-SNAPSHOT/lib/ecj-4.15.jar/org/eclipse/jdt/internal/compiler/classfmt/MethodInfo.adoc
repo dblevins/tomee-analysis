@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/MethodInfo.class
-
- - link:MethodInfo-asmified.java[Asmified]
-
-== References
-

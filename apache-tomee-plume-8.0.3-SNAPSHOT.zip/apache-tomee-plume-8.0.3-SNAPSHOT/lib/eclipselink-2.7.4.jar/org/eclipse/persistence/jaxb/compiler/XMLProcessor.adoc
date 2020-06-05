@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/XMLProcessor.class
-
- - link:XMLProcessor-asmified.java[Asmified]
-
-== References
-

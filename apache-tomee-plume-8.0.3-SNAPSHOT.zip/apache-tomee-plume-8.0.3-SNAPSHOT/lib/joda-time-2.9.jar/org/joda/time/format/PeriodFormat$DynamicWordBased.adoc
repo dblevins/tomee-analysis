@@ -1,6 +1,0 @@
-= org/joda/time/format/PeriodFormat$DynamicWordBased.class
-
- - link:PeriodFormat$DynamicWordBased-asmified.java[Asmified]
-
-== References
-

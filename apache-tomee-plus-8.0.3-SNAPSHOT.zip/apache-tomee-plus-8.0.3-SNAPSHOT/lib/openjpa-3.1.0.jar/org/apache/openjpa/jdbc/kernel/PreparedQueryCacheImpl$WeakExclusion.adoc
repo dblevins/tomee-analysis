@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/PreparedQueryCacheImpl$WeakExclusion.class
-
- - link:PreparedQueryCacheImpl$WeakExclusion-asmified.java[Asmified]
-
-== References
-

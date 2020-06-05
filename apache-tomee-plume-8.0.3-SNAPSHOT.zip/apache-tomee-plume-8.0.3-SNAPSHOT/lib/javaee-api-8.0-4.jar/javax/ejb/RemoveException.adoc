@@ -1,6 +1,0 @@
-= javax/ejb/RemoveException.class
-
- - link:RemoveException-asmified.java[Asmified]
-
-== References
-

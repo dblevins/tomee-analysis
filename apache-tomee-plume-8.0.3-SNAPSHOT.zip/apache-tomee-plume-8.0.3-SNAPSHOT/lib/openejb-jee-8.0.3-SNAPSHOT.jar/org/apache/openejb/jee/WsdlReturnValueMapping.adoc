@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/WsdlReturnValueMapping.class
-
- - link:WsdlReturnValueMapping-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/AsyncChannelWrapperNonSecure$1.class
-
- - link:AsyncChannelWrapperNonSecure$1-asmified.java[Asmified]
-
-== References
-

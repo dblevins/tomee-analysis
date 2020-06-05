@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/mutable/MutableByte.class
-
- - link:MutableByte-asmified.java[Asmified]
-
-== References
-

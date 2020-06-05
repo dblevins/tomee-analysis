@@ -1,6 +1,0 @@
-= com/sun/faces/util/BeanValidation.class
-
- - link:BeanValidation-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/util/LongMarshaller.class
-
- - link:LongMarshaller-asmified.java[Asmified]
-
-== References
-

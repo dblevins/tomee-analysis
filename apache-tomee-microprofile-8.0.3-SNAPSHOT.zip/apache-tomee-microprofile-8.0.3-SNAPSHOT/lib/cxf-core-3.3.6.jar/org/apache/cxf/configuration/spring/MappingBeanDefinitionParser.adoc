@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/spring/MappingBeanDefinitionParser.class
-
- - link:MappingBeanDefinitionParser-asmified.java[Asmified]
-
-== References
-

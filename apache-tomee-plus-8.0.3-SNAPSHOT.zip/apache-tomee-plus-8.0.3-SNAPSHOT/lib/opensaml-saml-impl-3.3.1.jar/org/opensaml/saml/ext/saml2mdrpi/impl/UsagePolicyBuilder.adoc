@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdrpi/impl/UsagePolicyBuilder.class
-
- - link:UsagePolicyBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/util/DiskBenchmark$Report.class
-
- - link:DiskBenchmark$Report-asmified.java[Asmified]
-
-== References
-

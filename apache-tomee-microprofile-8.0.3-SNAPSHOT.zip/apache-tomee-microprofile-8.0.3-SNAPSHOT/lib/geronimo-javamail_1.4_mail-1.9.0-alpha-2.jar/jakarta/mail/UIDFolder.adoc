@@ -1,6 +1,0 @@
-= jakarta/mail/UIDFolder.class
-
- - link:UIDFolder-asmified.java[Asmified]
-
-== References
-

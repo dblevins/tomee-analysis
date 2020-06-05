@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/cursors/TopicStorePrefetch.class
-
- - link:TopicStorePrefetch-asmified.java[Asmified]
-
-== References
-

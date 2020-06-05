@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/AuthnQueryService.class
-
- - link:AuthnQueryService-asmified.java[Asmified]
-
-== References
-

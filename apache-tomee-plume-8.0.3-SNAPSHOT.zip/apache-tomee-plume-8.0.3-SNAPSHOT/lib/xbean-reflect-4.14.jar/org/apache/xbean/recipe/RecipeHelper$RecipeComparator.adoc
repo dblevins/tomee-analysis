@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/RecipeHelper$RecipeComparator.class
-
- - link:RecipeHelper$RecipeComparator-asmified.java[Asmified]
-
-== References
-

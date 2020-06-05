@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/BaseAnnotationProcessorManager.class
-
- - link:BaseAnnotationProcessorManager-asmified.java[Asmified]
-
-== References
-

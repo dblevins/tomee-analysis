@@ -1,6 +1,0 @@
-= javax/xml/transform/SourceLocator.class
-
- - link:SourceLocator-asmified.java[Asmified]
-
-== References
-

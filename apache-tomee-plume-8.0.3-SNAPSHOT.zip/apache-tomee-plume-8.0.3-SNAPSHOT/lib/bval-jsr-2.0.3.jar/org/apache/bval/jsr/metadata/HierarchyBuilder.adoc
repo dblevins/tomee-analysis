@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/HierarchyBuilder.class
-
- - link:HierarchyBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/DeploymentLoader$ExternalConfiguration.class
-
- - link:DeploymentLoader$ExternalConfiguration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeBase.class
-
- - link:PojoMessageHandlerWholeBase-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/HandlerChainsStringQNameAdapter.class
-
- - link:HandlerChainsStringQNameAdapter-asmified.java[Asmified]
-
-== References
-

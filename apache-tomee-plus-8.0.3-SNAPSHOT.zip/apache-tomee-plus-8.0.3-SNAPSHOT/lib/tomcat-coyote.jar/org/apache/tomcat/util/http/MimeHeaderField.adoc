@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/MimeHeaderField.class
-
- - link:MimeHeaderField-asmified.java[Asmified]
-
-== References
-

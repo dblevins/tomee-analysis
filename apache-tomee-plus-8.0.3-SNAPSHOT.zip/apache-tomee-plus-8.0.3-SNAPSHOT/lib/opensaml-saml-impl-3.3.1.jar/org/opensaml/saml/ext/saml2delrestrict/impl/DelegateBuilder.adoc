@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2delrestrict/impl/DelegateBuilder.class
-
- - link:DelegateBuilder-asmified.java[Asmified]
-
-== References
-

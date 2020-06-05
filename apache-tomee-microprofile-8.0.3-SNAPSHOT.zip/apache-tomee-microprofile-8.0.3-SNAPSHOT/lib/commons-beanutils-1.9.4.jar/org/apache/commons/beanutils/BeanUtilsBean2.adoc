@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/BeanUtilsBean2.class
-
- - link:BeanUtilsBean2-asmified.java[Asmified]
-
-== References
-

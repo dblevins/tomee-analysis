@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckInjectionTargets.class
-
- - link:CheckInjectionTargets-asmified.java[Asmified]
-
-== References
-

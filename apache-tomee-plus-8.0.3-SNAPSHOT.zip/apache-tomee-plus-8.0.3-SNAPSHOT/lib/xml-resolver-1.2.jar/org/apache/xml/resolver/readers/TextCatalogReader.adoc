@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/readers/TextCatalogReader.class
-
- - link:TextCatalogReader-asmified.java[Asmified]
-
-== References
-

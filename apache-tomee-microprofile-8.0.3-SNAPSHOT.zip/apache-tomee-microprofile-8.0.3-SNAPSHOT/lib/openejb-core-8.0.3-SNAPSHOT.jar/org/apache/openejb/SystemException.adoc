@@ -1,6 +1,0 @@
-= org/apache/openejb/SystemException.class
-
- - link:SystemException-asmified.java[Asmified]
-
-== References
-

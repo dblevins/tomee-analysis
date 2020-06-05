@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/SimpleDatabaseType.class
-
- - link:SimpleDatabaseType-asmified.java[Asmified]
-
-== References
-

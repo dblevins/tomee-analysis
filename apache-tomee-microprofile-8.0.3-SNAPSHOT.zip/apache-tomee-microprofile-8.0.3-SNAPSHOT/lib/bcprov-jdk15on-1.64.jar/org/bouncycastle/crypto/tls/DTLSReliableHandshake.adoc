@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/DTLSReliableHandshake.class
-
- - link:DTLSReliableHandshake-asmified.java[Asmified]
-
-== References
-

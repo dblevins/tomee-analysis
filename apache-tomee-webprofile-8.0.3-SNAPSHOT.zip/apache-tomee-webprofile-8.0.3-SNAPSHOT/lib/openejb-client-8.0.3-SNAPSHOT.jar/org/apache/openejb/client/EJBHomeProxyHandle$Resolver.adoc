@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EJBHomeProxyHandle$Resolver.class
-
- - link:EJBHomeProxyHandle$Resolver-asmified.java[Asmified]
-
-== References
-

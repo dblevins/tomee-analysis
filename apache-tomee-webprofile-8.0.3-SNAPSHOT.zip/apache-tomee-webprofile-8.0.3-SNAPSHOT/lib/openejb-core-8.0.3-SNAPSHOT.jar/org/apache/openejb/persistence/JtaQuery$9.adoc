@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/JtaQuery$9.class
-
- - link:JtaQuery$9-asmified.java[Asmified]
-
-== References
-

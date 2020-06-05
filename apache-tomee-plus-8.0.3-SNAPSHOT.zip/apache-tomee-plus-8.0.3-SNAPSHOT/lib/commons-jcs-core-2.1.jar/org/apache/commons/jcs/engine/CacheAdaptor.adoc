@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/CacheAdaptor.class
-
- - link:CacheAdaptor-asmified.java[Asmified]
-
-== References
-

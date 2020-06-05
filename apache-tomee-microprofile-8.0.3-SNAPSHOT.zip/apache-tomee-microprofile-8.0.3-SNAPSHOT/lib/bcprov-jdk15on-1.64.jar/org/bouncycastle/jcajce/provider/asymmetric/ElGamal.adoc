@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/asymmetric/ElGamal.class
-
- - link:ElGamal-asmified.java[Asmified]
-
-== References
-

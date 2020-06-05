@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MessageAdapter.class
-
- - link:MessageAdapter-asmified.java[Asmified]
-
-== References
-

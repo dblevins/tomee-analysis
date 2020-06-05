@@ -1,6 +1,0 @@
-= org/w3c/dom/DOMErrorHandler.class
-
- - link:DOMErrorHandler-asmified.java[Asmified]
-
-== References
-

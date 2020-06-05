@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/oracle/OracleOCIProxyConnector.class
-
- - link:OracleOCIProxyConnector-asmified.java[Asmified]
-
-== References
-

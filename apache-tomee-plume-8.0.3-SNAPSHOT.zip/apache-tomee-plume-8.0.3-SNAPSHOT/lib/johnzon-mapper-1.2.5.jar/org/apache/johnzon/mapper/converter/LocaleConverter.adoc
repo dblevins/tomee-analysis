@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/converter/LocaleConverter.class
-
- - link:LocaleConverter-asmified.java[Asmified]
-
-== References
-

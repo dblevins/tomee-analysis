@@ -1,6 +1,0 @@
-= org/apache/xml/security/c14n/implementations/Canonicalizer20010315Excl.class
-
- - link:Canonicalizer20010315Excl-asmified.java[Asmified]
-
-== References
-

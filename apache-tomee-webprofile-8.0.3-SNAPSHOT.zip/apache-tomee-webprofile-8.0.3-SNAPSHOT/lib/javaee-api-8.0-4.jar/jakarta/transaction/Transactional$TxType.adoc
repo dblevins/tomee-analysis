@@ -1,6 +1,0 @@
-= jakarta/transaction/Transactional$TxType.class
-
- - link:Transactional$TxType-asmified.java[Asmified]
-
-== References
-

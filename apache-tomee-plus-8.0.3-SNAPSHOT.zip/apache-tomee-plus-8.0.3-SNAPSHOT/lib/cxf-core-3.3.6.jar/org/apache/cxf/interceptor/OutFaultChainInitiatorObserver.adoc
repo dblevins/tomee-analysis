@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/OutFaultChainInitiatorObserver.class
-
- - link:OutFaultChainInitiatorObserver-asmified.java[Asmified]
-
-== References
-

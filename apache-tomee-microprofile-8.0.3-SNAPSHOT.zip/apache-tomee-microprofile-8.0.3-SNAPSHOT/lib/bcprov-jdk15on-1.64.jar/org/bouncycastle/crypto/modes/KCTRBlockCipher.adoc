@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/modes/KCTRBlockCipher.class
-
- - link:KCTRBlockCipher-asmified.java[Asmified]
-
-== References
-

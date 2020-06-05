@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/spi/DeploymentManager.class
-
- - link:DeploymentManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/SignatureTokenBuilder.class
-
- - link:SignatureTokenBuilder-asmified.java[Asmified]
-
-== References
-

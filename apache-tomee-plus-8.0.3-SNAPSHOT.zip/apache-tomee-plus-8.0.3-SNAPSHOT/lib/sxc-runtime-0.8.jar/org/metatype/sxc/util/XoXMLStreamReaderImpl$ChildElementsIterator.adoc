@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/XoXMLStreamReaderImpl$ChildElementsIterator.class
-
- - link:XoXMLStreamReaderImpl$ChildElementsIterator-asmified.java[Asmified]
-
-== References
-

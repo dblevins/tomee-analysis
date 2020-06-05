@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/extension/JsonValueWriter.class
-
- - link:JsonValueWriter-asmified.java[Asmified]
-
-== References
-

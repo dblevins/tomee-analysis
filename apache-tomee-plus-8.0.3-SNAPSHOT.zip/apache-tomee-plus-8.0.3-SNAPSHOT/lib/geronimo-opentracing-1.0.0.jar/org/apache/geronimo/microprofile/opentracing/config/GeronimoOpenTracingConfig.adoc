@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/config/GeronimoOpenTracingConfig.class
-
- - link:GeronimoOpenTracingConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/DateHeaderProvider.class
-
- - link:DateHeaderProvider-asmified.java[Asmified]
-
-== References
-

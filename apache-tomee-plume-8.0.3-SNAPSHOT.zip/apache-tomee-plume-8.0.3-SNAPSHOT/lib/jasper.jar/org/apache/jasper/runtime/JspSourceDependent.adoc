@@ -1,6 +1,0 @@
-= org/apache/jasper/runtime/JspSourceDependent.class
-
- - link:JspSourceDependent-asmified.java[Asmified]
-
-== References
-

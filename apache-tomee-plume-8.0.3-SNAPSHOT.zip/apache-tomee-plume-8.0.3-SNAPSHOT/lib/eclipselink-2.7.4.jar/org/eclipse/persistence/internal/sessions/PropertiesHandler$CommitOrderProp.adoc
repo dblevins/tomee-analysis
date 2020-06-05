@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$CommitOrderProp.class
-
- - link:PropertiesHandler$CommitOrderProp-asmified.java[Asmified]
-
-== References
-

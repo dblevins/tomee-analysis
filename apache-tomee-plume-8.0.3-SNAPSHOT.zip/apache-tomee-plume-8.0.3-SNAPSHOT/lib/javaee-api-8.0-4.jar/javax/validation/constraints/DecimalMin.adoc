@@ -1,9 +1,0 @@
-= javax/validation/constraints/DecimalMin.class
-
- - link:DecimalMin-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Payload - 1
- - javax.validation.Constraint - 1
- - javax.validation.constraints.DecimalMin$List - 1

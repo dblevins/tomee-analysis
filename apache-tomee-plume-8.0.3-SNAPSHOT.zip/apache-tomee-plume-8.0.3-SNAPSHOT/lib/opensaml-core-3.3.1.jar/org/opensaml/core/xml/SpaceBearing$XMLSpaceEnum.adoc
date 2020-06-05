@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/SpaceBearing$XMLSpaceEnum.class
-
- - link:SpaceBearing$XMLSpaceEnum-asmified.java[Asmified]
-
-== References
-

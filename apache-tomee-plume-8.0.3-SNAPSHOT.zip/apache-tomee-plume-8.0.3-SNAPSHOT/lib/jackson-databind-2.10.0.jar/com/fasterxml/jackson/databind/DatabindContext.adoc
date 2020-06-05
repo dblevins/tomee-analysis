@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/DatabindContext.class
-
- - link:DatabindContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessManagedBeanImpl.class
-
- - link:ProcessManagedBeanImpl-asmified.java[Asmified]
-
-== References
-

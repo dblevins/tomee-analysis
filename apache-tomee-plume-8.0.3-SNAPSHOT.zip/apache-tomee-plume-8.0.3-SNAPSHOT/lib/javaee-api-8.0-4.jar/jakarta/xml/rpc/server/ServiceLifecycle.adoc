@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/server/ServiceLifecycle.class
-
- - link:ServiceLifecycle-asmified.java[Asmified]
-
-== References
-

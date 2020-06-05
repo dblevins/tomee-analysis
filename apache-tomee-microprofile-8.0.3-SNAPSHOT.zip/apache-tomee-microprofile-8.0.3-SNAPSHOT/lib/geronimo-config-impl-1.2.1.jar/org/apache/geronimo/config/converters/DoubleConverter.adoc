@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/converters/DoubleConverter.class
-
- - link:DoubleConverter-asmified.java[Asmified]
-
-== References
-

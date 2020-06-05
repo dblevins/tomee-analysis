@@ -1,6 +1,0 @@
-= org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod.class
-
- - link:ObserverMethodConfiguratorImpl$ConfiguredObserverMethod-asmified.java[Asmified]
-
-== References
-

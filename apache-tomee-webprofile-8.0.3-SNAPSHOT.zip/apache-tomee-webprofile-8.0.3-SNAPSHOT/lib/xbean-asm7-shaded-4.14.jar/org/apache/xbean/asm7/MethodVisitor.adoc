@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/MethodVisitor.class
-
- - link:MethodVisitor-asmified.java[Asmified]
-
-== References
-

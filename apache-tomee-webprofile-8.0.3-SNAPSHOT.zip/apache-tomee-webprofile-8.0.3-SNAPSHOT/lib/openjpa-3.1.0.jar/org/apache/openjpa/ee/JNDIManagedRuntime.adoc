@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/JNDIManagedRuntime.class
-
- - link:JNDIManagedRuntime-asmified.java[Asmified]
-
-== References
-

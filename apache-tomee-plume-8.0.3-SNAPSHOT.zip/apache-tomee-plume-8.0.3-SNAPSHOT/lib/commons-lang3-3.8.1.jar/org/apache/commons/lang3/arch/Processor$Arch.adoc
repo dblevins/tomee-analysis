@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/arch/Processor$Arch.class
-
- - link:Processor$Arch-asmified.java[Asmified]
-
-== References
-

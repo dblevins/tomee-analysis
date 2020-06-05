@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/FaceletPartialStateManagementStrategy$1.class
-
- - link:FaceletPartialStateManagementStrategy$1-asmified.java[Asmified]
-
-== References
-

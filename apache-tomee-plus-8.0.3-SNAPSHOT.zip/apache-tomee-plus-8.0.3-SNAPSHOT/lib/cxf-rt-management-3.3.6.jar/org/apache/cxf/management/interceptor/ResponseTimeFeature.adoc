@@ -1,6 +1,0 @@
-= org/apache/cxf/management/interceptor/ResponseTimeFeature.class
-
- - link:ResponseTimeFeature-asmified.java[Asmified]
-
-== References
-

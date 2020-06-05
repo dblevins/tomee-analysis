@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/BatchWritingMechanism.class
-
- - link:BatchWritingMechanism-asmified.java[Asmified]
-
-== References
-

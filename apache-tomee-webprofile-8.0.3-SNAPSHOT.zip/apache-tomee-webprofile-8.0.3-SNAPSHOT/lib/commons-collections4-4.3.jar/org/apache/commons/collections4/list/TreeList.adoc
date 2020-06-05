@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/list/TreeList.class
-
- - link:TreeList-asmified.java[Asmified]
-
-== References
-

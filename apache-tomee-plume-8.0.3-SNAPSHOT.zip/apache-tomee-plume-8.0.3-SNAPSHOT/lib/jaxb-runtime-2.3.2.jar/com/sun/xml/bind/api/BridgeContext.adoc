@@ -1,6 +1,0 @@
-= com/sun/xml/bind/api/BridgeContext.class
-
- - link:BridgeContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/JNDIReferenceFactory.class
-
- - link:JNDIReferenceFactory-asmified.java[Asmified]
-
-== References
-

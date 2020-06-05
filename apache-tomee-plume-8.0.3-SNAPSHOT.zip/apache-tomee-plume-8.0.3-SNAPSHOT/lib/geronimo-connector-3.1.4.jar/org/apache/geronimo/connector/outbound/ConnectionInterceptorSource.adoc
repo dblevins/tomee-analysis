@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/ConnectionInterceptorSource.class
-
- - link:ConnectionInterceptorSource-asmified.java[Asmified]
-
-== References
-

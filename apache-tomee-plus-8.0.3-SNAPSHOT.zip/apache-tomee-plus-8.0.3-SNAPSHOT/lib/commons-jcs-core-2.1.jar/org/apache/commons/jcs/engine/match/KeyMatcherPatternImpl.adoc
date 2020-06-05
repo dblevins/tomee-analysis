@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/match/KeyMatcherPatternImpl.class
-
- - link:KeyMatcherPatternImpl-asmified.java[Asmified]
-
-== References
-

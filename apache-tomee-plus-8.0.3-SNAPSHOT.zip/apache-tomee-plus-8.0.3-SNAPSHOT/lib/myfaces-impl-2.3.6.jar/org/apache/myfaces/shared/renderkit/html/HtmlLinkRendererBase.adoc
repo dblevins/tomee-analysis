@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlLinkRendererBase.class
-
- - link:HtmlLinkRendererBase-asmified.java[Asmified]
-
-== References
-

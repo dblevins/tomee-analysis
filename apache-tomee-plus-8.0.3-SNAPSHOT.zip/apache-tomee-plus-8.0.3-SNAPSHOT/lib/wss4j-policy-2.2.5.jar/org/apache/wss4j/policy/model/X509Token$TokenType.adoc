@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/X509Token$TokenType.class
-
- - link:X509Token$TokenType-asmified.java[Asmified]
-
-== References
-

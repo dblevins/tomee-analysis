@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/ManagedUserTransaction.class
-
- - link:ManagedUserTransaction-asmified.java[Asmified]
-
-== References
-

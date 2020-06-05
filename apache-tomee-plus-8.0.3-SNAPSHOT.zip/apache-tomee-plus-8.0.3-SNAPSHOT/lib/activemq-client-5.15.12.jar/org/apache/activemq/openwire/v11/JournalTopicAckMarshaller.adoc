@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v11/JournalTopicAckMarshaller.class
-
- - link:JournalTopicAckMarshaller-asmified.java[Asmified]
-
-== References
-

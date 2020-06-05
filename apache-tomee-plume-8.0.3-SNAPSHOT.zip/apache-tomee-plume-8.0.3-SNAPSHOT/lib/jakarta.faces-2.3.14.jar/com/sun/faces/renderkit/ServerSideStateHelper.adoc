@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/ServerSideStateHelper.class
-
- - link:ServerSideStateHelper-asmified.java[Asmified]
-
-== References
-

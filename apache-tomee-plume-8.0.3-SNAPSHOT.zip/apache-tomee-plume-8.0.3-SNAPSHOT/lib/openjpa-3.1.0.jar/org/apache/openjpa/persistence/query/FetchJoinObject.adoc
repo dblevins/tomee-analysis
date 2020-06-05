@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/FetchJoinObject.class
-
- - link:FetchJoinObject-asmified.java[Asmified]
-
-== References
-

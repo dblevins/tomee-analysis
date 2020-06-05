@@ -1,6 +1,0 @@
-= org/apache/coyote/ProtocolException.class
-
- - link:ProtocolException-asmified.java[Asmified]
-
-== References
-

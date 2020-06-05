@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/FutureResponse.class
-
- - link:FutureResponse-asmified.java[Asmified]
-
-== References
-

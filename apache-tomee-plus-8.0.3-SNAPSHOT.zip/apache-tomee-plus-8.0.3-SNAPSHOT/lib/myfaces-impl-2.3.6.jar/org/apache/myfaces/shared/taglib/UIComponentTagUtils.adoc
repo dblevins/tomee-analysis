@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/taglib/UIComponentTagUtils.class
-
- - link:UIComponentTagUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BoundedCollection.class
-
- - link:BoundedCollection-asmified.java[Asmified]
-
-== References
-

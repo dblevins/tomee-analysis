@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLTextAreaElement.class
-
- - link:HTMLTextAreaElement-asmified.java[Asmified]
-
-== References
-

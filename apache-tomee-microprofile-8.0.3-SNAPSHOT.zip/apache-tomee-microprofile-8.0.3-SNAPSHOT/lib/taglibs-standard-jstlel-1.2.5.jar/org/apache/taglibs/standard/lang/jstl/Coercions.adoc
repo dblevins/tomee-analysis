@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/Coercions.class
-
- - link:Coercions-asmified.java[Asmified]
-
-== References
-

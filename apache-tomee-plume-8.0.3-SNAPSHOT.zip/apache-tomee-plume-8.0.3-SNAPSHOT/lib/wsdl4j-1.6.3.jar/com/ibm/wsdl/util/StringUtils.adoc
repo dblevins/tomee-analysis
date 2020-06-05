@@ -1,6 +1,0 @@
-= com/ibm/wsdl/util/StringUtils.class
-
- - link:StringUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/config/manager/DbfFactory$FacesErrorHandler.class
-
- - link:DbfFactory$FacesErrorHandler-asmified.java[Asmified]
-
-== References
-

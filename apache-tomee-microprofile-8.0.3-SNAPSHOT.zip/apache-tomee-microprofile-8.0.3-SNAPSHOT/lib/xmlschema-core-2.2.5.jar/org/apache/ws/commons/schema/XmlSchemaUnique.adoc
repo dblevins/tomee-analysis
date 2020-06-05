@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaUnique.class
-
- - link:XmlSchemaUnique-asmified.java[Asmified]
-
-== References
-

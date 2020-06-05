@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/keyresolver/implementations/ECKeyValueResolver.class
-
- - link:ECKeyValueResolver-asmified.java[Asmified]
-
-== References
-

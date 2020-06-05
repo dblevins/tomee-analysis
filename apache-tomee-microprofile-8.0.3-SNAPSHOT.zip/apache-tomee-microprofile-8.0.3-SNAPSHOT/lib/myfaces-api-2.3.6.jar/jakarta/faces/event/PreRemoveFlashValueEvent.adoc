@@ -1,6 +1,0 @@
-= jakarta/faces/event/PreRemoveFlashValueEvent.class
-
- - link:PreRemoveFlashValueEvent-asmified.java[Asmified]
-
-== References
-

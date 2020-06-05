@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/DatatypeFactory.class
-
- - link:DatatypeFactory-asmified.java[Asmified]
-
-== References
-

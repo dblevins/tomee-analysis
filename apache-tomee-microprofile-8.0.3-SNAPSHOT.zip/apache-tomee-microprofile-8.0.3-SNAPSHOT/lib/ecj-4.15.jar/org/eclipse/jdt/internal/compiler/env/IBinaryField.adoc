@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IBinaryField.class
-
- - link:IBinaryField-asmified.java[Asmified]
-
-== References
-

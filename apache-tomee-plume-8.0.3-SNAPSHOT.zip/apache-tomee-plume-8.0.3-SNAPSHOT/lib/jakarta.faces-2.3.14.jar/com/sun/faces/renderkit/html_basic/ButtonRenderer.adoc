@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/ButtonRenderer.class
-
- - link:ButtonRenderer-asmified.java[Asmified]
-
-== References
-

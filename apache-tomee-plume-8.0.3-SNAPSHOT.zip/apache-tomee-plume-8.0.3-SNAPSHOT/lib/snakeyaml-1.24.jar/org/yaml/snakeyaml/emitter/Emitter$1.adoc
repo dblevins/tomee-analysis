@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/emitter/Emitter$1.class
-
- - link:Emitter$1-asmified.java[Asmified]
-
-== References
-

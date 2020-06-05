@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/TemplateRequestURLBuilder.class
-
- - link:TemplateRequestURLBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/io/LimitedInputStream.class
-
- - link:LimitedInputStream-asmified.java[Asmified]
-
-== References
-

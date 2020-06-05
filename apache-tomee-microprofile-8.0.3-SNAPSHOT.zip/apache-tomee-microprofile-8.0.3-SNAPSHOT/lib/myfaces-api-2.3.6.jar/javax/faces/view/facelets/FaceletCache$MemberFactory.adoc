@@ -1,6 +1,0 @@
-= javax/faces/view/facelets/FaceletCache$MemberFactory.class
-
- - link:FaceletCache$MemberFactory-asmified.java[Asmified]
-
-== References
-

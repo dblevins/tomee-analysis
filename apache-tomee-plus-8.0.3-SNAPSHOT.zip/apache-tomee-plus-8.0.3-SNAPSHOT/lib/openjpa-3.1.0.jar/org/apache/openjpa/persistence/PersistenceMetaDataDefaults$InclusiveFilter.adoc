@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistenceMetaDataDefaults$InclusiveFilter.class
-
- - link:PersistenceMetaDataDefaults$InclusiveFilter-asmified.java[Asmified]
-
-== References
-

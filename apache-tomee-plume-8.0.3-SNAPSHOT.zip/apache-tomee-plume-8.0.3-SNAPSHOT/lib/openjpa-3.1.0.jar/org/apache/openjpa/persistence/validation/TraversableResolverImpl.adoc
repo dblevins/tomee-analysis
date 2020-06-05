@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/validation/TraversableResolverImpl.class
-
- - link:TraversableResolverImpl-asmified.java[Asmified]
-
-== References
-

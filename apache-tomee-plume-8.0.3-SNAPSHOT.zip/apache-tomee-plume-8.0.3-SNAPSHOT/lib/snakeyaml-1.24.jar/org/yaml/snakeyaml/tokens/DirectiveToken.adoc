@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/DirectiveToken.class
-
- - link:DirectiveToken-asmified.java[Asmified]
-
-== References
-

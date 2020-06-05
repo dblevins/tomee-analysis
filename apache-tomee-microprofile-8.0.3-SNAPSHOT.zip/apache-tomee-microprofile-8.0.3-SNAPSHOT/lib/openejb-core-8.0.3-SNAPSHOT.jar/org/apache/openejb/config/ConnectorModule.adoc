@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ConnectorModule.class
-
- - link:ConnectorModule-asmified.java[Asmified]
-
-== References
-

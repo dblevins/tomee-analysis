@@ -1,6 +1,0 @@
-= org/w3c/dom/css/CSS2Properties.class
-
- - link:CSS2Properties-asmified.java[Asmified]
-
-== References
-

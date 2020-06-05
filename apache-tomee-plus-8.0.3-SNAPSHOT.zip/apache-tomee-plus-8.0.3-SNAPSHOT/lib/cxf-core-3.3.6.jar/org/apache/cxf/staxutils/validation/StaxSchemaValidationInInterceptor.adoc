@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/validation/StaxSchemaValidationInInterceptor.class
-
- - link:StaxSchemaValidationInInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/InterfaceHandler.class
-
- - link:InterfaceHandler-asmified.java[Asmified]
-
-== References
-

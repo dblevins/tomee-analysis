@@ -1,6 +1,0 @@
-= com/sun/faces/application/resource/FaceletWebappResourceHelper.class
-
- - link:FaceletWebappResourceHelper-asmified.java[Asmified]
-
-== References
-

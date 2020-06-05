@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/JndiRequestHandler$1.class
-
- - link:JndiRequestHandler$1-asmified.java[Asmified]
-
-== References
-

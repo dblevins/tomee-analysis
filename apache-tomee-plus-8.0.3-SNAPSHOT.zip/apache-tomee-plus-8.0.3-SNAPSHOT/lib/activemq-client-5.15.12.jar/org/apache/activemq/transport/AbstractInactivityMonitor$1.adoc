@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/AbstractInactivityMonitor$1.class
-
- - link:AbstractInactivityMonitor$1-asmified.java[Asmified]
-
-== References
-

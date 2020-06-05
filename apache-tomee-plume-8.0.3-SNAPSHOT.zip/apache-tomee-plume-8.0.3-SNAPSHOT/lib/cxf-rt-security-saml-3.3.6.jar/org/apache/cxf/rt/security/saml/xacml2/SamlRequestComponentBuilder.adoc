@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/saml/xacml2/SamlRequestComponentBuilder.class
-
- - link:SamlRequestComponentBuilder-asmified.java[Asmified]
-
-== References
-

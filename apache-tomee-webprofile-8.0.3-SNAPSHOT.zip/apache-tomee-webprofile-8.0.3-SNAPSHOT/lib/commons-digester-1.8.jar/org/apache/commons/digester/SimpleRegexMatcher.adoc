@@ -1,6 +1,0 @@
-= org/apache/commons/digester/SimpleRegexMatcher.class
-
- - link:SimpleRegexMatcher-asmified.java[Asmified]
-
-== References
-

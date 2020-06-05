@@ -1,6 +1,0 @@
-= javax/wsdl/extensions/soap12/SOAP12Header.class
-
- - link:SOAP12Header-asmified.java[Asmified]
-
-== References
-

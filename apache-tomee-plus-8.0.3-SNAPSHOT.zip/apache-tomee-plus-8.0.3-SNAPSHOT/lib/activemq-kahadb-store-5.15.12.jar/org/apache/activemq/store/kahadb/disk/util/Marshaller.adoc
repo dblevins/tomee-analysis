@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/util/Marshaller.class
-
- - link:Marshaller-asmified.java[Asmified]
-
-== References
-

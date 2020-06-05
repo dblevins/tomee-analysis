@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/FrameType.class
-
- - link:FrameType-asmified.java[Asmified]
-
-== References
-

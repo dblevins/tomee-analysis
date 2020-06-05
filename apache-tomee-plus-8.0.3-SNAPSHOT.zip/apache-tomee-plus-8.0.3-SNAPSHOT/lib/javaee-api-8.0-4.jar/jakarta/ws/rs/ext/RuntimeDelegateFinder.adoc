@@ -1,6 +1,0 @@
-= jakarta/ws/rs/ext/RuntimeDelegateFinder.class
-
- - link:RuntimeDelegateFinder-asmified.java[Asmified]
-
-== References
-

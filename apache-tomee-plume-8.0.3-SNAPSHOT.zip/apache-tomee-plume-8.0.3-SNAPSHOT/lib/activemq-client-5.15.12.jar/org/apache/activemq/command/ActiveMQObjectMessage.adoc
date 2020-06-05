@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQObjectMessage.class
-
- - link:ActiveMQObjectMessage-asmified.java[Asmified]
-
-== References
-

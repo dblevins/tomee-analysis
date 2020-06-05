@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonWriterFactoryImpl.class
-
- - link:JsonWriterFactoryImpl-asmified.java[Asmified]
-
-== References
-

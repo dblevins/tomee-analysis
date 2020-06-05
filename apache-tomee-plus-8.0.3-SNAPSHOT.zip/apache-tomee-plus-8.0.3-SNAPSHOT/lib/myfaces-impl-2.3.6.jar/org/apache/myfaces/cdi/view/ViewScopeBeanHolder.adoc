@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/view/ViewScopeBeanHolder.class
-
- - link:ViewScopeBeanHolder-asmified.java[Asmified]
-
-== References
-

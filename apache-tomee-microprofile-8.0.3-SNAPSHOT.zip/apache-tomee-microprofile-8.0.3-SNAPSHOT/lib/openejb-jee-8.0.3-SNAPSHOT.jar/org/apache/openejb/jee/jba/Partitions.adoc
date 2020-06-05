@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/Partitions.class
-
- - link:Partitions-asmified.java[Asmified]
-
-== References
-

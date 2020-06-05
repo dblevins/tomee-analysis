@@ -1,6 +1,0 @@
-= org/apache/webbeans/event/ObserverMethodImpl$ObserverParams.class
-
- - link:ObserverMethodImpl$ObserverParams-asmified.java[Asmified]
-
-== References
-

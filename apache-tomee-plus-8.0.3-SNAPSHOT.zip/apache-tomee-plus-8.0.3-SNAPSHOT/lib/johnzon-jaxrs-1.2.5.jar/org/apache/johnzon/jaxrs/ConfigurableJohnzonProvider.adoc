@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/ConfigurableJohnzonProvider.class
-
- - link:ConfigurableJohnzonProvider-asmified.java[Asmified]
-
-== References
-

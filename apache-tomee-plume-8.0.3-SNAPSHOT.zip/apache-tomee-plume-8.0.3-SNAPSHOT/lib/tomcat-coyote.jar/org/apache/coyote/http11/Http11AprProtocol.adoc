@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/Http11AprProtocol.class
-
- - link:Http11AprProtocol-asmified.java[Asmified]
-
-== References
-

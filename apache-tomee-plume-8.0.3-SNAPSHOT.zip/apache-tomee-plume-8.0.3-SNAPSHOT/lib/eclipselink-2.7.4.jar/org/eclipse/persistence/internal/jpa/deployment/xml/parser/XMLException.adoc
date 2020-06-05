@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/xml/parser/XMLException.class
-
- - link:XMLException-asmified.java[Asmified]
-
-== References
-

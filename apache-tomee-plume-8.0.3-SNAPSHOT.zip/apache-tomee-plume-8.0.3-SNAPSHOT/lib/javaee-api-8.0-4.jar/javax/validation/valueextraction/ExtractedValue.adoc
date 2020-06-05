@@ -1,6 +1,0 @@
-= javax/validation/valueextraction/ExtractedValue.class
-
- - link:ExtractedValue-asmified.java[Asmified]
-
-== References
-

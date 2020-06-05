@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/compat/Jre9Compat.class
-
- - link:Jre9Compat-asmified.java[Asmified]
-
-== References
-

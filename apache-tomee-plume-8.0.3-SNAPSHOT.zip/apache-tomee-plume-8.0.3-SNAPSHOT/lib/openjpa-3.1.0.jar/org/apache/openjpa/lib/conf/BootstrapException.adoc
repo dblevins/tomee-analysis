@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/BootstrapException.class
-
- - link:BootstrapException-asmified.java[Asmified]
-
-== References
-

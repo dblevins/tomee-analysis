@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/ReverseMappingTool.class
-
- - link:ReverseMappingTool-asmified.java[Asmified]
-
-== References
-

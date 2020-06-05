@@ -1,6 +1,0 @@
-= jakarta/faces/component/_ValueBindingToValueExpression.class
-
- - link:_ValueBindingToValueExpression-asmified.java[Asmified]
-
-== References
-

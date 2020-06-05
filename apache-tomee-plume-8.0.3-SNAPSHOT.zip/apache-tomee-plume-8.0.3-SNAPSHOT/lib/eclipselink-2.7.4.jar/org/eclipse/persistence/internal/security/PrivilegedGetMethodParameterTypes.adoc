@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/security/PrivilegedGetMethodParameterTypes.class
-
- - link:PrivilegedGetMethodParameterTypes-asmified.java[Asmified]
-
-== References
-

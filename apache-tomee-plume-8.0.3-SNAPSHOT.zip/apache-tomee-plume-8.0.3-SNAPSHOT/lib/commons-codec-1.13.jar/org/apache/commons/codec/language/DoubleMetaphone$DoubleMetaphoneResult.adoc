@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult.class
-
- - link:DoubleMetaphone$DoubleMetaphoneResult-asmified.java[Asmified]
-
-== References
-

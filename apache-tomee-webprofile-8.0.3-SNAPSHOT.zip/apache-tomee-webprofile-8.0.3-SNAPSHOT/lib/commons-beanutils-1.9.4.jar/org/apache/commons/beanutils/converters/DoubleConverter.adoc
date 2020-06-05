@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/DoubleConverter.class
-
- - link:DoubleConverter-asmified.java[Asmified]
-
-== References
-

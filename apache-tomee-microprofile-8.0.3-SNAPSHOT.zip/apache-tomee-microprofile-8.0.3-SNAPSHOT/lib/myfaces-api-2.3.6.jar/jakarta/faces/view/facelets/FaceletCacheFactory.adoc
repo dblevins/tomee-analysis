@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/FaceletCacheFactory.class
-
- - link:FaceletCacheFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,9 +1,0 @@
-= javax/ejb/TimerHandle.class
-
- - link:TimerHandle-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 1
- - javax.ejb.Timer - 1
- - javax.ejb.NoSuchObjectLocalException - 1

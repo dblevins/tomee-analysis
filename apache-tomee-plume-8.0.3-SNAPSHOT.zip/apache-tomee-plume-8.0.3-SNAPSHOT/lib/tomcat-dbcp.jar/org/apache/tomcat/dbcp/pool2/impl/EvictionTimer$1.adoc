@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/impl/EvictionTimer$1.class
-
- - link:EvictionTimer$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/managed/ManagedDataSource.class
-
- - link:ManagedDataSource-asmified.java[Asmified]
-
-== References
-

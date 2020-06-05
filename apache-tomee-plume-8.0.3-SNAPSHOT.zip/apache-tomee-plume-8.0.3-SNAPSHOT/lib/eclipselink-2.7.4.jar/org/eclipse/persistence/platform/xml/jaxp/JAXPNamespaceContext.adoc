@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/xml/jaxp/JAXPNamespaceContext.class
-
- - link:JAXPNamespaceContext-asmified.java[Asmified]
-
-== References
-

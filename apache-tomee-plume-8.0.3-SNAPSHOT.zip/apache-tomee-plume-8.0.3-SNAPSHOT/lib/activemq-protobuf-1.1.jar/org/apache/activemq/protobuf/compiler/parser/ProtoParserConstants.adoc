@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/parser/ProtoParserConstants.class
-
- - link:ProtoParserConstants-asmified.java[Asmified]
-
-== References
-

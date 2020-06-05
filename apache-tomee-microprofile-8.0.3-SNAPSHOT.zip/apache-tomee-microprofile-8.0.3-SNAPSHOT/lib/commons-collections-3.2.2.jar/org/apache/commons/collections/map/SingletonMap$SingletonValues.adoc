@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/SingletonMap$SingletonValues.class
-
- - link:SingletonMap$SingletonValues-asmified.java[Asmified]
-
-== References
-

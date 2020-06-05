@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/annotation/_PackageInfo.class
-
- - link:_PackageInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Joins$MapEntry.class
-
- - link:Joins$MapEntry-asmified.java[Asmified]
-
-== References
-

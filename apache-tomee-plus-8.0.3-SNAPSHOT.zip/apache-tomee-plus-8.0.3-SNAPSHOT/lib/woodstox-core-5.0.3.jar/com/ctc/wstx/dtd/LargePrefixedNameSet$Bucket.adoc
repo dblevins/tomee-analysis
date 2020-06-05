@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/LargePrefixedNameSet$Bucket.class
-
- - link:LargePrefixedNameSet$Bucket-asmified.java[Asmified]
-
-== References
-

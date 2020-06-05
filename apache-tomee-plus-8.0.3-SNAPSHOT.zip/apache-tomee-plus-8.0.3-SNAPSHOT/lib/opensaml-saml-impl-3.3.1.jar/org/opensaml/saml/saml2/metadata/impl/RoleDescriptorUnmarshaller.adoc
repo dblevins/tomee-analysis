@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/RoleDescriptorUnmarshaller.class
-
- - link:RoleDescriptorUnmarshaller-asmified.java[Asmified]
-
-== References
-

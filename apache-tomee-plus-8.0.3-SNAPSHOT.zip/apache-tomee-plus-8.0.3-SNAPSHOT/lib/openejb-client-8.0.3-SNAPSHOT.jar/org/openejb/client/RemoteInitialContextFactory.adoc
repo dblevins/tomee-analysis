@@ -1,6 +1,0 @@
-= org/openejb/client/RemoteInitialContextFactory.class
-
- - link:RemoteInitialContextFactory-asmified.java[Asmified]
-
-== References
-

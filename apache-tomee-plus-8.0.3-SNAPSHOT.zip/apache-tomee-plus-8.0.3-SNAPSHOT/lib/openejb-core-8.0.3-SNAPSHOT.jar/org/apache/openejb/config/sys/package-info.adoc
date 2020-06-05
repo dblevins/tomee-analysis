@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

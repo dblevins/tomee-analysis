@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/MetaTagHandler.class
-
- - link:MetaTagHandler-asmified.java[Asmified]
-
-== References
-

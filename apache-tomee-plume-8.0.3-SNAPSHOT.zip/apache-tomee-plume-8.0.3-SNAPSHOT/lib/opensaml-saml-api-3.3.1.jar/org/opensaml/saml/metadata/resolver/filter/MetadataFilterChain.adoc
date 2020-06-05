@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/filter/MetadataFilterChain.class
-
- - link:MetadataFilterChain-asmified.java[Asmified]
-
-== References
-

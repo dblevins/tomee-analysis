@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/CommonPropertyUtils.class
-
- - link:CommonPropertyUtils-asmified.java[Asmified]
-
-== References
-

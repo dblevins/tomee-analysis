@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/RemoteDebugEventSocketListener$ProxyToken.class
-
- - link:RemoteDebugEventSocketListener$ProxyToken-asmified.java[Asmified]
-
-== References
-

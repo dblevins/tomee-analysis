@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/setup/OutboundWSSec$ConfiguredAction.class
-
- - link:OutboundWSSec$ConfiguredAction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/PhaseListenerTag$BindingPhaseListener.class
-
- - link:PhaseListenerTag$BindingPhaseListener-asmified.java[Asmified]
-
-== References
-

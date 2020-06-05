@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/SP13Constants.class
-
- - link:SP13Constants-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/xml/registry/infomodel/Organization.class
-
- - link:Organization-asmified.java[Asmified]
-
-== References
-

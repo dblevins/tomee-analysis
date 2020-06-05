@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/JavaParameterEnum.class
-
- - link:JavaParameterEnum-asmified.java[Asmified]
-
-== References
-

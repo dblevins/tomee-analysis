@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/http/UrlEncoded.class
-
- - link:UrlEncoded-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/TransportLoggerSupport$SPI.class
-
- - link:TransportLoggerSupport$SPI-asmified.java[Asmified]
-
-== References
-

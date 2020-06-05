@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/LockableClassToInstanceMultiMap.class
-
- - link:LockableClassToInstanceMultiMap-asmified.java[Asmified]
-
-== References
-

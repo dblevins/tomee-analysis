@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/authentication/CramMD5Authenticator.class
-
- - link:CramMD5Authenticator-asmified.java[Asmified]
-
-== References
-

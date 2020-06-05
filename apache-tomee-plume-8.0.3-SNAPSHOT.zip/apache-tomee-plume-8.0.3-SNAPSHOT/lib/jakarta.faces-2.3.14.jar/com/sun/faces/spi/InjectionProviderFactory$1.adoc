@@ -1,6 +1,0 @@
-= com/sun/faces/spi/InjectionProviderFactory$1.class
-
- - link:InjectionProviderFactory$1-asmified.java[Asmified]
-
-== References
-

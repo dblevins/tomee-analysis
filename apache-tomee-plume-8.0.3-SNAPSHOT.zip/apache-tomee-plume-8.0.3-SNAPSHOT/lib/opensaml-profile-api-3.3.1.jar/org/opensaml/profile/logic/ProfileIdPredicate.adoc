@@ -1,6 +1,0 @@
-= org/opensaml/profile/logic/ProfileIdPredicate.class
-
- - link:ProfileIdPredicate-asmified.java[Asmified]
-
-== References
-

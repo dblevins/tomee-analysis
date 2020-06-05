@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/impl/SAMLOutboundDestinationHandler.class
-
- - link:SAMLOutboundDestinationHandler-asmified.java[Asmified]
-
-== References
-

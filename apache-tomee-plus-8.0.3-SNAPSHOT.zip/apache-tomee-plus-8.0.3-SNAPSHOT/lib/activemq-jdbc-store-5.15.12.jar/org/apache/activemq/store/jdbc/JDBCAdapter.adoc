@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JDBCAdapter.class
-
- - link:JDBCAdapter-asmified.java[Asmified]
-
-== References
-

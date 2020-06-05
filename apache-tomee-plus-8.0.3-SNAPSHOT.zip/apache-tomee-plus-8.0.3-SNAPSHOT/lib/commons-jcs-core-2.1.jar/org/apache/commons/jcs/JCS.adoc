@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/JCS.class
-
- - link:JCS-asmified.java[Asmified]
-
-== References
-

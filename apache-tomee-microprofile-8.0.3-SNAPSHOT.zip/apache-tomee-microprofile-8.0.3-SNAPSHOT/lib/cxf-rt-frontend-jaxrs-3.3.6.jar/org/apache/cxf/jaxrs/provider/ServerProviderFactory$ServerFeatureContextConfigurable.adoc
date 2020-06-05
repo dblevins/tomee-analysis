@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ServerProviderFactory$ServerFeatureContextConfigurable.class
-
- - link:ServerProviderFactory$ServerFeatureContextConfigurable-asmified.java[Asmified]
-
-== References
-

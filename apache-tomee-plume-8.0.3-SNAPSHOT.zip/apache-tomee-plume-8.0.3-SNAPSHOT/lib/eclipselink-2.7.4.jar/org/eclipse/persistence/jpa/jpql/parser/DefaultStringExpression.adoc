@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/DefaultStringExpression.class
-
- - link:DefaultStringExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Logger$LoggerKey.class
-
- - link:Logger$LoggerKey-asmified.java[Asmified]
-
-== References
-

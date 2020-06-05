@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/xml/ExprTag.class
-
- - link:ExprTag-asmified.java[Asmified]
-
-== References
-

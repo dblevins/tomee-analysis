@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/SwitchStatement.class
-
- - link:SwitchStatement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ObjectGraph$WrapperExecutionContext.class
-
- - link:ObjectGraph$WrapperExecutionContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/TagToken.class
-
- - link:TagToken-asmified.java[Asmified]
-
-== References
-

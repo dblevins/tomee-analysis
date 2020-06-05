@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/rfc8032/Ed25519$PointExt.class
-
- - link:Ed25519$PointExt-asmified.java[Asmified]
-
-== References
-

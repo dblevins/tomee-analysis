@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/StoreConfigLifecycleListener.class
-
- - link:StoreConfigLifecycleListener-asmified.java[Asmified]
-
-== References
-

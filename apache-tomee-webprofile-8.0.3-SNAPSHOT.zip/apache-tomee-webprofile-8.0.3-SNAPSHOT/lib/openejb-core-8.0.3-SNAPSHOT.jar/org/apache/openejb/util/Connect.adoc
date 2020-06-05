@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Connect.class
-
- - link:Connect-asmified.java[Asmified]
-
-== References
-

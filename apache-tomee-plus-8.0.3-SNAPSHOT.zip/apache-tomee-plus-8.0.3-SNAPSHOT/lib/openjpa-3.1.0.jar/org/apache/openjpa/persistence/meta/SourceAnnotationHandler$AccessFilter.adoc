@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/SourceAnnotationHandler$AccessFilter.class
-
- - link:SourceAnnotationHandler$AccessFilter-asmified.java[Asmified]
-
-== References
-

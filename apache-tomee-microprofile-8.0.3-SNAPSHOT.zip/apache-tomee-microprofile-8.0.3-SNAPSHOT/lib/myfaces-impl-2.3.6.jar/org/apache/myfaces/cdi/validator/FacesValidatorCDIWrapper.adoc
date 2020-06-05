@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/validator/FacesValidatorCDIWrapper.class
-
- - link:FacesValidatorCDIWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/AsciiBuffer.class
-
- - link:AsciiBuffer-asmified.java[Asmified]
-
-== References
-

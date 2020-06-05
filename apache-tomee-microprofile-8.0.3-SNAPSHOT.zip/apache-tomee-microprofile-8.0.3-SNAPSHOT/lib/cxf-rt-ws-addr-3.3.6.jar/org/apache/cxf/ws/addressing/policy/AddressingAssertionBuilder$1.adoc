@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/policy/AddressingAssertionBuilder$1.class
-
- - link:AddressingAssertionBuilder$1-asmified.java[Asmified]
-
-== References
-

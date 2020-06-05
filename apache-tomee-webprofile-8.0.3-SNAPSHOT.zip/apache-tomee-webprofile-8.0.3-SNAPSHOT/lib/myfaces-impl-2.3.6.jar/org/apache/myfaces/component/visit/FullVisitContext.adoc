@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/visit/FullVisitContext.class
-
- - link:FullVisitContext-asmified.java[Asmified]
-
-== References
-

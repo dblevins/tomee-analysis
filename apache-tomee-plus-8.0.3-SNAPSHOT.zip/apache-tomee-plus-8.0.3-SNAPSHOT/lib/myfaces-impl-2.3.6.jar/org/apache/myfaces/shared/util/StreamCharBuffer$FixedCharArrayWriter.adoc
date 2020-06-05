@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/StreamCharBuffer$FixedCharArrayWriter.class
-
- - link:StreamCharBuffer$FixedCharArrayWriter-asmified.java[Asmified]
-
-== References
-

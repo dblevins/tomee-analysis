@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/ValidateLongRangeTag.class
-
- - link:ValidateLongRangeTag-asmified.java[Asmified]
-
-== References
-

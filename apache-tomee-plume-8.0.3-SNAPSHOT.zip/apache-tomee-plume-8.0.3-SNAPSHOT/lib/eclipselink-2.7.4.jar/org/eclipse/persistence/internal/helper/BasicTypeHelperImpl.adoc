@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/BasicTypeHelperImpl.class
-
- - link:BasicTypeHelperImpl-asmified.java[Asmified]
-
-== References
-

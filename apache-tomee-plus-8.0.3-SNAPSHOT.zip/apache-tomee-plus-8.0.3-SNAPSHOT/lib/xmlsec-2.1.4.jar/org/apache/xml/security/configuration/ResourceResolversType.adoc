@@ -1,6 +1,0 @@
-= org/apache/xml/security/configuration/ResourceResolversType.class
-
- - link:ResourceResolversType-asmified.java[Asmified]
-
-== References
-

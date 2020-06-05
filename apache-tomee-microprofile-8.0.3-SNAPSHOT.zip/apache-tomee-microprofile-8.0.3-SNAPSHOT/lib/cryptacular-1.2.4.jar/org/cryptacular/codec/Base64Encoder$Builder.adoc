@@ -1,6 +1,0 @@
-= org/cryptacular/codec/Base64Encoder$Builder.class
-
- - link:Base64Encoder$Builder-asmified.java[Asmified]
-
-== References
-

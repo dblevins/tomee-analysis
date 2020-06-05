@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/parser/ParserImpl$ParseBlockMappingValue.class
-
- - link:ParserImpl$ParseBlockMappingValue-asmified.java[Asmified]
-
-== References
-

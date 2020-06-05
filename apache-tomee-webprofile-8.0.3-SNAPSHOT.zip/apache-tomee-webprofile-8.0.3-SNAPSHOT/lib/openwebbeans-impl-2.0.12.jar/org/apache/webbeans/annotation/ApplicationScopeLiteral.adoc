@@ -1,6 +1,0 @@
-= org/apache/webbeans/annotation/ApplicationScopeLiteral.class
-
- - link:ApplicationScopeLiteral-asmified.java[Asmified]
-
-== References
-

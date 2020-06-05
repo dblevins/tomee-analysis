@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ProxyClassLoaderCache$3.class
-
- - link:ProxyClassLoaderCache$3-asmified.java[Asmified]
-
-== References
-

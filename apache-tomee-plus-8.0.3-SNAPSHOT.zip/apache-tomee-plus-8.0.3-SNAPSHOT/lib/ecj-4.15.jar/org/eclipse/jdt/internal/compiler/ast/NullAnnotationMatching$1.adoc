@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/NullAnnotationMatching$1.class
-
- - link:NullAnnotationMatching$1-asmified.java[Asmified]
-
-== References
-

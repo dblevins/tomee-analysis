@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/UTF8Reader.class
-
- - link:UTF8Reader-asmified.java[Asmified]
-
-== References
-

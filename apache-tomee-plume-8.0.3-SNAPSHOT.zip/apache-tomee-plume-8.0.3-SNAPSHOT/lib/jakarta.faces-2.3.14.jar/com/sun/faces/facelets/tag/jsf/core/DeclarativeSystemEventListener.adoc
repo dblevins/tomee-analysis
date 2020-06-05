@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/DeclarativeSystemEventListener.class
-
- - link:DeclarativeSystemEventListener-asmified.java[Asmified]
-
-== References
-

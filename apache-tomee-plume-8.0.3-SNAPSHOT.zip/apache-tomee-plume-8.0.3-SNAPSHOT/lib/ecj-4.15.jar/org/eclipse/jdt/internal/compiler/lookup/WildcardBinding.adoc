@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/WildcardBinding.class
-
- - link:WildcardBinding-asmified.java[Asmified]
-
-== References
-

@@ -1,9 +1,0 @@
-= javax/faces/view/facelets/FaceletCacheFactory.class
-
- - link:FaceletCacheFactory-asmified.java[Asmified]
-
-== References
-
- - javax.faces.view.facelets.FaceletCacheFactory - 8
- - javax.faces.view.facelets.FaceletCache - 1
- - javax.faces.FacesWrapper - 1

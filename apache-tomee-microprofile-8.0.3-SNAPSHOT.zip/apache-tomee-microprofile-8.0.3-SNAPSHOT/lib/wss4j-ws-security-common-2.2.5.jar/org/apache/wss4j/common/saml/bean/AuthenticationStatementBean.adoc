@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/bean/AuthenticationStatementBean.class
-
- - link:AuthenticationStatementBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/config/initfacescontext/NoOpFlash.class
-
- - link:NoOpFlash-asmified.java[Asmified]
-
-== References
-

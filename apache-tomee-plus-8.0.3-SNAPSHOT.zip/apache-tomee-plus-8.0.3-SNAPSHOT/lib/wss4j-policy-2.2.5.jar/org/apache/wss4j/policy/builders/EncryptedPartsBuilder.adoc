@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/EncryptedPartsBuilder.class
-
- - link:EncryptedPartsBuilder-asmified.java[Asmified]
-
-== References
-

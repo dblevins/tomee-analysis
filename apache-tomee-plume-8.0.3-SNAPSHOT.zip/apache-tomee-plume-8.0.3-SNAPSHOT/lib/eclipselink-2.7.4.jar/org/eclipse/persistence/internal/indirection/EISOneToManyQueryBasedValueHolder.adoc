@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/EISOneToManyQueryBasedValueHolder.class
-
- - link:EISOneToManyQueryBasedValueHolder-asmified.java[Asmified]
-
-== References
-

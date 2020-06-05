@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/AttributeInstruction.class
-
- - link:AttributeInstruction-asmified.java[Asmified]
-
-== References
-

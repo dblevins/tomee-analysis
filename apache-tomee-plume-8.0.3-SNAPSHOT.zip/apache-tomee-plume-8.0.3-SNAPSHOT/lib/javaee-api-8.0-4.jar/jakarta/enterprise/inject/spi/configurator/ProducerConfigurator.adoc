@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/configurator/ProducerConfigurator.class
-
- - link:ProducerConfigurator-asmified.java[Asmified]
-
-== References
-

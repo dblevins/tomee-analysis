@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/JavaeeInstanceManager$WebSocketTypes.class
-
- - link:JavaeeInstanceManager$WebSocketTypes-asmified.java[Asmified]
-
-== References
-

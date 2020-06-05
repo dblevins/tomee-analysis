@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/util/AttachmentUtils.class
-
- - link:AttachmentUtils-asmified.java[Asmified]
-
-== References
-

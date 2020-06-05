@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/xmladapters/ReferenceAdapter.class
-
- - link:ReferenceAdapter-asmified.java[Asmified]
-
-== References
-

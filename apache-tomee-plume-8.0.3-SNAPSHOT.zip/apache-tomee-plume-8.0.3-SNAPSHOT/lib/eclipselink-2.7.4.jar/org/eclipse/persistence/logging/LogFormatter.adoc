@@ -1,6 +1,0 @@
-= org/eclipse/persistence/logging/LogFormatter.class
-
- - link:LogFormatter-asmified.java[Asmified]
-
-== References
-

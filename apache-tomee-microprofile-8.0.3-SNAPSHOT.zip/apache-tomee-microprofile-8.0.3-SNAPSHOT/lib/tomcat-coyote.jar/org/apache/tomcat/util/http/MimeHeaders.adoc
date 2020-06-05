@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/MimeHeaders.class
-
- - link:MimeHeaders-asmified.java[Asmified]
-
-== References
-

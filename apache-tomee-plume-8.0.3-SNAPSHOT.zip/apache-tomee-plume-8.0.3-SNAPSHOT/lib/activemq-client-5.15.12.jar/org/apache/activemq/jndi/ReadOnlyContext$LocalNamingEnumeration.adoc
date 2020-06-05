@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/ReadOnlyContext$LocalNamingEnumeration.class
-
- - link:ReadOnlyContext$LocalNamingEnumeration-asmified.java[Asmified]
-
-== References
-

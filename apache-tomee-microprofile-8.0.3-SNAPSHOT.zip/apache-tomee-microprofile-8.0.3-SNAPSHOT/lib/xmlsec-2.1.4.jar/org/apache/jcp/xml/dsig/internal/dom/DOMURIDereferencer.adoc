@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMURIDereferencer.class
-
- - link:DOMURIDereferencer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/annotation/OverrideAnnotationOf.class
-
- - link:OverrideAnnotationOf-asmified.java[Asmified]
-
-== References
-

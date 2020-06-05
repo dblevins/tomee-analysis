@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/QueryParameters.class
-
- - link:QueryParameters-asmified.java[Asmified]
-
-== References
-

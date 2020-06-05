@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/AnnotationBehavior.class
-
- - link:AnnotationBehavior-asmified.java[Asmified]
-
-== References
-

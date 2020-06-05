@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlOutputLink.class
-
- - link:HtmlOutputLink-asmified.java[Asmified]
-
-== References
-

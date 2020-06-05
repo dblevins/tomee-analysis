@@ -1,6 +1,0 @@
-= jakarta/faces/validator/RegexValidator.class
-
- - link:RegexValidator-asmified.java[Asmified]
-
-== References
-

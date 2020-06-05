@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/i18n/OptimisticLockExceptionResource.class
-
- - link:OptimisticLockExceptionResource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/RelationshipRoleSource$JAXB.class
-
- - link:RelationshipRoleSource$JAXB-asmified.java[Asmified]
-
-== References
-

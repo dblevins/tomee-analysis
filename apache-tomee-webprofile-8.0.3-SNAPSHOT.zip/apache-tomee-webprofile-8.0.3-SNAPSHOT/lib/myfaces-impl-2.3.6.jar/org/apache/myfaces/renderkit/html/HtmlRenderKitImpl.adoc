@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlRenderKitImpl.class
-
- - link:HtmlRenderKitImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/RefreshDynamicComponentListener.class
-
- - link:RefreshDynamicComponentListener-asmified.java[Asmified]
-
-== References
-

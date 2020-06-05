@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/MaxEmbeddedClobFieldStrategy.class
-
- - link:MaxEmbeddedClobFieldStrategy-asmified.java[Asmified]
-
-== References
-

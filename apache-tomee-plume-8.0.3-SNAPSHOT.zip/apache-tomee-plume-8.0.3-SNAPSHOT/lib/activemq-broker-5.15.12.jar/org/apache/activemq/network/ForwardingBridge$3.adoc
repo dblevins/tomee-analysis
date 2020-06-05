@@ -1,6 +1,0 @@
-= org/apache/activemq/network/ForwardingBridge$3.class
-
- - link:ForwardingBridge$3-asmified.java[Asmified]
-
-== References
-

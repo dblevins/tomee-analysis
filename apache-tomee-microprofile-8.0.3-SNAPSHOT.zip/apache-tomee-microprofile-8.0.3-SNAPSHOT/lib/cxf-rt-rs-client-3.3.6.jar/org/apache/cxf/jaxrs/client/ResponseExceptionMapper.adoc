@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/ResponseExceptionMapper.class
-
- - link:ResponseExceptionMapper-asmified.java[Asmified]
-
-== References
-

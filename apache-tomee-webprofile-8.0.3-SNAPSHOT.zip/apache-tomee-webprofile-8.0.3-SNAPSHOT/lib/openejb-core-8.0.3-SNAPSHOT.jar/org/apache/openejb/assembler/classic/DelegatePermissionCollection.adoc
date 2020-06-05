@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/DelegatePermissionCollection.class
-
- - link:DelegatePermissionCollection-asmified.java[Asmified]
-
-== References
-

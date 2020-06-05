@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/FragmentStreamReader.class
-
- - link:FragmentStreamReader-asmified.java[Asmified]
-
-== References
-

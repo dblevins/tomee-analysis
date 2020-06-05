@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/sax/ExtendedContentHandler.class
-
- - link:ExtendedContentHandler-asmified.java[Asmified]
-
-== References
-

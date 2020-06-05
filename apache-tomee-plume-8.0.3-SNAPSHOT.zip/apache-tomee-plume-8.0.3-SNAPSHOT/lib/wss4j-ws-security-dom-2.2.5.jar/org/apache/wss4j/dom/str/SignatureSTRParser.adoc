@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/str/SignatureSTRParser.class
-
- - link:SignatureSTRParser-asmified.java[Asmified]
-
-== References
-

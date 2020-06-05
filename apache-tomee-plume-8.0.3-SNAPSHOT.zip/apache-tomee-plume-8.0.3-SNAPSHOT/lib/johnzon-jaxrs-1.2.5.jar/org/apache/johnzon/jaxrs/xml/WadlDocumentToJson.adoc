@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/xml/WadlDocumentToJson.class
-
- - link:WadlDocumentToJson-asmified.java[Asmified]
-
-== References
-

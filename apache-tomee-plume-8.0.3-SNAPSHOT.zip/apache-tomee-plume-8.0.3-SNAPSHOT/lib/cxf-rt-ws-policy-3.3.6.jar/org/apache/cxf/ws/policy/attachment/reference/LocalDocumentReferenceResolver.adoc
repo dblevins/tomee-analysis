@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/attachment/reference/LocalDocumentReferenceResolver.class
-
- - link:LocalDocumentReferenceResolver-asmified.java[Asmified]
-
-== References
-

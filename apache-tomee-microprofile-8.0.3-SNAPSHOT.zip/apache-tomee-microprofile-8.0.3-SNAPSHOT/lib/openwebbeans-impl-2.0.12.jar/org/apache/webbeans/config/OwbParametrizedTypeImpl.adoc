@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/OwbParametrizedTypeImpl.class
-
- - link:OwbParametrizedTypeImpl-asmified.java[Asmified]
-
-== References
-

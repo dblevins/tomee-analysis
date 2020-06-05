@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/CharSetUtils.class
-
- - link:CharSetUtils-asmified.java[Asmified]
-
-== References
-

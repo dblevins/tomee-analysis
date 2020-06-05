@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/bm/PhoneticEngine.class
-
- - link:PhoneticEngine-asmified.java[Asmified]
-
-== References
-

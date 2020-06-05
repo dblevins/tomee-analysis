@@ -1,6 +1,0 @@
-= jakarta/faces/component/behavior/_DeltaList.class
-
- - link:_DeltaList-asmified.java[Asmified]
-
-== References
-

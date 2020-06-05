@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/partitioning/UnionPartitioningImpl.class
-
- - link:UnionPartitioningImpl-asmified.java[Asmified]
-
-== References
-

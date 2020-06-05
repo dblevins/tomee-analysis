@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/IdentityHashSet$IdentityHashSetIterator.class
-
- - link:IdentityHashSet$IdentityHashSetIterator-asmified.java[Asmified]
-
-== References
-

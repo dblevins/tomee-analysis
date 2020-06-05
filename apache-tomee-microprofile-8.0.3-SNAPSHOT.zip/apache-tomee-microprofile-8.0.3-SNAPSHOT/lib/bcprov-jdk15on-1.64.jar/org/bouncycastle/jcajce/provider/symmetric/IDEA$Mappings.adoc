@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/symmetric/IDEA$Mappings.class
-
- - link:IDEA$Mappings-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/control/CompositeCacheManager$ShutdownHook.class
-
- - link:CompositeCacheManager$ShutdownHook-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/XoXMLStreamWriterImpl.class
-
- - link:XoXMLStreamWriterImpl-asmified.java[Asmified]
-
-== References
-

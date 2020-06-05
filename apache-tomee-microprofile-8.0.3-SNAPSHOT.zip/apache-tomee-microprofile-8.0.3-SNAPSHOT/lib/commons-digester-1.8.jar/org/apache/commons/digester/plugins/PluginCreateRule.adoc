@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/PluginCreateRule.class
-
- - link:PluginCreateRule-asmified.java[Asmified]
-
-== References
-

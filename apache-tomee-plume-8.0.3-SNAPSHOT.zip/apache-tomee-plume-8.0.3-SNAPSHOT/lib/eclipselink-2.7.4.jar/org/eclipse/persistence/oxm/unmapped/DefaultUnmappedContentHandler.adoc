@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/unmapped/DefaultUnmappedContentHandler.class
-
- - link:DefaultUnmappedContentHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/EmbeddedServletContext$ResourceProvider.class
-
- - link:EmbeddedServletContext$ResourceProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/DestinationMap.class
-
- - link:DestinationMap-asmified.java[Asmified]
-
-== References
-

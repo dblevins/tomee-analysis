@@ -1,6 +1,0 @@
-= org/hsqldb/types/Type.class
-
- - link:Type-asmified.java[Asmified]
-
-== References
-

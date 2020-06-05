@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLUnmarshaller.class
-
- - link:XMLUnmarshaller-asmified.java[Asmified]
-
-== References
-

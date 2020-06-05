@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/TimeOfDay.class
-
- - link:TimeOfDay-asmified.java[Asmified]
-
-== References
-

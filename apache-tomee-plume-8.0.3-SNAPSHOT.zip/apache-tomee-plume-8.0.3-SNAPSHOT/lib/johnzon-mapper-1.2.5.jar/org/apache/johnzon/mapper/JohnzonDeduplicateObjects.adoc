@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/JohnzonDeduplicateObjects.class
-
- - link:JohnzonDeduplicateObjects-asmified.java[Asmified]
-
-== References
-

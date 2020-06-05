@@ -1,6 +1,0 @@
-= org/apache/juli/JdkLoggerFormatter.class
-
- - link:JdkLoggerFormatter-asmified.java[Asmified]
-
-== References
-

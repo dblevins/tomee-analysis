@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/keyresolver/implementations/X509IssuerSerialResolver.class
-
- - link:X509IssuerSerialResolver-asmified.java[Asmified]
-
-== References
-

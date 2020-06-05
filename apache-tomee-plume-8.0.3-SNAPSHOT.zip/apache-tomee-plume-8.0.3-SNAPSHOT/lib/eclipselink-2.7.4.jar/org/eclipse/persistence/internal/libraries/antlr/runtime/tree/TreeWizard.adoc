@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeWizard.class
-
- - link:TreeWizard-asmified.java[Asmified]
-
-== References
-

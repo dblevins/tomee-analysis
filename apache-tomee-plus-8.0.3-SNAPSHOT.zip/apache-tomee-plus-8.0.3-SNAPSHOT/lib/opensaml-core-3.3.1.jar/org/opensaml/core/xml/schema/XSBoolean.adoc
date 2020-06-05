@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/XSBoolean.class
-
- - link:XSBoolean-asmified.java[Asmified]
-
-== References
-

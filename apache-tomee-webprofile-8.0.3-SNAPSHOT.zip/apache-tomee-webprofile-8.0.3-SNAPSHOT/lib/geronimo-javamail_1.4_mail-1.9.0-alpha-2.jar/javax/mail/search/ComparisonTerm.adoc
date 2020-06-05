@@ -1,8 +1,0 @@
-= javax/mail/search/ComparisonTerm.class
-
- - link:ComparisonTerm-asmified.java[Asmified]
-
-== References
-
- - javax.mail.search.ComparisonTerm - 2
- - javax.mail.search.SearchTerm - 2

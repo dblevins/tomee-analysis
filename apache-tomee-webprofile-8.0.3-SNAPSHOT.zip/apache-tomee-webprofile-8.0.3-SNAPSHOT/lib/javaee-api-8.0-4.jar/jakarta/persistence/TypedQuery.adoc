@@ -1,6 +1,0 @@
-= jakarta/persistence/TypedQuery.class
-
- - link:TypedQuery-asmified.java[Asmified]
-
-== References
-

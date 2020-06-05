@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/InvalidLogBufferException.class
-
- - link:InvalidLogBufferException-asmified.java[Asmified]
-
-== References
-

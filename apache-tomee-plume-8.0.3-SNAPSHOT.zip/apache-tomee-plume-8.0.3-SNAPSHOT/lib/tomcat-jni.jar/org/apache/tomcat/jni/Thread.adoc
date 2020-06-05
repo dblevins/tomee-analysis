@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/Thread.class
-
- - link:Thread-asmified.java[Asmified]
-
-== References
-

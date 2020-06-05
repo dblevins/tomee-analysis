@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/CommandLinkTag.class
-
- - link:CommandLinkTag-asmified.java[Asmified]
-
-== References
-

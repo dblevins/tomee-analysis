@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/CodeFormat.class
-
- - link:CodeFormat-asmified.java[Asmified]
-
-== References
-

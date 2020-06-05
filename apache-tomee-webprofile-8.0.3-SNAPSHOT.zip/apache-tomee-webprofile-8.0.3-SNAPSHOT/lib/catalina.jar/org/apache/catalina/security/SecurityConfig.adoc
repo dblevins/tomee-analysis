@@ -1,6 +1,0 @@
-= org/apache/catalina/security/SecurityConfig.class
-
- - link:SecurityConfig-asmified.java[Asmified]
-
-== References
-

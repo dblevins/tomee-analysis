@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/WebApplicationExceptionMapper.class
-
- - link:WebApplicationExceptionMapper-asmified.java[Asmified]
-
-== References
-

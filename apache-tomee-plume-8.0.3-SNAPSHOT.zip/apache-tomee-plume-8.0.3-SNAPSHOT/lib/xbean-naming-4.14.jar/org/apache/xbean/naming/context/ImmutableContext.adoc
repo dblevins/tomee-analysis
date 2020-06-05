@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ImmutableContext.class
-
- - link:ImmutableContext-asmified.java[Asmified]
-
-== References
-

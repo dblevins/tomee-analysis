@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/ClassLiteralAccess.class
-
- - link:ClassLiteralAccess-asmified.java[Asmified]
-
-== References
-

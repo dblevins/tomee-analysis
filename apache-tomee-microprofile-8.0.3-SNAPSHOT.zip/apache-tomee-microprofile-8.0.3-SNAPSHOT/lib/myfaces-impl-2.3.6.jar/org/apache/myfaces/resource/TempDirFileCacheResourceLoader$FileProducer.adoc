@@ -1,6 +1,0 @@
-= org/apache/myfaces/resource/TempDirFileCacheResourceLoader$FileProducer.class
-
- - link:TempDirFileCacheResourceLoader$FileProducer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/profile/context/AccessControlContext.class
-
- - link:AccessControlContext-asmified.java[Asmified]
-
-== References
-

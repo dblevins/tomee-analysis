@@ -1,6 +1,0 @@
-= commonj/sdo/helper/EqualityHelper.class
-
- - link:EqualityHelper-asmified.java[Asmified]
-
-== References
-

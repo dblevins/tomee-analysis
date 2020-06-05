@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Request.class
-
- - link:Request-asmified.java[Asmified]
-
-== References
-

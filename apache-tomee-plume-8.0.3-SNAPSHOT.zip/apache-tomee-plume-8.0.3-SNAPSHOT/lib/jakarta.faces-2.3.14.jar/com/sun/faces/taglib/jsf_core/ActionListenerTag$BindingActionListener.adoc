@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/ActionListenerTag$BindingActionListener.class
-
- - link:ActionListenerTag$BindingActionListener-asmified.java[Asmified]
-
-== References
-

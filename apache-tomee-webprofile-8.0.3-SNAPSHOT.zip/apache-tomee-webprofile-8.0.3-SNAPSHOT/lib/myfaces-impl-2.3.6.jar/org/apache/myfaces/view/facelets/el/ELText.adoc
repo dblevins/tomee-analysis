@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/ELText.class
-
- - link:ELText-asmified.java[Asmified]
-
-== References
-

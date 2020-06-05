@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/TemplateClient.class
-
- - link:TemplateClient-asmified.java[Asmified]
-
-== References
-

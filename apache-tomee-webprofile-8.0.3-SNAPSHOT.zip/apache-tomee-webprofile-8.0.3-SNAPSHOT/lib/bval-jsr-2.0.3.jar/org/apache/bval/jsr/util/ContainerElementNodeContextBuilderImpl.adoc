@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/ContainerElementNodeContextBuilderImpl.class
-
- - link:ContainerElementNodeContextBuilderImpl-asmified.java[Asmified]
-
-== References
-

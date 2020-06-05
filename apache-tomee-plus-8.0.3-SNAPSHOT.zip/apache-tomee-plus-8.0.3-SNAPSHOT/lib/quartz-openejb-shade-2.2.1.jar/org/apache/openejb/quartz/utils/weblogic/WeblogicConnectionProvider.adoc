@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/weblogic/WeblogicConnectionProvider.class
-
- - link:WeblogicConnectionProvider-asmified.java[Asmified]
-
-== References
-

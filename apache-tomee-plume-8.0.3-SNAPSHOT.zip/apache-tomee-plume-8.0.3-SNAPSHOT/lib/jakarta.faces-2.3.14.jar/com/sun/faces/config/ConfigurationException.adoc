@@ -1,6 +1,0 @@
-= com/sun/faces/config/ConfigurationException.class
-
- - link:ConfigurationException-asmified.java[Asmified]
-
-== References
-

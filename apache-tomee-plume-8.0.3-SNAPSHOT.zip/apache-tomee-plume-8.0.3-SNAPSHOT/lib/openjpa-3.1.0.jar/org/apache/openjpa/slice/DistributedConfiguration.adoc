@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/DistributedConfiguration.class
-
- - link:DistributedConfiguration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ProtocolMetaData.class
-
- - link:ProtocolMetaData-asmified.java[Asmified]
-
-== References
-

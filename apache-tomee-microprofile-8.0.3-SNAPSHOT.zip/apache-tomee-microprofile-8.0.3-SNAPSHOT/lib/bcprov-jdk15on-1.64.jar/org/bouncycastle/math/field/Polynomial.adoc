@@ -1,6 +1,0 @@
-= org/bouncycastle/math/field/Polynomial.class
-
- - link:Polynomial-asmified.java[Asmified]
-
-== References
-

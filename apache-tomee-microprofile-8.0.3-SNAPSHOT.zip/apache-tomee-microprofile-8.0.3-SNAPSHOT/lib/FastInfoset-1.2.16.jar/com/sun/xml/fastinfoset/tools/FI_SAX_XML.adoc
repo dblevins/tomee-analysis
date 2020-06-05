@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/tools/FI_SAX_XML.class
-
- - link:FI_SAX_XML-asmified.java[Asmified]
-
-== References
-

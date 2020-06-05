@@ -1,6 +1,0 @@
-= com/sun/xml/bind/marshaller/DumbEscapeHandler.class
-
- - link:DumbEscapeHandler-asmified.java[Asmified]
-
-== References
-

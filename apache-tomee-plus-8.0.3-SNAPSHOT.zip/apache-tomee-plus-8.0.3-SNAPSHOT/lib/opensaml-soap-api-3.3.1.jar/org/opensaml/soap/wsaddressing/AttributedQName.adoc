@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/AttributedQName.class
-
- - link:AttributedQName-asmified.java[Asmified]
-
-== References
-

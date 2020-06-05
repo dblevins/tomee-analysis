@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/problem/ShouldNotImplement.class
-
- - link:ShouldNotImplement-asmified.java[Asmified]
-
-== References
-

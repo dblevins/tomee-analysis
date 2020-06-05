@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wsu10/AttributedDateTime.class
-
- - link:AttributedDateTime-asmified.java[Asmified]
-
-== References
-

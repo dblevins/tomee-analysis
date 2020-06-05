@@ -1,6 +1,0 @@
-= org/apache/openejb/classloader/FalseFilter.class
-
- - link:FalseFilter-asmified.java[Asmified]
-
-== References
-

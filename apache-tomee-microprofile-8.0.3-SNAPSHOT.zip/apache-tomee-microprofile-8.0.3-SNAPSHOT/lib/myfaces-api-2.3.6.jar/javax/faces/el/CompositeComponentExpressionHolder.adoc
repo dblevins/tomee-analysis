@@ -1,7 +1,0 @@
-= javax/faces/el/CompositeComponentExpressionHolder.class
-
- - link:CompositeComponentExpressionHolder-asmified.java[Asmified]
-
-== References
-
- - javax.el.ValueExpression - 1

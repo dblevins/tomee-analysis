@@ -1,6 +1,0 @@
-= org/apache/activemq/network/jms/JndiLookupFactory.class
-
- - link:JndiLookupFactory-asmified.java[Asmified]
-
-== References
-

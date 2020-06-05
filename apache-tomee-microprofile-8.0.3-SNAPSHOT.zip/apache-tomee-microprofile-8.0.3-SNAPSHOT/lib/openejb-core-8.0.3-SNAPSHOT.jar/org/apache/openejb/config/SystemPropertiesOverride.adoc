@@ -1,6 +1,0 @@
-= org/apache/openejb/config/SystemPropertiesOverride.class
-
- - link:SystemPropertiesOverride-asmified.java[Asmified]
-
-== References
-

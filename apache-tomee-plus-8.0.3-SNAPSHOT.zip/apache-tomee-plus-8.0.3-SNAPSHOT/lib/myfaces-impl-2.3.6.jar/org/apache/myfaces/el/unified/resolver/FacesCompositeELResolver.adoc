@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/FacesCompositeELResolver.class
-
- - link:FacesCompositeELResolver-asmified.java[Asmified]
-
-== References
-

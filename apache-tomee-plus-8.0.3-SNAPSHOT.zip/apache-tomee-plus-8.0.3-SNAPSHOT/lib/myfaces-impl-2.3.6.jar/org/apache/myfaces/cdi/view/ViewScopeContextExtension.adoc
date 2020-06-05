@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/view/ViewScopeContextExtension.class
-
- - link:ViewScopeContextExtension-asmified.java[Asmified]
-
-== References
-

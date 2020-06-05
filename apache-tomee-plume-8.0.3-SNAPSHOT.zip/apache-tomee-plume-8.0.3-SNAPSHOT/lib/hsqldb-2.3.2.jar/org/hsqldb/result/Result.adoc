@@ -1,6 +1,0 @@
-= org/hsqldb/result/Result.class
-
- - link:Result-asmified.java[Asmified]
-
-== References
-

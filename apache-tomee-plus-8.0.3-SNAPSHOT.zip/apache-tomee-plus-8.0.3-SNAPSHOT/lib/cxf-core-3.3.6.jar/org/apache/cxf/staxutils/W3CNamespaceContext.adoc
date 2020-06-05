@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/W3CNamespaceContext.class
-
- - link:W3CNamespaceContext-asmified.java[Asmified]
-
-== References
-

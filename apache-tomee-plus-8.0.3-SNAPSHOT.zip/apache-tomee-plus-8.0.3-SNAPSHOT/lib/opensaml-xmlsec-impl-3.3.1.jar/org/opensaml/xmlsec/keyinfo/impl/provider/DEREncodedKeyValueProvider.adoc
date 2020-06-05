@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/keyinfo/impl/provider/DEREncodedKeyValueProvider.class
-
- - link:DEREncodedKeyValueProvider-asmified.java[Asmified]
-
-== References
-

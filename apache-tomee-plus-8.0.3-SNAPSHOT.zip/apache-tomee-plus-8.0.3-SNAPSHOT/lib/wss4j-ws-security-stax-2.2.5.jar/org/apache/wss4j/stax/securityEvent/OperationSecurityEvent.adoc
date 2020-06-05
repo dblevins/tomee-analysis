@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/OperationSecurityEvent.class
-
- - link:OperationSecurityEvent-asmified.java[Asmified]
-
-== References
-

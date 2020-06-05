@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/WeavedObjectBasicIndirectionPolicy.class
-
- - link:WeavedObjectBasicIndirectionPolicy-asmified.java[Asmified]
-
-== References
-

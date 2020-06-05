@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/NamedStoredFunctionQuery.class
-
- - link:NamedStoredFunctionQuery-asmified.java[Asmified]
-
-== References
-

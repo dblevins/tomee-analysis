@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/EjbRelationshipRoleType$RoleMapping$CmrFieldMapping.class
-
- - link:EjbRelationshipRoleType$RoleMapping$CmrFieldMapping-asmified.java[Asmified]
-
-== References
-

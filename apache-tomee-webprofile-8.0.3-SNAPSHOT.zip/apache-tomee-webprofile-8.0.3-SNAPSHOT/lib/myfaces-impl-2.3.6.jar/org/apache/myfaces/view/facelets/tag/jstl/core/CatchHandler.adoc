@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jstl/core/CatchHandler.class
-
- - link:CatchHandler-asmified.java[Asmified]
-
-== References
-

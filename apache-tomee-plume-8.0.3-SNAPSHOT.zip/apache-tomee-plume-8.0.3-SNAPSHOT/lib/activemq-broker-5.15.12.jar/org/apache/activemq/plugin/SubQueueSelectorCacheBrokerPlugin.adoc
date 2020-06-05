@@ -1,6 +1,0 @@
-= org/apache/activemq/plugin/SubQueueSelectorCacheBrokerPlugin.class
-
- - link:SubQueueSelectorCacheBrokerPlugin-asmified.java[Asmified]
-
-== References
-

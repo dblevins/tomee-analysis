@@ -1,6 +1,0 @@
-= org/apache/cxf/resource/ClasspathResolver.class
-
- - link:ClasspathResolver-asmified.java[Asmified]
-
-== References
-

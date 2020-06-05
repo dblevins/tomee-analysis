@@ -1,6 +1,0 @@
-= org/apache/catalina/webresources/TomcatURLStreamHandlerFactory.class
-
- - link:TomcatURLStreamHandlerFactory-asmified.java[Asmified]
-
-== References
-

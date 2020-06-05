@@ -1,7 +1,0 @@
-= javax/xml/soap/DetailEntry.class
-
- - link:DetailEntry-asmified.java[Asmified]
-
-== References
-
- - javax.xml.soap.SOAPElement - 1

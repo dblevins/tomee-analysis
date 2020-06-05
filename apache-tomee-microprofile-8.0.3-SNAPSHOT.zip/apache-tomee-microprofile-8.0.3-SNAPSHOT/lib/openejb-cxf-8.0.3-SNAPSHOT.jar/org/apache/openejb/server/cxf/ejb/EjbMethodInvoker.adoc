@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/ejb/EjbMethodInvoker.class
-
- - link:EjbMethodInvoker-asmified.java[Asmified]
-
-== References
-

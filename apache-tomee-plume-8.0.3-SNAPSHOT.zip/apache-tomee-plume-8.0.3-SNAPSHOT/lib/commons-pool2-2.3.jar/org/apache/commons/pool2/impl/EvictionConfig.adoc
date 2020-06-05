@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/impl/EvictionConfig.class
-
- - link:EvictionConfig-asmified.java[Asmified]
-
-== References
-

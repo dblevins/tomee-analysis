@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/ActiveMQResourceAdapter.class
-
- - link:ActiveMQResourceAdapter-asmified.java[Asmified]
-
-== References
-

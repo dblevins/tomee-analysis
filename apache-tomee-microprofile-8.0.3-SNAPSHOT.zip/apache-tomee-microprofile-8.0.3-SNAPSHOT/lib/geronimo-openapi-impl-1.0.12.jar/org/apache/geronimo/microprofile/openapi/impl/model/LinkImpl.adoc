@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/LinkImpl.class
-
- - link:LinkImpl-asmified.java[Asmified]
-
-== References
-

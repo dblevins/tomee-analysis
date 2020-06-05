@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/transform/AbstractXSLTInterceptor.class
-
- - link:AbstractXSLTInterceptor-asmified.java[Asmified]
-
-== References
-

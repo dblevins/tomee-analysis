@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/RuleLoader.class
-
- - link:RuleLoader-asmified.java[Asmified]
-
-== References
-

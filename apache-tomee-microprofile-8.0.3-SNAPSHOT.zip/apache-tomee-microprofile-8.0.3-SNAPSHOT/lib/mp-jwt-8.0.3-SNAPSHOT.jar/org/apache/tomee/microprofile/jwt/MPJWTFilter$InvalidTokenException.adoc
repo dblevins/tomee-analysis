@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/MPJWTFilter$InvalidTokenException.class
-
- - link:MPJWTFilter$InvalidTokenException-asmified.java[Asmified]
-
-== References
-

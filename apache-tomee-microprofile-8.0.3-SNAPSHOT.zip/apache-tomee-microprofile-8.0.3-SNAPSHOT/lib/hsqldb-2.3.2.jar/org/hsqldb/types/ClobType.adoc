@@ -1,6 +1,0 @@
-= org/hsqldb/types/ClobType.class
-
- - link:ClobType-asmified.java[Asmified]
-
-== References
-

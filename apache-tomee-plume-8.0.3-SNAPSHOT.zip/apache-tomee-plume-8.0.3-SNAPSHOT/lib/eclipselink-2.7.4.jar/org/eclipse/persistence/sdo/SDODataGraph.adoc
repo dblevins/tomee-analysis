@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/SDODataGraph.class
-
- - link:SDODataGraph-asmified.java[Asmified]
-
-== References
-

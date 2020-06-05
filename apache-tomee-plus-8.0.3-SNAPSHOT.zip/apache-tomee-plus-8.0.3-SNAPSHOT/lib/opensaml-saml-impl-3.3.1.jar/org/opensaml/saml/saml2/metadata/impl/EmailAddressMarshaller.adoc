@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/EmailAddressMarshaller.class
-
- - link:EmailAddressMarshaller-asmified.java[Asmified]
-
-== References
-

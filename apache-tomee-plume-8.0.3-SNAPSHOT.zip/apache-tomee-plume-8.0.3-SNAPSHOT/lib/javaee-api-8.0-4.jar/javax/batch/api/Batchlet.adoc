@@ -1,6 +1,0 @@
-= javax/batch/api/Batchlet.class
-
- - link:Batchlet-asmified.java[Asmified]
-
-== References
-

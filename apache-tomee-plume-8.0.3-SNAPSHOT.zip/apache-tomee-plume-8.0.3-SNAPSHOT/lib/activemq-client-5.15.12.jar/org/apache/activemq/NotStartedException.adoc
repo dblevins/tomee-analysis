@@ -1,6 +1,0 @@
-= org/apache/activemq/NotStartedException.class
-
- - link:NotStartedException-asmified.java[Asmified]
-
-== References
-

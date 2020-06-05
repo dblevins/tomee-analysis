@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ConnectionManagerInfo.class
-
- - link:ConnectionManagerInfo-asmified.java[Asmified]
-
-== References
-

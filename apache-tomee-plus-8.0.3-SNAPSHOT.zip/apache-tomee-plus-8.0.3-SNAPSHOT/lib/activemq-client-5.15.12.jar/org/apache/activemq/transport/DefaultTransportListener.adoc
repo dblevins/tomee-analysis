@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/DefaultTransportListener.class
-
- - link:DefaultTransportListener-asmified.java[Asmified]
-
-== References
-

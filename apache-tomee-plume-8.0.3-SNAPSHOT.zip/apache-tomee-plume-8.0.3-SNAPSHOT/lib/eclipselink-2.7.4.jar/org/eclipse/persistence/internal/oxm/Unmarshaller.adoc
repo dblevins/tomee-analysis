@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/Unmarshaller.class
-
- - link:Unmarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/Evidentiary.class
-
- - link:Evidentiary-asmified.java[Asmified]
-
-== References
-

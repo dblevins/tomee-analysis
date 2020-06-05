@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/BeanBuilder$Expression.class
-
- - link:BeanBuilder$Expression-asmified.java[Asmified]
-
-== References
-

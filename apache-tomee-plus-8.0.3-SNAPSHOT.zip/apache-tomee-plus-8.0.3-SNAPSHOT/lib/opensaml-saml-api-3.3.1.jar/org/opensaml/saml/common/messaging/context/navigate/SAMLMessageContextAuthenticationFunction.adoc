@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/context/navigate/SAMLMessageContextAuthenticationFunction.class
-
- - link:SAMLMessageContextAuthenticationFunction-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/persistence/NamedQueries.class
-
- - link:NamedQueries-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.NamedQuery - 1

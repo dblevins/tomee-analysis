@@ -1,6 +1,0 @@
-= org/cryptacular/bean/FactoryBean.class
-
- - link:FactoryBean-asmified.java[Asmified]
-
-== References
-

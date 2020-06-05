@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/model/FacesDataModelExtension.class
-
- - link:FacesDataModelExtension-asmified.java[Asmified]
-
-== References
-

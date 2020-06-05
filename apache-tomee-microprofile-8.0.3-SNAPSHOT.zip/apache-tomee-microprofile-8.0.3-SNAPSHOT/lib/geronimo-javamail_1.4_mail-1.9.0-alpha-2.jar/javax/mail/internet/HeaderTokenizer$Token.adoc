@@ -1,6 +1,0 @@
-= javax/mail/internet/HeaderTokenizer$Token.class
-
- - link:HeaderTokenizer$Token-asmified.java[Asmified]
-
-== References
-

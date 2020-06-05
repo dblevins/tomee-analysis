@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/interceptors/KerberosTokenInterceptorProvider$KerberosTokenDOMInInterceptor.class
-
- - link:KerberosTokenInterceptorProvider$KerberosTokenDOMInInterceptor-asmified.java[Asmified]
-
-== References
-

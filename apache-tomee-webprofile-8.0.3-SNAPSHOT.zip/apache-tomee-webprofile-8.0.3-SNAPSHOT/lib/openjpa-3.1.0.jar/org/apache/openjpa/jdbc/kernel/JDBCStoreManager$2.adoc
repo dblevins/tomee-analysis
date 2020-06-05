@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/JDBCStoreManager$2.class
-
- - link:JDBCStoreManager$2-asmified.java[Asmified]
-
-== References
-

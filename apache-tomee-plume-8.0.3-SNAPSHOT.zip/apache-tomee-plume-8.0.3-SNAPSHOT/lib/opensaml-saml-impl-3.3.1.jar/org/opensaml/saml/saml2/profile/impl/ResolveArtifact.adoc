@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/profile/impl/ResolveArtifact.class
-
- - link:ResolveArtifact-asmified.java[Asmified]
-
-== References
-

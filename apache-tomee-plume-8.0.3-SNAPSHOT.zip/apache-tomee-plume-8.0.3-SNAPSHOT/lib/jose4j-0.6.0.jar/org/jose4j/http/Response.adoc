@@ -1,6 +1,0 @@
-= org/jose4j/http/Response.class
-
- - link:Response-asmified.java[Asmified]
-
-== References
-

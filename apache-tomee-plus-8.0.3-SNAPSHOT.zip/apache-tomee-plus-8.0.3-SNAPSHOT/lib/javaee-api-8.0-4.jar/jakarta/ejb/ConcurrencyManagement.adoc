@@ -1,6 +1,0 @@
-= jakarta/ejb/ConcurrencyManagement.class
-
- - link:ConcurrencyManagement-asmified.java[Asmified]
-
-== References
-

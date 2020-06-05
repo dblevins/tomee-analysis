@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/DynaBeanPropertyMapDecorator.class
-
- - link:DynaBeanPropertyMapDecorator-asmified.java[Asmified]
-
-== References
-

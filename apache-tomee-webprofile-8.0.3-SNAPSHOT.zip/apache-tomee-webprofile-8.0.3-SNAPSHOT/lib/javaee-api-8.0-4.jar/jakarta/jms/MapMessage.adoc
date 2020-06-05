@@ -1,6 +1,0 @@
-= jakarta/jms/MapMessage.class
-
- - link:MapMessage-asmified.java[Asmified]
-
-== References
-

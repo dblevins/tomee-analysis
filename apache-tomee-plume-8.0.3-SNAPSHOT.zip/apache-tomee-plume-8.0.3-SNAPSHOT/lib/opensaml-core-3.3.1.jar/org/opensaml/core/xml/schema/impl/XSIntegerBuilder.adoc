@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSIntegerBuilder.class
-
- - link:XSIntegerBuilder-asmified.java[Asmified]
-
-== References
-

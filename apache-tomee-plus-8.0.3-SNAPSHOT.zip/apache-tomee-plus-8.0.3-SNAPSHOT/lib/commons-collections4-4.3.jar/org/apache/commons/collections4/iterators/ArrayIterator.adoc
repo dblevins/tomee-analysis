@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/ArrayIterator.class
-
- - link:ArrayIterator-asmified.java[Asmified]
-
-== References
-

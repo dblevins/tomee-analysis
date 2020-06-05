@@ -1,6 +1,0 @@
-= org/jasypt/util/binary/StrongBinaryEncryptor.class
-
- - link:StrongBinaryEncryptor-asmified.java[Asmified]
-
-== References
-

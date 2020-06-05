@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/ByteConverter.class
-
- - link:ByteConverter-asmified.java[Asmified]
-
-== References
-

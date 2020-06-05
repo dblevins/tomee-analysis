@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/AssertFalseValidator.class
-
- - link:AssertFalseValidator-asmified.java[Asmified]
-
-== References
-

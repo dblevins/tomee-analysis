@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/IfTransformer.class
-
- - link:IfTransformer-asmified.java[Asmified]
-
-== References
-

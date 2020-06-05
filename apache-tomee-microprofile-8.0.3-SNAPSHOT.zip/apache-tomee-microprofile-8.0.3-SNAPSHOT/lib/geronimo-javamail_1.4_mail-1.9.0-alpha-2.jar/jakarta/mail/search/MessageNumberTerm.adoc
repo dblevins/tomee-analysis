@@ -1,6 +1,0 @@
-= jakarta/mail/search/MessageNumberTerm.class
-
- - link:MessageNumberTerm-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/SessionBrokerPlaceHolder.class
-
- - link:SessionBrokerPlaceHolder-asmified.java[Asmified]
-
-== References
-

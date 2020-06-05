@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/WadlDocumentMessageBodyWriter.class
-
- - link:WadlDocumentMessageBodyWriter-asmified.java[Asmified]
-
-== References
-

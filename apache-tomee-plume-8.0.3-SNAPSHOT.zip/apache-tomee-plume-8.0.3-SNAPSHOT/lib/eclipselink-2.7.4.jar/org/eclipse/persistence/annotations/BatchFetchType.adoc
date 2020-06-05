@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/BatchFetchType.class
-
- - link:BatchFetchType-asmified.java[Asmified]
-
-== References
-

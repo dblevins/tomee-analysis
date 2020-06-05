@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistenceProviderImpl$ClassTransformerImpl$1.class
-
- - link:PersistenceProviderImpl$ClassTransformerImpl$1-asmified.java[Asmified]
-
-== References
-

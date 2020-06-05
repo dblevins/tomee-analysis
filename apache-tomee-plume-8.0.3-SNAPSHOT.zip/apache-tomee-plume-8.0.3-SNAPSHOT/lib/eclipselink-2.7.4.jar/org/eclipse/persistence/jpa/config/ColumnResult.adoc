@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/ColumnResult.class
-
- - link:ColumnResult-asmified.java[Asmified]
-
-== References
-

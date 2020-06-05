@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/columns/DiscriminatorColumnMetadata.class
-
- - link:DiscriminatorColumnMetadata-asmified.java[Asmified]
-
-== References
-

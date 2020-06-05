@@ -1,6 +1,0 @@
-= jakarta/batch/api/AbstractBatchlet.class
-
- - link:AbstractBatchlet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/interceptor/Interceptor$Priority.class
-
- - link:Interceptor$Priority-asmified.java[Asmified]
-
-== References
-

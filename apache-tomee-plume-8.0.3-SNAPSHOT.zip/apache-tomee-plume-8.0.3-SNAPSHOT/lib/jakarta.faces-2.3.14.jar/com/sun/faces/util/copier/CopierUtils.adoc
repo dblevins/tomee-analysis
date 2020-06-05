@@ -1,6 +1,0 @@
-= com/sun/faces/util/copier/CopierUtils.class
-
- - link:CopierUtils-asmified.java[Asmified]
-
-== References
-

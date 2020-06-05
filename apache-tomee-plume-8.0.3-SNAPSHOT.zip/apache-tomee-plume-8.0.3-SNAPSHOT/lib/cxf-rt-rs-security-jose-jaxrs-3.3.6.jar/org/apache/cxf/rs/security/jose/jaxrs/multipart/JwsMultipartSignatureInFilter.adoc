@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureInFilter.class
-
- - link:JwsMultipartSignatureInFilter-asmified.java[Asmified]
-
-== References
-

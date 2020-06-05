@@ -1,6 +1,0 @@
-= com/sun/faces/application/ApplicationAssociate$PostConstructApplicationListener.class
-
- - link:ApplicationAssociate$PostConstructApplicationListener-asmified.java[Asmified]
-
-== References
-

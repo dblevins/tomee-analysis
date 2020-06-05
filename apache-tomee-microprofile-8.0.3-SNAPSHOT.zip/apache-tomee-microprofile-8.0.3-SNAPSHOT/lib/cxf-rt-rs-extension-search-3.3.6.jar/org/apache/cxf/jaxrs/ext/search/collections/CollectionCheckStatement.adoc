@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/collections/CollectionCheckStatement.class
-
- - link:CollectionCheckStatement-asmified.java[Asmified]
-
-== References
-

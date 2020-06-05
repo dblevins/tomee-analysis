@@ -1,6 +1,0 @@
-= jakarta/validation/metadata/ElementDescriptor.class
-
- - link:ElementDescriptor-asmified.java[Asmified]
-
-== References
-

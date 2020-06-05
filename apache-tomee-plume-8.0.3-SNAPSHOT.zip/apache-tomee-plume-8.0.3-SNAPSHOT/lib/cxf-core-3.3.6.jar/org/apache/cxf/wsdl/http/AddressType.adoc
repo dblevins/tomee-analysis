@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/http/AddressType.class
-
- - link:AddressType-asmified.java[Asmified]
-
-== References
-

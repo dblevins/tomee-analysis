@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/UserOperation.class
-
- - link:UserOperation-asmified.java[Asmified]
-
-== References
-

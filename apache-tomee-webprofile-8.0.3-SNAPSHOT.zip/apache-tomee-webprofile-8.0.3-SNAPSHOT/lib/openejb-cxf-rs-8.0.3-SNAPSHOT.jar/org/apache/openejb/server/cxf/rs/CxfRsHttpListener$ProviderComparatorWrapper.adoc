@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CxfRsHttpListener$ProviderComparatorWrapper.class
-
- - link:CxfRsHttpListener$ProviderComparatorWrapper-asmified.java[Asmified]
-
-== References
-

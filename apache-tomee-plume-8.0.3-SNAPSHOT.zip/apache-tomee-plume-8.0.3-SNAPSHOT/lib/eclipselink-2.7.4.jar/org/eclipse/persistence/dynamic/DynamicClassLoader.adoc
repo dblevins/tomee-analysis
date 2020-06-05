@@ -1,6 +1,0 @@
-= org/eclipse/persistence/dynamic/DynamicClassLoader.class
-
- - link:DynamicClassLoader-asmified.java[Asmified]
-
-== References
-

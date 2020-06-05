@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/FiltersType.class
-
- - link:FiltersType-asmified.java[Asmified]
-
-== References
-

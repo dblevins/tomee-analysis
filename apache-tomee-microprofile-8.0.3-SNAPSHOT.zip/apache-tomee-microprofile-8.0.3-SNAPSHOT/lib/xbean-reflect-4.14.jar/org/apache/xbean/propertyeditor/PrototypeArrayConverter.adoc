@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/PrototypeArrayConverter.class
-
- - link:PrototypeArrayConverter-asmified.java[Asmified]
-
-== References
-

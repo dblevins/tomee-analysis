@@ -1,6 +1,0 @@
-= org/apache/openejb/util/LengthInputStream.class
-
- - link:LengthInputStream-asmified.java[Asmified]
-
-== References
-

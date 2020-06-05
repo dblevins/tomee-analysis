@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/SecurityServiceBuilder.class
-
- - link:SecurityServiceBuilder-asmified.java[Asmified]
-
-== References
-

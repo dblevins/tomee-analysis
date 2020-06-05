@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/soap/SOAPHandlerInterceptor.class
-
- - link:SOAPHandlerInterceptor-asmified.java[Asmified]
-
-== References
-

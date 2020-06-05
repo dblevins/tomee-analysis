@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/server/ServerPlatformDetector.class
-
- - link:ServerPlatformDetector-asmified.java[Asmified]
-
-== References
-

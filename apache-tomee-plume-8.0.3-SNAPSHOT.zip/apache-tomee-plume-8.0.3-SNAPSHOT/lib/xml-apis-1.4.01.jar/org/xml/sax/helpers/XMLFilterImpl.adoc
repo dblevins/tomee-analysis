@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/XMLFilterImpl.class
-
- - link:XMLFilterImpl-asmified.java[Asmified]
-
-== References
-

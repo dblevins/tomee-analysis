@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/VirtualAttributeMethodInfo.class
-
- - link:VirtualAttributeMethodInfo-asmified.java[Asmified]
-
-== References
-

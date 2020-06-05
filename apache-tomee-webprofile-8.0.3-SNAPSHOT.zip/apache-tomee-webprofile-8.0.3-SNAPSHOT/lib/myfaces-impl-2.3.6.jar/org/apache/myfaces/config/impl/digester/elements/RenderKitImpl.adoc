@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/RenderKitImpl.class
-
- - link:RenderKitImpl-asmified.java[Asmified]
-
-== References
-

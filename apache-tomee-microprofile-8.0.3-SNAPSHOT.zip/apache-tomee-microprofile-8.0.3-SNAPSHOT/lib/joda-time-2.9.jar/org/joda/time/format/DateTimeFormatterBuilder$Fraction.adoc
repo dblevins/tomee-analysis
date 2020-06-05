@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeFormatterBuilder$Fraction.class
-
- - link:DateTimeFormatterBuilder$Fraction-asmified.java[Asmified]
-
-== References
-

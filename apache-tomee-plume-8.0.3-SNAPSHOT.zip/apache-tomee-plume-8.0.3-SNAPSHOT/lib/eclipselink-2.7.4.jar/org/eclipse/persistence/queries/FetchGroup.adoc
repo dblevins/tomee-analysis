@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/FetchGroup.class
-
- - link:FetchGroup-asmified.java[Asmified]
-
-== References
-

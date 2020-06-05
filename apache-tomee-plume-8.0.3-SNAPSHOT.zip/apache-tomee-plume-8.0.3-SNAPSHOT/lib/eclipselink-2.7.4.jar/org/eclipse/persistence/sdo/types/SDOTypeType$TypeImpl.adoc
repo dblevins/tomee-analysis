@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/types/SDOTypeType$TypeImpl.class
-
- - link:SDOTypeType$TypeImpl-asmified.java[Asmified]
-
-== References
-

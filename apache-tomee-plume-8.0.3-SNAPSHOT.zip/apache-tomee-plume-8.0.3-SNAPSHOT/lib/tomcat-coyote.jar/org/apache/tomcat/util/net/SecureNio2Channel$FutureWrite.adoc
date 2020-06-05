@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SecureNio2Channel$FutureWrite.class
-
- - link:SecureNio2Channel$FutureWrite-asmified.java[Asmified]
-
-== References
-

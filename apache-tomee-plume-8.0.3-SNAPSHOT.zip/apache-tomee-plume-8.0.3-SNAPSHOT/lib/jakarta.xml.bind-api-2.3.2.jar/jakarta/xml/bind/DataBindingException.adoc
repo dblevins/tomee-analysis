@@ -1,6 +1,0 @@
-= jakarta/xml/bind/DataBindingException.class
-
- - link:DataBindingException-asmified.java[Asmified]
-
-== References
-

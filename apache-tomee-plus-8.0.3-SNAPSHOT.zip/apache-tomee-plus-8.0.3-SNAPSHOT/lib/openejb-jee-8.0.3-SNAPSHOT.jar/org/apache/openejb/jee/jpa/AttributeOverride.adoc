@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/AttributeOverride.class
-
- - link:AttributeOverride-asmified.java[Asmified]
-
-== References
-

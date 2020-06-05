@@ -1,6 +1,0 @@
-= jakarta/persistence/NamedEntityGraphs.class
-
- - link:NamedEntityGraphs-asmified.java[Asmified]
-
-== References
-

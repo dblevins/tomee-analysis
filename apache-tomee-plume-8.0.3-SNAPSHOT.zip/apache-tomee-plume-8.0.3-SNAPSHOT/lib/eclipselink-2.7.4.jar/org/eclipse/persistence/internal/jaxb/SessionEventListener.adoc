@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/SessionEventListener.class
-
- - link:SessionEventListener-asmified.java[Asmified]
-
-== References
-

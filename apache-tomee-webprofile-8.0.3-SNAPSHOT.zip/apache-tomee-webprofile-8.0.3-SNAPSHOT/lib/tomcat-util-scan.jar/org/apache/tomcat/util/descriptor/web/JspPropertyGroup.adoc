@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/JspPropertyGroup.class
-
- - link:JspPropertyGroup-asmified.java[Asmified]
-
-== References
-

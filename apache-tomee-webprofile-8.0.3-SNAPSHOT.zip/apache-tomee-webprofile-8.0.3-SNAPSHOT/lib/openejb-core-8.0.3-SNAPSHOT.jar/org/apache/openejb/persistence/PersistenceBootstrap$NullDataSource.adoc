@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/PersistenceBootstrap$NullDataSource.class
-
- - link:PersistenceBootstrap$NullDataSource-asmified.java[Asmified]
-
-== References
-

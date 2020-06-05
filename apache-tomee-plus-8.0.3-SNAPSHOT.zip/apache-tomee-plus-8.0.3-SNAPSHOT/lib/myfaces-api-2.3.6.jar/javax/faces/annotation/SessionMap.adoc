@@ -1,7 +1,0 @@
-= javax/faces/annotation/SessionMap.class
-
- - link:SessionMap-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Qualifier - 1

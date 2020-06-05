@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/callback/CallbackLookup.class
-
- - link:CallbackLookup-asmified.java[Asmified]
-
-== References
-

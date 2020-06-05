@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/MapEditor.class
-
- - link:MapEditor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/JavadocArgumentExpression.class
-
- - link:JavadocArgumentExpression-asmified.java[Asmified]
-
-== References
-

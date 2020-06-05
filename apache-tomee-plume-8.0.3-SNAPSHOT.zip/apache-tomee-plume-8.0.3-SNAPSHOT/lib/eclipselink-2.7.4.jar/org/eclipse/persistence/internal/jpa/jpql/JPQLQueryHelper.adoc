@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/JPQLQueryHelper.class
-
- - link:JPQLQueryHelper-asmified.java[Asmified]
-
-== References
-

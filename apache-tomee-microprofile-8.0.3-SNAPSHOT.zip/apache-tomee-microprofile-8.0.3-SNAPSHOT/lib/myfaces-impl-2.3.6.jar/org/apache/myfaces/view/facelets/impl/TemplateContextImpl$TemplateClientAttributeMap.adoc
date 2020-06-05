@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/impl/TemplateContextImpl$TemplateClientAttributeMap.class
-
- - link:TemplateContextImpl$TemplateClientAttributeMap-asmified.java[Asmified]
-
-== References
-

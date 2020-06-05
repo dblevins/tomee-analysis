@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/JavaDataType.class
-
- - link:JavaDataType-asmified.java[Asmified]
-
-== References
-

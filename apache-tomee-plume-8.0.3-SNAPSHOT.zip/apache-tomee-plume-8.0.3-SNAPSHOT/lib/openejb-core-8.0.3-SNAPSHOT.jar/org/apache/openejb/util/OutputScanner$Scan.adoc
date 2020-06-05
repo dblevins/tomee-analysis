@@ -1,6 +1,0 @@
-= org/apache/openejb/util/OutputScanner$Scan.class
-
- - link:OutputScanner$Scan-asmified.java[Asmified]
-
-== References
-

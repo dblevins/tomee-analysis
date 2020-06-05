@@ -1,6 +1,0 @@
-= org/apache/activemq/util/ClassLoadingAwareObjectInputStream.class
-
- - link:ClassLoadingAwareObjectInputStream-asmified.java[Asmified]
-
-== References
-

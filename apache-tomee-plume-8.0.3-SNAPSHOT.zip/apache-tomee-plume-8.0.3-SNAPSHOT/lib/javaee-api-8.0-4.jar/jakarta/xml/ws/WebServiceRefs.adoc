@@ -1,6 +1,0 @@
-= jakarta/xml/ws/WebServiceRefs.class
-
- - link:WebServiceRefs-asmified.java[Asmified]
-
-== References
-

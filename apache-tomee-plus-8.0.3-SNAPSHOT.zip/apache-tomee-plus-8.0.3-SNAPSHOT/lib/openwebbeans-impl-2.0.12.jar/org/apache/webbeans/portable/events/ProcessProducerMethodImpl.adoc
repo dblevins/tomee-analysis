@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessProducerMethodImpl.class
-
- - link:ProcessProducerMethodImpl-asmified.java[Asmified]
-
-== References
-

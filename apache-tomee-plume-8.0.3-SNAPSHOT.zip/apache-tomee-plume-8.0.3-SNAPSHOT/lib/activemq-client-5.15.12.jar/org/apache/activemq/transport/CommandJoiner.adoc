@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/CommandJoiner.class
-
- - link:CommandJoiner-asmified.java[Asmified]
-
-== References
-

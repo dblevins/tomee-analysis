@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/scanner/Scanner.class
-
- - link:Scanner-asmified.java[Asmified]
-
-== References
-

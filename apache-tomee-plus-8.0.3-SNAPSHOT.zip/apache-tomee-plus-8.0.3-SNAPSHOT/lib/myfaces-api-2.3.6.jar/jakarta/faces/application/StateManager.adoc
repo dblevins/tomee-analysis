@@ -1,6 +1,0 @@
-= jakarta/faces/application/StateManager.class
-
- - link:StateManager-asmified.java[Asmified]
-
-== References
-

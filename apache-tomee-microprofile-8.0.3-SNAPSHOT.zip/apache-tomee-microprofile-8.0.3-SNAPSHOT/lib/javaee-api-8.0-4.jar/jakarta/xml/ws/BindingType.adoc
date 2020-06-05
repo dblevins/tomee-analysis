@@ -1,6 +1,0 @@
-= jakarta/xml/ws/BindingType.class
-
- - link:BindingType-asmified.java[Asmified]
-
-== References
-

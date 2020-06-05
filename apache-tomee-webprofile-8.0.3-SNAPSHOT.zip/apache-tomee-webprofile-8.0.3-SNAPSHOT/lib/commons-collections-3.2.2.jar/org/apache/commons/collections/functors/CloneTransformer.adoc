@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/CloneTransformer.class
-
- - link:CloneTransformer-asmified.java[Asmified]
-
-== References
-

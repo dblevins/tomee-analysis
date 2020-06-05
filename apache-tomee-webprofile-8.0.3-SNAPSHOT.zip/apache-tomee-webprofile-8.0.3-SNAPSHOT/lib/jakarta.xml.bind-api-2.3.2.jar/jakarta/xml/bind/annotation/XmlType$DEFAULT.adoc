@@ -1,6 +1,0 @@
-= jakarta/xml/bind/annotation/XmlType$DEFAULT.class
-
- - link:XmlType$DEFAULT-asmified.java[Asmified]
-
-== References
-

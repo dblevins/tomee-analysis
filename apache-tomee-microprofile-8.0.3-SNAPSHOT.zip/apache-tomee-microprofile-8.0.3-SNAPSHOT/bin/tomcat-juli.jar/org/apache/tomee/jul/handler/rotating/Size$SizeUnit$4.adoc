@@ -1,6 +1,0 @@
-= org/apache/tomee/jul/handler/rotating/Size$SizeUnit$4.class
-
- - link:Size$SizeUnit$4-asmified.java[Asmified]
-
-== References
-

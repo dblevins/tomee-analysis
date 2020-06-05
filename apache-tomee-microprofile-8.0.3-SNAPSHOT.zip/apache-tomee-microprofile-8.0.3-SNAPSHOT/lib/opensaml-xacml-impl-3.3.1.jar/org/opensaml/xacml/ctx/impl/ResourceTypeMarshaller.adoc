@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ResourceTypeMarshaller.class
-
- - link:ResourceTypeMarshaller-asmified.java[Asmified]
-
-== References
-

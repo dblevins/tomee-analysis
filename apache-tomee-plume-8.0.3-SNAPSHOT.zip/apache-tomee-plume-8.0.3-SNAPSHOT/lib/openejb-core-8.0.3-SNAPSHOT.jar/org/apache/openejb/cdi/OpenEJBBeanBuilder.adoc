@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/OpenEJBBeanBuilder.class
-
- - link:OpenEJBBeanBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/wsdl/extensions/SoapAddress.class
-
- - link:SoapAddress-asmified.java[Asmified]
-
-== References
-

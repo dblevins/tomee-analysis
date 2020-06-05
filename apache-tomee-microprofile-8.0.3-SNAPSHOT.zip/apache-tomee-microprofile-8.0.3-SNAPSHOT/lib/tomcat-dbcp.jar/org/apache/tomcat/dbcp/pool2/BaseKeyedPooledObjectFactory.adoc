@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/BaseKeyedPooledObjectFactory.class
-
- - link:BaseKeyedPooledObjectFactory-asmified.java[Asmified]
-
-== References
-

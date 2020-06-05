@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/server/ConnectionPolicy$ExclusiveMode.class
-
- - link:ConnectionPolicy$ExclusiveMode-asmified.java[Asmified]
-
-== References
-

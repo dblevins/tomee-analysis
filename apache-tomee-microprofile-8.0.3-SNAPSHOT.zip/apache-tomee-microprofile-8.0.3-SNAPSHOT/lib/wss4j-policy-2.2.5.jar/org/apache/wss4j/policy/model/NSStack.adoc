@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/NSStack.class
-
- - link:NSStack-asmified.java[Asmified]
-
-== References
-

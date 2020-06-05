@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/CxfEndpoint$NoInitJaxWsServerFactoryBean.class
-
- - link:CxfEndpoint$NoInitJaxWsServerFactoryBean-asmified.java[Asmified]
-
-== References
-

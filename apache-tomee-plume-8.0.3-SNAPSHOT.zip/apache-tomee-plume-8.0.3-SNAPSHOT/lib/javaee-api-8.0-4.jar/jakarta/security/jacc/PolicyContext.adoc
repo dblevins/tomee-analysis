@@ -1,6 +1,0 @@
-= jakarta/security/jacc/PolicyContext.class
-
- - link:PolicyContext-asmified.java[Asmified]
-
-== References
-

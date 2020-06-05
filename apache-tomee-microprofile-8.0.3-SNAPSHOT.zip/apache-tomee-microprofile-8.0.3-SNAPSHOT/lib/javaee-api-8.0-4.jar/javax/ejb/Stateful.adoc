@@ -1,6 +1,0 @@
-= javax/ejb/Stateful.class
-
- - link:Stateful-asmified.java[Asmified]
-
-== References
-

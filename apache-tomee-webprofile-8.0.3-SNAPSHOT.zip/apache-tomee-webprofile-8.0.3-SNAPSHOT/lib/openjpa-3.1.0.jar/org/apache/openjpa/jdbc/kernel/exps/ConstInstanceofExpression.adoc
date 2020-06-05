@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/ConstInstanceofExpression.class
-
- - link:ConstInstanceofExpression-asmified.java[Asmified]
-
-== References
-

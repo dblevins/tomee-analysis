@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/TreatExpressionBNF.class
-
- - link:TreatExpressionBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/GbeanLocatorType.class
-
- - link:GbeanLocatorType-asmified.java[Asmified]
-
-== References
-

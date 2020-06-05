@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/InferenceContext18$1.class
-
- - link:InferenceContext18$1-asmified.java[Asmified]
-
-== References
-

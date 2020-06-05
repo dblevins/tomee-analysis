@@ -1,6 +1,0 @@
-= jakarta/persistence/Lob.class
-
- - link:Lob-asmified.java[Asmified]
-
-== References
-

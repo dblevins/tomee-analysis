@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/SignatureAlgorithm.class
-
- - link:SignatureAlgorithm-asmified.java[Asmified]
-
-== References
-

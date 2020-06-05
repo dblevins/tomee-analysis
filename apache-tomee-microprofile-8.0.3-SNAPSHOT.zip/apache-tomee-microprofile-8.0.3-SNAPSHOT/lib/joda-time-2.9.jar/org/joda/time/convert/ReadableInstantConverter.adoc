@@ -1,6 +1,0 @@
-= org/joda/time/convert/ReadableInstantConverter.class
-
- - link:ReadableInstantConverter-asmified.java[Asmified]
-
-== References
-

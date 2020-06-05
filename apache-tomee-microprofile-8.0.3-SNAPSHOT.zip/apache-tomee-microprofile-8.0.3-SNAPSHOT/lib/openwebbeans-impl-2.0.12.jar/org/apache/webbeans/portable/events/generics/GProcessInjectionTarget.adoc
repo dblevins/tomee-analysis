@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessInjectionTarget.class
-
- - link:GProcessInjectionTarget-asmified.java[Asmified]
-
-== References
-

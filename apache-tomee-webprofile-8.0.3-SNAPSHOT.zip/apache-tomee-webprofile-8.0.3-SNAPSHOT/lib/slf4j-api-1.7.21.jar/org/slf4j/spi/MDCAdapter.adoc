@@ -1,6 +1,0 @@
-= org/slf4j/spi/MDCAdapter.class
-
- - link:MDCAdapter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/LogFactory.class
-
- - link:LogFactory-asmified.java[Asmified]
-
-== References
-

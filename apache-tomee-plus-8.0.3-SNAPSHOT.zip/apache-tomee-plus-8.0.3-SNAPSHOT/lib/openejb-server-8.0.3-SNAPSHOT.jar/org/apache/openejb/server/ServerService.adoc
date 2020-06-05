@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ServerService.class
-
- - link:ServerService-asmified.java[Asmified]
-
-== References
-

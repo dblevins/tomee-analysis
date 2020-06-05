@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/MessageBytes$1.class
-
- - link:MessageBytes$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonRawValue.class
-
- - link:JsonRawValue-asmified.java[Asmified]
-
-== References
-

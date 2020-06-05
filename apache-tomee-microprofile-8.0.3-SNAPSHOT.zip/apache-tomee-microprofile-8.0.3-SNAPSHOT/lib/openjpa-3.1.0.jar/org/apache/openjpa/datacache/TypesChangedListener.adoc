@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/TypesChangedListener.class
-
- - link:TypesChangedListener-asmified.java[Asmified]
-
-== References
-

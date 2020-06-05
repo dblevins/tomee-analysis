@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AnnotatedFieldImpl.class
-
- - link:AnnotatedFieldImpl-asmified.java[Asmified]
-
-== References
-

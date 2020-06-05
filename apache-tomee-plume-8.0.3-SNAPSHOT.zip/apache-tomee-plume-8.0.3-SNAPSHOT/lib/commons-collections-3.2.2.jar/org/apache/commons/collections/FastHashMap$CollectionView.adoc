@@ -1,6 +1,0 @@
-= org/apache/commons/collections/FastHashMap$CollectionView.class
-
- - link:FastHashMap$CollectionView-asmified.java[Asmified]
-
-== References
-

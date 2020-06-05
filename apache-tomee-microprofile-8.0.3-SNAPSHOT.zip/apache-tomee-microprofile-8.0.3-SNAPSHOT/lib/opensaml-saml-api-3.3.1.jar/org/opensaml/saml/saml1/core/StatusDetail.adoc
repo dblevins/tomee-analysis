@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/StatusDetail.class
-
- - link:StatusDetail-asmified.java[Asmified]
-
-== References
-

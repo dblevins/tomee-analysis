@@ -1,6 +1,0 @@
-= org/apache/catalina/util/DOMWriter.class
-
- - link:DOMWriter-asmified.java[Asmified]
-
-== References
-

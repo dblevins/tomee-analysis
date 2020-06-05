@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/access/FieldAndMethodAccessMode$CompositeReader.class
-
- - link:FieldAndMethodAccessMode$CompositeReader-asmified.java[Asmified]
-
-== References
-

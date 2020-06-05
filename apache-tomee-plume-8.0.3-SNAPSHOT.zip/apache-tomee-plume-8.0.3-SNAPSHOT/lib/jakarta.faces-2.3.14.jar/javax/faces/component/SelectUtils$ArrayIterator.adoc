@@ -1,6 +1,0 @@
-= javax/faces/component/SelectUtils$ArrayIterator.class
-
- - link:SelectUtils$ArrayIterator-asmified.java[Asmified]
-
-== References
-

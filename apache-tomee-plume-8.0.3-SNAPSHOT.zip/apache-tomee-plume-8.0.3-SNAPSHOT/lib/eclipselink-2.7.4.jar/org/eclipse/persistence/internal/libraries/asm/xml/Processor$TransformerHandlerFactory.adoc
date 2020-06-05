@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/Processor$TransformerHandlerFactory.class
-
- - link:Processor$TransformerHandlerFactory-asmified.java[Asmified]
-
-== References
-

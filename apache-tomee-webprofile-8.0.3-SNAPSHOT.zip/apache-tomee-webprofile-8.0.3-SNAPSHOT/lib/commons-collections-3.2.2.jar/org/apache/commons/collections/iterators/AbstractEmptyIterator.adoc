@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/AbstractEmptyIterator.class
-
- - link:AbstractEmptyIterator-asmified.java[Asmified]
-
-== References
-

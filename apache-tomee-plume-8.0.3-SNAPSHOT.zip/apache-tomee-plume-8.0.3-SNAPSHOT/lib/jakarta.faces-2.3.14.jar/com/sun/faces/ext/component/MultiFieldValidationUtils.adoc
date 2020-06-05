@@ -1,6 +1,0 @@
-= com/sun/faces/ext/component/MultiFieldValidationUtils.class
-
- - link:MultiFieldValidationUtils-asmified.java[Asmified]
-
-== References
-

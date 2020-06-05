@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/DatasourceCallQueryMechanism.class
-
- - link:DatasourceCallQueryMechanism-asmified.java[Asmified]
-
-== References
-

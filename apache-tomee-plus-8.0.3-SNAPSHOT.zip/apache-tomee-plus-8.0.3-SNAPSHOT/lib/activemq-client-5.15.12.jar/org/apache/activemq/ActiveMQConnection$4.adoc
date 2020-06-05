@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQConnection$4.class
-
- - link:ActiveMQConnection$4-asmified.java[Asmified]
-
-== References
-

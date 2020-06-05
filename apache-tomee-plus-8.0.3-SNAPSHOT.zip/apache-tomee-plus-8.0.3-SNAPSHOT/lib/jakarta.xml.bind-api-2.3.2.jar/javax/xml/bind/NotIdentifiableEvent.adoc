@@ -1,7 +1,0 @@
-= javax/xml/bind/NotIdentifiableEvent.class
-
- - link:NotIdentifiableEvent-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.ValidationEvent - 1

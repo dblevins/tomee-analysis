@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistenceProductDerivation$ConfigurationProviderImpl.class
-
- - link:PersistenceProductDerivation$ConfigurationProviderImpl-asmified.java[Asmified]
-
-== References
-

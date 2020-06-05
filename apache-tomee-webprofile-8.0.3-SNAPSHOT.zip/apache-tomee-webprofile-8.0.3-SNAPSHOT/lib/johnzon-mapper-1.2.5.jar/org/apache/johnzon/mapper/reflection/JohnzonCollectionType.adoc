@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/reflection/JohnzonCollectionType.class
-
- - link:JohnzonCollectionType-asmified.java[Asmified]
-
-== References
-

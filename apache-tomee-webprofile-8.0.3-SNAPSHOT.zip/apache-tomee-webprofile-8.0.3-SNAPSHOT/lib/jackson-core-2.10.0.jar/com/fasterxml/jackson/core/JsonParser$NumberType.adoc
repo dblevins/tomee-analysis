@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/JsonParser$NumberType.class
-
- - link:JsonParser$NumberType-asmified.java[Asmified]
-
-== References
-

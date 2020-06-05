@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomcatDeploymentLoader.class
-
- - link:TomcatDeploymentLoader-asmified.java[Asmified]
-
-== References
-

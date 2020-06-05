@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$InternalJMSContext.class
-
- - link:JMS2CDIExtension$InternalJMSContext-asmified.java[Asmified]
-
-== References
-

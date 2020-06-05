@@ -1,6 +1,0 @@
-= jakarta/validation/bootstrap/ProviderSpecificBootstrap.class
-
- - link:ProviderSpecificBootstrap-asmified.java[Asmified]
-
-== References
-

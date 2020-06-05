@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/validator/FacesValidatorInfo.class
-
- - link:FacesValidatorInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/ManyToOne.class
-
- - link:ManyToOne-asmified.java[Asmified]
-
-== References
-

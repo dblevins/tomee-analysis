@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/ListAdapter.class
-
- - link:ListAdapter-asmified.java[Asmified]
-
-== References
-

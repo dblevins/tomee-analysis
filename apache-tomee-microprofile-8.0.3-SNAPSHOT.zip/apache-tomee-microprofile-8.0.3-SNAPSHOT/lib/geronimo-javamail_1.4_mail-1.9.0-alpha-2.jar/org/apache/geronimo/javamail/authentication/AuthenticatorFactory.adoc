@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/authentication/AuthenticatorFactory.class
-
- - link:AuthenticatorFactory-asmified.java[Asmified]
-
-== References
-

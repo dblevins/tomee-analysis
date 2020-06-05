@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/commitments/HashCommitter.class
-
- - link:HashCommitter-asmified.java[Asmified]
-
-== References
-

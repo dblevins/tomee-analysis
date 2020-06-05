@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/time/StopWatch$State.class
-
- - link:StopWatch$State-asmified.java[Asmified]
-
-== References
-

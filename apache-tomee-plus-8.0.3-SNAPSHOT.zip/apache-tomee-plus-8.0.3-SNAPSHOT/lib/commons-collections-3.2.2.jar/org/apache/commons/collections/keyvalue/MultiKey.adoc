@@ -1,6 +1,0 @@
-= org/apache/commons/collections/keyvalue/MultiKey.class
-
- - link:MultiKey-asmified.java[Asmified]
-
-== References
-

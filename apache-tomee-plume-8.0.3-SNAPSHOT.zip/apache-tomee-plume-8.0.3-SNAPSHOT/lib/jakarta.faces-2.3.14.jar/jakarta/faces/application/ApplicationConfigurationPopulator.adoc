@@ -1,6 +1,0 @@
-= jakarta/faces/application/ApplicationConfigurationPopulator.class
-
- - link:ApplicationConfigurationPopulator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/saml/xacml/CXFMessageParser.class
-
- - link:CXFMessageParser-asmified.java[Asmified]
-
-== References
-

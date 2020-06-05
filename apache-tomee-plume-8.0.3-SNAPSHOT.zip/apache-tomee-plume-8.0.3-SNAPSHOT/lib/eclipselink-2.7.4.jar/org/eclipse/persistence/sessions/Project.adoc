@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/Project.class
-
- - link:Project-asmified.java[Asmified]
-
-== References
-

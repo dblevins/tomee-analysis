@@ -1,6 +1,0 @@
-= org/apache/webbeans/el/ELContextStore.class
-
- - link:ELContextStore-asmified.java[Asmified]
-
-== References
-

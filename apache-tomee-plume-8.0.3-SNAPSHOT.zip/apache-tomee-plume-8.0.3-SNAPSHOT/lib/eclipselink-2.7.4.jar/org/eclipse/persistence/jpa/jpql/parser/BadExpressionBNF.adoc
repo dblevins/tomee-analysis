@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/BadExpressionBNF.class
-
- - link:BadExpressionBNF-asmified.java[Asmified]
-
-== References
-

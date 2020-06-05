@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/ExternalAnnotationProvider$IMethodAnnotationWalker.class
-
- - link:ExternalAnnotationProvider$IMethodAnnotationWalker-asmified.java[Asmified]
-
-== References
-

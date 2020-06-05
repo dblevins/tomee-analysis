@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/OpenJPAQuerySPI.class
-
- - link:OpenJPAQuerySPI-asmified.java[Asmified]
-
-== References
-

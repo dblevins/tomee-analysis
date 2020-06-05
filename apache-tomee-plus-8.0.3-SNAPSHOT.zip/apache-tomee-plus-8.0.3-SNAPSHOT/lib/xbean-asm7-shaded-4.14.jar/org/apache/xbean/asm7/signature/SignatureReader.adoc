@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/signature/SignatureReader.class
-
- - link:SignatureReader-asmified.java[Asmified]
-
-== References
-

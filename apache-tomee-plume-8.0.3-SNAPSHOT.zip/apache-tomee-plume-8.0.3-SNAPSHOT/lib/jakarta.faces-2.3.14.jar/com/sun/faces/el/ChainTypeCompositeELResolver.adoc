@@ -1,6 +1,0 @@
-= com/sun/faces/el/ChainTypeCompositeELResolver.class
-
- - link:ChainTypeCompositeELResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/transaction/sunas/SunAS9TransactionController.class
-
- - link:SunAS9TransactionController-asmified.java[Asmified]
-
-== References
-

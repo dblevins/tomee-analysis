@@ -1,6 +1,0 @@
-= org/apache/webbeans/event/EventUtil.class
-
- - link:EventUtil-asmified.java[Asmified]
-
-== References
-

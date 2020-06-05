@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/ExpressionVisitor.class
-
- - link:ExpressionVisitor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/BasicSignatureValidationConfiguration.class
-
- - link:BasicSignatureValidationConfiguration-asmified.java[Asmified]
-
-== References
-

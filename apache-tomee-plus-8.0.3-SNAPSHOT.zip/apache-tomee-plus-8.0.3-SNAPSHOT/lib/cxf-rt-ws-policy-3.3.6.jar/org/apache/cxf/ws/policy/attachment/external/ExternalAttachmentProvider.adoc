@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/attachment/external/ExternalAttachmentProvider.class
-
- - link:ExternalAttachmentProvider-asmified.java[Asmified]
-
-== References
-

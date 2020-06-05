@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/State.class
-
- - link:State-asmified.java[Asmified]
-
-== References
-

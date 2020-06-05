@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/schema/SchemaReferenceImpl.class
-
- - link:SchemaReferenceImpl-asmified.java[Asmified]
-
-== References
-

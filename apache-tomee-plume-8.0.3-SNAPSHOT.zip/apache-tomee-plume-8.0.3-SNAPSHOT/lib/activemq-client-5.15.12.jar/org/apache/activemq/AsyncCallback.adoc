@@ -1,6 +1,0 @@
-= org/apache/activemq/AsyncCallback.class
-
- - link:AsyncCallback-asmified.java[Asmified]
-
-== References
-

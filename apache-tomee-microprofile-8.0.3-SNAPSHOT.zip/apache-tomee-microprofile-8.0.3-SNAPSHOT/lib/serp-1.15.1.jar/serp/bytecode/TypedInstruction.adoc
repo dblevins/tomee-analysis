@@ -1,6 +1,0 @@
-= serp/bytecode/TypedInstruction.class
-
- - link:TypedInstruction-asmified.java[Asmified]
-
-== References
-

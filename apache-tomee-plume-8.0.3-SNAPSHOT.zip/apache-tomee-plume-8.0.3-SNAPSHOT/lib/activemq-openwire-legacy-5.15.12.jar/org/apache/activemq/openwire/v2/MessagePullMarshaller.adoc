@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v2/MessagePullMarshaller.class
-
- - link:MessagePullMarshaller-asmified.java[Asmified]
-
-== References
-

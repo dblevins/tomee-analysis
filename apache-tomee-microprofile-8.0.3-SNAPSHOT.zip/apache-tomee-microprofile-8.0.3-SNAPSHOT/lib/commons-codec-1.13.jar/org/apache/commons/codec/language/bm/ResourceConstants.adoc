@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/bm/ResourceConstants.class
-
- - link:ResourceConstants-asmified.java[Asmified]
-
-== References
-

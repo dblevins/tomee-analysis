@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/scheduler/JobSchedulerKahaDBMetaData.class
-
- - link:JobSchedulerKahaDBMetaData-asmified.java[Asmified]
-
-== References
-

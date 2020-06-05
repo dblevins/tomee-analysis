@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/HostRuleSet.class
-
- - link:HostRuleSet-asmified.java[Asmified]
-
-== References
-

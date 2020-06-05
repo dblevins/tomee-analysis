@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonTypeInfo$As.class
-
- - link:JsonTypeInfo$As-asmified.java[Asmified]
-
-== References
-

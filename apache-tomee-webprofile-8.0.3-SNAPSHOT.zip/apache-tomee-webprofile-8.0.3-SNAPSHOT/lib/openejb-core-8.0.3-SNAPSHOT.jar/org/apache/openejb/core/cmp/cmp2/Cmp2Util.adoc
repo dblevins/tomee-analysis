@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/cmp2/Cmp2Util.class
-
- - link:Cmp2Util-asmified.java[Asmified]
-
-== References
-

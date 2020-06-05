@@ -1,6 +1,0 @@
-= org/apache/xml/security/c14n/InvalidCanonicalizerException.class
-
- - link:InvalidCanonicalizerException-asmified.java[Asmified]
-
-== References
-

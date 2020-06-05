@@ -1,7 +1,0 @@
-= javax/ws/rs/HEAD.class
-
- - link:HEAD-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.HttpMethod - 1

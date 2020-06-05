@@ -1,6 +1,0 @@
-= com/sun/faces/ext/render/FocusHTMLRenderer.class
-
- - link:FocusHTMLRenderer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/UILeaf.class
-
- - link:UILeaf-asmified.java[Asmified]
-
-== References
-

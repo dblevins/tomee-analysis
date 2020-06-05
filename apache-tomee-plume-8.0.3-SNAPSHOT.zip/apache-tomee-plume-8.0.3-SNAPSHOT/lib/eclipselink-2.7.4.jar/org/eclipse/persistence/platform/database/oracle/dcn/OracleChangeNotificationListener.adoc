@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/oracle/dcn/OracleChangeNotificationListener.class
-
- - link:OracleChangeNotificationListener-asmified.java[Asmified]
-
-== References
-

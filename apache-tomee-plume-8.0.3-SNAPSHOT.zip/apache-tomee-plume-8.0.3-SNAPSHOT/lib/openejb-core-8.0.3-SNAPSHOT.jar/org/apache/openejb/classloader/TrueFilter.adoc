@@ -1,6 +1,0 @@
-= org/apache/openejb/classloader/TrueFilter.class
-
- - link:TrueFilter-asmified.java[Asmified]
-
-== References
-

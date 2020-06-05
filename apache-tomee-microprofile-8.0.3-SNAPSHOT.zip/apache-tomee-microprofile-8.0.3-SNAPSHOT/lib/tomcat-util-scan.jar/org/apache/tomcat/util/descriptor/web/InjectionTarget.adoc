@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/InjectionTarget.class
-
- - link:InjectionTarget-asmified.java[Asmified]
-
-== References
-

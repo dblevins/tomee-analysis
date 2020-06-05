@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/MgmtDataBuilder.class
-
- - link:MgmtDataBuilder-asmified.java[Asmified]
-
-== References
-

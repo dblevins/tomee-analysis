@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v11/ConnectionIdMarshaller.class
-
- - link:ConnectionIdMarshaller-asmified.java[Asmified]
-
-== References
-

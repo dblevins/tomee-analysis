@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/DefaultValidationProviderResolver.class
-
- - link:DefaultValidationProviderResolver-asmified.java[Asmified]
-
-== References
-

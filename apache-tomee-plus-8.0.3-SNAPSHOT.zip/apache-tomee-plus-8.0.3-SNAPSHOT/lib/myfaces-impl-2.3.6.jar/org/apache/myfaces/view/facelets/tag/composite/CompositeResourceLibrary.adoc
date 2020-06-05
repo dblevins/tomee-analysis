@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeResourceLibrary.class
-
- - link:CompositeResourceLibrary-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/asymmetric/ec/BCECPrivateKey.class
-
- - link:BCECPrivateKey-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/interceptor/MustUnderstandInterceptor.class
-
- - link:MustUnderstandInterceptor-asmified.java[Asmified]
-
-== References
-

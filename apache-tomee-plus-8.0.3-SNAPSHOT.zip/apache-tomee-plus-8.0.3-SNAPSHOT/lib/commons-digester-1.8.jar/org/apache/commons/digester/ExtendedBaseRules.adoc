@@ -1,6 +1,0 @@
-= org/apache/commons/digester/ExtendedBaseRules.class
-
- - link:ExtendedBaseRules-asmified.java[Asmified]
-
-== References
-

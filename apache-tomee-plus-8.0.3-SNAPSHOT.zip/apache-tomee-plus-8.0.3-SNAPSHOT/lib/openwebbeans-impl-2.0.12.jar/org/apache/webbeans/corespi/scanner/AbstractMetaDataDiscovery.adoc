@@ -1,6 +1,0 @@
-= org/apache/webbeans/corespi/scanner/AbstractMetaDataDiscovery.class
-
- - link:AbstractMetaDataDiscovery-asmified.java[Asmified]
-
-== References
-

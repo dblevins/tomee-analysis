@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/SQLEmbed.class
-
- - link:SQLEmbed-asmified.java[Asmified]
-
-== References
-

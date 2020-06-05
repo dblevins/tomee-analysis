@@ -1,6 +1,0 @@
-= org/apache/activemq/security/AuthorizationPlugin.class
-
- - link:AuthorizationPlugin-asmified.java[Asmified]
-
-== References
-

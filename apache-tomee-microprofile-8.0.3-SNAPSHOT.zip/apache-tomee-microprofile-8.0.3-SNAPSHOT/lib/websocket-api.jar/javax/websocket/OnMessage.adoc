@@ -1,6 +1,0 @@
-= javax/websocket/OnMessage.class
-
- - link:OnMessage-asmified.java[Asmified]
-
-== References
-

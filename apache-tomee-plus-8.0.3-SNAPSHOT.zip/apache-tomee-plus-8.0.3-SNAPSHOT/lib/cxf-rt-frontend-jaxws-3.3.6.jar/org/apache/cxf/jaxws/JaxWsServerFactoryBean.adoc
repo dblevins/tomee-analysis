@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/JaxWsServerFactoryBean.class
-
- - link:JaxWsServerFactoryBean-asmified.java[Asmified]
-
-== References
-

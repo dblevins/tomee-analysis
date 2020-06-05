@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/NOPClosure.class
-
- - link:NOPClosure-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlTextareaRendererBase.class
-
- - link:HtmlTextareaRendererBase-asmified.java[Asmified]
-
-== References
-

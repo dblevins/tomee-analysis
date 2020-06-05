@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/ISourceImport.class
-
- - link:ISourceImport-asmified.java[Asmified]
-
-== References
-

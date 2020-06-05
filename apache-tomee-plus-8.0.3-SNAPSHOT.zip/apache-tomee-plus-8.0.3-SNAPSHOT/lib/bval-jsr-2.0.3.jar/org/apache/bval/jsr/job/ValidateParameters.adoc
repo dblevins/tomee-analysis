@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidateParameters.class
-
- - link:ValidateParameters-asmified.java[Asmified]
-
-== References
-

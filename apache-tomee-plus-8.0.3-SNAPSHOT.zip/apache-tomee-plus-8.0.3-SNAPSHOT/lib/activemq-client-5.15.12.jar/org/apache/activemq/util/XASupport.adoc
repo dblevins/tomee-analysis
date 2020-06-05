@@ -1,6 +1,0 @@
-= org/apache/activemq/util/XASupport.class
-
- - link:XASupport-asmified.java[Asmified]
-
-== References
-

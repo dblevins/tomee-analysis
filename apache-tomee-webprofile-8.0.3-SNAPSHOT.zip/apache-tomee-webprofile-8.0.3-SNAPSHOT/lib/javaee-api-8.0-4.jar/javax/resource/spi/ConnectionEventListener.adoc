@@ -1,7 +1,0 @@
-= javax/resource/spi/ConnectionEventListener.class
-
- - link:ConnectionEventListener-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.ConnectionEvent - 5

@@ -1,6 +1,0 @@
-= org/apache/openejb/api/jmx/ManagedOperation.class
-
- - link:ManagedOperation-asmified.java[Asmified]
-
-== References
-

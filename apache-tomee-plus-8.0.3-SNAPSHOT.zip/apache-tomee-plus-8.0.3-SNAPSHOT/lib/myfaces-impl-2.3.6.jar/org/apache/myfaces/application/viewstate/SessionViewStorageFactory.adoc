@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/viewstate/SessionViewStorageFactory.class
-
- - link:SessionViewStorageFactory-asmified.java[Asmified]
-
-== References
-

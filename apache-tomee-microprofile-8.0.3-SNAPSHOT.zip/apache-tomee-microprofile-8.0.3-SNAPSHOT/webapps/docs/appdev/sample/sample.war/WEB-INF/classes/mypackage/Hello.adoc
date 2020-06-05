@@ -1,6 +1,0 @@
-= WEB-INF/classes/mypackage/Hello.class
-
- - link:Hello-asmified.java[Asmified]
-
-== References
-

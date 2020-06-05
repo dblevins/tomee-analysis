@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/jdbc/DelegatingResultSet.class
-
- - link:DelegatingResultSet-asmified.java[Asmified]
-
-== References
-

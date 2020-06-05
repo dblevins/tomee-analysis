@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor$1.class
-
- - link:AbstractJPATypedQueryVisitor$1-asmified.java[Asmified]
-
-== References
-

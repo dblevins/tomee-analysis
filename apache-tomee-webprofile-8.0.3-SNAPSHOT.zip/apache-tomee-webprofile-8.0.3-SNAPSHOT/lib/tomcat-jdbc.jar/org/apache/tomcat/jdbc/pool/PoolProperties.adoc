@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/PoolProperties.class
-
- - link:PoolProperties-asmified.java[Asmified]
-
-== References
-

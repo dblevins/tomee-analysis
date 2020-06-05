@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/ObjectPersistenceRuntimeXMLProject_11_1_1$ObjectRelationalDatabaseFieldInstantiationPolicy.class
-
- - link:ObjectPersistenceRuntimeXMLProject_11_1_1$ObjectRelationalDatabaseFieldInstantiationPolicy-asmified.java[Asmified]
-
-== References
-

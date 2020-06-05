@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/AbortSlowConsumerStrategy$2.class
-
- - link:AbortSlowConsumerStrategy$2-asmified.java[Asmified]
-
-== References
-

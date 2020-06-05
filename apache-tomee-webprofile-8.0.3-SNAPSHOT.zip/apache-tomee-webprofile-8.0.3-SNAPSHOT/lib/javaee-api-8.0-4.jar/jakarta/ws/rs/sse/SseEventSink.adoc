@@ -1,6 +1,0 @@
-= jakarta/ws/rs/sse/SseEventSink.class
-
- - link:SseEventSink-asmified.java[Asmified]
-
-== References
-

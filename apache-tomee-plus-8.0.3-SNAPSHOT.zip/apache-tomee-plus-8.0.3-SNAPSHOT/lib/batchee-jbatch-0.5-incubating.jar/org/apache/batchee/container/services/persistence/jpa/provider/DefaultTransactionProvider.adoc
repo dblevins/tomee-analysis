@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/jpa/provider/DefaultTransactionProvider.class
-
- - link:DefaultTransactionProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/ActionMatchType.class
-
- - link:ActionMatchType-asmified.java[Asmified]
-
-== References
-

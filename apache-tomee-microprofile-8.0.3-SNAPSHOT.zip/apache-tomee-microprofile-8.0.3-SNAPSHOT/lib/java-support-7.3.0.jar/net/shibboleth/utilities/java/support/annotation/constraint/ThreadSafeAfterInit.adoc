@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/annotation/constraint/ThreadSafeAfterInit.class
-
- - link:ThreadSafeAfterInit-asmified.java[Asmified]
-
-== References
-

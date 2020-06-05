@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/StandardJAXBObjects$ShortJAXB.class
-
- - link:StandardJAXBObjects$ShortJAXB-asmified.java[Asmified]
-
-== References
-

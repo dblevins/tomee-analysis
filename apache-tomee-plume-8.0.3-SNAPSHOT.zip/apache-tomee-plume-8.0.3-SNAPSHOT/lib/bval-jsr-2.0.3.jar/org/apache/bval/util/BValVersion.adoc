@@ -1,6 +1,0 @@
-= org/apache/bval/util/BValVersion.class
-
- - link:BValVersion-asmified.java[Asmified]
-
-== References
-

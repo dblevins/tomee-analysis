@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/NoneJwsSignatureVerifier.class
-
- - link:NoneJwsSignatureVerifier-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/NonUniqueResultException.class
-
- - link:NonUniqueResultException-asmified.java[Asmified]
-
-== References
-

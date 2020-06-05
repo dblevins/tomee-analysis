@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/filter/impl/SignatureValidationFilter.class
-
- - link:SignatureValidationFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/viewstate/token/ServiceSideStateTokenProcessor.class
-
- - link:ServiceSideStateTokenProcessor-asmified.java[Asmified]
-
-== References
-

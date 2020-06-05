@@ -1,7 +1,0 @@
-= javax/faces/view/AttachedObjectTarget.class
-
- - link:AttachedObjectTarget-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.UIComponent - 2

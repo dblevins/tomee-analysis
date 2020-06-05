@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/LambdaExpression$1NotPertientToApplicability.class
-
- - link:LambdaExpression$1NotPertientToApplicability-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/platform/Oc4jPlatformConfig.class
-
- - link:Oc4jPlatformConfig-asmified.java[Asmified]
-
-== References
-

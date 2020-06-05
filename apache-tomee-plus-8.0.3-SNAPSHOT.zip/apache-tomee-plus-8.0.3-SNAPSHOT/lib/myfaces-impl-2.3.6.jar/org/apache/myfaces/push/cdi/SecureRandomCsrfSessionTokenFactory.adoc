@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/SecureRandomCsrfSessionTokenFactory.class
-
- - link:SecureRandomCsrfSessionTokenFactory-asmified.java[Asmified]
-
-== References
-

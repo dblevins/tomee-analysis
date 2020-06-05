@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/LightweightWebAppBuilderListenerExtractor.class
-
- - link:LightweightWebAppBuilderListenerExtractor-asmified.java[Asmified]
-
-== References
-

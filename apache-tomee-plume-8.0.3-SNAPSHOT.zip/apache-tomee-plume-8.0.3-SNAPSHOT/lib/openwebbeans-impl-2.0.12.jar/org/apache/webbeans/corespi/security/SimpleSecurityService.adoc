@@ -1,6 +1,0 @@
-= org/apache/webbeans/corespi/security/SimpleSecurityService.class
-
- - link:SimpleSecurityService-asmified.java[Asmified]
-
-== References
-

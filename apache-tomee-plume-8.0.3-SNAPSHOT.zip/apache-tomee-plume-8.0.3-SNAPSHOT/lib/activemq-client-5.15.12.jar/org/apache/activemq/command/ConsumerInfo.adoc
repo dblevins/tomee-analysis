@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ConsumerInfo.class
-
- - link:ConsumerInfo-asmified.java[Asmified]
-
-== References
-

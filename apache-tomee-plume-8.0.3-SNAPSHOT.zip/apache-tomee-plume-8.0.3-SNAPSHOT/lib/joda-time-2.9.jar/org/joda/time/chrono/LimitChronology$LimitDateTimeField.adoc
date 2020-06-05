@@ -1,6 +1,0 @@
-= org/joda/time/chrono/LimitChronology$LimitDateTimeField.class
-
- - link:LimitChronology$LimitDateTimeField-asmified.java[Asmified]
-
-== References
-

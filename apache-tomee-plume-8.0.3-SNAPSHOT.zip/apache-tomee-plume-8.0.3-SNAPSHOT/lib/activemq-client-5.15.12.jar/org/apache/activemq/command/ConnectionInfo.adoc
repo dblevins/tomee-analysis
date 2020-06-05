@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ConnectionInfo.class
-
- - link:ConnectionInfo-asmified.java[Asmified]
-
-== References
-

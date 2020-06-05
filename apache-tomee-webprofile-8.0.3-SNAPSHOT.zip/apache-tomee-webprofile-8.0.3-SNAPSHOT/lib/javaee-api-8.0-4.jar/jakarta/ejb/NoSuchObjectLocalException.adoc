@@ -1,6 +1,0 @@
-= jakarta/ejb/NoSuchObjectLocalException.class
-
- - link:NoSuchObjectLocalException-asmified.java[Asmified]
-
-== References
-

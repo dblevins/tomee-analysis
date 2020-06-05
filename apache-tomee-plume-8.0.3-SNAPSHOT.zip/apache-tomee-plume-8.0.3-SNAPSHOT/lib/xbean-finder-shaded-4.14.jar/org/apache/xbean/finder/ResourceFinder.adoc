@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/ResourceFinder.class
-
- - link:ResourceFinder-asmified.java[Asmified]
-
-== References
-

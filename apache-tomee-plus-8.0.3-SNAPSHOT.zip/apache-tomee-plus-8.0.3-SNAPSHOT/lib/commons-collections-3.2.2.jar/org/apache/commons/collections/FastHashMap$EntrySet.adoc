@@ -1,6 +1,0 @@
-= org/apache/commons/collections/FastHashMap$EntrySet.class
-
- - link:FastHashMap$EntrySet-asmified.java[Asmified]
-
-== References
-

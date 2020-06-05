@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/task/TriggerTask$1.class
-
- - link:TriggerTask$1-asmified.java[Asmified]
-
-== References
-

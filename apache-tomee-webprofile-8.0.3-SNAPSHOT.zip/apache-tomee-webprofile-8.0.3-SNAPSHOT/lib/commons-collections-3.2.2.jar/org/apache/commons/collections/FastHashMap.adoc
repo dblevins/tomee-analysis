@@ -1,6 +1,0 @@
-= org/apache/commons/collections/FastHashMap.class
-
- - link:FastHashMap-asmified.java[Asmified]
-
-== References
-

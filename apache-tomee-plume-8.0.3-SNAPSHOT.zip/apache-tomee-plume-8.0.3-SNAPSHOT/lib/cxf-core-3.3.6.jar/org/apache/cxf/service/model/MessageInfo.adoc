@@ -1,6 +1,0 @@
-= org/apache/cxf/service/model/MessageInfo.class
-
- - link:MessageInfo-asmified.java[Asmified]
-
-== References
-

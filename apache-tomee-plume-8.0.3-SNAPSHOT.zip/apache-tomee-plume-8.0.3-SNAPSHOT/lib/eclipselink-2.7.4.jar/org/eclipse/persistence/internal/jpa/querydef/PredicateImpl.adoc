@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/PredicateImpl.class
-
- - link:PredicateImpl-asmified.java[Asmified]
-
-== References
-

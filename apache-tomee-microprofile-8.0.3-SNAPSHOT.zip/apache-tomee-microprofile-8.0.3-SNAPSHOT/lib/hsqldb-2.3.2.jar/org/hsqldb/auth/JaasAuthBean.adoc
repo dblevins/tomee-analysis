@@ -1,6 +1,0 @@
-= org/hsqldb/auth/JaasAuthBean.class
-
- - link:JaasAuthBean-asmified.java[Asmified]
-
-== References
-

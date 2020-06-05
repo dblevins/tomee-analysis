@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/LocalAndXATransaction.class
-
- - link:LocalAndXATransaction-asmified.java[Asmified]
-
-== References
-

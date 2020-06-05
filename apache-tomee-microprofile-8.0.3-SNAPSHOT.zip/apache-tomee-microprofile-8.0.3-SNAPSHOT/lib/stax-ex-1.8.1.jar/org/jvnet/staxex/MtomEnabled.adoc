@@ -1,6 +1,0 @@
-= org/jvnet/staxex/MtomEnabled.class
-
- - link:MtomEnabled-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/xml/registry/DeclarativeQueryManager.class
-
- - link:DeclarativeQueryManager-asmified.java[Asmified]
-
-== References
-

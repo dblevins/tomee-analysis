@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/JspDocumentParser.class
-
- - link:JspDocumentParser-asmified.java[Asmified]
-
-== References
-

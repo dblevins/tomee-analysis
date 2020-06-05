@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/AbstractObjectLevelReadQueryVisitor$JoinVisitor.class
-
- - link:AbstractObjectLevelReadQueryVisitor$JoinVisitor-asmified.java[Asmified]
-
-== References
-

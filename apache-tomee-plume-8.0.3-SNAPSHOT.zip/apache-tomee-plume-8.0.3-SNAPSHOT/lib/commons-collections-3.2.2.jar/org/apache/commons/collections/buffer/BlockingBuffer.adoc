@@ -1,6 +1,0 @@
-= org/apache/commons/collections/buffer/BlockingBuffer.class
-
- - link:BlockingBuffer-asmified.java[Asmified]
-
-== References
-

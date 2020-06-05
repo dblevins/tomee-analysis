@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/JCSCachingManager.class
-
- - link:JCSCachingManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/XmlBuilder.class
-
- - link:XmlBuilder-asmified.java[Asmified]
-
-== References
-

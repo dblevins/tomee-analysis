@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/xml/ParseSupport.class
-
- - link:ParseSupport-asmified.java[Asmified]
-
-== References
-

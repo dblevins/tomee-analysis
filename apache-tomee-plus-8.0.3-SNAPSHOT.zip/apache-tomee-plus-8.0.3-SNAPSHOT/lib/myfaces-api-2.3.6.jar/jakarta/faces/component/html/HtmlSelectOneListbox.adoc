@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlSelectOneListbox.class
-
- - link:HtmlSelectOneListbox-asmified.java[Asmified]
-
-== References
-

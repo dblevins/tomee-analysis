@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/jstl/tlv/ScriptFreeTLV.class
-
- - link:ScriptFreeTLV-asmified.java[Asmified]
-
-== References
-

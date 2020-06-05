@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/util/TimeStampingBrokerPlugin.class
-
- - link:TimeStampingBrokerPlugin-asmified.java[Asmified]
-
-== References
-

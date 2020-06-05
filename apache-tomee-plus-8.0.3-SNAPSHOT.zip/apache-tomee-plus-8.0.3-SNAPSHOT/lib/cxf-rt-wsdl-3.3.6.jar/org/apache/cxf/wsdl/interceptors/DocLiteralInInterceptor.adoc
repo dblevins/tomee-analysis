@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/interceptors/DocLiteralInInterceptor.class
-
- - link:DocLiteralInInterceptor-asmified.java[Asmified]
-
-== References
-

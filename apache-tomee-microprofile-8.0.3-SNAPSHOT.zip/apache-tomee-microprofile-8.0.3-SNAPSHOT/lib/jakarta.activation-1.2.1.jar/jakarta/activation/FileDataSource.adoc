@@ -1,6 +1,0 @@
-= jakarta/activation/FileDataSource.class
-
- - link:FileDataSource-asmified.java[Asmified]
-
-== References
-

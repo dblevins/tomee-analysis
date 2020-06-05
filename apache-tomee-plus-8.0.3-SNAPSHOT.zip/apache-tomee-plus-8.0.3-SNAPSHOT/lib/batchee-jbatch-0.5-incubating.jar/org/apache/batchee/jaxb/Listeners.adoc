@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Listeners.class
-
- - link:Listeners-asmified.java[Asmified]
-
-== References
-

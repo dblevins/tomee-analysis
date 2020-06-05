@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/ThreadLocalProtocolHeaders.class
-
- - link:ThreadLocalProtocolHeaders-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/AssertionIDReference.class
-
- - link:AssertionIDReference-asmified.java[Asmified]
-
-== References
-

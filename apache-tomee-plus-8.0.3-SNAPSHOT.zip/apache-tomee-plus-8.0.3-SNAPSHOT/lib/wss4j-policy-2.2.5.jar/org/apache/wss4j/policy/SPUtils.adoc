@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/SPUtils.class
-
- - link:SPUtils-asmified.java[Asmified]
-
-== References
-

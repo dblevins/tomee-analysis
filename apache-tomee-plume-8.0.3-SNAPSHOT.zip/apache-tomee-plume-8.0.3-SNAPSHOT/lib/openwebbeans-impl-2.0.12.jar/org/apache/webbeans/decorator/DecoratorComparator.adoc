@@ -1,6 +1,0 @@
-= org/apache/webbeans/decorator/DecoratorComparator.class
-
- - link:DecoratorComparator-asmified.java[Asmified]
-
-== References
-

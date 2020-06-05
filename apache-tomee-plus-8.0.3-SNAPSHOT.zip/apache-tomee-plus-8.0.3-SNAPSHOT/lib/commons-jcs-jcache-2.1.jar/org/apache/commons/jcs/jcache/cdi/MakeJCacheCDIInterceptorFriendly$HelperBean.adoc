@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean.class
-
- - link:MakeJCacheCDIInterceptorFriendly$HelperBean-asmified.java[Asmified]
-
-== References
-

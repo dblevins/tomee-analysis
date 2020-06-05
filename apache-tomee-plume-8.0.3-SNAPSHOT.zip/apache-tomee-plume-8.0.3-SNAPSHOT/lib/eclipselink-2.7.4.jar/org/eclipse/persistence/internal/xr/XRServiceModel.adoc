@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRServiceModel.class
-
- - link:XRServiceModel-asmified.java[Asmified]
-
-== References
-

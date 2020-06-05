@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jstl/core/ChooseHandler.class
-
- - link:ChooseHandler-asmified.java[Asmified]
-
-== References
-

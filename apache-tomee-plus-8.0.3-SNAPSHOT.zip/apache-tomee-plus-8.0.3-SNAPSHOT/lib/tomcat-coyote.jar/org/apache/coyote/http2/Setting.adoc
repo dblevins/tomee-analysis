@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/Setting.class
-
- - link:Setting-asmified.java[Asmified]
-
-== References
-

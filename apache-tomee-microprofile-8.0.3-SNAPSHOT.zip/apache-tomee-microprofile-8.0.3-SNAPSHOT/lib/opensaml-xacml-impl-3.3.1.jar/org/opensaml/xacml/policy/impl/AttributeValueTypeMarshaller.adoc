@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/AttributeValueTypeMarshaller.class
-
- - link:AttributeValueTypeMarshaller-asmified.java[Asmified]
-
-== References
-

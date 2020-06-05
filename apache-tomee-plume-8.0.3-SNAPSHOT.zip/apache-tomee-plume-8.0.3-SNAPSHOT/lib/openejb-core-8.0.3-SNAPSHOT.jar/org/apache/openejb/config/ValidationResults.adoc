@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ValidationResults.class
-
- - link:ValidationResults-asmified.java[Asmified]
-
-== References
-

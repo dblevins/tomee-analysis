@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/SmallPrefixedNameSet.class
-
- - link:SmallPrefixedNameSet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlImageRendererBase.class
-
- - link:HtmlImageRendererBase-asmified.java[Asmified]
-
-== References
-

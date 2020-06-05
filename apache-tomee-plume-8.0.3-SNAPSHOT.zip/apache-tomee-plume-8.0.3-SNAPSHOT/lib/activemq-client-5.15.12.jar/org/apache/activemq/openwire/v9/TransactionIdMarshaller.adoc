@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v9/TransactionIdMarshaller.class
-
- - link:TransactionIdMarshaller-asmified.java[Asmified]
-
-== References
-

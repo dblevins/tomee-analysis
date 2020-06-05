@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/OpenEJBLifecycle$HttpServletRequestBean.class
-
- - link:OpenEJBLifecycle$HttpServletRequestBean-asmified.java[Asmified]
-
-== References
-

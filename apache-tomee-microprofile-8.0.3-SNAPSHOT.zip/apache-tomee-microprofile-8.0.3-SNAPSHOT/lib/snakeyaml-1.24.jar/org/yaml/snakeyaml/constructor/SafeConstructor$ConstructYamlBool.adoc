@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlBool.class
-
- - link:SafeConstructor$ConstructYamlBool-asmified.java[Asmified]
-
-== References
-

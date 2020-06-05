@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/FairShareRequestClass.class
-
- - link:FairShareRequestClass-asmified.java[Asmified]
-
-== References
-

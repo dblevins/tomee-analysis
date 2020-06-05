@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/factories/SessionFactory.class
-
- - link:SessionFactory-asmified.java[Asmified]
-
-== References
-

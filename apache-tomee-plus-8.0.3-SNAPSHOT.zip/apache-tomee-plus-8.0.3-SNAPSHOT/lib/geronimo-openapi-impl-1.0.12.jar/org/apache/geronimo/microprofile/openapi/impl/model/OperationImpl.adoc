@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/OperationImpl.class
-
- - link:OperationImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/DataSender.class
-
- - link:DataSender-asmified.java[Asmified]
-
-== References
-

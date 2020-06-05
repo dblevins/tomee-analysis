@@ -1,6 +1,0 @@
-= jakarta/enterprise/concurrent/ManagedExecutors.class
-
- - link:ManagedExecutors-asmified.java[Asmified]
-
-== References
-

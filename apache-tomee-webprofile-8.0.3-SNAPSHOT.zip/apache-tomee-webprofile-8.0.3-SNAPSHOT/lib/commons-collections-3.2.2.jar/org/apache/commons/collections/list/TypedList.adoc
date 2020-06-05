@@ -1,6 +1,0 @@
-= org/apache/commons/collections/list/TypedList.class
-
- - link:TypedList-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/XMLSecurityHeaderHandler.class
-
- - link:XMLSecurityHeaderHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/JoinFetchType.class
-
- - link:JoinFetchType-asmified.java[Asmified]
-
-== References
-

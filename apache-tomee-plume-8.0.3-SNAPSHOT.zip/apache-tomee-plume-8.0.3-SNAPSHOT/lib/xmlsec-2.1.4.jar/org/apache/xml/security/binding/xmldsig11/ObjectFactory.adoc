@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

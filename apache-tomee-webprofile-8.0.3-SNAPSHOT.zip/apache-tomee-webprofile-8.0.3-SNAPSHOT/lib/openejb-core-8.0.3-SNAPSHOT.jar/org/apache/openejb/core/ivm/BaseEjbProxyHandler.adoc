@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/BaseEjbProxyHandler.class
-
- - link:BaseEjbProxyHandler-asmified.java[Asmified]
-
-== References
-

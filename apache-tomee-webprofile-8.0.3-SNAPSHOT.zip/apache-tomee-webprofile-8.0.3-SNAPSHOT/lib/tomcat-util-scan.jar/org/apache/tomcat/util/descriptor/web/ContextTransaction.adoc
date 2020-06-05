@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/ContextTransaction.class
-
- - link:ContextTransaction-asmified.java[Asmified]
-
-== References
-

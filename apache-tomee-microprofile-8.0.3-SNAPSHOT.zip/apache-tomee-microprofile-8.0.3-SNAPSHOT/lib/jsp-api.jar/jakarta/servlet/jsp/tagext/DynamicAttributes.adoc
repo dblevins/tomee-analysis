@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/tagext/DynamicAttributes.class
-
- - link:DynamicAttributes-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Pool$Discard.class
-
- - link:Pool$Discard-asmified.java[Asmified]
-
-== References
-

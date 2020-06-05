@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/filter/impl/EntityRoleFilter.class
-
- - link:EntityRoleFilter-asmified.java[Asmified]
-
-== References
-

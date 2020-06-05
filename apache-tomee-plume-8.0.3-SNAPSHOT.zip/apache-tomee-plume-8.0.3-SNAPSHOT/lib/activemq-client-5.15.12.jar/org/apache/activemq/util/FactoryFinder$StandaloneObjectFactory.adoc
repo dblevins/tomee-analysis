@@ -1,6 +1,0 @@
-= org/apache/activemq/util/FactoryFinder$StandaloneObjectFactory.class
-
- - link:FactoryFinder$StandaloneObjectFactory-asmified.java[Asmified]
-
-== References
-

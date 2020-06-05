@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/AbstractModifyAllQueryBuilder.class
-
- - link:AbstractModifyAllQueryBuilder-asmified.java[Asmified]
-
-== References
-

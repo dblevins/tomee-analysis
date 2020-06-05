@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/KeepAliveServer$KeepAliveTimer.class
-
- - link:KeepAliveServer$KeepAliveTimer-asmified.java[Asmified]
-
-== References
-

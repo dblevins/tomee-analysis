@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/impl/AnnotatedFlowConfigurator.class
-
- - link:AnnotatedFlowConfigurator-asmified.java[Asmified]
-
-== References
-

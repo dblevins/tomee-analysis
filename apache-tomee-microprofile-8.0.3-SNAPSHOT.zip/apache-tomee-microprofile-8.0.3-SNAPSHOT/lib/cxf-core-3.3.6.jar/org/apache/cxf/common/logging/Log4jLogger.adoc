@@ -1,6 +1,0 @@
-= org/apache/cxf/common/logging/Log4jLogger.class
-
- - link:Log4jLogger-asmified.java[Asmified]
-
-== References
-

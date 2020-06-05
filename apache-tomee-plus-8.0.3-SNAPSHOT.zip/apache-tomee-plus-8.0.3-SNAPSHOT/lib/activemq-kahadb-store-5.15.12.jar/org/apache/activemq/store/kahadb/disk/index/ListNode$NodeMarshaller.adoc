@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/ListNode$NodeMarshaller.class
-
- - link:ListNode$NodeMarshaller-asmified.java[Asmified]
-
-== References
-

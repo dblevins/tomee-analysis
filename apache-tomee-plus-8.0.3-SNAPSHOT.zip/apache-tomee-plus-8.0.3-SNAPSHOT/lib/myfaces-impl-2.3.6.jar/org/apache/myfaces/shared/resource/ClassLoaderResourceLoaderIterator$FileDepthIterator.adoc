@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$FileDepthIterator.class
-
- - link:ClassLoaderResourceLoaderIterator$FileDepthIterator-asmified.java[Asmified]
-
-== References
-

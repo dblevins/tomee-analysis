@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/PrimaryKeyJoinColumn.class
-
- - link:PrimaryKeyJoinColumn-asmified.java[Asmified]
-
-== References
-

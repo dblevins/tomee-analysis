@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/xmi/PackageReference.class
-
- - link:PackageReference-asmified.java[Asmified]
-
-== References
-

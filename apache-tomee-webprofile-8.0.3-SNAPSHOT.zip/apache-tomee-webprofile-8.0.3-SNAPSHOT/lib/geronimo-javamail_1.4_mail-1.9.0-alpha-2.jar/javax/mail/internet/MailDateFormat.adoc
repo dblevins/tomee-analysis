@@ -1,8 +1,0 @@
-= javax/mail/internet/MailDateFormat.class
-
- - link:MailDateFormat-asmified.java[Asmified]
-
-== References
-
- - javax.mail.internet.MailDateFormat$MailDateParser - 3
- - javax.mail.internet.MailDateFormat - 2

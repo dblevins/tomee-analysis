@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/fmt/SetTimeZoneTag.class
-
- - link:SetTimeZoneTag-asmified.java[Asmified]
-
-== References
-

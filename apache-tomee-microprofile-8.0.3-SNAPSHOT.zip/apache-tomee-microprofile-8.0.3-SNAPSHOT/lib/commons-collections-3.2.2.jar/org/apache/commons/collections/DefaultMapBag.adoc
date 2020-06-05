@@ -1,6 +1,0 @@
-= org/apache/commons/collections/DefaultMapBag.class
-
- - link:DefaultMapBag-asmified.java[Asmified]
-
-== References
-

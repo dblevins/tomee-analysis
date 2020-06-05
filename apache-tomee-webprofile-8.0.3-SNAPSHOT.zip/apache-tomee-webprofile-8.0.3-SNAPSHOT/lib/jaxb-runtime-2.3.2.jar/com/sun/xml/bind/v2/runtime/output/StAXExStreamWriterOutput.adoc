@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/output/StAXExStreamWriterOutput.class
-
- - link:StAXExStreamWriterOutput-asmified.java[Asmified]
-
-== References
-

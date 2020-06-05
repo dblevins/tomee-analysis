@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/LocalXAResourceInsertionInterceptor.class
-
- - link:LocalXAResourceInsertionInterceptor-asmified.java[Asmified]
-
-== References
-

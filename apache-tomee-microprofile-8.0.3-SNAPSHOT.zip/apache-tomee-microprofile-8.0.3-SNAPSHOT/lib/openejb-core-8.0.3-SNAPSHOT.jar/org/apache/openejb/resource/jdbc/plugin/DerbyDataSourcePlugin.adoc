@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/plugin/DerbyDataSourcePlugin.class
-
- - link:DerbyDataSourcePlugin-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx.class
-
- - link:SaajStaxWriterEx-asmified.java[Asmified]
-
-== References
-

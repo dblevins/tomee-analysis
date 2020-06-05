@@ -1,6 +1,0 @@
-= org/apache/openejb/monitoring/Managed.class
-
- - link:Managed-asmified.java[Asmified]
-
-== References
-

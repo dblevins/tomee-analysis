@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/AnnotatedField.class
-
- - link:AnnotatedField-asmified.java[Asmified]
-
-== References
-

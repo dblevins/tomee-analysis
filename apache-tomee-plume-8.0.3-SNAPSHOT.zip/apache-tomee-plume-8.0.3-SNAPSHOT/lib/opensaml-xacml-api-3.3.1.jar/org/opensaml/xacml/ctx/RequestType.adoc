@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/RequestType.class
-
- - link:RequestType-asmified.java[Asmified]
-
-== References
-

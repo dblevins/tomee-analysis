@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/str/STRParserUtil.class
-
- - link:STRParserUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/StaticBucketMap$Lock.class
-
- - link:StaticBucketMap$Lock-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/VariantListBuilderImpl.class
-
- - link:VariantListBuilderImpl-asmified.java[Asmified]
-
-== References
-

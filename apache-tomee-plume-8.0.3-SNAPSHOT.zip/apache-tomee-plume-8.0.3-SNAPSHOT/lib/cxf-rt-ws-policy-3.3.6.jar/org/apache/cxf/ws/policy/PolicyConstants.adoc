@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/PolicyConstants.class
-
- - link:PolicyConstants-asmified.java[Asmified]
-
-== References
-

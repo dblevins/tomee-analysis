@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/component/UnmodifiableComponentException.class
-
- - link:UnmodifiableComponentException-asmified.java[Asmified]
-
-== References
-

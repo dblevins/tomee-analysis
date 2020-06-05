@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIViewRoot$ViewScope.class
-
- - link:UIViewRoot$ViewScope-asmified.java[Asmified]
-
-== References
-

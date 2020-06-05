@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/Scanner$VanguardParser.class
-
- - link:Scanner$VanguardParser-asmified.java[Asmified]
-
-== References
-

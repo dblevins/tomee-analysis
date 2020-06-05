@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/cdi/RestClientBean.class
-
- - link:RestClientBean-asmified.java[Asmified]
-
-== References
-

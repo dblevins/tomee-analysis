@@ -1,6 +1,0 @@
-= org/apache/catalina/manager/HTMLManagerServlet.class
-
- - link:HTMLManagerServlet-asmified.java[Asmified]
-
-== References
-

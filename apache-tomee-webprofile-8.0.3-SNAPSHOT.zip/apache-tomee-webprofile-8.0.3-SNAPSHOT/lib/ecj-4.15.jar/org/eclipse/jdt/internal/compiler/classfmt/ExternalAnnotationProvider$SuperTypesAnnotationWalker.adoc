@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/ExternalAnnotationProvider$SuperTypesAnnotationWalker.class
-
- - link:ExternalAnnotationProvider$SuperTypesAnnotationWalker-asmified.java[Asmified]
-
-== References
-

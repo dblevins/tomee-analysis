@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/str/SecurityTokenRefSTRParser.class
-
- - link:SecurityTokenRefSTRParser-asmified.java[Asmified]
-
-== References
-

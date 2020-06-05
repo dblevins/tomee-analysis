@@ -1,6 +1,0 @@
-= org/joda/time/convert/IntervalConverter.class
-
- - link:IntervalConverter-asmified.java[Asmified]
-
-== References
-

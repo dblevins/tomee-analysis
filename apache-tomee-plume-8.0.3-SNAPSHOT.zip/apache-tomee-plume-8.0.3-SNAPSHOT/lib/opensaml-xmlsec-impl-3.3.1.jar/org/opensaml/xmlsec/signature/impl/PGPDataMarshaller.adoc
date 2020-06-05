@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/PGPDataMarshaller.class
-
- - link:PGPDataMarshaller-asmified.java[Asmified]
-
-== References
-

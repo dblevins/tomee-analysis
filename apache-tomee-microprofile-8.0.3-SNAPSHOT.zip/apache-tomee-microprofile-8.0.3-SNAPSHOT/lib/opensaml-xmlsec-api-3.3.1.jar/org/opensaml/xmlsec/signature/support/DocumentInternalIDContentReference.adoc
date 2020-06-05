@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/support/DocumentInternalIDContentReference.class
-
- - link:DocumentInternalIDContentReference-asmified.java[Asmified]
-
-== References
-

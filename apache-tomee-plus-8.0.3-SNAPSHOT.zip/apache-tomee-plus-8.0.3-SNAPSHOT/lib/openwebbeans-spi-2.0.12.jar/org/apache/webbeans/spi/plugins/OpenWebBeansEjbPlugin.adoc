@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/plugins/OpenWebBeansEjbPlugin.class
-
- - link:OpenWebBeansEjbPlugin-asmified.java[Asmified]
-
-== References
-

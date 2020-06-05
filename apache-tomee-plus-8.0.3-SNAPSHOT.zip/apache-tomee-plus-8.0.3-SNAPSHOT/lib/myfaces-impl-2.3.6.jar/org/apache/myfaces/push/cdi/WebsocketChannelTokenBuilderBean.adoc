@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/WebsocketChannelTokenBuilderBean.class
-
- - link:WebsocketChannelTokenBuilderBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Debug$Trace$Event.class
-
- - link:Debug$Trace$Event-asmified.java[Asmified]
-
-== References
-

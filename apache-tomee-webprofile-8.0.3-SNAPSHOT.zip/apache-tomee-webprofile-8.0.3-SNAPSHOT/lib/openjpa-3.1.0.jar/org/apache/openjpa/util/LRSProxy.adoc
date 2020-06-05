@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/LRSProxy.class
-
- - link:LRSProxy-asmified.java[Asmified]
-
-== References
-

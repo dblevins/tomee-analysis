@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/LinkedMap.class
-
- - link:LinkedMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/Slice$Status.class
-
- - link:Slice$Status-asmified.java[Asmified]
-
-== References
-

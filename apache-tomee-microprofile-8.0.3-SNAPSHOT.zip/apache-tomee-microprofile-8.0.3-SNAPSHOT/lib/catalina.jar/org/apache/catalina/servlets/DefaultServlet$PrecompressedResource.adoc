@@ -1,6 +1,0 @@
-= org/apache/catalina/servlets/DefaultServlet$PrecompressedResource.class
-
- - link:DefaultServlet$PrecompressedResource-asmified.java[Asmified]
-
-== References
-

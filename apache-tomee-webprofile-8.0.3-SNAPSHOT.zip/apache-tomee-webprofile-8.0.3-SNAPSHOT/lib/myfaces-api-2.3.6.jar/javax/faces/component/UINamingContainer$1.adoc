@@ -1,7 +1,0 @@
-= javax/faces/component/UINamingContainer$1.class
-
- - link:UINamingContainer$1-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.visit.VisitResult - 6

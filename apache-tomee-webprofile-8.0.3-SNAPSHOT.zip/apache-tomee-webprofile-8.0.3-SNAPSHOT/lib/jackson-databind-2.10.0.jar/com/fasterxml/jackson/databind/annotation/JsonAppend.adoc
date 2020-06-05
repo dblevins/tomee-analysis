@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/annotation/JsonAppend.class
-
- - link:JsonAppend-asmified.java[Asmified]
-
-== References
-

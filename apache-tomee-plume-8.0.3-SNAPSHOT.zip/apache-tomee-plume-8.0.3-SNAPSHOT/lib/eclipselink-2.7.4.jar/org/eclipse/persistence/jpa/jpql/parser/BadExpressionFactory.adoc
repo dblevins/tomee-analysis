@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/BadExpressionFactory.class
-
- - link:BadExpressionFactory-asmified.java[Asmified]
-
-== References
-

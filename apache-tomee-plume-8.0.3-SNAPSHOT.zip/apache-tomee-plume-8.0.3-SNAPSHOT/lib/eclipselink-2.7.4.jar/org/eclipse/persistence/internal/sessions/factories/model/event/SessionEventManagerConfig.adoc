@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/event/SessionEventManagerConfig.class
-
- - link:SessionEventManagerConfig-asmified.java[Asmified]
-
-== References
-

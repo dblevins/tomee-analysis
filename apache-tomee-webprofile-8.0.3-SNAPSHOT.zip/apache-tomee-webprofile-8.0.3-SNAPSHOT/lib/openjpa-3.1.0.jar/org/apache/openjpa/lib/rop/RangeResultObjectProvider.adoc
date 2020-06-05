@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/RangeResultObjectProvider.class
-
- - link:RangeResultObjectProvider-asmified.java[Asmified]
-
-== References
-

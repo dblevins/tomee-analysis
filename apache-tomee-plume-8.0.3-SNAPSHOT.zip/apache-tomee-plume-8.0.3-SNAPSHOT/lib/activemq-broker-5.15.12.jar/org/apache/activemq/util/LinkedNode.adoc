@@ -1,6 +1,0 @@
-= org/apache/activemq/util/LinkedNode.class
-
- - link:LinkedNode-asmified.java[Asmified]
-
-== References
-

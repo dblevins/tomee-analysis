@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/common/ClientAccessToken.class
-
- - link:ClientAccessToken-asmified.java[Asmified]
-
-== References
-

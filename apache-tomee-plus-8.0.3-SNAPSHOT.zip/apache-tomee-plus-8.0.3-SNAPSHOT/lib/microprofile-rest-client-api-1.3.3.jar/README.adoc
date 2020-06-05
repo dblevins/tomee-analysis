@@ -1,2 +1,0 @@
-= apache-tomee-plus-8.0.3-SNAPSHOT/lib/microprofile-rest-client-api-1.3.3.jar
-

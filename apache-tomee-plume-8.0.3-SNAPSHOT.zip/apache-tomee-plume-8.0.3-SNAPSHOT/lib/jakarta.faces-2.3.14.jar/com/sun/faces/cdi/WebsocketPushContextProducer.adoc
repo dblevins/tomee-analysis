@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/WebsocketPushContextProducer.class
-
- - link:WebsocketPushContextProducer-asmified.java[Asmified]
-
-== References
-

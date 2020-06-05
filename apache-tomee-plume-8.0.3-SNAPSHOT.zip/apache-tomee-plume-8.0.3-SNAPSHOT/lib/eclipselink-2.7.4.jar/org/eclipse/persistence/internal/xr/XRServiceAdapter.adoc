@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRServiceAdapter.class
-
- - link:XRServiceAdapter-asmified.java[Asmified]
-
-== References
-

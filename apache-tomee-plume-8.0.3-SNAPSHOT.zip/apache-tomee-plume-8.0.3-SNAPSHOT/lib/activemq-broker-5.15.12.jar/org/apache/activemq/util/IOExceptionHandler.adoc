@@ -1,6 +1,0 @@
-= org/apache/activemq/util/IOExceptionHandler.class
-
- - link:IOExceptionHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/_AttachedCollectionStateWrapper.class
-
- - link:_AttachedCollectionStateWrapper-asmified.java[Asmified]
-
-== References
-

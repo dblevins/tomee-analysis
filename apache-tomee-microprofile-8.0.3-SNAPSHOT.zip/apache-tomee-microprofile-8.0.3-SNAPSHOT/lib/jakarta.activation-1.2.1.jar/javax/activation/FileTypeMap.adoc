@@ -1,9 +1,0 @@
-= javax/activation/FileTypeMap.class
-
- - link:FileTypeMap-asmified.java[Asmified]
-
-== References
-
- - javax.activation.FileTypeMap - 10
- - javax.activation.MimetypesFileTypeMap - 2
- - javax.activation.SecuritySupport - 2

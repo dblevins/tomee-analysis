@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/util/StringManager.class
-
- - link:StringManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/Parameter.class
-
- - link:Parameter-asmified.java[Asmified]
-
-== References
-

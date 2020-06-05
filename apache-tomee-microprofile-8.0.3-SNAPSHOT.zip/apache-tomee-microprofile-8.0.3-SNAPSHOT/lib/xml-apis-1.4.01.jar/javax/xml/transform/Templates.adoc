@@ -1,6 +1,0 @@
-= javax/xml/transform/Templates.class
-
- - link:Templates-asmified.java[Asmified]
-
-== References
-

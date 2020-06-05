@@ -1,6 +1,0 @@
-= org/apache/webbeans/exception/InconsistentSpecializationException.class
-
- - link:InconsistentSpecializationException-asmified.java[Asmified]
-
-== References
-

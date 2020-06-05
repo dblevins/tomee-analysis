@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/PropertyNamevalue.class
-
- - link:PropertyNamevalue-asmified.java[Asmified]
-
-== References
-

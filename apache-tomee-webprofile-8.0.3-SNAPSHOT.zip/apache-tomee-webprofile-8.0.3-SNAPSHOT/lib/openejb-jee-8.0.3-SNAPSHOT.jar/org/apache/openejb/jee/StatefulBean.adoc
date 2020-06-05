@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/StatefulBean.class
-
- - link:StatefulBean-asmified.java[Asmified]
-
-== References
-

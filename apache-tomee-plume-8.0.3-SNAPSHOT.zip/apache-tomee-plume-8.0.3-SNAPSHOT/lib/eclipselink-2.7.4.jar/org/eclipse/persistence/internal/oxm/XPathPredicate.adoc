@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XPathPredicate.class
-
- - link:XPathPredicate-asmified.java[Asmified]
-
-== References
-

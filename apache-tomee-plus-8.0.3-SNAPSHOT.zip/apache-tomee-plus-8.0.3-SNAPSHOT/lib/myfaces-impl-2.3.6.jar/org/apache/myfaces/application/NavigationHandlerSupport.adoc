@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/NavigationHandlerSupport.class
-
- - link:NavigationHandlerSupport-asmified.java[Asmified]
-
-== References
-

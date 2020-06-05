@@ -1,6 +1,0 @@
-= org/jvnet/staxex/util/DOMStreamReader.class
-
- - link:DOMStreamReader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/interceptors/TcpFailureDetectorMBean.class
-
- - link:TcpFailureDetectorMBean-asmified.java[Asmified]
-
-== References
-

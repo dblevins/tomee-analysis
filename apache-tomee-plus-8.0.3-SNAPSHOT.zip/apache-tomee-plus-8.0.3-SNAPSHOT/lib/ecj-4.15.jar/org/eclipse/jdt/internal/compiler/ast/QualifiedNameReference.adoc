@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/QualifiedNameReference.class
-
- - link:QualifiedNameReference-asmified.java[Asmified]
-
-== References
-

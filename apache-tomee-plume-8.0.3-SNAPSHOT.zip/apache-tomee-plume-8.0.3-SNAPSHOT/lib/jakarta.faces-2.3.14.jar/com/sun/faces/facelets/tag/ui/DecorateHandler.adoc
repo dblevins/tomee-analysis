@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/ui/DecorateHandler.class
-
- - link:DecorateHandler-asmified.java[Asmified]
-
-== References
-

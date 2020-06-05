@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/SimpleRemapper.class
-
- - link:SimpleRemapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/server/UpgradeUtil.class
-
- - link:UpgradeUtil-asmified.java[Asmified]
-
-== References
-

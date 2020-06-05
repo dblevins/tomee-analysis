@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/status/DefaultJobStatusManager.class
-
- - link:DefaultJobStatusManager-asmified.java[Asmified]
-
-== References
-

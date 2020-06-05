@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/HeaderManagerImpl.class
-
- - link:HeaderManagerImpl-asmified.java[Asmified]
-
-== References
-

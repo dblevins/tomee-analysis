@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/ElementJoinColumns.class
-
- - link:ElementJoinColumns-asmified.java[Asmified]
-
-== References
-

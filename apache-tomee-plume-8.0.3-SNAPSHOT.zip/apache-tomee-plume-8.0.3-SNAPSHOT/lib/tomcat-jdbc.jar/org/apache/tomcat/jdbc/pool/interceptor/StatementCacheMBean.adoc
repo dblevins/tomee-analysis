@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/interceptor/StatementCacheMBean.class
-
- - link:StatementCacheMBean-asmified.java[Asmified]
-
-== References
-

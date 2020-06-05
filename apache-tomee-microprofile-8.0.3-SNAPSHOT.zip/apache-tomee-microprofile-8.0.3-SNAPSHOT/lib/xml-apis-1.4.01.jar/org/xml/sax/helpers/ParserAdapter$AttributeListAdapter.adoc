@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/ParserAdapter$AttributeListAdapter.class
-
- - link:ParserAdapter$AttributeListAdapter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/DateTimeFactory.class
-
- - link:DateTimeFactory-asmified.java[Asmified]
-
-== References
-

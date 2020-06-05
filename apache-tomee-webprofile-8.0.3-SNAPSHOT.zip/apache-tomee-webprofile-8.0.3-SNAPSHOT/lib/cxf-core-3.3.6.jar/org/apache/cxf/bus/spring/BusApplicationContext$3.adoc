@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/BusApplicationContext$3.class
-
- - link:BusApplicationContext$3-asmified.java[Asmified]
-
-== References
-

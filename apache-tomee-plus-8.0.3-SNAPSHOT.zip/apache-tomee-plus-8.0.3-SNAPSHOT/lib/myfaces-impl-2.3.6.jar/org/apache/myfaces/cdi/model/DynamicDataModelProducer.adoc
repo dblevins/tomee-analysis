@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/model/DynamicDataModelProducer.class
-
- - link:DynamicDataModelProducer-asmified.java[Asmified]
-
-== References
-

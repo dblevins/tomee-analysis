@@ -1,6 +1,0 @@
-= org/apache/batchee/spi/JobExecutionCallbackService.class
-
- - link:JobExecutionCallbackService-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/DiscoveryAgentFactory.class
-
- - link:DiscoveryAgentFactory-asmified.java[Asmified]
-
-== References
-

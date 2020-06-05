@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/SearchContextImpl.class
-
- - link:SearchContextImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/json/stream/JsonGeneratorFactory.class
-
- - link:JsonGeneratorFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/PnBFieldParamsType.class
-
- - link:PnBFieldParamsType-asmified.java[Asmified]
-
-== References
-

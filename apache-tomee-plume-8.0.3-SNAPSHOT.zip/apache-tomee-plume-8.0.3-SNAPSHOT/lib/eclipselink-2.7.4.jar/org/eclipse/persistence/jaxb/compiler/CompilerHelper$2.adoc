@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/CompilerHelper$2.class
-
- - link:CompilerHelper$2-asmified.java[Asmified]
-
-== References
-

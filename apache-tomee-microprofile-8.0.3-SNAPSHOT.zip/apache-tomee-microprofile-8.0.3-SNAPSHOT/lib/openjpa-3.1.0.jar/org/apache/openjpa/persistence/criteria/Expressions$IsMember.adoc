@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$IsMember.class
-
- - link:Expressions$IsMember-asmified.java[Asmified]
-
-== References
-

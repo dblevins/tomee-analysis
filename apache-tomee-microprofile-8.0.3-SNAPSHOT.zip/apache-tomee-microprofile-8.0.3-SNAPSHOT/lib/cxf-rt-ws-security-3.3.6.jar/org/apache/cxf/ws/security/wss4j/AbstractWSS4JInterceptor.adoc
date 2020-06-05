@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.class
-
- - link:AbstractWSS4JInterceptor-asmified.java[Asmified]
-
-== References
-

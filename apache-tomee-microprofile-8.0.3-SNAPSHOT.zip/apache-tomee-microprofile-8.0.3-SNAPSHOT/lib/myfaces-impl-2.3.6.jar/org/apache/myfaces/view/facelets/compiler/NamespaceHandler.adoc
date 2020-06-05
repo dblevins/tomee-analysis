@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/NamespaceHandler.class
-
- - link:NamespaceHandler-asmified.java[Asmified]
-
-== References
-

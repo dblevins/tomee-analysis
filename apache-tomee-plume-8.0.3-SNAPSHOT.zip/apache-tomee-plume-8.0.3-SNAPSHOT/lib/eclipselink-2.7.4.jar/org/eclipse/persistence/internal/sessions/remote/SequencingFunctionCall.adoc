@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/remote/SequencingFunctionCall.class
-
- - link:SequencingFunctionCall-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/EndpointResolver.class
-
- - link:EndpointResolver-asmified.java[Asmified]
-
-== References
-

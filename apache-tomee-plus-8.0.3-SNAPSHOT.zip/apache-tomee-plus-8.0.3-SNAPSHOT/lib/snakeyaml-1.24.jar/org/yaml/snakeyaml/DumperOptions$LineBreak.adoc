@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/DumperOptions$LineBreak.class
-
- - link:DumperOptions$LineBreak-asmified.java[Asmified]
-
-== References
-

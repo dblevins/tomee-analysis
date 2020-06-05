@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/moment/GeometricMean.class
-
- - link:GeometricMean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/ServicesJar.class
-
- - link:ServicesJar-asmified.java[Asmified]
-
-== References
-

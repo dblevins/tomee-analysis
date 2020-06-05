@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/custom/djb/Curve25519Field.class
-
- - link:Curve25519Field-asmified.java[Asmified]
-
-== References
-

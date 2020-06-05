@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/AbstractSequentialResultList.class
-
- - link:AbstractSequentialResultList-asmified.java[Asmified]
-
-== References
-

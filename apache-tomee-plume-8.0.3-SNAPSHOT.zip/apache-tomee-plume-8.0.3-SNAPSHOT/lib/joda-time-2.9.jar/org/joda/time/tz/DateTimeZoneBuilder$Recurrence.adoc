@@ -1,6 +1,0 @@
-= org/joda/time/tz/DateTimeZoneBuilder$Recurrence.class
-
- - link:DateTimeZoneBuilder$Recurrence-asmified.java[Asmified]
-
-== References
-

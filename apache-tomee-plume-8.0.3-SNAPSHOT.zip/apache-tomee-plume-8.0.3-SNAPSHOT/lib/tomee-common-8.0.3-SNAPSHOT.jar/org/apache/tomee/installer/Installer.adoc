@@ -1,6 +1,0 @@
-= org/apache/tomee/installer/Installer.class
-
- - link:Installer-asmified.java[Asmified]
-
-== References
-

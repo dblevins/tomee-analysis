@@ -1,6 +1,0 @@
-= jakarta/ejb/EJBTransactionRequiredException.class
-
- - link:EJBTransactionRequiredException-asmified.java[Asmified]
-
-== References
-

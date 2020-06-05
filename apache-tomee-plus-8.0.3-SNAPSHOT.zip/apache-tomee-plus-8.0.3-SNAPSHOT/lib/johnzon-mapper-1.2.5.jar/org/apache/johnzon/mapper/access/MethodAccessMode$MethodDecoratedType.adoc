@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/access/MethodAccessMode$MethodDecoratedType.class
-
- - link:MethodAccessMode$MethodDecoratedType-asmified.java[Asmified]
-
-== References
-

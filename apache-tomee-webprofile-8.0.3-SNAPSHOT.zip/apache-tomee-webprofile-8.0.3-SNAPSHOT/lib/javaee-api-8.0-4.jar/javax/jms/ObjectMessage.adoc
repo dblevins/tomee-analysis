@@ -1,8 +1,0 @@
-= javax/jms/ObjectMessage.class
-
- - link:ObjectMessage-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSException - 2
- - javax.jms.Message - 1

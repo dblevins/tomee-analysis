@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMCanonicalizationMethod.class
-
- - link:DOMCanonicalizationMethod-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/network/jms/JmsMesageConvertor.class
-
- - link:JmsMesageConvertor-asmified.java[Asmified]
-
-== References
-

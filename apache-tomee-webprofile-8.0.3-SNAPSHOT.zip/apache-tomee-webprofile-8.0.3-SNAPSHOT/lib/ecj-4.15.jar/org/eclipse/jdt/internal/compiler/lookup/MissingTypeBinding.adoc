@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/MissingTypeBinding.class
-
- - link:MissingTypeBinding-asmified.java[Asmified]
-
-== References
-

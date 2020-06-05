@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/MediaType.class
-
- - link:MediaType-asmified.java[Asmified]
-
-== References
-

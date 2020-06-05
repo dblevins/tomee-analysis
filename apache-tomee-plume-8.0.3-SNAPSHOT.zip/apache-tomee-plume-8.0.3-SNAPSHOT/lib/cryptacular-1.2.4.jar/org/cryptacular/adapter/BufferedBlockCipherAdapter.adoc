@@ -1,6 +1,0 @@
-= org/cryptacular/adapter/BufferedBlockCipherAdapter.class
-
- - link:BufferedBlockCipherAdapter-asmified.java[Asmified]
-
-== References
-

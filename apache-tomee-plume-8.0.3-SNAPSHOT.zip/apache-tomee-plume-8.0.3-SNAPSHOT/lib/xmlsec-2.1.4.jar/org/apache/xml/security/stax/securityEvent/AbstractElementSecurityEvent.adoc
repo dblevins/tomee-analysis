@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityEvent/AbstractElementSecurityEvent.class
-
- - link:AbstractElementSecurityEvent-asmified.java[Asmified]
-
-== References
-

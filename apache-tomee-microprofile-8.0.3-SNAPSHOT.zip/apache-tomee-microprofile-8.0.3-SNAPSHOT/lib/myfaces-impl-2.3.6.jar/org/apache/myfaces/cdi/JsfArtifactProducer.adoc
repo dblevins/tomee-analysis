@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/JsfArtifactProducer.class
-
- - link:JsfArtifactProducer-asmified.java[Asmified]
-
-== References
-

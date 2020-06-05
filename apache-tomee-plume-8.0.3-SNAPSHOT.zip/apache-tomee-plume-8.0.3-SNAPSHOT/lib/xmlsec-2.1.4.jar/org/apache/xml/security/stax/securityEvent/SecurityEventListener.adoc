@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityEvent/SecurityEventListener.class
-
- - link:SecurityEventListener-asmified.java[Asmified]
-
-== References
-

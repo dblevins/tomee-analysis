@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/StaticWeaveException.class
-
- - link:StaticWeaveException-asmified.java[Asmified]
-
-== References
-

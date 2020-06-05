@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/IndexOf.class
-
- - link:IndexOf-asmified.java[Asmified]
-
-== References
-

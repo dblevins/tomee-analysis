@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/ReservedWords.class
-
- - link:ReservedWords-asmified.java[Asmified]
-
-== References
-

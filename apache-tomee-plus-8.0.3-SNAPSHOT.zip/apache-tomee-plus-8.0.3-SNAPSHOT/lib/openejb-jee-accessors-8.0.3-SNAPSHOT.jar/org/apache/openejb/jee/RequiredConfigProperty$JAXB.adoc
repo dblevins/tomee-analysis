@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/RequiredConfigProperty$JAXB.class
-
- - link:RequiredConfigProperty$JAXB-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/Base64OutputStream.class
-
- - link:Base64OutputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotatedParameter.class
-
- - link:AnnotatedParameter-asmified.java[Asmified]
-
-== References
-

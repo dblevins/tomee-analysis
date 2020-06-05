@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/WorkQueueManagerImpl.class
-
- - link:WorkQueueManagerImpl-asmified.java[Asmified]
-
-== References
-

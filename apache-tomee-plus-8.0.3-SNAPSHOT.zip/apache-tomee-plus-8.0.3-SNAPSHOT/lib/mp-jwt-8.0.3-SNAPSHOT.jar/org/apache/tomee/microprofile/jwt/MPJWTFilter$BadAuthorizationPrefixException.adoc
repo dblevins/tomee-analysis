@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/MPJWTFilter$BadAuthorizationPrefixException.class
-
- - link:MPJWTFilter$BadAuthorizationPrefixException-asmified.java[Asmified]
-
-== References
-

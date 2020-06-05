@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/codegen/VerificationTypeInfo.class
-
- - link:VerificationTypeInfo-asmified.java[Asmified]
-
-== References
-

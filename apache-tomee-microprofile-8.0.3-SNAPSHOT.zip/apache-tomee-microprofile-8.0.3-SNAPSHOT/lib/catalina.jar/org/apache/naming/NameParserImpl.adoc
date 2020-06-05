@@ -1,6 +1,0 @@
-= org/apache/naming/NameParserImpl.class
-
- - link:NameParserImpl-asmified.java[Asmified]
-
-== References
-

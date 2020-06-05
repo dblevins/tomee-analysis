@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/SingleTableMultitenantPolicy.class
-
- - link:SingleTableMultitenantPolicy-asmified.java[Asmified]
-
-== References
-

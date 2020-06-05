@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Join$NameCallback.class
-
- - link:Join$NameCallback-asmified.java[Asmified]
-
-== References
-

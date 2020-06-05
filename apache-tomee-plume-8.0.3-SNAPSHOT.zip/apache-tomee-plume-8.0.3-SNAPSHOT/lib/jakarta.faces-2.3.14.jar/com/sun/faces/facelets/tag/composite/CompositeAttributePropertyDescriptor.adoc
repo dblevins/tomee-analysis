@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/CompositeAttributePropertyDescriptor.class
-
- - link:CompositeAttributePropertyDescriptor-asmified.java[Asmified]
-
-== References
-

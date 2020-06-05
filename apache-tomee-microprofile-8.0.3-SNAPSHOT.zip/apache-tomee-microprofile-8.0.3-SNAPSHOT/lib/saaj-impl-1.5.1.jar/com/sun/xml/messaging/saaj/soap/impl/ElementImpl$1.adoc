@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/impl/ElementImpl$1.class
-
- - link:ElementImpl$1-asmified.java[Asmified]
-
-== References
-

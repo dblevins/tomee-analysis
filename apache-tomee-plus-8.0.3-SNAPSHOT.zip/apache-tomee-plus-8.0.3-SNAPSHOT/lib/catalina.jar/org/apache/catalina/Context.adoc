@@ -1,6 +1,0 @@
-= org/apache/catalina/Context.class
-
- - link:Context-asmified.java[Asmified]
-
-== References
-

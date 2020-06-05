@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/xmlmodel/XmlProperties$XmlProperty.class
-
- - link:XmlProperties$XmlProperty-asmified.java[Asmified]
-
-== References
-

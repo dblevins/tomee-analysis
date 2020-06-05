@@ -1,6 +1,0 @@
-= org/apache/openejb/rest/ThreadLocalServletContext.class
-
- - link:ThreadLocalServletContext-asmified.java[Asmified]
-
-== References
-

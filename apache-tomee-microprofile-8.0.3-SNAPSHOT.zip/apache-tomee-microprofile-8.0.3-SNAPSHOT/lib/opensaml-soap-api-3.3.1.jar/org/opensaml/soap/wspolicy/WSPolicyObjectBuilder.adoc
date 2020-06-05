@@ -1,6 +1,0 @@
-= org/opensaml/soap/wspolicy/WSPolicyObjectBuilder.class
-
- - link:WSPolicyObjectBuilder-asmified.java[Asmified]
-
-== References
-

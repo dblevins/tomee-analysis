@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/MinusExpression.class
-
- - link:MinusExpression-asmified.java[Asmified]
-
-== References
-

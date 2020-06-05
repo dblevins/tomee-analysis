@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesValidatorExtension$JAXB.class
-
- - link:FacesValidatorExtension$JAXB-asmified.java[Asmified]
-
-== References
-

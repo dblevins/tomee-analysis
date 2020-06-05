@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Link$Builder.class
-
- - link:Link$Builder-asmified.java[Asmified]
-
-== References
-

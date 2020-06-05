@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/cmp2/SingleValuedCmr.class
-
- - link:SingleValuedCmr-asmified.java[Asmified]
-
-== References
-

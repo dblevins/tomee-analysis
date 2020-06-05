@@ -1,6 +1,0 @@
-= com/ctc/wstx/ent/ParsedExtEntity.class
-
- - link:ParsedExtEntity-asmified.java[Asmified]
-
-== References
-

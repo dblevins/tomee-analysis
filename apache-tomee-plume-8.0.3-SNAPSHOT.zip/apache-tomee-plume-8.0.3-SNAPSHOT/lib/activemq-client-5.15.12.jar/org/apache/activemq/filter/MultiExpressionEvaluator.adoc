@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/MultiExpressionEvaluator.class
-
- - link:MultiExpressionEvaluator-asmified.java[Asmified]
-
-== References
-

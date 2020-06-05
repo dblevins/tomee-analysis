@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/VirtualSubcontext.class
-
- - link:VirtualSubcontext-asmified.java[Asmified]
-
-== References
-

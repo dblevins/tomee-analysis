@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/codec/EncoderUtil$Encoding.class
-
- - link:EncoderUtil$Encoding-asmified.java[Asmified]
-
-== References
-

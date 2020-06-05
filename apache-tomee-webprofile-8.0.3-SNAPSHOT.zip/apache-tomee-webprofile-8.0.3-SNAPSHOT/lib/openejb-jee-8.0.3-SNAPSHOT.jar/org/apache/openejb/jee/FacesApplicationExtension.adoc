@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesApplicationExtension.class
-
- - link:FacesApplicationExtension-asmified.java[Asmified]
-
-== References
-

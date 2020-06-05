@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/jstl/core/LoopTagSupport$1Status.class
-
- - link:LoopTagSupport$1Status-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/log/MultiLogFactory.class
-
- - link:MultiLogFactory-asmified.java[Asmified]
-
-== References
-

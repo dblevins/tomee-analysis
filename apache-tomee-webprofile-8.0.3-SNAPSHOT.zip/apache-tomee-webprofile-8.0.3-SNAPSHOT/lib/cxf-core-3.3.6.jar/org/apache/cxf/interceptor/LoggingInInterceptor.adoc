@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/LoggingInInterceptor.class
-
- - link:LoggingInInterceptor-asmified.java[Asmified]
-
-== References
-

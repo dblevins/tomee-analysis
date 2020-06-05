@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/PropertyNotFoundException.class
-
- - link:PropertyNotFoundException-asmified.java[Asmified]
-
-== References
-

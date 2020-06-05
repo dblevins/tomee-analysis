@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/OpenJPAConfigurationImpl.class
-
- - link:OpenJPAConfigurationImpl-asmified.java[Asmified]
-
-== References
-

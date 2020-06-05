@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/attachment/AttachmentUnmarshallerAdapter.class
-
- - link:AttachmentUnmarshallerAdapter-asmified.java[Asmified]
-
-== References
-

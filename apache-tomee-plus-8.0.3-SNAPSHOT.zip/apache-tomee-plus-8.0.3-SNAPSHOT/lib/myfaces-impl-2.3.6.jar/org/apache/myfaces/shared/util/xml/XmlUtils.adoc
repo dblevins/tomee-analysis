@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/xml/XmlUtils.class
-
- - link:XmlUtils-asmified.java[Asmified]
-
-== References
-

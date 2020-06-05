@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/HintValueConverter$StringToInteger.class
-
- - link:HintValueConverter$StringToInteger-asmified.java[Asmified]
-
-== References
-

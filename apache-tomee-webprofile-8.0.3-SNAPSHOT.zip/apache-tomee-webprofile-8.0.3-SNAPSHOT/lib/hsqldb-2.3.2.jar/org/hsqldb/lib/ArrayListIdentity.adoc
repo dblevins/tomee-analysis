@@ -1,6 +1,0 @@
-= org/hsqldb/lib/ArrayListIdentity.class
-
- - link:ArrayListIdentity-asmified.java[Asmified]
-
-== References
-

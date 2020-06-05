@@ -1,6 +1,0 @@
-= org/hsqldb/TypeInvariants.class
-
- - link:TypeInvariants-asmified.java[Asmified]
-
-== References
-

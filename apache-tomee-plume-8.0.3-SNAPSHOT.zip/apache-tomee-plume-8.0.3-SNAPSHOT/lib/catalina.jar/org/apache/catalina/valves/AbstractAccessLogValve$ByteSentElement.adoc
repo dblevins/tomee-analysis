@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/AbstractAccessLogValve$ByteSentElement.class
-
- - link:AbstractAccessLogValve$ByteSentElement-asmified.java[Asmified]
-
-== References
-

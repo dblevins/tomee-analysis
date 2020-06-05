@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/LoadGroup.class
-
- - link:LoadGroup-asmified.java[Asmified]
-
-== References
-

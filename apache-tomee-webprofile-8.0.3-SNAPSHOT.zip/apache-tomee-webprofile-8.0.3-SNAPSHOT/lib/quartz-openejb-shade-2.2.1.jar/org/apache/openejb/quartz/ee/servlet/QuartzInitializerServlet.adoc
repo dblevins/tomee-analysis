@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ee/servlet/QuartzInitializerServlet.class
-
- - link:QuartzInitializerServlet-asmified.java[Asmified]
-
-== References
-

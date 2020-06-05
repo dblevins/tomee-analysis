@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/identitystore/DatabaseIdentityStoreDefinition.class
-
- - link:DatabaseIdentityStoreDefinition-asmified.java[Asmified]
-
-== References
-

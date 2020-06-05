@@ -1,6 +1,0 @@
-= org/eclipse/persistence/logging/AbstractSessionLog.class
-
- - link:AbstractSessionLog-asmified.java[Asmified]
-
-== References
-

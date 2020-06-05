@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/SignatureRemapper.class
-
- - link:SignatureRemapper-asmified.java[Asmified]
-
-== References
-

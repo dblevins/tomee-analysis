@@ -1,6 +1,0 @@
-= javax/xml/validation/SchemaFactoryFinder$SingleIterator.class
-
- - link:SchemaFactoryFinder$SingleIterator-asmified.java[Asmified]
-
-== References
-

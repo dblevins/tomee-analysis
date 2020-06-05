@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/UserResource.class
-
- - link:UserResource-asmified.java[Asmified]
-
-== References
-

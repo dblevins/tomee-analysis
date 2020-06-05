@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/OrphanedKeyAction.class
-
- - link:OrphanedKeyAction-asmified.java[Asmified]
-
-== References
-

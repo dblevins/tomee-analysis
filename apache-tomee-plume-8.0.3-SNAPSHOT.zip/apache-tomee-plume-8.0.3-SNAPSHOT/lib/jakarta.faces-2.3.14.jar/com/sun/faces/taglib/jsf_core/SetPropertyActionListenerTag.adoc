@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/SetPropertyActionListenerTag.class
-
- - link:SetPropertyActionListenerTag-asmified.java[Asmified]
-
-== References
-

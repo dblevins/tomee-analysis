@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/StandardEngineSF.class
-
- - link:StandardEngineSF-asmified.java[Asmified]
-
-== References
-

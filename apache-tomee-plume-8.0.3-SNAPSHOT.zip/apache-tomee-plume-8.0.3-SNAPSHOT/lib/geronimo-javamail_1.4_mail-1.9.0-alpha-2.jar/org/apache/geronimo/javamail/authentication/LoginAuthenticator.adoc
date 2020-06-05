@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/authentication/LoginAuthenticator.class
-
- - link:LoginAuthenticator-asmified.java[Asmified]
-
-== References
-

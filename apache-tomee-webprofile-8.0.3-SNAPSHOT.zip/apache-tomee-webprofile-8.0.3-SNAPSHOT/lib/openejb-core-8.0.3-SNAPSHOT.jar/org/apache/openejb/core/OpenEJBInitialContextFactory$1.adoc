@@ -1,6 +1,0 @@
-= org/apache/openejb/core/OpenEJBInitialContextFactory$1.class
-
- - link:OpenEJBInitialContextFactory$1-asmified.java[Asmified]
-
-== References
-

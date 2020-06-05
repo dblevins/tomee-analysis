@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/LocalResolver.class
-
- - link:LocalResolver-asmified.java[Asmified]
-
-== References
-

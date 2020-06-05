@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/StrBuilder$StrBuilderWriter.class
-
- - link:StrBuilder$StrBuilderWriter-asmified.java[Asmified]
-
-== References
-

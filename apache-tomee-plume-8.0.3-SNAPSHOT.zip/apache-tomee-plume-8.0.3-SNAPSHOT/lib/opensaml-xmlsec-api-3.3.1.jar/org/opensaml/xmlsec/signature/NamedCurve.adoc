@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/NamedCurve.class
-
- - link:NamedCurve-asmified.java[Asmified]
-
-== References
-

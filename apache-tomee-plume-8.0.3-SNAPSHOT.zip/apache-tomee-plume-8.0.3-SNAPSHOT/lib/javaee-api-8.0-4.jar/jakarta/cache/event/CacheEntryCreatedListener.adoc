@@ -1,6 +1,0 @@
-= jakarta/cache/event/CacheEntryCreatedListener.class
-
- - link:CacheEntryCreatedListener-asmified.java[Asmified]
-
-== References
-

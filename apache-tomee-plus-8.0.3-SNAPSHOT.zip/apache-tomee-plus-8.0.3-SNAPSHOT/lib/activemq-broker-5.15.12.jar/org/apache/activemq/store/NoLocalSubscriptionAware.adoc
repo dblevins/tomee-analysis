@@ -1,6 +1,0 @@
-= org/apache/activemq/store/NoLocalSubscriptionAware.class
-
- - link:NoLocalSubscriptionAware-asmified.java[Asmified]
-
-== References
-

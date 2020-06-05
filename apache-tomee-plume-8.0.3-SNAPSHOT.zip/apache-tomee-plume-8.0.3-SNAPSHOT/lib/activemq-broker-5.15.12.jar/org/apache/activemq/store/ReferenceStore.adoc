@@ -1,6 +1,0 @@
-= org/apache/activemq/store/ReferenceStore.class
-
- - link:ReferenceStore-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/DefaultFaceletsStateManagementStrategy$AddComponentCallback.class
-
- - link:DefaultFaceletsStateManagementStrategy$AddComponentCallback-asmified.java[Asmified]
-
-== References
-

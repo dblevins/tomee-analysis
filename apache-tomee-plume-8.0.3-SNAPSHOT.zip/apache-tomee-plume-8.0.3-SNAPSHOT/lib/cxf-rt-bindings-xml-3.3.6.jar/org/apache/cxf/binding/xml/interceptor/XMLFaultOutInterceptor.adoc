@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/xml/interceptor/XMLFaultOutInterceptor.class
-
- - link:XMLFaultOutInterceptor-asmified.java[Asmified]
-
-== References
-

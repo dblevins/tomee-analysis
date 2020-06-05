@@ -1,6 +1,0 @@
-= javax/ejb/ApplicationException.class
-
- - link:ApplicationException-asmified.java[Asmified]
-
-== References
-

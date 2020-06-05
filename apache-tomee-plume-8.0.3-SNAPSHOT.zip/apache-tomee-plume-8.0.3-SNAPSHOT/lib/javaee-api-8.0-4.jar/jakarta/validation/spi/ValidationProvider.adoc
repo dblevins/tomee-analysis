@@ -1,6 +1,0 @@
-= jakarta/validation/spi/ValidationProvider.class
-
- - link:ValidationProvider-asmified.java[Asmified]
-
-== References
-

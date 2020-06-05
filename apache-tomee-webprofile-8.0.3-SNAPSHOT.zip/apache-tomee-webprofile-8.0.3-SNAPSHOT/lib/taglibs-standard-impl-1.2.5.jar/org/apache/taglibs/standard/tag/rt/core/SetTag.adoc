@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/core/SetTag.class
-
- - link:SetTag-asmified.java[Asmified]
-
-== References
-

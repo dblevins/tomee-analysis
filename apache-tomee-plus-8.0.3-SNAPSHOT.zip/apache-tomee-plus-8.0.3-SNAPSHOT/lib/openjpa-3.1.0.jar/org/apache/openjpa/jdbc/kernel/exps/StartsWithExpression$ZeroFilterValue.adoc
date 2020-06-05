@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/StartsWithExpression$ZeroFilterValue.class
-
- - link:StartsWithExpression$ZeroFilterValue-asmified.java[Asmified]
-
-== References
-

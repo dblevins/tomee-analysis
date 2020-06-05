@@ -1,6 +1,0 @@
-= jakarta/activation/MimetypesFileTypeMap.class
-
- - link:MimetypesFileTypeMap-asmified.java[Asmified]
-
-== References
-

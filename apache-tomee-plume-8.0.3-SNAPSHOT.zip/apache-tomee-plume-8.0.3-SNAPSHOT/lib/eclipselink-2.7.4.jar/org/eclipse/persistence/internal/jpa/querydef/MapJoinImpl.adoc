@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/MapJoinImpl.class
-
- - link:MapJoinImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/headers/Header$Direction.class
-
- - link:Header$Direction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Multitenant.class
-
- - link:Multitenant-asmified.java[Asmified]
-
-== References
-

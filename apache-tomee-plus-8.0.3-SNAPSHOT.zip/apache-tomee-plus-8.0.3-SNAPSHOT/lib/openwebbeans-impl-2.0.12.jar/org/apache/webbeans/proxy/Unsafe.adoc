@@ -1,6 +1,0 @@
-= org/apache/webbeans/proxy/Unsafe.class
-
- - link:Unsafe-asmified.java[Asmified]
-
-== References
-

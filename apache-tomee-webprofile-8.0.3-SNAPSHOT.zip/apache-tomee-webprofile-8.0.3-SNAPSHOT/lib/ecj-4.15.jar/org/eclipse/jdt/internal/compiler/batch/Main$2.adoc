@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/Main$2.class
-
- - link:Main$2-asmified.java[Asmified]
-
-== References
-

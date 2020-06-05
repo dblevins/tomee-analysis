@@ -1,6 +1,0 @@
-= org/apache/xml/security/configuration/HandlerType.class
-
- - link:HandlerType-asmified.java[Asmified]
-
-== References
-

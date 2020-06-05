@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/util/AbstractSingletonFactory.class
-
- - link:AbstractSingletonFactory-asmified.java[Asmified]
-
-== References
-

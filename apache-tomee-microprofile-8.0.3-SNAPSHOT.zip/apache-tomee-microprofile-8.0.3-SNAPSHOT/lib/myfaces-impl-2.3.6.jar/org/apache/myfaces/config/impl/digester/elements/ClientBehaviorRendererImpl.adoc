@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ClientBehaviorRendererImpl.class
-
- - link:ClientBehaviorRendererImpl-asmified.java[Asmified]
-
-== References
-

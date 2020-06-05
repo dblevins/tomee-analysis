@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/authentication/mechanism/http/FormAuthenticationMechanismDefinition.class
-
- - link:FormAuthenticationMechanismDefinition-asmified.java[Asmified]
-
-== References
-

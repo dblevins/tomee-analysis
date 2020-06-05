@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/weaving/AttributeDetails.class
-
- - link:AttributeDetails-asmified.java[Asmified]
-
-== References
-

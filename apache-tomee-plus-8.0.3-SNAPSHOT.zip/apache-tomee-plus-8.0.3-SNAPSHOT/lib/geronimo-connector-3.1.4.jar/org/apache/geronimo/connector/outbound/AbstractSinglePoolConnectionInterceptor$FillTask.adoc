@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/AbstractSinglePoolConnectionInterceptor$FillTask.class
-
- - link:AbstractSinglePoolConnectionInterceptor$FillTask-asmified.java[Asmified]
-
-== References
-

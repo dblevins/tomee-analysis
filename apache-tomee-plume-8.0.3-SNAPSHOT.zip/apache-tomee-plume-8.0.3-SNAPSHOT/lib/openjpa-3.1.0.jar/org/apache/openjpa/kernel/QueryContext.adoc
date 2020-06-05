@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/QueryContext.class
-
- - link:QueryContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/CDI.class
-
- - link:CDI-asmified.java[Asmified]
-
-== References
-

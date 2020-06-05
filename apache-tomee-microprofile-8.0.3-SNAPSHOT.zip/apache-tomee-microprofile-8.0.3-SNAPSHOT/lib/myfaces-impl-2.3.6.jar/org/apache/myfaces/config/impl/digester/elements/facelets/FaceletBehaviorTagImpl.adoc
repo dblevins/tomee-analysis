@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/facelets/FaceletBehaviorTagImpl.class
-
- - link:FaceletBehaviorTagImpl-asmified.java[Asmified]
-
-== References
-

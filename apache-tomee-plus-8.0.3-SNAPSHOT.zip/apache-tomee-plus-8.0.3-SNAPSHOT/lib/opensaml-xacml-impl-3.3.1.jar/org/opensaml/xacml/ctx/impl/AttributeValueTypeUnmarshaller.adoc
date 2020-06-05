@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/AttributeValueTypeUnmarshaller.class
-
- - link:AttributeValueTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

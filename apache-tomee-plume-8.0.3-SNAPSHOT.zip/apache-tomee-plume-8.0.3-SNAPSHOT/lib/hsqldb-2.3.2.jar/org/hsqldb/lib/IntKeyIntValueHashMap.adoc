@@ -1,6 +1,0 @@
-= org/hsqldb/lib/IntKeyIntValueHashMap.class
-
- - link:IntKeyIntValueHashMap-asmified.java[Asmified]
-
-== References
-

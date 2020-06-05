@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidateProperty$LeafFrame.class
-
- - link:ValidateProperty$LeafFrame-asmified.java[Asmified]
-
-== References
-

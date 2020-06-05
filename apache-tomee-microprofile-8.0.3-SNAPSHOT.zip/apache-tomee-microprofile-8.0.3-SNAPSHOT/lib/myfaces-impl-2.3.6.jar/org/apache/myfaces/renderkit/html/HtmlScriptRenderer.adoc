@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlScriptRenderer.class
-
- - link:HtmlScriptRenderer-asmified.java[Asmified]
-
-== References
-

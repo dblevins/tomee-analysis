@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/profile/impl/AddStatusResponseShell$1.class
-
- - link:AddStatusResponseShell$1-asmified.java[Asmified]
-
-== References
-

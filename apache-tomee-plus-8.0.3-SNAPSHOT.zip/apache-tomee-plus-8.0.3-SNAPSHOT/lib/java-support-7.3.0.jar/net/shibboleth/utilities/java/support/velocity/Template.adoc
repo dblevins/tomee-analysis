@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/velocity/Template.class
-
- - link:Template-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/NamesEnumerator.class
-
- - link:NamesEnumerator-asmified.java[Asmified]
-
-== References
-

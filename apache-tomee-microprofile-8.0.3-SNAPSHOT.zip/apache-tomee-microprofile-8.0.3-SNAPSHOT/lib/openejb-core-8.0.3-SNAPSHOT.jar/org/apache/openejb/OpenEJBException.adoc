@@ -1,6 +1,0 @@
-= org/apache/openejb/OpenEJBException.class
-
- - link:OpenEJBException-asmified.java[Asmified]
-
-== References
-

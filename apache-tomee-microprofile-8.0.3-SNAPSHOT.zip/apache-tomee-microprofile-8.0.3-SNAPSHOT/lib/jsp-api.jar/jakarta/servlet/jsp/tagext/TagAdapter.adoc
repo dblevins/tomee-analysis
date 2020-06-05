@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/tagext/TagAdapter.class
-
- - link:TagAdapter-asmified.java[Asmified]
-
-== References
-

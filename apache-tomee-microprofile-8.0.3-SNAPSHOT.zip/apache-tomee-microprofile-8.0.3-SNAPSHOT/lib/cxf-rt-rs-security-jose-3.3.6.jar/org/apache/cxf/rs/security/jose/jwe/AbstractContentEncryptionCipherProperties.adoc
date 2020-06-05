@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/AbstractContentEncryptionCipherProperties.class
-
- - link:AbstractContentEncryptionCipherProperties-asmified.java[Asmified]
-
-== References
-

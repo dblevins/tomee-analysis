@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/EndpointInterceptors.class
-
- - link:EndpointInterceptors-asmified.java[Asmified]
-
-== References
-

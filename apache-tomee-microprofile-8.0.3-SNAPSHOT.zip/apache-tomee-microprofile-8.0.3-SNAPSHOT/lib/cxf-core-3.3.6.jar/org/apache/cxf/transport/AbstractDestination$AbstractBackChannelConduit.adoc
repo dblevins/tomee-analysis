@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/AbstractDestination$AbstractBackChannelConduit.class
-
- - link:AbstractDestination$AbstractBackChannelConduit-asmified.java[Asmified]
-
-== References
-

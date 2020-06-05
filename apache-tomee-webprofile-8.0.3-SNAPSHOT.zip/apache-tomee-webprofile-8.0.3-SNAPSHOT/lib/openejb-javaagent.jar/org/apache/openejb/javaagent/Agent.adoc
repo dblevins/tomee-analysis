@@ -1,6 +1,0 @@
-= org/apache/openejb/javaagent/Agent.class
-
- - link:Agent-asmified.java[Asmified]
-
-== References
-

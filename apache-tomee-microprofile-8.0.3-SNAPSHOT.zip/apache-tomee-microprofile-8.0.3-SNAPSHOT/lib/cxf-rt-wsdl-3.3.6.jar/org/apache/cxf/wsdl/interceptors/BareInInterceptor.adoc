@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/interceptors/BareInInterceptor.class
-
- - link:BareInInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/InlineListenableFuture.class
-
- - link:InlineListenableFuture-asmified.java[Asmified]
-
-== References
-

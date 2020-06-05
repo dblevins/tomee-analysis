@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/TypeResolver$PathResolver.class
-
- - link:TypeResolver$PathResolver-asmified.java[Asmified]
-
-== References
-

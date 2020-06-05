@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder.class
-
- - link:RemoteValueHolder-asmified.java[Asmified]
-
-== References
-

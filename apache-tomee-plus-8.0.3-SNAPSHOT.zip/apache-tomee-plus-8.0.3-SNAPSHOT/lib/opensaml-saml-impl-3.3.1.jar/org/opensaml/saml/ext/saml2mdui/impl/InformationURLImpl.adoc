@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/impl/InformationURLImpl.class
-
- - link:InformationURLImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/InitContextFactory.class
-
- - link:InitContextFactory-asmified.java[Asmified]
-
-== References
-

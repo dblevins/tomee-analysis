@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/JohnzonIgnore.class
-
- - link:JohnzonIgnore-asmified.java[Asmified]
-
-== References
-

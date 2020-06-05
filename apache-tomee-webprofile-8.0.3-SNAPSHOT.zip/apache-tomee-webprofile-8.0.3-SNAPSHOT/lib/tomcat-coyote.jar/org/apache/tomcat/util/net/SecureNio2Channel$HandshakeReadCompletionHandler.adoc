@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SecureNio2Channel$HandshakeReadCompletionHandler.class
-
- - link:SecureNio2Channel$HandshakeReadCompletionHandler-asmified.java[Asmified]
-
-== References
-

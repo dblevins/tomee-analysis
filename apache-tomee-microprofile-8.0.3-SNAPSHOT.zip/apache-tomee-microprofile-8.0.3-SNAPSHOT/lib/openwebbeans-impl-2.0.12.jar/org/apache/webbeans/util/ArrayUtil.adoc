@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/ArrayUtil.class
-
- - link:ArrayUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/KeyExchangeToken.class
-
- - link:KeyExchangeToken-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/RenderKitFactoryImpl.class
-
- - link:RenderKitFactoryImpl-asmified.java[Asmified]
-
-== References
-

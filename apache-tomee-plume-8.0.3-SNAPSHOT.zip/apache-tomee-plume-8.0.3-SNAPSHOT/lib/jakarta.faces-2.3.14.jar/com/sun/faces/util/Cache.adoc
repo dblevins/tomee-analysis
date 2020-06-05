@@ -1,6 +1,0 @@
-= com/sun/faces/util/Cache.class
-
- - link:Cache-asmified.java[Asmified]
-
-== References
-

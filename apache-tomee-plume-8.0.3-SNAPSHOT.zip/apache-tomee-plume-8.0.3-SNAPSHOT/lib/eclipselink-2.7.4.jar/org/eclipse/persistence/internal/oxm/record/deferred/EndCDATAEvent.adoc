@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/EndCDATAEvent.class
-
- - link:EndCDATAEvent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= serp/bytecode/MethodInstruction.class
-
- - link:MethodInstruction-asmified.java[Asmified]
-
-== References
-

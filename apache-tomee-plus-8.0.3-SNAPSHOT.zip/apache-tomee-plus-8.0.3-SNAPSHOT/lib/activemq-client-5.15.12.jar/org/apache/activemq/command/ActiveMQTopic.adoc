@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQTopic.class
-
- - link:ActiveMQTopic-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/digester/parser/XercesParser.class
-
- - link:XercesParser-asmified.java[Asmified]
-
-== References
-

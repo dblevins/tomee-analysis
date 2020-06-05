@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/CommentInstruction.class
-
- - link:CommentInstruction-asmified.java[Asmified]
-
-== References
-

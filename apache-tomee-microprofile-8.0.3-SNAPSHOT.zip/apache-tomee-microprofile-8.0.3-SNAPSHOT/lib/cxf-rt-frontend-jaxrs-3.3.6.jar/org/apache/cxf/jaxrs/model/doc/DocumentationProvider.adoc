@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/doc/DocumentationProvider.class
-
- - link:DocumentationProvider-asmified.java[Asmified]
-
-== References
-

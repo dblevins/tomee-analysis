@@ -1,9 +1,0 @@
-= javax/xml/bind/annotation/adapters/HexBinaryAdapter.class
-
- - link:HexBinaryAdapter-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.annotation.adapters.XmlAdapter - 2
- - javax.xml.bind.annotation.adapters.HexBinaryAdapter - 2
- - javax.xml.bind.DatatypeConverter - 2

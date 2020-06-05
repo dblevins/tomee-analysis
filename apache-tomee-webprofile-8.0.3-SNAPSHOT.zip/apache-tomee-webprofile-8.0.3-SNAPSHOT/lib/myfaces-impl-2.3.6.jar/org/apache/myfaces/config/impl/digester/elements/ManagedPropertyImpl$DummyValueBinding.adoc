@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl$DummyValueBinding.class
-
- - link:ManagedPropertyImpl$DummyValueBinding-asmified.java[Asmified]
-
-== References
-

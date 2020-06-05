@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/token/SignatureConfirmation.class
-
- - link:SignatureConfirmation-asmified.java[Asmified]
-
-== References
-

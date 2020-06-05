@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/WeakObjectWrapper.class
-
- - link:WeakObjectWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/aegis/AegisElementProvider.class
-
- - link:AegisElementProvider-asmified.java[Asmified]
-
-== References
-

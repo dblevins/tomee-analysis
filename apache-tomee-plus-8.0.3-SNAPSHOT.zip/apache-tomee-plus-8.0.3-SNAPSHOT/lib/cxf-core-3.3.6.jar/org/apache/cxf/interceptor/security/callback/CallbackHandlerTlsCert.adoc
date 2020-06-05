@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/security/callback/CallbackHandlerTlsCert.class
-
- - link:CallbackHandlerTlsCert-asmified.java[Asmified]
-
-== References
-

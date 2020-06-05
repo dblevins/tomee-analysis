@@ -1,6 +1,0 @@
-= org/apache/commons/collections/OrderedIterator.class
-
- - link:OrderedIterator-asmified.java[Asmified]
-
-== References
-

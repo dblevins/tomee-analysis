@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/transformer/TransformEnvelopedSignature$1.class
-
- - link:TransformEnvelopedSignature$1-asmified.java[Asmified]
-
-== References
-

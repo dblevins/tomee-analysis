@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/plugin/DataSourcePlugin.class
-
- - link:DataSourcePlugin-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwa/ContentAlgorithm.class
-
- - link:ContentAlgorithm-asmified.java[Asmified]
-
-== References
-

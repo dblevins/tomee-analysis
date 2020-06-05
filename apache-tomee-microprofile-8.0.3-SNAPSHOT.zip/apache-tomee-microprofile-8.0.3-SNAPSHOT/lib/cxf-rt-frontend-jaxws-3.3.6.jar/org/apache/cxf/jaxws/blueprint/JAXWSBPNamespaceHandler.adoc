@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/blueprint/JAXWSBPNamespaceHandler.class
-
- - link:JAXWSBPNamespaceHandler-asmified.java[Asmified]
-
-== References
-

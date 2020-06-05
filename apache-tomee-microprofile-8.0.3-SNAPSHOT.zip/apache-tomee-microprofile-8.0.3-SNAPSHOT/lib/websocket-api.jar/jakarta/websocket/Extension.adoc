@@ -1,6 +1,0 @@
-= jakarta/websocket/Extension.class
-
- - link:Extension-asmified.java[Asmified]
-
-== References
-

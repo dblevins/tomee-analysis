@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/EjbTimerServiceImpl$LazyScheduler.class
-
- - link:EjbTimerServiceImpl$LazyScheduler-asmified.java[Asmified]
-
-== References
-

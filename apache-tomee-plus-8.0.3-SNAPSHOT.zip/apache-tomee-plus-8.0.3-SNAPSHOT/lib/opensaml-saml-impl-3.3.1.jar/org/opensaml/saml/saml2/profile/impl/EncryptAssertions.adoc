@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/profile/impl/EncryptAssertions.class
-
- - link:EncryptAssertions-asmified.java[Asmified]
-
-== References
-

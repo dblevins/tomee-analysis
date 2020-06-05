@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/SqrtNode.class
-
- - link:SqrtNode-asmified.java[Asmified]
-
-== References
-

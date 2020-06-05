@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/TransactionImpl$ReturnableTransactionBranch.class
-
- - link:TransactionImpl$ReturnableTransactionBranch-asmified.java[Asmified]
-
-== References
-

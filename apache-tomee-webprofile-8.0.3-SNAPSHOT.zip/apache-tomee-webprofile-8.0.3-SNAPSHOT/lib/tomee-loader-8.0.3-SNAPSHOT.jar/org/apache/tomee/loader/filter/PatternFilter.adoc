@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/filter/PatternFilter.class
-
- - link:PatternFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/log/Log4JLogFactory$LogAdapter.class
-
- - link:Log4JLogFactory$LogAdapter-asmified.java[Asmified]
-
-== References
-

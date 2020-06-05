@@ -1,6 +1,0 @@
-= org/hsqldb/StatementDMQL.class
-
- - link:StatementDMQL-asmified.java[Asmified]
-
-== References
-

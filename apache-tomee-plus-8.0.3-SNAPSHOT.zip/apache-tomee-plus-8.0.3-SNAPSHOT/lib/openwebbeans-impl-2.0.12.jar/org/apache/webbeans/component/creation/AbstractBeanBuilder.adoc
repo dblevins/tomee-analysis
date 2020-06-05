@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/AbstractBeanBuilder.class
-
- - link:AbstractBeanBuilder-asmified.java[Asmified]
-
-== References
-

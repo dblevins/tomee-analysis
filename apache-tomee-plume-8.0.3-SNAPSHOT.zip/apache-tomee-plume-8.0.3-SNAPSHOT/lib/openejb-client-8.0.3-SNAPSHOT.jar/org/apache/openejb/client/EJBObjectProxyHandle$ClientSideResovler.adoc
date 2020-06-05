@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EJBObjectProxyHandle$ClientSideResovler.class
-
- - link:EJBObjectProxyHandle$ClientSideResovler-asmified.java[Asmified]
-
-== References
-

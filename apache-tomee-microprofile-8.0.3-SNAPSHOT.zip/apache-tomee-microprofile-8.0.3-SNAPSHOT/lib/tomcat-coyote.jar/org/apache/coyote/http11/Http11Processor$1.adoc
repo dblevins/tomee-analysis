@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/Http11Processor$1.class
-
- - link:Http11Processor$1-asmified.java[Asmified]
-
-== References
-

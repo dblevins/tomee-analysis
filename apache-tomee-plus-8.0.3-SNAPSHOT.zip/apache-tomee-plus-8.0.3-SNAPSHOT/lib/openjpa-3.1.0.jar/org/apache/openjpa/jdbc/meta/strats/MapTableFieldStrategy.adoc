@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/MapTableFieldStrategy.class
-
- - link:MapTableFieldStrategy-asmified.java[Asmified]
-
-== References
-

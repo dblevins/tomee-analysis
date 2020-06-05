@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Fail.class
-
- - link:Fail-asmified.java[Asmified]
-
-== References
-

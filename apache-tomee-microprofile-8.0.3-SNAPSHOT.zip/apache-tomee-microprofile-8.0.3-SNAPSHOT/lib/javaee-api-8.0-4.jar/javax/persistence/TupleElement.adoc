@@ -1,6 +1,0 @@
-= javax/persistence/TupleElement.class
-
- - link:TupleElement-asmified.java[Asmified]
-
-== References
-

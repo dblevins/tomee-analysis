@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/sax/Properties.class
-
- - link:Properties-asmified.java[Asmified]
-
-== References
-

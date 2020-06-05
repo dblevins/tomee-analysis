@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/MultiplicationExpression.class
-
- - link:MultiplicationExpression-asmified.java[Asmified]
-
-== References
-

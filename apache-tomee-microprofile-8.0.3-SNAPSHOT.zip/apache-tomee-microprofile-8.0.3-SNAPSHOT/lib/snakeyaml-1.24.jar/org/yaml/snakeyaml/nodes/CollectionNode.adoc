@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/nodes/CollectionNode.class
-
- - link:CollectionNode-asmified.java[Asmified]
-
-== References
-

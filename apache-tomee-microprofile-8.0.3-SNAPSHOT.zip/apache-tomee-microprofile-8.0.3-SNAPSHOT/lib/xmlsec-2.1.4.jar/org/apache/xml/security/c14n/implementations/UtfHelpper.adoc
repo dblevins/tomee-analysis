@@ -1,6 +1,0 @@
-= org/apache/xml/security/c14n/implementations/UtfHelpper.class
-
- - link:UtfHelpper-asmified.java[Asmified]
-
-== References
-

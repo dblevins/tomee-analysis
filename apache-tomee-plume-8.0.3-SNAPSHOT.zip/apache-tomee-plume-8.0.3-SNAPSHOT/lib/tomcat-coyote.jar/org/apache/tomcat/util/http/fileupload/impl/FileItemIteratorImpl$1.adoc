@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/impl/FileItemIteratorImpl$1.class
-
- - link:FileItemIteratorImpl$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/nntp/NNTPRootFolder.class
-
- - link:NNTPRootFolder-asmified.java[Asmified]
-
-== References
-

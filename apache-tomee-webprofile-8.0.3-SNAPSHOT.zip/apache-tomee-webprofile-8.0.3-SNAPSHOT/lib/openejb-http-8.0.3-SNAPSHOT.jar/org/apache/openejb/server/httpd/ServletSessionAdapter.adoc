@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/ServletSessionAdapter.class
-
- - link:ServletSessionAdapter-asmified.java[Asmified]
-
-== References
-

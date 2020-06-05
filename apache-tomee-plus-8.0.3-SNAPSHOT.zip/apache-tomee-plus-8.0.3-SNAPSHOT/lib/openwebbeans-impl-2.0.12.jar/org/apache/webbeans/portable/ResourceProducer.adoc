@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/ResourceProducer.class
-
- - link:ResourceProducer-asmified.java[Asmified]
-
-== References
-

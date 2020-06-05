@@ -1,9 +1,0 @@
-= javax/faces/component/UIViewAction$ViewActionFacesContextWrapper.class
-
- - link:UIViewAction$ViewActionFacesContextWrapper-asmified.java[Asmified]
-
-== References
-
- - javax.faces.context.FacesContext - 9
- - javax.faces.component.UIViewAction$ViewActionFacesContextWrapper - 3
- - javax.faces.context.FacesContextWrapper - 2

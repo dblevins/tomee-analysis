@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/EntityBean.class
-
- - link:EntityBean-asmified.java[Asmified]
-
-== References
-

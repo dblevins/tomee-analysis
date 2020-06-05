@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Partitioning.class
-
- - link:Partitioning-asmified.java[Asmified]
-
-== References
-

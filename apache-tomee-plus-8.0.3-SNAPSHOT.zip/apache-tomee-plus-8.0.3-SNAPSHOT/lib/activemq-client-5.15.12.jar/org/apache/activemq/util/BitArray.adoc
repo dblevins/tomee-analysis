@@ -1,6 +1,0 @@
-= org/apache/activemq/util/BitArray.class
-
- - link:BitArray-asmified.java[Asmified]
-
-== References
-

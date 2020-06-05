@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/SearchCondition.class
-
- - link:SearchCondition-asmified.java[Asmified]
-
-== References
-

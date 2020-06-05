@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/trie/AbstractPatriciaTrie$PrefixRangeEntrySet$SingletonIterator.class
-
- - link:AbstractPatriciaTrie$PrefixRangeEntrySet$SingletonIterator-asmified.java[Asmified]
-
-== References
-

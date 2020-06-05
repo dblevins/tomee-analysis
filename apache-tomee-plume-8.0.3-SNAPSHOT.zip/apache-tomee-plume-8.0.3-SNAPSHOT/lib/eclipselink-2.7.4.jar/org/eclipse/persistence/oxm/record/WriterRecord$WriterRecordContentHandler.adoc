@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/record/WriterRecord$WriterRecordContentHandler.class
-
- - link:WriterRecord$WriterRecordContentHandler-asmified.java[Asmified]
-
-== References
-

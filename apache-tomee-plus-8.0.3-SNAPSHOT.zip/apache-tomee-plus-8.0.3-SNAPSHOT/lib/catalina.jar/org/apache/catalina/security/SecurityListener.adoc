@@ -1,6 +1,0 @@
-= org/apache/catalina/security/SecurityListener.class
-
- - link:SecurityListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/MappedSuperclass.class
-
- - link:MappedSuperclass-asmified.java[Asmified]
-
-== References
-

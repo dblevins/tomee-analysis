@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/PlusNode.class
-
- - link:PlusNode-asmified.java[Asmified]
-
-== References
-

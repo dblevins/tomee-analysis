@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$BaseFuture.class
-
- - link:BaseAsynchronousInterceptor$BaseFuture-asmified.java[Asmified]
-
-== References
-

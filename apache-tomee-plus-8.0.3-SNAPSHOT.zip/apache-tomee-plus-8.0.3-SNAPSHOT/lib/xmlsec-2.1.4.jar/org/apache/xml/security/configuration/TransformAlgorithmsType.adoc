@@ -1,6 +1,0 @@
-= org/apache/xml/security/configuration/TransformAlgorithmsType.class
-
- - link:TransformAlgorithmsType-asmified.java[Asmified]
-
-== References
-

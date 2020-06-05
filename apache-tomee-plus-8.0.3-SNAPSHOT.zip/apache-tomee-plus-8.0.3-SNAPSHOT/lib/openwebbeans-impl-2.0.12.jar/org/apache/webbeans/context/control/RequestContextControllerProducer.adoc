@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/control/RequestContextControllerProducer.class
-
- - link:RequestContextControllerProducer-asmified.java[Asmified]
-
-== References
-

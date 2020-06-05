@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/IndirectMessageReference.class
-
- - link:IndirectMessageReference-asmified.java[Asmified]
-
-== References
-

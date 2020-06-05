@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/ThreadLocalHttpServletRequestProxy.class
-
- - link:ThreadLocalHttpServletRequestProxy-asmified.java[Asmified]
-
-== References
-

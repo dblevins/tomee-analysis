@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TldAttribute.class
-
- - link:TldAttribute-asmified.java[Asmified]
-
-== References
-

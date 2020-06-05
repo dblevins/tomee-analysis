@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlSelectOneMenu$PropertyKeys.class
-
- - link:HtmlSelectOneMenu$PropertyKeys-asmified.java[Asmified]
-
-== References
-

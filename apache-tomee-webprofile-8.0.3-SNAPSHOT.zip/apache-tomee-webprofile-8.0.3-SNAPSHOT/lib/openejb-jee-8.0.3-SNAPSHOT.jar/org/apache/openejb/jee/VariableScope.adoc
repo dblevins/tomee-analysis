@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/VariableScope.class
-
- - link:VariableScope-asmified.java[Asmified]
-
-== References
-

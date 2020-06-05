@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/helper/extension/OPStack.class
-
- - link:OPStack-asmified.java[Asmified]
-
-== References
-

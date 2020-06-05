@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/DefaultAnnotation.class
-
- - link:DefaultAnnotation-asmified.java[Asmified]
-
-== References
-

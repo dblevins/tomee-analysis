@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/ModuleRequireNode.class
-
- - link:ModuleRequireNode-asmified.java[Asmified]
-
-== References
-

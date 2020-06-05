@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/SinglePoolMatchAllConnectionInterceptor.class
-
- - link:SinglePoolMatchAllConnectionInterceptor-asmified.java[Asmified]
-
-== References
-

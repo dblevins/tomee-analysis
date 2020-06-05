@@ -1,6 +1,0 @@
-= org/apache/openejb/client/HeartbeatMonitor$1.class
-
- - link:HeartbeatMonitor$1-asmified.java[Asmified]
-
-== References
-

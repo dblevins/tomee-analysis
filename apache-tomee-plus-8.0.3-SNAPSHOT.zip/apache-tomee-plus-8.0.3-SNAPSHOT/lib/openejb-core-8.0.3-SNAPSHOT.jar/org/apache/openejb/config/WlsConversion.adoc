@@ -1,6 +1,0 @@
-= org/apache/openejb/config/WlsConversion.class
-
- - link:WlsConversion-asmified.java[Asmified]
-
-== References
-

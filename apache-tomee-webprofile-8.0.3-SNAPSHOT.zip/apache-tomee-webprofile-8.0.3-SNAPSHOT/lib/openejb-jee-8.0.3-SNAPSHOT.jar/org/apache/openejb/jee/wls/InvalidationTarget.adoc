@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/InvalidationTarget.class
-
- - link:InvalidationTarget-asmified.java[Asmified]
-
-== References
-

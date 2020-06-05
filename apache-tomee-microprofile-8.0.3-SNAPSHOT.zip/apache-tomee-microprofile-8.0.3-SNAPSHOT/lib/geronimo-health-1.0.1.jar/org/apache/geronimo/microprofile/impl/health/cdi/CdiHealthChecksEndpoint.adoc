@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/impl/health/cdi/CdiHealthChecksEndpoint.class
-
- - link:CdiHealthChecksEndpoint-asmified.java[Asmified]
-
-== References
-

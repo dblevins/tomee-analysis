@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/MediaTypeSupport.class
-
- - link:MediaTypeSupport-asmified.java[Asmified]
-
-== References
-

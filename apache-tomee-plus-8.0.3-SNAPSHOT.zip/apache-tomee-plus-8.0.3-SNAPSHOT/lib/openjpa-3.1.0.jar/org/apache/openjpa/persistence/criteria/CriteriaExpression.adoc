@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/CriteriaExpression.class
-
- - link:CriteriaExpression-asmified.java[Asmified]
-
-== References
-

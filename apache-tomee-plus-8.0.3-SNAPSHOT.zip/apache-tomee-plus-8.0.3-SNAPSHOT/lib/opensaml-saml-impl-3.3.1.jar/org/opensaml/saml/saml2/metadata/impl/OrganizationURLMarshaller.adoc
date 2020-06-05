@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/OrganizationURLMarshaller.class
-
- - link:OrganizationURLMarshaller-asmified.java[Asmified]
-
-== References
-

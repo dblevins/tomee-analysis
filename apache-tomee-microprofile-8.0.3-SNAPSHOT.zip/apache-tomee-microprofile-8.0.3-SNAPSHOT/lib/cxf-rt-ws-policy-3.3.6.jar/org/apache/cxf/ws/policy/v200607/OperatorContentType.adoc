@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/v200607/OperatorContentType.class
-
- - link:OperatorContentType-asmified.java[Asmified]
-
-== References
-

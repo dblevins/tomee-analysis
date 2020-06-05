@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/attachment/JAXBAttachmentSchemaValidationHack$EndingInterceptor.class
-
- - link:JAXBAttachmentSchemaValidationHack$EndingInterceptor-asmified.java[Asmified]
-
-== References
-

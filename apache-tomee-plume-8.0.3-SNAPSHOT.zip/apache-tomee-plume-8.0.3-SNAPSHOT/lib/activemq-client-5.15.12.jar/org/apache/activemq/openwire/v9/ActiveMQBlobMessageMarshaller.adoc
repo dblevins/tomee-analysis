@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v9/ActiveMQBlobMessageMarshaller.class
-
- - link:ActiveMQBlobMessageMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/AdditionalCriteria.class
-
- - link:AdditionalCriteria-asmified.java[Asmified]
-
-== References
-

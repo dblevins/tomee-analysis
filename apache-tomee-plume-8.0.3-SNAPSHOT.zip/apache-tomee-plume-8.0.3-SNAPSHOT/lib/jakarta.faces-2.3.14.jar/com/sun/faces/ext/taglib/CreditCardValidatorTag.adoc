@@ -1,6 +1,0 @@
-= com/sun/faces/ext/taglib/CreditCardValidatorTag.class
-
- - link:CreditCardValidatorTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/retry/BeforeRetryInterceptor.class
-
- - link:BeforeRetryInterceptor-asmified.java[Asmified]
-
-== References
-

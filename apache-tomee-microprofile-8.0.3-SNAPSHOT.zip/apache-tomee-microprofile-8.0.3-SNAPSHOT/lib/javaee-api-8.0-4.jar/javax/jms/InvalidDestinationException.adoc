@@ -1,8 +1,0 @@
-= javax/jms/InvalidDestinationException.class
-
- - link:InvalidDestinationException-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSException - 2
- - javax.jms.InvalidDestinationException - 1

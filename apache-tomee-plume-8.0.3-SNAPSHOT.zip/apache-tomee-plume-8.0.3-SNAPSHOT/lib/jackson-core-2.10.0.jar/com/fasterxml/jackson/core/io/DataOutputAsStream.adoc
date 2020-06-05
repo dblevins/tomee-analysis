@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/io/DataOutputAsStream.class
-
- - link:DataOutputAsStream-asmified.java[Asmified]
-
-== References
-

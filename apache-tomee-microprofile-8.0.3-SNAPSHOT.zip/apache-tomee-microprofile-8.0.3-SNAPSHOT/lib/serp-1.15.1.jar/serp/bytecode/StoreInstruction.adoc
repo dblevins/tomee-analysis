@@ -1,6 +1,0 @@
-= serp/bytecode/StoreInstruction.class
-
- - link:StoreInstruction-asmified.java[Asmified]
-
-== References
-

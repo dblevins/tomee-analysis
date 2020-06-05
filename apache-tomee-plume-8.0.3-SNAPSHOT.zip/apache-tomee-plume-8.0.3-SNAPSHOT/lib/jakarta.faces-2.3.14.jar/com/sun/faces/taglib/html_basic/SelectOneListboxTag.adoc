@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/SelectOneListboxTag.class
-
- - link:SelectOneListboxTag-asmified.java[Asmified]
-
-== References
-

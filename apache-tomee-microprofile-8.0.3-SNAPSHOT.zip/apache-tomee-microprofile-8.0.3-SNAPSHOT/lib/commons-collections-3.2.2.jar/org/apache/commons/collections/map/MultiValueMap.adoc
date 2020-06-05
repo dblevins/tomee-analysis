@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/MultiValueMap.class
-
- - link:MultiValueMap-asmified.java[Asmified]
-
-== References
-

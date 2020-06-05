@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ServiceEndpointMethodMapping$JAXB.class
-
- - link:ServiceEndpointMethodMapping$JAXB-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.class
-
- - link:AbstractPropertiesImpl-asmified.java[Asmified]
-
-== References
-

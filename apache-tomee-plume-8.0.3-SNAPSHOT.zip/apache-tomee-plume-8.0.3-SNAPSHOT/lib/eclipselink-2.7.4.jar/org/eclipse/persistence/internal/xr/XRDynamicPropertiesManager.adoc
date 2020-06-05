@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRDynamicPropertiesManager.class
-
- - link:XRDynamicPropertiesManager-asmified.java[Asmified]
-
-== References
-

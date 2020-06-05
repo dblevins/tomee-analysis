@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/exc/IgnoredPropertyException.class
-
- - link:IgnoredPropertyException-asmified.java[Asmified]
-
-== References
-

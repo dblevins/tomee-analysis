@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/OrderingMergedResultObjectProvider.class
-
- - link:OrderingMergedResultObjectProvider-asmified.java[Asmified]
-
-== References
-

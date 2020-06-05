@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/Attachments.class
-
- - link:Attachments-asmified.java[Asmified]
-
-== References
-

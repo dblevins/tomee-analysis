@@ -1,6 +1,0 @@
-= org/apache/activemq/store/MessageRecoveryListener.class
-
- - link:MessageRecoveryListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ReflectionUtil$ConstructorFactory.class
-
- - link:ReflectionUtil$ConstructorFactory-asmified.java[Asmified]
-
-== References
-

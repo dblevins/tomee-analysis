@@ -1,6 +1,0 @@
-= javax/ejb/Remove.class
-
- - link:Remove-asmified.java[Asmified]
-
-== References
-

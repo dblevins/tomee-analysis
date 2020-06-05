@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/bean/SubjectBean.class
-
- - link:SubjectBean-asmified.java[Asmified]
-
-== References
-

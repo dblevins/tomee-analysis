@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/rest/client/annotation/RegisterProvider.class
-
- - link:RegisterProvider-asmified.java[Asmified]
-
-== References
-

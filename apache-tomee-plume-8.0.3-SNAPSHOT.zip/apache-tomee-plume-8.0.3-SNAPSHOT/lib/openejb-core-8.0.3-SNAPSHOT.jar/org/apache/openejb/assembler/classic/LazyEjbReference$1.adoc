@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/LazyEjbReference$1.class
-
- - link:LazyEjbReference$1-asmified.java[Asmified]
-
-== References
-

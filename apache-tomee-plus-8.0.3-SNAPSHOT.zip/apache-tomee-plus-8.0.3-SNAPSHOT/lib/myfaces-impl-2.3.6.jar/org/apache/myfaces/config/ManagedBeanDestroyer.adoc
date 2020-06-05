@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/ManagedBeanDestroyer.class
-
- - link:ManagedBeanDestroyer-asmified.java[Asmified]
-
-== References
-

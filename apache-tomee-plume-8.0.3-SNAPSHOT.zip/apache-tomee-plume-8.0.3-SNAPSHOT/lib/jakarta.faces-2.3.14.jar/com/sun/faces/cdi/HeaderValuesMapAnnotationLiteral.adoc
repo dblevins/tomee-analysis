@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/HeaderValuesMapAnnotationLiteral.class
-
- - link:HeaderValuesMapAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

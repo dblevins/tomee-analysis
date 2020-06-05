@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/JNDIStorableInterface.class
-
- - link:JNDIStorableInterface-asmified.java[Asmified]
-
-== References
-

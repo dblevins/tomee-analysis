@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/virtual/VirtualDestinationInterceptor.class
-
- - link:VirtualDestinationInterceptor-asmified.java[Asmified]
-
-== References
-

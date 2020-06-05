@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/SessionIdGenerator.class
-
- - link:SessionIdGenerator-asmified.java[Asmified]
-
-== References
-

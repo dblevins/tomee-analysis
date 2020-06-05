@@ -1,6 +1,0 @@
-= org/apache/neethi/PolicyRegistry.class
-
- - link:PolicyRegistry-asmified.java[Asmified]
-
-== References
-

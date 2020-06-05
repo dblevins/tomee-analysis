@@ -1,6 +1,0 @@
-= org/apache/tomee/common/SystemComponentFactory.class
-
- - link:SystemComponentFactory-asmified.java[Asmified]
-
-== References
-

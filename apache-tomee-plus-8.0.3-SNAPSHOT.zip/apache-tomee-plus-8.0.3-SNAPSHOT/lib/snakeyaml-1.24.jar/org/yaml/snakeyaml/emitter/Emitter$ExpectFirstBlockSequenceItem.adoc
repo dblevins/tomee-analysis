@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/emitter/Emitter$ExpectFirstBlockSequenceItem.class
-
- - link:Emitter$ExpectFirstBlockSequenceItem-asmified.java[Asmified]
-
-== References
-

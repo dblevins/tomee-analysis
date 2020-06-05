@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/ClientCallback.class
-
- - link:ClientCallback-asmified.java[Asmified]
-
-== References
-

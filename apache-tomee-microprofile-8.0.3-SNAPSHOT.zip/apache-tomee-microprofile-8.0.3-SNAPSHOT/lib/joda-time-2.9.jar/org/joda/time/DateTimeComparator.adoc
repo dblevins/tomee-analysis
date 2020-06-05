@@ -1,6 +1,0 @@
-= org/joda/time/DateTimeComparator.class
-
- - link:DateTimeComparator-asmified.java[Asmified]
-
-== References
-

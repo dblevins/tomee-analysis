@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/callbacks/CallbackOperation.class
-
- - link:CallbackOperation-asmified.java[Asmified]
-
-== References
-

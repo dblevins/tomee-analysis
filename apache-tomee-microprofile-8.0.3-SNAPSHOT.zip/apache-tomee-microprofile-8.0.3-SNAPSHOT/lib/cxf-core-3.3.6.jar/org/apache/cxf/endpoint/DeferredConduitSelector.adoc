@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/DeferredConduitSelector.class
-
- - link:DeferredConduitSelector-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/CompositeCollectionMappingContentHandler.class
-
- - link:CompositeCollectionMappingContentHandler-asmified.java[Asmified]
-
-== References
-

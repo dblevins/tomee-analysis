@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/NavigationPath.class
-
- - link:NavigationPath-asmified.java[Asmified]
-
-== References
-

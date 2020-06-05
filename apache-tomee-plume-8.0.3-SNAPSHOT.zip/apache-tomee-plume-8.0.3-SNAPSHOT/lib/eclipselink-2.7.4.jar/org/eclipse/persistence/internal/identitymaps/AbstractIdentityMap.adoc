@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/identitymaps/AbstractIdentityMap.class
-
- - link:AbstractIdentityMap-asmified.java[Asmified]
-
-== References
-

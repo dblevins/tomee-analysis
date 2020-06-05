@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlMenuRendererBase.class
-
- - link:HtmlMenuRendererBase-asmified.java[Asmified]
-
-== References
-

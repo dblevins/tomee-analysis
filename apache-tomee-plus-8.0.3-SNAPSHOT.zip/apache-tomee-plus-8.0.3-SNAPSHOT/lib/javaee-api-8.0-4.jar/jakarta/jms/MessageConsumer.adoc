@@ -1,6 +1,0 @@
-= jakarta/jms/MessageConsumer.class
-
- - link:MessageConsumer-asmified.java[Asmified]
-
-== References
-

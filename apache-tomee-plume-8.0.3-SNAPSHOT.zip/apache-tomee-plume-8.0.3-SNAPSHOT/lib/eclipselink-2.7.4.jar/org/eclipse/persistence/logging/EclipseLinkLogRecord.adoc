@@ -1,6 +1,0 @@
-= org/eclipse/persistence/logging/EclipseLinkLogRecord.class
-
- - link:EclipseLinkLogRecord-asmified.java[Asmified]
-
-== References
-

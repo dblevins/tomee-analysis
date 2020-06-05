@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/UpdatedBy.class
-
- - link:UpdatedBy-asmified.java[Asmified]
-
-== References
-

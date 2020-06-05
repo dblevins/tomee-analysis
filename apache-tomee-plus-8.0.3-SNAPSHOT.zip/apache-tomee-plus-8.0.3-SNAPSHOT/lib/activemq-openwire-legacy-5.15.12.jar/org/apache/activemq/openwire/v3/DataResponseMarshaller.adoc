@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v3/DataResponseMarshaller.class
-
- - link:DataResponseMarshaller-asmified.java[Asmified]
-
-== References
-

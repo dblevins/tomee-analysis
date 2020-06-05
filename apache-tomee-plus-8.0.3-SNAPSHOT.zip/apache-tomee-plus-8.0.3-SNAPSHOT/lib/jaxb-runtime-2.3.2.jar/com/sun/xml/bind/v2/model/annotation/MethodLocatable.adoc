@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/annotation/MethodLocatable.class
-
- - link:MethodLocatable-asmified.java[Asmified]
-
-== References
-

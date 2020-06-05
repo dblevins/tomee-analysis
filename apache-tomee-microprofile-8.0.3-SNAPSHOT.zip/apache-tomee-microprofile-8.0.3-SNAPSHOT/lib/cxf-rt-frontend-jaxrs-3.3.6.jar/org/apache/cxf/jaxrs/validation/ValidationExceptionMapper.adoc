@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/validation/ValidationExceptionMapper.class
-
- - link:ValidationExceptionMapper-asmified.java[Asmified]
-
-== References
-

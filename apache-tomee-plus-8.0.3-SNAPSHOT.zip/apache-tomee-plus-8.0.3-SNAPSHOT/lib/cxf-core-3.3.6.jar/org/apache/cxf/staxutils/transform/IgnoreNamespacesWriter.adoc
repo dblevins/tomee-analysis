@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/transform/IgnoreNamespacesWriter.class
-
- - link:IgnoreNamespacesWriter-asmified.java[Asmified]
-
-== References
-

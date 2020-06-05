@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/ServletRequestAdapter.class
-
- - link:ServletRequestAdapter-asmified.java[Asmified]
-
-== References
-

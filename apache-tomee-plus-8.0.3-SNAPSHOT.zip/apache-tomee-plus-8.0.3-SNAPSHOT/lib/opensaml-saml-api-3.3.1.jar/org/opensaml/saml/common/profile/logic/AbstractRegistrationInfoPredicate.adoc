@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/logic/AbstractRegistrationInfoPredicate.class
-
- - link:AbstractRegistrationInfoPredicate-asmified.java[Asmified]
-
-== References
-

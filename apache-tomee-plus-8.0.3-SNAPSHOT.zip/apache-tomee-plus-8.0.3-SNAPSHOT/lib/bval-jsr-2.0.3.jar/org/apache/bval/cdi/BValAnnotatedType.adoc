@@ -1,6 +1,0 @@
-= org/apache/bval/cdi/BValAnnotatedType.class
-
- - link:BValAnnotatedType-asmified.java[Asmified]
-
-== References
-

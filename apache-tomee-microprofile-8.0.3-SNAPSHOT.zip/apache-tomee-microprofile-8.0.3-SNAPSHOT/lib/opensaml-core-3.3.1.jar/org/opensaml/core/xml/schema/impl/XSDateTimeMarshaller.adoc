@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSDateTimeMarshaller.class
-
- - link:XSDateTimeMarshaller-asmified.java[Asmified]
-
-== References
-

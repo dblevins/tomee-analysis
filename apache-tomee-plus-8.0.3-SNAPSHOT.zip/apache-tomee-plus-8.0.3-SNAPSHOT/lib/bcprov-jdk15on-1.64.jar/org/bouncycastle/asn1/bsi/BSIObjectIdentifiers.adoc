@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/bsi/BSIObjectIdentifiers.class
-
- - link:BSIObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

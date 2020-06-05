@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/scripting/EvaluableScript.class
-
- - link:EvaluableScript-asmified.java[Asmified]
-
-== References
-

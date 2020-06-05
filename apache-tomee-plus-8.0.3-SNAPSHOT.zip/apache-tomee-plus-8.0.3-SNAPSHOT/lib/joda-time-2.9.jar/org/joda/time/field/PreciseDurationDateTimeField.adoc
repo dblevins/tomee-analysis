@@ -1,6 +1,0 @@
-= org/joda/time/field/PreciseDurationDateTimeField.class
-
- - link:PreciseDurationDateTimeField-asmified.java[Asmified]
-
-== References
-

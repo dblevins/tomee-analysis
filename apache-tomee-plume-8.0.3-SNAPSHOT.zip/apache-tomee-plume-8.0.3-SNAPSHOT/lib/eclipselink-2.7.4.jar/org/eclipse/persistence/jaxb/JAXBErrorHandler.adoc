@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBErrorHandler.class
-
- - link:JAXBErrorHandler-asmified.java[Asmified]
-
-== References
-

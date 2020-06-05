@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/smtp/SMTPReply.class
-
- - link:SMTPReply-asmified.java[Asmified]
-
-== References
-

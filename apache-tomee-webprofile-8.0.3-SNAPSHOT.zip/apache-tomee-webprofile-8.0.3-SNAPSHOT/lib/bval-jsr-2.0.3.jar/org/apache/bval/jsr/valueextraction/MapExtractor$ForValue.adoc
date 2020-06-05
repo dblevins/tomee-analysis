@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/MapExtractor$ForValue.class
-
- - link:MapExtractor$ForValue-asmified.java[Asmified]
-
-== References
-

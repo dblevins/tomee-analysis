@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/AddressingSupport.class
-
- - link:AddressingSupport-asmified.java[Asmified]
-
-== References
-

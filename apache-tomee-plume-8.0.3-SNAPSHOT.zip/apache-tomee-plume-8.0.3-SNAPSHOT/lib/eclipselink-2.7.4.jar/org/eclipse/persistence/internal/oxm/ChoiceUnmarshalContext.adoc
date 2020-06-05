@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/ChoiceUnmarshalContext.class
-
- - link:ChoiceUnmarshalContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/CollectionTable.class
-
- - link:CollectionTable-asmified.java[Asmified]
-
-== References
-

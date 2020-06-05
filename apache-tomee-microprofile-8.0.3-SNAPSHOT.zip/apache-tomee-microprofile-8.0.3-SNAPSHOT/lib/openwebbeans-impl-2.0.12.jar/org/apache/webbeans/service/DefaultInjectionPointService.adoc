@@ -1,6 +1,0 @@
-= org/apache/webbeans/service/DefaultInjectionPointService.class
-
- - link:DefaultInjectionPointService-asmified.java[Asmified]
-
-== References
-

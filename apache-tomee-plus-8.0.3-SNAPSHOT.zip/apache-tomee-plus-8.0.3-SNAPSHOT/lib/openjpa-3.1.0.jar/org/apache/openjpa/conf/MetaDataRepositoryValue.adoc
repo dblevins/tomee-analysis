@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/MetaDataRepositoryValue.class
-
- - link:MetaDataRepositoryValue-asmified.java[Asmified]
-
-== References
-

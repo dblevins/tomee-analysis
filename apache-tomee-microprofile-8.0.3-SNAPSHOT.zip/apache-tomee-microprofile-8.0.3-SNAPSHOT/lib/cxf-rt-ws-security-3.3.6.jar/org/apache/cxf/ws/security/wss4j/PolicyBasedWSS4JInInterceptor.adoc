@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.class
-
- - link:PolicyBasedWSS4JInInterceptor-asmified.java[Asmified]
-
-== References
-

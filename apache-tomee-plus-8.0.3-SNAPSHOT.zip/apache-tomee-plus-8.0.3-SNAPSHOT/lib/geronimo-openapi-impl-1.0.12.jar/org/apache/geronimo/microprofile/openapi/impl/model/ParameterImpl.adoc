@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/ParameterImpl.class
-
- - link:ParameterImpl-asmified.java[Asmified]
-
-== References
-

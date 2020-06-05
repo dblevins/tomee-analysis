@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/introspector/PropertyUtils$1.class
-
- - link:PropertyUtils$1-asmified.java[Asmified]
-
-== References
-

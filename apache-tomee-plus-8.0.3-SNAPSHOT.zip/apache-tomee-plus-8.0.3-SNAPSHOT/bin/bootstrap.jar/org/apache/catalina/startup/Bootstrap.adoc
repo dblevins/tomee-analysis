@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/Bootstrap.class
-
- - link:Bootstrap-asmified.java[Asmified]
-
-== References
-

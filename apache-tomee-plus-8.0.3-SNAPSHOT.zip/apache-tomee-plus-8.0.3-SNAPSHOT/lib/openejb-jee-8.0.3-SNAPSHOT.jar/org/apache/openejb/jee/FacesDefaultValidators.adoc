@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesDefaultValidators.class
-
- - link:FacesDefaultValidators-asmified.java[Asmified]
-
-== References
-

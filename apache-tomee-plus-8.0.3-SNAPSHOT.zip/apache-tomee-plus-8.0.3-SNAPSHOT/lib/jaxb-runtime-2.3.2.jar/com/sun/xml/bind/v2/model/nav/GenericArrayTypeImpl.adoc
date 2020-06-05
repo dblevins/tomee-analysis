@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/nav/GenericArrayTypeImpl.class
-
- - link:GenericArrayTypeImpl-asmified.java[Asmified]
-
-== References
-

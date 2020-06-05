@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http_jaxws_spi/HttpHandlerImpl.class
-
- - link:HttpHandlerImpl-asmified.java[Asmified]
-
-== References
-

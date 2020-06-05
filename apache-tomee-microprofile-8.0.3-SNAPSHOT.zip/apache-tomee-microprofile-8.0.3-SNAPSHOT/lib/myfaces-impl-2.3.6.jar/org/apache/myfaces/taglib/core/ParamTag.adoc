@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ParamTag.class
-
- - link:ParamTag-asmified.java[Asmified]
-
-== References
-

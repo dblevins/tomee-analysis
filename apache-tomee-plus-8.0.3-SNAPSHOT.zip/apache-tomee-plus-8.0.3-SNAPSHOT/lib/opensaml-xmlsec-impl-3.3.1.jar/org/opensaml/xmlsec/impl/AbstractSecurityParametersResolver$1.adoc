@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/AbstractSecurityParametersResolver$1.class
-
- - link:AbstractSecurityParametersResolver$1-asmified.java[Asmified]
-
-== References
-

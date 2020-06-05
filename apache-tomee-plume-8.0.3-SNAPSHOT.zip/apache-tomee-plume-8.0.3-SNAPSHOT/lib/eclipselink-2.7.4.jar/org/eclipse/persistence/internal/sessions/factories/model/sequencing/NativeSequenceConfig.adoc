@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/sequencing/NativeSequenceConfig.class
-
- - link:NativeSequenceConfig-asmified.java[Asmified]
-
-== References
-

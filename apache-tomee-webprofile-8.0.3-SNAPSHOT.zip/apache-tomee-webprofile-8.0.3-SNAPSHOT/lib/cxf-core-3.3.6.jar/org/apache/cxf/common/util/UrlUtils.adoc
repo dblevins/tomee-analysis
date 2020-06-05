@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/UrlUtils.class
-
- - link:UrlUtils-asmified.java[Asmified]
-
-== References
-

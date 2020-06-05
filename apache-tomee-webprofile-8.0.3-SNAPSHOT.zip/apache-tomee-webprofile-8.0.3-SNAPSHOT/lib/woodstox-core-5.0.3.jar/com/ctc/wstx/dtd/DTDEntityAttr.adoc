@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/DTDEntityAttr.class
-
- - link:DTDEntityAttr-asmified.java[Asmified]
-
-== References
-

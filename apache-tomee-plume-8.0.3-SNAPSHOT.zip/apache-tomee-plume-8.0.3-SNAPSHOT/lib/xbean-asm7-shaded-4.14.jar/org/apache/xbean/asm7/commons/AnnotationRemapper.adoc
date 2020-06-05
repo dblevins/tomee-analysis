@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/AnnotationRemapper.class
-
- - link:AnnotationRemapper-asmified.java[Asmified]
-
-== References
-

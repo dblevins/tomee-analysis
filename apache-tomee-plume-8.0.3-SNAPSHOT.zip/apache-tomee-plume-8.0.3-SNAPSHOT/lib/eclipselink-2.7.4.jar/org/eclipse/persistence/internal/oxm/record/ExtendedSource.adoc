@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/ExtendedSource.class
-
- - link:ExtendedSource-asmified.java[Asmified]
-
-== References
-

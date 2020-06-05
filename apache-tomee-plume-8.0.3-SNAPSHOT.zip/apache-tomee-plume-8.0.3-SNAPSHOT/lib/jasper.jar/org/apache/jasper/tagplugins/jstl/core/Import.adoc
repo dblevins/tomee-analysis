@@ -1,6 +1,0 @@
-= org/apache/jasper/tagplugins/jstl/core/Import.class
-
- - link:Import-asmified.java[Asmified]
-
-== References
-

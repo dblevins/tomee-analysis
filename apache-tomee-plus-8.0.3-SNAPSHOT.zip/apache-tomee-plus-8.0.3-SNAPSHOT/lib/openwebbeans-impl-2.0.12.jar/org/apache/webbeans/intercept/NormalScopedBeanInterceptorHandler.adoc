@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/NormalScopedBeanInterceptorHandler.class
-
- - link:NormalScopedBeanInterceptorHandler-asmified.java[Asmified]
-
-== References
-

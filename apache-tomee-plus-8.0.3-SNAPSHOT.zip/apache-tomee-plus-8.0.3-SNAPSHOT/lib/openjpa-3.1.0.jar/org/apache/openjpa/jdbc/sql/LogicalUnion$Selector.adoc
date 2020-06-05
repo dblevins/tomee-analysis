@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/LogicalUnion$Selector.class
-
- - link:LogicalUnion$Selector-asmified.java[Asmified]
-
-== References
-

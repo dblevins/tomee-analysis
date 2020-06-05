@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl.class
-
- - link:CacheMethodDetailsImpl-asmified.java[Asmified]
-
-== References
-

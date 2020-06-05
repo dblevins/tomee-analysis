@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/type/CollectionLikeType.class
-
- - link:CollectionLikeType-asmified.java[Asmified]
-
-== References
-

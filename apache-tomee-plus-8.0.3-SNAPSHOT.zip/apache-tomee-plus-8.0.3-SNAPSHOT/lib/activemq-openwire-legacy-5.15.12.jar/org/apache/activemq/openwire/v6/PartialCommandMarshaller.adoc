@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v6/PartialCommandMarshaller.class
-
- - link:PartialCommandMarshaller-asmified.java[Asmified]
-
-== References
-

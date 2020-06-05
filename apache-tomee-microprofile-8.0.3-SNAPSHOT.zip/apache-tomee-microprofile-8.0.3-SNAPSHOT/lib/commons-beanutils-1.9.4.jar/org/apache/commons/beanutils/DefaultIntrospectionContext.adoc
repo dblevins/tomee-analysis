@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/DefaultIntrospectionContext.class
-
- - link:DefaultIntrospectionContext-asmified.java[Asmified]
-
-== References
-

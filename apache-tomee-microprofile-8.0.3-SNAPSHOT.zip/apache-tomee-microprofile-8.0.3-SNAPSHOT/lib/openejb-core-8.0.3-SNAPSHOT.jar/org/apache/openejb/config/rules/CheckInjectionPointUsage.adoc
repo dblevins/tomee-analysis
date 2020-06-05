@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckInjectionPointUsage.class
-
- - link:CheckInjectionPointUsage-asmified.java[Asmified]
-
-== References
-

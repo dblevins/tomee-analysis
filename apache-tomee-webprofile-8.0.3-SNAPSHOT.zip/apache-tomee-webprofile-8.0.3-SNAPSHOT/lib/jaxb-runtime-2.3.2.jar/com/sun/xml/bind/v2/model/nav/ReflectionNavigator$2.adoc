@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/nav/ReflectionNavigator$2.class
-
- - link:ReflectionNavigator$2-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/CmpEntityContainerBuilder.class
-
- - link:CmpEntityContainerBuilder-asmified.java[Asmified]
-
-== References
-

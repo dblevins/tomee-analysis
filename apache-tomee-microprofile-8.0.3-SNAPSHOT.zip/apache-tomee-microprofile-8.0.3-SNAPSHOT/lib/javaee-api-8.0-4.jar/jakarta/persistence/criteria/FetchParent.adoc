@@ -1,6 +1,0 @@
-= jakarta/persistence/criteria/FetchParent.class
-
- - link:FetchParent-asmified.java[Asmified]
-
-== References
-

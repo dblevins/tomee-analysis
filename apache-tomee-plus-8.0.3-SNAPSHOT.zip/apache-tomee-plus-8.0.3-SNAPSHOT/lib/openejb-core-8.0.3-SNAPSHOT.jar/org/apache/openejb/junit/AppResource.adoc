@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/AppResource.class
-
- - link:AppResource-asmified.java[Asmified]
-
-== References
-

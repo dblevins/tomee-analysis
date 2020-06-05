@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/ant/SchemaToolTask$Action.class
-
- - link:SchemaToolTask$Action-asmified.java[Asmified]
-
-== References
-

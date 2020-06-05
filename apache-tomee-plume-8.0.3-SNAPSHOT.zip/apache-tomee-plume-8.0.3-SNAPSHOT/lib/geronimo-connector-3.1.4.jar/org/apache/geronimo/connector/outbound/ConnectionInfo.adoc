@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/ConnectionInfo.class
-
- - link:ConnectionInfo-asmified.java[Asmified]
-
-== References
-

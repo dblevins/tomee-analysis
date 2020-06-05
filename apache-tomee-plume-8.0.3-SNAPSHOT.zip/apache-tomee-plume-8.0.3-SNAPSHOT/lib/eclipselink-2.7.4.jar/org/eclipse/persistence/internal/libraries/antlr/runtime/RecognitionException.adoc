@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException.class
-
- - link:RecognitionException-asmified.java[Asmified]
-
-== References
-

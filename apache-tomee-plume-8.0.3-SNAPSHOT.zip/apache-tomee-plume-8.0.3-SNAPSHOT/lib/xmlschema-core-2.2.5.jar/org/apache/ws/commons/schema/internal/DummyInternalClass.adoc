@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/internal/DummyInternalClass.class
-
- - link:DummyInternalClass-asmified.java[Asmified]
-
-== References
-

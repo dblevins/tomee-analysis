@@ -1,6 +1,0 @@
-= javax/xml/stream/events/DTD.class
-
- - link:DTD-asmified.java[Asmified]
-
-== References
-

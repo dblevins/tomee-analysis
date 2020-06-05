@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/osgi/HTTPTransportActivator.class
-
- - link:HTTPTransportActivator-asmified.java[Asmified]
-
-== References
-

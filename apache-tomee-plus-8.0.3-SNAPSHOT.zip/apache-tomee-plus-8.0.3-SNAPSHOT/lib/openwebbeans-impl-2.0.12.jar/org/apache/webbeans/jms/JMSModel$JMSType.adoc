@@ -1,6 +1,0 @@
-= org/apache/webbeans/jms/JMSModel$JMSType.class
-
- - link:JMSModel$JMSType-asmified.java[Asmified]
-
-== References
-

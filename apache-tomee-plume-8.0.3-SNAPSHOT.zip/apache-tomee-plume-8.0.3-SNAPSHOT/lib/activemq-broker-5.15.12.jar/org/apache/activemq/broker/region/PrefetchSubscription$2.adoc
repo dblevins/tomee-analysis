@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/PrefetchSubscription$2.class
-
- - link:PrefetchSubscription$2-asmified.java[Asmified]
-
-== References
-

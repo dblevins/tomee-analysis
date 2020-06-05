@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/CompareExpression.class
-
- - link:CompareExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/DatabaseType$DatabaseTypeHelper.class
-
- - link:DatabaseType$DatabaseTypeHelper-asmified.java[Asmified]
-
-== References
-

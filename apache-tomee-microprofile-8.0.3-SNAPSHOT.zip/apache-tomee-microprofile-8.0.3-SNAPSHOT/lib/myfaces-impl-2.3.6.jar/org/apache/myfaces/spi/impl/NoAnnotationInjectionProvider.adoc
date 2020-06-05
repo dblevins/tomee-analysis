@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/impl/NoAnnotationInjectionProvider.class
-
- - link:NoAnnotationInjectionProvider-asmified.java[Asmified]
-
-== References
-

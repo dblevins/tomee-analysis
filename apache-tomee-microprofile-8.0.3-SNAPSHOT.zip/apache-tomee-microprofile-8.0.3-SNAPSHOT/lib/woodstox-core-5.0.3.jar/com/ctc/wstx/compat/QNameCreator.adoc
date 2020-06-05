@@ -1,6 +1,0 @@
-= com/ctc/wstx/compat/QNameCreator.class
-
- - link:QNameCreator-asmified.java[Asmified]
-
-== References
-

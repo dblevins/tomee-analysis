@@ -1,6 +1,0 @@
-= org/apache/cxf/logging/NoOpFaultListener.class
-
- - link:NoOpFaultListener-asmified.java[Asmified]
-
-== References
-

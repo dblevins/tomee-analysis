@@ -1,6 +1,0 @@
-= org/hsqldb/persist/TextCache.class
-
- - link:TextCache-asmified.java[Asmified]
-
-== References
-

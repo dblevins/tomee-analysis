@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPStatusResponse.class
-
- - link:IMAPStatusResponse-asmified.java[Asmified]
-
-== References
-

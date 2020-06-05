@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/ActionListenerHandler.class
-
- - link:ActionListenerHandler-asmified.java[Asmified]
-
-== References
-

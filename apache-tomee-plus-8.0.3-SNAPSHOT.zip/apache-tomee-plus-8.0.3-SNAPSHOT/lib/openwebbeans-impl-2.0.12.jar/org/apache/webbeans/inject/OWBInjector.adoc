@@ -1,6 +1,0 @@
-= org/apache/webbeans/inject/OWBInjector.class
-
- - link:OWBInjector-asmified.java[Asmified]
-
-== References
-

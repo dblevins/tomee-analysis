@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/metadata/MetadataSourceAdapter.class
-
- - link:MetadataSourceAdapter-asmified.java[Asmified]
-
-== References
-

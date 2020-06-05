@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ClientInstance.class
-
- - link:ClientInstance-asmified.java[Asmified]
-
-== References
-

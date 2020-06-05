@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ContractMappingImpl.class
-
- - link:ContractMappingImpl-asmified.java[Asmified]
-
-== References
-

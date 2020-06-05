@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/helper/ListWrapper.class
-
- - link:ListWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/xml/registry/infomodel/URIValidator.class
-
- - link:URIValidator-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 2

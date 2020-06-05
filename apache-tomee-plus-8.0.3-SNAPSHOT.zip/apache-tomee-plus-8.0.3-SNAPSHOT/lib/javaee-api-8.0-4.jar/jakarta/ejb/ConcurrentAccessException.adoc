@@ -1,6 +1,0 @@
-= jakarta/ejb/ConcurrentAccessException.class
-
- - link:ConcurrentAccessException-asmified.java[Asmified]
-
-== References
-

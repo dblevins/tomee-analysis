@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/InMemorySavepointManager.class
-
- - link:InMemorySavepointManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/Constructible.class
-
- - link:Constructible-asmified.java[Asmified]
-
-== References
-

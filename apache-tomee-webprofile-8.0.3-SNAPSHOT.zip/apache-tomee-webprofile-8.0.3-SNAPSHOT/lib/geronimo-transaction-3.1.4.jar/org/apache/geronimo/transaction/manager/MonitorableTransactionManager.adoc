@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/MonitorableTransactionManager.class
-
- - link:MonitorableTransactionManager-asmified.java[Asmified]
-
-== References
-

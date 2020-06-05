@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/ObserverMethod.class
-
- - link:ObserverMethod-asmified.java[Asmified]
-
-== References
-

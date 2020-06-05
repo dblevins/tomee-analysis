@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/CoyoteReader.class
-
- - link:CoyoteReader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/CacheInvocationParameterImpl.class
-
- - link:CacheInvocationParameterImpl-asmified.java[Asmified]
-
-== References
-

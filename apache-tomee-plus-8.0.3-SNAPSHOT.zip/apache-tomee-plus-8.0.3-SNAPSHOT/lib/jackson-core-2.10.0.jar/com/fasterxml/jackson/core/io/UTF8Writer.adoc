@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/io/UTF8Writer.class
-
- - link:UTF8Writer-asmified.java[Asmified]
-
-== References
-

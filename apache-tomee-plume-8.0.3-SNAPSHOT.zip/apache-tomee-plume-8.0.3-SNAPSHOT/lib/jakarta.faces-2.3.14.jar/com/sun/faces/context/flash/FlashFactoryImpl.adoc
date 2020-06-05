@@ -1,6 +1,0 @@
-= com/sun/faces/context/flash/FlashFactoryImpl.class
-
- - link:FlashFactoryImpl-asmified.java[Asmified]
-
-== References
-

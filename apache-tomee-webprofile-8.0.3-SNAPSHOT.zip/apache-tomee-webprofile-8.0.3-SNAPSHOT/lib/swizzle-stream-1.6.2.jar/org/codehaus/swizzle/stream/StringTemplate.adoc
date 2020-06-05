@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/StringTemplate.class
-
- - link:StringTemplate-asmified.java[Asmified]
-
-== References
-

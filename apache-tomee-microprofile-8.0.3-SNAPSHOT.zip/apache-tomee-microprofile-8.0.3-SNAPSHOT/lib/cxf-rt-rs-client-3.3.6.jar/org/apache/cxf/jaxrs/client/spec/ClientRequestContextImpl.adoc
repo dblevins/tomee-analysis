@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spec/ClientRequestContextImpl.class
-
- - link:ClientRequestContextImpl-asmified.java[Asmified]
-
-== References
-

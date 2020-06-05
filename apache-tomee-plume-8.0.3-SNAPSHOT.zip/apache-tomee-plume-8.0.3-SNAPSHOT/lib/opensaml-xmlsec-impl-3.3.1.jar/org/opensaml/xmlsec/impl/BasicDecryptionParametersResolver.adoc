@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/BasicDecryptionParametersResolver.class
-
- - link:BasicDecryptionParametersResolver-asmified.java[Asmified]
-
-== References
-

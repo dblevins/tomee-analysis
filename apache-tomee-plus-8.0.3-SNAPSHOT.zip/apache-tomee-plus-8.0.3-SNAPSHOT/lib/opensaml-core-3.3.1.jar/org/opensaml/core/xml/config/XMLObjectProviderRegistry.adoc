@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/config/XMLObjectProviderRegistry.class
-
- - link:XMLObjectProviderRegistry-asmified.java[Asmified]
-
-== References
-

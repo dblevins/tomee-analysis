@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/serializers/JSONSerializer.class
-
- - link:JSONSerializer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v8/ConsumerControlMarshaller.class
-
- - link:ConsumerControlMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/InstanceManagerBindings.class
-
- - link:InstanceManagerBindings-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/TerracottaToolkitBuilder.class
-
- - link:TerracottaToolkitBuilder-asmified.java[Asmified]
-
-== References
-

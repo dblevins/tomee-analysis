@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/RecoveredUnit.class
-
- - link:RecoveredUnit-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/OASFilter.class
-
- - link:OASFilter-asmified.java[Asmified]
-
-== References
-

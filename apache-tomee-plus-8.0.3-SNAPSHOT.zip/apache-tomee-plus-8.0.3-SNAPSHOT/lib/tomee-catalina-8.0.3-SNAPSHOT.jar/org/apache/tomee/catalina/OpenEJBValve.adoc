@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/OpenEJBValve.class
-
- - link:OpenEJBValve-asmified.java[Asmified]
-
-== References
-

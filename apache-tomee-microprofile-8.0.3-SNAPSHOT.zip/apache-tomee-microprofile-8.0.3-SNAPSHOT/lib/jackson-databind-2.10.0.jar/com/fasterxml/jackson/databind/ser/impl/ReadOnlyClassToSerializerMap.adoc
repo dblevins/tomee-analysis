@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/impl/ReadOnlyClassToSerializerMap.class
-
- - link:ReadOnlyClassToSerializerMap-asmified.java[Asmified]
-
-== References
-

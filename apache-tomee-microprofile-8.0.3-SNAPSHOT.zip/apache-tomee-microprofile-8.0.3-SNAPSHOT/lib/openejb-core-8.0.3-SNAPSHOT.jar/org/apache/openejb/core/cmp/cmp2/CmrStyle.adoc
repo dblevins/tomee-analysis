@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/cmp2/CmrStyle.class
-
- - link:CmrStyle-asmified.java[Asmified]
-
-== References
-

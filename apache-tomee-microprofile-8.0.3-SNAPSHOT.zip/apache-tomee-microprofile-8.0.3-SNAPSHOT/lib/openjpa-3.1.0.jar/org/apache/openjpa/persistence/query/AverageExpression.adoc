@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/AverageExpression.class
-
- - link:AverageExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/ResultListIterator.class
-
- - link:ResultListIterator-asmified.java[Asmified]
-
-== References
-

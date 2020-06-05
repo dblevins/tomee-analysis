@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/PathJoins.class
-
- - link:PathJoins-asmified.java[Asmified]
-
-== References
-

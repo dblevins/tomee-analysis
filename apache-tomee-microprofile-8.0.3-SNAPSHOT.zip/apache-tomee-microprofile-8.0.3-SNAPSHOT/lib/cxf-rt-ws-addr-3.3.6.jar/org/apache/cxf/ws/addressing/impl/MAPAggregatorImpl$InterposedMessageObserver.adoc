@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/impl/MAPAggregatorImpl$InterposedMessageObserver.class
-
- - link:MAPAggregatorImpl$InterposedMessageObserver-asmified.java[Asmified]
-
-== References
-

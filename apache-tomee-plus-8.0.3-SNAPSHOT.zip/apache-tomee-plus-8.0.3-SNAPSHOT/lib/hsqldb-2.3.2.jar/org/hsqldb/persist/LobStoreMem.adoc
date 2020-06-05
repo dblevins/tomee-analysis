@@ -1,6 +1,0 @@
-= org/hsqldb/persist/LobStoreMem.class
-
- - link:LobStoreMem-asmified.java[Asmified]
-
-== References
-

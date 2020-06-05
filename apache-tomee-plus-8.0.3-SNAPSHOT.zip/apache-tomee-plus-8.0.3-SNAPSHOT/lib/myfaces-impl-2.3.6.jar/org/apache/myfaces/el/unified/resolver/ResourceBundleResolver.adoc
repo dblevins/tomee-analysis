@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/ResourceBundleResolver.class
-
- - link:ResourceBundleResolver-asmified.java[Asmified]
-
-== References
-

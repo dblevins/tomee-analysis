@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/WebRuleSet.class
-
- - link:WebRuleSet-asmified.java[Asmified]
-
-== References
-

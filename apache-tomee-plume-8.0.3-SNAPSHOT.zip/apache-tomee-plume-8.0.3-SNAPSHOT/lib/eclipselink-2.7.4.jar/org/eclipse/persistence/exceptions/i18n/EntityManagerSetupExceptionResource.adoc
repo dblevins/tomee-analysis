@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/i18n/EntityManagerSetupExceptionResource.class
-
- - link:EntityManagerSetupExceptionResource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AbsExpression.class
-
- - link:AbsExpression-asmified.java[Asmified]
-
-== References
-

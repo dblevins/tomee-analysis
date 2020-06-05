@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/xml/MyFacesErrorHandler.class
-
- - link:MyFacesErrorHandler-asmified.java[Asmified]
-
-== References
-

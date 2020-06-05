@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/HsqldbJDBCAdapter.class
-
- - link:HsqldbJDBCAdapter-asmified.java[Asmified]
-
-== References
-

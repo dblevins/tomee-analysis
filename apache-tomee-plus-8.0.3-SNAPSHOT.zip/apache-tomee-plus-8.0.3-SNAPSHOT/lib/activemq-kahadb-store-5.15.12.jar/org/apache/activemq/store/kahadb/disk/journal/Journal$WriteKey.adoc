@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/journal/Journal$WriteKey.class
-
- - link:Journal$WriteKey-asmified.java[Asmified]
-
-== References
-

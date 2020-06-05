@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/CheckModuleAdapter.class
-
- - link:CheckModuleAdapter-asmified.java[Asmified]
-
-== References
-

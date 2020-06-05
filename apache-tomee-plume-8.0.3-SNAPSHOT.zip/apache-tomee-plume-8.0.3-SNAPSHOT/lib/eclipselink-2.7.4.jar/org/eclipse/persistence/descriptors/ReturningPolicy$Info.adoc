@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/ReturningPolicy$Info.class
-
- - link:ReturningPolicy$Info-asmified.java[Asmified]
-
-== References
-

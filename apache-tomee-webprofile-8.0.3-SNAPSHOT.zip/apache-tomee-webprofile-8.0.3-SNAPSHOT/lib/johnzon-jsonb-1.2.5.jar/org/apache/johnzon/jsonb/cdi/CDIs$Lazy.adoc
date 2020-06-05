@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/cdi/CDIs$Lazy.class
-
- - link:CDIs$Lazy-asmified.java[Asmified]
-
-== References
-

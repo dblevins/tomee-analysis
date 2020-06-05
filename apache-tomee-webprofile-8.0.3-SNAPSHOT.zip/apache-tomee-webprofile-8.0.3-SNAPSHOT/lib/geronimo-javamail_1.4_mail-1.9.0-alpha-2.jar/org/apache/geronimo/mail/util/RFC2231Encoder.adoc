@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/util/RFC2231Encoder.class
-
- - link:RFC2231Encoder-asmified.java[Asmified]
-
-== References
-

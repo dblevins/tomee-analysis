@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/stax/XMLSecDTDImpl.class
-
- - link:XMLSecDTDImpl-asmified.java[Asmified]
-
-== References
-

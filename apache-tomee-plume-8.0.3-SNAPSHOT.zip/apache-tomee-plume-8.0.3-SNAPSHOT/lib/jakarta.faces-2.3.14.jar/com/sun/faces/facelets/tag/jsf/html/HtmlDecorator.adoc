@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/html/HtmlDecorator.class
-
- - link:HtmlDecorator-asmified.java[Asmified]
-
-== References
-

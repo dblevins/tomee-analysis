@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/RequestViewMetadata.class
-
- - link:RequestViewMetadata-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/media/Content.class
-
- - link:Content-asmified.java[Asmified]
-
-== References
-

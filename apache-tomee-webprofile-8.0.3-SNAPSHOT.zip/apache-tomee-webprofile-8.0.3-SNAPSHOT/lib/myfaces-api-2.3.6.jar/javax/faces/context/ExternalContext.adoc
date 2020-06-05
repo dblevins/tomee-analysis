@@ -1,9 +1,0 @@
-= javax/faces/context/ExternalContext.class
-
- - link:ExternalContext-asmified.java[Asmified]
-
-== References
-
- - javax.faces.context.ExternalContext - 120
- - javax.faces.lifecycle.ClientWindow - 3
- - javax.faces.context.Flash - 2

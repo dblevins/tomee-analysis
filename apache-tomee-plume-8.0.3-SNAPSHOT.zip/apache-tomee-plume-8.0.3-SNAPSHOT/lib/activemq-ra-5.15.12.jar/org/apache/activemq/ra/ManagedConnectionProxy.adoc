@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/ManagedConnectionProxy.class
-
- - link:ManagedConnectionProxy-asmified.java[Asmified]
-
-== References
-

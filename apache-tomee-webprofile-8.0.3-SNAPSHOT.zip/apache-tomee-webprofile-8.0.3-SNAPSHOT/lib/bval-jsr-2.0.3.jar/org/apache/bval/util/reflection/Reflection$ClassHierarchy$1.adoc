@@ -1,6 +1,0 @@
-= org/apache/bval/util/reflection/Reflection$ClassHierarchy$1.class
-
- - link:Reflection$ClassHierarchy$1-asmified.java[Asmified]
-
-== References
-

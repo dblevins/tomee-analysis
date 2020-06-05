@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/tables/IndexMetadata.class
-
- - link:IndexMetadata-asmified.java[Asmified]
-
-== References
-

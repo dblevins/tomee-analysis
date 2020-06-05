@@ -1,9 +1,0 @@
-= javax/enterprise/inject/spi/ProcessBeanAttributes.class
-
- - link:ProcessBeanAttributes-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.BeanAttributes - 2
- - javax.enterprise.inject.spi.Annotated - 1
- - javax.enterprise.inject.spi.configurator.BeanAttributesConfigurator - 1

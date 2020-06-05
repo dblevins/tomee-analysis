@@ -1,2 +1,0 @@
-= apache-tomee-plume-8.0.3-SNAPSHOT/lib/java-support-7.3.0.jar
-

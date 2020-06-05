@@ -1,6 +1,0 @@
-= jakarta/el/ValueReference.class
-
- - link:ValueReference-asmified.java[Asmified]
-
-== References
-

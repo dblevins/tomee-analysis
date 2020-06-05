@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/ModExpression.class
-
- - link:ModExpression-asmified.java[Asmified]
-
-== References
-

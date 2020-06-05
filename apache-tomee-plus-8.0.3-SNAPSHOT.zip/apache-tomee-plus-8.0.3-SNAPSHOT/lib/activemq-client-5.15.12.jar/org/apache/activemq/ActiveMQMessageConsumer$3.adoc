@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQMessageConsumer$3.class
-
- - link:ActiveMQMessageConsumer$3-asmified.java[Asmified]
-
-== References
-

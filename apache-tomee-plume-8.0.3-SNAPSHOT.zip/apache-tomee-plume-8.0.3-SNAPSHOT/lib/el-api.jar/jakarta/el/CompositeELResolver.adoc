@@ -1,6 +1,0 @@
-= jakarta/el/CompositeELResolver.class
-
- - link:CompositeELResolver-asmified.java[Asmified]
-
-== References
-

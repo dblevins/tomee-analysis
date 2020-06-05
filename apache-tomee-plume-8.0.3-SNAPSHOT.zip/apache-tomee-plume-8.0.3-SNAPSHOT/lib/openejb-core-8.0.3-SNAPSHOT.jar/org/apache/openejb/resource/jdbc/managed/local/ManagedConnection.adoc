@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/managed/local/ManagedConnection.class
-
- - link:ManagedConnection-asmified.java[Asmified]
-
-== References
-

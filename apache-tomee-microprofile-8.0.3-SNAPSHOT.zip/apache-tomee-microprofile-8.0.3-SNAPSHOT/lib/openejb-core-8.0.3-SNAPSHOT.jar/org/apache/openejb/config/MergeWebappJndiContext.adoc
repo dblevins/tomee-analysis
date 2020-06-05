@@ -1,6 +1,0 @@
-= org/apache/openejb/config/MergeWebappJndiContext.class
-
- - link:MergeWebappJndiContext-asmified.java[Asmified]
-
-== References
-

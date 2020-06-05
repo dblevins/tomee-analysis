@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/Dependent.class
-
- - link:Dependent-asmified.java[Asmified]
-
-== References
-

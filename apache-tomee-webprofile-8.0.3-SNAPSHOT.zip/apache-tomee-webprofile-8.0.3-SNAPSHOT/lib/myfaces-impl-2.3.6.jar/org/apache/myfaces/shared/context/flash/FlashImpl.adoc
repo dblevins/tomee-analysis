@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/context/flash/FlashImpl.class
-
- - link:FlashImpl-asmified.java[Asmified]
-
-== References
-

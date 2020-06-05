@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/EmbeddableAttributes.class
-
- - link:EmbeddableAttributes-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ReflectionInvokationHandler.class
-
- - link:ReflectionInvokationHandler-asmified.java[Asmified]
-
-== References
-

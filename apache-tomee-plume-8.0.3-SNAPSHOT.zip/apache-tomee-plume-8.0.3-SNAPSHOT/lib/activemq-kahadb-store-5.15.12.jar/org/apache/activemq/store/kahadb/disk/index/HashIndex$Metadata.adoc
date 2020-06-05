@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/HashIndex$Metadata.class
-
- - link:HashIndex$Metadata-asmified.java[Asmified]
-
-== References
-

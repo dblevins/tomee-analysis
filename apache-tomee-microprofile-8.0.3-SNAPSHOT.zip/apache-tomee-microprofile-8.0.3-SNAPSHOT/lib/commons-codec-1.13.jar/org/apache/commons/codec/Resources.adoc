@@ -1,6 +1,0 @@
-= org/apache/commons/codec/Resources.class
-
- - link:Resources-asmified.java[Asmified]
-
-== References
-

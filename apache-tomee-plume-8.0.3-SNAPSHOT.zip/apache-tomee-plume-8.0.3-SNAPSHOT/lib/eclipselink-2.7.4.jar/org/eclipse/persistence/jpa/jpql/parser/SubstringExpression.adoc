@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SubstringExpression.class
-
- - link:SubstringExpression-asmified.java[Asmified]
-
-== References
-

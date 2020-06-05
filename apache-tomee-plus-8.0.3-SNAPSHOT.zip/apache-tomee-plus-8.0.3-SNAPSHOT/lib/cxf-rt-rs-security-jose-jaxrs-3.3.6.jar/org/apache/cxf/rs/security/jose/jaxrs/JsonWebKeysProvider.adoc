@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/JsonWebKeysProvider.class
-
- - link:JsonWebKeysProvider-asmified.java[Asmified]
-
-== References
-

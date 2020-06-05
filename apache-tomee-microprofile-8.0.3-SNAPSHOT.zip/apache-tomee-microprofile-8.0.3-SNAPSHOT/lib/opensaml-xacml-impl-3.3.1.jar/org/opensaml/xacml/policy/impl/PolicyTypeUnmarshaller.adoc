@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/PolicyTypeUnmarshaller.class
-
- - link:PolicyTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

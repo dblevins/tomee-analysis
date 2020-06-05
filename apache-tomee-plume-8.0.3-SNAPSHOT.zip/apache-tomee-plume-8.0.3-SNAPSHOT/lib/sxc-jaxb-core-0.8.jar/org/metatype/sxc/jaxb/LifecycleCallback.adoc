@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/LifecycleCallback.class
-
- - link:LifecycleCallback-asmified.java[Asmified]
-
-== References
-

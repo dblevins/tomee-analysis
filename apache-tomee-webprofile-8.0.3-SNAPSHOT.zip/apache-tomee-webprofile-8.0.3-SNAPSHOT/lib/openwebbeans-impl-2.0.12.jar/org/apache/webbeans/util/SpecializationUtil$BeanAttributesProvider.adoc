@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/SpecializationUtil$BeanAttributesProvider.class
-
- - link:SpecializationUtil$BeanAttributesProvider-asmified.java[Asmified]
-
-== References
-

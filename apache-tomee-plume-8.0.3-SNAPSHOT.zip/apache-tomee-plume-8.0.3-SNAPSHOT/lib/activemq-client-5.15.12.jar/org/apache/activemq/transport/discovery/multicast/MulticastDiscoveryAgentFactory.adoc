@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/multicast/MulticastDiscoveryAgentFactory.class
-
- - link:MulticastDiscoveryAgentFactory-asmified.java[Asmified]
-
-== References
-

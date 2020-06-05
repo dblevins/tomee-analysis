@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod$SHA1.class
-
- - link:DOMHMACSignatureMethod$SHA1-asmified.java[Asmified]
-
-== References
-

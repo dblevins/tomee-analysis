@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/LocalXAResource.class
-
- - link:LocalXAResource-asmified.java[Asmified]
-
-== References
-

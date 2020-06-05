@@ -1,6 +1,0 @@
-= org/apache/openejb/client/SystemError.class
-
- - link:SystemError-asmified.java[Asmified]
-
-== References
-

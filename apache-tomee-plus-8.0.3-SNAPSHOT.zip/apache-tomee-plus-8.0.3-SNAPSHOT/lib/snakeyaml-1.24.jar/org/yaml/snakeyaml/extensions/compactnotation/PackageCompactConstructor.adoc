@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/extensions/compactnotation/PackageCompactConstructor.class
-
- - link:PackageCompactConstructor-asmified.java[Asmified]
-
-== References
-

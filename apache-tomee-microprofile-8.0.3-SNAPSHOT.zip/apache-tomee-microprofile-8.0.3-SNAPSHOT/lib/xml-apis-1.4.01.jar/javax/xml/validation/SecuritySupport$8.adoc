@@ -1,6 +1,0 @@
-= javax/xml/validation/SecuritySupport$8.class
-
- - link:SecuritySupport$8-asmified.java[Asmified]
-
-== References
-

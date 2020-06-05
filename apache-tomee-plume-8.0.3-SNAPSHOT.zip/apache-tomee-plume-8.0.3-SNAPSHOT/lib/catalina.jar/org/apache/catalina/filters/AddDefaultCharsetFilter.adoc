@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/AddDefaultCharsetFilter.class
-
- - link:AddDefaultCharsetFilter-asmified.java[Asmified]
-
-== References
-

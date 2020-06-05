@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/SQLUpdateAllStatementForOracleAnonymousBlock.class
-
- - link:SQLUpdateAllStatementForOracleAnonymousBlock-asmified.java[Asmified]
-
-== References
-

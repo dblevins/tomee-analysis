@@ -1,6 +1,0 @@
-= org/apache/catalina/users/AbstractRole.class
-
- - link:AbstractRole-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/SimpleDispatchSelector.class
-
- - link:SimpleDispatchSelector-asmified.java[Asmified]
-
-== References
-

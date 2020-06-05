@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/listeners/SchedulerListenerSupport.class
-
- - link:SchedulerListenerSupport-asmified.java[Asmified]
-
-== References
-

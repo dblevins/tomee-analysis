@@ -1,6 +1,0 @@
-= org/apache/webbeans/inject/instance/InstanceImpl.class
-
- - link:InstanceImpl-asmified.java[Asmified]
-
-== References
-

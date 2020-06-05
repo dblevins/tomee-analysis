@@ -1,7 +1,0 @@
-= javax/transaction/TransactionSynchronizationRegistry.class
-
- - link:TransactionSynchronizationRegistry-asmified.java[Asmified]
-
-== References
-
- - javax.transaction.Synchronization - 1

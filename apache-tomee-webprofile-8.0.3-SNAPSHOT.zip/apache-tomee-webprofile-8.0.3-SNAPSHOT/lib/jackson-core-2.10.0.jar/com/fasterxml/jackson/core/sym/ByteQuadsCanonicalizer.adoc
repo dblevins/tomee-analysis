@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.class
-
- - link:ByteQuadsCanonicalizer-asmified.java[Asmified]
-
-== References
-

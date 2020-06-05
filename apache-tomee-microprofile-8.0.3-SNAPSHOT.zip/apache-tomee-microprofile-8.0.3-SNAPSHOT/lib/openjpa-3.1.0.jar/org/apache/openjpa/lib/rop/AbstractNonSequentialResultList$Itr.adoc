@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/AbstractNonSequentialResultList$Itr.class
-
- - link:AbstractNonSequentialResultList$Itr-asmified.java[Asmified]
-
-== References
-

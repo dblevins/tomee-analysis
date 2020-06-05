@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/YImpl.class
-
- - link:YImpl-asmified.java[Asmified]
-
-== References
-

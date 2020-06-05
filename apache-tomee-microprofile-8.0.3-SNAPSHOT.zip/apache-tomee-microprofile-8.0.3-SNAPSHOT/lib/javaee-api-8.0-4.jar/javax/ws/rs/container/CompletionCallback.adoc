@@ -1,6 +1,0 @@
-= javax/ws/rs/container/CompletionCallback.class
-
- - link:CompletionCallback-asmified.java[Asmified]
-
-== References
-

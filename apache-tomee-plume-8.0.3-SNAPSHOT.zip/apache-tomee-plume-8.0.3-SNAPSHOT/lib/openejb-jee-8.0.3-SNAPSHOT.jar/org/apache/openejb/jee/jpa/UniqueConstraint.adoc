@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/UniqueConstraint.class
-
- - link:UniqueConstraint-asmified.java[Asmified]
-
-== References
-

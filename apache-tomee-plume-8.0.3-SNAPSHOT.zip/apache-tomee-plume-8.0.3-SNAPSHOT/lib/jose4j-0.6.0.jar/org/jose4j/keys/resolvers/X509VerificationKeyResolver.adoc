@@ -1,6 +1,0 @@
-= org/jose4j/keys/resolvers/X509VerificationKeyResolver.class
-
- - link:X509VerificationKeyResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQQueueBrowser$1.class
-
- - link:ActiveMQQueueBrowser$1-asmified.java[Asmified]
-
-== References
-

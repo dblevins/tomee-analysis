@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/SavepointFieldManager.class
-
- - link:SavepointFieldManager-asmified.java[Asmified]
-
-== References
-

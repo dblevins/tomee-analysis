@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/NumberSignValidator.class
-
- - link:NumberSignValidator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= commonj/sdo/helper/XMLHelper.class
-
- - link:XMLHelper-asmified.java[Asmified]
-
-== References
-

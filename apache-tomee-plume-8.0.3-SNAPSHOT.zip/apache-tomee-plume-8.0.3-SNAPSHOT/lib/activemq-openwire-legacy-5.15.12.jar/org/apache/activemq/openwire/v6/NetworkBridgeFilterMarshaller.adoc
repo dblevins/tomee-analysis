@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v6/NetworkBridgeFilterMarshaller.class
-
- - link:NetworkBridgeFilterMarshaller-asmified.java[Asmified]
-
-== References
-

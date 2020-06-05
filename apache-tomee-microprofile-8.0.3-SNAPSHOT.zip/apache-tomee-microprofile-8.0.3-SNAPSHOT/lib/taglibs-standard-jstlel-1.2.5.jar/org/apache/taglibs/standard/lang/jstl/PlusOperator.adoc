@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/PlusOperator.class
-
- - link:PlusOperator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/profile/AbstractSAML1NameIdentifierGenerator.class
-
- - link:AbstractSAML1NameIdentifierGenerator-asmified.java[Asmified]
-
-== References
-

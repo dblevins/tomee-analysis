@@ -1,7 +1,0 @@
-= javax/batch/runtime/BatchStatus.class
-
- - link:BatchStatus-asmified.java[Asmified]
-
-== References
-
- - javax.batch.runtime.BatchStatus - 46

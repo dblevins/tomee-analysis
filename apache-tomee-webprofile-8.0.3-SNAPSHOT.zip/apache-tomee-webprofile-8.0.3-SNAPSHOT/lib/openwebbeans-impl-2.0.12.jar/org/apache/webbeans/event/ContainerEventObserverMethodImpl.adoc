@@ -1,6 +1,0 @@
-= org/apache/webbeans/event/ContainerEventObserverMethodImpl.class
-
- - link:ContainerEventObserverMethodImpl-asmified.java[Asmified]
-
-== References
-

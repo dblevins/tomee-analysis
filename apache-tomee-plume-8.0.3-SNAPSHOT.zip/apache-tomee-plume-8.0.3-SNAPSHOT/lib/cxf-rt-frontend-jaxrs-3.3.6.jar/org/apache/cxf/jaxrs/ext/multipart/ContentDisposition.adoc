@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/multipart/ContentDisposition.class
-
- - link:ContentDisposition-asmified.java[Asmified]
-
-== References
-

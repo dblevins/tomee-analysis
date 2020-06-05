@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/ComparatorPredicate$Criterion.class
-
- - link:ComparatorPredicate$Criterion-asmified.java[Asmified]
-
-== References
-

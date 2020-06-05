@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/ExternalDocumentation.class
-
- - link:ExternalDocumentation-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/ConversationScoped$Literal.class
-
- - link:ConversationScoped$Literal-asmified.java[Asmified]
-
-== References
-

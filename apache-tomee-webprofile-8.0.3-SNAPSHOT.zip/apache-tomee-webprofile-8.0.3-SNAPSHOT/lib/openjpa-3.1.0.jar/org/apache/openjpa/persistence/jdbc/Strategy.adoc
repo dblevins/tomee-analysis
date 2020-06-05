@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/Strategy.class
-
- - link:Strategy-asmified.java[Asmified]
-
-== References
-

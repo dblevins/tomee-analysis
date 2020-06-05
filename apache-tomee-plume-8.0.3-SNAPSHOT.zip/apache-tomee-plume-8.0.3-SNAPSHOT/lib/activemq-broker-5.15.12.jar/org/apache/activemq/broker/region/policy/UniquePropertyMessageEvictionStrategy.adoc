@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/UniquePropertyMessageEvictionStrategy.class
-
- - link:UniquePropertyMessageEvictionStrategy-asmified.java[Asmified]
-
-== References
-

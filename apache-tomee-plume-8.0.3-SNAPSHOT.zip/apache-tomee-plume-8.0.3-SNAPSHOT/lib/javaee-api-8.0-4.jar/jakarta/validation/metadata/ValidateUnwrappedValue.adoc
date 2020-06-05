@@ -1,6 +1,0 @@
-= jakarta/validation/metadata/ValidateUnwrappedValue.class
-
- - link:ValidateUnwrappedValue-asmified.java[Asmified]
-
-== References
-

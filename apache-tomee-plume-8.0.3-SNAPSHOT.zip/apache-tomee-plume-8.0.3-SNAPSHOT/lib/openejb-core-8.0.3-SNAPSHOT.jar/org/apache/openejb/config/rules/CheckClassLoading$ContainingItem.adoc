@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckClassLoading$ContainingItem.class
-
- - link:CheckClassLoading$ContainingItem-asmified.java[Asmified]
-
-== References
-

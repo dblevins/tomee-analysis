@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/PoolUtils$SynchronizedPooledObjectFactory.class
-
- - link:PoolUtils$SynchronizedPooledObjectFactory-asmified.java[Asmified]
-
-== References
-

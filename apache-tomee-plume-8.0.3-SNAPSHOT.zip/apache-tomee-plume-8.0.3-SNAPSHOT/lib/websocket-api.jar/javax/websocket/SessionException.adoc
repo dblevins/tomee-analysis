@@ -1,7 +1,0 @@
-= javax/websocket/SessionException.class
-
- - link:SessionException-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.Session - 5

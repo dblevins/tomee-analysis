@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry.class
-
- - link:TransactionRegistry-asmified.java[Asmified]
-
-== References
-

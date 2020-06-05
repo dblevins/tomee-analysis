@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIViewAction.class
-
- - link:UIViewAction-asmified.java[Asmified]
-
-== References
-

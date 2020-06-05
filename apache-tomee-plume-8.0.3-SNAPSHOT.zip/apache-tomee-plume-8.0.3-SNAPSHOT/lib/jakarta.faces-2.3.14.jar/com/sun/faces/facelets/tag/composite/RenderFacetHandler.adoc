@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/RenderFacetHandler.class
-
- - link:RenderFacetHandler-asmified.java[Asmified]
-
-== References
-

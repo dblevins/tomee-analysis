@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/metrics/MetricRegistry.class
-
- - link:MetricRegistry-asmified.java[Asmified]
-
-== References
-

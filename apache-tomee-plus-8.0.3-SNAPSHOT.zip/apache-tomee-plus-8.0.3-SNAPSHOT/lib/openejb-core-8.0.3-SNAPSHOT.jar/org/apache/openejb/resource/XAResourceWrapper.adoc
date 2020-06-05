@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/XAResourceWrapper.class
-
- - link:XAResourceWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/FetchConfigurationImpl$ConfigurationState.class
-
- - link:FetchConfigurationImpl$ConfigurationState-asmified.java[Asmified]
-
-== References
-

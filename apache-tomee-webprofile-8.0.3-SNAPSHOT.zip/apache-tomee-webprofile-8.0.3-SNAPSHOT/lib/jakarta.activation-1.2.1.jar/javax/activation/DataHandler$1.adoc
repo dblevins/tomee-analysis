@@ -1,8 +1,0 @@
-= javax/activation/DataHandler$1.class
-
- - link:DataHandler$1-asmified.java[Asmified]
-
-== References
-
- - javax.activation.DataHandler - 9
- - javax.activation.DataContentHandler - 5

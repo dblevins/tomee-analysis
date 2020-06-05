@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/ExternalContextFactoryImpl.class
-
- - link:ExternalContextFactoryImpl-asmified.java[Asmified]
-
-== References
-

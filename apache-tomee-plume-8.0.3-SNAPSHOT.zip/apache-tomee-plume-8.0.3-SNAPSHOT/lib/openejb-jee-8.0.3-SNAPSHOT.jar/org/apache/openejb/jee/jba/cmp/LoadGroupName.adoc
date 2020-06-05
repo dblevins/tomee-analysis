@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/LoadGroupName.class
-
- - link:LoadGroupName-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/servlet/SessionMap.class
-
- - link:SessionMap-asmified.java[Asmified]
-
-== References
-

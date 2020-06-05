@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/AbstractResponseViewProvider.class
-
- - link:AbstractResponseViewProvider-asmified.java[Asmified]
-
-== References
-

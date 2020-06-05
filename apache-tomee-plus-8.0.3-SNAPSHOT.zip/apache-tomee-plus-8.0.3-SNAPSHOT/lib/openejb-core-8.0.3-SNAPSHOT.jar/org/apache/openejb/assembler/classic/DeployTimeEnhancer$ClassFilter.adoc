@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/DeployTimeEnhancer$ClassFilter.class
-
- - link:DeployTimeEnhancer$ClassFilter-asmified.java[Asmified]
-
-== References
-

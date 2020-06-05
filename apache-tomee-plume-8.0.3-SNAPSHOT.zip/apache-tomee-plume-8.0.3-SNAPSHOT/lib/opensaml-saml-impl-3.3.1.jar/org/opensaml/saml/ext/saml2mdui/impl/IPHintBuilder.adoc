@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/impl/IPHintBuilder.class
-
- - link:IPHintBuilder-asmified.java[Asmified]
-
-== References
-

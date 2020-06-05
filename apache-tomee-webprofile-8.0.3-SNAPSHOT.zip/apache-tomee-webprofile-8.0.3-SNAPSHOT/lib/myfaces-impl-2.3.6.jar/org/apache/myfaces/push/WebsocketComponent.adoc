@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/WebsocketComponent.class
-
- - link:WebsocketComponent-asmified.java[Asmified]
-
-== References
-

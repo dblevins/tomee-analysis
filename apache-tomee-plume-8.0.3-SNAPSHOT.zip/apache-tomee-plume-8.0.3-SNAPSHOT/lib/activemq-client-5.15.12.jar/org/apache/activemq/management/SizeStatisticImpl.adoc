@@ -1,6 +1,0 @@
-= org/apache/activemq/management/SizeStatisticImpl.class
-
- - link:SizeStatisticImpl-asmified.java[Asmified]
-
-== References
-

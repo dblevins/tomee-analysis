@@ -1,6 +1,0 @@
-= javax/persistence/Index.class
-
- - link:Index-asmified.java[Asmified]
-
-== References
-

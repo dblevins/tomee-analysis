@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdrpi/impl/PublicationInfoMarshaller.class
-
- - link:PublicationInfoMarshaller-asmified.java[Asmified]
-
-== References
-

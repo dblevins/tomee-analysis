@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/RoundRobinDispatchPolicy.class
-
- - link:RoundRobinDispatchPolicy-asmified.java[Asmified]
-
-== References
-

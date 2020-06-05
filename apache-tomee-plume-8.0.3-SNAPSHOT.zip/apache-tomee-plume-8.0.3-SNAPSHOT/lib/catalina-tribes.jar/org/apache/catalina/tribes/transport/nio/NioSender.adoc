@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/nio/NioSender.class
-
- - link:NioSender-asmified.java[Asmified]
-
-== References
-

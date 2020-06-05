@@ -1,9 +1,0 @@
-= javax/security/jacc/WebUserDataPermission$WebUserDataPermissionCollection.class
-
- - link:WebUserDataPermission$WebUserDataPermissionCollection-asmified.java[Asmified]
-
-== References
-
- - javax.security.jacc.WebUserDataPermission - 6
- - javax.security.jacc.WebUserDataPermission$WebUserDataPermissionCollection - 2
- - javax.security.jacc.WebUserDataPermission$1 - 1

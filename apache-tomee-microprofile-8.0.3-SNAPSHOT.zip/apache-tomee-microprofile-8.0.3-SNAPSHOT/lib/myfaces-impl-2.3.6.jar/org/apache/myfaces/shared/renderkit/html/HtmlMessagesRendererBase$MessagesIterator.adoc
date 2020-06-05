@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator.class
-
- - link:HtmlMessagesRendererBase$MessagesIterator-asmified.java[Asmified]
-
-== References
-

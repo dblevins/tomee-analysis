@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/PropertyNamingStrategy.class
-
- - link:PropertyNamingStrategy-asmified.java[Asmified]
-
-== References
-

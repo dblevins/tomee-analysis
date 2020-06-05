@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/factories/DescriptorCustomizer.class
-
- - link:DescriptorCustomizer-asmified.java[Asmified]
-
-== References
-

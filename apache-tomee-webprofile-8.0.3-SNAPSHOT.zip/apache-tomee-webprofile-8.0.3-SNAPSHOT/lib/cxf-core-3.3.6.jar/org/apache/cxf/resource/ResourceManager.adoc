@@ -1,6 +1,0 @@
-= org/apache/cxf/resource/ResourceManager.class
-
- - link:ResourceManager-asmified.java[Asmified]
-
-== References
-

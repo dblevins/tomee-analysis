@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/UnboundVariable.class
-
- - link:UnboundVariable-asmified.java[Asmified]
-
-== References
-

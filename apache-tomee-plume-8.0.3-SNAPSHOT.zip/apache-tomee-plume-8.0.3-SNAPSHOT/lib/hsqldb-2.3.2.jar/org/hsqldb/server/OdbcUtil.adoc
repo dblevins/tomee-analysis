@@ -1,6 +1,0 @@
-= org/hsqldb/server/OdbcUtil.class
-
- - link:OdbcUtil-asmified.java[Asmified]
-
-== References
-

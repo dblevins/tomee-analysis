@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/LocalManagedRuntime.class
-
- - link:LocalManagedRuntime-asmified.java[Asmified]
-
-== References
-

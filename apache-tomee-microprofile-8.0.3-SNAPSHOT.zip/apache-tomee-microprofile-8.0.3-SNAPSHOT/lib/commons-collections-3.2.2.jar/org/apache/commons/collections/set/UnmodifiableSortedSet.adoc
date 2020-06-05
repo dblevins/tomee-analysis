@@ -1,6 +1,0 @@
-= org/apache/commons/collections/set/UnmodifiableSortedSet.class
-
- - link:UnmodifiableSortedSet-asmified.java[Asmified]
-
-== References
-

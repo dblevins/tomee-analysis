@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/sequencing/UuidGeneratorImpl.class
-
- - link:UuidGeneratorImpl-asmified.java[Asmified]
-
-== References
-

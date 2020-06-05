@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/configurator/AnnotatedFieldConfigurator.class
-
- - link:AnnotatedFieldConfigurator-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.configurator.AnnotatedFieldConfigurator - 6
- - javax.enterprise.inject.spi.AnnotatedField - 1

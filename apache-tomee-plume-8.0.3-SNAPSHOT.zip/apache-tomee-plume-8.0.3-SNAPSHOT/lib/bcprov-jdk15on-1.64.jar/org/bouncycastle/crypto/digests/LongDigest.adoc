@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/digests/LongDigest.class
-
- - link:LongDigest-asmified.java[Asmified]
-
-== References
-

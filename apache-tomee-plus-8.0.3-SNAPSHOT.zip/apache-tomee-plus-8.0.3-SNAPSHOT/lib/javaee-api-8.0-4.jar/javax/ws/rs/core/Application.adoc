@@ -1,6 +1,0 @@
-= javax/ws/rs/core/Application.class
-
- - link:Application-asmified.java[Asmified]
-
-== References
-

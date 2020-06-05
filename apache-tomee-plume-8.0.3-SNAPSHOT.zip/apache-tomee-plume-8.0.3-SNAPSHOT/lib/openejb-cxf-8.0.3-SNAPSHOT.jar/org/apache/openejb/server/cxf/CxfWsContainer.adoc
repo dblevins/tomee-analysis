@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/CxfWsContainer.class
-
- - link:CxfWsContainer-asmified.java[Asmified]
-
-== References
-

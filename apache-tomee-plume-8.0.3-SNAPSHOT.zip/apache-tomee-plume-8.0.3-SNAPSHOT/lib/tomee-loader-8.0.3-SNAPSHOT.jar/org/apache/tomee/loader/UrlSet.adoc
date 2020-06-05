@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/UrlSet.class
-
- - link:UrlSet-asmified.java[Asmified]
-
-== References
-

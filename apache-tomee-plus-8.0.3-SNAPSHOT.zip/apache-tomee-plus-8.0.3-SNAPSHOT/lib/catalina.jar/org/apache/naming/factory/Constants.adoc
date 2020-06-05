@@ -1,6 +1,0 @@
-= org/apache/naming/factory/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

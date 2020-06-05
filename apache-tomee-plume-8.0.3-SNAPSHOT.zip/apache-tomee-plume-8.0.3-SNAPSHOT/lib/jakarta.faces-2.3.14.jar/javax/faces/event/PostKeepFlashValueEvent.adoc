@@ -1,9 +1,0 @@
-= javax/faces/event/PostKeepFlashValueEvent.class
-
- - link:PostKeepFlashValueEvent-asmified.java[Asmified]
-
-== References
-
- - javax.faces.event.SystemEvent - 3
- - javax.faces.context.FacesContext - 2
- - javax.faces.event.PostKeepFlashValueEvent - 1

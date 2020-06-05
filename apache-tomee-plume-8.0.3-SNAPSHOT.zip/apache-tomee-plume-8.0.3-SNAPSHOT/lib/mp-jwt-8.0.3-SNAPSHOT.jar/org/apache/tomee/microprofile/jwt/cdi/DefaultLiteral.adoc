@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/cdi/DefaultLiteral.class
-
- - link:DefaultLiteral-asmified.java[Asmified]
-
-== References
-

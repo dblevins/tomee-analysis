@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/AddressingConstants.class
-
- - link:AddressingConstants-asmified.java[Asmified]
-
-== References
-

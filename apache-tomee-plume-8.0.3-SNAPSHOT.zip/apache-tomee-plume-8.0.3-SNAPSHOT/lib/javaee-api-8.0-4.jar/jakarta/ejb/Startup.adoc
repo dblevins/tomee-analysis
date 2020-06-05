@@ -1,6 +1,0 @@
-= jakarta/ejb/Startup.class
-
- - link:Startup-asmified.java[Asmified]
-
-== References
-

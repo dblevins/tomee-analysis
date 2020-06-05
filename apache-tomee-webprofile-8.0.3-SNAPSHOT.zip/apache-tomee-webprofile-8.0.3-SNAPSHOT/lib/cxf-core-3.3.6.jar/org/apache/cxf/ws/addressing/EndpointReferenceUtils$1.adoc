@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/EndpointReferenceUtils$1.class
-
- - link:EndpointReferenceUtils$1-asmified.java[Asmified]
-
-== References
-

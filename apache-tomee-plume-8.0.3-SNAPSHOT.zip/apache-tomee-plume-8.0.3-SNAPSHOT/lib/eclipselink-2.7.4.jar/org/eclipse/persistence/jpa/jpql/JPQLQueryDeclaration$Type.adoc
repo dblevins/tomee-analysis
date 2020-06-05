@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/JPQLQueryDeclaration$Type.class
-
- - link:JPQLQueryDeclaration$Type-asmified.java[Asmified]
-
-== References
-

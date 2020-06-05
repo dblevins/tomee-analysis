@@ -1,9 +1,0 @@
-= javax/servlet/ServletRequestAttributeEvent.class
-
- - link:ServletRequestAttributeEvent-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.ServletRequest - 2
- - javax.servlet.ServletRequestEvent - 2
- - javax.servlet.ServletContext - 2

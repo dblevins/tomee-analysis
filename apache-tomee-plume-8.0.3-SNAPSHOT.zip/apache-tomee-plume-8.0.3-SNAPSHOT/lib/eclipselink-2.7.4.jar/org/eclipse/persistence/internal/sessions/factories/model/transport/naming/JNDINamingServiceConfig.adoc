@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/transport/naming/JNDINamingServiceConfig.class
-
- - link:JNDINamingServiceConfig-asmified.java[Asmified]
-
-== References
-

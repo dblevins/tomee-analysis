@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/SavepointManager.class
-
- - link:SavepointManager-asmified.java[Asmified]
-
-== References
-

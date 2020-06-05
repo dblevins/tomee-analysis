@@ -1,6 +1,0 @@
-= com/ctc/wstx/msv/BaseSchemaFactory.class
-
- - link:BaseSchemaFactory-asmified.java[Asmified]
-
-== References
-

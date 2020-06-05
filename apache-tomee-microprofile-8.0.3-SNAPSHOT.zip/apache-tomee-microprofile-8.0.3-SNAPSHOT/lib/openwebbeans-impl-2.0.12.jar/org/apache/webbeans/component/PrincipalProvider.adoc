@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/PrincipalProvider.class
-
- - link:PrincipalProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/graphs/NamedSubgraphMetadata.class
-
- - link:NamedSubgraphMetadata-asmified.java[Asmified]
-
-== References
-

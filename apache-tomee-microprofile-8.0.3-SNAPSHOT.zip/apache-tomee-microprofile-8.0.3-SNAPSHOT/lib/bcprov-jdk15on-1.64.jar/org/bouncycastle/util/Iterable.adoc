@@ -1,6 +1,0 @@
-= org/bouncycastle/util/Iterable.class
-
- - link:Iterable-asmified.java[Asmified]
-
-== References
-

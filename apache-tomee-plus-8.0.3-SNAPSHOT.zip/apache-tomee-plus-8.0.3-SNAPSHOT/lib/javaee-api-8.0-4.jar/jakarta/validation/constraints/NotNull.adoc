@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/NotNull.class
-
- - link:NotNull-asmified.java[Asmified]
-
-== References
-

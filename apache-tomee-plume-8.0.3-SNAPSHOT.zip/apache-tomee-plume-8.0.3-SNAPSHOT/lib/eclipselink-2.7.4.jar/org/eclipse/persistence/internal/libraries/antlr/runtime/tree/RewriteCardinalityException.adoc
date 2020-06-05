@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/RewriteCardinalityException.class
-
- - link:RewriteCardinalityException-asmified.java[Asmified]
-
-== References
-

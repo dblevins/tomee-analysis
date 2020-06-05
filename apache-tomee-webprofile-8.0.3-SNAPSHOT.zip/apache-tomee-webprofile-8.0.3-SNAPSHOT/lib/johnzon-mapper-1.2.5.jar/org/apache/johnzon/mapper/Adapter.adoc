@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/Adapter.class
-
- - link:Adapter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/config/manager/tasks/ParseConfigResourceToDOMTask.class
-
- - link:ParseConfigResourceToDOMTask-asmified.java[Asmified]
-
-== References
-

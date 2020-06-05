@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/DeploymentValidationService.class
-
- - link:DeploymentValidationService-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/FaceletContext.class
-
- - link:FaceletContext-asmified.java[Asmified]
-
-== References
-

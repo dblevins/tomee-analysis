@@ -1,6 +1,0 @@
-= org/apache/jasper/runtime/BodyContentImpl.class
-
- - link:BodyContentImpl-asmified.java[Asmified]
-
-== References
-

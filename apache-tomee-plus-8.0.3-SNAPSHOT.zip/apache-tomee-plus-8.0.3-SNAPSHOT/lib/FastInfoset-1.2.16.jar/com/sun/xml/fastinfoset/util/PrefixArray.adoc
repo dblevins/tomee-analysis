@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/util/PrefixArray.class
-
- - link:PrefixArray-asmified.java[Asmified]
-
-== References
-

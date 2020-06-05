@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationMapping.class
-
- - link:ApplicationMapping-asmified.java[Asmified]
-
-== References
-

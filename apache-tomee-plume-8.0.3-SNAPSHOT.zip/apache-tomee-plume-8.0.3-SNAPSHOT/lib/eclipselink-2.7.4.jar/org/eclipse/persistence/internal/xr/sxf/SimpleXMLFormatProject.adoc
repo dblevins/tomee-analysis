@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/sxf/SimpleXMLFormatProject.class
-
- - link:SimpleXMLFormatProject-asmified.java[Asmified]
-
-== References
-

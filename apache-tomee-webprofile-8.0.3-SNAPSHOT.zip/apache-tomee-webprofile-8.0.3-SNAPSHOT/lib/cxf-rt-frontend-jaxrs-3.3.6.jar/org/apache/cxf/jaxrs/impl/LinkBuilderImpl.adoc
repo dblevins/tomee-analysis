@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/LinkBuilderImpl.class
-
- - link:LinkBuilderImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/DelegatingMetaTagHandler.class
-
- - link:DelegatingMetaTagHandler-asmified.java[Asmified]
-
-== References
-

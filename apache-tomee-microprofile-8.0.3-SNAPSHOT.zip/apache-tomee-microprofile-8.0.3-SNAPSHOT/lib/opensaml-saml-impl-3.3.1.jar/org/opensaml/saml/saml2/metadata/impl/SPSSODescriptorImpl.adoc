@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/SPSSODescriptorImpl.class
-
- - link:SPSSODescriptorImpl-asmified.java[Asmified]
-
-== References
-

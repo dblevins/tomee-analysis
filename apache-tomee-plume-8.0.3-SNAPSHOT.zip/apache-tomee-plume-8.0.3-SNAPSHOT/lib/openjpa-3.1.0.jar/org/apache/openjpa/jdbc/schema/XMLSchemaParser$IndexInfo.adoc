@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/XMLSchemaParser$IndexInfo.class
-
- - link:XMLSchemaParser$IndexInfo-asmified.java[Asmified]
-
-== References
-

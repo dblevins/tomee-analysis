@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/parser/Authorization$FieldType.class
-
- - link:Authorization$FieldType-asmified.java[Asmified]
-
-== References
-

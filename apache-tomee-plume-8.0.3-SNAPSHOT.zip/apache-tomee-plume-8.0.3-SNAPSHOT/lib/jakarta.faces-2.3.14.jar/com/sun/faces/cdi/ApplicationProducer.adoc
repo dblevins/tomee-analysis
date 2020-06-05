@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/ApplicationProducer.class
-
- - link:ApplicationProducer-asmified.java[Asmified]
-
-== References
-

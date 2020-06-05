@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/TopicSubscription$DispatchedNode.class
-
- - link:TopicSubscription$DispatchedNode-asmified.java[Asmified]
-
-== References
-

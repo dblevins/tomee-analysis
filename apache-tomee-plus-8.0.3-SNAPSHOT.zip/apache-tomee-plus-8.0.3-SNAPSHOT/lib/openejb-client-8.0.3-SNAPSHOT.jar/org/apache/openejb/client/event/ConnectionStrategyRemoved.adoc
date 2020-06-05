@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/ConnectionStrategyRemoved.class
-
- - link:ConnectionStrategyRemoved-asmified.java[Asmified]
-
-== References
-

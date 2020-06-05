@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/readers/SAXParserHandler.class
-
- - link:SAXParserHandler-asmified.java[Asmified]
-
-== References
-

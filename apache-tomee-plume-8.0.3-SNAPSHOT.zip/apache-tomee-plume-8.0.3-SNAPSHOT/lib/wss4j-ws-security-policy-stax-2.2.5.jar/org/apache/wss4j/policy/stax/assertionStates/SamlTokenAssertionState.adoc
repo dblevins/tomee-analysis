@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/SamlTokenAssertionState.class
-
- - link:SamlTokenAssertionState-asmified.java[Asmified]
-
-== References
-

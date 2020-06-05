@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/GZIP.class
-
- - link:GZIP-asmified.java[Asmified]
-
-== References
-

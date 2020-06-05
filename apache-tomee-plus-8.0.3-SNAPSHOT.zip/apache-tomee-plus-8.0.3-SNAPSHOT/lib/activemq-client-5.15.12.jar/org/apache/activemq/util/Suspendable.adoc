@@ -1,6 +1,0 @@
-= org/apache/activemq/util/Suspendable.class
-
- - link:Suspendable-asmified.java[Asmified]
-
-== References
-

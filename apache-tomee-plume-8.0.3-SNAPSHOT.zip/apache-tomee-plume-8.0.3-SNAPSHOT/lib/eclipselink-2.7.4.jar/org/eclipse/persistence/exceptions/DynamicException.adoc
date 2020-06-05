@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/DynamicException.class
-
- - link:DynamicException-asmified.java[Asmified]
-
-== References
-

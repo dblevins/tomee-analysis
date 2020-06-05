@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyvalidators/AsymmetricBindingPolicyValidator.class
-
- - link:AsymmetricBindingPolicyValidator-asmified.java[Asmified]
-
-== References
-

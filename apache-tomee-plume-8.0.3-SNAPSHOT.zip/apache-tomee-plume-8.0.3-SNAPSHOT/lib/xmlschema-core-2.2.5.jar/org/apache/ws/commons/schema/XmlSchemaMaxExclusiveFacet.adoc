@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaMaxExclusiveFacet.class
-
- - link:XmlSchemaMaxExclusiveFacet-asmified.java[Asmified]
-
-== References
-

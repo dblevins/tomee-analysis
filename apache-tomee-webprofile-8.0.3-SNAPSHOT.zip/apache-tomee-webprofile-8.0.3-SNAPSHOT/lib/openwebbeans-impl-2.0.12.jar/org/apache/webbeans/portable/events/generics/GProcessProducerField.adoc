@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessProducerField.class
-
- - link:GProcessProducerField-asmified.java[Asmified]
-
-== References
-

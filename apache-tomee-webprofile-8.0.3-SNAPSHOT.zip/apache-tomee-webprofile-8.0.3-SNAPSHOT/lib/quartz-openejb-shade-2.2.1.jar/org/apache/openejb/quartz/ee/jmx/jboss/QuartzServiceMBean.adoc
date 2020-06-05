@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ee/jmx/jboss/QuartzServiceMBean.class
-
- - link:QuartzServiceMBean-asmified.java[Asmified]
-
-== References
-

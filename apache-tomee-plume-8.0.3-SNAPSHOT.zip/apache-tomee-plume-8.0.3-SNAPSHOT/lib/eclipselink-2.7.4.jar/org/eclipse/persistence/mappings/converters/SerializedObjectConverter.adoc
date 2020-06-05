@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/converters/SerializedObjectConverter.class
-
- - link:SerializedObjectConverter-asmified.java[Asmified]
-
-== References
-

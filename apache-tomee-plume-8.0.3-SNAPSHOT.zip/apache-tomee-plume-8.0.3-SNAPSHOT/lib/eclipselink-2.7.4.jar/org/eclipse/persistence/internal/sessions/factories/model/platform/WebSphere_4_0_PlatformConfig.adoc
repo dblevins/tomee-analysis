@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/platform/WebSphere_4_0_PlatformConfig.class
-
- - link:WebSphere_4_0_PlatformConfig-asmified.java[Asmified]
-
-== References
-

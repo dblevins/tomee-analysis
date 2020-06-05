@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/codegen/Opcodes.class
-
- - link:Opcodes-asmified.java[Asmified]
-
-== References
-

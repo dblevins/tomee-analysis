@@ -1,6 +1,0 @@
-= org/apache/batchee/container/util/BatchWorkUnit.class
-
- - link:BatchWorkUnit-asmified.java[Asmified]
-
-== References
-

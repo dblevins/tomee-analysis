@@ -1,7 +1,0 @@
-= javax/faces/component/UISelectItems$PropertyKeys.class
-
- - link:UISelectItems$PropertyKeys-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.UISelectItems$PropertyKeys - 16

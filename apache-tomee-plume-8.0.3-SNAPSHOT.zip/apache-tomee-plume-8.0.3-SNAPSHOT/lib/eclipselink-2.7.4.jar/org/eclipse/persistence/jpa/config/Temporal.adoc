@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Temporal.class
-
- - link:Temporal-asmified.java[Asmified]
-
-== References
-

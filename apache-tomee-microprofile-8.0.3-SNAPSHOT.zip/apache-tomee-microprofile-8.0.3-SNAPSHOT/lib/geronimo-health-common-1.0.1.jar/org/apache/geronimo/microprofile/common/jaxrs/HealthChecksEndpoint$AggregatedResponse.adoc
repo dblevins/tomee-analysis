@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/common/jaxrs/HealthChecksEndpoint$AggregatedResponse.class
-
- - link:HealthChecksEndpoint$AggregatedResponse-asmified.java[Asmified]
-
-== References
-

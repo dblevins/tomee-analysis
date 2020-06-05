@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/PortMapping$JAXB.class
-
- - link:PortMapping$JAXB-asmified.java[Asmified]
-
-== References
-

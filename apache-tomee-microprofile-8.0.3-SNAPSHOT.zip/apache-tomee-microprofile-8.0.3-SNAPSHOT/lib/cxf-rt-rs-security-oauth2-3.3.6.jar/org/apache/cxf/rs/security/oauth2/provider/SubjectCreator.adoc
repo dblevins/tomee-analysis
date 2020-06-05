@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/SubjectCreator.class
-
- - link:SubjectCreator-asmified.java[Asmified]
-
-== References
-

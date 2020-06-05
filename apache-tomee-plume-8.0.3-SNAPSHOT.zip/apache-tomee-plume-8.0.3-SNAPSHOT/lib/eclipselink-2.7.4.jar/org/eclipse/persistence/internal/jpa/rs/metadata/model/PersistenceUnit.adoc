@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/rs/metadata/model/PersistenceUnit.class
-
- - link:PersistenceUnit-asmified.java[Asmified]
-
-== References
-

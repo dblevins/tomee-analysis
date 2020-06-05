@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/End.class
-
- - link:End-asmified.java[Asmified]
-
-== References
-

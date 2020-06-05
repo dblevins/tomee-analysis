@@ -1,6 +1,0 @@
-= com/sun/faces/application/NavigationHandlerImpl$NavigationInfo.class
-
- - link:NavigationHandlerImpl$NavigationInfo-asmified.java[Asmified]
-
-== References
-

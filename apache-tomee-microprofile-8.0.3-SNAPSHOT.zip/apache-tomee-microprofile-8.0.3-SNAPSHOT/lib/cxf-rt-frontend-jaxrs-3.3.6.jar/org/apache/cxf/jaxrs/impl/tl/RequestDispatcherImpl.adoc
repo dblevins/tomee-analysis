@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl.class
-
- - link:RequestDispatcherImpl-asmified.java[Asmified]
-
-== References
-

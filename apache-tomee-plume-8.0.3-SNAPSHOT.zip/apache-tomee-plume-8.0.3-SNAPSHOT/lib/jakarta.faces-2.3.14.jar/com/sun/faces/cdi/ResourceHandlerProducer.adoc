@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/ResourceHandlerProducer.class
-
- - link:ResourceHandlerProducer-asmified.java[Asmified]
-
-== References
-

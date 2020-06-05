@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/auth/AbstractSpnegoAuthSupplier$1.class
-
- - link:AbstractSpnegoAuthSupplier$1-asmified.java[Asmified]
-
-== References
-

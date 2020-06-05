@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/WebAppFirstEarClassLoader.class
-
- - link:WebAppFirstEarClassLoader-asmified.java[Asmified]
-
-== References
-

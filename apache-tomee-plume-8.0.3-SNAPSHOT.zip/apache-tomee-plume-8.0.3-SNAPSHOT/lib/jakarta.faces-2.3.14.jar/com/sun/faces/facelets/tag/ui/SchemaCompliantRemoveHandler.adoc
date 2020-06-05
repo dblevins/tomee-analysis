@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/ui/SchemaCompliantRemoveHandler.class
-
- - link:SchemaCompliantRemoveHandler-asmified.java[Asmified]
-
-== References
-

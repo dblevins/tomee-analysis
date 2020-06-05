@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/Files$FileDoesNotExistException.class
-
- - link:Files$FileDoesNotExistException-asmified.java[Asmified]
-
-== References
-

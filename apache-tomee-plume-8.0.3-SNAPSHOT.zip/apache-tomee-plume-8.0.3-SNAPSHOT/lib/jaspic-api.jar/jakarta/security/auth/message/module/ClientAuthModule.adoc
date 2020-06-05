@@ -1,6 +1,0 @@
-= jakarta/security/auth/message/module/ClientAuthModule.class
-
- - link:ClientAuthModule-asmified.java[Asmified]
-
-== References
-

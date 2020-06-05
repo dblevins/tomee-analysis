@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ReadQuery.class
-
- - link:ReadQuery-asmified.java[Asmified]
-
-== References
-

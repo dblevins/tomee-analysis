@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/OraclePlatform.class
-
- - link:OraclePlatform-asmified.java[Asmified]
-
-== References
-

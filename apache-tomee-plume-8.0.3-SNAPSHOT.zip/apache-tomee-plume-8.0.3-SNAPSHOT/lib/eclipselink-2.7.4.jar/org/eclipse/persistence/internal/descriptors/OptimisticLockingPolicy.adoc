@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/OptimisticLockingPolicy.class
-
- - link:OptimisticLockingPolicy-asmified.java[Asmified]
-
-== References
-

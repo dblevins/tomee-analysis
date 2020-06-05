@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/event/ResourceBeforeDestroyed.class
-
- - link:ResourceBeforeDestroyed-asmified.java[Asmified]
-
-== References
-

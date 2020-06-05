@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/ClassUtils$Interfaces.class
-
- - link:ClassUtils$Interfaces-asmified.java[Asmified]
-
-== References
-

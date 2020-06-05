@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/internal/AdapterKey.class
-
- - link:AdapterKey-asmified.java[Asmified]
-
-== References
-

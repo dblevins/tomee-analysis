@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$UnaryFunctionalExpression.class
-
- - link:Expressions$UnaryFunctionalExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/MethodRule$MethodBindingMetadata.class
-
- - link:MethodRule$MethodBindingMetadata-asmified.java[Asmified]
-
-== References
-

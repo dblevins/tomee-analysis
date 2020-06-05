@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/digester/DocumentProperties.class
-
- - link:DocumentProperties-asmified.java[Asmified]
-
-== References
-

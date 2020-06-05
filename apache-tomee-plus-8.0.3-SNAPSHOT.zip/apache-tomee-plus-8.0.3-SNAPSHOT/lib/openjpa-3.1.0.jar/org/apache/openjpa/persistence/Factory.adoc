@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/Factory.class
-
- - link:Factory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/AssertionBuilderRegistry.class
-
- - link:AssertionBuilderRegistry-asmified.java[Asmified]
-
-== References
-

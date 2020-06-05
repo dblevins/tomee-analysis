@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeParserBucket$SavedField.class
-
- - link:DateTimeParserBucket$SavedField-asmified.java[Asmified]
-
-== References
-

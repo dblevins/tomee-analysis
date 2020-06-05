@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/MethodAttributeAccessor.class
-
- - link:MethodAttributeAccessor-asmified.java[Asmified]
-
-== References
-

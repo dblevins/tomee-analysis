@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/httpclient/DefaultHostnameVerifier$HostNameType.class
-
- - link:DefaultHostnameVerifier$HostNameType-asmified.java[Asmified]
-
-== References
-

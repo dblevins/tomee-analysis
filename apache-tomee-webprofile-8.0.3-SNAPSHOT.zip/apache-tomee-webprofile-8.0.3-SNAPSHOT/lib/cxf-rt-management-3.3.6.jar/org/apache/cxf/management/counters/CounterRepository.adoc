@@ -1,6 +1,0 @@
-= org/apache/cxf/management/counters/CounterRepository.class
-
- - link:CounterRepository-asmified.java[Asmified]
-
-== References
-

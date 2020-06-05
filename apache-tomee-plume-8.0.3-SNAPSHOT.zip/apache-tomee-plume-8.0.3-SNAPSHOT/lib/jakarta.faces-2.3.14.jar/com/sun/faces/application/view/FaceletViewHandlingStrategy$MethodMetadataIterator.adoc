@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/FaceletViewHandlingStrategy$MethodMetadataIterator.class
-
- - link:FaceletViewHandlingStrategy$MethodMetadataIterator-asmified.java[Asmified]
-
-== References
-

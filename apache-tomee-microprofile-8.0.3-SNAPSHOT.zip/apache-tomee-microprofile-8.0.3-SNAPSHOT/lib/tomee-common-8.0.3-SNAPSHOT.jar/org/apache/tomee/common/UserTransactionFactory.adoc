@@ -1,6 +1,0 @@
-= org/apache/tomee/common/UserTransactionFactory.class
-
- - link:UserTransactionFactory-asmified.java[Asmified]
-
-== References
-

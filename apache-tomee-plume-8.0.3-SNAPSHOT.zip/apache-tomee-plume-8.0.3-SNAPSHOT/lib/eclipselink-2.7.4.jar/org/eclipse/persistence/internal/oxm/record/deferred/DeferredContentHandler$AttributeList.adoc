@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/DeferredContentHandler$AttributeList.class
-
- - link:DeferredContentHandler$AttributeList-asmified.java[Asmified]
-
-== References
-

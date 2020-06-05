@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/ActiveMQInitialContextFactory$1.class
-
- - link:ActiveMQInitialContextFactory$1-asmified.java[Asmified]
-
-== References
-

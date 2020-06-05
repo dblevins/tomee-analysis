@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/WriteLockManager.class
-
- - link:WriteLockManager-asmified.java[Asmified]
-
-== References
-

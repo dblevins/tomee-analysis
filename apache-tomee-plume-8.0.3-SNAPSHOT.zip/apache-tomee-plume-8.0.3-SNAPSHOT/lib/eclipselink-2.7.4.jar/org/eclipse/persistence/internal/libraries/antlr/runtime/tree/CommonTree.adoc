@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/CommonTree.class
-
- - link:CommonTree-asmified.java[Asmified]
-
-== References
-

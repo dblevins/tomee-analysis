@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/BooleanPrimaryBNF.class
-
- - link:BooleanPrimaryBNF-asmified.java[Asmified]
-
-== References
-

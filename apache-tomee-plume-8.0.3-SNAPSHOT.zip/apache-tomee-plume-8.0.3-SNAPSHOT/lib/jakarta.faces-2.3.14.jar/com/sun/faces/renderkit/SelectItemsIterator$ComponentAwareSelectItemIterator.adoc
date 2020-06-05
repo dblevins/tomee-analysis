@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/SelectItemsIterator$ComponentAwareSelectItemIterator.class
-
- - link:SelectItemsIterator$ComponentAwareSelectItemIterator-asmified.java[Asmified]
-
-== References
-

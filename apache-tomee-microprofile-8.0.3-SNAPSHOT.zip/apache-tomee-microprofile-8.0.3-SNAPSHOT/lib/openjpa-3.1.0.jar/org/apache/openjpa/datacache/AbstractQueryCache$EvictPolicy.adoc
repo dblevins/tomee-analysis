@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/AbstractQueryCache$EvictPolicy.class
-
- - link:AbstractQueryCache$EvictPolicy-asmified.java[Asmified]
-
-== References
-

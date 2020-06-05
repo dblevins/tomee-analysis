@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/RowLockingTemplate.class
-
- - link:RowLockingTemplate-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/istack/logging/Logger.class
-
- - link:Logger-asmified.java[Asmified]
-
-== References
-

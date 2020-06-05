@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$Result.class
-
- - link:ResettableDataSourceHandler$Result-asmified.java[Asmified]
-
-== References
-

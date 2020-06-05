@@ -1,6 +1,0 @@
-= org/apache/cxf/databinding/stax/StaxDataBinding$RemoveStaxInEndingInterceptor.class
-
- - link:StaxDataBinding$RemoveStaxInEndingInterceptor-asmified.java[Asmified]
-
-== References
-

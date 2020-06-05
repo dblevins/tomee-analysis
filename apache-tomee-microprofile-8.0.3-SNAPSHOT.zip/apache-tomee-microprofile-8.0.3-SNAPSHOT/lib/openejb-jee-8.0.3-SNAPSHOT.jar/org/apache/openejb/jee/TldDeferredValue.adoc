@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TldDeferredValue.class
-
- - link:TldDeferredValue-asmified.java[Asmified]
-
-== References
-

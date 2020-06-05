@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$IsEmpty.class
-
- - link:Expressions$IsEmpty-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/WNafUtil$4.class
-
- - link:WNafUtil$4-asmified.java[Asmified]
-
-== References
-

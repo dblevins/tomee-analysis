@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/SessionInitializerFilter.class
-
- - link:SessionInitializerFilter-asmified.java[Asmified]
-
-== References
-

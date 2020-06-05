@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/ResponseType.class
-
- - link:ResponseType-asmified.java[Asmified]
-
-== References
-

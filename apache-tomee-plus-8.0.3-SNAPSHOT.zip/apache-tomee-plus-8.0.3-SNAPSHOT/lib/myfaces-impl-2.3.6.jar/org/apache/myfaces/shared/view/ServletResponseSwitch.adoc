@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/view/ServletResponseSwitch.class
-
- - link:ServletResponseSwitch-asmified.java[Asmified]
-
-== References
-

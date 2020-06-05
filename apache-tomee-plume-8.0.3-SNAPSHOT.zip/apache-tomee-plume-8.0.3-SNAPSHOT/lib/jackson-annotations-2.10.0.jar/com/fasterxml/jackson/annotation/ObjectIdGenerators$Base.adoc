@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/ObjectIdGenerators$Base.class
-
- - link:ObjectIdGenerators$Base-asmified.java[Asmified]
-
-== References
-

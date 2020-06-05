@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/AttachedObjectTargetHandler.class
-
- - link:AttachedObjectTargetHandler-asmified.java[Asmified]
-
-== References
-

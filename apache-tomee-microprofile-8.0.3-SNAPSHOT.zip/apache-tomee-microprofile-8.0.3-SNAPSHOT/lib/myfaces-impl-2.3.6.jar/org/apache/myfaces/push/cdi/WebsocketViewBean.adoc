@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/WebsocketViewBean.class
-
- - link:WebsocketViewBean-asmified.java[Asmified]
-
-== References
-

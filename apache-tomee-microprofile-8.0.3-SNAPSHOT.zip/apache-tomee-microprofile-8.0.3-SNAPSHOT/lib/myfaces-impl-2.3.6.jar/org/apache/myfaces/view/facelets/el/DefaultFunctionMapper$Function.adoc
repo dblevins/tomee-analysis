@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/DefaultFunctionMapper$Function.class
-
- - link:DefaultFunctionMapper$Function-asmified.java[Asmified]
-
-== References
-

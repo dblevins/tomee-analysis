@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessAnnotatedTypeImpl.class
-
- - link:ProcessAnnotatedTypeImpl-asmified.java[Asmified]
-
-== References
-

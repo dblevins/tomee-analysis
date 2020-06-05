@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/saaj/SAAJStreamWriter.class
-
- - link:SAAJStreamWriter-asmified.java[Asmified]
-
-== References
-

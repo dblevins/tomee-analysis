@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/WSDocInfo.class
-
- - link:WSDocInfo-asmified.java[Asmified]
-
-== References
-

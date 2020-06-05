@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Stop.class
-
- - link:Stop-asmified.java[Asmified]
-
-== References
-

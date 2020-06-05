@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/rfc7748/X448Field.class
-
- - link:X448Field-asmified.java[Asmified]
-
-== References
-

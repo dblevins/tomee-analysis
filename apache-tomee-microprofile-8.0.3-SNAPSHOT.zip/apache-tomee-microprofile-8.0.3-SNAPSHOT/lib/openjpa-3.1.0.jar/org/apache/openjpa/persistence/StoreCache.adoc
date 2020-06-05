@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/StoreCache.class
-
- - link:StoreCache-asmified.java[Asmified]
-
-== References
-

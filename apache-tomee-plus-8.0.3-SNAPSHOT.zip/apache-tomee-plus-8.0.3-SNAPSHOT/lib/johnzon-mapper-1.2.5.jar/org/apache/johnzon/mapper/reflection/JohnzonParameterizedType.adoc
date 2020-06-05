@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/reflection/JohnzonParameterizedType.class
-
- - link:JohnzonParameterizedType-asmified.java[Asmified]
-
-== References
-

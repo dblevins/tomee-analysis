@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/rs/metadata/model/Descriptor.class
-
- - link:Descriptor-asmified.java[Asmified]
-
-== References
-

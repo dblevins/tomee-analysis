@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/Namespace.class
-
- - link:Namespace-asmified.java[Asmified]
-
-== References
-

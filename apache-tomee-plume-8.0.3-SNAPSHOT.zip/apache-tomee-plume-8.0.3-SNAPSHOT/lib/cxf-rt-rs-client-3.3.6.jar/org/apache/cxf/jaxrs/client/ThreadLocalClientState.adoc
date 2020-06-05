@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/ThreadLocalClientState.class
-
- - link:ThreadLocalClientState-asmified.java[Asmified]
-
-== References
-

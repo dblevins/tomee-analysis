@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/xml/DefaultErrorHandler.class
-
- - link:DefaultErrorHandler-asmified.java[Asmified]
-
-== References
-

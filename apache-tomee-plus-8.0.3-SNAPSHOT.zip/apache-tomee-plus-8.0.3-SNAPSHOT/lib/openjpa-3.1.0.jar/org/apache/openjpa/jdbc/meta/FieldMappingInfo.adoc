@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/FieldMappingInfo.class
-
- - link:FieldMappingInfo-asmified.java[Asmified]
-
-== References
-

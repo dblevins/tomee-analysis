@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/jdbc/JDBCDiskCacheFactory.class
-
- - link:JDBCDiskCacheFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$TargetDatabaseProp.class
-
- - link:PropertiesHandler$TargetDatabaseProp-asmified.java[Asmified]
-
-== References
-

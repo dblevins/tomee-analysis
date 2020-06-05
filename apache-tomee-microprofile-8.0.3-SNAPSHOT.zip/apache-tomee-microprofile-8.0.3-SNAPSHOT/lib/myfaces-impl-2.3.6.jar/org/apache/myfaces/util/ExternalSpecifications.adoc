@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/ExternalSpecifications.class
-
- - link:ExternalSpecifications-asmified.java[Asmified]
-
-== References
-

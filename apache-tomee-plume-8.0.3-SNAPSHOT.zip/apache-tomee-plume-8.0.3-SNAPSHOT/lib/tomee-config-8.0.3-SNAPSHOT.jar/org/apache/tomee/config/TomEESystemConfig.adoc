@@ -1,6 +1,0 @@
-= org/apache/tomee/config/TomEESystemConfig.class
-
- - link:TomEESystemConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/cryptacular/spec/Spec.class
-
- - link:Spec-asmified.java[Asmified]
-
-== References
-

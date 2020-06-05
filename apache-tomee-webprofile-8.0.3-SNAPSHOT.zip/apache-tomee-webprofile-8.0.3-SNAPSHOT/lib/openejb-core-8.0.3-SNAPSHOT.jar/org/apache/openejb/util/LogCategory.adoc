@@ -1,6 +1,0 @@
-= org/apache/openejb/util/LogCategory.class
-
- - link:LogCategory-asmified.java[Asmified]
-
-== References
-

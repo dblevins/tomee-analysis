@@ -1,6 +1,0 @@
-= org/hsqldb/util/DatabaseManagerSwing$DBMPrefs.class
-
- - link:DatabaseManagerSwing$DBMPrefs-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/validation/executable/ValidateOnExecution.class
-
- - link:ValidateOnExecution-asmified.java[Asmified]
-
-== References
-
- - javax.validation.executable.ExecutableType - 2

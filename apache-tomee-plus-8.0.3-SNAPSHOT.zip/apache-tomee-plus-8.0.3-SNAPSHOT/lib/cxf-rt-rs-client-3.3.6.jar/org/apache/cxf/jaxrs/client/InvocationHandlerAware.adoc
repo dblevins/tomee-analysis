@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/InvocationHandlerAware.class
-
- - link:InvocationHandlerAware-asmified.java[Asmified]
-
-== References
-

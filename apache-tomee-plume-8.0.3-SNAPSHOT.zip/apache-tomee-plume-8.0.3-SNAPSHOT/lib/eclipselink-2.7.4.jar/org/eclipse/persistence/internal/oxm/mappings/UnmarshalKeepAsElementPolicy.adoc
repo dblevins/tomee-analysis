@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/mappings/UnmarshalKeepAsElementPolicy.class
-
- - link:UnmarshalKeepAsElementPolicy-asmified.java[Asmified]
-
-== References
-

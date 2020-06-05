@@ -1,6 +1,0 @@
-= org/apache/commons/collections/collection/PredicatedCollection.class
-
- - link:PredicatedCollection-asmified.java[Asmified]
-
-== References
-

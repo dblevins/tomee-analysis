@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/JrtFileSystem$2.class
-
- - link:JrtFileSystem$2-asmified.java[Asmified]
-
-== References
-

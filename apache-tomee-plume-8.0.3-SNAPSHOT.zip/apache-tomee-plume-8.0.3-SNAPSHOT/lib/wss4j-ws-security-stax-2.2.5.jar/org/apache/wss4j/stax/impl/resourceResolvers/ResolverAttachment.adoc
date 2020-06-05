@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/resourceResolvers/ResolverAttachment.class
-
- - link:ResolverAttachment-asmified.java[Asmified]
-
-== References
-

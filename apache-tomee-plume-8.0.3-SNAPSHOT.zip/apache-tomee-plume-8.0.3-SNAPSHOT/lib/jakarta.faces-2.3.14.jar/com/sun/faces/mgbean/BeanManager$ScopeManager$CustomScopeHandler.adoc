@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/BeanManager$ScopeManager$CustomScopeHandler.class
-
- - link:BeanManager$ScopeManager$CustomScopeHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/api/experimental/PolymorphicConfig.class
-
- - link:PolymorphicConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/Variable.class
-
- - link:Variable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/WebdavFixFilter.class
-
- - link:WebdavFixFilter-asmified.java[Asmified]
-
-== References
-

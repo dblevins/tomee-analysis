@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/bc/BCObjectIdentifiers.class
-
- - link:BCObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

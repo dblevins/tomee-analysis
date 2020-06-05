@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/InternalJobExecution.class
-
- - link:InternalJobExecution-asmified.java[Asmified]
-
-== References
-

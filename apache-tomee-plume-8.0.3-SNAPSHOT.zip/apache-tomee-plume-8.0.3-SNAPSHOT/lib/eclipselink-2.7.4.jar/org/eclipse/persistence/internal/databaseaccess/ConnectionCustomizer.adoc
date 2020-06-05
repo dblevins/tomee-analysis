@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/ConnectionCustomizer.class
-
- - link:ConnectionCustomizer-asmified.java[Asmified]
-
-== References
-

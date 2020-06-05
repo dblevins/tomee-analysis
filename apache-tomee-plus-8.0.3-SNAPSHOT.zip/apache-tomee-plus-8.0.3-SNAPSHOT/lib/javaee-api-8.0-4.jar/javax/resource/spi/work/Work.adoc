@@ -1,6 +1,0 @@
-= javax/resource/spi/work/Work.class
-
- - link:Work-asmified.java[Asmified]
-
-== References
-

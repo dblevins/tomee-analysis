@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/Extension$ExtensionExpState.class
-
- - link:Extension$ExtensionExpState-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBIntrospector.class
-
- - link:JAXBIntrospector-asmified.java[Asmified]
-
-== References
-

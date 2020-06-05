@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/TableSwitchInsnNode.class
-
- - link:TableSwitchInsnNode-asmified.java[Asmified]
-
-== References
-

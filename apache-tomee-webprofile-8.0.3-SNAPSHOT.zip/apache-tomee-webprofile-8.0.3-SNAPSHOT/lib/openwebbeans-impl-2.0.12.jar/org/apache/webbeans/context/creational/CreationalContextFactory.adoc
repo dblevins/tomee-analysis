@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/creational/CreationalContextFactory.class
-
- - link:CreationalContextFactory-asmified.java[Asmified]
-
-== References
-

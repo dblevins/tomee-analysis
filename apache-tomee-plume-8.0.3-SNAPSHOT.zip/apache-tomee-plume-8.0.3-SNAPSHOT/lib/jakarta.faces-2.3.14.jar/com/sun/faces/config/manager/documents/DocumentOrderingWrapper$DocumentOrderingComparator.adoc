@@ -1,6 +1,0 @@
-= com/sun/faces/config/manager/documents/DocumentOrderingWrapper$DocumentOrderingComparator.class
-
- - link:DocumentOrderingWrapper$DocumentOrderingComparator-asmified.java[Asmified]
-
-== References
-

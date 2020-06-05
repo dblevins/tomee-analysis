@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cmc/PublishTrustAnchors.class
-
- - link:PublishTrustAnchors-asmified.java[Asmified]
-
-== References
-

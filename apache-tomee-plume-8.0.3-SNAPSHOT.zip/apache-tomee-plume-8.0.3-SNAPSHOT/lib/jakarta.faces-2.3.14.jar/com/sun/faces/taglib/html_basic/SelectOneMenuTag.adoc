@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/SelectOneMenuTag.class
-
- - link:SelectOneMenuTag-asmified.java[Asmified]
-
-== References
-

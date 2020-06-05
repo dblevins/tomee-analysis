@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRSessionsFactory.class
-
- - link:XRSessionsFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/EventHandler$Listener.class
-
- - link:EventHandler$Listener-asmified.java[Asmified]
-
-== References
-

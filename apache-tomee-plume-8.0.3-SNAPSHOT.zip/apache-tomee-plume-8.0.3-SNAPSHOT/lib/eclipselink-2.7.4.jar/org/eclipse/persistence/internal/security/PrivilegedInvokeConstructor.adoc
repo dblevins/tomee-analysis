@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/security/PrivilegedInvokeConstructor.class
-
- - link:PrivilegedInvokeConstructor-asmified.java[Asmified]
-
-== References
-

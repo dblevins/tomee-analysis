@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ProblemPackageBinding.class
-
- - link:ProblemPackageBinding-asmified.java[Asmified]
-
-== References
-

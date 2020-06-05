@@ -1,6 +1,0 @@
-= org/apache/openejb/batchee/BatchEEServiceManager.class
-
- - link:BatchEEServiceManager-asmified.java[Asmified]
-
-== References
-

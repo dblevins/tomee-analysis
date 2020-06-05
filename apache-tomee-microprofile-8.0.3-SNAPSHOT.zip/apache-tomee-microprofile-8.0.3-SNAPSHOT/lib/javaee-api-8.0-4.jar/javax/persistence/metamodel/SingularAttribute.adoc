@@ -1,9 +1,0 @@
-= javax/persistence/metamodel/SingularAttribute.class
-
- - link:SingularAttribute-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.metamodel.Type - 1
- - javax.persistence.metamodel.Attribute - 1
- - javax.persistence.metamodel.Bindable - 1

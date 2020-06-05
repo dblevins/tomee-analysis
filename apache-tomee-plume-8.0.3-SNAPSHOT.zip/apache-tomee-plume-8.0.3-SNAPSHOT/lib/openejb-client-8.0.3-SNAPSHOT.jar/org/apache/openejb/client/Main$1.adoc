@@ -1,6 +1,0 @@
-= org/apache/openejb/client/Main$1.class
-
- - link:Main$1-asmified.java[Asmified]
-
-== References
-

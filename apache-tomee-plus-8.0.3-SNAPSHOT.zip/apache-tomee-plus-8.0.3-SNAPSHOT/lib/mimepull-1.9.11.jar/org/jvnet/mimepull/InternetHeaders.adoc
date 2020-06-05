@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/InternetHeaders.class
-
- - link:InternetHeaders-asmified.java[Asmified]
-
-== References
-

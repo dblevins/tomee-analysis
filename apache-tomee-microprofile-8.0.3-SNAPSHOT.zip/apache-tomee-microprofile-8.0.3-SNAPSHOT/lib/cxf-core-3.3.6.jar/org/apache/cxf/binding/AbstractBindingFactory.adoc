@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/AbstractBindingFactory.class
-
- - link:AbstractBindingFactory-asmified.java[Asmified]
-
-== References
-

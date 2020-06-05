@@ -1,6 +1,0 @@
-= org/slf4j/Logger.class
-
- - link:Logger-asmified.java[Asmified]
-
-== References
-

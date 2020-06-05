@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/mime/MIMEMimeXmlSerializer.class
-
- - link:MIMEMimeXmlSerializer-asmified.java[Asmified]
-
-== References
-

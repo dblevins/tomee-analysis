@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/EnumExpressionBNF.class
-
- - link:EnumExpressionBNF-asmified.java[Asmified]
-
-== References
-

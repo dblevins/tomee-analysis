@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/Http2UpgradeHandler$BacklogTracker.class
-
- - link:Http2UpgradeHandler$BacklogTracker-asmified.java[Asmified]
-
-== References
-

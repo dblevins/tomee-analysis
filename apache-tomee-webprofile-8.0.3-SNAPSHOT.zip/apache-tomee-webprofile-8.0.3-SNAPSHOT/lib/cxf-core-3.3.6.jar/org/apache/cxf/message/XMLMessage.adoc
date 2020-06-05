@@ -1,6 +1,0 @@
-= org/apache/cxf/message/XMLMessage.class
-
- - link:XMLMessage-asmified.java[Asmified]
-
-== References
-

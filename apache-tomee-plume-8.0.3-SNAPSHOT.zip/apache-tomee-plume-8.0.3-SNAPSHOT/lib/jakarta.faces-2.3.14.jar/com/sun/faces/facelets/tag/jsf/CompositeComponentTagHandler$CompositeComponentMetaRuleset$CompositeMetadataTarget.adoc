@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler$CompositeComponentMetaRuleset$CompositeMetadataTarget.class
-
- - link:CompositeComponentTagHandler$CompositeComponentMetaRuleset$CompositeMetadataTarget-asmified.java[Asmified]
-
-== References
-

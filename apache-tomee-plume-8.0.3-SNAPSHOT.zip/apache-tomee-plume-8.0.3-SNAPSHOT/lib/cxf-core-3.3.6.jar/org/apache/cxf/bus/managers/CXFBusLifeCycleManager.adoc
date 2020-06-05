@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/CXFBusLifeCycleManager.class
-
- - link:CXFBusLifeCycleManager-asmified.java[Asmified]
-
-== References
-

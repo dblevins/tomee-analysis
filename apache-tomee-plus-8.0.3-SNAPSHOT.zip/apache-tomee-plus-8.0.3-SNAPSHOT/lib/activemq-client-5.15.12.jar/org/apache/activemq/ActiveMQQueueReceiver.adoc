@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQQueueReceiver.class
-
- - link:ActiveMQQueueReceiver-asmified.java[Asmified]
-
-== References
-

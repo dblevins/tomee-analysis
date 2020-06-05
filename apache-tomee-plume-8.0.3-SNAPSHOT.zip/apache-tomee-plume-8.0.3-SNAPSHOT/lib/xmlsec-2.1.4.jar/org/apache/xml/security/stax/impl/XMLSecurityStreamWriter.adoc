@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/XMLSecurityStreamWriter.class
-
- - link:XMLSecurityStreamWriter-asmified.java[Asmified]
-
-== References
-

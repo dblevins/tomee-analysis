@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_HtmlSelectOneMenu.class
-
- - link:_HtmlSelectOneMenu-asmified.java[Asmified]
-
-== References
-

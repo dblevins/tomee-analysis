@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/bulkhead/BulkheadInterceptor$Cache.class
-
- - link:BulkheadInterceptor$Cache-asmified.java[Asmified]
-
-== References
-

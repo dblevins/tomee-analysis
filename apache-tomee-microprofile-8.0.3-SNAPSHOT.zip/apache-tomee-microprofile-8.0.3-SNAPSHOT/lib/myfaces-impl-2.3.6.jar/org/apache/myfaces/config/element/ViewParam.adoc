@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/ViewParam.class
-
- - link:ViewParam-asmified.java[Asmified]
-
-== References
-

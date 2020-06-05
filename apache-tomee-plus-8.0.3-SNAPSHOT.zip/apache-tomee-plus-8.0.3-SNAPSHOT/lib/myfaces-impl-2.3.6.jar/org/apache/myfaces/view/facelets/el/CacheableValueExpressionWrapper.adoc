@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/CacheableValueExpressionWrapper.class
-
- - link:CacheableValueExpressionWrapper-asmified.java[Asmified]
-
-== References
-

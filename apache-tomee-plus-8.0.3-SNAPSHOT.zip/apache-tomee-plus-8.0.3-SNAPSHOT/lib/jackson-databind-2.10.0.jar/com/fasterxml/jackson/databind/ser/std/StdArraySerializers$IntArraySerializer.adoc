@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/StdArraySerializers$IntArraySerializer.class
-
- - link:StdArraySerializers$IntArraySerializer-asmified.java[Asmified]
-
-== References
-

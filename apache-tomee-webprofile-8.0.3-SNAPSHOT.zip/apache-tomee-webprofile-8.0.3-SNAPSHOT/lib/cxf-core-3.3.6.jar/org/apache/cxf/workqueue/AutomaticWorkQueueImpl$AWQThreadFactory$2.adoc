@@ -1,6 +1,0 @@
-= org/apache/cxf/workqueue/AutomaticWorkQueueImpl$AWQThreadFactory$2.class
-
- - link:AutomaticWorkQueueImpl$AWQThreadFactory$2-asmified.java[Asmified]
-
-== References
-

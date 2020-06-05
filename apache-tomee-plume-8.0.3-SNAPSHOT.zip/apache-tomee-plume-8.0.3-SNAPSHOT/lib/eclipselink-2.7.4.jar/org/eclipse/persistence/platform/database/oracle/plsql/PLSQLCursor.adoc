@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/oracle/plsql/PLSQLCursor.class
-
- - link:PLSQLCursor-asmified.java[Asmified]
-
-== References
-

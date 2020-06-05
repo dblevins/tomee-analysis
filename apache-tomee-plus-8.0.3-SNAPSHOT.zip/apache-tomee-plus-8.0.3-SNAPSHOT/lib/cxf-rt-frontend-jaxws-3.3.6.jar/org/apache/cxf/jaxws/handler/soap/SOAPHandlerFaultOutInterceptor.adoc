@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultOutInterceptor.class
-
- - link:SOAPHandlerFaultOutInterceptor-asmified.java[Asmified]
-
-== References
-

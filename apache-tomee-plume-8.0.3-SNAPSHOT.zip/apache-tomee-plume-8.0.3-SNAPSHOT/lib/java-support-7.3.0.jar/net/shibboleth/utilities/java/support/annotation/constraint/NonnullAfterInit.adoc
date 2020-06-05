@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/annotation/constraint/NonnullAfterInit.class
-
- - link:NonnullAfterInit-asmified.java[Asmified]
-
-== References
-

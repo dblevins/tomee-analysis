@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/translate/OctalUnescaper.class
-
- - link:OctalUnescaper-asmified.java[Asmified]
-
-== References
-

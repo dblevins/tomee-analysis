@@ -1,6 +1,0 @@
-= jakarta/faces/validator/_ExternalSpecifications.class
-
- - link:_ExternalSpecifications-asmified.java[Asmified]
-
-== References
-

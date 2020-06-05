@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/SessionContext.class
-
- - link:SessionContext-asmified.java[Asmified]
-
-== References
-

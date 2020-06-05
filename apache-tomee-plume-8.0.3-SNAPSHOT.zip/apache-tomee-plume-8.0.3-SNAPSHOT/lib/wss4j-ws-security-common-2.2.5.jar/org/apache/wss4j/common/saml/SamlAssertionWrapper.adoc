@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/SamlAssertionWrapper.class
-
- - link:SamlAssertionWrapper-asmified.java[Asmified]
-
-== References
-

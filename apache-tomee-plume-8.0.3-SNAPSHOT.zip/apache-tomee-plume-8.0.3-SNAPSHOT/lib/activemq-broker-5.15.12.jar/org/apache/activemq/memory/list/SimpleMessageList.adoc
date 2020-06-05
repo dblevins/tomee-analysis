@@ -1,6 +1,0 @@
-= org/apache/activemq/memory/list/SimpleMessageList.class
-
- - link:SimpleMessageList-asmified.java[Asmified]
-
-== References
-

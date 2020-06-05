@@ -1,6 +1,0 @@
-= org/osgi/annotation/versioning/Version.class
-
- - link:Version-asmified.java[Asmified]
-
-== References
-

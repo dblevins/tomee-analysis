@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/XMLUnmarshalListener.class
-
- - link:XMLUnmarshalListener-asmified.java[Asmified]
-
-== References
-

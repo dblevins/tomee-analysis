@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/Abs.class
-
- - link:Abs-asmified.java[Asmified]
-
-== References
-

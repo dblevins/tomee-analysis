@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/org/apache/xerces/util/XMLChar.class
-
- - link:XMLChar-asmified.java[Asmified]
-
-== References
-

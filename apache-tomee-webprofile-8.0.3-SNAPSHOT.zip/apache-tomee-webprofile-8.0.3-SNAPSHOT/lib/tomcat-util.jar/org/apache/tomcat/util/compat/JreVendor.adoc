@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/compat/JreVendor.class
-
- - link:JreVendor-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/resource/spi/LazyEnlistableConnectionManager.class
-
- - link:LazyEnlistableConnectionManager-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 1
- - javax.resource.spi.ManagedConnection - 1

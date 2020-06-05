@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/TextRenderer.class
-
- - link:TextRenderer-asmified.java[Asmified]
-
-== References
-

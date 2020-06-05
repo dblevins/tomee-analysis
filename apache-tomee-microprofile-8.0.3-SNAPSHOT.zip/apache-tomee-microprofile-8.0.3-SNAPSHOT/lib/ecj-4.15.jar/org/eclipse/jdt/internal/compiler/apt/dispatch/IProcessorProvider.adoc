@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/IProcessorProvider.class
-
- - link:IProcessorProvider-asmified.java[Asmified]
-
-== References
-

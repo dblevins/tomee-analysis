@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/tokenstore/EHCacheTokenStore.class
-
- - link:EHCacheTokenStore-asmified.java[Asmified]
-
-== References
-

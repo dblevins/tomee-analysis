@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/Header.class
-
- - link:Header-asmified.java[Asmified]
-
-== References
-

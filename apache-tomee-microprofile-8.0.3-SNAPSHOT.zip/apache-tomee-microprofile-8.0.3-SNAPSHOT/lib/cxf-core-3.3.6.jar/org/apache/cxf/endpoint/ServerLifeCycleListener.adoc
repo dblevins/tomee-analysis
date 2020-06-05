@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/ServerLifeCycleListener.class
-
- - link:ServerLifeCycleListener-asmified.java[Asmified]
-
-== References
-

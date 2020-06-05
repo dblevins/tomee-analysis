@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/IdBearing.class
-
- - link:IdBearing-asmified.java[Asmified]
-
-== References
-

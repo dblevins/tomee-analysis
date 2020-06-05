@@ -1,8 +1,0 @@
-= javax/ws/rs/core/Configuration.class
-
- - link:Configuration-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.Feature - 2
- - javax.ws.rs.RuntimeType - 1

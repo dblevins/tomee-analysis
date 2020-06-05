@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/managed/LocalXAConnectionFactory$LocalXAResource.class
-
- - link:LocalXAConnectionFactory$LocalXAResource-asmified.java[Asmified]
-
-== References
-

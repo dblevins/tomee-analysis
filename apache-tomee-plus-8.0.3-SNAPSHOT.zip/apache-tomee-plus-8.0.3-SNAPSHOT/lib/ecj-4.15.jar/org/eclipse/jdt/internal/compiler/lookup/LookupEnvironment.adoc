@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/LookupEnvironment.class
-
- - link:LookupEnvironment-asmified.java[Asmified]
-
-== References
-

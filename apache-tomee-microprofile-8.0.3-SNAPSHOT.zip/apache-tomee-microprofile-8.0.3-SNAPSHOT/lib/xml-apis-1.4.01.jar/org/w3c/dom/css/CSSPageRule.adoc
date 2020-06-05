@@ -1,6 +1,0 @@
-= org/w3c/dom/css/CSSPageRule.class
-
- - link:CSSPageRule-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/MethodStoreQuery$MethodExecutor.class
-
- - link:MethodStoreQuery$MethodExecutor-asmified.java[Asmified]
-
-== References
-

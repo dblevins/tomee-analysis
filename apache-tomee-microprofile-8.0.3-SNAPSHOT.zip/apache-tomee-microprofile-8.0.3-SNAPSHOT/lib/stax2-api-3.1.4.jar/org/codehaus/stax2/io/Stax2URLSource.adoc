@@ -1,6 +1,0 @@
-= org/codehaus/stax2/io/Stax2URLSource.class
-
- - link:Stax2URLSource-asmified.java[Asmified]
-
-== References
-

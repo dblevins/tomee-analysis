@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/DebugTreeAdaptor.class
-
- - link:DebugTreeAdaptor-asmified.java[Asmified]
-
-== References
-

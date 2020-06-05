@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/BeanDeserializer.class
-
- - link:BeanDeserializer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/filter/Filters$NegativeFilter.class
-
- - link:Filters$NegativeFilter-asmified.java[Asmified]
-
-== References
-

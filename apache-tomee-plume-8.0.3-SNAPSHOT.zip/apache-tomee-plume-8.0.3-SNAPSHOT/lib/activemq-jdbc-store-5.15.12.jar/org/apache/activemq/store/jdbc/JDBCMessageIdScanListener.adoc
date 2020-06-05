@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JDBCMessageIdScanListener.class
-
- - link:JDBCMessageIdScanListener-asmified.java[Asmified]
-
-== References
-

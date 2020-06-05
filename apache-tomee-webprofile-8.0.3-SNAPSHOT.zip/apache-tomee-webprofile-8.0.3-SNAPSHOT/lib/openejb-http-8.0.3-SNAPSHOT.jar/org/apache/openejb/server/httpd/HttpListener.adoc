@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/HttpListener.class
-
- - link:HttpListener-asmified.java[Asmified]
-
-== References
-

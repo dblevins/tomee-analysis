@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider$OffsetDateTimeConverter.class
-
- - link:JavaTimeTypesParamConverterProvider$OffsetDateTimeConverter-asmified.java[Asmified]
-
-== References
-

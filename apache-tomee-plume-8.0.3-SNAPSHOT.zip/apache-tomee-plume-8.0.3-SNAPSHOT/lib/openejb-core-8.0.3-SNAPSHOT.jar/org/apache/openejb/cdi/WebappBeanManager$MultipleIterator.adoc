@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/WebappBeanManager$MultipleIterator.class
-
- - link:WebappBeanManager$MultipleIterator-asmified.java[Asmified]
-
-== References
-

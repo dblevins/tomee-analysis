@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/security/impl/SAMLOutboundProtocolMessageSigningHandler.class
-
- - link:SAMLOutboundProtocolMessageSigningHandler-asmified.java[Asmified]
-
-== References
-

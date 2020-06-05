@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/NodeBuilderCustomizableContextImpl.class
-
- - link:NodeBuilderCustomizableContextImpl-asmified.java[Asmified]
-
-== References
-

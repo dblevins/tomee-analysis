@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/ArchUtils.class
-
- - link:ArchUtils-asmified.java[Asmified]
-
-== References
-

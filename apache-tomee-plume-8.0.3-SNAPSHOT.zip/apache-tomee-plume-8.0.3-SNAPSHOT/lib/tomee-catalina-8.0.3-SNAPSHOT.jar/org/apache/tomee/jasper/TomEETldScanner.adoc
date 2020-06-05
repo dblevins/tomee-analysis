@@ -1,6 +1,0 @@
-= org/apache/tomee/jasper/TomEETldScanner.class
-
- - link:TomEETldScanner-asmified.java[Asmified]
-
-== References
-

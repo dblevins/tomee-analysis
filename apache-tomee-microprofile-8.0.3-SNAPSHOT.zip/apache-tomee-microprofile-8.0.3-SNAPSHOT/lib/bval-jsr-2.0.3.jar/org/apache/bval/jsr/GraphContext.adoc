@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/GraphContext.class
-
- - link:GraphContext-asmified.java[Asmified]
-
-== References
-

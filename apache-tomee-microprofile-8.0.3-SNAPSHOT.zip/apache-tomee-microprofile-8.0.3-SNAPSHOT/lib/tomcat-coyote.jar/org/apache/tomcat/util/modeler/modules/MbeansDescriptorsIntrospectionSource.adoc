@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/modeler/modules/MbeansDescriptorsIntrospectionSource.class
-
- - link:MbeansDescriptorsIntrospectionSource-asmified.java[Asmified]
-
-== References
-

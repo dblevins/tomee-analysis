@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/CertConstraintsFeature.class
-
- - link:CertConstraintsFeature-asmified.java[Asmified]
-
-== References
-

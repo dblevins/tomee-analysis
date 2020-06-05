@@ -1,6 +1,0 @@
-= org/apache/catalina/Container.class
-
- - link:Container-asmified.java[Asmified]
-
-== References
-

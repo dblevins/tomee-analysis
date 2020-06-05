@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/PersistenceFactoryBase.class
-
- - link:PersistenceFactoryBase-asmified.java[Asmified]
-
-== References
-

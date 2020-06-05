@@ -1,7 +1,0 @@
-= javax/jms/TransactionRolledBackRuntimeException.class
-
- - link:TransactionRolledBackRuntimeException-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSRuntimeException - 4

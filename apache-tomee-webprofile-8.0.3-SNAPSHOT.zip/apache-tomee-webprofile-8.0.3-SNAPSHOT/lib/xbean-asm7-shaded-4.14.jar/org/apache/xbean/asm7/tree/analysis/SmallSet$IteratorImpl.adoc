@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/SmallSet$IteratorImpl.class
-
- - link:SmallSet$IteratorImpl-asmified.java[Asmified]
-
-== References
-

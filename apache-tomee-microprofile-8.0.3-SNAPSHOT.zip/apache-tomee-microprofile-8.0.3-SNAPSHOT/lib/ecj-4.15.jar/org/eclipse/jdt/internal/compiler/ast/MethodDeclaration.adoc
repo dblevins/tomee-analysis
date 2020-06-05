@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/MethodDeclaration.class
-
- - link:MethodDeclaration-asmified.java[Asmified]
-
-== References
-

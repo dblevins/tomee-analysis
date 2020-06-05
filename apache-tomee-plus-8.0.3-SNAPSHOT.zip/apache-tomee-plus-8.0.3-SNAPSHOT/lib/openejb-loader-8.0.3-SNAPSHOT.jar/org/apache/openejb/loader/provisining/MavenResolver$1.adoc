@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/provisining/MavenResolver$1.class
-
- - link:MavenResolver$1-asmified.java[Asmified]
-
-== References
-

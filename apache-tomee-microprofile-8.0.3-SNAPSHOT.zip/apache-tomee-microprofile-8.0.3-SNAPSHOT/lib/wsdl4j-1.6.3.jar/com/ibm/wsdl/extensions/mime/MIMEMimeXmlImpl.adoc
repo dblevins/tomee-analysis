@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/mime/MIMEMimeXmlImpl.class
-
- - link:MIMEMimeXmlImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/ManagedHomeHandler.class
-
- - link:ManagedHomeHandler-asmified.java[Asmified]
-
-== References
-

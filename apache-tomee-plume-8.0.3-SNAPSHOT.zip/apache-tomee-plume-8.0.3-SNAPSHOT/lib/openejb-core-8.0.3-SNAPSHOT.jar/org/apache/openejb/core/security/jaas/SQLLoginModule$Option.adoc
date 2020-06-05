@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/jaas/SQLLoginModule$Option.class
-
- - link:SQLLoginModule$Option-asmified.java[Asmified]
-
-== References
-

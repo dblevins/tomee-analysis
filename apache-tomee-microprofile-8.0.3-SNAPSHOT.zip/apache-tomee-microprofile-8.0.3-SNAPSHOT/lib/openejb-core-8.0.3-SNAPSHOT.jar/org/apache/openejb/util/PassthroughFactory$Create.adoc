@@ -1,6 +1,0 @@
-= org/apache/openejb/util/PassthroughFactory$Create.class
-
- - link:PassthroughFactory$Create-asmified.java[Asmified]
-
-== References
-

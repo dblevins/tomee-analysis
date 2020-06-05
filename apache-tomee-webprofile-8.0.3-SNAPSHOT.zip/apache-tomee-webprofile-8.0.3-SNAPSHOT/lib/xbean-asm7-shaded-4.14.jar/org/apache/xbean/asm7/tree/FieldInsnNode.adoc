@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/FieldInsnNode.class
-
- - link:FieldInsnNode-asmified.java[Asmified]
-
-== References
-

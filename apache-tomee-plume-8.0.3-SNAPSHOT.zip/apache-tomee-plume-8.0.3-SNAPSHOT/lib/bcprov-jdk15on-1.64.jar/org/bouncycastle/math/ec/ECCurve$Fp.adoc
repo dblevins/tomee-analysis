@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/ECCurve$Fp.class
-
- - link:ECCurve$Fp-asmified.java[Asmified]
-
-== References
-

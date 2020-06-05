@@ -1,6 +1,0 @@
-= jakarta/faces/view/ViewMetadata.class
-
- - link:ViewMetadata-asmified.java[Asmified]
-
-== References
-

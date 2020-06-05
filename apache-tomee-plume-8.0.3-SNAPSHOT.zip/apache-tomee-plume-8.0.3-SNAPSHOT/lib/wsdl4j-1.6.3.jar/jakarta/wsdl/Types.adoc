@@ -1,6 +1,0 @@
-= jakarta/wsdl/Types.class
-
- - link:Types-asmified.java[Asmified]
-
-== References
-

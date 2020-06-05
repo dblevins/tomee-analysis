@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/VectorContainerPolicy.class
-
- - link:VectorContainerPolicy-asmified.java[Asmified]
-
-== References
-

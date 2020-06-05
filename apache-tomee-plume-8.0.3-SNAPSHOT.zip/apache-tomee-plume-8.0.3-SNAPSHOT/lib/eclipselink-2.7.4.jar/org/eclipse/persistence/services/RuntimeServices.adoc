@@ -1,6 +1,0 @@
-= org/eclipse/persistence/services/RuntimeServices.class
-
- - link:RuntimeServices-asmified.java[Asmified]
-
-== References
-

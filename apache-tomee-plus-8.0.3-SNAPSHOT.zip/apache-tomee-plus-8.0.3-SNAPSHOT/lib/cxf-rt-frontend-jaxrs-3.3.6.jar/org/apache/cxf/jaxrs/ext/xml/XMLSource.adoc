@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/xml/XMLSource.class
-
- - link:XMLSource-asmified.java[Asmified]
-
-== References
-

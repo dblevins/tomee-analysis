@@ -1,6 +1,0 @@
-= org/apache/openejb/config/PersistenceModule.class
-
- - link:PersistenceModule-asmified.java[Asmified]
-
-== References
-

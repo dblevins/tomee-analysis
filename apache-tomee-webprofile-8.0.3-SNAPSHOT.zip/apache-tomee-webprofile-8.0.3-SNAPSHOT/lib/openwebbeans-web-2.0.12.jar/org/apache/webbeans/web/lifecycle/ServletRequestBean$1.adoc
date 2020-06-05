@@ -1,6 +1,0 @@
-= org/apache/webbeans/web/lifecycle/ServletRequestBean$1.class
-
- - link:ServletRequestBean$1-asmified.java[Asmified]
-
-== References
-

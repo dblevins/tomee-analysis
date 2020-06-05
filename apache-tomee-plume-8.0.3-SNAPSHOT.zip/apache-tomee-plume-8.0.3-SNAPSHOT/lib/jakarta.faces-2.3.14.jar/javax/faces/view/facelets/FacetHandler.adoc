@@ -1,7 +1,0 @@
-= javax/faces/view/facelets/FacetHandler.class
-
- - link:FacetHandler-asmified.java[Asmified]
-
-== References
-
- - javax.faces.view.facelets.FaceletContext - 1

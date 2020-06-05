@@ -1,6 +1,0 @@
-= jakarta/faces/event/FacesEvent.class
-
- - link:FacesEvent-asmified.java[Asmified]
-
-== References
-

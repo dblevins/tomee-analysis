@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/el/LegacyELContext.class
-
- - link:LegacyELContext-asmified.java[Asmified]
-
-== References
-

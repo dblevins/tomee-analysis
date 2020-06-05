@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter.class
-
- - link:WadlGenerator$ExternalSchemaWriter-asmified.java[Asmified]
-
-== References
-

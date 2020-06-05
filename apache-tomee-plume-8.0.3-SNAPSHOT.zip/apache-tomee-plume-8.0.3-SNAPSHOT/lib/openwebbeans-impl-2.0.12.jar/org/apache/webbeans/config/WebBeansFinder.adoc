@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/WebBeansFinder.class
-
- - link:WebBeansFinder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/DeploymentListener.class
-
- - link:DeploymentListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/ExceptionClassFilter.class
-
- - link:ExceptionClassFilter-asmified.java[Asmified]
-
-== References
-

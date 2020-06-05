@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/remote/RemoteFunctionCall.class
-
- - link:RemoteFunctionCall-asmified.java[Asmified]
-
-== References
-

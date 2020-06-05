@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/BundleAnnotationFinder$AnnotationFindingCallback.class
-
- - link:BundleAnnotationFinder$AnnotationFindingCallback-asmified.java[Asmified]
-
-== References
-

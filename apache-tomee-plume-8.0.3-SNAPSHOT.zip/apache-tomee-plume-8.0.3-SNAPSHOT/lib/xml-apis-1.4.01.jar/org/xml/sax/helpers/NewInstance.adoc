@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/NewInstance.class
-
- - link:NewInstance-asmified.java[Asmified]
-
-== References
-

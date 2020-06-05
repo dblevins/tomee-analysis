@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy$SimpleQualifiedCamelCase.class
-
- - link:NamingStrategy$SimpleQualifiedCamelCase-asmified.java[Asmified]
-
-== References
-

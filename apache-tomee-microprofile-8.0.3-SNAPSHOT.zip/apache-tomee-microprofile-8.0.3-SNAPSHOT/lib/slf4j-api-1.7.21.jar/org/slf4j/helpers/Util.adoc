@@ -1,6 +1,0 @@
-= org/slf4j/helpers/Util.class
-
- - link:Util-asmified.java[Asmified]
-
-== References
-

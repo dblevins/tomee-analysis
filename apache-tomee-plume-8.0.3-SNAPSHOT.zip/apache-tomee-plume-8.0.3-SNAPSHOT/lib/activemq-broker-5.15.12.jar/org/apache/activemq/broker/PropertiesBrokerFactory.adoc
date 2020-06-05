@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/PropertiesBrokerFactory.class
-
- - link:PropertiesBrokerFactory-asmified.java[Asmified]
-
-== References
-

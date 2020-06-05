@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/SerializedConverters.class
-
- - link:SerializedConverters-asmified.java[Asmified]
-
-== References
-

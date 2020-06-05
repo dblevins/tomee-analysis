@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/JAXRPCException.class
-
- - link:JAXRPCException-asmified.java[Asmified]
-
-== References
-

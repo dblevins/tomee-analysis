@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/AbstractAccessLogValve$DateFormatCache.class
-
- - link:AbstractAccessLogValve$DateFormatCache-asmified.java[Asmified]
-
-== References
-

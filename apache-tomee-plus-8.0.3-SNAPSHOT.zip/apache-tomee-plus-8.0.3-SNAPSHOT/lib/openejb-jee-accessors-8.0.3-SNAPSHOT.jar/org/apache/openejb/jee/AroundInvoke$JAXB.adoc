@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/AroundInvoke$JAXB.class
-
- - link:AroundInvoke$JAXB-asmified.java[Asmified]
-
-== References
-

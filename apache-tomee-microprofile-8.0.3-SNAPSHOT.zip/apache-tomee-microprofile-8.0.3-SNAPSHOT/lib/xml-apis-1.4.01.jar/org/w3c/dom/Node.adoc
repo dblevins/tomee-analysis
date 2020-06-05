@@ -1,6 +1,0 @@
-= org/w3c/dom/Node.class
-
- - link:Node-asmified.java[Asmified]
-
-== References
-

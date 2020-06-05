@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MultipartConfig.class
-
- - link:MultipartConfig-asmified.java[Asmified]
-
-== References
-

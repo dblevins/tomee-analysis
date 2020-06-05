@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/ContinuationProviderFactory.class
-
- - link:ContinuationProviderFactory-asmified.java[Asmified]
-
-== References
-

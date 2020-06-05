@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentBeanInfo$PropertyDescriptorMap.class
-
- - link:CompositeComponentBeanInfo$PropertyDescriptorMap-asmified.java[Asmified]
-
-== References
-

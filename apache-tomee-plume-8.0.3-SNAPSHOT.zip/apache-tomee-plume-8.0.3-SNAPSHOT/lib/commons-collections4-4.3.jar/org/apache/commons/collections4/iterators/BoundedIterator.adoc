@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/BoundedIterator.class
-
- - link:BoundedIterator-asmified.java[Asmified]
-
-== References
-

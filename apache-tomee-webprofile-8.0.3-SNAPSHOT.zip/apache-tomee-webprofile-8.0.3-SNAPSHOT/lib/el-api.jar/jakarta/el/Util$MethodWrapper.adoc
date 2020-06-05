@@ -1,6 +1,0 @@
-= jakarta/el/Util$MethodWrapper.class
-
- - link:Util$MethodWrapper-asmified.java[Asmified]
-
-== References
-

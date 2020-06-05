@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/impl/DefaultResourceResolver.class
-
- - link:DefaultResourceResolver-asmified.java[Asmified]
-
-== References
-

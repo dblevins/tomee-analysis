@@ -1,6 +1,0 @@
-= org/jose4j/jwt/consumer/JweCustomizer.class
-
- - link:JweCustomizer-asmified.java[Asmified]
-
-== References
-

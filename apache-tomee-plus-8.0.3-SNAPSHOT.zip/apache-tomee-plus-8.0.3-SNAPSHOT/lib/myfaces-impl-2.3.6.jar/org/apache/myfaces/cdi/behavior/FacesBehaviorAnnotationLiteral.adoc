@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/behavior/FacesBehaviorAnnotationLiteral.class
-
- - link:FacesBehaviorAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

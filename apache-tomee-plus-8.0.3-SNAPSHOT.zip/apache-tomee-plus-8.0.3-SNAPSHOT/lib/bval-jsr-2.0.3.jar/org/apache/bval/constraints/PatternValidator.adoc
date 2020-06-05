@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/PatternValidator.class
-
- - link:PatternValidator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/ApplyRequestValuesPhase.class
-
- - link:ApplyRequestValuesPhase-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/ConstraintAnnotationAttributes$Types.class
-
- - link:ConstraintAnnotationAttributes$Types-asmified.java[Asmified]
-
-== References
-

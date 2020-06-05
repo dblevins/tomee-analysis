@@ -1,7 +1,0 @@
-= javax/xml/ws/spi/WebServiceFeatureAnnotation.class
-
- - link:WebServiceFeatureAnnotation-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.WebServiceFeature - 1

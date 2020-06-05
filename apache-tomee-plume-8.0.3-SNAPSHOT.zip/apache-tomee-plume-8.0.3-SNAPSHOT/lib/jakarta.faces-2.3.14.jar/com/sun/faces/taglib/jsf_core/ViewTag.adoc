@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/ViewTag.class
-
- - link:ViewTag-asmified.java[Asmified]
-
-== References
-

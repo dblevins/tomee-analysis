@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor.class
-
- - link:JsonpPreStreamInterceptor-asmified.java[Asmified]
-
-== References
-

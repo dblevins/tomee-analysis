@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/codec/StringDigester$1.class
-
- - link:StringDigester$1-asmified.java[Asmified]
-
-== References
-

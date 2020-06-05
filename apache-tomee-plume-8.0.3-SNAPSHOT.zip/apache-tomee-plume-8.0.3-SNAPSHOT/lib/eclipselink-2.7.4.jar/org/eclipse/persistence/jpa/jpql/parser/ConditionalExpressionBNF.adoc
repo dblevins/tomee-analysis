@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ConditionalExpressionBNF.class
-
- - link:ConditionalExpressionBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/FacesFlowSwitch.class
-
- - link:FacesFlowSwitch-asmified.java[Asmified]
-
-== References
-

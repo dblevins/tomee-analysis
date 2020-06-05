@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MethodScheduleInfo.class
-
- - link:MethodScheduleInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/JsonParser.class
-
- - link:JsonParser-asmified.java[Asmified]
-
-== References
-

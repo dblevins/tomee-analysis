@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/PrototypeFactory.class
-
- - link:PrototypeFactory-asmified.java[Asmified]
-
-== References
-

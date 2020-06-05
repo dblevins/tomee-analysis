@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/DistributedQueryImpl.class
-
- - link:DistributedQueryImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= org/apache/openejb/config/OpenEJBDeploymentManager$TargetImpl.class
-
- - link:OpenEJBDeploymentManager$TargetImpl-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.deploy.spi.Target - 1

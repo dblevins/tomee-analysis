@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/interceptors/MessageDispatchInterceptorMBean.class
-
- - link:MessageDispatchInterceptorMBean-asmified.java[Asmified]
-
-== References
-

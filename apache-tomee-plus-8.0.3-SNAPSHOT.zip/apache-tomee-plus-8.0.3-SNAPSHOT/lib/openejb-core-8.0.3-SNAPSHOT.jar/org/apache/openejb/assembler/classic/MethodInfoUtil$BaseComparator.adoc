@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MethodInfoUtil$BaseComparator.class
-
- - link:MethodInfoUtil$BaseComparator-asmified.java[Asmified]
-
-== References
-

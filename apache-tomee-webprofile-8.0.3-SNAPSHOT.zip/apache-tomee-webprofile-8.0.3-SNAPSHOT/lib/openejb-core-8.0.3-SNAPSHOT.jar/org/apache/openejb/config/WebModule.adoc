@@ -1,6 +1,0 @@
-= org/apache/openejb/config/WebModule.class
-
- - link:WebModule-asmified.java[Asmified]
-
-== References
-

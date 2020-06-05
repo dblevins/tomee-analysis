@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/BrokerFactoryHandler.class
-
- - link:BrokerFactoryHandler-asmified.java[Asmified]
-
-== References
-

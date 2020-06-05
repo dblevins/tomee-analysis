@@ -1,6 +1,0 @@
-= org/opensaml/soap/common/SOAP11FaultDecodingException.class
-
- - link:SOAP11FaultDecodingException-asmified.java[Asmified]
-
-== References
-

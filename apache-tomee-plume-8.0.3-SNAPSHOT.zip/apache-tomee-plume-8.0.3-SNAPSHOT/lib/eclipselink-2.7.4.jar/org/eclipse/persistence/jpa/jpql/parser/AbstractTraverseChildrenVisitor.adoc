@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AbstractTraverseChildrenVisitor.class
-
- - link:AbstractTraverseChildrenVisitor-asmified.java[Asmified]
-
-== References
-

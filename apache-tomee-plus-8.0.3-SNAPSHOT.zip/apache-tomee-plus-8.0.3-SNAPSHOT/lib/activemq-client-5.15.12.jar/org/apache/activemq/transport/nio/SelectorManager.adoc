@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/nio/SelectorManager.class
-
- - link:SelectorManager-asmified.java[Asmified]
-
-== References
-

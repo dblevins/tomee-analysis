@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/multiset/SynchronizedMultiSet.class
-
- - link:SynchronizedMultiSet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/transport/util/CxfUtil$ClientAwareBusHandler.class
-
- - link:CxfUtil$ClientAwareBusHandler-asmified.java[Asmified]
-
-== References
-

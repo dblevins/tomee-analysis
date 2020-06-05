@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_HtmlDataTable.class
-
- - link:_HtmlDataTable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/serializer/AnchorGenerator.class
-
- - link:AnchorGenerator-asmified.java[Asmified]
-
-== References
-

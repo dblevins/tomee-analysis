@@ -1,6 +1,0 @@
-= jakarta/ws/rs/client/ClientResponseFilter.class
-
- - link:ClientResponseFilter-asmified.java[Asmified]
-
-== References
-

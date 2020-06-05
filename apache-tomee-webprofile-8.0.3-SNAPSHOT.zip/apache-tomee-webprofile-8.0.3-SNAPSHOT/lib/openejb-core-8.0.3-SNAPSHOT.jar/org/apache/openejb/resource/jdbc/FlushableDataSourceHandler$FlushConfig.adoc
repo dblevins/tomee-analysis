@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/FlushableDataSourceHandler$FlushConfig.class
-
- - link:FlushableDataSourceHandler$FlushConfig-asmified.java[Asmified]
-
-== References
-

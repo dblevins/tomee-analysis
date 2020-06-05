@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/DistributedBrokerFactory.class
-
- - link:DistributedBrokerFactory-asmified.java[Asmified]
-
-== References
-

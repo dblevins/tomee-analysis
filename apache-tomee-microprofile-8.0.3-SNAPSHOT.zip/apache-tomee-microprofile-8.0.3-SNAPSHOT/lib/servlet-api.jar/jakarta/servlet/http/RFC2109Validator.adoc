@@ -1,6 +1,0 @@
-= jakarta/servlet/http/RFC2109Validator.class
-
- - link:RFC2109Validator-asmified.java[Asmified]
-
-== References
-

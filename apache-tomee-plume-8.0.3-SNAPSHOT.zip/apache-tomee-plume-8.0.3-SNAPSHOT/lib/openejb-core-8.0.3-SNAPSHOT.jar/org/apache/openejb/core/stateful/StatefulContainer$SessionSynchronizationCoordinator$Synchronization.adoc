@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/StatefulContainer$SessionSynchronizationCoordinator$Synchronization.class
-
- - link:StatefulContainer$SessionSynchronizationCoordinator$Synchronization-asmified.java[Asmified]
-
-== References
-

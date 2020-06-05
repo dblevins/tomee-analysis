@@ -1,6 +1,0 @@
-= org/hsqldb/ExpressionColumnAccessor.class
-
- - link:ExpressionColumnAccessor-asmified.java[Asmified]
-
-== References
-

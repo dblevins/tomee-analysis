@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/selector/MinimalAlternativeSelector.class
-
- - link:MinimalAlternativeSelector-asmified.java[Asmified]
-
-== References
-

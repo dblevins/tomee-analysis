@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/EntityManagerImpl$BrokerBytesInputStream.class
-
- - link:EntityManagerImpl$BrokerBytesInputStream-asmified.java[Asmified]
-
-== References
-

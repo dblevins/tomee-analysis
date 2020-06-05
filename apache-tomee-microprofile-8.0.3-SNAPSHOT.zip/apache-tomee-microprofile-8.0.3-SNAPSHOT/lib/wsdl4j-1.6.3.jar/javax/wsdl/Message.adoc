@@ -1,6 +1,0 @@
-= javax/wsdl/Message.class
-
- - link:Message-asmified.java[Asmified]
-
-== References
-

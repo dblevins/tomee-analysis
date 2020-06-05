@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/MBeanInfo.class
-
- - link:MBeanInfo-asmified.java[Asmified]
-
-== References
-

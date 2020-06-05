@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/ModuleType.class
-
- - link:ModuleType-asmified.java[Asmified]
-
-== References
-

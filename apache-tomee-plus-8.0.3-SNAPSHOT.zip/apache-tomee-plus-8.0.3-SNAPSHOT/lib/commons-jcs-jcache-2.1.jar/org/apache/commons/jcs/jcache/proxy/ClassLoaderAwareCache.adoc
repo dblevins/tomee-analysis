@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/proxy/ClassLoaderAwareCache.class
-
- - link:ClassLoaderAwareCache-asmified.java[Asmified]
-
-== References
-

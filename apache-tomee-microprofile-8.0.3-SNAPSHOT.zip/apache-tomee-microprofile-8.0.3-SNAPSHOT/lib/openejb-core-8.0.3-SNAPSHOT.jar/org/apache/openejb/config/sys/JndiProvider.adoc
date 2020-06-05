@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/JndiProvider.class
-
- - link:JndiProvider-asmified.java[Asmified]
-
-== References
-

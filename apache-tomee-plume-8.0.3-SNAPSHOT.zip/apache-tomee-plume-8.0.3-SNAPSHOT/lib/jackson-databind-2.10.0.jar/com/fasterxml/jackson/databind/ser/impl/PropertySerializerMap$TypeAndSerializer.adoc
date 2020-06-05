@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$TypeAndSerializer.class
-
- - link:PropertySerializerMap$TypeAndSerializer-asmified.java[Asmified]
-
-== References
-

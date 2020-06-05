@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/nosql/NoSqlMetadata.class
-
- - link:NoSqlMetadata-asmified.java[Asmified]
-
-== References
-

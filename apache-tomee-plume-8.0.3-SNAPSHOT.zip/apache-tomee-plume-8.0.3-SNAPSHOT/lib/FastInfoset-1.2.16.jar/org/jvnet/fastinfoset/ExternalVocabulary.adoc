@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/ExternalVocabulary.class
-
- - link:ExternalVocabulary-asmified.java[Asmified]
-
-== References
-

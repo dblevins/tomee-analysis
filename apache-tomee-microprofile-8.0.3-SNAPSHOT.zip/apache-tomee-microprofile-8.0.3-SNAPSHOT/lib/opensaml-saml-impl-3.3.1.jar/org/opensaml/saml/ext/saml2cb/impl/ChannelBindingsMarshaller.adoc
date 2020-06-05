@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2cb/impl/ChannelBindingsMarshaller.class
-
- - link:ChannelBindingsMarshaller-asmified.java[Asmified]
-
-== References
-

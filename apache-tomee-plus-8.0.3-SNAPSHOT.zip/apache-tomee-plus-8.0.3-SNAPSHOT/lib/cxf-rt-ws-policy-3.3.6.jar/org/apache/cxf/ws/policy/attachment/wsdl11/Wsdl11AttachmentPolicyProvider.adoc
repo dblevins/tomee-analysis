@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/attachment/wsdl11/Wsdl11AttachmentPolicyProvider.class
-
- - link:Wsdl11AttachmentPolicyProvider-asmified.java[Asmified]
-
-== References
-

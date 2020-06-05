@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/ConstructorQueryMappings$ConstructorVisitor.class
-
- - link:ConstructorQueryMappings$ConstructorVisitor-asmified.java[Asmified]
-
-== References
-

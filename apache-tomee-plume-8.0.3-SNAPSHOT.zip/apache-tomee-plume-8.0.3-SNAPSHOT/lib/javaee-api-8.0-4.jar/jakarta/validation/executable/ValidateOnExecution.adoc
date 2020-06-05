@@ -1,6 +1,0 @@
-= jakarta/validation/executable/ValidateOnExecution.class
-
- - link:ValidateOnExecution-asmified.java[Asmified]
-
-== References
-

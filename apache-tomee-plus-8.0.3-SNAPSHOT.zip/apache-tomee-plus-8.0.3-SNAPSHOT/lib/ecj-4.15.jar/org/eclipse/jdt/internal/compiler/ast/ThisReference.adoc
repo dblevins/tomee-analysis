@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/ThisReference.class
-
- - link:ThisReference-asmified.java[Asmified]
-
-== References
-

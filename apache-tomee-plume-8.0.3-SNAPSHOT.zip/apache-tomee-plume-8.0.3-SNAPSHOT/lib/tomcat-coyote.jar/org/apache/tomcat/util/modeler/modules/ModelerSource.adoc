@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/modeler/modules/ModelerSource.class
-
- - link:ModelerSource-asmified.java[Asmified]
-
-== References
-

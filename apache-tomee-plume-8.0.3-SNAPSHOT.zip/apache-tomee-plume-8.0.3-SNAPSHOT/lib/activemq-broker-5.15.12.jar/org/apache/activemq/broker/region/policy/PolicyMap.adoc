@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/PolicyMap.class
-
- - link:PolicyMap-asmified.java[Asmified]
-
-== References
-

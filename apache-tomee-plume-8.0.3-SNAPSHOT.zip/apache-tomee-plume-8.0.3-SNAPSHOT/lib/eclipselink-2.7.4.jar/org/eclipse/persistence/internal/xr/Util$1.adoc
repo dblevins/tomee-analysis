@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/Util$1.class
-
- - link:Util$1-asmified.java[Asmified]
-
-== References
-

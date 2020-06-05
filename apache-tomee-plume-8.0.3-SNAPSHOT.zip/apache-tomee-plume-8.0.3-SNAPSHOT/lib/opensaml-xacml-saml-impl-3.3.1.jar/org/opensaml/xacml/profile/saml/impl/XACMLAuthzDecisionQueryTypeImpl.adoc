@@ -1,6 +1,0 @@
-= org/opensaml/xacml/profile/saml/impl/XACMLAuthzDecisionQueryTypeImpl.class
-
- - link:XACMLAuthzDecisionQueryTypeImpl-asmified.java[Asmified]
-
-== References
-

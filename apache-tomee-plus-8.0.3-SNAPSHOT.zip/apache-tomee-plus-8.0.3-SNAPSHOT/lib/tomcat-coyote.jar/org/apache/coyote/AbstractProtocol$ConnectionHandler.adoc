@@ -1,6 +1,0 @@
-= org/apache/coyote/AbstractProtocol$ConnectionHandler.class
-
- - link:AbstractProtocol$ConnectionHandler-asmified.java[Asmified]
-
-== References
-

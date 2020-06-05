@@ -1,6 +1,0 @@
-= javax/wsdl/extensions/ExtensionRegistry.class
-
- - link:ExtensionRegistry-asmified.java[Asmified]
-
-== References
-

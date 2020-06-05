@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLFragmentMapping.class
-
- - link:XMLFragmentMapping-asmified.java[Asmified]
-
-== References
-

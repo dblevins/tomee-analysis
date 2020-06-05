@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/Initialized.class
-
- - link:Initialized-asmified.java[Asmified]
-
-== References
-

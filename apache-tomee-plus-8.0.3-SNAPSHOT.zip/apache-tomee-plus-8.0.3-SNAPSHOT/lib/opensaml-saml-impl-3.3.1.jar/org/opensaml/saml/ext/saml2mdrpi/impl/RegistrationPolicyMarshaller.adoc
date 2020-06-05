@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdrpi/impl/RegistrationPolicyMarshaller.class
-
- - link:RegistrationPolicyMarshaller-asmified.java[Asmified]
-
-== References
-

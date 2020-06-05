@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/engines/IDEAEngine.class
-
- - link:IDEAEngine-asmified.java[Asmified]
-
-== References
-

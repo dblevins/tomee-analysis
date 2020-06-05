@@ -1,6 +1,0 @@
-= com/sun/xml/txw2/annotation/XmlCDATA.class
-
- - link:XmlCDATA-asmified.java[Asmified]
-
-== References
-

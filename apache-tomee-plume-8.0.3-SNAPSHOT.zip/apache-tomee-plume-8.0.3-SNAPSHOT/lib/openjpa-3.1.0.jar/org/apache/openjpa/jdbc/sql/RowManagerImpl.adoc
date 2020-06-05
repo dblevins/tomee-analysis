@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/RowManagerImpl.class
-
- - link:RowManagerImpl-asmified.java[Asmified]
-
-== References
-

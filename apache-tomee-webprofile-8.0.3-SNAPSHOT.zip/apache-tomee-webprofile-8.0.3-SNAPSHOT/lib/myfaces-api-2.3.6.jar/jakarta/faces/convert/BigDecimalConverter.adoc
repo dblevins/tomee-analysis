@@ -1,6 +1,0 @@
-= jakarta/faces/convert/BigDecimalConverter.class
-
- - link:BigDecimalConverter-asmified.java[Asmified]
-
-== References
-

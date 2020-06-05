@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/StoredProcedureQueryImpl.class
-
- - link:StoredProcedureQueryImpl-asmified.java[Asmified]
-
-== References
-

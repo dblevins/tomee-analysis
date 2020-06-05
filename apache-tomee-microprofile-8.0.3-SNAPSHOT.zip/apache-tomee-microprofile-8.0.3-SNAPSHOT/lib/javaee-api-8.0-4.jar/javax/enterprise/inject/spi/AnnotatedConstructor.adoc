@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/AnnotatedConstructor.class
-
- - link:AnnotatedConstructor-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.AnnotatedConstructor - 2
- - javax.enterprise.inject.spi.AnnotatedCallable - 1

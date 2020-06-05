@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/AttachmentUtil$EnhancedMailcapCommandMap.class
-
- - link:AttachmentUtil$EnhancedMailcapCommandMap-asmified.java[Asmified]
-
-== References
-

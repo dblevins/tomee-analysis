@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/property/SingleElementNodeProperty.class
-
- - link:SingleElementNodeProperty-asmified.java[Asmified]
-
-== References
-

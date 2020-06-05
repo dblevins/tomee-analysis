@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/DataCachePCData.class
-
- - link:DataCachePCData-asmified.java[Asmified]
-
-== References
-

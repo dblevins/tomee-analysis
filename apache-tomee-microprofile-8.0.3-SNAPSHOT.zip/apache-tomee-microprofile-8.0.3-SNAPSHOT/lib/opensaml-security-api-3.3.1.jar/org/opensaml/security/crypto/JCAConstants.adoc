@@ -1,6 +1,0 @@
-= org/opensaml/security/crypto/JCAConstants.class
-
- - link:JCAConstants-asmified.java[Asmified]
-
-== References
-

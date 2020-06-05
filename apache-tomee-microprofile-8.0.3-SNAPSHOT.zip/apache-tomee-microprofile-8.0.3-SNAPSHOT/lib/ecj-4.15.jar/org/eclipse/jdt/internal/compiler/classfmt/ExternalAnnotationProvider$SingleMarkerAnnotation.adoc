@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/ExternalAnnotationProvider$SingleMarkerAnnotation.class
-
- - link:ExternalAnnotationProvider$SingleMarkerAnnotation-asmified.java[Asmified]
-
-== References
-

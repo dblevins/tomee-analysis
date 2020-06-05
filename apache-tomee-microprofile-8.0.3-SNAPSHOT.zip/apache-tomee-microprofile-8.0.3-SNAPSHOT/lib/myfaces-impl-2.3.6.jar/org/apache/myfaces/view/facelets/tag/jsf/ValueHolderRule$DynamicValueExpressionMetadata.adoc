@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ValueHolderRule$DynamicValueExpressionMetadata.class
-
- - link:ValueHolderRule$DynamicValueExpressionMetadata-asmified.java[Asmified]
-
-== References
-

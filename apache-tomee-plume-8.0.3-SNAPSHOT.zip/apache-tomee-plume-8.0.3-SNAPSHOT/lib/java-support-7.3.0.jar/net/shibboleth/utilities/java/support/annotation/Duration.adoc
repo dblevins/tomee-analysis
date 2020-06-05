@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/annotation/Duration.class
-
- - link:Duration-asmified.java[Asmified]
-
-== References
-

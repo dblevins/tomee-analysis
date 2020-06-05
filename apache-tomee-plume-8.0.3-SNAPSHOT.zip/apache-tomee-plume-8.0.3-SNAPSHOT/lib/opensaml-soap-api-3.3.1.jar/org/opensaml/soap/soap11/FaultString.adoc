@@ -1,6 +1,0 @@
-= org/opensaml/soap/soap11/FaultString.class
-
- - link:FaultString-asmified.java[Asmified]
-
-== References
-

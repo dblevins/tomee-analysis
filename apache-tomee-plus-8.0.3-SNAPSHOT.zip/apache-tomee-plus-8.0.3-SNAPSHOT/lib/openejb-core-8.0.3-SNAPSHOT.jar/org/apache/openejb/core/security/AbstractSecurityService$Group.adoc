@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/AbstractSecurityService$Group.class
-
- - link:AbstractSecurityService$Group-asmified.java[Asmified]
-
-== References
-

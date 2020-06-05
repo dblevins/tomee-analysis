@@ -1,6 +1,0 @@
-= org/apache/xml/security/algorithms/JCEMapper$Algorithm.class
-
- - link:JCEMapper$Algorithm-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/BasicDataSourceFactory.class
-
- - link:BasicDataSourceFactory-asmified.java[Asmified]
-
-== References
-

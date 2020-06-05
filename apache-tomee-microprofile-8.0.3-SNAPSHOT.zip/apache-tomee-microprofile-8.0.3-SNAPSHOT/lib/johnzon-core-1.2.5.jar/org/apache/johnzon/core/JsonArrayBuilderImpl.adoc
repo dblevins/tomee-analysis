@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonArrayBuilderImpl.class
-
- - link:JsonArrayBuilderImpl-asmified.java[Asmified]
-
-== References
-

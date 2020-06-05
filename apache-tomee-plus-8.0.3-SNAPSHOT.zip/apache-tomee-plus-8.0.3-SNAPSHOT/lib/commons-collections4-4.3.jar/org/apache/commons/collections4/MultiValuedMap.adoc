@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/MultiValuedMap.class
-
- - link:MultiValuedMap-asmified.java[Asmified]
-
-== References
-

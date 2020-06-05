@@ -1,6 +1,0 @@
-= org/apache/myfaces/webapp/FacesELContextListener.class
-
- - link:FacesELContextListener-asmified.java[Asmified]
-
-== References
-

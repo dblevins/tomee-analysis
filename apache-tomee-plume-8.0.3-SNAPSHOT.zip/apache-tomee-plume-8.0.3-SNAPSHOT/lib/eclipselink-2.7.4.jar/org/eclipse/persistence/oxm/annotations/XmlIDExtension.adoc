@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlIDExtension.class
-
- - link:XmlIDExtension-asmified.java[Asmified]
-
-== References
-

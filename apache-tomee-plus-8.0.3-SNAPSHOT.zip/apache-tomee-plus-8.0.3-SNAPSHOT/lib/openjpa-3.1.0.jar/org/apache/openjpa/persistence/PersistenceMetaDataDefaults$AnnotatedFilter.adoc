@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistenceMetaDataDefaults$AnnotatedFilter.class
-
- - link:PersistenceMetaDataDefaults$AnnotatedFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/ejb/ConcurrentAccessTimeoutException.class
-
- - link:ConcurrentAccessTimeoutException-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.ConcurrentAccessException - 3

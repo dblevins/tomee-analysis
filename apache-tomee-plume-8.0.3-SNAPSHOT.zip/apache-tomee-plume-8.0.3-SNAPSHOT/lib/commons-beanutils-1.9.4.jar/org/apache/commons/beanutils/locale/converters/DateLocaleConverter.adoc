@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/converters/DateLocaleConverter.class
-
- - link:DateLocaleConverter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckClassLoading$DiffItemComparator.class
-
- - link:CheckClassLoading$DiffItemComparator-asmified.java[Asmified]
-
-== References
-

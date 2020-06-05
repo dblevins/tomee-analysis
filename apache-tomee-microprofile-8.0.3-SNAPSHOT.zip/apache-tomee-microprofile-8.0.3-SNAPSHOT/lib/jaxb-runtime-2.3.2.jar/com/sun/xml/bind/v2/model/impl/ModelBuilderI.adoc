@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/impl/ModelBuilderI.class
-
- - link:ModelBuilderI-asmified.java[Asmified]
-
-== References
-

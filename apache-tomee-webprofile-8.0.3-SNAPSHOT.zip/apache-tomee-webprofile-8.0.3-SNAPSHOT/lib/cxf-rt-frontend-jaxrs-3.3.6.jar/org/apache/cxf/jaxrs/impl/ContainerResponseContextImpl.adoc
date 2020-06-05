@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/ContainerResponseContextImpl.class
-
- - link:ContainerResponseContextImpl-asmified.java[Asmified]
-
-== References
-

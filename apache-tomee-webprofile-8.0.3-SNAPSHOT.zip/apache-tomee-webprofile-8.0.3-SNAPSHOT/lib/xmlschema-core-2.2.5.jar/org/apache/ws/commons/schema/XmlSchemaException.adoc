@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaException.class
-
- - link:XmlSchemaException-asmified.java[Asmified]
-
-== References
-

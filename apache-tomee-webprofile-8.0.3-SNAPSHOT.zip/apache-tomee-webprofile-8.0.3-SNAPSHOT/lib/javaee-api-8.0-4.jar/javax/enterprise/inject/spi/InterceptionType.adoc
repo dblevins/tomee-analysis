@@ -1,7 +1,0 @@
-= javax/enterprise/inject/spi/InterceptionType.class
-
- - link:InterceptionType-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.InterceptionType - 46

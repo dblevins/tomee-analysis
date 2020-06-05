@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesSystemEventListener$JAXB.class
-
- - link:FacesSystemEventListener$JAXB-asmified.java[Asmified]
-
-== References
-

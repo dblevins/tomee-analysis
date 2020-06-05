@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy$1.class
-
- - link:QueryBasedSubscriptionRecoveryPolicy$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/SecurityContextTokenSecurityEvent.class
-
- - link:SecurityContextTokenSecurityEvent-asmified.java[Asmified]
-
-== References
-

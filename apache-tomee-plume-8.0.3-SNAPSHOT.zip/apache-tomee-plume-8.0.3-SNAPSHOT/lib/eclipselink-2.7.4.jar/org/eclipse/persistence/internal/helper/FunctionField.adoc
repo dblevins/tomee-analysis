@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/FunctionField.class
-
- - link:FunctionField-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/ConverterHandler.class
-
- - link:ConverterHandler-asmified.java[Asmified]
-
-== References
-

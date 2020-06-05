@@ -1,6 +1,0 @@
-= javax/persistence/UniqueConstraint.class
-
- - link:UniqueConstraint-asmified.java[Asmified]
-
-== References
-

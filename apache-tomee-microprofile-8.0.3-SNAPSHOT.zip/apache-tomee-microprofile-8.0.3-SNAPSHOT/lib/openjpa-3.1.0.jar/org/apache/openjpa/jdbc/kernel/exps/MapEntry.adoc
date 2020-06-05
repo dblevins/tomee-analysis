@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/MapEntry.class
-
- - link:MapEntry-asmified.java[Asmified]
-
-== References
-

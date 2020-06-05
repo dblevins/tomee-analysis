@@ -1,6 +1,0 @@
-= jakarta/security/auth/message/callback/GroupPrincipalCallback.class
-
- - link:GroupPrincipalCallback-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/SecurityPermission$JAXB.class
-
- - link:SecurityPermission$JAXB-asmified.java[Asmified]
-
-== References
-

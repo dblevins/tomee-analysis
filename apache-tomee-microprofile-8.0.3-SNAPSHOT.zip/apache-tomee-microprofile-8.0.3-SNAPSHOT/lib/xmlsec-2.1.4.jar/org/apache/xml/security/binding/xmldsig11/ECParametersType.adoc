@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/ECParametersType.class
-
- - link:ECParametersType-asmified.java[Asmified]
-
-== References
-

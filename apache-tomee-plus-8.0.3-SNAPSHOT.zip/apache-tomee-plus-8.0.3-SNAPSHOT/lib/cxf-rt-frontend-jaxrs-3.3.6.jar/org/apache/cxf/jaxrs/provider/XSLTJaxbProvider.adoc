@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/XSLTJaxbProvider.class
-
- - link:XSLTJaxbProvider-asmified.java[Asmified]
-
-== References
-

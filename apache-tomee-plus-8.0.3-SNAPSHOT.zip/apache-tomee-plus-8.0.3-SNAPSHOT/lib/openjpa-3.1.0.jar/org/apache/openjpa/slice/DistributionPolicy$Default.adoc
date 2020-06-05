@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/DistributionPolicy$Default.class
-
- - link:DistributionPolicy$Default-asmified.java[Asmified]
-
-== References
-

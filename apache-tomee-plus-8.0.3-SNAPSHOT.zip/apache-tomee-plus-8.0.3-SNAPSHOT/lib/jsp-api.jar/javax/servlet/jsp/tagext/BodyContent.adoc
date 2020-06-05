@@ -1,8 +1,0 @@
-= javax/servlet/jsp/tagext/BodyContent.class
-
- - link:BodyContent-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.jsp.JspWriter - 7
- - javax.servlet.jsp.tagext.BodyContent - 1

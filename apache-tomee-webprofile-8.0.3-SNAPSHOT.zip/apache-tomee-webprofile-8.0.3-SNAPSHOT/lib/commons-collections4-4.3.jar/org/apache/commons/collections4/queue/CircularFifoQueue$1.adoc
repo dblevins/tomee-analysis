@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/queue/CircularFifoQueue$1.class
-
- - link:CircularFifoQueue$1-asmified.java[Asmified]
-
-== References
-

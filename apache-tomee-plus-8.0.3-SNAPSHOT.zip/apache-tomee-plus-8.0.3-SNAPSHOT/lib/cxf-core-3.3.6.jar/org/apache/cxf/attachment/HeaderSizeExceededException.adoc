@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/HeaderSizeExceededException.class
-
- - link:HeaderSizeExceededException-asmified.java[Asmified]
-
-== References
-

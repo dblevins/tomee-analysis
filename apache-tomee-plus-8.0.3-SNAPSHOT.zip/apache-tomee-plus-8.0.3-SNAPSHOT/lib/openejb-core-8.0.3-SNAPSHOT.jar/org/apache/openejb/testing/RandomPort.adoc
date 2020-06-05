@@ -1,6 +1,0 @@
-= org/apache/openejb/testing/RandomPort.class
-
- - link:RandomPort-asmified.java[Asmified]
-
-== References
-

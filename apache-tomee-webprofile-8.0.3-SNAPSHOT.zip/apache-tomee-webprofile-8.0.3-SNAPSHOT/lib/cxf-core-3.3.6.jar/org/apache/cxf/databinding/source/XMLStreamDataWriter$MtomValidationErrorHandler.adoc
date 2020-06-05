@@ -1,6 +1,0 @@
-= org/apache/cxf/databinding/source/XMLStreamDataWriter$MtomValidationErrorHandler.class
-
- - link:XMLStreamDataWriter$MtomValidationErrorHandler-asmified.java[Asmified]
-
-== References
-

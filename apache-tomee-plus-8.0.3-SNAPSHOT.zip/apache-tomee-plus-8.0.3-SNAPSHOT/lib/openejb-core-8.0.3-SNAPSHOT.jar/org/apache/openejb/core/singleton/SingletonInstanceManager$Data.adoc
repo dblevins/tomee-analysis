@@ -1,6 +1,0 @@
-= org/apache/openejb/core/singleton/SingletonInstanceManager$Data.class
-
- - link:SingletonInstanceManager$Data-asmified.java[Asmified]
-
-== References
-

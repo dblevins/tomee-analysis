@@ -1,6 +1,0 @@
-= org/apache/activemq/store/IndexListener$MessageContext.class
-
- - link:IndexListener$MessageContext-asmified.java[Asmified]
-
-== References
-

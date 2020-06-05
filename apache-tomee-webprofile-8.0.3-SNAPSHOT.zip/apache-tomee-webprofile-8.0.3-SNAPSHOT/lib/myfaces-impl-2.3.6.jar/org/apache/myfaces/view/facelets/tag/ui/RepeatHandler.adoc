@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/RepeatHandler.class
-
- - link:RepeatHandler-asmified.java[Asmified]
-
-== References
-

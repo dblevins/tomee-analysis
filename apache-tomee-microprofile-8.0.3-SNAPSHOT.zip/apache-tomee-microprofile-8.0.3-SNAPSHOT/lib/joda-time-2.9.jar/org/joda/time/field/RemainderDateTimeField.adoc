@@ -1,6 +1,0 @@
-= org/joda/time/field/RemainderDateTimeField.class
-
- - link:RemainderDateTimeField-asmified.java[Asmified]
-
-== References
-

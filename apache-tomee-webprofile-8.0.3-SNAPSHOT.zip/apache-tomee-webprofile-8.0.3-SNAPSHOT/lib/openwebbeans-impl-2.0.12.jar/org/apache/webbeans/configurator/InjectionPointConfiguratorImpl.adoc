@@ -1,6 +1,0 @@
-= org/apache/webbeans/configurator/InjectionPointConfiguratorImpl.class
-
- - link:InjectionPointConfiguratorImpl-asmified.java[Asmified]
-
-== References
-

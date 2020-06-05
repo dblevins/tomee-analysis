@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/SuppressPropertiesBeanIntrospector.class
-
- - link:SuppressPropertiesBeanIntrospector-asmified.java[Asmified]
-
-== References
-

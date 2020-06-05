@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/ProxyAuthorizationPolicy.class
-
- - link:ProxyAuthorizationPolicy-asmified.java[Asmified]
-
-== References
-

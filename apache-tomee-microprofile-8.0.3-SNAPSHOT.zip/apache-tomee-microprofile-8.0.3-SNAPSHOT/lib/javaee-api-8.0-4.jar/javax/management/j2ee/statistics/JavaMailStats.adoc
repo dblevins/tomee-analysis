@@ -1,7 +1,0 @@
-= javax/management/j2ee/statistics/JavaMailStats.class
-
- - link:JavaMailStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.CountStatistic - 1

@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/action/SAMLTokenSignedAction.class
-
- - link:SAMLTokenSignedAction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/output/XMLEventWriterOutput.class
-
- - link:XMLEventWriterOutput-asmified.java[Asmified]
-
-== References
-

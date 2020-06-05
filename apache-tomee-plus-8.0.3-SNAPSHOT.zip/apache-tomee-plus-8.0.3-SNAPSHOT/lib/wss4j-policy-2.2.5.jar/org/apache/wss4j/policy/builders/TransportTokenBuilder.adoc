@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/TransportTokenBuilder.class
-
- - link:TransportTokenBuilder-asmified.java[Asmified]
-
-== References
-

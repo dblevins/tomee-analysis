@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/ObjectUtils.class
-
- - link:ObjectUtils-asmified.java[Asmified]
-
-== References
-

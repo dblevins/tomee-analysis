@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/transactional/MandatoryInterceptor.class
-
- - link:MandatoryInterceptor-asmified.java[Asmified]
-
-== References
-

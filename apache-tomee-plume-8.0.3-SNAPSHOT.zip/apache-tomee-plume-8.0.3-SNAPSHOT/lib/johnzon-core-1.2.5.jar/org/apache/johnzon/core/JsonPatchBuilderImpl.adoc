@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonPatchBuilderImpl.class
-
- - link:JsonPatchBuilderImpl-asmified.java[Asmified]
-
-== References
-

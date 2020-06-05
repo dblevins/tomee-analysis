@@ -1,6 +1,0 @@
-= org/apache/webbeans/proxy/SubclassProxyFactory.class
-
- - link:SubclassProxyFactory-asmified.java[Asmified]
-
-== References
-

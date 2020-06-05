@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/ResetValuesHandler.class
-
- - link:ResetValuesHandler-asmified.java[Asmified]
-
-== References
-

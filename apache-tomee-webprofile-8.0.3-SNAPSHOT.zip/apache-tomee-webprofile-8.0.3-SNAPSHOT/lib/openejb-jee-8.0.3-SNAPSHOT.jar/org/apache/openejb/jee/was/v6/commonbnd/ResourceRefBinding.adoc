@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/commonbnd/ResourceRefBinding.class
-
- - link:ResourceRefBinding-asmified.java[Asmified]
-
-== References
-

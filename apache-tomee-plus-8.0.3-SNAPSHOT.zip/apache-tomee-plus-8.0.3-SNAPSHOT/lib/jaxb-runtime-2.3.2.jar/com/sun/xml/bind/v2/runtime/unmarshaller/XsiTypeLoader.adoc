@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/XsiTypeLoader.class
-
- - link:XsiTypeLoader-asmified.java[Asmified]
-
-== References
-

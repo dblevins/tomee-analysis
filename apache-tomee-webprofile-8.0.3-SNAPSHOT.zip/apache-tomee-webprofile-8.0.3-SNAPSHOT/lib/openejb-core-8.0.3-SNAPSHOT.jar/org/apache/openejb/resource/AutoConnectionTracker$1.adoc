@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/AutoConnectionTracker$1.class
-
- - link:AutoConnectionTracker$1-asmified.java[Asmified]
-
-== References
-

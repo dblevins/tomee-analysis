@@ -1,6 +1,0 @@
-= org/opensaml/saml/criterion/ArtifactCriterion.class
-
- - link:ArtifactCriterion-asmified.java[Asmified]
-
-== References
-

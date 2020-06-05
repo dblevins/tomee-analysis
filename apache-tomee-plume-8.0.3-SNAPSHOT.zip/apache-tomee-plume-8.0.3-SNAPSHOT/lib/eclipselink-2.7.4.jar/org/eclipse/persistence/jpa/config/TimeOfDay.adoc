@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/TimeOfDay.class
-
- - link:TimeOfDay-asmified.java[Asmified]
-
-== References
-

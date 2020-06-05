@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/DataExpression.class
-
- - link:DataExpression-asmified.java[Asmified]
-
-== References
-

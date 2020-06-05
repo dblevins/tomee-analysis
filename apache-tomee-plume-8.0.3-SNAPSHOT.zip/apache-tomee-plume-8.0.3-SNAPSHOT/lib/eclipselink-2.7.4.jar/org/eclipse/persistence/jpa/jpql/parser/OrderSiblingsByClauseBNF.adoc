@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/OrderSiblingsByClauseBNF.class
-
- - link:OrderSiblingsByClauseBNF-asmified.java[Asmified]
-
-== References
-

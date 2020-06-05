@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/LifecycleEventManager.class
-
- - link:LifecycleEventManager-asmified.java[Asmified]
-
-== References
-

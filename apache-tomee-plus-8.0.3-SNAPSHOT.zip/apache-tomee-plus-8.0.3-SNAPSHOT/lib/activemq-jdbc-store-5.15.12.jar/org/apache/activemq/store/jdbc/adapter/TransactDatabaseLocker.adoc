@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/TransactDatabaseLocker.class
-
- - link:TransactDatabaseLocker-asmified.java[Asmified]
-
-== References
-

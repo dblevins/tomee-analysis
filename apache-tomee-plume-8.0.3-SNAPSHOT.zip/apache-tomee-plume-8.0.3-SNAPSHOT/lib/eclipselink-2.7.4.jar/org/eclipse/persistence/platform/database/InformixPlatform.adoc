@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/InformixPlatform.class
-
- - link:InformixPlatform-asmified.java[Asmified]
-
-== References
-

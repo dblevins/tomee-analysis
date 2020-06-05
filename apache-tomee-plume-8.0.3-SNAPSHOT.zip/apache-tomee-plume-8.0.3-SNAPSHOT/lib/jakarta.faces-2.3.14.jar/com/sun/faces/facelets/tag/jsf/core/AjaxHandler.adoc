@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/AjaxHandler.class
-
- - link:AjaxHandler-asmified.java[Asmified]
-
-== References
-

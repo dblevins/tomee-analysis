@@ -1,6 +1,0 @@
-= org/opensaml/saml/config/XMLObjectProviderInitializer.class
-
- - link:XMLObjectProviderInitializer-asmified.java[Asmified]
-
-== References
-

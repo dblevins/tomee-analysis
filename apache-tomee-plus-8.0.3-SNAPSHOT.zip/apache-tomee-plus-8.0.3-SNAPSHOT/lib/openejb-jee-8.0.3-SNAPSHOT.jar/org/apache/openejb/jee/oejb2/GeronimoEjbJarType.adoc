@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/GeronimoEjbJarType.class
-
- - link:GeronimoEjbJarType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/TerminalTokens.class
-
- - link:TerminalTokens-asmified.java[Asmified]
-
-== References
-

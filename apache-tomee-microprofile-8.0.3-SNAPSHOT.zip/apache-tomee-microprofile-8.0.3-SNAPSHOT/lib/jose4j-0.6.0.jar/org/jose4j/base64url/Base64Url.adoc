@@ -1,6 +1,0 @@
-= org/jose4j/base64url/Base64Url.class
-
- - link:Base64Url-asmified.java[Asmified]
-
-== References
-

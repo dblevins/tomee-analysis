@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/ImplicitTagLibraryInfo.class
-
- - link:ImplicitTagLibraryInfo-asmified.java[Asmified]
-
-== References
-

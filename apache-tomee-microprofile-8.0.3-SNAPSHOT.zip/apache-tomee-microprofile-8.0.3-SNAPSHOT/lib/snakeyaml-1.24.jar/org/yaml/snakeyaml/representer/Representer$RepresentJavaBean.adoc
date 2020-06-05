@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/representer/Representer$RepresentJavaBean.class
-
- - link:Representer$RepresentJavaBean-asmified.java[Asmified]
-
-== References
-

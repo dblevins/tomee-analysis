@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/UdpTransportFactory.class
-
- - link:UdpTransportFactory-asmified.java[Asmified]
-
-== References
-

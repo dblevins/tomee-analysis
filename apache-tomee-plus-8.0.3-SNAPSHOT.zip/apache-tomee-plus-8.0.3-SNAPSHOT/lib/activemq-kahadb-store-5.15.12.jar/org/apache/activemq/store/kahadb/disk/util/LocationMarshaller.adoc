@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/util/LocationMarshaller.class
-
- - link:LocationMarshaller-asmified.java[Asmified]
-
-== References
-

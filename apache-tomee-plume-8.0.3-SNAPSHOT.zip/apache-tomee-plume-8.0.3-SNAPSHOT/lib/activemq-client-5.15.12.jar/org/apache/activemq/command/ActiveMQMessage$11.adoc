@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQMessage$11.class
-
- - link:ActiveMQMessage$11-asmified.java[Asmified]
-
-== References
-

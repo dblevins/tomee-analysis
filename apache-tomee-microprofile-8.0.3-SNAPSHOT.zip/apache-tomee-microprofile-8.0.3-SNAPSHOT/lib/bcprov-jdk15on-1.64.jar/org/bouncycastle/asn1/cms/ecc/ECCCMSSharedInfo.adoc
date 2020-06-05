@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/ecc/ECCCMSSharedInfo.class
-
- - link:ECCCMSSharedInfo-asmified.java[Asmified]
-
-== References
-

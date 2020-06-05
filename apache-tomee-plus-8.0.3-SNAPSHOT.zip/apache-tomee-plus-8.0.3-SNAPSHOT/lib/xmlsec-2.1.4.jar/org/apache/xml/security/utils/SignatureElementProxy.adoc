@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/SignatureElementProxy.class
-
- - link:SignatureElementProxy-asmified.java[Asmified]
-
-== References
-

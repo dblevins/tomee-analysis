@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/soap/SOAPAddressSerializer.class
-
- - link:SOAPAddressSerializer-asmified.java[Asmified]
-
-== References
-

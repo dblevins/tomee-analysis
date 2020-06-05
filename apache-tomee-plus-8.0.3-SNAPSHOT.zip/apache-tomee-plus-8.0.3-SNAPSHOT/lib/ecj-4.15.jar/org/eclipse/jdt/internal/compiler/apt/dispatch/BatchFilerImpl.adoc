@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/BatchFilerImpl.class
-
- - link:BatchFilerImpl-asmified.java[Asmified]
-
-== References
-

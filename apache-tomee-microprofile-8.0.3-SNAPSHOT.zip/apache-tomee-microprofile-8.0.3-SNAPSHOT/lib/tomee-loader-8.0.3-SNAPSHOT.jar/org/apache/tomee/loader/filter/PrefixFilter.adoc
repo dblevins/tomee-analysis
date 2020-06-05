@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/filter/PrefixFilter.class
-
- - link:PrefixFilter-asmified.java[Asmified]
-
-== References
-

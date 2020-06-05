@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/ValueEncoderFactory$ArrayEncoder.class
-
- - link:ValueEncoderFactory$ArrayEncoder-asmified.java[Asmified]
-
-== References
-

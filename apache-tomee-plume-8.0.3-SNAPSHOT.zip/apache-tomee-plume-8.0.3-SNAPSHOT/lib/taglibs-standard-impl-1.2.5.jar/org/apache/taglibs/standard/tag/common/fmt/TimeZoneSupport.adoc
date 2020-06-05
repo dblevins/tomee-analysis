@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/fmt/TimeZoneSupport.class
-
- - link:TimeZoneSupport-asmified.java[Asmified]
-
-== References
-

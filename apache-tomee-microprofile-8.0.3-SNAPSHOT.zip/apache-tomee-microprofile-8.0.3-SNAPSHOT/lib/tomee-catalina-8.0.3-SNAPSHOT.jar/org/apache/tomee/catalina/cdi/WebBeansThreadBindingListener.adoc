@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/cdi/WebBeansThreadBindingListener.class
-
- - link:WebBeansThreadBindingListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCPool$RefState.class
-
- - link:JDBCPool$RefState-asmified.java[Asmified]
-
-== References
-

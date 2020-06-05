@@ -1,6 +1,0 @@
-= org/apache/bval/util/EmulatedAnnotatedType$1.class
-
- - link:EmulatedAnnotatedType$1-asmified.java[Asmified]
-
-== References
-

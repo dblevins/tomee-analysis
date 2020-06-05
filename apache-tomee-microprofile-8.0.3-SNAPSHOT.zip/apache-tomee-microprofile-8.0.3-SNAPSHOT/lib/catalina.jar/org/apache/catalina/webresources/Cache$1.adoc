@@ -1,6 +1,0 @@
-= org/apache/catalina/webresources/Cache$1.class
-
- - link:Cache$1-asmified.java[Asmified]
-
-== References
-

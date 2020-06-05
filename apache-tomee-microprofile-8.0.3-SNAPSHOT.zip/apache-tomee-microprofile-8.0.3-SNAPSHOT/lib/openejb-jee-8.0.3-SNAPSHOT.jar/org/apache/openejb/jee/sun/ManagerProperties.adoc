@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/ManagerProperties.class
-
- - link:ManagerProperties-asmified.java[Asmified]
-
-== References
-

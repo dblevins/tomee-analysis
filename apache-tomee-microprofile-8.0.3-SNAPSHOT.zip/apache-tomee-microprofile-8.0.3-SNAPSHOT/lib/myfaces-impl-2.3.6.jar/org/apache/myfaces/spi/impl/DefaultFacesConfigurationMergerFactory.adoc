@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/impl/DefaultFacesConfigurationMergerFactory.class
-
- - link:DefaultFacesConfigurationMergerFactory-asmified.java[Asmified]
-
-== References
-

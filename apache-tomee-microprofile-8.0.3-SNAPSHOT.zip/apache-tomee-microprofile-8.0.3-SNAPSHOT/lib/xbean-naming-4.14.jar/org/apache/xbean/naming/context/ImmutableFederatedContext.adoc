@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ImmutableFederatedContext.class
-
- - link:ImmutableFederatedContext-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/validation/Path$MethodNode.class
-
- - link:Path$MethodNode-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Path$Node - 1

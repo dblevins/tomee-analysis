@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/AlterColumnTemplate.class
-
- - link:AlterColumnTemplate-asmified.java[Asmified]
-
-== References
-

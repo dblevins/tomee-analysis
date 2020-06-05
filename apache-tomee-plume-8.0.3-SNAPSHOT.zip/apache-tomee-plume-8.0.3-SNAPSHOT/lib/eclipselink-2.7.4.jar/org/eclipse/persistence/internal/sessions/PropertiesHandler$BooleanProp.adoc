@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$BooleanProp.class
-
- - link:PropertiesHandler$BooleanProp-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/jms/JMSRuntimeException.class
-
- - link:JMSRuntimeException-asmified.java[Asmified]
-
-== References
-

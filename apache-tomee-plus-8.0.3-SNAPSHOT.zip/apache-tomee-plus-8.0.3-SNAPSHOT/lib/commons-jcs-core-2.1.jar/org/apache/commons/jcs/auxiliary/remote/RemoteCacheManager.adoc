@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/RemoteCacheManager.class
-
- - link:RemoteCacheManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/shared/CommandType.class
-
- - link:CommandType-asmified.java[Asmified]
-
-== References
-

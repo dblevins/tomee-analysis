@@ -1,6 +1,0 @@
-= org/codehaus/stax2/XMLEventReader2.class
-
- - link:XMLEventReader2-asmified.java[Asmified]
-
-== References
-

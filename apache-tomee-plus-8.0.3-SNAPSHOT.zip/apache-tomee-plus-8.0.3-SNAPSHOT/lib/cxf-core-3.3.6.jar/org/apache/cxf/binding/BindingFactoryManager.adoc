@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/BindingFactoryManager.class
-
- - link:BindingFactoryManager-asmified.java[Asmified]
-
-== References
-

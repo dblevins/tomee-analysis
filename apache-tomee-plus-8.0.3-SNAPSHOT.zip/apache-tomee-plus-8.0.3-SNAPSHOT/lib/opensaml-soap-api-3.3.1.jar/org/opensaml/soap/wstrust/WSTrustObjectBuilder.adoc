@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/WSTrustObjectBuilder.class
-
- - link:WSTrustObjectBuilder-asmified.java[Asmified]
-
-== References
-

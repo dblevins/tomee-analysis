@@ -1,6 +1,0 @@
-= javax/xml/bind/annotation/XmlEnum.class
-
- - link:XmlEnum-asmified.java[Asmified]
-
-== References
-

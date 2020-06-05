@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CdiResourceProvider$ProvidedInstanceBeanCreator.class
-
- - link:CdiResourceProvider$ProvidedInstanceBeanCreator-asmified.java[Asmified]
-
-== References
-

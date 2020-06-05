@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/xml/interceptor/XMLMessageInInterceptor.class
-
- - link:XMLMessageInInterceptor-asmified.java[Asmified]
-
-== References
-

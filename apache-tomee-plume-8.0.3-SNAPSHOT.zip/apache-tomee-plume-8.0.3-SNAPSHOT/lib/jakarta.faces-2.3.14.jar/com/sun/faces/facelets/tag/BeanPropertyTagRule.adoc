@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/BeanPropertyTagRule.class
-
- - link:BeanPropertyTagRule-asmified.java[Asmified]
-
-== References
-

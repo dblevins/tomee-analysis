@@ -1,6 +1,0 @@
-= org/hsqldb/StatementSchema.class
-
- - link:StatementSchema-asmified.java[Asmified]
-
-== References
-

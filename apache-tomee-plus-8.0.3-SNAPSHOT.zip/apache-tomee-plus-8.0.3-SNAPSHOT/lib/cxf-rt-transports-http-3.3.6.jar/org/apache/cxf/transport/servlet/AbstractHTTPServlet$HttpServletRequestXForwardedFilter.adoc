@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/AbstractHTTPServlet$HttpServletRequestXForwardedFilter.class
-
- - link:AbstractHTTPServlet$HttpServletRequestXForwardedFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/transaction/DefaultNonTransactionalManager.class
-
- - link:DefaultNonTransactionalManager-asmified.java[Asmified]
-
-== References
-

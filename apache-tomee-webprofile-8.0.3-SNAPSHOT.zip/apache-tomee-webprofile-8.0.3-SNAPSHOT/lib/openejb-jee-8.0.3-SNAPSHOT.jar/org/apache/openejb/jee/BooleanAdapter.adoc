@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/BooleanAdapter.class
-
- - link:BooleanAdapter-asmified.java[Asmified]
-
-== References
-

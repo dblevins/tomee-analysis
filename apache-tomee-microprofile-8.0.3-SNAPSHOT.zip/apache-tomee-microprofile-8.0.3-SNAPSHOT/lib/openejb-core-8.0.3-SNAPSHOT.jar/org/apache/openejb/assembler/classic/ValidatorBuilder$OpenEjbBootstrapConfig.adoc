@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ValidatorBuilder$OpenEjbBootstrapConfig.class
-
- - link:ValidatorBuilder$OpenEjbBootstrapConfig-asmified.java[Asmified]
-
-== References
-

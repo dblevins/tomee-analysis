@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/BrokerService$2.class
-
- - link:BrokerService$2-asmified.java[Asmified]
-
-== References
-

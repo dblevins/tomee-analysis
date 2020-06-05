@@ -1,6 +1,0 @@
-= org/apache/activemq/command/SubscriptionInfo.class
-
- - link:SubscriptionInfo-asmified.java[Asmified]
-
-== References
-

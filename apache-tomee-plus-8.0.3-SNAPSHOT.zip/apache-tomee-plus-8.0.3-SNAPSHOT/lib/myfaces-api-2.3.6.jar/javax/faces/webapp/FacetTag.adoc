@@ -1,8 +1,0 @@
-= javax/faces/webapp/FacetTag.class
-
- - link:FacetTag-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.jsp.tagext.TagSupport - 3
- - javax.servlet.jsp.JspException - 1

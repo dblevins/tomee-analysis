@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/ProblemHeaderQName.class
-
- - link:ProblemHeaderQName-asmified.java[Asmified]
-
-== References
-

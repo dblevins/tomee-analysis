@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/JCSConfiguration.class
-
- - link:JCSConfiguration-asmified.java[Asmified]
-
-== References
-

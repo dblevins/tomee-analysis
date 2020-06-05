@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/AccessTokenGrantHandler.class
-
- - link:AccessTokenGrantHandler-asmified.java[Asmified]
-
-== References
-

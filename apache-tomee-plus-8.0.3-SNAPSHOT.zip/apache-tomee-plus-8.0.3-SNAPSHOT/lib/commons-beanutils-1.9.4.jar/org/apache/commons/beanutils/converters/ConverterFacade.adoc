@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/ConverterFacade.class
-
- - link:ConverterFacade-asmified.java[Asmified]
-
-== References
-

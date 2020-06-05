@@ -1,2 +1,0 @@
-= apache-tomee-plume-8.0.3-SNAPSHOT/lib/openejb-core-eclipselink-8.0.3-SNAPSHOT.jar
-

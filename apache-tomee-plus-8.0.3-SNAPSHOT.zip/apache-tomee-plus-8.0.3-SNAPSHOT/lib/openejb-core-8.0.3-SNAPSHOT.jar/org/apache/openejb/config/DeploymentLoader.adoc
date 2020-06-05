@@ -1,6 +1,0 @@
-= org/apache/openejb/config/DeploymentLoader.class
-
- - link:DeploymentLoader-asmified.java[Asmified]
-
-== References
-

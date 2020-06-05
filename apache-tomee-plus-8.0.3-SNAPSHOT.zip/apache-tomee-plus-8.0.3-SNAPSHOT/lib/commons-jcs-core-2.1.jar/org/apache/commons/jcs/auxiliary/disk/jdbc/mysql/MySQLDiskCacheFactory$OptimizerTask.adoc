@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/jdbc/mysql/MySQLDiskCacheFactory$OptimizerTask.class
-
- - link:MySQLDiskCacheFactory$OptimizerTask-asmified.java[Asmified]
-
-== References
-

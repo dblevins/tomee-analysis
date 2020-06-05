@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/convert/PropertyResolverToELResolver.class
-
- - link:PropertyResolverToELResolver-asmified.java[Asmified]
-
-== References
-

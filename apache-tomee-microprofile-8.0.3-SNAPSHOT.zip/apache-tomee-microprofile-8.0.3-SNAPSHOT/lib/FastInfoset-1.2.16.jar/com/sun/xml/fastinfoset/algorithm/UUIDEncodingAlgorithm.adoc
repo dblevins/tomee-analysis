@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/UUIDEncodingAlgorithm.class
-
- - link:UUIDEncodingAlgorithm-asmified.java[Asmified]
-
-== References
-

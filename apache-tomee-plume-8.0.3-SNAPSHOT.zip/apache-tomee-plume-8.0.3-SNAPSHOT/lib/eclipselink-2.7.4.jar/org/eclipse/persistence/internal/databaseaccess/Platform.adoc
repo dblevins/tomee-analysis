@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/Platform.class
-
- - link:Platform-asmified.java[Asmified]
-
-== References
-

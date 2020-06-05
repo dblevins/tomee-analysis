@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/RenderPropertyRule$HideNoSelectionLiteralMetadata.class
-
- - link:RenderPropertyRule$HideNoSelectionLiteralMetadata-asmified.java[Asmified]
-
-== References
-

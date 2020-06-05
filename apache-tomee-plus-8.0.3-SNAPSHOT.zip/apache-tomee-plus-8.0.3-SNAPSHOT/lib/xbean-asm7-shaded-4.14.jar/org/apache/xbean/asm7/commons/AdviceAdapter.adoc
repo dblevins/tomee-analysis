@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/AdviceAdapter.class
-
- - link:AdviceAdapter-asmified.java[Asmified]
-
-== References
-

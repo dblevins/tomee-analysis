@@ -1,7 +1,0 @@
-= javax/validation/valueextraction/ValueExtractor.class
-
- - link:ValueExtractor-asmified.java[Asmified]
-
-== References
-
- - javax.validation.valueextraction.ValueExtractor$ValueReceiver - 1

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/transport/SunCORBATransportManagerConfig.class
-
- - link:SunCORBATransportManagerConfig-asmified.java[Asmified]
-
-== References
-

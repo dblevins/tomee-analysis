@@ -1,6 +1,0 @@
-= jakarta/ejb/ObjectNotFoundException.class
-
- - link:ObjectNotFoundException-asmified.java[Asmified]
-
-== References
-

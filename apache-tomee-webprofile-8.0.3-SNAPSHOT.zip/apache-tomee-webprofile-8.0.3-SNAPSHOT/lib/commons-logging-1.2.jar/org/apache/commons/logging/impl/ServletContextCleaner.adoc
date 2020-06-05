@@ -1,6 +1,0 @@
-= org/apache/commons/logging/impl/ServletContextCleaner.class
-
- - link:ServletContextCleaner-asmified.java[Asmified]
-
-== References
-

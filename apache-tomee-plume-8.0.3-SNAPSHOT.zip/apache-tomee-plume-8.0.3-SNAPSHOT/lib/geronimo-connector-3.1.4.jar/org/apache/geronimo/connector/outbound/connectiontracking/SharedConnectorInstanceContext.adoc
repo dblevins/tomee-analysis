@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectiontracking/SharedConnectorInstanceContext.class
-
- - link:SharedConnectorInstanceContext-asmified.java[Asmified]
-
-== References
-

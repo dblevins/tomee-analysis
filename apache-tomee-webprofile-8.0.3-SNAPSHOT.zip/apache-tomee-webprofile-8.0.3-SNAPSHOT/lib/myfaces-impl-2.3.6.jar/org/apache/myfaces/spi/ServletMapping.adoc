@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/ServletMapping.class
-
- - link:ServletMapping-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/memory/soft/SoftReferenceMemoryCache.class
-
- - link:SoftReferenceMemoryCache-asmified.java[Asmified]
-
-== References
-

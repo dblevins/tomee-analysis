@@ -1,6 +1,0 @@
-= org/apache/cxf/databinding/stax/StaxDataBindingFeature$Portable.class
-
- - link:StaxDataBindingFeature$Portable-asmified.java[Asmified]
-
-== References
-

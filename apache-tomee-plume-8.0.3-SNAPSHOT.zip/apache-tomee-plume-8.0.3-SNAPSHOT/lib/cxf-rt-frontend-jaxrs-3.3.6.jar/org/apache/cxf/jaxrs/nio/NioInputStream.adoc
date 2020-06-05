@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/nio/NioInputStream.class
-
- - link:NioInputStream-asmified.java[Asmified]
-
-== References
-

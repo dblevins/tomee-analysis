@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/math/linearalgebra/Permutation.class
-
- - link:Permutation-asmified.java[Asmified]
-
-== References
-

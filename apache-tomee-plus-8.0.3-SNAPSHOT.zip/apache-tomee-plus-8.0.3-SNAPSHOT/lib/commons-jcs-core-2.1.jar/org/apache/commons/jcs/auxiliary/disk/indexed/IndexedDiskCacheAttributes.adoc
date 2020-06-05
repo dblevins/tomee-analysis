@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/indexed/IndexedDiskCacheAttributes.class
-
- - link:IndexedDiskCacheAttributes-asmified.java[Asmified]
-
-== References
-

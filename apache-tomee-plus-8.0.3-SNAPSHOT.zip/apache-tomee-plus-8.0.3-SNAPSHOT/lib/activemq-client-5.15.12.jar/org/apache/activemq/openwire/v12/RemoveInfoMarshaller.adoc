@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v12/RemoveInfoMarshaller.class
-
- - link:RemoveInfoMarshaller-asmified.java[Asmified]
-
-== References
-

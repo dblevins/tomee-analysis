@@ -1,6 +1,0 @@
-= org/apache/openejb/testing/Configuration.class
-
- - link:Configuration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/mail/internet/NewsAddress.class
-
- - link:NewsAddress-asmified.java[Asmified]
-
-== References
-

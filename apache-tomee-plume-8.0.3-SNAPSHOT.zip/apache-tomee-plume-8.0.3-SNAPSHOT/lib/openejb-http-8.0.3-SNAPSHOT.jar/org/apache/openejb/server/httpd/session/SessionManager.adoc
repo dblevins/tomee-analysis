@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/session/SessionManager.class
-
- - link:SessionManager-asmified.java[Asmified]
-
-== References
-

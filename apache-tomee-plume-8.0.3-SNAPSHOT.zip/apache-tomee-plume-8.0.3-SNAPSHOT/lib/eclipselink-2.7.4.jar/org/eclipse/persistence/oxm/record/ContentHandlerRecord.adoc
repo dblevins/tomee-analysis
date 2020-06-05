@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/record/ContentHandlerRecord.class
-
- - link:ContentHandlerRecord-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/CompilationManager.class
-
- - link:CompilationManager-asmified.java[Asmified]
-
-== References
-

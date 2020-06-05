@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/PostgreSQLDelegate.class
-
- - link:PostgreSQLDelegate-asmified.java[Asmified]
-
-== References
-

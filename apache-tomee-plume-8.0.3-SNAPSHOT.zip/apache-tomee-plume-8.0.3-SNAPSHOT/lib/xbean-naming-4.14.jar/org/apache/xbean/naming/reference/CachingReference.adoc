@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/reference/CachingReference.class
-
- - link:CachingReference-asmified.java[Asmified]
-
-== References
-

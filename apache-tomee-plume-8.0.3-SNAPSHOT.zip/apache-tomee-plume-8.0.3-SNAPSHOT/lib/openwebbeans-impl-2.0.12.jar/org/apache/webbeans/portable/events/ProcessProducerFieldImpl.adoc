@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessProducerFieldImpl.class
-
- - link:ProcessProducerFieldImpl-asmified.java[Asmified]
-
-== References
-

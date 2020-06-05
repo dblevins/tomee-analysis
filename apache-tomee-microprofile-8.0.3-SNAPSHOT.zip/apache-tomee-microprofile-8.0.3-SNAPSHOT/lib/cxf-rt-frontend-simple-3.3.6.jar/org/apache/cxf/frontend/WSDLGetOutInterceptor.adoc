@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/WSDLGetOutInterceptor.class
-
- - link:WSDLGetOutInterceptor-asmified.java[Asmified]
-
-== References
-

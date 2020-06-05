@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/ForeignReferenceMapping$ExtendPessimisticLockScope.class
-
- - link:ForeignReferenceMapping$ExtendPessimisticLockScope-asmified.java[Asmified]
-
-== References
-

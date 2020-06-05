@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/DefaultFaceletsStateManagementStrategy$SaveStateAndResetViewCallback.class
-
- - link:DefaultFaceletsStateManagementStrategy$SaveStateAndResetViewCallback-asmified.java[Asmified]
-
-== References
-

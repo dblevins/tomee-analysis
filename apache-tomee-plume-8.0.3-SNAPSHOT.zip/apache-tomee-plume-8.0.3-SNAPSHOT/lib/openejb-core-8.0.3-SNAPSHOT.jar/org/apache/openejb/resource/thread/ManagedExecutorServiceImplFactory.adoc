@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/thread/ManagedExecutorServiceImplFactory.class
-
- - link:ManagedExecutorServiceImplFactory-asmified.java[Asmified]
-
-== References
-

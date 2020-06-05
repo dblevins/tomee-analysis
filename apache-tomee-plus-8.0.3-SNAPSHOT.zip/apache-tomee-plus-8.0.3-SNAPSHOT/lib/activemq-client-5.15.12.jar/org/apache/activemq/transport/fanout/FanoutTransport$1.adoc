@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/fanout/FanoutTransport$1.class
-
- - link:FanoutTransport$1-asmified.java[Asmified]
-
-== References
-

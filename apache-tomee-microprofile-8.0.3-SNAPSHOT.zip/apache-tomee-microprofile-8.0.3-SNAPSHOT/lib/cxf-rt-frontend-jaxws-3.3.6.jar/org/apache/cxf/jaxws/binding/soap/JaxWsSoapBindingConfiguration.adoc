@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/binding/soap/JaxWsSoapBindingConfiguration.class
-
- - link:JaxWsSoapBindingConfiguration-asmified.java[Asmified]
-
-== References
-

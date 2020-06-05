@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/InterceptedOrDecoratedBeanMetadataBean$2.class
-
- - link:InterceptedOrDecoratedBeanMetadataBean$2-asmified.java[Asmified]
-
-== References
-

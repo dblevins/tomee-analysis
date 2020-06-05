@@ -1,6 +1,0 @@
-= org/codehaus/stax2/LocationInfo.class
-
- - link:LocationInfo-asmified.java[Asmified]
-
-== References
-

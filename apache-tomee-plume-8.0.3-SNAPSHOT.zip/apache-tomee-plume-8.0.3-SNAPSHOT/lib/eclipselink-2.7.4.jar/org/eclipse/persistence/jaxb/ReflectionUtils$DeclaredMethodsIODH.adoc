@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/ReflectionUtils$DeclaredMethodsIODH.class
-
- - link:ReflectionUtils$DeclaredMethodsIODH-asmified.java[Asmified]
-
-== References
-

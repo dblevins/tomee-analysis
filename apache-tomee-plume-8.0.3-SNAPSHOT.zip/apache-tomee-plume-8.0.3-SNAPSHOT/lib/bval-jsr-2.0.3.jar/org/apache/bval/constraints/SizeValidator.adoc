@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/SizeValidator.class
-
- - link:SizeValidator-asmified.java[Asmified]
-
-== References
-

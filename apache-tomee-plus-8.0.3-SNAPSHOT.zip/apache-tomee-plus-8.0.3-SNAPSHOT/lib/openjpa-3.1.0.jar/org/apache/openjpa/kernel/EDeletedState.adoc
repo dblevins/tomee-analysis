@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/EDeletedState.class
-
- - link:EDeletedState-asmified.java[Asmified]
-
-== References
-

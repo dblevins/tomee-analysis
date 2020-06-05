@@ -1,6 +1,0 @@
-= jakarta/servlet/Registration.class
-
- - link:Registration-asmified.java[Asmified]
-
-== References
-

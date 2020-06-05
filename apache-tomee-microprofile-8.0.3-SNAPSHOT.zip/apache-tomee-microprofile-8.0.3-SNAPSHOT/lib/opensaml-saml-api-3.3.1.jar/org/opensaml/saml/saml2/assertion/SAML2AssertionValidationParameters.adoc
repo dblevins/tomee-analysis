@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/assertion/SAML2AssertionValidationParameters.class
-
- - link:SAML2AssertionValidationParameters-asmified.java[Asmified]
-
-== References
-

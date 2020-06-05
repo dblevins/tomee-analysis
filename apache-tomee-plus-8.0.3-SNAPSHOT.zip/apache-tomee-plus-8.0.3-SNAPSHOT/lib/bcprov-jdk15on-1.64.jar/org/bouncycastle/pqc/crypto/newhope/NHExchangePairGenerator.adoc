@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/crypto/newhope/NHExchangePairGenerator.class
-
- - link:NHExchangePairGenerator-asmified.java[Asmified]
-
-== References
-

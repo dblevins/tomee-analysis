@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/DistributedSessionIdentityMapAccessor.class
-
- - link:DistributedSessionIdentityMapAccessor-asmified.java[Asmified]
-
-== References
-

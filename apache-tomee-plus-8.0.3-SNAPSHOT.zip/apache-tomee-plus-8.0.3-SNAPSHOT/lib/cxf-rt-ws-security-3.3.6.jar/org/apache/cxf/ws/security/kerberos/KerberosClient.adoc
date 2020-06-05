@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/kerberos/KerberosClient.class
-
- - link:KerberosClient-asmified.java[Asmified]
-
-== References
-

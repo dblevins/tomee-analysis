@@ -1,6 +1,0 @@
-= jakarta/websocket/Encoder$Text.class
-
- - link:Encoder$Text-asmified.java[Asmified]
-
-== References
-

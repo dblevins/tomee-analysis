@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/Transform.class
-
- - link:Transform-asmified.java[Asmified]
-
-== References
-

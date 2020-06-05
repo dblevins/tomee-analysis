@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/AsyncChannelGroupUtil$AsyncIOThreadFactory.class
-
- - link:AsyncChannelGroupUtil$AsyncIOThreadFactory-asmified.java[Asmified]
-
-== References
-

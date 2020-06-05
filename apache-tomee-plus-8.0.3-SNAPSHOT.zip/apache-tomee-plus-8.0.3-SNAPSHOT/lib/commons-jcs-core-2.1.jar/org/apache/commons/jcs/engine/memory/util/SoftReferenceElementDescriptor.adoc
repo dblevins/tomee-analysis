@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/memory/util/SoftReferenceElementDescriptor.class
-
- - link:SoftReferenceElementDescriptor-asmified.java[Asmified]
-
-== References
-

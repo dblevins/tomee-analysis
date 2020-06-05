@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/Stax2Util$ByteAggregator.class
-
- - link:Stax2Util$ByteAggregator-asmified.java[Asmified]
-
-== References
-

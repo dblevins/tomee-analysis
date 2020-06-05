@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/impl/PrivacyStatementURLImpl.class
-
- - link:PrivacyStatementURLImpl-asmified.java[Asmified]
-
-== References
-

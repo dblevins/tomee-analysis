@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/JSLProperties.class
-
- - link:JSLProperties-asmified.java[Asmified]
-
-== References
-

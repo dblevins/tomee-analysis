@@ -1,6 +1,0 @@
-= org/hsqldb/types/IntervalType.class
-
- - link:IntervalType-asmified.java[Asmified]
-
-== References
-

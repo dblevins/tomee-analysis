@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/BehaviorConfigProcessor.class
-
- - link:BehaviorConfigProcessor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/cdi/InterceptorInvoker.class
-
- - link:InterceptorInvoker-asmified.java[Asmified]
-
-== References
-

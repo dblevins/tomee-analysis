@@ -1,6 +1,0 @@
-= org/apache/catalina/SessionEvent.class
-
- - link:SessionEvent-asmified.java[Asmified]
-
-== References
-

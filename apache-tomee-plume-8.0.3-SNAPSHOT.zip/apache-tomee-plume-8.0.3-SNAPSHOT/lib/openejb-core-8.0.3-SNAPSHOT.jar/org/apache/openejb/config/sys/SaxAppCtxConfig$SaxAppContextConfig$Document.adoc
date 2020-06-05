@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/SaxAppCtxConfig$SaxAppContextConfig$Document.class
-
- - link:SaxAppCtxConfig$SaxAppContextConfig$Document-asmified.java[Asmified]
-
-== References
-

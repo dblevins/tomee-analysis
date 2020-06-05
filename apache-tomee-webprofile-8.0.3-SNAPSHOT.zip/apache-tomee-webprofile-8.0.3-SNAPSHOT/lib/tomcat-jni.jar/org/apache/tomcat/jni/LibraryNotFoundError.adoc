@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/LibraryNotFoundError.class
-
- - link:LibraryNotFoundError-asmified.java[Asmified]
-
-== References
-

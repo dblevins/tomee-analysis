@@ -1,6 +1,0 @@
-= jakarta/ws/rs/PathParam.class
-
- - link:PathParam-asmified.java[Asmified]
-
-== References
-

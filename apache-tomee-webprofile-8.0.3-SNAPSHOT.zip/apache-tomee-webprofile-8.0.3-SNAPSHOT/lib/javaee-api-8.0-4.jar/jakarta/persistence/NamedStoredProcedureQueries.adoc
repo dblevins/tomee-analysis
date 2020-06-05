@@ -1,6 +1,0 @@
-= jakarta/persistence/NamedStoredProcedureQueries.class
-
- - link:NamedStoredProcedureQueries-asmified.java[Asmified]
-
-== References
-

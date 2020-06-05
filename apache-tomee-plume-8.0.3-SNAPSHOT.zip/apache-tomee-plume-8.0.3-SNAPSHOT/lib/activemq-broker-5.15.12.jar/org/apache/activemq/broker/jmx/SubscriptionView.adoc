@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/SubscriptionView.class
-
- - link:SubscriptionView-asmified.java[Asmified]
-
-== References
-

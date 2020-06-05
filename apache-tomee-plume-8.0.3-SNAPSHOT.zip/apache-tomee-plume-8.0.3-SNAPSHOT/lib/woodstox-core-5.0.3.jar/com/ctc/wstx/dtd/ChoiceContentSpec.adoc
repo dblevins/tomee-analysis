@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/ChoiceContentSpec.class
-
- - link:ChoiceContentSpec-asmified.java[Asmified]
-
-== References
-

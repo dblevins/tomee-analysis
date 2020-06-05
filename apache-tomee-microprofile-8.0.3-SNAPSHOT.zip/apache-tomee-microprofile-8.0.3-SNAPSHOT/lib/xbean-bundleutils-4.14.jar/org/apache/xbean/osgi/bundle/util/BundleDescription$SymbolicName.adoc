@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/BundleDescription$SymbolicName.class
-
- - link:BundleDescription$SymbolicName-asmified.java[Asmified]
-
-== References
-

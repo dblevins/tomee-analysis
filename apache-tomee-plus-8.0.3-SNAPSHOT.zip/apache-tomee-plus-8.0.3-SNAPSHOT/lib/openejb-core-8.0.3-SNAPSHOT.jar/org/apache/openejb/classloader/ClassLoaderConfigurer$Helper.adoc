@@ -1,6 +1,0 @@
-= org/apache/openejb/classloader/ClassLoaderConfigurer$Helper.class
-
- - link:ClassLoaderConfigurer$Helper-asmified.java[Asmified]
-
-== References
-

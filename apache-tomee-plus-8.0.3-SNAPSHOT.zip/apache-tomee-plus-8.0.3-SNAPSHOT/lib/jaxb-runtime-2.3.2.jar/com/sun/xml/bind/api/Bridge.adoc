@@ -1,6 +1,0 @@
-= com/sun/xml/bind/api/Bridge.class
-
- - link:Bridge-asmified.java[Asmified]
-
-== References
-

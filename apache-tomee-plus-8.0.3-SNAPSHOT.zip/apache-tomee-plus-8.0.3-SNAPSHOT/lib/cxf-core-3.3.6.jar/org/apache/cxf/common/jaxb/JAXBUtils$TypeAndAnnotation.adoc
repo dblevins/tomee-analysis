@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBUtils$TypeAndAnnotation.class
-
- - link:JAXBUtils$TypeAndAnnotation-asmified.java[Asmified]
-
-== References
-

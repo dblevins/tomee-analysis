@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/parser/TokenList.class
-
- - link:TokenList-asmified.java[Asmified]
-
-== References
-

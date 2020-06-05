@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/PreparedStatementManagerImpl.class
-
- - link:PreparedStatementManagerImpl-asmified.java[Asmified]
-
-== References
-

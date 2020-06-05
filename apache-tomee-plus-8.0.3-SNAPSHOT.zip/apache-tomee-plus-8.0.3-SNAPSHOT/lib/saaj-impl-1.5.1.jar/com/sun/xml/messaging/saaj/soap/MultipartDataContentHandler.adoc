@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler.class
-
- - link:MultipartDataContentHandler-asmified.java[Asmified]
-
-== References
-

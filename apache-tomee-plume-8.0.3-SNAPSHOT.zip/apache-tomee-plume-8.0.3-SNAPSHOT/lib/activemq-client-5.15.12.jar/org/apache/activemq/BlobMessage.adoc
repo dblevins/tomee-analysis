@@ -1,6 +1,0 @@
-= org/apache/activemq/BlobMessage.class
-
- - link:BlobMessage-asmified.java[Asmified]
-
-== References
-

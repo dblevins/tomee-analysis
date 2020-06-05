@@ -1,6 +1,0 @@
-= com/ctc/wstx/sw/BufferingXmlWriter.class
-
- - link:BufferingXmlWriter-asmified.java[Asmified]
-
-== References
-

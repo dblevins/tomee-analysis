@@ -1,6 +1,0 @@
-= org/apache/cxf/service/invoker/PerRequestFactory.class
-
- - link:PerRequestFactory-asmified.java[Asmified]
-
-== References
-

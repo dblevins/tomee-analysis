@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/JPAOAuthDataProvider$2.class
-
- - link:JPAOAuthDataProvider$2-asmified.java[Asmified]
-
-== References
-

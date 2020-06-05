@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/QNameTransformer.class
-
- - link:QNameTransformer-asmified.java[Asmified]
-
-== References
-

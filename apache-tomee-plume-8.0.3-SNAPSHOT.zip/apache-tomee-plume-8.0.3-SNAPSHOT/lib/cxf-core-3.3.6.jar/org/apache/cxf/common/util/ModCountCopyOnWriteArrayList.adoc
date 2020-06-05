@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ModCountCopyOnWriteArrayList.class
-
- - link:ModCountCopyOnWriteArrayList-asmified.java[Asmified]
-
-== References
-

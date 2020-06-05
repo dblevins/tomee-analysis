@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/JweJsonClientResponseFilter.class
-
- - link:JweJsonClientResponseFilter-asmified.java[Asmified]
-
-== References
-

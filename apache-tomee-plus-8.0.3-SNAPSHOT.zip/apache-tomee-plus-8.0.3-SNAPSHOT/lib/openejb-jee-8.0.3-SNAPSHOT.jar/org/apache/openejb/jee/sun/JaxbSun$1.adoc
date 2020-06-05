@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/JaxbSun$1.class
-
- - link:JaxbSun$1-asmified.java[Asmified]
-
-== References
-

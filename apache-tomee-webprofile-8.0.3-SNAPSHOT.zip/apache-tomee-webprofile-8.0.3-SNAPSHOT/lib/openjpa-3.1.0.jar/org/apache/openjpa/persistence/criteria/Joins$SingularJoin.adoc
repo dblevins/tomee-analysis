@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Joins$SingularJoin.class
-
- - link:Joins$SingularJoin-asmified.java[Asmified]
-
-== References
-

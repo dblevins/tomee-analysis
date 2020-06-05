@@ -1,6 +1,0 @@
-= org/xml/sax/Attributes.class
-
- - link:Attributes-asmified.java[Asmified]
-
-== References
-

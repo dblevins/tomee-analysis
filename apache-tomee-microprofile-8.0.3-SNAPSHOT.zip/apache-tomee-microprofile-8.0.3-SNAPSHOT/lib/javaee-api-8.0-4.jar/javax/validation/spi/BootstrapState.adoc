@@ -1,7 +1,0 @@
-= javax/validation/spi/BootstrapState.class
-
- - link:BootstrapState-asmified.java[Asmified]
-
-== References
-
- - javax.validation.ValidationProviderResolver - 2

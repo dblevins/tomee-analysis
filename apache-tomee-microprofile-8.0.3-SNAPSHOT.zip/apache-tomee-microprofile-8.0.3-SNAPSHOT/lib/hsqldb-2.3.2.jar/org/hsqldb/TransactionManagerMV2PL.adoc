@@ -1,6 +1,0 @@
-= org/hsqldb/TransactionManagerMV2PL.class
-
- - link:TransactionManagerMV2PL-asmified.java[Asmified]
-
-== References
-

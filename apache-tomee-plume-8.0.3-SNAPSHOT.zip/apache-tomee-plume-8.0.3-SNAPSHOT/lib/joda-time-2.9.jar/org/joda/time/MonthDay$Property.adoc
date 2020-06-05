@@ -1,6 +1,0 @@
-= org/joda/time/MonthDay$Property.class
-
- - link:MonthDay$Property-asmified.java[Asmified]
-
-== References
-

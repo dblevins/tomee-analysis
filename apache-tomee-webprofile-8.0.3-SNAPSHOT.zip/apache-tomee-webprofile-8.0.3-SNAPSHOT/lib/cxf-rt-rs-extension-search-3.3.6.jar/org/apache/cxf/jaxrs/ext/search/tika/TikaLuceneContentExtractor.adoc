@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/tika/TikaLuceneContentExtractor.class
-
- - link:TikaLuceneContentExtractor-asmified.java[Asmified]
-
-== References
-

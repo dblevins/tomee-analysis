@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/login/DatabaseLoginConfig.class
-
- - link:DatabaseLoginConfig-asmified.java[Asmified]
-
-== References
-

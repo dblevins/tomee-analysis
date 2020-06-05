@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/NamedXAResource.class
-
- - link:NamedXAResource-asmified.java[Asmified]
-
-== References
-

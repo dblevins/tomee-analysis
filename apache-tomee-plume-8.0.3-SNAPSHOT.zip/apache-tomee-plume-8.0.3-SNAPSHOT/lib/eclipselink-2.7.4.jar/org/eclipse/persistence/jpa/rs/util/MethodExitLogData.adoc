@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/MethodExitLogData.class
-
- - link:MethodExitLogData-asmified.java[Asmified]
-
-== References
-

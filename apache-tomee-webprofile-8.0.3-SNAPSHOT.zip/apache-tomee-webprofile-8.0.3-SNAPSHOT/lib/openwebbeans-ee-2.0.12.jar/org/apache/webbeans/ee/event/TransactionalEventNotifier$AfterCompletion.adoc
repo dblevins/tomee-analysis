@@ -1,6 +1,0 @@
-= org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletion.class
-
- - link:TransactionalEventNotifier$AfterCompletion-asmified.java[Asmified]
-
-== References
-

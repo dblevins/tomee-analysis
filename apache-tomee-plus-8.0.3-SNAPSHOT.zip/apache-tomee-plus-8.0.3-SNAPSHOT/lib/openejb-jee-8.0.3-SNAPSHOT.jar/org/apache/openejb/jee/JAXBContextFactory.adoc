@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/JAXBContextFactory.class
-
- - link:JAXBContextFactory-asmified.java[Asmified]
-
-== References
-

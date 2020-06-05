@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/realm/LowTypedRealm.class
-
- - link:LowTypedRealm-asmified.java[Asmified]
-
-== References
-

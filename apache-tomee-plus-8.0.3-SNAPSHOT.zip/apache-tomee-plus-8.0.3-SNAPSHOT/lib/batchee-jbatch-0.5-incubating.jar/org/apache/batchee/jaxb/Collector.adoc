@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Collector.class
-
- - link:Collector-asmified.java[Asmified]
-
-== References
-

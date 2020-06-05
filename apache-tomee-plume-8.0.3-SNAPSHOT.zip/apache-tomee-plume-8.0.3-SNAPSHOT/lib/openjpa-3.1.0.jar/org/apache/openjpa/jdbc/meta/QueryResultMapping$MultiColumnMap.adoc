@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/QueryResultMapping$MultiColumnMap.class
-
- - link:QueryResultMapping$MultiColumnMap-asmified.java[Asmified]
-
-== References
-

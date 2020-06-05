@@ -1,6 +1,0 @@
-= org/xml/sax/HandlerBase.class
-
- - link:HandlerBase-asmified.java[Asmified]
-
-== References
-

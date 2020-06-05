@@ -1,7 +1,0 @@
-= javax/ejb/EJBTransactionRequiredException.class
-
- - link:EJBTransactionRequiredException-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 3

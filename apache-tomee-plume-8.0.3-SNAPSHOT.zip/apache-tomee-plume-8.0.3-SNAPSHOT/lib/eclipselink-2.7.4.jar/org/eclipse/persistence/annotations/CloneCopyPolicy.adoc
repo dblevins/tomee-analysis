@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/CloneCopyPolicy.class
-
- - link:CloneCopyPolicy-asmified.java[Asmified]
-
-== References
-

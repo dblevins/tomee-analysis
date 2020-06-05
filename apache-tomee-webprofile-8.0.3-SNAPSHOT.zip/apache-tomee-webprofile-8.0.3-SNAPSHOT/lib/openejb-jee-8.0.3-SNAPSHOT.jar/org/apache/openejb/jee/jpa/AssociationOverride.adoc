@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/AssociationOverride.class
-
- - link:AssociationOverride-asmified.java[Asmified]
-
-== References
-

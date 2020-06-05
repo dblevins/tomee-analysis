@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/stream/BodyDescriptorBuilder.class
-
- - link:BodyDescriptorBuilder-asmified.java[Asmified]
-
-== References
-

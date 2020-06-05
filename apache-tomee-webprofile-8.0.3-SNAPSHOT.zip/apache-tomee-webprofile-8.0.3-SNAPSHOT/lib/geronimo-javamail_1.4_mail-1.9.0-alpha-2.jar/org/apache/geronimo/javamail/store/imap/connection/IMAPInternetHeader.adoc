@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPInternetHeader.class
-
- - link:IMAPInternetHeader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/CharToByteConverter.class
-
- - link:CharToByteConverter-asmified.java[Asmified]
-
-== References
-

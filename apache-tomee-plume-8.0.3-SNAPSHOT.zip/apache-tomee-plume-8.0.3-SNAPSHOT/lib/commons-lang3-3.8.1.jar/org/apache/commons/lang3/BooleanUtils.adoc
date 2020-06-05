@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/BooleanUtils.class
-
- - link:BooleanUtils-asmified.java[Asmified]
-
-== References
-

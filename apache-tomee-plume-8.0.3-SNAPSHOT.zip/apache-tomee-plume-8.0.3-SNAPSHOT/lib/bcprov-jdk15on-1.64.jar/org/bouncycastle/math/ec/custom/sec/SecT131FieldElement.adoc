@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/custom/sec/SecT131FieldElement.class
-
- - link:SecT131FieldElement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/SingletonBeanInfo.class
-
- - link:SingletonBeanInfo-asmified.java[Asmified]
-
-== References
-

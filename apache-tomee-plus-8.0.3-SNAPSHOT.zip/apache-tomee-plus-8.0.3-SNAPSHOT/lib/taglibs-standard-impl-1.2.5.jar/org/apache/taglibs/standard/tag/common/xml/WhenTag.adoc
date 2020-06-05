@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/xml/WhenTag.class
-
- - link:WhenTag-asmified.java[Asmified]
-
-== References
-

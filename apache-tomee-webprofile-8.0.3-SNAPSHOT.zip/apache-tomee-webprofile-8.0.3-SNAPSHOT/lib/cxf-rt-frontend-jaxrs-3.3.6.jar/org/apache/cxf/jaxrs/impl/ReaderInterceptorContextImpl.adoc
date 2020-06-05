@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/ReaderInterceptorContextImpl.class
-
- - link:ReaderInterceptorContextImpl-asmified.java[Asmified]
-
-== References
-

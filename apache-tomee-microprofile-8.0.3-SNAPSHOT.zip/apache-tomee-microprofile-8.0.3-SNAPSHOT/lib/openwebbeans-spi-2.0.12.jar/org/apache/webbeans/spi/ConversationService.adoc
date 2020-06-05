@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/ConversationService.class
-
- - link:ConversationService-asmified.java[Asmified]
-
-== References
-

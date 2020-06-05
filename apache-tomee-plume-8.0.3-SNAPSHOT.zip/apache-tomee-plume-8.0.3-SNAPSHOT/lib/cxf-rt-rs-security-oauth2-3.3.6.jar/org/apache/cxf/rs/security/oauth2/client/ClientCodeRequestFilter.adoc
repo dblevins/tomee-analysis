@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/client/ClientCodeRequestFilter.class
-
- - link:ClientCodeRequestFilter-asmified.java[Asmified]
-
-== References
-

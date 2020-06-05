@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ClassUnwrapper.class
-
- - link:ClassUnwrapper-asmified.java[Asmified]
-
-== References
-

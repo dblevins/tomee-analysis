@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/PostRemove.class
-
- - link:PostRemove-asmified.java[Asmified]
-
-== References
-

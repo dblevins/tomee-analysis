@@ -1,6 +1,0 @@
-= org/apache/activemq/network/jms/SimpleJmsTopicConnector$1.class
-
- - link:SimpleJmsTopicConnector$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/TransformedPredicate.class
-
- - link:TransformedPredicate-asmified.java[Asmified]
-
-== References
-

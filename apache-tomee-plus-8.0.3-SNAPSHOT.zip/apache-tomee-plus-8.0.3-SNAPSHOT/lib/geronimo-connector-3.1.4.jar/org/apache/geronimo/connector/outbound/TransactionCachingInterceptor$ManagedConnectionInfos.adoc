@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/TransactionCachingInterceptor$ManagedConnectionInfos.class
-
- - link:TransactionCachingInterceptor$ManagedConnectionInfos-asmified.java[Asmified]
-
-== References
-

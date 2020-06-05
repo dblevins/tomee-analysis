@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/FormUtils.class
-
- - link:FormUtils-asmified.java[Asmified]
-
-== References
-

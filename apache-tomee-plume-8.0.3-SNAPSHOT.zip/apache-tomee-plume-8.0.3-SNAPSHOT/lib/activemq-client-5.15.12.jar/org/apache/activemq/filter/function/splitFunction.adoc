@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/function/splitFunction.class
-
- - link:splitFunction-asmified.java[Asmified]
-
-== References
-

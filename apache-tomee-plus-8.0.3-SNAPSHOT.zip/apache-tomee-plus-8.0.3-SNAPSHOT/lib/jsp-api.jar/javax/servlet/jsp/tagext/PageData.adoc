@@ -1,6 +1,0 @@
-= javax/servlet/jsp/tagext/PageData.class
-
- - link:PageData-asmified.java[Asmified]
-
-== References
-

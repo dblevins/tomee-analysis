@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/ICacheObserver.class
-
- - link:ICacheObserver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/codehaus/stax2/validation/ValidationProblemHandler.class
-
- - link:ValidationProblemHandler-asmified.java[Asmified]
-
-== References
-

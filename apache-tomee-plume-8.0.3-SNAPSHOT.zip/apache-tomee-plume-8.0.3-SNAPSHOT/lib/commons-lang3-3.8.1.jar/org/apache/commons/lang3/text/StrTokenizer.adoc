@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/StrTokenizer.class
-
- - link:StrTokenizer-asmified.java[Asmified]
-
-== References
-

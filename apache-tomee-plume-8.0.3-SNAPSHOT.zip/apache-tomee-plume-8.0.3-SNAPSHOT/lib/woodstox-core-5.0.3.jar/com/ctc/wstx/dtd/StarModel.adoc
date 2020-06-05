@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/StarModel.class
-
- - link:StarModel-asmified.java[Asmified]
-
-== References
-

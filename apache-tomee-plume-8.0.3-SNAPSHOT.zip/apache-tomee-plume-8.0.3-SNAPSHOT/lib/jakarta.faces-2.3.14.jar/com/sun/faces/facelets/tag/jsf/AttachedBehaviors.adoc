@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/AttachedBehaviors.class
-
- - link:AttachedBehaviors-asmified.java[Asmified]
-
-== References
-

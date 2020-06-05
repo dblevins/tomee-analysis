@@ -1,6 +1,0 @@
-= org/opensaml/security/messaging/HttpClientSecurityContext.class
-
- - link:HttpClientSecurityContext-asmified.java[Asmified]
-
-== References
-

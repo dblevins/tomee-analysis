@@ -1,6 +1,0 @@
-= org/apache/catalina/users/MemoryGroupCreationFactory.class
-
- - link:MemoryGroupCreationFactory-asmified.java[Asmified]
-
-== References
-

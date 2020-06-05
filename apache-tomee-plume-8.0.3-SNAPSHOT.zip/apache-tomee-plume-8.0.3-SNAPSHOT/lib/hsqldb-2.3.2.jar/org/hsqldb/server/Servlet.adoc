@@ -1,6 +1,0 @@
-= org/hsqldb/server/Servlet.class
-
- - link:Servlet-asmified.java[Asmified]
-
-== References
-

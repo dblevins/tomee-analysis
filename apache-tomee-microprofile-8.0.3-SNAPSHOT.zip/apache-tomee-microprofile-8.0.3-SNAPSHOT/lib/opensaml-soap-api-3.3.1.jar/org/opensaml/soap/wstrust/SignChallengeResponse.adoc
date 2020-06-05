@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/SignChallengeResponse.class
-
- - link:SignChallengeResponse-asmified.java[Asmified]
-
-== References
-

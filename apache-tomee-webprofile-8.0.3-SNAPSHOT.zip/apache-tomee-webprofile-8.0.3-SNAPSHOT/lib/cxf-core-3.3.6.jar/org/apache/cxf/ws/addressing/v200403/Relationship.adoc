@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/v200403/Relationship.class
-
- - link:Relationship-asmified.java[Asmified]
-
-== References
-

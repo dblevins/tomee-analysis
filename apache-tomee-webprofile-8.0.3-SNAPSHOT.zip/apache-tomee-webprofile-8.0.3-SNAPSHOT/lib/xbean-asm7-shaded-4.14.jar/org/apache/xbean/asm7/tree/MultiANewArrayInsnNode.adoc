@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/MultiANewArrayInsnNode.class
-
- - link:MultiANewArrayInsnNode-asmified.java[Asmified]
-
-== References
-

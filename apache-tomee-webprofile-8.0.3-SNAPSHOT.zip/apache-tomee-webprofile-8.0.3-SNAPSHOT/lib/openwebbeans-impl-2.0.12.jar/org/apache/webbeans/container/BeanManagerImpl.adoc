@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/BeanManagerImpl.class
-
- - link:BeanManagerImpl-asmified.java[Asmified]
-
-== References
-

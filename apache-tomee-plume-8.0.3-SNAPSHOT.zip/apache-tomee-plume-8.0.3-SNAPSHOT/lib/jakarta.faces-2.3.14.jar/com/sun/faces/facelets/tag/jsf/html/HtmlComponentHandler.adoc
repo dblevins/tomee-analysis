@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/html/HtmlComponentHandler.class
-
- - link:HtmlComponentHandler-asmified.java[Asmified]
-
-== References
-

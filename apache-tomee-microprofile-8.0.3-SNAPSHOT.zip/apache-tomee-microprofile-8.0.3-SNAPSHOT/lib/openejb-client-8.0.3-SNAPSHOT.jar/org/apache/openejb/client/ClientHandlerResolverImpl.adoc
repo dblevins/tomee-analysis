@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ClientHandlerResolverImpl.class
-
- - link:ClientHandlerResolverImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/SamlTokenInterceptor.class
-
- - link:SamlTokenInterceptor-asmified.java[Asmified]
-
-== References
-

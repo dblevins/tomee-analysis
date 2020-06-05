@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/LoadBundleTag.class
-
- - link:LoadBundleTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/cdi/ConfigInjectionBean$ConfigPropertyLiteral.class
-
- - link:ConfigInjectionBean$ConfigPropertyLiteral-asmified.java[Asmified]
-
-== References
-

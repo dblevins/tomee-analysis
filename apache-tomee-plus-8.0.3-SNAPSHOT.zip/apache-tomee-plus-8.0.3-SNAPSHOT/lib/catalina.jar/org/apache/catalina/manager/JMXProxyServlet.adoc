@@ -1,6 +1,0 @@
-= org/apache/catalina/manager/JMXProxyServlet.class
-
- - link:JMXProxyServlet-asmified.java[Asmified]
-
-== References
-

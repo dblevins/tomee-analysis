@@ -1,6 +1,0 @@
-= org/apache/el/parser/ArithmeticNode.class
-
- - link:ArithmeticNode-asmified.java[Asmified]
-
-== References
-

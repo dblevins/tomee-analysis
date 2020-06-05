@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/IdReferenceTypeMarshaller.class
-
- - link:IdReferenceTypeMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/spi/HighAvailabilityEnabler.class
-
- - link:HighAvailabilityEnabler-asmified.java[Asmified]
-
-== References
-

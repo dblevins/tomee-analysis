@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/NumericLiteralBNF.class
-
- - link:NumericLiteralBNF-asmified.java[Asmified]
-
-== References
-

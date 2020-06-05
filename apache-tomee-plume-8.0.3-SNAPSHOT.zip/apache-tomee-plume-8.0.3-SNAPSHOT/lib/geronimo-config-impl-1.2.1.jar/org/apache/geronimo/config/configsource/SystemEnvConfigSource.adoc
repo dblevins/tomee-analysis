@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/configsource/SystemEnvConfigSource.class
-
- - link:SystemEnvConfigSource-asmified.java[Asmified]
-
-== References
-

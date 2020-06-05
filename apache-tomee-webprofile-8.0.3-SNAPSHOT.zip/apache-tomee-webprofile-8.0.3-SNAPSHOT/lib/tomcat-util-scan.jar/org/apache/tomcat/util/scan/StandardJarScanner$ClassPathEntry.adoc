@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/scan/StandardJarScanner$ClassPathEntry.class
-
- - link:StandardJarScanner$ClassPathEntry-asmified.java[Asmified]
-
-== References
-

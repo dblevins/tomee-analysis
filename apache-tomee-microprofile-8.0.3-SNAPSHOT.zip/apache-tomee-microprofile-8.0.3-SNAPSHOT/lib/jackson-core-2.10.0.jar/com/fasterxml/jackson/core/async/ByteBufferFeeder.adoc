@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/async/ByteBufferFeeder.class
-
- - link:ByteBufferFeeder-asmified.java[Asmified]
-
-== References
-

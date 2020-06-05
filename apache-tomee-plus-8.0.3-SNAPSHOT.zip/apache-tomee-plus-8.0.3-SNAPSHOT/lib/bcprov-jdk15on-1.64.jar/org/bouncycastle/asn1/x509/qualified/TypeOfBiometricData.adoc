@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/x509/qualified/TypeOfBiometricData.class
-
- - link:TypeOfBiometricData-asmified.java[Asmified]
-
-== References
-

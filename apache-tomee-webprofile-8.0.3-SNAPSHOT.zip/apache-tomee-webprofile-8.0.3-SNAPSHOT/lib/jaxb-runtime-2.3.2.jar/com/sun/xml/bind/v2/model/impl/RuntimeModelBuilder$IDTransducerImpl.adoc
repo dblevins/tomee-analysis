@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/impl/RuntimeModelBuilder$IDTransducerImpl.class
-
- - link:RuntimeModelBuilder$IDTransducerImpl-asmified.java[Asmified]
-
-== References
-

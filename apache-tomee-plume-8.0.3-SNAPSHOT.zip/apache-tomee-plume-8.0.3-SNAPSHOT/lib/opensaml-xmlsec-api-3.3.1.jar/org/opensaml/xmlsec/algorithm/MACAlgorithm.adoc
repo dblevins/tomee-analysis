@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/MACAlgorithm.class
-
- - link:MACAlgorithm-asmified.java[Asmified]
-
-== References
-

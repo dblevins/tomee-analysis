@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/RestoreState.class
-
- - link:RestoreState-asmified.java[Asmified]
-
-== References
-

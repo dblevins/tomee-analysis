@@ -1,6 +1,0 @@
-= org/joda/time/base/BaseLocal.class
-
- - link:BaseLocal-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MethodInfoUtil$MethodPermissionComparator.class
-
- - link:MethodInfoUtil$MethodPermissionComparator-asmified.java[Asmified]
-
-== References
-

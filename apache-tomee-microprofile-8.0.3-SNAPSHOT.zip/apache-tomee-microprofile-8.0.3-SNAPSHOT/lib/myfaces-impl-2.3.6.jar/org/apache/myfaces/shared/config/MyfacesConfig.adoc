@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/config/MyfacesConfig.class
-
- - link:MyfacesConfig-asmified.java[Asmified]
-
-== References
-

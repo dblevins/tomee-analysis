@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/EjbLocalRefType.class
-
- - link:EjbLocalRefType-asmified.java[Asmified]
-
-== References
-

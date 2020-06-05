@@ -1,6 +1,0 @@
-= org/apache/cxf/resource/ObjectTypeResolver.class
-
- - link:ObjectTypeResolver-asmified.java[Asmified]
-
-== References
-

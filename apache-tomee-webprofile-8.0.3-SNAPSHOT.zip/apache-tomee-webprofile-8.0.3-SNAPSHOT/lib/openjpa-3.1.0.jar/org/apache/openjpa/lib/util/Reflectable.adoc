@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/Reflectable.class
-
- - link:Reflectable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/util/URISupport.class
-
- - link:URISupport-asmified.java[Asmified]
-
-== References
-

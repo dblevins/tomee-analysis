@@ -1,7 +1,0 @@
-= javax/persistence/SynchronizationType.class
-
- - link:SynchronizationType-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.SynchronizationType - 20

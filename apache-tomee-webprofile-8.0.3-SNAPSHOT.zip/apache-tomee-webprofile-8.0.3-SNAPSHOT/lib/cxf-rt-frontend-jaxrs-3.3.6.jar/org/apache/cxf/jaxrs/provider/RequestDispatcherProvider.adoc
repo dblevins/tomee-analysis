@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/RequestDispatcherProvider.class
-
- - link:RequestDispatcherProvider-asmified.java[Asmified]
-
-== References
-

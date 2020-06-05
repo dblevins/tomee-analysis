@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/JwsInputStream.class
-
- - link:JwsInputStream-asmified.java[Asmified]
-
-== References
-

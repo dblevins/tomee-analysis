@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v11/SubscriptionInfoMarshaller.class
-
- - link:SubscriptionInfoMarshaller-asmified.java[Asmified]
-
-== References
-

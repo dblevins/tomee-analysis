@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/OAuthContextProvider.class
-
- - link:OAuthContextProvider-asmified.java[Asmified]
-
-== References
-

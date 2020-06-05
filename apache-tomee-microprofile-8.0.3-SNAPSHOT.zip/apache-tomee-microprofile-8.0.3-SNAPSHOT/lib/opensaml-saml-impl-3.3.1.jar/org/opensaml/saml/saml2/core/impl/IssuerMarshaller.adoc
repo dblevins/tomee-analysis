@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/IssuerMarshaller.class
-
- - link:IssuerMarshaller-asmified.java[Asmified]
-
-== References
-

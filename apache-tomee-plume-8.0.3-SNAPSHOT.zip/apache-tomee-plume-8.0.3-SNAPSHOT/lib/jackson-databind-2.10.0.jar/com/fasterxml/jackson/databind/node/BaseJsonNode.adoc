@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/node/BaseJsonNode.class
-
- - link:BaseJsonNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/CdiInterceptorBeanBuilder.class
-
- - link:CdiInterceptorBeanBuilder-asmified.java[Asmified]
-
-== References
-

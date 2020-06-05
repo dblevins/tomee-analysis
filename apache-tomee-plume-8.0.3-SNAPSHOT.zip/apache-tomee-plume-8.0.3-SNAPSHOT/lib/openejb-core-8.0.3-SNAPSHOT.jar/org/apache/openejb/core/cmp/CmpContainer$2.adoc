@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/CmpContainer$2.class
-
- - link:CmpContainer$2-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/server/wls/WebLogicPlatformDetector.class
-
- - link:WebLogicPlatformDetector-asmified.java[Asmified]
-
-== References
-

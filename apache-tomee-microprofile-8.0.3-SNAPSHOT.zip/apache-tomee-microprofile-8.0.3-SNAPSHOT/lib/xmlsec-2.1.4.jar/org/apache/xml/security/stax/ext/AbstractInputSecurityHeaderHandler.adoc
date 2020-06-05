@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/AbstractInputSecurityHeaderHandler.class
-
- - link:AbstractInputSecurityHeaderHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/WASRegistryManagedRuntime.class
-
- - link:WASRegistryManagedRuntime-asmified.java[Asmified]
-
-== References
-

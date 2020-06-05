@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.class
-
- - link:JwsSignatureProvider-asmified.java[Asmified]
-
-== References
-

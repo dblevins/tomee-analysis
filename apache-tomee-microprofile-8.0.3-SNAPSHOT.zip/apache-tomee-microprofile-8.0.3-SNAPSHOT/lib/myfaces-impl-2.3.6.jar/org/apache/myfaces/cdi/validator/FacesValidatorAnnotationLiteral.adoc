@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/validator/FacesValidatorAnnotationLiteral.class
-
- - link:FacesValidatorAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

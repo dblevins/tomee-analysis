@@ -1,6 +1,0 @@
-= serp/bytecode/lowlevel/ConstantPool$PtrKey.class
-
- - link:ConstantPool$PtrKey-asmified.java[Asmified]
-
-== References
-

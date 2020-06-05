@@ -1,6 +1,0 @@
-= org/joda/time/chrono/GJChronology$LinkedDurationField.class
-
- - link:GJChronology$LinkedDurationField-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/interceptor/ExcludeDefaultInterceptors.class
-
- - link:ExcludeDefaultInterceptors-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/realm/MemoryRuleSet.class
-
- - link:MemoryRuleSet-asmified.java[Asmified]
-
-== References
-

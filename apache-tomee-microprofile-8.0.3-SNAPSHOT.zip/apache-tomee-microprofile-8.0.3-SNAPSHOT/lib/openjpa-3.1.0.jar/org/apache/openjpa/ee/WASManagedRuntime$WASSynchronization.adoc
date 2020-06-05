@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/WASManagedRuntime$WASSynchronization.class
-
- - link:WASManagedRuntime$WASSynchronization-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XPathQName.class
-
- - link:XPathQName-asmified.java[Asmified]
-
-== References
-

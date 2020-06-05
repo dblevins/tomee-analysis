@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/AbstractListIteratorDecorator.class
-
- - link:AbstractListIteratorDecorator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/chrono/BasicSingleEraDateTimeField.class
-
- - link:BasicSingleEraDateTimeField-asmified.java[Asmified]
-
-== References
-

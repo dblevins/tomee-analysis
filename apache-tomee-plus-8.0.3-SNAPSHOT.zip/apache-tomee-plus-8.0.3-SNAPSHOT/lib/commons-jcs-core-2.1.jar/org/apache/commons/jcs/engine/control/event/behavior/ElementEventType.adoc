@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/control/event/behavior/ElementEventType.class
-
- - link:ElementEventType-asmified.java[Asmified]
-
-== References
-

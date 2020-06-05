@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/BufferStrategyFactory$ThreadLocalProvider$1.class
-
- - link:BufferStrategyFactory$ThreadLocalProvider$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidateBean.class
-
- - link:ValidateBean-asmified.java[Asmified]
-
-== References
-

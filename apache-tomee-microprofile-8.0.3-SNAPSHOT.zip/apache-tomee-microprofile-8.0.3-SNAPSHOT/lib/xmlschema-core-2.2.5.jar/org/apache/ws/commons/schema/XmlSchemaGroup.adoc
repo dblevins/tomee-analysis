@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaGroup.class
-
- - link:XmlSchemaGroup-asmified.java[Asmified]
-
-== References
-

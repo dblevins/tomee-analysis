@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/trie/AbstractPatriciaTrie$Values$ValueIterator.class
-
- - link:AbstractPatriciaTrie$Values$ValueIterator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/TxNotSupported.class
-
- - link:TxNotSupported-asmified.java[Asmified]
-
-== References
-

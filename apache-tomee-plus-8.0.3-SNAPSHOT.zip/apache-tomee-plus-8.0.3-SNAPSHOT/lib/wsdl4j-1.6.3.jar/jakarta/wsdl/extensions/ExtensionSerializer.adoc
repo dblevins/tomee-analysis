@@ -1,6 +1,0 @@
-= jakarta/wsdl/extensions/ExtensionSerializer.class
-
- - link:ExtensionSerializer-asmified.java[Asmified]
-
-== References
-

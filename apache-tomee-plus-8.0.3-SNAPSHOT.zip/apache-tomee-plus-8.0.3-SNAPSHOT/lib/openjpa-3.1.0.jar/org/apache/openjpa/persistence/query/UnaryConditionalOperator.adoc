@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/UnaryConditionalOperator.class
-
- - link:UnaryConditionalOperator-asmified.java[Asmified]
-
-== References
-

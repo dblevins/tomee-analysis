@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Beans$Alternatives.class
-
- - link:Beans$Alternatives-asmified.java[Asmified]
-
-== References
-

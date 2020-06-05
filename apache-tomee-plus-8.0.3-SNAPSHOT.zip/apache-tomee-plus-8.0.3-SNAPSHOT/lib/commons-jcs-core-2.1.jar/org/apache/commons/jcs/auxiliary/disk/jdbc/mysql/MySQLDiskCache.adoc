@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/jdbc/mysql/MySQLDiskCache.class
-
- - link:MySQLDiskCache-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/CompoundSelections$NewInstance.class
-
- - link:CompoundSelections$NewInstance-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/JoinPath.class
-
- - link:JoinPath-asmified.java[Asmified]
-
-== References
-

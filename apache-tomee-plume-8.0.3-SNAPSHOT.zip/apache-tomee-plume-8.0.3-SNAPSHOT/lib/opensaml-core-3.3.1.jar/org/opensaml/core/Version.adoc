@@ -1,6 +1,0 @@
-= org/opensaml/core/Version.class
-
- - link:Version-asmified.java[Asmified]
-
-== References
-

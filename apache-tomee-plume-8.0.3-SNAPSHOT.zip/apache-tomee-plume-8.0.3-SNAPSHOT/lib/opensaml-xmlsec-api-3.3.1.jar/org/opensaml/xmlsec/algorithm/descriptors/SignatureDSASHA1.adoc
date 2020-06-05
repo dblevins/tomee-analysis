@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/descriptors/SignatureDSASHA1.class
-
- - link:SignatureDSASHA1-asmified.java[Asmified]
-
-== References
-

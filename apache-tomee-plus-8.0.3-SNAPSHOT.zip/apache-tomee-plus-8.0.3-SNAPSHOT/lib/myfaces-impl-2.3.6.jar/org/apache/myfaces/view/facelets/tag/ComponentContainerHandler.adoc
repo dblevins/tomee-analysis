@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ComponentContainerHandler.class
-
- - link:ComponentContainerHandler-asmified.java[Asmified]
-
-== References
-

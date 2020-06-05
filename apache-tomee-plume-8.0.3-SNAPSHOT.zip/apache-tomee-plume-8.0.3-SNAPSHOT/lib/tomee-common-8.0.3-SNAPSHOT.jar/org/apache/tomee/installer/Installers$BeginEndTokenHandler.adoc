@@ -1,6 +1,0 @@
-= org/apache/tomee/installer/Installers$BeginEndTokenHandler.class
-
- - link:Installers$BeginEndTokenHandler-asmified.java[Asmified]
-
-== References
-

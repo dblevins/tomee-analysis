@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/RemoteCIDRFilter.class
-
- - link:RemoteCIDRFilter-asmified.java[Asmified]
-
-== References
-

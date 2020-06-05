@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/interceptor/ConnectionState.class
-
- - link:ConnectionState-asmified.java[Asmified]
-
-== References
-

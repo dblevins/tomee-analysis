@@ -1,6 +1,0 @@
-= javax/xml/bind/Marshaller$Listener.class
-
- - link:Marshaller$Listener-asmified.java[Asmified]
-
-== References
-

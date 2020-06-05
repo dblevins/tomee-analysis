@@ -1,6 +1,0 @@
-= jakarta/management/j2ee/statistics/JVMStats.class
-
- - link:JVMStats-asmified.java[Asmified]
-
-== References
-

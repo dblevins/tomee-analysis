@@ -1,6 +1,0 @@
-= jakarta/faces/render/RenderKitWrapper.class
-
- - link:RenderKitWrapper-asmified.java[Asmified]
-
-== References
-

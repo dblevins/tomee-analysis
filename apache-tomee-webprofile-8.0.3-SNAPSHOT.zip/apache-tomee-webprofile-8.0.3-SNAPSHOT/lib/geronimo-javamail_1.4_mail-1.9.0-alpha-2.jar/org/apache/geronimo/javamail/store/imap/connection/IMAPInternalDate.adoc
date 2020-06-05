@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPInternalDate.class
-
- - link:IMAPInternalDate-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/AssertFalse$List.class
-
- - link:AssertFalse$List-asmified.java[Asmified]
-
-== References
-

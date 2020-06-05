@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/blueprint/BusDefinitionParser.class
-
- - link:BusDefinitionParser-asmified.java[Asmified]
-
-== References
-

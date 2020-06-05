@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/FlowNavigationCase.class
-
- - link:FlowNavigationCase-asmified.java[Asmified]
-
-== References
-

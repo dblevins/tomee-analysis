@@ -1,6 +1,0 @@
-= org/eclipse/persistence/transaction/JTATransactionController.class
-
- - link:JTATransactionController-asmified.java[Asmified]
-
-== References
-

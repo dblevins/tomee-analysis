@@ -1,6 +1,0 @@
-= com/sun/xml/bind/api/RawAccessor.class
-
- - link:RawAccessor-asmified.java[Asmified]
-
-== References
-

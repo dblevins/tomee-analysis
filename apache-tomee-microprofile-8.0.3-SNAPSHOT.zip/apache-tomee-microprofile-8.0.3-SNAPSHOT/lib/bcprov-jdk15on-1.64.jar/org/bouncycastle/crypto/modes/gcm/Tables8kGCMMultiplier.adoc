@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/modes/gcm/Tables8kGCMMultiplier.class
-
- - link:Tables8kGCMMultiplier-asmified.java[Asmified]
-
-== References
-

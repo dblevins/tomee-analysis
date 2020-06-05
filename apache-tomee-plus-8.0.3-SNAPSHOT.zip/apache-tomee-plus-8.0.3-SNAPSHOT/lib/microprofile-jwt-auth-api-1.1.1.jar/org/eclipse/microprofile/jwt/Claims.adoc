@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/jwt/Claims.class
-
- - link:Claims-asmified.java[Asmified]
-
-== References
-

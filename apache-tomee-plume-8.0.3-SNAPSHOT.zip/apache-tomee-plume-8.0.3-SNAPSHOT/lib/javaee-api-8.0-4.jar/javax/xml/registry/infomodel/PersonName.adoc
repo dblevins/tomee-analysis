@@ -1,7 +1,0 @@
-= javax/xml/registry/infomodel/PersonName.class
-
- - link:PersonName-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 8

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/RespondWithBuilder.class
-
- - link:RespondWithBuilder-asmified.java[Asmified]
-
-== References
-

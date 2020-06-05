@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/FileConverter.class
-
- - link:FileConverter-asmified.java[Asmified]
-
-== References
-

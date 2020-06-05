@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/core/helper/CoreClassConstants.class
-
- - link:CoreClassConstants-asmified.java[Asmified]
-
-== References
-

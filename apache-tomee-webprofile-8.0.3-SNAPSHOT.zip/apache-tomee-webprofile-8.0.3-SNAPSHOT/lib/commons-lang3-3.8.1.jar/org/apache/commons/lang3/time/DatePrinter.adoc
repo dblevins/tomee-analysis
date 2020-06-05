@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/time/DatePrinter.class
-
- - link:DatePrinter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/PassthroughRule.class
-
- - link:PassthroughRule-asmified.java[Asmified]
-
-== References
-

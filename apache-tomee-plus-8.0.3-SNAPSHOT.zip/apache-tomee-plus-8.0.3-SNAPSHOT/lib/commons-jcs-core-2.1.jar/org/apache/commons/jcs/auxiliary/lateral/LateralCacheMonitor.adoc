@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/lateral/LateralCacheMonitor.class
-
- - link:LateralCacheMonitor-asmified.java[Asmified]
-
-== References
-

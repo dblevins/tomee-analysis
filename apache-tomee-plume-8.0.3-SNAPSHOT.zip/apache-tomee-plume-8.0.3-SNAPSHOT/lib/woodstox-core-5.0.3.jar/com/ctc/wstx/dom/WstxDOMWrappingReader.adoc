@@ -1,6 +1,0 @@
-= com/ctc/wstx/dom/WstxDOMWrappingReader.class
-
- - link:WstxDOMWrappingReader-asmified.java[Asmified]
-
-== References
-

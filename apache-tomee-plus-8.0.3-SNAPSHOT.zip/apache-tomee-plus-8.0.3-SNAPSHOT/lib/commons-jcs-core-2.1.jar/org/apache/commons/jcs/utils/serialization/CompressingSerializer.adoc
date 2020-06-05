@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/serialization/CompressingSerializer.class
-
- - link:CompressingSerializer-asmified.java[Asmified]
-
-== References
-

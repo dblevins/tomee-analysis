@@ -1,6 +1,0 @@
-= commonj/sdo/DataObject.class
-
- - link:DataObject-asmified.java[Asmified]
-
-== References
-

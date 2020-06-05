@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/SSLSocketFactoryWrapper.class
-
- - link:SSLSocketFactoryWrapper-asmified.java[Asmified]
-
-== References
-

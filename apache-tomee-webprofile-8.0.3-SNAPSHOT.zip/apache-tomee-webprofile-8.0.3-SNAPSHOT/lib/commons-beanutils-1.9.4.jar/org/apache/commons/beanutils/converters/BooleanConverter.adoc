@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/BooleanConverter.class
-
- - link:BooleanConverter-asmified.java[Asmified]
-
-== References
-

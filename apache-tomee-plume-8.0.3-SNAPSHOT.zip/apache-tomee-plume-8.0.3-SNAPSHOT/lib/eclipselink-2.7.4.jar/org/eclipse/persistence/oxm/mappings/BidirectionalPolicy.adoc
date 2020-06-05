@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/BidirectionalPolicy.class
-
- - link:BidirectionalPolicy-asmified.java[Asmified]
-
-== References
-

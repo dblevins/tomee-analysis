@@ -1,6 +1,0 @@
-= jakarta/activation/MimeType.class
-
- - link:MimeType-asmified.java[Asmified]
-
-== References
-

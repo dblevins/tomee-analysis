@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/cdi/ConfigExtension.class
-
- - link:ConfigExtension-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/SimpleCase.class
-
- - link:SimpleCase-asmified.java[Asmified]
-
-== References
-

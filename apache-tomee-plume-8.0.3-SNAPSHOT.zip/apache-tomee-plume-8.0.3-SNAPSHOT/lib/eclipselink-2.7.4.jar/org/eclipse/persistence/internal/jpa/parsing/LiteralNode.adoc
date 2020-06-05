@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/LiteralNode.class
-
- - link:LiteralNode-asmified.java[Asmified]
-
-== References
-

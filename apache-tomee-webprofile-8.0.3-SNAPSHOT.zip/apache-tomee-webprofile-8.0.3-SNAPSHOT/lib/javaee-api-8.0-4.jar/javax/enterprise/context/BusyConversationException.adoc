@@ -1,7 +1,0 @@
-= javax/enterprise/context/BusyConversationException.class
-
- - link:BusyConversationException-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.ContextException - 5

@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/FaceletViewHandlingStrategy$CompCompInterfaceMethodMetadata.class
-
- - link:FaceletViewHandlingStrategy$CompCompInterfaceMethodMetadata-asmified.java[Asmified]
-
-== References
-

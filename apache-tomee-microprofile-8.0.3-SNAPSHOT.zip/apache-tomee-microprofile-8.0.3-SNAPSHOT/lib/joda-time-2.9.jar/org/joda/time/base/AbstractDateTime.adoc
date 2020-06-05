@@ -1,6 +1,0 @@
-= org/joda/time/base/AbstractDateTime.class
-
- - link:AbstractDateTime-asmified.java[Asmified]
-
-== References
-

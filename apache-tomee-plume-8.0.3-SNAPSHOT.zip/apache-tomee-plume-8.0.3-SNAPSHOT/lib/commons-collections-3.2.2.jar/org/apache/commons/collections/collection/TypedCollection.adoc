@@ -1,6 +1,0 @@
-= org/apache/commons/collections/collection/TypedCollection.class
-
- - link:TypedCollection-asmified.java[Asmified]
-
-== References
-

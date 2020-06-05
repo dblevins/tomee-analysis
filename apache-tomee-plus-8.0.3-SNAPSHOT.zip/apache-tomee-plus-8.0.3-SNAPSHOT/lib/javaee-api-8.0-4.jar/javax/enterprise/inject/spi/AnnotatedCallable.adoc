@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/AnnotatedCallable.class
-
- - link:AnnotatedCallable-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.AnnotatedMember - 1
- - javax.enterprise.inject.spi.AnnotatedParameter - 1

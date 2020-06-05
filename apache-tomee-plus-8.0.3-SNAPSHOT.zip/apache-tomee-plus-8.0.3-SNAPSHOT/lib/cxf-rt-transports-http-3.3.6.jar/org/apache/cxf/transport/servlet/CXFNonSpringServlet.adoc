@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/CXFNonSpringServlet.class
-
- - link:CXFNonSpringServlet-asmified.java[Asmified]
-
-== References
-

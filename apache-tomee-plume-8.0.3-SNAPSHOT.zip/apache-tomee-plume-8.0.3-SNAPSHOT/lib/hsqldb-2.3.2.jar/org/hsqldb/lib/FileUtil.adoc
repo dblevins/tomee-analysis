@@ -1,6 +1,0 @@
-= org/hsqldb/lib/FileUtil.class
-
- - link:FileUtil-asmified.java[Asmified]
-
-== References
-

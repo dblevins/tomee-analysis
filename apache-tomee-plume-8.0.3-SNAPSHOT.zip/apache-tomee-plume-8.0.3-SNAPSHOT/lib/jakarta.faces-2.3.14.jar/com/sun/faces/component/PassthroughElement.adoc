@@ -1,6 +1,0 @@
-= com/sun/faces/component/PassthroughElement.class
-
- - link:PassthroughElement-asmified.java[Asmified]
-
-== References
-

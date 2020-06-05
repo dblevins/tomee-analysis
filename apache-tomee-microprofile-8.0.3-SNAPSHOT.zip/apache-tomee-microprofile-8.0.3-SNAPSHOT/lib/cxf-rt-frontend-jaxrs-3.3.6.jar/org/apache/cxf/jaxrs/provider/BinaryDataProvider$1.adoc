@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/BinaryDataProvider$1.class
-
- - link:BinaryDataProvider$1-asmified.java[Asmified]
-
-== References
-

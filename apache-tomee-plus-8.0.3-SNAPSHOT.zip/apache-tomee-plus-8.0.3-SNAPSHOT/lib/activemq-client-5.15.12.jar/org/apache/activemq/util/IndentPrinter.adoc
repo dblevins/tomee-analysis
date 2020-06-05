@@ -1,6 +1,0 @@
-= org/apache/activemq/util/IndentPrinter.class
-
- - link:IndentPrinter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/AttachmentOutInterceptor.class
-
- - link:AttachmentOutInterceptor-asmified.java[Asmified]
-
-== References
-

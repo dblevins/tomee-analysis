@@ -1,7 +1,0 @@
-= javax/xml/ws/WebServiceRefs.class
-
- - link:WebServiceRefs-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.WebServiceRef - 1

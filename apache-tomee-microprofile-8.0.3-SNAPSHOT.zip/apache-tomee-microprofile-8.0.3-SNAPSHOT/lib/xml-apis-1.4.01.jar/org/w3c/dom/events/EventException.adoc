@@ -1,6 +1,0 @@
-= org/w3c/dom/events/EventException.class
-
- - link:EventException-asmified.java[Asmified]
-
-== References
-

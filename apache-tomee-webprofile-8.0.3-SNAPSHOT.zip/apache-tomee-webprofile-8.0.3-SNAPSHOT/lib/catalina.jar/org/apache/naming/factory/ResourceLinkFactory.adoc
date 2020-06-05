@@ -1,6 +1,0 @@
-= org/apache/naming/factory/ResourceLinkFactory.class
-
- - link:ResourceLinkFactory-asmified.java[Asmified]
-
-== References
-

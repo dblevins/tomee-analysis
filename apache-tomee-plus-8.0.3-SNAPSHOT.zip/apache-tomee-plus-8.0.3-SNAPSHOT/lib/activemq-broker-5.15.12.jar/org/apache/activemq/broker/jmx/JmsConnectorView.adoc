@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/JmsConnectorView.class
-
- - link:JmsConnectorView-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/behavior/FacesClientBehaviorCDIWrapper.class
-
- - link:FacesClientBehaviorCDIWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/PatternBuilder.class
-
- - link:PatternBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/juli/logging/Log.class
-
- - link:Log-asmified.java[Asmified]
-
-== References
-

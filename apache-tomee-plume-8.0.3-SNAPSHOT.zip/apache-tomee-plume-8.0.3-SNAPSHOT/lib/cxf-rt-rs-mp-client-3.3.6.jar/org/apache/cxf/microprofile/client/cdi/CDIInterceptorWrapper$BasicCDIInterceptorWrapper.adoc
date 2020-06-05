@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapper$BasicCDIInterceptorWrapper.class
-
- - link:CDIInterceptorWrapper$BasicCDIInterceptorWrapper-asmified.java[Asmified]
-
-== References
-

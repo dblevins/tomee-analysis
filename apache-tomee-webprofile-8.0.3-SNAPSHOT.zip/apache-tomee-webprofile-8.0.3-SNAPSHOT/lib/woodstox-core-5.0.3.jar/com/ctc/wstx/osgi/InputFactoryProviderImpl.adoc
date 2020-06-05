@@ -1,6 +1,0 @@
-= com/ctc/wstx/osgi/InputFactoryProviderImpl.class
-
- - link:InputFactoryProviderImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/DelegateTo.class
-
- - link:DelegateTo-asmified.java[Asmified]
-
-== References
-

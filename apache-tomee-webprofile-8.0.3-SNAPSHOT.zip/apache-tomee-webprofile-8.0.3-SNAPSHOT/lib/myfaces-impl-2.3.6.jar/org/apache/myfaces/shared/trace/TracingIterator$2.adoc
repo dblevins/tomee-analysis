@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/trace/TracingIterator$2.class
-
- - link:TracingIterator$2-asmified.java[Asmified]
-
-== References
-

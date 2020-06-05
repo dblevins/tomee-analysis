@@ -1,6 +1,0 @@
-= jakarta/xml/bind/UnmarshallerHandler.class
-
- - link:UnmarshallerHandler-asmified.java[Asmified]
-
-== References
-

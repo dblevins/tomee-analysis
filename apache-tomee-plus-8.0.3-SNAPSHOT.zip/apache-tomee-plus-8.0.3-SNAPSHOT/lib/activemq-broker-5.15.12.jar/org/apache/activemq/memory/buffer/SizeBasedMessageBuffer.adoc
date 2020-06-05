@@ -1,6 +1,0 @@
-= org/apache/activemq/memory/buffer/SizeBasedMessageBuffer.class
-
- - link:SizeBasedMessageBuffer-asmified.java[Asmified]
-
-== References
-

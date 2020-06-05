@@ -1,6 +1,0 @@
-= jakarta/persistence/spi/ProviderUtil.class
-
- - link:ProviderUtil-asmified.java[Asmified]
-
-== References
-

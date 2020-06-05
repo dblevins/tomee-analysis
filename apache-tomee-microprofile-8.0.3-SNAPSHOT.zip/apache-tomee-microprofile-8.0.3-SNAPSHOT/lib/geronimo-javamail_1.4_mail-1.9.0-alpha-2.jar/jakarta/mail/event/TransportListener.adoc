@@ -1,6 +1,0 @@
-= jakarta/mail/event/TransportListener.class
-
- - link:TransportListener-asmified.java[Asmified]
-
-== References
-

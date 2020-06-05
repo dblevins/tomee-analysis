@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/cdi/FlowScopeBeanHolder.class
-
- - link:FlowScopeBeanHolder-asmified.java[Asmified]
-
-== References
-

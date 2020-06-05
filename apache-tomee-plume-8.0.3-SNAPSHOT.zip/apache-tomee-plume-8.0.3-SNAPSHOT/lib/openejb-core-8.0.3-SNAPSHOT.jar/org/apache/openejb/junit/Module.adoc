@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/Module.class
-
- - link:Module-asmified.java[Asmified]
-
-== References
-

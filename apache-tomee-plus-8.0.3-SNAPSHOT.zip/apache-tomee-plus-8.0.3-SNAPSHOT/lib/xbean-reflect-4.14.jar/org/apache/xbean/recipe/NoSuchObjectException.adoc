@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/NoSuchObjectException.class
-
- - link:NoSuchObjectException-asmified.java[Asmified]
-
-== References
-

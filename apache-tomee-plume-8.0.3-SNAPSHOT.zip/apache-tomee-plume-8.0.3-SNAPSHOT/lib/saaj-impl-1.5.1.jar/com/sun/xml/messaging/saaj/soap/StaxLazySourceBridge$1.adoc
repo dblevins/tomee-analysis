@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/StaxLazySourceBridge$1.class
-
- - link:StaxLazySourceBridge$1-asmified.java[Asmified]
-
-== References
-

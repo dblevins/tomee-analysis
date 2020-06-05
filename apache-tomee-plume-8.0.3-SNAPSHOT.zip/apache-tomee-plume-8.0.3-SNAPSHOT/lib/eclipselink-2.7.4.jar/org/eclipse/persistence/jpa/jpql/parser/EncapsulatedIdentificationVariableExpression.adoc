@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/EncapsulatedIdentificationVariableExpression.class
-
- - link:EncapsulatedIdentificationVariableExpression-asmified.java[Asmified]
-
-== References
-

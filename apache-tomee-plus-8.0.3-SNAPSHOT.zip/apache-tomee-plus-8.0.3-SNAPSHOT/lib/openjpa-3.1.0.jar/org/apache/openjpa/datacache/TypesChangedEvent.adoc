@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/TypesChangedEvent.class
-
- - link:TypesChangedEvent-asmified.java[Asmified]
-
-== References
-

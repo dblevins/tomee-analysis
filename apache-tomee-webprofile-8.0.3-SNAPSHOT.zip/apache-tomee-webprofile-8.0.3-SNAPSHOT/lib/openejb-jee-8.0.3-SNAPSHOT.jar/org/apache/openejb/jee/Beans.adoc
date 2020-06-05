@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Beans.class
-
- - link:Beans-asmified.java[Asmified]
-
-== References
-

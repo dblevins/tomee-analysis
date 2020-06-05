@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMX509Data.class
-
- - link:DOMX509Data-asmified.java[Asmified]
-
-== References
-

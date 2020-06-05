@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/builder/SAML1ComponentBuilder$1.class
-
- - link:SAML1ComponentBuilder$1-asmified.java[Asmified]
-
-== References
-

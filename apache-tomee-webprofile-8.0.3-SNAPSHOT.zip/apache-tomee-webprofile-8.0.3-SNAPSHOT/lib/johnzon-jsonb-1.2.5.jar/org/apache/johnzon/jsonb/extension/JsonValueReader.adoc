@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/extension/JsonValueReader.class
-
- - link:JsonValueReader-asmified.java[Asmified]
-
-== References
-

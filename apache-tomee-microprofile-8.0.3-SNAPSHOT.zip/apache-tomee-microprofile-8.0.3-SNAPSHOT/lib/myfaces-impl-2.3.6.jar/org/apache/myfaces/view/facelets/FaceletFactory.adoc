@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/FaceletFactory.class
-
- - link:FaceletFactory-asmified.java[Asmified]
-
-== References
-

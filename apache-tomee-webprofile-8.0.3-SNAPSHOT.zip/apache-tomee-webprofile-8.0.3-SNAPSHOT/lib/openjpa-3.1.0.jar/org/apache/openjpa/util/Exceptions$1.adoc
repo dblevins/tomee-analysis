@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/Exceptions$1.class
-
- - link:Exceptions$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/CryptoBinaryMarshaller.class
-
- - link:CryptoBinaryMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/RecoveredField.class
-
- - link:RecoveredField-asmified.java[Asmified]
-
-== References
-

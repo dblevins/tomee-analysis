@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/flow/FieldInitsFakingFlowContext.class
-
- - link:FieldInitsFakingFlowContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cmc/BodyPartPath.class
-
- - link:BodyPartPath-asmified.java[Asmified]
-
-== References
-

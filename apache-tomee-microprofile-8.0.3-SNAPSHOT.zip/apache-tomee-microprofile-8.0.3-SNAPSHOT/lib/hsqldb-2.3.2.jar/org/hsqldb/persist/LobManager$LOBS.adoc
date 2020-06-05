@@ -1,6 +1,0 @@
-= org/hsqldb/persist/LobManager$LOBS.class
-
- - link:LobManager$LOBS-asmified.java[Asmified]
-
-== References
-

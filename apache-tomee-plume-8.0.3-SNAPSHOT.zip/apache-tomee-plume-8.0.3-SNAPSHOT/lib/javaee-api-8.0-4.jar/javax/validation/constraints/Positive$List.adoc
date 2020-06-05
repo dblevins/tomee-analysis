@@ -1,7 +1,0 @@
-= javax/validation/constraints/Positive$List.class
-
- - link:Positive$List-asmified.java[Asmified]
-
-== References
-
- - javax.validation.constraints.Positive - 1

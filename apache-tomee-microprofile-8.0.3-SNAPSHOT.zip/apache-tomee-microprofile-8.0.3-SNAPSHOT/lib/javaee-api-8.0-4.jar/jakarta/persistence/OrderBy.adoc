@@ -1,6 +1,0 @@
-= jakarta/persistence/OrderBy.class
-
- - link:OrderBy-asmified.java[Asmified]
-
-== References
-

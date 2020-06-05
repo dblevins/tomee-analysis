@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/DelegatingQuery.class
-
- - link:DelegatingQuery-asmified.java[Asmified]
-
-== References
-

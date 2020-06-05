@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/bcel/classfile/ClassParser.class
-
- - link:ClassParser-asmified.java[Asmified]
-
-== References
-

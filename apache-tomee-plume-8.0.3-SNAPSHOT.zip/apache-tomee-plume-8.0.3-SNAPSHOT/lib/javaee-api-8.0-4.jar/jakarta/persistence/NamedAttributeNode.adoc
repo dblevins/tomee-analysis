@@ -1,6 +1,0 @@
-= jakarta/persistence/NamedAttributeNode.class
-
- - link:NamedAttributeNode-asmified.java[Asmified]
-
-== References
-

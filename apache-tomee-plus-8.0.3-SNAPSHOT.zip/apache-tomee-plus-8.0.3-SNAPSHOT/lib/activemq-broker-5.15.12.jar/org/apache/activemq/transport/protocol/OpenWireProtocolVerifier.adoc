@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/protocol/OpenWireProtocolVerifier.class
-
- - link:OpenWireProtocolVerifier-asmified.java[Asmified]
-
-== References
-

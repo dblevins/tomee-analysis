@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$1.class
-
- - link:DefaultRestoreViewSupport$1-asmified.java[Asmified]
-
-== References
-

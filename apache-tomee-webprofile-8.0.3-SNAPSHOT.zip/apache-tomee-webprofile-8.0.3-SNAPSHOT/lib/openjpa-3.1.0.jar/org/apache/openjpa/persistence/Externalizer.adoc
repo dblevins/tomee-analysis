@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/Externalizer.class
-
- - link:Externalizer-asmified.java[Asmified]
-
-== References
-

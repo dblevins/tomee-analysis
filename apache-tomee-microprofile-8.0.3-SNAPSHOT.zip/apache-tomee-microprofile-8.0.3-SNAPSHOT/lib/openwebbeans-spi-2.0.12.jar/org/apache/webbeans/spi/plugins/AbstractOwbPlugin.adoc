@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/plugins/AbstractOwbPlugin.class
-
- - link:AbstractOwbPlugin-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ext/CoreXMLDeserializers.class
-
- - link:CoreXMLDeserializers-asmified.java[Asmified]
-
-== References
-

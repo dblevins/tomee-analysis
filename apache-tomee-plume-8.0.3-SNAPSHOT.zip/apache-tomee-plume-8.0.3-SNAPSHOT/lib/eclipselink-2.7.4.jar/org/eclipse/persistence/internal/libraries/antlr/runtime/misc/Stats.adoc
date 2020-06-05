@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/misc/Stats.class
-
- - link:Stats-asmified.java[Asmified]
-
-== References
-

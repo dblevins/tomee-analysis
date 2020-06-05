@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/StoredProcedureQueryHandler.class
-
- - link:StoredProcedureQueryHandler-asmified.java[Asmified]
-
-== References
-

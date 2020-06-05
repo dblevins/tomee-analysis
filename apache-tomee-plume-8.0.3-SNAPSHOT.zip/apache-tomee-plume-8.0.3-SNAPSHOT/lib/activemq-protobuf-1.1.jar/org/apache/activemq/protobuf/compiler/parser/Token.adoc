@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/parser/Token.class
-
- - link:Token-asmified.java[Asmified]
-
-== References
-

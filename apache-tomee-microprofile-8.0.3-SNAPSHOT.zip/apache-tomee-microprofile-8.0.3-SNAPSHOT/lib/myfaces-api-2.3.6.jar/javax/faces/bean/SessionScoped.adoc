@@ -1,6 +1,0 @@
-= javax/faces/bean/SessionScoped.class
-
- - link:SessionScoped-asmified.java[Asmified]
-
-== References
-

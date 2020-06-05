@@ -1,6 +1,0 @@
-= org/joda/time/chrono/IslamicChronology$LeapYearPatternType.class
-
- - link:IslamicChronology$LeapYearPatternType-asmified.java[Asmified]
-
-== References
-

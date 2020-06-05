@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/OAuthServerJoseJwtProducer.class
-
- - link:OAuthServerJoseJwtProducer-asmified.java[Asmified]
-
-== References
-

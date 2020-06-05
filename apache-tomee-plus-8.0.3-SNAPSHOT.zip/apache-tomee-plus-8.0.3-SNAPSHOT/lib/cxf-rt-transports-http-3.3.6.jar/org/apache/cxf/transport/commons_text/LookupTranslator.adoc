@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/commons_text/LookupTranslator.class
-
- - link:LookupTranslator-asmified.java[Asmified]
-
-== References
-

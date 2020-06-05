@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/FastInfosetFeature.class
-
- - link:FastInfosetFeature-asmified.java[Asmified]
-
-== References
-

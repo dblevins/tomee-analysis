@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Index$IndexEntry.class
-
- - link:Index$IndexEntry-asmified.java[Asmified]
-
-== References
-

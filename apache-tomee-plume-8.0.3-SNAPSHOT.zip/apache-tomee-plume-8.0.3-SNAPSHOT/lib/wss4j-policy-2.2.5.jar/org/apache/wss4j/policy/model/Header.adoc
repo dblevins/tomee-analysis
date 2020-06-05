@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/Header.class
-
- - link:Header-asmified.java[Asmified]
-
-== References
-

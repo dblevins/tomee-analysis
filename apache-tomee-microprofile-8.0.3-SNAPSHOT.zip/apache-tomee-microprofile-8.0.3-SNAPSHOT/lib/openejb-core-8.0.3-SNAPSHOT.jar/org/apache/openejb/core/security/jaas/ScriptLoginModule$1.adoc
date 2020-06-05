@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/jaas/ScriptLoginModule$1.class
-
- - link:ScriptLoginModule$1-asmified.java[Asmified]
-
-== References
-

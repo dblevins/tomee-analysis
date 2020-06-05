@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/meta/SourceTrackers.class
-
- - link:SourceTrackers-asmified.java[Asmified]
-
-== References
-

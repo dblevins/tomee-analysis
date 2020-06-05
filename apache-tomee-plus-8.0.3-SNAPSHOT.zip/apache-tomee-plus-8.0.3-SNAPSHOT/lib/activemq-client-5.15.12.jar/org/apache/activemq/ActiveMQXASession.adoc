@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQXASession.class
-
- - link:ActiveMQXASession-asmified.java[Asmified]
-
-== References
-

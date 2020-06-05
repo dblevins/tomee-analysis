@@ -1,7 +1,0 @@
-= javax/ws/rs/OPTIONS.class
-
- - link:OPTIONS-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.HttpMethod - 1

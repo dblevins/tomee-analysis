@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/BooleanValue.class
-
- - link:BooleanValue-asmified.java[Asmified]
-
-== References
-

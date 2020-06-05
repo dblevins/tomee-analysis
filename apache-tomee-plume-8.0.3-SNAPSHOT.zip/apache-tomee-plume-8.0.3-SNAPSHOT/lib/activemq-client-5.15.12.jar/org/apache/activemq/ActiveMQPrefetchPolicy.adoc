@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQPrefetchPolicy.class
-
- - link:ActiveMQPrefetchPolicy-asmified.java[Asmified]
-
-== References
-

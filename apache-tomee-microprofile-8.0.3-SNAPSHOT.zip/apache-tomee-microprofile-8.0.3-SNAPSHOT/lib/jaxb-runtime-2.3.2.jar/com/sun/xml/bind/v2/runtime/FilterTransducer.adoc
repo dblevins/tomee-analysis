@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/FilterTransducer.class
-
- - link:FilterTransducer-asmified.java[Asmified]
-
-== References
-

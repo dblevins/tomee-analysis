@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/NameParserImpl.class
-
- - link:NameParserImpl-asmified.java[Asmified]
-
-== References
-

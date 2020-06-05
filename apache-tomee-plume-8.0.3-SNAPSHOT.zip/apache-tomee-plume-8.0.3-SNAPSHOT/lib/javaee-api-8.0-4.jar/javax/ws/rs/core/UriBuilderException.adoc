@@ -1,6 +1,0 @@
-= javax/ws/rs/core/UriBuilderException.class
-
- - link:UriBuilderException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/MethodNode$1.class
-
- - link:MethodNode$1-asmified.java[Asmified]
-
-== References
-

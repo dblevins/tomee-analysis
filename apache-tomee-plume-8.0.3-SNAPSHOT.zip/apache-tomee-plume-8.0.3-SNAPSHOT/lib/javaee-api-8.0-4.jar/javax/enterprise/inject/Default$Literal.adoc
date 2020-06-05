@@ -1,9 +1,0 @@
-= javax/enterprise/inject/Default$Literal.class
-
- - link:Default$Literal-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.Default$Literal - 4
- - javax.enterprise.inject.Default - 2
- - javax.enterprise.util.AnnotationLiteral - 2

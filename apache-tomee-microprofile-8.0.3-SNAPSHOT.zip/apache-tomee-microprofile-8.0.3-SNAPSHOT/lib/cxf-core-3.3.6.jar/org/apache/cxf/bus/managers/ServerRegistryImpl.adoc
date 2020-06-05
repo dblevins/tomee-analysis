@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/ServerRegistryImpl.class
-
- - link:ServerRegistryImpl-asmified.java[Asmified]
-
-== References
-

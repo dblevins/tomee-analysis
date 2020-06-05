@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/Attribute$Set.class
-
- - link:Attribute$Set-asmified.java[Asmified]
-
-== References
-

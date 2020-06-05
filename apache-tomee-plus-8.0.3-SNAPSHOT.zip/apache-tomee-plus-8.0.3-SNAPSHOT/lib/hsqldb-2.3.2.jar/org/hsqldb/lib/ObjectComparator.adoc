@@ -1,6 +1,0 @@
-= org/hsqldb/lib/ObjectComparator.class
-
- - link:ObjectComparator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/CollectionUtils$EquatorWrapper.class
-
- - link:CollectionUtils$EquatorWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ext/Java7HandlersImpl.class
-
- - link:Java7HandlersImpl-asmified.java[Asmified]
-
-== References
-

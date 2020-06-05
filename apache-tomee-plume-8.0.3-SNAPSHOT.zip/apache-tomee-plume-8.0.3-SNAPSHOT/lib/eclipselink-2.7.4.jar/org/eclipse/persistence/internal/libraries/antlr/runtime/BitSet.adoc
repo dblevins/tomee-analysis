@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/BitSet.class
-
- - link:BitSet-asmified.java[Asmified]
-
-== References
-

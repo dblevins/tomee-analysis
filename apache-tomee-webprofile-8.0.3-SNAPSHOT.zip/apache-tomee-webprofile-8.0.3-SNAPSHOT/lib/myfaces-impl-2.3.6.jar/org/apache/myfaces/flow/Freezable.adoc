@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/Freezable.class
-
- - link:Freezable-asmified.java[Asmified]
-
-== References
-

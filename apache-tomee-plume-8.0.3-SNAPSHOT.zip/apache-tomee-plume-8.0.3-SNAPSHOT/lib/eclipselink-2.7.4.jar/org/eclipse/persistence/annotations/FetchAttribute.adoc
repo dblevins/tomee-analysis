@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/FetchAttribute.class
-
- - link:FetchAttribute-asmified.java[Asmified]
-
-== References
-

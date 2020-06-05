@@ -1,6 +1,0 @@
-= jakarta/faces/component/UISelectOne.class
-
- - link:UISelectOne-asmified.java[Asmified]
-
-== References
-

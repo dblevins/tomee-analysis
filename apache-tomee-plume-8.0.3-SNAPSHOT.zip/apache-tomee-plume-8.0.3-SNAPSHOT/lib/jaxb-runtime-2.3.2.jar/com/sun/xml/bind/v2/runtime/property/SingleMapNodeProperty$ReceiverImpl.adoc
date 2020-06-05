@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/property/SingleMapNodeProperty$ReceiverImpl.class
-
- - link:SingleMapNodeProperty$ReceiverImpl-asmified.java[Asmified]
-
-== References
-

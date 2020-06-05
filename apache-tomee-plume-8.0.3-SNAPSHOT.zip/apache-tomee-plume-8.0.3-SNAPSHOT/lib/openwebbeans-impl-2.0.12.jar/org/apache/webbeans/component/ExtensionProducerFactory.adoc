@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/ExtensionProducerFactory.class
-
- - link:ExtensionProducerFactory-asmified.java[Asmified]
-
-== References
-

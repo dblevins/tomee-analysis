@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/services/AuthorizationService.class
-
- - link:AuthorizationService-asmified.java[Asmified]
-
-== References
-

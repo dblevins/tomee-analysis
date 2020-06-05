@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/authentication/mechanism/http/AutoApplySession$Literal.class
-
- - link:AutoApplySession$Literal-asmified.java[Asmified]
-
-== References
-

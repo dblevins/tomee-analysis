@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/http/HTTPOperationSerializer.class
-
- - link:HTTPOperationSerializer-asmified.java[Asmified]
-
-== References
-

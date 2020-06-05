@@ -1,6 +1,0 @@
-= org/opensaml/saml/config/SAMLConfiguration$LowercaseFunction.class
-
- - link:SAMLConfiguration$LowercaseFunction-asmified.java[Asmified]
-
-== References
-

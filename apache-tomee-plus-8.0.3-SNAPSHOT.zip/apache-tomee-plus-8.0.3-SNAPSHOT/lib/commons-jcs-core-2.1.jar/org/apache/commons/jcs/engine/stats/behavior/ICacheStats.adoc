@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/stats/behavior/ICacheStats.class
-
- - link:ICacheStats-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/digester/RegexRules$RegisteredRule.class
-
- - link:RegexRules$RegisteredRule-asmified.java[Asmified]
-
-== References
-

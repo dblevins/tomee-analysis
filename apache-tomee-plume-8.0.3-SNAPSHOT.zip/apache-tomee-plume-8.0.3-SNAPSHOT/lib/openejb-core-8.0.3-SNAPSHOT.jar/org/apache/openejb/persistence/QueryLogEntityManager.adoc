@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/QueryLogEntityManager.class
-
- - link:QueryLogEntityManager-asmified.java[Asmified]
-
-== References
-

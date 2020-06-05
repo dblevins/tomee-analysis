@@ -1,6 +1,0 @@
-= com/sun/faces/el/ImplicitObjectELResolver.class
-
- - link:ImplicitObjectELResolver-asmified.java[Asmified]
-
-== References
-

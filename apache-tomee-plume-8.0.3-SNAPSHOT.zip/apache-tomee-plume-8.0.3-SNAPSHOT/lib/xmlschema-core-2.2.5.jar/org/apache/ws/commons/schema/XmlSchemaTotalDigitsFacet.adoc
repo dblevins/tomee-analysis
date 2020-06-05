@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaTotalDigitsFacet.class
-
- - link:XmlSchemaTotalDigitsFacet-asmified.java[Asmified]
-
-== References
-

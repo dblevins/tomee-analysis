@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/Nio2Channel.class
-
- - link:Nio2Channel-asmified.java[Asmified]
-
-== References
-

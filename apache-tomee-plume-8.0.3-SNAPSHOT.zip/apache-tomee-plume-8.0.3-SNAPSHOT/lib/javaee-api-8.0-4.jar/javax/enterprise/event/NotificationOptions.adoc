@@ -1,9 +1,0 @@
-= javax/enterprise/event/NotificationOptions.class
-
- - link:NotificationOptions-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.event.NotificationOptions$Builder - 9
- - javax.enterprise.event.NotificationOptions - 6
- - javax.enterprise.event.ImmutableNotificationOptions$Builder - 2

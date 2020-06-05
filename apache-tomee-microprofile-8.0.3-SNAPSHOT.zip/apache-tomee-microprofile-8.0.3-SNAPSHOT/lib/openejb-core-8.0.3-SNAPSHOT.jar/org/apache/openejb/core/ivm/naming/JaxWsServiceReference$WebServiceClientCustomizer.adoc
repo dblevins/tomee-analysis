@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/JaxWsServiceReference$WebServiceClientCustomizer.class
-
- - link:JaxWsServiceReference$WebServiceClientCustomizer-asmified.java[Asmified]
-
-== References
-

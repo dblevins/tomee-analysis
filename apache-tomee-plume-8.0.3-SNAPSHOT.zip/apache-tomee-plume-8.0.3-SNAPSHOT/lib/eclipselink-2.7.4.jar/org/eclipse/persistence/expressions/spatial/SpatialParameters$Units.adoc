@@ -1,6 +1,0 @@
-= org/eclipse/persistence/expressions/spatial/SpatialParameters$Units.class
-
- - link:SpatialParameters$Units-asmified.java[Asmified]
-
-== References
-

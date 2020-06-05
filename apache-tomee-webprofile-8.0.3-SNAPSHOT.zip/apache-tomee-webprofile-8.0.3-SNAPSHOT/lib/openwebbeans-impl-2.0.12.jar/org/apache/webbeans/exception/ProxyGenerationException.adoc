@@ -1,6 +1,0 @@
-= org/apache/webbeans/exception/ProxyGenerationException.class
-
- - link:ProxyGenerationException-asmified.java[Asmified]
-
-== References
-

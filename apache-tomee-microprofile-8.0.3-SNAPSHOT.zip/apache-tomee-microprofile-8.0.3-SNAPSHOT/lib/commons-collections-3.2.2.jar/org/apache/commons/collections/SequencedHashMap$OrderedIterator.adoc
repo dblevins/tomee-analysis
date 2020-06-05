@@ -1,6 +1,0 @@
-= org/apache/commons/collections/SequencedHashMap$OrderedIterator.class
-
- - link:SequencedHashMap$OrderedIterator-asmified.java[Asmified]
-
-== References
-

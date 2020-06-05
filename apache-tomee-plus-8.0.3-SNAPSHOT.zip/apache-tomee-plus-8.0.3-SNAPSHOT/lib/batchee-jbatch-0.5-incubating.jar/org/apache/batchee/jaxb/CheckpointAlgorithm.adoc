@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/CheckpointAlgorithm.class
-
- - link:CheckpointAlgorithm-asmified.java[Asmified]
-
-== References
-

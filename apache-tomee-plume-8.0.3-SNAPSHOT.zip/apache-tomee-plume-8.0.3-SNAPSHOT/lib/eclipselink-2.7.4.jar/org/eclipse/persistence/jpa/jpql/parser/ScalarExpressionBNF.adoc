@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ScalarExpressionBNF.class
-
- - link:ScalarExpressionBNF-asmified.java[Asmified]
-
-== References
-

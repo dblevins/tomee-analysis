@@ -1,6 +1,0 @@
-= org/apache/openejb/server/rest/EJBRestServiceInfo.class
-
- - link:EJBRestServiceInfo-asmified.java[Asmified]
-
-== References
-

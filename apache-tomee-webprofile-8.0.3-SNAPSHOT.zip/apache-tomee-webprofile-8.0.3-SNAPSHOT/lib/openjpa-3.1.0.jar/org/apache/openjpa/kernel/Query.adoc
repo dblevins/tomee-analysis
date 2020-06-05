@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/Query.class
-
- - link:Query-asmified.java[Asmified]
-
-== References
-

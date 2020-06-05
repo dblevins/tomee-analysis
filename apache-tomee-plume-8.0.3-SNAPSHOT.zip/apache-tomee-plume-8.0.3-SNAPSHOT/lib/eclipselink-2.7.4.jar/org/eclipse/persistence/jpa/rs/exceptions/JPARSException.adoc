@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/exceptions/JPARSException.class
-
- - link:JPARSException-asmified.java[Asmified]
-
-== References
-

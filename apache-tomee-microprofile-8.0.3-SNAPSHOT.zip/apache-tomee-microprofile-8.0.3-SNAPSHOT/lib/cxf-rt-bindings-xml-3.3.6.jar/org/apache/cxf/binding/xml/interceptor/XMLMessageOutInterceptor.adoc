@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/xml/interceptor/XMLMessageOutInterceptor.class
-
- - link:XMLMessageOutInterceptor-asmified.java[Asmified]
-
-== References
-

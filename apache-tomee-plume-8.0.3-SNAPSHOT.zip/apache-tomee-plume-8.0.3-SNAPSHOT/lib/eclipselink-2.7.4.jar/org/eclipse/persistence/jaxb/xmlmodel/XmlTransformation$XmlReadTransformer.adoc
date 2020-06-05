@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/xmlmodel/XmlTransformation$XmlReadTransformer.class
-
- - link:XmlTransformation$XmlReadTransformer-asmified.java[Asmified]
-
-== References
-

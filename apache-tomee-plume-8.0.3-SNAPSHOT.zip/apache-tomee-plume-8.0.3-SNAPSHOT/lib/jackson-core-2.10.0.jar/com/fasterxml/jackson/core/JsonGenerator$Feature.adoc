@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/JsonGenerator$Feature.class
-
- - link:JsonGenerator$Feature-asmified.java[Asmified]
-
-== References
-

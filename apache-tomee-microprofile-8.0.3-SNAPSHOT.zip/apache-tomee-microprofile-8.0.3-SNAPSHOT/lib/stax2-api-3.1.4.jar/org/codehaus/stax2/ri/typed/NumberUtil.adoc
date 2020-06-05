@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/NumberUtil.class
-
- - link:NumberUtil-asmified.java[Asmified]
-
-== References
-

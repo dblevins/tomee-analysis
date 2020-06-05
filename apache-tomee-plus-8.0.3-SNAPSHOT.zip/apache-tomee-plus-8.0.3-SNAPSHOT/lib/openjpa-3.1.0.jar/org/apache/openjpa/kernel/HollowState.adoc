@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/HollowState.class
-
- - link:HollowState-asmified.java[Asmified]
-
-== References
-

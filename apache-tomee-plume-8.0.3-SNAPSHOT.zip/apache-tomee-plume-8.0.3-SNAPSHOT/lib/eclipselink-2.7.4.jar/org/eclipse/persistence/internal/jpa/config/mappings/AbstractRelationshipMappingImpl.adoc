@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/mappings/AbstractRelationshipMappingImpl.class
-
- - link:AbstractRelationshipMappingImpl-asmified.java[Asmified]
-
-== References
-

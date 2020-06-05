@@ -1,6 +1,0 @@
-= org/apache/commons/collections/comparators/BooleanComparator.class
-
- - link:BooleanComparator-asmified.java[Asmified]
-
-== References
-

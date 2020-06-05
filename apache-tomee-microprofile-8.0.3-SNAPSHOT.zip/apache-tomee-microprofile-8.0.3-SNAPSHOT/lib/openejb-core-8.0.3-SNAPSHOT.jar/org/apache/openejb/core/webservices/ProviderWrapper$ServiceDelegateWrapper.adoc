@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/ProviderWrapper$ServiceDelegateWrapper.class
-
- - link:ProviderWrapper$ServiceDelegateWrapper-asmified.java[Asmified]
-
-== References
-

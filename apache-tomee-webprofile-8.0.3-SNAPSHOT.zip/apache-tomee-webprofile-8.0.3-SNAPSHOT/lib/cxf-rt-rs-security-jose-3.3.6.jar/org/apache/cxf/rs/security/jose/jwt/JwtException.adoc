@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwt/JwtException.class
-
- - link:JwtException-asmified.java[Asmified]
-
-== References
-

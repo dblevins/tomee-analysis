@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/VerbatimHandler.class
-
- - link:VerbatimHandler-asmified.java[Asmified]
-
-== References
-

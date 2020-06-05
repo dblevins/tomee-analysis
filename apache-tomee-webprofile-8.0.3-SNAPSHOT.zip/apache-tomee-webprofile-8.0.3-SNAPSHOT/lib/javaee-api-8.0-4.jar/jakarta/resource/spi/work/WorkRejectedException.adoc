@@ -1,6 +1,0 @@
-= jakarta/resource/spi/work/WorkRejectedException.class
-
- - link:WorkRejectedException-asmified.java[Asmified]
-
-== References
-

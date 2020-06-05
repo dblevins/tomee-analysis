@@ -1,6 +1,0 @@
-= org/apache/commons/digester/xmlrules/DigesterRuleParser$RulesPrefixAdapter.class
-
- - link:DigesterRuleParser$RulesPrefixAdapter-asmified.java[Asmified]
-
-== References
-

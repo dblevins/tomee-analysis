@@ -1,6 +1,0 @@
-= org/joda/time/LocalTime.class
-
- - link:LocalTime-asmified.java[Asmified]
-
-== References
-

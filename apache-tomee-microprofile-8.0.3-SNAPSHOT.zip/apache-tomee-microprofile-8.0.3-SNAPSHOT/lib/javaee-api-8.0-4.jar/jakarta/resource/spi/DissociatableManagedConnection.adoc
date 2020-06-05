@@ -1,6 +1,0 @@
-= jakarta/resource/spi/DissociatableManagedConnection.class
-
- - link:DissociatableManagedConnection-asmified.java[Asmified]
-
-== References
-

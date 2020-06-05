@@ -1,6 +1,0 @@
-= com/sun/faces/util/ComponentStruct.class
-
- - link:ComponentStruct-asmified.java[Asmified]
-
-== References
-

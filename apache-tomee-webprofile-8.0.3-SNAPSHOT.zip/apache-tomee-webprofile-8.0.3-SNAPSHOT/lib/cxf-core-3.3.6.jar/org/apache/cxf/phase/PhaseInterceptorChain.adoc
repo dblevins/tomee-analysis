@@ -1,6 +1,0 @@
-= org/apache/cxf/phase/PhaseInterceptorChain.class
-
- - link:PhaseInterceptorChain-asmified.java[Asmified]
-
-== References
-

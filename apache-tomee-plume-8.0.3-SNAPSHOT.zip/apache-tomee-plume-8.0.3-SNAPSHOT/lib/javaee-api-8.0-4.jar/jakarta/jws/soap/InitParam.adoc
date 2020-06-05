@@ -1,6 +1,0 @@
-= jakarta/jws/soap/InitParam.class
-
- - link:InitParam-asmified.java[Asmified]
-
-== References
-

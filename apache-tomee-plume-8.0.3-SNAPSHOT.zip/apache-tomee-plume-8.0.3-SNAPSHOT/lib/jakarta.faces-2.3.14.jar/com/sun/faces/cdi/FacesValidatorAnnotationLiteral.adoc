@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/FacesValidatorAnnotationLiteral.class
-
- - link:FacesValidatorAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

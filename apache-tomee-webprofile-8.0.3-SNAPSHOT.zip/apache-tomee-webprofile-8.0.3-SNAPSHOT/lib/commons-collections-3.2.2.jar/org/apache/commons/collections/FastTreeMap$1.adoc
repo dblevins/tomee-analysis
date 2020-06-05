@@ -1,6 +1,0 @@
-= org/apache/commons/collections/FastTreeMap$1.class
-
- - link:FastTreeMap$1-asmified.java[Asmified]
-
-== References
-

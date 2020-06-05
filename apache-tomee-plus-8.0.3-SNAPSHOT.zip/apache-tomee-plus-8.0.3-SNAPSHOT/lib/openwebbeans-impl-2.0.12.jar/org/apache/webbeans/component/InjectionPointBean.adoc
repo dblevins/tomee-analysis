@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/InjectionPointBean.class
-
- - link:InjectionPointBean-asmified.java[Asmified]
-
-== References
-

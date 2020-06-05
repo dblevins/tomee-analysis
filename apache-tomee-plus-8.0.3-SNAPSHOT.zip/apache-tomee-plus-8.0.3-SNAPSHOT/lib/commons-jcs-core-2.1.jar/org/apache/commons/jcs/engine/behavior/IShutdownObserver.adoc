@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/IShutdownObserver.class
-
- - link:IShutdownObserver-asmified.java[Asmified]
-
-== References
-

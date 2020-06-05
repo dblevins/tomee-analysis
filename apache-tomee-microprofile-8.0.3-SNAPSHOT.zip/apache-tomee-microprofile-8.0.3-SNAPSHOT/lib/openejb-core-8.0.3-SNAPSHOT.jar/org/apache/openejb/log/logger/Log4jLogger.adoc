@@ -1,6 +1,0 @@
-= org/apache/openejb/log/logger/Log4jLogger.class
-
- - link:Log4jLogger-asmified.java[Asmified]
-
-== References
-

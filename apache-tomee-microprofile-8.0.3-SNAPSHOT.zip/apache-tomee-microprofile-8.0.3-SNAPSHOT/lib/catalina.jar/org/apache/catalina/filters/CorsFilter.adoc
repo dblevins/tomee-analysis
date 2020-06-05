@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/CorsFilter.class
-
- - link:CorsFilter-asmified.java[Asmified]
-
-== References
-

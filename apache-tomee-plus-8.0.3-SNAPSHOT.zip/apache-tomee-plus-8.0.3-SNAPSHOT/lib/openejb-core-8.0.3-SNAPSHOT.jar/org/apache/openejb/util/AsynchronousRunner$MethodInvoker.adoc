@@ -1,6 +1,0 @@
-= org/apache/openejb/util/AsynchronousRunner$MethodInvoker.class
-
- - link:AsynchronousRunner$MethodInvoker-asmified.java[Asmified]
-
-== References
-

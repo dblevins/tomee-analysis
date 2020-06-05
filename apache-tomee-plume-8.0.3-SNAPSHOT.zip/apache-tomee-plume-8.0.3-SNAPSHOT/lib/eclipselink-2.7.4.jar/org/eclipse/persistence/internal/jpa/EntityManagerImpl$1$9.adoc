@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/EntityManagerImpl$1$9.class
-
- - link:EntityManagerImpl$1$9-asmified.java[Asmified]
-
-== References
-

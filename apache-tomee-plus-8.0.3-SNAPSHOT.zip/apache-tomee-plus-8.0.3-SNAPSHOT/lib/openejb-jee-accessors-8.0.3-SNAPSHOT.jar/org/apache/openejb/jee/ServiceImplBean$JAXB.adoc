@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ServiceImplBean$JAXB.class
-
- - link:ServiceImplBean$JAXB-asmified.java[Asmified]
-
-== References
-

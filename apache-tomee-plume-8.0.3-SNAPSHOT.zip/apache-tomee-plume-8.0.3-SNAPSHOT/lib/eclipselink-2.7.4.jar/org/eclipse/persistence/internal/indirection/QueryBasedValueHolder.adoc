@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/QueryBasedValueHolder.class
-
- - link:QueryBasedValueHolder-asmified.java[Asmified]
-
-== References
-

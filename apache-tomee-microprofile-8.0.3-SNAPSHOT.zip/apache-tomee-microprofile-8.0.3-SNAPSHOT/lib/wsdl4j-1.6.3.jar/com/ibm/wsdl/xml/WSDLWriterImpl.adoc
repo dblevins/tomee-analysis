@@ -1,6 +1,0 @@
-= com/ibm/wsdl/xml/WSDLWriterImpl.class
-
- - link:WSDLWriterImpl-asmified.java[Asmified]
-
-== References
-

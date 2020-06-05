@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/saaj/SaajFactoryFinder.class
-
- - link:SaajFactoryFinder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/CacheInvalidationConfig.class
-
- - link:CacheInvalidationConfig-asmified.java[Asmified]
-
-== References
-

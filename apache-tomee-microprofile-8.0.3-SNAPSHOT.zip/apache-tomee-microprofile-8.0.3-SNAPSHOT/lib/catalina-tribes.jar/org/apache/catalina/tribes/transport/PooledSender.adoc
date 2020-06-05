@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/PooledSender.class
-
- - link:PooledSender-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/ComparisonStyle.class
-
- - link:ComparisonStyle-asmified.java[Asmified]
-
-== References
-

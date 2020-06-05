@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/cache/CacheInterceptorImpl.class
-
- - link:CacheInterceptorImpl-asmified.java[Asmified]
-
-== References
-

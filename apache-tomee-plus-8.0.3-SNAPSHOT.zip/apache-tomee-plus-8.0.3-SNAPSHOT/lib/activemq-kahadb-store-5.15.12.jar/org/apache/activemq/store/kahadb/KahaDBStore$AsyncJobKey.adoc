@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/KahaDBStore$AsyncJobKey.class
-
- - link:KahaDBStore$AsyncJobKey-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/SecurityRole.class
-
- - link:SecurityRole-asmified.java[Asmified]
-
-== References
-

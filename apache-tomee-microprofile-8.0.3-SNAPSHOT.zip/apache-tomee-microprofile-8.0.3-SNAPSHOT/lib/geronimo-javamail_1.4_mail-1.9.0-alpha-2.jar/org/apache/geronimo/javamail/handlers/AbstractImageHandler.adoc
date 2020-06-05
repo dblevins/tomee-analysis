@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/handlers/AbstractImageHandler.class
-
- - link:AbstractImageHandler-asmified.java[Asmified]
-
-== References
-

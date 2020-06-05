@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/LoaderRepositoryConfig.class
-
- - link:LoaderRepositoryConfig-asmified.java[Asmified]
-
-== References
-

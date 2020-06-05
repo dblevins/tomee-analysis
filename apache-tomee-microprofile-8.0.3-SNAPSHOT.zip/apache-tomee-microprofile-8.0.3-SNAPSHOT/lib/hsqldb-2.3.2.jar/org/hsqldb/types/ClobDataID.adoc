@@ -1,6 +1,0 @@
-= org/hsqldb/types/ClobDataID.class
-
- - link:ClobDataID-asmified.java[Asmified]
-
-== References
-

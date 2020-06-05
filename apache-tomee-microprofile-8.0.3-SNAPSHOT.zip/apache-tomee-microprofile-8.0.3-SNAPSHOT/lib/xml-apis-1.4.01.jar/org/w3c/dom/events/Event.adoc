@@ -1,6 +1,0 @@
-= org/w3c/dom/events/Event.class
-
- - link:Event-asmified.java[Asmified]
-
-== References
-

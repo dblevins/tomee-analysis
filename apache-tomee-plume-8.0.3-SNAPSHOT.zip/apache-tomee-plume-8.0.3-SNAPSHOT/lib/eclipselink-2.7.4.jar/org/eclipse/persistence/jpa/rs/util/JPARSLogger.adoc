@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/JPARSLogger.class
-
- - link:JPARSLogger-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/HttpOutputBuffer.class
-
- - link:HttpOutputBuffer-asmified.java[Asmified]
-
-== References
-

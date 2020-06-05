@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/rs/metadata/model/ItemLinks.class
-
- - link:ItemLinks-asmified.java[Asmified]
-
-== References
-

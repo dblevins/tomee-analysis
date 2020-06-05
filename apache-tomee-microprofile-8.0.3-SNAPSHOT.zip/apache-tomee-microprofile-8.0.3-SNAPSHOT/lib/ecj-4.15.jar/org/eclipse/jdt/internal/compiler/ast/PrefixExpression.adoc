@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/PrefixExpression.class
-
- - link:PrefixExpression-asmified.java[Asmified]
-
-== References
-

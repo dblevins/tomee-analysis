@@ -1,6 +1,0 @@
-= org/apache/activemq/util/osgi/Activator$BundleWrapper.class
-
- - link:Activator$BundleWrapper-asmified.java[Asmified]
-
-== References
-

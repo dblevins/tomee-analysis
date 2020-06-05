@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/SessionProperties.class
-
- - link:SessionProperties-asmified.java[Asmified]
-
-== References
-

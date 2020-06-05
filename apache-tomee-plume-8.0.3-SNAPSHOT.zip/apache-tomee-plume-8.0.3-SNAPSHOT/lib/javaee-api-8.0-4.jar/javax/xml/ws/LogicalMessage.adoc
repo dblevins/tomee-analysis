@@ -1,7 +1,0 @@
-= javax/xml/ws/LogicalMessage.class
-
- - link:LogicalMessage-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.JAXBContext - 2

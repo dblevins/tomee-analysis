@@ -1,9 +1,0 @@
-= javax/jms/QueueConnectionFactory.class
-
- - link:QueueConnectionFactory-asmified.java[Asmified]
-
-== References
-
- - javax.jms.QueueConnection - 2
- - javax.jms.JMSException - 2
- - javax.jms.ConnectionFactory - 1

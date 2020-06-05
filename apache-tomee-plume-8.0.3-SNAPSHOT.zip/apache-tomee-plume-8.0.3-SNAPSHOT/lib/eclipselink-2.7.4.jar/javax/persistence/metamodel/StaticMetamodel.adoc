@@ -1,6 +1,0 @@
-= javax/persistence/metamodel/StaticMetamodel.class
-
- - link:StaticMetamodel-asmified.java[Asmified]
-
-== References
-

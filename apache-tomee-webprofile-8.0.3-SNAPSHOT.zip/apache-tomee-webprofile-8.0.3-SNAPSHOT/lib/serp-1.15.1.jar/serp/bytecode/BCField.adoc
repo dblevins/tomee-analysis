@@ -1,6 +1,0 @@
-= serp/bytecode/BCField.class
-
- - link:BCField-asmified.java[Asmified]
-
-== References
-

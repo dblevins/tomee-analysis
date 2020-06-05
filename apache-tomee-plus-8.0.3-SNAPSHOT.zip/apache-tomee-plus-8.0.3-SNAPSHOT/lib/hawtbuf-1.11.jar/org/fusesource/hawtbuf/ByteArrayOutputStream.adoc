@@ -1,6 +1,0 @@
-= org/fusesource/hawtbuf/ByteArrayOutputStream.class
-
- - link:ByteArrayOutputStream-asmified.java[Asmified]
-
-== References
-

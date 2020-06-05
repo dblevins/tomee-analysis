@@ -1,9 +1,0 @@
-= javax/enterprise/inject/Model.class
-
- - link:Model-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.Stereotype - 1
- - javax.enterprise.context.RequestScoped - 1
- - javax.inject.Named - 1

@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/bval/ValidationConstraints.class
-
- - link:ValidationConstraints-asmified.java[Asmified]
-
-== References
-

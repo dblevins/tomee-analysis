@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/JAXBObjectFactory.class
-
- - link:JAXBObjectFactory-asmified.java[Asmified]
-
-== References
-

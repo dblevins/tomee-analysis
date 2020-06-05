@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/moment/ThirdMoment.class
-
- - link:ThirdMoment-asmified.java[Asmified]
-
-== References
-

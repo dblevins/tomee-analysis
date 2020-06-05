@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/DigestMethodUnmarshaller.class
-
- - link:DigestMethodUnmarshaller-asmified.java[Asmified]
-
-== References
-

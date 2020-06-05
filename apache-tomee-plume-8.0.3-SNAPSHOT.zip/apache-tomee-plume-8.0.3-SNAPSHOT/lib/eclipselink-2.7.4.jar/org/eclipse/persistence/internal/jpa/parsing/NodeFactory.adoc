@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/NodeFactory.class
-
- - link:NodeFactory-asmified.java[Asmified]
-
-== References
-

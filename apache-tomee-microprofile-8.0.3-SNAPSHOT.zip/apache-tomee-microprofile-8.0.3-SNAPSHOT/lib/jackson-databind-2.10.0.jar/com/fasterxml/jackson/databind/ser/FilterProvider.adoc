@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/FilterProvider.class
-
- - link:FilterProvider-asmified.java[Asmified]
-
-== References
-

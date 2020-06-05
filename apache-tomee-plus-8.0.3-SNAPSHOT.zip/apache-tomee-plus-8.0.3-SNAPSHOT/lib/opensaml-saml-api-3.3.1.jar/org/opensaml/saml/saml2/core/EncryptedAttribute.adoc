@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/EncryptedAttribute.class
-
- - link:EncryptedAttribute-asmified.java[Asmified]
-
-== References
-

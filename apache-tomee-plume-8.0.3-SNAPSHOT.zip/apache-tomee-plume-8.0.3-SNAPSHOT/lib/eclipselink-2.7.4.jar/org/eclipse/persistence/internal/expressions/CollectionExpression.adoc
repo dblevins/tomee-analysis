@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/CollectionExpression.class
-
- - link:CollectionExpression-asmified.java[Asmified]
-
-== References
-

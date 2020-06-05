@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/ObjectTypeConverter.class
-
- - link:ObjectTypeConverter-asmified.java[Asmified]
-
-== References
-

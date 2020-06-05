@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/ProxyFactoryConfig.class
-
- - link:ProxyFactoryConfig-asmified.java[Asmified]
-
-== References
-

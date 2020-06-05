@@ -1,6 +1,0 @@
-= org/apache/openjpa/ant/PCEnhancerTask.class
-
- - link:PCEnhancerTask-asmified.java[Asmified]
-
-== References
-

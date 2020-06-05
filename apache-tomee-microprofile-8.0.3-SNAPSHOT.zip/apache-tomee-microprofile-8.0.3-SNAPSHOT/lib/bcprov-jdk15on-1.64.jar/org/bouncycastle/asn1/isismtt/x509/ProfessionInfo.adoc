@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/isismtt/x509/ProfessionInfo.class
-
- - link:ProfessionInfo-asmified.java[Asmified]
-
-== References
-

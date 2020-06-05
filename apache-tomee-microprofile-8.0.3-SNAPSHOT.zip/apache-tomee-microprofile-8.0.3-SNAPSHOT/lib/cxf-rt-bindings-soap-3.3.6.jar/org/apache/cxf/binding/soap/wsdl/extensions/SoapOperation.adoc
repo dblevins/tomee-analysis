@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/wsdl/extensions/SoapOperation.class
-
- - link:SoapOperation-asmified.java[Asmified]
-
-== References
-

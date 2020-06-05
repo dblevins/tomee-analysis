@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/WebsocketSessionBean.class
-
- - link:WebsocketSessionBean-asmified.java[Asmified]
-
-== References
-

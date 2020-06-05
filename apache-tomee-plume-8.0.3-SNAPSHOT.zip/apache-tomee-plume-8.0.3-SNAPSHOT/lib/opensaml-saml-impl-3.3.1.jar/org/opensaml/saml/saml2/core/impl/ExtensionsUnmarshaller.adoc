@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/ExtensionsUnmarshaller.class
-
- - link:ExtensionsUnmarshaller-asmified.java[Asmified]
-
-== References
-

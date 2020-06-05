@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/jsse/TLSClientParametersConfig.class
-
- - link:TLSClientParametersConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/list/PredicatedList$PredicatedListIterator.class
-
- - link:PredicatedList$PredicatedListIterator-asmified.java[Asmified]
-
-== References
-

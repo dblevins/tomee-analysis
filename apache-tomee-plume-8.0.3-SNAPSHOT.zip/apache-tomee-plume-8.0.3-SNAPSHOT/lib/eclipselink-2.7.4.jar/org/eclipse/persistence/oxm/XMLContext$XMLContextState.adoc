@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/XMLContext$XMLContextState.class
-
- - link:XMLContext$XMLContextState-asmified.java[Asmified]
-
-== References
-

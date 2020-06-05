@@ -1,6 +1,0 @@
-= org/hsqldb/persist/LobManager$ALLOC_PART.class
-
- - link:LobManager$ALLOC_PART-asmified.java[Asmified]
-
-== References
-

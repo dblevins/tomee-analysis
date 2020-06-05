@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/visit/VisitContextFactoryImpl.class
-
- - link:VisitContextFactoryImpl-asmified.java[Asmified]
-
-== References
-

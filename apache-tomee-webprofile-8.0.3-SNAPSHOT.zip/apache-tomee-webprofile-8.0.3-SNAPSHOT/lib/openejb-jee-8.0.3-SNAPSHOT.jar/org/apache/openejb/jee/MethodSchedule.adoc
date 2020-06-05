@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MethodSchedule.class
-
- - link:MethodSchedule-asmified.java[Asmified]
-
-== References
-

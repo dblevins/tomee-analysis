@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/AbstractAccessLogValve$HostElement.class
-
- - link:AbstractAccessLogValve$HostElement-asmified.java[Asmified]
-
-== References
-

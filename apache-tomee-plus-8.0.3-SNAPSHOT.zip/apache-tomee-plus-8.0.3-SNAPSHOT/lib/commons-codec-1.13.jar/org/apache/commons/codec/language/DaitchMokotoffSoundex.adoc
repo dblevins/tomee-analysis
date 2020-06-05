@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/DaitchMokotoffSoundex.class
-
- - link:DaitchMokotoffSoundex-asmified.java[Asmified]
-
-== References
-

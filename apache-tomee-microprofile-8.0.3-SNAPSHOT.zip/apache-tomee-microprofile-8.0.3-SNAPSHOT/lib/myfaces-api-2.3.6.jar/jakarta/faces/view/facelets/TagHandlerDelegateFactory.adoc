@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/TagHandlerDelegateFactory.class
-
- - link:TagHandlerDelegateFactory-asmified.java[Asmified]
-
-== References
-

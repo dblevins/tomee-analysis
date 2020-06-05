@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidationJob$ContainerElementCascadeFrame.class
-
- - link:ValidationJob$ContainerElementCascadeFrame-asmified.java[Asmified]
-
-== References
-

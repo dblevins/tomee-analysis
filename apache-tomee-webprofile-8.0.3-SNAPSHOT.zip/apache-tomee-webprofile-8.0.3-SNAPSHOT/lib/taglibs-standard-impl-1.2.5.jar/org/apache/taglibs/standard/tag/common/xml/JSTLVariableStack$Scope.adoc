@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/xml/JSTLVariableStack$Scope.class
-
- - link:JSTLVariableStack$Scope-asmified.java[Asmified]
-
-== References
-

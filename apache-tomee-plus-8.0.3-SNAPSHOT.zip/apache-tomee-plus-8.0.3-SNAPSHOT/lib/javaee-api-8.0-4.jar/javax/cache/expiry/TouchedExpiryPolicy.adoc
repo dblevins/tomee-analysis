@@ -1,6 +1,0 @@
-= javax/cache/expiry/TouchedExpiryPolicy.class
-
- - link:TouchedExpiryPolicy-asmified.java[Asmified]
-
-== References
-

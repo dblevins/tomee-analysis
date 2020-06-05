@@ -1,6 +1,0 @@
-= jakarta/xml/registry/UnexpectedObjectException.class
-
- - link:UnexpectedObjectException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/TopicSubscriptionViewMBean.class
-
- - link:TopicSubscriptionViewMBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor.class
-
- - link:JaxWsWebServicePublisherBeanPostProcessor-asmified.java[Asmified]
-
-== References
-

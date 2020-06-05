@@ -1,6 +1,0 @@
-= javax/xml/bind/JAXBPermission.class
-
- - link:JAXBPermission-asmified.java[Asmified]
-
-== References
-

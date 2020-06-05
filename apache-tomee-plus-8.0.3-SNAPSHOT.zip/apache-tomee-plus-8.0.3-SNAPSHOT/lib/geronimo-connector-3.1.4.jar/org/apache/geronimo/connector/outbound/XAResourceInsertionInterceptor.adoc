@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/XAResourceInsertionInterceptor.class
-
- - link:XAResourceInsertionInterceptor-asmified.java[Asmified]
-
-== References
-

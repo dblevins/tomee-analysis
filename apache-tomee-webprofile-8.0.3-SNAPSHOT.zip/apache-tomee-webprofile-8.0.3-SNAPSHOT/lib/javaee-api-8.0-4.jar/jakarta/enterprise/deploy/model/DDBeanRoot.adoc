@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/model/DDBeanRoot.class
-
- - link:DDBeanRoot-asmified.java[Asmified]
-
-== References
-

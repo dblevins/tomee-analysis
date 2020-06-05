@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/OutputMessageRenderer.class
-
- - link:OutputMessageRenderer-asmified.java[Asmified]
-
-== References
-

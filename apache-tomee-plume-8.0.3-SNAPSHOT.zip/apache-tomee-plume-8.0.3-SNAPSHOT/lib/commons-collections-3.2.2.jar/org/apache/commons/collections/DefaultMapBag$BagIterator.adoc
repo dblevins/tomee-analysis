@@ -1,6 +1,0 @@
-= org/apache/commons/collections/DefaultMapBag$BagIterator.class
-
- - link:DefaultMapBag$BagIterator-asmified.java[Asmified]
-
-== References
-

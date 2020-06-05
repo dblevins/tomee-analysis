@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/messaging/WSAddressingContext.class
-
- - link:WSAddressingContext-asmified.java[Asmified]
-
-== References
-

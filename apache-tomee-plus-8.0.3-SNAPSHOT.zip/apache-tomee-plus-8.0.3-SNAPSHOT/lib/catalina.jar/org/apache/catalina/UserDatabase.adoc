@@ -1,6 +1,0 @@
-= org/apache/catalina/UserDatabase.class
-
- - link:UserDatabase-asmified.java[Asmified]
-
-== References
-

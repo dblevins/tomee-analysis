@@ -1,6 +1,0 @@
-= org/opensaml/profile/action/AbstractConditionalProfileAction.class
-
- - link:AbstractConditionalProfileAction-asmified.java[Asmified]
-
-== References
-

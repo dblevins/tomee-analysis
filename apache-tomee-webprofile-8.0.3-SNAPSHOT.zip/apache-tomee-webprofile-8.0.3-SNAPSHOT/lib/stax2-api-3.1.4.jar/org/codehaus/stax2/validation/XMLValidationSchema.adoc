@@ -1,6 +1,0 @@
-= org/codehaus/stax2/validation/XMLValidationSchema.class
-
- - link:XMLValidationSchema-asmified.java[Asmified]
-
-== References
-

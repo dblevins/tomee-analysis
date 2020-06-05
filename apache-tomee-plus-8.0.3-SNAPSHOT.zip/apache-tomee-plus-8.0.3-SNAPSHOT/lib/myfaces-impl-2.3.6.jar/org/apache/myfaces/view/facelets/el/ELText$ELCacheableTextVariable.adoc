@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/ELText$ELCacheableTextVariable.class
-
- - link:ELText$ELCacheableTextVariable-asmified.java[Asmified]
-
-== References
-

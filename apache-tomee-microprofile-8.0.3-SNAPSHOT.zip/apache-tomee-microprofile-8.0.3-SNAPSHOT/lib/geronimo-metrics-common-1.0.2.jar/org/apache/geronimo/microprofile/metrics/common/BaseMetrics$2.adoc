@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/BaseMetrics$2.class
-
- - link:BaseMetrics$2-asmified.java[Asmified]
-
-== References
-

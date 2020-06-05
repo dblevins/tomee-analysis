@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/collections/ManagedConcurrentWeakHashMap.class
-
- - link:ManagedConcurrentWeakHashMap-asmified.java[Asmified]
-
-== References
-

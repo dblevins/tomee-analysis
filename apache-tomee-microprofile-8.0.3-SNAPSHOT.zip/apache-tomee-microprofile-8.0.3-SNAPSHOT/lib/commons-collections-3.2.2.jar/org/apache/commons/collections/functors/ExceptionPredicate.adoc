@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/ExceptionPredicate.class
-
- - link:ExceptionPredicate-asmified.java[Asmified]
-
-== References
-

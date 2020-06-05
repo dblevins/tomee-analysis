@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/TextOptimizer.class
-
- - link:TextOptimizer-asmified.java[Asmified]
-
-== References
-

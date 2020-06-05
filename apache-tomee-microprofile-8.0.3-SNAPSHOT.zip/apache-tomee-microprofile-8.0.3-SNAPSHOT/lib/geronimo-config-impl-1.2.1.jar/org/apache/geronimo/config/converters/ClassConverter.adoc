@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/converters/ClassConverter.class
-
- - link:ClassConverter-asmified.java[Asmified]
-
-== References
-

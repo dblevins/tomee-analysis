@@ -1,6 +1,0 @@
-= org/apache/tomee/jul/handler/rotating/LocalFileHandler$2.class
-
- - link:LocalFileHandler$2-asmified.java[Asmified]
-
-== References
-

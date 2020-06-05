@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ECopyState.class
-
- - link:ECopyState-asmified.java[Asmified]
-
-== References
-

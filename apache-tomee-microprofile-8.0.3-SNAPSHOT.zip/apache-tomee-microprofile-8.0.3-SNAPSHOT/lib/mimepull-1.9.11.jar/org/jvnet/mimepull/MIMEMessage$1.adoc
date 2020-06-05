@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/MIMEMessage$1.class
-
- - link:MIMEMessage$1-asmified.java[Asmified]
-
-== References
-

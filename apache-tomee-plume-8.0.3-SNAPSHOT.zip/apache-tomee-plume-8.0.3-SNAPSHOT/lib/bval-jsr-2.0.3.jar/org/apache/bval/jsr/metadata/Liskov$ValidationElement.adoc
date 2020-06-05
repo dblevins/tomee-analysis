@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/Liskov$ValidationElement.class
-
- - link:Liskov$ValidationElement-asmified.java[Asmified]
-
-== References
-

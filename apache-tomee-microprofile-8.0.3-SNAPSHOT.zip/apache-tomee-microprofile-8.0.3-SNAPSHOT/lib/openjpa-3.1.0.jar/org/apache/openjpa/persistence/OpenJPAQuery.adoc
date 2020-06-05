@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/OpenJPAQuery.class
-
- - link:OpenJPAQuery-asmified.java[Asmified]
-
-== References
-

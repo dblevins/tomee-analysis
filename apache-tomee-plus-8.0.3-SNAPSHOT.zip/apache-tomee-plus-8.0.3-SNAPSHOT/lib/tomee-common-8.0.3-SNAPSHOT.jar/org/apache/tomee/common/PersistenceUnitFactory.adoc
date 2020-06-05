@@ -1,6 +1,0 @@
-= org/apache/tomee/common/PersistenceUnitFactory.class
-
- - link:PersistenceUnitFactory-asmified.java[Asmified]
-
-== References
-

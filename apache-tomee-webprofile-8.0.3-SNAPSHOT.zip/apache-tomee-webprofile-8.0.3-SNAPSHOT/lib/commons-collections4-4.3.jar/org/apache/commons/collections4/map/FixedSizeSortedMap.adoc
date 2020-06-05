@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/map/FixedSizeSortedMap.class
-
- - link:FixedSizeSortedMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/CacheStatisticsSPI.class
-
- - link:CacheStatisticsSPI-asmified.java[Asmified]
-
-== References
-

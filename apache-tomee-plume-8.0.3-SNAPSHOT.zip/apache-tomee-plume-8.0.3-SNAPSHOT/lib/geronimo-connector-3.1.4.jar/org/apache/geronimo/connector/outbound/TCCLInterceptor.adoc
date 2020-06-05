@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/TCCLInterceptor.class
-
- - link:TCCLInterceptor-asmified.java[Asmified]
-
-== References
-

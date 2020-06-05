@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBEnumTypeConverter.class
-
- - link:JAXBEnumTypeConverter-asmified.java[Asmified]
-
-== References
-

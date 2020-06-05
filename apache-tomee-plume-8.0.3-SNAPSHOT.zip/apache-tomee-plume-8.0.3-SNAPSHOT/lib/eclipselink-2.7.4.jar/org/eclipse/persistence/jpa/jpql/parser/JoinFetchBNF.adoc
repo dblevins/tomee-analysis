@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/JoinFetchBNF.class
-
- - link:JoinFetchBNF-asmified.java[Asmified]
-
-== References
-

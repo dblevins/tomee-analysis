@@ -1,6 +1,0 @@
-= org/apache/commons/collections/buffer/BoundedBuffer$NotifyingIterator.class
-
- - link:BoundedBuffer$NotifyingIterator-asmified.java[Asmified]
-
-== References
-

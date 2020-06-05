@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogException.class
-
- - link:LogException-asmified.java[Asmified]
-
-== References
-

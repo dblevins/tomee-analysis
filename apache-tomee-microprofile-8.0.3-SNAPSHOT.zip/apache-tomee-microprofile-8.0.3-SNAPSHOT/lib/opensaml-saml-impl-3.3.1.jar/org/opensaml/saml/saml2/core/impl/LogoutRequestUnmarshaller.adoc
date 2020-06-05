@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/LogoutRequestUnmarshaller.class
-
- - link:LogoutRequestUnmarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/xml/registry/RegistryException.class
-
- - link:RegistryException-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 7
- - javax.xml.registry.infomodel.Key - 5

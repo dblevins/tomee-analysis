@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/ExistsExpression.class
-
- - link:ExistsExpression-asmified.java[Asmified]
-
-== References
-

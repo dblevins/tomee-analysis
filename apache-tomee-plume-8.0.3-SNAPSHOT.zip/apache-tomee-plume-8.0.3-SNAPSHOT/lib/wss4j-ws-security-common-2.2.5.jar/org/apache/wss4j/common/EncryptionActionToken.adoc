@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/EncryptionActionToken.class
-
- - link:EncryptionActionToken-asmified.java[Asmified]
-
-== References
-

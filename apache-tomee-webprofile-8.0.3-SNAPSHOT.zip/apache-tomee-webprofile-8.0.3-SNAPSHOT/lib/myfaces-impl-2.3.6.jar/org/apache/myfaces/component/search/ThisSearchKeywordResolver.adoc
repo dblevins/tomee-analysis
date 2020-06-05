@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/search/ThisSearchKeywordResolver.class
-
- - link:ThisSearchKeywordResolver-asmified.java[Asmified]
-
-== References
-

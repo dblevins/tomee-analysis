@@ -1,6 +1,0 @@
-= org/apache/openejb/openjpa/PrefixMappingRepository$1.class
-
- - link:PrefixMappingRepository$1-asmified.java[Asmified]
-
-== References
-

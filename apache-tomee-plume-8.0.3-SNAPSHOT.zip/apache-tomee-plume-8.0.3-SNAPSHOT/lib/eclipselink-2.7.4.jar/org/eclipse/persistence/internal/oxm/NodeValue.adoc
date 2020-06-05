@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/NodeValue.class
-
- - link:NodeValue-asmified.java[Asmified]
-
-== References
-

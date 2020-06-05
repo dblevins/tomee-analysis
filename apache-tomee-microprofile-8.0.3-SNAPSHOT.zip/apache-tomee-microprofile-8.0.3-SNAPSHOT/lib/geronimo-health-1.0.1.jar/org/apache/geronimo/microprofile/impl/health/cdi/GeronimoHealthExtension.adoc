@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/impl/health/cdi/GeronimoHealthExtension.class
-
- - link:GeronimoHealthExtension-asmified.java[Asmified]
-
-== References
-

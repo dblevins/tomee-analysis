@@ -1,6 +1,0 @@
-= serp/bytecode/BCMethod.class
-
- - link:BCMethod-asmified.java[Asmified]
-
-== References
-

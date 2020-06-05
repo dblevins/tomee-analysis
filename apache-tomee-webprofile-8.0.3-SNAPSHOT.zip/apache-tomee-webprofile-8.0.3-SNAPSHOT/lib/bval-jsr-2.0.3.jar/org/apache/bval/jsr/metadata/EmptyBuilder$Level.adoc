@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/EmptyBuilder$Level.class
-
- - link:EmptyBuilder$Level-asmified.java[Asmified]
-
-== References
-

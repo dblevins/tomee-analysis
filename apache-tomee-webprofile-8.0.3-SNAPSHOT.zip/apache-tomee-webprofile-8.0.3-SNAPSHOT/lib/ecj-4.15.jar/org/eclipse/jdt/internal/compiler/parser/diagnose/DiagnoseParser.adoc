@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/diagnose/DiagnoseParser.class
-
- - link:DiagnoseParser-asmified.java[Asmified]
-
-== References
-

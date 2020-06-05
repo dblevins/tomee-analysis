@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/ArithmeticExpression.class
-
- - link:ArithmeticExpression-asmified.java[Asmified]
-
-== References
-

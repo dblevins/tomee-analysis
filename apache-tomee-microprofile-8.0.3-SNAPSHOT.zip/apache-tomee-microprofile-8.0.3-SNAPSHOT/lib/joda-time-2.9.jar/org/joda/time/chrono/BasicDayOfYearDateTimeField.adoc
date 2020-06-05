@@ -1,6 +1,0 @@
-= org/joda/time/chrono/BasicDayOfYearDateTimeField.class
-
- - link:BasicDayOfYearDateTimeField-asmified.java[Asmified]
-
-== References
-

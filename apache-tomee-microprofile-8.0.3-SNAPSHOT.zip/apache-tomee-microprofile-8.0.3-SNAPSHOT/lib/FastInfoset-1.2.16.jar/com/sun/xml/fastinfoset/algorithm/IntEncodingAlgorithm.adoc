@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/IntEncodingAlgorithm.class
-
- - link:IntEncodingAlgorithm-asmified.java[Asmified]
-
-== References
-

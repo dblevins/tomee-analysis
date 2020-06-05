@@ -1,6 +1,0 @@
-= org/joda/time/chrono/JulianChronology.class
-
- - link:JulianChronology-asmified.java[Asmified]
-
-== References
-

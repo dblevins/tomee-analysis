@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/UserTagHandler.class
-
- - link:UserTagHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/evt/NamespaceEventImpl.class
-
- - link:NamespaceEventImpl-asmified.java[Asmified]
-
-== References
-

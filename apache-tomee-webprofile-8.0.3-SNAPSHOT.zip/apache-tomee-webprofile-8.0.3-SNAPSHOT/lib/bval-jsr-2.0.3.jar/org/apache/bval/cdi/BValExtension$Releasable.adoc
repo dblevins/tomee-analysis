@@ -1,6 +1,0 @@
-= org/apache/bval/cdi/BValExtension$Releasable.class
-
- - link:BValExtension$Releasable-asmified.java[Asmified]
-
-== References
-

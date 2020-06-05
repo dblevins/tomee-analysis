@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/facets/PatternListFacet.class
-
- - link:PatternListFacet-asmified.java[Asmified]
-
-== References
-

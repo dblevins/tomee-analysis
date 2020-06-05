@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ArrayBinding$1.class
-
- - link:ArrayBinding$1-asmified.java[Asmified]
-
-== References
-

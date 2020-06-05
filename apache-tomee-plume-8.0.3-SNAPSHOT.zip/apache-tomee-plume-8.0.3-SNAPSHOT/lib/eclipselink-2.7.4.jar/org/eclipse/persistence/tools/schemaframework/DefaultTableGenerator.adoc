@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/schemaframework/DefaultTableGenerator.class
-
- - link:DefaultTableGenerator-asmified.java[Asmified]
-
-== References
-

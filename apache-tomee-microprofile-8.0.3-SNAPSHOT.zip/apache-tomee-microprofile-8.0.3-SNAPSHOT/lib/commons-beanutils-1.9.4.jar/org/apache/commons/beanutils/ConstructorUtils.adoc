@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/ConstructorUtils.class
-
- - link:ConstructorUtils-asmified.java[Asmified]
-
-== References
-

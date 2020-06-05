@@ -1,6 +1,0 @@
-= jakarta/mail/internet/InternetHeaders.class
-
- - link:InternetHeaders-asmified.java[Asmified]
-
-== References
-

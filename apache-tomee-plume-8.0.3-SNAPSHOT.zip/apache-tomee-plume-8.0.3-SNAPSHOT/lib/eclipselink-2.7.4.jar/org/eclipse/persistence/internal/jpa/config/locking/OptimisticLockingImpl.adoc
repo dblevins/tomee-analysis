@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/locking/OptimisticLockingImpl.class
-
- - link:OptimisticLockingImpl-asmified.java[Asmified]
-
-== References
-

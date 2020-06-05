@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/schema/SchemaConstants.class
-
- - link:SchemaConstants-asmified.java[Asmified]
-
-== References
-

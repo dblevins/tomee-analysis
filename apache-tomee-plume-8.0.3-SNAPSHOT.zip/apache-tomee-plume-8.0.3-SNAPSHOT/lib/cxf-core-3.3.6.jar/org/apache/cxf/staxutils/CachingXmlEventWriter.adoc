@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/CachingXmlEventWriter.class
-
- - link:CachingXmlEventWriter-asmified.java[Asmified]
-
-== References
-

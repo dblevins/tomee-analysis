@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/view/ConnectionDotFilePlugin.class
-
- - link:ConnectionDotFilePlugin-asmified.java[Asmified]
-
-== References
-

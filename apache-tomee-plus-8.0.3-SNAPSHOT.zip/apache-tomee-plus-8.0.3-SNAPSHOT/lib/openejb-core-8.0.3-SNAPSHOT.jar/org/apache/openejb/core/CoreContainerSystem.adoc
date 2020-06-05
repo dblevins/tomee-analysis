@@ -1,6 +1,0 @@
-= org/apache/openejb/core/CoreContainerSystem.class
-
- - link:CoreContainerSystem-asmified.java[Asmified]
-
-== References
-

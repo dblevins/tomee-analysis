@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlPath.class
-
- - link:XmlPath-asmified.java[Asmified]
-
-== References
-

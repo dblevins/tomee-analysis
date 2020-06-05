@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/PLSQLCursorWrapper.class
-
- - link:PLSQLCursorWrapper-asmified.java[Asmified]
-
-== References
-

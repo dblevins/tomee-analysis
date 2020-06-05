@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/Model.class
-
- - link:Model-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/validate/SignatureTokenValidatorImpl.class
-
- - link:SignatureTokenValidatorImpl-asmified.java[Asmified]
-
-== References
-

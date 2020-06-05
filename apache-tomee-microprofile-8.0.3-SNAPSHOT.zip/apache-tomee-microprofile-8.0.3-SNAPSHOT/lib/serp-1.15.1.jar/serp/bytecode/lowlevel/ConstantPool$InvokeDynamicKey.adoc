@@ -1,6 +1,0 @@
-= serp/bytecode/lowlevel/ConstantPool$InvokeDynamicKey.class
-
- - link:ConstantPool$InvokeDynamicKey-asmified.java[Asmified]
-
-== References
-

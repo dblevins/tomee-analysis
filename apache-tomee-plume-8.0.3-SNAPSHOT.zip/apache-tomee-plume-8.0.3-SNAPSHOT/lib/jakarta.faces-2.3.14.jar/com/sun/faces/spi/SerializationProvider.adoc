@@ -1,6 +1,0 @@
-= com/sun/faces/spi/SerializationProvider.class
-
- - link:SerializationProvider-asmified.java[Asmified]
-
-== References
-

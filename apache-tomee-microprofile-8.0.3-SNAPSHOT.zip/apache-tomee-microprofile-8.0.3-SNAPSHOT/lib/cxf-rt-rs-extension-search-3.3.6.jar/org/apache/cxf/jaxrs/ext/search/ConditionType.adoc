@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/ConditionType.class
-
- - link:ConditionType-asmified.java[Asmified]
-
-== References
-

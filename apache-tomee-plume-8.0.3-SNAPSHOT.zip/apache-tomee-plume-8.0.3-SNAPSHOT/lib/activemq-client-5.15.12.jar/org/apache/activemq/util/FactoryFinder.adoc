@@ -1,6 +1,0 @@
-= org/apache/activemq/util/FactoryFinder.class
-
- - link:FactoryFinder-asmified.java[Asmified]
-
-== References
-

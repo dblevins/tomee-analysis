@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AbstractAnnotatedCallable.class
-
- - link:AbstractAnnotatedCallable-asmified.java[Asmified]
-
-== References
-

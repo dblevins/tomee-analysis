@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/CollectionMemberExpressionBNF.class
-
- - link:CollectionMemberExpressionBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/XMLSignatureBuilder.class
-
- - link:XMLSignatureBuilder-asmified.java[Asmified]
-
-== References
-

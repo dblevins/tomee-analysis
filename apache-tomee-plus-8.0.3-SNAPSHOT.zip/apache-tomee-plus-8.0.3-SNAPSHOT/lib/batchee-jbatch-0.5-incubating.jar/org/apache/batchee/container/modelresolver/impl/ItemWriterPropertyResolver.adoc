@@ -1,6 +1,0 @@
-= org/apache/batchee/container/modelresolver/impl/ItemWriterPropertyResolver.class
-
- - link:ItemWriterPropertyResolver-asmified.java[Asmified]
-
-== References
-

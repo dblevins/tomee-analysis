@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/jdbc/DistributedJDBCBrokerFactory.class
-
- - link:DistributedJDBCBrokerFactory-asmified.java[Asmified]
-
-== References
-

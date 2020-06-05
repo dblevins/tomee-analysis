@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/TransformedMap.class
-
- - link:TransformedMap-asmified.java[Asmified]
-
-== References
-

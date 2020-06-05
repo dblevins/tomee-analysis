@@ -1,6 +1,0 @@
-= org/apache/activemq/util/TypeConversionSupport$7.class
-
- - link:TypeConversionSupport$7-asmified.java[Asmified]
-
-== References
-

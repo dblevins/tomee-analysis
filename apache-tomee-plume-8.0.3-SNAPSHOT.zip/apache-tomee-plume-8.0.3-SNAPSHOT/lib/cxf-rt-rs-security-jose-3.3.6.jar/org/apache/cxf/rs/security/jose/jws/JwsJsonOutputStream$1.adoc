@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/JwsJsonOutputStream$1.class
-
- - link:JwsJsonOutputStream$1-asmified.java[Asmified]
-
-== References
-

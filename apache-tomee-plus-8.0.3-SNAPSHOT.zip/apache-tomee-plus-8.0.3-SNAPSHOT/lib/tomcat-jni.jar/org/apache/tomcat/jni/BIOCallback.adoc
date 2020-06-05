@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/BIOCallback.class
-
- - link:BIOCallback-asmified.java[Asmified]
-
-== References
-

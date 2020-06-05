@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/setup/ConfigurationConverter.class
-
- - link:ConfigurationConverter-asmified.java[Asmified]
-
-== References
-

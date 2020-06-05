@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/BindingConfiguration.class
-
- - link:BindingConfiguration-asmified.java[Asmified]
-
-== References
-

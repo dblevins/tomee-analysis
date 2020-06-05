@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/SimpleBigDecimal.class
-
- - link:SimpleBigDecimal-asmified.java[Asmified]
-
-== References
-

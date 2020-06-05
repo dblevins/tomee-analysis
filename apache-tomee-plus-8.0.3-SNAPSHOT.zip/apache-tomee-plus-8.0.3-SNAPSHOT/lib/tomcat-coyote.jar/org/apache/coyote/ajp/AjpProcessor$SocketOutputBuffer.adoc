@@ -1,6 +1,0 @@
-= org/apache/coyote/ajp/AjpProcessor$SocketOutputBuffer.class
-
- - link:AjpProcessor$SocketOutputBuffer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/PersistenceUnitReferenceInfo.class
-
- - link:PersistenceUnitReferenceInfo-asmified.java[Asmified]
-
-== References
-

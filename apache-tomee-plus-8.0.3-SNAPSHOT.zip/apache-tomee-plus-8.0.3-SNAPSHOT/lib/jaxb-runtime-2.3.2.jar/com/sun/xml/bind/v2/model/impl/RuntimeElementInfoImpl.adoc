@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/impl/RuntimeElementInfoImpl.class
-
- - link:RuntimeElementInfoImpl-asmified.java[Asmified]
-
-== References
-

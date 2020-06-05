@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/resourceResolvers/ResolverFilesystem.class
-
- - link:ResolverFilesystem-asmified.java[Asmified]
-
-== References
-

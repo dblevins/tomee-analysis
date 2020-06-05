@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/ServletController.class
-
- - link:ServletController-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/EditableValueHolderAttachedObjectTargetHandler.class
-
- - link:EditableValueHolderAttachedObjectTargetHandler-asmified.java[Asmified]
-
-== References
-

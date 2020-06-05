@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/UnaryExpressionPredicate.class
-
- - link:UnaryExpressionPredicate-asmified.java[Asmified]
-
-== References
-

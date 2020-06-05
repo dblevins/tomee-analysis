@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/i18n/BeanValidationExceptionResource.class
-
- - link:BeanValidationExceptionResource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/ResettableListIterator.class
-
- - link:ResettableListIterator-asmified.java[Asmified]
-
-== References
-

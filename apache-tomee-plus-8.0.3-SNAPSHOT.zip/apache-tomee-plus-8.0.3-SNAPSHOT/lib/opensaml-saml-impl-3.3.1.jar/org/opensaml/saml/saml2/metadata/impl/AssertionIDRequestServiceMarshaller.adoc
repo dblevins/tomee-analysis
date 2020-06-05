@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/AssertionIDRequestServiceMarshaller.class
-
- - link:AssertionIDRequestServiceMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/XoXMLStreamReaderImpl$AttributesIterator.class
-
- - link:XoXMLStreamReaderImpl$AttributesIterator-asmified.java[Asmified]
-
-== References
-

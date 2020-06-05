@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.class
-
- - link:CompleteCondition-asmified.java[Asmified]
-
-== References
-

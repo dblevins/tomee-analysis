@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/ComponentConfigHandler.class
-
- - link:ComponentConfigHandler-asmified.java[Asmified]
-
-== References
-

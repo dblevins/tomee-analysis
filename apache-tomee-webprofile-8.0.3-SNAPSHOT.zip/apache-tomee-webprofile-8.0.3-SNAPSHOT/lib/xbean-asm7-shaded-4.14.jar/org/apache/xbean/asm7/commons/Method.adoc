@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/Method.class
-
- - link:Method-asmified.java[Asmified]
-
-== References
-

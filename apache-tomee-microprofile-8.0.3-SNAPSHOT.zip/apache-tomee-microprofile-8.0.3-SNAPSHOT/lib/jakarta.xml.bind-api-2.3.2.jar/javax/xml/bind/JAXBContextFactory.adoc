@@ -1,8 +1,0 @@
-= javax/xml/bind/JAXBContextFactory.class
-
- - link:JAXBContextFactory-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.JAXBException - 2
- - javax.xml.bind.JAXBContext - 2

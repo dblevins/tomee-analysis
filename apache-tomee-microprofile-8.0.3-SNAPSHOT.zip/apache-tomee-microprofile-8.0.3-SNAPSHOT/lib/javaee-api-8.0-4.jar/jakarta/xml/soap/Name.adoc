@@ -1,6 +1,0 @@
-= jakarta/xml/soap/Name.class
-
- - link:Name-asmified.java[Asmified]
-
-== References
-

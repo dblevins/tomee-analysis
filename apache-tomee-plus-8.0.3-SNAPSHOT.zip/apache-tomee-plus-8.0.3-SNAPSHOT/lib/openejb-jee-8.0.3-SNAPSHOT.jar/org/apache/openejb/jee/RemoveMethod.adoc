@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/RemoveMethod.class
-
- - link:RemoveMethod-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl.class
-
- - link:JMSConsumerImpl-asmified.java[Asmified]
-
-== References
-

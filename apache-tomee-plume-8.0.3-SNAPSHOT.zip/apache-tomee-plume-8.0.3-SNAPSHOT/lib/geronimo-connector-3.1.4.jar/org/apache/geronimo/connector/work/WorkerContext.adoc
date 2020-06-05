@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/work/WorkerContext.class
-
- - link:WorkerContext-asmified.java[Asmified]
-
-== References
-

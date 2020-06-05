@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/jsonp/RewindableJsonParser.class
-
- - link:RewindableJsonParser-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/entity/EntityContext.class
-
- - link:EntityContext-asmified.java[Asmified]
-
-== References
-

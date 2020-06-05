@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/NoLocalExpression.class
-
- - link:NoLocalExpression-asmified.java[Asmified]
-
-== References
-

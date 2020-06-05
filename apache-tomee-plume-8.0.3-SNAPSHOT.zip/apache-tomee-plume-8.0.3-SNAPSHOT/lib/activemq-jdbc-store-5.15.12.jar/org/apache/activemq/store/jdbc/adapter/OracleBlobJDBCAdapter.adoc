@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/OracleBlobJDBCAdapter.class
-
- - link:OracleBlobJDBCAdapter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/RequestProtection.class
-
- - link:RequestProtection-asmified.java[Asmified]
-
-== References
-

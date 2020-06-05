@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/JAXRSInvoker.class
-
- - link:JAXRSInvoker-asmified.java[Asmified]
-
-== References
-

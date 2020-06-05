@@ -1,6 +1,0 @@
-= jakarta/json/bind/annotation/JsonbTransient.class
-
- - link:JsonbTransient-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/Assertion.class
-
- - link:Assertion-asmified.java[Asmified]
-
-== References
-

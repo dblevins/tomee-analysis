@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/TypeDescription.class
-
- - link:TypeDescription-asmified.java[Asmified]
-
-== References
-

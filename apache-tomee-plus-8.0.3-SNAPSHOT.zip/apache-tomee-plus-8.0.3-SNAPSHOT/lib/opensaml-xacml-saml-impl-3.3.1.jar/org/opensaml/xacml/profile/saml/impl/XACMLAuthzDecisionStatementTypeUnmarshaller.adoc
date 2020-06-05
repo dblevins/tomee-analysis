@@ -1,6 +1,0 @@
-= org/opensaml/xacml/profile/saml/impl/XACMLAuthzDecisionStatementTypeUnmarshaller.class
-
- - link:XACMLAuthzDecisionStatementTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

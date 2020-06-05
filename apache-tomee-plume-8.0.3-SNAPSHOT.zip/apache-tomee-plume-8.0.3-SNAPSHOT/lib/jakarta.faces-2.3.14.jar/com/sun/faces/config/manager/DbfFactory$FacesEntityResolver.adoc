@@ -1,6 +1,0 @@
-= com/sun/faces/config/manager/DbfFactory$FacesEntityResolver.class
-
- - link:DbfFactory$FacesEntityResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/ecp/impl/RequestAuthenticatedMarshaller.class
-
- - link:RequestAuthenticatedMarshaller-asmified.java[Asmified]
-
-== References
-

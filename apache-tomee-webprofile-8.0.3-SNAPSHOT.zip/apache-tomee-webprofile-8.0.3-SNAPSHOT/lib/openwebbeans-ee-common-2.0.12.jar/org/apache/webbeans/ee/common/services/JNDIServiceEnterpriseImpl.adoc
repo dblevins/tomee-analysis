@@ -1,6 +1,0 @@
-= org/apache/webbeans/ee/common/services/JNDIServiceEnterpriseImpl.class
-
- - link:JNDIServiceEnterpriseImpl-asmified.java[Asmified]
-
-== References
-

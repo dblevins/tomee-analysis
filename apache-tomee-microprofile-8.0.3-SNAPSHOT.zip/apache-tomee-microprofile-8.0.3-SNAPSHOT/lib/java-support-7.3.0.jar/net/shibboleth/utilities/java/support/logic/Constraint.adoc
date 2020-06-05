@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/logic/Constraint.class
-
- - link:Constraint-asmified.java[Asmified]
-
-== References
-

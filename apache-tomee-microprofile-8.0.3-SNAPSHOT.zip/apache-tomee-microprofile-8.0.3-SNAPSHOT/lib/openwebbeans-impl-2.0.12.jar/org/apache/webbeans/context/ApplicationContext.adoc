@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/ApplicationContext.class
-
- - link:ApplicationContext-asmified.java[Asmified]
-
-== References
-

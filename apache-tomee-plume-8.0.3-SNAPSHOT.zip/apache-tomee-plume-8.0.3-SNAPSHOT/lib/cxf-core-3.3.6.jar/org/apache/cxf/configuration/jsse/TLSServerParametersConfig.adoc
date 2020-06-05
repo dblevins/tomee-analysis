@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/jsse/TLSServerParametersConfig.class
-
- - link:TLSServerParametersConfig-asmified.java[Asmified]
-
-== References
-

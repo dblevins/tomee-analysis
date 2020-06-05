@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentRule.class
-
- - link:CompositeComponentRule-asmified.java[Asmified]
-
-== References
-

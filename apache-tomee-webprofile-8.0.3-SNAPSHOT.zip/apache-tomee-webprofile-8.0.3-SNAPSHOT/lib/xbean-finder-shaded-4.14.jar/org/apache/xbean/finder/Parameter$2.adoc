@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/Parameter$2.class
-
- - link:Parameter$2-asmified.java[Asmified]
-
-== References
-

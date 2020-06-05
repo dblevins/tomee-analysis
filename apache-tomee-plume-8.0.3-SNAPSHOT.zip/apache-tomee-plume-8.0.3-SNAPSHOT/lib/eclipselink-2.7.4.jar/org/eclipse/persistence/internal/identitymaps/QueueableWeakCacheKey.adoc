@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/identitymaps/QueueableWeakCacheKey.class
-
- - link:QueueableWeakCacheKey-asmified.java[Asmified]
-
-== References
-

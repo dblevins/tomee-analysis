@@ -1,6 +1,0 @@
-= serp/bytecode/Annotation$1.class
-
- - link:Annotation$1-asmified.java[Asmified]
-
-== References
-

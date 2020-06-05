@@ -1,7 +1,0 @@
-= javax/xml/registry/SaveException.class
-
- - link:SaveException-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.RegistryException - 5

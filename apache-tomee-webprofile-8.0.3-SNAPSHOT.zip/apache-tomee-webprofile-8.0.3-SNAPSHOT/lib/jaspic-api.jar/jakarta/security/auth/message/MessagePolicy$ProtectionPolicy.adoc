@@ -1,6 +1,0 @@
-= jakarta/security/auth/message/MessagePolicy$ProtectionPolicy.class
-
- - link:MessagePolicy$ProtectionPolicy-asmified.java[Asmified]
-
-== References
-

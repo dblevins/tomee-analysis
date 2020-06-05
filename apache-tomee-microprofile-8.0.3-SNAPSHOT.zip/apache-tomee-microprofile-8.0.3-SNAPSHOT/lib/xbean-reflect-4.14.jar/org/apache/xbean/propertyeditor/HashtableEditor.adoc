@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/HashtableEditor.class
-
- - link:HashtableEditor-asmified.java[Asmified]
-
-== References
-

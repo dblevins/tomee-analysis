@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/jpa/domain/JobInstanceEntity.class
-
- - link:JobInstanceEntity-asmified.java[Asmified]
-
-== References
-

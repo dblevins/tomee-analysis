@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/AnnotationMemberValue.class
-
- - link:AnnotationMemberValue-asmified.java[Asmified]
-
-== References
-

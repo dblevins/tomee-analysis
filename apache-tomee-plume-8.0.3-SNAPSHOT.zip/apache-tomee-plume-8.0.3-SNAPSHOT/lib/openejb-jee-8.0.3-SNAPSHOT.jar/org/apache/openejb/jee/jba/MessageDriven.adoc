@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/MessageDriven.class
-
- - link:MessageDriven-asmified.java[Asmified]
-
-== References
-

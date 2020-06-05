@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/BusDefinitionParser$BusConfig.class
-
- - link:BusDefinitionParser$BusConfig-asmified.java[Asmified]
-
-== References
-

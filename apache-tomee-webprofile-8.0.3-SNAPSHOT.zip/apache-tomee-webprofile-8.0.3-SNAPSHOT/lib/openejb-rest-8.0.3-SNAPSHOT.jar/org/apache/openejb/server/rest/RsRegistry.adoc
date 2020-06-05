@@ -1,6 +1,0 @@
-= org/apache/openejb/server/rest/RsRegistry.class
-
- - link:RsRegistry-asmified.java[Asmified]
-
-== References
-

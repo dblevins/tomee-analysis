@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/OpenSAMLBootstrap.class
-
- - link:OpenSAMLBootstrap-asmified.java[Asmified]
-
-== References
-

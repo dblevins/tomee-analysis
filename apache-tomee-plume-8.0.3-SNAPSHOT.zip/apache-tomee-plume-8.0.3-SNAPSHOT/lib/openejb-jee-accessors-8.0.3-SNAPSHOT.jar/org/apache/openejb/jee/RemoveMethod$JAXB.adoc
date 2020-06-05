@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/RemoveMethod$JAXB.class
-
- - link:RemoveMethod$JAXB-asmified.java[Asmified]
-
-== References
-

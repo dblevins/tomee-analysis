@@ -1,6 +1,0 @@
-= org/apache/openejb/client/AuthenticationRequest.class
-
- - link:AuthenticationRequest-asmified.java[Asmified]
-
-== References
-

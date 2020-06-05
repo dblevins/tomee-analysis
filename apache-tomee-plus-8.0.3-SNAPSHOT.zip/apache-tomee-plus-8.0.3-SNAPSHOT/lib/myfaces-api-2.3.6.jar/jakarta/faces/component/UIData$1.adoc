@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIData$1.class
-
- - link:UIData$1-asmified.java[Asmified]
-
-== References
-

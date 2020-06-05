@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/NamedMethod.class
-
- - link:NamedMethod-asmified.java[Asmified]
-
-== References
-

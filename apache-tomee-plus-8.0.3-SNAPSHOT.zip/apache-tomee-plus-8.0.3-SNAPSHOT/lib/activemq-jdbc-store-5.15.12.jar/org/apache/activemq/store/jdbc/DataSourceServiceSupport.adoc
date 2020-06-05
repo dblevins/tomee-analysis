@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/DataSourceServiceSupport.class
-
- - link:DataSourceServiceSupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/health/HealthCheckResponse$State.class
-
- - link:HealthCheckResponse$State-asmified.java[Asmified]
-
-== References
-

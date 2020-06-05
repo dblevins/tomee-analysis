@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/SecurityUtil.class
-
- - link:SecurityUtil-asmified.java[Asmified]
-
-== References
-

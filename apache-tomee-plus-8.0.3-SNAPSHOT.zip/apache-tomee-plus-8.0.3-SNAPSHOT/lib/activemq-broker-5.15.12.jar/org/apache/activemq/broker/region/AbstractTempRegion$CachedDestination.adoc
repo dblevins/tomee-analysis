@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/AbstractTempRegion$CachedDestination.class
-
- - link:AbstractTempRegion$CachedDestination-asmified.java[Asmified]
-
-== References
-

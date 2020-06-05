@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/soap12/SOAP12HeaderImpl.class
-
- - link:SOAP12HeaderImpl-asmified.java[Asmified]
-
-== References
-

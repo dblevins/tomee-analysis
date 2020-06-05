@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/NonCachedMessageEvaluationContext.class
-
- - link:NonCachedMessageEvaluationContext-asmified.java[Asmified]
-
-== References
-

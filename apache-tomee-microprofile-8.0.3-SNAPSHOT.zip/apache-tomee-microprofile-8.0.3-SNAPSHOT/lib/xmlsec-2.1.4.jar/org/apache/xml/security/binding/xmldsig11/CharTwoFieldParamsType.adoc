@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/CharTwoFieldParamsType.class
-
- - link:CharTwoFieldParamsType-asmified.java[Asmified]
-
-== References
-

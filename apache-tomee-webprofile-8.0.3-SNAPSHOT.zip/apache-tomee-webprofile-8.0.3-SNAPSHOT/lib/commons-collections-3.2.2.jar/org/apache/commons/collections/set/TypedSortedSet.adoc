@@ -1,6 +1,0 @@
-= org/apache/commons/collections/set/TypedSortedSet.class
-
- - link:TypedSortedSet-asmified.java[Asmified]
-
-== References
-

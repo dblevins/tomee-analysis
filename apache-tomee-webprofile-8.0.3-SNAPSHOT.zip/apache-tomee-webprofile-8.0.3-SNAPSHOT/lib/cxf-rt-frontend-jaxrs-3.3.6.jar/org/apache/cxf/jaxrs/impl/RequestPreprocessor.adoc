@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/RequestPreprocessor.class
-
- - link:RequestPreprocessor-asmified.java[Asmified]
-
-== References
-

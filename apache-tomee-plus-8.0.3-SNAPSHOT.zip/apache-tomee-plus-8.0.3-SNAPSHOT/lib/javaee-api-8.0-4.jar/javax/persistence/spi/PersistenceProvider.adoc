@@ -1,9 +1,0 @@
-= javax/persistence/spi/PersistenceProvider.class
-
- - link:PersistenceProvider-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.EntityManagerFactory - 2
- - javax.persistence.spi.PersistenceUnitInfo - 2
- - javax.persistence.spi.ProviderUtil - 1

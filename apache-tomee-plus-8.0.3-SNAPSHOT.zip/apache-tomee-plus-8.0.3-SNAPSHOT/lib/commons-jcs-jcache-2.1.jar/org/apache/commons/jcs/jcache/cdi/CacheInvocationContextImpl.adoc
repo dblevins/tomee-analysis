@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl.class
-
- - link:CacheInvocationContextImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/memory/buffer/MessageBuffer.class
-
- - link:MessageBuffer-asmified.java[Asmified]
-
-== References
-

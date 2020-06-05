@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/ServerPolicyOutFaultInterceptor.class
-
- - link:ServerPolicyOutFaultInterceptor-asmified.java[Asmified]
-
-== References
-

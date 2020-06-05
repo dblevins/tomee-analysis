@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/FieldInfoWithAnnotation.class
-
- - link:FieldInfoWithAnnotation-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/AuxiliaryCacheFactory.class
-
- - link:AuxiliaryCacheFactory-asmified.java[Asmified]
-
-== References
-

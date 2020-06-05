@@ -1,7 +1,0 @@
-= javax/enterprise/deploy/model/XpathListener.class
-
- - link:XpathListener-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.deploy.model.XpathEvent - 1

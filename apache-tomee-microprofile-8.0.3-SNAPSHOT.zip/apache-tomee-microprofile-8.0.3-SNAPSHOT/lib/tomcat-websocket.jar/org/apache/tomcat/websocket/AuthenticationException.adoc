@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/AuthenticationException.class
-
- - link:AuthenticationException-asmified.java[Asmified]
-
-== References
-

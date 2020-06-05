@@ -1,6 +1,0 @@
-= com/sun/xml/bind/annotation/XmlLocation.class
-
- - link:XmlLocation-asmified.java[Asmified]
-
-== References
-

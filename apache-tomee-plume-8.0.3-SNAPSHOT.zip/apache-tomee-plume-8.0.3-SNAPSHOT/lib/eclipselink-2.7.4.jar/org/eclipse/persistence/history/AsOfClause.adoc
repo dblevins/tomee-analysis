@@ -1,6 +1,0 @@
-= org/eclipse/persistence/history/AsOfClause.class
-
- - link:AsOfClause-asmified.java[Asmified]
-
-== References
-

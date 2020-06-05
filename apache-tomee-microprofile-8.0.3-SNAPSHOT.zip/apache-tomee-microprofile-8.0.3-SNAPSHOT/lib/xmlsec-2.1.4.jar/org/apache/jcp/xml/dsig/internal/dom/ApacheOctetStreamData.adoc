@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/ApacheOctetStreamData.class
-
- - link:ApacheOctetStreamData-asmified.java[Asmified]
-
-== References
-

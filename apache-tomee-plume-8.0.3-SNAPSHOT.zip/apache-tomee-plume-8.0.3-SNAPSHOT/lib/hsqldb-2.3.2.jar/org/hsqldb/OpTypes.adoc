@@ -1,6 +1,0 @@
-= org/hsqldb/OpTypes.class
-
- - link:OpTypes-asmified.java[Asmified]
-
-== References
-

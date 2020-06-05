@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/PatternConverter.class
-
- - link:PatternConverter-asmified.java[Asmified]
-
-== References
-

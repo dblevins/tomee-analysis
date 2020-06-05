@@ -1,9 +1,0 @@
-= javax/faces/view/facelets/CompositeFaceletHandler.class
-
- - link:CompositeFaceletHandler-asmified.java[Asmified]
-
-== References
-
- - javax.faces.view.facelets.FaceletHandler - 8
- - javax.faces.view.facelets.FaceletContext - 2
- - javax.faces.component.UIComponent - 2

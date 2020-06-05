@@ -1,6 +1,0 @@
-= org/bouncycastle/util/BigIntegers.class
-
- - link:BigIntegers-asmified.java[Asmified]
-
-== References
-

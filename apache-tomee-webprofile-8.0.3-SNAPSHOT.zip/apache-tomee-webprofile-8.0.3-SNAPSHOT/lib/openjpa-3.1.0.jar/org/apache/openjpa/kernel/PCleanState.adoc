@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PCleanState.class
-
- - link:PCleanState-asmified.java[Asmified]
-
-== References
-

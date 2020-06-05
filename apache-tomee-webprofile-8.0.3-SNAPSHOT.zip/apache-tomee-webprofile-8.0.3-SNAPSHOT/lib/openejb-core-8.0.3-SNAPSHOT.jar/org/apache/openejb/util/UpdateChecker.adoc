@@ -1,6 +1,0 @@
-= org/apache/openejb/util/UpdateChecker.class
-
- - link:UpdateChecker-asmified.java[Asmified]
-
-== References
-

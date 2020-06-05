@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/IDResolver.class
-
- - link:IDResolver-asmified.java[Asmified]
-
-== References
-

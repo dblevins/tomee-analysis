@@ -1,6 +1,0 @@
-= org/opensaml/security/messaging/impl/BaseClientCertAuthSecurityHandler.class
-
- - link:BaseClientCertAuthSecurityHandler-asmified.java[Asmified]
-
-== References
-

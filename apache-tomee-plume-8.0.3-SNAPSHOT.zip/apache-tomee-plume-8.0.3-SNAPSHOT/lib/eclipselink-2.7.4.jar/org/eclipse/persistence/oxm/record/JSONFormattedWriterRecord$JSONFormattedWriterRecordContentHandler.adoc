@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/record/JSONFormattedWriterRecord$JSONFormattedWriterRecordContentHandler.class
-
- - link:JSONFormattedWriterRecord$JSONFormattedWriterRecordContentHandler-asmified.java[Asmified]
-
-== References
-

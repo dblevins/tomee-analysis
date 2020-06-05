@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/PathNavigation$PathPosition.class
-
- - link:PathNavigation$PathPosition-asmified.java[Asmified]
-
-== References
-

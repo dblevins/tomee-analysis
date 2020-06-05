@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaExternal.class
-
- - link:XmlSchemaExternal-asmified.java[Asmified]
-
-== References
-

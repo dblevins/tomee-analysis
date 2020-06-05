@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityToken/WSSecurityTokenConstants.class
-
- - link:WSSecurityTokenConstants-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/PathImpl.class
-
- - link:PathImpl-asmified.java[Asmified]
-
-== References
-

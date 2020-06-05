@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/SelectManyCheckboxListRenderer.class
-
- - link:SelectManyCheckboxListRenderer-asmified.java[Asmified]
-
-== References
-

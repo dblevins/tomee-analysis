@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/PoolUtils.class
-
- - link:PoolUtils-asmified.java[Asmified]
-
-== References
-

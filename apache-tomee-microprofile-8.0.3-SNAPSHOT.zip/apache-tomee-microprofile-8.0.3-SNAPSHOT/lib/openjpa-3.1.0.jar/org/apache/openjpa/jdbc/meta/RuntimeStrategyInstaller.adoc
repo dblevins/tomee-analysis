@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/RuntimeStrategyInstaller.class
-
- - link:RuntimeStrategyInstaller-asmified.java[Asmified]
-
-== References
-

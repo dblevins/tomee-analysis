@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/Warmup.class
-
- - link:Warmup-asmified.java[Asmified]
-
-== References
-

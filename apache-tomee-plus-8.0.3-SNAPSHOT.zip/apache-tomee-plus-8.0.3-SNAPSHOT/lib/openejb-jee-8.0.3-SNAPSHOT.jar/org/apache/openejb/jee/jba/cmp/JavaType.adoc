@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/JavaType.class
-
- - link:JavaType-asmified.java[Asmified]
-
-== References
-

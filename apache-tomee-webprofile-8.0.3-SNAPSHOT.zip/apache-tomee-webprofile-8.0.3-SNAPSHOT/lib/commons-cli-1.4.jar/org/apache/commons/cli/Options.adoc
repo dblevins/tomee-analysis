@@ -1,6 +1,0 @@
-= org/apache/commons/cli/Options.class
-
- - link:Options-asmified.java[Asmified]
-
-== References
-

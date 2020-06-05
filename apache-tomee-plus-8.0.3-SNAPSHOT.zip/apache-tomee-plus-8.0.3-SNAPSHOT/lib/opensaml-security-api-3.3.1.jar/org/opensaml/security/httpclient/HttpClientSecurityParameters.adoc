@@ -1,6 +1,0 @@
-= org/opensaml/security/httpclient/HttpClientSecurityParameters.class
-
- - link:HttpClientSecurityParameters-asmified.java[Asmified]
-
-== References
-

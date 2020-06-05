@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/ReferenceIdentityMap$ReferenceEntry.class
-
- - link:ReferenceIdentityMap$ReferenceEntry-asmified.java[Asmified]
-
-== References
-

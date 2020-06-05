@@ -1,6 +1,0 @@
-= jakarta/jms/QueueSender.class
-
- - link:QueueSender-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/metrics/NoMetrics.class
-
- - link:NoMetrics-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/SimpleResultSetRecord.class
-
- - link:SimpleResultSetRecord-asmified.java[Asmified]
-
-== References
-

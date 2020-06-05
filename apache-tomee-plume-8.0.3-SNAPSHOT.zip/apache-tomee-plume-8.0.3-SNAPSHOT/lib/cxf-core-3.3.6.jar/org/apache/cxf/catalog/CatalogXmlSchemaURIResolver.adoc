@@ -1,6 +1,0 @@
-= org/apache/cxf/catalog/CatalogXmlSchemaURIResolver.class
-
- - link:CatalogXmlSchemaURIResolver-asmified.java[Asmified]
-
-== References
-

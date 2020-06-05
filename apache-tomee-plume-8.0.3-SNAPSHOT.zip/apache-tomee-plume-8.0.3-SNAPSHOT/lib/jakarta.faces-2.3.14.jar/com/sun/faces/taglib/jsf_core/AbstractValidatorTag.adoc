@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/AbstractValidatorTag.class
-
- - link:AbstractValidatorTag-asmified.java[Asmified]
-
-== References
-

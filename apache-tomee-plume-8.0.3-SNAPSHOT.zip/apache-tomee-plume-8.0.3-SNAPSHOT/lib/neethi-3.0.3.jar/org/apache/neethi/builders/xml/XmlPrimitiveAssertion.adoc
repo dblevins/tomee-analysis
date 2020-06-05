@@ -1,6 +1,0 @@
-= org/apache/neethi/builders/xml/XmlPrimitiveAssertion.class
-
- - link:XmlPrimitiveAssertion-asmified.java[Asmified]
-
-== References
-

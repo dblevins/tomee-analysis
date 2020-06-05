@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/search/NoneSearchKeywordResolver.class
-
- - link:NoneSearchKeywordResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/coyote/InputBuffer.class
-
- - link:InputBuffer-asmified.java[Asmified]
-
-== References
-

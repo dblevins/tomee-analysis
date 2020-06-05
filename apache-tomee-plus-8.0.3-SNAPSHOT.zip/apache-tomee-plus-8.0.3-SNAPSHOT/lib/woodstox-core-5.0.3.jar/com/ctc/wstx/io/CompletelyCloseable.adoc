@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/CompletelyCloseable.class
-
- - link:CompletelyCloseable-asmified.java[Asmified]
-
-== References
-

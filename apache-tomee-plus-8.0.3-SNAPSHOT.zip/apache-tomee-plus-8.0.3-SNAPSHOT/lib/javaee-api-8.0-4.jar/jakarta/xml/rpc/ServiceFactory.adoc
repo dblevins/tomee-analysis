@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/ServiceFactory.class
-
- - link:ServiceFactory-asmified.java[Asmified]
-
-== References
-

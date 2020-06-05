@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/CompositeELResolver$CompositeIterator.class
-
- - link:CompositeELResolver$CompositeIterator-asmified.java[Asmified]
-
-== References
-

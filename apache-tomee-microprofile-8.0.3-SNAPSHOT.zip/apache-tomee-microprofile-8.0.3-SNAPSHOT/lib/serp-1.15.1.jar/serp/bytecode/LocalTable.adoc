@@ -1,6 +1,0 @@
-= serp/bytecode/LocalTable.class
-
- - link:LocalTable-asmified.java[Asmified]
-
-== References
-

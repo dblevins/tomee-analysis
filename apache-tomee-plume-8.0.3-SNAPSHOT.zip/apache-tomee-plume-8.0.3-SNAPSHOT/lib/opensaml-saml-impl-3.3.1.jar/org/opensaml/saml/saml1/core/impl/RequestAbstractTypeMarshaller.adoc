@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/RequestAbstractTypeMarshaller.class
-
- - link:RequestAbstractTypeMarshaller-asmified.java[Asmified]
-
-== References
-

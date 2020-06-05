@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/digester/CallMethodRule.class
-
- - link:CallMethodRule-asmified.java[Asmified]
-
-== References
-

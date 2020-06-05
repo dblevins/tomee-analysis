@@ -1,7 +1,0 @@
-= javax/ejb/ConcurrentAccessException.class
-
- - link:ConcurrentAccessException-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 4

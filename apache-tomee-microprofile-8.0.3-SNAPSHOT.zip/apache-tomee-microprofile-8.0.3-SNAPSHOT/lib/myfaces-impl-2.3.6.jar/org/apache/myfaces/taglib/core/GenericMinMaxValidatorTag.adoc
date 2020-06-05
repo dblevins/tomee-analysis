@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/GenericMinMaxValidatorTag.class
-
- - link:GenericMinMaxValidatorTag-asmified.java[Asmified]
-
-== References
-

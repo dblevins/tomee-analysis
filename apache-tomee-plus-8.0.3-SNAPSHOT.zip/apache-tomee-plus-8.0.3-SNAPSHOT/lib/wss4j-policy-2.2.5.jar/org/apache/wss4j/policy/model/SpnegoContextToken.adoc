@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/SpnegoContextToken.class
-
- - link:SpnegoContextToken-asmified.java[Asmified]
-
-== References
-

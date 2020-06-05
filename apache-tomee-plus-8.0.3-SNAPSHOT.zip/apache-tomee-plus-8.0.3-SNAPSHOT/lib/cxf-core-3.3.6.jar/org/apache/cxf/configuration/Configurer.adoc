@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/Configurer.class
-
- - link:Configurer-asmified.java[Asmified]
-
-== References
-

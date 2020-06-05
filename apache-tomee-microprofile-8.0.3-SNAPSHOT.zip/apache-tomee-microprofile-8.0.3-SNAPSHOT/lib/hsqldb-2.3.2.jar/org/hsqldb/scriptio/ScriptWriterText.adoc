@@ -1,6 +1,0 @@
-= org/hsqldb/scriptio/ScriptWriterText.class
-
- - link:ScriptWriterText-asmified.java[Asmified]
-
-== References
-

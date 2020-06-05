@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/WSSecurityStreamReader.class
-
- - link:WSSecurityStreamReader-asmified.java[Asmified]
-
-== References
-

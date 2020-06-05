@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/TxSupports.class
-
- - link:TxSupports-asmified.java[Asmified]
-
-== References
-

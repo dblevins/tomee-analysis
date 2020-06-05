@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/BlockMappingStartToken.class
-
- - link:BlockMappingStartToken-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/cdi/FlowScopeMap.class
-
- - link:FlowScopeMap-asmified.java[Asmified]
-
-== References
-

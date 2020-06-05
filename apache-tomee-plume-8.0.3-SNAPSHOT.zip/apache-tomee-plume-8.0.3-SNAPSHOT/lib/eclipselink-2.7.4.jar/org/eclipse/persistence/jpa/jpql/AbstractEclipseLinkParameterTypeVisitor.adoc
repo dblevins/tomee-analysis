@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/AbstractEclipseLinkParameterTypeVisitor.class
-
- - link:AbstractEclipseLinkParameterTypeVisitor-asmified.java[Asmified]
-
-== References
-

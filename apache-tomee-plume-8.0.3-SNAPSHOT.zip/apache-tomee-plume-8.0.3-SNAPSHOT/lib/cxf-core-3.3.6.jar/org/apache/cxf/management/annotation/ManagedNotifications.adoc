@@ -1,6 +1,0 @@
-= org/apache/cxf/management/annotation/ManagedNotifications.class
-
- - link:ManagedNotifications-asmified.java[Asmified]
-
-== References
-

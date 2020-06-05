@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Webservices.class
-
- - link:Webservices-asmified.java[Asmified]
-
-== References
-

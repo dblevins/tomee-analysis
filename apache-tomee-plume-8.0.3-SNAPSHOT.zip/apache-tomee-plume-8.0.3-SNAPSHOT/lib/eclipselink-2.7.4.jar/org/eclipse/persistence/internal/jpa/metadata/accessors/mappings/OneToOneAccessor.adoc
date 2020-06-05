@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/OneToOneAccessor.class
-
- - link:OneToOneAccessor-asmified.java[Asmified]
-
-== References
-

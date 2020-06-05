@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/asn1/McElieceCCA2PublicKey.class
-
- - link:McElieceCCA2PublicKey-asmified.java[Asmified]
-
-== References
-

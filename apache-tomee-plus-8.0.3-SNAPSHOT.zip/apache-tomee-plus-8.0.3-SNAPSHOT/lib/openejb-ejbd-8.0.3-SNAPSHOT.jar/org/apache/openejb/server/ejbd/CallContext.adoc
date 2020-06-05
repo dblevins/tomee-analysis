@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/CallContext.class
-
- - link:CallContext-asmified.java[Asmified]
-
-== References
-

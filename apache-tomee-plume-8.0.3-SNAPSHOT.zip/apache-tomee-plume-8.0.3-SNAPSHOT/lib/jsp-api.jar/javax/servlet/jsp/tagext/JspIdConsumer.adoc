@@ -1,6 +1,0 @@
-= javax/servlet/jsp/tagext/JspIdConsumer.class
-
- - link:JspIdConsumer-asmified.java[Asmified]
-
-== References
-

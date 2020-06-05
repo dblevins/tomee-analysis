@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/CharsetUtil.class
-
- - link:CharsetUtil-asmified.java[Asmified]
-
-== References
-

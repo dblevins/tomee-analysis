@@ -1,6 +1,0 @@
-= org/apache/catalina/realm/JAASCallbackHandler.class
-
- - link:JAASCallbackHandler-asmified.java[Asmified]
-
-== References
-

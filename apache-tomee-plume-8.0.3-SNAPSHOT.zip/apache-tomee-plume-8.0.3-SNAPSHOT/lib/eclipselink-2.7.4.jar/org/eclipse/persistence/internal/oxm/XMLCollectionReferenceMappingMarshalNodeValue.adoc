@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLCollectionReferenceMappingMarshalNodeValue.class
-
- - link:XMLCollectionReferenceMappingMarshalNodeValue-asmified.java[Asmified]
-
-== References
-

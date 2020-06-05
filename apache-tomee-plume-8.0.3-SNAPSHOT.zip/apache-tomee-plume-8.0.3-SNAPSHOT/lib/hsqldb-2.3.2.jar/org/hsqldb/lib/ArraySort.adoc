@@ -1,6 +1,0 @@
-= org/hsqldb/lib/ArraySort.class
-
- - link:ArraySort-asmified.java[Asmified]
-
-== References
-

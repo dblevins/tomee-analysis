@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/RequestFilter.class
-
- - link:RequestFilter-asmified.java[Asmified]
-
-== References
-

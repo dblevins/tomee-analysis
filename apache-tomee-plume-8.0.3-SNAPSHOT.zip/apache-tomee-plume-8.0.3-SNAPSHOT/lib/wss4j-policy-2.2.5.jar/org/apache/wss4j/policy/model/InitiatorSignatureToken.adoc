@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/InitiatorSignatureToken.class
-
- - link:InitiatorSignatureToken-asmified.java[Asmified]
-
-== References
-

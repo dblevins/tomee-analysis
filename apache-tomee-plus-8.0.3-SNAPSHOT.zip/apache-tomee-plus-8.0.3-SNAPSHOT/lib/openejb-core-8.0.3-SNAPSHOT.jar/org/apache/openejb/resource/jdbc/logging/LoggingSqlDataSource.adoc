@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/logging/LoggingSqlDataSource.class
-
- - link:LoggingSqlDataSource-asmified.java[Asmified]
-
-== References
-

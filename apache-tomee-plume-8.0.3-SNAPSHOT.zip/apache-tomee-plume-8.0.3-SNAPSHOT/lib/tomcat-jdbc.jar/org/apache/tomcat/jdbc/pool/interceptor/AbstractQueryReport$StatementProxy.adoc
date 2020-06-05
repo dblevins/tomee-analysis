@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/interceptor/AbstractQueryReport$StatementProxy.class
-
- - link:AbstractQueryReport$StatementProxy-asmified.java[Asmified]
-
-== References
-

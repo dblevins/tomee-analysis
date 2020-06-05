@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/CacheIndexes.class
-
- - link:CacheIndexes-asmified.java[Asmified]
-
-== References
-

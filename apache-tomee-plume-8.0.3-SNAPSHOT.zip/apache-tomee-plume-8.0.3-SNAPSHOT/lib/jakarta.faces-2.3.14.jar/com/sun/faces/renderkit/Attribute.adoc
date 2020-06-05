@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/Attribute.class
-
- - link:Attribute-asmified.java[Asmified]
-
-== References
-

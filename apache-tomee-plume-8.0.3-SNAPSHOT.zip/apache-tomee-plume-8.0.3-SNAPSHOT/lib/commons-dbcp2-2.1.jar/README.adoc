@@ -1,2 +1,0 @@
-= apache-tomee-plume-8.0.3-SNAPSHOT/lib/commons-dbcp2-2.1.jar
-

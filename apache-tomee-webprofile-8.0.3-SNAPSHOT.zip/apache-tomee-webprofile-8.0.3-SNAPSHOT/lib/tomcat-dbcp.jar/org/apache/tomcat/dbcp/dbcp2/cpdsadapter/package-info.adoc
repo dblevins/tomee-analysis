@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/cpdsadapter/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

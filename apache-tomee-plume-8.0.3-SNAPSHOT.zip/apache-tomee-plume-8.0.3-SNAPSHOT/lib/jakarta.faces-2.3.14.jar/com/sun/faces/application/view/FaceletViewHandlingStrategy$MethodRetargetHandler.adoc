@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/FaceletViewHandlingStrategy$MethodRetargetHandler.class
-
- - link:FaceletViewHandlingStrategy$MethodRetargetHandler-asmified.java[Asmified]
-
-== References
-

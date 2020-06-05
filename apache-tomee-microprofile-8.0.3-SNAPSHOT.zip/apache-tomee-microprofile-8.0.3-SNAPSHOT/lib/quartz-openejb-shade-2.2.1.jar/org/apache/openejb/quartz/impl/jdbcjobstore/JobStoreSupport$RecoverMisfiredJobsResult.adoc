@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreSupport$RecoverMisfiredJobsResult.class
-
- - link:JobStoreSupport$RecoverMisfiredJobsResult-asmified.java[Asmified]
-
-== References
-

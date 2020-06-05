@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/util/IDIndex.class
-
- - link:IDIndex-asmified.java[Asmified]
-
-== References
-

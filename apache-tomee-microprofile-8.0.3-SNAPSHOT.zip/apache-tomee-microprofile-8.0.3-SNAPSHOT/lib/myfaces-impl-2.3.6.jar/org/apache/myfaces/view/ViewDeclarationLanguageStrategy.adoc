@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/ViewDeclarationLanguageStrategy.class
-
- - link:ViewDeclarationLanguageStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/symmetric/Poly1305$Mappings.class
-
- - link:Poly1305$Mappings-asmified.java[Asmified]
-
-== References
-

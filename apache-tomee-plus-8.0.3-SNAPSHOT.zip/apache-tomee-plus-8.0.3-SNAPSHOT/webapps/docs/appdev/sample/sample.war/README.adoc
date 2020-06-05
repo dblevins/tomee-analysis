@@ -1,2 +1,0 @@
-= apache-tomee-plus-8.0.3-SNAPSHOT/webapps/docs/appdev/sample/sample.war
-

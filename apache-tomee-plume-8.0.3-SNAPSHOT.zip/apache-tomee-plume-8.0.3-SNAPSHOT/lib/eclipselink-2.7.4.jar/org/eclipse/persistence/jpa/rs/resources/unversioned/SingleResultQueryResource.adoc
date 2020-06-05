@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/resources/unversioned/SingleResultQueryResource.class
-
- - link:SingleResultQueryResource-asmified.java[Asmified]
-
-== References
-

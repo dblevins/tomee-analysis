@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/HttpsToken.class
-
- - link:HttpsToken-asmified.java[Asmified]
-
-== References
-

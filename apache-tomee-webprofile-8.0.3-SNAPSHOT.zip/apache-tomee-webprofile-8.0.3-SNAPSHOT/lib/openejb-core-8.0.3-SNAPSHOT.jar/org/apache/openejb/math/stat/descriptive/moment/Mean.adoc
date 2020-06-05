@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/moment/Mean.class
-
- - link:Mean-asmified.java[Asmified]
-
-== References
-

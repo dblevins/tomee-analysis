@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ServletMapping$JAXB.class
-
- - link:ServletMapping$JAXB-asmified.java[Asmified]
-
-== References
-

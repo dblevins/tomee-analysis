@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/HTTPEntityIDRequestURLBuilder.class
-
- - link:HTTPEntityIDRequestURLBuilder-asmified.java[Asmified]
-
-== References
-

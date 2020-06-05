@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/JRTUtil$AbstractFileVisitor.class
-
- - link:JRTUtil$AbstractFileVisitor-asmified.java[Asmified]
-
-== References
-

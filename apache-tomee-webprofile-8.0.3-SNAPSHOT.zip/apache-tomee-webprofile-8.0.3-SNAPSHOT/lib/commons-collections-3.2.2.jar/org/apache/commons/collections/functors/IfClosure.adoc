@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/IfClosure.class
-
- - link:IfClosure-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/batch/api/partition/PartitionPlanImpl.class
-
- - link:PartitionPlanImpl-asmified.java[Asmified]
-
-== References
-
- - javax.batch.api.partition.PartitionPlan - 1

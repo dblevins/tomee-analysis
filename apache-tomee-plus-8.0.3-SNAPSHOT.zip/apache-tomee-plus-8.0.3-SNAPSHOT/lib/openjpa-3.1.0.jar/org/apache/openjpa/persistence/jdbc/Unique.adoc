@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/Unique.class
-
- - link:Unique-asmified.java[Asmified]
-
-== References
-

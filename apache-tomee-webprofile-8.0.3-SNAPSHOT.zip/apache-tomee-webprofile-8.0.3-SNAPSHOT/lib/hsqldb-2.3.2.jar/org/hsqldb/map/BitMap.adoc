@@ -1,6 +1,0 @@
-= org/hsqldb/map/BitMap.class
-
- - link:BitMap-asmified.java[Asmified]
-
-== References
-

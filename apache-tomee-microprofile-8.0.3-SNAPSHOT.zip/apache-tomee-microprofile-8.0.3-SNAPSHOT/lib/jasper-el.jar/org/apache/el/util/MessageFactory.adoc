@@ -1,6 +1,0 @@
-= org/apache/el/util/MessageFactory.class
-
- - link:MessageFactory-asmified.java[Asmified]
-
-== References
-

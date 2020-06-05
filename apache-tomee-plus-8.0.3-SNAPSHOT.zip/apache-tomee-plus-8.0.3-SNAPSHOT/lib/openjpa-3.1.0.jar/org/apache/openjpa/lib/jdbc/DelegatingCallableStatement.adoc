@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/jdbc/DelegatingCallableStatement.class
-
- - link:DelegatingCallableStatement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/jms/interceptor/SoapFaultFactory.class
-
- - link:SoapFaultFactory-asmified.java[Asmified]
-
-== References
-

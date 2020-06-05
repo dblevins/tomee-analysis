@@ -1,6 +1,0 @@
-= javax/resource/spi/Activation.class
-
- - link:Activation-asmified.java[Asmified]
-
-== References
-

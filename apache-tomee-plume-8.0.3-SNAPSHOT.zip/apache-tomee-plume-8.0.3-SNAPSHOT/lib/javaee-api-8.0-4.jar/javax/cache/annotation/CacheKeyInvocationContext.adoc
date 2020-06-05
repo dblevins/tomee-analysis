@@ -1,6 +1,0 @@
-= javax/cache/annotation/CacheKeyInvocationContext.class
-
- - link:CacheKeyInvocationContext-asmified.java[Asmified]
-
-== References
-

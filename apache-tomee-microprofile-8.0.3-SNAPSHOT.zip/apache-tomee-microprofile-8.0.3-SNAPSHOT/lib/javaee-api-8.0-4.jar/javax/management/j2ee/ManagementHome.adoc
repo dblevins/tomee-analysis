@@ -1,7 +1,0 @@
-= javax/management/j2ee/ManagementHome.class
-
- - link:ManagementHome-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.Management - 1

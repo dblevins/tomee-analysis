@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/JCSCachingProvider.class
-
- - link:JCSCachingProvider-asmified.java[Asmified]
-
-== References
-

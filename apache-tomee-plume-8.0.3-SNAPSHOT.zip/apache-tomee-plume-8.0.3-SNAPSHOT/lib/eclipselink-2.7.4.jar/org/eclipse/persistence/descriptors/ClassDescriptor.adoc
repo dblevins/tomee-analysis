@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/ClassDescriptor.class
-
- - link:ClassDescriptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/Mappings$Setter.class
-
- - link:Mappings$Setter-asmified.java[Asmified]
-
-== References
-

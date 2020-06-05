@@ -1,6 +1,0 @@
-= com/ibm/wsdl/util/xml/QNameUtils.class
-
- - link:QNameUtils-asmified.java[Asmified]
-
-== References
-

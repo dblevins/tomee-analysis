@@ -1,6 +1,0 @@
-= org/apache/webbeans/proxy/NormalScopeProxyFactory.class
-
- - link:NormalScopeProxyFactory-asmified.java[Asmified]
-
-== References
-

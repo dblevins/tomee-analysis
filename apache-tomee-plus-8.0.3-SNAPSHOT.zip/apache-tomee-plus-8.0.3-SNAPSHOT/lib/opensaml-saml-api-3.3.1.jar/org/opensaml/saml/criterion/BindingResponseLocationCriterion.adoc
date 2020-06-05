@@ -1,6 +1,0 @@
-= org/opensaml/saml/criterion/BindingResponseLocationCriterion.class
-
- - link:BindingResponseLocationCriterion-asmified.java[Asmified]
-
-== References
-

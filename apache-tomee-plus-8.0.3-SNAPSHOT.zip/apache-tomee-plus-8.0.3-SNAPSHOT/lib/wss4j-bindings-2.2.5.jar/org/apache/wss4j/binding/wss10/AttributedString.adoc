@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wss10/AttributedString.class
-
- - link:AttributedString-asmified.java[Asmified]
-
-== References
-

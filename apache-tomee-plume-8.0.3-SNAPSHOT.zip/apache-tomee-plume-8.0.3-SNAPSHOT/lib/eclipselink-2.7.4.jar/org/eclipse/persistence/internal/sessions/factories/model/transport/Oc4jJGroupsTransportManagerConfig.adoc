@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/transport/Oc4jJGroupsTransportManagerConfig.class
-
- - link:Oc4jJGroupsTransportManagerConfig-asmified.java[Asmified]
-
-== References
-

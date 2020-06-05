@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/HPackHuffman.class
-
- - link:HPackHuffman-asmified.java[Asmified]
-
-== References
-

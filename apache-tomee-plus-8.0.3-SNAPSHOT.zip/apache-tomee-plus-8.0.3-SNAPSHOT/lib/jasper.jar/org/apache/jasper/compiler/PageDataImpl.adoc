@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/PageDataImpl.class
-
- - link:PageDataImpl-asmified.java[Asmified]
-
-== References
-

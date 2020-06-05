@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/MultitenantType.class
-
- - link:MultitenantType-asmified.java[Asmified]
-
-== References
-

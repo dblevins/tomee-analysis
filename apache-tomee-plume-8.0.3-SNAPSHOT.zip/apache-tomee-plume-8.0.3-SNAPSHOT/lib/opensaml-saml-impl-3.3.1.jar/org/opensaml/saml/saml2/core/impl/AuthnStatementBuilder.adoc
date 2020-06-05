@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/AuthnStatementBuilder.class
-
- - link:AuthnStatementBuilder-asmified.java[Asmified]
-
-== References
-

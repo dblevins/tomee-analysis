@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/SliceImplHelper.class
-
- - link:SliceImplHelper-asmified.java[Asmified]
-
-== References
-

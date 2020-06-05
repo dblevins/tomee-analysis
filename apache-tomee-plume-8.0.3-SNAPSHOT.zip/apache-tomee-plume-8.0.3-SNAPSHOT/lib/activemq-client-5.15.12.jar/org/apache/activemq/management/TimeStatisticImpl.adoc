@@ -1,6 +1,0 @@
-= org/apache/activemq/management/TimeStatisticImpl.class
-
- - link:TimeStatisticImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/AbstractReferenceMap.class
-
- - link:AbstractReferenceMap-asmified.java[Asmified]
-
-== References
-

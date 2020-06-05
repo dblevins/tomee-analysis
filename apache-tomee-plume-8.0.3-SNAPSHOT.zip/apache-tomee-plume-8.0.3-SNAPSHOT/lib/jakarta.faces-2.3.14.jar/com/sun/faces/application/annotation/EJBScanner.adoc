@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/EJBScanner.class
-
- - link:EJBScanner-asmified.java[Asmified]
-
-== References
-

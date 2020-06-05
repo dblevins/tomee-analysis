@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/Max.class
-
- - link:Max-asmified.java[Asmified]
-
-== References
-

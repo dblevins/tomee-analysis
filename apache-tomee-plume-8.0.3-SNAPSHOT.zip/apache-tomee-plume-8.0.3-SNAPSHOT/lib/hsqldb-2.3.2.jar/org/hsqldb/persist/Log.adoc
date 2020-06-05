@@ -1,6 +1,0 @@
-= org/hsqldb/persist/Log.class
-
- - link:Log-asmified.java[Asmified]
-
-== References
-

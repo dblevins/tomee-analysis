@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/impl/TextImpl.class
-
- - link:TextImpl-asmified.java[Asmified]
-
-== References
-

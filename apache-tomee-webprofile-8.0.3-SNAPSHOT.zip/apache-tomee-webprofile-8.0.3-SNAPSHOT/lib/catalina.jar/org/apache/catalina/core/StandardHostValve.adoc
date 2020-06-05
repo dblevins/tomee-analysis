@@ -1,6 +1,0 @@
-= org/apache/catalina/core/StandardHostValve.class
-
- - link:StandardHostValve-asmified.java[Asmified]
-
-== References
-

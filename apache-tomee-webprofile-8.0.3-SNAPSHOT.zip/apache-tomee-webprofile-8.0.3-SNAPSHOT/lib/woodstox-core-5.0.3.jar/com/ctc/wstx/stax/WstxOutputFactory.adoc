@@ -1,6 +1,0 @@
-= com/ctc/wstx/stax/WstxOutputFactory.class
-
- - link:WstxOutputFactory-asmified.java[Asmified]
-
-== References
-

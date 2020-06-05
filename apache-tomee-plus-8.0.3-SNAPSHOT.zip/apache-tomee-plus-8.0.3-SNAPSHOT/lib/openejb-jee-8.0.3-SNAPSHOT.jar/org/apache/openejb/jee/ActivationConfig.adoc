@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ActivationConfig.class
-
- - link:ActivationConfig-asmified.java[Asmified]
-
-== References
-

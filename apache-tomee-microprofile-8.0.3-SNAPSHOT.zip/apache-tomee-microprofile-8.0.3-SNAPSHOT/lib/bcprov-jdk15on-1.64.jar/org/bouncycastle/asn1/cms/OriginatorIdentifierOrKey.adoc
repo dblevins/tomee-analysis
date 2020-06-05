@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/OriginatorIdentifierOrKey.class
-
- - link:OriginatorIdentifierOrKey-asmified.java[Asmified]
-
-== References
-

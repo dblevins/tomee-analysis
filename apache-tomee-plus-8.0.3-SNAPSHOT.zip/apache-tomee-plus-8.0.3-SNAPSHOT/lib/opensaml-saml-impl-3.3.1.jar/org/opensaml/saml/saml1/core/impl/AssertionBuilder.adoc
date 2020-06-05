@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AssertionBuilder.class
-
- - link:AssertionBuilder-asmified.java[Asmified]
-
-== References
-

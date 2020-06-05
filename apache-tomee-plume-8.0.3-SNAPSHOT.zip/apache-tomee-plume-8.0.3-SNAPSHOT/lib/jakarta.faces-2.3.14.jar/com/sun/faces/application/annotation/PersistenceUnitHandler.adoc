@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/PersistenceUnitHandler.class
-
- - link:PersistenceUnitHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser$simpleSelectClause_scope.class
-
- - link:JPQLParser$simpleSelectClause_scope-asmified.java[Asmified]
-
-== References
-

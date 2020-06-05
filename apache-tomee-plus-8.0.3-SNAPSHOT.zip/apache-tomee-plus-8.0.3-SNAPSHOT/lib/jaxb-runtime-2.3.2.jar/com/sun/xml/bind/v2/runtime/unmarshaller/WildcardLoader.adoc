@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/WildcardLoader.class
-
- - link:WildcardLoader-asmified.java[Asmified]
-
-== References
-

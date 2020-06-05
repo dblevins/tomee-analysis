@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/tools/XML_DOM_FI.class
-
- - link:XML_DOM_FI-asmified.java[Asmified]
-
-== References
-

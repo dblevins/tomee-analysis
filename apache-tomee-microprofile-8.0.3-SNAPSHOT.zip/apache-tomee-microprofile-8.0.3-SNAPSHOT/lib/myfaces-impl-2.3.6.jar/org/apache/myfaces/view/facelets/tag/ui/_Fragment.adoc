@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/_Fragment.class
-
- - link:_Fragment-asmified.java[Asmified]
-
-== References
-

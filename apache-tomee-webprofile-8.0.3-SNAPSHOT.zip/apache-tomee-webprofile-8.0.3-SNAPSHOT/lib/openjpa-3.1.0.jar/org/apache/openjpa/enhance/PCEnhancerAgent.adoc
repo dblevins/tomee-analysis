@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/PCEnhancerAgent.class
-
- - link:PCEnhancerAgent-asmified.java[Asmified]
-
-== References
-

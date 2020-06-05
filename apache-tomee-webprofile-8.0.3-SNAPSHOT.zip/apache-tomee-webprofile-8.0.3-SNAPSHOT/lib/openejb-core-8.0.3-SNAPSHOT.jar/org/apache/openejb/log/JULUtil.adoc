@@ -1,6 +1,0 @@
-= org/apache/openejb/log/JULUtil.class
-
- - link:JULUtil-asmified.java[Asmified]
-
-== References
-

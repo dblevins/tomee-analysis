@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIMessage.class
-
- - link:UIMessage-asmified.java[Asmified]
-
-== References
-

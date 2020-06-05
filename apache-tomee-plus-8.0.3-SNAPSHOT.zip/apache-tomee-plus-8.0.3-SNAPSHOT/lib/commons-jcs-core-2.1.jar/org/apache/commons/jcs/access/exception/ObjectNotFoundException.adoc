@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/access/exception/ObjectNotFoundException.class
-
- - link:ObjectNotFoundException-asmified.java[Asmified]
-
-== References
-

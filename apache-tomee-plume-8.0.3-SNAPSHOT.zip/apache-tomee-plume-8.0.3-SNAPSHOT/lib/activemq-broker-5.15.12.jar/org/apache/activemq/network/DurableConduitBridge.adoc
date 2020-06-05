@@ -1,6 +1,0 @@
-= org/apache/activemq/network/DurableConduitBridge.class
-
- - link:DurableConduitBridge-asmified.java[Asmified]
-
-== References
-

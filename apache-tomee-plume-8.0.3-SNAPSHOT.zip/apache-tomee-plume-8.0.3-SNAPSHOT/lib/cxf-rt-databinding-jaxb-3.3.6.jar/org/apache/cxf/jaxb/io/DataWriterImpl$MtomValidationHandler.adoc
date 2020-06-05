@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler.class
-
- - link:DataWriterImpl$MtomValidationHandler-asmified.java[Asmified]
-
-== References
-

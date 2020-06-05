@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/jpql/JPQLExpressionBuilder$ParsedJPQL.class
-
- - link:JPQLExpressionBuilder$ParsedJPQL-asmified.java[Asmified]
-
-== References
-

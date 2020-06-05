@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/CollectionEndEvent.class
-
- - link:CollectionEndEvent-asmified.java[Asmified]
-
-== References
-

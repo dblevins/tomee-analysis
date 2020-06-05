@@ -1,6 +1,0 @@
-= org/apache/activemq/store/AbstractMessageStore.class
-
- - link:AbstractMessageStore-asmified.java[Asmified]
-
-== References
-

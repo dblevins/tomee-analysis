@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/SPKIDataType.class
-
- - link:SPKIDataType-asmified.java[Asmified]
-
-== References
-

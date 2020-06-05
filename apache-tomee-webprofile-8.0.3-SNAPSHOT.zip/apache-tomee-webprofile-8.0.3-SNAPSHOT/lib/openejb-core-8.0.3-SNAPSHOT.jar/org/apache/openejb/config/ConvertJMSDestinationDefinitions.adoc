@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ConvertJMSDestinationDefinitions.class
-
- - link:ConvertJMSDestinationDefinitions-asmified.java[Asmified]
-
-== References
-

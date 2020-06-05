@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/CommandIdComparator.class
-
- - link:CommandIdComparator-asmified.java[Asmified]
-
-== References
-

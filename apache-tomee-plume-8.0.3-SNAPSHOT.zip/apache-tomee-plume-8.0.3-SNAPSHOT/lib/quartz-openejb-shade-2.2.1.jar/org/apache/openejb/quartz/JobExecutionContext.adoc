@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/JobExecutionContext.class
-
- - link:JobExecutionContext-asmified.java[Asmified]
-
-== References
-

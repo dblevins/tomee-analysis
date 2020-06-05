@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bidimap/AbstractDualBidiMap$KeySet.class
-
- - link:AbstractDualBidiMap$KeySet-asmified.java[Asmified]
-
-== References
-

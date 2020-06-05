@@ -1,6 +1,0 @@
-= javax/resource/spi/ConfigProperty.class
-
- - link:ConfigProperty-asmified.java[Asmified]
-
-== References
-

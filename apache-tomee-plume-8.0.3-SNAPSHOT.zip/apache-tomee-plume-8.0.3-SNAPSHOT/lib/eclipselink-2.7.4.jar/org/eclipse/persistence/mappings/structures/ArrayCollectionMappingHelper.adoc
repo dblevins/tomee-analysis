@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/structures/ArrayCollectionMappingHelper.class
-
- - link:ArrayCollectionMappingHelper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/util/SecureLoader$2.class
-
- - link:SecureLoader$2-asmified.java[Asmified]
-
-== References
-

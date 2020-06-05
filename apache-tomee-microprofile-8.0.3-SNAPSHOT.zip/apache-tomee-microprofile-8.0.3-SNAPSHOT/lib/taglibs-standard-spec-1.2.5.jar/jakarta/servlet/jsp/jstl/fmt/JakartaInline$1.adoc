@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/jstl/fmt/JakartaInline$1.class
-
- - link:JakartaInline$1-asmified.java[Asmified]
-
-== References
-

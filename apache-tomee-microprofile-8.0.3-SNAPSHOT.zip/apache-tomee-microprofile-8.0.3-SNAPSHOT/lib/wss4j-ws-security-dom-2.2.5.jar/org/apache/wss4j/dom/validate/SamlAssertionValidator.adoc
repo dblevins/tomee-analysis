@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/validate/SamlAssertionValidator.class
-
- - link:SamlAssertionValidator-asmified.java[Asmified]
-
-== References
-

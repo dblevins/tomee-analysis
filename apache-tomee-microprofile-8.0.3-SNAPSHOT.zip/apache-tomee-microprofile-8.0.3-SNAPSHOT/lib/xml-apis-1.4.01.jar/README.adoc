@@ -1,2 +1,0 @@
-= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/xml-apis-1.4.01.jar
-

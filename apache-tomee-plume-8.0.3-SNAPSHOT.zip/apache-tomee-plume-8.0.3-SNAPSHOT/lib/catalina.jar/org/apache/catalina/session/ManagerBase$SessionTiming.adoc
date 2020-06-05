@@ -1,6 +1,0 @@
-= org/apache/catalina/session/ManagerBase$SessionTiming.class
-
- - link:ManagerBase$SessionTiming-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/security/SelfSignedCertificateGenerator$1.class
-
- - link:SelfSignedCertificateGenerator$1-asmified.java[Asmified]
-
-== References
-

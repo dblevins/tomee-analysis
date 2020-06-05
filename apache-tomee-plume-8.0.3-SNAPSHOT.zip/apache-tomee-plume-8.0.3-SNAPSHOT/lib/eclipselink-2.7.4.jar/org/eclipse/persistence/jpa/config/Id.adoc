@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Id.class
-
- - link:Id-asmified.java[Asmified]
-
-== References
-

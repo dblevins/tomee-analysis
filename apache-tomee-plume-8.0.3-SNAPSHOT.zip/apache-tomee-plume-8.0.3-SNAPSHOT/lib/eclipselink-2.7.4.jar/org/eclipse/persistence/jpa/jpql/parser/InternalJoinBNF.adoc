@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalJoinBNF.class
-
- - link:InternalJoinBNF-asmified.java[Asmified]
-
-== References
-

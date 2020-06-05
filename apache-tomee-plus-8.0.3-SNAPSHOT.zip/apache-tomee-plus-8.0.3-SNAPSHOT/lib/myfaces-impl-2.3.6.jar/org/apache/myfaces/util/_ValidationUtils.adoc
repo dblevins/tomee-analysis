@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/_ValidationUtils.class
-
- - link:_ValidationUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/webapp/StartupServletContextListener.class
-
- - link:StartupServletContextListener-asmified.java[Asmified]
-
-== References
-

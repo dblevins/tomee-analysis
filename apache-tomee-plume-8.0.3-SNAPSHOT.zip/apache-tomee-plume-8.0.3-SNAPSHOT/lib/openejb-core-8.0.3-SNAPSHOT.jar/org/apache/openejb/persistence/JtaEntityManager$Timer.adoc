@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/JtaEntityManager$Timer.class
-
- - link:JtaEntityManager$Timer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessInjectionPointImpl.class
-
- - link:ProcessInjectionPointImpl-asmified.java[Asmified]
-
-== References
-

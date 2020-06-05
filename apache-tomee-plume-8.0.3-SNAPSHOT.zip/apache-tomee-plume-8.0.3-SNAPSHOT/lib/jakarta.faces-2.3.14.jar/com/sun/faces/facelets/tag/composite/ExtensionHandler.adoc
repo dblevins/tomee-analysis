@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/ExtensionHandler.class
-
- - link:ExtensionHandler-asmified.java[Asmified]
-
-== References
-

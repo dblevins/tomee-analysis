@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/ConnectionTrackingInterceptor.class
-
- - link:ConnectionTrackingInterceptor-asmified.java[Asmified]
-
-== References
-

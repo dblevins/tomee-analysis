@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ResultPacker.class
-
- - link:ResultPacker-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/converter/JsonbLocaleParserConverterBase.class
-
- - link:JsonbLocaleParserConverterBase-asmified.java[Asmified]
-
-== References
-

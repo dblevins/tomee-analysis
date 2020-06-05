@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/LazyDynaMap.class
-
- - link:LazyDynaMap-asmified.java[Asmified]
-
-== References
-

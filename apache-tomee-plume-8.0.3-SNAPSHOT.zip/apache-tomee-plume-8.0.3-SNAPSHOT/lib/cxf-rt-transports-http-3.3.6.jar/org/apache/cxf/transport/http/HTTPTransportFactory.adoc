@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HTTPTransportFactory.class
-
- - link:HTTPTransportFactory-asmified.java[Asmified]
-
-== References
-

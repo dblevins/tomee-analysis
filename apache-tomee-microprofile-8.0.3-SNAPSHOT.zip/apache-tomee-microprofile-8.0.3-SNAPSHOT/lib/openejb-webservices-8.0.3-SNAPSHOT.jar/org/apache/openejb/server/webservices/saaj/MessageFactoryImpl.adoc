@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/saaj/MessageFactoryImpl.class
-
- - link:MessageFactoryImpl-asmified.java[Asmified]
-
-== References
-

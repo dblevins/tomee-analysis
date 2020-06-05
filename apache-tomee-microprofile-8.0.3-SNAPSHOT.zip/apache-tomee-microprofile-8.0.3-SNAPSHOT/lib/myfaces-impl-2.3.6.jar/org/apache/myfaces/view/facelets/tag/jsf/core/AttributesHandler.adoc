@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/AttributesHandler.class
-
- - link:AttributesHandler-asmified.java[Asmified]
-
-== References
-

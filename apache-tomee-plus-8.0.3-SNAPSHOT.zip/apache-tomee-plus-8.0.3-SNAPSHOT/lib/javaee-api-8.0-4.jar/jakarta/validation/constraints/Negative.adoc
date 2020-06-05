@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/Negative.class
-
- - link:Negative-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor.class
-
- - link:MessageModeInInterceptor-asmified.java[Asmified]
-
-== References
-

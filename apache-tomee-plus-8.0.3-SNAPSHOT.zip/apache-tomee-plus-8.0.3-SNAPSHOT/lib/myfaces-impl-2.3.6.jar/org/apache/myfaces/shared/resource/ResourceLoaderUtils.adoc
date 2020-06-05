@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/resource/ResourceLoaderUtils.class
-
- - link:ResourceLoaderUtils-asmified.java[Asmified]
-
-== References
-

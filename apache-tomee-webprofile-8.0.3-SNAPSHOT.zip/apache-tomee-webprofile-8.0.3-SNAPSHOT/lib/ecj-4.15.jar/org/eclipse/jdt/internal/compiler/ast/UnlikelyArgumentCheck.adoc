@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/UnlikelyArgumentCheck.class
-
- - link:UnlikelyArgumentCheck-asmified.java[Asmified]
-
-== References
-

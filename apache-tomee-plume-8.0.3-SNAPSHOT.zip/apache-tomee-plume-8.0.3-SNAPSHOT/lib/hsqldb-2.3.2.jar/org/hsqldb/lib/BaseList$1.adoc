@@ -1,6 +1,0 @@
-= org/hsqldb/lib/BaseList$1.class
-
- - link:BaseList$1-asmified.java[Asmified]
-
-== References
-

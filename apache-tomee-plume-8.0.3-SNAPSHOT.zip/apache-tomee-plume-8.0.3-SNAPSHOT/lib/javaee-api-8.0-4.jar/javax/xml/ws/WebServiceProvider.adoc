@@ -1,6 +1,0 @@
-= javax/xml/ws/WebServiceProvider.class
-
- - link:WebServiceProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/DoubleOrderedMap$1$1.class
-
- - link:DoubleOrderedMap$1$1-asmified.java[Asmified]
-
-== References
-

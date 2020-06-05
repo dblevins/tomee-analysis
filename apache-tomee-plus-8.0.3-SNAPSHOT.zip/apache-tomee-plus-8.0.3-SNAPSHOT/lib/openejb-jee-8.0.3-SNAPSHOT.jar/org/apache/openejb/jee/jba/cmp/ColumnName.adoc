@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/ColumnName.class
-
- - link:ColumnName-asmified.java[Asmified]
-
-== References
-

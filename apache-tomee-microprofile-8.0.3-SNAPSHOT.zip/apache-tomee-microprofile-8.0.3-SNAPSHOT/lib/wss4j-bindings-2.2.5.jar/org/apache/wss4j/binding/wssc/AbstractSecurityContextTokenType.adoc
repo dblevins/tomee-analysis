@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType.class
-
- - link:AbstractSecurityContextTokenType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/QueueBuilder.class
-
- - link:QueueBuilder-asmified.java[Asmified]
-
-== References
-

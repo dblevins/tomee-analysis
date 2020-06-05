@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/StructValidator.class
-
- - link:StructValidator-asmified.java[Asmified]
-
-== References
-

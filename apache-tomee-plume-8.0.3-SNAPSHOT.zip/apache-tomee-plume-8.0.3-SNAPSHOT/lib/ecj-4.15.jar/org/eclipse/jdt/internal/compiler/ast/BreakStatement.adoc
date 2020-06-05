@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/BreakStatement.class
-
- - link:BreakStatement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/map/AbstractMapDecorator.class
-
- - link:AbstractMapDecorator-asmified.java[Asmified]
-
-== References
-

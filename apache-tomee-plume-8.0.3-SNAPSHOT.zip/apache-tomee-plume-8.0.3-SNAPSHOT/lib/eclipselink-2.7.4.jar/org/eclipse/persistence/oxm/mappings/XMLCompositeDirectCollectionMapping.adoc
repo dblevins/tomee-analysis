@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLCompositeDirectCollectionMapping.class
-
- - link:XMLCompositeDirectCollectionMapping-asmified.java[Asmified]
-
-== References
-

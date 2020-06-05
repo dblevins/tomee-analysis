@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/ProducerBrokerExchange$FlowControlInfo.class
-
- - link:ProducerBrokerExchange$FlowControlInfo-asmified.java[Asmified]
-
-== References
-

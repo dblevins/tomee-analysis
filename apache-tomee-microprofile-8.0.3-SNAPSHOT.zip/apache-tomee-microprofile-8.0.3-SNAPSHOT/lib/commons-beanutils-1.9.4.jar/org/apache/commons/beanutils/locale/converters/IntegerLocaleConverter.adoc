@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/converters/IntegerLocaleConverter.class
-
- - link:IntegerLocaleConverter-asmified.java[Asmified]
-
-== References
-

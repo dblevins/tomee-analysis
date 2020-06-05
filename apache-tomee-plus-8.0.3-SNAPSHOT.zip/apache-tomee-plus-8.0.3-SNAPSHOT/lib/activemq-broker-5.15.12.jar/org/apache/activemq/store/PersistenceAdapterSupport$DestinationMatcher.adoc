@@ -1,6 +1,0 @@
-= org/apache/activemq/store/PersistenceAdapterSupport$DestinationMatcher.class
-
- - link:PersistenceAdapterSupport$DestinationMatcher-asmified.java[Asmified]
-
-== References
-

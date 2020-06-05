@@ -1,6 +1,0 @@
-= jakarta/faces/application/ResourceDependency.class
-
- - link:ResourceDependency-asmified.java[Asmified]
-
-== References
-

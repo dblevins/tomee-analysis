@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/xmi/MetaModel.class
-
- - link:MetaModel-asmified.java[Asmified]
-
-== References
-

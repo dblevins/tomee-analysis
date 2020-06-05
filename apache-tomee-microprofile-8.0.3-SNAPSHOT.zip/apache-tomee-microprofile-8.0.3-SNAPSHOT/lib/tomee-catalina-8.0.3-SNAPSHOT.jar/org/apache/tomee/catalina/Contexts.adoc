@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/Contexts.class
-
- - link:Contexts-asmified.java[Asmified]
-
-== References
-

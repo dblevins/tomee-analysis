@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/EarlyExitException.class
-
- - link:EarlyExitException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/AbstractUIHandler.class
-
- - link:AbstractUIHandler-asmified.java[Asmified]
-
-== References
-

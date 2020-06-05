@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/pkcs/IssuerAndSerialNumber.class
-
- - link:IssuerAndSerialNumber-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/convert/_LabeledFacesMessage.class
-
- - link:_LabeledFacesMessage-asmified.java[Asmified]
-
-== References
-

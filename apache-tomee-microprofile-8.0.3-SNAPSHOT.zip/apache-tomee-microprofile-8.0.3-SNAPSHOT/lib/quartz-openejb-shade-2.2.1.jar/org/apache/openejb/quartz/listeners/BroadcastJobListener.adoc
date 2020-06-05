@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/listeners/BroadcastJobListener.class
-
- - link:BroadcastJobListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/DatabaseField.class
-
- - link:DatabaseField-asmified.java[Asmified]
-
-== References
-

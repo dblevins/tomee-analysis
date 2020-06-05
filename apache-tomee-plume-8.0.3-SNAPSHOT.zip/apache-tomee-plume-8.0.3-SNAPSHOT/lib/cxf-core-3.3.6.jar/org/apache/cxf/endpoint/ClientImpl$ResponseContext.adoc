@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/ClientImpl$ResponseContext.class
-
- - link:ClientImpl$ResponseContext-asmified.java[Asmified]
-
-== References
-

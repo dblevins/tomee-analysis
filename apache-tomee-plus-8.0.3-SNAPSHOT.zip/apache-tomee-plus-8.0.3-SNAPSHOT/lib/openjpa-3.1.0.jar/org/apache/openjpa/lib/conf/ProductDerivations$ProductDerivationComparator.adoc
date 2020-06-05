@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/ProductDerivations$ProductDerivationComparator.class
-
- - link:ProductDerivations$ProductDerivationComparator-asmified.java[Asmified]
-
-== References
-

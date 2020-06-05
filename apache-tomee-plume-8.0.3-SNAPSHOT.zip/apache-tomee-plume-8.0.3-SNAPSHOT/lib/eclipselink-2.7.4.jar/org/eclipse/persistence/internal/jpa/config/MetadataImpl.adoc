@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/MetadataImpl.class
-
- - link:MetadataImpl-asmified.java[Asmified]
-
-== References
-

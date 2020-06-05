@@ -1,8 +1,0 @@
-= javax/mail/UIDFolder$FetchProfileItem.class
-
- - link:UIDFolder$FetchProfileItem-asmified.java[Asmified]
-
-== References
-
- - javax.mail.UIDFolder$FetchProfileItem - 4
- - javax.mail.FetchProfile$Item - 2

@@ -1,6 +1,0 @@
-= org/apache/bval/cdi/BValExtension$1.class
-
- - link:BValExtension$1-asmified.java[Asmified]
-
-== References
-

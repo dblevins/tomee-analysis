@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaRollbackCommand.class
-
- - link:KahaRollbackCommand-asmified.java[Asmified]
-
-== References
-

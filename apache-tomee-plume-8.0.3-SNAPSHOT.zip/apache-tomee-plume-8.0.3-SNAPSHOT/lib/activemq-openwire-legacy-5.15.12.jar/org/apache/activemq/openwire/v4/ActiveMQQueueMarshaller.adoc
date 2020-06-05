@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v4/ActiveMQQueueMarshaller.class
-
- - link:ActiveMQQueueMarshaller-asmified.java[Asmified]
-
-== References
-

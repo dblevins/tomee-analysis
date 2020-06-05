@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/BlacklistClassResolver.class
-
- - link:BlacklistClassResolver-asmified.java[Asmified]
-
-== References
-

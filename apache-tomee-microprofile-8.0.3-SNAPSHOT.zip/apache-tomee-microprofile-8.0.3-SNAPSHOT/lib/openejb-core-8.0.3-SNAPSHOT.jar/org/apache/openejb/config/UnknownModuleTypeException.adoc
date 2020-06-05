@@ -1,6 +1,0 @@
-= org/apache/openejb/config/UnknownModuleTypeException.class
-
- - link:UnknownModuleTypeException-asmified.java[Asmified]
-
-== References
-

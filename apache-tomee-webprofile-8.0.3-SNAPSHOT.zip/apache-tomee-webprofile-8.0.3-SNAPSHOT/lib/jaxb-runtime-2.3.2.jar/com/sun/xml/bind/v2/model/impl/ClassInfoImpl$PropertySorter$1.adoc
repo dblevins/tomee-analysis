@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/impl/ClassInfoImpl$PropertySorter$1.class
-
- - link:ClassInfoImpl$PropertySorter$1-asmified.java[Asmified]
-
-== References
-

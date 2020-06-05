@@ -1,6 +1,0 @@
-= com/ctc/wstx/api/ReaderConfig.class
-
- - link:ReaderConfig-asmified.java[Asmified]
-
-== References
-

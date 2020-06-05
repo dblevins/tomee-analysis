@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/reflect/TypeLiteral.class
-
- - link:TypeLiteral-asmified.java[Asmified]
-
-== References
-

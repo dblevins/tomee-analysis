@@ -1,8 +1,0 @@
-= javax/xml/bind/MarshalException.class
-
- - link:MarshalException-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.MarshalException - 4
- - javax.xml.bind.JAXBException - 2

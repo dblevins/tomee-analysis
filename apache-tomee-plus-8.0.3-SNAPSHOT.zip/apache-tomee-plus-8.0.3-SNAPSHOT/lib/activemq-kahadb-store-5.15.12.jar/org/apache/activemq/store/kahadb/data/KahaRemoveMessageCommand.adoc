@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaRemoveMessageCommand.class
-
- - link:KahaRemoveMessageCommand-asmified.java[Asmified]
-
-== References
-

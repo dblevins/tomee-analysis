@@ -1,6 +1,0 @@
-= com/sun/xml/bind/Util.class
-
- - link:Util-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/GenericCollectionConverter.class
-
- - link:GenericCollectionConverter-asmified.java[Asmified]
-
-== References
-

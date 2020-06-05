@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/cfg/ContextAttributes.class
-
- - link:ContextAttributes-asmified.java[Asmified]
-
-== References
-

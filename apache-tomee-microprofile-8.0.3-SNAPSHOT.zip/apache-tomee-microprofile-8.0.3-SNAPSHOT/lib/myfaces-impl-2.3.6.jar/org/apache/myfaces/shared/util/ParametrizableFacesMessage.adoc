@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/ParametrizableFacesMessage.class
-
- - link:ParametrizableFacesMessage-asmified.java[Asmified]
-
-== References
-

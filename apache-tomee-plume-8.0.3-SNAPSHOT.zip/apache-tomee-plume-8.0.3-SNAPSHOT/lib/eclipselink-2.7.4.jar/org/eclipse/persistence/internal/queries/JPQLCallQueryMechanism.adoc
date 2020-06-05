@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/JPQLCallQueryMechanism.class
-
- - link:JPQLCallQueryMechanism-asmified.java[Asmified]
-
-== References
-

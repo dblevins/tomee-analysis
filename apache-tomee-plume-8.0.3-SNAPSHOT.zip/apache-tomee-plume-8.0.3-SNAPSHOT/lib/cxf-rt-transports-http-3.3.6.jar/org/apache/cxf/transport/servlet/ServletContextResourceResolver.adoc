@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/ServletContextResourceResolver.class
-
- - link:ServletContextResourceResolver-asmified.java[Asmified]
-
-== References
-

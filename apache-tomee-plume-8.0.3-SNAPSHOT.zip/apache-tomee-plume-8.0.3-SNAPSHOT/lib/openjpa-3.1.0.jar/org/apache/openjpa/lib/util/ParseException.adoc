@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/ParseException.class
-
- - link:ParseException-asmified.java[Asmified]
-
-== References
-

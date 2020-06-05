@@ -1,6 +1,0 @@
-= org/apache/commons/logging/impl/SimpleLog$1.class
-
- - link:SimpleLog$1-asmified.java[Asmified]
-
-== References
-

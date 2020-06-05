@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource.class
-
- - link:IMAPMultipartDataSource-asmified.java[Asmified]
-
-== References
-

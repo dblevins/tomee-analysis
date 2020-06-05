@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly.class
-
- - link:MakeJCacheCDIInterceptorFriendly-asmified.java[Asmified]
-
-== References
-

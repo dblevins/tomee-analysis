@@ -1,6 +1,0 @@
-= org/apache/webbeans/deployment/StereoTypeManager.class
-
- - link:StereoTypeManager-asmified.java[Asmified]
-
-== References
-

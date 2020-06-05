@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/RecoverableTransactionManager.class
-
- - link:RecoverableTransactionManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/security/enterprise/AuthenticationException.class
-
- - link:AuthenticationException-asmified.java[Asmified]
-
-== References
-

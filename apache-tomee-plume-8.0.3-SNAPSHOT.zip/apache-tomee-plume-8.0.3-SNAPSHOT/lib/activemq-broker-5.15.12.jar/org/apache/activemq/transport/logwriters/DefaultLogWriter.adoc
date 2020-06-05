@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/logwriters/DefaultLogWriter.class
-
- - link:DefaultLogWriter-asmified.java[Asmified]
-
-== References
-

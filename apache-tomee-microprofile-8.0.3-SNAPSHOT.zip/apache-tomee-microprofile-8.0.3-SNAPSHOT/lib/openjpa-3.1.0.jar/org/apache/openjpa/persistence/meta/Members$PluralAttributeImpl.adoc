@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/Members$PluralAttributeImpl.class
-
- - link:Members$PluralAttributeImpl-asmified.java[Asmified]
-
-== References
-

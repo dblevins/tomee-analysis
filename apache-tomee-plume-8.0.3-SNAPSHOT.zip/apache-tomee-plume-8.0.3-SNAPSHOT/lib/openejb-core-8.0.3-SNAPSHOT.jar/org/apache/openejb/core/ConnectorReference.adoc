@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ConnectorReference.class
-
- - link:ConnectorReference-asmified.java[Asmified]
-
-== References
-

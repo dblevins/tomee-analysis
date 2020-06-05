@@ -1,6 +1,0 @@
-= org/apache/activemq/RedeliveryPolicy.class
-
- - link:RedeliveryPolicy-asmified.java[Asmified]
-
-== References
-

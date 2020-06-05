@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IModule$IService.class
-
- - link:IModule$IService-asmified.java[Asmified]
-
-== References
-

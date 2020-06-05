@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/multitenant/TenantTableDiscriminatorMetadata.class
-
- - link:TenantTableDiscriminatorMetadata-asmified.java[Asmified]
-
-== References
-

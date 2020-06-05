@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ProxyMaps$ProxyEntrySetImpl$1.class
-
- - link:ProxyMaps$ProxyEntrySetImpl$1-asmified.java[Asmified]
-
-== References
-

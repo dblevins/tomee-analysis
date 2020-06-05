@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/Trust13Builder.class
-
- - link:Trust13Builder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/webresources/StandardRoot$1.class
-
- - link:StandardRoot$1-asmified.java[Asmified]
-
-== References
-

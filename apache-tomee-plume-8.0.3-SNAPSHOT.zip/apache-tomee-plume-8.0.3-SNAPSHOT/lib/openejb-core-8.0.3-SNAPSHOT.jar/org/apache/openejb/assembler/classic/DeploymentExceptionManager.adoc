@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/DeploymentExceptionManager.class
-
- - link:DeploymentExceptionManager-asmified.java[Asmified]
-
-== References
-

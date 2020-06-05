@@ -1,6 +1,0 @@
-= org/apache/openejb/server/DiscoveryAgent.class
-
- - link:DiscoveryAgent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/Logs$LogOperationEndpointInfo.class
-
- - link:Logs$LogOperationEndpointInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/http/HTTPBindingImpl.class
-
- - link:HTTPBindingImpl-asmified.java[Asmified]
-
-== References
-

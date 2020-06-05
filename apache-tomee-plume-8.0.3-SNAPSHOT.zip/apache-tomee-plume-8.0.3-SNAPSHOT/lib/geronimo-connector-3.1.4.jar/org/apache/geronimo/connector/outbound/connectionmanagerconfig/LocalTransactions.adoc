@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectionmanagerconfig/LocalTransactions.class
-
- - link:LocalTransactions-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MessageDatabase$RemoveOperation.class
-
- - link:MessageDatabase$RemoveOperation-asmified.java[Asmified]
-
-== References
-

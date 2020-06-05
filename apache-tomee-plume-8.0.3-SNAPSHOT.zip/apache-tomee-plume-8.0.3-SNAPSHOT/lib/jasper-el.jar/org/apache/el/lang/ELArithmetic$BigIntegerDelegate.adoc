@@ -1,6 +1,0 @@
-= org/apache/el/lang/ELArithmetic$BigIntegerDelegate.class
-
- - link:ELArithmetic$BigIntegerDelegate-asmified.java[Asmified]
-
-== References
-

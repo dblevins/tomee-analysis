@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor.class
-
- - link:MeteredInterceptor-asmified.java[Asmified]
-
-== References
-

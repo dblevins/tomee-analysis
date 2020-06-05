@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/jmx/Arg.class
-
- - link:Arg-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/cache/Key.class
-
- - link:Key-asmified.java[Asmified]
-
-== References
-

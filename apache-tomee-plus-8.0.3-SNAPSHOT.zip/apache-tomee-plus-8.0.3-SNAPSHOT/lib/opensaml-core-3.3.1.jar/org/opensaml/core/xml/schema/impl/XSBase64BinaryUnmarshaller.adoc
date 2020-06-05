@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSBase64BinaryUnmarshaller.class
-
- - link:XSBase64BinaryUnmarshaller-asmified.java[Asmified]
-
-== References
-

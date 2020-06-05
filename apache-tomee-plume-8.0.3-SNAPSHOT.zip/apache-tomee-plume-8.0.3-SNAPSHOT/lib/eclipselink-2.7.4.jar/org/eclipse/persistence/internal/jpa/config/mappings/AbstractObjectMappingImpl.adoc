@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/mappings/AbstractObjectMappingImpl.class
-
- - link:AbstractObjectMappingImpl-asmified.java[Asmified]
-
-== References
-

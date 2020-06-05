@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/SAMLKeyInfo.class
-
- - link:SAMLKeyInfo-asmified.java[Asmified]
-
-== References
-

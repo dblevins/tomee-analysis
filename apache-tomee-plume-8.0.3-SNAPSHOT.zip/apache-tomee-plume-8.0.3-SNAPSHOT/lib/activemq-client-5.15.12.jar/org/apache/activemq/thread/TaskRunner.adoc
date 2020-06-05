@@ -1,6 +1,0 @@
-= org/apache/activemq/thread/TaskRunner.class
-
- - link:TaskRunner-asmified.java[Asmified]
-
-== References
-

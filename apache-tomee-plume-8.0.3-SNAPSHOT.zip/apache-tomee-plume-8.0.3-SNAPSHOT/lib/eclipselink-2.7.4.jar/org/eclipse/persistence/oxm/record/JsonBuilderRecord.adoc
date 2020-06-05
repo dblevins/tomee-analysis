@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/record/JsonBuilderRecord.class
-
- - link:JsonBuilderRecord-asmified.java[Asmified]
-
-== References
-

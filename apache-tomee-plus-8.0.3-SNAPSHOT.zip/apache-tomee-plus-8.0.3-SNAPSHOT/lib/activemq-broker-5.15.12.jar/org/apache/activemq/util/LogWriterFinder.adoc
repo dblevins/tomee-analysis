@@ -1,6 +1,0 @@
-= org/apache/activemq/util/LogWriterFinder.class
-
- - link:LogWriterFinder-asmified.java[Asmified]
-
-== References
-

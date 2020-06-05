@@ -1,6 +1,0 @@
-= javax/xml/soap/SOAPConstants.class
-
- - link:SOAPConstants-asmified.java[Asmified]
-
-== References
-

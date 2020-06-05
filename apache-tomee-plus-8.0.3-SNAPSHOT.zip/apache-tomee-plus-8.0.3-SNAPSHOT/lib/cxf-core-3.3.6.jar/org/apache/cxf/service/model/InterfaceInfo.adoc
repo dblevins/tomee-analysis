@@ -1,6 +1,0 @@
-= org/apache/cxf/service/model/InterfaceInfo.class
-
- - link:InterfaceInfo-asmified.java[Asmified]
-
-== References
-

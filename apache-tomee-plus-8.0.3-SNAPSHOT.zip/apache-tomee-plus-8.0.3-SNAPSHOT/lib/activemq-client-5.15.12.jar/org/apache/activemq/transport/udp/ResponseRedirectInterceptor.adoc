@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/ResponseRedirectInterceptor.class
-
- - link:ResponseRedirectInterceptor-asmified.java[Asmified]
-
-== References
-

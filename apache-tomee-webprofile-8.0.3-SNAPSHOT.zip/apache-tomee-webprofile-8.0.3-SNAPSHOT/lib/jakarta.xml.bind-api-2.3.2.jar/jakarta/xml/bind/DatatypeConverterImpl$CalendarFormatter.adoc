@@ -1,6 +1,0 @@
-= jakarta/xml/bind/DatatypeConverterImpl$CalendarFormatter.class
-
- - link:DatatypeConverterImpl$CalendarFormatter-asmified.java[Asmified]
-
-== References
-

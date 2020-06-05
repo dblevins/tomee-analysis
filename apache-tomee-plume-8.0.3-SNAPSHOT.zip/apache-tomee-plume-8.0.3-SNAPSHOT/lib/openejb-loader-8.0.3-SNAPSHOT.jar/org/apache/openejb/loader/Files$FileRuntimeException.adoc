@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/Files$FileRuntimeException.class
-
- - link:Files$FileRuntimeException-asmified.java[Asmified]
-
-== References
-

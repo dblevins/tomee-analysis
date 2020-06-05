@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesFactory$JAXB.class
-
- - link:FacesFactory$JAXB-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ServletMapping.class
-
- - link:ServletMapping-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/application/ApplicationWrapper.class
-
- - link:ApplicationWrapper-asmified.java[Asmified]
-
-== References
-

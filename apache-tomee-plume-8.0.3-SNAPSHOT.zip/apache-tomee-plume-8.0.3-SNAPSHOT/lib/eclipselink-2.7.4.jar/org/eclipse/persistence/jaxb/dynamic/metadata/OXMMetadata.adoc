@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/dynamic/metadata/OXMMetadata.class
-
- - link:OXMMetadata-asmified.java[Asmified]
-
-== References
-

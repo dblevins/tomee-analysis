@@ -1,6 +1,0 @@
-= org/apache/jasper/tagplugins/jstl/core/Choose.class
-
- - link:Choose-asmified.java[Asmified]
-
-== References
-

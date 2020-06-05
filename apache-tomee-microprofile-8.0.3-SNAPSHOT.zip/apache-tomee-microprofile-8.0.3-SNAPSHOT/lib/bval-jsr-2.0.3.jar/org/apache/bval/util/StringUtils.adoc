@@ -1,6 +1,0 @@
-= org/apache/bval/util/StringUtils.class
-
- - link:StringUtils-asmified.java[Asmified]
-
-== References
-

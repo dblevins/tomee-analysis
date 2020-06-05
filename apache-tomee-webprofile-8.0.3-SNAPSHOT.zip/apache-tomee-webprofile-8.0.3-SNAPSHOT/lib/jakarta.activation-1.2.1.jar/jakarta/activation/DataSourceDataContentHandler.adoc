@@ -1,6 +1,0 @@
-= jakarta/activation/DataSourceDataContentHandler.class
-
- - link:DataSourceDataContentHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/EntityExpressionBNF.class
-
- - link:EntityExpressionBNF-asmified.java[Asmified]
-
-== References
-

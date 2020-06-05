@@ -1,6 +1,0 @@
-= org/w3c/dom/traversal/NodeIterator.class
-
- - link:NodeIterator-asmified.java[Asmified]
-
-== References
-

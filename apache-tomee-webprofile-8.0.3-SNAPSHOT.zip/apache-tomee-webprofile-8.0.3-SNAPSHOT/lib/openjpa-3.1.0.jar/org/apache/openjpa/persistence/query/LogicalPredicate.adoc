@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/LogicalPredicate.class
-
- - link:LogicalPredicate-asmified.java[Asmified]
-
-== References
-

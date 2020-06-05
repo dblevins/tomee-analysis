@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/http/UrlReplacement.class
-
- - link:UrlReplacement-asmified.java[Asmified]
-
-== References
-

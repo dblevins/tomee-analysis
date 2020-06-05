@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/FxExtractor$ForMapPropertyKey.class
-
- - link:FxExtractor$ForMapPropertyKey-asmified.java[Asmified]
-
-== References
-

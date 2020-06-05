@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/AdditionalDeployments.class
-
- - link:AdditionalDeployments-asmified.java[Asmified]
-
-== References
-

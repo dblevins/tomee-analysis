@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BeanMap$MyMapEntry.class
-
- - link:BeanMap$MyMapEntry-asmified.java[Asmified]
-
-== References
-

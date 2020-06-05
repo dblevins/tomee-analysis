@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/ext/WSSecurityException.class
-
- - link:WSSecurityException-asmified.java[Asmified]
-
-== References
-

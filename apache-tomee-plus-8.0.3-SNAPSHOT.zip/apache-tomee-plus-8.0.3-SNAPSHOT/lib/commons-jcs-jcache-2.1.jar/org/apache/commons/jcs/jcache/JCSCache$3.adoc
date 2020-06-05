@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/JCSCache$3.class
-
- - link:JCSCache$3-asmified.java[Asmified]
-
-== References
-

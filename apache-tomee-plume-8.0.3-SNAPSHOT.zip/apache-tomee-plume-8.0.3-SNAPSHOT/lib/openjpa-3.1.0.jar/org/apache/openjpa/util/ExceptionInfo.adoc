@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ExceptionInfo.class
-
- - link:ExceptionInfo-asmified.java[Asmified]
-
-== References
-

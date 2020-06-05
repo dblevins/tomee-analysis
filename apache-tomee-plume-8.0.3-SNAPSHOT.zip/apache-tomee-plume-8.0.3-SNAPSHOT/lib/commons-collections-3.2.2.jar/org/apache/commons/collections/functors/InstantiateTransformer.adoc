@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/InstantiateTransformer.class
-
- - link:InstantiateTransformer-asmified.java[Asmified]
-
-== References
-

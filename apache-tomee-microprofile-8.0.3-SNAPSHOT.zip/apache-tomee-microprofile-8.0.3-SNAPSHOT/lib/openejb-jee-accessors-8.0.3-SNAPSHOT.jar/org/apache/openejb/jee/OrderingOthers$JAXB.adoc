@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/OrderingOthers$JAXB.class
-
- - link:OrderingOthers$JAXB-asmified.java[Asmified]
-
-== References
-

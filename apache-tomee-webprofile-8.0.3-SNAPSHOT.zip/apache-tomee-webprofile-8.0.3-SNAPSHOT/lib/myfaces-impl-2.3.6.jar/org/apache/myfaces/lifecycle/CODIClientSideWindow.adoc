@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/CODIClientSideWindow.class
-
- - link:CODIClientSideWindow-asmified.java[Asmified]
-
-== References
-

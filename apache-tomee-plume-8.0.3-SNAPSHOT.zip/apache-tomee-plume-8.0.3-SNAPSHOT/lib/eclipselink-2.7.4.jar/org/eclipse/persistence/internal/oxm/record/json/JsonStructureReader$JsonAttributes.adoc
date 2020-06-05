@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/json/JsonStructureReader$JsonAttributes.class
-
- - link:JsonStructureReader$JsonAttributes-asmified.java[Asmified]
-
-== References
-

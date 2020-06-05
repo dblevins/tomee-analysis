@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/RenderKitImpl.class
-
- - link:RenderKitImpl-asmified.java[Asmified]
-
-== References
-

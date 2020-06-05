@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/SingleTypeReference.class
-
- - link:SingleTypeReference-asmified.java[Asmified]
-
-== References
-

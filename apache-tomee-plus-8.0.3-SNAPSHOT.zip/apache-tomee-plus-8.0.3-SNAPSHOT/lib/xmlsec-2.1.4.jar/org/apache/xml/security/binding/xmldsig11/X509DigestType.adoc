@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/X509DigestType.class
-
- - link:X509DigestType-asmified.java[Asmified]
-
-== References
-

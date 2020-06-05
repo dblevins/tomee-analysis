@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/ThreadNameFilter.class
-
- - link:ThreadNameFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/PoolableConnectionFactory.class
-
- - link:PoolableConnectionFactory-asmified.java[Asmified]
-
-== References
-

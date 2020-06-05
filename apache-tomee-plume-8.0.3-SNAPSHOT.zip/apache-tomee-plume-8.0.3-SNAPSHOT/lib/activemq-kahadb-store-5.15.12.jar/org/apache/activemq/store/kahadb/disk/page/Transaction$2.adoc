@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/page/Transaction$2.class
-
- - link:Transaction$2-asmified.java[Asmified]
-
-== References
-

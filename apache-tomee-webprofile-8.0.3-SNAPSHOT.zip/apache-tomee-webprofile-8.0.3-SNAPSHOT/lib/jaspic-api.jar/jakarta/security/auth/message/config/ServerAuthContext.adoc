@@ -1,6 +1,0 @@
-= jakarta/security/auth/message/config/ServerAuthContext.class
-
- - link:ServerAuthContext-asmified.java[Asmified]
-
-== References
-

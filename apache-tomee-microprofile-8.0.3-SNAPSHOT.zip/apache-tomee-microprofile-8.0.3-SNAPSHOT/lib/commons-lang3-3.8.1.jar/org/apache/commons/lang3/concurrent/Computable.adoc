@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/concurrent/Computable.class
-
- - link:Computable-asmified.java[Asmified]
-
-== References
-

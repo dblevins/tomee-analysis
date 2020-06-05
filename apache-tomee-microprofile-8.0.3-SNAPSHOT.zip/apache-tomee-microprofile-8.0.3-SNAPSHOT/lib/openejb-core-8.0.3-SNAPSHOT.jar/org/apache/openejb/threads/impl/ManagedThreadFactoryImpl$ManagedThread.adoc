@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/impl/ManagedThreadFactoryImpl$ManagedThread.class
-
- - link:ManagedThreadFactoryImpl$ManagedThread-asmified.java[Asmified]
-
-== References
-

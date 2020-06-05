@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/handlers/ImageJpegHandler.class
-
- - link:ImageJpegHandler-asmified.java[Asmified]
-
-== References
-

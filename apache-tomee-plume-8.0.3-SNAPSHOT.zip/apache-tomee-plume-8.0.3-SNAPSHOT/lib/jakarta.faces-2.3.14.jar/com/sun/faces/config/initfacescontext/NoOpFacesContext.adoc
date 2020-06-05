@@ -1,6 +1,0 @@
-= com/sun/faces/config/initfacescontext/NoOpFacesContext.class
-
- - link:NoOpFacesContext-asmified.java[Asmified]
-
-== References
-

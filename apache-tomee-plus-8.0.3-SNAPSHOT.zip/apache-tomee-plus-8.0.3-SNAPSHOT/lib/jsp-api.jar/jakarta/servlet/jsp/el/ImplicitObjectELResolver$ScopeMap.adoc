@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/el/ImplicitObjectELResolver$ScopeMap.class
-
- - link:ImplicitObjectELResolver$ScopeMap-asmified.java[Asmified]
-
-== References
-

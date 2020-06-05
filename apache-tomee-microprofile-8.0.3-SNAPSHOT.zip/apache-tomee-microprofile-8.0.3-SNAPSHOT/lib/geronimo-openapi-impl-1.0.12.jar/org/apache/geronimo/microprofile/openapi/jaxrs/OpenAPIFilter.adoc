@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/jaxrs/OpenAPIFilter.class
-
- - link:OpenAPIFilter-asmified.java[Asmified]
-
-== References
-

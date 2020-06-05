@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/RetryScheduler.class
-
- - link:RetryScheduler-asmified.java[Asmified]
-
-== References
-

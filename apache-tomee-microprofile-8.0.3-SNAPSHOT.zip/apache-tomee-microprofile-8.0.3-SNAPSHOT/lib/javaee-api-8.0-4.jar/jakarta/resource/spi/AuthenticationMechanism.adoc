@@ -1,6 +1,0 @@
-= jakarta/resource/spi/AuthenticationMechanism.class
-
- - link:AuthenticationMechanism-asmified.java[Asmified]
-
-== References
-

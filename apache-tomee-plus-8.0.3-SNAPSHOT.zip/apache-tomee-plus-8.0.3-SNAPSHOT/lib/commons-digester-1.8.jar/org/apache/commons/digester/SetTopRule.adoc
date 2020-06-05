@@ -1,6 +1,0 @@
-= org/apache/commons/digester/SetTopRule.class
-
- - link:SetTopRule-asmified.java[Asmified]
-
-== References
-

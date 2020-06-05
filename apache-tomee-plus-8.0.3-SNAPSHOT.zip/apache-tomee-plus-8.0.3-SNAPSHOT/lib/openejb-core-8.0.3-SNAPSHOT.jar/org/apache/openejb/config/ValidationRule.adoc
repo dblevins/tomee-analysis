@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ValidationRule.class
-
- - link:ValidationRule-asmified.java[Asmified]
-
-== References
-

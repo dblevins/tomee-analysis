@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/IdReferenceTypeImplBuilder.class
-
- - link:IdReferenceTypeImplBuilder-asmified.java[Asmified]
-
-== References
-

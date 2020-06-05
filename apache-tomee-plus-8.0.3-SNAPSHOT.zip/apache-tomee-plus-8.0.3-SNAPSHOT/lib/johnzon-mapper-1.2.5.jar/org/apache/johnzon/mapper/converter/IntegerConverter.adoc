@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/converter/IntegerConverter.class
-
- - link:IntegerConverter-asmified.java[Asmified]
-
-== References
-

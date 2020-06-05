@@ -1,6 +1,0 @@
-= org/apache/catalina/users/MemoryUser.class
-
- - link:MemoryUser-asmified.java[Asmified]
-
-== References
-

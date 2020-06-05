@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HTTPSession.class
-
- - link:HTTPSession-asmified.java[Asmified]
-
-== References
-

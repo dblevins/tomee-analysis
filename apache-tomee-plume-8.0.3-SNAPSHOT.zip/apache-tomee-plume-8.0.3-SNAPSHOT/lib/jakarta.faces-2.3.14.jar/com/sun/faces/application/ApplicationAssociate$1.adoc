@@ -1,6 +1,0 @@
-= com/sun/faces/application/ApplicationAssociate$1.class
-
- - link:ApplicationAssociate$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/transport/event/BusCreated.class
-
- - link:BusCreated-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/ListenableFuture.class
-
- - link:ListenableFuture-asmified.java[Asmified]
-
-== References
-

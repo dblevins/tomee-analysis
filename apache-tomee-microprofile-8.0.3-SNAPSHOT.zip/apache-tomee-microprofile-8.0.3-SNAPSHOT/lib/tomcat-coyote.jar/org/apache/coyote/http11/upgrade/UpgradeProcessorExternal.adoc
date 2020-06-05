@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/upgrade/UpgradeProcessorExternal.class
-
- - link:UpgradeProcessorExternal-asmified.java[Asmified]
-
-== References
-

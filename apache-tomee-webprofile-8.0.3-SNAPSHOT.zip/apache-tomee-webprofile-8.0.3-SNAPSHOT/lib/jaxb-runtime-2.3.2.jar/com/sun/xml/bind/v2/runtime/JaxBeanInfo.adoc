@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/JaxBeanInfo.class
-
- - link:JaxBeanInfo-asmified.java[Asmified]
-
-== References
-

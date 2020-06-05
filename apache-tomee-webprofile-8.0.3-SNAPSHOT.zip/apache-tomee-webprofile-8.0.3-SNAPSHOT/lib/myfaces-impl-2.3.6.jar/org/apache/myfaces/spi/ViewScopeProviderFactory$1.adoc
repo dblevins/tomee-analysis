@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/ViewScopeProviderFactory$1.class
-
- - link:ViewScopeProviderFactory$1-asmified.java[Asmified]
-
-== References
-

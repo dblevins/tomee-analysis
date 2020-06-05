@@ -1,6 +1,0 @@
-= jakarta/enterprise/event/ImmutableNotificationOptions.class
-
- - link:ImmutableNotificationOptions-asmified.java[Asmified]
-
-== References
-

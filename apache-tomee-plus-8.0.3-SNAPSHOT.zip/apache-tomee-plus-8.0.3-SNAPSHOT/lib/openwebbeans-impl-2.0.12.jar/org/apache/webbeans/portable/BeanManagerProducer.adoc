@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/BeanManagerProducer.class
-
- - link:BeanManagerProducer-asmified.java[Asmified]
-
-== References
-

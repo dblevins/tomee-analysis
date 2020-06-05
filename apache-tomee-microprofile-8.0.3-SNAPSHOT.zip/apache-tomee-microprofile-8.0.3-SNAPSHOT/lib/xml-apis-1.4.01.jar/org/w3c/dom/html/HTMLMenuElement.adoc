@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLMenuElement.class
-
- - link:HTMLMenuElement-asmified.java[Asmified]
-
-== References
-

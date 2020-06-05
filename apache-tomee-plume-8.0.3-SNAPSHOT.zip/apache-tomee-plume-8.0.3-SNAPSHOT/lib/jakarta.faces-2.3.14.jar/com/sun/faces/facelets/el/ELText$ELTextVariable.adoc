@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/el/ELText$ELTextVariable.class
-
- - link:ELText$ELTextVariable-asmified.java[Asmified]
-
-== References
-

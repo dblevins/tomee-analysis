@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/concurrent/ConcurrentHashMap$KeySet.class
-
- - link:ConcurrentHashMap$KeySet-asmified.java[Asmified]
-
-== References
-

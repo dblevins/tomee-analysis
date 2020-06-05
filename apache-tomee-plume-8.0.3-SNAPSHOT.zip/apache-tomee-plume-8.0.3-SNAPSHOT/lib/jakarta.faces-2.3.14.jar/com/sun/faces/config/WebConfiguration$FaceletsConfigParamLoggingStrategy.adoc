@@ -1,6 +1,0 @@
-= com/sun/faces/config/WebConfiguration$FaceletsConfigParamLoggingStrategy.class
-
- - link:WebConfiguration$FaceletsConfigParamLoggingStrategy-asmified.java[Asmified]
-
-== References
-

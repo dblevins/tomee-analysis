@@ -1,6 +1,0 @@
-= org/apache/cxf/helpers/CastUtils.class
-
- - link:CastUtils-asmified.java[Asmified]
-
-== References
-

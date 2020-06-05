@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/RuntimeFactory.class
-
- - link:RuntimeFactory-asmified.java[Asmified]
-
-== References
-

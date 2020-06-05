@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityEvent/AlgorithmSuiteSecurityEvent.class
-
- - link:AlgorithmSuiteSecurityEvent-asmified.java[Asmified]
-
-== References
-

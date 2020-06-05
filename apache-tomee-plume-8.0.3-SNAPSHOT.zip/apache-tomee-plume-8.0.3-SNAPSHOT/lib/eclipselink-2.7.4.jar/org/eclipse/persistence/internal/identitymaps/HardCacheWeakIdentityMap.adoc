@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/identitymaps/HardCacheWeakIdentityMap.class
-
- - link:HardCacheWeakIdentityMap-asmified.java[Asmified]
-
-== References
-

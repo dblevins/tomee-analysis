@@ -1,7 +1,0 @@
-= javax/jms/InvalidDestinationRuntimeException.class
-
- - link:InvalidDestinationRuntimeException-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSRuntimeException - 4

@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo.class
-
- - link:InterceptorResolutionService$BeanInterceptorInfo-asmified.java[Asmified]
-
-== References
-

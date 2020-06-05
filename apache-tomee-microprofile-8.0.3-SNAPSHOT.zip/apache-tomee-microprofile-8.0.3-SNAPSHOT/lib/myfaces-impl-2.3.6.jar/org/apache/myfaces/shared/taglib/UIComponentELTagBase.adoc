@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/taglib/UIComponentELTagBase.class
-
- - link:UIComponentELTagBase-asmified.java[Asmified]
-
-== References
-

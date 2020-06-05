@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/filter/FilteringParserDelegate.class
-
- - link:FilteringParserDelegate-asmified.java[Asmified]
-
-== References
-

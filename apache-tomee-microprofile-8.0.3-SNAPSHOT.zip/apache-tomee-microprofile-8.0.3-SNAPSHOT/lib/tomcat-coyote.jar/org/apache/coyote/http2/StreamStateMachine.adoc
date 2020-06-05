@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/StreamStateMachine.class
-
- - link:StreamStateMachine-asmified.java[Asmified]
-
-== References
-

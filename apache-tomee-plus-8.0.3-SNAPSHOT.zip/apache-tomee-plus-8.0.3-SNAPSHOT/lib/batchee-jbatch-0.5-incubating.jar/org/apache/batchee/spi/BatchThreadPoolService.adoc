@@ -1,6 +1,0 @@
-= org/apache/batchee/spi/BatchThreadPoolService.class
-
- - link:BatchThreadPoolService-asmified.java[Asmified]
-
-== References
-

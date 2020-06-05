@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/BundleDescription$ImportPackage.class
-
- - link:BundleDescription$ImportPackage-asmified.java[Asmified]
-
-== References
-

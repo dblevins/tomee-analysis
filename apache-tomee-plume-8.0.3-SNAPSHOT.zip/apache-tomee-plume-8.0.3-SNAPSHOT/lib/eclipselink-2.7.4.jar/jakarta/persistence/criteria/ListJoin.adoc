@@ -1,6 +1,0 @@
-= jakarta/persistence/criteria/ListJoin.class
-
- - link:ListJoin-asmified.java[Asmified]
-
-== References
-

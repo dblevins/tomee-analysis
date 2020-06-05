@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/JarScannerSF.class
-
- - link:JarScannerSF-asmified.java[Asmified]
-
-== References
-

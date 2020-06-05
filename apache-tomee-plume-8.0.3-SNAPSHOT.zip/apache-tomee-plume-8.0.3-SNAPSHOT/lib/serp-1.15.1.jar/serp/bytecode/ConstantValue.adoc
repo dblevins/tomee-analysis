@@ -1,6 +1,0 @@
-= serp/bytecode/ConstantValue.class
-
- - link:ConstantValue-asmified.java[Asmified]
-
-== References
-

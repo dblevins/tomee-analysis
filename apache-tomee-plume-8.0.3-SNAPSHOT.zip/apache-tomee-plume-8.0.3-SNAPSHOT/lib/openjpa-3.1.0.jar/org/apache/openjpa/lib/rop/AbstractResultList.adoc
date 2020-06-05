@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/AbstractResultList.class
-
- - link:AbstractResultList-asmified.java[Asmified]
-
-== References
-

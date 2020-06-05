@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/BrokerBroadcaster.class
-
- - link:BrokerBroadcaster-asmified.java[Asmified]
-
-== References
-

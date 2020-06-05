@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/LoggingOutInterceptor$LogWriter.class
-
- - link:LoggingOutInterceptor$LogWriter-asmified.java[Asmified]
-
-== References
-

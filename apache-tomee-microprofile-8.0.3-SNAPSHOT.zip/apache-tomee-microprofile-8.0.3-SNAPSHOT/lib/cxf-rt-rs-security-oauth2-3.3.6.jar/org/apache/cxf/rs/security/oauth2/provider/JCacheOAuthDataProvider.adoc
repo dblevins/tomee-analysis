@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/JCacheOAuthDataProvider.class
-
- - link:JCacheOAuthDataProvider-asmified.java[Asmified]
-
-== References
-

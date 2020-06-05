@@ -1,6 +1,0 @@
-= org/apache/activemq/store/memory/MemoryTransactionStore$RemoveMessageCommand.class
-
- - link:MemoryTransactionStore$RemoveMessageCommand-asmified.java[Asmified]
-
-== References
-

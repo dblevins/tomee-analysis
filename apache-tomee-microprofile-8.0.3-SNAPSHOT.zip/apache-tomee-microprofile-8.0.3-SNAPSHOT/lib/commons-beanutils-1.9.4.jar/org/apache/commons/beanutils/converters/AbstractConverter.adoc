@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/AbstractConverter.class
-
- - link:AbstractConverter-asmified.java[Asmified]
-
-== References
-

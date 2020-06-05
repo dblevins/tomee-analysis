@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SubSelectIdentificationVariableDeclarationBNF.class
-
- - link:SubSelectIdentificationVariableDeclarationBNF-asmified.java[Asmified]
-
-== References
-

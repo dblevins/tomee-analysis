@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/StatefulBeanInfo.class
-
- - link:StatefulBeanInfo-asmified.java[Asmified]
-
-== References
-

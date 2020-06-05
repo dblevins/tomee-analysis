@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/SecurityHeaderOrder.class
-
- - link:SecurityHeaderOrder-asmified.java[Asmified]
-
-== References
-

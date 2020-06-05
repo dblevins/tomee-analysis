@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/InetSocketAddressSerializer.class
-
- - link:InetSocketAddressSerializer-asmified.java[Asmified]
-
-== References
-

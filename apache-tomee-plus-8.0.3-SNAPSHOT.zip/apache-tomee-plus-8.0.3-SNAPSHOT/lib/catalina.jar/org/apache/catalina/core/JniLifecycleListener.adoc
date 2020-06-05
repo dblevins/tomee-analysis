@@ -1,6 +1,0 @@
-= org/apache/catalina/core/JniLifecycleListener.class
-
- - link:JniLifecycleListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/ThreadLocalMessageContext.class
-
- - link:ThreadLocalMessageContext-asmified.java[Asmified]
-
-== References
-

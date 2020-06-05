@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/tld/TldParser.class
-
- - link:TldParser-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/validation/constraints/AssertTrue$List.class
-
- - link:AssertTrue$List-asmified.java[Asmified]
-
-== References
-
- - javax.validation.constraints.AssertTrue - 1

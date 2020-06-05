@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/NewID.class
-
- - link:NewID-asmified.java[Asmified]
-
-== References
-

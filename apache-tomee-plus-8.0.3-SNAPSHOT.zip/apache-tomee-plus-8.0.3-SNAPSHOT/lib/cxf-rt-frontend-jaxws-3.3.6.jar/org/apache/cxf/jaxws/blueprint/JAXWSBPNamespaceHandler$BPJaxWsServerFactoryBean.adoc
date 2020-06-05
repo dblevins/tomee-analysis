@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/blueprint/JAXWSBPNamespaceHandler$BPJaxWsServerFactoryBean.class
-
- - link:JAXWSBPNamespaceHandler$BPJaxWsServerFactoryBean-asmified.java[Asmified]
-
-== References
-

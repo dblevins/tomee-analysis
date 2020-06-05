@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/cfg/MapperBuilder.class
-
- - link:MapperBuilder-asmified.java[Asmified]
-
-== References
-

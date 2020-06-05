@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/ThrowableDeserializer.class
-
- - link:ThrowableDeserializer-asmified.java[Asmified]
-
-== References
-

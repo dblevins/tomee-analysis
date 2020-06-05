@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/GroupMBean.class
-
- - link:GroupMBean-asmified.java[Asmified]
-
-== References
-

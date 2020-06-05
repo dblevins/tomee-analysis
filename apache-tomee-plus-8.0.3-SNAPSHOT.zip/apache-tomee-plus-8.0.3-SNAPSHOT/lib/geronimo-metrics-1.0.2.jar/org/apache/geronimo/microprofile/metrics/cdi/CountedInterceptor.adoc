@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/cdi/CountedInterceptor.class
-
- - link:CountedInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/LinkBuiltInTypes.class
-
- - link:LinkBuiltInTypes-asmified.java[Asmified]
-
-== References
-

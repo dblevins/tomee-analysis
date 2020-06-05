@@ -1,6 +1,0 @@
-= org/apache/coyote/AbstractProtocol$RecycledProcessors.class
-
- - link:AbstractProtocol$RecycledProcessors-asmified.java[Asmified]
-
-== References
-

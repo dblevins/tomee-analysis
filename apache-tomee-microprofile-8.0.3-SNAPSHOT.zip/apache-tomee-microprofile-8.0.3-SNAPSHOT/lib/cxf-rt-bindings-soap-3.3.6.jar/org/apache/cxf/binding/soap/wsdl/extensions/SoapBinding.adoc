@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/wsdl/extensions/SoapBinding.class
-
- - link:SoapBinding-asmified.java[Asmified]
-
-== References
-

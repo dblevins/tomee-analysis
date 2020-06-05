@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CxfRsHttpListener$RestServiceMBean.class
-
- - link:CxfRsHttpListener$RestServiceMBean-asmified.java[Asmified]
-
-== References
-

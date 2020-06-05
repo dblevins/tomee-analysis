@@ -1,6 +1,0 @@
-= org/apache/activemq/proxy/ProxyConnector$1.class
-
- - link:ProxyConnector$1-asmified.java[Asmified]
-
-== References
-

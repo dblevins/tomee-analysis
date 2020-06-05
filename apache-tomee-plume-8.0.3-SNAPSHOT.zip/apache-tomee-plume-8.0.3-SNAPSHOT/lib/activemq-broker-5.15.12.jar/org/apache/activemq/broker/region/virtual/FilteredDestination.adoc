@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/virtual/FilteredDestination.class
-
- - link:FilteredDestination-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/remote/TomEERemoteWebapp.class
-
- - link:TomEERemoteWebapp-asmified.java[Asmified]
-
-== References
-

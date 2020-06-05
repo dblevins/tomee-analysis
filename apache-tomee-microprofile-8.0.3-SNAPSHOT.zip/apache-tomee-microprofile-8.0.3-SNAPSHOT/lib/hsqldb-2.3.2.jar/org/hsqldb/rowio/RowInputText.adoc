@@ -1,6 +1,0 @@
-= org/hsqldb/rowio/RowInputText.class
-
- - link:RowInputText-asmified.java[Asmified]
-
-== References
-

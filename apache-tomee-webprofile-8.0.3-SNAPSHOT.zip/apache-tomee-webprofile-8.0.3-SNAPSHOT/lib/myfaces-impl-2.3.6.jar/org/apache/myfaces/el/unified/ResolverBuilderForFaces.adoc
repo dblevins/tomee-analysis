@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/ResolverBuilderForFaces.class
-
- - link:ResolverBuilderForFaces-asmified.java[Asmified]
-
-== References
-

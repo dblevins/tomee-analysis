@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/descriptors/HMACSHA384.class
-
- - link:HMACSHA384-asmified.java[Asmified]
-
-== References
-

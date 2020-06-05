@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/SOAPDocument.class
-
- - link:SOAPDocument-asmified.java[Asmified]
-
-== References
-

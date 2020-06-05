@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/viewstate/SecureRandomCsrfSessionTokenFactory.class
-
- - link:SecureRandomCsrfSessionTokenFactory-asmified.java[Asmified]
-
-== References
-

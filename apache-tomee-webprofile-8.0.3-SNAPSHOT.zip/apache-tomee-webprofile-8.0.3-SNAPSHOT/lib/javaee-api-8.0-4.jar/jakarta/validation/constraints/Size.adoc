@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/Size.class
-
- - link:Size-asmified.java[Asmified]
-
-== References
-

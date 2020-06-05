@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/cdi/TimedInterceptor.class
-
- - link:TimedInterceptor-asmified.java[Asmified]
-
-== References
-

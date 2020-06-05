@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared_impl/webapp/webxml/DelegatedFacesServlet.class
-
- - link:DelegatedFacesServlet-asmified.java[Asmified]
-
-== References
-

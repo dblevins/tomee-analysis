@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/rs/MOXyJsonProvider.class
-
- - link:MOXyJsonProvider-asmified.java[Asmified]
-
-== References
-

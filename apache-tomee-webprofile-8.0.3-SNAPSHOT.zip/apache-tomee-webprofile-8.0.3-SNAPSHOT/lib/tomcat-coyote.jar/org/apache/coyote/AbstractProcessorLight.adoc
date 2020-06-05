@@ -1,6 +1,0 @@
-= org/apache/coyote/AbstractProcessorLight.class
-
- - link:AbstractProcessorLight-asmified.java[Asmified]
-
-== References
-

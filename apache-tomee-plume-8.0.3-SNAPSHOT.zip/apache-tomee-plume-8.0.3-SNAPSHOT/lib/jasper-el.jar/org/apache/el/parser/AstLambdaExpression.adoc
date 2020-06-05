@@ -1,6 +1,0 @@
-= org/apache/el/parser/AstLambdaExpression.class
-
- - link:AstLambdaExpression-asmified.java[Asmified]
-
-== References
-

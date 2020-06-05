@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/DataModifyQuery.class
-
- - link:DataModifyQuery-asmified.java[Asmified]
-
-== References
-

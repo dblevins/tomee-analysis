@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/Region.class
-
- - link:Region-asmified.java[Asmified]
-
-== References
-

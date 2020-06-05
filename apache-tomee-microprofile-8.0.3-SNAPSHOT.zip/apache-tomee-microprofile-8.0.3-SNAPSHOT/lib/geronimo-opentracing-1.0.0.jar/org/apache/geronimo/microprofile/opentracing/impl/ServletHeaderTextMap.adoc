@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/impl/ServletHeaderTextMap.class
-
- - link:ServletHeaderTextMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/XSAny.class
-
- - link:XSAny-asmified.java[Asmified]
-
-== References
-

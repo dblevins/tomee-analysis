@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/BusinessLocalReference.class
-
- - link:BusinessLocalReference-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreCMT.class
-
- - link:JobStoreCMT-asmified.java[Asmified]
-
-== References
-

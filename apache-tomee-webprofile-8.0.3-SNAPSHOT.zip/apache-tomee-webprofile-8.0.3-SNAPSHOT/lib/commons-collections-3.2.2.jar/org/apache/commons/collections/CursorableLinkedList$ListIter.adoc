@@ -1,6 +1,0 @@
-= org/apache/commons/collections/CursorableLinkedList$ListIter.class
-
- - link:CursorableLinkedList$ListIter-asmified.java[Asmified]
-
-== References
-

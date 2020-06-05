@@ -1,6 +1,0 @@
-= org/apache/commons/collections/comparators/ReverseComparator.class
-
- - link:ReverseComparator-asmified.java[Asmified]
-
-== References
-

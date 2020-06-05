@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/UsageCapacity.class
-
- - link:UsageCapacity-asmified.java[Asmified]
-
-== References
-

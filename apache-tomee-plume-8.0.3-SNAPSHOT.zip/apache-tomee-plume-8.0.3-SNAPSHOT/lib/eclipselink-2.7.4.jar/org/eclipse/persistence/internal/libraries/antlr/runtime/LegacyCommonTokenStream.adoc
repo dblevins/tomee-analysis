@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/LegacyCommonTokenStream.class
-
- - link:LegacyCommonTokenStream-asmified.java[Asmified]
-
-== References
-

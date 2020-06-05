@@ -1,6 +1,0 @@
-= org/joda/time/chrono/BasicChronology$HalfdayField.class
-
- - link:BasicChronology$HalfdayField-asmified.java[Asmified]
-
-== References
-

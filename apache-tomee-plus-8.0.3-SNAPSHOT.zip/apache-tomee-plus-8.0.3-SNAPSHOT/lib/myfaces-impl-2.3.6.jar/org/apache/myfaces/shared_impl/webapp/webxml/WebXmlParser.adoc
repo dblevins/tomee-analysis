@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared_impl/webapp/webxml/WebXmlParser.class
-
- - link:WebXmlParser-asmified.java[Asmified]
-
-== References
-

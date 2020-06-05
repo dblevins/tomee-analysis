@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/Asserts.class
-
- - link:Asserts-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/ReadablePartial.class
-
- - link:ReadablePartial-asmified.java[Asmified]
-
-== References
-

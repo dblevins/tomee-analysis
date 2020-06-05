@@ -1,6 +1,0 @@
-= jakarta/persistence/Temporal.class
-
- - link:Temporal-asmified.java[Asmified]
-
-== References
-

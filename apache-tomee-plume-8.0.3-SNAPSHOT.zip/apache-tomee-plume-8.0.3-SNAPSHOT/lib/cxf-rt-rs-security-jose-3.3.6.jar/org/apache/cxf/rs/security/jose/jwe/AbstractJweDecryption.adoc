@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/AbstractJweDecryption.class
-
- - link:AbstractJweDecryption-asmified.java[Asmified]
-
-== References
-

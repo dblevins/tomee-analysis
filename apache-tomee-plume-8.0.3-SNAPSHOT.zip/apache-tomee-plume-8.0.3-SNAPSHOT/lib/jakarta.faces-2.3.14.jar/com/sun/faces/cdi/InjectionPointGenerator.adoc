@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/InjectionPointGenerator.class
-
- - link:InjectionPointGenerator-asmified.java[Asmified]
-
-== References
-

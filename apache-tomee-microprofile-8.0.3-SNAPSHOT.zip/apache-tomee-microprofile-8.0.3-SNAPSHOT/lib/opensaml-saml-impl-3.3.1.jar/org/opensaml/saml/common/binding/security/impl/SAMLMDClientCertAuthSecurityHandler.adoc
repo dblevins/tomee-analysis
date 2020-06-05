@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/security/impl/SAMLMDClientCertAuthSecurityHandler.class
-
- - link:SAMLMDClientCertAuthSecurityHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ServerProviderFactory$1.class
-
- - link:ServerProviderFactory$1-asmified.java[Asmified]
-
-== References
-

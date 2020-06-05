@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/diagnose/RangeUtil.class
-
- - link:RangeUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/json/JsonReaderFactory.class
-
- - link:JsonReaderFactory-asmified.java[Asmified]
-
-== References
-
- - javax.json.JsonReader - 3

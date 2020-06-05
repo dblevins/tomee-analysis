@@ -1,6 +1,0 @@
-= org/apache/cxf/headers/HeaderManager.class
-
- - link:HeaderManager-asmified.java[Asmified]
-
-== References
-

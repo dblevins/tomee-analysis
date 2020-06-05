@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/ListIterator.class
-
- - link:ListIterator-asmified.java[Asmified]
-
-== References
-

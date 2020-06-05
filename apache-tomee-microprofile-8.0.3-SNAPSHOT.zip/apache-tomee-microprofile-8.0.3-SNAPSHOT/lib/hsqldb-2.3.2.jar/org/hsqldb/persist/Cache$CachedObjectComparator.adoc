@@ -1,6 +1,0 @@
-= org/hsqldb/persist/Cache$CachedObjectComparator.class
-
- - link:Cache$CachedObjectComparator-asmified.java[Asmified]
-
-== References
-

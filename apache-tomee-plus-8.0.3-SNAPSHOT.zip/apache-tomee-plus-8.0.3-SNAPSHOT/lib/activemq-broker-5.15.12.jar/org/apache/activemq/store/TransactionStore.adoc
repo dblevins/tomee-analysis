@@ -1,6 +1,0 @@
-= org/apache/activemq/store/TransactionStore.class
-
- - link:TransactionStore-asmified.java[Asmified]
-
-== References
-

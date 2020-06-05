@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/LocaleBeanUtils$Descriptor.class
-
- - link:LocaleBeanUtils$Descriptor-asmified.java[Asmified]
-
-== References
-

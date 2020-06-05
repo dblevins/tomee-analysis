@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ContextFlyweight.class
-
- - link:ContextFlyweight-asmified.java[Asmified]
-
-== References
-

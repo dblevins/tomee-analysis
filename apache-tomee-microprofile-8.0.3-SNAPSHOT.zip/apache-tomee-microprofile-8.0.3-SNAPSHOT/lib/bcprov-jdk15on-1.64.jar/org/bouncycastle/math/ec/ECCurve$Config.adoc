@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/ECCurve$Config.class
-
- - link:ECCurve$Config-asmified.java[Asmified]
-
-== References
-

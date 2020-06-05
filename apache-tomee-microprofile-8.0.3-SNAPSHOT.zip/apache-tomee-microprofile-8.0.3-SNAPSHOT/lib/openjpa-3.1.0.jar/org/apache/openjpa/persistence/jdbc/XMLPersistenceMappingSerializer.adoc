@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/XMLPersistenceMappingSerializer.class
-
- - link:XMLPersistenceMappingSerializer-asmified.java[Asmified]
-
-== References
-

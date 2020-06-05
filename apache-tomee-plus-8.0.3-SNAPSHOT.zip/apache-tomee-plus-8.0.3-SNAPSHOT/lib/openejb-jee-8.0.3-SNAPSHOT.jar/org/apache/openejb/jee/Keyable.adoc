@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Keyable.class
-
- - link:Keyable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/websocket/DecodeException.class
-
- - link:DecodeException-asmified.java[Asmified]
-
-== References
-

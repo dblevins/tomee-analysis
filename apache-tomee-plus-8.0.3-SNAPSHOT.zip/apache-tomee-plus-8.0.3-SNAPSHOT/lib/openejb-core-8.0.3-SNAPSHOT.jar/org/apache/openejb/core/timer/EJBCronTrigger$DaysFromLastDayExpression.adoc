@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/EJBCronTrigger$DaysFromLastDayExpression.class
-
- - link:EJBCronTrigger$DaysFromLastDayExpression-asmified.java[Asmified]
-
-== References
-

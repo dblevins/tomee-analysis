@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/ConstraintDefinitionType.class
-
- - link:ConstraintDefinitionType-asmified.java[Asmified]
-
-== References
-

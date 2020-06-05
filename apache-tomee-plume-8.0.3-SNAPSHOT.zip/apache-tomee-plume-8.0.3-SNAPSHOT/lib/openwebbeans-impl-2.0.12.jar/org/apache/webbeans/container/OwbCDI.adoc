@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/OwbCDI.class
-
- - link:OwbCDI-asmified.java[Asmified]
-
-== References
-

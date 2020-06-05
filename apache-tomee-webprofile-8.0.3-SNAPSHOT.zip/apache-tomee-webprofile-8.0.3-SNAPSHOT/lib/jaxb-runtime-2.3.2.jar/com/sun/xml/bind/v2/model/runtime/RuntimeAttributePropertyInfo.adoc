@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/runtime/RuntimeAttributePropertyInfo.class
-
- - link:RuntimeAttributePropertyInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/servlet/http/HttpServletRequestWrapper.class
-
- - link:HttpServletRequestWrapper-asmified.java[Asmified]
-
-== References
-

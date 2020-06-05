@@ -1,6 +1,0 @@
-= org/joda/time/tz/ZoneInfoProvider.class
-
- - link:ZoneInfoProvider-asmified.java[Asmified]
-
-== References
-

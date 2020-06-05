@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/DoctypeRenderer.class
-
- - link:DoctypeRenderer-asmified.java[Asmified]
-
-== References
-

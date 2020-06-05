@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/comparators/ComparatorChain.class
-
- - link:ComparatorChain-asmified.java[Asmified]
-
-== References
-

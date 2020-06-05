@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/smtp/SMTPConnection.class
-
- - link:SMTPConnection-asmified.java[Asmified]
-
-== References
-

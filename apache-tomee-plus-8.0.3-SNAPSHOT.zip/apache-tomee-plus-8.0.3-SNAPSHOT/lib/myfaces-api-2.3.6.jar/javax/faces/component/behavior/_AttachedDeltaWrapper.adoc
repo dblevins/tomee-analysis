@@ -1,7 +1,0 @@
-= javax/faces/component/behavior/_AttachedDeltaWrapper.class
-
- - link:_AttachedDeltaWrapper-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.behavior._AttachedDeltaWrapper - 1

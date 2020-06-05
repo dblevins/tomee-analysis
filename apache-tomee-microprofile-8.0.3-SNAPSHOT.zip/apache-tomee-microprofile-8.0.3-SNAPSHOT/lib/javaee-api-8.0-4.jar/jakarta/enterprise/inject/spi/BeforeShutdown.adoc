@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/BeforeShutdown.class
-
- - link:BeforeShutdown-asmified.java[Asmified]
-
-== References
-

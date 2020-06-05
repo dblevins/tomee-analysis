@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/FormEncodingProvider.class
-
- - link:FormEncodingProvider-asmified.java[Asmified]
-
-== References
-

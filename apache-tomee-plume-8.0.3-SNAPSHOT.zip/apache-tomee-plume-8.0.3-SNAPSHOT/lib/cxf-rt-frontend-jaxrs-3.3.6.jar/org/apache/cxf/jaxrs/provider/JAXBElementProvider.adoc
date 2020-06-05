@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/JAXBElementProvider.class
-
- - link:JAXBElementProvider-asmified.java[Asmified]
-
-== References
-

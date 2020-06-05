@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/ExtendedMarshaller.class
-
- - link:ExtendedMarshaller-asmified.java[Asmified]
-
-== References
-

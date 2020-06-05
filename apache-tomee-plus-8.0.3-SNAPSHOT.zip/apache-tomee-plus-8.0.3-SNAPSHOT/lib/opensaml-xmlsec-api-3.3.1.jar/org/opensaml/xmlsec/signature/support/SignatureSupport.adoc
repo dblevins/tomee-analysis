@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/support/SignatureSupport.class
-
- - link:SignatureSupport-asmified.java[Asmified]
-
-== References
-

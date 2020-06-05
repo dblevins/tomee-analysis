@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/ComparatorUtils.class
-
- - link:ComparatorUtils-asmified.java[Asmified]
-
-== References
-

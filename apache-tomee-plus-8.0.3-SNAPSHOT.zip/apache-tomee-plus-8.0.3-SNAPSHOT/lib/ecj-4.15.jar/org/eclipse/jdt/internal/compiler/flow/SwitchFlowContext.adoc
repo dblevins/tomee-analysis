@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/flow/SwitchFlowContext.class
-
- - link:SwitchFlowContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/enterprise/concurrent/ManagedExecutors$RunnableAdapter.class
-
- - link:ManagedExecutors$RunnableAdapter-asmified.java[Asmified]
-
-== References
-

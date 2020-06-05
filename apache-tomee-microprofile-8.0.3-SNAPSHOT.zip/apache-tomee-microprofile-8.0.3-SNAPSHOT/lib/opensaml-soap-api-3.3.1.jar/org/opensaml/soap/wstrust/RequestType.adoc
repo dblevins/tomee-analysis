@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/RequestType.class
-
- - link:RequestType-asmified.java[Asmified]
-
-== References
-

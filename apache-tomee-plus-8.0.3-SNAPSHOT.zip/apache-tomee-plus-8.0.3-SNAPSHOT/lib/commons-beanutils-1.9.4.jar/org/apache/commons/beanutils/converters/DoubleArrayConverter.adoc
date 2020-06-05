@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/DoubleArrayConverter.class
-
- - link:DoubleArrayConverter-asmified.java[Asmified]
-
-== References
-

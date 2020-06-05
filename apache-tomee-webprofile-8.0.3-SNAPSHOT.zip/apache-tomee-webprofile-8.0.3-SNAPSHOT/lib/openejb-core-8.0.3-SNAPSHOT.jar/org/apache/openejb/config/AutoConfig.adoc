@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AutoConfig.class
-
- - link:AutoConfig-asmified.java[Asmified]
-
-== References
-

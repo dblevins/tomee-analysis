@@ -1,6 +1,0 @@
-= org/apache/openejb/util/executor/OfferRejectedExecutionHandler.class
-
- - link:OfferRejectedExecutionHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/SignedPartsBuilder.class
-
- - link:SignedPartsBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Base64.class
-
- - link:Base64-asmified.java[Asmified]
-
-== References
-

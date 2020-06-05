@@ -1,6 +1,0 @@
-= com/sun/faces/el/PropertyResolverChainWrapper.class
-
- - link:PropertyResolverChainWrapper-asmified.java[Asmified]
-
-== References
-

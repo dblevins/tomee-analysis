@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/sax/FastInfosetWriter.class
-
- - link:FastInfosetWriter-asmified.java[Asmified]
-
-== References
-

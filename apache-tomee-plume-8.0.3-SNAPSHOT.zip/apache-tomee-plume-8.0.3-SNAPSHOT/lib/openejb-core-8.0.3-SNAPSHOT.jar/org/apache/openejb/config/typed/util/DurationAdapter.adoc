@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/util/DurationAdapter.class
-
- - link:DurationAdapter-asmified.java[Asmified]
-
-== References
-

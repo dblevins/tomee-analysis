@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeWizard$TreePattern.class
-
- - link:TreeWizard$TreePattern-asmified.java[Asmified]
-
-== References
-

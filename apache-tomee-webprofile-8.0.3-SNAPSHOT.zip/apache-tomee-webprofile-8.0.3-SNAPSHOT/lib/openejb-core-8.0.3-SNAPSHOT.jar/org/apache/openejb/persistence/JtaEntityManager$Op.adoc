@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/JtaEntityManager$Op.class
-
- - link:JtaEntityManager$Op-asmified.java[Asmified]
-
-== References
-

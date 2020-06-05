@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/DelegatedPersistenceContextScanner.class
-
- - link:DelegatedPersistenceContextScanner-asmified.java[Asmified]
-
-== References
-

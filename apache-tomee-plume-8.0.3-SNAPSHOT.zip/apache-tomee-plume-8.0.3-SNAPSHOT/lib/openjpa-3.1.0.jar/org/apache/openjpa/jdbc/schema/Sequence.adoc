@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/Sequence.class
-
- - link:Sequence-asmified.java[Asmified]
-
-== References
-

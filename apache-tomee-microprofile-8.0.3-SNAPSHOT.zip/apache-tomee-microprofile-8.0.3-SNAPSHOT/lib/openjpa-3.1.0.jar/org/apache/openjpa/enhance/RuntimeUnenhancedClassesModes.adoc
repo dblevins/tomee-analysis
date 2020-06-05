@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/RuntimeUnenhancedClassesModes.class
-
- - link:RuntimeUnenhancedClassesModes-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/EditableValueHolderRule$LiteralValidatorMetadata.class
-
- - link:EditableValueHolderRule$LiteralValidatorMetadata-asmified.java[Asmified]
-
-== References
-

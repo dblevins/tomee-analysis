@@ -1,6 +1,0 @@
-= org/apache/catalina/AsyncDispatcher.class
-
- - link:AsyncDispatcher-asmified.java[Asmified]
-
-== References
-

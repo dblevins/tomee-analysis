@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AvgFunctionFactory.class
-
- - link:AvgFunctionFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/ContextHandler.class
-
- - link:ContextHandler-asmified.java[Asmified]
-
-== References
-

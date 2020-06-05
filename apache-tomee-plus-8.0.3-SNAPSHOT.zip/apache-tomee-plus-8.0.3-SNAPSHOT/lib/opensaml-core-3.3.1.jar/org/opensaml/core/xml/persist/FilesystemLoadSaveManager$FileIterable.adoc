@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/persist/FilesystemLoadSaveManager$FileIterable.class
-
- - link:FilesystemLoadSaveManager$FileIterable-asmified.java[Asmified]
-
-== References
-

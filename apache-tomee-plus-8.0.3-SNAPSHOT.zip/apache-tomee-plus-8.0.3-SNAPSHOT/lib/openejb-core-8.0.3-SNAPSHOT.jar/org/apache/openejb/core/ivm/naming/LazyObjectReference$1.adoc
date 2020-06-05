@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/LazyObjectReference$1.class
-
- - link:LazyObjectReference$1-asmified.java[Asmified]
-
-== References
-

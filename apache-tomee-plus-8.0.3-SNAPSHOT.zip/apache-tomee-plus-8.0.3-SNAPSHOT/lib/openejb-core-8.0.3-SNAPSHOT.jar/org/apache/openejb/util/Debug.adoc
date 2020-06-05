@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Debug.class
-
- - link:Debug-asmified.java[Asmified]
-
-== References
-

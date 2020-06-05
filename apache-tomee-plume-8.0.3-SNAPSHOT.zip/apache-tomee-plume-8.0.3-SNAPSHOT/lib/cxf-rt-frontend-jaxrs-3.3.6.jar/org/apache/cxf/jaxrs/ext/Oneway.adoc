@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/Oneway.class
-
- - link:Oneway-asmified.java[Asmified]
-
-== References
-

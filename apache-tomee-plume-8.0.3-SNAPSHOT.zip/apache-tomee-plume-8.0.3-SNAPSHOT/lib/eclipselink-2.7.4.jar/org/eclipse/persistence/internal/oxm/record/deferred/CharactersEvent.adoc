@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/CharactersEvent.class
-
- - link:CharactersEvent-asmified.java[Asmified]
-
-== References
-

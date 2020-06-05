@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/lateral/socket/tcp/LateralTCPListener$1.class
-
- - link:LateralTCPListener$1-asmified.java[Asmified]
-
-== References
-

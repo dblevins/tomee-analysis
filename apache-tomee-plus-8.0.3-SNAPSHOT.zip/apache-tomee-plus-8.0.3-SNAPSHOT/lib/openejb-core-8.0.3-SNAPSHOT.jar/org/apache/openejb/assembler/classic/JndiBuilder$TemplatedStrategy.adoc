@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/JndiBuilder$TemplatedStrategy.class
-
- - link:JndiBuilder$TemplatedStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/neethi/builders/converters/OMToStaxConverter.class
-
- - link:OMToStaxConverter-asmified.java[Asmified]
-
-== References
-

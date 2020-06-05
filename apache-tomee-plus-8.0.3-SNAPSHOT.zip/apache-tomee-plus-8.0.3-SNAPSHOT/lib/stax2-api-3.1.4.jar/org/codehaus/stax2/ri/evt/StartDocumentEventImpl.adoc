@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/evt/StartDocumentEventImpl.class
-
- - link:StartDocumentEventImpl-asmified.java[Asmified]
-
-== References
-

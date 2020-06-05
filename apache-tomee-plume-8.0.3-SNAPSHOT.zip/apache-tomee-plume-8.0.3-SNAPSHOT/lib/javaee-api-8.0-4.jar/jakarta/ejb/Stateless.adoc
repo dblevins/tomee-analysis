@@ -1,6 +1,0 @@
-= jakarta/ejb/Stateless.class
-
- - link:Stateless-asmified.java[Asmified]
-
-== References
-

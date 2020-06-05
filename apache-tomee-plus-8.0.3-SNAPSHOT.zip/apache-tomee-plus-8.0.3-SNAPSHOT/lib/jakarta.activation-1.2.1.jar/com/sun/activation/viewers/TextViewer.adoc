@@ -1,6 +1,0 @@
-= com/sun/activation/viewers/TextViewer.class
-
- - link:TextViewer-asmified.java[Asmified]
-
-== References
-

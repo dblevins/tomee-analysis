@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.class
-
- - link:SignChallengeType-asmified.java[Asmified]
-
-== References
-

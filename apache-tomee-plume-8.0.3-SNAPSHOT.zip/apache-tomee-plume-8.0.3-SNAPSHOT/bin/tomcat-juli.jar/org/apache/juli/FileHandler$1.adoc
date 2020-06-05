@@ -1,6 +1,0 @@
-= org/apache/juli/FileHandler$1.class
-
- - link:FileHandler$1-asmified.java[Asmified]
-
-== References
-

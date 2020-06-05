@@ -1,6 +1,0 @@
-= org/apache/catalina/security/SecurityUtil.class
-
- - link:SecurityUtil-asmified.java[Asmified]
-
-== References
-

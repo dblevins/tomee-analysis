@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/ActiveMQConnectionRequestInfo.class
-
- - link:ActiveMQConnectionRequestInfo-asmified.java[Asmified]
-
-== References
-

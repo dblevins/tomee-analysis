@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$6.class
-
- - link:Yaml$6-asmified.java[Asmified]
-
-== References
-

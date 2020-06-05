@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/JsfArtifactFlowMapProducer$FlowMapAnnotationLiteral.class
-
- - link:JsfArtifactFlowMapProducer$FlowMapAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

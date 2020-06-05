@@ -1,6 +1,0 @@
-= org/apache/webbeans/annotation/BeforeDestroyedLiteral.class
-
- - link:BeforeDestroyedLiteral-asmified.java[Asmified]
-
-== References
-

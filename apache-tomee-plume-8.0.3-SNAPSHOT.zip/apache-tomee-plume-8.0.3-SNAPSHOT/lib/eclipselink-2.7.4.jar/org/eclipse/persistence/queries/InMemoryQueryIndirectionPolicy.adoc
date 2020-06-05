@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/InMemoryQueryIndirectionPolicy.class
-
- - link:InMemoryQueryIndirectionPolicy-asmified.java[Asmified]
-
-== References
-

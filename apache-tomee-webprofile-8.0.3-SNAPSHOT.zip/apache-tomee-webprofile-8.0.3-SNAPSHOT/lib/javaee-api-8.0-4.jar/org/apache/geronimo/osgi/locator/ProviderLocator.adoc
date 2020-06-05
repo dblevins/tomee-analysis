@@ -1,6 +1,0 @@
-= org/apache/geronimo/osgi/locator/ProviderLocator.class
-
- - link:ProviderLocator-asmified.java[Asmified]
-
-== References
-

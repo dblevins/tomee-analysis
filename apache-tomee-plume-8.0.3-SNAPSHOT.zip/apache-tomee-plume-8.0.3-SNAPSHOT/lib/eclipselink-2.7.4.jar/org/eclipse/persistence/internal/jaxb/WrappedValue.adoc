@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/WrappedValue.class
-
- - link:WrappedValue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MessageDatabase$13.class
-
- - link:MessageDatabase$13-asmified.java[Asmified]
-
-== References
-

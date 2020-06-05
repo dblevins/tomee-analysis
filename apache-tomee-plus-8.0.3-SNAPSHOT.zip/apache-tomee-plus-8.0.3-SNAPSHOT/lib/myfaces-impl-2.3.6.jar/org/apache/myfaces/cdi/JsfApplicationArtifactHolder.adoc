@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/JsfApplicationArtifactHolder.class
-
- - link:JsfApplicationArtifactHolder-asmified.java[Asmified]
-
-== References
-

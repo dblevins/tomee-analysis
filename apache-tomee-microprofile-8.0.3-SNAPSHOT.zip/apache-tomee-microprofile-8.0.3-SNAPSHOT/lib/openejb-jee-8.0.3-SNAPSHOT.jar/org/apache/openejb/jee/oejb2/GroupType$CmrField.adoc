@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/GroupType$CmrField.class
-
- - link:GroupType$CmrField-asmified.java[Asmified]
-
-== References
-

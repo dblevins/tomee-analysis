@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/AsyncAnnotatedMBean$1.class
-
- - link:AsyncAnnotatedMBean$1-asmified.java[Asmified]
-
-== References
-

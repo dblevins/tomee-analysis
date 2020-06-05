@@ -1,6 +1,0 @@
-= org/joda/time/convert/AbstractConverter.class
-
- - link:AbstractConverter-asmified.java[Asmified]
-
-== References
-

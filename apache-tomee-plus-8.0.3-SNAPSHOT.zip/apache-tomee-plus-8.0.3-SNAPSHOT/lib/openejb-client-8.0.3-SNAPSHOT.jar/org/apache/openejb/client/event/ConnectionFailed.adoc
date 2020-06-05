@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/ConnectionFailed.class
-
- - link:ConnectionFailed-asmified.java[Asmified]
-
-== References
-

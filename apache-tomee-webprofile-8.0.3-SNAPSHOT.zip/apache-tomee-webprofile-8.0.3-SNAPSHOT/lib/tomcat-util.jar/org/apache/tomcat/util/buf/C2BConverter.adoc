@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/C2BConverter.class
-
- - link:C2BConverter-asmified.java[Asmified]
-
-== References
-

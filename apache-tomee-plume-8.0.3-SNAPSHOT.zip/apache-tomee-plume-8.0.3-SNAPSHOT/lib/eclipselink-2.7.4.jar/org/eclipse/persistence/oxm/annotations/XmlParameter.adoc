@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlParameter.class
-
- - link:XmlParameter-asmified.java[Asmified]
-
-== References
-

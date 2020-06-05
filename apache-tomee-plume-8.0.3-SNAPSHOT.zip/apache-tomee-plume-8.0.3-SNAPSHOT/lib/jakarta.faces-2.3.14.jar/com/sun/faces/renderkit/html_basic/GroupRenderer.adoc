@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/GroupRenderer.class
-
- - link:GroupRenderer-asmified.java[Asmified]
-
-== References
-

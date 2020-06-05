@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/OwbCustomObjectInputStream$BlacklistClassResolver.class
-
- - link:OwbCustomObjectInputStream$BlacklistClassResolver-asmified.java[Asmified]
-
-== References
-

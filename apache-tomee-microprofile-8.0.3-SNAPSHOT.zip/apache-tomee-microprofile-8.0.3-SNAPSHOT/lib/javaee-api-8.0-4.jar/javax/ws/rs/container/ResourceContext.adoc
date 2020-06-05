@@ -1,6 +1,0 @@
-= javax/ws/rs/container/ResourceContext.class
-
- - link:ResourceContext-asmified.java[Asmified]
-
-== References
-

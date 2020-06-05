@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/PrettyPrintXMLStreamWriter$Element.class
-
- - link:PrettyPrintXMLStreamWriter$Element-asmified.java[Asmified]
-
-== References
-

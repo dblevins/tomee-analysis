@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/JoinColumn.class
-
- - link:JoinColumn-asmified.java[Asmified]
-
-== References
-

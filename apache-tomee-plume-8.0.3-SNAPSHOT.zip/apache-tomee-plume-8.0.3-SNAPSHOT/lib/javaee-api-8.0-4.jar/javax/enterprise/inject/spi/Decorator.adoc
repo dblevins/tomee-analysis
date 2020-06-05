@@ -1,7 +1,0 @@
-= javax/enterprise/inject/spi/Decorator.class
-
- - link:Decorator-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.Bean - 1

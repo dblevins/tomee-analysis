@@ -1,6 +1,0 @@
-= org/apache/catalina/realm/UserDatabaseRealm.class
-
- - link:UserDatabaseRealm-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/el22/WrappedMethodExpression.class
-
- - link:WrappedMethodExpression-asmified.java[Asmified]
-
-== References
-

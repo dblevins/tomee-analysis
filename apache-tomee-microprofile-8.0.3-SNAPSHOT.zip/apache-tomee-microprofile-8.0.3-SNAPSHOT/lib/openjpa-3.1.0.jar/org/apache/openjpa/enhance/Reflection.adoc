@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/Reflection.class
-
- - link:Reflection-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/many/MapEntry.class
-
- - link:MapEntry-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/ejb/embeddable/EJBContainer.class
-
- - link:EJBContainer-asmified.java[Asmified]
-
-== References
-

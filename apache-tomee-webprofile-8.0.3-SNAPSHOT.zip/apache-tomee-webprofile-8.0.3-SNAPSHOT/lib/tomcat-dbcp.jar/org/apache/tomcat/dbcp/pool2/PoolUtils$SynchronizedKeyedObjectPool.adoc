@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/PoolUtils$SynchronizedKeyedObjectPool.class
-
- - link:PoolUtils$SynchronizedKeyedObjectPool-asmified.java[Asmified]
-
-== References
-

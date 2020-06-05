@@ -1,6 +1,0 @@
-= org/apache/openjpa/audit/AuditLogger.class
-
- - link:AuditLogger-asmified.java[Asmified]
-
-== References
-

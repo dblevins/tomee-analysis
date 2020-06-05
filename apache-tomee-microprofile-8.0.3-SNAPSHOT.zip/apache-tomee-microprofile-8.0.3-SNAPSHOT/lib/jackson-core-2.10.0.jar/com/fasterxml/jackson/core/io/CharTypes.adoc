@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/io/CharTypes.class
-
- - link:CharTypes-asmified.java[Asmified]
-
-== References
-

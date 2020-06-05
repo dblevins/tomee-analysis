@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/AsmAdaptor$1.class
-
- - link:AsmAdaptor$1-asmified.java[Asmified]
-
-== References
-

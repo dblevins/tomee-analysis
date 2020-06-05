@@ -1,6 +1,0 @@
-= org/apache/commons/collections/Factory.class
-
- - link:Factory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/PoolUtils$TimerHolder.class
-
- - link:PoolUtils$TimerHolder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/wsdl/Service.class
-
- - link:Service-asmified.java[Asmified]
-
-== References
-

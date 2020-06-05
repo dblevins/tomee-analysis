@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/io/CharTypes$AltEscapes.class
-
- - link:CharTypes$AltEscapes-asmified.java[Asmified]
-
-== References
-

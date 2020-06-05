@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/AuxiliaryCacheAttributes.class
-
- - link:AuxiliaryCacheAttributes-asmified.java[Asmified]
-
-== References
-

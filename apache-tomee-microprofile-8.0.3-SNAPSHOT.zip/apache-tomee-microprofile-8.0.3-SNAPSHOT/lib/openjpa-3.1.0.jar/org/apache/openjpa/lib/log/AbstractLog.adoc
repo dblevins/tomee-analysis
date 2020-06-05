@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/log/AbstractLog.class
-
- - link:AbstractLog-asmified.java[Asmified]
-
-== References
-

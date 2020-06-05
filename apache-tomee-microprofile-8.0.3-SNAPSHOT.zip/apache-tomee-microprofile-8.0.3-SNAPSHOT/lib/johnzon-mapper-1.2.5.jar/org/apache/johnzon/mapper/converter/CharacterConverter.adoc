@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/converter/CharacterConverter.class
-
- - link:CharacterConverter-asmified.java[Asmified]
-
-== References
-

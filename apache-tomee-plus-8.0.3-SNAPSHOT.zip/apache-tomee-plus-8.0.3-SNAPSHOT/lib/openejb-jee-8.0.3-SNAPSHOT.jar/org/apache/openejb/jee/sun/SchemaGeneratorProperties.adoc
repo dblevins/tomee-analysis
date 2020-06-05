@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/SchemaGeneratorProperties.class
-
- - link:SchemaGeneratorProperties-asmified.java[Asmified]
-
-== References
-

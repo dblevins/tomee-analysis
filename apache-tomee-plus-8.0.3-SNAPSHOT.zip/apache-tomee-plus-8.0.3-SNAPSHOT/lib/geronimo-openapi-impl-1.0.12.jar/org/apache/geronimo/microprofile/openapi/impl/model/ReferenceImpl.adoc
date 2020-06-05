@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/ReferenceImpl.class
-
- - link:ReferenceImpl-asmified.java[Asmified]
-
-== References
-

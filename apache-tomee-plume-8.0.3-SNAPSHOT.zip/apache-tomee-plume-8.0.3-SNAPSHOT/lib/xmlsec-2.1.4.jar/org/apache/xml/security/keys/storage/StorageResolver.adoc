@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/storage/StorageResolver.class
-
- - link:StorageResolver-asmified.java[Asmified]
-
-== References
-

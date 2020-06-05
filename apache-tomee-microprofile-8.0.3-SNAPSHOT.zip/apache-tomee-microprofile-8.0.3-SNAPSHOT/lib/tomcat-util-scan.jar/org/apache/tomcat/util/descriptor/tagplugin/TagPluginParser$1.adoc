@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/tagplugin/TagPluginParser$1.class
-
- - link:TagPluginParser$1-asmified.java[Asmified]
-
-== References
-

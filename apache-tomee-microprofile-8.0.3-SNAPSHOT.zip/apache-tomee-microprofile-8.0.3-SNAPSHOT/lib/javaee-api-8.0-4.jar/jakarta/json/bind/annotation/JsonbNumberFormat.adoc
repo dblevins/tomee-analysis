@@ -1,6 +1,0 @@
-= jakarta/json/bind/annotation/JsonbNumberFormat.class
-
- - link:JsonbNumberFormat-asmified.java[Asmified]
-
-== References
-

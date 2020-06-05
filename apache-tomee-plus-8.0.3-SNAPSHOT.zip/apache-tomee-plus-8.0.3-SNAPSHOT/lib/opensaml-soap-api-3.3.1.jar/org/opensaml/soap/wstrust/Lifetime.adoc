@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/Lifetime.class
-
- - link:Lifetime-asmified.java[Asmified]
-
-== References
-

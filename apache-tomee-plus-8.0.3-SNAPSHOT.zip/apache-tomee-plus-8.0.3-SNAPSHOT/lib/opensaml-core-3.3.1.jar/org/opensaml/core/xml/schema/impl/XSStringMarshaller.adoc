@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSStringMarshaller.class
-
- - link:XSStringMarshaller-asmified.java[Asmified]
-
-== References
-

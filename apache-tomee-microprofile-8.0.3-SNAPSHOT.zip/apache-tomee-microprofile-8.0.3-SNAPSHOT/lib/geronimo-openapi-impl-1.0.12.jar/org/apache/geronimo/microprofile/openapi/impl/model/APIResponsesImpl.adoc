@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/APIResponsesImpl.class
-
- - link:APIResponsesImpl-asmified.java[Asmified]
-
-== References
-

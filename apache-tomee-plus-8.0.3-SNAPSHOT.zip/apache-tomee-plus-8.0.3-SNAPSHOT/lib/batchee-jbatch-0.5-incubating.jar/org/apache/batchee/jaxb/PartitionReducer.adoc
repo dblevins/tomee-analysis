@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/PartitionReducer.class
-
- - link:PartitionReducer-asmified.java[Asmified]
-
-== References
-

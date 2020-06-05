@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/criteria/role/impl/EvaluableEntityRoleDescriptorCriterion.class
-
- - link:EvaluableEntityRoleDescriptorCriterion-asmified.java[Asmified]
-
-== References
-

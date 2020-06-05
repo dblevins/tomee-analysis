@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/TypedProperties.class
-
- - link:TypedProperties-asmified.java[Asmified]
-
-== References
-

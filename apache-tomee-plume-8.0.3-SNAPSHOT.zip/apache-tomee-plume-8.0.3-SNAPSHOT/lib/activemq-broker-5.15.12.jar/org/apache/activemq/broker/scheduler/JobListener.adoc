@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/scheduler/JobListener.class
-
- - link:JobListener-asmified.java[Asmified]
-
-== References
-

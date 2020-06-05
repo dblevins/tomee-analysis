@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/_FlowNavigationStructure.class
-
- - link:_FlowNavigationStructure-asmified.java[Asmified]
-
-== References
-

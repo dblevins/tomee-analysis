@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/config/JWTAuthConfiguration.class
-
- - link:JWTAuthConfiguration-asmified.java[Asmified]
-
-== References
-

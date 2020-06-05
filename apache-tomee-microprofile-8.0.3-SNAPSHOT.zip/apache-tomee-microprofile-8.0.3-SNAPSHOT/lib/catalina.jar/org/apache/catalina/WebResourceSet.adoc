@@ -1,6 +1,0 @@
-= org/apache/catalina/WebResourceSet.class
-
- - link:WebResourceSet-asmified.java[Asmified]
-
-== References
-

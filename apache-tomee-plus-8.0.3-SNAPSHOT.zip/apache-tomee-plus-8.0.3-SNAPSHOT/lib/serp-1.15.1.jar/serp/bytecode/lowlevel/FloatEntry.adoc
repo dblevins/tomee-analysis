@@ -1,6 +1,0 @@
-= serp/bytecode/lowlevel/FloatEntry.class
-
- - link:FloatEntry-asmified.java[Asmified]
-
-== References
-

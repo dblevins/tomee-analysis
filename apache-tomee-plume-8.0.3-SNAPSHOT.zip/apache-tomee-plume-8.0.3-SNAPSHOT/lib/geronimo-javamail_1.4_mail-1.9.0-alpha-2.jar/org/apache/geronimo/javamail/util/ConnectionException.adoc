@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/util/ConnectionException.class
-
- - link:ConnectionException-asmified.java[Asmified]
-
-== References
-

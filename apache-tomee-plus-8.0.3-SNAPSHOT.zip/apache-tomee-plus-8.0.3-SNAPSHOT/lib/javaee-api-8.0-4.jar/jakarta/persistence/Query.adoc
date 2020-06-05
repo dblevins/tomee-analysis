@@ -1,6 +1,0 @@
-= jakarta/persistence/Query.class
-
- - link:Query-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectionmanagerconfig/PartitionedPool.class
-
- - link:PartitionedPool-asmified.java[Asmified]
-
-== References
-

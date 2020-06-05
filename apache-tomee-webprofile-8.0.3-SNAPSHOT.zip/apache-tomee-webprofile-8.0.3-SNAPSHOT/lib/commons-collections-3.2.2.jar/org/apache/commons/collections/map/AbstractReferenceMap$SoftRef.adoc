@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/AbstractReferenceMap$SoftRef.class
-
- - link:AbstractReferenceMap$SoftRef-asmified.java[Asmified]
-
-== References
-

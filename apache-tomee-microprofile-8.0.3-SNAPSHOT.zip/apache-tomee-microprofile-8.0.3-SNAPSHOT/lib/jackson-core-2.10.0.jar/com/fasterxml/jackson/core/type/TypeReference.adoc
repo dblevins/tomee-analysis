@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/type/TypeReference.class
-
- - link:TypeReference-asmified.java[Asmified]
-
-== References
-

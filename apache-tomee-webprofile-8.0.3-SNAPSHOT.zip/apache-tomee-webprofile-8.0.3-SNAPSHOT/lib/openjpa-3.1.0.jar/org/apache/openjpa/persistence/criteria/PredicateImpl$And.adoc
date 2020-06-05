@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/PredicateImpl$And.class
-
- - link:PredicateImpl$And-asmified.java[Asmified]
-
-== References
-

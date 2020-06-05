@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/xml/XMLNamespaceResolver.class
-
- - link:XMLNamespaceResolver-asmified.java[Asmified]
-
-== References
-

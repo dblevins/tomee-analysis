@@ -1,6 +1,0 @@
-= org/apache/openejb/hibernate/OpenEJBJtaPlatform.class
-
- - link:OpenEJBJtaPlatform-asmified.java[Asmified]
-
-== References
-

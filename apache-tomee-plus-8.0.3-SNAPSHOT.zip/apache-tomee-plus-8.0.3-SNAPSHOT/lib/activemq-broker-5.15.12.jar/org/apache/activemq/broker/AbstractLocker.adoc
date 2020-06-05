@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/AbstractLocker.class
-
- - link:AbstractLocker-asmified.java[Asmified]
-
-== References
-

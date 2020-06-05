@@ -1,6 +1,0 @@
-= org/joda/time/Chronology.class
-
- - link:Chronology-asmified.java[Asmified]
-
-== References
-

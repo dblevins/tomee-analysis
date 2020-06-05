@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/index/impl/SAMLArtifactMetadataIndex$SourceIDExtensionIndexingFunction.class
-
- - link:SAMLArtifactMetadataIndex$SourceIDExtensionIndexingFunction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/parser/SimpleCharStream.class
-
- - link:SimpleCharStream-asmified.java[Asmified]
-
-== References
-

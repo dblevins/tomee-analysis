@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/JDBCFetchConfigurationImpl$JDBCConfigurationState.class
-
- - link:JDBCFetchConfigurationImpl$JDBCConfigurationState-asmified.java[Asmified]
-
-== References
-

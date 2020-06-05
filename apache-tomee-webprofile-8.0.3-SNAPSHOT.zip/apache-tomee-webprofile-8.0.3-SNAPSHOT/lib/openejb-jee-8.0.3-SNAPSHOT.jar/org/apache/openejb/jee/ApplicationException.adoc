@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ApplicationException.class
-
- - link:ApplicationException-asmified.java[Asmified]
-
-== References
-

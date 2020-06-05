@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/MapKeyColumn.class
-
- - link:MapKeyColumn-asmified.java[Asmified]
-
-== References
-

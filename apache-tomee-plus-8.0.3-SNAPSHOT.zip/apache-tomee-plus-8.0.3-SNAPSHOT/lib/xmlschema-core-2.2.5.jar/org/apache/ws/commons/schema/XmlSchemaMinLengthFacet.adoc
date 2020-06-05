@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaMinLengthFacet.class
-
- - link:XmlSchemaMinLengthFacet-asmified.java[Asmified]
-
-== References
-

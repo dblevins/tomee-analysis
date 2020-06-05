@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/keyvalue/TiedMapEntry.class
-
- - link:TiedMapEntry-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ActivationConfig$JAXB.class
-
- - link:ActivationConfig$JAXB-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/IntraVmMetaData.class
-
- - link:IntraVmMetaData-asmified.java[Asmified]
-
-== References
-

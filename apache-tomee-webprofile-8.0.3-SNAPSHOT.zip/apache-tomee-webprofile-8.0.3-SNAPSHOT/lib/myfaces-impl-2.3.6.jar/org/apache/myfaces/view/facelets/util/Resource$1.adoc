@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/util/Resource$1.class
-
- - link:Resource$1-asmified.java[Asmified]
-
-== References
-

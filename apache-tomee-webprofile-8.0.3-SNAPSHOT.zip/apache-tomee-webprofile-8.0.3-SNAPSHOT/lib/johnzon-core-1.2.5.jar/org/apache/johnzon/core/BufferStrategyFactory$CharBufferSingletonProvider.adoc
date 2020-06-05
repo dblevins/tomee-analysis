@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/BufferStrategyFactory$CharBufferSingletonProvider.class
-
- - link:BufferStrategyFactory$CharBufferSingletonProvider-asmified.java[Asmified]
-
-== References
-

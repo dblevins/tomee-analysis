@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/ver1_1/SOAPFactory1_1Impl.class
-
- - link:SOAPFactory1_1Impl-asmified.java[Asmified]
-
-== References
-

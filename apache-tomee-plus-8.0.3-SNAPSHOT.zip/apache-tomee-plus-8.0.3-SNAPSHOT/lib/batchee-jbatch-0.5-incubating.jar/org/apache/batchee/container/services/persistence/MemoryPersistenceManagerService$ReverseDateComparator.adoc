@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$ReverseDateComparator.class
-
- - link:MemoryPersistenceManagerService$ReverseDateComparator-asmified.java[Asmified]
-
-== References
-

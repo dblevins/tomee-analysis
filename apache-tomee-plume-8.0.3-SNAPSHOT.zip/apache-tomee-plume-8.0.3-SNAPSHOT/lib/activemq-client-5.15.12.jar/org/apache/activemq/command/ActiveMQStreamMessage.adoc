@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQStreamMessage.class
-
- - link:ActiveMQStreamMessage-asmified.java[Asmified]
-
-== References
-

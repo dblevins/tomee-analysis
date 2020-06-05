@@ -1,6 +1,0 @@
-= org/slf4j/helpers/SubstituteLoggerFactory.class
-
- - link:SubstituteLoggerFactory-asmified.java[Asmified]
-
-== References
-

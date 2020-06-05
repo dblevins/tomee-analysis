@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/OneOneFinders.class
-
- - link:OneOneFinders-asmified.java[Asmified]
-
-== References
-

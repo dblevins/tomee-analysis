@@ -1,6 +1,0 @@
-= jakarta/servlet/http/Cookie.class
-
- - link:Cookie-asmified.java[Asmified]
-
-== References
-

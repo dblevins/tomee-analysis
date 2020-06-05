@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/multipart/InputStreamDataSource.class
-
- - link:InputStreamDataSource-asmified.java[Asmified]
-
-== References
-

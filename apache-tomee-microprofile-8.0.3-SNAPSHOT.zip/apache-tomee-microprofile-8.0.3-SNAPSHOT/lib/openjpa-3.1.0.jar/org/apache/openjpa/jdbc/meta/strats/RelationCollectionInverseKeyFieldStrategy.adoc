@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/RelationCollectionInverseKeyFieldStrategy.class
-
- - link:RelationCollectionInverseKeyFieldStrategy-asmified.java[Asmified]
-
-== References
-

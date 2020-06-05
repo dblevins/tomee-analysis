@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotatedConstructor.class
-
- - link:AnnotatedConstructor-asmified.java[Asmified]
-
-== References
-

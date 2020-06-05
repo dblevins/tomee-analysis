@@ -1,6 +1,0 @@
-= org/apache/commons/collections/set/PredicatedSet.class
-
- - link:PredicatedSet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/ProxyIndirectionHandler.class
-
- - link:ProxyIndirectionHandler-asmified.java[Asmified]
-
-== References
-

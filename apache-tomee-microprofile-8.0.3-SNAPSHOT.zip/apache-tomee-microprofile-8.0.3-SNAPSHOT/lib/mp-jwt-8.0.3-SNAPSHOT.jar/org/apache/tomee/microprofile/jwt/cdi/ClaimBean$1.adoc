@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/cdi/ClaimBean$1.class
-
- - link:ClaimBean$1-asmified.java[Asmified]
-
-== References
-

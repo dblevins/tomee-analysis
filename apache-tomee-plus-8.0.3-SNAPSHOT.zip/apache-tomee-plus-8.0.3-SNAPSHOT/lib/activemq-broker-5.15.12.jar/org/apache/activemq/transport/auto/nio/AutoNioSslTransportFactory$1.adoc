@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/auto/nio/AutoNioSslTransportFactory$1.class
-
- - link:AutoNioSslTransportFactory$1-asmified.java[Asmified]
-
-== References
-

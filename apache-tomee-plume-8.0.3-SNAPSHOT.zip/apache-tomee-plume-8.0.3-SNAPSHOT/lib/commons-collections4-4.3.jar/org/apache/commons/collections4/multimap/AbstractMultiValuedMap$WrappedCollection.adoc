@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/multimap/AbstractMultiValuedMap$WrappedCollection.class
-
- - link:AbstractMultiValuedMap$WrappedCollection-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/client/ClientTokenContextManager.class
-
- - link:ClientTokenContextManager-asmified.java[Asmified]
-
-== References
-

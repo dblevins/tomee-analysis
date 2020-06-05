@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/core/WhenTagSupport.class
-
- - link:WhenTagSupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/Adapter1.class
-
- - link:Adapter1-asmified.java[Asmified]
-
-== References
-

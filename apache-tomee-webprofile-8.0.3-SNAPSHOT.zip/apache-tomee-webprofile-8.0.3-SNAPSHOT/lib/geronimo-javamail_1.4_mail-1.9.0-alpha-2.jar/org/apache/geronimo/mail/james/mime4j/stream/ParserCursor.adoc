@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/stream/ParserCursor.class
-
- - link:ParserCursor-asmified.java[Asmified]
-
-== References
-

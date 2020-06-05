@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ValidatorImplTag.class
-
- - link:ValidatorImplTag-asmified.java[Asmified]
-
-== References
-

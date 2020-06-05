@@ -1,9 +1,0 @@
-= javax/ejb/SessionBean.class
-
- - link:SessionBean-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 4
- - javax.ejb.EnterpriseBean - 1
- - javax.ejb.SessionContext - 1

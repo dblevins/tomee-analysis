@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/StrSubstitutor.class
-
- - link:StrSubstitutor-asmified.java[Asmified]
-
-== References
-

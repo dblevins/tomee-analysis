@@ -1,6 +1,0 @@
-= org/apache/webbeans/lifecycle/AbstractLifeCycle.class
-
- - link:AbstractLifeCycle-asmified.java[Asmified]
-
-== References
-

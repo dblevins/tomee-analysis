@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/LookupSwitchInsnNode.class
-
- - link:LookupSwitchInsnNode-asmified.java[Asmified]
-
-== References
-

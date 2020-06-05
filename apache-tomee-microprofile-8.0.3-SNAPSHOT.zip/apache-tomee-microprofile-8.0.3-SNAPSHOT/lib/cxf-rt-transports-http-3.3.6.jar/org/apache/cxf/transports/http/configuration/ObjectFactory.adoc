@@ -1,6 +1,0 @@
-= org/apache/cxf/transports/http/configuration/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

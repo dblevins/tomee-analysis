@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/FlowMapProducer.class
-
- - link:FlowMapProducer-asmified.java[Asmified]
-
-== References
-

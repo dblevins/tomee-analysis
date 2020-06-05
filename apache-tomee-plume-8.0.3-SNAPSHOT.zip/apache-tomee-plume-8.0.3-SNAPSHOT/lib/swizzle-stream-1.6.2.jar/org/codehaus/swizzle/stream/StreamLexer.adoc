@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/StreamLexer.class
-
- - link:StreamLexer-asmified.java[Asmified]
-
-== References
-

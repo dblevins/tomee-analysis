@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects$2.class
-
- - link:AddSubjectConfirmationToSubjects$2-asmified.java[Asmified]
-
-== References
-

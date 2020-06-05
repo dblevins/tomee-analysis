@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/WebsocketConfigurator.class
-
- - link:WebsocketConfigurator-asmified.java[Asmified]
-
-== References
-

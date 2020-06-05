@@ -1,6 +1,0 @@
-= jakarta/resource/cci/ResultSetInfo.class
-
- - link:ResultSetInfo-asmified.java[Asmified]
-
-== References
-

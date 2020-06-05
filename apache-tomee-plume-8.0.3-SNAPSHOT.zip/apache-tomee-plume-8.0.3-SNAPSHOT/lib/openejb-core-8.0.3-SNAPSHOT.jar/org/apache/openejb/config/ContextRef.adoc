@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ContextRef.class
-
- - link:ContextRef-asmified.java[Asmified]
-
-== References
-

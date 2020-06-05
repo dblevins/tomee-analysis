@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/LongLiteral.class
-
- - link:LongLiteral-asmified.java[Asmified]
-
-== References
-

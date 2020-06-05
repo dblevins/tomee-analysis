@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/ReflectionBuilder$ForClass.class
-
- - link:ReflectionBuilder$ForClass-asmified.java[Asmified]
-
-== References
-

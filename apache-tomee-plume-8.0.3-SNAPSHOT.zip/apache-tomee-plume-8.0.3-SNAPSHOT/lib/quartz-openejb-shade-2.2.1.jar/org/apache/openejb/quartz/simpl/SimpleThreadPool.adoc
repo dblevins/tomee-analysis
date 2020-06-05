@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/SimpleThreadPool.class
-
- - link:SimpleThreadPool-asmified.java[Asmified]
-
-== References
-

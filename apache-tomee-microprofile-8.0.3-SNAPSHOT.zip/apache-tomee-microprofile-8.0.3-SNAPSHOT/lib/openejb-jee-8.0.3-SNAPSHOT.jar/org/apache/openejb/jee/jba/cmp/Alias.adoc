@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/Alias.class
-
- - link:Alias-asmified.java[Asmified]
-
-== References
-

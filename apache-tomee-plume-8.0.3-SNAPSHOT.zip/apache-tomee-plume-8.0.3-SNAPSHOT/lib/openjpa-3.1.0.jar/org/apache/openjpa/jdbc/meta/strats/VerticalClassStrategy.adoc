@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/VerticalClassStrategy.class
-
- - link:VerticalClassStrategy-asmified.java[Asmified]
-
-== References
-

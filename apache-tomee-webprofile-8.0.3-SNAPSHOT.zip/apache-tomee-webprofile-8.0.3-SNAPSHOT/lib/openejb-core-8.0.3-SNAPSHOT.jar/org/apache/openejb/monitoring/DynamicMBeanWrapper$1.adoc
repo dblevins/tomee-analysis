@@ -1,6 +1,0 @@
-= org/apache/openejb/monitoring/DynamicMBeanWrapper$1.class
-
- - link:DynamicMBeanWrapper$1-asmified.java[Asmified]
-
-== References
-

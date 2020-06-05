@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/GroupChannel$InterceptorIterator.class
-
- - link:GroupChannel$InterceptorIterator-asmified.java[Asmified]
-
-== References
-

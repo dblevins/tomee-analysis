@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/TransformerBasedFieldTransformation.class
-
- - link:TransformerBasedFieldTransformation-asmified.java[Asmified]
-
-== References
-

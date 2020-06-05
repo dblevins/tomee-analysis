@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/serialization/Serializations.class
-
- - link:Serializations-asmified.java[Asmified]
-
-== References
-

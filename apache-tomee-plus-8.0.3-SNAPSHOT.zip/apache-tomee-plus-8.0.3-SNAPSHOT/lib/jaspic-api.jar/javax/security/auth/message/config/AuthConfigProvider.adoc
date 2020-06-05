@@ -1,9 +1,0 @@
-= javax/security/auth/message/config/AuthConfigProvider.class
-
- - link:AuthConfigProvider-asmified.java[Asmified]
-
-== References
-
- - javax.security.auth.message.AuthException - 2
- - javax.security.auth.message.config.ServerAuthConfig - 1
- - javax.security.auth.message.config.ClientAuthConfig - 1

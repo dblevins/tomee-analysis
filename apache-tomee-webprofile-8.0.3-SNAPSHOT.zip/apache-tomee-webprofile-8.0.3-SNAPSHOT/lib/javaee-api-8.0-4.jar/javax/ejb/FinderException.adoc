@@ -1,6 +1,0 @@
-= javax/ejb/FinderException.class
-
- - link:FinderException-asmified.java[Asmified]
-
-== References
-

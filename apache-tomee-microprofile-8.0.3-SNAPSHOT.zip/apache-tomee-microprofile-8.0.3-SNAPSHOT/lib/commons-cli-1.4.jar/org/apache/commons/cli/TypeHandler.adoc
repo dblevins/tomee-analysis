@@ -1,6 +1,0 @@
-= org/apache/commons/cli/TypeHandler.class
-
- - link:TypeHandler-asmified.java[Asmified]
-
-== References
-

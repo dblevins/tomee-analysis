@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/ApplicationRule$1.class
-
- - link:ApplicationRule$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/PCEnhancer$Flags.class
-
- - link:PCEnhancer$Flags-asmified.java[Asmified]
-
-== References
-

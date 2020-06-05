@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/impl/GenericKeyedObjectPoolMXBean.class
-
- - link:GenericKeyedObjectPoolMXBean-asmified.java[Asmified]
-
-== References
-

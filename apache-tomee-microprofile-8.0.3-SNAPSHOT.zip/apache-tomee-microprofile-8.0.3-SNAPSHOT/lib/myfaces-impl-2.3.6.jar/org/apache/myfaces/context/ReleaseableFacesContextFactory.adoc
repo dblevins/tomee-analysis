@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/ReleaseableFacesContextFactory.class
-
- - link:ReleaseableFacesContextFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/JsonbAccessMode$ParsingCacheEntry.class
-
- - link:JsonbAccessMode$ParsingCacheEntry-asmified.java[Asmified]
-
-== References
-

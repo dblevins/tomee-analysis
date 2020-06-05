@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/Edge.class
-
- - link:Edge-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/tar/PIFGenerator.class
-
- - link:PIFGenerator-asmified.java[Asmified]
-
-== References
-

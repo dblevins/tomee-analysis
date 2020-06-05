@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/DTDWriter.class
-
- - link:DTDWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/PrimitiveTypeImpl.class
-
- - link:PrimitiveTypeImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeFormat.class
-
- - link:DateTimeFormat-asmified.java[Asmified]
-
-== References
-

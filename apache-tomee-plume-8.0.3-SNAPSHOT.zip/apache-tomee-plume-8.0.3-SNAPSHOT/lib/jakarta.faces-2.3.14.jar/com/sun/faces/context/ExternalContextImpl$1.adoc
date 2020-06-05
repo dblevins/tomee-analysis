@@ -1,6 +1,0 @@
-= com/sun/faces/context/ExternalContextImpl$1.class
-
- - link:ExternalContextImpl$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/nio/NIOTransportFactory$3.class
-
- - link:NIOTransportFactory$3-asmified.java[Asmified]
-
-== References
-

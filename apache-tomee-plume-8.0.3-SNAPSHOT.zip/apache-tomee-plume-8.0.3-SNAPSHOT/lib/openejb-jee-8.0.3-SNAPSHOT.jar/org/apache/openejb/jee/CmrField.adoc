@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/CmrField.class
-
- - link:CmrField-asmified.java[Asmified]
-
-== References
-

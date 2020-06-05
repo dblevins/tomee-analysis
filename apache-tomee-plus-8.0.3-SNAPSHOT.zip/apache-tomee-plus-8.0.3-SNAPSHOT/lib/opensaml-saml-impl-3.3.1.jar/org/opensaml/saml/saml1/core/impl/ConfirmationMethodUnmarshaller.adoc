@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/ConfirmationMethodUnmarshaller.class
-
- - link:ConfirmationMethodUnmarshaller-asmified.java[Asmified]
-
-== References
-

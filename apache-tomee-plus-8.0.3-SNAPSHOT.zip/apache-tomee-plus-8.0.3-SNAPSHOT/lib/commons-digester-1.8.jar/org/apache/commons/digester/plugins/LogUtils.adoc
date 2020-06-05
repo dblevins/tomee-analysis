@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/LogUtils.class
-
- - link:LogUtils-asmified.java[Asmified]
-
-== References
-

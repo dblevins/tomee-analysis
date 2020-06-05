@@ -1,6 +1,0 @@
-= org/apache/activemq/command/BrokerSubscriptionInfo.class
-
- - link:BrokerSubscriptionInfo-asmified.java[Asmified]
-
-== References
-

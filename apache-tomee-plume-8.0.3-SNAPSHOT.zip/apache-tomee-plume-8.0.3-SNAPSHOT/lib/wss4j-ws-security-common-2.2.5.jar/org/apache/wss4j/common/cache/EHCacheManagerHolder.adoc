@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/cache/EHCacheManagerHolder.class
-
- - link:EHCacheManagerHolder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/ui/IncludeHandler.class
-
- - link:IncludeHandler-asmified.java[Asmified]
-
-== References
-

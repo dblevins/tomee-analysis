@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanContext$ViewContext.class
-
- - link:BeanContext$ViewContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= serp/bytecode/visitor/VisitAcceptor.class
-
- - link:VisitAcceptor-asmified.java[Asmified]
-
-== References
-

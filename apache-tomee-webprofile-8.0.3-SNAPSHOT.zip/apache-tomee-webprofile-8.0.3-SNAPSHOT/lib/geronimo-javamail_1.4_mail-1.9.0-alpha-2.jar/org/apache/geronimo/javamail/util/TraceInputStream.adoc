@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/util/TraceInputStream.class
-
- - link:TraceInputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/LogicExpression.class
-
- - link:LogicExpression-asmified.java[Asmified]
-
-== References
-

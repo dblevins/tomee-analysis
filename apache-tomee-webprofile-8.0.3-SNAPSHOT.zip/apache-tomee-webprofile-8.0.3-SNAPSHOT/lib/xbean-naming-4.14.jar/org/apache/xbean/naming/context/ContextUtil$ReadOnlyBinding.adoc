@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ContextUtil$ReadOnlyBinding.class
-
- - link:ContextUtil$ReadOnlyBinding-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/PreparedQueryCacheImpl.class
-
- - link:PreparedQueryCacheImpl-asmified.java[Asmified]
-
-== References
-

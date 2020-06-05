@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller.class
-
- - link:StreamingOutputMarshaller-asmified.java[Asmified]
-
-== References
-

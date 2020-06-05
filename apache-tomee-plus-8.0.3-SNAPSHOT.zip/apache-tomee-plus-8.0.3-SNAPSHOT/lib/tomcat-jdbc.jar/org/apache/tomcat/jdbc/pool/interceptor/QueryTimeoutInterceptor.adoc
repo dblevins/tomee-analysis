@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/interceptor/QueryTimeoutInterceptor.class
-
- - link:QueryTimeoutInterceptor-asmified.java[Asmified]
-
-== References
-

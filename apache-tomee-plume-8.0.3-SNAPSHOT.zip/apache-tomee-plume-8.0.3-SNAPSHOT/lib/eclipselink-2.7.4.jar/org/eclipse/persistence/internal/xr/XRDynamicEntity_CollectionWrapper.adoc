@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRDynamicEntity_CollectionWrapper.class
-
- - link:XRDynamicEntity_CollectionWrapper-asmified.java[Asmified]
-
-== References
-

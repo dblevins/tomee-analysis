@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/ResourceContextImpl.class
-
- - link:ResourceContextImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/AbstractClient$AbstractBodyWriter.class
-
- - link:AbstractClient$AbstractBodyWriter-asmified.java[Asmified]
-
-== References
-

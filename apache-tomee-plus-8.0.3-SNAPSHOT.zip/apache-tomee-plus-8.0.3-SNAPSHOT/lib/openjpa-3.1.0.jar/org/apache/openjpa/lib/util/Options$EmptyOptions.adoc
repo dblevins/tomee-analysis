@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/Options$EmptyOptions.class
-
- - link:Options$EmptyOptions-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/URLEditor.class
-
- - link:URLEditor-asmified.java[Asmified]
-
-== References
-

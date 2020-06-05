@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/JDBCStoreManager$CancelStatement.class
-
- - link:JDBCStoreManager$CancelStatement-asmified.java[Asmified]
-
-== References
-

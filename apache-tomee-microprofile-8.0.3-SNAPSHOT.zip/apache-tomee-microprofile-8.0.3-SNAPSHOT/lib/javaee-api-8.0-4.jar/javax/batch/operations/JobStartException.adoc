@@ -1,7 +1,0 @@
-= javax/batch/operations/JobStartException.class
-
- - link:JobStartException-asmified.java[Asmified]
-
-== References
-
- - javax.batch.operations.BatchRuntimeException - 5

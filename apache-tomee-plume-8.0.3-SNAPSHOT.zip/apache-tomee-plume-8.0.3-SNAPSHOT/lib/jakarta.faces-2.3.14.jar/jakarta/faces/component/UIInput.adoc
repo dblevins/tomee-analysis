@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIInput.class
-
- - link:UIInput-asmified.java[Asmified]
-
-== References
-

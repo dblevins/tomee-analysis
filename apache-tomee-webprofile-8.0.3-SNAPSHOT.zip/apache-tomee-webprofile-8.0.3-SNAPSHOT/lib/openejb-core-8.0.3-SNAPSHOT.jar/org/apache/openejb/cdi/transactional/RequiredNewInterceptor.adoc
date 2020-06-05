@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/transactional/RequiredNewInterceptor.class
-
- - link:RequiredNewInterceptor-asmified.java[Asmified]
-
-== References
-

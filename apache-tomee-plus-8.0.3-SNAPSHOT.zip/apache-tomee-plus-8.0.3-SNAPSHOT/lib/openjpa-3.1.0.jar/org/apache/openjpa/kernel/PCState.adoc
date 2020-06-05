@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PCState.class
-
- - link:PCState-asmified.java[Asmified]
-
-== References
-

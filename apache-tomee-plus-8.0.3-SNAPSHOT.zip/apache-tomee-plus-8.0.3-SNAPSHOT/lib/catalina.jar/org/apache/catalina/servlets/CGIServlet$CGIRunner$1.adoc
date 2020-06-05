@@ -1,6 +1,0 @@
-= org/apache/catalina/servlets/CGIServlet$CGIRunner$1.class
-
- - link:CGIServlet$CGIRunner$1-asmified.java[Asmified]
-
-== References
-

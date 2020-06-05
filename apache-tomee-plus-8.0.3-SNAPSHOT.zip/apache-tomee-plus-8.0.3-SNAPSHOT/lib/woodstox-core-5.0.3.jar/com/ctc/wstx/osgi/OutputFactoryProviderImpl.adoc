@@ -1,6 +1,0 @@
-= com/ctc/wstx/osgi/OutputFactoryProviderImpl.class
-
- - link:OutputFactoryProviderImpl-asmified.java[Asmified]
-
-== References
-

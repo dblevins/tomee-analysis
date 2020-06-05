@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/ServerFactoryBean.class
-
- - link:ServerFactoryBean-asmified.java[Asmified]
-
-== References
-

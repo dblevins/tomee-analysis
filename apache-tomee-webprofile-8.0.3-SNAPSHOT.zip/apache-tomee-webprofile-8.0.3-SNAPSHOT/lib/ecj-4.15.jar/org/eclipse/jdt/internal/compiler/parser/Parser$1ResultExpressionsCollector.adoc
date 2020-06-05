@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/Parser$1ResultExpressionsCollector.class
-
- - link:Parser$1ResultExpressionsCollector-asmified.java[Asmified]
-
-== References
-

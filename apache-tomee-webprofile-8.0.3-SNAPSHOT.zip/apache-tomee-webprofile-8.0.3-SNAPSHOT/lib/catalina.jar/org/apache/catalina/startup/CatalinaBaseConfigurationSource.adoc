@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/CatalinaBaseConfigurationSource.class
-
- - link:CatalinaBaseConfigurationSource-asmified.java[Asmified]
-
-== References
-

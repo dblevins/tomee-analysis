@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Generator.class
-
- - link:Generator-asmified.java[Asmified]
-
-== References
-

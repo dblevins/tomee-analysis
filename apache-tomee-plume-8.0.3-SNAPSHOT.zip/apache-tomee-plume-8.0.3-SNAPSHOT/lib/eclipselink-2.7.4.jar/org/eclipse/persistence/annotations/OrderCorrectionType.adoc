@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/OrderCorrectionType.class
-
- - link:OrderCorrectionType-asmified.java[Asmified]
-
-== References
-

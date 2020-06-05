@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/OrderedListContainerPolicy.class
-
- - link:OrderedListContainerPolicy-asmified.java[Asmified]
-
-== References
-

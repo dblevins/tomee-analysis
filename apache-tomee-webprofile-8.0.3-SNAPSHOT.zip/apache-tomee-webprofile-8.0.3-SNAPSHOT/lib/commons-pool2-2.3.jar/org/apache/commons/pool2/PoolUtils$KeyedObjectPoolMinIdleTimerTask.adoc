@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/PoolUtils$KeyedObjectPoolMinIdleTimerTask.class
-
- - link:PoolUtils$KeyedObjectPoolMinIdleTimerTask-asmified.java[Asmified]
-
-== References
-

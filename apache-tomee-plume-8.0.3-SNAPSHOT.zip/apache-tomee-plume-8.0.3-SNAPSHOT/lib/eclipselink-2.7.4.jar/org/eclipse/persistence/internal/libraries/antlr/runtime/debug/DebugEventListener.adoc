@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/DebugEventListener.class
-
- - link:DebugEventListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLAnyAttributeMapping.class
-
- - link:XMLAnyAttributeMapping-asmified.java[Asmified]
-
-== References
-

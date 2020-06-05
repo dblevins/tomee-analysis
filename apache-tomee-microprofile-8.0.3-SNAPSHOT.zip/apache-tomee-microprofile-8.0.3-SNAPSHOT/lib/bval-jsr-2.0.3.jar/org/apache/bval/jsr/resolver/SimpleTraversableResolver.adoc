@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/resolver/SimpleTraversableResolver.class
-
- - link:SimpleTraversableResolver-asmified.java[Asmified]
-
-== References
-

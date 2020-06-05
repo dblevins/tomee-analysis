@@ -1,6 +1,0 @@
-= jakarta/jms/TopicSubscriber.class
-
- - link:TopicSubscriber-asmified.java[Asmified]
-
-== References
-

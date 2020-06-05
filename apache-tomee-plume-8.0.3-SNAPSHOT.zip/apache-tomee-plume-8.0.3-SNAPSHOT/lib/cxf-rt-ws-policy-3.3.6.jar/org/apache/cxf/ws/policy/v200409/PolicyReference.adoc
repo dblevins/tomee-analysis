@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/v200409/PolicyReference.class
-
- - link:PolicyReference-asmified.java[Asmified]
-
-== References
-

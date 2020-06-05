@@ -1,6 +1,0 @@
-= jakarta/validation/bootstrap/GenericBootstrap.class
-
- - link:GenericBootstrap-asmified.java[Asmified]
-
-== References
-

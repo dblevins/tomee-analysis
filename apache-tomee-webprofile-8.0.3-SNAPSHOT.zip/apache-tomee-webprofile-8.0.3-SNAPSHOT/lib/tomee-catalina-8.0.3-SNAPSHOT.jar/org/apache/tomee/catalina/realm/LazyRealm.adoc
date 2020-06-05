@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/realm/LazyRealm.class
-
- - link:LazyRealm-asmified.java[Asmified]
-
-== References
-

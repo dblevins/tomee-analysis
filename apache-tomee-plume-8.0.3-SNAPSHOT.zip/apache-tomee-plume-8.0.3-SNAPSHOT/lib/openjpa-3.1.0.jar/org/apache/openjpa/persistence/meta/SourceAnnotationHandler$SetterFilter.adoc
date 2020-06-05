@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/SourceAnnotationHandler$SetterFilter.class
-
- - link:SourceAnnotationHandler$SetterFilter-asmified.java[Asmified]
-
-== References
-

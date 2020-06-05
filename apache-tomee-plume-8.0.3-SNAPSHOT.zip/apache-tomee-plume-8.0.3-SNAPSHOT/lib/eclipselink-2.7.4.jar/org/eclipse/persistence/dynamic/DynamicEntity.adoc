@@ -1,6 +1,0 @@
-= org/eclipse/persistence/dynamic/DynamicEntity.class
-
- - link:DynamicEntity-asmified.java[Asmified]
-
-== References
-

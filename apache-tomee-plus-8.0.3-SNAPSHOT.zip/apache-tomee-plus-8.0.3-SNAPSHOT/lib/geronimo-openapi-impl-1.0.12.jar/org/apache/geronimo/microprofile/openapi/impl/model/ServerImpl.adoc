@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/ServerImpl.class
-
- - link:ServerImpl-asmified.java[Asmified]
-
-== References
-

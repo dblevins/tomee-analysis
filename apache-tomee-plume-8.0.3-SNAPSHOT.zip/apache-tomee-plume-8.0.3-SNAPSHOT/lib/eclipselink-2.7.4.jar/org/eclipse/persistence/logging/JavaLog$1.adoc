@@ -1,6 +1,0 @@
-= org/eclipse/persistence/logging/JavaLog$1.class
-
- - link:JavaLog$1-asmified.java[Asmified]
-
-== References
-

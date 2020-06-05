@@ -1,7 +1,0 @@
-= javax/ws/rs/core/MultivaluedMap.class
-
- - link:MultivaluedMap-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.MultivaluedMap - 1

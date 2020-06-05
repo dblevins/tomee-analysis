@@ -1,6 +1,0 @@
-= jakarta/faces/component/_DeltaStateHelper.class
-
- - link:_DeltaStateHelper-asmified.java[Asmified]
-
-== References
-

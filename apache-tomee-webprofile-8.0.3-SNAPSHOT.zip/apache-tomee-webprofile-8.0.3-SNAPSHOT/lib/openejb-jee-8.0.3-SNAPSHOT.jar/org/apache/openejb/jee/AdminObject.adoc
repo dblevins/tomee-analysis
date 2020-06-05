@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/AdminObject.class
-
- - link:AdminObject-asmified.java[Asmified]
-
-== References
-

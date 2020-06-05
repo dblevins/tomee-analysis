@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/WorkQueueManagerImpl$WQLifecycleListener.class
-
- - link:WorkQueueManagerImpl$WQLifecycleListener-asmified.java[Asmified]
-
-== References
-

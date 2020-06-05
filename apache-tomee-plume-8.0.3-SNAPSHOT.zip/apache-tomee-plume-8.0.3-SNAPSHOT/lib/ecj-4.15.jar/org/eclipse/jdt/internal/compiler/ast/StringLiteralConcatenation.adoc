@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/StringLiteralConcatenation.class
-
- - link:StringLiteralConcatenation-asmified.java[Asmified]
-
-== References
-

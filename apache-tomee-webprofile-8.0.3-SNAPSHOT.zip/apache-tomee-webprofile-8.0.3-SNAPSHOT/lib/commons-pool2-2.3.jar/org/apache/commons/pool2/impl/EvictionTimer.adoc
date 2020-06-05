@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/impl/EvictionTimer.class
-
- - link:EvictionTimer-asmified.java[Asmified]
-
-== References
-

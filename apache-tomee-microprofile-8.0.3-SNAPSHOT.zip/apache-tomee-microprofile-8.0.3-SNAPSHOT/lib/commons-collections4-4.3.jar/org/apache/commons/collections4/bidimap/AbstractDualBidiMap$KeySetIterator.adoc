@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/bidimap/AbstractDualBidiMap$KeySetIterator.class
-
- - link:AbstractDualBidiMap$KeySetIterator-asmified.java[Asmified]
-
-== References
-

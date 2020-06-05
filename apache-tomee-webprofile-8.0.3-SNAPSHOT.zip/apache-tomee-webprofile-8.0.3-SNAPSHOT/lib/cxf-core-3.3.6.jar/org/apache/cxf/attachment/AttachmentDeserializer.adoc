@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/AttachmentDeserializer.class
-
- - link:AttachmentDeserializer-asmified.java[Asmified]
-
-== References
-

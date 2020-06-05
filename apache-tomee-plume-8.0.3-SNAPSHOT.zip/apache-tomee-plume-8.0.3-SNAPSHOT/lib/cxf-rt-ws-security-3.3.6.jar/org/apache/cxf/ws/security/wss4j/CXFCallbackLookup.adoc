@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/CXFCallbackLookup.class
-
- - link:CXFCallbackLookup-asmified.java[Asmified]
-
-== References
-

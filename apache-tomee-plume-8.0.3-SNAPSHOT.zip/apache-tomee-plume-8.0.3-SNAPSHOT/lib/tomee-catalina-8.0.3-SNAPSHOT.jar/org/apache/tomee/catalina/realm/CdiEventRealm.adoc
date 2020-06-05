@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/realm/CdiEventRealm.class
-
- - link:CdiEventRealm-asmified.java[Asmified]
-
-== References
-

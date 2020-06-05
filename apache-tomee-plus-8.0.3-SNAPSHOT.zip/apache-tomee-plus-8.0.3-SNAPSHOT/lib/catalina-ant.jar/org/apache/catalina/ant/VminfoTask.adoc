@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/VminfoTask.class
-
- - link:VminfoTask-asmified.java[Asmified]
-
-== References
-

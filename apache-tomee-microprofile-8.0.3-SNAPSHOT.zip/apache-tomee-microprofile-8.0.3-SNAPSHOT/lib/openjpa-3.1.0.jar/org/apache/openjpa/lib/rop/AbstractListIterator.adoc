@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/AbstractListIterator.class
-
- - link:AbstractListIterator-asmified.java[Asmified]
-
-== References
-

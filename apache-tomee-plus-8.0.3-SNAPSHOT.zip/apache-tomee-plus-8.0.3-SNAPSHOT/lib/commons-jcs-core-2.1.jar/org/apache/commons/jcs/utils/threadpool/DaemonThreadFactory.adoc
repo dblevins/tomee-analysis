@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/threadpool/DaemonThreadFactory.class
-
- - link:DaemonThreadFactory-asmified.java[Asmified]
-
-== References
-

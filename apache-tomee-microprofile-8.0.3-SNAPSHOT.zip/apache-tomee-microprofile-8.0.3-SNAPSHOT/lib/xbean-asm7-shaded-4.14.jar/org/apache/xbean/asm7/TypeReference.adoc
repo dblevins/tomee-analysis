@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/TypeReference.class
-
- - link:TypeReference-asmified.java[Asmified]
-
-== References
-

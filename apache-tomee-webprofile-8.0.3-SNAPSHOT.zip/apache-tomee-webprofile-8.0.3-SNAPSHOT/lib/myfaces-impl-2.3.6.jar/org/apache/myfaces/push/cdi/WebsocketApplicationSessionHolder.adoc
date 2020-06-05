@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/WebsocketApplicationSessionHolder.class
-
- - link:WebsocketApplicationSessionHolder-asmified.java[Asmified]
-
-== References
-

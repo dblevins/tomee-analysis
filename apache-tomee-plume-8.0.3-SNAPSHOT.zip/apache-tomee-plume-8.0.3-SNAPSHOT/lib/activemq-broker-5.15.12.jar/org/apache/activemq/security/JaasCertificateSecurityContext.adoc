@@ -1,6 +1,0 @@
-= org/apache/activemq/security/JaasCertificateSecurityContext.class
-
- - link:JaasCertificateSecurityContext-asmified.java[Asmified]
-
-== References
-

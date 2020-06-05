@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/BaseObject.class
-
- - link:BaseObject-asmified.java[Asmified]
-
-== References
-

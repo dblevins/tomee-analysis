@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/utils/NamespacePrefixList.class
-
- - link:NamespacePrefixList-asmified.java[Asmified]
-
-== References
-

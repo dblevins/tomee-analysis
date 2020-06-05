@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/JspStateManagementStrategy.class
-
- - link:JspStateManagementStrategy-asmified.java[Asmified]
-
-== References
-

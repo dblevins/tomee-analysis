@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/queue/SynchronizedQueue.class
-
- - link:SynchronizedQueue-asmified.java[Asmified]
-
-== References
-

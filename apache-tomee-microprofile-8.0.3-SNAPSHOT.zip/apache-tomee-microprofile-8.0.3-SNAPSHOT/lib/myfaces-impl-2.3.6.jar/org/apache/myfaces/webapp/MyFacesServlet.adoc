@@ -1,6 +1,0 @@
-= org/apache/myfaces/webapp/MyFacesServlet.class
-
- - link:MyFacesServlet-asmified.java[Asmified]
-
-== References
-

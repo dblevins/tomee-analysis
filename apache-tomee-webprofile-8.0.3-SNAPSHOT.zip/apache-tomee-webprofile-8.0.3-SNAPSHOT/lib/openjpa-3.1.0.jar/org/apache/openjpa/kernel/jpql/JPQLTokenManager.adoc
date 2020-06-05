@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/jpql/JPQLTokenManager.class
-
- - link:JPQLTokenManager-asmified.java[Asmified]
-
-== References
-

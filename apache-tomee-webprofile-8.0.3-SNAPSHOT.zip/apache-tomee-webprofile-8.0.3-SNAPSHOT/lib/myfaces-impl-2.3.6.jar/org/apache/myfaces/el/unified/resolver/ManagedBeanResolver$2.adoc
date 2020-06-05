@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/ManagedBeanResolver$2.class
-
- - link:ManagedBeanResolver$2-asmified.java[Asmified]
-
-== References
-

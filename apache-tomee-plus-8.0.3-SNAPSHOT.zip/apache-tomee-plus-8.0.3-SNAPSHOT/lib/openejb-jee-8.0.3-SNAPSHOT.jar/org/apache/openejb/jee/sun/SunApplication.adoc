@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/SunApplication.class
-
- - link:SunApplication-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/realm/JDBCRealm.class
-
- - link:JDBCRealm-asmified.java[Asmified]
-
-== References
-

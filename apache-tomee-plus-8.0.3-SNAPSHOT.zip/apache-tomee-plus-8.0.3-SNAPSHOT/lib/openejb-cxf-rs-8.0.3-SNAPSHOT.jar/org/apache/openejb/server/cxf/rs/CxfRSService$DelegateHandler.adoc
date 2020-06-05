@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CxfRSService$DelegateHandler.class
-
- - link:CxfRSService$DelegateHandler-asmified.java[Asmified]
-
-== References
-

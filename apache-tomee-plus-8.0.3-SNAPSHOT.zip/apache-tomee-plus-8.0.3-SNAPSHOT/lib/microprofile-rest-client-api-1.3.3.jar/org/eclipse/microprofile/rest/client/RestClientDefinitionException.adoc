@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/rest/client/RestClientDefinitionException.class
-
- - link:RestClientDefinitionException-asmified.java[Asmified]
-
-== References
-

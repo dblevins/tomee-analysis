@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/AbstractResourceBundle.class
-
- - link:AbstractResourceBundle-asmified.java[Asmified]
-
-== References
-

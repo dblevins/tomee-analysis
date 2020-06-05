@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/output/DOMOutput.class
-
- - link:DOMOutput-asmified.java[Asmified]
-
-== References
-

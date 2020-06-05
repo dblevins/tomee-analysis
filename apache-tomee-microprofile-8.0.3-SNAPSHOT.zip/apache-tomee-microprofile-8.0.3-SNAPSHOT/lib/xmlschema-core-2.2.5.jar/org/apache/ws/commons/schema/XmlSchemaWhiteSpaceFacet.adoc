@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaWhiteSpaceFacet.class
-
- - link:XmlSchemaWhiteSpaceFacet-asmified.java[Asmified]
-
-== References
-

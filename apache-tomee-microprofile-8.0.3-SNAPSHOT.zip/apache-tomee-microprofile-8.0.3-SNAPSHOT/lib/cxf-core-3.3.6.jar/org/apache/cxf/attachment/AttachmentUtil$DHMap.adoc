@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/AttachmentUtil$DHMap.class
-
- - link:AttachmentUtil$DHMap-asmified.java[Asmified]
-
-== References
-

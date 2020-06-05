@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/HistogramImpl$SnapshotImpl.class
-
- - link:HistogramImpl$SnapshotImpl-asmified.java[Asmified]
-
-== References
-

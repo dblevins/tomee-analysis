@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/features/paging/PageableFieldValidator.class
-
- - link:PageableFieldValidator-asmified.java[Asmified]
-
-== References
-

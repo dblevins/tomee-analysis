@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/BaseUrlHelper.class
-
- - link:BaseUrlHelper-asmified.java[Asmified]
-
-== References
-

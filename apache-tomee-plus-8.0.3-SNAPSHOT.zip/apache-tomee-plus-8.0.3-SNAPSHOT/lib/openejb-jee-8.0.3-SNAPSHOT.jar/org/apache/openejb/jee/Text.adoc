@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Text.class
-
- - link:Text-asmified.java[Asmified]
-
-== References
-

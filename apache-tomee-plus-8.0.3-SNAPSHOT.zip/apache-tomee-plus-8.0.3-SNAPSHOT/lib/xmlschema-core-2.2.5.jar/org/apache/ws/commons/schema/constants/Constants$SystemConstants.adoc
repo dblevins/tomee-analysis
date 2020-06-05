@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/constants/Constants$SystemConstants.class
-
- - link:Constants$SystemConstants-asmified.java[Asmified]
-
-== References
-

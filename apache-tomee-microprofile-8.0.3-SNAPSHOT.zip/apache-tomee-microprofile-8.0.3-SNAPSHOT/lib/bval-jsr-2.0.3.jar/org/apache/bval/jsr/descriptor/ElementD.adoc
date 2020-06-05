@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/ElementD.class
-
- - link:ElementD-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/security/JaasCertificateAuthenticationPlugin.class
-
- - link:JaasCertificateAuthenticationPlugin-asmified.java[Asmified]
-
-== References
-

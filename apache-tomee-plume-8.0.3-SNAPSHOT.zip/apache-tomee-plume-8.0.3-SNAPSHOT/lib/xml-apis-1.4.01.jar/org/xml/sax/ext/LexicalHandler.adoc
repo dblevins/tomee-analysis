@@ -1,6 +1,0 @@
-= org/xml/sax/ext/LexicalHandler.class
-
- - link:LexicalHandler-asmified.java[Asmified]
-
-== References
-

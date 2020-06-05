@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ApplicationImpl.class
-
- - link:ApplicationImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/SerializableValue.class
-
- - link:SerializableValue-asmified.java[Asmified]
-
-== References
-

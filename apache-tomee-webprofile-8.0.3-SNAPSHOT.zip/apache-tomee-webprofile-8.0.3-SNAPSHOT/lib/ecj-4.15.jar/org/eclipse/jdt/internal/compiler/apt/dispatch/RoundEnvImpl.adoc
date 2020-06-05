@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/RoundEnvImpl.class
-
- - link:RoundEnvImpl-asmified.java[Asmified]
-
-== References
-

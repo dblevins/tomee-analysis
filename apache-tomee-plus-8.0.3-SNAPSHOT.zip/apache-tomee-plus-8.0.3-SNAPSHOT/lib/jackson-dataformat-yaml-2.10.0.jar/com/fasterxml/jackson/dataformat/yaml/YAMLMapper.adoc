@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/dataformat/yaml/YAMLMapper.class
-
- - link:YAMLMapper-asmified.java[Asmified]
-
-== References
-

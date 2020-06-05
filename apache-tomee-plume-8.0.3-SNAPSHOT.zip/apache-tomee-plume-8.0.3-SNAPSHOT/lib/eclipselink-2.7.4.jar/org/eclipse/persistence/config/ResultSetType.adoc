@@ -1,6 +1,0 @@
-= org/eclipse/persistence/config/ResultSetType.class
-
- - link:ResultSetType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/EmptyBuilder.class
-
- - link:EmptyBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/ECValidationDataType.class
-
- - link:ECValidationDataType-asmified.java[Asmified]
-
-== References
-

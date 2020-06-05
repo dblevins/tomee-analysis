@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/TunedDocumentLoader.class
-
- - link:TunedDocumentLoader-asmified.java[Asmified]
-
-== References
-

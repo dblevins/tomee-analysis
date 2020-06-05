@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/converters/ConversionValueMetadata.class
-
- - link:ConversionValueMetadata-asmified.java[Asmified]
-
-== References
-

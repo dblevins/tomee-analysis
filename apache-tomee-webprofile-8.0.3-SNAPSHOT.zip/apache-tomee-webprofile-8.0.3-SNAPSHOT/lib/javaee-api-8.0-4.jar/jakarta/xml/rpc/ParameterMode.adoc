@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/ParameterMode.class
-
- - link:ParameterMode-asmified.java[Asmified]
-
-== References
-

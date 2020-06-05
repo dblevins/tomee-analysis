@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sequencing/StandardSequence.class
-
- - link:StandardSequence-asmified.java[Asmified]
-
-== References
-

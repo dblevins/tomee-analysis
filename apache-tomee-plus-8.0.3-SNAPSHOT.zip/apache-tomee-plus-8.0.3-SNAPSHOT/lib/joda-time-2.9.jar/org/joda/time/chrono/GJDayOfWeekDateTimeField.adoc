@@ -1,6 +1,0 @@
-= org/joda/time/chrono/GJDayOfWeekDateTimeField.class
-
- - link:GJDayOfWeekDateTimeField-asmified.java[Asmified]
-
-== References
-

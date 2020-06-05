@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/JAXRSBindingFactory.class
-
- - link:JAXRSBindingFactory-asmified.java[Asmified]
-
-== References
-

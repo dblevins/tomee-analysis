@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap.class
-
- - link:LocalNameQualifiedNamesMap-asmified.java[Asmified]
-
-== References
-

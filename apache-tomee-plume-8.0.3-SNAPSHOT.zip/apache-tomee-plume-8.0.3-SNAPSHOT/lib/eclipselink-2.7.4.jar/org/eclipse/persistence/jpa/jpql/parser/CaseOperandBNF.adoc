@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/CaseOperandBNF.class
-
- - link:CaseOperandBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XPathFragment.class
-
- - link:XPathFragment-asmified.java[Asmified]
-
-== References
-

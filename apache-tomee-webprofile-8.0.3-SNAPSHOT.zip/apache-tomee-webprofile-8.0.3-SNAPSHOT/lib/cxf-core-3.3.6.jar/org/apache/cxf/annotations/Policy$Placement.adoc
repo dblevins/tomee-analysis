@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/Policy$Placement.class
-
- - link:Policy$Placement-asmified.java[Asmified]
-
-== References
-

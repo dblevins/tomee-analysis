@@ -1,6 +1,0 @@
-= javax/xml/transform/TransformerFactoryConfigurationError.class
-
- - link:TransformerFactoryConfigurationError-asmified.java[Asmified]
-
-== References
-

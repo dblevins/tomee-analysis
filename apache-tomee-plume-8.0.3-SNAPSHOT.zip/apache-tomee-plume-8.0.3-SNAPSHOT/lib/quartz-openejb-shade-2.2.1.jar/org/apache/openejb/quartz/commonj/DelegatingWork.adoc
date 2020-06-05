@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/commonj/DelegatingWork.class
-
- - link:DelegatingWork-asmified.java[Asmified]
-
-== References
-

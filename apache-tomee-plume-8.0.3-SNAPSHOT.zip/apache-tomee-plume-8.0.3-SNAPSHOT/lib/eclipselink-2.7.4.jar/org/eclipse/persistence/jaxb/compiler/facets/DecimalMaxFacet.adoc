@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/facets/DecimalMaxFacet.class
-
- - link:DecimalMaxFacet-asmified.java[Asmified]
-
-== References
-

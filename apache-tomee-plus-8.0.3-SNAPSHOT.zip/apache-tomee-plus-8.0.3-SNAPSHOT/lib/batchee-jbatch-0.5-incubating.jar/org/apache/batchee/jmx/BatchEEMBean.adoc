@@ -1,6 +1,0 @@
-= org/apache/batchee/jmx/BatchEEMBean.class
-
- - link:BatchEEMBean-asmified.java[Asmified]
-
-== References
-

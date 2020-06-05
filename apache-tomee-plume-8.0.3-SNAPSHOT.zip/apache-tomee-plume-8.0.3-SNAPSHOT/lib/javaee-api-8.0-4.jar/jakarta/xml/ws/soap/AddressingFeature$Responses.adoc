@@ -1,6 +1,0 @@
-= jakarta/xml/ws/soap/AddressingFeature$Responses.class
-
- - link:AddressingFeature$Responses-asmified.java[Asmified]
-
-== References
-

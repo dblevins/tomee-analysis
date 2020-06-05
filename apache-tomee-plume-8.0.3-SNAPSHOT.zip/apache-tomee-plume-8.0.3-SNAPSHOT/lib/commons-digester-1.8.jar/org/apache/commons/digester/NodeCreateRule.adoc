@@ -1,6 +1,0 @@
-= org/apache/commons/digester/NodeCreateRule.class
-
- - link:NodeCreateRule-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/monitoring/JMXDeployer.class
-
- - link:JMXDeployer-asmified.java[Asmified]
-
-== References
-

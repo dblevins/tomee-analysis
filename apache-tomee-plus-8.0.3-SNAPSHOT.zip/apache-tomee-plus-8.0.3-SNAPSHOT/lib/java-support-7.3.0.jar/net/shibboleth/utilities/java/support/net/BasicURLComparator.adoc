@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/BasicURLComparator.class
-
- - link:BasicURLComparator-asmified.java[Asmified]
-
-== References
-

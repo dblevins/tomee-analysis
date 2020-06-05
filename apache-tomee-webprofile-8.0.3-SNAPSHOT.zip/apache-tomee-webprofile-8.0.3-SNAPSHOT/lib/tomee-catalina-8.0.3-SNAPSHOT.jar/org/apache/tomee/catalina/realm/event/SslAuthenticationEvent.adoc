@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/realm/event/SslAuthenticationEvent.class
-
- - link:SslAuthenticationEvent-asmified.java[Asmified]
-
-== References
-

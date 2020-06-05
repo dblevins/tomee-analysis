@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/AbstractGrammarValidator$DateTimeVisitor.class
-
- - link:AbstractGrammarValidator$DateTimeVisitor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/Topic$1.class
-
- - link:Topic$1-asmified.java[Asmified]
-
-== References
-

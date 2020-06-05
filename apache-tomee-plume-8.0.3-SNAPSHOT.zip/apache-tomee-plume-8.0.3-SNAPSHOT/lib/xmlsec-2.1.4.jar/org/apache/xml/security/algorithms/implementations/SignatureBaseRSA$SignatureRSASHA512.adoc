@@ -1,6 +1,0 @@
-= org/apache/xml/security/algorithms/implementations/SignatureBaseRSA$SignatureRSASHA512.class
-
- - link:SignatureBaseRSA$SignatureRSASHA512-asmified.java[Asmified]
-
-== References
-

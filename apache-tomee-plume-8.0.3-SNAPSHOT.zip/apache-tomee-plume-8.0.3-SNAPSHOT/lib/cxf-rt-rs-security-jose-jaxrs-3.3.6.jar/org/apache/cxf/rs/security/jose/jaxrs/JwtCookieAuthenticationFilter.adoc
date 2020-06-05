@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/JwtCookieAuthenticationFilter.class
-
- - link:JwtCookieAuthenticationFilter-asmified.java[Asmified]
-
-== References
-

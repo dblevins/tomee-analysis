@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/UsageTracking.class
-
- - link:UsageTracking-asmified.java[Asmified]
-
-== References
-

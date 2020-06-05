@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes.class
-
- - link:BeanCacheKey$LazyAnnotatedTypes-asmified.java[Asmified]
-
-== References
-

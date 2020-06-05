@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/Pool.class
-
- - link:Pool-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/access/CacheAccess.class
-
- - link:CacheAccess-asmified.java[Asmified]
-
-== References
-

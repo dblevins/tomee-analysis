@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ResponseCodes.class
-
- - link:ResponseCodes-asmified.java[Asmified]
-
-== References
-

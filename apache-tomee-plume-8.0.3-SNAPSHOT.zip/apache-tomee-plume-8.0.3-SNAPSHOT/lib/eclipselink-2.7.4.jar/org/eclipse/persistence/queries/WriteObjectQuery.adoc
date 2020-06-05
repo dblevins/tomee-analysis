@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/WriteObjectQuery.class
-
- - link:WriteObjectQuery-asmified.java[Asmified]
-
-== References
-

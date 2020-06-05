@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/managed/TransactionContextListener.class
-
- - link:TransactionContextListener-asmified.java[Asmified]
-
-== References
-

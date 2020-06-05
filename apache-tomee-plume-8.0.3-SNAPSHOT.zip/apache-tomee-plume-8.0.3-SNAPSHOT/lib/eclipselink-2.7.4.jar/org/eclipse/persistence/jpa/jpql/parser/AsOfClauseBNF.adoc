@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AsOfClauseBNF.class
-
- - link:AsOfClauseBNF-asmified.java[Asmified]
-
-== References
-

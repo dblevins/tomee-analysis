@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/TxBeanManaged$JtaSuspendedTransaction.class
-
- - link:TxBeanManaged$JtaSuspendedTransaction-asmified.java[Asmified]
-
-== References
-

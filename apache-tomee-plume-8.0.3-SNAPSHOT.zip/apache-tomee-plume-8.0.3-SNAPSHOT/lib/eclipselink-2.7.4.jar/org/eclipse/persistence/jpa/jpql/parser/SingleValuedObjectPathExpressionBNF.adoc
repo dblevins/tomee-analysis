@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SingleValuedObjectPathExpressionBNF.class
-
- - link:SingleValuedObjectPathExpressionBNF-asmified.java[Asmified]
-
-== References
-

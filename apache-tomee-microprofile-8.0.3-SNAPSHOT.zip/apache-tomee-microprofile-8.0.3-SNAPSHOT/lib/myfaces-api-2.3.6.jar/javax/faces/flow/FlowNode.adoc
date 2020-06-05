@@ -1,6 +1,0 @@
-= javax/faces/flow/FlowNode.class
-
- - link:FlowNode-asmified.java[Asmified]
-
-== References
-

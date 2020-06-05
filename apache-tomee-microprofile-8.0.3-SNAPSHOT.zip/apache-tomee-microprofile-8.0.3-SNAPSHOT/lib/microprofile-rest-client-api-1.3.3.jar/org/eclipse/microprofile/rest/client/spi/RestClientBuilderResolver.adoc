@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/rest/client/spi/RestClientBuilderResolver.class
-
- - link:RestClientBuilderResolver-asmified.java[Asmified]
-
-== References
-

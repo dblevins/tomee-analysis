@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/TenantTableDiscriminatorType.class
-
- - link:TenantTableDiscriminatorType-asmified.java[Asmified]
-
-== References
-

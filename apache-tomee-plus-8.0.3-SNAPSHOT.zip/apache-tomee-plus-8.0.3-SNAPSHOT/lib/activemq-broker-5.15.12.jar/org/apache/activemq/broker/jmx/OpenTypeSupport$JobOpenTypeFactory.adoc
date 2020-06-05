@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/OpenTypeSupport$JobOpenTypeFactory.class
-
- - link:OpenTypeSupport$JobOpenTypeFactory-asmified.java[Asmified]
-
-== References
-

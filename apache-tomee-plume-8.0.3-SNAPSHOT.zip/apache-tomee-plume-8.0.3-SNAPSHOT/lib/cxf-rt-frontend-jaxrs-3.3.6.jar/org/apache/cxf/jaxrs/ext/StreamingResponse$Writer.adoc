@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/StreamingResponse$Writer.class
-
- - link:StreamingResponse$Writer-asmified.java[Asmified]
-
-== References
-

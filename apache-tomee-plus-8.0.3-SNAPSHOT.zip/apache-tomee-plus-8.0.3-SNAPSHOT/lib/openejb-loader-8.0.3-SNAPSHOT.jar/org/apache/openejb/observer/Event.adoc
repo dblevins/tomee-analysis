@@ -1,6 +1,0 @@
-= org/apache/openejb/observer/Event.class
-
- - link:Event-asmified.java[Asmified]
-
-== References
-

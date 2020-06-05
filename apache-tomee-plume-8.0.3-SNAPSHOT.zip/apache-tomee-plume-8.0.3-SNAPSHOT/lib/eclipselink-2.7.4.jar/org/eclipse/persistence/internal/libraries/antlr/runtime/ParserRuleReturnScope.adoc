@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/ParserRuleReturnScope.class
-
- - link:ParserRuleReturnScope-asmified.java[Asmified]
-
-== References
-

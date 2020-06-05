@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/CollatingIterator.class
-
- - link:CollatingIterator-asmified.java[Asmified]
-
-== References
-

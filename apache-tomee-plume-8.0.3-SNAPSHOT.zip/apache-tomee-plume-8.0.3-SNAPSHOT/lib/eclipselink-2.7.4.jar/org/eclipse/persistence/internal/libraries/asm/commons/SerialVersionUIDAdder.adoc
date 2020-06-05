@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/SerialVersionUIDAdder.class
-
- - link:SerialVersionUIDAdder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/TomcatClassPath.class
-
- - link:TomcatClassPath-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/indirection/IndirectSet$1.class
-
- - link:IndirectSet$1-asmified.java[Asmified]
-
-== References
-

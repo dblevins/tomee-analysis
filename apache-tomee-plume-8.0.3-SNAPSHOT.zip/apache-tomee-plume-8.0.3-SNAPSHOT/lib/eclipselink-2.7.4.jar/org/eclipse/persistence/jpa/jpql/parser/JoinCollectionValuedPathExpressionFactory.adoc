@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/JoinCollectionValuedPathExpressionFactory.class
-
- - link:JoinCollectionValuedPathExpressionFactory-asmified.java[Asmified]
-
-== References
-

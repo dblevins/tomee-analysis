@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/AbstractTagLibrary$HandlerFactory.class
-
- - link:AbstractTagLibrary$HandlerFactory-asmified.java[Asmified]
-
-== References
-

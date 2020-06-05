@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v2/ActiveMQTempDestinationMarshaller.class
-
- - link:ActiveMQTempDestinationMarshaller-asmified.java[Asmified]
-
-== References
-

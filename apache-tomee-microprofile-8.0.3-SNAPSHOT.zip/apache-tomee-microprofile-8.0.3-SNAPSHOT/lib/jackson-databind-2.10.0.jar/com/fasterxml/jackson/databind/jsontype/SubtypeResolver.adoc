@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/jsontype/SubtypeResolver.class
-
- - link:SubtypeResolver-asmified.java[Asmified]
-
-== References
-

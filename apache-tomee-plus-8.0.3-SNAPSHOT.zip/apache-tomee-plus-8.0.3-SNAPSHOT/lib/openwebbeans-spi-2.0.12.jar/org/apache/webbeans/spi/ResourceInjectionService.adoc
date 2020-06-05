@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/ResourceInjectionService.class
-
- - link:ResourceInjectionService-asmified.java[Asmified]
-
-== References
-

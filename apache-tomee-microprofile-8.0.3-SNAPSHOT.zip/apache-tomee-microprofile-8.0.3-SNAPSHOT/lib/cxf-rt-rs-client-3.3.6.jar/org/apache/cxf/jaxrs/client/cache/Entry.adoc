@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/cache/Entry.class
-
- - link:Entry-asmified.java[Asmified]
-
-== References
-

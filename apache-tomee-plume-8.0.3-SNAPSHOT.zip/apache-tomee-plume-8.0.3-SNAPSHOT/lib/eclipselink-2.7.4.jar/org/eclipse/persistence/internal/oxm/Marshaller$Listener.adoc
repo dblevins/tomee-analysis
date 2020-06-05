@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/Marshaller$Listener.class
-
- - link:Marshaller$Listener-asmified.java[Asmified]
-
-== References
-

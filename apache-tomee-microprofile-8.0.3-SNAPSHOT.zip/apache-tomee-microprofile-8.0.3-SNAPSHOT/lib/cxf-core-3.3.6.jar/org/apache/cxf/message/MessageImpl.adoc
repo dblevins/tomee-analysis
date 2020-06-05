@@ -1,6 +1,0 @@
-= org/apache/cxf/message/MessageImpl.class
-
- - link:MessageImpl-asmified.java[Asmified]
-
-== References
-

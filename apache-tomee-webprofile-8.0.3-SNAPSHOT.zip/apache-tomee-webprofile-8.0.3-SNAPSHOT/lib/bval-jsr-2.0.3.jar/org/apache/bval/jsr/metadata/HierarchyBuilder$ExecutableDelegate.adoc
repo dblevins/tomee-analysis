@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/HierarchyBuilder$ExecutableDelegate.class
-
- - link:HierarchyBuilder$ExecutableDelegate-asmified.java[Asmified]
-
-== References
-

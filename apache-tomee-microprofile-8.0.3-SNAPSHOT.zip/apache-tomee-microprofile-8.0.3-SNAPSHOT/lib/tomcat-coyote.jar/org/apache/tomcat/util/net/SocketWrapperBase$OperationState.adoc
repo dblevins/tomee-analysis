@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SocketWrapperBase$OperationState.class
-
- - link:SocketWrapperBase$OperationState-asmified.java[Asmified]
-
-== References
-

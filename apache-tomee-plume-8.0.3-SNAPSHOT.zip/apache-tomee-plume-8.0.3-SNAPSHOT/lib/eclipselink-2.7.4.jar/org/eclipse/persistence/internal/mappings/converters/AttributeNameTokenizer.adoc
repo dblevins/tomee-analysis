@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/mappings/converters/AttributeNameTokenizer.class
-
- - link:AttributeNameTokenizer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/DictionaryMap.class
-
- - link:DictionaryMap-asmified.java[Asmified]
-
-== References
-

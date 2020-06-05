@@ -1,7 +1,0 @@
-= javax/enterprise/inject/spi/SessionBeanType.class
-
- - link:SessionBeanType-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.SessionBeanType - 26

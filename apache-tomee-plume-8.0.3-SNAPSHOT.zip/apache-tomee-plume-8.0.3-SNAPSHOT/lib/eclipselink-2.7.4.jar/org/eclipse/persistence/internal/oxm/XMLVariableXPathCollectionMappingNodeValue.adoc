@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLVariableXPathCollectionMappingNodeValue.class
-
- - link:XMLVariableXPathCollectionMappingNodeValue-asmified.java[Asmified]
-
-== References
-

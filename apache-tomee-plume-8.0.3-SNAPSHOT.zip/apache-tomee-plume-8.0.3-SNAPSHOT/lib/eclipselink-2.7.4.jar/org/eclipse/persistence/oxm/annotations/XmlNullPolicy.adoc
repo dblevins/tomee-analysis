@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlNullPolicy.class
-
- - link:XmlNullPolicy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/el/ELFacade$EvaluationType.class
-
- - link:ELFacade$EvaluationType-asmified.java[Asmified]
-
-== References
-

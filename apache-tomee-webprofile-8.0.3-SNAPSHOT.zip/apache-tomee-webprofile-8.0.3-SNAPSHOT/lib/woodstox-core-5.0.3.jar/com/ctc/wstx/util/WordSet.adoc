@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/WordSet.class
-
- - link:WordSet-asmified.java[Asmified]
-
-== References
-

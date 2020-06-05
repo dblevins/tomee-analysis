@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/NumberSignValidator$ForPositive$OrZero.class
-
- - link:NumberSignValidator$ForPositive$OrZero-asmified.java[Asmified]
-
-== References
-

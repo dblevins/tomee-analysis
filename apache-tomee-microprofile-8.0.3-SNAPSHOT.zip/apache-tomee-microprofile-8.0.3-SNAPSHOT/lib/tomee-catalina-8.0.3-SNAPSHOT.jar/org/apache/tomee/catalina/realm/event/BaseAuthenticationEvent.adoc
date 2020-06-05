@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/realm/event/BaseAuthenticationEvent.class
-
- - link:BaseAuthenticationEvent-asmified.java[Asmified]
-
-== References
-

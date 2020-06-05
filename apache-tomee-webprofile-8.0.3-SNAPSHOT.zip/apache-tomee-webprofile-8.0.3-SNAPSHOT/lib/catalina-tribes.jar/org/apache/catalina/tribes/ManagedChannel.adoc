@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/ManagedChannel.class
-
- - link:ManagedChannel-asmified.java[Asmified]
-
-== References
-

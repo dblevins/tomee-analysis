@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalSubstringStringExpressionBNF.class
-
- - link:InternalSubstringStringExpressionBNF-asmified.java[Asmified]
-
-== References
-

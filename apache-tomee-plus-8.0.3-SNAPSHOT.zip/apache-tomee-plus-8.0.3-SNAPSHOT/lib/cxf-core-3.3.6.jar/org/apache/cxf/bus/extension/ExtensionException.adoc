@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/extension/ExtensionException.class
-
- - link:ExtensionException-asmified.java[Asmified]
-
-== References
-

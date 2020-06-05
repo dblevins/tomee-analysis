@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/ValuesEnumerator.class
-
- - link:ValuesEnumerator-asmified.java[Asmified]
-
-== References
-

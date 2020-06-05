@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/spi/SchedulerPlugin.class
-
- - link:SchedulerPlugin-asmified.java[Asmified]
-
-== References
-

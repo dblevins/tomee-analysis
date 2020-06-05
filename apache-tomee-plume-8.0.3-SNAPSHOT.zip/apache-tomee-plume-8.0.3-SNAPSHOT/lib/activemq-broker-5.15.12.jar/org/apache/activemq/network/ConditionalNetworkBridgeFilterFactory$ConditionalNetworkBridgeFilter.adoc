@@ -1,6 +1,0 @@
-= org/apache/activemq/network/ConditionalNetworkBridgeFilterFactory$ConditionalNetworkBridgeFilter.class
-
- - link:ConditionalNetworkBridgeFilterFactory$ConditionalNetworkBridgeFilter-asmified.java[Asmified]
-
-== References
-

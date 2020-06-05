@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectiontracking/ConnectionTrackingCoordinator$ConnectionInvocationHandler.class
-
- - link:ConnectionTrackingCoordinator$ConnectionInvocationHandler-asmified.java[Asmified]
-
-== References
-

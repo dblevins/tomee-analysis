@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreePatternParser.class
-
- - link:TreePatternParser-asmified.java[Asmified]
-
-== References
-

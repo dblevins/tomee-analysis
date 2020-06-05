@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/util/XMLObjectSupport$CloneOutputOption.class
-
- - link:XMLObjectSupport$CloneOutputOption-asmified.java[Asmified]
-
-== References
-

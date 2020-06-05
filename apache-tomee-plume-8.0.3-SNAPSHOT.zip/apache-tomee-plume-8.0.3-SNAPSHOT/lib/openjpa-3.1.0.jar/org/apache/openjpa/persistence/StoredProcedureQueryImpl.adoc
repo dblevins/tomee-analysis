@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/StoredProcedureQueryImpl.class
-
- - link:StoredProcedureQueryImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/sxc/TldTaglibXml.class
-
- - link:TldTaglibXml-asmified.java[Asmified]
-
-== References
-

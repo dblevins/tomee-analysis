@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JohnzonJsonParser.class
-
- - link:JohnzonJsonParser-asmified.java[Asmified]
-
-== References
-

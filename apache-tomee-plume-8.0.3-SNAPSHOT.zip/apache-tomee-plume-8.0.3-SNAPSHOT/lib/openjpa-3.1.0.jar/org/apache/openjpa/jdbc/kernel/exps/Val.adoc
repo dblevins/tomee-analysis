@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/Val.class
-
- - link:Val-asmified.java[Asmified]
-
-== References
-

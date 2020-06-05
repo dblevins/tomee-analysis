@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentRule$TypedLiteralAttributeMetadata.class
-
- - link:CompositeComponentRule$TypedLiteralAttributeMetadata-asmified.java[Asmified]
-
-== References
-

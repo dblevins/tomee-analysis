@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/DataCacheManagerImpl.class
-
- - link:DataCacheManagerImpl-asmified.java[Asmified]
-
-== References
-

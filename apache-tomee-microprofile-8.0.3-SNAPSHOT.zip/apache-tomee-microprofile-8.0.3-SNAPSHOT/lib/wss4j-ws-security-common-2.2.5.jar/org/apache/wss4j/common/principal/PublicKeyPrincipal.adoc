@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/principal/PublicKeyPrincipal.class
-
- - link:PublicKeyPrincipal-asmified.java[Asmified]
-
-== References
-

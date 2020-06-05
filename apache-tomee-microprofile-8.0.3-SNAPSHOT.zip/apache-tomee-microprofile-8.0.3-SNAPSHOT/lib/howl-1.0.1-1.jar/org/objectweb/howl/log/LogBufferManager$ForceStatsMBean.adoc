@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogBufferManager$ForceStatsMBean.class
-
- - link:LogBufferManager$ForceStatsMBean-asmified.java[Asmified]
-
-== References
-

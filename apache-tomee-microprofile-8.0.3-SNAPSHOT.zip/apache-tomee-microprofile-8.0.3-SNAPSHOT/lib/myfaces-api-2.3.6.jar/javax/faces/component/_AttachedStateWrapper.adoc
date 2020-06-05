@@ -1,7 +1,0 @@
-= javax/faces/component/_AttachedStateWrapper.class
-
- - link:_AttachedStateWrapper-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component._AttachedStateWrapper - 1

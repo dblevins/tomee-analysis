@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/virtual/MappedQueueFilter.class
-
- - link:MappedQueueFilter-asmified.java[Asmified]
-
-== References
-

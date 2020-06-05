@@ -1,6 +1,0 @@
-= com/sun/faces/application/PropertyEditorHelper.class
-
- - link:PropertyEditorHelper-asmified.java[Asmified]
-
-== References
-

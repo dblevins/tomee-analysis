@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/keyvalue/AbstractMapEntry.class
-
- - link:AbstractMapEntry-asmified.java[Asmified]
-
-== References
-

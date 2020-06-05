@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/ZeroSizeThreadPool.class
-
- - link:ZeroSizeThreadPool-asmified.java[Asmified]
-
-== References
-

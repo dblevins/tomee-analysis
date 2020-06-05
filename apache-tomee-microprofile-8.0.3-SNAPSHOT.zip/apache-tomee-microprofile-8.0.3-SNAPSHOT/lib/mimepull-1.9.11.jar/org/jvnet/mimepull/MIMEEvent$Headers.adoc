@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/MIMEEvent$Headers.class
-
- - link:MIMEEvent$Headers-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/DiffBase.class
-
- - link:DiffBase-asmified.java[Asmified]
-
-== References
-

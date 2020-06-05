@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ResourceTypeUnmarshaller.class
-
- - link:ResourceTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

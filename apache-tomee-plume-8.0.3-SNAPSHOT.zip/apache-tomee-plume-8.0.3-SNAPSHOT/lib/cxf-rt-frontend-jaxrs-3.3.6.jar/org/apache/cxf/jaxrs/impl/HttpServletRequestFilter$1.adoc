@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/HttpServletRequestFilter$1.class
-
- - link:HttpServletRequestFilter$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/protocol/MqttProtocolVerifier.class
-
- - link:MqttProtocolVerifier-asmified.java[Asmified]
-
-== References
-

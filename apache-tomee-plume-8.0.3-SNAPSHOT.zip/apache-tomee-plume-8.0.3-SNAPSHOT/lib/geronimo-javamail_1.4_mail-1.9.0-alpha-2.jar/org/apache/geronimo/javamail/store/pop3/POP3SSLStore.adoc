@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/pop3/POP3SSLStore.class
-
- - link:POP3SSLStore-asmified.java[Asmified]
-
-== References
-

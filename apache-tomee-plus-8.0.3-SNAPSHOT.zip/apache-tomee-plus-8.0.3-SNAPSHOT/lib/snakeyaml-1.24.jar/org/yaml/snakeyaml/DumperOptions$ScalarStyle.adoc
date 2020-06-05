@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/DumperOptions$ScalarStyle.class
-
- - link:DumperOptions$ScalarStyle-asmified.java[Asmified]
-
-== References
-

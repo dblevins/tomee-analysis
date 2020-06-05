@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/JAXRSUtils.class
-
- - link:JAXRSUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/DescriptionTypeImpl.class
-
- - link:DescriptionTypeImpl-asmified.java[Asmified]
-
-== References
-

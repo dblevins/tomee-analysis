@@ -1,6 +1,0 @@
-= org/jasypt/contrib/org/apache/commons/codec_1_3/Decoder.class
-
- - link:Decoder-asmified.java[Asmified]
-
-== References
-

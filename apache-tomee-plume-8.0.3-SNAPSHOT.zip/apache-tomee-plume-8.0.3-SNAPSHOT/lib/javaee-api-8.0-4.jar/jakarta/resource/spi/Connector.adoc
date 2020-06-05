@@ -1,6 +1,0 @@
-= jakarta/resource/spi/Connector.class
-
- - link:Connector-asmified.java[Asmified]
-
-== References
-

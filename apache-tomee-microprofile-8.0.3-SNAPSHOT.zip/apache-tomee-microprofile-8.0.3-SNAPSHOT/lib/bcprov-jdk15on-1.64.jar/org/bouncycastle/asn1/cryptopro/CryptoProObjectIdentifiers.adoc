@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cryptopro/CryptoProObjectIdentifiers.class
-
- - link:CryptoProObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

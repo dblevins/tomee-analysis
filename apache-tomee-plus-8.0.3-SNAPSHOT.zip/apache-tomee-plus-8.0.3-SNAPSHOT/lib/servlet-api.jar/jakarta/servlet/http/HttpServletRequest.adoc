@@ -1,6 +1,0 @@
-= jakarta/servlet/http/HttpServletRequest.class
-
- - link:HttpServletRequest-asmified.java[Asmified]
-
-== References
-

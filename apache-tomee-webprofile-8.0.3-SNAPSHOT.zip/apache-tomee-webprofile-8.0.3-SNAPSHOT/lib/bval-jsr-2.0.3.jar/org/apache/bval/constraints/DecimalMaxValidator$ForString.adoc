@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/DecimalMaxValidator$ForString.class
-
- - link:DecimalMaxValidator$ForString-asmified.java[Asmified]
-
-== References
-

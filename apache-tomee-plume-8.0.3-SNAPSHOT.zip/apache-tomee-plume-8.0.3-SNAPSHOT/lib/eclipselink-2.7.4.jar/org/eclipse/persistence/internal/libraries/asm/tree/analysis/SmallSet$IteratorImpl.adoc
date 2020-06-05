@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/analysis/SmallSet$IteratorImpl.class
-
- - link:SmallSet$IteratorImpl-asmified.java[Asmified]
-
-== References
-

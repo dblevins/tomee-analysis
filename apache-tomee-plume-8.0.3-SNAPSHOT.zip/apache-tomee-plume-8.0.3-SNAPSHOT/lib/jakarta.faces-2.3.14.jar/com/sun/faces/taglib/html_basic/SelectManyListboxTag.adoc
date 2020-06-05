@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/SelectManyListboxTag.class
-
- - link:SelectManyListboxTag-asmified.java[Asmified]
-
-== References
-

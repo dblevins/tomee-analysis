@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/concurrent/ThresholdCircuitBreaker.class
-
- - link:ThresholdCircuitBreaker-asmified.java[Asmified]
-
-== References
-

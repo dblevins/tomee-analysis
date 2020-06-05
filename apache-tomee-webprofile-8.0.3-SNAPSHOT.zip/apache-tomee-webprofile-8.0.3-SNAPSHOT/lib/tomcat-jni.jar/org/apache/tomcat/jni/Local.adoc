@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/Local.class
-
- - link:Local-asmified.java[Asmified]
-
-== References
-

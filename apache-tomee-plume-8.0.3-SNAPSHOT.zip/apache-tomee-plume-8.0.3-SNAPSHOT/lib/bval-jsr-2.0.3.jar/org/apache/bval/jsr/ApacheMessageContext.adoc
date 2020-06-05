@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/ApacheMessageContext.class
-
- - link:ApacheMessageContext-asmified.java[Asmified]
-
-== References
-

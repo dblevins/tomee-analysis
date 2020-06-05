@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/Evidence.class
-
- - link:Evidence-asmified.java[Asmified]
-
-== References
-

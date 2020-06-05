@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/support/ExpressionEvaluatorManager.class
-
- - link:ExpressionEvaluatorManager-asmified.java[Asmified]
-
-== References
-

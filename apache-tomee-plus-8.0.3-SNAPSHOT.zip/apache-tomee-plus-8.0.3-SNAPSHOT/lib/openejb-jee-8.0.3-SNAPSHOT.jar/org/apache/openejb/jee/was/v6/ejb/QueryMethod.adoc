@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejb/QueryMethod.class
-
- - link:QueryMethod-asmified.java[Asmified]
-
-== References
-

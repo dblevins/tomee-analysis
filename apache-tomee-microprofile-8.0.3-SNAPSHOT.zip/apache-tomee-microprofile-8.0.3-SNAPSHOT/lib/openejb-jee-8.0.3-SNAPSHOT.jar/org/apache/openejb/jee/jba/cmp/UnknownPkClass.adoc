@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/UnknownPkClass.class
-
- - link:UnknownPkClass-asmified.java[Asmified]
-
-== References
-

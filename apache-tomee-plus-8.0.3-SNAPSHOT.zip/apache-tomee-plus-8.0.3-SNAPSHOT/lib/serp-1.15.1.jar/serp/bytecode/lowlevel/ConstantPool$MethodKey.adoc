@@ -1,6 +1,0 @@
-= serp/bytecode/lowlevel/ConstantPool$MethodKey.class
-
- - link:ConstantPool$MethodKey-asmified.java[Asmified]
-
-== References
-

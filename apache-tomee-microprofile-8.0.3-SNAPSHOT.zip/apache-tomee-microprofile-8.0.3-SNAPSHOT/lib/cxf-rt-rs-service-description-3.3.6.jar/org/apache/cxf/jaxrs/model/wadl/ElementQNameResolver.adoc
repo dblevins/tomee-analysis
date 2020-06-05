@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/wadl/ElementQNameResolver.class
-
- - link:ElementQNameResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/BrokerMBeanSupport.class
-
- - link:BrokerMBeanSupport-asmified.java[Asmified]
-
-== References
-

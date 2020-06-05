@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPUntaggedResponseHandler.class
-
- - link:IMAPUntaggedResponseHandler-asmified.java[Asmified]
-
-== References
-

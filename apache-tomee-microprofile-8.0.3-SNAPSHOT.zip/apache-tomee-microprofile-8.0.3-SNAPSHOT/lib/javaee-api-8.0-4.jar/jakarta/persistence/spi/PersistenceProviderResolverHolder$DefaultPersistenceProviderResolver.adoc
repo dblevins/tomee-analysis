@@ -1,6 +1,0 @@
-= jakarta/persistence/spi/PersistenceProviderResolverHolder$DefaultPersistenceProviderResolver.class
-
- - link:PersistenceProviderResolverHolder$DefaultPersistenceProviderResolver-asmified.java[Asmified]
-
-== References
-

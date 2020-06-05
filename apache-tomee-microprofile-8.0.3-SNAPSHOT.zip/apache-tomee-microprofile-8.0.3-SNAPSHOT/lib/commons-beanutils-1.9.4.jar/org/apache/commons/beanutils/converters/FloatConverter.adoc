@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/FloatConverter.class
-
- - link:FloatConverter-asmified.java[Asmified]
-
-== References
-

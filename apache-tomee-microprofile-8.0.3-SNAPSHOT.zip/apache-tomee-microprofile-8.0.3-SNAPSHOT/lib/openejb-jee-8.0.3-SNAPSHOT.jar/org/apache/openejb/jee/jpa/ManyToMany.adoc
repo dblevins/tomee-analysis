@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/ManyToMany.class
-
- - link:ManyToMany-asmified.java[Asmified]
-
-== References
-

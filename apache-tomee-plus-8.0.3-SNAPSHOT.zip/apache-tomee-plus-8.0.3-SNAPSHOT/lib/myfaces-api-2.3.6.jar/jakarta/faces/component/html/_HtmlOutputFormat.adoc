@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_HtmlOutputFormat.class
-
- - link:_HtmlOutputFormat-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/TraceDebugEventListener.class
-
- - link:TraceDebugEventListener-asmified.java[Asmified]
-
-== References
-

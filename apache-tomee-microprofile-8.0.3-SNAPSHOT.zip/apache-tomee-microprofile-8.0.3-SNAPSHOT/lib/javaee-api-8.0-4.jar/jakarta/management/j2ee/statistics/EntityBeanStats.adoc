@@ -1,6 +1,0 @@
-= jakarta/management/j2ee/statistics/EntityBeanStats.class
-
- - link:EntityBeanStats-asmified.java[Asmified]
-
-== References
-

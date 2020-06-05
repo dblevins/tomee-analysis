@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/ProducerFieldBeansBuilder.class
-
- - link:ProducerFieldBeansBuilder-asmified.java[Asmified]
-
-== References
-

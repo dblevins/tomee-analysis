@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/JAXBExtensionHelper$MappingReaderDelegate.class
-
- - link:JAXBExtensionHelper$MappingReaderDelegate-asmified.java[Asmified]
-
-== References
-

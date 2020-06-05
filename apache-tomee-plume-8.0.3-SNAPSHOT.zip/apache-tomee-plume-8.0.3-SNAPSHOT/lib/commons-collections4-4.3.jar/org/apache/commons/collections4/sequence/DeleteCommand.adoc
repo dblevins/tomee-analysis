@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/sequence/DeleteCommand.class
-
- - link:DeleteCommand-asmified.java[Asmified]
-
-== References
-

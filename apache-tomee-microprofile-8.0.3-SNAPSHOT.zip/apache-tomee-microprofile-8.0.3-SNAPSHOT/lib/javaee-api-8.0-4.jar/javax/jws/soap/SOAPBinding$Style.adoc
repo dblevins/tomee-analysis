@@ -1,7 +1,0 @@
-= javax/jws/soap/SOAPBinding$Style.class
-
- - link:SOAPBinding$Style-asmified.java[Asmified]
-
-== References
-
- - javax.jws.soap.SOAPBinding$Style - 21

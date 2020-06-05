@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/LeafPropertyLoader.class
-
- - link:LeafPropertyLoader-asmified.java[Asmified]
-
-== References
-

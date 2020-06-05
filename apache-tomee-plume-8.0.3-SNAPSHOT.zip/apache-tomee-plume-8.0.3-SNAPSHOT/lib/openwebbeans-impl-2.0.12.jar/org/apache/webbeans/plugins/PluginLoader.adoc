@@ -1,6 +1,0 @@
-= org/apache/webbeans/plugins/PluginLoader.class
-
- - link:PluginLoader-asmified.java[Asmified]
-
-== References
-

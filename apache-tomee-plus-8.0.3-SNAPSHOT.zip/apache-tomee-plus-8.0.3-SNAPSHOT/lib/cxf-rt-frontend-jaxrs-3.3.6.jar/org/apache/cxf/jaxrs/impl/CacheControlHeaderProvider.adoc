@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/CacheControlHeaderProvider.class
-
- - link:CacheControlHeaderProvider-asmified.java[Asmified]
-
-== References
-

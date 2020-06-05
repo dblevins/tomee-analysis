@@ -1,6 +1,0 @@
-= org/apache/commons/collections/list/TransformedList$TransformedListIterator.class
-
- - link:TransformedList$TransformedListIterator-asmified.java[Asmified]
-
-== References
-

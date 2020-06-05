@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/params/ElGamalParameters.class
-
- - link:ElGamalParameters-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/transport/JMSTopicTransportManagerConfig.class
-
- - link:JMSTopicTransportManagerConfig-asmified.java[Asmified]
-
-== References
-

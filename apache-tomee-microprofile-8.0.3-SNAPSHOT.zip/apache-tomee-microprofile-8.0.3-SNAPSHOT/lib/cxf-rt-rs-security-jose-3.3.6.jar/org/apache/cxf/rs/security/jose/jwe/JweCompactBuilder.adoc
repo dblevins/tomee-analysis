@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/JweCompactBuilder.class
-
- - link:JweCompactBuilder-asmified.java[Asmified]
-
-== References
-

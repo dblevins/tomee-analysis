@@ -1,6 +1,0 @@
-= org/apache/catalina/SessionListener.class
-
- - link:SessionListener-asmified.java[Asmified]
-
-== References
-

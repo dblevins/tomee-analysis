@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/ScriptingVariabler.class
-
- - link:ScriptingVariabler-asmified.java[Asmified]
-
-== References
-

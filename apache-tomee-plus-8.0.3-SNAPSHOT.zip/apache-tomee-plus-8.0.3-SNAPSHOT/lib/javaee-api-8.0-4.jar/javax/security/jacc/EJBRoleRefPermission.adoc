@@ -1,7 +1,0 @@
-= javax/security/jacc/EJBRoleRefPermission.class
-
- - link:EJBRoleRefPermission-asmified.java[Asmified]
-
-== References
-
- - javax.security.jacc.EJBRoleRefPermission - 6

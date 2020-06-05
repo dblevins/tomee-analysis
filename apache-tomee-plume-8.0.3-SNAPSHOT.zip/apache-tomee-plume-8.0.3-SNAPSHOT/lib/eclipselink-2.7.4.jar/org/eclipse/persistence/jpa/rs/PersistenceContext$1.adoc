@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/PersistenceContext$1.class
-
- - link:PersistenceContext$1-asmified.java[Asmified]
-
-== References
-

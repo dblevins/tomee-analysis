@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/SAMLMessageSecuritySupport.class
-
- - link:SAMLMessageSecuritySupport-asmified.java[Asmified]
-
-== References
-

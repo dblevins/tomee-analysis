@@ -1,6 +1,0 @@
-= org/apache/openejb/core/singleton/Instance.class
-
- - link:Instance-asmified.java[Asmified]
-
-== References
-

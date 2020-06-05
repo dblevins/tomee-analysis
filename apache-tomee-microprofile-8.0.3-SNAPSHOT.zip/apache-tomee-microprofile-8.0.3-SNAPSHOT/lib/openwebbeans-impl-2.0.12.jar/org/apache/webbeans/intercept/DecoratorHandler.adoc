@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/DecoratorHandler.class
-
- - link:DecoratorHandler-asmified.java[Asmified]
-
-== References
-

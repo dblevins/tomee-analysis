@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/jdbc/dsfactory/SharedPoolDataSourceFactory.class
-
- - link:SharedPoolDataSourceFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/remote/DistributedSession.class
-
- - link:DistributedSession-asmified.java[Asmified]
-
-== References
-

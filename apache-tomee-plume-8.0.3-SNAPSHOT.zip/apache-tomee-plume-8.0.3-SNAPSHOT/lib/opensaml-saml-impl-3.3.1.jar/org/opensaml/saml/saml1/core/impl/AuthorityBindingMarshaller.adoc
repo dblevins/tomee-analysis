@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AuthorityBindingMarshaller.class
-
- - link:AuthorityBindingMarshaller-asmified.java[Asmified]
-
-== References
-

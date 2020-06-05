@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlCustomizer.class
-
- - link:XmlCustomizer-asmified.java[Asmified]
-
-== References
-

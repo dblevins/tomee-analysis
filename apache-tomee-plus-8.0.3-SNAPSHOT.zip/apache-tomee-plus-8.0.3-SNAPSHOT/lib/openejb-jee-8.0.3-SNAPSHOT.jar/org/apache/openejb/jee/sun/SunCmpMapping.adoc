@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/SunCmpMapping.class
-
- - link:SunCmpMapping-asmified.java[Asmified]
-
-== References
-

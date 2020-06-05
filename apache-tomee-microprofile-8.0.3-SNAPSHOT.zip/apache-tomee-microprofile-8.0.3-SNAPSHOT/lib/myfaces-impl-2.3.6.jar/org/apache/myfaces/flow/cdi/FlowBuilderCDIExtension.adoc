@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/cdi/FlowBuilderCDIExtension.class
-
- - link:FlowBuilderCDIExtension-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MethodIntf$JAXB.class
-
- - link:MethodIntf$JAXB-asmified.java[Asmified]
-
-== References
-

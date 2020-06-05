@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/LocationAware.class
-
- - link:LocationAware-asmified.java[Asmified]
-
-== References
-

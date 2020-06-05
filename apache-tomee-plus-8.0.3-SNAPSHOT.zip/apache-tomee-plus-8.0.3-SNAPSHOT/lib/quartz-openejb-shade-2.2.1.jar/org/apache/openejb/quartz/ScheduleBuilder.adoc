@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ScheduleBuilder.class
-
- - link:ScheduleBuilder-asmified.java[Asmified]
-
-== References
-

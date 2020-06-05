@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/WeblogicRelationshipRole.class
-
- - link:WeblogicRelationshipRole-asmified.java[Asmified]
-
-== References
-

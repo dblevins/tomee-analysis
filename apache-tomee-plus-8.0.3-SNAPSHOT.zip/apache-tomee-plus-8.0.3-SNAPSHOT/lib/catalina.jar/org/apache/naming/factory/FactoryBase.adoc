@@ -1,6 +1,0 @@
-= org/apache/naming/factory/FactoryBase.class
-
- - link:FactoryBase-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/Manager.class
-
- - link:Manager-asmified.java[Asmified]
-
-== References
-

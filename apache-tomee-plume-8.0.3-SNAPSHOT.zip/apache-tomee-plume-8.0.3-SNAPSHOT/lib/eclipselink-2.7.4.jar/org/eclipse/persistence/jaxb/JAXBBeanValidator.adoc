@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBBeanValidator.class
-
- - link:JAXBBeanValidator-asmified.java[Asmified]
-
-== References
-

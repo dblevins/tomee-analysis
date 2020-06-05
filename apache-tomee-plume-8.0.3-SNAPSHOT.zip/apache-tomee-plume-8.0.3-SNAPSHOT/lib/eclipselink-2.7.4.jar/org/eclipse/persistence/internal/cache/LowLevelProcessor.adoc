@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/cache/LowLevelProcessor.class
-
- - link:LowLevelProcessor-asmified.java[Asmified]
-
-== References
-

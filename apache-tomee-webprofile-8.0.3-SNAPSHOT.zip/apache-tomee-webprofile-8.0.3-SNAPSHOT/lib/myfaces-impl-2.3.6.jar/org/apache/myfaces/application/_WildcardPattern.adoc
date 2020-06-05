@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/_WildcardPattern.class
-
- - link:_WildcardPattern-asmified.java[Asmified]
-
-== References
-

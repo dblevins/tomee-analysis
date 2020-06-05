@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Transient.class
-
- - link:Transient-asmified.java[Asmified]
-
-== References
-

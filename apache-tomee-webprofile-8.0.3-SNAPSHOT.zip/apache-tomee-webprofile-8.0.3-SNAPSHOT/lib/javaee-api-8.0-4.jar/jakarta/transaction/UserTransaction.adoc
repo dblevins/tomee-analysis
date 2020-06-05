@@ -1,6 +1,0 @@
-= jakarta/transaction/UserTransaction.class
-
- - link:UserTransaction-asmified.java[Asmified]
-
-== References
-

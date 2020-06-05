@@ -1,6 +1,0 @@
-= org/apache/neethi/Policy$PolicyIterator.class
-
- - link:Policy$PolicyIterator-asmified.java[Asmified]
-
-== References
-

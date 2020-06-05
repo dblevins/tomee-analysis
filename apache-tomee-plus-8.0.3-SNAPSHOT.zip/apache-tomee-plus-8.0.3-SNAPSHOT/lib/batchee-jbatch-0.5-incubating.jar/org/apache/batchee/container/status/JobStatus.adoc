@@ -1,6 +1,0 @@
-= org/apache/batchee/container/status/JobStatus.class
-
- - link:JobStatus-asmified.java[Asmified]
-
-== References
-

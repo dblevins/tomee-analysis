@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/RequiredPartSecurityEvent.class
-
- - link:RequiredPartSecurityEvent-asmified.java[Asmified]
-
-== References
-

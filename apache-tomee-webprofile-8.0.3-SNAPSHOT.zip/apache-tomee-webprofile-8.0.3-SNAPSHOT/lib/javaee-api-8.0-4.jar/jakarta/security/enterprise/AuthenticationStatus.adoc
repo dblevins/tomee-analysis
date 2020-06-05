@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/AuthenticationStatus.class
-
- - link:AuthenticationStatus-asmified.java[Asmified]
-
-== References
-

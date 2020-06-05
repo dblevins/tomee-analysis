@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/WritableContext.class
-
- - link:WritableContext-asmified.java[Asmified]
-
-== References
-

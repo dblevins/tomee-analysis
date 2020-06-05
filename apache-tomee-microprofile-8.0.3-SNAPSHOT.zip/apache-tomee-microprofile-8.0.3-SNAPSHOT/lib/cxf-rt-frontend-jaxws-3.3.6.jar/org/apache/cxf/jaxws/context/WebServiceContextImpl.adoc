@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/context/WebServiceContextImpl.class
-
- - link:WebServiceContextImpl-asmified.java[Asmified]
-
-== References
-

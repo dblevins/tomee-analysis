@@ -1,6 +1,0 @@
-= org/apache/coyote/ProtocolHandler.class
-
- - link:ProtocolHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/attachment/JAXBAttachmentUnmarshaller.class
-
- - link:JAXBAttachmentUnmarshaller-asmified.java[Asmified]
-
-== References
-

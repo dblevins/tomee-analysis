@@ -1,8 +1,0 @@
-= javax/faces/component/ActionSource2.class
-
- - link:ActionSource2-asmified.java[Asmified]
-
-== References
-
- - javax.el.MethodExpression - 2
- - javax.faces.component.ActionSource - 1

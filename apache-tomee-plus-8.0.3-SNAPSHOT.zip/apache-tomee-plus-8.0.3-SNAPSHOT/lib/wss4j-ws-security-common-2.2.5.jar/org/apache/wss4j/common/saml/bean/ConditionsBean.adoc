@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/bean/ConditionsBean.class
-
- - link:ConditionsBean-asmified.java[Asmified]
-
-== References
-

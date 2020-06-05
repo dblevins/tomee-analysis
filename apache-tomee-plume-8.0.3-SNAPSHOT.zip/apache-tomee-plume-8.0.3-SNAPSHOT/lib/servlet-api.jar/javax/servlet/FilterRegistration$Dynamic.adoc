@@ -1,8 +1,0 @@
-= javax/servlet/FilterRegistration$Dynamic.class
-
- - link:FilterRegistration$Dynamic-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.FilterRegistration - 1
- - javax.servlet.Registration$Dynamic - 1

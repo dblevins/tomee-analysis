@@ -1,6 +1,0 @@
-= jakarta/validation/TraversableResolver.class
-
- - link:TraversableResolver-asmified.java[Asmified]
-
-== References
-

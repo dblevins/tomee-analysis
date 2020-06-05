@@ -1,6 +1,0 @@
-= javax/wsdl/extensions/soap12/SOAP12Operation.class
-
- - link:SOAP12Operation-asmified.java[Asmified]
-
-== References
-

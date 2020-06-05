@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/PartialMethodExpressionValueChangeListener.class
-
- - link:PartialMethodExpressionValueChangeListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/PrimitiveArrayListerInteger$IntegerArrayPack.class
-
- - link:PrimitiveArrayListerInteger$IntegerArrayPack-asmified.java[Asmified]
-
-== References
-

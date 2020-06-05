@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/discovery/UDPDiscoveryReceiver.class
-
- - link:UDPDiscoveryReceiver-asmified.java[Asmified]
-
-== References
-

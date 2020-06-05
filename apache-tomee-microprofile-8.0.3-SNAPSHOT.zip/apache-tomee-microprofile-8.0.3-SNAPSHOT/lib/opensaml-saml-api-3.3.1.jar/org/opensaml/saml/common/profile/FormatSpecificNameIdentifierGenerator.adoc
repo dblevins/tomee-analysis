@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/FormatSpecificNameIdentifierGenerator.class
-
- - link:FormatSpecificNameIdentifierGenerator-asmified.java[Asmified]
-
-== References
-

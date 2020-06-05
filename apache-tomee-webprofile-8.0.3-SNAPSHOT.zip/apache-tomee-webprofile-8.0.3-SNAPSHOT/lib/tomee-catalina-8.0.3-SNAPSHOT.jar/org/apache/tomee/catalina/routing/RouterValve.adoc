@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/routing/RouterValve.class
-
- - link:RouterValve-asmified.java[Asmified]
-
-== References
-

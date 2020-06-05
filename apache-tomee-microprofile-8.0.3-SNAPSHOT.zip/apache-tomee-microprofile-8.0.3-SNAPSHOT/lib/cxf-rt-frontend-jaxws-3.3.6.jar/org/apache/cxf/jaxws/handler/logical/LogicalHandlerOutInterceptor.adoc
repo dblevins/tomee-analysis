@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/logical/LogicalHandlerOutInterceptor.class
-
- - link:LogicalHandlerOutInterceptor-asmified.java[Asmified]
-
-== References
-

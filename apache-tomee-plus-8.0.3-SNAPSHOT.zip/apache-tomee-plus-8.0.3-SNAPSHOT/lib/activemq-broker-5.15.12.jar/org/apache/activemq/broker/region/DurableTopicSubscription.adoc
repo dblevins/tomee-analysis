@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/DurableTopicSubscription.class
-
- - link:DurableTopicSubscription-asmified.java[Asmified]
-
-== References
-

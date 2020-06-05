@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMCanonicalXMLC14NMethod.class
-
- - link:DOMCanonicalXMLC14NMethod-asmified.java[Asmified]
-
-== References
-

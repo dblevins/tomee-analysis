@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/NumberDeserializers$FloatDeserializer.class
-
- - link:NumberDeserializers$FloatDeserializer-asmified.java[Asmified]
-
-== References
-

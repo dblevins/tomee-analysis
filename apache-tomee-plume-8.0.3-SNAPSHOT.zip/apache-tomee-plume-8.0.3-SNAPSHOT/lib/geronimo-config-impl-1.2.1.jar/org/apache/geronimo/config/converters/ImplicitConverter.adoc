@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/converters/ImplicitConverter.class
-
- - link:ImplicitConverter-asmified.java[Asmified]
-
-== References
-

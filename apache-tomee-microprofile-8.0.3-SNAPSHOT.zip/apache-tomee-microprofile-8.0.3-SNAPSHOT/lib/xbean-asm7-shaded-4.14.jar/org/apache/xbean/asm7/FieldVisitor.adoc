@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/FieldVisitor.class
-
- - link:FieldVisitor-asmified.java[Asmified]
-
-== References
-

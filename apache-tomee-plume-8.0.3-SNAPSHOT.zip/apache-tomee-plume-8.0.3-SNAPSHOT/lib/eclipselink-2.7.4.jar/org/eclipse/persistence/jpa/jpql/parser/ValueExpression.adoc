@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ValueExpression.class
-
- - link:ValueExpression-asmified.java[Asmified]
-
-== References
-

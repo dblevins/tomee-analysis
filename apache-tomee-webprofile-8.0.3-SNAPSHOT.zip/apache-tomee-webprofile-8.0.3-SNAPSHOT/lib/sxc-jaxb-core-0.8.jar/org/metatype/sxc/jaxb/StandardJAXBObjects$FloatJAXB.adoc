@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/StandardJAXBObjects$FloatJAXB.class
-
- - link:StandardJAXBObjects$FloatJAXB-asmified.java[Asmified]
-
-== References
-

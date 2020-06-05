@@ -1,9 +1,0 @@
-= javax/faces/flow/SwitchNode.class
-
- - link:SwitchNode-asmified.java[Asmified]
-
-== References
-
- - javax.faces.flow.FlowNode - 2
- - javax.faces.flow.SwitchCase - 1
- - javax.faces.context.FacesContext - 1

@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/EventBean.class
-
- - link:EventBean-asmified.java[Asmified]
-
-== References
-

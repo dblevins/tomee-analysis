@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/access/AccessMode.class
-
- - link:AccessMode-asmified.java[Asmified]
-
-== References
-

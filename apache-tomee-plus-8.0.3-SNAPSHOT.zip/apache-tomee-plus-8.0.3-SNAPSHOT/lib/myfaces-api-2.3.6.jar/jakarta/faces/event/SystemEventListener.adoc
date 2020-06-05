@@ -1,6 +1,0 @@
-= jakarta/faces/event/SystemEventListener.class
-
- - link:SystemEventListener-asmified.java[Asmified]
-
-== References
-

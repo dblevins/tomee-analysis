@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMPGPData.class
-
- - link:DOMPGPData-asmified.java[Asmified]
-
-== References
-

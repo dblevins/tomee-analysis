@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/From.class
-
- - link:From-asmified.java[Asmified]
-
-== References
-

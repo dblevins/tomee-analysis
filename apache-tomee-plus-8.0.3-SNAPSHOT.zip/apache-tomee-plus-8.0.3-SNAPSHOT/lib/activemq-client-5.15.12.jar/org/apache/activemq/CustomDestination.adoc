@@ -1,6 +1,0 @@
-= org/apache/activemq/CustomDestination.class
-
- - link:CustomDestination-asmified.java[Asmified]
-
-== References
-

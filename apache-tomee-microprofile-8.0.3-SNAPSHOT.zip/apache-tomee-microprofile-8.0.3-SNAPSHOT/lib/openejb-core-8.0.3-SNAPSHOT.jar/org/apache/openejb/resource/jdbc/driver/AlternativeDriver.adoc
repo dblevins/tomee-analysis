@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/driver/AlternativeDriver.class
-
- - link:AlternativeDriver-asmified.java[Asmified]
-
-== References
-

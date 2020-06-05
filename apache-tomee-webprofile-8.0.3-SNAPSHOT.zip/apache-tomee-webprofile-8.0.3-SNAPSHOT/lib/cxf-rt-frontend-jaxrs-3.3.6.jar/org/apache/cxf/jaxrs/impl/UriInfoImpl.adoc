@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/UriInfoImpl.class
-
- - link:UriInfoImpl-asmified.java[Asmified]
-
-== References
-

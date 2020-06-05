@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/MimeUtility.class
-
- - link:MimeUtility-asmified.java[Asmified]
-
-== References
-

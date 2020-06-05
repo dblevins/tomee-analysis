@@ -1,8 +1,0 @@
-= javax/persistence/Table.class
-
- - link:Table-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.Index - 1
- - javax.persistence.UniqueConstraint - 1

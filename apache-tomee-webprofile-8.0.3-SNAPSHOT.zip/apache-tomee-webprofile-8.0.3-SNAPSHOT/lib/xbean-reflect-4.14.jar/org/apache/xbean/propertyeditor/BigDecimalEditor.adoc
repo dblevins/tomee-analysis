@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/BigDecimalEditor.class
-
- - link:BigDecimalEditor-asmified.java[Asmified]
-
-== References
-

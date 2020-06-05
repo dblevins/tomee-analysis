@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/FromAliasExpression.class
-
- - link:FromAliasExpression-asmified.java[Asmified]
-
-== References
-

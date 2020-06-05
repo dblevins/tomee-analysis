@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/ReadOnlyContext.class
-
- - link:ReadOnlyContext-asmified.java[Asmified]
-
-== References
-

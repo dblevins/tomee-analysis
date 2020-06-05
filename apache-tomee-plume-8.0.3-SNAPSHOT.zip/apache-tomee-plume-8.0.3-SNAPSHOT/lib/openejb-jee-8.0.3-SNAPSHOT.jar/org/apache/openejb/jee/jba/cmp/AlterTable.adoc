@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/AlterTable.class
-
- - link:AlterTable-asmified.java[Asmified]
-
-== References
-

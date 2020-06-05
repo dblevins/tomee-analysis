@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/custom/sec/SecP521R1FieldElement.class
-
- - link:SecP521R1FieldElement-asmified.java[Asmified]
-
-== References
-

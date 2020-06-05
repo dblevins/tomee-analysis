@@ -1,6 +1,0 @@
-= jakarta/jws/WebMethod.class
-
- - link:WebMethod-asmified.java[Asmified]
-
-== References
-

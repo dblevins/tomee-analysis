@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/services/TokenIntrospectionService.class
-
- - link:TokenIntrospectionService-asmified.java[Asmified]
-
-== References
-

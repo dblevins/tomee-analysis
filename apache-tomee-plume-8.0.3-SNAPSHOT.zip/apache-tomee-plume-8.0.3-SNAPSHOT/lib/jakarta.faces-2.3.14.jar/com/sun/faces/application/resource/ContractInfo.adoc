@@ -1,6 +1,0 @@
-= com/sun/faces/application/resource/ContractInfo.class
-
- - link:ContractInfo-asmified.java[Asmified]
-
-== References
-

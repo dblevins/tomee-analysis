@@ -1,6 +1,0 @@
-= com/sun/xml/txw2/Content.class
-
- - link:Content-asmified.java[Asmified]
-
-== References
-

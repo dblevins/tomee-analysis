@@ -1,6 +1,0 @@
-= jakarta/mail/event/MailEvent.class
-
- - link:MailEvent-asmified.java[Asmified]
-
-== References
-

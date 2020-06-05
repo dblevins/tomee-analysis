@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlPanelGroup.class
-
- - link:HtmlPanelGroup-asmified.java[Asmified]
-
-== References
-

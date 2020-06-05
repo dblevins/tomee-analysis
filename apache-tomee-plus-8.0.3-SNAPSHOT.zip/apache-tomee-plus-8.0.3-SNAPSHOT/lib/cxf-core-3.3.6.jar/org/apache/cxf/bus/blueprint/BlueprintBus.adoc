@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/blueprint/BlueprintBus.class
-
- - link:BlueprintBus-asmified.java[Asmified]
-
-== References
-

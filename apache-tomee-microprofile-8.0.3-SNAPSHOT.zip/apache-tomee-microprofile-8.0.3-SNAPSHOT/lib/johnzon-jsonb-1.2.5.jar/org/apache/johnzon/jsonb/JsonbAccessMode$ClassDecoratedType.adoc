@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/JsonbAccessMode$ClassDecoratedType.class
-
- - link:JsonbAccessMode$ClassDecoratedType-asmified.java[Asmified]
-
-== References
-

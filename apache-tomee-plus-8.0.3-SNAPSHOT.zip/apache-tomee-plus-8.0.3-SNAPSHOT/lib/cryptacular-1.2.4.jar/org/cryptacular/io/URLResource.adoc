@@ -1,6 +1,0 @@
-= org/cryptacular/io/URLResource.class
-
- - link:URLResource-asmified.java[Asmified]
-
-== References
-

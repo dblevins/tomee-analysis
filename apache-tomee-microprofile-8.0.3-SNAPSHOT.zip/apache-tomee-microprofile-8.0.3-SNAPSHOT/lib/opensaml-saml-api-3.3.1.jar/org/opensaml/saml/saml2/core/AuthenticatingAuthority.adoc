@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/AuthenticatingAuthority.class
-
- - link:AuthenticatingAuthority-asmified.java[Asmified]
-
-== References
-

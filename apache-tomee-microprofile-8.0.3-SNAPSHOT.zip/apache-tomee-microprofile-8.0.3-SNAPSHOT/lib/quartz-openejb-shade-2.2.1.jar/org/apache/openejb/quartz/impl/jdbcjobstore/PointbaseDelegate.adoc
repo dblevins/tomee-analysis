@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/PointbaseDelegate.class
-
- - link:PointbaseDelegate-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/SwallowedExceptionLogger.class
-
- - link:SwallowedExceptionLogger-asmified.java[Asmified]
-
-== References
-

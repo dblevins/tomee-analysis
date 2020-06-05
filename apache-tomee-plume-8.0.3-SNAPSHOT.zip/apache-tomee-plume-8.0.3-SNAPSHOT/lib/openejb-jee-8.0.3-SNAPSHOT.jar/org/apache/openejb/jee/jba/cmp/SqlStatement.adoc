@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/SqlStatement.class
-
- - link:SqlStatement-asmified.java[Asmified]
-
-== References
-

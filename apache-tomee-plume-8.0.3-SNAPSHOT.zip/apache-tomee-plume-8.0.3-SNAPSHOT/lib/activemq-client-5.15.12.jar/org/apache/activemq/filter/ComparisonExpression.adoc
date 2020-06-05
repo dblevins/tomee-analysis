@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/ComparisonExpression.class
-
- - link:ComparisonExpression-asmified.java[Asmified]
-
-== References
-

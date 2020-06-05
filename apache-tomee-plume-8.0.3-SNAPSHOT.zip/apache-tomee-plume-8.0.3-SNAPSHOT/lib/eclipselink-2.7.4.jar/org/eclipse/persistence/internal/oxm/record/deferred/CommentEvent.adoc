@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/CommentEvent.class
-
- - link:CommentEvent-asmified.java[Asmified]
-
-== References
-

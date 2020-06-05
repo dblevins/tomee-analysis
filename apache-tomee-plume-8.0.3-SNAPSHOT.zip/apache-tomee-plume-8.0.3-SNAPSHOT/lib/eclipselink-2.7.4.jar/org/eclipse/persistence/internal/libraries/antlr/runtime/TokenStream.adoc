@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/TokenStream.class
-
- - link:TokenStream-asmified.java[Asmified]
-
-== References
-

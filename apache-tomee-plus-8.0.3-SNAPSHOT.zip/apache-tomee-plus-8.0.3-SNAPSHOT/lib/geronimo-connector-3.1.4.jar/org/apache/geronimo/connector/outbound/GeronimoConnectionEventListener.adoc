@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/GeronimoConnectionEventListener.class
-
- - link:GeronimoConnectionEventListener-asmified.java[Asmified]
-
-== References
-

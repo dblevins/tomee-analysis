@@ -1,6 +1,0 @@
-= javax/xml/rpc/NamespaceConstants.class
-
- - link:NamespaceConstants-asmified.java[Asmified]
-
-== References
-

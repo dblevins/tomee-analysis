@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/context/AbstractAuthenticatableSAMLEntityContext.class
-
- - link:AbstractAuthenticatableSAMLEntityContext-asmified.java[Asmified]
-
-== References
-

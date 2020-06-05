@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/FixedSizedSubscriptionRecoveryPolicy.class
-
- - link:FixedSizedSubscriptionRecoveryPolicy-asmified.java[Asmified]
-
-== References
-

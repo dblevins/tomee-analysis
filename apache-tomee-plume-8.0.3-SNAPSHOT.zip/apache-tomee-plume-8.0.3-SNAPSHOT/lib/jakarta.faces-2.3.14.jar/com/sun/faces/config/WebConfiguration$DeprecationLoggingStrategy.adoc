@@ -1,6 +1,0 @@
-= com/sun/faces/config/WebConfiguration$DeprecationLoggingStrategy.class
-
- - link:WebConfiguration$DeprecationLoggingStrategy-asmified.java[Asmified]
-
-== References
-

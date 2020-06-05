@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/SQLQueryHandler.class
-
- - link:SQLQueryHandler-asmified.java[Asmified]
-
-== References
-

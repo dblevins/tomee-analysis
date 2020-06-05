@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/reliable/DefaultReplayStrategy.class
-
- - link:DefaultReplayStrategy-asmified.java[Asmified]
-
-== References
-

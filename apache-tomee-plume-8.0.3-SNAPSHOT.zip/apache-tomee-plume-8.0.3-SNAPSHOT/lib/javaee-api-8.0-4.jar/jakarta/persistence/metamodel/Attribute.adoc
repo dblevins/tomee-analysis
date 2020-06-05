@@ -1,6 +1,0 @@
-= jakarta/persistence/metamodel/Attribute.class
-
- - link:Attribute-asmified.java[Asmified]
-
-== References
-

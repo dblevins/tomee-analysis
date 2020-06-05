@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/CdiScopes.class
-
- - link:CdiScopes-asmified.java[Asmified]
-
-== References
-

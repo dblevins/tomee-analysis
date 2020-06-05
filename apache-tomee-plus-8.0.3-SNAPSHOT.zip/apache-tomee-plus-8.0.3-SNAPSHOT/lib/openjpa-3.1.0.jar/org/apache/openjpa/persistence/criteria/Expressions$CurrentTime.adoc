@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$CurrentTime.class
-
- - link:Expressions$CurrentTime-asmified.java[Asmified]
-
-== References
-

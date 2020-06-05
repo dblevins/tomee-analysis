@@ -1,6 +1,0 @@
-= org/hsqldb/lib/ClosableCharArrayWriter.class
-
- - link:ClosableCharArrayWriter-asmified.java[Asmified]
-
-== References
-

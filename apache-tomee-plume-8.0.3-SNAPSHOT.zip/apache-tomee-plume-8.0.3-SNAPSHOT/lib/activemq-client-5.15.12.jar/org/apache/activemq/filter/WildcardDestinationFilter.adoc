@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/WildcardDestinationFilter.class
-
- - link:WildcardDestinationFilter-asmified.java[Asmified]
-
-== References
-

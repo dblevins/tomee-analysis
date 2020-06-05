@@ -1,6 +1,0 @@
-= com/sun/faces/el/VariableResolverImpl.class
-
- - link:VariableResolverImpl-asmified.java[Asmified]
-
-== References
-

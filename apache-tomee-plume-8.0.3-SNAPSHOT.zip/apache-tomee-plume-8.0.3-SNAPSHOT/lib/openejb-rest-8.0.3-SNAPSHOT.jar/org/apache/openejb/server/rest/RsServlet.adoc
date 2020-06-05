@@ -1,6 +1,0 @@
-= org/apache/openejb/server/rest/RsServlet.class
-
- - link:RsServlet-asmified.java[Asmified]
-
-== References
-

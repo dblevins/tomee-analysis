@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/problem/AbortCompilation.class
-
- - link:AbortCompilation-asmified.java[Asmified]
-
-== References
-

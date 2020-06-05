@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/bio/MultipointBioSender.class
-
- - link:MultipointBioSender-asmified.java[Asmified]
-
-== References
-

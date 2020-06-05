@@ -1,8 +1,0 @@
-= javax/management/j2ee/statistics/StatefulSessionBeanStats.class
-
- - link:StatefulSessionBeanStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.RangeStatistic - 1
- - javax.management.j2ee.statistics.SessionBeanStats - 1

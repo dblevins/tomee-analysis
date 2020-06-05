@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/multiset/AbstractMultiSet$1.class
-
- - link:AbstractMultiSet$1-asmified.java[Asmified]
-
-== References
-

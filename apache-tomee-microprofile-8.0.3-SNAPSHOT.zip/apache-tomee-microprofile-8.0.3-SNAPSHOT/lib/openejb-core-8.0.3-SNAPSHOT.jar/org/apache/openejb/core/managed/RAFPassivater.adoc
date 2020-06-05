@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/RAFPassivater.class
-
- - link:RAFPassivater-asmified.java[Asmified]
-
-== References
-

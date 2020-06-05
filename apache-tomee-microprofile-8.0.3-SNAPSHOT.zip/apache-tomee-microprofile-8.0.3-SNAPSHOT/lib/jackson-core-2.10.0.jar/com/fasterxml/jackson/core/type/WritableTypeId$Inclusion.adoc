@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/type/WritableTypeId$Inclusion.class
-
- - link:WritableTypeId$Inclusion-asmified.java[Asmified]
-
-== References
-

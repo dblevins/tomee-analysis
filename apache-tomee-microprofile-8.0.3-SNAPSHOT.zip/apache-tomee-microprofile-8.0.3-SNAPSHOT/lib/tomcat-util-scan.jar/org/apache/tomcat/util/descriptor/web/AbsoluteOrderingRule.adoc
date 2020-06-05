@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/AbsoluteOrderingRule.class
-
- - link:AbsoluteOrderingRule-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/ctc/wstx/osgi/WstxBundleActivator.class
-
- - link:WstxBundleActivator-asmified.java[Asmified]
-
-== References
-

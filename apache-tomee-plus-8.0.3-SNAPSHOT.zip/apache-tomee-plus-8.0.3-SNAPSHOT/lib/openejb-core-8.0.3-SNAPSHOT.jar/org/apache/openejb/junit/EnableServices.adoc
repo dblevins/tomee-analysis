@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/EnableServices.class
-
- - link:EnableServices-asmified.java[Asmified]
-
-== References
-

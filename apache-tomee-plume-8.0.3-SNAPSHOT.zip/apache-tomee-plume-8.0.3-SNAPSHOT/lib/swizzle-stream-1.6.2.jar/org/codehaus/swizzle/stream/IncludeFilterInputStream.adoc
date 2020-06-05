@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/IncludeFilterInputStream.class
-
- - link:IncludeFilterInputStream-asmified.java[Asmified]
-
-== References
-

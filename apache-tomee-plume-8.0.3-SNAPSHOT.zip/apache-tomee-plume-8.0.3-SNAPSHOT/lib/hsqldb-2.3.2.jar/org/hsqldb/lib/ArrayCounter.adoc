@@ -1,6 +1,0 @@
-= org/hsqldb/lib/ArrayCounter.class
-
- - link:ArrayCounter-asmified.java[Asmified]
-
-== References
-

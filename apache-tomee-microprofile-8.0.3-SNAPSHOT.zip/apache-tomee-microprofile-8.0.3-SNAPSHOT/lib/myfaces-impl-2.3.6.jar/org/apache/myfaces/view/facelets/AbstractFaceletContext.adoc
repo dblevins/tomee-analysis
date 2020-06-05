@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/AbstractFaceletContext.class
-
- - link:AbstractFaceletContext-asmified.java[Asmified]
-
-== References
-

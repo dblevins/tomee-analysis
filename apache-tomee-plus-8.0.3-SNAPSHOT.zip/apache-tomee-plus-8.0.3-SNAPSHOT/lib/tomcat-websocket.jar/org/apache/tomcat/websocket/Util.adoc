@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/Util.class
-
- - link:Util-asmified.java[Asmified]
-
-== References
-

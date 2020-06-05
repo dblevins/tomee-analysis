@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlAjaxBehaviorRenderer.class
-
- - link:HtmlAjaxBehaviorRenderer-asmified.java[Asmified]
-
-== References
-

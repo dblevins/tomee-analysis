@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/OpenEJBLifecycle$InternalBean.class
-
- - link:OpenEJBLifecycle$InternalBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/persistence/SharedCacheMode.class
-
- - link:SharedCacheMode-asmified.java[Asmified]
-
-== References
-

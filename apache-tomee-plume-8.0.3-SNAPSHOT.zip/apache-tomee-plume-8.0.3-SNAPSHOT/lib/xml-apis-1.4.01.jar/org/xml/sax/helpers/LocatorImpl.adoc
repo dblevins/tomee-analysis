@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/LocatorImpl.class
-
- - link:LocatorImpl-asmified.java[Asmified]
-
-== References
-

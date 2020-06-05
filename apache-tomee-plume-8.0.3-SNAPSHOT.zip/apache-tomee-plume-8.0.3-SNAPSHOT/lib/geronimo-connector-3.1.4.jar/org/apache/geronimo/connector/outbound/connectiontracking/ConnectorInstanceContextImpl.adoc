@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContextImpl.class
-
- - link:ConnectorInstanceContextImpl-asmified.java[Asmified]
-
-== References
-

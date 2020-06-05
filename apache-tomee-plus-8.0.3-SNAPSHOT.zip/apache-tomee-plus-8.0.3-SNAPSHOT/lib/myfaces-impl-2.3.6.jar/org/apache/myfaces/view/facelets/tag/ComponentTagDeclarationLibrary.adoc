@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ComponentTagDeclarationLibrary.class
-
- - link:ComponentTagDeclarationLibrary-asmified.java[Asmified]
-
-== References
-

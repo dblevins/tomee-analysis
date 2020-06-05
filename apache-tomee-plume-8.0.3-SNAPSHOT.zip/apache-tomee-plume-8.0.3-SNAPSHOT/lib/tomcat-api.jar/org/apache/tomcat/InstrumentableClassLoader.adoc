@@ -1,6 +1,0 @@
-= org/apache/tomcat/InstrumentableClassLoader.class
-
- - link:InstrumentableClassLoader-asmified.java[Asmified]
-
-== References
-

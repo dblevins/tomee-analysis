@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/EqualExpression.class
-
- - link:EqualExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/JaxbOpenejb$WhitelistFilter.class
-
- - link:JaxbOpenejb$WhitelistFilter-asmified.java[Asmified]
-
-== References
-

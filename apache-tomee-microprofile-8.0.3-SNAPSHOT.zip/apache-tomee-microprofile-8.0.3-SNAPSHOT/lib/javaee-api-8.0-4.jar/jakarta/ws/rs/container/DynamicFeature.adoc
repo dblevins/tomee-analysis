@@ -1,6 +1,0 @@
-= jakarta/ws/rs/container/DynamicFeature.class
-
- - link:DynamicFeature-asmified.java[Asmified]
-
-== References
-

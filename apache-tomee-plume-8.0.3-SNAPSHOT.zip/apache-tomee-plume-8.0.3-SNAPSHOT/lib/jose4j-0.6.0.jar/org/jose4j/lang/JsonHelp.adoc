@@ -1,6 +1,0 @@
-= org/jose4j/lang/JsonHelp.class
-
- - link:JsonHelp-asmified.java[Asmified]
-
-== References
-

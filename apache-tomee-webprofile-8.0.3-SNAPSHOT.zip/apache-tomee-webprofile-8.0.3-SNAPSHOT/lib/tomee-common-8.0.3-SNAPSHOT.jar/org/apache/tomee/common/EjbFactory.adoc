@@ -1,6 +1,0 @@
-= org/apache/tomee/common/EjbFactory.class
-
- - link:EjbFactory-asmified.java[Asmified]
-
-== References
-

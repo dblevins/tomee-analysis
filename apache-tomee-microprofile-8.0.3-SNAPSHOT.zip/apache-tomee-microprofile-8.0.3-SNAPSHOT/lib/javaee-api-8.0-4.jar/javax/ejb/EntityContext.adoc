@@ -1,9 +1,0 @@
-= javax/ejb/EntityContext.class
-
- - link:EntityContext-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBObject - 1
- - javax.ejb.EJBLocalObject - 1
- - javax.ejb.EJBContext - 1

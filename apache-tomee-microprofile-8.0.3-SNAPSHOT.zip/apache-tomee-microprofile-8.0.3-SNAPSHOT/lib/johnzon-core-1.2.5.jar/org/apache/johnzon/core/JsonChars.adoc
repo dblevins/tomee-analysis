@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonChars.class
-
- - link:JsonChars-asmified.java[Asmified]
-
-== References
-

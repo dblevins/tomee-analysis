@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/Lister$CollectionLister.class
-
- - link:Lister$CollectionLister-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/FrameworkLogger.class
-
- - link:FrameworkLogger-asmified.java[Asmified]
-
-== References
-

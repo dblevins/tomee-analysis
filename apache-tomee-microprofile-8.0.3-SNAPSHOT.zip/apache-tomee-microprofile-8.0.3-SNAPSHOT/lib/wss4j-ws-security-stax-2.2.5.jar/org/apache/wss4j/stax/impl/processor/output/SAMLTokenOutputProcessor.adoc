@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/output/SAMLTokenOutputProcessor.class
-
- - link:SAMLTokenOutputProcessor-asmified.java[Asmified]
-
-== References
-

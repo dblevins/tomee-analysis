@@ -1,6 +1,0 @@
-= org/apache/activemq/command/DiscoveryEvent.class
-
- - link:DiscoveryEvent-asmified.java[Asmified]
-
-== References
-

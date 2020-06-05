@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/metrics/FaultToleranceMetrics$Counter.class
-
- - link:FaultToleranceMetrics$Counter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/implicitobject/InitParamImplicitObject.class
-
- - link:InitParamImplicitObject-asmified.java[Asmified]
-
-== References
-

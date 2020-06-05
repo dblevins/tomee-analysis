@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/converters/URLConverter.class
-
- - link:URLConverter-asmified.java[Asmified]
-
-== References
-

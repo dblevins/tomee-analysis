@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/Contexts.class
-
- - link:Contexts-asmified.java[Asmified]
-
-== References
-

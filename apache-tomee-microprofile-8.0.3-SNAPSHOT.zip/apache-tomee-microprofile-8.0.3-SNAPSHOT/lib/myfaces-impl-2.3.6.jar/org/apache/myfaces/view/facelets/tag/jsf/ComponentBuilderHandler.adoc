@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ComponentBuilderHandler.class
-
- - link:ComponentBuilderHandler-asmified.java[Asmified]
-
-== References
-

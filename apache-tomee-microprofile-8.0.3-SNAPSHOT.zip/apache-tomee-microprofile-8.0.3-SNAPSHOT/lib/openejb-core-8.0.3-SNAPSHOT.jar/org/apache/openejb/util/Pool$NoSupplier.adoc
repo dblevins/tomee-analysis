@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Pool$NoSupplier.class
-
- - link:Pool$NoSupplier-asmified.java[Asmified]
-
-== References
-

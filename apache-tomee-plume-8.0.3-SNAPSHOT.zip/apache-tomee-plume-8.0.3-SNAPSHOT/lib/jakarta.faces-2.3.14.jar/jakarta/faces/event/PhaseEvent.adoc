@@ -1,6 +1,0 @@
-= jakarta/faces/event/PhaseEvent.class
-
- - link:PhaseEvent-asmified.java[Asmified]
-
-== References
-

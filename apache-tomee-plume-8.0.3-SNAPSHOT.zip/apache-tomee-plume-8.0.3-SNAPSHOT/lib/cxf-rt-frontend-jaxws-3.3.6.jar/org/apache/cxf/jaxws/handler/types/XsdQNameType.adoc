@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/types/XsdQNameType.class
-
- - link:XsdQNameType-asmified.java[Asmified]
-
-== References
-

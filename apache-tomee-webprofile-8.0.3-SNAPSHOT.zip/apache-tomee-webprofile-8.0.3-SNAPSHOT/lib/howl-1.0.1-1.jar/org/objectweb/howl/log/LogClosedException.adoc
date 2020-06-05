@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogClosedException.class
-
- - link:LogClosedException-asmified.java[Asmified]
-
-== References
-

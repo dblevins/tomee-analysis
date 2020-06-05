@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/client/Consumer.class
-
- - link:Consumer-asmified.java[Asmified]
-
-== References
-

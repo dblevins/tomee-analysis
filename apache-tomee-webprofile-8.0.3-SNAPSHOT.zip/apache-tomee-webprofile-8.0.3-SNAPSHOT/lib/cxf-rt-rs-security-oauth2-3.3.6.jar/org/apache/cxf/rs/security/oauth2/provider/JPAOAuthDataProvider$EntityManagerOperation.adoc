@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/JPAOAuthDataProvider$EntityManagerOperation.class
-
- - link:JPAOAuthDataProvider$EntityManagerOperation-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/faces/view/facelets/Facelet.class
-
- - link:Facelet-asmified.java[Asmified]
-
-== References
-
- - javax.faces.context.FacesContext - 1
- - javax.faces.component.UIComponent - 1

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BoundedMap.class
-
- - link:BoundedMap-asmified.java[Asmified]
-
-== References
-

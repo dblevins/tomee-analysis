@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/index/impl/SAMLArtifactMetadataIndex$EntityIDToSHA1SourceIDIndexingFunction.class
-
- - link:SAMLArtifactMetadataIndex$EntityIDToSHA1SourceIDIndexingFunction-asmified.java[Asmified]
-
-== References
-

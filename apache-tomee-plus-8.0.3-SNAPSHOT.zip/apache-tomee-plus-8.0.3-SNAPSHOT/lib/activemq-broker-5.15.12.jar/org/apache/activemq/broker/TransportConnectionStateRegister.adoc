@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/TransportConnectionStateRegister.class
-
- - link:TransportConnectionStateRegister-asmified.java[Asmified]
-
-== References
-

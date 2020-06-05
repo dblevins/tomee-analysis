@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/TransactionImpl.class
-
- - link:TransactionImpl-asmified.java[Asmified]
-
-== References
-

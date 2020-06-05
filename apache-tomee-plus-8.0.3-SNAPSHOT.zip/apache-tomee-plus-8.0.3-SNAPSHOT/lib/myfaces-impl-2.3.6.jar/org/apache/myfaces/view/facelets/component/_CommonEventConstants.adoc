@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/component/_CommonEventConstants.class
-
- - link:_CommonEventConstants-asmified.java[Asmified]
-
-== References
-

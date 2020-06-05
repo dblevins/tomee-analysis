@@ -1,9 +1,0 @@
-= javax/enterprise/inject/literal/QualifierLiteral.class
-
- - link:QualifierLiteral-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.literal.QualifierLiteral - 4
- - javax.enterprise.util.AnnotationLiteral - 2
- - javax.inject.Qualifier - 2

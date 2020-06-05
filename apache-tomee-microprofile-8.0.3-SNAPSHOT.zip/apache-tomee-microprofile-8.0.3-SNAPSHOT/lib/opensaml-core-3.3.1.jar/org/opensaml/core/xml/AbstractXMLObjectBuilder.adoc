@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/AbstractXMLObjectBuilder.class
-
- - link:AbstractXMLObjectBuilder-asmified.java[Asmified]
-
-== References
-

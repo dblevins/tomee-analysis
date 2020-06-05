@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/AnnotatedMethod.class
-
- - link:AnnotatedMethod-asmified.java[Asmified]
-
-== References
-

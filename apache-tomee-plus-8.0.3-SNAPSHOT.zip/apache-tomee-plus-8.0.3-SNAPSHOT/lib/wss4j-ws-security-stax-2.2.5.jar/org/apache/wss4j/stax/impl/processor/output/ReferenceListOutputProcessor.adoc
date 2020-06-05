@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/output/ReferenceListOutputProcessor.class
-
- - link:ReferenceListOutputProcessor-asmified.java[Asmified]
-
-== References
-

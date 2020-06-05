@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/profile/impl/AddNameIdentifierToSubjects$AssertionStrategy.class
-
- - link:AddNameIdentifierToSubjects$AssertionStrategy-asmified.java[Asmified]
-
-== References
-

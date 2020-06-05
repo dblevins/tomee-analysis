@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HttpDestinationFeature$Portable.class
-
- - link:HttpDestinationFeature$Portable-asmified.java[Asmified]
-
-== References
-

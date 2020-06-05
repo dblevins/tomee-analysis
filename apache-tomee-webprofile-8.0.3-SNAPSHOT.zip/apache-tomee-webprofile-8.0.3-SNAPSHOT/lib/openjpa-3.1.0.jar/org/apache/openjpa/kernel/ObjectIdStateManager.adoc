@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ObjectIdStateManager.class
-
- - link:ObjectIdStateManager-asmified.java[Asmified]
-
-== References
-

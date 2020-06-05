@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/JavadocImplicitTypeReference.class
-
- - link:JavadocImplicitTypeReference-asmified.java[Asmified]
-
-== References
-

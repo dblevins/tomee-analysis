@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/CMSAttributes.class
-
- - link:CMSAttributes-asmified.java[Asmified]
-
-== References
-

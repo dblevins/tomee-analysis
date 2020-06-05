@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/IdentificationVariableFactory.class
-
- - link:IdentificationVariableFactory-asmified.java[Asmified]
-
-== References
-

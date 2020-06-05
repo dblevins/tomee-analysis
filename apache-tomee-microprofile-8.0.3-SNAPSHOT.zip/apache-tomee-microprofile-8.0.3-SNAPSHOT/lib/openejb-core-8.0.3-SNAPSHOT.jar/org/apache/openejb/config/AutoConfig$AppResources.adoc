@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AutoConfig$AppResources.class
-
- - link:AutoConfig$AppResources-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/application/resource/FaceletResourceInfo.class
-
- - link:FaceletResourceInfo-asmified.java[Asmified]
-
-== References
-

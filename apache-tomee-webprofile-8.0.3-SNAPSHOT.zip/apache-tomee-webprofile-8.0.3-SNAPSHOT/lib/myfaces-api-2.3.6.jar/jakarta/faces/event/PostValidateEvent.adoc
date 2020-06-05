@@ -1,6 +1,0 @@
-= jakarta/faces/event/PostValidateEvent.class
-
- - link:PostValidateEvent-asmified.java[Asmified]
-
-== References
-

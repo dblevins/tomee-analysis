@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/MetadataQueryProtocolSHA1Transformer.class
-
- - link:MetadataQueryProtocolSHA1Transformer-asmified.java[Asmified]
-
-== References
-

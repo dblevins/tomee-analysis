@@ -1,6 +1,0 @@
-= org/apache/commons/collections/list/NodeCachingLinkedList.class
-
- - link:NodeCachingLinkedList-asmified.java[Asmified]
-
-== References
-

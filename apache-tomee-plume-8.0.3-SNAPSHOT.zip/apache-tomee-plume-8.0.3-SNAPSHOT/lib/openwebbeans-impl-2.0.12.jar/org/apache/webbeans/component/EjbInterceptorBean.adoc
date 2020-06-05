@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/EjbInterceptorBean.class
-
- - link:EjbInterceptorBean-asmified.java[Asmified]
-
-== References
-

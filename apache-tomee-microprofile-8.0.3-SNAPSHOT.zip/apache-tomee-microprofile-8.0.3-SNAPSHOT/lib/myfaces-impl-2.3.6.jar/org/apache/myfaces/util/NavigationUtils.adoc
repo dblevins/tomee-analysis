@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/NavigationUtils.class
-
- - link:NavigationUtils-asmified.java[Asmified]
-
-== References
-

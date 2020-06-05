@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/ServerSessionPoolImpl.class
-
- - link:ServerSessionPoolImpl-asmified.java[Asmified]
-
-== References
-

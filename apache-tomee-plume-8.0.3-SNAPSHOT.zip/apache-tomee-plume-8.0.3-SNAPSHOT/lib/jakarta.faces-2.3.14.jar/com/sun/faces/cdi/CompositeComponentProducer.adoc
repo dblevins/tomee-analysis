@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/CompositeComponentProducer.class
-
- - link:CompositeComponentProducer-asmified.java[Asmified]
-
-== References
-

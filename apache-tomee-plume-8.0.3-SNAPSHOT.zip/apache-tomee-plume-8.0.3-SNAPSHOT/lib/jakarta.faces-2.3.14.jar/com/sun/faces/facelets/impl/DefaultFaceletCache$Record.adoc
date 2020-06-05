@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/impl/DefaultFaceletCache$Record.class
-
- - link:DefaultFaceletCache$Record-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/AbstractBatchMetadataResolver$BatchEntityBackingStore.class
-
- - link:AbstractBatchMetadataResolver$BatchEntityBackingStore-asmified.java[Asmified]
-
-== References
-

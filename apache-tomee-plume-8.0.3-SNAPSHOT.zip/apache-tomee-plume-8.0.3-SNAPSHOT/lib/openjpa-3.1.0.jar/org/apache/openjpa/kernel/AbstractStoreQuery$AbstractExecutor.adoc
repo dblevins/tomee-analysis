@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/AbstractStoreQuery$AbstractExecutor.class
-
- - link:AbstractStoreQuery$AbstractExecutor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/ANTLRInputStream.class
-
- - link:ANTLRInputStream-asmified.java[Asmified]
-
-== References
-

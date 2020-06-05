@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/ProxyRestrictionBuilder.class
-
- - link:ProxyRestrictionBuilder-asmified.java[Asmified]
-
-== References
-

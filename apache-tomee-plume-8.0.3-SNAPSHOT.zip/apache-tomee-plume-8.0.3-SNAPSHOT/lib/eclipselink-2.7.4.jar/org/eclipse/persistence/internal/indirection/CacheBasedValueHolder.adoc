@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/CacheBasedValueHolder.class
-
- - link:CacheBasedValueHolder-asmified.java[Asmified]
-
-== References
-

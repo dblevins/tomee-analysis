@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/OuterJoinExpressionHolder.class
-
- - link:OuterJoinExpressionHolder-asmified.java[Asmified]
-
-== References
-

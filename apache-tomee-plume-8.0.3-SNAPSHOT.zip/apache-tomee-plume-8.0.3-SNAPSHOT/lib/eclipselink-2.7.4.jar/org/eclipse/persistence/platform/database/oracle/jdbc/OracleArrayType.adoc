@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/oracle/jdbc/OracleArrayType.class
-
- - link:OracleArrayType-asmified.java[Asmified]
-
-== References
-

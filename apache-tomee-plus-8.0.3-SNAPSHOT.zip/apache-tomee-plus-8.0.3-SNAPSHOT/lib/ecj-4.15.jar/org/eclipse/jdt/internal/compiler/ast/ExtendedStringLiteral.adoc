@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/ExtendedStringLiteral.class
-
- - link:ExtendedStringLiteral-asmified.java[Asmified]
-
-== References
-

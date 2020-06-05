@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/MarshallerImpl$1.class
-
- - link:MarshallerImpl$1-asmified.java[Asmified]
-
-== References
-

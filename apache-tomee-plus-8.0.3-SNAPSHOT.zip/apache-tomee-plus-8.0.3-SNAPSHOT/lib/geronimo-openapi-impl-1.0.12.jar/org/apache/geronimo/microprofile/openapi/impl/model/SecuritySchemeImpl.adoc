@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/SecuritySchemeImpl.class
-
- - link:SecuritySchemeImpl-asmified.java[Asmified]
-
-== References
-

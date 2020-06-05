@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPFetchDataItem.class
-
- - link:IMAPFetchDataItem-asmified.java[Asmified]
-
-== References
-

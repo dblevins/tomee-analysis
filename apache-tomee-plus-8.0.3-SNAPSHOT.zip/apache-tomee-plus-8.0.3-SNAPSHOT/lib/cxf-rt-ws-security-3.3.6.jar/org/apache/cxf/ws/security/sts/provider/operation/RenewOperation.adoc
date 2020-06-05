@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/operation/RenewOperation.class
-
- - link:RenewOperation-asmified.java[Asmified]
-
-== References
-

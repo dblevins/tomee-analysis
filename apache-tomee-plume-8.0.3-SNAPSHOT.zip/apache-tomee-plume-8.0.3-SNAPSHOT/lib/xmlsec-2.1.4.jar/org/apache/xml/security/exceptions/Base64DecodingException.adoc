@@ -1,6 +1,0 @@
-= org/apache/xml/security/exceptions/Base64DecodingException.class
-
- - link:Base64DecodingException-asmified.java[Asmified]
-
-== References
-

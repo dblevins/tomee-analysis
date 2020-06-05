@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/ContextConfig.class
-
- - link:ContextConfig-asmified.java[Asmified]
-
-== References
-

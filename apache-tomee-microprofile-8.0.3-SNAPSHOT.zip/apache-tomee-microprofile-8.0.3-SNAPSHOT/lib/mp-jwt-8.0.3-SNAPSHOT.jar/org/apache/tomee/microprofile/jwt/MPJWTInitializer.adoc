@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/MPJWTInitializer.class
-
- - link:MPJWTInitializer-asmified.java[Asmified]
-
-== References
-

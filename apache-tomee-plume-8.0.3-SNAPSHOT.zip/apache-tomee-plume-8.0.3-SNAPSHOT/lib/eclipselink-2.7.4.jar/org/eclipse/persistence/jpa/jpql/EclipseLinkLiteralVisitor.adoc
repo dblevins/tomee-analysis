@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/EclipseLinkLiteralVisitor.class
-
- - link:EclipseLinkLiteralVisitor-asmified.java[Asmified]
-
-== References
-

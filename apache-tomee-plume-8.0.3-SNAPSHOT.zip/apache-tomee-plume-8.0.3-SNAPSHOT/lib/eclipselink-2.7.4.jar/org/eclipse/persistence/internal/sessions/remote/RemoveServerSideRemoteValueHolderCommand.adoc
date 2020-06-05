@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/remote/RemoveServerSideRemoteValueHolderCommand.class
-
- - link:RemoveServerSideRemoteValueHolderCommand-asmified.java[Asmified]
-
-== References
-

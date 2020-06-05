@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/ConnectorMBean.class
-
- - link:ConnectorMBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/JavadocParser.class
-
- - link:JavadocParser-asmified.java[Asmified]
-
-== References
-

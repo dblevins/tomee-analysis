@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/StatementFacade.class
-
- - link:StatementFacade-asmified.java[Asmified]
-
-== References
-

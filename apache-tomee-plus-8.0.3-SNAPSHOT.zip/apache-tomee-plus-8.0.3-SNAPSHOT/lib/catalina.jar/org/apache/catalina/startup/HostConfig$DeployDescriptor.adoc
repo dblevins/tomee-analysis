@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/HostConfig$DeployDescriptor.class
-
- - link:HostConfig$DeployDescriptor-asmified.java[Asmified]
-
-== References
-

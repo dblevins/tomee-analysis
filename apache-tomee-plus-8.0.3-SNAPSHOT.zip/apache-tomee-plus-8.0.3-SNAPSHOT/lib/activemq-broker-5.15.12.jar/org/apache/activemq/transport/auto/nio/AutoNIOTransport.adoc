@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/auto/nio/AutoNIOTransport.class
-
- - link:AutoNIOTransport-asmified.java[Asmified]
-
-== References
-

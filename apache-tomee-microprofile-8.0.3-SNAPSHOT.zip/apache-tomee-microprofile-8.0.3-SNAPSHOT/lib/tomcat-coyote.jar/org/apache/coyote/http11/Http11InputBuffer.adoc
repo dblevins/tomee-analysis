@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/Http11InputBuffer.class
-
- - link:Http11InputBuffer-asmified.java[Asmified]
-
-== References
-

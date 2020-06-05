@@ -1,7 +1,0 @@
-= javax/xml/bind/ParseConversionEvent.class
-
- - link:ParseConversionEvent-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.ValidationEvent - 1

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/InstructionAdapter.class
-
- - link:InstructionAdapter-asmified.java[Asmified]
-
-== References
-

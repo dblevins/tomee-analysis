@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmlenc/ReferenceType.class
-
- - link:ReferenceType-asmified.java[Asmified]
-
-== References
-

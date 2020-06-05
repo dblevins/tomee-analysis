@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes.class
-
- - link:BeansDeployer$ExtendedBeanAttributes-asmified.java[Asmified]
-
-== References
-

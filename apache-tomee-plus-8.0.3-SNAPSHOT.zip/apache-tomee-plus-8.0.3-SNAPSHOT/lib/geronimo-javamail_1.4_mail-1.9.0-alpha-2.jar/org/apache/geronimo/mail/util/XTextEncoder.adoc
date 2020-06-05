@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/util/XTextEncoder.class
-
- - link:XTextEncoder-asmified.java[Asmified]
-
-== References
-

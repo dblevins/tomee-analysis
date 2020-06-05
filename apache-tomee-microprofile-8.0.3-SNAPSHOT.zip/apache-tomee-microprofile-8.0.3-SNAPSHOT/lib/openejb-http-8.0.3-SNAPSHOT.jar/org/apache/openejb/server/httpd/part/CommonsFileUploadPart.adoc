@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/part/CommonsFileUploadPart.class
-
- - link:CommonsFileUploadPart-asmified.java[Asmified]
-
-== References
-

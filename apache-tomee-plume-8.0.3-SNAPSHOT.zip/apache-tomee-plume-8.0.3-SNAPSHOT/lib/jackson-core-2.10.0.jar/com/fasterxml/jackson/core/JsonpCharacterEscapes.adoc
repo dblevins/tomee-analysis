@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/JsonpCharacterEscapes.class
-
- - link:JsonpCharacterEscapes-asmified.java[Asmified]
-
-== References
-

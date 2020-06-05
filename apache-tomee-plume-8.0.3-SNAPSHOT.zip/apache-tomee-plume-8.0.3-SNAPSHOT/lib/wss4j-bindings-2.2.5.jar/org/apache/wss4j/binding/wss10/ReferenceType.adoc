@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wss10/ReferenceType.class
-
- - link:ReferenceType-asmified.java[Asmified]
-
-== References
-

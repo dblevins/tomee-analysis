@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/util/XMLObjectSupport$1.class
-
- - link:XMLObjectSupport$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/digester/ObjectCreateRule.class
-
- - link:ObjectCreateRule-asmified.java[Asmified]
-
-== References
-

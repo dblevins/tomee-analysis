@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/SignerIdentifier.class
-
- - link:SignerIdentifier-asmified.java[Asmified]
-
-== References
-

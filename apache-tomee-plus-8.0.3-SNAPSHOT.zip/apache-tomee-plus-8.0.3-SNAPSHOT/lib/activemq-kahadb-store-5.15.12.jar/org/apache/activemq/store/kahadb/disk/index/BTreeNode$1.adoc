@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/BTreeNode$1.class
-
- - link:BTreeNode$1-asmified.java[Asmified]
-
-== References
-

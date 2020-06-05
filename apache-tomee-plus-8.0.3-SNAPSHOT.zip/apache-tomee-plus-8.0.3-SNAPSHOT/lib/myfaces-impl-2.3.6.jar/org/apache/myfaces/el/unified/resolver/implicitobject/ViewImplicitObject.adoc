@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/implicitobject/ViewImplicitObject.class
-
- - link:ViewImplicitObject-asmified.java[Asmified]
-
-== References
-

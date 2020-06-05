@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/parameters/Parameter$Style.class
-
- - link:Parameter$Style-asmified.java[Asmified]
-
-== References
-

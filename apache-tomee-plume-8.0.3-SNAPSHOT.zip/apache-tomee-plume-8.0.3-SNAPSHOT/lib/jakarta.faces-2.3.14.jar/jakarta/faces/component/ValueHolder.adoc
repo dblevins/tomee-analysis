@@ -1,6 +1,0 @@
-= jakarta/faces/component/ValueHolder.class
-
- - link:ValueHolder-asmified.java[Asmified]
-
-== References
-

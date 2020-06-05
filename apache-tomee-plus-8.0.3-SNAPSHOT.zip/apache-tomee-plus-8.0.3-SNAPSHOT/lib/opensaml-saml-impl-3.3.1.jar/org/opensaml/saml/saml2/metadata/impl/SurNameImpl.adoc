@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/SurNameImpl.class
-
- - link:SurNameImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/IStoreFactory.class
-
- - link:IStoreFactory-asmified.java[Asmified]
-
-== References
-

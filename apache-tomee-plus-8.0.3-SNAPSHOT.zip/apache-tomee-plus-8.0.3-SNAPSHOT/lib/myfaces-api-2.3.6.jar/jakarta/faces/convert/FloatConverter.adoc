@@ -1,6 +1,0 @@
-= jakarta/faces/convert/FloatConverter.class
-
- - link:FloatConverter-asmified.java[Asmified]
-
-== References
-

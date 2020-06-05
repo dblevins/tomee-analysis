@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/SelectItemTag.class
-
- - link:SelectItemTag-asmified.java[Asmified]
-
-== References
-

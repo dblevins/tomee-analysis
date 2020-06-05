@@ -1,6 +1,0 @@
-= org/hsqldb/scriptio/ScriptReaderDecode.class
-
- - link:ScriptReaderDecode-asmified.java[Asmified]
-
-== References
-

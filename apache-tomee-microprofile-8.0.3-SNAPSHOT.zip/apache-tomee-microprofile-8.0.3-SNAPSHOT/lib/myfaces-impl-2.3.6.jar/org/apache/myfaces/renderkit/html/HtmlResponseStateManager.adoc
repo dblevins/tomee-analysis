@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlResponseStateManager.class
-
- - link:HtmlResponseStateManager-asmified.java[Asmified]
-
-== References
-

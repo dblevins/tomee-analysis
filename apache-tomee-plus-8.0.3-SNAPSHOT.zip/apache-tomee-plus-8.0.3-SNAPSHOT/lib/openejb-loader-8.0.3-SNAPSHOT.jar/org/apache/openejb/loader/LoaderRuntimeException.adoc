@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/LoaderRuntimeException.class
-
- - link:LoaderRuntimeException-asmified.java[Asmified]
-
-== References
-

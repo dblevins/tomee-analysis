@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.class
-
- - link:UsernameTokenInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRServiceFactory.class
-
- - link:XRServiceFactory-asmified.java[Asmified]
-
-== References
-

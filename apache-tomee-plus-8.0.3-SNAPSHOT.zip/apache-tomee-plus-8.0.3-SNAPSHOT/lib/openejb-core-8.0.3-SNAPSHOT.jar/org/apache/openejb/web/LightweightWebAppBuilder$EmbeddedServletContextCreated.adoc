@@ -1,6 +1,0 @@
-= org/apache/openejb/web/LightweightWebAppBuilder$EmbeddedServletContextCreated.class
-
- - link:LightweightWebAppBuilder$EmbeddedServletContextCreated-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller.class
-
- - link:JAXBAttachmentMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/CacheResultInterceptor.class
-
- - link:CacheResultInterceptor-asmified.java[Asmified]
-
-== References
-

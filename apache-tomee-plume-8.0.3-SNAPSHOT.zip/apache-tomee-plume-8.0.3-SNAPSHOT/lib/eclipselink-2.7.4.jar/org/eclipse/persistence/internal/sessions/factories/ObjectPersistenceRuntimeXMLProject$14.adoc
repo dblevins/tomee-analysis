@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/ObjectPersistenceRuntimeXMLProject$14.class
-
- - link:ObjectPersistenceRuntimeXMLProject$14-asmified.java[Asmified]
-
-== References
-

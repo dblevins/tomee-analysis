@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/EntityBeanType$PrefetchGroup.class
-
- - link:EntityBeanType$PrefetchGroup-asmified.java[Asmified]
-
-== References
-

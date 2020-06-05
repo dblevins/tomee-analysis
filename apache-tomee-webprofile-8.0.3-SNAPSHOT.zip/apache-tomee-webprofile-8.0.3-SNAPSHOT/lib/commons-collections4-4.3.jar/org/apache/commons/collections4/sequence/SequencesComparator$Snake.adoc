@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/sequence/SequencesComparator$Snake.class
-
- - link:SequencesComparator$Snake-asmified.java[Asmified]
-
-== References
-

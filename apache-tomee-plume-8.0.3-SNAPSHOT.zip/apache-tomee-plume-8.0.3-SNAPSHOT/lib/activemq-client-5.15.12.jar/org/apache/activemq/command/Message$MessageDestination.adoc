@@ -1,6 +1,0 @@
-= org/apache/activemq/command/Message$MessageDestination.class
-
- - link:Message$MessageDestination-asmified.java[Asmified]
-
-== References
-

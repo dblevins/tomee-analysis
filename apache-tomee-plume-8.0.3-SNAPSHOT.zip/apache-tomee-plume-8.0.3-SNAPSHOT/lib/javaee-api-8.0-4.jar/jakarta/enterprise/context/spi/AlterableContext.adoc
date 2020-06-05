@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/spi/AlterableContext.class
-
- - link:AlterableContext-asmified.java[Asmified]
-
-== References
-

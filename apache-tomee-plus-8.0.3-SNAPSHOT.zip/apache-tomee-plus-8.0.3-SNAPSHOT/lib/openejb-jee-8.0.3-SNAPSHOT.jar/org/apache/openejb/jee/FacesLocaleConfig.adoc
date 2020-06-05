@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesLocaleConfig.class
-
- - link:FacesLocaleConfig-asmified.java[Asmified]
-
-== References
-

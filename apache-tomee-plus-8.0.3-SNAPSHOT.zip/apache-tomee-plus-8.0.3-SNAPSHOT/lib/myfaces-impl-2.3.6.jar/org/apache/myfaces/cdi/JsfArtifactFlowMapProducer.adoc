@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/JsfArtifactFlowMapProducer.class
-
- - link:JsfArtifactFlowMapProducer-asmified.java[Asmified]
-
-== References
-

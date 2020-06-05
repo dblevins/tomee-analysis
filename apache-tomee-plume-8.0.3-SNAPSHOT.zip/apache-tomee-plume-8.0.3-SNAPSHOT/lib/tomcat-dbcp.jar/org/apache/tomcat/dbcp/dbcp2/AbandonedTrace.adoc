@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/AbandonedTrace.class
-
- - link:AbandonedTrace-asmified.java[Asmified]
-
-== References
-

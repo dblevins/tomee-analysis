@@ -1,6 +1,0 @@
-= javax/xml/transform/Transformer.class
-
- - link:Transformer-asmified.java[Asmified]
-
-== References
-

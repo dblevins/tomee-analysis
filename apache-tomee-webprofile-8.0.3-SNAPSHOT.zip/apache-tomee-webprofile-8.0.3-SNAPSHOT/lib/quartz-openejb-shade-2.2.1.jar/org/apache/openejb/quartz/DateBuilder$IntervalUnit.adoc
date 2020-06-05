@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/DateBuilder$IntervalUnit.class
-
- - link:DateBuilder$IntervalUnit-asmified.java[Asmified]
-
-== References
-

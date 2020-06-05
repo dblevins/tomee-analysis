@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesListEntries.class
-
- - link:FacesListEntries-asmified.java[Asmified]
-
-== References
-

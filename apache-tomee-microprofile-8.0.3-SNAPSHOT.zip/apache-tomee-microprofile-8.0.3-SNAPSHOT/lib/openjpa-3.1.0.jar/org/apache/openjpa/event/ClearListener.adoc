@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/ClearListener.class
-
- - link:ClearListener-asmified.java[Asmified]
-
-== References
-

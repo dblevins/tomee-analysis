@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/identitystore/LdapIdentityStoreDefinition$LdapSearchScope.class
-
- - link:LdapIdentityStoreDefinition$LdapSearchScope-asmified.java[Asmified]
-
-== References
-

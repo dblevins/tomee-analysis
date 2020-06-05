@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/webapp/webxml/WebXml.class
-
- - link:WebXml-asmified.java[Asmified]
-
-== References
-

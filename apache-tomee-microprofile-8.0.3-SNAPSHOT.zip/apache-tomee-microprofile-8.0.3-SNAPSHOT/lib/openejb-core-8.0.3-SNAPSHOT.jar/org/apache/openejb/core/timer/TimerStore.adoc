@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/TimerStore.class
-
- - link:TimerStore-asmified.java[Asmified]
-
-== References
-

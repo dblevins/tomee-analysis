@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/InboundSessionProxy.class
-
- - link:InboundSessionProxy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/Profiler.class
-
- - link:Profiler-asmified.java[Asmified]
-
-== References
-

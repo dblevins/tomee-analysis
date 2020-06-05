@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/NoTransactionException.class
-
- - link:NoTransactionException-asmified.java[Asmified]
-
-== References
-

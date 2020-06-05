@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesConfigNavigationRuleExtension.class
-
- - link:FacesConfigNavigationRuleExtension-asmified.java[Asmified]
-
-== References
-

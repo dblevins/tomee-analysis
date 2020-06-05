@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/Visitable.class
-
- - link:Visitable-asmified.java[Asmified]
-
-== References
-

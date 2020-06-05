@@ -1,6 +1,0 @@
-= javax/ejb/PrePassivate.class
-
- - link:PrePassivate-asmified.java[Asmified]
-
-== References
-

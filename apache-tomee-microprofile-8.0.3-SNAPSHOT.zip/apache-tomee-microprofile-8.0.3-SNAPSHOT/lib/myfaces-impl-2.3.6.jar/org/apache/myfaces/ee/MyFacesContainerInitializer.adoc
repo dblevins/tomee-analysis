@@ -1,6 +1,0 @@
-= org/apache/myfaces/ee/MyFacesContainerInitializer.class
-
- - link:MyFacesContainerInitializer-asmified.java[Asmified]
-
-== References
-

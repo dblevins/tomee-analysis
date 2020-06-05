@@ -1,8 +1,0 @@
-= javax/security/enterprise/authentication/mechanism/http/AuthenticationParameters.class
-
- - link:AuthenticationParameters-asmified.java[Asmified]
-
-== References
-
- - javax.security.enterprise.authentication.mechanism.http.AuthenticationParameters - 9
- - javax.security.enterprise.credential.Credential - 7

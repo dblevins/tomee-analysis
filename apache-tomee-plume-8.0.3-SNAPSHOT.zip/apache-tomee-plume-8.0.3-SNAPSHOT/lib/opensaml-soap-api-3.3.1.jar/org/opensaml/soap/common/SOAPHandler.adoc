@@ -1,6 +1,0 @@
-= org/opensaml/soap/common/SOAPHandler.class
-
- - link:SOAPHandler-asmified.java[Asmified]
-
-== References
-

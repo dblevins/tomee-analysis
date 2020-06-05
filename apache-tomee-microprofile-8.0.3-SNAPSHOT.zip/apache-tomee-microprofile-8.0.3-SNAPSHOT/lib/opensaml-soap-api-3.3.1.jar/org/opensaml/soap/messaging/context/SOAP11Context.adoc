@@ -1,6 +1,0 @@
-= org/opensaml/soap/messaging/context/SOAP11Context.class
-
- - link:SOAP11Context-asmified.java[Asmified]
-
-== References
-

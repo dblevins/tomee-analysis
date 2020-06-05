@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/ConfiguredBeanLocator$BeanLoaderListener.class
-
- - link:ConfiguredBeanLocator$BeanLoaderListener-asmified.java[Asmified]
-
-== References
-

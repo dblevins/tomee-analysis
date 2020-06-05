@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/CookieConfig$JAXB.class
-
- - link:CookieConfig$JAXB-asmified.java[Asmified]
-
-== References
-

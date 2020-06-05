@@ -1,6 +1,0 @@
-= jakarta/mail/internet/MimeMessage.class
-
- - link:MimeMessage-asmified.java[Asmified]
-
-== References
-

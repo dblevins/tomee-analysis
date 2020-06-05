@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/RecipientEncryptionToken.class
-
- - link:RecipientEncryptionToken-asmified.java[Asmified]
-
-== References
-

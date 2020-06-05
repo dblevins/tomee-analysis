@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/support/JaxWsImplementorInfo.class
-
- - link:JaxWsImplementorInfo-asmified.java[Asmified]
-
-== References
-

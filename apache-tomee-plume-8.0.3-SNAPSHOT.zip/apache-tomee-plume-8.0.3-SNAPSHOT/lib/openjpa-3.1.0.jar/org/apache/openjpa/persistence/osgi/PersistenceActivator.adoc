@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/osgi/PersistenceActivator.class
-
- - link:PersistenceActivator-asmified.java[Asmified]
-
-== References
-

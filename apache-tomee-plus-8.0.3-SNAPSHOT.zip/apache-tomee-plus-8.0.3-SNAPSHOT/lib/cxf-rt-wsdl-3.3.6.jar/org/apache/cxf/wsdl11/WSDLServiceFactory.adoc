@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl11/WSDLServiceFactory.class
-
- - link:WSDLServiceFactory-asmified.java[Asmified]
-
-== References
-

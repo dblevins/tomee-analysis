@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/MetaDataTag.class
-
- - link:MetaDataTag-asmified.java[Asmified]
-
-== References
-

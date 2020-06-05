@@ -1,6 +1,0 @@
-= org/jasypt/util/numeric/StrongIntegerNumberEncryptor.class
-
- - link:StrongIntegerNumberEncryptor-asmified.java[Asmified]
-
-== References
-

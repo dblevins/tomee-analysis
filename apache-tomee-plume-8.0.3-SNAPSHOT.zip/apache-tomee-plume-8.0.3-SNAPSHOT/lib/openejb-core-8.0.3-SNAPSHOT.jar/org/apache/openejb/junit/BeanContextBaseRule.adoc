@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/BeanContextBaseRule.class
-
- - link:BeanContextBaseRule-asmified.java[Asmified]
-
-== References
-

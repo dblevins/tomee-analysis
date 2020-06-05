@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataAnnotationArrayVisitor.class
-
- - link:MetadataAsmFactory$MetadataAnnotationArrayVisitor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/SaxOpenejb$1.class
-
- - link:SaxOpenejb$1-asmified.java[Asmified]
-
-== References
-

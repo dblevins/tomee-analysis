@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/calendar/CalendarComparator.class
-
- - link:CalendarComparator-asmified.java[Asmified]
-
-== References
-

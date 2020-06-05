@@ -1,6 +1,0 @@
-= org/hsqldb/types/BinaryType.class
-
- - link:BinaryType-asmified.java[Asmified]
-
-== References
-

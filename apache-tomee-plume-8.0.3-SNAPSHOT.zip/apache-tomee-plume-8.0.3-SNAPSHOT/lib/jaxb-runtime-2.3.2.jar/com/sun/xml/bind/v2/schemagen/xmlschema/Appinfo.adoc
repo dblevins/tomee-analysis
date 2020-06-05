@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/xmlschema/Appinfo.class
-
- - link:Appinfo-asmified.java[Asmified]
-
-== References
-

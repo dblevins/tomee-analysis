@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor$TagAnnotation.class
-
- - link:AnnotationProcessor$TagAnnotation-asmified.java[Asmified]
-
-== References
-

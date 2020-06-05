@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/service/factory/AbstractServiceConfiguration.class
-
- - link:AbstractServiceConfiguration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/SessionIndexImpl.class
-
- - link:SessionIndexImpl-asmified.java[Asmified]
-
-== References
-

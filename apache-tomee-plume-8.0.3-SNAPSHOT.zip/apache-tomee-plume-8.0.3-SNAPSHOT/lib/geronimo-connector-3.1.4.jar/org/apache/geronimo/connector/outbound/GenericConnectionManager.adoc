@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/GenericConnectionManager.class
-
- - link:GenericConnectionManager-asmified.java[Asmified]
-
-== References
-

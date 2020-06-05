@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/InterfacePolicy.class
-
- - link:InterfacePolicy-asmified.java[Asmified]
-
-== References
-

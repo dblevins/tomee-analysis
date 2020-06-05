@@ -1,6 +1,0 @@
-= jakarta/websocket/server/PathParam.class
-
- - link:PathParam-asmified.java[Asmified]
-
-== References
-

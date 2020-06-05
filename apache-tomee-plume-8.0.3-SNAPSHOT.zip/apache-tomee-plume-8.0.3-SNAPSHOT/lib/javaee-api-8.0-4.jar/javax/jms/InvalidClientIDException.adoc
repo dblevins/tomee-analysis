@@ -1,8 +1,0 @@
-= javax/jms/InvalidClientIDException.class
-
- - link:InvalidClientIDException-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSException - 2
- - javax.jms.InvalidClientIDException - 1

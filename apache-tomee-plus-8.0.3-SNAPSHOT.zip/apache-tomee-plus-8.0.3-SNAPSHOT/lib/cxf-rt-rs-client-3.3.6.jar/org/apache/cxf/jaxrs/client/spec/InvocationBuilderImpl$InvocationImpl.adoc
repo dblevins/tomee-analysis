@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spec/InvocationBuilderImpl$InvocationImpl.class
-
- - link:InvocationBuilderImpl$InvocationImpl-asmified.java[Asmified]
-
-== References
-

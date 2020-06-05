@@ -1,6 +1,0 @@
-= jakarta/faces/component/_ComponentAttributesMap.class
-
- - link:_ComponentAttributesMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/JSRInlinerAdapter.class
-
- - link:JSRInlinerAdapter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/FaceletTaglibConfigProcessor.class
-
- - link:FaceletTaglibConfigProcessor-asmified.java[Asmified]
-
-== References
-

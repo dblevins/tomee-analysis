@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl.class
-
- - link:RuntimeDelegateImpl-asmified.java[Asmified]
-
-== References
-

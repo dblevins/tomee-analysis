@@ -1,6 +1,0 @@
-= org/apache/cxf/management/counters/Counter.class
-
- - link:Counter-asmified.java[Asmified]
-
-== References
-

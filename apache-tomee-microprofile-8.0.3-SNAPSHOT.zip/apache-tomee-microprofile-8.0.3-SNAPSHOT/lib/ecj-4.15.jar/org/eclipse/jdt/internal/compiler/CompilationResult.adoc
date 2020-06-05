@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/CompilationResult.class
-
- - link:CompilationResult-asmified.java[Asmified]
-
-== References
-

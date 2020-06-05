@@ -1,6 +1,0 @@
-= javax/xml/transform/stream/StreamSource.class
-
- - link:StreamSource-asmified.java[Asmified]
-
-== References
-

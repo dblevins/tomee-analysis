@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/CmrFieldInfo.class
-
- - link:CmrFieldInfo-asmified.java[Asmified]
-
-== References
-

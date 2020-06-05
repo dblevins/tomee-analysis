@@ -1,6 +1,0 @@
-= org/hsqldb/types/DTIType.class
-
- - link:DTIType-asmified.java[Asmified]
-
-== References
-

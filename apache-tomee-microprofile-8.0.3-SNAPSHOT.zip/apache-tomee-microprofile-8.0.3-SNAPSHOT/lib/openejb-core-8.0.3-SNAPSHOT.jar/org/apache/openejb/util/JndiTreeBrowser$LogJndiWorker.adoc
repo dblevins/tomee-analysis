@@ -1,6 +1,0 @@
-= org/apache/openejb/util/JndiTreeBrowser$LogJndiWorker.class
-
- - link:JndiTreeBrowser$LogJndiWorker-asmified.java[Asmified]
-
-== References
-

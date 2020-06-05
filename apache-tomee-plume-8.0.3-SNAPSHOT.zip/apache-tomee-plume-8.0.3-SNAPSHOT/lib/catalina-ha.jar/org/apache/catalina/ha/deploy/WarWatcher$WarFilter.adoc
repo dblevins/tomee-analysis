@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/deploy/WarWatcher$WarFilter.class
-
- - link:WarWatcher$WarFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/common/UserSubject.class
-
- - link:UserSubject-asmified.java[Asmified]
-
-== References
-

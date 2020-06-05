@@ -1,6 +1,0 @@
-= org/opensaml/profile/action/MessageEncoderFactory.class
-
- - link:MessageEncoderFactory-asmified.java[Asmified]
-
-== References
-

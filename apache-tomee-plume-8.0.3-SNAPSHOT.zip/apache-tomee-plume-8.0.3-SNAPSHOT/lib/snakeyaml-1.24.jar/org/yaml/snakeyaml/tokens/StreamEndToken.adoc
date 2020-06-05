@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/StreamEndToken.class
-
- - link:StreamEndToken-asmified.java[Asmified]
-
-== References
-

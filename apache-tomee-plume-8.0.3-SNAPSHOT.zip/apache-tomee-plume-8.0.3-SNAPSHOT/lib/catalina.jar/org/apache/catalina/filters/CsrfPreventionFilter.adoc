@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/CsrfPreventionFilter.class
-
- - link:CsrfPreventionFilter-asmified.java[Asmified]
-
-== References
-

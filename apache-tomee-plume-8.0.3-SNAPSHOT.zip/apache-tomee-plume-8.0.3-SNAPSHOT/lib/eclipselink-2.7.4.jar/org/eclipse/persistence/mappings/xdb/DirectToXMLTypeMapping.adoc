@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/xdb/DirectToXMLTypeMapping.class
-
- - link:DirectToXMLTypeMapping-asmified.java[Asmified]
-
-== References
-

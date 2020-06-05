@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/ConnectionSettingsLocal.class
-
- - link:ConnectionSettingsLocal-asmified.java[Asmified]
-
-== References
-

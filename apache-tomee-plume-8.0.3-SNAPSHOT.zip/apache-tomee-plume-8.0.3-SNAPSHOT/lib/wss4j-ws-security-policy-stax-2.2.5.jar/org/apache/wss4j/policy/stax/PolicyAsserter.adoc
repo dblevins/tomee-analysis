@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/PolicyAsserter.class
-
- - link:PolicyAsserter-asmified.java[Asmified]
-
-== References
-

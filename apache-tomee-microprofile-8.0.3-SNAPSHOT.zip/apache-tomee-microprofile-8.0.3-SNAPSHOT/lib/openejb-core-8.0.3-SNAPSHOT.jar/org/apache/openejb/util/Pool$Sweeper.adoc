@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Pool$Sweeper.class
-
- - link:Pool$Sweeper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeWizard$ContextVisitor.class
-
- - link:TreeWizard$ContextVisitor-asmified.java[Asmified]
-
-== References
-

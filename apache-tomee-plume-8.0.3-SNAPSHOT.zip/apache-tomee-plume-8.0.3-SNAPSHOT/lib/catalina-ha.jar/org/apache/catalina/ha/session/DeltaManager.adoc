@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/session/DeltaManager.class
-
- - link:DeltaManager-asmified.java[Asmified]
-
-== References
-

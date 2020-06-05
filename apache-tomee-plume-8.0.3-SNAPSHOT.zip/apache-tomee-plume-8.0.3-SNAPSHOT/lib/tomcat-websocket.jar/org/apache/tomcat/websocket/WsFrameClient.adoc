@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsFrameClient.class
-
- - link:WsFrameClient-asmified.java[Asmified]
-
-== References
-

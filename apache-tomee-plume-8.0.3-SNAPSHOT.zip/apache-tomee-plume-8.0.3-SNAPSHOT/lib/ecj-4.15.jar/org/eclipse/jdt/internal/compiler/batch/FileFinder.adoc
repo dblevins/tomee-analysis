@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/FileFinder.class
-
- - link:FileFinder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/ConduitInitiatorManagerImpl.class
-
- - link:ConduitInitiatorManagerImpl-asmified.java[Asmified]
-
-== References
-

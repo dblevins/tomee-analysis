@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/StdKeySerializers$Dynamic.class
-
- - link:StdKeySerializers$Dynamic-asmified.java[Asmified]
-
-== References
-

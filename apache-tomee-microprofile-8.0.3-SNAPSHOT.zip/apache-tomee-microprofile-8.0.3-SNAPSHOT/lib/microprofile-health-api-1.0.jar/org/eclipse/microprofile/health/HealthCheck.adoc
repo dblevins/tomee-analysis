@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/health/HealthCheck.class
-
- - link:HealthCheck-asmified.java[Asmified]
-
-== References
-

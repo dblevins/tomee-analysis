@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/NamedPlsqlStoredFunctionQuery.class
-
- - link:NamedPlsqlStoredFunctionQuery-asmified.java[Asmified]
-
-== References
-

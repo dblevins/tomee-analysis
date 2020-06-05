@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/util/LangUtils.class
-
- - link:LangUtils-asmified.java[Asmified]
-
-== References
-

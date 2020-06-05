@@ -1,6 +1,0 @@
-= com/sun/faces/ext/component/WholeBeanValidator.class
-
- - link:WholeBeanValidator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/RoundRobinFailoverSelection.class
-
- - link:RoundRobinFailoverSelection-asmified.java[Asmified]
-
-== References
-

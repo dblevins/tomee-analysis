@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor$SchemaWithRef.class
-
- - link:AnnotationProcessor$SchemaWithRef-asmified.java[Asmified]
-
-== References
-

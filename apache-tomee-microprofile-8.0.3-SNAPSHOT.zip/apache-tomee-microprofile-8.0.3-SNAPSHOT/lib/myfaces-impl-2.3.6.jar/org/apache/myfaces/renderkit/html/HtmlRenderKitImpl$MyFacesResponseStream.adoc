@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$MyFacesResponseStream.class
-
- - link:HtmlRenderKitImpl$MyFacesResponseStream-asmified.java[Asmified]
-
-== References
-

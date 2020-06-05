@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/RpcCallback.class
-
- - link:RpcCallback-asmified.java[Asmified]
-
-== References
-

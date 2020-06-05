@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/changesets/ObjectReferenceChangeRecord.class
-
- - link:ObjectReferenceChangeRecord-asmified.java[Asmified]
-
-== References
-

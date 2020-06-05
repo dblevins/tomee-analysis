@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/PooledSender$SenderQueue.class
-
- - link:PooledSender$SenderQueue-asmified.java[Asmified]
-
-== References
-

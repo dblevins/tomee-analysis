@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/ModuleProvideNode.class
-
- - link:ModuleProvideNode-asmified.java[Asmified]
-
-== References
-

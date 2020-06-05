@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/PositionTrackingStream.class
-
- - link:PositionTrackingStream-asmified.java[Asmified]
-
-== References
-

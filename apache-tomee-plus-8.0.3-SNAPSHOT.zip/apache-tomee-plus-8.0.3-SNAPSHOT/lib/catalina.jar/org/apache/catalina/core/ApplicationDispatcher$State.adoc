@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationDispatcher$State.class
-
- - link:ApplicationDispatcher$State-asmified.java[Asmified]
-
-== References
-

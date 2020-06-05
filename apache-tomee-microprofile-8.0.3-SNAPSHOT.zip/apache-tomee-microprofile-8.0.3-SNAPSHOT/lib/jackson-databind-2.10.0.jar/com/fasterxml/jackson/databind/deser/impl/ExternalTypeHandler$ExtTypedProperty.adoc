@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler$ExtTypedProperty.class
-
- - link:ExternalTypeHandler$ExtTypedProperty-asmified.java[Asmified]
-
-== References
-

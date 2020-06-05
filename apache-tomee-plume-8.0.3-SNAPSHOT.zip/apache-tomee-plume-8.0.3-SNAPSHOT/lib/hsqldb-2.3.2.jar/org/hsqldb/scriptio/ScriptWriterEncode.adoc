@@ -1,6 +1,0 @@
-= org/hsqldb/scriptio/ScriptWriterEncode.class
-
- - link:ScriptWriterEncode-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/persistence/metamodel/Attribute.class
-
- - link:Attribute-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.metamodel.Attribute$PersistentAttributeType - 1
- - javax.persistence.metamodel.ManagedType - 1

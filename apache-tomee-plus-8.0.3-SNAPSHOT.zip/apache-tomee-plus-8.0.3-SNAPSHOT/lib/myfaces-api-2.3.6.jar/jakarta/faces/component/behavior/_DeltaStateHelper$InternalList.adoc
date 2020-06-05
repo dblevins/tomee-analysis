@@ -1,6 +1,0 @@
-= jakarta/faces/component/behavior/_DeltaStateHelper$InternalList.class
-
- - link:_DeltaStateHelper$InternalList-asmified.java[Asmified]
-
-== References
-

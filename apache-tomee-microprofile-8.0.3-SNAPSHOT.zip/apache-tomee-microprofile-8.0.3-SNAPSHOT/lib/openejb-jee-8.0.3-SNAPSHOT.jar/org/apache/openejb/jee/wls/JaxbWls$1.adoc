@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/JaxbWls$1.class
-
- - link:JaxbWls$1-asmified.java[Asmified]
-
-== References
-

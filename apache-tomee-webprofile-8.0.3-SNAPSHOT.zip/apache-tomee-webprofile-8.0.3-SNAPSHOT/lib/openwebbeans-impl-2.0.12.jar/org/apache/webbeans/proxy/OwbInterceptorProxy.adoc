@@ -1,6 +1,0 @@
-= org/apache/webbeans/proxy/OwbInterceptorProxy.class
-
- - link:OwbInterceptorProxy-asmified.java[Asmified]
-
-== References
-

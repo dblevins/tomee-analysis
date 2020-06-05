@@ -1,6 +1,0 @@
-= org/hsqldb/lib/RefCapableRBInterface.class
-
- - link:RefCapableRBInterface-asmified.java[Asmified]
-
-== References
-

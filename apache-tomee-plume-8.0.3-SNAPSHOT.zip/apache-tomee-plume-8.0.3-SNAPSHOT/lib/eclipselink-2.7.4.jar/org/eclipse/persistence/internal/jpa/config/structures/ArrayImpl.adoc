@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/structures/ArrayImpl.class
-
- - link:ArrayImpl-asmified.java[Asmified]
-
-== References
-

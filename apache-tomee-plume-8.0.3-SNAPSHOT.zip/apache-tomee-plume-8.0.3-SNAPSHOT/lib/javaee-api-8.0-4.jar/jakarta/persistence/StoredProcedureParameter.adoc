@@ -1,6 +1,0 @@
-= jakarta/persistence/StoredProcedureParameter.class
-
- - link:StoredProcedureParameter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/fiql/FiqlParser.class
-
- - link:FiqlParser-asmified.java[Asmified]
-
-== References
-

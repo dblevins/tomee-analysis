@@ -1,6 +1,0 @@
-= org/apache/commons/codec/net/BCodec.class
-
- - link:BCodec-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/CoyoteAdapter$1.class
-
- - link:CoyoteAdapter$1-asmified.java[Asmified]
-
-== References
-

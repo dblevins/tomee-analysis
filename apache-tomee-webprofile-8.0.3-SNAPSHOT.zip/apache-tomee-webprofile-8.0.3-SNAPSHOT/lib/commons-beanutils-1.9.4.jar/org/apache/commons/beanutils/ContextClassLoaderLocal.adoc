@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/ContextClassLoaderLocal.class
-
- - link:ContextClassLoaderLocal-asmified.java[Asmified]
-
-== References
-

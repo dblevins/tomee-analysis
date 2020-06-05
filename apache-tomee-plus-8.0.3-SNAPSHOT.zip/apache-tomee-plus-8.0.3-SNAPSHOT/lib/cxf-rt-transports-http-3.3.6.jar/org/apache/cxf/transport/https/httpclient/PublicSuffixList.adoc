@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/httpclient/PublicSuffixList.class
-
- - link:PublicSuffixList-asmified.java[Asmified]
-
-== References
-

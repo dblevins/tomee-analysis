@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/virtual/CompositeDestinationFilter$1.class
-
- - link:CompositeDestinationFilter$1-asmified.java[Asmified]
-
-== References
-

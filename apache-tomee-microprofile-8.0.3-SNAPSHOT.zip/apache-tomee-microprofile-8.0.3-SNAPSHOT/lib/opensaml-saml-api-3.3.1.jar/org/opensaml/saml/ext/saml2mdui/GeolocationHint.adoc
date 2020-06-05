@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/GeolocationHint.class
-
- - link:GeolocationHint-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/MetaDataDefaults.class
-
- - link:MetaDataDefaults-asmified.java[Asmified]
-
-== References
-

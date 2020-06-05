@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/util/AttributeMap.class
-
- - link:AttributeMap-asmified.java[Asmified]
-
-== References
-

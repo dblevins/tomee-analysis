@@ -1,6 +1,0 @@
-= org/apache/openejb/javaagent/Agent$BootstrapTransformer.class
-
- - link:Agent$BootstrapTransformer-asmified.java[Asmified]
-
-== References
-

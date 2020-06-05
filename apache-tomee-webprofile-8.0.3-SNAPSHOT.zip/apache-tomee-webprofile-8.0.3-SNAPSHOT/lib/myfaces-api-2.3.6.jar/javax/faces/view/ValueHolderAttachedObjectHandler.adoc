@@ -1,7 +1,0 @@
-= javax/faces/view/ValueHolderAttachedObjectHandler.class
-
- - link:ValueHolderAttachedObjectHandler-asmified.java[Asmified]
-
-== References
-
- - javax.faces.view.AttachedObjectHandler - 1

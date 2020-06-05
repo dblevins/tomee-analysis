@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/XMLPersistenceMappingParser$1.class
-
- - link:XMLPersistenceMappingParser$1-asmified.java[Asmified]
-
-== References
-

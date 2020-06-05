@@ -1,6 +1,0 @@
-= org/apache/cxf/validation/BeanValidationProvider.class
-
- - link:BeanValidationProvider-asmified.java[Asmified]
-
-== References
-

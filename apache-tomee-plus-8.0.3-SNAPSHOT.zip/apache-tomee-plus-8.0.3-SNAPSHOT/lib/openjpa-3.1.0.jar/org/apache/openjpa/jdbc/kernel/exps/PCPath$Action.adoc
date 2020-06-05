@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/PCPath$Action.class
-
- - link:PCPath$Action-asmified.java[Asmified]
-
-== References
-

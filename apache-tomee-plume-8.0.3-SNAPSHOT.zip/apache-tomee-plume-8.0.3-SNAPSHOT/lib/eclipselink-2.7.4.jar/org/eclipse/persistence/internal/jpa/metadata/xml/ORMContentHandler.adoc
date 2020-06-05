@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/xml/ORMContentHandler.class
-
- - link:ORMContentHandler-asmified.java[Asmified]
-
-== References
-

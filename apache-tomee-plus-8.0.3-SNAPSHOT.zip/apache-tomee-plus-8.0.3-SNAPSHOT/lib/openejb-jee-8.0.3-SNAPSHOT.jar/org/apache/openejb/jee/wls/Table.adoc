@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/Table.class
-
- - link:Table-asmified.java[Asmified]
-
-== References
-

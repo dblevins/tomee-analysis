@@ -1,6 +1,0 @@
-= org/apache/openejb/util/UrlComparator.class
-
- - link:UrlComparator-asmified.java[Asmified]
-
-== References
-

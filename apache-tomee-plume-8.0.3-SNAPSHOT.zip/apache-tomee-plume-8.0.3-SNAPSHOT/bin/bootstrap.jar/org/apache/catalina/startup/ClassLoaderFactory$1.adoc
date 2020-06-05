@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/ClassLoaderFactory$1.class
-
- - link:ClassLoaderFactory$1-asmified.java[Asmified]
-
-== References
-

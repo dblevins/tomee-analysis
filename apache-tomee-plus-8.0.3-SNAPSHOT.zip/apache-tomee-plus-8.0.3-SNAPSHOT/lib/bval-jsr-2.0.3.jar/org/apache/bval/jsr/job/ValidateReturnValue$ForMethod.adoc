@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidateReturnValue$ForMethod.class
-
- - link:ValidateReturnValue$ForMethod-asmified.java[Asmified]
-
-== References
-

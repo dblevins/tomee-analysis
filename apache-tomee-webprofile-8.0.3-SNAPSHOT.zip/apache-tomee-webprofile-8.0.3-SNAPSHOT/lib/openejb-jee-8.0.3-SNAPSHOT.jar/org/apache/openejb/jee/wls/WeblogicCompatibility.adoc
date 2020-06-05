@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/WeblogicCompatibility.class
-
- - link:WeblogicCompatibility-asmified.java[Asmified]
-
-== References
-

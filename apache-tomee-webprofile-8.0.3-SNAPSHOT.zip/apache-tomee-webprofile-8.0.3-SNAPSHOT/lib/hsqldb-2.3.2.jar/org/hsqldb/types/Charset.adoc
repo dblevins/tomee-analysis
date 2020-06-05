@@ -1,6 +1,0 @@
-= org/hsqldb/types/Charset.class
-
- - link:Charset-asmified.java[Asmified]
-
-== References
-

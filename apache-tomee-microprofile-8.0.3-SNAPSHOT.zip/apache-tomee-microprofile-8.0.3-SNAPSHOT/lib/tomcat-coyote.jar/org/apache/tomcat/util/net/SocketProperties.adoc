@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SocketProperties.class
-
- - link:SocketProperties-asmified.java[Asmified]
-
-== References
-

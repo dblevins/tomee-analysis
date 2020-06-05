@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/StatefulContainer$BeanContextFilter.class
-
- - link:StatefulContainer$BeanContextFilter-asmified.java[Asmified]
-
-== References
-

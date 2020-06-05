@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/CompositeComponentELUtils.class
-
- - link:CompositeComponentELUtils-asmified.java[Asmified]
-
-== References
-

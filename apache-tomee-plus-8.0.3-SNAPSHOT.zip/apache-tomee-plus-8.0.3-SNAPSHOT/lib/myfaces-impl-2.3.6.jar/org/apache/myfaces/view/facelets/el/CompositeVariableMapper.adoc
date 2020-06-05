@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/CompositeVariableMapper.class
-
- - link:CompositeVariableMapper-asmified.java[Asmified]
-
-== References
-

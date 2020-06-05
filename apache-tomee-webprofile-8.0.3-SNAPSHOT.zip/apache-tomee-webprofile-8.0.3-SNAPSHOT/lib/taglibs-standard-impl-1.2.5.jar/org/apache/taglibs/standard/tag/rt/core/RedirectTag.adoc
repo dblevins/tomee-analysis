@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/core/RedirectTag.class
-
- - link:RedirectTag-asmified.java[Asmified]
-
-== References
-

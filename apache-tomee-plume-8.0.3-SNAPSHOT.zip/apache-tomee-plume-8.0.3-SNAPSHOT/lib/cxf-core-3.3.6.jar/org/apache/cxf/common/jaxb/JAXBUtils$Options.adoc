@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBUtils$Options.class
-
- - link:JAXBUtils$Options-asmified.java[Asmified]
-
-== References
-

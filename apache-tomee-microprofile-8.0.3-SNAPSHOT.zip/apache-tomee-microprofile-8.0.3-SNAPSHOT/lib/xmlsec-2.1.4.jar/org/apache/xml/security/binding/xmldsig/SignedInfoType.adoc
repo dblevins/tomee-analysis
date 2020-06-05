@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/SignedInfoType.class
-
- - link:SignedInfoType-asmified.java[Asmified]
-
-== References
-

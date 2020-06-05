@@ -1,6 +1,0 @@
-= jakarta/faces/application/FacesMessage$1.class
-
- - link:FacesMessage$1-asmified.java[Asmified]
-
-== References
-

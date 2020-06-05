@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/ELNode.class
-
- - link:ELNode-asmified.java[Asmified]
-
-== References
-

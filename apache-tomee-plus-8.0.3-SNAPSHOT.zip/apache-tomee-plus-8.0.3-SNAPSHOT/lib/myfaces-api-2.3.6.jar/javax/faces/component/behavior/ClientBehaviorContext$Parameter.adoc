@@ -1,7 +1,0 @@
-= javax/faces/component/behavior/ClientBehaviorContext$Parameter.class
-
- - link:ClientBehaviorContext$Parameter-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.behavior.ClientBehaviorContext$Parameter - 1

@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/CdiConverter.class
-
- - link:CdiConverter-asmified.java[Asmified]
-
-== References
-

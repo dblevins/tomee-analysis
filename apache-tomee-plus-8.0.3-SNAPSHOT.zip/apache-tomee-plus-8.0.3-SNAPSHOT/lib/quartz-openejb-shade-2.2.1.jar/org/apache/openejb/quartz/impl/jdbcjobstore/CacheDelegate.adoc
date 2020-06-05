@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/CacheDelegate.class
-
- - link:CacheDelegate-asmified.java[Asmified]
-
-== References
-

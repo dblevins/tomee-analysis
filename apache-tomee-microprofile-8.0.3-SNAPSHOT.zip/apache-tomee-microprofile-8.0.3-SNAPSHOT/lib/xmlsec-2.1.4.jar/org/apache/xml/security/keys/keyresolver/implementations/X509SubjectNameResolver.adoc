@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/keyresolver/implementations/X509SubjectNameResolver.class
-
- - link:X509SubjectNameResolver-asmified.java[Asmified]
-
-== References
-

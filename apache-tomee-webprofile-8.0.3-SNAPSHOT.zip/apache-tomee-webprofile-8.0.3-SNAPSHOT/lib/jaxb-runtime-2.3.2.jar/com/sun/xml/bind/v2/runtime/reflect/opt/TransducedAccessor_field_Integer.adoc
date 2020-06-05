@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/opt/TransducedAccessor_field_Integer.class
-
- - link:TransducedAccessor_field_Integer-asmified.java[Asmified]
-
-== References
-

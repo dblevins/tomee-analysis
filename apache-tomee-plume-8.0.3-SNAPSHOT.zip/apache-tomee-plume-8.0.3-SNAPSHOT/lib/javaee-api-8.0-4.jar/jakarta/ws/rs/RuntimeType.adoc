@@ -1,6 +1,0 @@
-= jakarta/ws/rs/RuntimeType.class
-
- - link:RuntimeType-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/xml/rpc/handler/HandlerChain.class
-
- - link:HandlerChain-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.handler.MessageContext - 3

@@ -1,8 +1,0 @@
-= javax/mail/QuotaAwareStore.class
-
- - link:QuotaAwareStore-asmified.java[Asmified]
-
-== References
-
- - javax.mail.MessagingException - 2
- - javax.mail.Quota - 2

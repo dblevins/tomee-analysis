@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/keyvalue/AbstractMapEntryDecorator.class
-
- - link:AbstractMapEntryDecorator-asmified.java[Asmified]
-
-== References
-

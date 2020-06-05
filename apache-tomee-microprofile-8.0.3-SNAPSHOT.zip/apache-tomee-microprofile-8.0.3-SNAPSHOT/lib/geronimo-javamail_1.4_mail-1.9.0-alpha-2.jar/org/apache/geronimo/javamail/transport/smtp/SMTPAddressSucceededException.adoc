@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/smtp/SMTPAddressSucceededException.class
-
- - link:SMTPAddressSucceededException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/BodyEndElementInstruction.class
-
- - link:BodyEndElementInstruction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/soap/wspolicy/PolicyAttachment.class
-
- - link:PolicyAttachment-asmified.java[Asmified]
-
-== References
-

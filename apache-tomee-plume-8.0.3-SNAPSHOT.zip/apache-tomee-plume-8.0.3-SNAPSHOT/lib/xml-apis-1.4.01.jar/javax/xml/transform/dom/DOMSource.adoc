@@ -1,6 +1,0 @@
-= javax/xml/transform/dom/DOMSource.class
-
- - link:DOMSource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/plugin/HsqldbDataSourcePlugin.class
-
- - link:HsqldbDataSourcePlugin-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/ws/rs/PUT.class
-
- - link:PUT-asmified.java[Asmified]
-
-== References
-

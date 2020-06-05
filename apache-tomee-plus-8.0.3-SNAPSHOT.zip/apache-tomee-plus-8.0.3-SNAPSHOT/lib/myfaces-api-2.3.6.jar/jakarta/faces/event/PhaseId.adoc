@@ -1,6 +1,0 @@
-= jakarta/faces/event/PhaseId.class
-
- - link:PhaseId-asmified.java[Asmified]
-
-== References
-

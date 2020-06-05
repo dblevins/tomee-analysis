@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/behavior/IRemoteCacheClient.class
-
- - link:IRemoteCacheClient-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/Equator.class
-
- - link:Equator-asmified.java[Asmified]
-
-== References
-

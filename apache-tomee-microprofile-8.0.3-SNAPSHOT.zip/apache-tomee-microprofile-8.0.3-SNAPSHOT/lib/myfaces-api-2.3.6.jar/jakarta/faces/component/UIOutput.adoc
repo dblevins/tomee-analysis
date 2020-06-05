@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIOutput.class
-
- - link:UIOutput-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/JavadocArrayQualifiedTypeReference.class
-
- - link:JavadocArrayQualifiedTypeReference-asmified.java[Asmified]
-
-== References
-

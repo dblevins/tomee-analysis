@@ -1,6 +1,0 @@
-= org/apache/activemq/ThreadPriorities.class
-
- - link:ThreadPriorities-asmified.java[Asmified]
-
-== References
-

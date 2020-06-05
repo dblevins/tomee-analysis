@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/remote/rmi/iiop/RMIConnection.class
-
- - link:RMIConnection-asmified.java[Asmified]
-
-== References
-

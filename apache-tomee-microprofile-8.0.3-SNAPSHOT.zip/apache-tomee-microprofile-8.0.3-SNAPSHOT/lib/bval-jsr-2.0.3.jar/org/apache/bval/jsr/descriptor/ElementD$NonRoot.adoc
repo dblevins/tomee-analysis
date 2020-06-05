@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/ElementD$NonRoot.class
-
- - link:ElementD$NonRoot-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HTTPWSDLExtensionLoader.class
-
- - link:HTTPWSDLExtensionLoader-asmified.java[Asmified]
-
-== References
-

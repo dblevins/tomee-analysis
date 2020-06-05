@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/calendar/DailyCalendar.class
-
- - link:DailyCalendar-asmified.java[Asmified]
-
-== References
-

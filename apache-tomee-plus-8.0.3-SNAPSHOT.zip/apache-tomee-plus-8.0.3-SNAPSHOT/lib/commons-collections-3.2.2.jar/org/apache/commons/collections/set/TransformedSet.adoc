@@ -1,6 +1,0 @@
-= org/apache/commons/collections/set/TransformedSet.class
-
- - link:TransformedSet-asmified.java[Asmified]
-
-== References
-

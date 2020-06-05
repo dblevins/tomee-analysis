@@ -1,6 +1,0 @@
-= org/hsqldb/TableWorks.class
-
- - link:TableWorks-asmified.java[Asmified]
-
-== References
-

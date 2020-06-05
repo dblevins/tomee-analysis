@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/CommitOrderDependencyNode.class
-
- - link:CommitOrderDependencyNode-asmified.java[Asmified]
-
-== References
-

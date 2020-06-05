@@ -1,6 +1,0 @@
-= org/slf4j/helpers/BasicMDCAdapter.class
-
- - link:BasicMDCAdapter-asmified.java[Asmified]
-
-== References
-

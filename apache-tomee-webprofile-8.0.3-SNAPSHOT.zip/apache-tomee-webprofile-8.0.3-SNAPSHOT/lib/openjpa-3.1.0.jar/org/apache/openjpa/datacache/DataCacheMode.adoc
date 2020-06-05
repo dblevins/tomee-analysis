@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/DataCacheMode.class
-
- - link:DataCacheMode-asmified.java[Asmified]
-
-== References
-

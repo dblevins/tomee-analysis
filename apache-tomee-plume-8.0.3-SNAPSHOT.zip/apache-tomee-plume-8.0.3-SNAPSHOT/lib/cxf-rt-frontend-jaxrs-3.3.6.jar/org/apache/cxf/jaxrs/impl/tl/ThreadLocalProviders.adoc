@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/ThreadLocalProviders.class
-
- - link:ThreadLocalProviders-asmified.java[Asmified]
-
-== References
-

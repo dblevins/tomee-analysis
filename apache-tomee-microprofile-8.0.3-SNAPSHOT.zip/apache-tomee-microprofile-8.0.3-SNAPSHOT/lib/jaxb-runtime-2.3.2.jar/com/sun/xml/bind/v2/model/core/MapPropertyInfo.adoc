@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/core/MapPropertyInfo.class
-
- - link:MapPropertyInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/impl/JavaUtilCollectionsDeserializers.class
-
- - link:JavaUtilCollectionsDeserializers-asmified.java[Asmified]
-
-== References
-

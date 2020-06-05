@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/component/JsfElementRenderer.class
-
- - link:JsfElementRenderer-asmified.java[Asmified]
-
-== References
-

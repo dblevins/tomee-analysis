@@ -1,6 +1,0 @@
-= javax/ejb/RemoteHome.class
-
- - link:RemoteHome-asmified.java[Asmified]
-
-== References
-

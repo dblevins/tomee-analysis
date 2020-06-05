@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/AbstractJwtAuthenticationFilter.class
-
- - link:AbstractJwtAuthenticationFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/stax/events/CharactersEvent.class
-
- - link:CharactersEvent-asmified.java[Asmified]
-
-== References
-

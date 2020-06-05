@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/RemoteCacheNoWait.class
-
- - link:RemoteCacheNoWait-asmified.java[Asmified]
-
-== References
-

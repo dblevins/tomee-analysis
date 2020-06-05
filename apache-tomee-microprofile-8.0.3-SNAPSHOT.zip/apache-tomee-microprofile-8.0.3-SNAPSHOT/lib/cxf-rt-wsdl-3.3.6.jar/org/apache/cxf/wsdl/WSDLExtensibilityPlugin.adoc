@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/WSDLExtensibilityPlugin.class
-
- - link:WSDLExtensibilityPlugin-asmified.java[Asmified]
-
-== References
-

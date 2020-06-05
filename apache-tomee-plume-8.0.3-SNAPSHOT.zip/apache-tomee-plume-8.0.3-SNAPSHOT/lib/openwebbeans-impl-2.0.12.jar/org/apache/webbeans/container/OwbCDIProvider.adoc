@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/OwbCDIProvider.class
-
- - link:OwbCDIProvider-asmified.java[Asmified]
-
-== References
-

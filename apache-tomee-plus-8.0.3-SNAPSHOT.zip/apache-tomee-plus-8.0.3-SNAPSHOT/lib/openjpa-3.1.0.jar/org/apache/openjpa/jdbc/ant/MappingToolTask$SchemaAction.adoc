@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/ant/MappingToolTask$SchemaAction.class
-
- - link:MappingToolTask$SchemaAction-asmified.java[Asmified]
-
-== References
-

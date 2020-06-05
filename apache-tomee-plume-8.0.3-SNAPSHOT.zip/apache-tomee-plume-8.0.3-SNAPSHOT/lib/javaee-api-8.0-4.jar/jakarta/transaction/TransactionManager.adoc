@@ -1,6 +1,0 @@
-= jakarta/transaction/TransactionManager.class
-
- - link:TransactionManager-asmified.java[Asmified]
-
-== References
-

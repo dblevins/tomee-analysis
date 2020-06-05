@@ -1,6 +1,0 @@
-= org/apache/catalina/mapper/MappingData.class
-
- - link:MappingData-asmified.java[Asmified]
-
-== References
-

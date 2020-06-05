@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/symmetric/Noekeon$GMAC.class
-
- - link:Noekeon$GMAC-asmified.java[Asmified]
-
-== References
-

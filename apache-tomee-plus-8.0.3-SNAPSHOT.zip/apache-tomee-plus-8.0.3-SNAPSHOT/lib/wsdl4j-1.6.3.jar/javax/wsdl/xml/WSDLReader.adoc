@@ -1,6 +1,0 @@
-= javax/wsdl/xml/WSDLReader.class
-
- - link:WSDLReader-asmified.java[Asmified]
-
-== References
-

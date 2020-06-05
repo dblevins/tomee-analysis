@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/TypePath.class
-
- - link:TypePath-asmified.java[Asmified]
-
-== References
-

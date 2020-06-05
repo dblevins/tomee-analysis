@@ -1,6 +1,0 @@
-= io/opentracing/propagation/Format$Builtin.class
-
- - link:Format$Builtin-asmified.java[Asmified]
-
-== References
-

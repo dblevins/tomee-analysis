@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/group/MessageGroupHashBucket$1.class
-
- - link:MessageGroupHashBucket$1-asmified.java[Asmified]
-
-== References
-

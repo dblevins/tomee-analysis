@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/QueryDefinitionImpl$Visit.class
-
- - link:QueryDefinitionImpl$Visit-asmified.java[Asmified]
-
-== References
-

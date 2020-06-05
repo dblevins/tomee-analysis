@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/CustomPassivatingContextImpl.class
-
- - link:CustomPassivatingContextImpl-asmified.java[Asmified]
-
-== References
-

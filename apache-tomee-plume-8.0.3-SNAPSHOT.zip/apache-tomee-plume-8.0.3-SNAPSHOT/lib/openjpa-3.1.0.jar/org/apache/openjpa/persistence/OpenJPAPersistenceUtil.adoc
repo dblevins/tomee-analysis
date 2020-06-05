@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/OpenJPAPersistenceUtil.class
-
- - link:OpenJPAPersistenceUtil-asmified.java[Asmified]
-
-== References
-

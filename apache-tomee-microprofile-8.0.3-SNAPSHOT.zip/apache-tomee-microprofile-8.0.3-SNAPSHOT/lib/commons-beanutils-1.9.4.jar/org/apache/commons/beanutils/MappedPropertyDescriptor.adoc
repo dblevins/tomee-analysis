@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/MappedPropertyDescriptor.class
-
- - link:MappedPropertyDescriptor-asmified.java[Asmified]
-
-== References
-

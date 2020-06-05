@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/SOAPVersionMismatchException.class
-
- - link:SOAPVersionMismatchException-asmified.java[Asmified]
-
-== References
-

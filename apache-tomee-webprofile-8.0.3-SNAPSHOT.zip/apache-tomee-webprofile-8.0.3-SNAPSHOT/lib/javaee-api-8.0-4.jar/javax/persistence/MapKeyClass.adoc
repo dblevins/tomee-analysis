@@ -1,6 +1,0 @@
-= javax/persistence/MapKeyClass.class
-
- - link:MapKeyClass-asmified.java[Asmified]
-
-== References
-

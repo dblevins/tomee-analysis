@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/Members$SetAttributeImpl.class
-
- - link:Members$SetAttributeImpl-asmified.java[Asmified]
-
-== References
-

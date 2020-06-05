@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ConnectorInfo.class
-
- - link:ConnectorInfo-asmified.java[Asmified]
-
-== References
-

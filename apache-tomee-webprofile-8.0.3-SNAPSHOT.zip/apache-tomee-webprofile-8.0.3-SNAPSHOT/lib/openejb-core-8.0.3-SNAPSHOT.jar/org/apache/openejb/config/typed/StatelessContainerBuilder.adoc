@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/StatelessContainerBuilder.class
-
- - link:StatelessContainerBuilder-asmified.java[Asmified]
-
-== References
-

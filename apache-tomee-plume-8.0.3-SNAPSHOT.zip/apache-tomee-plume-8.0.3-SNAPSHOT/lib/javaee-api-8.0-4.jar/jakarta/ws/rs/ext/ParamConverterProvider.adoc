@@ -1,6 +1,0 @@
-= jakarta/ws/rs/ext/ParamConverterProvider.class
-
- - link:ParamConverterProvider-asmified.java[Asmified]
-
-== References
-

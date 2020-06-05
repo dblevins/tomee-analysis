@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/LabelNode.class
-
- - link:LabelNode-asmified.java[Asmified]
-
-== References
-

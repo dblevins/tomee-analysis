@@ -1,6 +1,0 @@
-= org/opensaml/core/metrics/MetricsSupport.class
-
- - link:MetricsSupport-asmified.java[Asmified]
-
-== References
-

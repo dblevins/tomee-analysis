@@ -1,6 +1,0 @@
-= org/apache/openejb/server/rest/RESTService$DeployedService.class
-
- - link:RESTService$DeployedService-asmified.java[Asmified]
-
-== References
-

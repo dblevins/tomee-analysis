@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/ejb/EjbWsContainer$WsServiceMBean.class
-
- - link:EjbWsContainer$WsServiceMBean-asmified.java[Asmified]
-
-== References
-

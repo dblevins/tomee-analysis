@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/EncryptionMethodImpl.class
-
- - link:EncryptionMethodImpl-asmified.java[Asmified]
-
-== References
-

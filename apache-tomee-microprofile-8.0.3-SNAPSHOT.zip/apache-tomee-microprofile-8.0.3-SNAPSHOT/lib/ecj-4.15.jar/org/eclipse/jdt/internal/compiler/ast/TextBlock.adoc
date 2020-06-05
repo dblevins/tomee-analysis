@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/TextBlock.class
-
- - link:TextBlock-asmified.java[Asmified]
-
-== References
-

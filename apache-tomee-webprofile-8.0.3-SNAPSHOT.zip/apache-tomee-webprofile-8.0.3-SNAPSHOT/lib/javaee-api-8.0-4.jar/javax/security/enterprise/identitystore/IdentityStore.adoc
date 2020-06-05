@@ -1,9 +1,0 @@
-= javax/security/enterprise/identitystore/IdentityStore.class
-
- - link:IdentityStore-asmified.java[Asmified]
-
-== References
-
- - javax.security.enterprise.identitystore.CredentialValidationResult - 6
- - javax.security.enterprise.identitystore.IdentityStore$ValidationType - 4
- - javax.security.enterprise.credential.Credential - 2

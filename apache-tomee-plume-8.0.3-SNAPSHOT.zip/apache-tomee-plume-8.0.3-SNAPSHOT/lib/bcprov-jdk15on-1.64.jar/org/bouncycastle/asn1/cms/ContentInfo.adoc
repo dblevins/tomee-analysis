@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/ContentInfo.class
-
- - link:ContentInfo-asmified.java[Asmified]
-
-== References
-

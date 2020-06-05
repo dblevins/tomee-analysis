@@ -1,6 +1,0 @@
-= javax/xml/datatype/DatatypeConstants.class
-
- - link:DatatypeConstants-asmified.java[Asmified]
-
-== References
-

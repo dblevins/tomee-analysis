@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/EndpointResolverRegistryImpl.class
-
- - link:EndpointResolverRegistryImpl-asmified.java[Asmified]
-
-== References
-

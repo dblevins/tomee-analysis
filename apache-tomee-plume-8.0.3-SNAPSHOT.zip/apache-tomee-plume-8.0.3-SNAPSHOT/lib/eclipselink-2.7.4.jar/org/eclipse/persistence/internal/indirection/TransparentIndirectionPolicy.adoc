@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/TransparentIndirectionPolicy.class
-
- - link:TransparentIndirectionPolicy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/packaging/mime/internet/MimePartDataSource.class
-
- - link:MimePartDataSource-asmified.java[Asmified]
-
-== References
-

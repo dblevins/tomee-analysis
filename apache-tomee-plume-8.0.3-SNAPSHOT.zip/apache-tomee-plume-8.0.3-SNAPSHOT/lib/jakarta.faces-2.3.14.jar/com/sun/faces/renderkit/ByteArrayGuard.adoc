@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/ByteArrayGuard.class
-
- - link:ByteArrayGuard-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/el/DefaultVariableMapper.class
-
- - link:DefaultVariableMapper-asmified.java[Asmified]
-
-== References
-

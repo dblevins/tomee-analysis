@@ -1,8 +1,0 @@
-= javax/enterprise/util/AnnotationLiteral.class
-
- - link:AnnotationLiteral-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.util.AnnotationLiteral - 20
- - javax.enterprise.util.AnnotationLiteral$PrivilegedActionForAccessibleObject - 6

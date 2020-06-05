@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/BlobDownloader.class
-
- - link:BlobDownloader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/IteratorChain.class
-
- - link:IteratorChain-asmified.java[Asmified]
-
-== References
-

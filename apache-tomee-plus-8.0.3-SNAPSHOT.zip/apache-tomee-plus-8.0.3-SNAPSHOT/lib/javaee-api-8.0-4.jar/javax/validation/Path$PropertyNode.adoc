@@ -1,7 +1,0 @@
-= javax/validation/Path$PropertyNode.class
-
- - link:Path$PropertyNode-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Path$Node - 1

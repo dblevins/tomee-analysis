@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxOutInterceptor.class
-
- - link:PolicyBasedWSS4JStaxOutInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/converter/JsonbNumberConverter.class
-
- - link:JsonbNumberConverter-asmified.java[Asmified]
-
-== References
-

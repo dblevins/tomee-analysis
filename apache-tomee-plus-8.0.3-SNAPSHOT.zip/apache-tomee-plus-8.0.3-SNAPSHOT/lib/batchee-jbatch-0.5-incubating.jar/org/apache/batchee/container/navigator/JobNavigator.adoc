@@ -1,6 +1,0 @@
-= org/apache/batchee/container/navigator/JobNavigator.class
-
- - link:JobNavigator-asmified.java[Asmified]
-
-== References
-

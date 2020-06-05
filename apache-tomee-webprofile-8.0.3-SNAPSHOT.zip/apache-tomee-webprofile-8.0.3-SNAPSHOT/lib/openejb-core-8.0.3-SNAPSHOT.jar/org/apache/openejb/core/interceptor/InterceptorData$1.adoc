@@ -1,6 +1,0 @@
-= org/apache/openejb/core/interceptor/InterceptorData$1.class
-
- - link:InterceptorData$1-asmified.java[Asmified]
-
-== References
-

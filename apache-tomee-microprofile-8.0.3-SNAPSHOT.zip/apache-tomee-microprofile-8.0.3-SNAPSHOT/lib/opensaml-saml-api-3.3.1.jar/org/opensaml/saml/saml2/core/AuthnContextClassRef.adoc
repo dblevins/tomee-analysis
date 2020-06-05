@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/AuthnContextClassRef.class
-
- - link:AuthnContextClassRef-asmified.java[Asmified]
-
-== References
-

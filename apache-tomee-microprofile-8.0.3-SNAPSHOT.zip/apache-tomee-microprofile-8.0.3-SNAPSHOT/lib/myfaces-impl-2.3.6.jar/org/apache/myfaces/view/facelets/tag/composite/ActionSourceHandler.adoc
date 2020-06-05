@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/ActionSourceHandler.class
-
- - link:ActionSourceHandler-asmified.java[Asmified]
-
-== References
-

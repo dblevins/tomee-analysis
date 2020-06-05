@@ -1,6 +1,0 @@
-= org/hsqldb/map/BaseHashMap$ValuesIterator.class
-
- - link:BaseHashMap$ValuesIterator-asmified.java[Asmified]
-
-== References
-

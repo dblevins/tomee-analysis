@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/types/PathType.class
-
- - link:PathType-asmified.java[Asmified]
-
-== References
-

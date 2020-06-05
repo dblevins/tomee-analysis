@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/crypto/newhope/Params.class
-
- - link:Params-asmified.java[Asmified]
-
-== References
-

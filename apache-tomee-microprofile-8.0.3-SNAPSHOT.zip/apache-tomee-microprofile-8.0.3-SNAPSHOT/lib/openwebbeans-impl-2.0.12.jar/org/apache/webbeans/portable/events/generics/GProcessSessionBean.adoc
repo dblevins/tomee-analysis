@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessSessionBean.class
-
- - link:GProcessSessionBean-asmified.java[Asmified]
-
-== References
-

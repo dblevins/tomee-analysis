@@ -1,9 +1,0 @@
-= javax/ws/rs/core/UriInfo.class
-
- - link:UriInfo-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.MultivaluedMap - 4
- - javax.ws.rs.core.UriBuilder - 3
- - javax.ws.rs.core.PathSegment - 2

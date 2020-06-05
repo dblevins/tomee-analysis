@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/PmInuse.class
-
- - link:PmInuse-asmified.java[Asmified]
-
-== References
-

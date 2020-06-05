@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/ServletIntputStreamAdapter.class
-
- - link:ServletIntputStreamAdapter-asmified.java[Asmified]
-
-== References
-

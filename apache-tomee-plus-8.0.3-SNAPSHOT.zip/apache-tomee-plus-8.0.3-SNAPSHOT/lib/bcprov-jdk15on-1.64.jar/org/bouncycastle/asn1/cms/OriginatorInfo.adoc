@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/OriginatorInfo.class
-
- - link:OriginatorInfo-asmified.java[Asmified]
-
-== References
-

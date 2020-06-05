@@ -1,6 +1,0 @@
-= jakarta/activation/DataContentHandler.class
-
- - link:DataContentHandler-asmified.java[Asmified]
-
-== References
-

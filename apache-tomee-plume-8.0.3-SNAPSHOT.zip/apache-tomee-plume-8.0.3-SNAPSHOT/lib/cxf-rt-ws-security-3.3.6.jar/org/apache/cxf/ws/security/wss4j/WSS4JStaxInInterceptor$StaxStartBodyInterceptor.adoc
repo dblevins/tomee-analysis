@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor$StaxStartBodyInterceptor.class
-
- - link:WSS4JStaxInInterceptor$StaxStartBodyInterceptor-asmified.java[Asmified]
-
-== References
-

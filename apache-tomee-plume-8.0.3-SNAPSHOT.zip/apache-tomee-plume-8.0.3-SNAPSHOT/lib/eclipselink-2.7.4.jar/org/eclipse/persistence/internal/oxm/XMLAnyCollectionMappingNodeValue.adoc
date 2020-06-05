@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLAnyCollectionMappingNodeValue.class
-
- - link:XMLAnyCollectionMappingNodeValue-asmified.java[Asmified]
-
-== References
-

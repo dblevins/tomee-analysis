@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/serializers/XMLSerializer.class
-
- - link:XMLSerializer-asmified.java[Asmified]
-
-== References
-

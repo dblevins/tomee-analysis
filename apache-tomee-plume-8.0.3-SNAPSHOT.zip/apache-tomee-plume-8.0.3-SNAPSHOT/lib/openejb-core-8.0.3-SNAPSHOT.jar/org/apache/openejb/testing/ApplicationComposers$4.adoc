@@ -1,6 +1,0 @@
-= org/apache/openejb/testing/ApplicationComposers$4.class
-
- - link:ApplicationComposers$4-asmified.java[Asmified]
-
-== References
-

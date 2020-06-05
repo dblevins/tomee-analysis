@@ -1,6 +1,0 @@
-= org/cryptacular/codec/HexCodec.class
-
- - link:HexCodec-asmified.java[Asmified]
-
-== References
-

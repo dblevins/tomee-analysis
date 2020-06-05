@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/ClientAuthentication.class
-
- - link:ClientAuthentication-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/util/RejectDoctypeSaxFilter.class
-
- - link:RejectDoctypeSaxFilter-asmified.java[Asmified]
-
-== References
-

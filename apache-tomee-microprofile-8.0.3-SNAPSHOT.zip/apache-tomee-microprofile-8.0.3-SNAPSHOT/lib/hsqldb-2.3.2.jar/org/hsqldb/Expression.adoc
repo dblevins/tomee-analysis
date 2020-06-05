@@ -1,6 +1,0 @@
-= org/hsqldb/Expression.class
-
- - link:Expression-asmified.java[Asmified]
-
-== References
-

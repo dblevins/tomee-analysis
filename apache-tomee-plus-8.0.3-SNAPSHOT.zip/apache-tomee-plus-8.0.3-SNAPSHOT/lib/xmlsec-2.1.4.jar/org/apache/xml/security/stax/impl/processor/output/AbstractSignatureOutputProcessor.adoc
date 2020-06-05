@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/processor/output/AbstractSignatureOutputProcessor.class
-
- - link:AbstractSignatureOutputProcessor-asmified.java[Asmified]
-
-== References
-

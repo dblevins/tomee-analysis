@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl.class
-
- - link:AuthConfigFactoryImpl-asmified.java[Asmified]
-
-== References
-

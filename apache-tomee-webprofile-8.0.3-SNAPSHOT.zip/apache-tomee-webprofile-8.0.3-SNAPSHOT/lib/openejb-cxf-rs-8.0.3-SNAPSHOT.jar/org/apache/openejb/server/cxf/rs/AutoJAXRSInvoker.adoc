@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/AutoJAXRSInvoker.class
-
- - link:AutoJAXRSInvoker-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/core/AttributePropertyInfo.class
-
- - link:AttributePropertyInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/weaving/RelationshipInfo.class
-
- - link:RelationshipInfo-asmified.java[Asmified]
-
-== References
-

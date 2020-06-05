@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sequencing/SequencingManager.class
-
- - link:SequencingManager-asmified.java[Asmified]
-
-== References
-

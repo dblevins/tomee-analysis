@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/AssertFalse.class
-
- - link:AssertFalse-asmified.java[Asmified]
-
-== References
-

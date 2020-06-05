@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/OneToOne.class
-
- - link:OneToOne-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/application/StateManagerWrapper.class
-
- - link:StateManagerWrapper-asmified.java[Asmified]
-
-== References
-

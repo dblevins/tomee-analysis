@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/QueryResultCacheImpl.class
-
- - link:QueryResultCacheImpl-asmified.java[Asmified]
-
-== References
-

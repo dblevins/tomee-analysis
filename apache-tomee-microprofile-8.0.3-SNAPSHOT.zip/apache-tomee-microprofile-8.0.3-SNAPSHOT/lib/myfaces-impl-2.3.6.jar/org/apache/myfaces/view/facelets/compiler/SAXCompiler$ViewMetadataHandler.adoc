@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/SAXCompiler$ViewMetadataHandler.class
-
- - link:SAXCompiler$ViewMetadataHandler-asmified.java[Asmified]
-
-== References
-

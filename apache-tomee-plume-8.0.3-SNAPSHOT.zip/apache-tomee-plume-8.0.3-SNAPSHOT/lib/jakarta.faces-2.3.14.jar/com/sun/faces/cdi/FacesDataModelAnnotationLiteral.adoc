@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/FacesDataModelAnnotationLiteral.class
-
- - link:FacesDataModelAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

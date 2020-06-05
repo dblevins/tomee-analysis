@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/WSSecEncrypt.class
-
- - link:WSSecEncrypt-asmified.java[Asmified]
-
-== References
-

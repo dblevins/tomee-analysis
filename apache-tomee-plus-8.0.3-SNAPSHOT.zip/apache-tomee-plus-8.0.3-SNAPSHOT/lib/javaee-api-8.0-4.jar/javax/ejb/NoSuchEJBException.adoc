@@ -1,7 +1,0 @@
-= javax/ejb/NoSuchEJBException.class
-
- - link:NoSuchEJBException-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 4

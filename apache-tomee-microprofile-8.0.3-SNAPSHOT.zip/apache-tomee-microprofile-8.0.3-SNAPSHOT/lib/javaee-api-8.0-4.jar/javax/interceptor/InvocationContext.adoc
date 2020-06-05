@@ -1,6 +1,0 @@
-= javax/interceptor/InvocationContext.class
-
- - link:InvocationContext-asmified.java[Asmified]
-
-== References
-

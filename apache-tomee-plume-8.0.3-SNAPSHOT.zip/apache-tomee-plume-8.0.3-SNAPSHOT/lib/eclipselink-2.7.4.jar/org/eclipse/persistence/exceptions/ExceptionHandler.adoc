@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/ExceptionHandler.class
-
- - link:ExceptionHandler-asmified.java[Asmified]
-
-== References
-

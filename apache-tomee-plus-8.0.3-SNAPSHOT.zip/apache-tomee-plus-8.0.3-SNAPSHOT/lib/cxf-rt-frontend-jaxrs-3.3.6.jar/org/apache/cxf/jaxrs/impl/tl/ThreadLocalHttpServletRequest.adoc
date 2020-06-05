@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/ThreadLocalHttpServletRequest.class
-
- - link:ThreadLocalHttpServletRequest-asmified.java[Asmified]
-
-== References
-

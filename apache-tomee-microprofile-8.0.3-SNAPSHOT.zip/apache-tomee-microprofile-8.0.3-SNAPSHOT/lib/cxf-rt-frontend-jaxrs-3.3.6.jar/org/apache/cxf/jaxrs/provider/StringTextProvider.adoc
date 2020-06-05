@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/StringTextProvider.class
-
- - link:StringTextProvider-asmified.java[Asmified]
-
-== References
-

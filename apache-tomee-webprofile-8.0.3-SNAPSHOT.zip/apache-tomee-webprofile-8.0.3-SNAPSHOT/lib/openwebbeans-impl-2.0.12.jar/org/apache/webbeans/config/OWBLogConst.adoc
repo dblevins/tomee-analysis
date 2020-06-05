@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/OWBLogConst.class
-
- - link:OWBLogConst-asmified.java[Asmified]
-
-== References
-

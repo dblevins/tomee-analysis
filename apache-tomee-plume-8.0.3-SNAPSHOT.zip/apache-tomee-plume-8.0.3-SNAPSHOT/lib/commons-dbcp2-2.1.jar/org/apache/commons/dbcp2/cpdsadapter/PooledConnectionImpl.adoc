@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/cpdsadapter/PooledConnectionImpl.class
-
- - link:PooledConnectionImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/Interpreter.class
-
- - link:Interpreter-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/security/auth/message/MessagePolicy.class
-
- - link:MessagePolicy-asmified.java[Asmified]
-
-== References
-
- - javax.security.auth.message.MessagePolicy$TargetPolicy - 7
- - javax.security.auth.message.MessagePolicy - 1

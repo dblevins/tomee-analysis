@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/Accessor$GetterSetterReflection.class
-
- - link:Accessor$GetterSetterReflection-asmified.java[Asmified]
-
-== References
-

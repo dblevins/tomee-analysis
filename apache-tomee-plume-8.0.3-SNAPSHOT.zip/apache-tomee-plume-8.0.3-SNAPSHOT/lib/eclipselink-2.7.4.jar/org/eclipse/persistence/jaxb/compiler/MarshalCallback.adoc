@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/MarshalCallback.class
-
- - link:MarshalCallback-asmified.java[Asmified]
-
-== References
-

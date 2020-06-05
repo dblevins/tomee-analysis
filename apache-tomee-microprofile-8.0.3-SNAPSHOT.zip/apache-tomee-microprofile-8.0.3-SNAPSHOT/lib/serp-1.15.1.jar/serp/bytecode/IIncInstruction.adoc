@@ -1,6 +1,0 @@
-= serp/bytecode/IIncInstruction.class
-
- - link:IIncInstruction-asmified.java[Asmified]
-
-== References
-

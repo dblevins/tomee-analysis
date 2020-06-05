@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Strings.class
-
- - link:Strings-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/membership/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

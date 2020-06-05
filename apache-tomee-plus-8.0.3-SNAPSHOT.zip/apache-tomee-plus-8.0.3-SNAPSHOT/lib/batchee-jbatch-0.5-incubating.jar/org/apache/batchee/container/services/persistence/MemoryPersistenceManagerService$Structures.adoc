@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$Structures.class
-
- - link:MemoryPersistenceManagerService$Structures-asmified.java[Asmified]
-
-== References
-

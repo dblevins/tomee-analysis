@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentRule$ValueExpressionMetadata.class
-
- - link:CompositeComponentRule$ValueExpressionMetadata-asmified.java[Asmified]
-
-== References
-

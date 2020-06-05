@@ -1,6 +1,0 @@
-= org/apache/activemq/network/jms/OutboundQueueBridge.class
-
- - link:OutboundQueueBridge-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/PathItemImpl.class
-
- - link:PathItemImpl-asmified.java[Asmified]
-
-== References
-

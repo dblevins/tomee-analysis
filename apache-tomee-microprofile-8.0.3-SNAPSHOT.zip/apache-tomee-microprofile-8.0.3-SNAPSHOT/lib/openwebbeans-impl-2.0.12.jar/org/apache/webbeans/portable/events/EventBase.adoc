@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/EventBase.class
-
- - link:EventBase-asmified.java[Asmified]
-
-== References
-

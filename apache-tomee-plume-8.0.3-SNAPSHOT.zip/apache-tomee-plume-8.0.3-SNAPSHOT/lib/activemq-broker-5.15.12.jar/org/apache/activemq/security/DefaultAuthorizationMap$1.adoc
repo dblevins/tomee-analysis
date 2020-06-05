@@ -1,6 +1,0 @@
-= org/apache/activemq/security/DefaultAuthorizationMap$1.class
-
- - link:DefaultAuthorizationMap$1-asmified.java[Asmified]
-
-== References
-

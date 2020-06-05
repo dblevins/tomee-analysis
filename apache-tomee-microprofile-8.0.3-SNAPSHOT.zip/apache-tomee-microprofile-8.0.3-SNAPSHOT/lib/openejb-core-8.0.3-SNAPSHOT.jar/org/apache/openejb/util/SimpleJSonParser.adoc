@@ -1,6 +1,0 @@
-= org/apache/openejb/util/SimpleJSonParser.class
-
- - link:SimpleJSonParser-asmified.java[Asmified]
-
-== References
-

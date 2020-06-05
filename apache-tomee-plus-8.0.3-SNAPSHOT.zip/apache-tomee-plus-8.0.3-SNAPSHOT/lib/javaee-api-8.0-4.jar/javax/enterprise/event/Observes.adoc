@@ -1,8 +1,0 @@
-= javax/enterprise/event/Observes.class
-
- - link:Observes-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.event.Reception - 2
- - javax.enterprise.event.TransactionPhase - 2

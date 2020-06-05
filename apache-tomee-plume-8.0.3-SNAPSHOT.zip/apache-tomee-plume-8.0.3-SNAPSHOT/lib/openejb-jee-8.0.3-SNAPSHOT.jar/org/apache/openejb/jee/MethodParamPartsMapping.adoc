@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MethodParamPartsMapping.class
-
- - link:MethodParamPartsMapping-asmified.java[Asmified]
-
-== References
-

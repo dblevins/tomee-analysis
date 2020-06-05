@@ -1,6 +1,0 @@
-= org/apache/cxf/common/security/UsernameToken.class
-
- - link:UsernameToken-asmified.java[Asmified]
-
-== References
-

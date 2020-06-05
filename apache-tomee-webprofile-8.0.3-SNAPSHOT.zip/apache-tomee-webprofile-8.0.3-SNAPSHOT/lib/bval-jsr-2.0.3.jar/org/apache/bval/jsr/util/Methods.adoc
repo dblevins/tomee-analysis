@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/Methods.class
-
- - link:Methods-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/multipart/Multipart.class
-
- - link:Multipart-asmified.java[Asmified]
-
-== References
-

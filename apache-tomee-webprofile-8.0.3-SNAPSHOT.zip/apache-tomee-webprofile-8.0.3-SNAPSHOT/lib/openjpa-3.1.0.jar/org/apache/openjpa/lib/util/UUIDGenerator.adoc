@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/UUIDGenerator.class
-
- - link:UUIDGenerator-asmified.java[Asmified]
-
-== References
-

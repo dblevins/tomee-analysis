@@ -1,6 +1,0 @@
-= org/joda/time/convert/InstantConverter.class
-
- - link:InstantConverter-asmified.java[Asmified]
-
-== References
-

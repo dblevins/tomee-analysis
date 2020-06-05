@@ -1,6 +1,0 @@
-= org/apache/openejb/util/IntrospectionSupport.class
-
- - link:IntrospectionSupport-asmified.java[Asmified]
-
-== References
-

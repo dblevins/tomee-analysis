@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/reader/StreamReader.class
-
- - link:StreamReader-asmified.java[Asmified]
-
-== References
-

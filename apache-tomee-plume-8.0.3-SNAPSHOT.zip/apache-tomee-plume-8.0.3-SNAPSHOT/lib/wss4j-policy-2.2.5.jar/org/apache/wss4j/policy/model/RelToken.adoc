@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/RelToken.class
-
- - link:RelToken-asmified.java[Asmified]
-
-== References
-

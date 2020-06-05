@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/ExtendedAccessLogValve$ResponseAllHeaderElement.class
-
- - link:ExtendedAccessLogValve$ResponseAllHeaderElement-asmified.java[Asmified]
-
-== References
-

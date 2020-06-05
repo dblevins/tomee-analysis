@@ -1,6 +1,0 @@
-= jakarta/json/JsonReader.class
-
- - link:JsonReader-asmified.java[Asmified]
-
-== References
-

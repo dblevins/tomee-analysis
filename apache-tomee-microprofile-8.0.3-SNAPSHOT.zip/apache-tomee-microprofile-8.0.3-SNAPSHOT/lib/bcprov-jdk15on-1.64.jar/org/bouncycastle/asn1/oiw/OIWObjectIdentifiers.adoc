@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/oiw/OIWObjectIdentifiers.class
-
- - link:OIWObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

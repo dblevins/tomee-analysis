@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/JsonValueSerializer.class
-
- - link:JsonValueSerializer-asmified.java[Asmified]
-
-== References
-

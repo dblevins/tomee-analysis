@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/InjectionPointProducer.class
-
- - link:InjectionPointProducer-asmified.java[Asmified]
-
-== References
-

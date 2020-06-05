@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/collections/TimeTrigger.class
-
- - link:TimeTrigger-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanContext$LegacyView.class
-
- - link:BeanContext$LegacyView-asmified.java[Asmified]
-
-== References
-

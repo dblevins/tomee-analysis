@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Taglib$JAXB.class
-
- - link:Taglib$JAXB-asmified.java[Asmified]
-
-== References
-

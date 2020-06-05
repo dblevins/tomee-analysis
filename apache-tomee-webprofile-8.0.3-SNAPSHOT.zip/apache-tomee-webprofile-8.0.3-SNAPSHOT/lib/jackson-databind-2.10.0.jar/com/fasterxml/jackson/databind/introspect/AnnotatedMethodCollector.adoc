@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotatedMethodCollector.class
-
- - link:AnnotatedMethodCollector-asmified.java[Asmified]
-
-== References
-

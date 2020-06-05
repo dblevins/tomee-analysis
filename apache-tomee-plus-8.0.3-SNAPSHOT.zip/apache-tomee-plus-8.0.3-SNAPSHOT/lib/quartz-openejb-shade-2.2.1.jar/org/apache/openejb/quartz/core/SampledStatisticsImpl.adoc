@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/core/SampledStatisticsImpl.class
-
- - link:SampledStatisticsImpl-asmified.java[Asmified]
-
-== References
-

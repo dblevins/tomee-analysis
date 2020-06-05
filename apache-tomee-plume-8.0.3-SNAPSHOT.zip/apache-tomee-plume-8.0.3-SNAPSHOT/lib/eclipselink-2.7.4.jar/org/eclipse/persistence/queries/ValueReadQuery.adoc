@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ValueReadQuery.class
-
- - link:ValueReadQuery-asmified.java[Asmified]
-
-== References
-

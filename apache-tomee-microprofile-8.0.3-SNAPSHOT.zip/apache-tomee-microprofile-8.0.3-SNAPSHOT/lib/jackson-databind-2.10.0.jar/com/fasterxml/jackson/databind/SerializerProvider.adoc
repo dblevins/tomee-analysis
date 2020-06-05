@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/SerializerProvider.class
-
- - link:SerializerProvider-asmified.java[Asmified]
-
-== References
-

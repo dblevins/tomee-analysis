@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/calendar/CronCalendar.class
-
- - link:CronCalendar-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/resource/cci/ResultSet.class
-
- - link:ResultSet-asmified.java[Asmified]
-
-== References
-
- - javax.resource.cci.Record - 1

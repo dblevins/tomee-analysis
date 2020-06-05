@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/StateHelper.class
-
- - link:StateHelper-asmified.java[Asmified]
-
-== References
-

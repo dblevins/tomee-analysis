@@ -1,6 +1,0 @@
-= org/apache/activemq/memory/MapCache.class
-
- - link:MapCache-asmified.java[Asmified]
-
-== References
-

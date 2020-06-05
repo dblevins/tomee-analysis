@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/EscapeHandlerInvocationHandler.class
-
- - link:EscapeHandlerInvocationHandler-asmified.java[Asmified]
-
-== References
-

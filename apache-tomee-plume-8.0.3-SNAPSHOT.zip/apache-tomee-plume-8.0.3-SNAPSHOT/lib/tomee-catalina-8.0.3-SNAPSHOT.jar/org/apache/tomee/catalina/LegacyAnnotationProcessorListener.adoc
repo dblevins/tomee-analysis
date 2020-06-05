@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/LegacyAnnotationProcessorListener.class
-
- - link:LegacyAnnotationProcessorListener-asmified.java[Asmified]
-
-== References
-

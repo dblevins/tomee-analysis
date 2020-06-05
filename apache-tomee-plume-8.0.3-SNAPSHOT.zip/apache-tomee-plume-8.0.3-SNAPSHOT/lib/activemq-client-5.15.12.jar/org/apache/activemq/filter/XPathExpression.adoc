@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/XPathExpression.class
-
- - link:XPathExpression-asmified.java[Asmified]
-
-== References
-

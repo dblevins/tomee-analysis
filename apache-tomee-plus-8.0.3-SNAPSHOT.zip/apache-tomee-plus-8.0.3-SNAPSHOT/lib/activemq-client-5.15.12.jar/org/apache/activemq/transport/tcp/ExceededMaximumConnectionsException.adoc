@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/tcp/ExceededMaximumConnectionsException.class
-
- - link:ExceededMaximumConnectionsException-asmified.java[Asmified]
-
-== References
-

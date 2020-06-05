@@ -1,6 +1,0 @@
-= commonj/sdo/impl/HelperProviderImpl.class
-
- - link:HelperProviderImpl-asmified.java[Asmified]
-
-== References
-

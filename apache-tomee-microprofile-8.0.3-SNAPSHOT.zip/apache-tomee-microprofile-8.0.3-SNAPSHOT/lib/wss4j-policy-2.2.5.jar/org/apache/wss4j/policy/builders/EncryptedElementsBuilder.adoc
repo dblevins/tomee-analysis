@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/EncryptedElementsBuilder.class
-
- - link:EncryptedElementsBuilder-asmified.java[Asmified]
-
-== References
-

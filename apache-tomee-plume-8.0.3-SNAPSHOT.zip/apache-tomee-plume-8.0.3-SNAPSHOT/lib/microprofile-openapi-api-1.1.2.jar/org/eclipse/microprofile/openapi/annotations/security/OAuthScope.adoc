@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/security/OAuthScope.class
-
- - link:OAuthScope-asmified.java[Asmified]
-
-== References
-

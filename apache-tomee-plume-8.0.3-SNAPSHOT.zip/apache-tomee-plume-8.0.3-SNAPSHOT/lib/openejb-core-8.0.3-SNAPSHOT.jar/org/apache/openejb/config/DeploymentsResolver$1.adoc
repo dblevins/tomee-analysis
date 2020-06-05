@@ -1,6 +1,0 @@
-= org/apache/openejb/config/DeploymentsResolver$1.class
-
- - link:DeploymentsResolver$1-asmified.java[Asmified]
-
-== References
-

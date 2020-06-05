@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/PartialXMLStreamReader.class
-
- - link:PartialXMLStreamReader-asmified.java[Asmified]
-
-== References
-

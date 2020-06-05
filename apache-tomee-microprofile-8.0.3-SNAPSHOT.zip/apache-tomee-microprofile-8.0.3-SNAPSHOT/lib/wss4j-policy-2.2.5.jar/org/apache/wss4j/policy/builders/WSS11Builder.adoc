@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/WSS11Builder.class
-
- - link:WSS11Builder-asmified.java[Asmified]
-
-== References
-

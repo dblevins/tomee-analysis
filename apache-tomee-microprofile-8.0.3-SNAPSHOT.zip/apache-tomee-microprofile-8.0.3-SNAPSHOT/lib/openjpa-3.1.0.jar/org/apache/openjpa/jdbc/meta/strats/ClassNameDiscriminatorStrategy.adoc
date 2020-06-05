@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/ClassNameDiscriminatorStrategy.class
-
- - link:ClassNameDiscriminatorStrategy-asmified.java[Asmified]
-
-== References
-

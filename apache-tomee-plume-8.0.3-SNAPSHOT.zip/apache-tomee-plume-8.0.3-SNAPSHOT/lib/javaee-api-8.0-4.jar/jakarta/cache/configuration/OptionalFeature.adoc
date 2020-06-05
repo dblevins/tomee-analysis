@@ -1,6 +1,0 @@
-= jakarta/cache/configuration/OptionalFeature.class
-
- - link:OptionalFeature-asmified.java[Asmified]
-
-== References
-

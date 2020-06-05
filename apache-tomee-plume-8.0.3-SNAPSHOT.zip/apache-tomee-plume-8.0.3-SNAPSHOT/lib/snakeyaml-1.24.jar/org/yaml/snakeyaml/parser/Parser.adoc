@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/parser/Parser.class
-
- - link:Parser-asmified.java[Asmified]
-
-== References
-

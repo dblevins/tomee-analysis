@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/TransportThreadSupport.class
-
- - link:TransportThreadSupport-asmified.java[Asmified]
-
-== References
-

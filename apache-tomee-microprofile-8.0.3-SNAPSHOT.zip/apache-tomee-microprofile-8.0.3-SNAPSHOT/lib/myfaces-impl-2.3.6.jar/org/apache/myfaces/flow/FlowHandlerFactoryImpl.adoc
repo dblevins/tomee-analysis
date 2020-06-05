@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/FlowHandlerFactoryImpl.class
-
- - link:FlowHandlerFactoryImpl-asmified.java[Asmified]
-
-== References
-

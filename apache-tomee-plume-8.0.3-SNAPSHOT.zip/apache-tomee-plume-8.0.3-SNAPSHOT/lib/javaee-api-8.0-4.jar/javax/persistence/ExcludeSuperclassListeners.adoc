@@ -1,6 +1,0 @@
-= javax/persistence/ExcludeSuperclassListeners.class
-
- - link:ExcludeSuperclassListeners-asmified.java[Asmified]
-
-== References
-

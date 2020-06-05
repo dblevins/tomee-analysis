@@ -1,6 +1,0 @@
-= jakarta/activation/FileTypeMap.class
-
- - link:FileTypeMap-asmified.java[Asmified]
-
-== References
-

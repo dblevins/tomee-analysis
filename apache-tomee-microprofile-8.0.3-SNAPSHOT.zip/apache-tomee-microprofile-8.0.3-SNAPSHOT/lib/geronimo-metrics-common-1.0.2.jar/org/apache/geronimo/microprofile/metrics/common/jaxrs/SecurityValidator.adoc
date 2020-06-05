@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator.class
-
- - link:SecurityValidator-asmified.java[Asmified]
-
-== References
-

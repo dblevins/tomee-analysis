@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/ByteDataSource.class
-
- - link:ByteDataSource-asmified.java[Asmified]
-
-== References
-

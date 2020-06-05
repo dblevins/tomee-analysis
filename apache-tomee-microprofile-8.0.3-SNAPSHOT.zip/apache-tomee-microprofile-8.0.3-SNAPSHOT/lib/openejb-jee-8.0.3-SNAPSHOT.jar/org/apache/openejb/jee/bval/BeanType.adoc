@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/BeanType.class
-
- - link:BeanType-asmified.java[Asmified]
-
-== References
-

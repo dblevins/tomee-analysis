@@ -1,6 +1,0 @@
-= jakarta/jms/TransactionRolledBackRuntimeException.class
-
- - link:TransactionRolledBackRuntimeException-asmified.java[Asmified]
-
-== References
-

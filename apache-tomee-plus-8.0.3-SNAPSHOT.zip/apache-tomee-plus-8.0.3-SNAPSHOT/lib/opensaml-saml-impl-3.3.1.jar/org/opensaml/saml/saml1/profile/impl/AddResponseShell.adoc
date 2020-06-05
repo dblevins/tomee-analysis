@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/profile/impl/AddResponseShell.class
-
- - link:AddResponseShell-asmified.java[Asmified]
-
-== References
-

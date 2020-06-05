@@ -1,6 +1,0 @@
-= jakarta/faces/event/WebsocketEvent$Opened.class
-
- - link:WebsocketEvent$Opened-asmified.java[Asmified]
-
-== References
-

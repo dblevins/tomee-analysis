@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/CdiProducer.class
-
- - link:CdiProducer-asmified.java[Asmified]
-
-== References
-

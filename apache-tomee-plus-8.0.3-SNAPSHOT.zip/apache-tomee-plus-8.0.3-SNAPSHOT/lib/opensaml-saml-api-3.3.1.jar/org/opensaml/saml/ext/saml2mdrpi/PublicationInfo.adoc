@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdrpi/PublicationInfo.class
-
- - link:PublicationInfo-asmified.java[Asmified]
-
-== References
-

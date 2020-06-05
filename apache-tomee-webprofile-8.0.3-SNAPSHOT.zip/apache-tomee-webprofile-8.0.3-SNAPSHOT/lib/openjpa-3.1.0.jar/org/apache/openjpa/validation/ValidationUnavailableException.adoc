@@ -1,6 +1,0 @@
-= org/apache/openjpa/validation/ValidationUnavailableException.class
-
- - link:ValidationUnavailableException-asmified.java[Asmified]
-
-== References
-

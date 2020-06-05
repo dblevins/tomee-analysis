@@ -1,6 +1,0 @@
-= jakarta/faces/webapp/UIComponentClassicTagBase.class
-
- - link:UIComponentClassicTagBase-asmified.java[Asmified]
-
-== References
-

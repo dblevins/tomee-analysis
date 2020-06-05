@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Dispatcher$JAXB.class
-
- - link:Dispatcher$JAXB-asmified.java[Asmified]
-
-== References
-

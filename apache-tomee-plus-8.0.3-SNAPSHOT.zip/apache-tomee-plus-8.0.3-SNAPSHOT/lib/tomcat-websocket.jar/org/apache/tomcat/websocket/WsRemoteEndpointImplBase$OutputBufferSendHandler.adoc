@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$OutputBufferSendHandler.class
-
- - link:WsRemoteEndpointImplBase$OutputBufferSendHandler-asmified.java[Asmified]
-
-== References
-

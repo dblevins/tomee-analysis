@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/CalendarSerializer.class
-
- - link:CalendarSerializer-asmified.java[Asmified]
-
-== References
-

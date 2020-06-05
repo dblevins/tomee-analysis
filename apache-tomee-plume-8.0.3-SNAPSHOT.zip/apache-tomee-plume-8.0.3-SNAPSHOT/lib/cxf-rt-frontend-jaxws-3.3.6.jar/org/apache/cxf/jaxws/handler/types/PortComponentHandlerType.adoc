@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/types/PortComponentHandlerType.class
-
- - link:PortComponentHandlerType-asmified.java[Asmified]
-
-== References
-

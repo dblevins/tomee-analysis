@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/CountExpression.class
-
- - link:CountExpression-asmified.java[Asmified]
-
-== References
-

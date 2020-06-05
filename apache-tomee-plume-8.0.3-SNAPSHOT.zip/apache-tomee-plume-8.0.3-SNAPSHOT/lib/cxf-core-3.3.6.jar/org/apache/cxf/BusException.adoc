@@ -1,6 +1,0 @@
-= org/apache/cxf/BusException.class
-
- - link:BusException-asmified.java[Asmified]
-
-== References
-

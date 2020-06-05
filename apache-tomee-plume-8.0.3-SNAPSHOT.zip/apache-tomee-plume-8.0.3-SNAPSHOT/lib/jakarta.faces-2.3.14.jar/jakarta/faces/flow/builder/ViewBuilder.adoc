@@ -1,6 +1,0 @@
-= jakarta/faces/flow/builder/ViewBuilder.class
-
- - link:ViewBuilder-asmified.java[Asmified]
-
-== References
-

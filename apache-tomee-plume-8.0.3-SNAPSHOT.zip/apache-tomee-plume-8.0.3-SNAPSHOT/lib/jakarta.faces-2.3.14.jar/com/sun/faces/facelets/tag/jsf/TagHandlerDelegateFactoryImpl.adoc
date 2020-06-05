@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/TagHandlerDelegateFactoryImpl.class
-
- - link:TagHandlerDelegateFactoryImpl-asmified.java[Asmified]
-
-== References
-

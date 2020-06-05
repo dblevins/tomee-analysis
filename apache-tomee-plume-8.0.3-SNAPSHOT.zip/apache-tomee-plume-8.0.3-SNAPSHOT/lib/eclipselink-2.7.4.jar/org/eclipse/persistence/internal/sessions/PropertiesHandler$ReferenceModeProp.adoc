@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$ReferenceModeProp.class
-
- - link:PropertiesHandler$ReferenceModeProp-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/impl/ElementImpl$AttributeManager.class
-
- - link:ElementImpl$AttributeManager-asmified.java[Asmified]
-
-== References
-

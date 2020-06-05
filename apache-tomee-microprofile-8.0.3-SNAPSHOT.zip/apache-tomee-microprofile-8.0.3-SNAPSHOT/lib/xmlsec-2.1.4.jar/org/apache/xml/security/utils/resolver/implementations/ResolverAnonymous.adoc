@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/resolver/implementations/ResolverAnonymous.class
-
- - link:ResolverAnonymous-asmified.java[Asmified]
-
-== References
-

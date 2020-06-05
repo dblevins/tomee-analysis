@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/RemoteScheduler.class
-
- - link:RemoteScheduler-asmified.java[Asmified]
-
-== References
-

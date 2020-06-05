@@ -1,9 +1,0 @@
-= javax/faces/annotation/FacesConfig.class
-
- - link:FacesConfig-asmified.java[Asmified]
-
-== References
-
- - javax.faces.annotation.FacesConfig$Version - 2
- - javax.inject.Qualifier - 1
- - javax.enterprise.util.Nonbinding - 1

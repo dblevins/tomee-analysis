@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/QueryStatistics$None.class
-
- - link:QueryStatistics$None-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/PassThroughAttributesHandler.class
-
- - link:PassThroughAttributesHandler-asmified.java[Asmified]
-
-== References
-

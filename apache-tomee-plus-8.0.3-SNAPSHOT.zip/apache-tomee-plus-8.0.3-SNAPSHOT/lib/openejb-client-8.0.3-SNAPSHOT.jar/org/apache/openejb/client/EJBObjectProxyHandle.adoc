@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EJBObjectProxyHandle.class
-
- - link:EJBObjectProxyHandle-asmified.java[Asmified]
-
-== References
-

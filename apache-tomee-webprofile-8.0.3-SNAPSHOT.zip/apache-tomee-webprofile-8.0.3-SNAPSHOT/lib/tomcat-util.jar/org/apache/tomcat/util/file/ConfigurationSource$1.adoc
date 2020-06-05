@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/file/ConfigurationSource$1.class
-
- - link:ConfigurationSource$1-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/mail/internet/ParseException.class
-
- - link:ParseException-asmified.java[Asmified]
-
-== References
-
- - javax.mail.MessagingException - 3

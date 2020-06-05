@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl$CoalesceImpl.class
-
- - link:CriteriaBuilderImpl$CoalesceImpl-asmified.java[Asmified]
-
-== References
-

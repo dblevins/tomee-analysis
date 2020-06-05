@@ -1,8 +1,0 @@
-= javax/ws/rs/sse/SseBroadcaster.class
-
- - link:SseBroadcaster-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.sse.SseEventSink - 3
- - javax.ws.rs.sse.OutboundSseEvent - 1

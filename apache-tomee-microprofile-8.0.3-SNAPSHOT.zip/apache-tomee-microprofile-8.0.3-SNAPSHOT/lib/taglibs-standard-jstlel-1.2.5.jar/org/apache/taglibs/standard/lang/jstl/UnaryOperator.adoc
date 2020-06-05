@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/UnaryOperator.class
-
- - link:UnaryOperator-asmified.java[Asmified]
-
-== References
-

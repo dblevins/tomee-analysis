@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/KeyInfoConfirmationDataType.class
-
- - link:KeyInfoConfirmationDataType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/context/SwitchAjaxExceptionHandlerWrapperImpl.class
-
- - link:SwitchAjaxExceptionHandlerWrapperImpl-asmified.java[Asmified]
-
-== References
-

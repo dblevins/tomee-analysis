@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/ApacheTransform.class
-
- - link:ApacheTransform-asmified.java[Asmified]
-
-== References
-

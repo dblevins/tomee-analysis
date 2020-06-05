@@ -1,6 +1,0 @@
-= org/apache/jasper/Options.class
-
- - link:Options-asmified.java[Asmified]
-
-== References
-

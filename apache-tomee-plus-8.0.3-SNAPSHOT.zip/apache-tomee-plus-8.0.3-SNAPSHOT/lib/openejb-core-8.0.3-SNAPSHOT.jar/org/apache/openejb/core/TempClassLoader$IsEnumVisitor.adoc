@@ -1,6 +1,0 @@
-= org/apache/openejb/core/TempClassLoader$IsEnumVisitor.class
-
- - link:TempClassLoader$IsEnumVisitor-asmified.java[Asmified]
-
-== References
-

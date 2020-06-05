@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/DatagramHeaderMarshaller.class
-
- - link:DatagramHeaderMarshaller-asmified.java[Asmified]
-
-== References
-

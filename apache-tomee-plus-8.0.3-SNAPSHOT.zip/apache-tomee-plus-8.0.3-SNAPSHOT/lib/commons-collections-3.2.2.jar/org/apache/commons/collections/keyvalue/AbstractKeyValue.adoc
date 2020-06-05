@@ -1,6 +1,0 @@
-= org/apache/commons/collections/keyvalue/AbstractKeyValue.class
-
- - link:AbstractKeyValue-asmified.java[Asmified]
-
-== References
-

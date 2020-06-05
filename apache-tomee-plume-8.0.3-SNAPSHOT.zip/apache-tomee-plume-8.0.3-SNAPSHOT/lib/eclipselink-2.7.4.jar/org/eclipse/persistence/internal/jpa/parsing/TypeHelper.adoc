@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/TypeHelper.class
-
- - link:TypeHelper-asmified.java[Asmified]
-
-== References
-

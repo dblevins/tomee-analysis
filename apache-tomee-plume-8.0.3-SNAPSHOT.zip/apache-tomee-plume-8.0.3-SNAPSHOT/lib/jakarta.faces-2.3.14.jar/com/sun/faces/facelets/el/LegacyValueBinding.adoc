@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/el/LegacyValueBinding.class
-
- - link:LegacyValueBinding-asmified.java[Asmified]
-
-== References
-

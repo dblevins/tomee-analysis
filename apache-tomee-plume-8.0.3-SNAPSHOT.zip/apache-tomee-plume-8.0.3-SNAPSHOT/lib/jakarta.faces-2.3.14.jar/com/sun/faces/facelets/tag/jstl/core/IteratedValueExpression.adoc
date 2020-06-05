@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/core/IteratedValueExpression.class
-
- - link:IteratedValueExpression-asmified.java[Asmified]
-
-== References
-

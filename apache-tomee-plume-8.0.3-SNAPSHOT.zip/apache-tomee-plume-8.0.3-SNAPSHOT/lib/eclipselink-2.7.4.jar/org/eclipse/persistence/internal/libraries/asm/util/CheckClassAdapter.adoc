@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/CheckClassAdapter.class
-
- - link:CheckClassAdapter-asmified.java[Asmified]
-
-== References
-

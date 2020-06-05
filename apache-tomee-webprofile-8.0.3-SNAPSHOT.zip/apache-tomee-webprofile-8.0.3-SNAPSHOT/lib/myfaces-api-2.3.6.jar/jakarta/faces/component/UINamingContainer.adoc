@@ -1,6 +1,0 @@
-= jakarta/faces/component/UINamingContainer.class
-
- - link:UINamingContainer-asmified.java[Asmified]
-
-== References
-

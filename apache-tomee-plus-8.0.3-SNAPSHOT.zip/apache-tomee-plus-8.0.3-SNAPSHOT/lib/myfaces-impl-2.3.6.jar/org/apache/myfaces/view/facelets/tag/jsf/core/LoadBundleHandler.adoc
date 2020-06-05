@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/LoadBundleHandler.class
-
- - link:LoadBundleHandler-asmified.java[Asmified]
-
-== References
-

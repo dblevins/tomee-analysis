@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/BooleanSerializer$AsNumber.class
-
- - link:BooleanSerializer$AsNumber-asmified.java[Asmified]
-
-== References
-

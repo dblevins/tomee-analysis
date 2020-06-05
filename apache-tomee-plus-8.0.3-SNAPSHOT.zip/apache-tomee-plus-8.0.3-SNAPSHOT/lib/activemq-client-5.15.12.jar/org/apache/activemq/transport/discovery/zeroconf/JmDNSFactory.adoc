@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/zeroconf/JmDNSFactory.class
-
- - link:JmDNSFactory-asmified.java[Asmified]
-
-== References
-

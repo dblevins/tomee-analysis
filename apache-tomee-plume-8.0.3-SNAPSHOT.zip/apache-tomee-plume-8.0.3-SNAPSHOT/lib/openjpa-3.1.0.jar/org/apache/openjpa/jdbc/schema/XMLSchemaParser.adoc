@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/XMLSchemaParser.class
-
- - link:XMLSchemaParser-asmified.java[Asmified]
-
-== References
-

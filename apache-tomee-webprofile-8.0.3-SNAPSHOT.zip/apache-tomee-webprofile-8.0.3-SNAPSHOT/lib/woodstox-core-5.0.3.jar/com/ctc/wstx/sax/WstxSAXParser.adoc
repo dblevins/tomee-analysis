@@ -1,6 +1,0 @@
-= com/ctc/wstx/sax/WstxSAXParser.class
-
- - link:WstxSAXParser-asmified.java[Asmified]
-
-== References
-

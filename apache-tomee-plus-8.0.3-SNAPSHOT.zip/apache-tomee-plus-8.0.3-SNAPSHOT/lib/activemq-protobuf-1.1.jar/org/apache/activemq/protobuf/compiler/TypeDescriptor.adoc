@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/TypeDescriptor.class
-
- - link:TypeDescriptor-asmified.java[Asmified]
-
-== References
-

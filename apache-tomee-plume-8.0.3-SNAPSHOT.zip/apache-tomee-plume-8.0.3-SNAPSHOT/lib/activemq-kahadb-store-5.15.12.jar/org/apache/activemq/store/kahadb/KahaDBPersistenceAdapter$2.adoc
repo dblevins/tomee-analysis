@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/KahaDBPersistenceAdapter$2.class
-
- - link:KahaDBPersistenceAdapter$2-asmified.java[Asmified]
-
-== References
-

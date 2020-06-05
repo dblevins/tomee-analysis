@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/ReceiverBase.class
-
- - link:ReceiverBase-asmified.java[Asmified]
-
-== References
-

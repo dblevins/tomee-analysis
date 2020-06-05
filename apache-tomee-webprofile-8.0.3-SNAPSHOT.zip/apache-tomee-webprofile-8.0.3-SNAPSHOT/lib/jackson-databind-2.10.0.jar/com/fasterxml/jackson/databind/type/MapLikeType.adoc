@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/type/MapLikeType.class
-
- - link:MapLikeType-asmified.java[Asmified]
-
-== References
-

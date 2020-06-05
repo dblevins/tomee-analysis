@@ -1,6 +1,0 @@
-= org/apache/cxf/workqueue/AutomaticWorkQueueImpl$2.class
-
- - link:AutomaticWorkQueueImpl$2-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/wadl/WadlGenerator$JaxbContextQNameResolver.class
-
- - link:WadlGenerator$JaxbContextQNameResolver-asmified.java[Asmified]
-
-== References
-

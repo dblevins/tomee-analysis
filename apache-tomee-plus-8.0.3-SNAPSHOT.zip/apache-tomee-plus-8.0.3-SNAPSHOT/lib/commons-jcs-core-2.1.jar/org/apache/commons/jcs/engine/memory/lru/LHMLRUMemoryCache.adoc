@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/memory/lru/LHMLRUMemoryCache.class
-
- - link:LHMLRUMemoryCache-asmified.java[Asmified]
-
-== References
-

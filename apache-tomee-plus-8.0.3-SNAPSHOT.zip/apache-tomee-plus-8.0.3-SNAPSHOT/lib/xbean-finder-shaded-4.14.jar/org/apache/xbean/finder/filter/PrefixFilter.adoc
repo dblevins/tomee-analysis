@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/filter/PrefixFilter.class
-
- - link:PrefixFilter-asmified.java[Asmified]
-
-== References
-

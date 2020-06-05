@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/MPRestClientCallback.class
-
- - link:MPRestClientCallback-asmified.java[Asmified]
-
-== References
-

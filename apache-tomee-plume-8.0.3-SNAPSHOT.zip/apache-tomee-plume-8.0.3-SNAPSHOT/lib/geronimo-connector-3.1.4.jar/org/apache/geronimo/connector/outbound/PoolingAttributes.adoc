@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/PoolingAttributes.class
-
- - link:PoolingAttributes-asmified.java[Asmified]
-
-== References
-

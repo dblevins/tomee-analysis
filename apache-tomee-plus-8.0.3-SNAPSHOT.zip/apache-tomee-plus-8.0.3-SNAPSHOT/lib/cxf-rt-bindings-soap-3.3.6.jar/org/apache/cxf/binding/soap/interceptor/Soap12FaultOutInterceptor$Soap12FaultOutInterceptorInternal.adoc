@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/interceptor/Soap12FaultOutInterceptor$Soap12FaultOutInterceptorInternal.class
-
- - link:Soap12FaultOutInterceptor$Soap12FaultOutInterceptorInternal-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/filters/OAuthRequestFilter.class
-
- - link:OAuthRequestFilter-asmified.java[Asmified]
-
-== References
-

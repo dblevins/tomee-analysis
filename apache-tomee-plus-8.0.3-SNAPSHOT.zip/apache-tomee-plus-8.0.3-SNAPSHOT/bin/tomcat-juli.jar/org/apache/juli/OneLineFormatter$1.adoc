@@ -1,6 +1,0 @@
-= org/apache/juli/OneLineFormatter$1.class
-
- - link:OneLineFormatter$1-asmified.java[Asmified]
-
-== References
-

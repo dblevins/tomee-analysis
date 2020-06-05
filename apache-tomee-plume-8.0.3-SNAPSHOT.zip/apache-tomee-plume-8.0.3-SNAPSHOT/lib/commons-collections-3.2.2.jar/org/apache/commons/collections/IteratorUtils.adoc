@@ -1,6 +1,0 @@
-= org/apache/commons/collections/IteratorUtils.class
-
- - link:IteratorUtils-asmified.java[Asmified]
-
-== References
-

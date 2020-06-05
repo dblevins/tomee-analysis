@@ -1,6 +1,0 @@
-= org/apache/commons/codec/binary/Hex.class
-
- - link:Hex-asmified.java[Asmified]
-
-== References
-

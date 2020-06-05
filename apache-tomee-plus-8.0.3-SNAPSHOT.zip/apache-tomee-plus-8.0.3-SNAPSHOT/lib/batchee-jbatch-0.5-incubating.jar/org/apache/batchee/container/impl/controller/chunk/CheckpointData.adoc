@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/controller/chunk/CheckpointData.class
-
- - link:CheckpointData-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/DelegatePermissionCollection$FastPermissionCollection.class
-
- - link:DelegatePermissionCollection$FastPermissionCollection-asmified.java[Asmified]
-
-== References
-

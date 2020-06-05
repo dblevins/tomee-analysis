@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ActionTypeUnmarshaller.class
-
- - link:ActionTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

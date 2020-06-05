@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/ConverterTag$BindingConverter.class
-
- - link:ConverterTag$BindingConverter-asmified.java[Asmified]
-
-== References
-

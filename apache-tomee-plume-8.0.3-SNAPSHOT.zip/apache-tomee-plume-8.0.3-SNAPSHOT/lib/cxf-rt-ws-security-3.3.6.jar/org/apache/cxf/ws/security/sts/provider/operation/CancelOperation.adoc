@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/operation/CancelOperation.class
-
- - link:CancelOperation-asmified.java[Asmified]
-
-== References
-

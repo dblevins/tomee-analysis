@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/xmi/Documentation.class
-
- - link:Documentation-asmified.java[Asmified]
-
-== References
-

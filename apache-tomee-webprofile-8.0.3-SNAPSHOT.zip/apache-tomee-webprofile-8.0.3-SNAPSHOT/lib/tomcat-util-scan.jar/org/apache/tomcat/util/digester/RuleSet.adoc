@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/digester/RuleSet.class
-
- - link:RuleSet-asmified.java[Asmified]
-
-== References
-

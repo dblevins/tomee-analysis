@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/NamedMethodInfo.class
-
- - link:NamedMethodInfo-asmified.java[Asmified]
-
-== References
-

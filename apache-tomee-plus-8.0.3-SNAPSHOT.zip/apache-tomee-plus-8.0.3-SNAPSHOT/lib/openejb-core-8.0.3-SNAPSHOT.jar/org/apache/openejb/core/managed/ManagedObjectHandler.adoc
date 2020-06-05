@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/ManagedObjectHandler.class
-
- - link:ManagedObjectHandler-asmified.java[Asmified]
-
-== References
-

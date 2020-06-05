@@ -1,6 +1,0 @@
-= org/apache/commons/daemon/Daemon.class
-
- - link:Daemon-asmified.java[Asmified]
-
-== References
-

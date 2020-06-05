@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/client/p2p/HttpSOAPConnectionFactory.class
-
- - link:HttpSOAPConnectionFactory-asmified.java[Asmified]
-
-== References
-

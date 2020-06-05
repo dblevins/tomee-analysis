@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/NamingResourcesMBean.class
-
- - link:NamingResourcesMBean-asmified.java[Asmified]
-
-== References
-

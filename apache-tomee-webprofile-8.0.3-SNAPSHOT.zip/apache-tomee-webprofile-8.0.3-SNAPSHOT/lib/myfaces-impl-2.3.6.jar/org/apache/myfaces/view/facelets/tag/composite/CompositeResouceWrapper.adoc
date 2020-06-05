@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeResouceWrapper.class
-
- - link:CompositeResouceWrapper-asmified.java[Asmified]
-
-== References
-

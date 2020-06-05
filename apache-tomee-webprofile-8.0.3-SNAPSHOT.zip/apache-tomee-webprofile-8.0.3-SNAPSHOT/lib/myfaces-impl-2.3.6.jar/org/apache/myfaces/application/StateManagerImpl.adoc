@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/StateManagerImpl.class
-
- - link:StateManagerImpl-asmified.java[Asmified]
-
-== References
-

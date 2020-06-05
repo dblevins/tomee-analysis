@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/artifact/SAMLArtifactMap$SAMLArtifactMapEntry.class
-
- - link:SAMLArtifactMap$SAMLArtifactMapEntry-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/threads/LimitLatch$Sync.class
-
- - link:LimitLatch$Sync-asmified.java[Asmified]
-
-== References
-

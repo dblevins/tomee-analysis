@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/MapObjectReference.class
-
- - link:MapObjectReference-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/impl/CDIManagedBeanHandlerImpl.class
-
- - link:CDIManagedBeanHandlerImpl-asmified.java[Asmified]
-
-== References
-

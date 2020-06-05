@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/AttributeNodeImpl.class
-
- - link:AttributeNodeImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/TypeInsnNode.class
-
- - link:TypeInsnNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/resources/unversioned/EntityResource.class
-
- - link:EntityResource-asmified.java[Asmified]
-
-== References
-

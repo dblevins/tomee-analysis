@@ -1,6 +1,0 @@
-= org/opensaml/soap/soap12/RelayBearing.class
-
- - link:RelayBearing-asmified.java[Asmified]
-
-== References
-

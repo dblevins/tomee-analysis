@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/core/queries/CoreContainerPolicy.class
-
- - link:CoreContainerPolicy-asmified.java[Asmified]
-
-== References
-

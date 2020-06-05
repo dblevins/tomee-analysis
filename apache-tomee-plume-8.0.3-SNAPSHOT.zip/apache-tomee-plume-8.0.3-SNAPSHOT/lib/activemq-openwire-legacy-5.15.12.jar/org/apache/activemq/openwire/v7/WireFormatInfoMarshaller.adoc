@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v7/WireFormatInfoMarshaller.class
-
- - link:WireFormatInfoMarshaller-asmified.java[Asmified]
-
-== References
-

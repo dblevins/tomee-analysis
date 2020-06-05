@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/AbstractContext.class
-
- - link:AbstractContext-asmified.java[Asmified]
-
-== References
-

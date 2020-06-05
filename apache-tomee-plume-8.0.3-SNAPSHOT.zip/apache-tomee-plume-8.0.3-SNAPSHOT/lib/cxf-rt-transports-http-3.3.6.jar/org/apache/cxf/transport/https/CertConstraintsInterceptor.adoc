@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/CertConstraintsInterceptor.class
-
- - link:CertConstraintsInterceptor-asmified.java[Asmified]
-
-== References
-

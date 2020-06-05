@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/component/_StyleProperties.class
-
- - link:_StyleProperties-asmified.java[Asmified]
-
-== References
-

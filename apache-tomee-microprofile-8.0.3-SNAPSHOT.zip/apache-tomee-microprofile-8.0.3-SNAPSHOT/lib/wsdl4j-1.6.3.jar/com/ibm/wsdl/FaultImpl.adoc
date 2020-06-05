@@ -1,6 +1,0 @@
-= com/ibm/wsdl/FaultImpl.class
-
- - link:FaultImpl-asmified.java[Asmified]
-
-== References
-

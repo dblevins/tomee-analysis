@@ -1,6 +1,0 @@
-= org/apache/webbeans/servlet/WebBeansConfigurationListener.class
-
- - link:WebBeansConfigurationListener-asmified.java[Asmified]
-
-== References
-

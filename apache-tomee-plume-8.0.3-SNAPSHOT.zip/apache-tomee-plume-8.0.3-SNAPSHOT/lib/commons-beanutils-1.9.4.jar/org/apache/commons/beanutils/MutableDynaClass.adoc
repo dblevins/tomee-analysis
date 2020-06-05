@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/MutableDynaClass.class
-
- - link:MutableDynaClass-asmified.java[Asmified]
-
-== References
-

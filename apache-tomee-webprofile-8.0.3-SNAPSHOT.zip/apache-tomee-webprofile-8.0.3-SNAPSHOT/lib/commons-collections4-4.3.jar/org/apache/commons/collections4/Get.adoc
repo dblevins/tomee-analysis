@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/Get.class
-
- - link:Get-asmified.java[Asmified]
-
-== References
-

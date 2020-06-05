@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/input/SecurityHeaderInputProcessor.class
-
- - link:SecurityHeaderInputProcessor-asmified.java[Asmified]
-
-== References
-

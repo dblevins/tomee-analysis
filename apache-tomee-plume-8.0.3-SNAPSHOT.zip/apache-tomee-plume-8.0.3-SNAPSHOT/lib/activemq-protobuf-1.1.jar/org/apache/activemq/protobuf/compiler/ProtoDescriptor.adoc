@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/ProtoDescriptor.class
-
- - link:ProtoDescriptor-asmified.java[Asmified]
-
-== References
-

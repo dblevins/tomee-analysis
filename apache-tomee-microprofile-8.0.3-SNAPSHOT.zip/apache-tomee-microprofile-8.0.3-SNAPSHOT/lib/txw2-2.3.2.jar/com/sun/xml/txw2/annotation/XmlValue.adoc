@@ -1,6 +1,0 @@
-= com/sun/xml/txw2/annotation/XmlValue.class
-
- - link:XmlValue-asmified.java[Asmified]
-
-== References
-

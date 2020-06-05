@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/SpringBusFactory$BusApplicationContextLifeCycleListener.class
-
- - link:SpringBusFactory$BusApplicationContextLifeCycleListener-asmified.java[Asmified]
-
-== References
-

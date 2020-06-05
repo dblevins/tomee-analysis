@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/AttributedDateTime.class
-
- - link:AttributedDateTime-asmified.java[Asmified]
-
-== References
-

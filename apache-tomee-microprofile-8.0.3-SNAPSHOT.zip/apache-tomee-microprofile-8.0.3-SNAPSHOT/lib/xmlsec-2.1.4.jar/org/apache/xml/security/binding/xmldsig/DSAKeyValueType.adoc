@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/DSAKeyValueType.class
-
- - link:DSAKeyValueType-asmified.java[Asmified]
-
-== References
-

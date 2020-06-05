@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/converters/BooleanConverter.class
-
- - link:BooleanConverter-asmified.java[Asmified]
-
-== References
-

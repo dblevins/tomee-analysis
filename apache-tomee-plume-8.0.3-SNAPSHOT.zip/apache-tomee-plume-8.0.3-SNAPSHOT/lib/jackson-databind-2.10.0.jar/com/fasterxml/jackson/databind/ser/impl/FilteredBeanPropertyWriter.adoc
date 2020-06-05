@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWriter.class
-
- - link:FilteredBeanPropertyWriter-asmified.java[Asmified]
-
-== References
-

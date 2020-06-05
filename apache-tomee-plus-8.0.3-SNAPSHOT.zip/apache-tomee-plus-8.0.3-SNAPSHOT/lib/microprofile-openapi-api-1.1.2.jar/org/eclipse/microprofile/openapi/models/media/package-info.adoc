@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/media/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

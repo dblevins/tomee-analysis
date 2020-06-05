@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/JNDIConnector.class
-
- - link:JNDIConnector-asmified.java[Asmified]
-
-== References
-

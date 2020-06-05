@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/assertion/AssertionValidationException.class
-
- - link:AssertionValidationException-asmified.java[Asmified]
-
-== References
-

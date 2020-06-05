@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/NioEndpoint$NioSocketWrapper.class
-
- - link:NioEndpoint$NioSocketWrapper-asmified.java[Asmified]
-
-== References
-

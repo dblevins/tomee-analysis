@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/membership/McastServiceImpl$RecoveryThread.class
-
- - link:McastServiceImpl$RecoveryThread-asmified.java[Asmified]
-
-== References
-

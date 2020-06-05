@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/Recovery.class
-
- - link:Recovery-asmified.java[Asmified]
-
-== References
-

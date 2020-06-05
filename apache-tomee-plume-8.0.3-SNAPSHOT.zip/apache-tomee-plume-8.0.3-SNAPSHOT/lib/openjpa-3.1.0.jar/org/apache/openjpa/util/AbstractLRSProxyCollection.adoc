@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/AbstractLRSProxyCollection.class
-
- - link:AbstractLRSProxyCollection-asmified.java[Asmified]
-
-== References
-

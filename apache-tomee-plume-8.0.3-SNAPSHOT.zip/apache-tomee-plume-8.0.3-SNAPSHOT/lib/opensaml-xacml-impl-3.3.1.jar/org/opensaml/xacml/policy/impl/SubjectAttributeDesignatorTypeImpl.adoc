@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/SubjectAttributeDesignatorTypeImpl.class
-
- - link:SubjectAttributeDesignatorTypeImpl-asmified.java[Asmified]
-
-== References
-

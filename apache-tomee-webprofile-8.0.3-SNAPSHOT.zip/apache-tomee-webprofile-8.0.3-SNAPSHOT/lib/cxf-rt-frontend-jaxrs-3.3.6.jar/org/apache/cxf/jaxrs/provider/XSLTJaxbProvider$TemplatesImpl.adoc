@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/XSLTJaxbProvider$TemplatesImpl.class
-
- - link:XSLTJaxbProvider$TemplatesImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,2 +1,0 @@
-= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/slf4j-jdk14-1.7.21.jar
-

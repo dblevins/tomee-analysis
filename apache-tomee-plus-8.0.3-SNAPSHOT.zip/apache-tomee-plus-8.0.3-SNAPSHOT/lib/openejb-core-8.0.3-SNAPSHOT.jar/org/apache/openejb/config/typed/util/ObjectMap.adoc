@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/util/ObjectMap.class
-
- - link:ObjectMap-asmified.java[Asmified]
-
-== References
-

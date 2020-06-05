@@ -1,6 +1,0 @@
-= javax/wsdl/extensions/UnknownExtensibilityElement.class
-
- - link:UnknownExtensibilityElement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/PreparedResultObjectProvider.class
-
- - link:PreparedResultObjectProvider-asmified.java[Asmified]
-
-== References
-

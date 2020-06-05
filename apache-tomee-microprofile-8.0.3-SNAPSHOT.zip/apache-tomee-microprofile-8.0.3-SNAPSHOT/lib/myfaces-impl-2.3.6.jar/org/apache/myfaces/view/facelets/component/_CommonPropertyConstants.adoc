@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/component/_CommonPropertyConstants.class
-
- - link:_CommonPropertyConstants-asmified.java[Asmified]
-
-== References
-

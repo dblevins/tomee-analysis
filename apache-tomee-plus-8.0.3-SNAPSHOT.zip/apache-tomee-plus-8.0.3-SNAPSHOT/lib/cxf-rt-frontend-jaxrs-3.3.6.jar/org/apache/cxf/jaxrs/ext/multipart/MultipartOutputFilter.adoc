@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/multipart/MultipartOutputFilter.class
-
- - link:MultipartOutputFilter-asmified.java[Asmified]
-
-== References
-

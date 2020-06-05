@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$ExclusiveConnectionModeProp.class
-
- - link:PropertiesHandler$ExclusiveConnectionModeProp-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/FlashProducer.class
-
- - link:FlashProducer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/ContextCase.class
-
- - link:ContextCase-asmified.java[Asmified]
-
-== References
-

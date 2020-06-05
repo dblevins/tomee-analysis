@@ -1,6 +1,0 @@
-= org/apache/webbeans/proxy/AbstractProxyFactory$1.class
-
- - link:AbstractProxyFactory$1-asmified.java[Asmified]
-
-== References
-

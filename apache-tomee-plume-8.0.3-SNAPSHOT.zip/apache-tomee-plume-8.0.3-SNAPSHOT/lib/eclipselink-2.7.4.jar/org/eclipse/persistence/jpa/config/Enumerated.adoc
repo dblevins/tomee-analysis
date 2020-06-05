@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Enumerated.class
-
- - link:Enumerated-asmified.java[Asmified]
-
-== References
-

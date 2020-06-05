@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/viewstate/StateCacheUtils.class
-
- - link:StateCacheUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/resource/DefaultResourceManager.class
-
- - link:DefaultResourceManager-asmified.java[Asmified]
-
-== References
-

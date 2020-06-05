@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ee/servlet/QuartzInitializerListener.class
-
- - link:QuartzInitializerListener-asmified.java[Asmified]
-
-== References
-

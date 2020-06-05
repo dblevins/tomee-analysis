@@ -1,6 +1,0 @@
-= jakarta/persistence/spi/PersistenceUnitInfo.class
-
- - link:PersistenceUnitInfo-asmified.java[Asmified]
-
-== References
-

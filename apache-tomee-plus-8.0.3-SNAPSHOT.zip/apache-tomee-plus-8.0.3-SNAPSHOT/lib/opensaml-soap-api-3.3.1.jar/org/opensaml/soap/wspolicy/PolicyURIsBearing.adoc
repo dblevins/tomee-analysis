@@ -1,6 +1,0 @@
-= org/opensaml/soap/wspolicy/PolicyURIsBearing.class
-
- - link:PolicyURIsBearing-asmified.java[Asmified]
-
-== References
-

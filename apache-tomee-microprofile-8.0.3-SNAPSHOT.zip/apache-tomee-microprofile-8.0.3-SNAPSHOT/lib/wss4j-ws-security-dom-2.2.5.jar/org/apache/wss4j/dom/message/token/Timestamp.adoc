@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/token/Timestamp.class
-
- - link:Timestamp-asmified.java[Asmified]
-
-== References
-

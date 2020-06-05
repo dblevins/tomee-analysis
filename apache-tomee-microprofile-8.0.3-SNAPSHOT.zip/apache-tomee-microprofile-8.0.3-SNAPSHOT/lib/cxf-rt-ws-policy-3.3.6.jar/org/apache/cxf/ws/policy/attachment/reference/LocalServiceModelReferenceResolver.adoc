@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/attachment/reference/LocalServiceModelReferenceResolver.class
-
- - link:LocalServiceModelReferenceResolver-asmified.java[Asmified]
-
-== References
-

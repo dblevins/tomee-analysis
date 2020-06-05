@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/smtp/SMTPTransport.class
-
- - link:SMTPTransport-asmified.java[Asmified]
-
-== References
-

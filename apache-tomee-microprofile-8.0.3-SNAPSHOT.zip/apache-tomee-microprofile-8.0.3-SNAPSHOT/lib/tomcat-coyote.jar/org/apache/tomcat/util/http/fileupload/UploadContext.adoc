@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/UploadContext.class
-
- - link:UploadContext-asmified.java[Asmified]
-
-== References
-

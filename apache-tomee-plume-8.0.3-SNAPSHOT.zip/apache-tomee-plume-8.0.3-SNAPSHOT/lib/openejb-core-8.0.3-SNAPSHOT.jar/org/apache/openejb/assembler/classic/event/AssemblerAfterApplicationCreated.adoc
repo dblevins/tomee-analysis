@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/event/AssemblerAfterApplicationCreated.class
-
- - link:AssemblerAfterApplicationCreated-asmified.java[Asmified]
-
-== References
-

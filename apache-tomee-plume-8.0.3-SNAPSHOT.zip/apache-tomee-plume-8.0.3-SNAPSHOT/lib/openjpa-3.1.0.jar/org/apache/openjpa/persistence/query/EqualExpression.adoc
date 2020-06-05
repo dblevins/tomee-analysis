@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/EqualExpression.class
-
- - link:EqualExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/PercentLimitUsage.class
-
- - link:PercentLimitUsage-asmified.java[Asmified]
-
-== References
-

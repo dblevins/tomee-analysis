@@ -1,6 +1,0 @@
-= jakarta/ws/rs/sse/SseEventSource.class
-
- - link:SseEventSource-asmified.java[Asmified]
-
-== References
-

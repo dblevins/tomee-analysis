@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$TableSwitchRule.class
-
- - link:ASMContentHandler$TableSwitchRule-asmified.java[Asmified]
-
-== References
-

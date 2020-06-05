@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/EndpointException.class
-
- - link:EndpointException-asmified.java[Asmified]
-
-== References
-

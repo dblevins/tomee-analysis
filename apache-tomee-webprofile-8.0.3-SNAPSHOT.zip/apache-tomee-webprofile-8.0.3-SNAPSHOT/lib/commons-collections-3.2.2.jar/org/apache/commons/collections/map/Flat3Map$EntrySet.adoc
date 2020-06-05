@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/Flat3Map$EntrySet.class
-
- - link:Flat3Map$EntrySet-asmified.java[Asmified]
-
-== References
-

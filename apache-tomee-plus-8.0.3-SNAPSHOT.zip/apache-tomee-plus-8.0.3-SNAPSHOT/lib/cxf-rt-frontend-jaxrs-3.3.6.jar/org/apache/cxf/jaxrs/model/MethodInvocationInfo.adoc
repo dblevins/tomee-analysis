@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/MethodInvocationInfo.class
-
- - link:MethodInvocationInfo-asmified.java[Asmified]
-
-== References
-

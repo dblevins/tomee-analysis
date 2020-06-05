@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/crypto/ThreadLocalSecurityProvider.class
-
- - link:ThreadLocalSecurityProvider-asmified.java[Asmified]
-
-== References
-

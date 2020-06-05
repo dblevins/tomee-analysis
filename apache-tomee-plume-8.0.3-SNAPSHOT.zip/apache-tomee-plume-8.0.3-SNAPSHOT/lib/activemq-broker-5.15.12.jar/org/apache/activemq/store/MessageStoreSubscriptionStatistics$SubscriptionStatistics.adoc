@@ -1,6 +1,0 @@
-= org/apache/activemq/store/MessageStoreSubscriptionStatistics$SubscriptionStatistics.class
-
- - link:MessageStoreSubscriptionStatistics$SubscriptionStatistics-asmified.java[Asmified]
-
-== References
-

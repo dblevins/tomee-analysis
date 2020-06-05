@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/LiteralCommentInstruction.class
-
- - link:LiteralCommentInstruction-asmified.java[Asmified]
-
-== References
-

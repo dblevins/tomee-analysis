@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/ViewScopeExtension.class
-
- - link:ViewScopeExtension-asmified.java[Asmified]
-
-== References
-

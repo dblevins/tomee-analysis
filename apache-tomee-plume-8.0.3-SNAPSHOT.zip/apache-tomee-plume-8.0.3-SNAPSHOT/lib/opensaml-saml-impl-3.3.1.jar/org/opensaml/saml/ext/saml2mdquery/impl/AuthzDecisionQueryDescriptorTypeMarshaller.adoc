@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdquery/impl/AuthzDecisionQueryDescriptorTypeMarshaller.class
-
- - link:AuthzDecisionQueryDescriptorTypeMarshaller-asmified.java[Asmified]
-
-== References
-

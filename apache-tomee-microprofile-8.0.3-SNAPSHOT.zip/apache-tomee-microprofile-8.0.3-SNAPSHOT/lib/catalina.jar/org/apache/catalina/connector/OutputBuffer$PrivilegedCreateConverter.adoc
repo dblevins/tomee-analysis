@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/OutputBuffer$PrivilegedCreateConverter.class
-
- - link:OutputBuffer$PrivilegedCreateConverter-asmified.java[Asmified]
-
-== References
-

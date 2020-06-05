@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/custom/sec/SecP256R1Curve.class
-
- - link:SecP256R1Curve-asmified.java[Asmified]
-
-== References
-

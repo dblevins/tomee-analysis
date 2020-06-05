@@ -1,7 +1,0 @@
-= javax/validation/constraints/PastOrPresent$List.class
-
- - link:PastOrPresent$List-asmified.java[Asmified]
-
-== References
-
- - javax.validation.constraints.PastOrPresent - 1

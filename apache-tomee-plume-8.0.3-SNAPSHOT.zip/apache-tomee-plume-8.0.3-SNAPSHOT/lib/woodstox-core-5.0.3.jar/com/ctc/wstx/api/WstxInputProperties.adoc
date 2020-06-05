@@ -1,6 +1,0 @@
-= com/ctc/wstx/api/WstxInputProperties.class
-
- - link:WstxInputProperties-asmified.java[Asmified]
-
-== References
-

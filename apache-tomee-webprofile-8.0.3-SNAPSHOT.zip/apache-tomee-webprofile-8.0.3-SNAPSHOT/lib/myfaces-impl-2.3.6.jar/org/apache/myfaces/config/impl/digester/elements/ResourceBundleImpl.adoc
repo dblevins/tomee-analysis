@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ResourceBundleImpl.class
-
- - link:ResourceBundleImpl-asmified.java[Asmified]
-
-== References
-

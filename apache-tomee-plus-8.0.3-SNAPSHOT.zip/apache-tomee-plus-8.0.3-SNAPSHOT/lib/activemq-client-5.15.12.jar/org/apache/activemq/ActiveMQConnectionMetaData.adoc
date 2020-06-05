@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQConnectionMetaData.class
-
- - link:ActiveMQConnectionMetaData-asmified.java[Asmified]
-
-== References
-

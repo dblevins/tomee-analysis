@@ -1,6 +1,0 @@
-= org/apache/cxf/phase/PhaseChainCache$ChainHolder.class
-
- - link:PhaseChainCache$ChainHolder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/JDBCStoreQuery$1.class
-
- - link:JDBCStoreQuery$1-asmified.java[Asmified]
-
-== References
-

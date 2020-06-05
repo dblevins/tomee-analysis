@@ -1,6 +1,0 @@
-= org/apache/openejb/client/IdentityResolver.class
-
- - link:IdentityResolver-asmified.java[Asmified]
-
-== References
-

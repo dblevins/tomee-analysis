@@ -1,6 +1,0 @@
-= jakarta/faces/event/PostPutFlashValueEvent.class
-
- - link:PostPutFlashValueEvent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/ClassType.class
-
- - link:ClassType-asmified.java[Asmified]
-
-== References
-

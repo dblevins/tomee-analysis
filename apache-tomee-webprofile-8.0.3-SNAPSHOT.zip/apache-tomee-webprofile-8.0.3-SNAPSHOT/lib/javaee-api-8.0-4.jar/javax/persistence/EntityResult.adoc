@@ -1,7 +1,0 @@
-= javax/persistence/EntityResult.class
-
- - link:EntityResult-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.FieldResult - 1

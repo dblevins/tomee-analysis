@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/Parser$1TypeVisitor.class
-
- - link:Parser$1TypeVisitor-asmified.java[Asmified]
-
-== References
-

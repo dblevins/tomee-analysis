@@ -1,6 +1,0 @@
-= org/apache/commons/digester/AbstractRulesImpl.class
-
- - link:AbstractRulesImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/slf4j/helpers/SubstituteLogger.class
-
- - link:SubstituteLogger-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/ContextFactory.class
-
- - link:ContextFactory-asmified.java[Asmified]
-
-== References
-

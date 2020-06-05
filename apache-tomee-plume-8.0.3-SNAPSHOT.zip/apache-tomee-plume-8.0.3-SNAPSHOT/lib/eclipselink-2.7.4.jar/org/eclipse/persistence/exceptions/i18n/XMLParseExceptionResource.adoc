@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/i18n/XMLParseExceptionResource.class
-
- - link:XMLParseExceptionResource-asmified.java[Asmified]
-
-== References
-

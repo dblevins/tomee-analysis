@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/DateEditor.class
-
- - link:DateEditor-asmified.java[Asmified]
-
-== References
-

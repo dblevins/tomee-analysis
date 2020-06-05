@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/servicelist/UnformattedServiceListWriter.class
-
- - link:UnformattedServiceListWriter-asmified.java[Asmified]
-
-== References
-

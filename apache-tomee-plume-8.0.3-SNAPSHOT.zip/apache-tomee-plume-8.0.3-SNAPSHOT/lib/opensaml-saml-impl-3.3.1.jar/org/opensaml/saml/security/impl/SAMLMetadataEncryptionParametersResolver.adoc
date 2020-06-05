@@ -1,6 +1,0 @@
-= org/opensaml/saml/security/impl/SAMLMetadataEncryptionParametersResolver.class
-
- - link:SAMLMetadataEncryptionParametersResolver-asmified.java[Asmified]
-
-== References
-

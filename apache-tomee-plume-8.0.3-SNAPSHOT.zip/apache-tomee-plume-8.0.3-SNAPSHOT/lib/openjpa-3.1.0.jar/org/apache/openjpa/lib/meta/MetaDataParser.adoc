@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/meta/MetaDataParser.class
-
- - link:MetaDataParser-asmified.java[Asmified]
-
-== References
-

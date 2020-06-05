@@ -1,6 +1,0 @@
-= jakarta/persistence/PrimaryKeyJoinColumn.class
-
- - link:PrimaryKeyJoinColumn-asmified.java[Asmified]
-
-== References
-

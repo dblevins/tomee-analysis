@@ -1,6 +1,0 @@
-= org/apache/activemq/util/MarshallingSupport.class
-
- - link:MarshallingSupport-asmified.java[Asmified]
-
-== References
-

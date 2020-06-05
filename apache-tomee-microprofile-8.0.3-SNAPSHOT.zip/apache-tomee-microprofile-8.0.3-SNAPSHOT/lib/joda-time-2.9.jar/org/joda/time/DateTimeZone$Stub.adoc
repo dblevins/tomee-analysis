@@ -1,6 +1,0 @@
-= org/joda/time/DateTimeZone$Stub.class
-
- - link:DateTimeZone$Stub-asmified.java[Asmified]
-
-== References
-

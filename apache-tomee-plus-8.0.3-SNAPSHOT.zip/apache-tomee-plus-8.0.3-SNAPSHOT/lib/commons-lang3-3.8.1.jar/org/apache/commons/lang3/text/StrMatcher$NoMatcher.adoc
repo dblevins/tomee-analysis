@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/StrMatcher$NoMatcher.class
-
- - link:StrMatcher$NoMatcher-asmified.java[Asmified]
-
-== References
-

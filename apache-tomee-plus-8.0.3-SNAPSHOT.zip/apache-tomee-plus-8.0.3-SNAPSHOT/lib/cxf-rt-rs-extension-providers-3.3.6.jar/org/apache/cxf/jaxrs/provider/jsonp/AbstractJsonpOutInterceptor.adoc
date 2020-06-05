@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/jsonp/AbstractJsonpOutInterceptor.class
-
- - link:AbstractJsonpOutInterceptor-asmified.java[Asmified]
-
-== References
-

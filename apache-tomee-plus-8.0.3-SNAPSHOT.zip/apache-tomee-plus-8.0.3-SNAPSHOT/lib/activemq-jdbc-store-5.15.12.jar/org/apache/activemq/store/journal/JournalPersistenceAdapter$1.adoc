@@ -1,6 +1,0 @@
-= org/apache/activemq/store/journal/JournalPersistenceAdapter$1.class
-
- - link:JournalPersistenceAdapter$1-asmified.java[Asmified]
-
-== References
-

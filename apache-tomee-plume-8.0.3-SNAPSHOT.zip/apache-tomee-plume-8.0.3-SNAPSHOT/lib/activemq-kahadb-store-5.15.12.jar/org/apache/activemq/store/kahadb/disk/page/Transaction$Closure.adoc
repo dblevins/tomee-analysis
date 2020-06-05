@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/page/Transaction$Closure.class
-
- - link:Transaction$Closure-asmified.java[Asmified]
-
-== References
-

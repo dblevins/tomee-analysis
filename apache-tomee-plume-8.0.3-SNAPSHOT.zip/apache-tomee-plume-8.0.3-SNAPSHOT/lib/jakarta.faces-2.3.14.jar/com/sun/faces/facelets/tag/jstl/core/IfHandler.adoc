@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/core/IfHandler.class
-
- - link:IfHandler-asmified.java[Asmified]
-
-== References
-

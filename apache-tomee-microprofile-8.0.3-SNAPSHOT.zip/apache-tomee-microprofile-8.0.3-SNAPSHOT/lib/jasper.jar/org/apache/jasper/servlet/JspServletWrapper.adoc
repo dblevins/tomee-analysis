@@ -1,6 +1,0 @@
-= org/apache/jasper/servlet/JspServletWrapper.class
-
- - link:JspServletWrapper-asmified.java[Asmified]
-
-== References
-

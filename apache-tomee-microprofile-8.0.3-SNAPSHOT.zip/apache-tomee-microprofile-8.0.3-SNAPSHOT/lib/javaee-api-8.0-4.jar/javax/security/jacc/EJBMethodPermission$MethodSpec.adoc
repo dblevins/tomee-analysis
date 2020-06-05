@@ -1,8 +1,0 @@
-= javax/security/jacc/EJBMethodPermission$MethodSpec.class
-
- - link:EJBMethodPermission$MethodSpec-asmified.java[Asmified]
-
-== References
-
- - javax.security.jacc.EJBMethodPermission$MethodSpec - 22
- - javax.security.jacc.EJBMethodPermission - 2

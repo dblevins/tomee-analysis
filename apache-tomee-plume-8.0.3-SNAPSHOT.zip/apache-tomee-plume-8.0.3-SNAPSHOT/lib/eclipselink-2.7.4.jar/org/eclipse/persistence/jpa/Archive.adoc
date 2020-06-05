@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/Archive.class
-
- - link:Archive-asmified.java[Asmified]
-
-== References
-

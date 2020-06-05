@@ -1,7 +1,0 @@
-= javax/servlet/http/RFC6265Validator.class
-
- - link:RFC6265Validator-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.http.CookieNameValidator - 2

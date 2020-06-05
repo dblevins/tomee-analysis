@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/OptionalExtractor$ForDouble.class
-
- - link:OptionalExtractor$ForDouble-asmified.java[Asmified]
-
-== References
-

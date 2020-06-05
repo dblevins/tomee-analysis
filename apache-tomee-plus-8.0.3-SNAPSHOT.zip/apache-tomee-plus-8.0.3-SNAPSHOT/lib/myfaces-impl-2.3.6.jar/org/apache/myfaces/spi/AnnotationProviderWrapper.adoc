@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/AnnotationProviderWrapper.class
-
- - link:AnnotationProviderWrapper-asmified.java[Asmified]
-
-== References
-

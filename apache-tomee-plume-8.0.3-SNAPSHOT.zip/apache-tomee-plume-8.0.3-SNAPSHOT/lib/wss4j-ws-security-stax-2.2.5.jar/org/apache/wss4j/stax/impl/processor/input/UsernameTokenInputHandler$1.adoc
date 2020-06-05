@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/input/UsernameTokenInputHandler$1.class
-
- - link:UsernameTokenInputHandler$1-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/resource/spi/ValidatingManagedConnectionFactory.class
-
- - link:ValidatingManagedConnectionFactory-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 1

@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/FormOmittedChecker.class
-
- - link:FormOmittedChecker-asmified.java[Asmified]
-
-== References
-

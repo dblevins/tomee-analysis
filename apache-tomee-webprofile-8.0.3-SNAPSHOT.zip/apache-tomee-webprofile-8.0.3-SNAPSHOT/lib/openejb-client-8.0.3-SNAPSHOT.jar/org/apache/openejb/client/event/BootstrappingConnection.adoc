@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/BootstrappingConnection.class
-
- - link:BootstrappingConnection-asmified.java[Asmified]
-
-== References
-

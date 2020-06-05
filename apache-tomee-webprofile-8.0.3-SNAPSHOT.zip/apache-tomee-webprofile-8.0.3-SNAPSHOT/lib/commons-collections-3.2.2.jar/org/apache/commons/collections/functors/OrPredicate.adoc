@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/OrPredicate.class
-
- - link:OrPredicate-asmified.java[Asmified]
-
-== References
-

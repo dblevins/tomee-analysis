@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/ConditionalOperator.class
-
- - link:ConditionalOperator-asmified.java[Asmified]
-
-== References
-

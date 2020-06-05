@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/HpackEncoder.class
-
- - link:HpackEncoder-asmified.java[Asmified]
-
-== References
-

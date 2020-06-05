@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/ReadOnlyContext$ListEnumeration.class
-
- - link:ReadOnlyContext$ListEnumeration-asmified.java[Asmified]
-
-== References
-

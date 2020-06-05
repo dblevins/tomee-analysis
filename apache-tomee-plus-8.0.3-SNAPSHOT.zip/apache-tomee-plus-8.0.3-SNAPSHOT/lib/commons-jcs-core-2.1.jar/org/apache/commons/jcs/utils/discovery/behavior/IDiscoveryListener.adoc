@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/discovery/behavior/IDiscoveryListener.class
-
- - link:IDiscoveryListener-asmified.java[Asmified]
-
-== References
-

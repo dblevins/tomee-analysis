@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/evt/AttributeEventImpl.class
-
- - link:AttributeEventImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/security/claims/authorization/Claim.class
-
- - link:Claim-asmified.java[Asmified]
-
-== References
-

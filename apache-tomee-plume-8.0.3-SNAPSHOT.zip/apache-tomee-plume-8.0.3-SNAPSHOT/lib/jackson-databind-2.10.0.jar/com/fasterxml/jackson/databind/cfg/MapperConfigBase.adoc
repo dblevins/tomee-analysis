@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/cfg/MapperConfigBase.class
-
- - link:MapperConfigBase-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/batchee/BatchEEServiceManager$TomEEThreadPoolService.class
-
- - link:BatchEEServiceManager$TomEEThreadPoolService-asmified.java[Asmified]
-
-== References
-

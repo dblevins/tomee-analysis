@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/logwriters/CustomLogWriter.class
-
- - link:CustomLogWriter-asmified.java[Asmified]
-
-== References
-

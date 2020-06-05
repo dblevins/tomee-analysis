@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/helper/SDOMarshalListener.class
-
- - link:SDOMarshalListener-asmified.java[Asmified]
-
-== References
-

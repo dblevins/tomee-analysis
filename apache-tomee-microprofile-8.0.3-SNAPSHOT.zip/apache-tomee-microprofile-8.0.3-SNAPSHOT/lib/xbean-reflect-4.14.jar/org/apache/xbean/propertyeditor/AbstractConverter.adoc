@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/AbstractConverter.class
-
- - link:AbstractConverter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/ClusterRequestHandler$Data.class
-
- - link:ClusterRequestHandler$Data-asmified.java[Asmified]
-
-== References
-

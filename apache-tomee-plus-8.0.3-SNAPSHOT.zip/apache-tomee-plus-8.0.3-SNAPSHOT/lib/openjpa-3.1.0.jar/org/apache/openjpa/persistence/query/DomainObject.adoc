@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/DomainObject.class
-
- - link:DomainObject-asmified.java[Asmified]
-
-== References
-

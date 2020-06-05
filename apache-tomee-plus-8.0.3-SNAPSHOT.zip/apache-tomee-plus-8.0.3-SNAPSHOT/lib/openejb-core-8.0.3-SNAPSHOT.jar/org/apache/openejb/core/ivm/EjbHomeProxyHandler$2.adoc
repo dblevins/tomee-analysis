@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/EjbHomeProxyHandler$2.class
-
- - link:EjbHomeProxyHandler$2-asmified.java[Asmified]
-
-== References
-

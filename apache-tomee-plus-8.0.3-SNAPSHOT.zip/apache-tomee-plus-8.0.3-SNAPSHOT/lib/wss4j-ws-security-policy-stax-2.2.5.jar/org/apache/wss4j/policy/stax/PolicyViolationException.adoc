@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/PolicyViolationException.class
-
- - link:PolicyViolationException-asmified.java[Asmified]
-
-== References
-

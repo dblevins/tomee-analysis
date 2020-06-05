@@ -1,9 +1,0 @@
-= javax/el/CompositeELResolver$FeatureIterator.class
-
- - link:CompositeELResolver$FeatureIterator-asmified.java[Asmified]
-
-== References
-
- - javax.el.CompositeELResolver$FeatureIterator - 5
- - javax.el.ELContext - 5
- - javax.el.ELResolver - 5

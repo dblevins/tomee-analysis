@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/SqlResultSetMapping.class
-
- - link:SqlResultSetMapping-asmified.java[Asmified]
-
-== References
-

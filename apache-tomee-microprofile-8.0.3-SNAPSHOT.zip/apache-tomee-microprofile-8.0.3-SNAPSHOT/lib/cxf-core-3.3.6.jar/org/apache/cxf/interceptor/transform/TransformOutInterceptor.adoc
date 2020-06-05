@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/transform/TransformOutInterceptor.class
-
- - link:TransformOutInterceptor-asmified.java[Asmified]
-
-== References
-

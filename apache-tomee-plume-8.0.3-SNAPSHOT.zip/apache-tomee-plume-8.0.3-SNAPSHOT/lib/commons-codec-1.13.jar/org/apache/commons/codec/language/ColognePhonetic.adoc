@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/ColognePhonetic.class
-
- - link:ColognePhonetic-asmified.java[Asmified]
-
-== References
-

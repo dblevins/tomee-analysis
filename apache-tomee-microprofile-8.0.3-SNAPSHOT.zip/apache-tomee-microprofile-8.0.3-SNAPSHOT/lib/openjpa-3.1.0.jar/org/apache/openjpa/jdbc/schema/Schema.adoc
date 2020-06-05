@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/Schema.class
-
- - link:Schema-asmified.java[Asmified]
-
-== References
-

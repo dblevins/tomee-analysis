@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/TransactionTimer$CurrentTime.class
-
- - link:TransactionTimer$CurrentTime-asmified.java[Asmified]
-
-== References
-

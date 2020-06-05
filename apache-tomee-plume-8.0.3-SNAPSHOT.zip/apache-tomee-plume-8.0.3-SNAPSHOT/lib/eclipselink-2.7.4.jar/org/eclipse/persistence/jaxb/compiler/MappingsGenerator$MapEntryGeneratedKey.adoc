@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/MappingsGenerator$MapEntryGeneratedKey.class
-
- - link:MappingsGenerator$MapEntryGeneratedKey-asmified.java[Asmified]
-
-== References
-

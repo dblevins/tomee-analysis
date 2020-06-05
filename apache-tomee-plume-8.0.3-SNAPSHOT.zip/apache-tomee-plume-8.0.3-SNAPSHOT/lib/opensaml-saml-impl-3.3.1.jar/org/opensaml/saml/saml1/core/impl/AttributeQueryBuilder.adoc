@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AttributeQueryBuilder.class
-
- - link:AttributeQueryBuilder-asmified.java[Asmified]
-
-== References
-

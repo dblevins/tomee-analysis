@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/Logger.class
-
- - link:Logger-asmified.java[Asmified]
-
-== References
-

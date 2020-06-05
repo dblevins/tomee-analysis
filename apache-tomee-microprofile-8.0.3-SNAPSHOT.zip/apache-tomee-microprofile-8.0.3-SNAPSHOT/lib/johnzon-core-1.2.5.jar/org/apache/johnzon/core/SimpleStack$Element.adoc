@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/SimpleStack$Element.class
-
- - link:SimpleStack$Element-asmified.java[Asmified]
-
-== References
-

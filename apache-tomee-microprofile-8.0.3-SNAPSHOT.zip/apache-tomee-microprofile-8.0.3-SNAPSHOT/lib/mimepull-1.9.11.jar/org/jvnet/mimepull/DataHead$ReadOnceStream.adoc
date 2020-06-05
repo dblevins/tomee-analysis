@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/DataHead$ReadOnceStream.class
-
- - link:DataHead$ReadOnceStream-asmified.java[Asmified]
-
-== References
-

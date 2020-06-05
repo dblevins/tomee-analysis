@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/parser/SkipResult.class
-
- - link:SkipResult-asmified.java[Asmified]
-
-== References
-

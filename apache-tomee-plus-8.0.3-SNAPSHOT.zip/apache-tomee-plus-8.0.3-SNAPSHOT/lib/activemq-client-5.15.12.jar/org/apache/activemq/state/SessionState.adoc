@@ -1,6 +1,0 @@
-= org/apache/activemq/state/SessionState.class
-
- - link:SessionState-asmified.java[Asmified]
-
-== References
-

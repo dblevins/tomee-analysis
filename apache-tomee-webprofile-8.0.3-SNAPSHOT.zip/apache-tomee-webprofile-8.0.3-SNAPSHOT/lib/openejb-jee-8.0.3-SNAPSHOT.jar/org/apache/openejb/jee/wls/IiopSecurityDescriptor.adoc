@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/IiopSecurityDescriptor.class
-
- - link:IiopSecurityDescriptor-asmified.java[Asmified]
-
-== References
-

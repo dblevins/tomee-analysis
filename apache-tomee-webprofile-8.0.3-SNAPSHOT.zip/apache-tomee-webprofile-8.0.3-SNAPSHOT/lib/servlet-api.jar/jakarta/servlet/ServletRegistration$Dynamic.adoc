@@ -1,6 +1,0 @@
-= jakarta/servlet/ServletRegistration$Dynamic.class
-
- - link:ServletRegistration$Dynamic-asmified.java[Asmified]
-
-== References
-

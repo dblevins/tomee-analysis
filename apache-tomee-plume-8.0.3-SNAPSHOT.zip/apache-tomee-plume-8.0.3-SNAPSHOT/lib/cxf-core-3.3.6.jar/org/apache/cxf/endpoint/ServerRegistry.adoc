@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/ServerRegistry.class
-
- - link:ServerRegistry-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/webresources/CachedResource.class
-
- - link:CachedResource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/JoinTable.class
-
- - link:JoinTable-asmified.java[Asmified]
-
-== References
-

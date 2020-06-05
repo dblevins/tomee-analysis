@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/Assembler.class
-
- - link:Assembler-asmified.java[Asmified]
-
-== References
-

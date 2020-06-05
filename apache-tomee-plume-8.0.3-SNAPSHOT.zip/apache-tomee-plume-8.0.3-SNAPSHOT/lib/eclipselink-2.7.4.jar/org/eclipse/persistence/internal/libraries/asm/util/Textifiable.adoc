@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/Textifiable.class
-
- - link:Textifiable-asmified.java[Asmified]
-
-== References
-

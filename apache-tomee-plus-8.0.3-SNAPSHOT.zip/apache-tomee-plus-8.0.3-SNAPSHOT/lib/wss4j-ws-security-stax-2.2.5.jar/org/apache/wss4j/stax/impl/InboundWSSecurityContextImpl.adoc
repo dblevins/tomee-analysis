@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/InboundWSSecurityContextImpl.class
-
- - link:InboundWSSecurityContextImpl-asmified.java[Asmified]
-
-== References
-

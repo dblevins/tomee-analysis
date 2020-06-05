@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/SignedData.class
-
- - link:SignedData-asmified.java[Asmified]
-
-== References
-

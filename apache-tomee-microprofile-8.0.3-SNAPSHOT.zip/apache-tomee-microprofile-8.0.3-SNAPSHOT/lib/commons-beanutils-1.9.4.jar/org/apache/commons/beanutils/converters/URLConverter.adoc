@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/URLConverter.class
-
- - link:URLConverter-asmified.java[Asmified]
-
-== References
-

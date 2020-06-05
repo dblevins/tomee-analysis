@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$EncoderEntry.class
-
- - link:WsRemoteEndpointImplBase$EncoderEntry-asmified.java[Asmified]
-
-== References
-

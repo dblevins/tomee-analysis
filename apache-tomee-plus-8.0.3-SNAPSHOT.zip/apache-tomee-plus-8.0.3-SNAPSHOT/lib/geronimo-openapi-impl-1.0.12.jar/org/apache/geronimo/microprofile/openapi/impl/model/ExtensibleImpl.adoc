@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/ExtensibleImpl.class
-
- - link:ExtensibleImpl-asmified.java[Asmified]
-
-== References
-

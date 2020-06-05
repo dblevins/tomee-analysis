@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/OpenEJBNamingResource.class
-
- - link:OpenEJBNamingResource-asmified.java[Asmified]
-
-== References
-

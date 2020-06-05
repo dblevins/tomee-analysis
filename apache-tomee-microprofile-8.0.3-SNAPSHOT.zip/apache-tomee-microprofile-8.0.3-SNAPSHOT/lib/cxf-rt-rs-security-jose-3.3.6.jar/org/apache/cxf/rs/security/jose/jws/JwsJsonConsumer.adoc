@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/JwsJsonConsumer.class
-
- - link:JwsJsonConsumer-asmified.java[Asmified]
-
-== References
-

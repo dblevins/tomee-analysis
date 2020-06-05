@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/EBCDICCodec.class
-
- - link:EBCDICCodec-asmified.java[Asmified]
-
-== References
-

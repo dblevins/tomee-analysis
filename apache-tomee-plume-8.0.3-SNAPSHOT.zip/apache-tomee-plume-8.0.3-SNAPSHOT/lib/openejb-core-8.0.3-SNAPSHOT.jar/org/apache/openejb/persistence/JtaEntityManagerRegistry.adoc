@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/JtaEntityManagerRegistry.class
-
- - link:JtaEntityManagerRegistry-asmified.java[Asmified]
-
-== References
-

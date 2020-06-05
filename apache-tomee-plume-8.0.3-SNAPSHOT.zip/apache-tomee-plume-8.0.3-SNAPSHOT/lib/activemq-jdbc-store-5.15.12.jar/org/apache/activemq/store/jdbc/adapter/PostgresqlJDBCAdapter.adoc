@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/PostgresqlJDBCAdapter.class
-
- - link:PostgresqlJDBCAdapter-asmified.java[Asmified]
-
-== References
-

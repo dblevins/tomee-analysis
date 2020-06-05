@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/FunctorUtils.class
-
- - link:FunctorUtils-asmified.java[Asmified]
-
-== References
-

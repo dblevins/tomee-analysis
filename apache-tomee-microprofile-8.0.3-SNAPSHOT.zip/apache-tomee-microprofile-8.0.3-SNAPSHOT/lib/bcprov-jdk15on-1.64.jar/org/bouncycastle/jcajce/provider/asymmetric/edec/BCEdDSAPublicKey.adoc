@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/asymmetric/edec/BCEdDSAPublicKey.class
-
- - link:BCEdDSAPublicKey-asmified.java[Asmified]
-
-== References
-

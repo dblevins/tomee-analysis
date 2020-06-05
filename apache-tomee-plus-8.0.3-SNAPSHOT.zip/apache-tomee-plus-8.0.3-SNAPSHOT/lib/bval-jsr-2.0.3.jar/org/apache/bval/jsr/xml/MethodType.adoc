@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/MethodType.class
-
- - link:MethodType-asmified.java[Asmified]
-
-== References
-

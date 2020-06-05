@@ -1,6 +1,0 @@
-= org/hsqldb/persist/IntArrayCachedObject.class
-
- - link:IntArrayCachedObject-asmified.java[Asmified]
-
-== References
-

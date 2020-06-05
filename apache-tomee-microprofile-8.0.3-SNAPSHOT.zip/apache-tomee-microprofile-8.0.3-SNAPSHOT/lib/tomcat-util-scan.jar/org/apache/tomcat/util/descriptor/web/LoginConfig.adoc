@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/LoginConfig.class
-
- - link:LoginConfig-asmified.java[Asmified]
-
-== References
-

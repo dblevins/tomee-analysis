@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/PredicatedMap.class
-
- - link:PredicatedMap-asmified.java[Asmified]
-
-== References
-

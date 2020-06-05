@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/visitor/PropertyValidator.class
-
- - link:PropertyValidator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/servlet/RequestHeaderValuesMap.class
-
- - link:RequestHeaderValuesMap-asmified.java[Asmified]
-
-== References
-

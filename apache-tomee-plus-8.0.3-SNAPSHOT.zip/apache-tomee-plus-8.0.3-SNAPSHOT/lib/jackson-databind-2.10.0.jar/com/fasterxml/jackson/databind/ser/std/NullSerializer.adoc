@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/NullSerializer.class
-
- - link:NullSerializer-asmified.java[Asmified]
-
-== References
-

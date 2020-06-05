@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/SerializableDescriptorEventHolder.class
-
- - link:SerializableDescriptorEventHolder-asmified.java[Asmified]
-
-== References
-

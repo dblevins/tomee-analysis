@@ -1,6 +1,0 @@
-= com/sun/faces/util/copier/CloneCopier.class
-
- - link:CloneCopier-asmified.java[Asmified]
-
-== References
-

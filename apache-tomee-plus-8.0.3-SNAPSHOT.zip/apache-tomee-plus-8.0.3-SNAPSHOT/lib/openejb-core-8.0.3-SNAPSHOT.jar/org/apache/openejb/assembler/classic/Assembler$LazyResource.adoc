@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/Assembler$LazyResource.class
-
- - link:Assembler$LazyResource-asmified.java[Asmified]
-
-== References
-

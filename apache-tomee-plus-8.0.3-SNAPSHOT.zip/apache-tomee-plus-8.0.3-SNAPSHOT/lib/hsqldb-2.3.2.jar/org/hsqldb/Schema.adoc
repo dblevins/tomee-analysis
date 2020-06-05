@@ -1,6 +1,0 @@
-= org/hsqldb/Schema.class
-
- - link:Schema-asmified.java[Asmified]
-
-== References
-

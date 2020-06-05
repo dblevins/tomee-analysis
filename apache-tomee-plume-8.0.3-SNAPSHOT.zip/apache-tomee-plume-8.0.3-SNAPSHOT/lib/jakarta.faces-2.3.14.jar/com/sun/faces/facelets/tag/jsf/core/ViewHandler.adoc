@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/ViewHandler.class
-
- - link:ViewHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ApplicationComposerDeployer.class
-
- - link:ApplicationComposerDeployer-asmified.java[Asmified]
-
-== References
-

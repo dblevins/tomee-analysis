@@ -1,6 +1,0 @@
-= org/apache/el/lang/ELArithmetic$DoubleDelegate.class
-
- - link:ELArithmetic$DoubleDelegate-asmified.java[Asmified]
-
-== References
-

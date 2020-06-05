@@ -1,2 +1,0 @@
-= apache-tomee-plus-8.0.3-SNAPSHOT/lib/quartz-openejb-shade-2.2.1.jar
-

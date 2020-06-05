@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/json/schema/model/JsonType.class
-
- - link:JsonType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlSelectManyMenu.class
-
- - link:HtmlSelectManyMenu-asmified.java[Asmified]
-
-== References
-

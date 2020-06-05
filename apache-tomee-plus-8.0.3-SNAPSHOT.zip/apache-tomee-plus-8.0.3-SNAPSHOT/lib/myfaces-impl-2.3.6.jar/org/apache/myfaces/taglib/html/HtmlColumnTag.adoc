@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlColumnTag.class
-
- - link:HtmlColumnTag-asmified.java[Asmified]
-
-== References
-

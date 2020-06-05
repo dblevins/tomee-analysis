@@ -1,6 +1,0 @@
-= org/jose4j/jwa/AlgorithmAvailability.class
-
- - link:AlgorithmAvailability-asmified.java[Asmified]
-
-== References
-

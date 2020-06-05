@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/core/BuiltinLeafInfo.class
-
- - link:BuiltinLeafInfo-asmified.java[Asmified]
-
-== References
-

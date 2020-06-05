@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/JsonFactory.class
-
- - link:JsonFactory-asmified.java[Asmified]
-
-== References
-

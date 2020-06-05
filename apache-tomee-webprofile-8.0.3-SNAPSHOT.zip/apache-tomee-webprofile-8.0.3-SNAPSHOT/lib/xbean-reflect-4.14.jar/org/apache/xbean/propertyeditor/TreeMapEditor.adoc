@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/TreeMapEditor.class
-
- - link:TreeMapEditor-asmified.java[Asmified]
-
-== References
-

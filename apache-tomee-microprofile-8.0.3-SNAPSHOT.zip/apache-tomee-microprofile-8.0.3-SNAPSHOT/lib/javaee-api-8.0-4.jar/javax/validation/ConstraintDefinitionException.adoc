@@ -1,7 +1,0 @@
-= javax/validation/ConstraintDefinitionException.class
-
- - link:ConstraintDefinitionException-asmified.java[Asmified]
-
-== References
-
- - javax.validation.ValidationException - 5

@@ -1,6 +1,0 @@
-= javax/ws/rs/ProcessingException.class
-
- - link:ProcessingException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/InputProcessorChain.class
-
- - link:InputProcessorChain-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/Subgraph.class
-
- - link:Subgraph-asmified.java[Asmified]
-
-== References
-

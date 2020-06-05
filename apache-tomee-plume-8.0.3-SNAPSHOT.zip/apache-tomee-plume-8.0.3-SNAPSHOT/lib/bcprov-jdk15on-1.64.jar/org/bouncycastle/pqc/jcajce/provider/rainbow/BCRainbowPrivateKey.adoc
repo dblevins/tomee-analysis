@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/jcajce/provider/rainbow/BCRainbowPrivateKey.class
-
- - link:BCRainbowPrivateKey-asmified.java[Asmified]
-
-== References
-

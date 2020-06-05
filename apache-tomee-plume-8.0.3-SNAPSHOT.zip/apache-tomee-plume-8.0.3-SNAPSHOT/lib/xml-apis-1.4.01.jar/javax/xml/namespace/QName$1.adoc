@@ -1,6 +1,0 @@
-= javax/xml/namespace/QName$1.class
-
- - link:QName$1-asmified.java[Asmified]
-
-== References
-

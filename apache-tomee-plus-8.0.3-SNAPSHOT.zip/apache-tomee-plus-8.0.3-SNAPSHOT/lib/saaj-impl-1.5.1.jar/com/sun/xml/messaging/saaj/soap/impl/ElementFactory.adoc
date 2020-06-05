@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/impl/ElementFactory.class
-
- - link:ElementFactory-asmified.java[Asmified]
-
-== References
-

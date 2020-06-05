@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AbstractEjbInjectionTarget.class
-
- - link:AbstractEjbInjectionTarget-asmified.java[Asmified]
-
-== References
-

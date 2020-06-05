@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/DependentContext.class
-
- - link:DependentContext-asmified.java[Asmified]
-
-== References
-

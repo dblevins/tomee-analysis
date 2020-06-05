@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/util/AnyLiteral.class
-
- - link:AnyLiteral-asmified.java[Asmified]
-
-== References
-

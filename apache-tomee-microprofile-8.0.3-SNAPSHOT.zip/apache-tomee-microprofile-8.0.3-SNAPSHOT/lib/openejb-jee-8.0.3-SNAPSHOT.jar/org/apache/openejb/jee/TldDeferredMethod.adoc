@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TldDeferredMethod.class
-
- - link:TldDeferredMethod-asmified.java[Asmified]
-
-== References
-

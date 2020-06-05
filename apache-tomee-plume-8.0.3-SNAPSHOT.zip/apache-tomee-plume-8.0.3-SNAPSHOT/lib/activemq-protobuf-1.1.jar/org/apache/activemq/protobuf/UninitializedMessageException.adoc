@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/UninitializedMessageException.class
-
- - link:UninitializedMessageException-asmified.java[Asmified]
-
-== References
-

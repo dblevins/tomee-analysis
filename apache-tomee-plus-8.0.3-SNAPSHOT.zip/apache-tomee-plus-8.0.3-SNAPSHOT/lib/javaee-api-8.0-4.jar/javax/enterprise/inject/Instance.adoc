@@ -1,9 +1,0 @@
-= javax/enterprise/inject/Instance.class
-
- - link:Instance-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.Instance - 6
- - javax.inject.Provider - 1
- - javax.enterprise.util.TypeLiteral - 1

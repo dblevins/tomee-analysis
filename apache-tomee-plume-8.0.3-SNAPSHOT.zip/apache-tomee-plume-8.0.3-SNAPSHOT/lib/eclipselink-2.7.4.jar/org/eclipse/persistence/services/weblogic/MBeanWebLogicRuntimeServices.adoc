@@ -1,6 +1,0 @@
-= org/eclipse/persistence/services/weblogic/MBeanWebLogicRuntimeServices.class
-
- - link:MBeanWebLogicRuntimeServices-asmified.java[Asmified]
-
-== References
-

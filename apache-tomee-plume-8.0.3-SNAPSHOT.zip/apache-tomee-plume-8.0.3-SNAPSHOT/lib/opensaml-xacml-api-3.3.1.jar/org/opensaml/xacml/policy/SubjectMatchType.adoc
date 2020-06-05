@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/SubjectMatchType.class
-
- - link:SubjectMatchType-asmified.java[Asmified]
-
-== References
-

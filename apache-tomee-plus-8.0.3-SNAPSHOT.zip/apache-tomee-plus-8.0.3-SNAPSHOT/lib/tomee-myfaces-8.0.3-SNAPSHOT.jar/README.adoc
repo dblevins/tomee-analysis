@@ -1,2 +1,0 @@
-= apache-tomee-plus-8.0.3-SNAPSHOT/lib/tomee-myfaces-8.0.3-SNAPSHOT.jar
-

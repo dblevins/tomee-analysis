@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/RecoveredProvidesStatement.class
-
- - link:RecoveredProvidesStatement-asmified.java[Asmified]
-
-== References
-

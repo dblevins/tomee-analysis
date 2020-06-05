@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/JavaXmlTypeMapping.class
-
- - link:JavaXmlTypeMapping-asmified.java[Asmified]
-
-== References
-

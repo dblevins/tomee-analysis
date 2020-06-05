@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/search/ChildSearchKeywordResolver.class
-
- - link:ChildSearchKeywordResolver-asmified.java[Asmified]
-
-== References
-

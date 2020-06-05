@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/stax/factory/StAXEventFactory.class
-
- - link:StAXEventFactory-asmified.java[Asmified]
-
-== References
-

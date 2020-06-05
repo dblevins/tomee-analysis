@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/ManagedBeanBuilder.class
-
- - link:ManagedBeanBuilder-asmified.java[Asmified]
-
-== References
-

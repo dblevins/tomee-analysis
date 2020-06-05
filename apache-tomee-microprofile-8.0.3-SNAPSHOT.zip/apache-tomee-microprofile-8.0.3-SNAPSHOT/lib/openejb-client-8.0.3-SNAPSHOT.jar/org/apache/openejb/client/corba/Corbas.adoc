@@ -1,6 +1,0 @@
-= org/apache/openejb/client/corba/Corbas.class
-
- - link:Corbas-asmified.java[Asmified]
-
-== References
-

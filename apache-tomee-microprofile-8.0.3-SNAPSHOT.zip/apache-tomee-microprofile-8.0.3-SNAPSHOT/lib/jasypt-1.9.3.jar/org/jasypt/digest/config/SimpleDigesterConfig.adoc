@@ -1,6 +1,0 @@
-= org/jasypt/digest/config/SimpleDigesterConfig.class
-
- - link:SimpleDigesterConfig-asmified.java[Asmified]
-
-== References
-

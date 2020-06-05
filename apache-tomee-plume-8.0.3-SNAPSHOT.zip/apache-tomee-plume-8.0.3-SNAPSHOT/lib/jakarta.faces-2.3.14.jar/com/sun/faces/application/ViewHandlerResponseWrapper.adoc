@@ -1,6 +1,0 @@
-= com/sun/faces/application/ViewHandlerResponseWrapper.class
-
- - link:ViewHandlerResponseWrapper-asmified.java[Asmified]
-
-== References
-

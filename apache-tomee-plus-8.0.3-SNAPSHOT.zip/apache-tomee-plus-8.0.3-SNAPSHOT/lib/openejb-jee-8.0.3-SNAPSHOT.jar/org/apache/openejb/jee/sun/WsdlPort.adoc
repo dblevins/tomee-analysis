@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/WsdlPort.class
-
- - link:WsdlPort-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/StreamJDBCAdapter.class
-
- - link:StreamJDBCAdapter-asmified.java[Asmified]
-
-== References
-

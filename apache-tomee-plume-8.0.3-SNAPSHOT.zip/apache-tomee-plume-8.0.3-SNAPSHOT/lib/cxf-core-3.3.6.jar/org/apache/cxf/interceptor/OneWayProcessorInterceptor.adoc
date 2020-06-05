@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/OneWayProcessorInterceptor.class
-
- - link:OneWayProcessorInterceptor-asmified.java[Asmified]
-
-== References
-

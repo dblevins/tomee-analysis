@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/CommandLineSupport.class
-
- - link:CommandLineSupport-asmified.java[Asmified]
-
-== References
-

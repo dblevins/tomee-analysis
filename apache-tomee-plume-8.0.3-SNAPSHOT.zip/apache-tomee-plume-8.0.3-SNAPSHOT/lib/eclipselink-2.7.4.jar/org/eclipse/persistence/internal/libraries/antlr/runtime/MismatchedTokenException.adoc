@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/MismatchedTokenException.class
-
- - link:MismatchedTokenException-asmified.java[Asmified]
-
-== References
-

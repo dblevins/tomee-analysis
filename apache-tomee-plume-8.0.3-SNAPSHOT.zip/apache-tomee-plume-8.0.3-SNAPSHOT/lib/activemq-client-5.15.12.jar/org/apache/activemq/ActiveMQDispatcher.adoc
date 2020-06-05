@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQDispatcher.class
-
- - link:ActiveMQDispatcher-asmified.java[Asmified]
-
-== References
-

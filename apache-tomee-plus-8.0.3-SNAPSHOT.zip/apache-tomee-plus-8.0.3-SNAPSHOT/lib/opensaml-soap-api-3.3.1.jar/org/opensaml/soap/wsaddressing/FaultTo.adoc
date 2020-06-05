@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/FaultTo.class
-
- - link:FaultTo-asmified.java[Asmified]
-
-== References
-

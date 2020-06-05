@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/QNameSupport.class
-
- - link:QNameSupport-asmified.java[Asmified]
-
-== References
-

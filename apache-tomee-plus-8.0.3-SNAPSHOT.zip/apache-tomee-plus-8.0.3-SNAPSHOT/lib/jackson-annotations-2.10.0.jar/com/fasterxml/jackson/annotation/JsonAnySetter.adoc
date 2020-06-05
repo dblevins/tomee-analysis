@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonAnySetter.class
-
- - link:JsonAnySetter-asmified.java[Asmified]
-
-== References
-

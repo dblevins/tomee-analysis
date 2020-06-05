@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/StaxTransformFeature$Portable.class
-
- - link:StaxTransformFeature$Portable-asmified.java[Asmified]
-
-== References
-

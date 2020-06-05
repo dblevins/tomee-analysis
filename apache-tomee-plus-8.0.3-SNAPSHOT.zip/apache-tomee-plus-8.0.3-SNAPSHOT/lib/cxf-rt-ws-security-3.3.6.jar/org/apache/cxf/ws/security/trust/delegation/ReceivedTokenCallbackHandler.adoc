@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/trust/delegation/ReceivedTokenCallbackHandler.class
-
- - link:ReceivedTokenCallbackHandler-asmified.java[Asmified]
-
-== References
-

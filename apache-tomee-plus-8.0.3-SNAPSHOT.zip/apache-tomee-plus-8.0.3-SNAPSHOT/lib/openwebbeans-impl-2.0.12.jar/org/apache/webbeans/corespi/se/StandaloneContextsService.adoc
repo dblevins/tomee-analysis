@@ -1,6 +1,0 @@
-= org/apache/webbeans/corespi/se/StandaloneContextsService.class
-
- - link:StandaloneContextsService-asmified.java[Asmified]
-
-== References
-

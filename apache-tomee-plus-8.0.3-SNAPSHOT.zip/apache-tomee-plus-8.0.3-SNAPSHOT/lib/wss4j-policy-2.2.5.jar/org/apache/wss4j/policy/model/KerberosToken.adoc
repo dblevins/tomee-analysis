@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/KerberosToken.class
-
- - link:KerberosToken-asmified.java[Asmified]
-
-== References
-

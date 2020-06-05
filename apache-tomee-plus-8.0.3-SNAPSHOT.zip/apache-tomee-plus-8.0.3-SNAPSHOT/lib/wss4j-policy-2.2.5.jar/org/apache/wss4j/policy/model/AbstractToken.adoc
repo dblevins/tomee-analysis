@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/AbstractToken.class
-
- - link:AbstractToken-asmified.java[Asmified]
-
-== References
-

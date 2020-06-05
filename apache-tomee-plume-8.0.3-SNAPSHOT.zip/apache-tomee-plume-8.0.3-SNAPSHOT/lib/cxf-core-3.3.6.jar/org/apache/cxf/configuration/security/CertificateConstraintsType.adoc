@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/CertificateConstraintsType.class
-
- - link:CertificateConstraintsType-asmified.java[Asmified]
-
-== References
-

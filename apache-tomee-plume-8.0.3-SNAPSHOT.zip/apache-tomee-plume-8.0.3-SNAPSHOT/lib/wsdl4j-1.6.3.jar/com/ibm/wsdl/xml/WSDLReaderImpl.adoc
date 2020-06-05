@@ -1,6 +1,0 @@
-= com/ibm/wsdl/xml/WSDLReaderImpl.class
-
- - link:WSDLReaderImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/TransactionIdTransformerAware.class
-
- - link:TransactionIdTransformerAware-asmified.java[Asmified]
-
-== References
-

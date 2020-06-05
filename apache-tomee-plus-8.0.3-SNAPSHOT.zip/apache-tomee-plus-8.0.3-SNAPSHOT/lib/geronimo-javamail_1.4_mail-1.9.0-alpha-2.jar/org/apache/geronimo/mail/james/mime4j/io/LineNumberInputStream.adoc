@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/io/LineNumberInputStream.class
-
- - link:LineNumberInputStream-asmified.java[Asmified]
-
-== References
-

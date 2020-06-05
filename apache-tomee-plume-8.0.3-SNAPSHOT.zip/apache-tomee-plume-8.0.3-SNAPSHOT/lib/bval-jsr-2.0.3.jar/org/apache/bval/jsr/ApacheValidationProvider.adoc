@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/ApacheValidationProvider.class
-
- - link:ApacheValidationProvider-asmified.java[Asmified]
-
-== References
-

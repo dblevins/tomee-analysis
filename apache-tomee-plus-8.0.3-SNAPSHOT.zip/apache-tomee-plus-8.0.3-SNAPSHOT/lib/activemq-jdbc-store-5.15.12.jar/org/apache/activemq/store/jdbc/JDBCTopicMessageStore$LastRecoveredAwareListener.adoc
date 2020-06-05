@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JDBCTopicMessageStore$LastRecoveredAwareListener.class
-
- - link:JDBCTopicMessageStore$LastRecoveredAwareListener-asmified.java[Asmified]
-
-== References
-

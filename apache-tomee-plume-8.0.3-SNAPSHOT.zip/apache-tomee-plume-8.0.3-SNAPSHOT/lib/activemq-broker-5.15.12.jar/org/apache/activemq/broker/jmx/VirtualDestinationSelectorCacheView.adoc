@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/VirtualDestinationSelectorCacheView.class
-
- - link:VirtualDestinationSelectorCacheView-asmified.java[Asmified]
-
-== References
-

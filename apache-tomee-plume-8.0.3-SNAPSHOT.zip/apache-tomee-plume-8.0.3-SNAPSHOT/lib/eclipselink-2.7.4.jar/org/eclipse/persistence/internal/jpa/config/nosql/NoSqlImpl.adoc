@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/nosql/NoSqlImpl.class
-
- - link:NoSqlImpl-asmified.java[Asmified]
-
-== References
-

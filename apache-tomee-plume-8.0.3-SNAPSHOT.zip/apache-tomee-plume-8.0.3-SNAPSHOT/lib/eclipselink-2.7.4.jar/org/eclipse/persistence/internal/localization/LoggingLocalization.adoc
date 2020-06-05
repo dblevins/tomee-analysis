@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/localization/LoggingLocalization.class
-
- - link:LoggingLocalization-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/HintValueConverter$EnumToInteger.class
-
- - link:HintValueConverter$EnumToInteger-asmified.java[Asmified]
-
-== References
-

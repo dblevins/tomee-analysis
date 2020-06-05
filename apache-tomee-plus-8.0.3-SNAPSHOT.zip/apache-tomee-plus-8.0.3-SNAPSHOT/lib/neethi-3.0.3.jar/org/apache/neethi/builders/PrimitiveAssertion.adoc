@@ -1,6 +1,0 @@
-= org/apache/neethi/builders/PrimitiveAssertion.class
-
- - link:PrimitiveAssertion-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/JSONPObject.class
-
- - link:JSONPObject-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/DetachManager.class
-
- - link:DetachManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/AffiliateMemberImpl.class
-
- - link:AffiliateMemberImpl-asmified.java[Asmified]
-
-== References
-

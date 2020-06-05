@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/JspApplicationContext.class
-
- - link:JspApplicationContext-asmified.java[Asmified]
-
-== References
-

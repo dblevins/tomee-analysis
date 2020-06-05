@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/HeartbeatMessageType.class
-
- - link:HeartbeatMessageType-asmified.java[Asmified]
-
-== References
-

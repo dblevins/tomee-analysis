@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/ServiceProvider.class
-
- - link:ServiceProvider-asmified.java[Asmified]
-
-== References
-

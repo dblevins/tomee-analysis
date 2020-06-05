@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/SerializeValueFilter.class
-
- - link:SerializeValueFilter-asmified.java[Asmified]
-
-== References
-

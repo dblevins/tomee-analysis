@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/io/InputDecorator.class
-
- - link:InputDecorator-asmified.java[Asmified]
-
-== References
-

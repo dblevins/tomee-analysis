@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/Table.class
-
- - link:Table-asmified.java[Asmified]
-
-== References
-

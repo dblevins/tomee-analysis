@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/log/NoneLogFactory.class
-
- - link:NoneLogFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/persist/SimpleStore.class
-
- - link:SimpleStore-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/auth/HttpAuthSupplier.class
-
- - link:HttpAuthSupplier-asmified.java[Asmified]
-
-== References
-

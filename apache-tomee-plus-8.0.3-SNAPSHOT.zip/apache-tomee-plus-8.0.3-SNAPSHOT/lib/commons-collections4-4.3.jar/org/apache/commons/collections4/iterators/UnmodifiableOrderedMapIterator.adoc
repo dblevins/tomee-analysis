@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/UnmodifiableOrderedMapIterator.class
-
- - link:UnmodifiableOrderedMapIterator-asmified.java[Asmified]
-
-== References
-

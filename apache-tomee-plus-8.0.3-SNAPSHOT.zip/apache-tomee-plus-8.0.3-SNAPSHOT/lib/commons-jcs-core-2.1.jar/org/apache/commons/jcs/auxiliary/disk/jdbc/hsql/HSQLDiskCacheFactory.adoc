@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/jdbc/hsql/HSQLDiskCacheFactory.class
-
- - link:HSQLDiskCacheFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/LoaderOptions.class
-
- - link:LoaderOptions-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/HeartbeatExtension.class
-
- - link:HeartbeatExtension-asmified.java[Asmified]
-
-== References
-

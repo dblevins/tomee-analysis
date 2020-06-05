@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/config/spi/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

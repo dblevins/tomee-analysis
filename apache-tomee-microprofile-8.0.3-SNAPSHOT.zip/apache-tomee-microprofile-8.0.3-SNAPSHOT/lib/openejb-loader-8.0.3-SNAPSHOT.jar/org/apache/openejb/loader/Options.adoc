@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/Options.class
-
- - link:Options-asmified.java[Asmified]
-
-== References
-

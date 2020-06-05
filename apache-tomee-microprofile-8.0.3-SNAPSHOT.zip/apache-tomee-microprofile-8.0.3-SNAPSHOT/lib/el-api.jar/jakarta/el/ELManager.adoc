@@ -1,6 +1,0 @@
-= jakarta/el/ELManager.class
-
- - link:ELManager-asmified.java[Asmified]
-
-== References
-

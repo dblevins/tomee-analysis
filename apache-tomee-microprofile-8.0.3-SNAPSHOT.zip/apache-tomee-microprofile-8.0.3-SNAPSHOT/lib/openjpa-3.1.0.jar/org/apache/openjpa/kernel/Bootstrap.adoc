@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/Bootstrap.class
-
- - link:Bootstrap-asmified.java[Asmified]
-
-== References
-

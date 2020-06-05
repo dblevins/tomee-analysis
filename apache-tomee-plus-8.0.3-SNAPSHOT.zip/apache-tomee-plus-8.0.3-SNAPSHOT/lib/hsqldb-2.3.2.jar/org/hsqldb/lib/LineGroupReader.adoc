@@ -1,6 +1,0 @@
-= org/hsqldb/lib/LineGroupReader.class
-
- - link:LineGroupReader-asmified.java[Asmified]
-
-== References
-

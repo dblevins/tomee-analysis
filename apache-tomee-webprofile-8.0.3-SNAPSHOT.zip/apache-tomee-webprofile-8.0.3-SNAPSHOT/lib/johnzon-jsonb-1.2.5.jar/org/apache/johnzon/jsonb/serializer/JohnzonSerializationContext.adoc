@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/serializer/JohnzonSerializationContext.class
-
- - link:JohnzonSerializationContext-asmified.java[Asmified]
-
-== References
-

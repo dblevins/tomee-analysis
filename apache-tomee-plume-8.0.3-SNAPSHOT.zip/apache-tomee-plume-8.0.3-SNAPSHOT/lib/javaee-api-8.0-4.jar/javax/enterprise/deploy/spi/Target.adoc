@@ -1,6 +1,0 @@
-= javax/enterprise/deploy/spi/Target.class
-
- - link:Target-asmified.java[Asmified]
-
-== References
-

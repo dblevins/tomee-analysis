@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/converter/JsonbLocalDateTimeConverter.class
-
- - link:JsonbLocalDateTimeConverter-asmified.java[Asmified]
-
-== References
-

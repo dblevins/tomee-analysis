@@ -1,6 +1,0 @@
-= org/hsqldb/lib/InOutUtil.class
-
- - link:InOutUtil-asmified.java[Asmified]
-
-== References
-

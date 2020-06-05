@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomcatThreadContextListener$Data.class
-
- - link:TomcatThreadContextListener$Data-asmified.java[Asmified]
-
-== References
-

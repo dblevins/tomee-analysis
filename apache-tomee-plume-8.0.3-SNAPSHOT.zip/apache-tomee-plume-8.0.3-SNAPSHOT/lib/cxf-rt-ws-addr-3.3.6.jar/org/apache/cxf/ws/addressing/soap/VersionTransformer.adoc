@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/soap/VersionTransformer.class
-
- - link:VersionTransformer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessSessionBeanImpl.class
-
- - link:ProcessSessionBeanImpl-asmified.java[Asmified]
-
-== References
-

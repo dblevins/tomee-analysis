@@ -1,6 +1,0 @@
-= com/ibm/wsdl/util/ObjectRegistry.class
-
- - link:ObjectRegistry-asmified.java[Asmified]
-
-== References
-

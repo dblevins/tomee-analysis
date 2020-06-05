@@ -1,6 +1,0 @@
-= com/sun/faces/util/ExpiringConcurrentCache.class
-
- - link:ExpiringConcurrentCache-asmified.java[Asmified]
-
-== References
-

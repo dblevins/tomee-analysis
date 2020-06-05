@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/LambdaExpression$CompatibilityResult.class
-
- - link:LambdaExpression$CompatibilityResult-asmified.java[Asmified]
-
-== References
-

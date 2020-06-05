@@ -1,6 +1,0 @@
-= org/apache/openejb/web/LightweightWebAppBuilder$EmbeddedInitialContext.class
-
- - link:LightweightWebAppBuilder$EmbeddedInitialContext-asmified.java[Asmified]
-
-== References
-

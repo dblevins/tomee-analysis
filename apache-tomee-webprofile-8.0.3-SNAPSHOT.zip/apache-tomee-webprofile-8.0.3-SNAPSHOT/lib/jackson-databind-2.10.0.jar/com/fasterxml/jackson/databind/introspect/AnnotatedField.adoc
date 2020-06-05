@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotatedField.class
-
- - link:AnnotatedField-asmified.java[Asmified]
-
-== References
-

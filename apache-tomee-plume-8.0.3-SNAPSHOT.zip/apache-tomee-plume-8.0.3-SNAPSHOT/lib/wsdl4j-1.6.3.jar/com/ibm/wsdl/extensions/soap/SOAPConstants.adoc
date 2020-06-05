@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/soap/SOAPConstants.class
-
- - link:SOAPConstants-asmified.java[Asmified]
-
-== References
-

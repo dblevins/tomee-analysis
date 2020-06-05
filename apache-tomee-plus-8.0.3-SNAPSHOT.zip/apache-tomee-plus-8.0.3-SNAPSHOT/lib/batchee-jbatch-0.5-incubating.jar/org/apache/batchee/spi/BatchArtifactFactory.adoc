@@ -1,6 +1,0 @@
-= org/apache/batchee/spi/BatchArtifactFactory.class
-
- - link:BatchArtifactFactory-asmified.java[Asmified]
-
-== References
-

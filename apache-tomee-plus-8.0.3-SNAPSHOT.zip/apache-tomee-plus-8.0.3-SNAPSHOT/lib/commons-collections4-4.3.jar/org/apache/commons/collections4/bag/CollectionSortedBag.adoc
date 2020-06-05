@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/bag/CollectionSortedBag.class
-
- - link:CollectionSortedBag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$SimpleCase.class
-
- - link:Expressions$SimpleCase-asmified.java[Asmified]
-
-== References
-

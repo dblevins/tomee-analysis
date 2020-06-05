@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/cursors/VMPendingMessageCursor.class
-
- - link:VMPendingMessageCursor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/rss/RssFeed.class
-
- - link:RssFeed-asmified.java[Asmified]
-
-== References
-

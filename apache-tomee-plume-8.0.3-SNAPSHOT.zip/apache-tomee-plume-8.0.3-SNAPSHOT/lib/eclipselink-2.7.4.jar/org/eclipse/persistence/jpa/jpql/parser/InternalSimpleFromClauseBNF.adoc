@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalSimpleFromClauseBNF.class
-
- - link:InternalSimpleFromClauseBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ReferentialIntegrityException.class
-
- - link:ReferentialIntegrityException-asmified.java[Asmified]
-
-== References
-

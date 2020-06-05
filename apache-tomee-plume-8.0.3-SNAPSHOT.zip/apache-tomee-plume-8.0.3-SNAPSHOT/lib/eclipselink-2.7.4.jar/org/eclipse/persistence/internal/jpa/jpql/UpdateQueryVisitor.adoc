@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/UpdateQueryVisitor.class
-
- - link:UpdateQueryVisitor-asmified.java[Asmified]
-
-== References
-

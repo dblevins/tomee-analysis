@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/ImplementationHandler.class
-
- - link:ImplementationHandler-asmified.java[Asmified]
-
-== References
-

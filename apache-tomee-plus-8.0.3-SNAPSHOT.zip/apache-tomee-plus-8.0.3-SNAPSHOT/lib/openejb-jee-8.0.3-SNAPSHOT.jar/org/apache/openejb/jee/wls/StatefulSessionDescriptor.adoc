@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/StatefulSessionDescriptor.class
-
- - link:StatefulSessionDescriptor-asmified.java[Asmified]
-
-== References
-

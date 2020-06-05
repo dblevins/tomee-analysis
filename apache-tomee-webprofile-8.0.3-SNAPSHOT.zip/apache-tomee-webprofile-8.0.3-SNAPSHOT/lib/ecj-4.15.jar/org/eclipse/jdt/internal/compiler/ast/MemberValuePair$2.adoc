@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/MemberValuePair$2.class
-
- - link:MemberValuePair$2-asmified.java[Asmified]
-
-== References
-

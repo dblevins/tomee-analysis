@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/InformixJDBCAdapter.class
-
- - link:InformixJDBCAdapter-asmified.java[Asmified]
-
-== References
-

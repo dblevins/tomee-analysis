@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/x509/X509Extensions.class
-
- - link:X509Extensions-asmified.java[Asmified]
-
-== References
-

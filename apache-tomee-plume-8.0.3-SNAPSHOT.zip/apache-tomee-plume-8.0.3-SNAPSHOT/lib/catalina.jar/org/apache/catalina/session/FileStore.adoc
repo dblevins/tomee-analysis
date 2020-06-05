@@ -1,6 +1,0 @@
-= org/apache/catalina/session/FileStore.class
-
- - link:FileStore-asmified.java[Asmified]
-
-== References
-

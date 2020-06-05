@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityEvent/EncryptedElementSecurityEvent.class
-
- - link:EncryptedElementSecurityEvent-asmified.java[Asmified]
-
-== References
-

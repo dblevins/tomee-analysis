@@ -1,6 +1,0 @@
-= org/codehaus/stax2/DTDInfo.class
-
- - link:DTDInfo-asmified.java[Asmified]
-
-== References
-

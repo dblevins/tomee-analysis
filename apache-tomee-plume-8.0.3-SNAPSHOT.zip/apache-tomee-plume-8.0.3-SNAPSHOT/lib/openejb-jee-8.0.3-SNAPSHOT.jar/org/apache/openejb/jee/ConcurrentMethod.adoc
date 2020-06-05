@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ConcurrentMethod.class
-
- - link:ConcurrentMethod-asmified.java[Asmified]
-
-== References
-

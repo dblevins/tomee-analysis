@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogBufferManager$WriteStats.class
-
- - link:LogBufferManager$WriteStats-asmified.java[Asmified]
-
-== References
-

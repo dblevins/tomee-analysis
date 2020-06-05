@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/VirtualAccessMethods.class
-
- - link:VirtualAccessMethods-asmified.java[Asmified]
-
-== References
-

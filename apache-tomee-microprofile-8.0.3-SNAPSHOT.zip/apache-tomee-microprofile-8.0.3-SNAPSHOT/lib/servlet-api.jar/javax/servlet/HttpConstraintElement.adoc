@@ -1,9 +1,0 @@
-= javax/servlet/HttpConstraintElement.class
-
- - link:HttpConstraintElement-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.annotation.ServletSecurity$EmptyRoleSemantic - 14
- - javax.servlet.annotation.ServletSecurity$TransportGuarantee - 12
- - javax.servlet.HttpConstraintElement - 1

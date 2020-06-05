@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/util/InitLog.class
-
- - link:InitLog-asmified.java[Asmified]
-
-== References
-

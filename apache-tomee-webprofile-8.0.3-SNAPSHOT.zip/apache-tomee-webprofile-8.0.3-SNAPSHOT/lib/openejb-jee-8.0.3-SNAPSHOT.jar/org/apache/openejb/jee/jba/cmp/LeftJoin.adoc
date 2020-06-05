@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/LeftJoin.class
-
- - link:LeftJoin-asmified.java[Asmified]
-
-== References
-

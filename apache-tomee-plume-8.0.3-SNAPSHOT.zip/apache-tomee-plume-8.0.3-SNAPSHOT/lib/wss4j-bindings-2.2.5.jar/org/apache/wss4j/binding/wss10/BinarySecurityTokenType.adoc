@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wss10/BinarySecurityTokenType.class
-
- - link:BinarySecurityTokenType-asmified.java[Asmified]
-
-== References
-

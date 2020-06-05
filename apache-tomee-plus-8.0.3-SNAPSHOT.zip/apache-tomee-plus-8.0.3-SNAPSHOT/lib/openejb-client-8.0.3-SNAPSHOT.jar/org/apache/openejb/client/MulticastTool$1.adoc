@@ -1,6 +1,0 @@
-= org/apache/openejb/client/MulticastTool$1.class
-
- - link:MulticastTool$1-asmified.java[Asmified]
-
-== References
-

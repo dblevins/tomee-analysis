@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/OAuthFlowsImpl.class
-
- - link:OAuthFlowsImpl-asmified.java[Asmified]
-
-== References
-

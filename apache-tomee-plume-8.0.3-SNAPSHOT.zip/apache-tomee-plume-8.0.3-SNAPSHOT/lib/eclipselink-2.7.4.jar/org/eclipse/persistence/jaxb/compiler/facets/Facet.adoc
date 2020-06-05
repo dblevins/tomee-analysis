@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/facets/Facet.class
-
- - link:Facet-asmified.java[Asmified]
-
-== References
-

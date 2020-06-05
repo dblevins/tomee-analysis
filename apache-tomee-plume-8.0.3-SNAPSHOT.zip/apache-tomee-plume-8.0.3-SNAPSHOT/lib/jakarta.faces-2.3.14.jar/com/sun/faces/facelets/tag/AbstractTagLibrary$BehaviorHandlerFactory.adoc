@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/AbstractTagLibrary$BehaviorHandlerFactory.class
-
- - link:AbstractTagLibrary$BehaviorHandlerFactory-asmified.java[Asmified]
-
-== References
-

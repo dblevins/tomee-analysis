@@ -1,9 +1,0 @@
-= org/apache/openejb/config/VmDeploymentFactory.class
-
- - link:VmDeploymentFactory-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.deploy.spi.exceptions.DeploymentManagerCreationException - 4
- - javax.enterprise.deploy.spi.DeploymentManager - 2
- - javax.enterprise.deploy.spi.factories.DeploymentFactory - 1

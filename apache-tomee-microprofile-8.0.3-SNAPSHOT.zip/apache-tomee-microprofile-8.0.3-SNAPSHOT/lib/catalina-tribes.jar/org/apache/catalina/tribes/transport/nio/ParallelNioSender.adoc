@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/nio/ParallelNioSender.class
-
- - link:ParallelNioSender-asmified.java[Asmified]
-
-== References
-

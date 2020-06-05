@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/DatabaseLocker.class
-
- - link:DatabaseLocker-asmified.java[Asmified]
-
-== References
-

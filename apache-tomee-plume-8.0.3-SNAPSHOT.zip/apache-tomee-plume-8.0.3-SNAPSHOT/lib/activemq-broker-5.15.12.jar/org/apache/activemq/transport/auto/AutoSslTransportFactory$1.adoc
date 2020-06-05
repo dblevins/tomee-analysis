@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/auto/AutoSslTransportFactory$1.class
-
- - link:AutoSslTransportFactory$1-asmified.java[Asmified]
-
-== References
-

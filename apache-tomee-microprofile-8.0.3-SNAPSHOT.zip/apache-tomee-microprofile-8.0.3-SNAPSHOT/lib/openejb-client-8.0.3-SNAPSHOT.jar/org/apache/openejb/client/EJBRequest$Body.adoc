@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EJBRequest$Body.class
-
- - link:EJBRequest$Body-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/util/mime/MimeUtility.class
-
- - link:MimeUtility-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/ejb/Asynchronous.class
-
- - link:Asynchronous-asmified.java[Asmified]
-
-== References
-

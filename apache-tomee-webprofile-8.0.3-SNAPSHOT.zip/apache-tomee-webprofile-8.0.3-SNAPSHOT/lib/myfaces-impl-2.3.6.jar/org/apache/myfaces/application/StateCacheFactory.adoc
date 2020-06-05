@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/StateCacheFactory.class
-
- - link:StateCacheFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/indirection/IndirectCollection.class
-
- - link:IndirectCollection-asmified.java[Asmified]
-
-== References
-

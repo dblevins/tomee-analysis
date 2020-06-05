@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/ParserPool.class
-
- - link:ParserPool-asmified.java[Asmified]
-
-== References
-

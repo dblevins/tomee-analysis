@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/bm/Rule$Phoneme.class
-
- - link:Rule$Phoneme-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/binding/encoding/impl/HTTPArtifactEncoder.class
-
- - link:HTTPArtifactEncoder-asmified.java[Asmified]
-
-== References
-

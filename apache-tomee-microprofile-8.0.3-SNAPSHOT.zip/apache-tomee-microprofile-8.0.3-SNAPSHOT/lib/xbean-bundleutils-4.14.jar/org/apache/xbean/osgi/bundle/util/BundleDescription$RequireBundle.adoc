@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/BundleDescription$RequireBundle.class
-
- - link:BundleDescription$RequireBundle-asmified.java[Asmified]
-
-== References
-

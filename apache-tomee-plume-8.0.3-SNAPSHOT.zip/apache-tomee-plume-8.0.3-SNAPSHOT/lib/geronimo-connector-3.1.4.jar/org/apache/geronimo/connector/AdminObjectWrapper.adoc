@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/AdminObjectWrapper.class
-
- - link:AdminObjectWrapper-asmified.java[Asmified]
-
-== References
-

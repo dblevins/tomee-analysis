@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/GenericsUtil.class
-
- - link:GenericsUtil-asmified.java[Asmified]
-
-== References
-

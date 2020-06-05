@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/WindowResultList.class
-
- - link:WindowResultList-asmified.java[Asmified]
-
-== References
-

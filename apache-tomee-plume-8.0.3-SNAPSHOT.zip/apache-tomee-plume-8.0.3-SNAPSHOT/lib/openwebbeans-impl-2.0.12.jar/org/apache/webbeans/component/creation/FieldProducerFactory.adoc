@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/FieldProducerFactory.class
-
- - link:FieldProducerFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/search/NextSearchKeywordResolver.class
-
- - link:NextSearchKeywordResolver-asmified.java[Asmified]
-
-== References
-

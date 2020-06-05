@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/UpdateManager.class
-
- - link:UpdateManager-asmified.java[Asmified]
-
-== References
-

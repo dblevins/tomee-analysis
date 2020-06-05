@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/EndpointProperty.class
-
- - link:EndpointProperty-asmified.java[Asmified]
-
-== References
-

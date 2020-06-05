@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/AttributedURIType.class
-
- - link:AttributedURIType-asmified.java[Asmified]
-
-== References
-

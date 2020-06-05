@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/EndpointFactory.class
-
- - link:EndpointFactory-asmified.java[Asmified]
-
-== References
-

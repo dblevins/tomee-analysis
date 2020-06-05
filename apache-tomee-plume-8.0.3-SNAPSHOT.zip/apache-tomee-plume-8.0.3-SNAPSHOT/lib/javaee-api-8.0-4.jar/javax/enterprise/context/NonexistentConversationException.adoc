@@ -1,7 +1,0 @@
-= javax/enterprise/context/NonexistentConversationException.class
-
- - link:NonexistentConversationException-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.ContextException - 5

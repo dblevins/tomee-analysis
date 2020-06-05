@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/saaj/SAAJUtils.class
-
- - link:SAAJUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanContext$ServiceEndpoint.class
-
- - link:BeanContext$ServiceEndpoint-asmified.java[Asmified]
-
-== References
-

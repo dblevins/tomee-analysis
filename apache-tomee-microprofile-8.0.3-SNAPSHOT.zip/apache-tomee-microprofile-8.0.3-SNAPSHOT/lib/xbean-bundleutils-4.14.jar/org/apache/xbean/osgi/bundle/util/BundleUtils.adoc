@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/BundleUtils.class
-
- - link:BundleUtils-asmified.java[Asmified]
-
-== References
-

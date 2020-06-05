@@ -1,6 +1,0 @@
-= org/joda/time/Hours.class
-
- - link:Hours-asmified.java[Asmified]
-
-== References
-

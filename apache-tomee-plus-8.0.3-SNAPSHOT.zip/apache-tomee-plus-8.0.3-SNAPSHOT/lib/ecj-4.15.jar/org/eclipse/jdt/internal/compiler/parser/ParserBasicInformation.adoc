@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/ParserBasicInformation.class
-
- - link:ParserBasicInformation-asmified.java[Asmified]
-
-== References
-

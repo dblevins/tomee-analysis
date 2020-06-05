@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/InsertChildrenHandler.class
-
- - link:InsertChildrenHandler-asmified.java[Asmified]
-
-== References
-

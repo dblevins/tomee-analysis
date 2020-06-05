@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/SchemaGenerator.class
-
- - link:SchemaGenerator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/loader/WebappClassLoaderBase$PrivilegedJavaseGetResource.class
-
- - link:WebappClassLoaderBase$PrivilegedJavaseGetResource-asmified.java[Asmified]
-
-== References
-

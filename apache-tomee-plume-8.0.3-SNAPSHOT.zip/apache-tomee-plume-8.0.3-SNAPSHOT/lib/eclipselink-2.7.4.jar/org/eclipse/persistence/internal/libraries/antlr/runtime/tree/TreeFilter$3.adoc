@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeFilter$3.class
-
- - link:TreeFilter$3-asmified.java[Asmified]
-
-== References
-

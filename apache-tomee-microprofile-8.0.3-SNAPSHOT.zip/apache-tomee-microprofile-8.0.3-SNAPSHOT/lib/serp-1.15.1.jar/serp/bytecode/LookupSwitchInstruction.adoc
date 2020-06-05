@@ -1,6 +1,0 @@
-= serp/bytecode/LookupSwitchInstruction.class
-
- - link:LookupSwitchInstruction-asmified.java[Asmified]
-
-== References
-

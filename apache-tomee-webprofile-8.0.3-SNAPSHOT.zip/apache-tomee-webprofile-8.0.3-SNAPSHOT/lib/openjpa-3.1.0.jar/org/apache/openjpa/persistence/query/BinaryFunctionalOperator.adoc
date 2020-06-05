@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/BinaryFunctionalOperator.class
-
- - link:BinaryFunctionalOperator-asmified.java[Asmified]
-
-== References
-

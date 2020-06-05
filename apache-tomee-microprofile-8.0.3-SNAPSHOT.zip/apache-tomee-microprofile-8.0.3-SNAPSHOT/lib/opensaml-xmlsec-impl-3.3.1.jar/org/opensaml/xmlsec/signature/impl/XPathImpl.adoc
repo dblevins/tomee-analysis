@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/XPathImpl.class
-
- - link:XPathImpl-asmified.java[Asmified]
-
-== References
-

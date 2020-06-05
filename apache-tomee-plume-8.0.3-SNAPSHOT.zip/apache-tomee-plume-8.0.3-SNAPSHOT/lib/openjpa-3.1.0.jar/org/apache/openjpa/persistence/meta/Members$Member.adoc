@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/Members$Member.class
-
- - link:Members$Member-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/BijectiveNsMap.class
-
- - link:BijectiveNsMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/AbstractCFMetaDataFactory$Serializer.class
-
- - link:AbstractCFMetaDataFactory$Serializer-asmified.java[Asmified]
-
-== References
-

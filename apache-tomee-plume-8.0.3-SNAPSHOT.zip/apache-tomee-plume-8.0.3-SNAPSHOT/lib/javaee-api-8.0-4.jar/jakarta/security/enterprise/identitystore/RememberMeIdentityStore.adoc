@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/identitystore/RememberMeIdentityStore.class
-
- - link:RememberMeIdentityStore-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/TransactionSynchronizationRegistryWrapper.class
-
- - link:TransactionSynchronizationRegistryWrapper-asmified.java[Asmified]
-
-== References
-

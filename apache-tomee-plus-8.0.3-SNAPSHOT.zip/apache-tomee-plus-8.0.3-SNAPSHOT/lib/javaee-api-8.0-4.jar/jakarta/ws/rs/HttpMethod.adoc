@@ -1,6 +1,0 @@
-= jakarta/ws/rs/HttpMethod.class
-
- - link:HttpMethod-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/JumpInsnNode.class
-
- - link:JumpInsnNode-asmified.java[Asmified]
-
-== References
-

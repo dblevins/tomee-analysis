@@ -1,6 +1,0 @@
-= jakarta/batch/runtime/Metric.class
-
- - link:Metric-asmified.java[Asmified]
-
-== References
-

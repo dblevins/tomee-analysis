@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejb/EJBJar.class
-
- - link:EJBJar-asmified.java[Asmified]
-
-== References
-

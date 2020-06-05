@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/NioEndpoint$SocketProcessor.class
-
- - link:NioEndpoint$SocketProcessor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/filter/JsonPointerBasedFilter.class
-
- - link:JsonPointerBasedFilter-asmified.java[Asmified]
-
-== References
-

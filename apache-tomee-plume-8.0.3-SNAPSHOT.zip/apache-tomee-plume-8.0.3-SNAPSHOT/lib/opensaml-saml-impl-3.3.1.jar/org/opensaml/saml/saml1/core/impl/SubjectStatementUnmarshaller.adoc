@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/SubjectStatementUnmarshaller.class
-
- - link:SubjectStatementUnmarshaller-asmified.java[Asmified]
-
-== References
-

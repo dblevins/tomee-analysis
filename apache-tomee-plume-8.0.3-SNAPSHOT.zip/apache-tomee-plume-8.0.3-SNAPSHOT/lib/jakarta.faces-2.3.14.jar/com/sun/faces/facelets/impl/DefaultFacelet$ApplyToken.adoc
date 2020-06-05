@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/impl/DefaultFacelet$ApplyToken.class
-
- - link:DefaultFacelet$ApplyToken-asmified.java[Asmified]
-
-== References
-

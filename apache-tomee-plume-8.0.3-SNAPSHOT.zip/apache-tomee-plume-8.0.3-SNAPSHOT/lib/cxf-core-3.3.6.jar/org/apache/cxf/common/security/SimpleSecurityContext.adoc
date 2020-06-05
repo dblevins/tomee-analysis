@@ -1,6 +1,0 @@
-= org/apache/cxf/common/security/SimpleSecurityContext.class
-
- - link:SimpleSecurityContext-asmified.java[Asmified]
-
-== References
-

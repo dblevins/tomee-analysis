@@ -1,6 +1,0 @@
-= org/apache/activemq/network/NetworkConnector.class
-
- - link:NetworkConnector-asmified.java[Asmified]
-
-== References
-

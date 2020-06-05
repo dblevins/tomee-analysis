@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/impl/DescriptionImpl.class
-
- - link:DescriptionImpl-asmified.java[Asmified]
-
-== References
-

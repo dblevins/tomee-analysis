@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/TempMessageDatabase$ByteSequenceMarshaller.class
-
- - link:TempMessageDatabase$ByteSequenceMarshaller-asmified.java[Asmified]
-
-== References
-

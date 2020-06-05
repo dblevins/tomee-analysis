@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/InheritanceComparator.class
-
- - link:InheritanceComparator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/WebserviceDescription.class
-
- - link:WebserviceDescription-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/util/HTMLEncoder.class
-
- - link:HTMLEncoder-asmified.java[Asmified]
-
-== References
-

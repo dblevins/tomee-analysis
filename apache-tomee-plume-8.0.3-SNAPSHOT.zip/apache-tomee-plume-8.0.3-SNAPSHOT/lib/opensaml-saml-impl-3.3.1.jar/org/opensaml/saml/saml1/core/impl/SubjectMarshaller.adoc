@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/SubjectMarshaller.class
-
- - link:SubjectMarshaller-asmified.java[Asmified]
-
-== References
-

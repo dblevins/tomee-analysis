@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/BeanTransactionPolicy.class
-
- - link:BeanTransactionPolicy-asmified.java[Asmified]
-
-== References
-

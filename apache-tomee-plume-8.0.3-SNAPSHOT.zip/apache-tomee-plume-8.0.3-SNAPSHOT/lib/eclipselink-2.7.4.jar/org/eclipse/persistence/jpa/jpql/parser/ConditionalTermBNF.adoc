@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ConditionalTermBNF.class
-
- - link:ConditionalTermBNF-asmified.java[Asmified]
-
-== References
-

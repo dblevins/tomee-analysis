@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/AbstractLRSProxyCollection$Itr.class
-
- - link:AbstractLRSProxyCollection$Itr-asmified.java[Asmified]
-
-== References
-

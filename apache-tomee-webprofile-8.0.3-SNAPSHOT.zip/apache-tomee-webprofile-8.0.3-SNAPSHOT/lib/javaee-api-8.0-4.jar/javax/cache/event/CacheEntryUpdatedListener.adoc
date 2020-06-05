@@ -1,6 +1,0 @@
-= javax/cache/event/CacheEntryUpdatedListener.class
-
- - link:CacheEntryUpdatedListener-asmified.java[Asmified]
-
-== References
-

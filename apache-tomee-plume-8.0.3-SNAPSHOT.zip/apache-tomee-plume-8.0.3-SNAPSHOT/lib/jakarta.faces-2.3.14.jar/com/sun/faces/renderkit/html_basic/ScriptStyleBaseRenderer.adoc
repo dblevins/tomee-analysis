@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/ScriptStyleBaseRenderer.class
-
- - link:ScriptStyleBaseRenderer-asmified.java[Asmified]
-
-== References
-

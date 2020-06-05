@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/evt/Stax2FilteredEventReader.class
-
- - link:Stax2FilteredEventReader-asmified.java[Asmified]
-
-== References
-

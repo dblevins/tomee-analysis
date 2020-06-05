@@ -1,6 +1,0 @@
-= org/apache/cxf/management/jmx/MBServerConnectorFactory$JmxRegistry.class
-
- - link:MBServerConnectorFactory$JmxRegistry-asmified.java[Asmified]
-
-== References
-

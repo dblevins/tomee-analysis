@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/FileSystemBlobStrategy.class
-
- - link:FileSystemBlobStrategy-asmified.java[Asmified]
-
-== References
-

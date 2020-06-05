@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/ws/WSTransport.class
-
- - link:WSTransport-asmified.java[Asmified]
-
-== References
-

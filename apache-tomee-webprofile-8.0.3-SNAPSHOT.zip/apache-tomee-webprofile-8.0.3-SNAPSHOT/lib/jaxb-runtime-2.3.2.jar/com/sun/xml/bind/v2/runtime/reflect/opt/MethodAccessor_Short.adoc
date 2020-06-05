@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/opt/MethodAccessor_Short.class
-
- - link:MethodAccessor_Short-asmified.java[Asmified]
-
-== References
-

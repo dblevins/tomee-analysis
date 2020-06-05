@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/isismtt/x509/NamingAuthority.class
-
- - link:NamingAuthority-asmified.java[Asmified]
-
-== References
-

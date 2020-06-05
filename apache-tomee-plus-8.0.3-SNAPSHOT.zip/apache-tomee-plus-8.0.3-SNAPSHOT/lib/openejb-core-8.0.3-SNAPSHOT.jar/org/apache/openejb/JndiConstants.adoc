@@ -1,6 +1,0 @@
-= org/apache/openejb/JndiConstants.class
-
- - link:JndiConstants-asmified.java[Asmified]
-
-== References
-

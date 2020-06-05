@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/json/JsonStructureSource.class
-
- - link:JsonStructureSource-asmified.java[Asmified]
-
-== References
-

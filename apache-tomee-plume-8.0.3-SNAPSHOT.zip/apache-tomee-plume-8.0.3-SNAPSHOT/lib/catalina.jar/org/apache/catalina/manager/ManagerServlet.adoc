@@ -1,6 +1,0 @@
-= org/apache/catalina/manager/ManagerServlet.class
-
- - link:ManagerServlet-asmified.java[Asmified]
-
-== References
-

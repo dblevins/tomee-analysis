@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/SystemId.class
-
- - link:SystemId-asmified.java[Asmified]
-
-== References
-

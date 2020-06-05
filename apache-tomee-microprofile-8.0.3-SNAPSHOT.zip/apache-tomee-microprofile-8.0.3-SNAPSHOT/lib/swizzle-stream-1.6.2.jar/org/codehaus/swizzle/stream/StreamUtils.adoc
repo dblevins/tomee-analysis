@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/StreamUtils.class
-
- - link:StreamUtils-asmified.java[Asmified]
-
-== References
-

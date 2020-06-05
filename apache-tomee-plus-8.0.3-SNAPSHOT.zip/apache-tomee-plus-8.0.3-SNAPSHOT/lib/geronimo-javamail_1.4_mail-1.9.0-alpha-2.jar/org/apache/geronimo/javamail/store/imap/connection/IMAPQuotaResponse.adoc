@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPQuotaResponse.class
-
- - link:IMAPQuotaResponse-asmified.java[Asmified]
-
-== References
-

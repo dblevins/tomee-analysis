@@ -1,6 +1,0 @@
-= org/apache/openejb/util/LinkResolver.class
-
- - link:LinkResolver-asmified.java[Asmified]
-
-== References
-

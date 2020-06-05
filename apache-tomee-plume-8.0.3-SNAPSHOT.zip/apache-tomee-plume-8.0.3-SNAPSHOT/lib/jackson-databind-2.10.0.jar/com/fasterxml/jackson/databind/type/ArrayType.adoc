@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/type/ArrayType.class
-
- - link:ArrayType-asmified.java[Asmified]
-
-== References
-

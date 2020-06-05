@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaNumericFacet.class
-
- - link:XmlSchemaNumericFacet-asmified.java[Asmified]
-
-== References
-

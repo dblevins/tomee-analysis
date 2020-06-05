@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/helper/DefaultSchemaResolver.class
-
- - link:DefaultSchemaResolver-asmified.java[Asmified]
-
-== References
-

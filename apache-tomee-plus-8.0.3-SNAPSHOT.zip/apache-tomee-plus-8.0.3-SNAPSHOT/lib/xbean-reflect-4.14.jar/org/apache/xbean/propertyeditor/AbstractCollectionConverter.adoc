@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/AbstractCollectionConverter.class
-
- - link:AbstractCollectionConverter-asmified.java[Asmified]
-
-== References
-

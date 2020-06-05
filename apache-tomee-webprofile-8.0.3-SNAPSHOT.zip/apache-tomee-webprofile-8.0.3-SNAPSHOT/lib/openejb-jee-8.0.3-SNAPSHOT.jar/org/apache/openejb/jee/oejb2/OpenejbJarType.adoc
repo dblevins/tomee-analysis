@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/OpenejbJarType.class
-
- - link:OpenejbJarType-asmified.java[Asmified]
-
-== References
-

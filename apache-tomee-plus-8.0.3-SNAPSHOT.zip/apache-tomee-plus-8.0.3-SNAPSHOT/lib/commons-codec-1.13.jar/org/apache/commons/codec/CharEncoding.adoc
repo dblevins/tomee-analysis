@@ -1,6 +1,0 @@
-= org/apache/commons/codec/CharEncoding.class
-
- - link:CharEncoding-asmified.java[Asmified]
-
-== References
-

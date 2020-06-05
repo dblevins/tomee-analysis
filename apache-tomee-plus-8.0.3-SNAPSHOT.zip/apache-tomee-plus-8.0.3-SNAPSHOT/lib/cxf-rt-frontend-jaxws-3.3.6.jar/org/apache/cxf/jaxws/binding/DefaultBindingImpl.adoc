@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/binding/DefaultBindingImpl.class
-
- - link:DefaultBindingImpl-asmified.java[Asmified]
-
-== References
-

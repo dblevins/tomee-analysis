@@ -1,6 +1,0 @@
-= org/eclipse/persistence/dynamic/EclipseLinkClassWriter.class
-
- - link:EclipseLinkClassWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/management/MBean.class
-
- - link:MBean-asmified.java[Asmified]
-
-== References
-

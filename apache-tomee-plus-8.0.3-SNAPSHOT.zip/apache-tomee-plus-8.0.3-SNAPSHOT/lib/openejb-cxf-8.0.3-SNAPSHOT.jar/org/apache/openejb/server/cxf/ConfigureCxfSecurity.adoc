@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/ConfigureCxfSecurity.class
-
- - link:ConfigureCxfSecurity-asmified.java[Asmified]
-
-== References
-

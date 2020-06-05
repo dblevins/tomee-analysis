@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/interceptor/StartBodyInterceptor.class
-
- - link:StartBodyInterceptor-asmified.java[Asmified]
-
-== References
-

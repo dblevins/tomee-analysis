@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/InOutputParameterForCallableStatement.class
-
- - link:InOutputParameterForCallableStatement-asmified.java[Asmified]
-
-== References
-

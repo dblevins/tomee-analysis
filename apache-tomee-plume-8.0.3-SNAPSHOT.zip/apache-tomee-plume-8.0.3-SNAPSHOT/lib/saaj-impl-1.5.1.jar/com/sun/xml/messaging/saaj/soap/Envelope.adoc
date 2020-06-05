@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/Envelope.class
-
- - link:Envelope-asmified.java[Asmified]
-
-== References
-

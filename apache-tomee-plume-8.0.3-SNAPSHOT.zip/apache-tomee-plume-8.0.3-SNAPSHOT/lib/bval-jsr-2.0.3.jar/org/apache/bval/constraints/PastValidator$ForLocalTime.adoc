@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/PastValidator$ForLocalTime.class
-
- - link:PastValidator$ForLocalTime-asmified.java[Asmified]
-
-== References
-

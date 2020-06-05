@@ -1,6 +1,0 @@
-= org/opensaml/profile/logic/NoConfidentialityMessageChannelPredicate.class
-
- - link:NoConfidentialityMessageChannelPredicate-asmified.java[Asmified]
-
-== References
-

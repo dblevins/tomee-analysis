@@ -1,6 +1,0 @@
-= org/apache/openejb/util/PropertiesService.class
-
- - link:PropertiesService-asmified.java[Asmified]
-
-== References
-

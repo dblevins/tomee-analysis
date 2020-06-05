@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/BeanMap$9.class
-
- - link:BeanMap$9-asmified.java[Asmified]
-
-== References
-

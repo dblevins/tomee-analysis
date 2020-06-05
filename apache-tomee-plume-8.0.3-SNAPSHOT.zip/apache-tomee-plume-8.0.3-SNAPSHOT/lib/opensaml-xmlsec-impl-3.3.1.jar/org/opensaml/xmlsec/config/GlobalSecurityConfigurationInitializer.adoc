@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/config/GlobalSecurityConfigurationInitializer.class
-
- - link:GlobalSecurityConfigurationInitializer-asmified.java[Asmified]
-
-== References
-

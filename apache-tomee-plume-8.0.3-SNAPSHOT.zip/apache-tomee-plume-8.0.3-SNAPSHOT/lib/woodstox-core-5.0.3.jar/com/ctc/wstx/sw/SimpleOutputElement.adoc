@@ -1,6 +1,0 @@
-= com/ctc/wstx/sw/SimpleOutputElement.class
-
- - link:SimpleOutputElement-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/batch/api/BatchProperty.class
-
- - link:BatchProperty-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Qualifier - 1
- - javax.enterprise.util.Nonbinding - 1

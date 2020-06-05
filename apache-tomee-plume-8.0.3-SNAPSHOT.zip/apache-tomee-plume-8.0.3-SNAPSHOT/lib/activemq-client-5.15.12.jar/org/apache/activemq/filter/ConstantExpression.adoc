@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/ConstantExpression.class
-
- - link:ConstantExpression-asmified.java[Asmified]
-
-== References
-

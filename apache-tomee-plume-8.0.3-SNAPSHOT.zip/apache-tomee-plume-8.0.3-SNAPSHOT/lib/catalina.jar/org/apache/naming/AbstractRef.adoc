@@ -1,6 +1,0 @@
-= org/apache/naming/AbstractRef.class
-
- - link:AbstractRef-asmified.java[Asmified]
-
-== References
-

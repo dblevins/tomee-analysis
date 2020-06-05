@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/DigestAlgorithm.class
-
- - link:DigestAlgorithm-asmified.java[Asmified]
-
-== References
-

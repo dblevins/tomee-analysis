@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/DefaultBeanIntrospector.class
-
- - link:DefaultBeanIntrospector-asmified.java[Asmified]
-
-== References
-

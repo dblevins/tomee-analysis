@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2delrestrict/impl/DelegationRestrictionTypeImpl.class
-
- - link:DelegationRestrictionTypeImpl-asmified.java[Asmified]
-
-== References
-

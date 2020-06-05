@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/FacesConfigNameSlot.class
-
- - link:FacesConfigNameSlot-asmified.java[Asmified]
-
-== References
-

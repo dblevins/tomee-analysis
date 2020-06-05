@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/WebsocketInit.class
-
- - link:WebsocketInit-asmified.java[Asmified]
-
-== References
-

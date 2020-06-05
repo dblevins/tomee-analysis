@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/oracle/OracleDelegate.class
-
- - link:OracleDelegate-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/HttpListenerRegistry$1.class
-
- - link:HttpListenerRegistry$1-asmified.java[Asmified]
-
-== References
-

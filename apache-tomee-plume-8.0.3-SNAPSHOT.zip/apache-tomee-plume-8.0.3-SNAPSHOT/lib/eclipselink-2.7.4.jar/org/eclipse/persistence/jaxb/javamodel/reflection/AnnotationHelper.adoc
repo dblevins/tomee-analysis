@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/javamodel/reflection/AnnotationHelper.class
-
- - link:AnnotationHelper-asmified.java[Asmified]
-
-== References
-

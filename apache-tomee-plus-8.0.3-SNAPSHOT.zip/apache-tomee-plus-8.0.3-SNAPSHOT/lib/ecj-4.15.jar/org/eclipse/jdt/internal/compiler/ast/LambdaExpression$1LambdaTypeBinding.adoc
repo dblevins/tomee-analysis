@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/LambdaExpression$1LambdaTypeBinding.class
-
- - link:LambdaExpression$1LambdaTypeBinding-asmified.java[Asmified]
-
-== References
-

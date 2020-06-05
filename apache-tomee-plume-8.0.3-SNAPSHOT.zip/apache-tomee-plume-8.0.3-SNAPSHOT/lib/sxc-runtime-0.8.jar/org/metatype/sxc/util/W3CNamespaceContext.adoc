@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/W3CNamespaceContext.class
-
- - link:W3CNamespaceContext-asmified.java[Asmified]
-
-== References
-

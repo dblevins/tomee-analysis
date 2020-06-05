@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/Mapper.class
-
- - link:Mapper-asmified.java[Asmified]
-
-== References
-

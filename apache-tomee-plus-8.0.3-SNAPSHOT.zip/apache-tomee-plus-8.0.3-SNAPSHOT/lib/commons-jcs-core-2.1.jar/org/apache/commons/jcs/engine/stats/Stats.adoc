@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/stats/Stats.class
-
- - link:Stats-asmified.java[Asmified]
-
-== References
-

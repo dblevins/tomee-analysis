@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/BaseProducerFactory.class
-
- - link:BaseProducerFactory-asmified.java[Asmified]
-
-== References
-

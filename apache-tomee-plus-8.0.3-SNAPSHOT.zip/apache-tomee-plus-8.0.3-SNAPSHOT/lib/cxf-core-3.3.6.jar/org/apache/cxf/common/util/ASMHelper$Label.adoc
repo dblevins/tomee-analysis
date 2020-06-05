@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ASMHelper$Label.class
-
- - link:ASMHelper$Label-asmified.java[Asmified]
-
-== References
-

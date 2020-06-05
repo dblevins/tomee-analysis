@@ -1,6 +1,0 @@
-= org/apache/webbeans/exception/DuplicateDefinitionException.class
-
- - link:DuplicateDefinitionException-asmified.java[Asmified]
-
-== References
-

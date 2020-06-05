@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AbstractProducer.class
-
- - link:AbstractProducer-asmified.java[Asmified]
-
-== References
-

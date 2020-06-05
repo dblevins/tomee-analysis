@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/microprofile/cdi/OpenTracingExtension.class
-
- - link:OpenTracingExtension-asmified.java[Asmified]
-
-== References
-

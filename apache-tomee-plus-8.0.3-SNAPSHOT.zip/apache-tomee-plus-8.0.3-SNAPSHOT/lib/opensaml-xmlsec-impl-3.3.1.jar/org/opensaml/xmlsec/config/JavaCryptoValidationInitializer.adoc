@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/config/JavaCryptoValidationInitializer.class
-
- - link:JavaCryptoValidationInitializer-asmified.java[Asmified]
-
-== References
-

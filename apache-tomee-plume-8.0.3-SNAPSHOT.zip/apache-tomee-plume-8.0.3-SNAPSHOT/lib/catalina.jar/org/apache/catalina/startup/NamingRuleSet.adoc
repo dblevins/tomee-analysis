@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/NamingRuleSet.class
-
- - link:NamingRuleSet-asmified.java[Asmified]
-
-== References
-

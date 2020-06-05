@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/ArtifactResolveBuilder.class
-
- - link:ArtifactResolveBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/TxUtil.class
-
- - link:TxUtil-asmified.java[Asmified]
-
-== References
-

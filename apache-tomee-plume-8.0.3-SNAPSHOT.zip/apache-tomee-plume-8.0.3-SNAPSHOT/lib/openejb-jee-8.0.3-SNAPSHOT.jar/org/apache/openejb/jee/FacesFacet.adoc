@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesFacet.class
-
- - link:FacesFacet-asmified.java[Asmified]
-
-== References
-

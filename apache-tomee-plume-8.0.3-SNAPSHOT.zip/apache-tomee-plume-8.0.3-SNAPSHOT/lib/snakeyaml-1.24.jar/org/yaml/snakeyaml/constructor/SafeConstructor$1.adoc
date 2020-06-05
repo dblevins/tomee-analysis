@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/constructor/SafeConstructor$1.class
-
- - link:SafeConstructor$1-asmified.java[Asmified]
-
-== References
-

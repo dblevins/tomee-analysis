@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/AbstractReferenceMap$ReferenceEntrySetIterator.class
-
- - link:AbstractReferenceMap$ReferenceEntrySetIterator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/handlers/TextHtmlHandler.class
-
- - link:TextHtmlHandler-asmified.java[Asmified]
-
-== References
-

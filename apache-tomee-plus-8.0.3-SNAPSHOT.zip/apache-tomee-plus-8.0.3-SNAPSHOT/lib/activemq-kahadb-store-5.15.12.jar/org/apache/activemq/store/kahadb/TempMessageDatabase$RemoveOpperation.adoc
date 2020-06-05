@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/TempMessageDatabase$RemoveOpperation.class
-
- - link:TempMessageDatabase$RemoveOpperation-asmified.java[Asmified]
-
-== References
-

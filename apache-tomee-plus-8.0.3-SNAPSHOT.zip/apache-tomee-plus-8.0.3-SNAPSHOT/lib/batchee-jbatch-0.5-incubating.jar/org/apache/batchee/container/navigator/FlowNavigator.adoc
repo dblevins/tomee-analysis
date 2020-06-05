@@ -1,6 +1,0 @@
-= org/apache/batchee/container/navigator/FlowNavigator.class
-
- - link:FlowNavigator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ExtraFlags.class
-
- - link:ExtraFlags-asmified.java[Asmified]
-
-== References
-

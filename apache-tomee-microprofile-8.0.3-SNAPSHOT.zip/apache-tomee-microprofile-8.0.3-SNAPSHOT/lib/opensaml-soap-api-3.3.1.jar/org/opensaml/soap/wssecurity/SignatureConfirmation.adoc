@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/SignatureConfirmation.class
-
- - link:SignatureConfirmation-asmified.java[Asmified]
-
-== References
-

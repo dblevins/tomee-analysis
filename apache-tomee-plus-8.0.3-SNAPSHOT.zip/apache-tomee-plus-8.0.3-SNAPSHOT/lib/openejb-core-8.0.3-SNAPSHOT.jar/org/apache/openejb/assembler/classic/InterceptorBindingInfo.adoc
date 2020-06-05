@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/InterceptorBindingInfo.class
-
- - link:InterceptorBindingInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/application/ResourceVisitOption.class
-
- - link:ResourceVisitOption-asmified.java[Asmified]
-
-== References
-

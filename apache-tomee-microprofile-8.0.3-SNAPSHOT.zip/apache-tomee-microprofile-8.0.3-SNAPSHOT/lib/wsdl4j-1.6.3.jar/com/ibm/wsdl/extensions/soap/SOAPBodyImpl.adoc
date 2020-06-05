@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/soap/SOAPBodyImpl.class
-
- - link:SOAPBodyImpl-asmified.java[Asmified]
-
-== References
-

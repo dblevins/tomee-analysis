@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/structures/ObjectRelationalDataTypeDescriptor.class
-
- - link:ObjectRelationalDataTypeDescriptor-asmified.java[Asmified]
-
-== References
-

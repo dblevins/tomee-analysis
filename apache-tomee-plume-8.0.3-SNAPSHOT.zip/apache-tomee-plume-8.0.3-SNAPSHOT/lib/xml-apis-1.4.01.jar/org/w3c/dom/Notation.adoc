@@ -1,6 +1,0 @@
-= org/w3c/dom/Notation.class
-
- - link:Notation-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/descriptors/SignatureECDSASHA1.class
-
- - link:SignatureECDSASHA1-asmified.java[Asmified]
-
-== References
-

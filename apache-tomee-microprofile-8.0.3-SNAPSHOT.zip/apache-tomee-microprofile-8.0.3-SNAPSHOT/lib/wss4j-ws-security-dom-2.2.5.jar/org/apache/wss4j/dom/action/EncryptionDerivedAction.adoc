@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/action/EncryptionDerivedAction.class
-
- - link:EncryptionDerivedAction-asmified.java[Asmified]
-
-== References
-

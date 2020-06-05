@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/annotation/constraint/Negative.class
-
- - link:Negative-asmified.java[Asmified]
-
-== References
-

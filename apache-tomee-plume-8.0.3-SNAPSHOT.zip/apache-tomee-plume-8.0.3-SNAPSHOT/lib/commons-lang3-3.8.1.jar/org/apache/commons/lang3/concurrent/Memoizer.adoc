@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/concurrent/Memoizer.class
-
- - link:Memoizer-asmified.java[Asmified]
-
-== References
-

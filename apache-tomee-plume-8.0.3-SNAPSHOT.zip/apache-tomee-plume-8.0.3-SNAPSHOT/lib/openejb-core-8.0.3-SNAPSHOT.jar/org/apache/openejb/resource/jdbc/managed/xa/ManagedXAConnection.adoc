@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/managed/xa/ManagedXAConnection.class
-
- - link:ManagedXAConnection-asmified.java[Asmified]
-
-== References
-

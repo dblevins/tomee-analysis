@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/PersistenceUnitProcessor$Mode.class
-
- - link:PersistenceUnitProcessor$Mode-asmified.java[Asmified]
-
-== References
-

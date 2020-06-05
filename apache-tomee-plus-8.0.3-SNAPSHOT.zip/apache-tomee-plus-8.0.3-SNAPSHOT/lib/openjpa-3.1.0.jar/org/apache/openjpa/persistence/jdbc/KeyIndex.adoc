@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/KeyIndex.class
-
- - link:KeyIndex-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/buffer/TypedBuffer.class
-
- - link:TypedBuffer-asmified.java[Asmified]
-
-== References
-

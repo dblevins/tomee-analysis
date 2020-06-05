@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/json/JSONProvider$1.class
-
- - link:JSONProvider$1-asmified.java[Asmified]
-
-== References
-

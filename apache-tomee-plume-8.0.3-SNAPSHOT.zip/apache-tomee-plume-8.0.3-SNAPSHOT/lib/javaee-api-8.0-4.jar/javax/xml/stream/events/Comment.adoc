@@ -1,6 +1,0 @@
-= javax/xml/stream/events/Comment.class
-
- - link:Comment-asmified.java[Asmified]
-
-== References
-

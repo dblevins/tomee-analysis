@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/BrokerFactoryEventManager.class
-
- - link:BrokerFactoryEventManager-asmified.java[Asmified]
-
-== References
-

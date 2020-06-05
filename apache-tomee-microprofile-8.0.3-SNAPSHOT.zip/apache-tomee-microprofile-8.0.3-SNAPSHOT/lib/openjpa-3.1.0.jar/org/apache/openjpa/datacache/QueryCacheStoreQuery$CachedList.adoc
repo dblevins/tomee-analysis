@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/QueryCacheStoreQuery$CachedList.class
-
- - link:QueryCacheStoreQuery$CachedList-asmified.java[Asmified]
-
-== References
-

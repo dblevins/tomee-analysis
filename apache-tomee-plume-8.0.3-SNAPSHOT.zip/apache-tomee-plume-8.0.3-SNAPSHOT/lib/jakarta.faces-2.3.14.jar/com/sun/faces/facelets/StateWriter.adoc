@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/StateWriter.class
-
- - link:StateWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/JPQLQueryHandler.class
-
- - link:JPQLQueryHandler-asmified.java[Asmified]
-
-== References
-

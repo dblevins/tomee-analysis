@@ -1,6 +1,0 @@
-= jakarta/persistence/metamodel/Bindable$BindableType.class
-
- - link:Bindable$BindableType-asmified.java[Asmified]
-
-== References
-

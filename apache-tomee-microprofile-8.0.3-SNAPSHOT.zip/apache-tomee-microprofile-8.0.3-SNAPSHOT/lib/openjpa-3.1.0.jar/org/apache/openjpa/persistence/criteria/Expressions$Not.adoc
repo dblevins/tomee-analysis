@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Not.class
-
- - link:Expressions$Not-asmified.java[Asmified]
-
-== References
-

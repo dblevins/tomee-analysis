@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bag/AbstractMapBag$MutableInteger.class
-
- - link:AbstractMapBag$MutableInteger-asmified.java[Asmified]
-
-== References
-

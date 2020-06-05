@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BoundedFifoBuffer.class
-
- - link:BoundedFifoBuffer-asmified.java[Asmified]
-
-== References
-

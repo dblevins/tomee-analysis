@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/trust/claims/ClaimsCallback.class
-
- - link:ClaimsCallback-asmified.java[Asmified]
-
-== References
-

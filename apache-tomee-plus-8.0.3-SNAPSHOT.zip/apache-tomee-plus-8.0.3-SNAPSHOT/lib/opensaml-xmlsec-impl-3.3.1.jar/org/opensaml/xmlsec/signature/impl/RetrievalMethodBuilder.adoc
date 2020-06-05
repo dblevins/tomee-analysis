@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/RetrievalMethodBuilder.class
-
- - link:RetrievalMethodBuilder-asmified.java[Asmified]
-
-== References
-

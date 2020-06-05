@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/IndexExpression.class
-
- - link:IndexExpression-asmified.java[Asmified]
-
-== References
-

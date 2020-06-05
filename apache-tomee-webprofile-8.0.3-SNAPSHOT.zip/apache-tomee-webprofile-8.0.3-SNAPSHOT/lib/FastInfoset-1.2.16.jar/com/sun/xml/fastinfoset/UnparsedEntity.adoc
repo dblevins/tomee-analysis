@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/UnparsedEntity.class
-
- - link:UnparsedEntity-asmified.java[Asmified]
-
-== References
-

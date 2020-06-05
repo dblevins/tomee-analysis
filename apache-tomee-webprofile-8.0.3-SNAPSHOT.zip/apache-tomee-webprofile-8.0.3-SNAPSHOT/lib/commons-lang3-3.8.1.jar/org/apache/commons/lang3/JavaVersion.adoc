@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/JavaVersion.class
-
- - link:JavaVersion-asmified.java[Asmified]
-
-== References
-

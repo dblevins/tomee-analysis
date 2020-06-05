@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/impl/ThrowableCallStack$1.class
-
- - link:ThrowableCallStack$1-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/enterprise/event/TransactionPhase.class
-
- - link:TransactionPhase-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.event.TransactionPhase - 36

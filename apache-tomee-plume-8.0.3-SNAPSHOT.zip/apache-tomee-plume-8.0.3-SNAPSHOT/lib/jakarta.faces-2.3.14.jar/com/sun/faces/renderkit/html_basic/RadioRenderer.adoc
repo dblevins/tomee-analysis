@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/RadioRenderer.class
-
- - link:RadioRenderer-asmified.java[Asmified]
-
-== References
-

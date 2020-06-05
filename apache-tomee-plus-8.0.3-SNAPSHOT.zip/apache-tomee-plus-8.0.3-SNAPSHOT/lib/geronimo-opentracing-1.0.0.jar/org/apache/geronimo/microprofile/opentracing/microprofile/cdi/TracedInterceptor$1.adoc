@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/microprofile/cdi/TracedInterceptor$1.class
-
- - link:TracedInterceptor$1-asmified.java[Asmified]
-
-== References
-

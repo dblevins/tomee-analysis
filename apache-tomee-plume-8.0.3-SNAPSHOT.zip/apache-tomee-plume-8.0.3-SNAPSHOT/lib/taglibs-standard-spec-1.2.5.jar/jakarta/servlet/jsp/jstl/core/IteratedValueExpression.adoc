@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/jstl/core/IteratedValueExpression.class
-
- - link:IteratedValueExpression-asmified.java[Asmified]
-
-== References
-

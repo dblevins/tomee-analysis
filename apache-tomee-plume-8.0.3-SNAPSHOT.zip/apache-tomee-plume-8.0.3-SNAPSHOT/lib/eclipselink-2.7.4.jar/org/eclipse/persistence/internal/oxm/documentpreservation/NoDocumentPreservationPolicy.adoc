@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/documentpreservation/NoDocumentPreservationPolicy.class
-
- - link:NoDocumentPreservationPolicy-asmified.java[Asmified]
-
-== References
-

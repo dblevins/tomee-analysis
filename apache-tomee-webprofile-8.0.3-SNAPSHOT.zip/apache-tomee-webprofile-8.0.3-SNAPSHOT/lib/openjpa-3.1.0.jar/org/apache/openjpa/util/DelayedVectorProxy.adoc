@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/DelayedVectorProxy.class
-
- - link:DelayedVectorProxy-asmified.java[Asmified]
-
-== References
-

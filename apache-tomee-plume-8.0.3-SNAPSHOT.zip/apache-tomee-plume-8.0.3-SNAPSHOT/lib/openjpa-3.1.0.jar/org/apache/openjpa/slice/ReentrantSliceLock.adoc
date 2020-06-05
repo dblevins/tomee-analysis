@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/ReentrantSliceLock.class
-
- - link:ReentrantSliceLock-asmified.java[Asmified]
-
-== References
-

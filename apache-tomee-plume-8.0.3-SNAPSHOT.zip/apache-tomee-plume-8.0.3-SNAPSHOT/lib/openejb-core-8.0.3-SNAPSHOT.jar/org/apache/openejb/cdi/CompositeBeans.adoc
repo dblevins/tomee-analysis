@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/CompositeBeans.class
-
- - link:CompositeBeans-asmified.java[Asmified]
-
-== References
-

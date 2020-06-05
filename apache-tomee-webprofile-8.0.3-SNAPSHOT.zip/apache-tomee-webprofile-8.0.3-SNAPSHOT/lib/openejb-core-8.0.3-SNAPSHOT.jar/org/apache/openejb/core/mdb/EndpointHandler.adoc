@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/EndpointHandler.class
-
- - link:EndpointHandler-asmified.java[Asmified]
-
-== References
-

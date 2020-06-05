@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/JohnzonVirtualObject$Field.class
-
- - link:JohnzonVirtualObject$Field-asmified.java[Asmified]
-
-== References
-

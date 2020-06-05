@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/x509/KeyPurposeId.class
-
- - link:KeyPurposeId-asmified.java[Asmified]
-
-== References
-

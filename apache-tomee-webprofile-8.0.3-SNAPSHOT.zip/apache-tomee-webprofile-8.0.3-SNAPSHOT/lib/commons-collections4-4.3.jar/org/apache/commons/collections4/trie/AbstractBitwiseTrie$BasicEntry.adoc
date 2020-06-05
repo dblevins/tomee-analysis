@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/trie/AbstractBitwiseTrie$BasicEntry.class
-
- - link:AbstractBitwiseTrie$BasicEntry-asmified.java[Asmified]
-
-== References
-

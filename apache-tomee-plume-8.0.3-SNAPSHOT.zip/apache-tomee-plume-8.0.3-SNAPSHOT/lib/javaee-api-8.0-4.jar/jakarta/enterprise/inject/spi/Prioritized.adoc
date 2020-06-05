@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/Prioritized.class
-
- - link:Prioritized-asmified.java[Asmified]
-
-== References
-

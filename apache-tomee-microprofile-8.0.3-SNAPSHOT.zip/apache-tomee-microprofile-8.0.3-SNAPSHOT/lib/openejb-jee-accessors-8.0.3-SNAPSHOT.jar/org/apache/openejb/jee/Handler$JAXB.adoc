@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Handler$JAXB.class
-
- - link:Handler$JAXB-asmified.java[Asmified]
-
-== References
-

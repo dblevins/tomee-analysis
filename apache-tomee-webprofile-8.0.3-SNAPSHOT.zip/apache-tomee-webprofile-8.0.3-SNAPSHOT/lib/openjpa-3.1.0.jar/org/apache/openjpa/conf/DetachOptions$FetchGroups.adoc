@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/DetachOptions$FetchGroups.class
-
- - link:DetachOptions$FetchGroups-asmified.java[Asmified]
-
-== References
-

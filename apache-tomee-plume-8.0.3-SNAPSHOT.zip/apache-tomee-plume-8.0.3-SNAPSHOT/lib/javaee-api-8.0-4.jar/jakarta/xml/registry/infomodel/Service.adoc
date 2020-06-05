@@ -1,6 +1,0 @@
-= jakarta/xml/registry/infomodel/Service.class
-
- - link:Service-asmified.java[Asmified]
-
-== References
-

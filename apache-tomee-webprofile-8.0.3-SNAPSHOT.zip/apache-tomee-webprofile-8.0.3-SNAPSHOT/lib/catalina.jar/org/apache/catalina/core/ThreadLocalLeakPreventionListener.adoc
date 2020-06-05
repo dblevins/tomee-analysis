@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ThreadLocalLeakPreventionListener.class
-
- - link:ThreadLocalLeakPreventionListener-asmified.java[Asmified]
-
-== References
-

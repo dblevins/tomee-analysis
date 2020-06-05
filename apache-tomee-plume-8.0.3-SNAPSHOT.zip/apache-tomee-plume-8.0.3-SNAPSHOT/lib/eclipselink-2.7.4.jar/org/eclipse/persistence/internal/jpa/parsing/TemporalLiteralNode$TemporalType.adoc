@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/TemporalLiteralNode$TemporalType.class
-
- - link:TemporalLiteralNode$TemporalType-asmified.java[Asmified]
-
-== References
-

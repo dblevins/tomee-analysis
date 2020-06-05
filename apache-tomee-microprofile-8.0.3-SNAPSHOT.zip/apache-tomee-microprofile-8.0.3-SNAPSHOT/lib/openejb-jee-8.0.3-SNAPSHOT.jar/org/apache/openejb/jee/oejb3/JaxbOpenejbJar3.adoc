@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb3/JaxbOpenejbJar3.class
-
- - link:JaxbOpenejbJar3-asmified.java[Asmified]
-
-== References
-

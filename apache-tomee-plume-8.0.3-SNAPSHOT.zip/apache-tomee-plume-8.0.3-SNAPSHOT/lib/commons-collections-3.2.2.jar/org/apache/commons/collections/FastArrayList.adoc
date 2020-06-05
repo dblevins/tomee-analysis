@@ -1,6 +1,0 @@
-= org/apache/commons/collections/FastArrayList.class
-
- - link:FastArrayList-asmified.java[Asmified]
-
-== References
-

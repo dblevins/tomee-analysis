@@ -1,6 +1,0 @@
-= org/apache/jasper/tagplugins/jstl/core/Catch.class
-
- - link:Catch-asmified.java[Asmified]
-
-== References
-

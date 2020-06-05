@@ -1,7 +1,0 @@
-= javax/enterprise/inject/spi/EventContext.class
-
- - link:EventContext-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.EventMetadata - 1

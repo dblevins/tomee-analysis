@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/Proxies.class
-
- - link:Proxies-asmified.java[Asmified]
-
-== References
-

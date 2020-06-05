@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/SerializationHelper.class
-
- - link:SerializationHelper-asmified.java[Asmified]
-
-== References
-

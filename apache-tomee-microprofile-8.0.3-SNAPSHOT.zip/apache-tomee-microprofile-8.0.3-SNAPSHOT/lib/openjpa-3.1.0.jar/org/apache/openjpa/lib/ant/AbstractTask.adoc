@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/ant/AbstractTask.class
-
- - link:AbstractTask-asmified.java[Asmified]
-
-== References
-

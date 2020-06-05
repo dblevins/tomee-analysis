@@ -1,6 +1,0 @@
-= org/apache/cxf/databinding/stax/XMLStreamWriterCallback.class
-
- - link:XMLStreamWriterCallback-asmified.java[Asmified]
-
-== References
-

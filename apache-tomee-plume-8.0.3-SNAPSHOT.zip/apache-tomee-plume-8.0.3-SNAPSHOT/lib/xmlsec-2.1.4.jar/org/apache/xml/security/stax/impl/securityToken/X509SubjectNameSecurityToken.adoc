@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/securityToken/X509SubjectNameSecurityToken.class
-
- - link:X509SubjectNameSecurityToken-asmified.java[Asmified]
-
-== References
-

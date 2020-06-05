@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/invalidation/CacheInvalidationPolicy.class
-
- - link:CacheInvalidationPolicy-asmified.java[Asmified]
-
-== References
-

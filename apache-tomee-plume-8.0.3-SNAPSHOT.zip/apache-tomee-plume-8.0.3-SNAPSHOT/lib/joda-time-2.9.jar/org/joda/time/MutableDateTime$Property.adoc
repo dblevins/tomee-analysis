@@ -1,6 +1,0 @@
-= org/joda/time/MutableDateTime$Property.class
-
- - link:MutableDateTime$Property-asmified.java[Asmified]
-
-== References
-

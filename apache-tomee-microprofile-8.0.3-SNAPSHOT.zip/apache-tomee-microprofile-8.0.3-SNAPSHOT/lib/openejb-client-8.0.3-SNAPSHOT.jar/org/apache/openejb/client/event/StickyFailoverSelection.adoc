@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/StickyFailoverSelection.class
-
- - link:StickyFailoverSelection-asmified.java[Asmified]
-
-== References
-

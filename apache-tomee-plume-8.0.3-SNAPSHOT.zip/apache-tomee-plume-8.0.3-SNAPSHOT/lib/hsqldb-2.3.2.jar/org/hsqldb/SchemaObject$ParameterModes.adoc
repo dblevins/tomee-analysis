@@ -1,6 +1,0 @@
-= org/hsqldb/SchemaObject$ParameterModes.class
-
- - link:SchemaObject$ParameterModes-asmified.java[Asmified]
-
-== References
-

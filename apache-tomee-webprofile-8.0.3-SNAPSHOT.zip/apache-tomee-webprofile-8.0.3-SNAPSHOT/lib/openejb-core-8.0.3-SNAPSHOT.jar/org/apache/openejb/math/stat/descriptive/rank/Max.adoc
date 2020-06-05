@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/rank/Max.class
-
- - link:Max-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl.class
-
- - link:AnnotatedParameterConfiguratorImpl-asmified.java[Asmified]
-
-== References
-

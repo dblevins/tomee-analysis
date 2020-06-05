@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/FormAuthenticator.class
-
- - link:FormAuthenticator-asmified.java[Asmified]
-
-== References
-

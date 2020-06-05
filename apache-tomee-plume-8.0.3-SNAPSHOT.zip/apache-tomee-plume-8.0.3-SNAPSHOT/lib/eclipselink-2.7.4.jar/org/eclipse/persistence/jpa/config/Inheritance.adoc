@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Inheritance.class
-
- - link:Inheritance-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/MemoryUsage.class
-
- - link:MemoryUsage-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/dbcp/DataSourceSerialization.class
-
- - link:DataSourceSerialization-asmified.java[Asmified]
-
-== References
-

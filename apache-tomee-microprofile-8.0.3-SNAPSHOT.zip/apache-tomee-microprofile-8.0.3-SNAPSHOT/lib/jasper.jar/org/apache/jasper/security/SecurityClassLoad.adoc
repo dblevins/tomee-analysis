@@ -1,6 +1,0 @@
-= org/apache/jasper/security/SecurityClassLoad.class
-
- - link:SecurityClassLoad-asmified.java[Asmified]
-
-== References
-

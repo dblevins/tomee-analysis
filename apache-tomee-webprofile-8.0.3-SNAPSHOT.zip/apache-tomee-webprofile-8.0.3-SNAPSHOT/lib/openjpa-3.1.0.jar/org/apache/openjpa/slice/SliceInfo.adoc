@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/SliceInfo.class
-
- - link:SliceInfo-asmified.java[Asmified]
-
-== References
-

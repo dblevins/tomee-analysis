@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/SetRollbackOnlyException.class
-
- - link:SetRollbackOnlyException-asmified.java[Asmified]
-
-== References
-

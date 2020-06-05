@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ClearEmptyMappedName.class
-
- - link:ClearEmptyMappedName-asmified.java[Asmified]
-
-== References
-

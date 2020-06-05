@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/v200403/ReplyAfterType.class
-
- - link:ReplyAfterType-asmified.java[Asmified]
-
-== References
-

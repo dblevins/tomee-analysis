@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/ValidatorHandler.class
-
- - link:ValidatorHandler-asmified.java[Asmified]
-
-== References
-

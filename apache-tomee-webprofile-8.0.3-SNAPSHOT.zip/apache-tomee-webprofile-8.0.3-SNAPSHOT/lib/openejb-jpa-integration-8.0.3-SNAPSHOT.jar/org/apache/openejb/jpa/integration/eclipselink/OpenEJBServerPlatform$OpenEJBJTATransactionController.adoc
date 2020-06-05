@@ -1,6 +1,0 @@
-= org/apache/openejb/jpa/integration/eclipselink/OpenEJBServerPlatform$OpenEJBJTATransactionController.class
-
- - link:OpenEJBServerPlatform$OpenEJBJTATransactionController-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanContext$Removable.class
-
- - link:BeanContext$Removable-asmified.java[Asmified]
-
-== References
-

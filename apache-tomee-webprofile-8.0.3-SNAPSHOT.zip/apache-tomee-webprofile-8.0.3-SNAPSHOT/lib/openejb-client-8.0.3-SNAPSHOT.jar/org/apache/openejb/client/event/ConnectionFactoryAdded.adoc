@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/ConnectionFactoryAdded.class
-
- - link:ConnectionFactoryAdded-asmified.java[Asmified]
-
-== References
-

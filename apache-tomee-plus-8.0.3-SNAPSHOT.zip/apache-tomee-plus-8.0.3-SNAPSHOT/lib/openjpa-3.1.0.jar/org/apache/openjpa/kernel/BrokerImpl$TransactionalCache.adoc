@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/BrokerImpl$TransactionalCache.class
-
- - link:BrokerImpl$TransactionalCache-asmified.java[Asmified]
-
-== References
-

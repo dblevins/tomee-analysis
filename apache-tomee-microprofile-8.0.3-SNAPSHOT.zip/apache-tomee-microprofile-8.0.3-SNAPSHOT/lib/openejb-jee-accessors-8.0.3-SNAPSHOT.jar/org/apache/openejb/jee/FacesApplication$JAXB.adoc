@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesApplication$JAXB.class
-
- - link:FacesApplication$JAXB-asmified.java[Asmified]
-
-== References
-

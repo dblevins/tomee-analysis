@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/DelegatingXMLStreamWriter.class
-
- - link:DelegatingXMLStreamWriter-asmified.java[Asmified]
-
-== References
-

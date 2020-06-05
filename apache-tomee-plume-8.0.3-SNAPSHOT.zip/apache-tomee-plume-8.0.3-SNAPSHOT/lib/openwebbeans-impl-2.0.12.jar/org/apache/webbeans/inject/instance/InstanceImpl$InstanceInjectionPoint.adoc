@@ -1,6 +1,0 @@
-= org/apache/webbeans/inject/instance/InstanceImpl$InstanceInjectionPoint.class
-
- - link:InstanceImpl$InstanceInjectionPoint-asmified.java[Asmified]
-
-== References
-

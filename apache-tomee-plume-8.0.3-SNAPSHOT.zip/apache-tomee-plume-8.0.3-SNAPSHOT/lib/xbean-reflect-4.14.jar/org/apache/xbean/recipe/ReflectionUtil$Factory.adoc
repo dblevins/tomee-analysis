@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ReflectionUtil$Factory.class
-
- - link:ReflectionUtil$Factory-asmified.java[Asmified]
-
-== References
-

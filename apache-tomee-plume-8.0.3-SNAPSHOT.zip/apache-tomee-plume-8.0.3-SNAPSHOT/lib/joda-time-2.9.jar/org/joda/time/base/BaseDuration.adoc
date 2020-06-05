@@ -1,6 +1,0 @@
-= org/joda/time/base/BaseDuration.class
-
- - link:BaseDuration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/webapp/ValidatorTag.class
-
- - link:ValidatorTag-asmified.java[Asmified]
-
-== References
-

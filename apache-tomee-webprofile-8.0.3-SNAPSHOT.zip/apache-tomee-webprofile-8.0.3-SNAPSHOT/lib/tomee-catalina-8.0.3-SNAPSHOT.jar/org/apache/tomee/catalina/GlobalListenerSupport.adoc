@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/GlobalListenerSupport.class
-
- - link:GlobalListenerSupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HttpDestinationFactory.class
-
- - link:HttpDestinationFactory-asmified.java[Asmified]
-
-== References
-

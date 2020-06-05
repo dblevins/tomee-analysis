@@ -1,6 +1,0 @@
-= jakarta/el/BeanELResolver.class
-
- - link:BeanELResolver-asmified.java[Asmified]
-
-== References
-

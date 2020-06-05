@@ -1,6 +1,0 @@
-= jakarta/persistence/GenerationType.class
-
- - link:GenerationType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/multicast/MulticastDiscoveryAgent$3.class
-
- - link:MulticastDiscoveryAgent$3-asmified.java[Asmified]
-
-== References
-

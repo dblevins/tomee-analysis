@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/EJBHandler.class
-
- - link:EJBHandler-asmified.java[Asmified]
-
-== References
-

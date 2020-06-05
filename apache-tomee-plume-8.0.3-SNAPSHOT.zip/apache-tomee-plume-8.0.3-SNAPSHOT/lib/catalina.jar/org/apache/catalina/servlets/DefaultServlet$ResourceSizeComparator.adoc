@@ -1,6 +1,0 @@
-= org/apache/catalina/servlets/DefaultServlet$ResourceSizeComparator.class
-
- - link:DefaultServlet$ResourceSizeComparator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/NonNullDefaultAwareTypeAnnotationWalker$1.class
-
- - link:NonNullDefaultAwareTypeAnnotationWalker$1-asmified.java[Asmified]
-
-== References
-

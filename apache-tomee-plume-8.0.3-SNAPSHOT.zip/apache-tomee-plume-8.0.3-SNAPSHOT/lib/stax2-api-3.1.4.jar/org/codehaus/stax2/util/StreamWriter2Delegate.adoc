@@ -1,6 +1,0 @@
-= org/codehaus/stax2/util/StreamWriter2Delegate.class
-
- - link:StreamWriter2Delegate-asmified.java[Asmified]
-
-== References
-

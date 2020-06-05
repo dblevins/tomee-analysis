@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlProperty.class
-
- - link:XmlProperty-asmified.java[Asmified]
-
-== References
-

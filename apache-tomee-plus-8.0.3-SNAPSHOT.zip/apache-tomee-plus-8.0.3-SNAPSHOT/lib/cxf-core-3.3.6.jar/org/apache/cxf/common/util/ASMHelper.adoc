@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ASMHelper.class
-
- - link:ASMHelper-asmified.java[Asmified]
-
-== References
-

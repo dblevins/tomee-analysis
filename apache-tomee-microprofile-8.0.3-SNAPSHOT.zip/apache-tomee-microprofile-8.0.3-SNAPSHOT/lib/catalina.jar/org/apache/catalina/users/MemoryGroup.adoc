@@ -1,6 +1,0 @@
-= org/apache/catalina/users/MemoryGroup.class
-
- - link:MemoryGroup-asmified.java[Asmified]
-
-== References
-

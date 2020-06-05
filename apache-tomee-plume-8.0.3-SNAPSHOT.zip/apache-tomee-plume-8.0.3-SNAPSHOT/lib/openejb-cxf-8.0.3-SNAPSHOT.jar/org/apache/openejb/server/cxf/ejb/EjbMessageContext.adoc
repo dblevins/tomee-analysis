@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/ejb/EjbMessageContext.class
-
- - link:EjbMessageContext-asmified.java[Asmified]
-
-== References
-

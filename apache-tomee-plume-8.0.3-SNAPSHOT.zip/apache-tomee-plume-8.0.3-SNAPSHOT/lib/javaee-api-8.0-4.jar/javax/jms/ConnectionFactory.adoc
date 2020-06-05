@@ -1,9 +1,0 @@
-= javax/jms/ConnectionFactory.class
-
- - link:ConnectionFactory-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSContext - 4
- - javax.jms.Connection - 2
- - javax.jms.JMSException - 2

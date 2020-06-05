@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey.class
-
- - link:ObjectIdGenerator$IdKey-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/NoneVersionStrategy.class
-
- - link:NoneVersionStrategy-asmified.java[Asmified]
-
-== References
-

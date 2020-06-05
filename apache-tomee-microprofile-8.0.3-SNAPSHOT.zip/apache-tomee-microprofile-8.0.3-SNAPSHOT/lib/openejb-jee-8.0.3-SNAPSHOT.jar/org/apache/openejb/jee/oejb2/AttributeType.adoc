@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/AttributeType.class
-
- - link:AttributeType-asmified.java[Asmified]
-
-== References
-

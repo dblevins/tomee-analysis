@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/UUIDHexSeq.class
-
- - link:UUIDHexSeq-asmified.java[Asmified]
-
-== References
-

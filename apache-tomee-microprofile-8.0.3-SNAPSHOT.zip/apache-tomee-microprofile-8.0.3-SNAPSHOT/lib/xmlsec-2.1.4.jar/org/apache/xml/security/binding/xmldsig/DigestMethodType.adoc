@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/DigestMethodType.class
-
- - link:DigestMethodType-asmified.java[Asmified]
-
-== References
-

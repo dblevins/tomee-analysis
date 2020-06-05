@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/InstanceProducer.class
-
- - link:InstanceProducer-asmified.java[Asmified]
-
-== References
-

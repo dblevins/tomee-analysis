@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/SecurityActionToken.class
-
- - link:SecurityActionToken-asmified.java[Asmified]
-
-== References
-

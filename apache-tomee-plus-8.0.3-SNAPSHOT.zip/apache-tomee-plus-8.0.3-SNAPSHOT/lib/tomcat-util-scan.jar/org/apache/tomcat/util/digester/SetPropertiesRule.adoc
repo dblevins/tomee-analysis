@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/digester/SetPropertiesRule.class
-
- - link:SetPropertiesRule-asmified.java[Asmified]
-
-== References
-

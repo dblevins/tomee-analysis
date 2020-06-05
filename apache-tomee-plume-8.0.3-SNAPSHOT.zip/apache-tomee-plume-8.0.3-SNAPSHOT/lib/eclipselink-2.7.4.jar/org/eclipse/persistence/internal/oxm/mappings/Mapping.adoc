@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/mappings/Mapping.class
-
- - link:Mapping-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/LocalVariablesSorter.class
-
- - link:LocalVariablesSorter-asmified.java[Asmified]
-
-== References
-

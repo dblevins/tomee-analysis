@@ -1,6 +1,0 @@
-= org/hsqldb/index/Index.class
-
- - link:Index-asmified.java[Asmified]
-
-== References
-

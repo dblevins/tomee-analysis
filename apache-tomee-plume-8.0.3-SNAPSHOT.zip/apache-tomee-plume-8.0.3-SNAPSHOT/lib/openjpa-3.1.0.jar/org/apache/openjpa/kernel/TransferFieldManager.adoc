@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/TransferFieldManager.class
-
- - link:TransferFieldManager-asmified.java[Asmified]
-
-== References
-

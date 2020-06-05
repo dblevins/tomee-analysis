@@ -1,6 +1,0 @@
-= jakarta/resource/spi/ActivationSpec.class
-
- - link:ActivationSpec-asmified.java[Asmified]
-
-== References
-

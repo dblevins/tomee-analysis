@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonFormat$Features.class
-
- - link:JsonFormat$Features-asmified.java[Asmified]
-
-== References
-

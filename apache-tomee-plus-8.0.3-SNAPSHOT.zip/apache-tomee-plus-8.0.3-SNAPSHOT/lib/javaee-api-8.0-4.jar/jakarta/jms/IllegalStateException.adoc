@@ -1,6 +1,0 @@
-= jakarta/jms/IllegalStateException.class
-
- - link:IllegalStateException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/codec/QuotedPrintableOutputStream.class
-
- - link:QuotedPrintableOutputStream-asmified.java[Asmified]
-
-== References
-

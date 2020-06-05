@@ -1,6 +1,0 @@
-= org/w3c/dom/ranges/DocumentRange.class
-
- - link:DocumentRange-asmified.java[Asmified]
-
-== References
-

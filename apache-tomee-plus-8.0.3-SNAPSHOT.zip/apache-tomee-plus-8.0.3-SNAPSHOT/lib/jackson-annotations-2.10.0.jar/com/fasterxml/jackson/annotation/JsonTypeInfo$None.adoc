@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonTypeInfo$None.class
-
- - link:JsonTypeInfo$None-asmified.java[Asmified]
-
-== References
-

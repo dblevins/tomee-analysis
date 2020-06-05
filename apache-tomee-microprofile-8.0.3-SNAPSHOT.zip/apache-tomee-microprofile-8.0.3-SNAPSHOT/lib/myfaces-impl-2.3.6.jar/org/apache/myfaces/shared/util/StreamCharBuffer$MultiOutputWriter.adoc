@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/StreamCharBuffer$MultiOutputWriter.class
-
- - link:StreamCharBuffer$MultiOutputWriter-asmified.java[Asmified]
-
-== References
-

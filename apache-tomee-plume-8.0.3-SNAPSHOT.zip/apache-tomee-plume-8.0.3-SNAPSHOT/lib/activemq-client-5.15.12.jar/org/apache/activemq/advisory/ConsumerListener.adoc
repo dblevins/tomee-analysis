@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/ConsumerListener.class
-
- - link:ConsumerListener-asmified.java[Asmified]
-
-== References
-

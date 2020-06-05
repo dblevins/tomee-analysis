@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/ObjectChangeSet$ObjectChangeSetComparator.class
-
- - link:ObjectChangeSet$ObjectChangeSetComparator-asmified.java[Asmified]
-
-== References
-

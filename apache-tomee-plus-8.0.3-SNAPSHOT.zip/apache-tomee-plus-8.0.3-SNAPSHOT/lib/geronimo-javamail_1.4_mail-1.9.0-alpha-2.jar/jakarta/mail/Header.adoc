@@ -1,6 +1,0 @@
-= jakarta/mail/Header.class
-
- - link:Header-asmified.java[Asmified]
-
-== References
-

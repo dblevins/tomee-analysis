@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tei/XmlTransformTEI.class
-
- - link:XmlTransformTEI-asmified.java[Asmified]
-
-== References
-

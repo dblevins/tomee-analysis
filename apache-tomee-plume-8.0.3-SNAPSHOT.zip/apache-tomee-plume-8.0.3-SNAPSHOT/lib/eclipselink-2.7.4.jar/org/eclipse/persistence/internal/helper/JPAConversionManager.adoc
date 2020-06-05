@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/JPAConversionManager.class
-
- - link:JPAConversionManager-asmified.java[Asmified]
-
-== References
-

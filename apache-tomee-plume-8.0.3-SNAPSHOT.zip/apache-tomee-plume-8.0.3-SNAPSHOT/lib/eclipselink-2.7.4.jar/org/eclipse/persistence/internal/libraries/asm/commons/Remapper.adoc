@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/Remapper.class
-
- - link:Remapper-asmified.java[Asmified]
-
-== References
-

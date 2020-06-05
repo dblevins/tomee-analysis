@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/ConstPath.class
-
- - link:ConstPath-asmified.java[Asmified]
-
-== References
-

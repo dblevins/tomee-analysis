@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/StreamCharBuffer$StreamCharBufferSubChunkReader.class
-
- - link:StreamCharBuffer$StreamCharBufferSubChunkReader-asmified.java[Asmified]
-
-== References
-

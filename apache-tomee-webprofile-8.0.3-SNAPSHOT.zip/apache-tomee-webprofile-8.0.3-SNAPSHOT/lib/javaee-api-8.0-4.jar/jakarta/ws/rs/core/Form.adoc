@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Form.class
-
- - link:Form-asmified.java[Asmified]
-
-== References
-

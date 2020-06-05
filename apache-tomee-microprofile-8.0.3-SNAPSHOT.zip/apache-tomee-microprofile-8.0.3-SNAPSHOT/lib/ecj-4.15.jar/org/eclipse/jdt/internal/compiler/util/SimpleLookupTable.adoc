@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/SimpleLookupTable.class
-
- - link:SimpleLookupTable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/PersistenceUnitInfoImpl.class
-
- - link:PersistenceUnitInfoImpl-asmified.java[Asmified]
-
-== References
-

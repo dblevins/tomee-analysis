@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/CookieHeaderProvider.class
-
- - link:CookieHeaderProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/security/PrivilegedGetClassLoaderFromCurrentThread.class
-
- - link:PrivilegedGetClassLoaderFromCurrentThread-asmified.java[Asmified]
-
-== References
-

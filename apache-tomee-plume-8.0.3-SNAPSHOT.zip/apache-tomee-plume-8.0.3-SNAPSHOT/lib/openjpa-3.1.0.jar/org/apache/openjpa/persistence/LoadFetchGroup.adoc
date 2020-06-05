@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/LoadFetchGroup.class
-
- - link:LoadFetchGroup-asmified.java[Asmified]
-
-== References
-

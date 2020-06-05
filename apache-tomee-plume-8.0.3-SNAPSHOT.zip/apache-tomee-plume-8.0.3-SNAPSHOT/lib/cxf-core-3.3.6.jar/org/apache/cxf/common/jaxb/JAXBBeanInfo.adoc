@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBBeanInfo.class
-
- - link:JAXBBeanInfo-asmified.java[Asmified]
-
-== References
-

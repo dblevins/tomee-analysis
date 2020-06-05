@@ -1,9 +1,0 @@
-= javax/resource/spi/work/WorkEvent.class
-
- - link:WorkEvent-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.work.Work - 7
- - javax.resource.spi.work.WorkException - 7
- - javax.resource.spi.work.WorkEvent - 1

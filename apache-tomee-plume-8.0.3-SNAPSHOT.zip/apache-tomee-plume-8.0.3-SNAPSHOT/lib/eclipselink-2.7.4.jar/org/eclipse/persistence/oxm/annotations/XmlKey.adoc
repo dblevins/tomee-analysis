@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlKey.class
-
- - link:XmlKey-asmified.java[Asmified]
-
-== References
-

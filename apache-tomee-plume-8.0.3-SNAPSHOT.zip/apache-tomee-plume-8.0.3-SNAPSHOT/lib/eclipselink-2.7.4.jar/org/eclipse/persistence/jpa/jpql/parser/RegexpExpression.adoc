@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/RegexpExpression.class
-
- - link:RegexpExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/TimesExpression.class
-
- - link:TimesExpression-asmified.java[Asmified]
-
-== References
-

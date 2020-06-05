@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/SaxOpenejb$TransactionManagerElement.class
-
- - link:SaxOpenejb$TransactionManagerElement-asmified.java[Asmified]
-
-== References
-

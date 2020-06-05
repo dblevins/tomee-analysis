@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/spi/OASFactoryResolver$1.class
-
- - link:OASFactoryResolver$1-asmified.java[Asmified]
-
-== References
-

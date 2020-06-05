@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/builder/EqualsBuilder.class
-
- - link:EqualsBuilder-asmified.java[Asmified]
-
-== References
-

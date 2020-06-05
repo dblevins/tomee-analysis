@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/RequestedAttributeMarshaller.class
-
- - link:RequestedAttributeMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/peer/PeerTransportFactory$1.class
-
- - link:PeerTransportFactory$1-asmified.java[Asmified]
-
-== References
-

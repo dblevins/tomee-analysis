@@ -1,6 +1,0 @@
-= org/hsqldb/auth/AuthBeanMultiplexer.class
-
- - link:AuthBeanMultiplexer-asmified.java[Asmified]
-
-== References
-

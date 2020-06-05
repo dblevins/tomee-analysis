@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/NodeImpl$ContainerElementNodeImpl.class
-
- - link:NodeImpl$ContainerElementNodeImpl-asmified.java[Asmified]
-
-== References
-

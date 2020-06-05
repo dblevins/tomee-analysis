@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/SecondaryTable.class
-
- - link:SecondaryTable-asmified.java[Asmified]
-
-== References
-

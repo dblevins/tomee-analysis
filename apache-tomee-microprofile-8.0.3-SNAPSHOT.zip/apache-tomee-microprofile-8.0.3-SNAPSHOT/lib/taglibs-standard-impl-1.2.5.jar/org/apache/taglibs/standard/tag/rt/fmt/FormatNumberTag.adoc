@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/fmt/FormatNumberTag.class
-
- - link:FormatNumberTag-asmified.java[Asmified]
-
-== References
-

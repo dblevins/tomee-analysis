@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/DelegatingExtent.class
-
- - link:DelegatingExtent-asmified.java[Asmified]
-
-== References
-

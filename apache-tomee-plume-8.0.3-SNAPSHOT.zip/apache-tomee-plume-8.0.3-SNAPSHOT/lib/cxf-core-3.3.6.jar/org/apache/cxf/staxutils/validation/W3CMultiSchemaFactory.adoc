@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/validation/W3CMultiSchemaFactory.class
-
- - link:W3CMultiSchemaFactory-asmified.java[Asmified]
-
-== References
-

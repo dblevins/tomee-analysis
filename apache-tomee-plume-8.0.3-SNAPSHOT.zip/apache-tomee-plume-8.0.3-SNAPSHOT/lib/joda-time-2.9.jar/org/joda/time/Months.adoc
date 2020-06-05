@@ -1,6 +1,0 @@
-= org/joda/time/Months.class
-
- - link:Months-asmified.java[Asmified]
-
-== References
-

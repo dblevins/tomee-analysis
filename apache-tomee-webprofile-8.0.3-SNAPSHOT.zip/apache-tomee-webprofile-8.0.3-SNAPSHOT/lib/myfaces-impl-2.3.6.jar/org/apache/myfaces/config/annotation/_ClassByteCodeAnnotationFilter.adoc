@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/annotation/_ClassByteCodeAnnotationFilter.class
-
- - link:_ClassByteCodeAnnotationFilter-asmified.java[Asmified]
-
-== References
-

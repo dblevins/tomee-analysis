@@ -1,6 +1,0 @@
-= org/apache/openejb/server/rest/RsRegistry$AddressInfo.class
-
- - link:RsRegistry$AddressInfo-asmified.java[Asmified]
-
-== References
-

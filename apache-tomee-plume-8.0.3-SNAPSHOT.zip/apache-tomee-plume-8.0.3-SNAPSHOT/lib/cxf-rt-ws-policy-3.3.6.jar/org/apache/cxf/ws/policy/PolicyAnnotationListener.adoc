@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/PolicyAnnotationListener.class
-
- - link:PolicyAnnotationListener-asmified.java[Asmified]
-
-== References
-

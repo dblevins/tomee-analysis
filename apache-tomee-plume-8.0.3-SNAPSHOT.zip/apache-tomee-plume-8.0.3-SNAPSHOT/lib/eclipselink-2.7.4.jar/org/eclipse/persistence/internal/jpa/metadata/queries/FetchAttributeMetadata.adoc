@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/queries/FetchAttributeMetadata.class
-
- - link:FetchAttributeMetadata-asmified.java[Asmified]
-
-== References
-

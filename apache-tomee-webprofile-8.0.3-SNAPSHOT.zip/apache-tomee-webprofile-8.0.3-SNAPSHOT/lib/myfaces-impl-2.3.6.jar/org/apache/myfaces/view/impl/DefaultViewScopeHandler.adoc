@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/impl/DefaultViewScopeHandler.class
-
- - link:DefaultViewScopeHandler-asmified.java[Asmified]
-
-== References
-

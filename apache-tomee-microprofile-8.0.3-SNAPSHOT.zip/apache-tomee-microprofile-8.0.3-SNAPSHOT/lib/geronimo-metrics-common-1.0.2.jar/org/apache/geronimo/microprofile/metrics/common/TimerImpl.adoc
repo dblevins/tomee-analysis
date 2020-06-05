@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/TimerImpl.class
-
- - link:TimerImpl-asmified.java[Asmified]
-
-== References
-

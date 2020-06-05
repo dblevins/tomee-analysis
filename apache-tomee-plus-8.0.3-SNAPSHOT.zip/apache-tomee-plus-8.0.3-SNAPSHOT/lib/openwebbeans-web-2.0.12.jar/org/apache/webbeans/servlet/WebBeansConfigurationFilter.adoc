@@ -1,6 +1,0 @@
-= org/apache/webbeans/servlet/WebBeansConfigurationFilter.class
-
- - link:WebBeansConfigurationFilter-asmified.java[Asmified]
-
-== References
-

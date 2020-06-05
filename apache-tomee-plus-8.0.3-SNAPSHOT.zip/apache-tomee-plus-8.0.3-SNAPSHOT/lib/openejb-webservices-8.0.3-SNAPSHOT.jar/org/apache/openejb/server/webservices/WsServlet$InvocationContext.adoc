@@ -1,8 +1,0 @@
-= org/apache/openejb/server/webservices/WsServlet$InvocationContext.class
-
- - link:WsServlet$InvocationContext-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.handler.MessageContext - 2
- - javax.xml.rpc.server.ServletEndpointContext - 1

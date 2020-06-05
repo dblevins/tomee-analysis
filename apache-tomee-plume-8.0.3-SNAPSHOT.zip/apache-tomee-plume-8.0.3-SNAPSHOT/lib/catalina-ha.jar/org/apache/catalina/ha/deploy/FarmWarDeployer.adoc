@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/deploy/FarmWarDeployer.class
-
- - link:FarmWarDeployer-asmified.java[Asmified]
-
-== References
-

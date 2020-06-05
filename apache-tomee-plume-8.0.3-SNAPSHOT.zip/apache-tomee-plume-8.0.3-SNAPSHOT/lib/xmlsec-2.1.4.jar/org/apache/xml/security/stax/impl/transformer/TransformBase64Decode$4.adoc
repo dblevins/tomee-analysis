@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/transformer/TransformBase64Decode$4.class
-
- - link:TransformBase64Decode$4-asmified.java[Asmified]
-
-== References
-

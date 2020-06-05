@@ -1,6 +1,0 @@
-= org/hsqldb/auth/AuthFunctionBean.class
-
- - link:AuthFunctionBean-asmified.java[Asmified]
-
-== References
-

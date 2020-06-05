@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/third/ThirdpartyBeanImpl.class
-
- - link:ThirdpartyBeanImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/json/JsonArrayBuilderResult.class
-
- - link:JsonArrayBuilderResult-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/ValueChangeListenerHandler.class
-
- - link:ValueChangeListenerHandler-asmified.java[Asmified]
-
-== References
-

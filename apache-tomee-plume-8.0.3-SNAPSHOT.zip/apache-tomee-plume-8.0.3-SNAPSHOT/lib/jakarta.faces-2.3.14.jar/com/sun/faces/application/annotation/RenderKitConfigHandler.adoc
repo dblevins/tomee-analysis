@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/RenderKitConfigHandler.class
-
- - link:RenderKitConfigHandler-asmified.java[Asmified]
-
-== References
-

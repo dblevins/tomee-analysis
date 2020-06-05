@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/WhitelistBlacklistParameters.class
-
- - link:WhitelistBlacklistParameters-asmified.java[Asmified]
-
-== References
-

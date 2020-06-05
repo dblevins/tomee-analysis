@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/PojoInvoker.class
-
- - link:PojoInvoker-asmified.java[Asmified]
-
-== References
-

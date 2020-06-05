@@ -1,6 +1,0 @@
-= org/apache/openejb/sxc/EjbJarXml.class
-
- - link:EjbJarXml-asmified.java[Asmified]
-
-== References
-

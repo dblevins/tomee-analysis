@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/fmt/FormatDateSupport.class
-
- - link:FormatDateSupport-asmified.java[Asmified]
-
-== References
-

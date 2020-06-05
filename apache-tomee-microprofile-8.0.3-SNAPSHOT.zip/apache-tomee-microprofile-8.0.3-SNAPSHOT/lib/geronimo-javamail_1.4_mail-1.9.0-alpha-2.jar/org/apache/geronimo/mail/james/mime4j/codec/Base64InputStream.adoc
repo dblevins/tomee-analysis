@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/codec/Base64InputStream.class
-
- - link:Base64InputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/AssertionURIRefImpl.class
-
- - link:AssertionURIRefImpl-asmified.java[Asmified]
-
-== References
-

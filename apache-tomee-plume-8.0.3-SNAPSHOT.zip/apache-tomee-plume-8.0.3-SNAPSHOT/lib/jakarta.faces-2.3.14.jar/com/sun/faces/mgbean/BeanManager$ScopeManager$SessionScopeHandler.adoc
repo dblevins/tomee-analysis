@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/BeanManager$ScopeManager$SessionScopeHandler.class
-
- - link:BeanManager$ScopeManager$SessionScopeHandler-asmified.java[Asmified]
-
-== References
-

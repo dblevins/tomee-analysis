@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/filter/TokenFilter.class
-
- - link:TokenFilter-asmified.java[Asmified]
-
-== References
-

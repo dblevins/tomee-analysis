@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/LiteralExpression.class
-
- - link:LiteralExpression-asmified.java[Asmified]
-
-== References
-

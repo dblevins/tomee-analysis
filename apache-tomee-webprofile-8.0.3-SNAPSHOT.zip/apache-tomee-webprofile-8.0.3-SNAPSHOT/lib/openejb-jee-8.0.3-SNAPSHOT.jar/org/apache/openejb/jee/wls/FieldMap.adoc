@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/FieldMap.class
-
- - link:FieldMap-asmified.java[Asmified]
-
-== References
-

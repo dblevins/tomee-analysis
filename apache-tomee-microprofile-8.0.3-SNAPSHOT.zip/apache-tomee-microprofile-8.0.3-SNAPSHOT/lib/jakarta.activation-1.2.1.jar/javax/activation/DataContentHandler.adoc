@@ -1,7 +1,0 @@
-= javax/activation/DataContentHandler.class
-
- - link:DataContentHandler-asmified.java[Asmified]
-
-== References
-
- - javax.activation.DataSource - 2

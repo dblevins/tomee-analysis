@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$ModuleRule.class
-
- - link:ASMContentHandler$ModuleRule-asmified.java[Asmified]
-
-== References
-

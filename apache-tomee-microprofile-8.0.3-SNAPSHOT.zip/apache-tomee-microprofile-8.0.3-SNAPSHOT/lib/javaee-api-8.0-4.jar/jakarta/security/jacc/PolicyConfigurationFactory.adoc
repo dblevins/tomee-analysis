@@ -1,6 +1,0 @@
-= jakarta/security/jacc/PolicyConfigurationFactory.class
-
- - link:PolicyConfigurationFactory-asmified.java[Asmified]
-
-== References
-

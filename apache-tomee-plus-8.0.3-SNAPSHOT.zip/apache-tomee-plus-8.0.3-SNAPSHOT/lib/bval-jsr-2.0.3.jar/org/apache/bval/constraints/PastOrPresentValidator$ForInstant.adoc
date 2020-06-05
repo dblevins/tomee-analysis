@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/PastOrPresentValidator$ForInstant.class
-
- - link:PastOrPresentValidator$ForInstant-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ResourceAdapter.class
-
- - link:ResourceAdapter-asmified.java[Asmified]
-
-== References
-

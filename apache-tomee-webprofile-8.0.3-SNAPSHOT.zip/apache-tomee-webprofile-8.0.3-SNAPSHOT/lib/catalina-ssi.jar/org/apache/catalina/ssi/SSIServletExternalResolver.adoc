@@ -1,6 +1,0 @@
-= org/apache/catalina/ssi/SSIServletExternalResolver.class
-
- - link:SSIServletExternalResolver-asmified.java[Asmified]
-
-== References
-

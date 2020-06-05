@@ -1,6 +1,0 @@
-= org/apache/myfaces/webapp/AbstractFacesInitializer.class
-
- - link:AbstractFacesInitializer-asmified.java[Asmified]
-
-== References
-

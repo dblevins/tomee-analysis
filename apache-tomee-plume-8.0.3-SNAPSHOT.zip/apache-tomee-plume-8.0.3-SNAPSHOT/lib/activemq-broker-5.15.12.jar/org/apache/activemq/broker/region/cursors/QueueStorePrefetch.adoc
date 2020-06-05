@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/cursors/QueueStorePrefetch.class
-
- - link:QueueStorePrefetch-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/facelets/FaceletTagDefinition.class
-
- - link:FaceletTagDefinition-asmified.java[Asmified]
-
-== References
-

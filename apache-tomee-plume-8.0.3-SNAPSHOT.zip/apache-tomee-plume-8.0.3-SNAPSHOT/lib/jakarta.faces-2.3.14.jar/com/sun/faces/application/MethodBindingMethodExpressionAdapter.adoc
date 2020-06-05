@@ -1,6 +1,0 @@
-= com/sun/faces/application/MethodBindingMethodExpressionAdapter.class
-
- - link:MethodBindingMethodExpressionAdapter-asmified.java[Asmified]
-
-== References
-

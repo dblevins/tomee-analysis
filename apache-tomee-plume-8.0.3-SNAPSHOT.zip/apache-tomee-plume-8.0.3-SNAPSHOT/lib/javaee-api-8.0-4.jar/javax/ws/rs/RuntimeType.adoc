@@ -1,7 +1,0 @@
-= javax/ws/rs/RuntimeType.class
-
- - link:RuntimeType-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.RuntimeType - 21

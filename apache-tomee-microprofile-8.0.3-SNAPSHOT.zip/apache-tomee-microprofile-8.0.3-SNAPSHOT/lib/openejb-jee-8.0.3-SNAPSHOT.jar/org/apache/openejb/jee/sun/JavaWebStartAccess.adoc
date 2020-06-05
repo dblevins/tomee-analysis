@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/JavaWebStartAccess.class
-
- - link:JavaWebStartAccess-asmified.java[Asmified]
-
-== References
-

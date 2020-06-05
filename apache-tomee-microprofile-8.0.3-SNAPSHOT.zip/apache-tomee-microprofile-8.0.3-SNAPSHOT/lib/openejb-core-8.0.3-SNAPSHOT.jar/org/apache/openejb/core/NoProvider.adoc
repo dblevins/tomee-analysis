@@ -1,6 +1,0 @@
-= org/apache/openejb/core/NoProvider.class
-
- - link:NoProvider-asmified.java[Asmified]
-
-== References
-

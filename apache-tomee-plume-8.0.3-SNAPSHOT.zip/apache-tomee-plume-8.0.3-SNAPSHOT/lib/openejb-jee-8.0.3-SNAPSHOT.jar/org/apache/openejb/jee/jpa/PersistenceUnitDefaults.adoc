@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/PersistenceUnitDefaults.class
-
- - link:PersistenceUnitDefaults-asmified.java[Asmified]
-
-== References
-

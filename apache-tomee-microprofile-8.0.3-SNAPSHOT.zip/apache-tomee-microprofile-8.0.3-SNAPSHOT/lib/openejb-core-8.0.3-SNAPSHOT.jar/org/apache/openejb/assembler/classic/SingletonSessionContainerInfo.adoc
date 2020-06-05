@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/SingletonSessionContainerInfo.class
-
- - link:SingletonSessionContainerInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/json/bind/annotation/JsonbAnnotation.class
-
- - link:JsonbAnnotation-asmified.java[Asmified]
-
-== References
-

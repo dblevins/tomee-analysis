@@ -1,6 +1,0 @@
-= jakarta/xml/ws/handler/LogicalHandler.class
-
- - link:LogicalHandler-asmified.java[Asmified]
-
-== References
-

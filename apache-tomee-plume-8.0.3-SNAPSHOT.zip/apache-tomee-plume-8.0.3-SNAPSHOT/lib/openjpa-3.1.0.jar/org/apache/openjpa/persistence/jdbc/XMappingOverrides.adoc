@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/XMappingOverrides.class
-
- - link:XMappingOverrides-asmified.java[Asmified]
-
-== References
-

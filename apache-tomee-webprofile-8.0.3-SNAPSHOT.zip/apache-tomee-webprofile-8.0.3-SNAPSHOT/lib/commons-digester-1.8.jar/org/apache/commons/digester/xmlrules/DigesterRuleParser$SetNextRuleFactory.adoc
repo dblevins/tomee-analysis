@@ -1,6 +1,0 @@
-= org/apache/commons/digester/xmlrules/DigesterRuleParser$SetNextRuleFactory.class
-
- - link:DigesterRuleParser$SetNextRuleFactory-asmified.java[Asmified]
-
-== References
-

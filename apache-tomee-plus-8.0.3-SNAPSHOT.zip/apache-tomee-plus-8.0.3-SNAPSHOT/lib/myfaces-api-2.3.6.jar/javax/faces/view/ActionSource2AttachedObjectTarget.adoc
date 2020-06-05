@@ -1,7 +1,0 @@
-= javax/faces/view/ActionSource2AttachedObjectTarget.class
-
- - link:ActionSource2AttachedObjectTarget-asmified.java[Asmified]
-
-== References
-
- - javax.faces.view.AttachedObjectTarget - 1

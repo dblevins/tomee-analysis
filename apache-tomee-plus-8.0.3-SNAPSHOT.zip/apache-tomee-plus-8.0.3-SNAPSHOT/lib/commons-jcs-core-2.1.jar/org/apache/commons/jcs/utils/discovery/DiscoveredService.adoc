@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/discovery/DiscoveredService.class
-
- - link:DiscoveredService-asmified.java[Asmified]
-
-== References
-

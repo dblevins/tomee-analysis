@@ -1,6 +1,0 @@
-= org/apache/openejb/util/urlhandler/resource/Handler.class
-
- - link:Handler-asmified.java[Asmified]
-
-== References
-

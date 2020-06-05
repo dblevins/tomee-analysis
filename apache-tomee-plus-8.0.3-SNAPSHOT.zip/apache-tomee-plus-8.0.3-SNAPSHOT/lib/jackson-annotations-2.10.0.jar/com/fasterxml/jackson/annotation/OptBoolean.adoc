@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/OptBoolean.class
-
- - link:OptBoolean-asmified.java[Asmified]
-
-== References
-

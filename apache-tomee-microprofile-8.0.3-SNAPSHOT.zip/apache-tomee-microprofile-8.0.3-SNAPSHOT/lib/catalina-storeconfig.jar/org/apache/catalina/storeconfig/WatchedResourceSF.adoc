@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/WatchedResourceSF.class
-
- - link:WatchedResourceSF-asmified.java[Asmified]
-
-== References
-

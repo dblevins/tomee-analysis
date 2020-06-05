@@ -1,6 +1,0 @@
-= jakarta/persistence/ManyToOne.class
-
- - link:ManyToOne-asmified.java[Asmified]
-
-== References
-

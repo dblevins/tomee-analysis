@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/XMLStreamReaderInputSource.class
-
- - link:XMLStreamReaderInputSource-asmified.java[Asmified]
-
-== References
-

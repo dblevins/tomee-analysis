@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/extension/TextExtensionFragmentParser.class
-
- - link:TextExtensionFragmentParser-asmified.java[Asmified]
-
-== References
-

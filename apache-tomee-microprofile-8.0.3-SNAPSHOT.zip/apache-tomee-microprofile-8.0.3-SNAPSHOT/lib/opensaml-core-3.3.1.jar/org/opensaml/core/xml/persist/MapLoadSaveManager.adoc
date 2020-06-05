@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/persist/MapLoadSaveManager.class
-
- - link:MapLoadSaveManager-asmified.java[Asmified]
-
-== References
-

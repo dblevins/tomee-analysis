@@ -1,6 +1,0 @@
-= org/apache/commons/collections/FastHashMap$Values.class
-
- - link:FastHashMap$Values-asmified.java[Asmified]
-
-== References
-

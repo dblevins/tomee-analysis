@@ -1,8 +1,0 @@
-= javax/jms/ConnectionConsumer.class
-
- - link:ConnectionConsumer-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSException - 2
- - javax.jms.ServerSessionPool - 1

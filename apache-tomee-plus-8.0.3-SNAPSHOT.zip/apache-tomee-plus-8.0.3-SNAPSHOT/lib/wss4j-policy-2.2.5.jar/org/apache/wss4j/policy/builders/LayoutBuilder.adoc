@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/LayoutBuilder.class
-
- - link:LayoutBuilder-asmified.java[Asmified]
-
-== References
-

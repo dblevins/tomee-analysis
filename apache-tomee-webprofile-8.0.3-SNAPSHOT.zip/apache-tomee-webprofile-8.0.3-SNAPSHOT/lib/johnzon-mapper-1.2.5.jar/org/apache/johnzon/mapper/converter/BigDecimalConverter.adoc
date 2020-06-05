@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/converter/BigDecimalConverter.class
-
- - link:BigDecimalConverter-asmified.java[Asmified]
-
-== References
-

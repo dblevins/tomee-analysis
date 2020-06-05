@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/valve/LazyValve.class
-
- - link:LazyValve-asmified.java[Asmified]
-
-== References
-

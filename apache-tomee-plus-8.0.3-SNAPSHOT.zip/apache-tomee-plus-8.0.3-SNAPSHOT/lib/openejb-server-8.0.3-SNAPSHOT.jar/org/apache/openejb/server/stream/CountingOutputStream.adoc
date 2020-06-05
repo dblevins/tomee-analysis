@@ -1,6 +1,0 @@
-= org/apache/openejb/server/stream/CountingOutputStream.class
-
- - link:CountingOutputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/foundation/AbstractCompositeDirectCollectionMapping.class
-
- - link:AbstractCompositeDirectCollectionMapping-asmified.java[Asmified]
-
-== References
-

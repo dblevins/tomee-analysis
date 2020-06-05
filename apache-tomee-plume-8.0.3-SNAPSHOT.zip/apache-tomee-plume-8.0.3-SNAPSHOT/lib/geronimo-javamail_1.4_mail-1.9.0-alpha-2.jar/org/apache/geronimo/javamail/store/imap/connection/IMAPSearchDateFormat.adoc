@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPSearchDateFormat.class
-
- - link:IMAPSearchDateFormat-asmified.java[Asmified]
-
-== References
-

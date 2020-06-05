@@ -1,6 +1,0 @@
-= org/apache/bval/util/ObjectWrapper.class
-
- - link:ObjectWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaSimpleTypeUnion.class
-
- - link:XmlSchemaSimpleTypeUnion-asmified.java[Asmified]
-
-== References
-

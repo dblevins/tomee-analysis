@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdreqinit/RequestInitiator.class
-
- - link:RequestInitiator-asmified.java[Asmified]
-
-== References
-

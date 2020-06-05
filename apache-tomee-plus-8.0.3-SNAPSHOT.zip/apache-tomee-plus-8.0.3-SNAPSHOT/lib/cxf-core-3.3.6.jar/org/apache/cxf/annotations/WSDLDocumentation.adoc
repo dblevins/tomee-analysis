@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/WSDLDocumentation.class
-
- - link:WSDLDocumentation-asmified.java[Asmified]
-
-== References
-

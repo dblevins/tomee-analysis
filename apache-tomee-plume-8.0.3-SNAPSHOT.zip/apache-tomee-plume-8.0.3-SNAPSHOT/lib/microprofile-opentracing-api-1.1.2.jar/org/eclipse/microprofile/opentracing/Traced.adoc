@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/opentracing/Traced.class
-
- - link:Traced-asmified.java[Asmified]
-
-== References
-

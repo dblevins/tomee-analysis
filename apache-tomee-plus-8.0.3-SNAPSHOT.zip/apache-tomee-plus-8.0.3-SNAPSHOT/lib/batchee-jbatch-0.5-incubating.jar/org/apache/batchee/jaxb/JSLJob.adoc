@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/JSLJob.class
-
- - link:JSLJob-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/BaseID.class
-
- - link:BaseID-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/cache/expiry/ExpiryPolicy.class
-
- - link:ExpiryPolicy-asmified.java[Asmified]
-
-== References
-

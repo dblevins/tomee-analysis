@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/WebClient$ClientAsyncResponseInterceptor.class
-
- - link:WebClient$ClientAsyncResponseInterceptor-asmified.java[Asmified]
-
-== References
-

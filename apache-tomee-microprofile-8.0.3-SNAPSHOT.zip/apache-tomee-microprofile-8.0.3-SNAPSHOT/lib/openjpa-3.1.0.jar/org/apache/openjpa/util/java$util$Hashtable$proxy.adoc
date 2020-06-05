@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/java$util$Hashtable$proxy.class
-
- - link:java$util$Hashtable$proxy-asmified.java[Asmified]
-
-== References
-

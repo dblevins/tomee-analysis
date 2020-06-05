@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

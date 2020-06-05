@@ -1,7 +1,0 @@
-= javax/enterprise/context/Dependent.class
-
- - link:Dependent-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Scope - 1

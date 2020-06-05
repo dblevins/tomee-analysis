@@ -1,6 +1,0 @@
-= serp/bytecode/ArrayState.class
-
- - link:ArrayState-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLSequencedDescriptor.class
-
- - link:XMLSequencedDescriptor-asmified.java[Asmified]
-
-== References
-

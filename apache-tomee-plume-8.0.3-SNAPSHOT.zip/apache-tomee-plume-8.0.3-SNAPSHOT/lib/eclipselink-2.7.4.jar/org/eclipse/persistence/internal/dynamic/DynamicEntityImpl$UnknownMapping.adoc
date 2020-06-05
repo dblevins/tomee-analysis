@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/dynamic/DynamicEntityImpl$UnknownMapping.class
-
- - link:DynamicEntityImpl$UnknownMapping-asmified.java[Asmified]
-
-== References
-

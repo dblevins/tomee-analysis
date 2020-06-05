@@ -1,6 +1,0 @@
-= org/apache/activemq/command/BrokerId.class
-
- - link:BrokerId-asmified.java[Asmified]
-
-== References
-

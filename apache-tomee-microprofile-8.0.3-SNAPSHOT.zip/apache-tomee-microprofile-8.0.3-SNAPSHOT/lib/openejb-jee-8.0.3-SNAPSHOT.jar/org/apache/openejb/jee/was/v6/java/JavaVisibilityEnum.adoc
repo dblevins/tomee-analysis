@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/JavaVisibilityEnum.class
-
- - link:JavaVisibilityEnum-asmified.java[Asmified]
-
-== References
-

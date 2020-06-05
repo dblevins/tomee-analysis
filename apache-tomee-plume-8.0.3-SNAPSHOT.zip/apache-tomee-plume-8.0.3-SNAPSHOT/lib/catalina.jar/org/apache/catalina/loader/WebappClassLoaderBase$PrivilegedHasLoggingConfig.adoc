@@ -1,6 +1,0 @@
-= org/apache/catalina/loader/WebappClassLoaderBase$PrivilegedHasLoggingConfig.class
-
- - link:WebappClassLoaderBase$PrivilegedHasLoggingConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ResultTypeUnmarshaller.class
-
- - link:ResultTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

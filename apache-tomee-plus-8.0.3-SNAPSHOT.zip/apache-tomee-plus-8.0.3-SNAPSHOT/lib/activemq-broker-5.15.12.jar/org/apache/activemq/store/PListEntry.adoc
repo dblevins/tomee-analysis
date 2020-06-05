@@ -1,6 +1,0 @@
-= org/apache/activemq/store/PListEntry.class
-
- - link:PListEntry-asmified.java[Asmified]
-
-== References
-

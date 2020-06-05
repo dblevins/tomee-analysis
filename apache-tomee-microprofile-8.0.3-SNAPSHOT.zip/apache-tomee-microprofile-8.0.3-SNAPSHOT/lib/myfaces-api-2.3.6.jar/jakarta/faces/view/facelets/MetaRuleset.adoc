@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/MetaRuleset.class
-
- - link:MetaRuleset-asmified.java[Asmified]
-
-== References
-

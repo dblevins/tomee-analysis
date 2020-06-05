@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/DynamicStorageGenerator.class
-
- - link:DynamicStorageGenerator-asmified.java[Asmified]
-
-== References
-

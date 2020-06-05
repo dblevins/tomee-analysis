@@ -1,6 +1,0 @@
-= org/apache/xml/security/algorithms/implementations/SignatureDSA$SHA256.class
-
- - link:SignatureDSA$SHA256-asmified.java[Asmified]
-
-== References
-

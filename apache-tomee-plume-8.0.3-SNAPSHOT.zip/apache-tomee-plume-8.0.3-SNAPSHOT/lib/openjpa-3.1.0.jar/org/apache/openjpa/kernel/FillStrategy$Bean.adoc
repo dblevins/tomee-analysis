@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/FillStrategy$Bean.class
-
- - link:FillStrategy$Bean-asmified.java[Asmified]
-
-== References
-

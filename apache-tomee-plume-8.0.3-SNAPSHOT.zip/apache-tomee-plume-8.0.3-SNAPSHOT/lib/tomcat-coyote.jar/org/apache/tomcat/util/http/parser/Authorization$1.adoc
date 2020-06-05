@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/parser/Authorization$1.class
-
- - link:Authorization$1-asmified.java[Asmified]
-
-== References
-

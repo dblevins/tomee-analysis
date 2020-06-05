@@ -1,6 +1,0 @@
-= javax/ejb/DependsOn.class
-
- - link:DependsOn-asmified.java[Asmified]
-
-== References
-

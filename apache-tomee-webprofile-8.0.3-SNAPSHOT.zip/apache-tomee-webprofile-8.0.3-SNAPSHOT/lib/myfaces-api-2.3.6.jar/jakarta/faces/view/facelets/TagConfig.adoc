@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/TagConfig.class
-
- - link:TagConfig-asmified.java[Asmified]
-
-== References
-

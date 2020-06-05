@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AnnotatedMethodImpl.class
-
- - link:AnnotatedMethodImpl-asmified.java[Asmified]
-
-== References
-

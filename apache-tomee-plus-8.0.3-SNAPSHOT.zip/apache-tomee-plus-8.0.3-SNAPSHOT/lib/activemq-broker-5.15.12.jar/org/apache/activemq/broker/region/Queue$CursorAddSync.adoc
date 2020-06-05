@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/Queue$CursorAddSync.class
-
- - link:Queue$CursorAddSync-asmified.java[Asmified]
-
-== References
-

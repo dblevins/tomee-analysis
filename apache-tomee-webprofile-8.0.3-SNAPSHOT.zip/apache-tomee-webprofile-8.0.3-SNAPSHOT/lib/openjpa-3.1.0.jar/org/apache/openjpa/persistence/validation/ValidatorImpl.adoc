@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/validation/ValidatorImpl.class
-
- - link:ValidatorImpl-asmified.java[Asmified]
-
-== References
-

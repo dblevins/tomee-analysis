@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$DescriptorCustomizerProp.class
-
- - link:PropertiesHandler$DescriptorCustomizerProp-asmified.java[Asmified]
-
-== References
-

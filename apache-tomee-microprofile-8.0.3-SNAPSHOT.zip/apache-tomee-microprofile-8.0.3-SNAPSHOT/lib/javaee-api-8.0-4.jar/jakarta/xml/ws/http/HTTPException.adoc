@@ -1,6 +1,0 @@
-= jakarta/xml/ws/http/HTTPException.class
-
- - link:HTTPException-asmified.java[Asmified]
-
-== References
-

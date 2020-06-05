@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/IngresDictionary.class
-
- - link:IngresDictionary-asmified.java[Asmified]
-
-== References
-

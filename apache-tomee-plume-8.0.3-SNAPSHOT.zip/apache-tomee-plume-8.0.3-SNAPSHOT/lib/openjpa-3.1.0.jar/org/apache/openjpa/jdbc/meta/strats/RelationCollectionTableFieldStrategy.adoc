@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/RelationCollectionTableFieldStrategy.class
-
- - link:RelationCollectionTableFieldStrategy-asmified.java[Asmified]
-
-== References
-

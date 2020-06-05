@@ -1,6 +1,0 @@
-= org/apache/openejb/rest/ThreadLocalConfiguration.class
-
- - link:ThreadLocalConfiguration-asmified.java[Asmified]
-
-== References
-

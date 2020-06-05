@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/TomEEMicroProfileService.class
-
- - link:TomEEMicroProfileService-asmified.java[Asmified]
-
-== References
-

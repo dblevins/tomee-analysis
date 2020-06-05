@@ -1,6 +1,0 @@
-= org/apache/webbeans/ejb/common/component/EjbBeanBuilder$1.class
-
- - link:EjbBeanBuilder$1-asmified.java[Asmified]
-
-== References
-

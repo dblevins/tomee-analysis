@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/ComponentSupport.class
-
- - link:ComponentSupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/security/OAuthFlow.class
-
- - link:OAuthFlow-asmified.java[Asmified]
-
-== References
-

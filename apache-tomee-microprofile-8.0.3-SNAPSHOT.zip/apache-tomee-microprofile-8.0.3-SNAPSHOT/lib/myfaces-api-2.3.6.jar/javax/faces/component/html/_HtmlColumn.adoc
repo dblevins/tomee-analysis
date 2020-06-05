@@ -1,7 +1,0 @@
-= javax/faces/component/html/_HtmlColumn.class
-
- - link:_HtmlColumn-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.UIColumn - 3

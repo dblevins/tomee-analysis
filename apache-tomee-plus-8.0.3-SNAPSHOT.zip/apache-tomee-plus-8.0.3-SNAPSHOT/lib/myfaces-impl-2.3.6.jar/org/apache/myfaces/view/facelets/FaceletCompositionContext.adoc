@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/FaceletCompositionContext.class
-
- - link:FaceletCompositionContext-asmified.java[Asmified]
-
-== References
-

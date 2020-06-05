@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser$orderByClause_scope.class
-
- - link:JPQLParser$orderByClause_scope-asmified.java[Asmified]
-
-== References
-

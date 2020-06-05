@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/Request$1.class
-
- - link:Request$1-asmified.java[Asmified]
-
-== References
-

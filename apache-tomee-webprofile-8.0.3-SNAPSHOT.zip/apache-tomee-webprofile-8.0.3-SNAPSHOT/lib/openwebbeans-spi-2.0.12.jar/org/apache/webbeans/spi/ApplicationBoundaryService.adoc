@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/ApplicationBoundaryService.class
-
- - link:ApplicationBoundaryService-asmified.java[Asmified]
-
-== References
-

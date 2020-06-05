@@ -1,2 +1,0 @@
-= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/openwebbeans-spi-2.0.12.jar
-

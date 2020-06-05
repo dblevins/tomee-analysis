@@ -1,6 +1,0 @@
-= javax/faces/component/html/_LinkProperties.class
-
- - link:_LinkProperties-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/xml/bind/annotation/XmlRootElement.class
-
- - link:XmlRootElement-asmified.java[Asmified]
-
-== References
-

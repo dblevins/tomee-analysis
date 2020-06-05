@@ -1,6 +1,0 @@
-= org/apache/tomee/common/PersistenceContextFactory.class
-
- - link:PersistenceContextFactory-asmified.java[Asmified]
-
-== References
-

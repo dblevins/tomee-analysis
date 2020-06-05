@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageBase.class
-
- - link:FaceletViewDeclarationLanguageBase-asmified.java[Asmified]
-
-== References
-

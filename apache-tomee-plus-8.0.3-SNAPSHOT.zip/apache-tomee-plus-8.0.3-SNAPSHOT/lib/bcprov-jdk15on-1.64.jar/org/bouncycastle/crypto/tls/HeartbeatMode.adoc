@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/HeartbeatMode.class
-
- - link:HeartbeatMode-asmified.java[Asmified]
-
-== References
-

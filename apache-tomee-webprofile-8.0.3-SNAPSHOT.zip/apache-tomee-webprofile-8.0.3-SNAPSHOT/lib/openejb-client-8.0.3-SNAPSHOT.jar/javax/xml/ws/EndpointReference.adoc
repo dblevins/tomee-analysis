@@ -1,8 +1,0 @@
-= javax/xml/ws/EndpointReference.class
-
- - link:EndpointReference-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.EndpointReference - 1
- - javax.xml.ws.WebServiceFeature - 1

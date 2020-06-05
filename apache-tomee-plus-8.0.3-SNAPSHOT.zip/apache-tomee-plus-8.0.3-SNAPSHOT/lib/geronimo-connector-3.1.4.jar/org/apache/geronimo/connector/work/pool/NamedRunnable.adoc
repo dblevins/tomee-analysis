@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/work/pool/NamedRunnable.class
-
- - link:NamedRunnable-asmified.java[Asmified]
-
-== References
-

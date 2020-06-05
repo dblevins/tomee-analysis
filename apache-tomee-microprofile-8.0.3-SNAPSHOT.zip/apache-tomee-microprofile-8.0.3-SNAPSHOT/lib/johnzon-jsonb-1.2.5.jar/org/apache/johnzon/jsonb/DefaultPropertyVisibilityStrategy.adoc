@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/DefaultPropertyVisibilityStrategy.class
-
- - link:DefaultPropertyVisibilityStrategy-asmified.java[Asmified]
-
-== References
-

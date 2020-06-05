@@ -1,6 +1,0 @@
-= org/apache/openejb/config/provider/ProviderCircularReferenceException.class
-
- - link:ProviderCircularReferenceException-asmified.java[Asmified]
-
-== References
-

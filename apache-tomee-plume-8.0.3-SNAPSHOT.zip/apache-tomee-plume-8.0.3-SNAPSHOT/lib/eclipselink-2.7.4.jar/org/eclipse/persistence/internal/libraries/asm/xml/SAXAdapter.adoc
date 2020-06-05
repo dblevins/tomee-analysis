@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/SAXAdapter.class
-
- - link:SAXAdapter-asmified.java[Asmified]
-
-== References
-

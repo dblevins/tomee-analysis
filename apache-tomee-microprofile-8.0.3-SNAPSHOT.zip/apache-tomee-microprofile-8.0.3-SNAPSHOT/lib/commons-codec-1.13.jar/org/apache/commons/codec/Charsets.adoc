@@ -1,6 +1,0 @@
-= org/apache/commons/codec/Charsets.class
-
- - link:Charsets-asmified.java[Asmified]
-
-== References
-

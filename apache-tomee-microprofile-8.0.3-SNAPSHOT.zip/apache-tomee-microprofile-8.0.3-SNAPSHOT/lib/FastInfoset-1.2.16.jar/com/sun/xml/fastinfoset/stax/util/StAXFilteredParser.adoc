@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/stax/util/StAXFilteredParser.class
-
- - link:StAXFilteredParser-asmified.java[Asmified]
-
-== References
-

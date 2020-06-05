@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/converter/URIConverter.class
-
- - link:URIConverter-asmified.java[Asmified]
-
-== References
-

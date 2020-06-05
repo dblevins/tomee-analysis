@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/OptimizedLoaderService.class
-
- - link:OptimizedLoaderService-asmified.java[Asmified]
-
-== References
-

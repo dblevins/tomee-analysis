@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v9/IntegerResponseMarshaller.class
-
- - link:IntegerResponseMarshaller-asmified.java[Asmified]
-
-== References
-

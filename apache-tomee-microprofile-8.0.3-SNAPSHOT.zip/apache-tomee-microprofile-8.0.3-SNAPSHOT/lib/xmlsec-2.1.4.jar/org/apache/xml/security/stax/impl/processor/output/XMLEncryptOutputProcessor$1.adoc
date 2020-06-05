@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/processor/output/XMLEncryptOutputProcessor$1.class
-
- - link:XMLEncryptOutputProcessor$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomcatSecurityService$1.class
-
- - link:TomcatSecurityService$1-asmified.java[Asmified]
-
-== References
-

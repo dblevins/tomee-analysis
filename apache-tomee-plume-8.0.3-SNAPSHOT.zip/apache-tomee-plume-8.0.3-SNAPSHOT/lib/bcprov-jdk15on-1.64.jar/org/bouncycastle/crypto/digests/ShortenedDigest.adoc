@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/digests/ShortenedDigest.class
-
- - link:ShortenedDigest-asmified.java[Asmified]
-
-== References
-

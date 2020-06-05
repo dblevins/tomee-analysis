@@ -1,8 +1,0 @@
-= javax/websocket/Decoder$Text.class
-
- - link:Decoder$Text-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.Decoder - 1
- - javax.websocket.DecodeException - 1

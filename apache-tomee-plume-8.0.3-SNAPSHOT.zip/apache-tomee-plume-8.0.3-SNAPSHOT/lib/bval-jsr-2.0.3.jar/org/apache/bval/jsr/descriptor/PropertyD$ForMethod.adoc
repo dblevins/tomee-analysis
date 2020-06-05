@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/PropertyD$ForMethod.class
-
- - link:PropertyD$ForMethod-asmified.java[Asmified]
-
-== References
-

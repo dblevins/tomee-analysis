@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/RuntimeContext.class
-
- - link:RuntimeContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/ComponentTagDeclaration.class
-
- - link:ComponentTagDeclaration-asmified.java[Asmified]
-
-== References
-

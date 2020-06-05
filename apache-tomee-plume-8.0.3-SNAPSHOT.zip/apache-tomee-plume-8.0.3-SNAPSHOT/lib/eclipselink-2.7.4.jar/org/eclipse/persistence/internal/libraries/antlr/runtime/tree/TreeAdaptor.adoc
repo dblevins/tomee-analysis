@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor.class
-
- - link:TreeAdaptor-asmified.java[Asmified]
-
-== References
-

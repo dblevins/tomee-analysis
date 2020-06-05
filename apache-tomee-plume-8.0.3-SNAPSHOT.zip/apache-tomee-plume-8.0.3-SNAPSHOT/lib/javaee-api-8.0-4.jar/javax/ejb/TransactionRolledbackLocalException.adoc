@@ -1,7 +1,0 @@
-= javax/ejb/TransactionRolledbackLocalException.class
-
- - link:TransactionRolledbackLocalException-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 4

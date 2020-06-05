@@ -1,6 +1,0 @@
-= org/jose4j/keys/resolvers/HttpsJwksVerificationKeyResolver.class
-
- - link:HttpsJwksVerificationKeyResolver-asmified.java[Asmified]
-
-== References
-

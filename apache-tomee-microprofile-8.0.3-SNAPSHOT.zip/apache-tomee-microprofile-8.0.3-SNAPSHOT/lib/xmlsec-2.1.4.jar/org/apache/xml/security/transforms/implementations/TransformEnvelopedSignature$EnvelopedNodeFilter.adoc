@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/implementations/TransformEnvelopedSignature$EnvelopedNodeFilter.class
-
- - link:TransformEnvelopedSignature$EnvelopedNodeFilter-asmified.java[Asmified]
-
-== References
-

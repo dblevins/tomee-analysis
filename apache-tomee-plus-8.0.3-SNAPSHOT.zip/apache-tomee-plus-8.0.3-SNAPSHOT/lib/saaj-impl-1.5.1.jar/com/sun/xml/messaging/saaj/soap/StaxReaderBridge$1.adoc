@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/StaxReaderBridge$1.class
-
- - link:StaxReaderBridge$1-asmified.java[Asmified]
-
-== References
-

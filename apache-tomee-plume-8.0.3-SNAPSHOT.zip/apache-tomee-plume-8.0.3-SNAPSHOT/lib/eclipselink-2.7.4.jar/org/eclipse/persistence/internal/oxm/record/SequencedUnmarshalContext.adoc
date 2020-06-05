@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/SequencedUnmarshalContext.class
-
- - link:SequencedUnmarshalContext-asmified.java[Asmified]
-
-== References
-

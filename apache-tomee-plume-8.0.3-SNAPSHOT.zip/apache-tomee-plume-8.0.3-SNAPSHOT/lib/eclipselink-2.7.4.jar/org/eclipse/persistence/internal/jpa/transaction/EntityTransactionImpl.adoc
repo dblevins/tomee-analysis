@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/transaction/EntityTransactionImpl.class
-
- - link:EntityTransactionImpl-asmified.java[Asmified]
-
-== References
-

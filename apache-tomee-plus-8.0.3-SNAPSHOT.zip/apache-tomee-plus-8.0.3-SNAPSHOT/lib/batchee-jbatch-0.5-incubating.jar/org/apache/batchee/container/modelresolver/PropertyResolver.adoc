@@ -1,6 +1,0 @@
-= org/apache/batchee/container/modelresolver/PropertyResolver.class
-
- - link:PropertyResolver-asmified.java[Asmified]
-
-== References
-

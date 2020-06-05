@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/MappingStartEvent.class
-
- - link:MappingStartEvent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/DiscoveryRegistry.class
-
- - link:DiscoveryRegistry-asmified.java[Asmified]
-
-== References
-

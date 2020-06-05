@@ -1,6 +1,0 @@
-= org/apache/neethi/PolicyComponent.class
-
- - link:PolicyComponent-asmified.java[Asmified]
-
-== References
-

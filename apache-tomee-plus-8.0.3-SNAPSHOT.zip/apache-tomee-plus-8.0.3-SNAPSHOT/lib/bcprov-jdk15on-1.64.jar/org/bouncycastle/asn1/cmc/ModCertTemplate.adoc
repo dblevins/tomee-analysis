@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cmc/ModCertTemplate.class
-
- - link:ModCertTemplate-asmified.java[Asmified]
-
-== References
-

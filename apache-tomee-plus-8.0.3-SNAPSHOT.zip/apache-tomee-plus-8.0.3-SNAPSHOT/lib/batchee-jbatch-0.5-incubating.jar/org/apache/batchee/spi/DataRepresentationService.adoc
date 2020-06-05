@@ -1,6 +1,0 @@
-= org/apache/batchee/spi/DataRepresentationService.class
-
- - link:DataRepresentationService-asmified.java[Asmified]
-
-== References
-

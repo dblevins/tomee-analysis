@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/MapEntriesImpl.class
-
- - link:MapEntriesImpl-asmified.java[Asmified]
-
-== References
-

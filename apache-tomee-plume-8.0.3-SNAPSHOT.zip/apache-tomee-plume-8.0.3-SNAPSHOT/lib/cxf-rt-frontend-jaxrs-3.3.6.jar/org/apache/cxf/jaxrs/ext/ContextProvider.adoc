@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/ContextProvider.class
-
- - link:ContextProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/JDBCPath.class
-
- - link:JDBCPath-asmified.java[Asmified]
-
-== References
-

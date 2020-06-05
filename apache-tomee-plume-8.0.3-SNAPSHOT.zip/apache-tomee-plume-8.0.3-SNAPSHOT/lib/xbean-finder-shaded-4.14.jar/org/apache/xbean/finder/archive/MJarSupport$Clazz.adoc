@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/archive/MJarSupport$Clazz.class
-
- - link:MJarSupport$Clazz-asmified.java[Asmified]
-
-== References
-

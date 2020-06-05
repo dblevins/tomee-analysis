@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/EmbeddedMapping.class
-
- - link:EmbeddedMapping-asmified.java[Asmified]
-
-== References
-

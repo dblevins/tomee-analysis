@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/OpenEJBValidatorService.class
-
- - link:OpenEJBValidatorService-asmified.java[Asmified]
-
-== References
-

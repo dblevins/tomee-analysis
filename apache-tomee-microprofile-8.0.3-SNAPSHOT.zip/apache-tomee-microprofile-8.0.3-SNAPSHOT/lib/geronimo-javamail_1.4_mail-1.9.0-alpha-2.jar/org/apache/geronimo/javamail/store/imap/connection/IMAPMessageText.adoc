@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPMessageText.class
-
- - link:IMAPMessageText-asmified.java[Asmified]
-
-== References
-

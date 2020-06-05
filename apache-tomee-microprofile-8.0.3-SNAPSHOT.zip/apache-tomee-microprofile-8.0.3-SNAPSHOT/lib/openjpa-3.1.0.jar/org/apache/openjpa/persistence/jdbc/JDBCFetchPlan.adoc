@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/JDBCFetchPlan.class
-
- - link:JDBCFetchPlan-asmified.java[Asmified]
-
-== References
-

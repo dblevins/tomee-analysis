@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/LinkRenderer.class
-
- - link:LinkRenderer-asmified.java[Asmified]
-
-== References
-

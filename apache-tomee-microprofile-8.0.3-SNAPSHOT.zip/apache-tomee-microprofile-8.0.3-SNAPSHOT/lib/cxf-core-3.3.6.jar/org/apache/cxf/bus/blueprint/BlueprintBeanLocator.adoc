@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/blueprint/BlueprintBeanLocator.class
-
- - link:BlueprintBeanLocator-asmified.java[Asmified]
-
-== References
-

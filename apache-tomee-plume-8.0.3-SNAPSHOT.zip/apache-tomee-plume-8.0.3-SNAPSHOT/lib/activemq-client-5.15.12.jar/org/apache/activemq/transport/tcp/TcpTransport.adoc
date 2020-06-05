@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/tcp/TcpTransport.class
-
- - link:TcpTransport-asmified.java[Asmified]
-
-== References
-

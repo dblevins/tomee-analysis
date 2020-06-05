@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/disk/DiskFileItemFactory.class
-
- - link:DiskFileItemFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/bm/Languages$2.class
-
- - link:Languages$2-asmified.java[Asmified]
-
-== References
-

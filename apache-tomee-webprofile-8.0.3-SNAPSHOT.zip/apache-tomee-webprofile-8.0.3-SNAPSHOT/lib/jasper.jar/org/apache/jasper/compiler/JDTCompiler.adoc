@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/JDTCompiler.class
-
- - link:JDTCompiler-asmified.java[Asmified]
-
-== References
-

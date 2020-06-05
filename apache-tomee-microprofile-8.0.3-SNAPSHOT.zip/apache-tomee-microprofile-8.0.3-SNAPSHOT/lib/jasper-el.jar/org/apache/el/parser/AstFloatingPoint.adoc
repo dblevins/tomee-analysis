@@ -1,6 +1,0 @@
-= org/apache/el/parser/AstFloatingPoint.class
-
- - link:AstFloatingPoint-asmified.java[Asmified]
-
-== References
-

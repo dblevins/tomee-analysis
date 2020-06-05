@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/logic/SignatureCapableBindingPredicate.class
-
- - link:SignatureCapableBindingPredicate-asmified.java[Asmified]
-
-== References
-

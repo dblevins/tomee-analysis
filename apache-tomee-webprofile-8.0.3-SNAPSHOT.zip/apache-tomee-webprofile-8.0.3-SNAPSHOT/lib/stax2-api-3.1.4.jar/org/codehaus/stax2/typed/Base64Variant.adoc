@@ -1,6 +1,0 @@
-= org/codehaus/stax2/typed/Base64Variant.class
-
- - link:Base64Variant-asmified.java[Asmified]
-
-== References
-

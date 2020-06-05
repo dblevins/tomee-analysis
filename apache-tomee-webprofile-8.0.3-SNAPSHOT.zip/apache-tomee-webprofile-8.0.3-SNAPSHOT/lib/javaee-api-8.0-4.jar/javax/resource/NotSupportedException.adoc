@@ -1,7 +1,0 @@
-= javax/resource/NotSupportedException.class
-
- - link:NotSupportedException-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 6

@@ -1,7 +1,0 @@
-= javax/faces/component/PartialStateHolder.class
-
- - link:PartialStateHolder-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.StateHolder - 1

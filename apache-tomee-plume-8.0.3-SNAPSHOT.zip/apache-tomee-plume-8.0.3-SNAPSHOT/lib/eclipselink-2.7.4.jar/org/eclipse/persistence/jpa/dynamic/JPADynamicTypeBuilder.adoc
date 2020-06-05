@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/dynamic/JPADynamicTypeBuilder.class
-
- - link:JPADynamicTypeBuilder-asmified.java[Asmified]
-
-== References
-

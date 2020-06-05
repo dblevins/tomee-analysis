@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityToken/SecurityTokenReference.class
-
- - link:SecurityTokenReference-asmified.java[Asmified]
-
-== References
-

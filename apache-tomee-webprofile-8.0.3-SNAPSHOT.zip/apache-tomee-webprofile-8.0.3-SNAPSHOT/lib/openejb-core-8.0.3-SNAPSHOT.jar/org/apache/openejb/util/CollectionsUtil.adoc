@@ -1,6 +1,0 @@
-= org/apache/openejb/util/CollectionsUtil.class
-
- - link:CollectionsUtil-asmified.java[Asmified]
-
-== References
-

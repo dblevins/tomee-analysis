@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/core/ChooseTag.class
-
- - link:ChooseTag-asmified.java[Asmified]
-
-== References
-

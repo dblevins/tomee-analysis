@@ -1,6 +1,0 @@
-= org/apache/commons/codec/net/QCodec.class
-
- - link:QCodec-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/ColumnIO$1.class
-
- - link:ColumnIO$1-asmified.java[Asmified]
-
-== References
-

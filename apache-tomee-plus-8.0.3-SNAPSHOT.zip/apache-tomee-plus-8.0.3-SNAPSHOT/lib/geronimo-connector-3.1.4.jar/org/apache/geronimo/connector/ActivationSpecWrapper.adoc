@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/ActivationSpecWrapper.class
-
- - link:ActivationSpecWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/UnaryOperatorExpression.class
-
- - link:UnaryOperatorExpression-asmified.java[Asmified]
-
-== References
-

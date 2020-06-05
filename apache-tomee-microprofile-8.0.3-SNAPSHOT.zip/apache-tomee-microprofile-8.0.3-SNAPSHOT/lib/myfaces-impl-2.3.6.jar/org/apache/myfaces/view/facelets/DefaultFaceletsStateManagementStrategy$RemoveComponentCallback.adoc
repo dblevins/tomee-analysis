@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/DefaultFaceletsStateManagementStrategy$RemoveComponentCallback.class
-
- - link:DefaultFaceletsStateManagementStrategy$RemoveComponentCallback-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/MulticastSearch$DefaultFilter.class
-
- - link:MulticastSearch$DefaultFilter-asmified.java[Asmified]
-
-== References
-

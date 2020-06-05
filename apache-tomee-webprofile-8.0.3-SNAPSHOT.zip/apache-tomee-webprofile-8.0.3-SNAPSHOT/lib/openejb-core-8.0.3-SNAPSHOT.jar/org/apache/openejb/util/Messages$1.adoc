@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Messages$1.class
-
- - link:Messages$1-asmified.java[Asmified]
-
-== References
-

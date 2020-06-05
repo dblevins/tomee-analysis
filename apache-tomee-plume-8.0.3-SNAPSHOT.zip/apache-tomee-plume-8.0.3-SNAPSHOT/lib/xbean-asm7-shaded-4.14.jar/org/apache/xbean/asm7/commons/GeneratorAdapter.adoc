@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/GeneratorAdapter.class
-
- - link:GeneratorAdapter-asmified.java[Asmified]
-
-== References
-

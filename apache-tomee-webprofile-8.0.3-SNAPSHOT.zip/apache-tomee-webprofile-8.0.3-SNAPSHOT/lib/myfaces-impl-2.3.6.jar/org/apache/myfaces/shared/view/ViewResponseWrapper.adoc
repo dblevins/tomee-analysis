@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/view/ViewResponseWrapper.class
-
- - link:ViewResponseWrapper-asmified.java[Asmified]
-
-== References
-

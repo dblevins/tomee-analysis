@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/AbstractObjectLevelReadQueryVisitor$OneToOneSelectedVisitor.class
-
- - link:AbstractObjectLevelReadQueryVisitor$OneToOneSelectedVisitor-asmified.java[Asmified]
-
-== References
-

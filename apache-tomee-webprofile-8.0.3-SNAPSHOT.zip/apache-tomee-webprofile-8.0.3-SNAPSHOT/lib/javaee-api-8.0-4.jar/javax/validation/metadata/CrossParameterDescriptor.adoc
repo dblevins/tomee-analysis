@@ -1,7 +1,0 @@
-= javax/validation/metadata/CrossParameterDescriptor.class
-
- - link:CrossParameterDescriptor-asmified.java[Asmified]
-
-== References
-
- - javax.validation.metadata.ElementDescriptor - 1

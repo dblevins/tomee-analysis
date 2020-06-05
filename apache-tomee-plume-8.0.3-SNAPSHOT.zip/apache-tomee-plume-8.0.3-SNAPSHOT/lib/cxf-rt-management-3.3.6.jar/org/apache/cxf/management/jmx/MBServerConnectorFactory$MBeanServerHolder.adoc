@@ -1,6 +1,0 @@
-= org/apache/cxf/management/jmx/MBServerConnectorFactory$MBeanServerHolder.class
-
- - link:MBServerConnectorFactory$MBeanServerHolder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/util/reflection/TypeUtils$ParameterizedTypeImpl.class
-
- - link:TypeUtils$ParameterizedTypeImpl-asmified.java[Asmified]
-
-== References
-

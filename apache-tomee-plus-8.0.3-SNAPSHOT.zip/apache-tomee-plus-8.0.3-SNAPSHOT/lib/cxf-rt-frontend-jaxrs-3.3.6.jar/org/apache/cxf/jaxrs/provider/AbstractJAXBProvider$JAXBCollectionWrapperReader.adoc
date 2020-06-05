@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/AbstractJAXBProvider$JAXBCollectionWrapperReader.class
-
- - link:AbstractJAXBProvider$JAXBCollectionWrapperReader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/IncludeHandler.class
-
- - link:IncludeHandler-asmified.java[Asmified]
-
-== References
-

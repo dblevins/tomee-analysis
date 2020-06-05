@@ -1,6 +1,0 @@
-= jakarta/faces/render/ResponseStateManager.class
-
- - link:ResponseStateManager-asmified.java[Asmified]
-
-== References
-

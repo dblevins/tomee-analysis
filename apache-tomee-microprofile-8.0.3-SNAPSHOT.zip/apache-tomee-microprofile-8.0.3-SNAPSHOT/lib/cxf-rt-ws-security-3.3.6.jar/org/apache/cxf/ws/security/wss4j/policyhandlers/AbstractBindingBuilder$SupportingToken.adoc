@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder$SupportingToken.class
-
- - link:AbstractBindingBuilder$SupportingToken-asmified.java[Asmified]
-
-== References
-

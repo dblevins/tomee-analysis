@@ -1,6 +1,0 @@
-= org/hsqldb/lib/HashMap$KeySet.class
-
- - link:HashMap$KeySet-asmified.java[Asmified]
-
-== References
-

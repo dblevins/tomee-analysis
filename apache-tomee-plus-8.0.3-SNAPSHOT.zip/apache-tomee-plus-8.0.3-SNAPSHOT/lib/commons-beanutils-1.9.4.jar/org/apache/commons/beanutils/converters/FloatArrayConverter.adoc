@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/FloatArrayConverter.class
-
- - link:FloatArrayConverter-asmified.java[Asmified]
-
-== References
-

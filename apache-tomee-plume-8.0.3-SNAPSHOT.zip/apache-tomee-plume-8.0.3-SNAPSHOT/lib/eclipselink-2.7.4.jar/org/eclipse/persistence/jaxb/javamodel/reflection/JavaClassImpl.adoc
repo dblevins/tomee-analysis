@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/javamodel/reflection/JavaClassImpl.class
-
- - link:JavaClassImpl-asmified.java[Asmified]
-
-== References
-

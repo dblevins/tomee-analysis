@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_HtmlInputFile.class
-
- - link:_HtmlInputFile-asmified.java[Asmified]
-
-== References
-

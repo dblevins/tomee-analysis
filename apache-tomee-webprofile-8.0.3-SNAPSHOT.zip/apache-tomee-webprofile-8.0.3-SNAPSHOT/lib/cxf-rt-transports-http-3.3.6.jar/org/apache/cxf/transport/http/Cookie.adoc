@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/Cookie.class
-
- - link:Cookie-asmified.java[Asmified]
-
-== References
-

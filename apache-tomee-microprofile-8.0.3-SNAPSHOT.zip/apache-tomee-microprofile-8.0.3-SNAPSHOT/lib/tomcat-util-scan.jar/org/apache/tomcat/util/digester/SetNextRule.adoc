@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/digester/SetNextRule.class
-
- - link:SetNextRule-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/EntityTypeLiteralBNF.class
-
- - link:EntityTypeLiteralBNF-asmified.java[Asmified]
-
-== References
-

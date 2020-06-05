@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/cdi/FallbackBinding.class
-
- - link:FallbackBinding-asmified.java[Asmified]
-
-== References
-

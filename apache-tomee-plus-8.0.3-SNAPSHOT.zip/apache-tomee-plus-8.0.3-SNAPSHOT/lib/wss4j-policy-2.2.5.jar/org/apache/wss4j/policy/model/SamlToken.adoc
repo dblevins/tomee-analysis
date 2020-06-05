@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/SamlToken.class
-
- - link:SamlToken-asmified.java[Asmified]
-
-== References
-

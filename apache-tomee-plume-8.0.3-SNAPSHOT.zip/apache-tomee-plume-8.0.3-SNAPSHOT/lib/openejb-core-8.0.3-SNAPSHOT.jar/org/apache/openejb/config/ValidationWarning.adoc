@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ValidationWarning.class
-
- - link:ValidationWarning-asmified.java[Asmified]
-
-== References
-

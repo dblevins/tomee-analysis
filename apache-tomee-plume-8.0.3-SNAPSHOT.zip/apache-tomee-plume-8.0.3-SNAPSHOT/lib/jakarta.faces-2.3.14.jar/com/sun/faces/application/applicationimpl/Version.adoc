@@ -1,6 +1,0 @@
-= com/sun/faces/application/applicationimpl/Version.class
-
- - link:Version-asmified.java[Asmified]
-
-== References
-

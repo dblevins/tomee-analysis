@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/spring/NamespaceHandler.class
-
- - link:NamespaceHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/event/PostConstructCustomScopeEvent.class
-
- - link:PostConstructCustomScopeEvent-asmified.java[Asmified]
-
-== References
-

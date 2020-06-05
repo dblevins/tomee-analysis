@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PDirtyState.class
-
- - link:PDirtyState-asmified.java[Asmified]
-
-== References
-

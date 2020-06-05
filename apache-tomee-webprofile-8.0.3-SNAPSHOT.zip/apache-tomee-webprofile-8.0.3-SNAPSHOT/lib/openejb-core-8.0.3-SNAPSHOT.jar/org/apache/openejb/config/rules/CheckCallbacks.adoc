@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckCallbacks.class
-
- - link:CheckCallbacks-asmified.java[Asmified]
-
-== References
-

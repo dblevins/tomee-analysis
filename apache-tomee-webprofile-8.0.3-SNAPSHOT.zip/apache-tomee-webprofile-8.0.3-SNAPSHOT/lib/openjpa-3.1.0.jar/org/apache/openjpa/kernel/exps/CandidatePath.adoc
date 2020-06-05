@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/CandidatePath.class
-
- - link:CandidatePath-asmified.java[Asmified]
-
-== References
-

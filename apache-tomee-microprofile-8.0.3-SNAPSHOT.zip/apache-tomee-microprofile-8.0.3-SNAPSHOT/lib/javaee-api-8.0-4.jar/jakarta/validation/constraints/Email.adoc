@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/Email.class
-
- - link:Email-asmified.java[Asmified]
-
-== References
-

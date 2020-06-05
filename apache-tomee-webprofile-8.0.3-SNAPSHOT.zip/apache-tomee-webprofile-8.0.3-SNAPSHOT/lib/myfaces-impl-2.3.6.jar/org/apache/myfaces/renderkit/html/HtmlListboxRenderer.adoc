@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlListboxRenderer.class
-
- - link:HtmlListboxRenderer-asmified.java[Asmified]
-
-== References
-

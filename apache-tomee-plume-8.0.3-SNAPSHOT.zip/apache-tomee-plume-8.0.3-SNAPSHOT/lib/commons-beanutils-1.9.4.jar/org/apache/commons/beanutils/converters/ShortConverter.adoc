@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/ShortConverter.class
-
- - link:ShortConverter-asmified.java[Asmified]
-
-== References
-

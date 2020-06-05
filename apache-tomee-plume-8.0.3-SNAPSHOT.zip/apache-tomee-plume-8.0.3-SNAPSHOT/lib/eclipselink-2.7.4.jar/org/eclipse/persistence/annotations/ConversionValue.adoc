@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/ConversionValue.class
-
- - link:ConversionValue-asmified.java[Asmified]
-
-== References
-

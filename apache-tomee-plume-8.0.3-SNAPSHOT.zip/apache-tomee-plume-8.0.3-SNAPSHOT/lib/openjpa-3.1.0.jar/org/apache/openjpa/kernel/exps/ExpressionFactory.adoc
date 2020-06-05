@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/ExpressionFactory.class
-
- - link:ExpressionFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/EntityGraphImpl.class
-
- - link:EntityGraphImpl-asmified.java[Asmified]
-
-== References
-

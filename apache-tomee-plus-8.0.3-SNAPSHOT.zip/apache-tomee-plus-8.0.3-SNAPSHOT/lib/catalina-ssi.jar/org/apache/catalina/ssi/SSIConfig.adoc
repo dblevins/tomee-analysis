@@ -1,6 +1,0 @@
-= org/apache/catalina/ssi/SSIConfig.class
-
- - link:SSIConfig-asmified.java[Asmified]
-
-== References
-

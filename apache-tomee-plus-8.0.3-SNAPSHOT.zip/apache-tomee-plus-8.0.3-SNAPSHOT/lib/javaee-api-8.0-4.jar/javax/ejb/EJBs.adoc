@@ -1,7 +1,0 @@
-= javax/ejb/EJBs.class
-
- - link:EJBs-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJB - 1

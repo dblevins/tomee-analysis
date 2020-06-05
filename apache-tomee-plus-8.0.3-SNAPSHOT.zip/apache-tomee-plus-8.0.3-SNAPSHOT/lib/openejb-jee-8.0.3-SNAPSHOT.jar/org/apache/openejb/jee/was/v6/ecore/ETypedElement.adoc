@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ecore/ETypedElement.class
-
- - link:ETypedElement-asmified.java[Asmified]
-
-== References
-

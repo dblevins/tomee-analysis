@@ -1,6 +1,0 @@
-= com/sun/xml/bind/api/CompositeStructure.class
-
- - link:CompositeStructure-asmified.java[Asmified]
-
-== References
-

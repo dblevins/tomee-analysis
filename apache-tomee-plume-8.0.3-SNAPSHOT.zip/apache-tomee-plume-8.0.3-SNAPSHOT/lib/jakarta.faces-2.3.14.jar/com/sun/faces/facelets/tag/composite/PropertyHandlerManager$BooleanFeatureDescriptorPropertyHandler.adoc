@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/PropertyHandlerManager$BooleanFeatureDescriptorPropertyHandler.class
-
- - link:PropertyHandlerManager$BooleanFeatureDescriptorPropertyHandler-asmified.java[Asmified]
-
-== References
-

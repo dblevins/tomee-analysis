@@ -1,8 +1,0 @@
-= javax/faces/event/PreClearFlashEvent.class
-
- - link:PreClearFlashEvent-asmified.java[Asmified]
-
-== References
-
- - javax.faces.event.SystemEvent - 3
- - javax.faces.context.FacesContext - 2

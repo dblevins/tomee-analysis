@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/BundleClassFinder.class
-
- - link:BundleClassFinder-asmified.java[Asmified]
-
-== References
-

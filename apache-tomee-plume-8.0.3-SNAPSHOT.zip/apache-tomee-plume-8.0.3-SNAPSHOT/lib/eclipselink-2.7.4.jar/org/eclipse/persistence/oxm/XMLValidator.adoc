@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/XMLValidator.class
-
- - link:XMLValidator-asmified.java[Asmified]
-
-== References
-

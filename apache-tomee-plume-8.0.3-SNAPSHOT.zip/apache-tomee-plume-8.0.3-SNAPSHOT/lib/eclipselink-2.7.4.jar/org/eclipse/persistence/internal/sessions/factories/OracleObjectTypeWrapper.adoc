@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/OracleObjectTypeWrapper.class
-
- - link:OracleObjectTypeWrapper-asmified.java[Asmified]
-
-== References
-

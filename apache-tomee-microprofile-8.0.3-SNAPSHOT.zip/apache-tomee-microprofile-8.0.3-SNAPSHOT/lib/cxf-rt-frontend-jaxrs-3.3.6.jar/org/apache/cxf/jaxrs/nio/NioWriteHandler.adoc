@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/nio/NioWriteHandler.class
-
- - link:NioWriteHandler-asmified.java[Asmified]
-
-== References
-

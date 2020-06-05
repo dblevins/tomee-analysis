@@ -1,6 +1,0 @@
-= org/apache/openejb/config/PersistenceContextAnnFactory.class
-
- - link:PersistenceContextAnnFactory-asmified.java[Asmified]
-
-== References
-

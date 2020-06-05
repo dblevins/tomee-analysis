@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/event/AfterApplicationCreated.class
-
- - link:AfterApplicationCreated-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/spi/TargetModuleID.class
-
- - link:TargetModuleID-asmified.java[Asmified]
-
-== References
-

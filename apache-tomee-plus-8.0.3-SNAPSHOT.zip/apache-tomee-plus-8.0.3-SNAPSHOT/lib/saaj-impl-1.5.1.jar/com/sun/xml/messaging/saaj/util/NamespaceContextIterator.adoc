@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/util/NamespaceContextIterator.class
-
- - link:NamespaceContextIterator-asmified.java[Asmified]
-
-== References
-

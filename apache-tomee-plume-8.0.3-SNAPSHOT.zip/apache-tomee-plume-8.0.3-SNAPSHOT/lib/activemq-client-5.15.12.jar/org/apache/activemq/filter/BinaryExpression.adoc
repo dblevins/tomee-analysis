@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/BinaryExpression.class
-
- - link:BinaryExpression-asmified.java[Asmified]
-
-== References
-

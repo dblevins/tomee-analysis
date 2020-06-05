@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/lifecycle/PerRequestResourceProvider.class
-
- - link:PerRequestResourceProvider-asmified.java[Asmified]
-
-== References
-

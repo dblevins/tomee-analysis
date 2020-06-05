@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory$1.class
-
- - link:DefaultAnnotationProviderFactory$1-asmified.java[Asmified]
-
-== References
-

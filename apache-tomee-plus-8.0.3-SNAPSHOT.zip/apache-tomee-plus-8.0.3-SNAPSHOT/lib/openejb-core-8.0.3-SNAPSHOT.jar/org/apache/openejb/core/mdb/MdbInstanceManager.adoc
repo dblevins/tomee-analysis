@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/MdbInstanceManager.class
-
- - link:MdbInstanceManager-asmified.java[Asmified]
-
-== References
-

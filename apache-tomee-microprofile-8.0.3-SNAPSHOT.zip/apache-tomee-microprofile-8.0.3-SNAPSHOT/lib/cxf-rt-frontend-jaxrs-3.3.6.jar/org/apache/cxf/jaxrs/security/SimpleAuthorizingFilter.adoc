@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/security/SimpleAuthorizingFilter.class
-
- - link:SimpleAuthorizingFilter-asmified.java[Asmified]
-
-== References
-

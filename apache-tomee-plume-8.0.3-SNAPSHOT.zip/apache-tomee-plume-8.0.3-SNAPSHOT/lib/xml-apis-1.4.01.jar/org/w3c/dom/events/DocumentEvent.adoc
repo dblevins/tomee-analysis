@@ -1,6 +1,0 @@
-= org/w3c/dom/events/DocumentEvent.class
-
- - link:DocumentEvent-asmified.java[Asmified]
-
-== References
-

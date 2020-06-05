@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/EntrySetMapIterator.class
-
- - link:EntrySetMapIterator-asmified.java[Asmified]
-
-== References
-

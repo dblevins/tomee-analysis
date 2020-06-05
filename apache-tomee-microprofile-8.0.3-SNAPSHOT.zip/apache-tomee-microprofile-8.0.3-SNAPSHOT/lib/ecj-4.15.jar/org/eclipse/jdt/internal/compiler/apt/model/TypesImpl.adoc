@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/TypesImpl.class
-
- - link:TypesImpl-asmified.java[Asmified]
-
-== References
-

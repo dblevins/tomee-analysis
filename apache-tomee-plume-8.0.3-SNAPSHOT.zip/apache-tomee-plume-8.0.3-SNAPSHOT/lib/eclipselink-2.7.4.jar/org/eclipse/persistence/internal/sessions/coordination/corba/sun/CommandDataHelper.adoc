@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/coordination/corba/sun/CommandDataHelper.class
-
- - link:CommandDataHelper-asmified.java[Asmified]
-
-== References
-

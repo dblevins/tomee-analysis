@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/platform/JBossPlatformConfig.class
-
- - link:JBossPlatformConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/persistence/ValidationMode.class
-
- - link:ValidationMode-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.ValidationMode - 25

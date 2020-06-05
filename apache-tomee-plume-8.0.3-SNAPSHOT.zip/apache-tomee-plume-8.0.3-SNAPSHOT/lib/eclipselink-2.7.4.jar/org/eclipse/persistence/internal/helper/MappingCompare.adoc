@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/MappingCompare.class
-
- - link:MappingCompare-asmified.java[Asmified]
-
-== References
-

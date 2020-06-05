@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPMailboxResponse.class
-
- - link:IMAPMailboxResponse-asmified.java[Asmified]
-
-== References
-

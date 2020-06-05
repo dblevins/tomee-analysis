@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/SelectItemHandler.class
-
- - link:SelectItemHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/commonj/WorkManagerThreadExecutor.class
-
- - link:WorkManagerThreadExecutor-asmified.java[Asmified]
-
-== References
-

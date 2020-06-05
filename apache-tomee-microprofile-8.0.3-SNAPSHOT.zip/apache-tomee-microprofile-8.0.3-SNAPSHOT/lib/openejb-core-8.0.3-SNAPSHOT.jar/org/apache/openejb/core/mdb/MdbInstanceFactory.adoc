@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/MdbInstanceFactory.class
-
- - link:MdbInstanceFactory-asmified.java[Asmified]
-
-== References
-

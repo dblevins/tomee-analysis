@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/context/WrappedMessageContext.class
-
- - link:WrappedMessageContext-asmified.java[Asmified]
-
-== References
-

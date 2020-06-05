@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/Scanner.class
-
- - link:Scanner-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/container/proxy/AbstractProxy.class
-
- - link:AbstractProxy-asmified.java[Asmified]
-
-== References
-

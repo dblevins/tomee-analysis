@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/annotation/JsonDeserialize.class
-
- - link:JsonDeserialize-asmified.java[Asmified]
-
-== References
-

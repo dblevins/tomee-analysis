@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/SingleItemSet.class
-
- - link:SingleItemSet-asmified.java[Asmified]
-
-== References
-

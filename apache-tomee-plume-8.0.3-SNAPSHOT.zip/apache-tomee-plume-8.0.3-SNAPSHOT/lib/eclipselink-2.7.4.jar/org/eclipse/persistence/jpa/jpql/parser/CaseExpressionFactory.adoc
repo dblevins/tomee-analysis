@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/CaseExpressionFactory.class
-
- - link:CaseExpressionFactory-asmified.java[Asmified]
-
-== References
-

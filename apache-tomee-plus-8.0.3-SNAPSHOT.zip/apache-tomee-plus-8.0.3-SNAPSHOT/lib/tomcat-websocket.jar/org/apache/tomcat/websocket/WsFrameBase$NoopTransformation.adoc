@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsFrameBase$NoopTransformation.class
-
- - link:WsFrameBase$NoopTransformation-asmified.java[Asmified]
-
-== References
-

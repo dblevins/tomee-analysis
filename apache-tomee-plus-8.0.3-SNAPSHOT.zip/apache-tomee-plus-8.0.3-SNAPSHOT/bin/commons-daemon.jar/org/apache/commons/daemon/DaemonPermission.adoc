@@ -1,6 +1,0 @@
-= org/apache/commons/daemon/DaemonPermission.class
-
- - link:DaemonPermission-asmified.java[Asmified]
-
-== References
-

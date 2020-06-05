@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/ChunkedUtil.class
-
- - link:ChunkedUtil-asmified.java[Asmified]
-
-== References
-

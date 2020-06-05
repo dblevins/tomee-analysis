@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/view/MessageBrokerView.class
-
- - link:MessageBrokerView-asmified.java[Asmified]
-
-== References
-

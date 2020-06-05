@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/Soap11.class
-
- - link:Soap11-asmified.java[Asmified]
-
-== References
-

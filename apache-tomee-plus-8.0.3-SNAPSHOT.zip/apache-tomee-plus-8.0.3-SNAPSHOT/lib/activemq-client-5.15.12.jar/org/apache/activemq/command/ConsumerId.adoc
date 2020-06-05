@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ConsumerId.class
-
- - link:ConsumerId-asmified.java[Asmified]
-
-== References
-

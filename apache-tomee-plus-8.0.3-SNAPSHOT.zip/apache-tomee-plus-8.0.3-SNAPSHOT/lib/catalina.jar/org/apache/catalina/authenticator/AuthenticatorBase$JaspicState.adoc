@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/AuthenticatorBase$JaspicState.class
-
- - link:AuthenticatorBase$JaspicState-asmified.java[Asmified]
-
-== References
-

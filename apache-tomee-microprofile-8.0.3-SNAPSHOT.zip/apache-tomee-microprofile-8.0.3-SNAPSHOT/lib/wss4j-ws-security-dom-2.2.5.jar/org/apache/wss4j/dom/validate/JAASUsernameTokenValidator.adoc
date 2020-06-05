@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/validate/JAASUsernameTokenValidator.class
-
- - link:JAASUsernameTokenValidator-asmified.java[Asmified]
-
-== References
-

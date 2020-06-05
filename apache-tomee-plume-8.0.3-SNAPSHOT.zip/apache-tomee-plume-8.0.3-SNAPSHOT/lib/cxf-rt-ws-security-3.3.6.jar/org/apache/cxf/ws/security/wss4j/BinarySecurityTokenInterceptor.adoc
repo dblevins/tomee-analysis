@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/BinarySecurityTokenInterceptor.class
-
- - link:BinarySecurityTokenInterceptor-asmified.java[Asmified]
-
-== References
-

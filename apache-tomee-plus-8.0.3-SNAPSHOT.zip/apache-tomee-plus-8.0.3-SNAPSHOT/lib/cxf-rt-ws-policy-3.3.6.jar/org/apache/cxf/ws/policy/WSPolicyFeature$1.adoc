@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/WSPolicyFeature$1.class
-
- - link:WSPolicyFeature$1-asmified.java[Asmified]
-
-== References
-

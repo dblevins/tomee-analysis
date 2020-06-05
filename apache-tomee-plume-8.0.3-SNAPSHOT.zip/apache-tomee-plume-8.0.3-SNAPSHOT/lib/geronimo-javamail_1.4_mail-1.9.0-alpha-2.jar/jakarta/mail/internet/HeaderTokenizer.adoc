@@ -1,6 +1,0 @@
-= jakarta/mail/internet/HeaderTokenizer.class
-
- - link:HeaderTokenizer-asmified.java[Asmified]
-
-== References
-

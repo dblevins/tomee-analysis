@@ -1,6 +1,0 @@
-= jakarta/validation/metadata/MethodType.class
-
- - link:MethodType-asmified.java[Asmified]
-
-== References
-

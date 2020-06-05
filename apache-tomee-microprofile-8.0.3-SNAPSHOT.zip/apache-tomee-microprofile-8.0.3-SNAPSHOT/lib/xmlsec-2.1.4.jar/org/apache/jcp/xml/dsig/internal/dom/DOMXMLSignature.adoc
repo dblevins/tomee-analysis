@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMXMLSignature.class
-
- - link:DOMXMLSignature-asmified.java[Asmified]
-
-== References
-

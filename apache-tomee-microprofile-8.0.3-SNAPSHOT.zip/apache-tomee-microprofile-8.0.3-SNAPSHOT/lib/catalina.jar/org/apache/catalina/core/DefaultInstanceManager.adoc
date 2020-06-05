@@ -1,6 +1,0 @@
-= org/apache/catalina/core/DefaultInstanceManager.class
-
- - link:DefaultInstanceManager-asmified.java[Asmified]
-
-== References
-

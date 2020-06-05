@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/BeanComparator.class
-
- - link:BeanComparator-asmified.java[Asmified]
-
-== References
-

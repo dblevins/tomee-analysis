@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/ViewMatcher.class
-
- - link:ViewMatcher-asmified.java[Asmified]
-
-== References
-

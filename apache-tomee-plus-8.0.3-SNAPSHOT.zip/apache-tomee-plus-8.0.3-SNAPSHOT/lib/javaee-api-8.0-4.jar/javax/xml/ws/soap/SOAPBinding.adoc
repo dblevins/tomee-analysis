@@ -1,9 +1,0 @@
-= javax/xml/ws/soap/SOAPBinding.class
-
- - link:SOAPBinding-asmified.java[Asmified]
-
-== References
-
- - javax.xml.soap.MessageFactory - 1
- - javax.xml.ws.Binding - 1
- - javax.xml.soap.SOAPFactory - 1

@@ -1,6 +1,0 @@
-= org/apache/catalina/manager/util/SessionUtils.class
-
- - link:SessionUtils-asmified.java[Asmified]
-
-== References
-

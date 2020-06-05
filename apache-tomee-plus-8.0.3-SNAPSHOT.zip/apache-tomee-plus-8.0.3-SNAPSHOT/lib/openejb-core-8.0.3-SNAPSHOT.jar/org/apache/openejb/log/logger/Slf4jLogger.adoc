@@ -1,6 +1,0 @@
-= org/apache/openejb/log/logger/Slf4jLogger.class
-
- - link:Slf4jLogger-asmified.java[Asmified]
-
-== References
-

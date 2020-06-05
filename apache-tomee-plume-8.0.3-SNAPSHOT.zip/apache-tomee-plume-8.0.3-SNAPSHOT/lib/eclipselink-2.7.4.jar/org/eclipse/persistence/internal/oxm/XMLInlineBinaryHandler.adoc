@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLInlineBinaryHandler.class
-
- - link:XMLInlineBinaryHandler-asmified.java[Asmified]
-
-== References
-

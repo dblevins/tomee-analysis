@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IGenericField.class
-
- - link:IGenericField-asmified.java[Asmified]
-
-== References
-

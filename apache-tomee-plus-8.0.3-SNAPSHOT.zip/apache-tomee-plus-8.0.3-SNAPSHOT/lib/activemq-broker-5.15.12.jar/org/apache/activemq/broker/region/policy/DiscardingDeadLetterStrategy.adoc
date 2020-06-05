@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/DiscardingDeadLetterStrategy.class
-
- - link:DiscardingDeadLetterStrategy-asmified.java[Asmified]
-
-== References
-

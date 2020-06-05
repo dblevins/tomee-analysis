@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream.class
-
- - link:TreeNodeStream-asmified.java[Asmified]
-
-== References
-

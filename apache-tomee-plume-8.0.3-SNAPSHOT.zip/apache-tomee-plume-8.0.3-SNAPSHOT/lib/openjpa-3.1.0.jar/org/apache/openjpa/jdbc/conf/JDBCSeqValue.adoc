@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/conf/JDBCSeqValue.class
-
- - link:JDBCSeqValue-asmified.java[Asmified]
-
-== References
-

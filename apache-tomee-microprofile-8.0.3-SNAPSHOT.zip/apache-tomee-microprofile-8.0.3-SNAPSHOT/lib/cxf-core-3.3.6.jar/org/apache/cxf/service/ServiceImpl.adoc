@@ -1,6 +1,0 @@
-= org/apache/cxf/service/ServiceImpl.class
-
- - link:ServiceImpl-asmified.java[Asmified]
-
-== References
-

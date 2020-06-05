@@ -1,6 +1,0 @@
-= jakarta/resource/spi/BootstrapContext.class
-
- - link:BootstrapContext-asmified.java[Asmified]
-
-== References
-

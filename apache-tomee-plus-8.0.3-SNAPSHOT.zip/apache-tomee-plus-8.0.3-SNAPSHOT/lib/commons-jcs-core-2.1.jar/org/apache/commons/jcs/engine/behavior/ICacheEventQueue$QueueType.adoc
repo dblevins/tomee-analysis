@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/ICacheEventQueue$QueueType.class
-
- - link:ICacheEventQueue$QueueType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JdbcMemoryTransactionStore$CommitAddOutcome$1.class
-
- - link:JdbcMemoryTransactionStore$CommitAddOutcome$1-asmified.java[Asmified]
-
-== References
-

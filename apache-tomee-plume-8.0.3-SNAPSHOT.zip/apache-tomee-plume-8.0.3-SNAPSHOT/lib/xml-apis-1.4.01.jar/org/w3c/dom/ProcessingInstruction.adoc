@@ -1,6 +1,0 @@
-= org/w3c/dom/ProcessingInstruction.class
-
- - link:ProcessingInstruction-asmified.java[Asmified]
-
-== References
-

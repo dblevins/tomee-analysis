@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/AnnotationBehaviorMergeStrategy.class
-
- - link:AnnotationBehaviorMergeStrategy-asmified.java[Asmified]
-
-== References
-

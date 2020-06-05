@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/ArrayBuilders$IntBuilder.class
-
- - link:ArrayBuilders$IntBuilder-asmified.java[Asmified]
-
-== References
-

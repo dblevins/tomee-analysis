@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/auto/AutoTransportUtils.class
-
- - link:AutoTransportUtils-asmified.java[Asmified]
-
-== References
-

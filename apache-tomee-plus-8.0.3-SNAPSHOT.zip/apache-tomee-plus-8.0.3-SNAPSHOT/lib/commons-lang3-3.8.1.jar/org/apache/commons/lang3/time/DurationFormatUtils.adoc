@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/time/DurationFormatUtils.class
-
- - link:DurationFormatUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/SerializedGrammar$TokenRef.class
-
- - link:SerializedGrammar$TokenRef-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/application/resource/ClientResourceInfo.class
-
- - link:ClientResourceInfo-asmified.java[Asmified]
-
-== References
-

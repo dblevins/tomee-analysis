@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/StringKeyDirtyFlagMap.class
-
- - link:StringKeyDirtyFlagMap-asmified.java[Asmified]
-
-== References
-

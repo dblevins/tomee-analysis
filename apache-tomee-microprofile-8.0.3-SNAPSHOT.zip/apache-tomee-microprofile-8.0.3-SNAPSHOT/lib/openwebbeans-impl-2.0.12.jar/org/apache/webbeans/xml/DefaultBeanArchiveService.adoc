@@ -1,6 +1,0 @@
-= org/apache/webbeans/xml/DefaultBeanArchiveService.class
-
- - link:DefaultBeanArchiveService-asmified.java[Asmified]
-
-== References
-

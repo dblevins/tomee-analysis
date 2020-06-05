@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/KeySpecifiedAlgorithm.class
-
- - link:KeySpecifiedAlgorithm-asmified.java[Asmified]
-
-== References
-

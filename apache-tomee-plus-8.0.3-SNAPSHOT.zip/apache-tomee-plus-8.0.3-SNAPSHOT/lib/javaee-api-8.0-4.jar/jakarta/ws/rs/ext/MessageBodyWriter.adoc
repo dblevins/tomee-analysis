@@ -1,6 +1,0 @@
-= jakarta/ws/rs/ext/MessageBodyWriter.class
-
- - link:MessageBodyWriter-asmified.java[Asmified]
-
-== References
-

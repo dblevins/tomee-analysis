@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/ContextWrapper.class
-
- - link:ContextWrapper-asmified.java[Asmified]
-
-== References
-

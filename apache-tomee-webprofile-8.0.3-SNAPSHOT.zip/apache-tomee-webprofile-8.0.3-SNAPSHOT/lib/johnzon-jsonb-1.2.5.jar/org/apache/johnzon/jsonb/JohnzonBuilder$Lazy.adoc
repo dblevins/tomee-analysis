@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/JohnzonBuilder$Lazy.class
-
- - link:JohnzonBuilder$Lazy-asmified.java[Asmified]
-
-== References
-

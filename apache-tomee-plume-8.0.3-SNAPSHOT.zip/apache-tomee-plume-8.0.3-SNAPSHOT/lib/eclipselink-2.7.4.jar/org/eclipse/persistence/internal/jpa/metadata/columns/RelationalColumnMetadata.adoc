@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/columns/RelationalColumnMetadata.class
-
- - link:RelationalColumnMetadata-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/HsqlTaskQueue.class
-
- - link:HsqlTaskQueue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/BasicClassIntrospector.class
-
- - link:BasicClassIntrospector-asmified.java[Asmified]
-
-== References
-

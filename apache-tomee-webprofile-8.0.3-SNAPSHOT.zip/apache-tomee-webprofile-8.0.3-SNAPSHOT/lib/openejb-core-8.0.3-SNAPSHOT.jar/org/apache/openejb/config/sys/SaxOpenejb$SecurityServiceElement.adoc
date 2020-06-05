@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/SaxOpenejb$SecurityServiceElement.class
-
- - link:SaxOpenejb$SecurityServiceElement-asmified.java[Asmified]
-
-== References
-

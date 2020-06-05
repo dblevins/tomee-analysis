@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/project/ProjectConfig.class
-
- - link:ProjectConfig-asmified.java[Asmified]
-
-== References
-

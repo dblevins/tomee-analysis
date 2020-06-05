@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/impl/Tomcat7AnnotationInjectionProvider.class
-
- - link:Tomcat7AnnotationInjectionProvider-asmified.java[Asmified]
-
-== References
-

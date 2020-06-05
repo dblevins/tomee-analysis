@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/AttributeQueryUnmarshaller.class
-
- - link:AttributeQueryUnmarshaller-asmified.java[Asmified]
-
-== References
-

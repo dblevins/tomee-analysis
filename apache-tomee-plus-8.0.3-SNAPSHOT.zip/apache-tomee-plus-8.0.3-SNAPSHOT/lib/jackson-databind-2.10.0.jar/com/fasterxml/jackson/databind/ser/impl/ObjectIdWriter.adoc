@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/impl/ObjectIdWriter.class
-
- - link:ObjectIdWriter-asmified.java[Asmified]
-
-== References
-

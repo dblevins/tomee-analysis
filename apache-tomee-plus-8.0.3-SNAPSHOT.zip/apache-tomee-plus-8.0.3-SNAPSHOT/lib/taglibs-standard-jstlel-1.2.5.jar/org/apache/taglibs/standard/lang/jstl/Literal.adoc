@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/Literal.class
-
- - link:Literal-asmified.java[Asmified]
-
-== References
-

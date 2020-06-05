@@ -1,6 +1,0 @@
-= org/apache/openejb/config/provider/ServiceJarXmlLoader.class
-
- - link:ServiceJarXmlLoader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/util/WrappedException.class
-
- - link:WrappedException-asmified.java[Asmified]
-
-== References
-

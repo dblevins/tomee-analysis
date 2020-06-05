@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/Util$Displayable.class
-
- - link:Util$Displayable-asmified.java[Asmified]
-
-== References
-

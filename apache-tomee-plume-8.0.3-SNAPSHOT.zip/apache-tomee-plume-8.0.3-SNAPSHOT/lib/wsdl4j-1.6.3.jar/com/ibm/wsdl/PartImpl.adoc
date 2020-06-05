@@ -1,6 +1,0 @@
-= com/ibm/wsdl/PartImpl.class
-
- - link:PartImpl-asmified.java[Asmified]
-
-== References
-

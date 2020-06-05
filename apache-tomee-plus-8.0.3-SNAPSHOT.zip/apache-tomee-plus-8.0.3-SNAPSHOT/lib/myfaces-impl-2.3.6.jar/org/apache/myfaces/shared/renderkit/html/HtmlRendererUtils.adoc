@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlRendererUtils.class
-
- - link:HtmlRendererUtils-asmified.java[Asmified]
-
-== References
-

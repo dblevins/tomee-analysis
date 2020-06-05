@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/EJBCronTrigger$ListExpression.class
-
- - link:EJBCronTrigger$ListExpression-asmified.java[Asmified]
-
-== References
-

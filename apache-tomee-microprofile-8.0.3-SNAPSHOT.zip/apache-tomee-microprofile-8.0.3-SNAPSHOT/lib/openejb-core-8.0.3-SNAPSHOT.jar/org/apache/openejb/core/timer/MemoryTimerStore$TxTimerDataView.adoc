@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/MemoryTimerStore$TxTimerDataView.class
-
- - link:MemoryTimerStore$TxTimerDataView-asmified.java[Asmified]
-
-== References
-

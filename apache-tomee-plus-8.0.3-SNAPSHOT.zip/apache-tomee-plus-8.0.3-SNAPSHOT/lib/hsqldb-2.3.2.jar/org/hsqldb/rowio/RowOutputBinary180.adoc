@@ -1,6 +1,0 @@
-= org/hsqldb/rowio/RowOutputBinary180.class
-
- - link:RowOutputBinary180-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/ResponseUtil$Adapter.class
-
- - link:ResponseUtil$Adapter-asmified.java[Asmified]
-
-== References
-

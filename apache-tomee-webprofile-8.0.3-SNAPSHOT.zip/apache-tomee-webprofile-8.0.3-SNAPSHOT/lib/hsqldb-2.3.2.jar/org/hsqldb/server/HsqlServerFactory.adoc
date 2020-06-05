@@ -1,6 +1,0 @@
-= org/hsqldb/server/HsqlServerFactory.class
-
- - link:HsqlServerFactory-asmified.java[Asmified]
-
-== References
-

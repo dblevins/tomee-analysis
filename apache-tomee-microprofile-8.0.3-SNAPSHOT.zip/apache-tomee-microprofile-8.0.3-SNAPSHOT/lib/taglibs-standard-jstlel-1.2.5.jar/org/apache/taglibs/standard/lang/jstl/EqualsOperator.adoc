@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/EqualsOperator.class
-
- - link:EqualsOperator-asmified.java[Asmified]
-
-== References
-

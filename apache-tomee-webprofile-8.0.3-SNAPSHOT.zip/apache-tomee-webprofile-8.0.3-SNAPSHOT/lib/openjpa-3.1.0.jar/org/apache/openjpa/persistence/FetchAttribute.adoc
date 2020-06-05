@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/FetchAttribute.class
-
- - link:FetchAttribute-asmified.java[Asmified]
-
-== References
-

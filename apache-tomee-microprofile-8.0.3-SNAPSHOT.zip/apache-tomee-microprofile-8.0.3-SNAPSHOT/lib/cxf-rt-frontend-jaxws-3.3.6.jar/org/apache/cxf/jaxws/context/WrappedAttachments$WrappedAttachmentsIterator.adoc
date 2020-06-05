@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/context/WrappedAttachments$WrappedAttachmentsIterator.class
-
- - link:WrappedAttachments$WrappedAttachmentsIterator-asmified.java[Asmified]
-
-== References
-

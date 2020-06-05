@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/GeneralException.class
-
- - link:GeneralException-asmified.java[Asmified]
-
-== References
-

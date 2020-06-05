@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/Initializer.class
-
- - link:Initializer-asmified.java[Asmified]
-
-== References
-

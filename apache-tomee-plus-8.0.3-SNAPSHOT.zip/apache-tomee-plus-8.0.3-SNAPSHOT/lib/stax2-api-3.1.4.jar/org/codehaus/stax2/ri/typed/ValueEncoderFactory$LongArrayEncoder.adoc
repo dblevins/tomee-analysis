@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/ValueEncoderFactory$LongArrayEncoder.class
-
- - link:ValueEncoderFactory$LongArrayEncoder-asmified.java[Asmified]
-
-== References
-

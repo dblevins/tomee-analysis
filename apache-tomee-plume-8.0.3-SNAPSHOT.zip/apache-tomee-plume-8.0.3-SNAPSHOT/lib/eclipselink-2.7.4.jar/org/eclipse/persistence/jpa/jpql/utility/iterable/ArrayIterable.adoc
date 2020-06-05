@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/utility/iterable/ArrayIterable.class
-
- - link:ArrayIterable-asmified.java[Asmified]
-
-== References
-

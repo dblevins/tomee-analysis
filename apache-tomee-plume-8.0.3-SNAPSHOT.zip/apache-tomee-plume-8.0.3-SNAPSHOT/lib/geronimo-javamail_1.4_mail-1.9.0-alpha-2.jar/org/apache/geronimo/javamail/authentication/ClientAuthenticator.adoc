@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/authentication/ClientAuthenticator.class
-
- - link:ClientAuthenticator-asmified.java[Asmified]
-
-== References
-

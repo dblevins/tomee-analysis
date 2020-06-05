@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/WebDeploymentListeners$WebDeploymentListenerObserver.class
-
- - link:WebDeploymentListeners$WebDeploymentListenerObserver-asmified.java[Asmified]
-
-== References
-

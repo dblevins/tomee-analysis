@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2alg/impl/SigningMethodMarshaller.class
-
- - link:SigningMethodMarshaller-asmified.java[Asmified]
-
-== References
-

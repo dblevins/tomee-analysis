@@ -1,6 +1,0 @@
-= org/apache/cxf/service/factory/FactoryBeanListenerManager.class
-
- - link:FactoryBeanListenerManager-asmified.java[Asmified]
-
-== References
-

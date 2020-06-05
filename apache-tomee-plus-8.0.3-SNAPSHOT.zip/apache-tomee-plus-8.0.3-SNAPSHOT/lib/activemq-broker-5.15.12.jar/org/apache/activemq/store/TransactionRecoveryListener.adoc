@@ -1,6 +1,0 @@
-= org/apache/activemq/store/TransactionRecoveryListener.class
-
- - link:TransactionRecoveryListener-asmified.java[Asmified]
-
-== References
-

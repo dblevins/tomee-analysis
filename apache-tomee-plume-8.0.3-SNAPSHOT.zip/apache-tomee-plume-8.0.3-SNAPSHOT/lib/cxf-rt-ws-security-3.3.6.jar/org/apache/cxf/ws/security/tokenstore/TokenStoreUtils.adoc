@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/tokenstore/TokenStoreUtils.class
-
- - link:TokenStoreUtils-asmified.java[Asmified]
-
-== References
-

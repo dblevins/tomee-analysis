@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/spring/ServerFactoryBeanDefinitionParser$SpringServerFactoryBean.class
-
- - link:ServerFactoryBeanDefinitionParser$SpringServerFactoryBean-asmified.java[Asmified]
-
-== References
-

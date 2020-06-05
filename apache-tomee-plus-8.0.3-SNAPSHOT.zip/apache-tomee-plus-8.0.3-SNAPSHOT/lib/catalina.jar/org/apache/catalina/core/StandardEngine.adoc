@@ -1,6 +1,0 @@
-= org/apache/catalina/core/StandardEngine.class
-
- - link:StandardEngine-asmified.java[Asmified]
-
-== References
-

@@ -1,2 +1,0 @@
-= apache-tomee-plume-8.0.3-SNAPSHOT/lib/johnzon-jaxrs-1.2.5.jar
-

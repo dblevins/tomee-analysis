@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/Sqrt.class
-
- - link:Sqrt-asmified.java[Asmified]
-
-== References
-

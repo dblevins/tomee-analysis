@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/MdbInstanceManager$MdbJmxControl.class
-
- - link:MdbInstanceManager$MdbJmxControl-asmified.java[Asmified]
-
-== References
-

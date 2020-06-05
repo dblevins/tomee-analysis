@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/output/XmlOutputAbstractImpl.class
-
- - link:XmlOutputAbstractImpl-asmified.java[Asmified]
-
-== References
-

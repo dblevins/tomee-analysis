@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/JaxbOpenejbJar2$1.class
-
- - link:JaxbOpenejbJar2$1-asmified.java[Asmified]
-
-== References
-

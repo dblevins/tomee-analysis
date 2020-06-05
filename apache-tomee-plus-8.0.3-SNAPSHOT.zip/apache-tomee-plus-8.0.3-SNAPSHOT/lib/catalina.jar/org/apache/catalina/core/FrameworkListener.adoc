@@ -1,6 +1,0 @@
-= org/apache/catalina/core/FrameworkListener.class
-
- - link:FrameworkListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/managed/JTADataSourceWrapperFactory.class
-
- - link:JTADataSourceWrapperFactory-asmified.java[Asmified]
-
-== References
-

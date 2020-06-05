@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/WebsocketComponentRenderer.class
-
- - link:WebsocketComponentRenderer-asmified.java[Asmified]
-
-== References
-

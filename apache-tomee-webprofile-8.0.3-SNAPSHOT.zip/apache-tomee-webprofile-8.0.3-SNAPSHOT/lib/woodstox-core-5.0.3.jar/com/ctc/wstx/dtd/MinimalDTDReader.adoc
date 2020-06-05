@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/MinimalDTDReader.class
-
- - link:MinimalDTDReader-asmified.java[Asmified]
-
-== References
-

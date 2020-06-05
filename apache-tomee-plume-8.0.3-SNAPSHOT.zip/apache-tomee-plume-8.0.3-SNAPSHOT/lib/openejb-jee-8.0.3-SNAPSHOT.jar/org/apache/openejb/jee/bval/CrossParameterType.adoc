@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/CrossParameterType.class
-
- - link:CrossParameterType-asmified.java[Asmified]
-
-== References
-

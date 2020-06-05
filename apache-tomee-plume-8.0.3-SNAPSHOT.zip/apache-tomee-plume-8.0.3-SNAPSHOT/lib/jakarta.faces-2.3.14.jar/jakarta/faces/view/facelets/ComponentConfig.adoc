@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/ComponentConfig.class
-
- - link:ComponentConfig-asmified.java[Asmified]
-
-== References
-

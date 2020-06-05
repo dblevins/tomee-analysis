@@ -1,6 +1,0 @@
-= org/hsqldb/persist/LobStore.class
-
- - link:LobStore-asmified.java[Asmified]
-
-== References
-

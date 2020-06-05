@@ -1,6 +1,0 @@
-= org/apache/activemq/command/MessageDispatchNotification.class
-
- - link:MessageDispatchNotification-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/naming/factory/MailSessionFactory.class
-
- - link:MailSessionFactory-asmified.java[Asmified]
-
-== References
-

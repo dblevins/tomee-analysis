@@ -1,6 +1,0 @@
-= org/opensaml/soap/util/SOAPConstants.class
-
- - link:SOAPConstants-asmified.java[Asmified]
-
-== References
-

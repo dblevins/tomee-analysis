@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/XMLUnionField.class
-
- - link:XMLUnionField-asmified.java[Asmified]
-
-== References
-

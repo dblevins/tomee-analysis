@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/util/SignatureUtils.class
-
- - link:SignatureUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/Version.class
-
- - link:Version-asmified.java[Asmified]
-
-== References
-

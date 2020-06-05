@@ -1,6 +1,0 @@
-= org/eclipse/persistence/indirection/ValueHolderInterface.class
-
- - link:ValueHolderInterface-asmified.java[Asmified]
-
-== References
-

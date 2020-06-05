@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountRetryStrategy.class
-
- - link:ResettableDataSourceHandler$CountRetryStrategy-asmified.java[Asmified]
-
-== References
-

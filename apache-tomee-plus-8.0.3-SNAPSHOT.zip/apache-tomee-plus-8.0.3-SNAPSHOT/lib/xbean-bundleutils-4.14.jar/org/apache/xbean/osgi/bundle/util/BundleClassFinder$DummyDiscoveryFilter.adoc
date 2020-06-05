@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/BundleClassFinder$DummyDiscoveryFilter.class
-
- - link:BundleClassFinder$DummyDiscoveryFilter-asmified.java[Asmified]
-
-== References
-

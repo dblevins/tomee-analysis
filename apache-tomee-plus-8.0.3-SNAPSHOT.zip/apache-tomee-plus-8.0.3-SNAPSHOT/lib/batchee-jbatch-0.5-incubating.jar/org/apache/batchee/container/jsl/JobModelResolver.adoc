@@ -1,6 +1,0 @@
-= org/apache/batchee/container/jsl/JobModelResolver.class
-
- - link:JobModelResolver-asmified.java[Asmified]
-
-== References
-

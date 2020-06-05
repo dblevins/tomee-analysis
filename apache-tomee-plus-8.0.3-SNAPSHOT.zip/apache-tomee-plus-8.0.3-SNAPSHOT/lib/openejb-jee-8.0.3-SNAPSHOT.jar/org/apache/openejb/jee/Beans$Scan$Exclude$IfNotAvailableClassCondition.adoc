@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Beans$Scan$Exclude$IfNotAvailableClassCondition.class
-
- - link:Beans$Scan$Exclude$IfNotAvailableClassCondition-asmified.java[Asmified]
-
-== References
-

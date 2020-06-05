@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/StuckThreadDetectionValve$MonitoredThread.class
-
- - link:StuckThreadDetectionValve$MonitoredThread-asmified.java[Asmified]
-
-== References
-

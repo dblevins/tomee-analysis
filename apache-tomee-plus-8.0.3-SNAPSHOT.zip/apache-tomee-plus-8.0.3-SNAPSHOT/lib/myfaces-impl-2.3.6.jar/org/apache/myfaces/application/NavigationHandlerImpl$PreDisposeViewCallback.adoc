@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/NavigationHandlerImpl$PreDisposeViewCallback.class
-
- - link:NavigationHandlerImpl$PreDisposeViewCallback-asmified.java[Asmified]
-
-== References
-

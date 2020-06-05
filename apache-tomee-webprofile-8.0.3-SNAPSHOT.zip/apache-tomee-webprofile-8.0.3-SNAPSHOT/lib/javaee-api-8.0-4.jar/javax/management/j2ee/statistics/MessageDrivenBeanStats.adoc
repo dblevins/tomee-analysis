@@ -1,8 +1,0 @@
-= javax/management/j2ee/statistics/MessageDrivenBeanStats.class
-
- - link:MessageDrivenBeanStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.CountStatistic - 1
- - javax.management.j2ee.statistics.EJBStats - 1

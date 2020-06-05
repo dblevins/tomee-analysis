@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/AbstractWSDLBasedEndpointFactory$1.class
-
- - link:AbstractWSDLBasedEndpointFactory$1-asmified.java[Asmified]
-
-== References
-

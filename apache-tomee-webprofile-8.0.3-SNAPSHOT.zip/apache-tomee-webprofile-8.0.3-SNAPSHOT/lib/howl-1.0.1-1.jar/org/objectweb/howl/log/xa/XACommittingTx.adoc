@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/xa/XACommittingTx.class
-
- - link:XACommittingTx-asmified.java[Asmified]
-
-== References
-

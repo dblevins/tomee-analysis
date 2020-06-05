@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/common/registry/HealthChecksRegistry.class
-
- - link:HealthChecksRegistry-asmified.java[Asmified]
-
-== References
-

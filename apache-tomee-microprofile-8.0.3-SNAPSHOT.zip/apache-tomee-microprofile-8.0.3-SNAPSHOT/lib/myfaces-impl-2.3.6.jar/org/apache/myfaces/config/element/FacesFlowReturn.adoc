@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/FacesFlowReturn.class
-
- - link:FacesFlowReturn-asmified.java[Asmified]
-
-== References
-

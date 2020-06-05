@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/HttpRequestImpl$SimpleDispatcher.class
-
- - link:HttpRequestImpl$SimpleDispatcher-asmified.java[Asmified]
-
-== References
-

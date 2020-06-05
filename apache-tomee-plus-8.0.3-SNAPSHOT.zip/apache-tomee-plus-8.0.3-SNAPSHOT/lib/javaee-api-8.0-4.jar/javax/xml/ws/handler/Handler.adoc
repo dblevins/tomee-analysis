@@ -1,7 +1,0 @@
-= javax/xml/ws/handler/Handler.class
-
- - link:Handler-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.handler.MessageContext - 2

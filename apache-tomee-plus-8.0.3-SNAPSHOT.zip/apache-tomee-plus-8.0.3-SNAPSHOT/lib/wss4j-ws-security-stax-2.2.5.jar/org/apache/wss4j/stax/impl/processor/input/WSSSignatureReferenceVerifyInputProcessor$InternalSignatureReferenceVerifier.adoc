@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/input/WSSSignatureReferenceVerifyInputProcessor$InternalSignatureReferenceVerifier.class
-
- - link:WSSSignatureReferenceVerifyInputProcessor$InternalSignatureReferenceVerifier-asmified.java[Asmified]
-
-== References
-

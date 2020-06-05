@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cryptlib/CryptlibObjectIdentifiers.class
-
- - link:CryptlibObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

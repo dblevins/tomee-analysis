@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/AbstractChangeTracker.class
-
- - link:AbstractChangeTracker-asmified.java[Asmified]
-
-== References
-

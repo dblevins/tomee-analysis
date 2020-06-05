@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/signature/SignatureVisitor.class
-
- - link:SignatureVisitor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ObjectFactory$JAXB.class
-
- - link:ObjectFactory$JAXB-asmified.java[Asmified]
-
-== References
-

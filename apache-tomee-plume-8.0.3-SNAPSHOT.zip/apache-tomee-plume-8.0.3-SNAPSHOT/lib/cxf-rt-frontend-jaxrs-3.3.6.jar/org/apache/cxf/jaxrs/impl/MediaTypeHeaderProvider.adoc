@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/MediaTypeHeaderProvider.class
-
- - link:MediaTypeHeaderProvider-asmified.java[Asmified]
-
-== References
-

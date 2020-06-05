@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/TagUnit.class
-
- - link:TagUnit-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/Pipeline.class
-
- - link:Pipeline-asmified.java[Asmified]
-
-== References
-

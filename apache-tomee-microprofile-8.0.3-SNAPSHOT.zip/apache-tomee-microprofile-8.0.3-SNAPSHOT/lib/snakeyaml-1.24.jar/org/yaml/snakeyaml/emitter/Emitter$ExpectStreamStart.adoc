@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/emitter/Emitter$ExpectStreamStart.class
-
- - link:Emitter$ExpectStreamStart-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/SequenceWriter.class
-
- - link:SequenceWriter-asmified.java[Asmified]
-
-== References
-

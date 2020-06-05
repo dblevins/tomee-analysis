@@ -1,6 +1,0 @@
-= jakarta/cache/management/CacheMXBean.class
-
- - link:CacheMXBean-asmified.java[Asmified]
-
-== References
-

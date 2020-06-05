@@ -1,6 +1,0 @@
-= jakarta/faces/validator/BeanValidator$1.class
-
- - link:BeanValidator$1-asmified.java[Asmified]
-
-== References
-

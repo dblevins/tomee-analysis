@@ -1,6 +1,0 @@
-= org/apache/activemq/network/jms/QueueBridge.class
-
- - link:QueueBridge-asmified.java[Asmified]
-
-== References
-

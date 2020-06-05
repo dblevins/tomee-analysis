@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/ClassNameMBean.class
-
- - link:ClassNameMBean-asmified.java[Asmified]
-
-== References
-

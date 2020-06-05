@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonAutoDetect$Visibility.class
-
- - link:JsonAutoDetect$Visibility-asmified.java[Asmified]
-
-== References
-

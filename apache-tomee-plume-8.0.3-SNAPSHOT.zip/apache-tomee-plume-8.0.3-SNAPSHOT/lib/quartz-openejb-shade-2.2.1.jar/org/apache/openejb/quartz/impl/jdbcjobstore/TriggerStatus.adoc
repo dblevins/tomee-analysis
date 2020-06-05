@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/TriggerStatus.class
-
- - link:TriggerStatus-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/metadata/MetadataSource.class
-
- - link:MetadataSource-asmified.java[Asmified]
-
-== References
-

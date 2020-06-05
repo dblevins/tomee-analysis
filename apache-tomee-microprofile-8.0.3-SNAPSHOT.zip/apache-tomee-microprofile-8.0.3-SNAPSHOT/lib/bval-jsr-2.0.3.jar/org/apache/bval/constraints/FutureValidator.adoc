@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/FutureValidator.class
-
- - link:FutureValidator-asmified.java[Asmified]
-
-== References
-

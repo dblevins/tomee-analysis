@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/ViewScopeManager.class
-
- - link:ViewScopeManager-asmified.java[Asmified]
-
-== References
-

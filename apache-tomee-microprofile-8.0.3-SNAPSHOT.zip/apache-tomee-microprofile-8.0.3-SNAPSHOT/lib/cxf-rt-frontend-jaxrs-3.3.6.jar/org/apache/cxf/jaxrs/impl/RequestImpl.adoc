@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/RequestImpl.class
-
- - link:RequestImpl-asmified.java[Asmified]
-
-== References
-

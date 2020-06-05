@@ -1,6 +1,0 @@
-= org/hsqldb/error/ErrorCode.class
-
- - link:ErrorCode-asmified.java[Asmified]
-
-== References
-

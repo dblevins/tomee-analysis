@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/util/SourceCode$Element.class
-
- - link:SourceCode$Element-asmified.java[Asmified]
-
-== References
-

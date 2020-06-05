@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/WASManagedRuntime$WASTransaction.class
-
- - link:WASManagedRuntime$WASTransaction-asmified.java[Asmified]
-
-== References
-

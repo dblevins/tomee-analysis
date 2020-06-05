@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/tuple/Pair.class
-
- - link:Pair-asmified.java[Asmified]
-
-== References
-

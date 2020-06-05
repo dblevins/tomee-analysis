@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/DatabaseChangeNotificationType.class
-
- - link:DatabaseChangeNotificationType-asmified.java[Asmified]
-
-== References
-

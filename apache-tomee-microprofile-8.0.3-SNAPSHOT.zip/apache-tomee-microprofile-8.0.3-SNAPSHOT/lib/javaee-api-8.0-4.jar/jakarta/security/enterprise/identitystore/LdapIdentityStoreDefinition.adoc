@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/identitystore/LdapIdentityStoreDefinition.class
-
- - link:LdapIdentityStoreDefinition-asmified.java[Asmified]
-
-== References
-

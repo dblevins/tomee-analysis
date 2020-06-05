@@ -1,6 +1,0 @@
-= org/hsqldb/SetFunction.class
-
- - link:SetFunction-asmified.java[Asmified]
-
-== References
-

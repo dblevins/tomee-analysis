@@ -1,6 +1,0 @@
-= org/apache/openejb/OpenEjbContainer$GlobalContext.class
-
- - link:OpenEjbContainer$GlobalContext-asmified.java[Asmified]
-
-== References
-

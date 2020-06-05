@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/Specializes$Literal.class
-
- - link:Specializes$Literal-asmified.java[Asmified]
-
-== References
-

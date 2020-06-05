@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ResAuth.class
-
- - link:ResAuth-asmified.java[Asmified]
-
-== References
-

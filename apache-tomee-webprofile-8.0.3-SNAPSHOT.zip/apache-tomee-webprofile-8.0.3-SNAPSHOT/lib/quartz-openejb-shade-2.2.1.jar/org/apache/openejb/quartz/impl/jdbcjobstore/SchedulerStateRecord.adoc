@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/SchedulerStateRecord.class
-
- - link:SchedulerStateRecord-asmified.java[Asmified]
-
-== References
-

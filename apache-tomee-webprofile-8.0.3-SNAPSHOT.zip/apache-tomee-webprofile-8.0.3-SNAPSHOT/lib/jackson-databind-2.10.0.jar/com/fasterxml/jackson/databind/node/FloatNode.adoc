@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/node/FloatNode.class
-
- - link:FloatNode-asmified.java[Asmified]
-
-== References
-

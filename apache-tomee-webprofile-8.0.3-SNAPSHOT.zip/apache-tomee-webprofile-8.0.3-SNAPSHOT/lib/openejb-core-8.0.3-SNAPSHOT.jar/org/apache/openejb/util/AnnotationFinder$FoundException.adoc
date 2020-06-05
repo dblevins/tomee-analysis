@@ -1,6 +1,0 @@
-= org/apache/openejb/util/AnnotationFinder$FoundException.class
-
- - link:AnnotationFinder$FoundException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/util/CSVWriter.class
-
- - link:CSVWriter-asmified.java[Asmified]
-
-== References
-

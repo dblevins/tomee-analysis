@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPCommand.class
-
- - link:IMAPCommand-asmified.java[Asmified]
-
-== References
-

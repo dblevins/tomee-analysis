@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AggregateFunction.class
-
- - link:AggregateFunction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/container/util/DependencyInjections.class
-
- - link:DependencyInjections-asmified.java[Asmified]
-
-== References
-

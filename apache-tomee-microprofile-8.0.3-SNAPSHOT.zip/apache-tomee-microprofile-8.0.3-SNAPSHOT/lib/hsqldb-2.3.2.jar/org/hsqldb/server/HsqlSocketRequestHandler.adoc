@@ -1,6 +1,0 @@
-= org/hsqldb/server/HsqlSocketRequestHandler.class
-
- - link:HsqlSocketRequestHandler-asmified.java[Asmified]
-
-== References
-

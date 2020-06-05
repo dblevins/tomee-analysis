@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/TypesImpl$MemberInTypeFinder.class
-
- - link:TypesImpl$MemberInTypeFinder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/PostUpdate.class
-
- - link:PostUpdate-asmified.java[Asmified]
-
-== References
-

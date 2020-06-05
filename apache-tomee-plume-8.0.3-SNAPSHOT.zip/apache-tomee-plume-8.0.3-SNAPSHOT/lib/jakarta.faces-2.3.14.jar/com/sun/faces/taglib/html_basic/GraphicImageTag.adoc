@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/GraphicImageTag.class
-
- - link:GraphicImageTag-asmified.java[Asmified]
-
-== References
-

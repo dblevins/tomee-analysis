@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/metadatasources/DynamicXmlV2MetadataSource.class
-
- - link:DynamicXmlV2MetadataSource-asmified.java[Asmified]
-
-== References
-

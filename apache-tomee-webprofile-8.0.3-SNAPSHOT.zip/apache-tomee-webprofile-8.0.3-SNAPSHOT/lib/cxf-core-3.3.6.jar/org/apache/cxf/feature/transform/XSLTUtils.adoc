@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/transform/XSLTUtils.class
-
- - link:XSLTUtils-asmified.java[Asmified]
-
-== References
-

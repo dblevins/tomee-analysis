@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/shared/ModuleType.class
-
- - link:ModuleType-asmified.java[Asmified]
-
-== References
-

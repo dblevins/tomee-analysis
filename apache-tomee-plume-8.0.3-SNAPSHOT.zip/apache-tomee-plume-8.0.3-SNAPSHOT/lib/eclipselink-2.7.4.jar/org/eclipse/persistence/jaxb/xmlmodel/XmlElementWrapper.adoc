@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/xmlmodel/XmlElementWrapper.class
-
- - link:XmlElementWrapper-asmified.java[Asmified]
-
-== References
-

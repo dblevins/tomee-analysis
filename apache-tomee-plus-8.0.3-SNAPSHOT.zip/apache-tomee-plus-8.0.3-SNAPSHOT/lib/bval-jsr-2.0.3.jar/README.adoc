@@ -1,2 +1,0 @@
-= apache-tomee-plus-8.0.3-SNAPSHOT/lib/bval-jsr-2.0.3.jar
-

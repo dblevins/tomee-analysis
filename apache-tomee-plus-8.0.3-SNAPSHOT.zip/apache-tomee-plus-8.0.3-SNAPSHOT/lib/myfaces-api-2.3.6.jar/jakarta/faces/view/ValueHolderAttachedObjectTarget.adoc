@@ -1,6 +1,0 @@
-= jakarta/faces/view/ValueHolderAttachedObjectTarget.class
-
- - link:ValueHolderAttachedObjectTarget-asmified.java[Asmified]
-
-== References
-

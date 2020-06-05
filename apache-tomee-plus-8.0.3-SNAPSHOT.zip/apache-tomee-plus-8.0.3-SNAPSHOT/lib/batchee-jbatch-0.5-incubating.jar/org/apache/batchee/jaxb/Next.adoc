@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Next.class
-
- - link:Next-asmified.java[Asmified]
-
-== References
-

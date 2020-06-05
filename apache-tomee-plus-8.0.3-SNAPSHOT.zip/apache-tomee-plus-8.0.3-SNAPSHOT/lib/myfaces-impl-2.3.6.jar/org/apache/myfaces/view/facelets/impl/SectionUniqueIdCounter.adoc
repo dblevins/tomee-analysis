@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/impl/SectionUniqueIdCounter.class
-
- - link:SectionUniqueIdCounter-asmified.java[Asmified]
-
-== References
-

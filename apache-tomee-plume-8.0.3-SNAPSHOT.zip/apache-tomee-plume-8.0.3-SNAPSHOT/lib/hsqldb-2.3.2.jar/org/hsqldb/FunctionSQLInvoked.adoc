@@ -1,6 +1,0 @@
-= org/hsqldb/FunctionSQLInvoked.class
-
- - link:FunctionSQLInvoked-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/SecurityRoleInfo.class
-
- - link:SecurityRoleInfo-asmified.java[Asmified]
-
-== References
-

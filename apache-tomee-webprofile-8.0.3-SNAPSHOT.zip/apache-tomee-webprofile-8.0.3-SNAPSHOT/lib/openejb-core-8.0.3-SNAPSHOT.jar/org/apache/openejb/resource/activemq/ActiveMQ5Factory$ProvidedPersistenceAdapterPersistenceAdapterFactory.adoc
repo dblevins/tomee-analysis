@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/ActiveMQ5Factory$ProvidedPersistenceAdapterPersistenceAdapterFactory.class
-
- - link:ActiveMQ5Factory$ProvidedPersistenceAdapterPersistenceAdapterFactory-asmified.java[Asmified]
-
-== References
-

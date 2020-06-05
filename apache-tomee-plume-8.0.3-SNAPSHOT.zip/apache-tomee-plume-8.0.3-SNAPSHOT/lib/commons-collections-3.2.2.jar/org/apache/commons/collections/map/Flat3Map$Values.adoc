@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/Flat3Map$Values.class
-
- - link:Flat3Map$Values-asmified.java[Asmified]
-
-== References
-

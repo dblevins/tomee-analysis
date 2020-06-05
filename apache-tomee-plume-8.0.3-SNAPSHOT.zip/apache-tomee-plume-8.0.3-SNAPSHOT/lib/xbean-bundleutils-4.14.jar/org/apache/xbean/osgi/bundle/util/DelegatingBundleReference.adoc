@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/DelegatingBundleReference.class
-
- - link:DelegatingBundleReference-asmified.java[Asmified]
-
-== References
-

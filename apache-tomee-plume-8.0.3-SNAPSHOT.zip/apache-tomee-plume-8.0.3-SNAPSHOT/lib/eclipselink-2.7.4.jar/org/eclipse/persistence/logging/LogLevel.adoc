@@ -1,6 +1,0 @@
-= org/eclipse/persistence/logging/LogLevel.class
-
- - link:LogLevel-asmified.java[Asmified]
-
-== References
-

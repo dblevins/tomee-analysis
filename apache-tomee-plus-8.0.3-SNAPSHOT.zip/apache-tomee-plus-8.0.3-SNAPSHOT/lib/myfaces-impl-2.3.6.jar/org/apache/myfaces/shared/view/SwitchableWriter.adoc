@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/view/SwitchableWriter.class
-
- - link:SwitchableWriter-asmified.java[Asmified]
-
-== References
-

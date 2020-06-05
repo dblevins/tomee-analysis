@@ -1,6 +1,0 @@
-= org/apache/webbeans/el22/EL22Adaptor.class
-
- - link:EL22Adaptor-asmified.java[Asmified]
-
-== References
-

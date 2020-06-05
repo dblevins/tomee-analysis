@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/JspConfigDescriptorImpl.class
-
- - link:JspConfigDescriptorImpl-asmified.java[Asmified]
-
-== References
-

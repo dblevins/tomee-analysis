@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ContainerTransaction.class
-
- - link:ContainerTransaction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/AsyncChannelGroupUtil$1.class
-
- - link:AsyncChannelGroupUtil$1-asmified.java[Asmified]
-
-== References
-

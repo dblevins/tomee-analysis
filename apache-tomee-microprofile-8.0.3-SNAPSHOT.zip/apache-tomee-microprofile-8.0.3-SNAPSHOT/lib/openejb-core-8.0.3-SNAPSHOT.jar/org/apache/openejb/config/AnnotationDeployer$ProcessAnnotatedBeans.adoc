@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans.class
-
- - link:AnnotationDeployer$ProcessAnnotatedBeans-asmified.java[Asmified]
-
-== References
-

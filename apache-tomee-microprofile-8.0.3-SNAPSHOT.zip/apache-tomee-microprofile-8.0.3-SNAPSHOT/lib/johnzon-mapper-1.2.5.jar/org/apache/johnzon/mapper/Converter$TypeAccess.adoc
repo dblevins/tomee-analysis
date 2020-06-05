@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/Converter$TypeAccess.class
-
- - link:Converter$TypeAccess-asmified.java[Asmified]
-
-== References
-

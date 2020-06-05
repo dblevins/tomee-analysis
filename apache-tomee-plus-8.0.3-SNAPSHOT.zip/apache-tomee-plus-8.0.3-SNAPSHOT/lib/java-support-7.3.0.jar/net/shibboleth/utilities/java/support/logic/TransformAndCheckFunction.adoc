@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/logic/TransformAndCheckFunction.class
-
- - link:TransformAndCheckFunction-asmified.java[Asmified]
-
-== References
-

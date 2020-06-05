@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IGenericMethod.class
-
- - link:IGenericMethod-asmified.java[Asmified]
-
-== References
-

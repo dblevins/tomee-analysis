@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/JSonConfigReader.class
-
- - link:JSonConfigReader-asmified.java[Asmified]
-
-== References
-

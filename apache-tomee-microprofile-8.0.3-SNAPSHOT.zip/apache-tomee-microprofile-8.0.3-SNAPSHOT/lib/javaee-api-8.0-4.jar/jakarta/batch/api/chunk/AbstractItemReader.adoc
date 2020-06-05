@@ -1,6 +1,0 @@
-= jakarta/batch/api/chunk/AbstractItemReader.class
-
- - link:AbstractItemReader-asmified.java[Asmified]
-
-== References
-

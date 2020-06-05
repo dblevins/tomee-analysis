@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/controller/chunk/CheckpointManager.class
-
- - link:CheckpointManager-asmified.java[Asmified]
-
-== References
-

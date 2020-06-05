@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/ObserverMethodsBuilder.class
-
- - link:ObserverMethodsBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/scope/ViewTransientScopeBeanHolder.class
-
- - link:ViewTransientScopeBeanHolder-asmified.java[Asmified]
-
-== References
-

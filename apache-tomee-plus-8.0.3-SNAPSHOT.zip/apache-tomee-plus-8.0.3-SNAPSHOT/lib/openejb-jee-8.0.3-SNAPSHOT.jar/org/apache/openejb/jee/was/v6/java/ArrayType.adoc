@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/ArrayType.class
-
- - link:ArrayType-asmified.java[Asmified]
-
-== References
-

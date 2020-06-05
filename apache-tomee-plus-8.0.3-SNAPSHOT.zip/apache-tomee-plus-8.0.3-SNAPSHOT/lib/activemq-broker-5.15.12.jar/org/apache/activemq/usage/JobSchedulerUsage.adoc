@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/JobSchedulerUsage.class
-
- - link:JobSchedulerUsage-asmified.java[Asmified]
-
-== References
-

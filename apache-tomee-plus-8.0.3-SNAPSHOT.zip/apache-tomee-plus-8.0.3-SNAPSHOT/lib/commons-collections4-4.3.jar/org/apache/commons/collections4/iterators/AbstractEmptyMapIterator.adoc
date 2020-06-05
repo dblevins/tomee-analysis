@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.class
-
- - link:AbstractEmptyMapIterator-asmified.java[Asmified]
-
-== References
-

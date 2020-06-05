@@ -1,6 +1,0 @@
-= com/sun/faces/spi/ConfigurationResourceProvider.class
-
- - link:ConfigurationResourceProvider-asmified.java[Asmified]
-
-== References
-

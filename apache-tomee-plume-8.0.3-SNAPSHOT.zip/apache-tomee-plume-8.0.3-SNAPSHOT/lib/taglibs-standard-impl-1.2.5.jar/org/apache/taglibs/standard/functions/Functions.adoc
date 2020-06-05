@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/functions/Functions.class
-
- - link:Functions-asmified.java[Asmified]
-
-== References
-

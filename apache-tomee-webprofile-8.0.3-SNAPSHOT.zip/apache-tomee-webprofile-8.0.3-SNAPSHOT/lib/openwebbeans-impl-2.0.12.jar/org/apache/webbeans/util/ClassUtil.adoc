@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/ClassUtil.class
-
- - link:ClassUtil-asmified.java[Asmified]
-
-== References
-

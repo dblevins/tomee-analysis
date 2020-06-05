@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanContext$Comp.class
-
- - link:BeanContext$Comp-asmified.java[Asmified]
-
-== References
-

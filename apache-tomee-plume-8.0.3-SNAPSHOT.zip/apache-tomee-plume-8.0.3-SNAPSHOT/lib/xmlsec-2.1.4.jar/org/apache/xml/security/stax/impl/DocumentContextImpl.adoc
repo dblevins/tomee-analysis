@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/DocumentContextImpl.class
-
- - link:DocumentContextImpl-asmified.java[Asmified]
-
-== References
-

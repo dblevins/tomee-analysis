@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$FlushModeProp.class
-
- - link:PropertiesHandler$FlushModeProp-asmified.java[Asmified]
-
-== References
-

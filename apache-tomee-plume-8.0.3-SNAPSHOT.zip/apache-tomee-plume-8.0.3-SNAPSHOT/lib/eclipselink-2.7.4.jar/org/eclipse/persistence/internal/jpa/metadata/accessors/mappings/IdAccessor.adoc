@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/IdAccessor.class
-
- - link:IdAccessor-asmified.java[Asmified]
-
-== References
-

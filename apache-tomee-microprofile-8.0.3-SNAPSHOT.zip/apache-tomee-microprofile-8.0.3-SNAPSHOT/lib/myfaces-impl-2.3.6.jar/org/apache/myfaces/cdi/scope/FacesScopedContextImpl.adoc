@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/scope/FacesScopedContextImpl.class
-
- - link:FacesScopedContextImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/trie/PatriciaTrie.class
-
- - link:PatriciaTrie-asmified.java[Asmified]
-
-== References
-

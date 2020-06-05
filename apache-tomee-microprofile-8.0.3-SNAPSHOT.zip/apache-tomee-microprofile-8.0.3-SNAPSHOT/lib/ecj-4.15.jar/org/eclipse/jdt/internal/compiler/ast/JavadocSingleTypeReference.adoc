@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/JavadocSingleTypeReference.class
-
- - link:JavadocSingleTypeReference-asmified.java[Asmified]
-
-== References
-

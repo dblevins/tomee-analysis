@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/AbstractHTTPDestination$PrincipalAuthorizationPolicy.class
-
- - link:AbstractHTTPDestination$PrincipalAuthorizationPolicy-asmified.java[Asmified]
-
-== References
-

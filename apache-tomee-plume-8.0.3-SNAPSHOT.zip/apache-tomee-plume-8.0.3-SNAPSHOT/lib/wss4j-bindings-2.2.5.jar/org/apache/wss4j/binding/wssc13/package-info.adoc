@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wssc13/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

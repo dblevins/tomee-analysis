@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/keyinfo/impl/provider/DSAKeyValueProvider.class
-
- - link:DSAKeyValueProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/provider/ProviderManager.class
-
- - link:ProviderManager-asmified.java[Asmified]
-
-== References
-

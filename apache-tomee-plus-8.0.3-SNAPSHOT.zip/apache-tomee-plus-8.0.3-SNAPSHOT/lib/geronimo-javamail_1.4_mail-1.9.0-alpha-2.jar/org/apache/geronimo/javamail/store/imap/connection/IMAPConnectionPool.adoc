@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool.class
-
- - link:IMAPConnectionPool-asmified.java[Asmified]
-
-== References
-

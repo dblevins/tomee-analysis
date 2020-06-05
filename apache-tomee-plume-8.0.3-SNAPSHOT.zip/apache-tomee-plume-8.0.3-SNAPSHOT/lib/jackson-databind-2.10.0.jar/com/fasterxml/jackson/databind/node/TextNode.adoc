@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/node/TextNode.class
-
- - link:TextNode-asmified.java[Asmified]
-
-== References
-

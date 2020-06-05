@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/Parameters.class
-
- - link:Parameters-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/ClassToInstanceMultiMap.class
-
- - link:ClassToInstanceMultiMap-asmified.java[Asmified]
-
-== References
-

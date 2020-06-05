@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/FieldName.class
-
- - link:FieldName-asmified.java[Asmified]
-
-== References
-

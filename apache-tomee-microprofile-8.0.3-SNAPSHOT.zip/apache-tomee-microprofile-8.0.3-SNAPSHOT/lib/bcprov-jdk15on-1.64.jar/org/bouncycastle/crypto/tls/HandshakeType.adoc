@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/HandshakeType.class
-
- - link:HandshakeType-asmified.java[Asmified]
-
-== References
-

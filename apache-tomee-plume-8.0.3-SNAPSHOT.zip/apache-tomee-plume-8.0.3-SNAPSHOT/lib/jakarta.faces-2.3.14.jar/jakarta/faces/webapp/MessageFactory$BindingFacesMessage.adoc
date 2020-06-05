@@ -1,6 +1,0 @@
-= jakarta/faces/webapp/MessageFactory$BindingFacesMessage.class
-
- - link:MessageFactory$BindingFacesMessage-asmified.java[Asmified]
-
-== References
-

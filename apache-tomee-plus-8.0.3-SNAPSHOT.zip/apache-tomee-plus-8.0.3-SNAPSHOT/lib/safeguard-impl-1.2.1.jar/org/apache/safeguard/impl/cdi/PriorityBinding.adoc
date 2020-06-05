@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/cdi/PriorityBinding.class
-
- - link:PriorityBinding-asmified.java[Asmified]
-
-== References
-

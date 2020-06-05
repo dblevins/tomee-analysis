@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQSession$DeliveryListener.class
-
- - link:ActiveMQSession$DeliveryListener-asmified.java[Asmified]
-
-== References
-

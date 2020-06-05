@@ -1,6 +1,0 @@
-= javax/xml/datatype/DatatypeFactory.class
-
- - link:DatatypeFactory-asmified.java[Asmified]
-
-== References
-

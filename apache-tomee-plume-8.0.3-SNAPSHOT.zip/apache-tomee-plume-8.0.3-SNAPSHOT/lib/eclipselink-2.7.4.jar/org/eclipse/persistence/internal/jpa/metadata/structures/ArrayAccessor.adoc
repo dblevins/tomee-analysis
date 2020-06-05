@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/structures/ArrayAccessor.class
-
- - link:ArrayAccessor-asmified.java[Asmified]
-
-== References
-

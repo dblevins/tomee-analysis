@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/TxMandatory.class
-
- - link:TxMandatory-asmified.java[Asmified]
-
-== References
-

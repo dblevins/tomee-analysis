@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/CalendarTimerData.class
-
- - link:CalendarTimerData-asmified.java[Asmified]
-
-== References
-

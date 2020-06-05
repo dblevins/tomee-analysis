@@ -1,6 +1,0 @@
-= org/apache/catalina/JmxEnabled.class
-
- - link:JmxEnabled-asmified.java[Asmified]
-
-== References
-

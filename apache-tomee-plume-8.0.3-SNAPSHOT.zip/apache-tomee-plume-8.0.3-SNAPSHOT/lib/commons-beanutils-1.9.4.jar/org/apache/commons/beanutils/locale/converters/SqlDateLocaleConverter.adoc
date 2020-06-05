@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/converters/SqlDateLocaleConverter.class
-
- - link:SqlDateLocaleConverter-asmified.java[Asmified]
-
-== References
-

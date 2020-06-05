@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/ConnectionReleaser.class
-
- - link:ConnectionReleaser-asmified.java[Asmified]
-
-== References
-

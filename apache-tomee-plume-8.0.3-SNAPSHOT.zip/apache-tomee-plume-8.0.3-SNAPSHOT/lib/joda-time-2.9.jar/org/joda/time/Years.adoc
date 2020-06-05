@@ -1,6 +1,0 @@
-= org/joda/time/Years.class
-
- - link:Years-asmified.java[Asmified]
-
-== References
-

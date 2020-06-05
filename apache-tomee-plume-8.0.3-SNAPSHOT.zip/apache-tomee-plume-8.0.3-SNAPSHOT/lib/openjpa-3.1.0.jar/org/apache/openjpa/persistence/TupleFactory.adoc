@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/TupleFactory.class
-
- - link:TupleFactory-asmified.java[Asmified]
-
-== References
-

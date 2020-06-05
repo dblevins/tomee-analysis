@@ -1,6 +1,0 @@
-= jakarta/json/bind/annotation/JsonbVisibility.class
-
- - link:JsonbVisibility-asmified.java[Asmified]
-
-== References
-

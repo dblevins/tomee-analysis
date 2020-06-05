@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/AbstractConduit.class
-
- - link:AbstractConduit-asmified.java[Asmified]
-
-== References
-

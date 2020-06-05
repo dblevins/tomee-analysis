@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/behavior/ICommonRemoteCacheAttributes.class
-
- - link:ICommonRemoteCacheAttributes-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/BindingDescriptor.class
-
- - link:BindingDescriptor-asmified.java[Asmified]
-
-== References
-

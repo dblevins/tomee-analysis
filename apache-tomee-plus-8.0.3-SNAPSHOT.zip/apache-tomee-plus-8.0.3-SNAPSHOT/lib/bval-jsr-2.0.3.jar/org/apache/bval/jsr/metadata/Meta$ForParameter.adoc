@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/Meta$ForParameter.class
-
- - link:Meta$ForParameter-asmified.java[Asmified]
-
-== References
-

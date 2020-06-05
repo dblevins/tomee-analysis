@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/interceptor/JAXRSOutInterceptor.class
-
- - link:JAXRSOutInterceptor-asmified.java[Asmified]
-
-== References
-

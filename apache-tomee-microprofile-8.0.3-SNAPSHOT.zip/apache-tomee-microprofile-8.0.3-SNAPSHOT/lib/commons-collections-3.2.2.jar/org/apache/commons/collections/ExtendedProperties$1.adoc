@@ -1,6 +1,0 @@
-= org/apache/commons/collections/ExtendedProperties$1.class
-
- - link:ExtendedProperties$1-asmified.java[Asmified]
-
-== References
-

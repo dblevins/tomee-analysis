@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/shade/commons/EmptyVisitor$1.class
-
- - link:EmptyVisitor$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/TransformsType.class
-
- - link:TransformsType-asmified.java[Asmified]
-
-== References
-

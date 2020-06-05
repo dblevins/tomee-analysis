@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/BeanCacheKey$1.class
-
- - link:BeanCacheKey$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/DeleteOperation.class
-
- - link:DeleteOperation-asmified.java[Asmified]
-
-== References
-

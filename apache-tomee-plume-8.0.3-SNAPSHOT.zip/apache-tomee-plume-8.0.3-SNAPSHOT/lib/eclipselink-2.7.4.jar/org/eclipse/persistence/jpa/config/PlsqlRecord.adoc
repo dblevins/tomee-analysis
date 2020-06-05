@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/PlsqlRecord.class
-
- - link:PlsqlRecord-asmified.java[Asmified]
-
-== References
-

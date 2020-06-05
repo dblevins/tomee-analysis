@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/BrokerServiceAware.class
-
- - link:BrokerServiceAware-asmified.java[Asmified]
-
-== References
-

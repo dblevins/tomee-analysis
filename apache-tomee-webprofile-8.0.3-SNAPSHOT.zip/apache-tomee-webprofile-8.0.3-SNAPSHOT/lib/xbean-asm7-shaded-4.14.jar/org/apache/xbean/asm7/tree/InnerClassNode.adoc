@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/InnerClassNode.class
-
- - link:InnerClassNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejb/DestinationEnum.class
-
- - link:DestinationEnum-asmified.java[Asmified]
-
-== References
-

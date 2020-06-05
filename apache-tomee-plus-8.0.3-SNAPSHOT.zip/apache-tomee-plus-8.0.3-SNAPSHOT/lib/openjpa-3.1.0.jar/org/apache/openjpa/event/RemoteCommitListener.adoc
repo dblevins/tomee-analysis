@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/RemoteCommitListener.class
-
- - link:RemoteCommitListener-asmified.java[Asmified]
-
-== References
-

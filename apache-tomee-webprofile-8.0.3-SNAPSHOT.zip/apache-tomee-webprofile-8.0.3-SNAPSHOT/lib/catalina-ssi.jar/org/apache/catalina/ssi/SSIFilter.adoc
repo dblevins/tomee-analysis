@@ -1,6 +1,0 @@
-= org/apache/catalina/ssi/SSIFilter.class
-
- - link:SSIFilter-asmified.java[Asmified]
-
-== References
-

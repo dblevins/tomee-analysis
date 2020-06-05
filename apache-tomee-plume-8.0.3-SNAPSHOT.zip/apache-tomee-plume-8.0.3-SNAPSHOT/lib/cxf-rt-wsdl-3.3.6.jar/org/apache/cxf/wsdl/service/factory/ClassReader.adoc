@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/service/factory/ClassReader.class
-
- - link:ClassReader-asmified.java[Asmified]
-
-== References
-

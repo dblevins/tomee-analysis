@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/TimeValidator.class
-
- - link:TimeValidator-asmified.java[Asmified]
-
-== References
-

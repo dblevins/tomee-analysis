@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Duration.class
-
- - link:Duration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/ejb/Singleton.class
-
- - link:Singleton-asmified.java[Asmified]
-
-== References
-

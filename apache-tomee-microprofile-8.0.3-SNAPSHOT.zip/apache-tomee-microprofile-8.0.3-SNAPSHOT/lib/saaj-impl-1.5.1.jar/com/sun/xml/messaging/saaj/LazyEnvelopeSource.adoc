@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/LazyEnvelopeSource.class
-
- - link:LazyEnvelopeSource-asmified.java[Asmified]
-
-== References
-

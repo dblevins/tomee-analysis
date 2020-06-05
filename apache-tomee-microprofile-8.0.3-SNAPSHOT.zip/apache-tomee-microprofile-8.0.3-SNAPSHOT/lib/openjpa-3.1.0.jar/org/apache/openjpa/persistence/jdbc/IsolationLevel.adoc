@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/IsolationLevel.class
-
- - link:IsolationLevel-asmified.java[Asmified]
-
-== References
-

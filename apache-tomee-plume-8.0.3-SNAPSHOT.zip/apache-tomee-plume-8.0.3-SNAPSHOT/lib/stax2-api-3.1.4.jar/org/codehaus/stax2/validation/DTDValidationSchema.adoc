@@ -1,6 +1,0 @@
-= org/codehaus/stax2/validation/DTDValidationSchema.class
-
- - link:DTDValidationSchema-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/codec/StringDecoder.class
-
- - link:StringDecoder-asmified.java[Asmified]
-
-== References
-

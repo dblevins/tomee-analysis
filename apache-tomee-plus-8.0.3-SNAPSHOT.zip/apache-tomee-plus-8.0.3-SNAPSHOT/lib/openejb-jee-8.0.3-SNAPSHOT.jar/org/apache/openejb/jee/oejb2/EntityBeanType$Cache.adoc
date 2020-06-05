@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/EntityBeanType$Cache.class
-
- - link:EntityBeanType$Cache-asmified.java[Asmified]
-
-== References
-

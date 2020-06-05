@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIPanel.class
-
- - link:UIPanel-asmified.java[Asmified]
-
-== References
-

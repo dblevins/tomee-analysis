@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/crypto/mceliece/McElieceKobaraImaiCipher.class
-
- - link:McElieceKobaraImaiCipher-asmified.java[Asmified]
-
-== References
-

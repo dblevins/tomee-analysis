@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/QueryTargetPolicy.class
-
- - link:QueryTargetPolicy-asmified.java[Asmified]
-
-== References
-

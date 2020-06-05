@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.class
-
- - link:JacksonAnnotationIntrospector-asmified.java[Asmified]
-
-== References
-

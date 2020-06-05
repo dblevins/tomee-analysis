@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/info/License.class
-
- - link:License-asmified.java[Asmified]
-
-== References
-

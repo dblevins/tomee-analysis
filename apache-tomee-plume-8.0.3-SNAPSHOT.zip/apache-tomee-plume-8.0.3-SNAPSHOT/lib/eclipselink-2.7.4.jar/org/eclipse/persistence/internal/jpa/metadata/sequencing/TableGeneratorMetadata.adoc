@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/sequencing/TableGeneratorMetadata.class
-
- - link:TableGeneratorMetadata-asmified.java[Asmified]
-
-== References
-

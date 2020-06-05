@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/DBConnectionManager.class
-
- - link:DBConnectionManager-asmified.java[Asmified]
-
-== References
-

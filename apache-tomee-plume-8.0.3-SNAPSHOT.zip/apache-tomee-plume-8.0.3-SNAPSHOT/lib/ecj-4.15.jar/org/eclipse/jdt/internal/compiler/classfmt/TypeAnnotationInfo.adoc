@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/TypeAnnotationInfo.class
-
- - link:TypeAnnotationInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlSelectManyListboxTag.class
-
- - link:HtmlSelectManyListboxTag-asmified.java[Asmified]
-
-== References
-

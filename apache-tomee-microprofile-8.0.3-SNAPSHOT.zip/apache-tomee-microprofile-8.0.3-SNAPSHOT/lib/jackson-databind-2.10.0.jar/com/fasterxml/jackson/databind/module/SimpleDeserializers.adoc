@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/module/SimpleDeserializers.class
-
- - link:SimpleDeserializers-asmified.java[Asmified]
-
-== References
-

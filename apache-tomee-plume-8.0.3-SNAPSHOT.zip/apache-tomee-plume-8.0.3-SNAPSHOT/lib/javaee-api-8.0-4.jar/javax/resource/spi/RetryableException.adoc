@@ -1,6 +1,0 @@
-= javax/resource/spi/RetryableException.class
-
- - link:RetryableException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/fallback/FallbackInterceptor$1.class
-
- - link:FallbackInterceptor$1-asmified.java[Asmified]
-
-== References
-

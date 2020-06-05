@@ -1,6 +1,0 @@
-= jakarta/ejb/EntityContext.class
-
- - link:EntityContext-asmified.java[Asmified]
-
-== References
-

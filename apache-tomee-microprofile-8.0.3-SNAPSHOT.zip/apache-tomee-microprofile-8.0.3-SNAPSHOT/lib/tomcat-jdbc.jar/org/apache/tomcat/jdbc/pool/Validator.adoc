@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/Validator.class
-
- - link:Validator-asmified.java[Asmified]
-
-== References
-

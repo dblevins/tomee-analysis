@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/AnyChildDestinationNode$1.class
-
- - link:AnyChildDestinationNode$1-asmified.java[Asmified]
-
-== References
-

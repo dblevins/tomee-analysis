@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdrpi/impl/PublicationUnmarshaller.class
-
- - link:PublicationUnmarshaller-asmified.java[Asmified]
-
-== References
-

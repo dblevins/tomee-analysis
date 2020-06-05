@@ -1,6 +1,0 @@
-= jakarta/servlet/annotation/HttpMethodConstraint.class
-
- - link:HttpMethodConstraint-asmified.java[Asmified]
-
-== References
-

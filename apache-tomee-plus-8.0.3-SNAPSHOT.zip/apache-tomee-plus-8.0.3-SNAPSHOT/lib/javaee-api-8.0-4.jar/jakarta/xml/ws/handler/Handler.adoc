@@ -1,6 +1,0 @@
-= jakarta/xml/ws/handler/Handler.class
-
- - link:Handler-asmified.java[Asmified]
-
-== References
-

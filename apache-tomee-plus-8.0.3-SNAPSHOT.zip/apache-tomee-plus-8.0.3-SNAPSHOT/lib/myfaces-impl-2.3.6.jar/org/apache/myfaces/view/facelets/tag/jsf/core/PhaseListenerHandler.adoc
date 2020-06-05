@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/PhaseListenerHandler.class
-
- - link:PhaseListenerHandler-asmified.java[Asmified]
-
-== References
-

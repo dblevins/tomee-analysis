@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/CoalesceExpressionFactory.class
-
- - link:CoalesceExpressionFactory-asmified.java[Asmified]
-
-== References
-

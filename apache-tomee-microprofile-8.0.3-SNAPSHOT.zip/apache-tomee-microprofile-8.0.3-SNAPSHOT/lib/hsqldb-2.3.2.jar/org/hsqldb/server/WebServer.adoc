@@ -1,6 +1,0 @@
-= org/hsqldb/server/WebServer.class
-
- - link:WebServer-asmified.java[Asmified]
-
-== References
-

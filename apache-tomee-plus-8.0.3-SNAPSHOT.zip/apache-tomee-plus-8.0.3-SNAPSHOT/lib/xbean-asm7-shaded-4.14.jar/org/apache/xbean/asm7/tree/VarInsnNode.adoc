@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/VarInsnNode.class
-
- - link:VarInsnNode-asmified.java[Asmified]
-
-== References
-

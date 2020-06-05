@@ -1,6 +1,0 @@
-= org/bouncycastle/jce/spec/MQVPublicKeySpec.class
-
- - link:MQVPublicKeySpec-asmified.java[Asmified]
-
-== References
-

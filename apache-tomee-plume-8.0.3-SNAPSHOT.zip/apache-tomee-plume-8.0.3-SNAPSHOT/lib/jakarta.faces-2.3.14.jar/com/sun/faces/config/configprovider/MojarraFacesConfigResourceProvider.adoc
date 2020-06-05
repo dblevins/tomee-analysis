@@ -1,6 +1,0 @@
-= com/sun/faces/config/configprovider/MojarraFacesConfigResourceProvider.class
-
- - link:MojarraFacesConfigResourceProvider-asmified.java[Asmified]
-
-== References
-

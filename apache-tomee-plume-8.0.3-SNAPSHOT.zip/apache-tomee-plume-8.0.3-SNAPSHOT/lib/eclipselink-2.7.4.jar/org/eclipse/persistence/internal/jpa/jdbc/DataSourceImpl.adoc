@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jdbc/DataSourceImpl.class
-
- - link:DataSourceImpl-asmified.java[Asmified]
-
-== References
-

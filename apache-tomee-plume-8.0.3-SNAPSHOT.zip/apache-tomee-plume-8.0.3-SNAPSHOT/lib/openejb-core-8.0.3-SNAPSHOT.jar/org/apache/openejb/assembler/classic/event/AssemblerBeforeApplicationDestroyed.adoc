@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/event/AssemblerBeforeApplicationDestroyed.class
-
- - link:AssemblerBeforeApplicationDestroyed-asmified.java[Asmified]
-
-== References
-

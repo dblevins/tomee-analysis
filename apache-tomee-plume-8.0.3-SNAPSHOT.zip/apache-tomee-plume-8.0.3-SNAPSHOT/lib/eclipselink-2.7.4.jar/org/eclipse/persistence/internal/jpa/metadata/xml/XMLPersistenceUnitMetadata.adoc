@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/xml/XMLPersistenceUnitMetadata.class
-
- - link:XMLPersistenceUnitMetadata-asmified.java[Asmified]
-
-== References
-

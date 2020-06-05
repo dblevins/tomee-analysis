@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/SqlShape.class
-
- - link:SqlShape-asmified.java[Asmified]
-
-== References
-

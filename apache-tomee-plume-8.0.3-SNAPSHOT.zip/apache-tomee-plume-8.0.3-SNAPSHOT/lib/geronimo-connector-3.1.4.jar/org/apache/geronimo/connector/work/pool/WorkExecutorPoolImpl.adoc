@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/work/pool/WorkExecutorPoolImpl.class
-
- - link:WorkExecutorPoolImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/CurveType.class
-
- - link:CurveType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/cmp2/PostCreateGenerator.class
-
- - link:PostCreateGenerator-asmified.java[Asmified]
-
-== References
-

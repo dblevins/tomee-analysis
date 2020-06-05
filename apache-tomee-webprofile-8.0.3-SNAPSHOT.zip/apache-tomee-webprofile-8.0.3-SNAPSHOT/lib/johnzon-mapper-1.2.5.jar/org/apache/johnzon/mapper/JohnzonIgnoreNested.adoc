@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/JohnzonIgnoreNested.class
-
- - link:JohnzonIgnoreNested-asmified.java[Asmified]
-
-== References
-

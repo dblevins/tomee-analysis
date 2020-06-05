@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPFlags.class
-
- - link:IMAPFlags-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/jaxrs/OpenAPIEndpoint.class
-
- - link:OpenAPIEndpoint-asmified.java[Asmified]
-
-== References
-

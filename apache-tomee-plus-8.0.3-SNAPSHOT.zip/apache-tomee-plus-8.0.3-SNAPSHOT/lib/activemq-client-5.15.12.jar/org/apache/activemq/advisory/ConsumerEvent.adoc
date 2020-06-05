@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/ConsumerEvent.class
-
- - link:ConsumerEvent-asmified.java[Asmified]
-
-== References
-

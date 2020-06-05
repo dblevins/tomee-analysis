@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/osgi/CXFExtensionBundleListener.class
-
- - link:CXFExtensionBundleListener-asmified.java[Asmified]
-
-== References
-

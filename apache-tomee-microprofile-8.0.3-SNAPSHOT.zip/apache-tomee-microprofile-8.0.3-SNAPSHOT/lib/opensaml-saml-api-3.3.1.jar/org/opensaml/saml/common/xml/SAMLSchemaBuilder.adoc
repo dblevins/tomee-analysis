@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/xml/SAMLSchemaBuilder.class
-
- - link:SAMLSchemaBuilder-asmified.java[Asmified]
-
-== References
-

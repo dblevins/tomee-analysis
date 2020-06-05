@@ -1,6 +1,0 @@
-= jakarta/jms/TopicPublisher.class
-
- - link:TopicPublisher-asmified.java[Asmified]
-
-== References
-

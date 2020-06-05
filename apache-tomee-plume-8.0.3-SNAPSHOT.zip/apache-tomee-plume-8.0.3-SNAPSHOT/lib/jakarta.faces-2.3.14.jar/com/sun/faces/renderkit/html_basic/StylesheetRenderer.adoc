@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/StylesheetRenderer.class
-
- - link:StylesheetRenderer-asmified.java[Asmified]
-
-== References
-

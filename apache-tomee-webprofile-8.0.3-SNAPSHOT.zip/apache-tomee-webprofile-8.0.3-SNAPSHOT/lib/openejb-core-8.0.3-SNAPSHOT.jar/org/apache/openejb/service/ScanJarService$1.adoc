@@ -1,6 +1,0 @@
-= org/apache/openejb/service/ScanJarService$1.class
-
- - link:ScanJarService$1-asmified.java[Asmified]
-
-== References
-

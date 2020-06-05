@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCConnection.class
-
- - link:JDBCConnection-asmified.java[Asmified]
-
-== References
-

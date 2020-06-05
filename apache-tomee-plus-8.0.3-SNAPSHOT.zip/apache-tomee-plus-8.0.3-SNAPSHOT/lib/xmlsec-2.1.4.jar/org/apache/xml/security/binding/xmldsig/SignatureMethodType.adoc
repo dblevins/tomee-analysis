@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/SignatureMethodType.class
-
- - link:SignatureMethodType-asmified.java[Asmified]
-
-== References
-

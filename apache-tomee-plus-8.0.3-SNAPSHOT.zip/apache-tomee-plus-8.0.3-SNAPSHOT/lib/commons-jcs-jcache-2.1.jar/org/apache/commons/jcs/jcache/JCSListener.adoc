@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/JCSListener.class
-
- - link:JCSListener-asmified.java[Asmified]
-
-== References
-

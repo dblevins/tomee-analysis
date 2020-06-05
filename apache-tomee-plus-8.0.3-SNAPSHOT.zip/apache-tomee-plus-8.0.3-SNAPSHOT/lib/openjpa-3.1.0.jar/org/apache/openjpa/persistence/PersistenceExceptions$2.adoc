@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistenceExceptions$2.class
-
- - link:PersistenceExceptions$2-asmified.java[Asmified]
-
-== References
-

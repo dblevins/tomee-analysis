@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/DefaultConstraintValidatorFactory.class
-
- - link:DefaultConstraintValidatorFactory-asmified.java[Asmified]
-
-== References
-

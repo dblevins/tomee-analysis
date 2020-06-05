@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/support/URIContentReference.class
-
- - link:URIContentReference-asmified.java[Asmified]
-
-== References
-

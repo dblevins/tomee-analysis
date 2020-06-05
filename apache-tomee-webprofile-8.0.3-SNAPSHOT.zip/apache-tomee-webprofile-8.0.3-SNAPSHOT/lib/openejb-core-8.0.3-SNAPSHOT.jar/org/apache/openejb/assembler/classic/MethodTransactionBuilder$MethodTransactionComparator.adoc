@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MethodTransactionBuilder$MethodTransactionComparator.class
-
- - link:MethodTransactionBuilder$MethodTransactionComparator-asmified.java[Asmified]
-
-== References
-

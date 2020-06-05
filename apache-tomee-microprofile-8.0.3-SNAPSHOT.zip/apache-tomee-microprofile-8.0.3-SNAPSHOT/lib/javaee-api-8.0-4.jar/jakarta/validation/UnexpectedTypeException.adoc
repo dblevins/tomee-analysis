@@ -1,6 +1,0 @@
-= jakarta/validation/UnexpectedTypeException.class
-
- - link:UnexpectedTypeException-asmified.java[Asmified]
-
-== References
-

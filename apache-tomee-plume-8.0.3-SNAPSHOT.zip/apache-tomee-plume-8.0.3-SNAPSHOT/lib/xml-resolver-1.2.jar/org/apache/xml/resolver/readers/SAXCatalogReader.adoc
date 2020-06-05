@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/readers/SAXCatalogReader.class
-
- - link:SAXCatalogReader-asmified.java[Asmified]
-
-== References
-

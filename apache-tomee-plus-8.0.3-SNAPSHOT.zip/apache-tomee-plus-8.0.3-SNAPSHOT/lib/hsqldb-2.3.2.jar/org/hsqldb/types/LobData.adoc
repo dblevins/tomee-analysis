@@ -1,6 +1,0 @@
-= org/hsqldb/types/LobData.class
-
- - link:LobData-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/cursors/OrderedPendingList.class
-
- - link:OrderedPendingList-asmified.java[Asmified]
-
-== References
-

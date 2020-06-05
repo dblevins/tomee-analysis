@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeFormatterBuilder$StringLiteral.class
-
- - link:DateTimeFormatterBuilder$StringLiteral-asmified.java[Asmified]
-
-== References
-

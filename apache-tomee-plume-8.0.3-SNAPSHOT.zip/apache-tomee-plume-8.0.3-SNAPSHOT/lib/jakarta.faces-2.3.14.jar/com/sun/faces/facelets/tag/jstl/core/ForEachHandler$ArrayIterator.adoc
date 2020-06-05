@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/core/ForEachHandler$ArrayIterator.class
-
- - link:ForEachHandler$ArrayIterator-asmified.java[Asmified]
-
-== References
-

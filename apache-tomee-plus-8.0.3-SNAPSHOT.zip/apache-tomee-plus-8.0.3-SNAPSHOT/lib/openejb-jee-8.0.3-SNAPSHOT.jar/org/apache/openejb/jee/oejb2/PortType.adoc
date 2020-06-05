@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/PortType.class
-
- - link:PortType-asmified.java[Asmified]
-
-== References
-

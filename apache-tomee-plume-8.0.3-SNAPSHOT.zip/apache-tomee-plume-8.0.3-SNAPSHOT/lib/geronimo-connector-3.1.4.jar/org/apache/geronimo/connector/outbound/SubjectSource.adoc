@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/SubjectSource.class
-
- - link:SubjectSource-asmified.java[Asmified]
-
-== References
-

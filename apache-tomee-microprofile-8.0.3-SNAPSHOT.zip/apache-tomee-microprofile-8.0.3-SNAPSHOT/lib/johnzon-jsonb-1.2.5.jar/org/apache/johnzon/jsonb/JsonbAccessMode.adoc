@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/JsonbAccessMode.class
-
- - link:JsonbAccessMode-asmified.java[Asmified]
-
-== References
-

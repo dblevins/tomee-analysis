@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl11/PartialWSDLProcessor.class
-
- - link:PartialWSDLProcessor-asmified.java[Asmified]
-
-== References
-

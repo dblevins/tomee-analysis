@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/Files$NoopOutputStream.class
-
- - link:Files$NoopOutputStream-asmified.java[Asmified]
-
-== References
-

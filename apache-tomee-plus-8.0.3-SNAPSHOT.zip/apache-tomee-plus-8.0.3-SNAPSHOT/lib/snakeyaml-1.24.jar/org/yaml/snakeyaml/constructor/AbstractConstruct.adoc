@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/constructor/AbstractConstruct.class
-
- - link:AbstractConstruct-asmified.java[Asmified]
-
-== References
-

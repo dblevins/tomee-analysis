@@ -1,6 +1,0 @@
-= org/apache/catalina/Wrapper.class
-
- - link:Wrapper-asmified.java[Asmified]
-
-== References
-

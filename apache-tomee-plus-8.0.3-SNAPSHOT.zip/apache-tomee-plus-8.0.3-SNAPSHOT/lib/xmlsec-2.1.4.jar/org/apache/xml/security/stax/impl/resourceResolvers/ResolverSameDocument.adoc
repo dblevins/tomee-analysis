@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/resourceResolvers/ResolverSameDocument.class
-
- - link:ResolverSameDocument-asmified.java[Asmified]
-
-== References
-

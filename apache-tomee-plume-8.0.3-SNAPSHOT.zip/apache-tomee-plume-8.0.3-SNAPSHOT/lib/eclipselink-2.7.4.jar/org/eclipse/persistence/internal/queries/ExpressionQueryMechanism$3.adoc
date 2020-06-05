@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/ExpressionQueryMechanism$3.class
-
- - link:ExpressionQueryMechanism$3-asmified.java[Asmified]
-
-== References
-

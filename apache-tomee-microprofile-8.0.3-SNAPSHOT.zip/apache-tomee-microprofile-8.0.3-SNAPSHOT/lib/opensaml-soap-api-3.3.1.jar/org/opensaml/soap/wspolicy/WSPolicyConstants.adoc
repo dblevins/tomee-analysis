@@ -1,6 +1,0 @@
-= org/opensaml/soap/wspolicy/WSPolicyConstants.class
-
- - link:WSPolicyConstants-asmified.java[Asmified]
-
-== References
-

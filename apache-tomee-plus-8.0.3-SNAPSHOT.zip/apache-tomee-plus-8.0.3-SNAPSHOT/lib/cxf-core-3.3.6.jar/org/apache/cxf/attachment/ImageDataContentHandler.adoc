@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/ImageDataContentHandler.class
-
- - link:ImageDataContentHandler-asmified.java[Asmified]
-
-== References
-

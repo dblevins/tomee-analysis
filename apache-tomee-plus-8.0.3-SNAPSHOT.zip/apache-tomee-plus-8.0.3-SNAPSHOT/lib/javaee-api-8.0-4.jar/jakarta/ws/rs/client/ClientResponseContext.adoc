@@ -1,6 +1,0 @@
-= jakarta/ws/rs/client/ClientResponseContext.class
-
- - link:ClientResponseContext-asmified.java[Asmified]
-
-== References
-

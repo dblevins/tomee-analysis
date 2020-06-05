@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/Log4jConverter.class
-
- - link:Log4jConverter-asmified.java[Asmified]
-
-== References
-

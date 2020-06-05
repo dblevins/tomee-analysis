@@ -1,6 +1,0 @@
-= org/apache/openejb/client/RequestMethodCode.class
-
- - link:RequestMethodCode-asmified.java[Asmified]
-
-== References
-

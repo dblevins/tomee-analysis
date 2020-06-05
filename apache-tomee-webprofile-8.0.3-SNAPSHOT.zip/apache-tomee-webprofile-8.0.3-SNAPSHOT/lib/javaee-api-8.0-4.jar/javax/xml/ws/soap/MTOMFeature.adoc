@@ -1,9 +1,0 @@
-= javax/xml/ws/soap/MTOMFeature.class
-
- - link:MTOMFeature-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.soap.MTOMFeature - 3
- - javax.xml.ws.WebServiceException - 2
- - javax.xml.ws.WebServiceFeature - 2

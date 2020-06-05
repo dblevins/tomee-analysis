@@ -1,6 +1,0 @@
-= org/apache/webbeans/lifecycle/StandaloneLifeCycle.class
-
- - link:StandaloneLifeCycle-asmified.java[Asmified]
-
-== References
-

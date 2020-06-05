@@ -1,6 +1,0 @@
-= org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization.class
-
- - link:TransactionalEventNotifier$AbstractSynchronization-asmified.java[Asmified]
-
-== References
-

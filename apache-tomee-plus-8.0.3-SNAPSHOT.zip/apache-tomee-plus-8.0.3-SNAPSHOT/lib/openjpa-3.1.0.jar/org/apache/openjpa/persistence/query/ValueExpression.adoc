@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/ValueExpression.class
-
- - link:ValueExpression-asmified.java[Asmified]
-
-== References
-

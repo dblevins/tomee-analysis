@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/queries/NamedPLSQLStoredFunctionQueryMetadata.class
-
- - link:NamedPLSQLStoredFunctionQueryMetadata-asmified.java[Asmified]
-
-== References
-

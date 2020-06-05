@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/Directory.class
-
- - link:Directory-asmified.java[Asmified]
-
-== References
-

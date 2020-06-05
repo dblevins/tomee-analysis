@@ -1,6 +1,0 @@
-= org/apache/webbeans/el/ELContextStore$CreationalStore.class
-
- - link:ELContextStore$CreationalStore-asmified.java[Asmified]
-
-== References
-

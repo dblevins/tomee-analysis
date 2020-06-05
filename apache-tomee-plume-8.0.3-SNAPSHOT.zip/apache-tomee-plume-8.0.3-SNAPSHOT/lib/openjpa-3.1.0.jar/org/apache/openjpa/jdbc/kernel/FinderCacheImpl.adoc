@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/FinderCacheImpl.class
-
- - link:FinderCacheImpl-asmified.java[Asmified]
-
-== References
-

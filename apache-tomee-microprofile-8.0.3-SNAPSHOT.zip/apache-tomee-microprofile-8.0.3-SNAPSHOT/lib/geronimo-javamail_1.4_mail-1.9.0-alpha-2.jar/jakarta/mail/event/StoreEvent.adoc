@@ -1,6 +1,0 @@
-= jakarta/mail/event/StoreEvent.class
-
- - link:StoreEvent-asmified.java[Asmified]
-
-== References
-

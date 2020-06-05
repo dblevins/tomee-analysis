@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/PoolUtils$ErodingObjectPool.class
-
- - link:PoolUtils$ErodingObjectPool-asmified.java[Asmified]
-
-== References
-

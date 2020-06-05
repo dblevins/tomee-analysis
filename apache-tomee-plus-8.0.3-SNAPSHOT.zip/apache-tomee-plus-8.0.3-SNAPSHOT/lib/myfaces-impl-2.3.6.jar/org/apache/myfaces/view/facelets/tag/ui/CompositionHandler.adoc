@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/CompositionHandler.class
-
- - link:CompositionHandler-asmified.java[Asmified]
-
-== References
-

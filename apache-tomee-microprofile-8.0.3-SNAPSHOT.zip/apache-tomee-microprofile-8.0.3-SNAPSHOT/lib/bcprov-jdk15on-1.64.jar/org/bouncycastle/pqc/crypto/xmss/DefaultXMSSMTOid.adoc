@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/crypto/xmss/DefaultXMSSMTOid.class
-
- - link:DefaultXMSSMTOid-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/ValuePropertyLoader.class
-
- - link:ValuePropertyLoader-asmified.java[Asmified]
-
-== References
-

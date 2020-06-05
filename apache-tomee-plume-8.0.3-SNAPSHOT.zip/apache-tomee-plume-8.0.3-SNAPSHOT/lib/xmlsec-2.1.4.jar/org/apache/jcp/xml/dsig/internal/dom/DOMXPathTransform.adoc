@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMXPathTransform.class
-
- - link:DOMXPathTransform-asmified.java[Asmified]
-
-== References
-

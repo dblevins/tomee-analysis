@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/ScopesImpl.class
-
- - link:ScopesImpl-asmified.java[Asmified]
-
-== References
-

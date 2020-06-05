@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/tld/TldRuleSet$Attribute.class
-
- - link:TldRuleSet$Attribute-asmified.java[Asmified]
-
-== References
-

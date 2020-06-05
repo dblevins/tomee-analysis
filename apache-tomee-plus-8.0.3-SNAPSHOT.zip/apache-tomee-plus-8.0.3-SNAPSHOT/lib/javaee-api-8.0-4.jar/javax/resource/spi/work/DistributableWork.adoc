@@ -1,7 +1,0 @@
-= javax/resource/spi/work/DistributableWork.class
-
- - link:DistributableWork-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.work.Work - 1

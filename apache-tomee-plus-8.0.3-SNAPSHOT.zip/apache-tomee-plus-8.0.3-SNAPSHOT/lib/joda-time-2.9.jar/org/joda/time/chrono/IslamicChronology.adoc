@@ -1,6 +1,0 @@
-= org/joda/time/chrono/IslamicChronology.class
-
- - link:IslamicChronology-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/Analyzer.class
-
- - link:Analyzer-asmified.java[Asmified]
-
-== References
-

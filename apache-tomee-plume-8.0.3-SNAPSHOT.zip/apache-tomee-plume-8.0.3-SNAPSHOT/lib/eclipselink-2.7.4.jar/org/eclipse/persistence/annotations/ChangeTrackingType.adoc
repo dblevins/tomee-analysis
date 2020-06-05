@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/ChangeTrackingType.class
-
- - link:ChangeTrackingType-asmified.java[Asmified]
-
-== References
-

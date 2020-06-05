@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/LockFactory$StatefulLock.class
-
- - link:LockFactory$StatefulLock-asmified.java[Asmified]
-
-== References
-

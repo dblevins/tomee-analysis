@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/html/ScriptResourceDelegate.class
-
- - link:ScriptResourceDelegate-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/JDBCValueOrder.class
-
- - link:JDBCValueOrder-asmified.java[Asmified]
-
-== References
-

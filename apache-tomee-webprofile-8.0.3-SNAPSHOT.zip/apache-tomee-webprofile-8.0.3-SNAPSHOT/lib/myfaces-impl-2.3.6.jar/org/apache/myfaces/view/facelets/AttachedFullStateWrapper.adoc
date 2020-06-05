@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/AttachedFullStateWrapper.class
-
- - link:AttachedFullStateWrapper-asmified.java[Asmified]
-
-== References
-

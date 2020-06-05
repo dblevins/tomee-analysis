@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/InterceptorInjectionTargetFactory.class
-
- - link:InterceptorInjectionTargetFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/soap/soap11/Detail.class
-
- - link:Detail-asmified.java[Asmified]
-
-== References
-

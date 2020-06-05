@@ -1,6 +1,0 @@
-= org/apache/openejb/server/SimpleServiceManager.class
-
- - link:SimpleServiceManager-asmified.java[Asmified]
-
-== References
-

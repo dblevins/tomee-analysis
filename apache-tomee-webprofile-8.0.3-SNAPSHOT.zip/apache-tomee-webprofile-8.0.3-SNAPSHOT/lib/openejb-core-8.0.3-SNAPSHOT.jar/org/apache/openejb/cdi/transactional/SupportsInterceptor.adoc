@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/transactional/SupportsInterceptor.class
-
- - link:SupportsInterceptor-asmified.java[Asmified]
-
-== References
-

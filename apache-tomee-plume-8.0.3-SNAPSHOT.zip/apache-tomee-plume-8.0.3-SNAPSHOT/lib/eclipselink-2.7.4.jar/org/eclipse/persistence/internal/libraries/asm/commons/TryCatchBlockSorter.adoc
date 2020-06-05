@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/TryCatchBlockSorter.class
-
- - link:TryCatchBlockSorter-asmified.java[Asmified]
-
-== References
-

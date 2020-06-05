@@ -1,6 +1,0 @@
-= org/apache/myfaces/resource/InternalClassLoaderResourceLoader.class
-
- - link:InternalClassLoaderResourceLoader-asmified.java[Asmified]
-
-== References
-

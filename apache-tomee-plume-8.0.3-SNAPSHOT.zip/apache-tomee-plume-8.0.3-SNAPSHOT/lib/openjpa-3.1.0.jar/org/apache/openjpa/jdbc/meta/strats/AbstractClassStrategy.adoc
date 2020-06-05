@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/AbstractClassStrategy.class
-
- - link:AbstractClassStrategy-asmified.java[Asmified]
-
-== References
-

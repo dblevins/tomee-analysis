@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/SwitchClosure.class
-
- - link:SwitchClosure-asmified.java[Asmified]
-
-== References
-

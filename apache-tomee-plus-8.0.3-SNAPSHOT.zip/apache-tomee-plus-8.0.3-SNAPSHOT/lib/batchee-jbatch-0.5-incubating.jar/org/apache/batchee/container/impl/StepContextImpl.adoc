@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/StepContextImpl.class
-
- - link:StepContextImpl-asmified.java[Asmified]
-
-== References
-

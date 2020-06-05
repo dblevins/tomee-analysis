@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/blueprint/PolicyBPHandler.class
-
- - link:PolicyBPHandler-asmified.java[Asmified]
-
-== References
-

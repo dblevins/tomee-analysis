@@ -1,6 +1,0 @@
-= org/opensaml/soap/soap12/RoleBearing.class
-
- - link:RoleBearing-asmified.java[Asmified]
-
-== References
-

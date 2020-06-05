@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/spring/NamespaceHandler.class
-
- - link:NamespaceHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/context/flash/FlashClientWindowTokenCollection.class
-
- - link:FlashClientWindowTokenCollection-asmified.java[Asmified]
-
-== References
-

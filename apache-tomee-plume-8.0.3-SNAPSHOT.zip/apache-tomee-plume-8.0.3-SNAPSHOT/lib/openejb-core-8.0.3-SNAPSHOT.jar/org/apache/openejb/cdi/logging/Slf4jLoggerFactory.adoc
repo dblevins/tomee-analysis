@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/logging/Slf4jLoggerFactory.class
-
- - link:Slf4jLoggerFactory-asmified.java[Asmified]
-
-== References
-

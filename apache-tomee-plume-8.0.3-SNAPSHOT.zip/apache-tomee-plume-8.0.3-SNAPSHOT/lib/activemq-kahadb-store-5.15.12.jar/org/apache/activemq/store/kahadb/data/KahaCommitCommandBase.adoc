@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaCommitCommandBase.class
-
- - link:KahaCommitCommandBase-asmified.java[Asmified]
-
-== References
-

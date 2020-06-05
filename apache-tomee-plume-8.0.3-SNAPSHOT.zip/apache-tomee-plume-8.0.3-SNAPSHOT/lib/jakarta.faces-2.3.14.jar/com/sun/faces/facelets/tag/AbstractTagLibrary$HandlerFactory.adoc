@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/AbstractTagLibrary$HandlerFactory.class
-
- - link:AbstractTagLibrary$HandlerFactory-asmified.java[Asmified]
-
-== References
-

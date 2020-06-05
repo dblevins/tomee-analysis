@@ -1,6 +1,0 @@
-= org/apache/openejb/server/DiscoveryRegistry$ServiceAddedTask.class
-
- - link:DiscoveryRegistry$ServiceAddedTask-asmified.java[Asmified]
-
-== References
-

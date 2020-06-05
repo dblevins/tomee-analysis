@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/list/GrowthList.class
-
- - link:GrowthList-asmified.java[Asmified]
-
-== References
-

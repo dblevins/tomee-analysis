@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/WrapperNamedXAResource.class
-
- - link:WrapperNamedXAResource-asmified.java[Asmified]
-
-== References
-

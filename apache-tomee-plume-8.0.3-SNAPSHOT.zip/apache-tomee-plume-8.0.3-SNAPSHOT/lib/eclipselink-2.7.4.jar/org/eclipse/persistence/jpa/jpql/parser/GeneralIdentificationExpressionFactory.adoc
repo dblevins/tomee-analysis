@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/GeneralIdentificationExpressionFactory.class
-
- - link:GeneralIdentificationExpressionFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/context/WrappedAttachments.class
-
- - link:WrappedAttachments-asmified.java[Asmified]
-
-== References
-

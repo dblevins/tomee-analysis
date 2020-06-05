@@ -1,2 +1,0 @@
-= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/hsqldb-2.3.2.jar
-

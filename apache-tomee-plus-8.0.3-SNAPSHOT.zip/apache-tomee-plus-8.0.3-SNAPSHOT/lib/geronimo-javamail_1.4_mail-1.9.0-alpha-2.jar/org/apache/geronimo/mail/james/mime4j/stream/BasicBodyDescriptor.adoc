@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/stream/BasicBodyDescriptor.class
-
- - link:BasicBodyDescriptor-asmified.java[Asmified]
-
-== References
-

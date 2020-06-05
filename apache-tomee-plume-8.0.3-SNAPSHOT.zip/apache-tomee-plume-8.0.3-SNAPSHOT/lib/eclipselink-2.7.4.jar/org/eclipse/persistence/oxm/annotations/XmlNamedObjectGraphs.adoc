@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlNamedObjectGraphs.class
-
- - link:XmlNamedObjectGraphs-asmified.java[Asmified]
-
-== References
-

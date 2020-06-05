@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/utils/XmlSchemaNamedWithFormImpl.class
-
- - link:XmlSchemaNamedWithFormImpl-asmified.java[Asmified]
-
-== References
-

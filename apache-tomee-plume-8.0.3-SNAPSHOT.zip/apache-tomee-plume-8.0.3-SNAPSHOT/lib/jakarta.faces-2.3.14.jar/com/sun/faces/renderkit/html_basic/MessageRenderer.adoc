@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/MessageRenderer.class
-
- - link:MessageRenderer-asmified.java[Asmified]
-
-== References
-

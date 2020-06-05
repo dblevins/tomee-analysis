@@ -1,6 +1,0 @@
-= org/joda/time/DurationFieldType.class
-
- - link:DurationFieldType-asmified.java[Asmified]
-
-== References
-

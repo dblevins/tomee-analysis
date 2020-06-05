@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/AttributedURI.class
-
- - link:AttributedURI-asmified.java[Asmified]
-
-== References
-

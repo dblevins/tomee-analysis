@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/StringValue.class
-
- - link:StringValue-asmified.java[Asmified]
-
-== References
-

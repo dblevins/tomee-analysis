@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/SizeExpression.class
-
- - link:SizeExpression-asmified.java[Asmified]
-
-== References
-

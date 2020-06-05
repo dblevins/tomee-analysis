@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/ProcessingInstructionEvent.class
-
- - link:ProcessingInstructionEvent-asmified.java[Asmified]
-
-== References
-

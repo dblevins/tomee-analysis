@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/MutableBrokerFilter.class
-
- - link:MutableBrokerFilter-asmified.java[Asmified]
-
-== References
-

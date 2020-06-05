@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/ClassVisitor.class
-
- - link:ClassVisitor-asmified.java[Asmified]
-
-== References
-

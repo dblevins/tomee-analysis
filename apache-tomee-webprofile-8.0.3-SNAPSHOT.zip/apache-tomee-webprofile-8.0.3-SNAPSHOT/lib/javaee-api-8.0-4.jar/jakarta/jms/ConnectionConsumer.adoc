@@ -1,6 +1,0 @@
-= jakarta/jms/ConnectionConsumer.class
-
- - link:ConnectionConsumer-asmified.java[Asmified]
-
-== References
-

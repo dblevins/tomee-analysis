@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/OrganizationNameBuilder.class
-
- - link:OrganizationNameBuilder-asmified.java[Asmified]
-
-== References
-

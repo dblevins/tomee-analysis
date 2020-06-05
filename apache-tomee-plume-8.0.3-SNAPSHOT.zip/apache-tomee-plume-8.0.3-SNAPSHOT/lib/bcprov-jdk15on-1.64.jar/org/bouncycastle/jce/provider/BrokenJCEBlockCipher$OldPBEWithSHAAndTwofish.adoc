@@ -1,6 +1,0 @@
-= org/bouncycastle/jce/provider/BrokenJCEBlockCipher$OldPBEWithSHAAndTwofish.class
-
- - link:BrokenJCEBlockCipher$OldPBEWithSHAAndTwofish-asmified.java[Asmified]
-
-== References
-

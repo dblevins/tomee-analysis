@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/UpdateListener.class
-
- - link:UpdateListener-asmified.java[Asmified]
-
-== References
-

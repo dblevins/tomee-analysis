@@ -1,6 +1,0 @@
-= org/apache/myfaces/webapp/WebConfigParamsLogger.class
-
- - link:WebConfigParamsLogger-asmified.java[Asmified]
-
-== References
-

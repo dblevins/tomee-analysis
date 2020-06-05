@@ -1,6 +1,0 @@
-= javax/xml/xpath/XPathFactoryFinder.class
-
- - link:XPathFactoryFinder-asmified.java[Asmified]
-
-== References
-

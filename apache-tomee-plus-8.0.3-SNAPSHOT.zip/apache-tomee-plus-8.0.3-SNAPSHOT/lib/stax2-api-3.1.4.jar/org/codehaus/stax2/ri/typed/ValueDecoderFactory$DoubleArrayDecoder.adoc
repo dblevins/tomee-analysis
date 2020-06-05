@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/ValueDecoderFactory$DoubleArrayDecoder.class
-
- - link:ValueDecoderFactory$DoubleArrayDecoder-asmified.java[Asmified]
-
-== References
-

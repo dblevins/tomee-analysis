@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonFormat$Shape.class
-
- - link:JsonFormat$Shape-asmified.java[Asmified]
-
-== References
-

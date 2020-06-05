@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/TopicBuilder.class
-
- - link:TopicBuilder-asmified.java[Asmified]
-
-== References
-

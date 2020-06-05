@@ -1,6 +1,0 @@
-= org/apache/tomee/jul/handler/rotating/BackgroundTaskRunner.class
-
- - link:BackgroundTaskRunner-asmified.java[Asmified]
-
-== References
-

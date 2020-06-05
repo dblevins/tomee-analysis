@@ -1,6 +1,0 @@
-= org/apache/activemq/command/NetworkBridgeFilter.class
-
- - link:NetworkBridgeFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/el/PropertyResolverImpl.class
-
- - link:PropertyResolverImpl-asmified.java[Asmified]
-
-== References
-

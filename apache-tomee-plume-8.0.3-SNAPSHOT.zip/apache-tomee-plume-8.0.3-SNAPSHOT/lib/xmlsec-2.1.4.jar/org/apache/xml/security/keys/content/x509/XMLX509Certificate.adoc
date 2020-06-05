@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/content/x509/XMLX509Certificate.class
-
- - link:XMLX509Certificate-asmified.java[Asmified]
-
-== References
-

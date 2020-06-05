@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/DefaultTagDecorator$ElementConverter.class
-
- - link:DefaultTagDecorator$ElementConverter-asmified.java[Asmified]
-
-== References
-

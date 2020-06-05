@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/CriteriaExpressionVisitor$AbstractVisitor.class
-
- - link:CriteriaExpressionVisitor$AbstractVisitor-asmified.java[Asmified]
-
-== References
-

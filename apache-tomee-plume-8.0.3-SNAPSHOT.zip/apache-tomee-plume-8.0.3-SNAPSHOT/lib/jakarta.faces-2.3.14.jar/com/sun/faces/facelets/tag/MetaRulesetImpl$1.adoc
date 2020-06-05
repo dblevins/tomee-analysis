@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/MetaRulesetImpl$1.class
-
- - link:MetaRulesetImpl$1-asmified.java[Asmified]
-
-== References
-

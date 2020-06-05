@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/odata/ODataParser.class
-
- - link:ODataParser-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/application/StateManagerImpl.class
-
- - link:StateManagerImpl-asmified.java[Asmified]
-
-== References
-

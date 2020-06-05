@@ -1,6 +1,0 @@
-= jakarta/jms/InvalidDestinationRuntimeException.class
-
- - link:InvalidDestinationRuntimeException-asmified.java[Asmified]
-
-== References
-

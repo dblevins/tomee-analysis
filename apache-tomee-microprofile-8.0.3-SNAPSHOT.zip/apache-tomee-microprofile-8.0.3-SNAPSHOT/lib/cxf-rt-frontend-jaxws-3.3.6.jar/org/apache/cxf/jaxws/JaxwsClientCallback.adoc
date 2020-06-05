@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/JaxwsClientCallback.class
-
- - link:JaxwsClientCallback-asmified.java[Asmified]
-
-== References
-

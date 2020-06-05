@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/controller/chunk/ChunkStepController$ChunkStatusType.class
-
- - link:ChunkStepController$ChunkStatusType-asmified.java[Asmified]
-
-== References
-

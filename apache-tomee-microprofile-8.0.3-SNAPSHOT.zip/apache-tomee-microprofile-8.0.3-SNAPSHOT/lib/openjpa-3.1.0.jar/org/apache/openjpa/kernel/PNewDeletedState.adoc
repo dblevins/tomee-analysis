@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PNewDeletedState.class
-
- - link:PNewDeletedState-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/dynamic/DynamicTypeImpl.class
-
- - link:DynamicTypeImpl-asmified.java[Asmified]
-
-== References
-

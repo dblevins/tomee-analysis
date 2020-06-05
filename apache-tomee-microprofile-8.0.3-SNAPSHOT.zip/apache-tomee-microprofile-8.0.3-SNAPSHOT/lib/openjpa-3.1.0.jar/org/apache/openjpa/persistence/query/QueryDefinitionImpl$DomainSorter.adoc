@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/QueryDefinitionImpl$DomainSorter.class
-
- - link:QueryDefinitionImpl$DomainSorter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/AnnotatedTypeWrapper.class
-
- - link:AnnotatedTypeWrapper-asmified.java[Asmified]
-
-== References
-

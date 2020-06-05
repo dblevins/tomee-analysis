@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/additionalcriteria/AdditionalCriteriaMetadata.class
-
- - link:AdditionalCriteriaMetadata-asmified.java[Asmified]
-
-== References
-

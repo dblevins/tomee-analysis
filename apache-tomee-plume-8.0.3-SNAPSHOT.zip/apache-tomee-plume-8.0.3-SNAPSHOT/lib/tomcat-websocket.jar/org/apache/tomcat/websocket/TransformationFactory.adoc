@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/TransformationFactory.class
-
- - link:TransformationFactory-asmified.java[Asmified]
-
-== References
-

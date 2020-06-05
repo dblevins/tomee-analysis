@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/task/TriggerRunnable.class
-
- - link:TriggerRunnable-asmified.java[Asmified]
-
-== References
-

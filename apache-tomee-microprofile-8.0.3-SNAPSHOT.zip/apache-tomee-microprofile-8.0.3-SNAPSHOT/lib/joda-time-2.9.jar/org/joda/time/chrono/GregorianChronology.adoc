@@ -1,6 +1,0 @@
-= org/joda/time/chrono/GregorianChronology.class
-
- - link:GregorianChronology-asmified.java[Asmified]
-
-== References
-

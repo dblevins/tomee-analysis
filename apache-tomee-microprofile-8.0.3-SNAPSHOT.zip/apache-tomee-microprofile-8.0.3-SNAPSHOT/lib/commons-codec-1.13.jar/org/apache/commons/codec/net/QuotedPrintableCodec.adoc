@@ -1,6 +1,0 @@
-= org/apache/commons/codec/net/QuotedPrintableCodec.class
-
- - link:QuotedPrintableCodec-asmified.java[Asmified]
-
-== References
-

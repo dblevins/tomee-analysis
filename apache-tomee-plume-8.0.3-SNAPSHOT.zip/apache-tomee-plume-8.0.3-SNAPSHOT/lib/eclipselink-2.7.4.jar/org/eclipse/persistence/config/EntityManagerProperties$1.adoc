@@ -1,6 +1,0 @@
-= org/eclipse/persistence/config/EntityManagerProperties$1.class
-
- - link:EntityManagerProperties$1-asmified.java[Asmified]
-
-== References
-

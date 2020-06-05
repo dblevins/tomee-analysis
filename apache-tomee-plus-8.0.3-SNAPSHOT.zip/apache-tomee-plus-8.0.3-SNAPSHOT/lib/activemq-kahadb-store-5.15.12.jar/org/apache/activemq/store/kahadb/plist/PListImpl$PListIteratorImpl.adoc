@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/plist/PListImpl$PListIteratorImpl.class
-
- - link:PListImpl$PListIteratorImpl-asmified.java[Asmified]
-
-== References
-

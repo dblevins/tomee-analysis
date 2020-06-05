@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/SecurityIdentity.class
-
- - link:SecurityIdentity-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/util/IdGenerator.class
-
- - link:IdGenerator-asmified.java[Asmified]
-
-== References
-

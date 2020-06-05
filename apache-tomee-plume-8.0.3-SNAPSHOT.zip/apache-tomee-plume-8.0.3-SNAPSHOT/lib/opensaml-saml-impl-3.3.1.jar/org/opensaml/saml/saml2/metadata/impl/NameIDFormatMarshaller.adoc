@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/NameIDFormatMarshaller.class
-
- - link:NameIDFormatMarshaller-asmified.java[Asmified]
-
-== References
-

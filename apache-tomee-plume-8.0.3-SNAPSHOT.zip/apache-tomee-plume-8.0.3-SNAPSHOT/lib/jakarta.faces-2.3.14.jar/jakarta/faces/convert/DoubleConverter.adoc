@@ -1,6 +1,0 @@
-= jakarta/faces/convert/DoubleConverter.class
-
- - link:DoubleConverter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/AbstractSignableSAMLObject.class
-
- - link:AbstractSignableSAMLObject-asmified.java[Asmified]
-
-== References
-

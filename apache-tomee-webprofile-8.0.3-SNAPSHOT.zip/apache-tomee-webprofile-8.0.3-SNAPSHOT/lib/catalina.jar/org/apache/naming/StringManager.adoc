@@ -1,6 +1,0 @@
-= org/apache/naming/StringManager.class
-
- - link:StringManager-asmified.java[Asmified]
-
-== References
-

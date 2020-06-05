@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/SecurityTokenService.class
-
- - link:SecurityTokenService-asmified.java[Asmified]
-
-== References
-

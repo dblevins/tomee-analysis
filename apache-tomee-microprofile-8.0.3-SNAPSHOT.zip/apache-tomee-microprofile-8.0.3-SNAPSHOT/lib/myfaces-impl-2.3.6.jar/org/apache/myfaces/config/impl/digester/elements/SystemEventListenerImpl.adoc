@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/SystemEventListenerImpl.class
-
- - link:SystemEventListenerImpl-asmified.java[Asmified]
-
-== References
-

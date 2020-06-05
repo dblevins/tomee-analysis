@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/LifecycleFactoryImpl.class
-
- - link:LifecycleFactoryImpl-asmified.java[Asmified]
-
-== References
-

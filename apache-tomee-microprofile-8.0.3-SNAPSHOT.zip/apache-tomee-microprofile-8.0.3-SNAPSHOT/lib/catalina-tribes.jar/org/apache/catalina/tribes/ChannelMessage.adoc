@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/ChannelMessage.class
-
- - link:ChannelMessage-asmified.java[Asmified]
-
-== References
-

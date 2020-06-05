@@ -1,8 +1,0 @@
-= javax/resource/spi/work/WorkAdapter.class
-
- - link:WorkAdapter-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.work.WorkEvent - 4
- - javax.resource.spi.work.WorkListener - 1

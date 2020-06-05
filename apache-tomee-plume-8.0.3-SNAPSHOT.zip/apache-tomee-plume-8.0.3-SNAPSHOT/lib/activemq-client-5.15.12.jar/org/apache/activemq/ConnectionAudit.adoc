@@ -1,6 +1,0 @@
-= org/apache/activemq/ConnectionAudit.class
-
- - link:ConnectionAudit-asmified.java[Asmified]
-
-== References
-

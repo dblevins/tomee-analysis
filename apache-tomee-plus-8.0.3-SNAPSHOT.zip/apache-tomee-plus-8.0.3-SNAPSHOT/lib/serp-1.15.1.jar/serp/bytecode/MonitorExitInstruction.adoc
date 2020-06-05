@@ -1,6 +1,0 @@
-= serp/bytecode/MonitorExitInstruction.class
-
- - link:MonitorExitInstruction-asmified.java[Asmified]
-
-== References
-

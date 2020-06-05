@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/helpers/Namespaces.class
-
- - link:Namespaces-asmified.java[Asmified]
-
-== References
-

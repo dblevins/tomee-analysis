@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ComputeConstraintValidatorClass.class
-
- - link:ComputeConstraintValidatorClass-asmified.java[Asmified]
-
-== References
-

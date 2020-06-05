@@ -1,6 +1,0 @@
-= jakarta/resource/spi/ApplicationServerInternalException.class
-
- - link:ApplicationServerInternalException-asmified.java[Asmified]
-
-== References
-

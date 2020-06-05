@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesSupportedLocale.class
-
- - link:FacesSupportedLocale-asmified.java[Asmified]
-
-== References
-

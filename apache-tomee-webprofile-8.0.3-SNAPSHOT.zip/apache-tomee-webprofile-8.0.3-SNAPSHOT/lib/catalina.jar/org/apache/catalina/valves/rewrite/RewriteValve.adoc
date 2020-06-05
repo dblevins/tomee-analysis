@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/rewrite/RewriteValve.class
-
- - link:RewriteValve-asmified.java[Asmified]
-
-== References
-

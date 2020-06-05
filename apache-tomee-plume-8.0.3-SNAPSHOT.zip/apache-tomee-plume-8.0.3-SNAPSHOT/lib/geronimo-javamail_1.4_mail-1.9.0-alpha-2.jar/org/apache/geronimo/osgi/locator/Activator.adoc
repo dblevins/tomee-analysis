@@ -1,6 +1,0 @@
-= org/apache/geronimo/osgi/locator/Activator.class
-
- - link:Activator-asmified.java[Asmified]
-
-== References
-

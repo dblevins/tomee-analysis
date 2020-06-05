@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/MPJWTFilter$ValidateJSonWebToken.class
-
- - link:MPJWTFilter$ValidateJSonWebToken-asmified.java[Asmified]
-
-== References
-

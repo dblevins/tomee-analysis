@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/transformers/ReadTransformerMetadata.class
-
- - link:ReadTransformerMetadata-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/daemon/support/DaemonLoader.class
-
- - link:DaemonLoader-asmified.java[Asmified]
-
-== References
-

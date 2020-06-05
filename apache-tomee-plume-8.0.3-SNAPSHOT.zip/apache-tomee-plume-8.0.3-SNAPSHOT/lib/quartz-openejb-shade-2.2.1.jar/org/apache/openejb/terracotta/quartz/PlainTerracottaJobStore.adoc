@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/PlainTerracottaJobStore.class
-
- - link:PlainTerracottaJobStore-asmified.java[Asmified]
-
-== References
-

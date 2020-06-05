@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/ReferenceParametersType.class
-
- - link:ReferenceParametersType-asmified.java[Asmified]
-
-== References
-

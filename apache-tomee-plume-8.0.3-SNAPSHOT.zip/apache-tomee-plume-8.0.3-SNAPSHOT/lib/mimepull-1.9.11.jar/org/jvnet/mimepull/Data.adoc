@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/Data.class
-
- - link:Data-asmified.java[Asmified]
-
-== References
-

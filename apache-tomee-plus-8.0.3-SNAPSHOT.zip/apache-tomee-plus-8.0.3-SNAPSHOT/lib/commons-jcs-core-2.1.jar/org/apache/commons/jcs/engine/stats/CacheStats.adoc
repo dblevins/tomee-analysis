@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/stats/CacheStats.class
-
- - link:CacheStats-asmified.java[Asmified]
-
-== References
-

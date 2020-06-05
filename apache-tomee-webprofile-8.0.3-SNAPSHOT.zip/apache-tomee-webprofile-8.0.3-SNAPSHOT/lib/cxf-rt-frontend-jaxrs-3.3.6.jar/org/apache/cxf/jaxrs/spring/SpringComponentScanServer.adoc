@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/spring/SpringComponentScanServer.class
-
- - link:SpringComponentScanServer-asmified.java[Asmified]
-
-== References
-

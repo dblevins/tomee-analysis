@@ -1,7 +1,0 @@
-= javax/servlet/http/CookieNameValidator.class
-
- - link:CookieNameValidator-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.http.CookieNameValidator - 2

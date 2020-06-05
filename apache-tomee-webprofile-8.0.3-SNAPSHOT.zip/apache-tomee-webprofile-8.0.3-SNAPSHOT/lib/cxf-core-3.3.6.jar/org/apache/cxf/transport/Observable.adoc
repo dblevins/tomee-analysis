@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/Observable.class
-
- - link:Observable-asmified.java[Asmified]
-
-== References
-

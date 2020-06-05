@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/IterableSupport.class
-
- - link:IterableSupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/FieldManager.class
-
- - link:FieldManager-asmified.java[Asmified]
-
-== References
-

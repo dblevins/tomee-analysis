@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/sax/SystemIdResolver.class
-
- - link:SystemIdResolver-asmified.java[Asmified]
-
-== References
-

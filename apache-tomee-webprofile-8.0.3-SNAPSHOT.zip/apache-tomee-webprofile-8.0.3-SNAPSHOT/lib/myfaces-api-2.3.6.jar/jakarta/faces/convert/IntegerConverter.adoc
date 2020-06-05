@@ -1,6 +1,0 @@
-= jakarta/faces/convert/IntegerConverter.class
-
- - link:IntegerConverter-asmified.java[Asmified]
-
-== References
-

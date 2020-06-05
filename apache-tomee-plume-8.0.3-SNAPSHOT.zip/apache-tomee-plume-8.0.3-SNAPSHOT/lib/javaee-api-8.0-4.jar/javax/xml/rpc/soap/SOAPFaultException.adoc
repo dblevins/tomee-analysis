@@ -1,6 +1,0 @@
-= javax/xml/rpc/soap/SOAPFaultException.class
-
- - link:SOAPFaultException-asmified.java[Asmified]
-
-== References
-

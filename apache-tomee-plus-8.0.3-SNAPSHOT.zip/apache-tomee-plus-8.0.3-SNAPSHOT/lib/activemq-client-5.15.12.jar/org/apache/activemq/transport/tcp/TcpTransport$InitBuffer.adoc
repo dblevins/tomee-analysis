@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/tcp/TcpTransport$InitBuffer.class
-
- - link:TcpTransport$InitBuffer-asmified.java[Asmified]
-
-== References
-

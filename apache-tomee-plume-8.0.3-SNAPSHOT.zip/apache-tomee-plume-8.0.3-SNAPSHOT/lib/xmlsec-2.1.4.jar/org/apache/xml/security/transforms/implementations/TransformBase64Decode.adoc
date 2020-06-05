@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/implementations/TransformBase64Decode.class
-
- - link:TransformBase64Decode-asmified.java[Asmified]
-
-== References
-

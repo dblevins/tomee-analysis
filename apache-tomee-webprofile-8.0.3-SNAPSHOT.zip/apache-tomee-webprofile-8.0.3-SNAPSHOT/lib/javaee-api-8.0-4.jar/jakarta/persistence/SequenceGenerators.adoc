@@ -1,6 +1,0 @@
-= jakarta/persistence/SequenceGenerators.class
-
- - link:SequenceGenerators-asmified.java[Asmified]
-
-== References
-

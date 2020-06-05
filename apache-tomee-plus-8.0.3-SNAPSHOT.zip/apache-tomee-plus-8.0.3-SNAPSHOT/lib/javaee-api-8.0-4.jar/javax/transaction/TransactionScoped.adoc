@@ -1,7 +1,0 @@
-= javax/transaction/TransactionScoped.class
-
- - link:TransactionScoped-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.NormalScope - 1

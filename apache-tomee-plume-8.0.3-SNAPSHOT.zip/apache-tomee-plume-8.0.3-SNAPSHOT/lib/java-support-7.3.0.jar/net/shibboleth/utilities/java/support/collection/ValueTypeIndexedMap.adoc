@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/ValueTypeIndexedMap.class
-
- - link:ValueTypeIndexedMap-asmified.java[Asmified]
-
-== References
-

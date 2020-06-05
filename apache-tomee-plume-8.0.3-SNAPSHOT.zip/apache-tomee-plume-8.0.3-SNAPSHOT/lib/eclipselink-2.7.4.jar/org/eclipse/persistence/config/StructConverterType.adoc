@@ -1,6 +1,0 @@
-= org/eclipse/persistence/config/StructConverterType.class
-
- - link:StructConverterType-asmified.java[Asmified]
-
-== References
-

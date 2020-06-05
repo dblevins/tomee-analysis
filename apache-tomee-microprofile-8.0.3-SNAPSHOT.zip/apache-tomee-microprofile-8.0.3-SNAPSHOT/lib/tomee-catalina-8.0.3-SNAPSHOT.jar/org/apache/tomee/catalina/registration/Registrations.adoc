@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/registration/Registrations.class
-
- - link:Registrations-asmified.java[Asmified]
-
-== References
-

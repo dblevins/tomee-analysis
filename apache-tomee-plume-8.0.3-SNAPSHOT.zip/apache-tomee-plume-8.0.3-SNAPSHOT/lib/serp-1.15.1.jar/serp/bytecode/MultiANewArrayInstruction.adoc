@@ -1,6 +1,0 @@
-= serp/bytecode/MultiANewArrayInstruction.class
-
- - link:MultiANewArrayInstruction-asmified.java[Asmified]
-
-== References
-

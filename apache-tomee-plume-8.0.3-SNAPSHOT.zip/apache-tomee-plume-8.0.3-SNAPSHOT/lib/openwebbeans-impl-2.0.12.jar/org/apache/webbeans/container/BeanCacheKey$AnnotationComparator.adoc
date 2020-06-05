@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/BeanCacheKey$AnnotationComparator.class
-
- - link:BeanCacheKey$AnnotationComparator-asmified.java[Asmified]
-
-== References
-

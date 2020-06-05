@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/plugins/xml/XMLSchedulingDataProcessorPlugin$JobFile.class
-
- - link:XMLSchedulingDataProcessorPlugin$JobFile-asmified.java[Asmified]
-
-== References
-

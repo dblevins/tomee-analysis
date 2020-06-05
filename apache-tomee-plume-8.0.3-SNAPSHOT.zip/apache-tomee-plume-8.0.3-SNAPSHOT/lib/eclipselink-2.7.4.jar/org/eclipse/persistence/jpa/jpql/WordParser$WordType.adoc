@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/WordParser$WordType.class
-
- - link:WordParser$WordType-asmified.java[Asmified]
-
-== References
-

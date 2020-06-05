@@ -1,6 +1,0 @@
-= jakarta/persistence/AssociationOverride.class
-
- - link:AssociationOverride-asmified.java[Asmified]
-
-== References
-

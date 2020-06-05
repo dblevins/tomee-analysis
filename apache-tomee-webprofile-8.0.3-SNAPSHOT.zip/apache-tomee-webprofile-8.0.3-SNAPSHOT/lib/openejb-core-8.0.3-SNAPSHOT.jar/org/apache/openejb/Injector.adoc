@@ -1,6 +1,0 @@
-= org/apache/openejb/Injector.class
-
- - link:Injector-asmified.java[Asmified]
-
-== References
-

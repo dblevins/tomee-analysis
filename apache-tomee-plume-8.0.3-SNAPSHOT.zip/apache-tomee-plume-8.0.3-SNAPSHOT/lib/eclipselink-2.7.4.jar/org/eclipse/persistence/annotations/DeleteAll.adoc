@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/DeleteAll.class
-
- - link:DeleteAll-asmified.java[Asmified]
-
-== References
-

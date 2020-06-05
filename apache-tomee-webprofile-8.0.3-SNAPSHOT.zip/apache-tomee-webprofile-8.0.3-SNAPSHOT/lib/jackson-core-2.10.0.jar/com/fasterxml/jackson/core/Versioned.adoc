@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/Versioned.class
-
- - link:Versioned-asmified.java[Asmified]
-
-== References
-

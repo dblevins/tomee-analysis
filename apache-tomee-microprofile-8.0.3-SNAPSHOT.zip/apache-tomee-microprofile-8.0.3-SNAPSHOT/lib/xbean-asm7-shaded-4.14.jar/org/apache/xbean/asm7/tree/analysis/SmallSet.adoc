@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/SmallSet.class
-
- - link:SmallSet-asmified.java[Asmified]
-
-== References
-

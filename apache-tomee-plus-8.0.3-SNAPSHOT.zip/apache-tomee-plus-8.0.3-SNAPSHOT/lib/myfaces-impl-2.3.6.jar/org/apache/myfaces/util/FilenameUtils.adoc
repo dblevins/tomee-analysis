@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/FilenameUtils.class
-
- - link:FilenameUtils-asmified.java[Asmified]
-
-== References
-

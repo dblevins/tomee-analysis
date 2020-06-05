@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/PersistenceContextHandler.class
-
- - link:PersistenceContextHandler-asmified.java[Asmified]
-
-== References
-

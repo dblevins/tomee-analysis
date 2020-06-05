@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/XMLPersistenceMappingParser$DeferredEmbeddableOverrides.class
-
- - link:XMLPersistenceMappingParser$DeferredEmbeddableOverrides-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/BasicCollectionAccessor.class
-
- - link:BasicCollectionAccessor-asmified.java[Asmified]
-
-== References
-

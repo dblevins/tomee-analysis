@@ -1,6 +1,0 @@
-= jakarta/ws/rs/ext/Providers.class
-
- - link:Providers-asmified.java[Asmified]
-
-== References
-

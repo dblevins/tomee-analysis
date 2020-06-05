@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/DirectCollectionChangeRecord$NULL.class
-
- - link:DirectCollectionChangeRecord$NULL-asmified.java[Asmified]
-
-== References
-

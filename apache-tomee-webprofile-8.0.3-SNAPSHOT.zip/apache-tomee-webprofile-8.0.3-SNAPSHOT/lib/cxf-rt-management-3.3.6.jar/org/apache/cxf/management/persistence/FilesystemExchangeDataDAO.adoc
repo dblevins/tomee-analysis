@@ -1,6 +1,0 @@
-= org/apache/cxf/management/persistence/FilesystemExchangeDataDAO.class
-
- - link:FilesystemExchangeDataDAO-asmified.java[Asmified]
-
-== References
-

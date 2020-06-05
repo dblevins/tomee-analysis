@@ -1,6 +1,0 @@
-= jakarta/enterprise/event/ObservesAsync.class
-
- - link:ObservesAsync-asmified.java[Asmified]
-
-== References
-

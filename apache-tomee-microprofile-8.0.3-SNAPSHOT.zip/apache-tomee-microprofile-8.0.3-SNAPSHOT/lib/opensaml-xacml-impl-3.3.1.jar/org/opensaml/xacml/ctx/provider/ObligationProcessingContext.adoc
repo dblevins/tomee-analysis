@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/provider/ObligationProcessingContext.class
-
- - link:ObligationProcessingContext-asmified.java[Asmified]
-
-== References
-

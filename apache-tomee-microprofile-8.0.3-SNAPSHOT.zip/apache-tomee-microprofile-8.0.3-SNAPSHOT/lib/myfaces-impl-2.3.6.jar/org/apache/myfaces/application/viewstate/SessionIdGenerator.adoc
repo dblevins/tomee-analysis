@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/viewstate/SessionIdGenerator.class
-
- - link:SessionIdGenerator-asmified.java[Asmified]
-
-== References
-

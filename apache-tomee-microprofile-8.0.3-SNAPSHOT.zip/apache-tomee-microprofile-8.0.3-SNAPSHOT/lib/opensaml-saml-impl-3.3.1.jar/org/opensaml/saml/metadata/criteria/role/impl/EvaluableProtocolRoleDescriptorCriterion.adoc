@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/criteria/role/impl/EvaluableProtocolRoleDescriptorCriterion.class
-
- - link:EvaluableProtocolRoleDescriptorCriterion-asmified.java[Asmified]
-
-== References
-

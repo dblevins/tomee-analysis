@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/ExtensionBeanBuilder.class
-
- - link:ExtensionBeanBuilder-asmified.java[Asmified]
-
-== References
-

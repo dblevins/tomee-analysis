@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/AbstractSAMLObjectUnmarshaller.class
-
- - link:AbstractSAMLObjectUnmarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/ConvertNumberHandler.class
-
- - link:ConvertNumberHandler-asmified.java[Asmified]
-
-== References
-

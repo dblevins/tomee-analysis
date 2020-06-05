@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLBinaryAttachmentHandler.class
-
- - link:XMLBinaryAttachmentHandler-asmified.java[Asmified]
-
-== References
-

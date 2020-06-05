@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/ObjectIdClassStrategy.class
-
- - link:ObjectIdClassStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/bval/BValCdiFilter.class
-
- - link:BValCdiFilter-asmified.java[Asmified]
-
-== References
-

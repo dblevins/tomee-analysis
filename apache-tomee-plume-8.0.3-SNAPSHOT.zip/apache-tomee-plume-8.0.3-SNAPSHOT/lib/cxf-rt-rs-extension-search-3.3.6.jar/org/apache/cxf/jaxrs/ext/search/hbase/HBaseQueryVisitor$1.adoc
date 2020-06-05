@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/hbase/HBaseQueryVisitor$1.class
-
- - link:HBaseQueryVisitor$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/StatefulEjbObjectHandler$RegistryId.class
-
- - link:StatefulEjbObjectHandler$RegistryId-asmified.java[Asmified]
-
-== References
-

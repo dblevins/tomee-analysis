@@ -1,6 +1,0 @@
-= com/ctc/wstx/evt/WDTD.class
-
- - link:WDTD-asmified.java[Asmified]
-
-== References
-

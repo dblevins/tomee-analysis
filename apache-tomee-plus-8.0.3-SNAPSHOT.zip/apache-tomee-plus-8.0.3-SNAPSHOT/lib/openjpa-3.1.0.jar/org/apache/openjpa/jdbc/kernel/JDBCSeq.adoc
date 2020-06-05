@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/JDBCSeq.class
-
- - link:JDBCSeq-asmified.java[Asmified]
-
-== References
-

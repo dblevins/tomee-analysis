@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/TypeConstants$CloseMethodRecord.class
-
- - link:TypeConstants$CloseMethodRecord-asmified.java[Asmified]
-
-== References
-

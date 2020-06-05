@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/types/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

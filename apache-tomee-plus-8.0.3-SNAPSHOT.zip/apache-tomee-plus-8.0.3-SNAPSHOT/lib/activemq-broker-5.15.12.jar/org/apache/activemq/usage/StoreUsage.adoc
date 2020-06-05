@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/StoreUsage.class
-
- - link:StoreUsage-asmified.java[Asmified]
-
-== References
-

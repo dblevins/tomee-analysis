@@ -1,6 +1,0 @@
-= org/apache/activemq/util/PromiseCallback.class
-
- - link:PromiseCallback-asmified.java[Asmified]
-
-== References
-

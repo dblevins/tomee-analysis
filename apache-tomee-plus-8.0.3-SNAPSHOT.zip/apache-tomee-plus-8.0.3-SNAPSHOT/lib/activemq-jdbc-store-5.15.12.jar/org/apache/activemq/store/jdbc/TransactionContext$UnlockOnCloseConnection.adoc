@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/TransactionContext$UnlockOnCloseConnection.class
-
- - link:TransactionContext$UnlockOnCloseConnection-asmified.java[Asmified]
-
-== References
-

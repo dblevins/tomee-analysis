@@ -1,7 +1,0 @@
-= javax/ejb/AccessLocalException.class
-
- - link:AccessLocalException-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 4

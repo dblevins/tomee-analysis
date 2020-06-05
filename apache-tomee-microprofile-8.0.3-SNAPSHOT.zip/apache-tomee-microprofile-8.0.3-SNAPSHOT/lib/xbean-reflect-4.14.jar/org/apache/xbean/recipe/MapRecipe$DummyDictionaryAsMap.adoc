@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/MapRecipe$DummyDictionaryAsMap.class
-
- - link:MapRecipe$DummyDictionaryAsMap-asmified.java[Asmified]
-
-== References
-

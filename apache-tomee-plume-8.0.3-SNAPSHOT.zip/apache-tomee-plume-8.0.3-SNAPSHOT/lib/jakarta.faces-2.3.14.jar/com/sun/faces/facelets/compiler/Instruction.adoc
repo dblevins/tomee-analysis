@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/Instruction.class
-
- - link:Instruction-asmified.java[Asmified]
-
-== References
-

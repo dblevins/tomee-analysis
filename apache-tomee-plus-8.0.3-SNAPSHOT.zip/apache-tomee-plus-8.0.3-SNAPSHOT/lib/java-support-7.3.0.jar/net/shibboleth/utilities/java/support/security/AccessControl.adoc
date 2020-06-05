@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/security/AccessControl.class
-
- - link:AccessControl-asmified.java[Asmified]
-
-== References
-

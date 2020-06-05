@@ -1,7 +1,0 @@
-= javax/ejb/HomeHandle.class
-
- - link:HomeHandle-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBHome - 1

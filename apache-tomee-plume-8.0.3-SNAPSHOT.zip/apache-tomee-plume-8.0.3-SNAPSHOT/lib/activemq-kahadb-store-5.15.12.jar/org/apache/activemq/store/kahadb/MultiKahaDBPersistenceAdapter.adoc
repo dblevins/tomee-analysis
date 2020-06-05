@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MultiKahaDBPersistenceAdapter.class
-
- - link:MultiKahaDBPersistenceAdapter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/time/FastDateParser$CaseInsensitiveTextStrategy.class
-
- - link:FastDateParser$CaseInsensitiveTextStrategy-asmified.java[Asmified]
-
-== References
-

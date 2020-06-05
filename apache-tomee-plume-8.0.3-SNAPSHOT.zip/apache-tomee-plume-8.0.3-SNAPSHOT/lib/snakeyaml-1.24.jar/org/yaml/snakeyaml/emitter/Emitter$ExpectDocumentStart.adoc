@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/emitter/Emitter$ExpectDocumentStart.class
-
- - link:Emitter$ExpectDocumentStart-asmified.java[Asmified]
-
-== References
-

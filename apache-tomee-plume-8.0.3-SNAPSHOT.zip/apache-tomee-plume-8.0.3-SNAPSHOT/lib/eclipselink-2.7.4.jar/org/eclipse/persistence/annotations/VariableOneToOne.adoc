@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/VariableOneToOne.class
-
- - link:VariableOneToOne-asmified.java[Asmified]
-
-== References
-

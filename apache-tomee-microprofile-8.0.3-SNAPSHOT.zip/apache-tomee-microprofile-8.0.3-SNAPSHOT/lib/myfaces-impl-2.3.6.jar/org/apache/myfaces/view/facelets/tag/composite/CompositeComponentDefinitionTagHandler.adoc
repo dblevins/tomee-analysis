@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentDefinitionTagHandler.class
-
- - link:CompositeComponentDefinitionTagHandler-asmified.java[Asmified]
-
-== References
-

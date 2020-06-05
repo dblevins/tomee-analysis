@@ -1,6 +1,0 @@
-= org/apache/tomee/myfaces/TomEEAnnotationProvider.class
-
- - link:TomEEAnnotationProvider-asmified.java[Asmified]
-
-== References
-

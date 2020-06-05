@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLChoiceCollectionMappingMarshalNodeValue.class
-
- - link:XMLChoiceCollectionMappingMarshalNodeValue-asmified.java[Asmified]
-
-== References
-

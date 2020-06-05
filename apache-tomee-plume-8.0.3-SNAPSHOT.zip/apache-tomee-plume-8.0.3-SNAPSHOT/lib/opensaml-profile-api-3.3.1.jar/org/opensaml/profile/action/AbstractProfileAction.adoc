@@ -1,6 +1,0 @@
-= org/opensaml/profile/action/AbstractProfileAction.class
-
- - link:AbstractProfileAction-asmified.java[Asmified]
-
-== References
-

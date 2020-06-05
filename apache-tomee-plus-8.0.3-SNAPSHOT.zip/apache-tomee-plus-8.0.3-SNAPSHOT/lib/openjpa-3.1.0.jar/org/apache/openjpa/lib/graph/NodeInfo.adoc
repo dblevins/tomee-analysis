@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/graph/NodeInfo.class
-
- - link:NodeInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/session/BackupManager.class
-
- - link:BackupManager-asmified.java[Asmified]
-
-== References
-

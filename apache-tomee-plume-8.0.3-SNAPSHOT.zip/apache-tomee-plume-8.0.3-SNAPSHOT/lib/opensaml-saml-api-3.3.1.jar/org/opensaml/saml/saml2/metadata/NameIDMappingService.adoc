@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/NameIDMappingService.class
-
- - link:NameIDMappingService-asmified.java[Asmified]
-
-== References
-

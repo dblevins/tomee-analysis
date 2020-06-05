@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ContextFederation.class
-
- - link:ContextFederation-asmified.java[Asmified]
-
-== References
-

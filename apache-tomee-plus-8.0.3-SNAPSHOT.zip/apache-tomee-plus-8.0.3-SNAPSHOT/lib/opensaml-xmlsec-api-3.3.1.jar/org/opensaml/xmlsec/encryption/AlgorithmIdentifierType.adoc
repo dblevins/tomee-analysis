@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/AlgorithmIdentifierType.class
-
- - link:AlgorithmIdentifierType-asmified.java[Asmified]
-
-== References
-

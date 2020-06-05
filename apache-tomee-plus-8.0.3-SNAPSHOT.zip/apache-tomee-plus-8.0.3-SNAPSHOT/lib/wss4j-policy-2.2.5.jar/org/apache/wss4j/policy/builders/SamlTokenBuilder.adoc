@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/SamlTokenBuilder.class
-
- - link:SamlTokenBuilder-asmified.java[Asmified]
-
-== References
-

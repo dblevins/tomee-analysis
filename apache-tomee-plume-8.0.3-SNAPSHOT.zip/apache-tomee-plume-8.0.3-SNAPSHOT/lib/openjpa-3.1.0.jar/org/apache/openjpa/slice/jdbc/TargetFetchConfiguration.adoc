@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/jdbc/TargetFetchConfiguration.class
-
- - link:TargetFetchConfiguration-asmified.java[Asmified]
-
-== References
-

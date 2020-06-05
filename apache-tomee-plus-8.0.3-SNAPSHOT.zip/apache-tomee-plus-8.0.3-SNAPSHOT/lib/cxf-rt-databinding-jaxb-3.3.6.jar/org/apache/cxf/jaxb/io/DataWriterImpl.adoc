@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/io/DataWriterImpl.class
-
- - link:DataWriterImpl-asmified.java[Asmified]
-
-== References
-

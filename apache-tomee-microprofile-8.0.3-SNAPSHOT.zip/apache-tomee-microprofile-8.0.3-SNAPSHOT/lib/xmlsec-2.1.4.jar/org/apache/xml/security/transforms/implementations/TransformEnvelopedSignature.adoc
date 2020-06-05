@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/implementations/TransformEnvelopedSignature.class
-
- - link:TransformEnvelopedSignature-asmified.java[Asmified]
-
-== References
-

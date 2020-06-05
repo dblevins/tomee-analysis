@@ -1,7 +1,0 @@
-= javax/persistence/criteria/CompoundSelection.class
-
- - link:CompoundSelection-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.criteria.Selection - 1

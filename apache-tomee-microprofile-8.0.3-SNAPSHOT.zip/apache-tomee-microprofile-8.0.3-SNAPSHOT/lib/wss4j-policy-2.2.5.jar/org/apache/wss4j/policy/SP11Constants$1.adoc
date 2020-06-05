@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/SP11Constants$1.class
-
- - link:SP11Constants$1-asmified.java[Asmified]
-
-== References
-

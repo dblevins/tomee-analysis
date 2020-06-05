@@ -1,6 +1,0 @@
-= org/eclipse/persistence/config/RemoteProtocol.class
-
- - link:RemoteProtocol-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/external/com/google/gdata/util/common/base/UnicodeEscaper$2.class
-
- - link:UnicodeEscaper$2-asmified.java[Asmified]
-
-== References
-

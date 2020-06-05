@@ -1,6 +1,0 @@
-= jakarta/resource/cci/MessageListener.class
-
- - link:MessageListener-asmified.java[Asmified]
-
-== References
-

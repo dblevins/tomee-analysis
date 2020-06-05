@@ -1,6 +1,0 @@
-= com/ctc/wstx/dom/WstxDOMWrappingWriter.class
-
- - link:WstxDOMWrappingWriter-asmified.java[Asmified]
-
-== References
-

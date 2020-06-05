@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/task/ManagedTaskListenerTask$NoopManagedTaskListener.class
-
- - link:ManagedTaskListenerTask$NoopManagedTaskListener-asmified.java[Asmified]
-
-== References
-

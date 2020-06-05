@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/MIMEPart.class
-
- - link:MIMEPart-asmified.java[Asmified]
-
-== References
-

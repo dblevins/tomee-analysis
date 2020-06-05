@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesConfigFlowDefinitionSwitchCase.class
-
- - link:FacesConfigFlowDefinitionSwitchCase-asmified.java[Asmified]
-
-== References
-

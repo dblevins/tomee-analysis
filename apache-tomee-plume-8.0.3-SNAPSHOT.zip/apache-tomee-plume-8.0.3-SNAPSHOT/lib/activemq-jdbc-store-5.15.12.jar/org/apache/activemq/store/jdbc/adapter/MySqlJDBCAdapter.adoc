@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/MySqlJDBCAdapter.class
-
- - link:MySqlJDBCAdapter-asmified.java[Asmified]
-
-== References
-

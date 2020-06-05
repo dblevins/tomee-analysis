@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/FaceletConfigResourceProvider.class
-
- - link:FaceletConfigResourceProvider-asmified.java[Asmified]
-
-== References
-

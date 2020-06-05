@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/jpql/JavaCharStream.class
-
- - link:JavaCharStream-asmified.java[Asmified]
-
-== References
-

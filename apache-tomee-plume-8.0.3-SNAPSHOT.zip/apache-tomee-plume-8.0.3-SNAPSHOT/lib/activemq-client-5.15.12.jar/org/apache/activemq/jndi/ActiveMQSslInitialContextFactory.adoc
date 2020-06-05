@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/ActiveMQSslInitialContextFactory.class
-
- - link:ActiveMQSslInitialContextFactory-asmified.java[Asmified]
-
-== References
-

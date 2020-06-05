@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogFileOverflowException.class
-
- - link:LogFileOverflowException-asmified.java[Asmified]
-
-== References
-

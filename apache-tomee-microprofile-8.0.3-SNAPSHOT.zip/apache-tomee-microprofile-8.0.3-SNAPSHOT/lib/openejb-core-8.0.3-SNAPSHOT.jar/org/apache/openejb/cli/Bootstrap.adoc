@@ -1,6 +1,0 @@
-= org/apache/openejb/cli/Bootstrap.class
-
- - link:Bootstrap-asmified.java[Asmified]
-
-== References
-

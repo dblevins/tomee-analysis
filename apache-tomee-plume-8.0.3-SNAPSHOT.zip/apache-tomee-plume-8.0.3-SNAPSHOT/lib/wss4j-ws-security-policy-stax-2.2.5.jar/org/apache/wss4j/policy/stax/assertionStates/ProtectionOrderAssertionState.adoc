@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/ProtectionOrderAssertionState.class
-
- - link:ProtectionOrderAssertionState-asmified.java[Asmified]
-
-== References
-

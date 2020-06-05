@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/logical/LogicalMessageContextImpl.class
-
- - link:LogicalMessageContextImpl-asmified.java[Asmified]
-
-== References
-

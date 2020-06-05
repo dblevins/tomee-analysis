@@ -1,6 +1,0 @@
-= com/sun/faces/flow/ViewNodeImpl.class
-
- - link:ViewNodeImpl-asmified.java[Asmified]
-
-== References
-

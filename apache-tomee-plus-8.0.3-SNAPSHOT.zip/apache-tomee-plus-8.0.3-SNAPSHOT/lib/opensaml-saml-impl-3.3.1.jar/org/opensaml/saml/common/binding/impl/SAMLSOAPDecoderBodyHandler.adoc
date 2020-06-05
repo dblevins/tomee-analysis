@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/impl/SAMLSOAPDecoderBodyHandler.class
-
- - link:SAMLSOAPDecoderBodyHandler-asmified.java[Asmified]
-
-== References
-

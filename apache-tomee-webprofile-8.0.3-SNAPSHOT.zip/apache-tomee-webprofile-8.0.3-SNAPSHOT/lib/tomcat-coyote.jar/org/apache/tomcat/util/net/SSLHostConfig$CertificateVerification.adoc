@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SSLHostConfig$CertificateVerification.class
-
- - link:SSLHostConfig$CertificateVerification-asmified.java[Asmified]
-
-== References
-

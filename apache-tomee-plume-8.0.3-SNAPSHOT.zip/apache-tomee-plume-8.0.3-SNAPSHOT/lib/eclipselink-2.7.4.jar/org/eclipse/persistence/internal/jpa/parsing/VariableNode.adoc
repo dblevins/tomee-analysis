@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/VariableNode.class
-
- - link:VariableNode-asmified.java[Asmified]
-
-== References
-

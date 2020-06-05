@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/metrics/FaultToleranceMetrics$Gauge.class
-
- - link:FaultToleranceMetrics$Gauge-asmified.java[Asmified]
-
-== References
-

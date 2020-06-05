@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/WeakFastHashMap$Values.class
-
- - link:WeakFastHashMap$Values-asmified.java[Asmified]
-
-== References
-

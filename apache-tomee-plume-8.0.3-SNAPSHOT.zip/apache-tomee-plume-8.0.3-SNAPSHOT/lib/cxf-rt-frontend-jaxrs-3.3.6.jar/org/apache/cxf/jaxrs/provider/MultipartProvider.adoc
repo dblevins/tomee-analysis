@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/MultipartProvider.class
-
- - link:MultipartProvider-asmified.java[Asmified]
-
-== References
-

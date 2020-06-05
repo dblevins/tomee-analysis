@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/JarLocation.class
-
- - link:JarLocation-asmified.java[Asmified]
-
-== References
-

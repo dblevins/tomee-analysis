@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdquery/AuthzDecisionQueryDescriptorType.class
-
- - link:AuthzDecisionQueryDescriptorType-asmified.java[Asmified]
-
-== References
-

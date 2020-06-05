@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/spi/JohnzonAdapterFactory$Instance.class
-
- - link:JohnzonAdapterFactory$Instance-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/api/JAXBRIContext.class
-
- - link:JAXBRIContext-asmified.java[Asmified]
-
-== References
-

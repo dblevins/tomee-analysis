@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/MetadataLogger.class
-
- - link:MetadataLogger-asmified.java[Asmified]
-
-== References
-

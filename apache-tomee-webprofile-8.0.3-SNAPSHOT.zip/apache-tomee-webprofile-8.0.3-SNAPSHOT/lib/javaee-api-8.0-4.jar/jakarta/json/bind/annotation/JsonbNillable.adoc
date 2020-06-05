@@ -1,6 +1,0 @@
-= jakarta/json/bind/annotation/JsonbNillable.class
-
- - link:JsonbNillable-asmified.java[Asmified]
-
-== References
-

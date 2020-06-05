@@ -1,6 +1,0 @@
-= javax/faces/component/html/_SelectProperty.class
-
- - link:_SelectProperty-asmified.java[Asmified]
-
-== References
-

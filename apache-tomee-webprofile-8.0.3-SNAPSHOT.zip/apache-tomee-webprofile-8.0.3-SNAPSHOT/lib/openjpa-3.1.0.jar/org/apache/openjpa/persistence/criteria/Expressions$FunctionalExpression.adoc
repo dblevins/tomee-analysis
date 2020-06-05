@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$FunctionalExpression.class
-
- - link:Expressions$FunctionalExpression-asmified.java[Asmified]
-
-== References
-

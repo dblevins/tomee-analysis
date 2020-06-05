@@ -1,6 +1,0 @@
-= jakarta/validation/spi/ConfigurationState.class
-
- - link:ConfigurationState-asmified.java[Asmified]
-
-== References
-

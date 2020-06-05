@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/DefaultRestoreViewSupport$RestoreStateCallback.class
-
- - link:DefaultRestoreViewSupport$RestoreStateCallback-asmified.java[Asmified]
-
-== References
-

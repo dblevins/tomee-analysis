@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/archive/MJarSupport.class
-
- - link:MJarSupport-asmified.java[Asmified]
-
-== References
-

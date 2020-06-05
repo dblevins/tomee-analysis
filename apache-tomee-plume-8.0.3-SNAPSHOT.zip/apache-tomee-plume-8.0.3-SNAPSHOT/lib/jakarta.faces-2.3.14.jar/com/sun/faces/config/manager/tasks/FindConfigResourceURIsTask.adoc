@@ -1,6 +1,0 @@
-= com/sun/faces/config/manager/tasks/FindConfigResourceURIsTask.class
-
- - link:FindConfigResourceURIsTask-asmified.java[Asmified]
-
-== References
-

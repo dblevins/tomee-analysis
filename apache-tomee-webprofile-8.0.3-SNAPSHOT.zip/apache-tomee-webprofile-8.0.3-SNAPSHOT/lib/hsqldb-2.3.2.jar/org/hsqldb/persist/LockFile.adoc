@@ -1,6 +1,0 @@
-= org/hsqldb/persist/LockFile.class
-
- - link:LockFile-asmified.java[Asmified]
-
-== References
-

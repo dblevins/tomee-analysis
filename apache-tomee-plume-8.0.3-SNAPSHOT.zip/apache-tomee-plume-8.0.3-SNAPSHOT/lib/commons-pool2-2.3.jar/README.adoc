@@ -1,2 +1,0 @@
-= apache-tomee-plume-8.0.3-SNAPSHOT/lib/commons-pool2-2.3.jar
-

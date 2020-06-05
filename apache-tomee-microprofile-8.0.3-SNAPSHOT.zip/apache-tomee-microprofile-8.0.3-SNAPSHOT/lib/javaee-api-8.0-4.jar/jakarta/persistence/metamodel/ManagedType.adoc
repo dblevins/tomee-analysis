@@ -1,6 +1,0 @@
-= jakarta/persistence/metamodel/ManagedType.class
-
- - link:ManagedType-asmified.java[Asmified]
-
-== References
-

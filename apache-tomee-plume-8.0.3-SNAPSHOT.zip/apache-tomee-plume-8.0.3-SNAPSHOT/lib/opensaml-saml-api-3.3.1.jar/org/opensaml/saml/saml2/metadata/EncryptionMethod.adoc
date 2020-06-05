@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/EncryptionMethod.class
-
- - link:EncryptionMethod-asmified.java[Asmified]
-
-== References
-

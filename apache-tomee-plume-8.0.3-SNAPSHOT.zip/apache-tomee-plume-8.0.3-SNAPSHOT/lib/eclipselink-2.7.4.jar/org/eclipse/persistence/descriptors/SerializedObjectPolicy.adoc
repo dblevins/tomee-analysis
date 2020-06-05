@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/SerializedObjectPolicy.class
-
- - link:SerializedObjectPolicy-asmified.java[Asmified]
-
-== References
-

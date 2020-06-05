@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/impl/LinkedBlockingDeque.class
-
- - link:LinkedBlockingDeque-asmified.java[Asmified]
-
-== References
-

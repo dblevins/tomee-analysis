@@ -1,6 +1,0 @@
-= org/jasypt/intf/cli/AlgorithmRegistryCLI.class
-
- - link:AlgorithmRegistryCLI-asmified.java[Asmified]
-
-== References
-

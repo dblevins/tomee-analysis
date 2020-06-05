@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/Util.class
-
- - link:Util-asmified.java[Asmified]
-
-== References
-

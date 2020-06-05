@@ -1,7 +1,0 @@
-= javax/xml/rpc/holders/FloatWrapperHolder.class
-
- - link:FloatWrapperHolder-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.holders.Holder - 1

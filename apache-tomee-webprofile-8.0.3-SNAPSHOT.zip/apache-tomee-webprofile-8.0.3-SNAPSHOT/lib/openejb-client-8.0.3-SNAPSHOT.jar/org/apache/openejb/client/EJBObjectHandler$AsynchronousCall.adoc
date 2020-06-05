@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EJBObjectHandler$AsynchronousCall.class
-
- - link:EJBObjectHandler$AsynchronousCall-asmified.java[Asmified]
-
-== References
-

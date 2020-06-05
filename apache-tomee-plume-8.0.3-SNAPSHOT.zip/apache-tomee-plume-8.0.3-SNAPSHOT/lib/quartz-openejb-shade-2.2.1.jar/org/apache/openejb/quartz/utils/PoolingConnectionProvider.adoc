@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/PoolingConnectionProvider.class
-
- - link:PoolingConnectionProvider-asmified.java[Asmified]
-
-== References
-

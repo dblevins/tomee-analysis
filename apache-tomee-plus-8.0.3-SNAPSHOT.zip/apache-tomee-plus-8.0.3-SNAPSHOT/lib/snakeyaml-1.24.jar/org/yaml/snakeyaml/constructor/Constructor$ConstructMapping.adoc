@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/constructor/Constructor$ConstructMapping.class
-
- - link:Constructor$ConstructMapping-asmified.java[Asmified]
-
-== References
-

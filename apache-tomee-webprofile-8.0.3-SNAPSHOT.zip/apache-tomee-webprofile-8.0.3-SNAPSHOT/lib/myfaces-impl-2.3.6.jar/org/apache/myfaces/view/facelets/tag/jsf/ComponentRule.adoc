@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ComponentRule.class
-
- - link:ComponentRule-asmified.java[Asmified]
-
-== References
-

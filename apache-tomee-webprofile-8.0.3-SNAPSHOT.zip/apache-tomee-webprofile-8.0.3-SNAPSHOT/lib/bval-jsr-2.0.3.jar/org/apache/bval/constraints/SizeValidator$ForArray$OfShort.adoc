@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/SizeValidator$ForArray$OfShort.class
-
- - link:SizeValidator$ForArray$OfShort-asmified.java[Asmified]
-
-== References
-

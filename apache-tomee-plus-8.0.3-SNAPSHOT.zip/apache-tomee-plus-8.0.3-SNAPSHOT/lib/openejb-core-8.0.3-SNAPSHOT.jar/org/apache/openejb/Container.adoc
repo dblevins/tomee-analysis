@@ -1,6 +1,0 @@
-= org/apache/openejb/Container.class
-
- - link:Container-asmified.java[Asmified]
-
-== References
-

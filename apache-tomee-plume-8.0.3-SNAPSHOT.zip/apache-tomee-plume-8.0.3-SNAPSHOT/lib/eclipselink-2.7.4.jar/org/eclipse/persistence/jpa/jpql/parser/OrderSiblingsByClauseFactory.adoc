@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/OrderSiblingsByClauseFactory.class
-
- - link:OrderSiblingsByClauseFactory-asmified.java[Asmified]
-
-== References
-

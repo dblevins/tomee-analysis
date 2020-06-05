@@ -1,6 +1,0 @@
-= org/apache/openejb/config/CleanEnvEntries.class
-
- - link:CleanEnvEntries-asmified.java[Asmified]
-
-== References
-

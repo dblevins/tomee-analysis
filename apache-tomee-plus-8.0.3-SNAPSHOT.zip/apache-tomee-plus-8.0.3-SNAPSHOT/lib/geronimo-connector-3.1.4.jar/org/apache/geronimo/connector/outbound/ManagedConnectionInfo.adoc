@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/ManagedConnectionInfo.class
-
- - link:ManagedConnectionInfo-asmified.java[Asmified]
-
-== References
-

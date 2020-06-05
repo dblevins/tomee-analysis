@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/PushbackBuffer.class
-
- - link:PushbackBuffer-asmified.java[Asmified]
-
-== References
-

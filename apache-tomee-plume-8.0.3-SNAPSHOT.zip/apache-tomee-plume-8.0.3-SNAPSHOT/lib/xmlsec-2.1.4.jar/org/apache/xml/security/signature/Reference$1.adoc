@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/Reference$1.class
-
- - link:Reference$1-asmified.java[Asmified]
-
-== References
-

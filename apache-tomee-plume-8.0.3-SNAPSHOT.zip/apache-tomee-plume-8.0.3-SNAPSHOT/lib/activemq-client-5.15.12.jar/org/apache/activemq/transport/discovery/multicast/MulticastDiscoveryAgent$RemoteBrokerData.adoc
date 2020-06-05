@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/multicast/MulticastDiscoveryAgent$RemoteBrokerData.class
-
- - link:MulticastDiscoveryAgent$RemoteBrokerData-asmified.java[Asmified]
-
-== References
-

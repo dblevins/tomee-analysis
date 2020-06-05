@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/ImplicitObjects.class
-
- - link:ImplicitObjects-asmified.java[Asmified]
-
-== References
-

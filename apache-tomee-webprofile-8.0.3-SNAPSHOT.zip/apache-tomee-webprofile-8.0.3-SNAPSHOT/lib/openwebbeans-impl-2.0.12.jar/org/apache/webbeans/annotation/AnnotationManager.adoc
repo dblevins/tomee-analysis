@@ -1,6 +1,0 @@
-= org/apache/webbeans/annotation/AnnotationManager.class
-
- - link:AnnotationManager-asmified.java[Asmified]
-
-== References
-

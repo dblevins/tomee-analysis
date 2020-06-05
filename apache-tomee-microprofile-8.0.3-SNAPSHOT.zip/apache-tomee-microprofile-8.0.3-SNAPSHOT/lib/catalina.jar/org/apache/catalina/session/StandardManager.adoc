@@ -1,6 +1,0 @@
-= org/apache/catalina/session/StandardManager.class
-
- - link:StandardManager-asmified.java[Asmified]
-
-== References
-

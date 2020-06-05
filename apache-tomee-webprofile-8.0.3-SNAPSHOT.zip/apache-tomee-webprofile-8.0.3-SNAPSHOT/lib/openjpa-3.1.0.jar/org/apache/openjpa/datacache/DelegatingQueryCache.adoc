@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/DelegatingQueryCache.class
-
- - link:DelegatingQueryCache-asmified.java[Asmified]
-
-== References
-

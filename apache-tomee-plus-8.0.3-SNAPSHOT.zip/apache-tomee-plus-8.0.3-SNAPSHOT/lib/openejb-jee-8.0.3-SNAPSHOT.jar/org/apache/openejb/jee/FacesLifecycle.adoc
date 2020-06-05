@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesLifecycle.class
-
- - link:FacesLifecycle-asmified.java[Asmified]
-
-== References
-

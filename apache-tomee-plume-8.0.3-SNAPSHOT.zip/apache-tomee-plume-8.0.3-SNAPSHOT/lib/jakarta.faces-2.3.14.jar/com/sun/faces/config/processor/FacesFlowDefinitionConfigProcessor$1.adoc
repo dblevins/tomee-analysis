@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/FacesFlowDefinitionConfigProcessor$1.class
-
- - link:FacesFlowDefinitionConfigProcessor$1-asmified.java[Asmified]
-
-== References
-

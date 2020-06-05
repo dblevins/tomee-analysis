@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/PropertyHandlerManager$ObjectValueExpressionPropertyHandler.class
-
- - link:PropertyHandlerManager$ObjectValueExpressionPropertyHandler-asmified.java[Asmified]
-
-== References
-

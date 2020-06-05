@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/input/WSSSignatureInputHandler.class
-
- - link:WSSSignatureInputHandler-asmified.java[Asmified]
-
-== References
-

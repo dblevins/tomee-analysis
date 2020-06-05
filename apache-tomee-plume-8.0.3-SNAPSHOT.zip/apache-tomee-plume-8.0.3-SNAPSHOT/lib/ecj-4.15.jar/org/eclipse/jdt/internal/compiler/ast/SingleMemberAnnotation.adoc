@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/SingleMemberAnnotation.class
-
- - link:SingleMemberAnnotation-asmified.java[Asmified]
-
-== References
-

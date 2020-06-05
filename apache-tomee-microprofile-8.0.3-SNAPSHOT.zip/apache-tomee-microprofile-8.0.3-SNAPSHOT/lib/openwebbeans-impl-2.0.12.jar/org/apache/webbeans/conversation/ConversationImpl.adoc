@@ -1,6 +1,0 @@
-= org/apache/webbeans/conversation/ConversationImpl.class
-
- - link:ConversationImpl-asmified.java[Asmified]
-
-== References
-

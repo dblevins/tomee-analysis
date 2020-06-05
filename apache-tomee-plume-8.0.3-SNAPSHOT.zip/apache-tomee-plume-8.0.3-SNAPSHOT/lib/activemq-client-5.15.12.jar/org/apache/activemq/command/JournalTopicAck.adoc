@@ -1,6 +1,0 @@
-= org/apache/activemq/command/JournalTopicAck.class
-
- - link:JournalTopicAck-asmified.java[Asmified]
-
-== References
-

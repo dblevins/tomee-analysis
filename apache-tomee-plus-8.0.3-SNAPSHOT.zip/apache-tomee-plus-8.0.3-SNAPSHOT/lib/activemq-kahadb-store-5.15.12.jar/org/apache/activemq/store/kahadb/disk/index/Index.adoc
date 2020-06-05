@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/Index.class
-
- - link:Index-asmified.java[Asmified]
-
-== References
-

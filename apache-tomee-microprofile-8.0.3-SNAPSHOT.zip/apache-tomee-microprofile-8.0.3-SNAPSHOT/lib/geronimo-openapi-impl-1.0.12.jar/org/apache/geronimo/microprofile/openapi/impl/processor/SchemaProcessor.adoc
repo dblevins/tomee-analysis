@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/processor/SchemaProcessor.class
-
- - link:SchemaProcessor-asmified.java[Asmified]
-
-== References
-

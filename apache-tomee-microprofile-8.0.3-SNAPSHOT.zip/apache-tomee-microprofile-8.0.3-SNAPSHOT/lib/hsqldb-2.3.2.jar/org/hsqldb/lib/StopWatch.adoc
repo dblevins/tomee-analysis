@@ -1,6 +1,0 @@
-= org/hsqldb/lib/StopWatch.class
-
- - link:StopWatch-asmified.java[Asmified]
-
-== References
-

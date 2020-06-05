@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/Dispatcher.class
-
- - link:Dispatcher-asmified.java[Asmified]
-
-== References
-

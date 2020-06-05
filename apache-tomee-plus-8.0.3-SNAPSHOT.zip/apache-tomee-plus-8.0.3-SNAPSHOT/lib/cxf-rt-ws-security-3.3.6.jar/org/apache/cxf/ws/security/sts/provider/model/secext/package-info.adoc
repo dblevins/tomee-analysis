@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/secext/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

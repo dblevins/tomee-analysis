@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/grants/jwt/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

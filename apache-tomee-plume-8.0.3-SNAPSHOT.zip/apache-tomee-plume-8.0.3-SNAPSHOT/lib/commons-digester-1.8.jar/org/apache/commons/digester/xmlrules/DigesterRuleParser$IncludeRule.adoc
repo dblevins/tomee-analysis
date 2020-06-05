@@ -1,6 +1,0 @@
-= org/apache/commons/digester/xmlrules/DigesterRuleParser$IncludeRule.class
-
- - link:DigesterRuleParser$IncludeRule-asmified.java[Asmified]
-
-== References
-

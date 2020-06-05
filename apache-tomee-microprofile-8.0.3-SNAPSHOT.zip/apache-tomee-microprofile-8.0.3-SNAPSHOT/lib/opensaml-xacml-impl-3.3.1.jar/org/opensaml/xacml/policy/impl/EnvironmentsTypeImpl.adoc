@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/EnvironmentsTypeImpl.class
-
- - link:EnvironmentsTypeImpl-asmified.java[Asmified]
-
-== References
-

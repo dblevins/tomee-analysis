@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/bm/RuleType.class
-
- - link:RuleType-asmified.java[Asmified]
-
-== References
-

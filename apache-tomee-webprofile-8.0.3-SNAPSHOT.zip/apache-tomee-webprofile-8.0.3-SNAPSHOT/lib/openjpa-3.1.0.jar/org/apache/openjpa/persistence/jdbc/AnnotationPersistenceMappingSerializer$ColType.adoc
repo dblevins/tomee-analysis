@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/AnnotationPersistenceMappingSerializer$ColType.class
-
- - link:AnnotationPersistenceMappingSerializer$ColType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/representer/SafeRepresenter.class
-
- - link:SafeRepresenter-asmified.java[Asmified]
-
-== References
-

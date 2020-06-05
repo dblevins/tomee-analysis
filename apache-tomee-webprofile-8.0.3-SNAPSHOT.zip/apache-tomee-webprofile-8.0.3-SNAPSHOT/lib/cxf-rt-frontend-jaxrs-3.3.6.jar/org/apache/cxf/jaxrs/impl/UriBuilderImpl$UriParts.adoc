@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/UriBuilderImpl$UriParts.class
-
- - link:UriBuilderImpl$UriParts-asmified.java[Asmified]
-
-== References
-

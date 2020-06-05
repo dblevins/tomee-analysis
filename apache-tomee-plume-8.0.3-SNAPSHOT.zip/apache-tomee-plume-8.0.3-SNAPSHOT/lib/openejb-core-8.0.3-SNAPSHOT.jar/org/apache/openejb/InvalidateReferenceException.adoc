@@ -1,6 +1,0 @@
-= org/apache/openejb/InvalidateReferenceException.class
-
- - link:InvalidateReferenceException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/TypeElementImpl.class
-
- - link:TypeElementImpl-asmified.java[Asmified]
-
-== References
-

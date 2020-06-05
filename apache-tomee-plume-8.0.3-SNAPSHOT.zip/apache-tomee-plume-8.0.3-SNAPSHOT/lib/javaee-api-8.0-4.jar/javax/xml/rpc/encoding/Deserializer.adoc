@@ -1,6 +1,0 @@
-= javax/xml/rpc/encoding/Deserializer.class
-
- - link:Deserializer-asmified.java[Asmified]
-
-== References
-

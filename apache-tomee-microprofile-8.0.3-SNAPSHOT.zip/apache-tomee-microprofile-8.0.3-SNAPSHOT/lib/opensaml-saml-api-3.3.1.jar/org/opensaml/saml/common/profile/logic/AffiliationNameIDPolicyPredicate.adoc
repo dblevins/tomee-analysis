@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/logic/AffiliationNameIDPolicyPredicate.class
-
- - link:AffiliationNameIDPolicyPredicate-asmified.java[Asmified]
-
-== References
-

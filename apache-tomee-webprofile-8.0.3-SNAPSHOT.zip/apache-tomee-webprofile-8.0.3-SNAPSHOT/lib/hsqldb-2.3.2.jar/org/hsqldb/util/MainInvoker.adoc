@@ -1,6 +1,0 @@
-= org/hsqldb/util/MainInvoker.class
-
- - link:MainInvoker-asmified.java[Asmified]
-
-== References
-

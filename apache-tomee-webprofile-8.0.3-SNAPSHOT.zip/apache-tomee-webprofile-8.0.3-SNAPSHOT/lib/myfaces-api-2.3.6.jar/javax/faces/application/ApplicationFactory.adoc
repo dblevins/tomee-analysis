@@ -1,9 +1,0 @@
-= javax/faces/application/ApplicationFactory.class
-
- - link:ApplicationFactory-asmified.java[Asmified]
-
-== References
-
- - javax.faces.application.ApplicationFactory - 8
- - javax.faces.application.Application - 2
- - javax.faces.FacesWrapper - 1

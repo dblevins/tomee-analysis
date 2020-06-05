@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/StartElementInstruction.class
-
- - link:StartElementInstruction-asmified.java[Asmified]
-
-== References
-

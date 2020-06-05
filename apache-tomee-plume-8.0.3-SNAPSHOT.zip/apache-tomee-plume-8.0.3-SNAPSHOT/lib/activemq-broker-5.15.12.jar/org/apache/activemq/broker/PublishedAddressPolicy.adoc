@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/PublishedAddressPolicy.class
-
- - link:PublishedAddressPolicy-asmified.java[Asmified]
-
-== References
-

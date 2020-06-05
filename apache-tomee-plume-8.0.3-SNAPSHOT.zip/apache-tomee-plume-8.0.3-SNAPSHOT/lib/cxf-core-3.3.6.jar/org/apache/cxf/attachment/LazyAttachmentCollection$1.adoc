@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/LazyAttachmentCollection$1.class
-
- - link:LazyAttachmentCollection$1-asmified.java[Asmified]
-
-== References
-

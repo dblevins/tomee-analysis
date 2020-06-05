@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/NullConduitSelector.class
-
- - link:NullConduitSelector-asmified.java[Asmified]
-
-== References
-

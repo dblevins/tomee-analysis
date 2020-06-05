@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/Activator.class
-
- - link:Activator-asmified.java[Asmified]
-
-== References
-

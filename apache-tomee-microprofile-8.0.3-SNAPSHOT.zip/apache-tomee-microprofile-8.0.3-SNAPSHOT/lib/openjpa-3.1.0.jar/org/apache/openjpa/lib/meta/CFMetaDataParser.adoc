@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/meta/CFMetaDataParser.class
-
- - link:CFMetaDataParser-asmified.java[Asmified]
-
-== References
-

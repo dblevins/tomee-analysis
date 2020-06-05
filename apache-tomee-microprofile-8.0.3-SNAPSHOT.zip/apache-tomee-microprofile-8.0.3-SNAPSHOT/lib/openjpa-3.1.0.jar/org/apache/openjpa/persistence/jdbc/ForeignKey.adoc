@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/ForeignKey.class
-
- - link:ForeignKey-asmified.java[Asmified]
-
-== References
-

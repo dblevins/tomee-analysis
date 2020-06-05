@@ -1,6 +1,0 @@
-= org/w3c/dom/TypeInfo.class
-
- - link:TypeInfo-asmified.java[Asmified]
-
-== References
-

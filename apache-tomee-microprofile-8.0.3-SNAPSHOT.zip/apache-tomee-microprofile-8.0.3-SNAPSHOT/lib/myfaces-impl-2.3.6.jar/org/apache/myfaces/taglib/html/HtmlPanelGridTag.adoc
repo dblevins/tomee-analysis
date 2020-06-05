@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlPanelGridTag.class
-
- - link:HtmlPanelGridTag-asmified.java[Asmified]
-
-== References
-

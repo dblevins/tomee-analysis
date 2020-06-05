@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/Invalidable.class
-
- - link:Invalidable-asmified.java[Asmified]
-
-== References
-

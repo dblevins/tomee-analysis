@@ -1,6 +1,0 @@
-= org/apache/webbeans/ee/beans/ValidatorProvider.class
-
- - link:ValidatorProvider-asmified.java[Asmified]
-
-== References
-

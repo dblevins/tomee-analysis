@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/ObjectConverter$Reader.class
-
- - link:ObjectConverter$Reader-asmified.java[Asmified]
-
-== References
-

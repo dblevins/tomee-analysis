@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/BundleAnnotationFinder.class
-
- - link:BundleAnnotationFinder-asmified.java[Asmified]
-
-== References
-

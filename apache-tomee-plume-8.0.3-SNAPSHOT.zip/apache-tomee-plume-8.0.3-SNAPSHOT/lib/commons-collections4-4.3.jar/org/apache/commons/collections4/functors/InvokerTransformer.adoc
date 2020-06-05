@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/InvokerTransformer.class
-
- - link:InvokerTransformer-asmified.java[Asmified]
-
-== References
-

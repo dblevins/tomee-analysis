@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/BasicModule.class
-
- - link:BasicModule-asmified.java[Asmified]
-
-== References
-

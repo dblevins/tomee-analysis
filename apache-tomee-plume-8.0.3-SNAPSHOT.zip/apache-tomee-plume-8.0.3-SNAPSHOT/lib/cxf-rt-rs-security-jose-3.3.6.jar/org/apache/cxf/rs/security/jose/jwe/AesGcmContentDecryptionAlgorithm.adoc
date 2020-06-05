@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/AesGcmContentDecryptionAlgorithm.class
-
- - link:AesGcmContentDecryptionAlgorithm-asmified.java[Asmified]
-
-== References
-

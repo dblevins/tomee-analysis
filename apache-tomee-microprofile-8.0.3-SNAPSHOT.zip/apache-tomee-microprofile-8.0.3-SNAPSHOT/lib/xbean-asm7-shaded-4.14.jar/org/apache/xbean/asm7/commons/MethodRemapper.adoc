@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/MethodRemapper.class
-
- - link:MethodRemapper-asmified.java[Asmified]
-
-== References
-

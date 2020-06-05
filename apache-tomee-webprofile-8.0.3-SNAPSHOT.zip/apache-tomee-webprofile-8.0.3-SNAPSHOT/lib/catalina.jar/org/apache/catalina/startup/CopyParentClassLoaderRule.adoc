@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/CopyParentClassLoaderRule.class
-
- - link:CopyParentClassLoaderRule-asmified.java[Asmified]
-
-== References
-

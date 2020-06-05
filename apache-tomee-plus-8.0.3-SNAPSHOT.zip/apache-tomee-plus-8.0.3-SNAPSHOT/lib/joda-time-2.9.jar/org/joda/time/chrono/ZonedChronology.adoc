@@ -1,6 +1,0 @@
-= org/joda/time/chrono/ZonedChronology.class
-
- - link:ZonedChronology-asmified.java[Asmified]
-
-== References
-

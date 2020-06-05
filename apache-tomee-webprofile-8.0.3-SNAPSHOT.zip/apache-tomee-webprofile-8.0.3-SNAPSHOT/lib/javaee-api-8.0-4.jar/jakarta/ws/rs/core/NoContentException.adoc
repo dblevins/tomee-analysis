@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/NoContentException.class
-
- - link:NoContentException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/DefaultElementConverter.class
-
- - link:DefaultElementConverter-asmified.java[Asmified]
-
-== References
-

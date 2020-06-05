@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/ManagedListBeanBuilder.class
-
- - link:ManagedListBeanBuilder-asmified.java[Asmified]
-
-== References
-

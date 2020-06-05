@@ -1,6 +1,0 @@
-= org/eclipse/persistence/dynamic/DynamicClassWriter.class
-
- - link:DynamicClassWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/util/TableSorter$Directive.class
-
- - link:TableSorter$Directive-asmified.java[Asmified]
-
-== References
-

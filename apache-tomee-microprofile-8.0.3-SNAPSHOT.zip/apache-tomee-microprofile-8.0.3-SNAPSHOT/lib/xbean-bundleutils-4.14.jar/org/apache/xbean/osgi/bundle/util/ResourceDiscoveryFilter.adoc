@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/ResourceDiscoveryFilter.class
-
- - link:ResourceDiscoveryFilter-asmified.java[Asmified]
-
-== References
-

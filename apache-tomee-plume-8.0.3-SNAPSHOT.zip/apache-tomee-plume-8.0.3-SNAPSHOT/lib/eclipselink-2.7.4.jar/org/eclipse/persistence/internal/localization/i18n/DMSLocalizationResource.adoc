@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/localization/i18n/DMSLocalizationResource.class
-
- - link:DMSLocalizationResource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/mappings/IdImpl.class
-
- - link:IdImpl-asmified.java[Asmified]
-
-== References
-

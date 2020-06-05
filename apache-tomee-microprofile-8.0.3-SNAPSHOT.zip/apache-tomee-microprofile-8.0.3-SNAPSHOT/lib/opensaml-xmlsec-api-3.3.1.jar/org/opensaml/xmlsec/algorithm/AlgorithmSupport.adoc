@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/AlgorithmSupport.class
-
- - link:AlgorithmSupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/flow/FlowDiscoveryCDIHelper.class
-
- - link:FlowDiscoveryCDIHelper-asmified.java[Asmified]
-
-== References
-

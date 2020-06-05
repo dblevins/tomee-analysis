@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/WSDLDocumentation$Placement.class
-
- - link:WSDLDocumentation$Placement-asmified.java[Asmified]
-
-== References
-

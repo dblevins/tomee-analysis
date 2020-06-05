@@ -1,6 +1,0 @@
-= org/hsqldb/server/HsqlSocketFactory.class
-
- - link:HsqlSocketFactory-asmified.java[Asmified]
-
-== References
-

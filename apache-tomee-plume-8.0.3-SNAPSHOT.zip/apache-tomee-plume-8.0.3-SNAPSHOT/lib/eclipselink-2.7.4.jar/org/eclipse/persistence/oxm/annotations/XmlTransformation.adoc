@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlTransformation.class
-
- - link:XmlTransformation-asmified.java[Asmified]
-
-== References
-

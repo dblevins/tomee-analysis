@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/CrossParameterType.class
-
- - link:CrossParameterType-asmified.java[Asmified]
-
-== References
-

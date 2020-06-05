@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/Digest.class
-
- - link:Digest-asmified.java[Asmified]
-
-== References
-

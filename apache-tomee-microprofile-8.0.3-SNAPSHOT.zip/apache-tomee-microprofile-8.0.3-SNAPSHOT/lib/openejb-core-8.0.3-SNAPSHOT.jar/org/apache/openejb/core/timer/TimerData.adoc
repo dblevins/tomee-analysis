@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/TimerData.class
-
- - link:TimerData-asmified.java[Asmified]
-
-== References
-

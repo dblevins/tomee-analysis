@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tei/DeclareTEI.class
-
- - link:DeclareTEI-asmified.java[Asmified]
-
-== References
-

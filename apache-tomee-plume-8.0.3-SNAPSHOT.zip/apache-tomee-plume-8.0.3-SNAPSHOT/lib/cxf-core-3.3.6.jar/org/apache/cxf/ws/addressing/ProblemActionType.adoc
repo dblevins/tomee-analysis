@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/ProblemActionType.class
-
- - link:ProblemActionType-asmified.java[Asmified]
-
-== References
-

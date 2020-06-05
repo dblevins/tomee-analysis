@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/crmf/CertTemplate.class
-
- - link:CertTemplate-asmified.java[Asmified]
-
-== References
-

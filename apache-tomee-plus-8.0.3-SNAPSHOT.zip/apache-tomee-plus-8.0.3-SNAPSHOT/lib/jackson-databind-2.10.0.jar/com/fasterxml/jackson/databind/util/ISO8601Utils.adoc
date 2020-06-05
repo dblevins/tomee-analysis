@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/ISO8601Utils.class
-
- - link:ISO8601Utils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/HelperNodeList.class
-
- - link:HelperNodeList-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http_jaxws_spi/JAXWSHttpSpiDestination.class
-
- - link:JAXWSHttpSpiDestination-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/CDataEndEscapeFilterWriter.class
-
- - link:CDataEndEscapeFilterWriter-asmified.java[Asmified]
-
-== References
-

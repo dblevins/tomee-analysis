@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/StoreContextAppender.class
-
- - link:StoreContextAppender-asmified.java[Asmified]
-
-== References
-

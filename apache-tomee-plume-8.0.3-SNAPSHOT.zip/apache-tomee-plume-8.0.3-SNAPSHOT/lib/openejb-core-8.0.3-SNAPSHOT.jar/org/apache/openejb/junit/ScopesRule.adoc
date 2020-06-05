@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/ScopesRule.class
-
- - link:ScopesRule-asmified.java[Asmified]
-
-== References
-

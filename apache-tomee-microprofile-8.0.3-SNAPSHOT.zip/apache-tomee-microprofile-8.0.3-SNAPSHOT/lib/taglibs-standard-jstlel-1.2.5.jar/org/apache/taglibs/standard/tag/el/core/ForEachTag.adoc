@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/el/core/ForEachTag.class
-
- - link:ForEachTag-asmified.java[Asmified]
-
-== References
-

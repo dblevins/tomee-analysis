@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/QueryOperation.class
-
- - link:QueryOperation-asmified.java[Asmified]
-
-== References
-

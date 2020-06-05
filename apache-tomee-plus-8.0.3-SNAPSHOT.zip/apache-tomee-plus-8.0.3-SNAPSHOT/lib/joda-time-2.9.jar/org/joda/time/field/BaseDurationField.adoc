@@ -1,6 +1,0 @@
-= org/joda/time/field/BaseDurationField.class
-
- - link:BaseDurationField-asmified.java[Asmified]
-
-== References
-

@@ -1,2 +1,0 @@
-= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/wss4j-ws-security-common-2.2.5.jar
-

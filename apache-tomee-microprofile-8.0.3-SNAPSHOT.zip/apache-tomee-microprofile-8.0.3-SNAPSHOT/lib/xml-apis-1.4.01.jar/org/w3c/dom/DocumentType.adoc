@@ -1,6 +1,0 @@
-= org/w3c/dom/DocumentType.class
-
- - link:DocumentType-asmified.java[Asmified]
-
-== References
-

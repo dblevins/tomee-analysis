@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/interceptor/CheckFaultInterceptor.class
-
- - link:CheckFaultInterceptor-asmified.java[Asmified]
-
-== References
-

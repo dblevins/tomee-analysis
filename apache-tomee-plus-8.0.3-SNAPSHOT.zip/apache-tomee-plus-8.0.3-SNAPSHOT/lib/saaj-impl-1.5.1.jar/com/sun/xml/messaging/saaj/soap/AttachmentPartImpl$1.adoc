@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/AttachmentPartImpl$1.class
-
- - link:AttachmentPartImpl$1-asmified.java[Asmified]
-
-== References
-

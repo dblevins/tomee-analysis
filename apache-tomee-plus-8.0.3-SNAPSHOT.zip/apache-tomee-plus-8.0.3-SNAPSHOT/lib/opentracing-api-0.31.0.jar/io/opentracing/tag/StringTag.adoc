@@ -1,6 +1,0 @@
-= io/opentracing/tag/StringTag.class
-
- - link:StringTag-asmified.java[Asmified]
-
-== References
-

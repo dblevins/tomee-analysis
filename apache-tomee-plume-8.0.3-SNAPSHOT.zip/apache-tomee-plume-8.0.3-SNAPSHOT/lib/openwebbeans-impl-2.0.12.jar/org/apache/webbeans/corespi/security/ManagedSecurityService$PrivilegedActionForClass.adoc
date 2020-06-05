@@ -1,6 +1,0 @@
-= org/apache/webbeans/corespi/security/ManagedSecurityService$PrivilegedActionForClass.class
-
- - link:ManagedSecurityService$PrivilegedActionForClass-asmified.java[Asmified]
-
-== References
-

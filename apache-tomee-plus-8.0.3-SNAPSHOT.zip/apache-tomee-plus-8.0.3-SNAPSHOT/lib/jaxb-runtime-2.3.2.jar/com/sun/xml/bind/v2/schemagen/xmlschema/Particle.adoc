@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/xmlschema/Particle.class
-
- - link:Particle-asmified.java[Asmified]
-
-== References
-

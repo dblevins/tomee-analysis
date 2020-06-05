@@ -1,6 +1,0 @@
-= jakarta/persistence/ParameterMode.class
-
- - link:ParameterMode-asmified.java[Asmified]
-
-== References
-

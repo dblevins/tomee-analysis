@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/SecurityPermission.class
-
- - link:SecurityPermission-asmified.java[Asmified]
-
-== References
-

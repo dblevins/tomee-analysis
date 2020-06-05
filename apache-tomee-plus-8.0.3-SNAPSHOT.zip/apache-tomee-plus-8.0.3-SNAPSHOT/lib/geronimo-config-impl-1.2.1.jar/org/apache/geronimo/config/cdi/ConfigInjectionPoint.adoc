@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/cdi/ConfigInjectionPoint.class
-
- - link:ConfigInjectionPoint-asmified.java[Asmified]
-
-== References
-

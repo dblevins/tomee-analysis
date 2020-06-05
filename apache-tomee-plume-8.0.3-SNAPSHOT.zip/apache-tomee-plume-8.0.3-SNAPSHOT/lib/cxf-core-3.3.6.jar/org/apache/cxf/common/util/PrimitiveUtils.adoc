@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/PrimitiveUtils.class
-
- - link:PrimitiveUtils-asmified.java[Asmified]
-
-== References
-

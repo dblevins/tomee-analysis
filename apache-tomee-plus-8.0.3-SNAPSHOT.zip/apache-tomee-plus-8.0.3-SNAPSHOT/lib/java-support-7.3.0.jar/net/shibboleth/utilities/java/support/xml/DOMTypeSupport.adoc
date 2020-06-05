@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/DOMTypeSupport.class
-
- - link:DOMTypeSupport-asmified.java[Asmified]
-
-== References
-

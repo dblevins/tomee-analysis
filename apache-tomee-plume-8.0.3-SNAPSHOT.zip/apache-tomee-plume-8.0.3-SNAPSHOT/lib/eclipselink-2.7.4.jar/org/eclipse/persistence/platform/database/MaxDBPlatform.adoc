@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/MaxDBPlatform.class
-
- - link:MaxDBPlatform-asmified.java[Asmified]
-
-== References
-

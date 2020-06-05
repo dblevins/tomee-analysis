@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/JpaEntityManager.class
-
- - link:JpaEntityManager-asmified.java[Asmified]
-
-== References
-

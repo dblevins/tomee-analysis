@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/BufferedTokenStream.class
-
- - link:BufferedTokenStream-asmified.java[Asmified]
-
-== References
-

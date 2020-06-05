@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/java$util$TreeSet$proxy.class
-
- - link:java$util$TreeSet$proxy-asmified.java[Asmified]
-
-== References
-

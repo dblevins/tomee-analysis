@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/UnionPartitioning.class
-
- - link:UnionPartitioning-asmified.java[Asmified]
-
-== References
-

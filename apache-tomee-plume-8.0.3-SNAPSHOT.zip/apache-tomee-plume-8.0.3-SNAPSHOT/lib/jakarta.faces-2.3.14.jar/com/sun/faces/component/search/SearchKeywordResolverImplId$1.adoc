@@ -1,6 +1,0 @@
-= com/sun/faces/component/search/SearchKeywordResolverImplId$1.class
-
- - link:SearchKeywordResolverImplId$1-asmified.java[Asmified]
-
-== References
-

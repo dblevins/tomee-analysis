@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ConstructorExpressionBNF.class
-
- - link:ConstructorExpressionBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/tz/FixedDateTimeZone.class
-
- - link:FixedDateTimeZone-asmified.java[Asmified]
-
-== References
-

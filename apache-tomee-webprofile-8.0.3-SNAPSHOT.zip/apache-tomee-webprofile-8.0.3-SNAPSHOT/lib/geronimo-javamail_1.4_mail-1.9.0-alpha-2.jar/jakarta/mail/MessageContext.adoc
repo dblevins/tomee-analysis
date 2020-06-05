@@ -1,6 +1,0 @@
-= jakarta/mail/MessageContext.class
-
- - link:MessageContext-asmified.java[Asmified]
-
-== References
-

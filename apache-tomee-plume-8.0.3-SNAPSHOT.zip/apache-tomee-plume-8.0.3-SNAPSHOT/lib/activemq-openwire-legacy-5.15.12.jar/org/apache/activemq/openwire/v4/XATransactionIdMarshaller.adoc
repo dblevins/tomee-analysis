@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v4/XATransactionIdMarshaller.class
-
- - link:XATransactionIdMarshaller-asmified.java[Asmified]
-
-== References
-

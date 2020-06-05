@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/Digits$List.class
-
- - link:Digits$List-asmified.java[Asmified]
-
-== References
-

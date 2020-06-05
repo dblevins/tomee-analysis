@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/AbstractDOMStreamReader$ElementFrame.class
-
- - link:AbstractDOMStreamReader$ElementFrame-asmified.java[Asmified]
-
-== References
-

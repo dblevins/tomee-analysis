@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/_ComponentUtils.class
-
- - link:_ComponentUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/mail/NoSuchProviderException.class
-
- - link:NoSuchProviderException-asmified.java[Asmified]
-
-== References
-

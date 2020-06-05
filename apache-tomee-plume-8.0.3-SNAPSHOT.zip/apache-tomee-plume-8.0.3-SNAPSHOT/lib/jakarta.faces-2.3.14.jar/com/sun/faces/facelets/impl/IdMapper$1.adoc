@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/impl/IdMapper$1.class
-
- - link:IdMapper$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/reference/ReferenceSubTreeData$DelayedNodeIterator.class
-
- - link:ReferenceSubTreeData$DelayedNodeIterator-asmified.java[Asmified]
-
-== References
-

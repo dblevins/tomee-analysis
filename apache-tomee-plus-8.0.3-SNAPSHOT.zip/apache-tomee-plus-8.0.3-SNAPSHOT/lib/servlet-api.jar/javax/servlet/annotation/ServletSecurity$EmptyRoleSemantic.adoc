@@ -1,7 +1,0 @@
-= javax/servlet/annotation/ServletSecurity$EmptyRoleSemantic.class
-
- - link:ServletSecurity$EmptyRoleSemantic-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.annotation.ServletSecurity$EmptyRoleSemantic - 21

@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/ProducerFactory.class
-
- - link:ProducerFactory-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.Producer - 1
- - javax.enterprise.inject.spi.Bean - 1

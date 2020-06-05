@@ -1,6 +1,0 @@
-= com/ctc/wstx/sw/XmlWriterWrapper$RawWrapper.class
-
- - link:XmlWriterWrapper$RawWrapper-asmified.java[Asmified]
-
-== References
-

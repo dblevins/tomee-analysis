@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/NavigationConfigProcessor.class
-
- - link:NavigationConfigProcessor-asmified.java[Asmified]
-
-== References
-

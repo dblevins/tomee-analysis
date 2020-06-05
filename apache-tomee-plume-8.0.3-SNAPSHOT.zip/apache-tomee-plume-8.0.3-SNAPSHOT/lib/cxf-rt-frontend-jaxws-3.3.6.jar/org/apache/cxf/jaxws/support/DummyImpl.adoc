@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/support/DummyImpl.class
-
- - link:DummyImpl-asmified.java[Asmified]
-
-== References
-

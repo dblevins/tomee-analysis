@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/HealthCheckValve.class
-
- - link:HealthCheckValve-asmified.java[Asmified]
-
-== References
-

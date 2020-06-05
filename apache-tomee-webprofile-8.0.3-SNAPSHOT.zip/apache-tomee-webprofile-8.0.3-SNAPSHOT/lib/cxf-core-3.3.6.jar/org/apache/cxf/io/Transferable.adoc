@@ -1,6 +1,0 @@
-= org/apache/cxf/io/Transferable.class
-
- - link:Transferable-asmified.java[Asmified]
-
-== References
-

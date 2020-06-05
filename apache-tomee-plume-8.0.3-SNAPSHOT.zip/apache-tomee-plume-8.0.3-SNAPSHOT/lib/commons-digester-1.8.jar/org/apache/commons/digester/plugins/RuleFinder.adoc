@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/RuleFinder.class
-
- - link:RuleFinder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/BehaviorHandler.class
-
- - link:BehaviorHandler-asmified.java[Asmified]
-
-== References
-

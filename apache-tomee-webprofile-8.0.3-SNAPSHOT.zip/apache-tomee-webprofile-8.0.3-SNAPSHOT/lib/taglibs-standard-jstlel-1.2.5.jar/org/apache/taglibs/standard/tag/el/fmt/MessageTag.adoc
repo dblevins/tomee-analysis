@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/el/fmt/MessageTag.class
-
- - link:MessageTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/command/SessionInfo.class
-
- - link:SessionInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser$DFA47.class
-
- - link:JPQLParser$DFA47-asmified.java[Asmified]
-
-== References
-

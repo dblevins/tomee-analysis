@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/LookupSwitchInsnNode.class
-
- - link:LookupSwitchInsnNode-asmified.java[Asmified]
-
-== References
-

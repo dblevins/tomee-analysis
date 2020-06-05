@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/namespaces/StackUnmarshalNamespaceResolver.class
-
- - link:StackUnmarshalNamespaceResolver-asmified.java[Asmified]
-
-== References
-

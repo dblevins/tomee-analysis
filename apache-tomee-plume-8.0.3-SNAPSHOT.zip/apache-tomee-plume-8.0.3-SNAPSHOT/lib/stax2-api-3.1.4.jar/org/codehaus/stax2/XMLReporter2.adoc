@@ -1,6 +1,0 @@
-= org/codehaus/stax2/XMLReporter2.class
-
- - link:XMLReporter2-asmified.java[Asmified]
-
-== References
-

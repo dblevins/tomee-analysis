@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/AuthenticatingAuthorityUnmarshaller.class
-
- - link:AuthenticatingAuthorityUnmarshaller-asmified.java[Asmified]
-
-== References
-

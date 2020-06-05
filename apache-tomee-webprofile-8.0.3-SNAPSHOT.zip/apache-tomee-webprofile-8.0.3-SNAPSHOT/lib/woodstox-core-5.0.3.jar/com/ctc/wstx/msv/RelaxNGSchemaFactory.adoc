@@ -1,6 +1,0 @@
-= com/ctc/wstx/msv/RelaxNGSchemaFactory.class
-
- - link:RelaxNGSchemaFactory-asmified.java[Asmified]
-
-== References
-

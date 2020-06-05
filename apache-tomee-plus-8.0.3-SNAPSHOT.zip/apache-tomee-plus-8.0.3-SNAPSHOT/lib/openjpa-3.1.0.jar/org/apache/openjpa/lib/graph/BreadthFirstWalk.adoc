@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/graph/BreadthFirstWalk.class
-
- - link:BreadthFirstWalk-asmified.java[Asmified]
-
-== References
-

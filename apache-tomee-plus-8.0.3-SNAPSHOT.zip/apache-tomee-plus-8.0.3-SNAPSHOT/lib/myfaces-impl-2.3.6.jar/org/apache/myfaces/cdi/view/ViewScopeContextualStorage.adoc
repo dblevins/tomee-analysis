@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/view/ViewScopeContextualStorage.class
-
- - link:ViewScopeContextualStorage-asmified.java[Asmified]
-
-== References
-

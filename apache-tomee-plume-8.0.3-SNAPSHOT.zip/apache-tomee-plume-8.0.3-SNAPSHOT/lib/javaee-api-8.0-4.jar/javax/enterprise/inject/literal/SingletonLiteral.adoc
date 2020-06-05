@@ -1,9 +1,0 @@
-= javax/enterprise/inject/literal/SingletonLiteral.class
-
- - link:SingletonLiteral-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.literal.SingletonLiteral - 4
- - javax.enterprise.util.AnnotationLiteral - 2
- - javax.inject.Singleton - 2

@@ -1,6 +1,0 @@
-= org/apache/openejb/ModuleTestContext.class
-
- - link:ModuleTestContext-asmified.java[Asmified]
-
-== References
-

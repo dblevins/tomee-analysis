@@ -1,6 +1,0 @@
-= org/hsqldb/lib/DoubleIntIndex.class
-
- - link:DoubleIntIndex-asmified.java[Asmified]
-
-== References
-

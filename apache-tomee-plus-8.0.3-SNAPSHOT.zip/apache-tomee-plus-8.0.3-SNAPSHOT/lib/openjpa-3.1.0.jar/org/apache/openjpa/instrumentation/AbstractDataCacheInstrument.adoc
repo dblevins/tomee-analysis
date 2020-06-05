@@ -1,6 +1,0 @@
-= org/apache/openjpa/instrumentation/AbstractDataCacheInstrument.class
-
- - link:AbstractDataCacheInstrument-asmified.java[Asmified]
-
-== References
-

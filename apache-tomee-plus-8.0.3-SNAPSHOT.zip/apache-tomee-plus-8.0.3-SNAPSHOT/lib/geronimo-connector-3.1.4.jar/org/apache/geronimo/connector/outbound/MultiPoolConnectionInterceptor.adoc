@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/MultiPoolConnectionInterceptor.class
-
- - link:MultiPoolConnectionInterceptor-asmified.java[Asmified]
-
-== References
-

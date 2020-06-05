@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/Lock.class
-
- - link:Lock-asmified.java[Asmified]
-
-== References
-

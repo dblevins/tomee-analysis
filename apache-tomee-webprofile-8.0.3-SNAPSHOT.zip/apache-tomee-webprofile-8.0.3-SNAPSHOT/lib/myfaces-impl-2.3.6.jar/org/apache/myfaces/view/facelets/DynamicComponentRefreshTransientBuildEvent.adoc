@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/DynamicComponentRefreshTransientBuildEvent.class
-
- - link:DynamicComponentRefreshTransientBuildEvent-asmified.java[Asmified]
-
-== References
-

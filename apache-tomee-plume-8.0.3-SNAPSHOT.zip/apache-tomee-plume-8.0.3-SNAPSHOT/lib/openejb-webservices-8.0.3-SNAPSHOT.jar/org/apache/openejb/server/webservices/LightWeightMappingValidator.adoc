@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/LightWeightMappingValidator.class
-
- - link:LightWeightMappingValidator-asmified.java[Asmified]
-
-== References
-

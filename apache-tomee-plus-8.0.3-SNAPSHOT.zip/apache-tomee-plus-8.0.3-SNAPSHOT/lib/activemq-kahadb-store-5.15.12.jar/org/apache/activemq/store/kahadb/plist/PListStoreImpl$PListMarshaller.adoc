@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/plist/PListStoreImpl$PListMarshaller.class
-
- - link:PListStoreImpl$PListMarshaller-asmified.java[Asmified]
-
-== References
-

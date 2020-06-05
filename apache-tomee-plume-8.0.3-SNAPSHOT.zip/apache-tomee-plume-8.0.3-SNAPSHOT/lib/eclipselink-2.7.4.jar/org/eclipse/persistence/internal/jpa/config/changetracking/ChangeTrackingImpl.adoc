@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/changetracking/ChangeTrackingImpl.class
-
- - link:ChangeTrackingImpl-asmified.java[Asmified]
-
-== References
-

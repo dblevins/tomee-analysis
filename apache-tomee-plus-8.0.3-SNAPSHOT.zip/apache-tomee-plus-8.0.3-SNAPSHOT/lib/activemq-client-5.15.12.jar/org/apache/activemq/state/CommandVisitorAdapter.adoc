@@ -1,6 +1,0 @@
-= org/apache/activemq/state/CommandVisitorAdapter.class
-
- - link:CommandVisitorAdapter-asmified.java[Asmified]
-
-== References
-

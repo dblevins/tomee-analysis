@@ -1,6 +1,0 @@
-= org/apache/activemq/wireformat/WireFormatFactory.class
-
- - link:WireFormatFactory-asmified.java[Asmified]
-
-== References
-

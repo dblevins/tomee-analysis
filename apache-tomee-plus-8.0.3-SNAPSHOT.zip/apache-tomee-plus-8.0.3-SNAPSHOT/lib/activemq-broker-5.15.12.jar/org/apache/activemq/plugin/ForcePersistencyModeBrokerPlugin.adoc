@@ -1,6 +1,0 @@
-= org/apache/activemq/plugin/ForcePersistencyModeBrokerPlugin.class
-
- - link:ForcePersistencyModeBrokerPlugin-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/ResourceName.class
-
- - link:ResourceName-asmified.java[Asmified]
-
-== References
-

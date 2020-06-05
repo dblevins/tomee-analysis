@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/IElementSerializer.class
-
- - link:IElementSerializer-asmified.java[Asmified]
-
-== References
-

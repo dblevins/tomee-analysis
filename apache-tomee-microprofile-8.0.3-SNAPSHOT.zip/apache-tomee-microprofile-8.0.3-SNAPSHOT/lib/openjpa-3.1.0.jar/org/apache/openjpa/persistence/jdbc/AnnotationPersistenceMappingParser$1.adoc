@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/AnnotationPersistenceMappingParser$1.class
-
- - link:AnnotationPersistenceMappingParser$1-asmified.java[Asmified]
-
-== References
-

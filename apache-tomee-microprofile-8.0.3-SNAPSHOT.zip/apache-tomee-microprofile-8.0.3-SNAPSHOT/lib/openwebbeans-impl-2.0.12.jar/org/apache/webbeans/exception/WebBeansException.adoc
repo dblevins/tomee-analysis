@@ -1,6 +1,0 @@
-= org/apache/webbeans/exception/WebBeansException.class
-
- - link:WebBeansException-asmified.java[Asmified]
-
-== References
-

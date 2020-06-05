@@ -1,6 +1,0 @@
-= org/apache/cxf/management/InstrumentationManager.class
-
- - link:InstrumentationManager-asmified.java[Asmified]
-
-== References
-

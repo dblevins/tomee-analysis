@@ -1,9 +1,0 @@
-= javax/xml/soap/AttachmentPart.class
-
- - link:AttachmentPart-asmified.java[Asmified]
-
-== References
-
- - javax.xml.soap.SOAPException - 9
- - javax.xml.soap.AttachmentPart - 6
- - javax.activation.DataHandler - 2

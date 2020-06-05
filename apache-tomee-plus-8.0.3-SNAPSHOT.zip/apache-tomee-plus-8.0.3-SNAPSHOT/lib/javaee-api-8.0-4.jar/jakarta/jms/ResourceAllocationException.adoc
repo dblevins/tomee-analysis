@@ -1,6 +1,0 @@
-= jakarta/jms/ResourceAllocationException.class
-
- - link:ResourceAllocationException-asmified.java[Asmified]
-
-== References
-

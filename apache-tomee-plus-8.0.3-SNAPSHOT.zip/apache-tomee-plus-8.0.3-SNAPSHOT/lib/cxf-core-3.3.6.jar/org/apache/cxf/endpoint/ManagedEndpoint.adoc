@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/ManagedEndpoint.class
-
- - link:ManagedEndpoint-asmified.java[Asmified]
-
-== References
-

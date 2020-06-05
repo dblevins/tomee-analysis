@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/operation/KeyExchangeTokenOperation.class
-
- - link:KeyExchangeTokenOperation-asmified.java[Asmified]
-
-== References
-

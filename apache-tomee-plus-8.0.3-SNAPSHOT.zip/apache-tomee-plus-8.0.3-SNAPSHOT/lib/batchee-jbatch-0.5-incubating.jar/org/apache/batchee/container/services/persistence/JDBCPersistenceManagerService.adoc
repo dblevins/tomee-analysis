@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/JDBCPersistenceManagerService.class
-
- - link:JDBCPersistenceManagerService-asmified.java[Asmified]
-
-== References
-

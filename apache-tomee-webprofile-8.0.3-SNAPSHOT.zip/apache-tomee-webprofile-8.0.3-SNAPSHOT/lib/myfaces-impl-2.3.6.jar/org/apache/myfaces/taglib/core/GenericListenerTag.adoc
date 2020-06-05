@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/GenericListenerTag.class
-
- - link:GenericListenerTag-asmified.java[Asmified]
-
-== References
-

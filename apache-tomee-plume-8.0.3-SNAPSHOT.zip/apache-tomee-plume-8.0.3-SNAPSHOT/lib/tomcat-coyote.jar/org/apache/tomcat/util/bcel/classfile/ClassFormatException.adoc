@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/bcel/classfile/ClassFormatException.class
-
- - link:ClassFormatException-asmified.java[Asmified]
-
-== References
-

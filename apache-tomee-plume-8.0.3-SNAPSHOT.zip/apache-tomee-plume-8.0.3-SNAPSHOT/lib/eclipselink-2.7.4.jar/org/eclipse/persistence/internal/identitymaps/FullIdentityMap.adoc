@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/identitymaps/FullIdentityMap.class
-
- - link:FullIdentityMap-asmified.java[Asmified]
-
-== References
-

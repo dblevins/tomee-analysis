@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/xml/SAXDocumentBuilder.class
-
- - link:SAXDocumentBuilder-asmified.java[Asmified]
-
-== References
-

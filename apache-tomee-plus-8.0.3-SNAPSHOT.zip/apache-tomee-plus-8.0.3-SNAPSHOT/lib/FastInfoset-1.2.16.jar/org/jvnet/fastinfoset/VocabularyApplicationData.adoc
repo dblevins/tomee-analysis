@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/VocabularyApplicationData.class
-
- - link:VocabularyApplicationData-asmified.java[Asmified]
-
-== References
-

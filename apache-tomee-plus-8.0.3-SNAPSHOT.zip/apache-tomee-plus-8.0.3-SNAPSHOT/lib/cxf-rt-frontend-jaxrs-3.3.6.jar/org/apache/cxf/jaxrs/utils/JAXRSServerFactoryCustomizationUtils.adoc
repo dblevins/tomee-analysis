@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/JAXRSServerFactoryCustomizationUtils.class
-
- - link:JAXRSServerFactoryCustomizationUtils-asmified.java[Asmified]
-
-== References
-

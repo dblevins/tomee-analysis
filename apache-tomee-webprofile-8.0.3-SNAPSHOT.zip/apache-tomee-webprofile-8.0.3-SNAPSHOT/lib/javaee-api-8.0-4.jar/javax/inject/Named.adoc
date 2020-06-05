@@ -1,7 +1,0 @@
-= javax/inject/Named.class
-
- - link:Named-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Qualifier - 1

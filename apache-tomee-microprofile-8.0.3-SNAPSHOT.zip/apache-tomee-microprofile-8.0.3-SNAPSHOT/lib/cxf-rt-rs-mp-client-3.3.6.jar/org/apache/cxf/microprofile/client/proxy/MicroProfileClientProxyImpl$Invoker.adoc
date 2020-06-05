@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl$Invoker.class
-
- - link:MicroProfileClientProxyImpl$Invoker-asmified.java[Asmified]
-
-== References
-

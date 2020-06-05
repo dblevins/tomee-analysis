@@ -1,6 +1,0 @@
-= jakarta/json/bind/spi/JsonbProvider.class
-
- - link:JsonbProvider-asmified.java[Asmified]
-
-== References
-

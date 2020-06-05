@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/EditableValueHolderRule$ValidatorBindingMetadata.class
-
- - link:EditableValueHolderRule$ValidatorBindingMetadata-asmified.java[Asmified]
-
-== References
-

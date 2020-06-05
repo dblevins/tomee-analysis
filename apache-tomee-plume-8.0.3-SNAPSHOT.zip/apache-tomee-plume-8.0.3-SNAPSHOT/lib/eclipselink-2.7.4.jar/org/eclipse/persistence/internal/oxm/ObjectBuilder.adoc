@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/ObjectBuilder.class
-
- - link:ObjectBuilder-asmified.java[Asmified]
-
-== References
-

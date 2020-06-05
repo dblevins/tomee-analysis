@@ -1,6 +1,0 @@
-= org/apache/openejb/util/NetworkUtil.class
-
- - link:NetworkUtil-asmified.java[Asmified]
-
-== References
-

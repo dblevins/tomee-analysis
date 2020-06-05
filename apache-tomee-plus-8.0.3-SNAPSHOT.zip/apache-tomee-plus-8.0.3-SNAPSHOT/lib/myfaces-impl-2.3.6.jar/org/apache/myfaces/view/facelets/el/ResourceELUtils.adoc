@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/ResourceELUtils.class
-
- - link:ResourceELUtils-asmified.java[Asmified]
-
-== References
-

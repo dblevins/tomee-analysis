@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/ResourceEnvRefType.class
-
- - link:ResourceEnvRefType-asmified.java[Asmified]
-
-== References
-

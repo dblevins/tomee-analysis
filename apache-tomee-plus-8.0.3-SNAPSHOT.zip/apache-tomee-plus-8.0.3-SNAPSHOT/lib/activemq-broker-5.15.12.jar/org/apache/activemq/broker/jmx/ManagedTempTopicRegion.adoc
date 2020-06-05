@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/ManagedTempTopicRegion.class
-
- - link:ManagedTempTopicRegion-asmified.java[Asmified]
-
-== References
-

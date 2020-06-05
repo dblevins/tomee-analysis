@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/lateral/socket/tcp/LateralTCPCacheFactory.class
-
- - link:LateralTCPCacheFactory-asmified.java[Asmified]
-
-== References
-

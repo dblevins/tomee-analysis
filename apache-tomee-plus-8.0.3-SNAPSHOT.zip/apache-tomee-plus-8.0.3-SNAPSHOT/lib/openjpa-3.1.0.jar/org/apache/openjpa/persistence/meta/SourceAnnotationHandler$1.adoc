@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/SourceAnnotationHandler$1.class
-
- - link:SourceAnnotationHandler$1-asmified.java[Asmified]
-
-== References
-

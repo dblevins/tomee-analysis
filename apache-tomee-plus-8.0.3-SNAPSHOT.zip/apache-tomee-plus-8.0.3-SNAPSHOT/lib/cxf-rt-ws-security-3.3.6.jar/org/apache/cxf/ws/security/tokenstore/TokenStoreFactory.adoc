@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/tokenstore/TokenStoreFactory.class
-
- - link:TokenStoreFactory-asmified.java[Asmified]
-
-== References
-

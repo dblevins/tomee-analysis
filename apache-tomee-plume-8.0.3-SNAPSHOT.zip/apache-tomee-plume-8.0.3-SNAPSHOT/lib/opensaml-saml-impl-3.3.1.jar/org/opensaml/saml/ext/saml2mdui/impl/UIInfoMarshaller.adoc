@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/impl/UIInfoMarshaller.class
-
- - link:UIInfoMarshaller-asmified.java[Asmified]
-
-== References
-

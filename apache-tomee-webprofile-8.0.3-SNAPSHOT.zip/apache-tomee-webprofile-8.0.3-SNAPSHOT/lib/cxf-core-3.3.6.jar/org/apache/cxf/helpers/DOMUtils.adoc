@@ -1,6 +1,0 @@
-= org/apache/cxf/helpers/DOMUtils.class
-
- - link:DOMUtils-asmified.java[Asmified]
-
-== References
-

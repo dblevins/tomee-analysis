@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/PastOrPresentValidator$ForChronoZonedDateTime.class
-
- - link:PastOrPresentValidator$ForChronoZonedDateTime-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/servlet/ServletContextAttributeEvent.class
-
- - link:ServletContextAttributeEvent-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.ServletContextEvent - 2
- - javax.servlet.ServletContext - 2

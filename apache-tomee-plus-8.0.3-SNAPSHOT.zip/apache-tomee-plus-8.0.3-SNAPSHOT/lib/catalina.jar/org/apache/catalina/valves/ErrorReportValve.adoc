@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/ErrorReportValve.class
-
- - link:ErrorReportValve-asmified.java[Asmified]
-
-== References
-

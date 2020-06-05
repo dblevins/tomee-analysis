@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/DeferredDecodeMessage.class
-
- - link:DeferredDecodeMessage-asmified.java[Asmified]
-
-== References
-

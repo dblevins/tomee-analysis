@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/modeler/NoDescriptorRegistry$PassthroughMBean.class
-
- - link:NoDescriptorRegistry$PassthroughMBean-asmified.java[Asmified]
-
-== References
-

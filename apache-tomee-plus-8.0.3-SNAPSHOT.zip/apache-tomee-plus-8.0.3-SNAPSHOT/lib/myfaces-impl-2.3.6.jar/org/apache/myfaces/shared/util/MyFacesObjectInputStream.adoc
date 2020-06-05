@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/MyFacesObjectInputStream.class
-
- - link:MyFacesObjectInputStream-asmified.java[Asmified]
-
-== References
-

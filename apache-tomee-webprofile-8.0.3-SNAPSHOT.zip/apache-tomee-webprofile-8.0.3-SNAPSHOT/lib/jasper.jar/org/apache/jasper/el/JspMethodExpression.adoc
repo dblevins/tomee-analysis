@@ -1,6 +1,0 @@
-= org/apache/jasper/el/JspMethodExpression.class
-
- - link:JspMethodExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/xml/xpath/XPathFactoryFinder$SingleIterator.class
-
- - link:XPathFactoryFinder$SingleIterator-asmified.java[Asmified]
-
-== References
-

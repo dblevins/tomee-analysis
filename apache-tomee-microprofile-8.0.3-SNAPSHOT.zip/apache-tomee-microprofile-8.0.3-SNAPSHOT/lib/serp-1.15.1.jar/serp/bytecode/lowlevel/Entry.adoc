@@ -1,6 +1,0 @@
-= serp/bytecode/lowlevel/Entry.class
-
- - link:Entry-asmified.java[Asmified]
-
-== References
-

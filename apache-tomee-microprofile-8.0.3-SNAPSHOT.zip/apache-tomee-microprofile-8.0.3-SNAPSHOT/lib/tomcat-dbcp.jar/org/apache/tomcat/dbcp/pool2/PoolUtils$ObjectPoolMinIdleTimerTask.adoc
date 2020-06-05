@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/PoolUtils$ObjectPoolMinIdleTimerTask.class
-
- - link:PoolUtils$ObjectPoolMinIdleTimerTask-asmified.java[Asmified]
-
-== References
-

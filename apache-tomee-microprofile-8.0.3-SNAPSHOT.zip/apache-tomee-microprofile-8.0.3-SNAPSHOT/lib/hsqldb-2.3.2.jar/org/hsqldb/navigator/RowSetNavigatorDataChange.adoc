@@ -1,6 +1,0 @@
-= org/hsqldb/navigator/RowSetNavigatorDataChange.class
-
- - link:RowSetNavigatorDataChange-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/Ejb.class
-
- - link:Ejb-asmified.java[Asmified]
-
-== References
-

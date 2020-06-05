@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/PolicyException.class
-
- - link:PolicyException-asmified.java[Asmified]
-
-== References
-

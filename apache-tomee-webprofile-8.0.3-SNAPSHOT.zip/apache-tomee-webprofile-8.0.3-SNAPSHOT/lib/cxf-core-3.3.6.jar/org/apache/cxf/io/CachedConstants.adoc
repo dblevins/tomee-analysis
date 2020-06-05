@@ -1,6 +1,0 @@
-= org/apache/cxf/io/CachedConstants.class
-
- - link:CachedConstants-asmified.java[Asmified]
-
-== References
-

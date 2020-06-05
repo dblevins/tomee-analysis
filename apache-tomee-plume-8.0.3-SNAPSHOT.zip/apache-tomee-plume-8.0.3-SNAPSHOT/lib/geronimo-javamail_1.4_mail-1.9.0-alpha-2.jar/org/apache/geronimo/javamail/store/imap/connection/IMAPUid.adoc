@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPUid.class
-
- - link:IMAPUid-asmified.java[Asmified]
-
-== References
-

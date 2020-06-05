@@ -1,6 +1,0 @@
-= jakarta/validation/ElementKind.class
-
- - link:ElementKind-asmified.java[Asmified]
-
-== References
-

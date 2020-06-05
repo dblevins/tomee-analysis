@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/DefaultClusteredJobStore$TriggerRemovedFromCandidateFiringListHandler.class
-
- - link:DefaultClusteredJobStore$TriggerRemovedFromCandidateFiringListHandler-asmified.java[Asmified]
-
-== References
-

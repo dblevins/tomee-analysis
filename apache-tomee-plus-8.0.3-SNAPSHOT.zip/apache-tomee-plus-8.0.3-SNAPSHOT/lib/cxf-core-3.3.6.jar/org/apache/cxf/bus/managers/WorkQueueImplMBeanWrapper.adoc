@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/WorkQueueImplMBeanWrapper.class
-
- - link:WorkQueueImplMBeanWrapper-asmified.java[Asmified]
-
-== References
-

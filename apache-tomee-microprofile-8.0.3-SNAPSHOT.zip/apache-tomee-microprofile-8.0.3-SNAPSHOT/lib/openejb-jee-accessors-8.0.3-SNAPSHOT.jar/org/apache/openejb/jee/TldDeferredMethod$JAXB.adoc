@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TldDeferredMethod$JAXB.class
-
- - link:TldDeferredMethod$JAXB-asmified.java[Asmified]
-
-== References
-

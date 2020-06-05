@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/client/AccessTokenGrantWriter.class
-
- - link:AccessTokenGrantWriter-asmified.java[Asmified]
-
-== References
-

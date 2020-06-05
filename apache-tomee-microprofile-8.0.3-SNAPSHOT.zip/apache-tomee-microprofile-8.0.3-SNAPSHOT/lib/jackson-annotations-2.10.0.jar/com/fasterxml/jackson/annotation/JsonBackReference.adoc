@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonBackReference.class
-
- - link:JsonBackReference-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/management/jmx/MBServerConnectorFactory.class
-
- - link:MBServerConnectorFactory-asmified.java[Asmified]
-
-== References
-

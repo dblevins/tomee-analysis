@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/MessageSend.class
-
- - link:MessageSend-asmified.java[Asmified]
-
-== References
-

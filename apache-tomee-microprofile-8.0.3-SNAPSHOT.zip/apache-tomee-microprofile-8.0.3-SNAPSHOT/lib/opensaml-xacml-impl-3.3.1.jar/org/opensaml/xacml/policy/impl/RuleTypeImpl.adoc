@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/RuleTypeImpl.class
-
- - link:RuleTypeImpl-asmified.java[Asmified]
-
-== References
-

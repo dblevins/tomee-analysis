@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/DailyTimeIntervalTrigger.class
-
- - link:DailyTimeIntervalTrigger-asmified.java[Asmified]
-
-== References
-

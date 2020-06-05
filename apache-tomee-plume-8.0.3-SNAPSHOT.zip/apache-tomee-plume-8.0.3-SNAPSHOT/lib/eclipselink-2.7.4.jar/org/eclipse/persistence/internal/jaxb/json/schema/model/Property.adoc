@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/json/schema/model/Property.class
-
- - link:Property-asmified.java[Asmified]
-
-== References
-

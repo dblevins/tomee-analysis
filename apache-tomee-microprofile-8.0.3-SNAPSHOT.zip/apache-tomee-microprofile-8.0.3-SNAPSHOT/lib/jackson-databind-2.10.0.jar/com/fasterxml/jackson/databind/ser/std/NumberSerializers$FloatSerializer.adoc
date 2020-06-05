@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/NumberSerializers$FloatSerializer.class
-
- - link:NumberSerializers$FloatSerializer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/databinding/source/mime/MimeAttribute.class
-
- - link:MimeAttribute-asmified.java[Asmified]
-
-== References
-

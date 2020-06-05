@@ -1,6 +1,0 @@
-= org/apache/openejb/server/auth/ExactIPv6AddressPermission.class
-
- - link:ExactIPv6AddressPermission-asmified.java[Asmified]
-
-== References
-

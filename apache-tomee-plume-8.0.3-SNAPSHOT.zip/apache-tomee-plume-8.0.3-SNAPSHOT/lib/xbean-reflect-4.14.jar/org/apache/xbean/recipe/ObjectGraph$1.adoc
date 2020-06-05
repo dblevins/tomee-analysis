@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ObjectGraph$1.class
-
- - link:ObjectGraph$1-asmified.java[Asmified]
-
-== References
-

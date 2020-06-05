@@ -1,6 +1,0 @@
-= org/apache/commons/codec/digest/MurmurHash2.class
-
- - link:MurmurHash2-asmified.java[Asmified]
-
-== References
-

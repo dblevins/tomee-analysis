@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlCommandScriptTag.class
-
- - link:HtmlCommandScriptTag-asmified.java[Asmified]
-
-== References
-

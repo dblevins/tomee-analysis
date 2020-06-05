@@ -1,7 +1,0 @@
-= javax/persistence/metamodel/SetAttribute.class
-
- - link:SetAttribute-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.metamodel.PluralAttribute - 1

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/ChainedTransformer.class
-
- - link:ChainedTransformer-asmified.java[Asmified]
-
-== References
-

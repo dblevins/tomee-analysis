@@ -1,6 +1,0 @@
-= javax/faces/event/FacesListener.class
-
- - link:FacesListener-asmified.java[Asmified]
-
-== References
-

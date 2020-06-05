@@ -1,6 +1,0 @@
-= org/apache/commons/collections/PriorityQueue.class
-
- - link:PriorityQueue-asmified.java[Asmified]
-
-== References
-

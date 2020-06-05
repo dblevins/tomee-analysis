@@ -1,9 +1,0 @@
-= javax/mail/FolderNotFoundException.class
-
- - link:FolderNotFoundException-asmified.java[Asmified]
-
-== References
-
- - javax.mail.Folder - 10
- - javax.mail.MessagingException - 3
- - javax.mail.FolderNotFoundException - 2

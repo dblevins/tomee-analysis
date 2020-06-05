@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/AbstractDiscriminatorStrategy.class
-
- - link:AbstractDiscriminatorStrategy-asmified.java[Asmified]
-
-== References
-

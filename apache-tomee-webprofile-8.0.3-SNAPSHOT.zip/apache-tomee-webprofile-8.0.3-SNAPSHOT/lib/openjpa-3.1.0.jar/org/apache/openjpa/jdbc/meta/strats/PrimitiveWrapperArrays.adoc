@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/PrimitiveWrapperArrays.class
-
- - link:PrimitiveWrapperArrays-asmified.java[Asmified]
-
-== References
-

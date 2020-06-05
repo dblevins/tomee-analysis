@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/SimpleCache.class
-
- - link:SimpleCache-asmified.java[Asmified]
-
-== References
-

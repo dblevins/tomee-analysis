@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/fmt/ParseNumberSupport.class
-
- - link:ParseNumberSupport-asmified.java[Asmified]
-
-== References
-

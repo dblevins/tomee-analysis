@@ -1,6 +1,0 @@
-= org/hsqldb/persist/DataFileDefrag.class
-
- - link:DataFileDefrag-asmified.java[Asmified]
-
-== References
-

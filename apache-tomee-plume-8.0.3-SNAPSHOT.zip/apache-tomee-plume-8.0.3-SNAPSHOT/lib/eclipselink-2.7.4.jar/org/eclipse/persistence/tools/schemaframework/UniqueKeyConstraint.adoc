@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/schemaframework/UniqueKeyConstraint.class
-
- - link:UniqueKeyConstraint-asmified.java[Asmified]
-
-== References
-

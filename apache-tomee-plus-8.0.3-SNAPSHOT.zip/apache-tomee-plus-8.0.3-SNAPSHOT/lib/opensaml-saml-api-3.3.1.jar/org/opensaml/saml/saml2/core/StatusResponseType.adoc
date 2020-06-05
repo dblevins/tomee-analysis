@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/StatusResponseType.class
-
- - link:StatusResponseType-asmified.java[Asmified]
-
-== References
-

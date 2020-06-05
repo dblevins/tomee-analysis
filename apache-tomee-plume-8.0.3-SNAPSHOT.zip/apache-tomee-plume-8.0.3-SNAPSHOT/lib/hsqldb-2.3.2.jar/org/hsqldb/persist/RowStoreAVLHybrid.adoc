@@ -1,6 +1,0 @@
-= org/hsqldb/persist/RowStoreAVLHybrid.class
-
- - link:RowStoreAVLHybrid-asmified.java[Asmified]
-
-== References
-

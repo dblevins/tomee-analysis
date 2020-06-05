@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/JoinTable.class
-
- - link:JoinTable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/EmptyListIterator.class
-
- - link:EmptyListIterator-asmified.java[Asmified]
-
-== References
-

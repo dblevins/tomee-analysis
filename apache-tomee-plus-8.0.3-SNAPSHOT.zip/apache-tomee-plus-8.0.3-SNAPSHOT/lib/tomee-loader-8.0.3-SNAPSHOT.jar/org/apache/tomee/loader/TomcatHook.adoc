@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/TomcatHook.class
-
- - link:TomcatHook-asmified.java[Asmified]
-
-== References
-

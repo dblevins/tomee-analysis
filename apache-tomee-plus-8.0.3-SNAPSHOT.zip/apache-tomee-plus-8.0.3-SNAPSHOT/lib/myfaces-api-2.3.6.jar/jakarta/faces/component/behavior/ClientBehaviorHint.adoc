@@ -1,6 +1,0 @@
-= jakarta/faces/component/behavior/ClientBehaviorHint.class
-
- - link:ClientBehaviorHint-asmified.java[Asmified]
-
-== References
-

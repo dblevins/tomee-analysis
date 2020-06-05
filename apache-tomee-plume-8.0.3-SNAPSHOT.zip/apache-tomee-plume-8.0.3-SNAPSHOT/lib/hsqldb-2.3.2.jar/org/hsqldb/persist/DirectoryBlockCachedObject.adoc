@@ -1,6 +1,0 @@
-= org/hsqldb/persist/DirectoryBlockCachedObject.class
-
- - link:DirectoryBlockCachedObject-asmified.java[Asmified]
-
-== References
-

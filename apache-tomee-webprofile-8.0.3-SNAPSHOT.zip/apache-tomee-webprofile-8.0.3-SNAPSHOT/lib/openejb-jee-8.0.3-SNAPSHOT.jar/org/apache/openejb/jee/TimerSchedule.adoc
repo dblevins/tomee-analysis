@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TimerSchedule.class
-
- - link:TimerSchedule-asmified.java[Asmified]
-
-== References
-

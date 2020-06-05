@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/proxy/ProxySource.class
-
- - link:ProxySource-asmified.java[Asmified]
-
-== References
-

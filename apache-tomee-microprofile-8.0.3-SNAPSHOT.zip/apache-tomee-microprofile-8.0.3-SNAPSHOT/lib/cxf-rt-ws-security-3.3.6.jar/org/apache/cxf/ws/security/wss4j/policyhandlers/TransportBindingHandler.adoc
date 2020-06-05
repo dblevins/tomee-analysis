@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyhandlers/TransportBindingHandler.class
-
- - link:TransportBindingHandler-asmified.java[Asmified]
-
-== References
-

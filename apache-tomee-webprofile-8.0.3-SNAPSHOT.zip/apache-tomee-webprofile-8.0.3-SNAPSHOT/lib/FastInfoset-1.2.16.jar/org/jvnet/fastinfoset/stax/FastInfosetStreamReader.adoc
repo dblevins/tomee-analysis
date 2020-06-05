@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/stax/FastInfosetStreamReader.class
-
- - link:FastInfosetStreamReader-asmified.java[Asmified]
-
-== References
-

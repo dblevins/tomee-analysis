@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/Converters.class
-
- - link:Converters-asmified.java[Asmified]
-
-== References
-

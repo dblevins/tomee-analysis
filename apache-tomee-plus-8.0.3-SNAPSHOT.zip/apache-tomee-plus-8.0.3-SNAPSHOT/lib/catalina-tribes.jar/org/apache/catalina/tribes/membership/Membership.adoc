@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/membership/Membership.class
-
- - link:Membership-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/PrefixDestinationFilter.class
-
- - link:PrefixDestinationFilter-asmified.java[Asmified]
-
-== References
-

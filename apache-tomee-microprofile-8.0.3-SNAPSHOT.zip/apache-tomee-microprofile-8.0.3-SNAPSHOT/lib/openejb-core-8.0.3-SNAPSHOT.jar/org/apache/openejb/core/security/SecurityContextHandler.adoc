@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/SecurityContextHandler.class
-
- - link:SecurityContextHandler-asmified.java[Asmified]
-
-== References
-

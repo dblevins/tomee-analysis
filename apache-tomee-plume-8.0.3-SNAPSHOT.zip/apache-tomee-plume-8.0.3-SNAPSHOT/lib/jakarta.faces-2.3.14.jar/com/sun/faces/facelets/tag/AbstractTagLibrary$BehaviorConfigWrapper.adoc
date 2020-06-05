@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/AbstractTagLibrary$BehaviorConfigWrapper.class
-
- - link:AbstractTagLibrary$BehaviorConfigWrapper-asmified.java[Asmified]
-
-== References
-

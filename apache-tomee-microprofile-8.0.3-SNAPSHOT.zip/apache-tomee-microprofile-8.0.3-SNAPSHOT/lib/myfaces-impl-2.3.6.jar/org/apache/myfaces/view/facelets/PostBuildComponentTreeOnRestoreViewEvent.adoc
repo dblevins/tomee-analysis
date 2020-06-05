@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/PostBuildComponentTreeOnRestoreViewEvent.class
-
- - link:PostBuildComponentTreeOnRestoreViewEvent-asmified.java[Asmified]
-
-== References
-

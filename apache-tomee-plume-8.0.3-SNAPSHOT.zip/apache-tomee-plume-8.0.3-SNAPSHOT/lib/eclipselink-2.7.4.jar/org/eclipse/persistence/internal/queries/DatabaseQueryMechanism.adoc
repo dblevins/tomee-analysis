@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/DatabaseQueryMechanism.class
-
- - link:DatabaseQueryMechanism-asmified.java[Asmified]
-
-== References
-

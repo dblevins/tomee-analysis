@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/LocalClientState.class
-
- - link:LocalClientState-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/dyni/DynamicSubclass$MoveAnnotationsVisitor.class
-
- - link:DynamicSubclass$MoveAnnotationsVisitor-asmified.java[Asmified]
-
-== References
-

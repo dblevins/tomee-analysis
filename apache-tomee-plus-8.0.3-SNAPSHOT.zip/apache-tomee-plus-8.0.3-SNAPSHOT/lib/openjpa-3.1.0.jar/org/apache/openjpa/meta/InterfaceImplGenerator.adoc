@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/InterfaceImplGenerator.class
-
- - link:InterfaceImplGenerator-asmified.java[Asmified]
-
-== References
-

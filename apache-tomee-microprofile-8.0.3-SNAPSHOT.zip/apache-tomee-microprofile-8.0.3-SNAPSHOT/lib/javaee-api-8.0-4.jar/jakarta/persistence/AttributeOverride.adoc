@@ -1,6 +1,0 @@
-= jakarta/persistence/AttributeOverride.class
-
- - link:AttributeOverride-asmified.java[Asmified]
-
-== References
-

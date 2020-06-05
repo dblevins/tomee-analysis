@@ -1,6 +1,0 @@
-= javax/xml/transform/stream/FilePathToURI.class
-
- - link:FilePathToURI-asmified.java[Asmified]
-
-== References
-

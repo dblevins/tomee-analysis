@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/impl/SpiUtils.class
-
- - link:SpiUtils-asmified.java[Asmified]
-
-== References
-

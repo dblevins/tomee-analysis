@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckClassLoading.class
-
- - link:CheckClassLoading-asmified.java[Asmified]
-
-== References
-

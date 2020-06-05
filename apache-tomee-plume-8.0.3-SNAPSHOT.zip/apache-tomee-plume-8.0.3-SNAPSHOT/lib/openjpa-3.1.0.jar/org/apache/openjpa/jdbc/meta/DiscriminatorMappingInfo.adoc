@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/DiscriminatorMappingInfo.class
-
- - link:DiscriminatorMappingInfo-asmified.java[Asmified]
-
-== References
-

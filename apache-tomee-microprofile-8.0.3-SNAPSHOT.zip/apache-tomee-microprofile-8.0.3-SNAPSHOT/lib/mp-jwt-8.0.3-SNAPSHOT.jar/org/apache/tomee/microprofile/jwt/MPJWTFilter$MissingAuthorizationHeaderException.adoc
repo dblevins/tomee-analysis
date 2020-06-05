@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/MPJWTFilter$MissingAuthorizationHeaderException.class
-
- - link:MPJWTFilter$MissingAuthorizationHeaderException-asmified.java[Asmified]
-
-== References
-

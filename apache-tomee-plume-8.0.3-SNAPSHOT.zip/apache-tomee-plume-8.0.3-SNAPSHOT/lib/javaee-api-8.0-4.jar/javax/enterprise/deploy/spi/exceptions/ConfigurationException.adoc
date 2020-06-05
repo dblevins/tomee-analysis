@@ -1,6 +1,0 @@
-= javax/enterprise/deploy/spi/exceptions/ConfigurationException.class
-
- - link:ConfigurationException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/AccessMethods.class
-
- - link:AccessMethods-asmified.java[Asmified]
-
-== References
-

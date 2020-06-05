@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/AbstractManagedType$SingularAttributeFilter.class
-
- - link:AbstractManagedType$SingularAttributeFilter-asmified.java[Asmified]
-
-== References
-

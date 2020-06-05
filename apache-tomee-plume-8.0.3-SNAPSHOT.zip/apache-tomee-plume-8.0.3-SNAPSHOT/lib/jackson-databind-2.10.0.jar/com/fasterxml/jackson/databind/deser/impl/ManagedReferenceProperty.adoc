@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/impl/ManagedReferenceProperty.class
-
- - link:ManagedReferenceProperty-asmified.java[Asmified]
-
-== References
-

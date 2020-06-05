@@ -1,6 +1,0 @@
-= org/jose4j/jwt/consumer/JwtConsumer.class
-
- - link:JwtConsumer-asmified.java[Asmified]
-
-== References
-

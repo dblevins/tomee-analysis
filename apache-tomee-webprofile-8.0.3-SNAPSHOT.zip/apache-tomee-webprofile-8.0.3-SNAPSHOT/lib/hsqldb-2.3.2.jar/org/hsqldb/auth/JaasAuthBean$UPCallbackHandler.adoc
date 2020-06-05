@@ -1,6 +1,0 @@
-= org/hsqldb/auth/JaasAuthBean$UPCallbackHandler.class
-
- - link:JaasAuthBean$UPCallbackHandler-asmified.java[Asmified]
-
-== References
-

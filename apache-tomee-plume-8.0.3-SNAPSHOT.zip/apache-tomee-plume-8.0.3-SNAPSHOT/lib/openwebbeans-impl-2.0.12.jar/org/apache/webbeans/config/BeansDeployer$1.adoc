@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/BeansDeployer$1.class
-
- - link:BeansDeployer$1-asmified.java[Asmified]
-
-== References
-

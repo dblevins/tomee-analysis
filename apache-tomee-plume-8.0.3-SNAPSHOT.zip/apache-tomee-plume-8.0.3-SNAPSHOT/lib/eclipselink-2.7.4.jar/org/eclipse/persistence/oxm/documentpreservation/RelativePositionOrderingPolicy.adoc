@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/documentpreservation/RelativePositionOrderingPolicy.class
-
- - link:RelativePositionOrderingPolicy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/StoreRegistry.class
-
- - link:StoreRegistry-asmified.java[Asmified]
-
-== References
-

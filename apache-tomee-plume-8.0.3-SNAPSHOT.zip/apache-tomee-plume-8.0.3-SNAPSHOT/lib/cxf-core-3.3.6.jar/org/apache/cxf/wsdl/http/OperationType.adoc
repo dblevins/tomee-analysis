@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/http/OperationType.class
-
- - link:OperationType-asmified.java[Asmified]
-
-== References
-

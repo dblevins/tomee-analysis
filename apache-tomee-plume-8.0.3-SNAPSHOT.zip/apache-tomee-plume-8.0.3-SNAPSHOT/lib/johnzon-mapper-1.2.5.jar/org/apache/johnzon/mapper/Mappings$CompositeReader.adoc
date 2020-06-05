@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/Mappings$CompositeReader.class
-
- - link:Mappings$CompositeReader-asmified.java[Asmified]
-
-== References
-

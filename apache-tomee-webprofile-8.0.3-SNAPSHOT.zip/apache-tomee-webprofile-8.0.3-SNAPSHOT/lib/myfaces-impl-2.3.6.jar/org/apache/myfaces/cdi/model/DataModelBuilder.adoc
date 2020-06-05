@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/model/DataModelBuilder.class
-
- - link:DataModelBuilder-asmified.java[Asmified]
-
-== References
-

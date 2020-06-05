@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/keyinfo/impl/BasicKeyInfoGeneratorFactory$BasicKeyInfoGenerator.class
-
- - link:BasicKeyInfoGeneratorFactory$BasicKeyInfoGenerator-asmified.java[Asmified]
-
-== References
-

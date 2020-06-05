@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/context/ResponseWriterWrapper.class
-
- - link:ResponseWriterWrapper-asmified.java[Asmified]
-
-== References
-

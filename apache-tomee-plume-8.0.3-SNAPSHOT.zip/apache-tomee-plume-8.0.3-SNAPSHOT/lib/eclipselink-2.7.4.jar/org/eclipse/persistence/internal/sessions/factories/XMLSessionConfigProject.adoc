@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/XMLSessionConfigProject.class
-
- - link:XMLSessionConfigProject-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/sql/DataSourceWrapper$1.class
-
- - link:DataSourceWrapper$1-asmified.java[Asmified]
-
-== References
-

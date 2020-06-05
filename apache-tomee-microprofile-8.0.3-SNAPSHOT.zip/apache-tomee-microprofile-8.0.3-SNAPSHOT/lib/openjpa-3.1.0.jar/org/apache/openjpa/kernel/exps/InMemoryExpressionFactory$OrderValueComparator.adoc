@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/InMemoryExpressionFactory$OrderValueComparator.class
-
- - link:InMemoryExpressionFactory$OrderValueComparator-asmified.java[Asmified]
-
-== References
-

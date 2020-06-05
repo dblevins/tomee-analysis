@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/CacheInfo.class
-
- - link:CacheInfo-asmified.java[Asmified]
-
-== References
-

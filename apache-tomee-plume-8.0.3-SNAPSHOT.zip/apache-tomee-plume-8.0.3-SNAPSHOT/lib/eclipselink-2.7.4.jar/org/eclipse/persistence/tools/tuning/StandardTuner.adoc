@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/tuning/StandardTuner.class
-
- - link:StandardTuner-asmified.java[Asmified]
-
-== References
-

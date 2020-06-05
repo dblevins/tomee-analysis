@@ -1,6 +1,0 @@
-= org/apache/openejb/jpa/integration/JPAThreadContext.class
-
- - link:JPAThreadContext-asmified.java[Asmified]
-
-== References
-

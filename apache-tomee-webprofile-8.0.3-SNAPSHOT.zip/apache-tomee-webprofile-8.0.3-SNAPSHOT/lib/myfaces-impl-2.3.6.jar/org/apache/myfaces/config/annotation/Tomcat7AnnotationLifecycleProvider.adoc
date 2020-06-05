@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/annotation/Tomcat7AnnotationLifecycleProvider.class
-
- - link:Tomcat7AnnotationLifecycleProvider-asmified.java[Asmified]
-
-== References
-

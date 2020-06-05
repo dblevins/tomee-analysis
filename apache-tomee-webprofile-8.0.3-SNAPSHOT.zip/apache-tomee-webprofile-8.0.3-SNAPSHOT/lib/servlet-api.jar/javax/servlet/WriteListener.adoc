@@ -1,6 +1,0 @@
-= javax/servlet/WriteListener.class
-
- - link:WriteListener-asmified.java[Asmified]
-
-== References
-

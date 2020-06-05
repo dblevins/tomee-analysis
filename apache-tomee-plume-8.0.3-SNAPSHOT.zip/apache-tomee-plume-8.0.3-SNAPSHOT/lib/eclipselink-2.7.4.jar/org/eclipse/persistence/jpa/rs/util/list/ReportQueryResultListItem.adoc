@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/list/ReportQueryResultListItem.class
-
- - link:ReportQueryResultListItem-asmified.java[Asmified]
-
-== References
-

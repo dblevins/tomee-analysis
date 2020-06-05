@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdquery/impl/AttributeQueryDescriptorTypeImpl.class
-
- - link:AttributeQueryDescriptorTypeImpl-asmified.java[Asmified]
-
-== References
-

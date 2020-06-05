@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/PushbackInputStream.class
-
- - link:PushbackInputStream-asmified.java[Asmified]
-
-== References
-

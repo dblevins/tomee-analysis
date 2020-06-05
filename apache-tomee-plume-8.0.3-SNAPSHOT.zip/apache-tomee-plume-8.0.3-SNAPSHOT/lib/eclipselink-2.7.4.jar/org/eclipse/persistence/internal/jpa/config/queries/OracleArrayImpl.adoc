@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/queries/OracleArrayImpl.class
-
- - link:OracleArrayImpl-asmified.java[Asmified]
-
-== References
-

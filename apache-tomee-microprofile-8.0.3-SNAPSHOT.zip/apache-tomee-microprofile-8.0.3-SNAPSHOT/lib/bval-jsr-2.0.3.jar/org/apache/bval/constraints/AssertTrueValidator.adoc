@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/AssertTrueValidator.class
-
- - link:AssertTrueValidator-asmified.java[Asmified]
-
-== References
-

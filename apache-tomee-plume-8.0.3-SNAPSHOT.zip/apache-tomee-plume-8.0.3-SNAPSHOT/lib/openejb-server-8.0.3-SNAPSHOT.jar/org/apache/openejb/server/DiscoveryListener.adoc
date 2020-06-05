@@ -1,6 +1,0 @@
-= org/apache/openejb/server/DiscoveryListener.class
-
- - link:DiscoveryListener-asmified.java[Asmified]
-
-== References
-

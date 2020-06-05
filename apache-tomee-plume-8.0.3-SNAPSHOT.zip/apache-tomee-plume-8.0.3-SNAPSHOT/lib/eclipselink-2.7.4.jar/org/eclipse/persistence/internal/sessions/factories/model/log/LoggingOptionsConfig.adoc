@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/log/LoggingOptionsConfig.class
-
- - link:LoggingOptionsConfig-asmified.java[Asmified]
-
-== References
-

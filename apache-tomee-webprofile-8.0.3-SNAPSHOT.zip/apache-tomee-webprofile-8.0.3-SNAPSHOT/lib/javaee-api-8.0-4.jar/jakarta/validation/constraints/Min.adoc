@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/Min.class
-
- - link:Min-asmified.java[Asmified]
-
-== References
-

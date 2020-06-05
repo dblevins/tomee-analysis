@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/RemappingFieldAdapter.class
-
- - link:RemappingFieldAdapter-asmified.java[Asmified]
-
-== References
-

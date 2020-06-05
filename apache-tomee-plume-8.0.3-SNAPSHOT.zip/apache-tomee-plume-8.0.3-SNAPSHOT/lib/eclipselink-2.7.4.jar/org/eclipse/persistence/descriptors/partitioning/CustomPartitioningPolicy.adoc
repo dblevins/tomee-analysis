@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/partitioning/CustomPartitioningPolicy.class
-
- - link:CustomPartitioningPolicy-asmified.java[Asmified]
-
-== References
-

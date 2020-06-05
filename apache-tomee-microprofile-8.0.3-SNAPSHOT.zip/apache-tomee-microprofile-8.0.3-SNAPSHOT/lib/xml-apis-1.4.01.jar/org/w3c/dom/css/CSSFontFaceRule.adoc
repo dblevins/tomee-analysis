@@ -1,6 +1,0 @@
-= org/w3c/dom/css/CSSFontFaceRule.class
-
- - link:CSSFontFaceRule-asmified.java[Asmified]
-
-== References
-

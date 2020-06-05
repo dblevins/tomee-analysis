@@ -1,7 +1,0 @@
-= javax/xml/rpc/holders/ByteWrapperHolder.class
-
- - link:ByteWrapperHolder-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.holders.Holder - 1

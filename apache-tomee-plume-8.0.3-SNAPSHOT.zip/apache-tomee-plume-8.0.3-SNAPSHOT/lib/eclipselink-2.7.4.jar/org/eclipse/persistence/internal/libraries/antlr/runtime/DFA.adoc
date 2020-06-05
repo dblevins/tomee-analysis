@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/DFA.class
-
- - link:DFA-asmified.java[Asmified]
-
-== References
-

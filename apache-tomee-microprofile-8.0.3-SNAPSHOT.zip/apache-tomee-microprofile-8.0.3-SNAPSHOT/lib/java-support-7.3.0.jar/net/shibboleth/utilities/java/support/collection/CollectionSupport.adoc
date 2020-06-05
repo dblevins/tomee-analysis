@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/CollectionSupport.class
-
- - link:CollectionSupport-asmified.java[Asmified]
-
-== References
-

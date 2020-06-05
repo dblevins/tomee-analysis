@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLStyleElement.class
-
- - link:HTMLStyleElement-asmified.java[Asmified]
-
-== References
-

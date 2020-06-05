@@ -1,6 +1,0 @@
-= com/sun/faces/context/flash/ELFlash$LifetimeMarker.class
-
- - link:ELFlash$LifetimeMarker-asmified.java[Asmified]
-
-== References
-

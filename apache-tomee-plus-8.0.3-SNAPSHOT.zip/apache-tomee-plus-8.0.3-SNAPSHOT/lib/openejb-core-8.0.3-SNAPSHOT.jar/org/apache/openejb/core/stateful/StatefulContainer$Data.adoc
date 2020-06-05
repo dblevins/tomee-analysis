@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/StatefulContainer$Data.class
-
- - link:StatefulContainer$Data-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/converters/XMLMetadata.class
-
- - link:XMLMetadata-asmified.java[Asmified]
-
-== References
-

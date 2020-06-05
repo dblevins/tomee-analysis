@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/AnchorToken.class
-
- - link:AnchorToken-asmified.java[Asmified]
-
-== References
-

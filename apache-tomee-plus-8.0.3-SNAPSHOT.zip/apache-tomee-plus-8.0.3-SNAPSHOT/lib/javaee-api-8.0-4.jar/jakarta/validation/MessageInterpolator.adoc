@@ -1,6 +1,0 @@
-= jakarta/validation/MessageInterpolator.class
-
- - link:MessageInterpolator-asmified.java[Asmified]
-
-== References
-

@@ -1,2 +1,0 @@
-= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/geronimo-config-impl-1.2.1.jar
-

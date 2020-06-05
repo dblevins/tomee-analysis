@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/schema/model/Any.class
-
- - link:Any-asmified.java[Asmified]
-
-== References
-

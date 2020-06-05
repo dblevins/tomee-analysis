@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ProviderFactory$AbstractPriorityComparator.class
-
- - link:ProviderFactory$AbstractPriorityComparator-asmified.java[Asmified]
-
-== References
-

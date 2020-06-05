@@ -1,6 +1,0 @@
-= org/apache/el/parser/AstDynamicExpression.class
-
- - link:AstDynamicExpression-asmified.java[Asmified]
-
-== References
-

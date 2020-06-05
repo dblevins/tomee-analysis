@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/VersionTransformer$Names200408.class
-
- - link:VersionTransformer$Names200408-asmified.java[Asmified]
-
-== References
-

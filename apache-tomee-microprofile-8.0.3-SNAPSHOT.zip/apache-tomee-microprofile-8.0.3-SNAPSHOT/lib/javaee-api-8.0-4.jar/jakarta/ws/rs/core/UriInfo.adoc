@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/UriInfo.class
-
- - link:UriInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/context/_MyFacesExternalContextHelper.class
-
- - link:_MyFacesExternalContextHelper-asmified.java[Asmified]
-
-== References
-

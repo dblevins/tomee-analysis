@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/copypolicy/CustomCopyPolicyMetadata.class
-
- - link:CustomCopyPolicyMetadata-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/xml/rpc/encoding/SerializerFactory.class
-
- - link:SerializerFactory-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.encoding.Serializer - 1

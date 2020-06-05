@@ -1,7 +1,0 @@
-= javax/servlet/ServletRegistration.class
-
- - link:ServletRegistration-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.Registration - 1

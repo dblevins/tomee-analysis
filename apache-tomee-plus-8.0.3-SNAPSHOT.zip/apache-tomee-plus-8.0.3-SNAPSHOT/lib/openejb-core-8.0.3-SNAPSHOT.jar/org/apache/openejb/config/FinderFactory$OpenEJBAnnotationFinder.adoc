@@ -1,6 +1,0 @@
-= org/apache/openejb/config/FinderFactory$OpenEJBAnnotationFinder.class
-
- - link:FinderFactory$OpenEJBAnnotationFinder-asmified.java[Asmified]
-
-== References
-

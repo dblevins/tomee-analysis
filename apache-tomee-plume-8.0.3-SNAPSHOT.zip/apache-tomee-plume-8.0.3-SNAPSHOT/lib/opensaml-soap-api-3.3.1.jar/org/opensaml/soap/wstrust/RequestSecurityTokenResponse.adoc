@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/RequestSecurityTokenResponse.class
-
- - link:RequestSecurityTokenResponse-asmified.java[Asmified]
-
-== References
-

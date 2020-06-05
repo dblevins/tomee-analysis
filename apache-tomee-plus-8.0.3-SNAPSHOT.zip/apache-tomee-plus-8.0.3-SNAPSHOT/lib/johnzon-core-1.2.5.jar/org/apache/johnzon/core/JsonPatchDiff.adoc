@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonPatchDiff.class
-
- - link:JsonPatchDiff-asmified.java[Asmified]
-
-== References
-

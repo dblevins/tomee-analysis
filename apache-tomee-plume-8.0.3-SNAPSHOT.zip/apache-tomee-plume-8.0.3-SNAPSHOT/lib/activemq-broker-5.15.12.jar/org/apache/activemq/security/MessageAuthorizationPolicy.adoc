@@ -1,6 +1,0 @@
-= org/apache/activemq/security/MessageAuthorizationPolicy.class
-
- - link:MessageAuthorizationPolicy-asmified.java[Asmified]
-
-== References
-

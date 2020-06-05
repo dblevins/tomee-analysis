@@ -1,6 +1,0 @@
-= org/apache/cxf/common/logging/AbstractDelegatingLogger.class
-
- - link:AbstractDelegatingLogger-asmified.java[Asmified]
-
-== References
-

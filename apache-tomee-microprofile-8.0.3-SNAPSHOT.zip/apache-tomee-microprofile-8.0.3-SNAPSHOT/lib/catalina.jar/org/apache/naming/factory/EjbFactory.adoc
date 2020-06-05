@@ -1,6 +1,0 @@
-= org/apache/naming/factory/EjbFactory.class
-
- - link:EjbFactory-asmified.java[Asmified]
-
-== References
-

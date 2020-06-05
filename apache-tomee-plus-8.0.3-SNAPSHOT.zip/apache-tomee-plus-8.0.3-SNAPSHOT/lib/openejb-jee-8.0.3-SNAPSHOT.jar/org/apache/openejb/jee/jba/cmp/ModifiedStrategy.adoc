@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/ModifiedStrategy.class
-
- - link:ModifiedStrategy-asmified.java[Asmified]
-
-== References
-

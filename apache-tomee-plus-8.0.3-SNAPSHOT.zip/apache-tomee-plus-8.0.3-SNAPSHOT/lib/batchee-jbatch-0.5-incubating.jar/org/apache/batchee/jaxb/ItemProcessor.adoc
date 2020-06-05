@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/ItemProcessor.class
-
- - link:ItemProcessor-asmified.java[Asmified]
-
-== References
-

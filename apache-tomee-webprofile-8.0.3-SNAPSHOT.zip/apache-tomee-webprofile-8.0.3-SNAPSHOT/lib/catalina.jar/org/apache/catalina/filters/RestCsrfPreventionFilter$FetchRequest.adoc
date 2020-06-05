@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/RestCsrfPreventionFilter$FetchRequest.class
-
- - link:RestCsrfPreventionFilter$FetchRequest-asmified.java[Asmified]
-
-== References
-

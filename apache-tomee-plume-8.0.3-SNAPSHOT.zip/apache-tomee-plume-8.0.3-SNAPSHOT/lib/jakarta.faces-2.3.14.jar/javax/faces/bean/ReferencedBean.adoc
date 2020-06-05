@@ -1,6 +1,0 @@
-= javax/faces/bean/ReferencedBean.class
-
- - link:ReferencedBean-asmified.java[Asmified]
-
-== References
-

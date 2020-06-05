@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/MultivaluedHashMap.class
-
- - link:MultivaluedHashMap-asmified.java[Asmified]
-
-== References
-

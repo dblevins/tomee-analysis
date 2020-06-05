@@ -1,6 +1,0 @@
-= serp/bytecode/CodeEntry.class
-
- - link:CodeEntry-asmified.java[Asmified]
-
-== References
-

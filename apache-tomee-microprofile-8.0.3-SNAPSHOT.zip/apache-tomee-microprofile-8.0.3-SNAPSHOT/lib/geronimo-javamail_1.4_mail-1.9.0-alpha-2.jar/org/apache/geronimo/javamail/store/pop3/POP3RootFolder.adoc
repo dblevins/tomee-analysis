@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/pop3/POP3RootFolder.class
-
- - link:POP3RootFolder-asmified.java[Asmified]
-
-== References
-

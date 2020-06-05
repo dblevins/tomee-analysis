@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/FileItemHeadersSupport.class
-
- - link:FileItemHeadersSupport-asmified.java[Asmified]
-
-== References
-

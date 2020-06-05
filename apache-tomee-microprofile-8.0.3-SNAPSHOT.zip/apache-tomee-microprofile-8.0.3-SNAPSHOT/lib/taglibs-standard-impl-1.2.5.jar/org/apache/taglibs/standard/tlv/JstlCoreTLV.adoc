@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tlv/JstlCoreTLV.class
-
- - link:JstlCoreTLV-asmified.java[Asmified]
-
-== References
-

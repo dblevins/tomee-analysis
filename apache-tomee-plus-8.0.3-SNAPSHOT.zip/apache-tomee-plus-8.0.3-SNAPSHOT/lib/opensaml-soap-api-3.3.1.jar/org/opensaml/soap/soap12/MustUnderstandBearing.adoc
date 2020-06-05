@@ -1,6 +1,0 @@
-= org/opensaml/soap/soap12/MustUnderstandBearing.class
-
- - link:MustUnderstandBearing-asmified.java[Asmified]
-
-== References
-

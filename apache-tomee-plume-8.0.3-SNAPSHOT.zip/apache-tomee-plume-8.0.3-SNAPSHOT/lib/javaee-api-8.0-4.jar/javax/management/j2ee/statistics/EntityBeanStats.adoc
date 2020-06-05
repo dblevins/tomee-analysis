@@ -1,8 +1,0 @@
-= javax/management/j2ee/statistics/EntityBeanStats.class
-
- - link:EntityBeanStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.RangeStatistic - 2
- - javax.management.j2ee.statistics.EJBStats - 1

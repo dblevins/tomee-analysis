@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/AbstractFinder$Annotatable.class
-
- - link:AbstractFinder$Annotatable-asmified.java[Asmified]
-
-== References
-

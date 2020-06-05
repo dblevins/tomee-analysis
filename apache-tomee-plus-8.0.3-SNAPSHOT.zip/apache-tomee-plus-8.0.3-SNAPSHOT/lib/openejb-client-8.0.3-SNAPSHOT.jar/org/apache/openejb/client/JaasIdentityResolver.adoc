@@ -1,6 +1,0 @@
-= org/apache/openejb/client/JaasIdentityResolver.class
-
- - link:JaasIdentityResolver-asmified.java[Asmified]
-
-== References
-

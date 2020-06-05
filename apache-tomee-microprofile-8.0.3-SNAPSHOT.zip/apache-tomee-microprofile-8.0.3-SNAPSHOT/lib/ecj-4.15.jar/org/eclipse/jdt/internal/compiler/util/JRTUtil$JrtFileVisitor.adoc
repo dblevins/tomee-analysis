@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/JRTUtil$JrtFileVisitor.class
-
- - link:JRTUtil$JrtFileVisitor-asmified.java[Asmified]
-
-== References
-

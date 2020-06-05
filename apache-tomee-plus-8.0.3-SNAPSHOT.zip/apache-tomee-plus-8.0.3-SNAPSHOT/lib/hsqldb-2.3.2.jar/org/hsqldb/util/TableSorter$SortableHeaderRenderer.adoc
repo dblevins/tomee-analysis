@@ -1,6 +1,0 @@
-= org/hsqldb/util/TableSorter$SortableHeaderRenderer.class
-
- - link:TableSorter$SortableHeaderRenderer-asmified.java[Asmified]
-
-== References
-

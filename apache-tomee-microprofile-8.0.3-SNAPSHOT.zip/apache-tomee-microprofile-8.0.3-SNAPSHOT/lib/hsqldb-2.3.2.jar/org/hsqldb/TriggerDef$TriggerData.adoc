@@ -1,6 +1,0 @@
-= org/hsqldb/TriggerDef$TriggerData.class
-
- - link:TriggerDef$TriggerData-asmified.java[Asmified]
-
-== References
-

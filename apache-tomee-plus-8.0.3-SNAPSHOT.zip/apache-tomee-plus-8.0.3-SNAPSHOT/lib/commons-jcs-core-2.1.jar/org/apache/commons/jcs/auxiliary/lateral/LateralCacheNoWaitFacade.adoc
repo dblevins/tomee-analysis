@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/lateral/LateralCacheNoWaitFacade.class
-
- - link:LateralCacheNoWaitFacade-asmified.java[Asmified]
-
-== References
-

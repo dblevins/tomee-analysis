@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ObjectRecipe$CompoundProperty.class
-
- - link:ObjectRecipe$CompoundProperty-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/ssi/SSIFlastmod.class
-
- - link:SSIFlastmod-asmified.java[Asmified]
-
-== References
-

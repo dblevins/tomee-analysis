@@ -1,6 +1,0 @@
-= jakarta/faces/event/ViewMapListener.class
-
- - link:ViewMapListener-asmified.java[Asmified]
-
-== References
-

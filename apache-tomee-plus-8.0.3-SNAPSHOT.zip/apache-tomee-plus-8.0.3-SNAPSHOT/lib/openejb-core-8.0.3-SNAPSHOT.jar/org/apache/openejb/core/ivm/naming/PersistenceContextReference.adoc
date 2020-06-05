@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/PersistenceContextReference.class
-
- - link:PersistenceContextReference-asmified.java[Asmified]
-
-== References
-

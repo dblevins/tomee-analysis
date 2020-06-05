@@ -1,6 +1,0 @@
-= org/apache/openejb/testng/ApplicationComposerListener.class
-
- - link:ApplicationComposerListener-asmified.java[Asmified]
-
-== References
-

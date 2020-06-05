@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeMetaRulesetImpl$1.class
-
- - link:CompositeMetaRulesetImpl$1-asmified.java[Asmified]
-
-== References
-

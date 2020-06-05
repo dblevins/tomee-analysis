@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/tuple/ImmutablePair.class
-
- - link:ImmutablePair-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/indexed/IndexedDiskCache$LRUMapCountLimited.class
-
- - link:IndexedDiskCache$LRUMapCountLimited-asmified.java[Asmified]
-
-== References
-

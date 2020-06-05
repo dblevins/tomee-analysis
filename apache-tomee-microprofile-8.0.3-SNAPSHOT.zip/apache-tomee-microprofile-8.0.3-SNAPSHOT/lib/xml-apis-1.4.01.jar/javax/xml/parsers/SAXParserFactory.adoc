@@ -1,6 +1,0 @@
-= javax/xml/parsers/SAXParserFactory.class
-
- - link:SAXParserFactory-asmified.java[Asmified]
-
-== References
-

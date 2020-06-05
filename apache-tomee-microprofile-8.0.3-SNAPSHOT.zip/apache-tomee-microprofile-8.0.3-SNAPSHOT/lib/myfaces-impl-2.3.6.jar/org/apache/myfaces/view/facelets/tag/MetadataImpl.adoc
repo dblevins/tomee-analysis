@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/MetadataImpl.class
-
- - link:MetadataImpl-asmified.java[Asmified]
-
-== References
-

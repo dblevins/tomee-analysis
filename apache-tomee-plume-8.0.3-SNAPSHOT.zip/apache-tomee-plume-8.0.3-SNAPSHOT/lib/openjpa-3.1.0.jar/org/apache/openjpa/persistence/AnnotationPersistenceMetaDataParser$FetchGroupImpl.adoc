@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/AnnotationPersistenceMetaDataParser$FetchGroupImpl.class
-
- - link:AnnotationPersistenceMetaDataParser$FetchGroupImpl-asmified.java[Asmified]
-
-== References
-

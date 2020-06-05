@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/spring/HttpConduitBeanDefinitionParser.class
-
- - link:HttpConduitBeanDefinitionParser-asmified.java[Asmified]
-
-== References
-

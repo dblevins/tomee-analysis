@@ -1,6 +1,0 @@
-= jakarta/mail/MethodNotSupportedException.class
-
- - link:MethodNotSupportedException-asmified.java[Asmified]
-
-== References
-

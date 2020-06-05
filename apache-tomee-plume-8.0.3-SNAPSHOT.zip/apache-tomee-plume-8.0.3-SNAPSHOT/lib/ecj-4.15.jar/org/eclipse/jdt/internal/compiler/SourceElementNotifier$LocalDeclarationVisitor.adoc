@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/SourceElementNotifier$LocalDeclarationVisitor.class
-
- - link:SourceElementNotifier$LocalDeclarationVisitor-asmified.java[Asmified]
-
-== References
-

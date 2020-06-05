@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/blueprint/NamespaceHandlerRegisterer.class
-
- - link:NamespaceHandlerRegisterer-asmified.java[Asmified]
-
-== References
-

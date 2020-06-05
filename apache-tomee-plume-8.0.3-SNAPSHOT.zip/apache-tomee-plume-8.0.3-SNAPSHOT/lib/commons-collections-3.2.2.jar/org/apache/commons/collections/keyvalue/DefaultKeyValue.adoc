@@ -1,6 +1,0 @@
-= org/apache/commons/collections/keyvalue/DefaultKeyValue.class
-
- - link:DefaultKeyValue-asmified.java[Asmified]
-
-== References
-

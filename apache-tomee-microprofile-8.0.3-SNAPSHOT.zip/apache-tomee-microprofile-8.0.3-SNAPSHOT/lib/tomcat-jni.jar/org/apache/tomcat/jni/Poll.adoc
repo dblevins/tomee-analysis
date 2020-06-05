@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/Poll.class
-
- - link:Poll-asmified.java[Asmified]
-
-== References
-

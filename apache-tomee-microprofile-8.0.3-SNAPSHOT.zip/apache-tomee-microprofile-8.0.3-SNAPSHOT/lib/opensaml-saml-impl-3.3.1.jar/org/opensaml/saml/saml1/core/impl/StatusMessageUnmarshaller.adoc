@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/StatusMessageUnmarshaller.class
-
- - link:StatusMessageUnmarshaller-asmified.java[Asmified]
-
-== References
-

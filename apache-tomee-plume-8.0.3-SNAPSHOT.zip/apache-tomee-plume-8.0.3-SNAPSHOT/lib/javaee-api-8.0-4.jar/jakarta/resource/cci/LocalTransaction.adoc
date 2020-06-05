@@ -1,6 +1,0 @@
-= jakarta/resource/cci/LocalTransaction.class
-
- - link:LocalTransaction-asmified.java[Asmified]
-
-== References
-

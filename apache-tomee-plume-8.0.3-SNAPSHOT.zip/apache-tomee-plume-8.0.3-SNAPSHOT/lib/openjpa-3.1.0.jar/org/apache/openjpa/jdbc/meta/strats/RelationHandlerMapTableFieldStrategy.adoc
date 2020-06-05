@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/RelationHandlerMapTableFieldStrategy.class
-
- - link:RelationHandlerMapTableFieldStrategy-asmified.java[Asmified]
-
-== References
-

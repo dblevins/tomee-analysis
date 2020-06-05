@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/DirectKeyEncryptionAlgorithm.class
-
- - link:DirectKeyEncryptionAlgorithm-asmified.java[Asmified]
-
-== References
-

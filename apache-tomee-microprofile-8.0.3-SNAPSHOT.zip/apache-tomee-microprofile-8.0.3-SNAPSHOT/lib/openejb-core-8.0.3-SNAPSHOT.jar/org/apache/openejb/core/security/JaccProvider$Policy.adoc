@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/JaccProvider$Policy.class
-
- - link:JaccProvider$Policy-asmified.java[Asmified]
-
-== References
-

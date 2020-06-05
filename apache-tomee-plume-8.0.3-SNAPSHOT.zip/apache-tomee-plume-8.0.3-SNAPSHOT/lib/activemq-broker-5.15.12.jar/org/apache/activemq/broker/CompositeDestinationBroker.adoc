@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/CompositeDestinationBroker.class
-
- - link:CompositeDestinationBroker-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/OutFaultInterceptors.class
-
- - link:OutFaultInterceptors-asmified.java[Asmified]
-
-== References
-

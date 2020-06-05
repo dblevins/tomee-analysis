@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ValidateModules.class
-
- - link:ValidateModules-asmified.java[Asmified]
-
-== References
-

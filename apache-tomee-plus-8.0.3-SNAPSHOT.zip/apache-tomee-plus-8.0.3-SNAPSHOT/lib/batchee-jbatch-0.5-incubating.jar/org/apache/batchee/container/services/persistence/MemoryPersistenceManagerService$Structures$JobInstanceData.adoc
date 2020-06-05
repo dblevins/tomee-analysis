@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$Structures$JobInstanceData.class
-
- - link:MemoryPersistenceManagerService$Structures$JobInstanceData-asmified.java[Asmified]
-
-== References
-

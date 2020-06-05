@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/LogMetaInfUtils.class
-
- - link:LogMetaInfUtils-asmified.java[Asmified]
-
-== References
-

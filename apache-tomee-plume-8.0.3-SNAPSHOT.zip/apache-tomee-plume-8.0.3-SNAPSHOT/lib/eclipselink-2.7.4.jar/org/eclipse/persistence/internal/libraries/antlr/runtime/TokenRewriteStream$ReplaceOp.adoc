@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/TokenRewriteStream$ReplaceOp.class
-
- - link:TokenRewriteStream$ReplaceOp-asmified.java[Asmified]
-
-== References
-

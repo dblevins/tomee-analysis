@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/DataSourceHelper.class
-
- - link:DataSourceHelper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/ArrayUtil$DoubleArray.class
-
- - link:ArrayUtil$DoubleArray-asmified.java[Asmified]
-
-== References
-

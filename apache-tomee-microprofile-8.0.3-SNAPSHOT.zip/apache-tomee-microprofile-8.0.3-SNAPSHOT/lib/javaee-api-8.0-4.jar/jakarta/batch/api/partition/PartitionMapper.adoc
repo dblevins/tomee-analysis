@@ -1,6 +1,0 @@
-= jakarta/batch/api/partition/PartitionMapper.class
-
- - link:PartitionMapper-asmified.java[Asmified]
-
-== References
-

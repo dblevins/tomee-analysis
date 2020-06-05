@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/SwitchNodeImpl.class
-
- - link:SwitchNodeImpl-asmified.java[Asmified]
-
-== References
-

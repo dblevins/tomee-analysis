@@ -1,6 +1,0 @@
-= jakarta/el/PropertyNotWritableException.class
-
- - link:PropertyNotWritableException-asmified.java[Asmified]
-
-== References
-

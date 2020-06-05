@@ -1,6 +1,0 @@
-= org/apache/activemq/store/PList.class
-
- - link:PList-asmified.java[Asmified]
-
-== References
-

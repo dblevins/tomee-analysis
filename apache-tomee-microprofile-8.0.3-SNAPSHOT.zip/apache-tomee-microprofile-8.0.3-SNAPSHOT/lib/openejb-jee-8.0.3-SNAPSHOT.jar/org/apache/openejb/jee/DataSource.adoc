@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/DataSource.class
-
- - link:DataSource-asmified.java[Asmified]
-
-== References
-

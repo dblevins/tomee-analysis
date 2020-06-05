@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsSession.class
-
- - link:WsSession-asmified.java[Asmified]
-
-== References
-

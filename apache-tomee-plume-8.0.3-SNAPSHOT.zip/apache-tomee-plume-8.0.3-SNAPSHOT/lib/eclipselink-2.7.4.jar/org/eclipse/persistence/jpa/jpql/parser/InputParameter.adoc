@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InputParameter.class
-
- - link:InputParameter-asmified.java[Asmified]
-
-== References
-

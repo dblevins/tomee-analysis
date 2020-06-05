@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/util/XMLObjectChildrenList.class
-
- - link:XMLObjectChildrenList-asmified.java[Asmified]
-
-== References
-

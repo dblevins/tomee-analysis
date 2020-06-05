@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/ProtectionToken.class
-
- - link:ProtectionToken-asmified.java[Asmified]
-
-== References
-

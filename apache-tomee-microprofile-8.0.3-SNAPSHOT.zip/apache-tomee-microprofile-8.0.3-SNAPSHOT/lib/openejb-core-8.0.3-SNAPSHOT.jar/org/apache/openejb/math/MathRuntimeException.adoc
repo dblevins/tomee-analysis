@@ -1,6 +1,0 @@
-= org/apache/openejb/math/MathRuntimeException.class
-
- - link:MathRuntimeException-asmified.java[Asmified]
-
-== References
-

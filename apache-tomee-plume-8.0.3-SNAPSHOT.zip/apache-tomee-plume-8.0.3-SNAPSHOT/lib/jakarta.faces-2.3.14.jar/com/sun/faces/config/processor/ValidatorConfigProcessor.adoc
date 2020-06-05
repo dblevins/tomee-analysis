@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/ValidatorConfigProcessor.class
-
- - link:ValidatorConfigProcessor-asmified.java[Asmified]
-
-== References
-

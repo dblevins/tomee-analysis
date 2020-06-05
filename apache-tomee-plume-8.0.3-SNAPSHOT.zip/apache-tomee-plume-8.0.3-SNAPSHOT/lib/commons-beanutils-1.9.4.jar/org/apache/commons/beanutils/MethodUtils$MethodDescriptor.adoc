@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/MethodUtils$MethodDescriptor.class
-
- - link:MethodUtils$MethodDescriptor-asmified.java[Asmified]
-
-== References
-

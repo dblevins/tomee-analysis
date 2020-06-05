@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/Version.class
-
- - link:Version-asmified.java[Asmified]
-
-== References
-

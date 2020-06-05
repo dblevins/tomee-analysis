@@ -1,6 +1,0 @@
-= org/apache/openejb/util/AnnotationUtil.class
-
- - link:AnnotationUtil-asmified.java[Asmified]
-
-== References
-

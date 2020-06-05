@@ -1,6 +1,0 @@
-= org/apache/openejb/rest/MultivaluedMapWithCaseInsensitiveKeySet.class
-
- - link:MultivaluedMapWithCaseInsensitiveKeySet-asmified.java[Asmified]
-
-== References
-

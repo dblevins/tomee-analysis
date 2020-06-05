@@ -1,6 +1,0 @@
-= jakarta/faces/model/ResultSetDataModel.class
-
- - link:ResultSetDataModel-asmified.java[Asmified]
-
-== References
-

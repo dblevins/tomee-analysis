@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/StringLength.class
-
- - link:StringLength-asmified.java[Asmified]
-
-== References
-

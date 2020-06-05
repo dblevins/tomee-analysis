@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/CompositeBuilder$ForExecutable.class
-
- - link:CompositeBuilder$ForExecutable-asmified.java[Asmified]
-
-== References
-

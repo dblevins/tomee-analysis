@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/Audit.class
-
- - link:Audit-asmified.java[Asmified]
-
-== References
-

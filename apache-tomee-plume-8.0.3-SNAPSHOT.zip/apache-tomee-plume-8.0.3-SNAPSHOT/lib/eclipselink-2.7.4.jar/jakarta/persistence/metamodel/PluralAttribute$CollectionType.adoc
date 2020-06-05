@@ -1,6 +1,0 @@
-= jakarta/persistence/metamodel/PluralAttribute$CollectionType.class
-
- - link:PluralAttribute$CollectionType-asmified.java[Asmified]
-
-== References
-

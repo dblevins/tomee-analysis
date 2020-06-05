@@ -1,6 +1,0 @@
-= jakarta/ws/rs/HeaderParam.class
-
- - link:HeaderParam-asmified.java[Asmified]
-
-== References
-

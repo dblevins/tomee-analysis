@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext$SchemaContextInput.class
-
- - link:DynamicJAXBContext$SchemaContextInput-asmified.java[Asmified]
-
-== References
-

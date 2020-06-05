@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/action/AbstractDerivedAction.class
-
- - link:AbstractDerivedAction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/security/callback/CallbackHandlerProvider.class
-
- - link:CallbackHandlerProvider-asmified.java[Asmified]
-
-== References
-

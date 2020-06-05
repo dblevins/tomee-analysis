@@ -1,6 +1,0 @@
-= org/codehaus/stax2/osgi/Stax2ValidationSchemaFactoryProvider.class
-
- - link:Stax2ValidationSchemaFactoryProvider-asmified.java[Asmified]
-
-== References
-

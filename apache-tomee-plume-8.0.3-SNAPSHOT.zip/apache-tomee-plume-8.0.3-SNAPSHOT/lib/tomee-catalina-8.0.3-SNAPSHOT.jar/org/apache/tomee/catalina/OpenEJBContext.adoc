@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/OpenEJBContext.class
-
- - link:OpenEJBContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/AroundInvoke.class
-
- - link:AroundInvoke-asmified.java[Asmified]
-
-== References
-

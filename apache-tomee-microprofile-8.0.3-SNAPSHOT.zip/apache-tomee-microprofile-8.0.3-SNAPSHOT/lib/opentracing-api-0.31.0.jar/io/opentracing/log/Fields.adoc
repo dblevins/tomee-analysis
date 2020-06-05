@@ -1,6 +1,0 @@
-= io/opentracing/log/Fields.class
-
- - link:Fields-asmified.java[Asmified]
-
-== References
-

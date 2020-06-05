@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/OutputLabelTag.class
-
- - link:OutputLabelTag-asmified.java[Asmified]
-
-== References
-

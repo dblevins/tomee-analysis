@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/tools/ResolvingParser.class
-
- - link:ResolvingParser-asmified.java[Asmified]
-
-== References
-

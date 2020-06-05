@@ -1,7 +1,0 @@
-= jakarta/ejb/SessionContext.class
-
- - link:SessionContext-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.handler.MessageContext - 1

@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/SingletonService.class
-
- - link:SingletonService-asmified.java[Asmified]
-
-== References
-

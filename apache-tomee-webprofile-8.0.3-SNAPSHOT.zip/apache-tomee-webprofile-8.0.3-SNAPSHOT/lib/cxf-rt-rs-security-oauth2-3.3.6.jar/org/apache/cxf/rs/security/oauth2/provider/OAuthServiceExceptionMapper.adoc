@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/OAuthServiceExceptionMapper.class
-
- - link:OAuthServiceExceptionMapper-asmified.java[Asmified]
-
-== References
-

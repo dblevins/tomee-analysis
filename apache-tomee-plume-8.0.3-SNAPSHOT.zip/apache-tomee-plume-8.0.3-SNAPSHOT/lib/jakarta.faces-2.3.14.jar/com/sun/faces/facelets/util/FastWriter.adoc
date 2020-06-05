@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/util/FastWriter.class
-
- - link:FastWriter-asmified.java[Asmified]
-
-== References
-

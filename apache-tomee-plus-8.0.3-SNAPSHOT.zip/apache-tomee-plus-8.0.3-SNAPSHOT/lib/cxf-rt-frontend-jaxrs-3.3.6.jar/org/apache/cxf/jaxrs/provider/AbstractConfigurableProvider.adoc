@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.class
-
- - link:AbstractConfigurableProvider-asmified.java[Asmified]
-
-== References
-

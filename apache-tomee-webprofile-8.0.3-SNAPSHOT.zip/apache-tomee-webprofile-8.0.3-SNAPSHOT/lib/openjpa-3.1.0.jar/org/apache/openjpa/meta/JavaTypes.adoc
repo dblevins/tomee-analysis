@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/JavaTypes.class
-
- - link:JavaTypes-asmified.java[Asmified]
-
-== References
-

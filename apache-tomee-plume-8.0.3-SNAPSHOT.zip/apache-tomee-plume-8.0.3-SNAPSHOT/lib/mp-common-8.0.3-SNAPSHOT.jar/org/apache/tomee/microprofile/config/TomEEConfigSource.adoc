@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/config/TomEEConfigSource.class
-
- - link:TomEEConfigSource-asmified.java[Asmified]
-
-== References
-

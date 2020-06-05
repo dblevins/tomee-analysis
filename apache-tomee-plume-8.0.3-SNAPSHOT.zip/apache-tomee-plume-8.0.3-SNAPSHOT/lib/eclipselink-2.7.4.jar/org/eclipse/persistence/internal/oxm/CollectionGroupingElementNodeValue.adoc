@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/CollectionGroupingElementNodeValue.class
-
- - link:CollectionGroupingElementNodeValue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/HeapDump.class
-
- - link:HeapDump-asmified.java[Asmified]
-
-== References
-

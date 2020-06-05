@@ -1,6 +1,0 @@
-= org/opensaml/soap/client/SOAPClientException.class
-
- - link:SOAPClientException-asmified.java[Asmified]
-
-== References
-

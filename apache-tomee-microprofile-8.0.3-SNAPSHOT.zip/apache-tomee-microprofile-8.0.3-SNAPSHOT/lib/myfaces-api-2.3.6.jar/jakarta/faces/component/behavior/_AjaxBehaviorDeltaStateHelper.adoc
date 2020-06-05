@@ -1,6 +1,0 @@
-= jakarta/faces/component/behavior/_AjaxBehaviorDeltaStateHelper.class
-
- - link:_AjaxBehaviorDeltaStateHelper-asmified.java[Asmified]
-
-== References
-

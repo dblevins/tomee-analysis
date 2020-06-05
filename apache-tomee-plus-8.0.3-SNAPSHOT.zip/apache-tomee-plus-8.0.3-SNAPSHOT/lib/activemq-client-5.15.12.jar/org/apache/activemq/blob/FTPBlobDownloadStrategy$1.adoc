@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/FTPBlobDownloadStrategy$1.class
-
- - link:FTPBlobDownloadStrategy$1-asmified.java[Asmified]
-
-== References
-

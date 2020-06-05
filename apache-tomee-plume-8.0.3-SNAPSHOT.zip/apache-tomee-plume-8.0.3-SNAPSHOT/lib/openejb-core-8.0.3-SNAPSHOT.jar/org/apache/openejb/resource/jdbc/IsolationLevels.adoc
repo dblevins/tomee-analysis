@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/IsolationLevels.class
-
- - link:IsolationLevels-asmified.java[Asmified]
-
-== References
-

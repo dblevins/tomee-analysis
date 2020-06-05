@@ -1,8 +1,0 @@
-= javax/management/j2ee/statistics/JTAStats.class
-
- - link:JTAStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.CountStatistic - 3
- - javax.management.j2ee.statistics.Stats - 1

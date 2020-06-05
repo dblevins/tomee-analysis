@@ -1,6 +1,0 @@
-= org/hsqldb/server/ServerAcl.class
-
- - link:ServerAcl-asmified.java[Asmified]
-
-== References
-

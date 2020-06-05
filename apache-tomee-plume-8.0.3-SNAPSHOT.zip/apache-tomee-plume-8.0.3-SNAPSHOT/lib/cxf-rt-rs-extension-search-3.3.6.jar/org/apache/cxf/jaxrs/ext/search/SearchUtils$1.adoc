@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/SearchUtils$1.class
-
- - link:SearchUtils$1-asmified.java[Asmified]
-
-== References
-

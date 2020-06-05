@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/calendar/WeeklyCalendar.class
-
- - link:WeeklyCalendar-asmified.java[Asmified]
-
-== References
-

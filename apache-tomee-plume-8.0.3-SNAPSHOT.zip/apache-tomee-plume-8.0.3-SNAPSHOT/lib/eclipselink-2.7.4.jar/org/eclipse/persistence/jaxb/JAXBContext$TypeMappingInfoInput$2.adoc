@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBContext$TypeMappingInfoInput$2.class
-
- - link:JAXBContext$TypeMappingInfoInput$2-asmified.java[Asmified]
-
-== References
-

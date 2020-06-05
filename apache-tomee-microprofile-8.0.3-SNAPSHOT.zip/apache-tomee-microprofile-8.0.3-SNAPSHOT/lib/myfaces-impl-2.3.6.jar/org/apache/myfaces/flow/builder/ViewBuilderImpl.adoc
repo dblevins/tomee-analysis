@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/builder/ViewBuilderImpl.class
-
- - link:ViewBuilderImpl-asmified.java[Asmified]
-
-== References
-

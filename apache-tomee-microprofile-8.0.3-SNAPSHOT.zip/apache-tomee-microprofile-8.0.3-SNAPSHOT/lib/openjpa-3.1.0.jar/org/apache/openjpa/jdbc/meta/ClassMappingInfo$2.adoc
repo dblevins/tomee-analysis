@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/ClassMappingInfo$2.class
-
- - link:ClassMappingInfo$2-asmified.java[Asmified]
-
-== References
-

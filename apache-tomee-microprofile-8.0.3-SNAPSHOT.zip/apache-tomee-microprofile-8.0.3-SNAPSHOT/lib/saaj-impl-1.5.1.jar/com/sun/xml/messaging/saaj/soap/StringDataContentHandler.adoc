@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/StringDataContentHandler.class
-
- - link:StringDataContentHandler-asmified.java[Asmified]
-
-== References
-

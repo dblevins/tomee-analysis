@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/config/JCEAlgorithmMapper.class
-
- - link:JCEAlgorithmMapper-asmified.java[Asmified]
-
-== References
-

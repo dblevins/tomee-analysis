@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/core/UrlSupport.class
-
- - link:UrlSupport-asmified.java[Asmified]
-
-== References
-

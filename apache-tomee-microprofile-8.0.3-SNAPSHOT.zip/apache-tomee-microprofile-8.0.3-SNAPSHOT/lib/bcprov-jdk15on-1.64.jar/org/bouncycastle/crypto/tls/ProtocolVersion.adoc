@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/ProtocolVersion.class
-
- - link:ProtocolVersion-asmified.java[Asmified]
-
-== References
-

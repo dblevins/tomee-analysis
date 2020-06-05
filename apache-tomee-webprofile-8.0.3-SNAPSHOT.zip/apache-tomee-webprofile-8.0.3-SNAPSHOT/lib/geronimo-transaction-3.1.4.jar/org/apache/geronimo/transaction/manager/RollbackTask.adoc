@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/RollbackTask.class
-
- - link:RollbackTask-asmified.java[Asmified]
-
-== References
-

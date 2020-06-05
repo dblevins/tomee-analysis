@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/ClusterMetaDataUpdated.class
-
- - link:ClusterMetaDataUpdated-asmified.java[Asmified]
-
-== References
-

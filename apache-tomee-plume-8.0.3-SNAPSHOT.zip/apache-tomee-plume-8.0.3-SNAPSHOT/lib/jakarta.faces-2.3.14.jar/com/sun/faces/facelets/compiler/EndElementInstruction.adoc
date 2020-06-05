@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/EndElementInstruction.class
-
- - link:EndElementInstruction-asmified.java[Asmified]
-
-== References
-

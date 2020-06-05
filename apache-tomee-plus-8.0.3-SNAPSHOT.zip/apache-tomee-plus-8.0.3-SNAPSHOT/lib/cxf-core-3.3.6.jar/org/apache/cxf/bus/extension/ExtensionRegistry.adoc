@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/extension/ExtensionRegistry.class
-
- - link:ExtensionRegistry-asmified.java[Asmified]
-
-== References
-

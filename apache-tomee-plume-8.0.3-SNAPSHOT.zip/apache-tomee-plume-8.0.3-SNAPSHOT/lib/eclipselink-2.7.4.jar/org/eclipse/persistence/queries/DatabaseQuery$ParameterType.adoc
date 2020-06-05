@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/DatabaseQuery$ParameterType.class
-
- - link:DatabaseQuery$ParameterType-asmified.java[Asmified]
-
-== References
-

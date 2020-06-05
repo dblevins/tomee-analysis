@@ -1,6 +1,0 @@
-= com/sun/faces/util/FacesLogger.class
-
- - link:FacesLogger-asmified.java[Asmified]
-
-== References
-

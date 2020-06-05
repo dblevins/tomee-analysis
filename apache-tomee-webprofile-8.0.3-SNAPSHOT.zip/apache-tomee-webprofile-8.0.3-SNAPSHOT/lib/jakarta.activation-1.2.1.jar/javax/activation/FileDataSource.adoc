@@ -1,9 +1,0 @@
-= javax/activation/FileDataSource.class
-
- - link:FileDataSource-asmified.java[Asmified]
-
-== References
-
- - javax.activation.FileTypeMap - 10
- - javax.activation.FileDataSource - 1
- - javax.activation.DataSource - 1

@@ -1,6 +1,0 @@
-= jakarta/xml/ws/Response.class
-
- - link:Response-asmified.java[Asmified]
-
-== References
-

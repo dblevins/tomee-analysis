@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/principal/JWTCallerPrincipal.class
-
- - link:JWTCallerPrincipal-asmified.java[Asmified]
-
-== References
-

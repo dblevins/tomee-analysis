@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/Options$NullOptions.class
-
- - link:Options$NullOptions-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/Record.class
-
- - link:Record-asmified.java[Asmified]
-
-== References
-

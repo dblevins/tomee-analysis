@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/FacetHandler.class
-
- - link:FacetHandler-asmified.java[Asmified]
-
-== References
-

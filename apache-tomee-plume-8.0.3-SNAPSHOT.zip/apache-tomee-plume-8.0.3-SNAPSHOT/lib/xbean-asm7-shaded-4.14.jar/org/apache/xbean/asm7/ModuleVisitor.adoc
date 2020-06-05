@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/ModuleVisitor.class
-
- - link:ModuleVisitor-asmified.java[Asmified]
-
-== References
-

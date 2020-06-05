@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/search/RootSearchKeywordResolver.class
-
- - link:RootSearchKeywordResolver-asmified.java[Asmified]
-
-== References
-

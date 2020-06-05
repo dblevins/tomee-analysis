@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PNonTransState.class
-
- - link:PNonTransState-asmified.java[Asmified]
-
-== References
-

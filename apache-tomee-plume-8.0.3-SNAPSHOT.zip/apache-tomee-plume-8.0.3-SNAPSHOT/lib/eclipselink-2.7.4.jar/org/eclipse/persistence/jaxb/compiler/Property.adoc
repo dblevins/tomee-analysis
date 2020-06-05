@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/Property.class
-
- - link:Property-asmified.java[Asmified]
-
-== References
-

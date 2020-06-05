@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/DataStreamMarshaller.class
-
- - link:DataStreamMarshaller-asmified.java[Asmified]
-
-== References
-

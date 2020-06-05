@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/ClassRedefiner.class
-
- - link:ClassRedefiner-asmified.java[Asmified]
-
-== References
-

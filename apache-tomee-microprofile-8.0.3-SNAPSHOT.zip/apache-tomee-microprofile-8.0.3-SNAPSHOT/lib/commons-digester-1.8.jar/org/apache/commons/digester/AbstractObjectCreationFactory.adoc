@@ -1,6 +1,0 @@
-= org/apache/commons/digester/AbstractObjectCreationFactory.class
-
- - link:AbstractObjectCreationFactory-asmified.java[Asmified]
-
-== References
-

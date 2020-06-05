@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/MaxDBJDBCAdapter.class
-
- - link:MaxDBJDBCAdapter-asmified.java[Asmified]
-
-== References
-

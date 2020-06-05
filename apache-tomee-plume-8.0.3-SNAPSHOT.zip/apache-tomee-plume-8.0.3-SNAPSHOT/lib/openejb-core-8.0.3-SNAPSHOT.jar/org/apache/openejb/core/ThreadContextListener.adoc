@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ThreadContextListener.class
-
- - link:ThreadContextListener-asmified.java[Asmified]
-
-== References
-

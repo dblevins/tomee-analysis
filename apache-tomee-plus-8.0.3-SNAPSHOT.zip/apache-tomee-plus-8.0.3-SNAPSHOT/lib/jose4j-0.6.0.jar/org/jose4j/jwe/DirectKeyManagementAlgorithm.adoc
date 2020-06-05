@@ -1,6 +1,0 @@
-= org/jose4j/jwe/DirectKeyManagementAlgorithm.class
-
- - link:DirectKeyManagementAlgorithm-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/managedproperty/ManagedPropertyProducer.class
-
- - link:ManagedPropertyProducer-asmified.java[Asmified]
-
-== References
-

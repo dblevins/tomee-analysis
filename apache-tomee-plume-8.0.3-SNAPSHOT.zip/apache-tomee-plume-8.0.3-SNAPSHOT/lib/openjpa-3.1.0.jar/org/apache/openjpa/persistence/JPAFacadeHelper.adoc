@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/JPAFacadeHelper.class
-
- - link:JPAFacadeHelper-asmified.java[Asmified]
-
-== References
-

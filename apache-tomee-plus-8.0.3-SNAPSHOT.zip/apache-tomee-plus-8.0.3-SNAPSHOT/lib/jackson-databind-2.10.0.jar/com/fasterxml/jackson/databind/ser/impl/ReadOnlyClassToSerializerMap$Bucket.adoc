@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/impl/ReadOnlyClassToSerializerMap$Bucket.class
-
- - link:ReadOnlyClassToSerializerMap$Bucket-asmified.java[Asmified]
-
-== References
-

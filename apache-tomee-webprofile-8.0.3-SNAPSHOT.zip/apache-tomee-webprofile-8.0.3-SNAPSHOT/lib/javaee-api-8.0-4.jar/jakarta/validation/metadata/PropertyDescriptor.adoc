@@ -1,6 +1,0 @@
-= jakarta/validation/metadata/PropertyDescriptor.class
-
- - link:PropertyDescriptor-asmified.java[Asmified]
-
-== References
-

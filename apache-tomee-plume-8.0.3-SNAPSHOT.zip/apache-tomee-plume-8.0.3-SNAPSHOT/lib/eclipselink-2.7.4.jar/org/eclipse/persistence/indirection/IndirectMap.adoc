@@ -1,6 +1,0 @@
-= org/eclipse/persistence/indirection/IndirectMap.class
-
- - link:IndirectMap-asmified.java[Asmified]
-
-== References
-

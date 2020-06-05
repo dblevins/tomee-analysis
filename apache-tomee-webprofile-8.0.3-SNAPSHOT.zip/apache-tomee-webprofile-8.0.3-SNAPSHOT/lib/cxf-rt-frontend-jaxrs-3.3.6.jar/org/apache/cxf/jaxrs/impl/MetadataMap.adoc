@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/MetadataMap.class
-
- - link:MetadataMap-asmified.java[Asmified]
-
-== References
-

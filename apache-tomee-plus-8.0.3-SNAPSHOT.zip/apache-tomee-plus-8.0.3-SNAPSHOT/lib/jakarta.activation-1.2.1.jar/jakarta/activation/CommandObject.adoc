@@ -1,6 +1,0 @@
-= jakarta/activation/CommandObject.class
-
- - link:CommandObject-asmified.java[Asmified]
-
-== References
-

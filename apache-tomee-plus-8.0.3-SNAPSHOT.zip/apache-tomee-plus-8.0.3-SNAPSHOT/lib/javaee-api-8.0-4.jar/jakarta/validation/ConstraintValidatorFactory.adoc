@@ -1,6 +1,0 @@
-= jakarta/validation/ConstraintValidatorFactory.class
-
- - link:ConstraintValidatorFactory-asmified.java[Asmified]
-
-== References
-

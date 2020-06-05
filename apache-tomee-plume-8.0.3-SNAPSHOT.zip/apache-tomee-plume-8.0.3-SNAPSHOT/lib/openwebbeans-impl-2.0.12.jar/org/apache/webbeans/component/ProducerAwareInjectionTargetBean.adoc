@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/ProducerAwareInjectionTargetBean.class
-
- - link:ProducerAwareInjectionTargetBean-asmified.java[Asmified]
-
-== References
-

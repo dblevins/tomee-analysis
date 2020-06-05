@@ -1,6 +1,0 @@
-= org/hsqldb/lib/InputStreamInterface.class
-
- - link:InputStreamInterface-asmified.java[Asmified]
-
-== References
-

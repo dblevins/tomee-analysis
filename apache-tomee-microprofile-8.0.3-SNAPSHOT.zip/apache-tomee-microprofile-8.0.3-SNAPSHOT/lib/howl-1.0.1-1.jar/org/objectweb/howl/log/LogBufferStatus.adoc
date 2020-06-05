@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogBufferStatus.class
-
- - link:LogBufferStatus-asmified.java[Asmified]
-
-== References
-

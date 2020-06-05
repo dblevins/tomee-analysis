@@ -1,6 +1,0 @@
-= jakarta/resource/cci/ConnectionMetaData.class
-
- - link:ConnectionMetaData-asmified.java[Asmified]
-
-== References
-

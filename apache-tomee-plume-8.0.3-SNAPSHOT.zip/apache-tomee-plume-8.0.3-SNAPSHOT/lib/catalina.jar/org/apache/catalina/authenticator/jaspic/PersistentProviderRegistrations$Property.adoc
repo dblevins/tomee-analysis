@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/jaspic/PersistentProviderRegistrations$Property.class
-
- - link:PersistentProviderRegistrations$Property-asmified.java[Asmified]
-
-== References
-

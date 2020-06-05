@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/PredicateDecorator.class
-
- - link:PredicateDecorator-asmified.java[Asmified]
-
-== References
-

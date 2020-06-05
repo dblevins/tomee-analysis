@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WrappedMessageHandler.class
-
- - link:WrappedMessageHandler-asmified.java[Asmified]
-
-== References
-

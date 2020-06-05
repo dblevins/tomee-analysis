@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/IndexExpression.class
-
- - link:IndexExpression-asmified.java[Asmified]
-
-== References
-

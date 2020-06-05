@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/ClientBehaviorHandler.class
-
- - link:ClientBehaviorHandler-asmified.java[Asmified]
-
-== References
-

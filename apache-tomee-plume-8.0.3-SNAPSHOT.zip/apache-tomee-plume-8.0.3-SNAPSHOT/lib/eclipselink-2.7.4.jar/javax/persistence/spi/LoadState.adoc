@@ -1,7 +1,0 @@
-= javax/persistence/spi/LoadState.class
-
- - link:LoadState-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.spi.LoadState - 25

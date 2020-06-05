@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/enums/Explode.class
-
- - link:Explode-asmified.java[Asmified]
-
-== References
-

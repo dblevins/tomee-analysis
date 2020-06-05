@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/VariableResolverImpl.class
-
- - link:VariableResolverImpl-asmified.java[Asmified]
-
-== References
-

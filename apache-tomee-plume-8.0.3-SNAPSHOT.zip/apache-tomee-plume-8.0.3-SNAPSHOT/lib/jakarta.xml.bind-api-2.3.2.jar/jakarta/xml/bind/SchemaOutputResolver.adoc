@@ -1,6 +1,0 @@
-= jakarta/xml/bind/SchemaOutputResolver.class
-
- - link:SchemaOutputResolver-asmified.java[Asmified]
-
-== References
-

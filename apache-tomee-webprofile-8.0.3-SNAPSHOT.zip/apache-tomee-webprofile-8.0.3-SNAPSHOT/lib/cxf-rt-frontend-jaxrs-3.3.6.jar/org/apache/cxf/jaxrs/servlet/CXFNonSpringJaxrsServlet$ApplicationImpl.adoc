@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/servlet/CXFNonSpringJaxrsServlet$ApplicationImpl.class
-
- - link:CXFNonSpringJaxrsServlet$ApplicationImpl-asmified.java[Asmified]
-
-== References
-

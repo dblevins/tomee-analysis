@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/SessionScopedBeanInterceptorHandler.class
-
- - link:SessionScopedBeanInterceptorHandler-asmified.java[Asmified]
-
-== References
-

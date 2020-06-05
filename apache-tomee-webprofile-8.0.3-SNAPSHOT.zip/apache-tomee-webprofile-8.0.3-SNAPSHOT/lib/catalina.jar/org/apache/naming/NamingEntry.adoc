@@ -1,6 +1,0 @@
-= org/apache/naming/NamingEntry.class
-
- - link:NamingEntry-asmified.java[Asmified]
-
-== References
-

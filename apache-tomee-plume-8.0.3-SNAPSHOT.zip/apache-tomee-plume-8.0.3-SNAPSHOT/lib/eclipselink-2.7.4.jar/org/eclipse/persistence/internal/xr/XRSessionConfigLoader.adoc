@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRSessionConfigLoader.class
-
- - link:XRSessionConfigLoader-asmified.java[Asmified]
-
-== References
-

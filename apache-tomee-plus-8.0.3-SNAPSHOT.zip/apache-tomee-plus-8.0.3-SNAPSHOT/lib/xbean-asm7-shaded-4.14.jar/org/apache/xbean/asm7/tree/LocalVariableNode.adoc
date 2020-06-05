@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/LocalVariableNode.class
-
- - link:LocalVariableNode-asmified.java[Asmified]
-
-== References
-

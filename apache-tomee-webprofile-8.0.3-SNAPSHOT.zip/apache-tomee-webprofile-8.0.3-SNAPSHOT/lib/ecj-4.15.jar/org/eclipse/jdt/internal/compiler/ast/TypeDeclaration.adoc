@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/TypeDeclaration.class
-
- - link:TypeDeclaration-asmified.java[Asmified]
-
-== References
-

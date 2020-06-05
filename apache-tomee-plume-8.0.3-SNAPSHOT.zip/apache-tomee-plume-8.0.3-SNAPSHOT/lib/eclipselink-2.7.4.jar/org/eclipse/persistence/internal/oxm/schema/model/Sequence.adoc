@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/schema/model/Sequence.class
-
- - link:Sequence-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/ClasspathJep247Jdk12$2.class
-
- - link:ClasspathJep247Jdk12$2-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/securityToken/X509PKIPathv1SecurityTokenImpl.class
-
- - link:X509PKIPathv1SecurityTokenImpl-asmified.java[Asmified]
-
-== References
-

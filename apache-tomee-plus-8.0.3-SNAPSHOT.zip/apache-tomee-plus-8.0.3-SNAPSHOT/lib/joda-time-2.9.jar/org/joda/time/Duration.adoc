@@ -1,6 +1,0 @@
-= org/joda/time/Duration.class
-
- - link:Duration-asmified.java[Asmified]
-
-== References
-

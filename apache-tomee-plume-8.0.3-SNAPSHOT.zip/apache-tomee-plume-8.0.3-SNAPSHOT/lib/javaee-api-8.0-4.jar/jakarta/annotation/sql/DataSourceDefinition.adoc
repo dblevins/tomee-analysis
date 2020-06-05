@@ -1,6 +1,0 @@
-= jakarta/annotation/sql/DataSourceDefinition.class
-
- - link:DataSourceDefinition-asmified.java[Asmified]
-
-== References
-

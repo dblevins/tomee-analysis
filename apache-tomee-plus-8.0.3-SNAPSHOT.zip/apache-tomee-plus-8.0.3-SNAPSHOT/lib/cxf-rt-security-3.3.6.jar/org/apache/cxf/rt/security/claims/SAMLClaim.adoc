@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/claims/SAMLClaim.class
-
- - link:SAMLClaim-asmified.java[Asmified]
-
-== References
-

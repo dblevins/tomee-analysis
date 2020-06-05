@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/io/DataReaderImpl.class
-
- - link:DataReaderImpl-asmified.java[Asmified]
-
-== References
-

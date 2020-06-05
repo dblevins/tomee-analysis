@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/OpensStatement.class
-
- - link:OpensStatement-asmified.java[Asmified]
-
-== References
-

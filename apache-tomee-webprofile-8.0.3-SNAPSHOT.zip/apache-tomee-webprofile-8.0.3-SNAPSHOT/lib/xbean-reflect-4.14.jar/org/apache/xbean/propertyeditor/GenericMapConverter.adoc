@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/GenericMapConverter.class
-
- - link:GenericMapConverter-asmified.java[Asmified]
-
-== References
-

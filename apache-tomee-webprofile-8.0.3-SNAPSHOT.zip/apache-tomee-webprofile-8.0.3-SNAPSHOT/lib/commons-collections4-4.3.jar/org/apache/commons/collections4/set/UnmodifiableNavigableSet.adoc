@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/set/UnmodifiableNavigableSet.class
-
- - link:UnmodifiableNavigableSet-asmified.java[Asmified]
-
-== References
-

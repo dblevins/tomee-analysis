@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/annotation/constraint/Unmodifiable.class
-
- - link:Unmodifiable-asmified.java[Asmified]
-
-== References
-

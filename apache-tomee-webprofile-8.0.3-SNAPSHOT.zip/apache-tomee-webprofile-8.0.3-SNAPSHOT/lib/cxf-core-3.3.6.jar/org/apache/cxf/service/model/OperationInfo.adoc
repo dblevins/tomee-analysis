@@ -1,6 +1,0 @@
-= org/apache/cxf/service/model/OperationInfo.class
-
- - link:OperationInfo-asmified.java[Asmified]
-
-== References
-

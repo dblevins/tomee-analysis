@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/LambdaExpression$LocalTypeSubstitutor.class
-
- - link:LambdaExpression$LocalTypeSubstitutor-asmified.java[Asmified]
-
-== References
-

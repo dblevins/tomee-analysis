@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v8/JournalTraceMarshaller.class
-
- - link:JournalTraceMarshaller-asmified.java[Asmified]
-
-== References
-

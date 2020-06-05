@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/X509TokenAssertionState$1.class
-
- - link:X509TokenAssertionState$1-asmified.java[Asmified]
-
-== References
-

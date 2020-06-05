@@ -1,6 +1,0 @@
-= org/apache/activemq/network/NetworkBridge.class
-
- - link:NetworkBridge-asmified.java[Asmified]
-
-== References
-

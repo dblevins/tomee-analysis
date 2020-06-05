@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ViewPoolMappingImpl.class
-
- - link:ViewPoolMappingImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/mail/EventQueue$PendingEvent.class
-
- - link:EventQueue$PendingEvent-asmified.java[Asmified]
-
-== References
-

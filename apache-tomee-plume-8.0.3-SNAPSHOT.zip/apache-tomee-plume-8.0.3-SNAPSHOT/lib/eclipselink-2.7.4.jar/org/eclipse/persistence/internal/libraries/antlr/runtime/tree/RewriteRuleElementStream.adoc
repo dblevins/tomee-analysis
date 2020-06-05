@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/RewriteRuleElementStream.class
-
- - link:RewriteRuleElementStream-asmified.java[Asmified]
-
-== References
-

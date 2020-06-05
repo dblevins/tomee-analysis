@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/UnmarshallerProperties.class
-
- - link:UnmarshallerProperties-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/impl/JaxRsHeaderTextMap.class
-
- - link:JaxRsHeaderTextMap-asmified.java[Asmified]
-
-== References
-

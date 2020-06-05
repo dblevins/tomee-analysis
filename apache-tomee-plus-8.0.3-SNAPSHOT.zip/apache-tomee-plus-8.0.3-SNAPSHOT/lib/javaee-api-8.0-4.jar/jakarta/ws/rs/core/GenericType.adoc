@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/GenericType.class
-
- - link:GenericType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/PersistenceCapable.class
-
- - link:PersistenceCapable-asmified.java[Asmified]
-
-== References
-

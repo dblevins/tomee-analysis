@@ -1,6 +1,0 @@
-= serp/bytecode/Local.class
-
- - link:Local-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/TemplateContext.class
-
- - link:TemplateContext-asmified.java[Asmified]
-
-== References
-

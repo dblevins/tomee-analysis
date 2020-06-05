@@ -1,6 +1,0 @@
-= com/ctc/wstx/sr/CompactNsContext.class
-
- - link:CompactNsContext-asmified.java[Asmified]
-
-== References
-

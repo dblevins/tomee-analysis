@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/util/DefaultLiteral.class
-
- - link:DefaultLiteral-asmified.java[Asmified]
-
-== References
-

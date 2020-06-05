@@ -1,6 +1,0 @@
-= org/apache/commons/collections/TransformerUtils.class
-
- - link:TransformerUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/DefaultResourceHandlerSupport.class
-
- - link:DefaultResourceHandlerSupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/StandardJAXBObjects$URIJAXB.class
-
- - link:StandardJAXBObjects$URIJAXB-asmified.java[Asmified]
-
-== References
-

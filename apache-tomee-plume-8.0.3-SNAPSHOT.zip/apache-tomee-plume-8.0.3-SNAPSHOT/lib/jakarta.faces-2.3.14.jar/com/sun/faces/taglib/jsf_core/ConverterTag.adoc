@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/ConverterTag.class
-
- - link:ConverterTag-asmified.java[Asmified]
-
-== References
-

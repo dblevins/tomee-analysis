@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/StreamReadFeature.class
-
- - link:StreamReadFeature-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/SDOChangeSummary.class
-
- - link:SDOChangeSummary-asmified.java[Asmified]
-
-== References
-

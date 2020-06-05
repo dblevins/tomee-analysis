@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/Files$DeleteThread.class
-
- - link:Files$DeleteThread-asmified.java[Asmified]
-
-== References
-

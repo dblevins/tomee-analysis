@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Log4jPrintWriter.class
-
- - link:Log4jPrintWriter-asmified.java[Asmified]
-
-== References
-

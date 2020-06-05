@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/jaas/UserPrincipal.class
-
- - link:UserPrincipal-asmified.java[Asmified]
-
-== References
-

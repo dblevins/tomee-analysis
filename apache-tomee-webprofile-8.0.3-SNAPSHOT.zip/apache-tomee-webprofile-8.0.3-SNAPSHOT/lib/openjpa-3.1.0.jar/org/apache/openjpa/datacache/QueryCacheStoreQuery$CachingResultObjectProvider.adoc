@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/QueryCacheStoreQuery$CachingResultObjectProvider.class
-
- - link:QueryCacheStoreQuery$CachingResultObjectProvider-asmified.java[Asmified]
-
-== References
-

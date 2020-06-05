@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MethodParamPartsMapping$JAXB.class
-
- - link:MethodParamPartsMapping$JAXB-asmified.java[Asmified]
-
-== References
-

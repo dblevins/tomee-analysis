@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/EncryptedElements.class
-
- - link:EncryptedElements-asmified.java[Asmified]
-
-== References
-

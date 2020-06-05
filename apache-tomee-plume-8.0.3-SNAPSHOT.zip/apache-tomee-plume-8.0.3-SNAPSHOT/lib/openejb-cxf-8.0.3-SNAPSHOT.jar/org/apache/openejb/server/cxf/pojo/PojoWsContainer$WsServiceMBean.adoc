@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/pojo/PojoWsContainer$WsServiceMBean.class
-
- - link:PojoWsContainer$WsServiceMBean-asmified.java[Asmified]
-
-== References
-

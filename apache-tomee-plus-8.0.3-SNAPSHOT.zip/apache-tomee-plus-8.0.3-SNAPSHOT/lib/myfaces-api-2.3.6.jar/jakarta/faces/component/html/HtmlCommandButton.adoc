@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlCommandButton.class
-
- - link:HtmlCommandButton-asmified.java[Asmified]
-
-== References
-

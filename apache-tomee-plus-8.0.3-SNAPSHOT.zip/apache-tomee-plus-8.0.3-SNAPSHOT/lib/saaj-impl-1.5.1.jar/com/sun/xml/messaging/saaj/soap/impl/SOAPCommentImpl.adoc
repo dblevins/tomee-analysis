@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/impl/SOAPCommentImpl.class
-
- - link:SOAPCommentImpl-asmified.java[Asmified]
-
-== References
-

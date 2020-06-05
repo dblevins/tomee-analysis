@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CxfRsHttpListener$2.class
-
- - link:CxfRsHttpListener$2-asmified.java[Asmified]
-
-== References
-

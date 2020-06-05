@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/StartTask.class
-
- - link:StartTask-asmified.java[Asmified]
-
-== References
-

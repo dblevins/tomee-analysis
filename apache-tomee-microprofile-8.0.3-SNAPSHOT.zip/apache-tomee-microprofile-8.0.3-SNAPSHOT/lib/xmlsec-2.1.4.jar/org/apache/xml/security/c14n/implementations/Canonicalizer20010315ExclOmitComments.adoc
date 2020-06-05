@@ -1,6 +1,0 @@
-= org/apache/xml/security/c14n/implementations/Canonicalizer20010315ExclOmitComments.class
-
- - link:Canonicalizer20010315ExclOmitComments-asmified.java[Asmified]
-
-== References
-

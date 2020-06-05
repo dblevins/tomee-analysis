@@ -1,6 +1,0 @@
-= org/hsqldb/lib/HsqlTimer.class
-
- - link:HsqlTimer-asmified.java[Asmified]
-
-== References
-

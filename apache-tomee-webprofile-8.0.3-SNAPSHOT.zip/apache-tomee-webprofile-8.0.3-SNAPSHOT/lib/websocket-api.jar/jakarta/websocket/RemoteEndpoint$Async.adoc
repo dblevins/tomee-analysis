@@ -1,6 +1,0 @@
-= jakarta/websocket/RemoteEndpoint$Async.class
-
- - link:RemoteEndpoint$Async-asmified.java[Asmified]
-
-== References
-

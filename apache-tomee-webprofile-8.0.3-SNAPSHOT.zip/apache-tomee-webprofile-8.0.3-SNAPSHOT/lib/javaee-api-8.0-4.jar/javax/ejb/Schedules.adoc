@@ -1,7 +1,0 @@
-= javax/ejb/Schedules.class
-
- - link:Schedules-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.Schedule - 1

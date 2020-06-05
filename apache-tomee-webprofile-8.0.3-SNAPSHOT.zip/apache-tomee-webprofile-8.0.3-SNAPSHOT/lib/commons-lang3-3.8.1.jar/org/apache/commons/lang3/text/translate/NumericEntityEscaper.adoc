@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/translate/NumericEntityEscaper.class
-
- - link:NumericEntityEscaper-asmified.java[Asmified]
-
-== References
-

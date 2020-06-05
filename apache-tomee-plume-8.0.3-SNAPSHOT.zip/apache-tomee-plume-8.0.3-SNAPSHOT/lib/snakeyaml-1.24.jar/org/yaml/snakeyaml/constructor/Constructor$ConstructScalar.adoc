@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/constructor/Constructor$ConstructScalar.class
-
- - link:Constructor$ConstructScalar-asmified.java[Asmified]
-
-== References
-

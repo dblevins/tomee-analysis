@@ -1,6 +1,0 @@
-= org/apache/openjpa/instrumentation/DataCacheInstrument.class
-
- - link:DataCacheInstrument-asmified.java[Asmified]
-
-== References
-

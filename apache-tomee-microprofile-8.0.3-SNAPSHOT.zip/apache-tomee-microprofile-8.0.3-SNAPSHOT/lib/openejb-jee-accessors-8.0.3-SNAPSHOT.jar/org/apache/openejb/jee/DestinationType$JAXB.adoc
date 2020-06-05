@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/DestinationType$JAXB.class
-
- - link:DestinationType$JAXB-asmified.java[Asmified]
-
-== References
-

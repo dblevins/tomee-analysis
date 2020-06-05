@@ -1,7 +1,0 @@
-= javax/jms/MessageListener.class
-
- - link:MessageListener-asmified.java[Asmified]
-
-== References
-
- - javax.jms.Message - 1

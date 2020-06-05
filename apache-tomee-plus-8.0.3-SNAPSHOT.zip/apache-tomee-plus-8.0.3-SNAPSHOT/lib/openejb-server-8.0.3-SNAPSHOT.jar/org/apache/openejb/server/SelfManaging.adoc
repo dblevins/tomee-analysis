@@ -1,6 +1,0 @@
-= org/apache/openejb/server/SelfManaging.class
-
- - link:SelfManaging-asmified.java[Asmified]
-
-== References
-

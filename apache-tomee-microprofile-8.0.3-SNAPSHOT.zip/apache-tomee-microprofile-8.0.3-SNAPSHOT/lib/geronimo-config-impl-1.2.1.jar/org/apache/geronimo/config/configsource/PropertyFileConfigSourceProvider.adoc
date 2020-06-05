@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/configsource/PropertyFileConfigSourceProvider.class
-
- - link:PropertyFileConfigSourceProvider-asmified.java[Asmified]
-
-== References
-

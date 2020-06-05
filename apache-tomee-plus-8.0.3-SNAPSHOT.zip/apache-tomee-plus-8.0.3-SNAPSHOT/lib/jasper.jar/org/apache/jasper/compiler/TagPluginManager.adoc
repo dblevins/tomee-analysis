@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/TagPluginManager.class
-
- - link:TagPluginManager-asmified.java[Asmified]
-
-== References
-

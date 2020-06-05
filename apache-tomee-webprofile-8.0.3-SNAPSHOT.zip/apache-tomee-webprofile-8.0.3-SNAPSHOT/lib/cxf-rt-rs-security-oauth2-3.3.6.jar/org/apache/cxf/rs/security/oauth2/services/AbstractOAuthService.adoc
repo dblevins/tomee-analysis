@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.class
-
- - link:AbstractOAuthService-asmified.java[Asmified]
-
-== References
-

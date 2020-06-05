@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/InactivityIOException.class
-
- - link:InactivityIOException-asmified.java[Asmified]
-
-== References
-

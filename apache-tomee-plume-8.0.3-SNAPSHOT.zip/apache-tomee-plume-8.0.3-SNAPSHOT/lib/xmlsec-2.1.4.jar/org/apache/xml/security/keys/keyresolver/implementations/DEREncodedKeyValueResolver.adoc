@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/keyresolver/implementations/DEREncodedKeyValueResolver.class
-
- - link:DEREncodedKeyValueResolver-asmified.java[Asmified]
-
-== References
-

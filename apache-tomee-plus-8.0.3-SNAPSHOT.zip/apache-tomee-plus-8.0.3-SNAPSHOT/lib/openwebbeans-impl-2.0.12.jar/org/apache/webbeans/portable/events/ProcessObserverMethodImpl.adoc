@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessObserverMethodImpl.class
-
- - link:ProcessObserverMethodImpl-asmified.java[Asmified]
-
-== References
-

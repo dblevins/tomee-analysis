@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/ECFieldElement.class
-
- - link:ECFieldElement-asmified.java[Asmified]
-
-== References
-

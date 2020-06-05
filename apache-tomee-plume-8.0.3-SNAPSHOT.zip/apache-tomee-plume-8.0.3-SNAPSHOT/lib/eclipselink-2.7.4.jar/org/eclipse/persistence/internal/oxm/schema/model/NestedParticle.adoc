@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/schema/model/NestedParticle.class
-
- - link:NestedParticle-asmified.java[Asmified]
-
-== References
-

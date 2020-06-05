@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/DataModelClassesMapProducer.class
-
- - link:DataModelClassesMapProducer-asmified.java[Asmified]
-
-== References
-

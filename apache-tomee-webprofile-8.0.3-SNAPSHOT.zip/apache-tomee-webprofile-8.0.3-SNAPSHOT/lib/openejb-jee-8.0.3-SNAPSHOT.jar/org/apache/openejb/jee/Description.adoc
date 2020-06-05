@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Description.class
-
- - link:Description-asmified.java[Asmified]
-
-== References
-

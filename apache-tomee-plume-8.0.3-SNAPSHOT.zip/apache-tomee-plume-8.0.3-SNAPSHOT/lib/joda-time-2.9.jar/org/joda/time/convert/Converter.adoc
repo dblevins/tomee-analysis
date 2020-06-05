@@ -1,6 +1,0 @@
-= org/joda/time/convert/Converter.class
-
- - link:Converter-asmified.java[Asmified]
-
-== References
-

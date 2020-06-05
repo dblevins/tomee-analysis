@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/AbstractThreadLocalProxy.class
-
- - link:AbstractThreadLocalProxy-asmified.java[Asmified]
-
-== References
-

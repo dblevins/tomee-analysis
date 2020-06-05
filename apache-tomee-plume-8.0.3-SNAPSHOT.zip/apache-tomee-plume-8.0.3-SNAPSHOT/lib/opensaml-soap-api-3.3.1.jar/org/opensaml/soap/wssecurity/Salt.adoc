@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/Salt.class
-
- - link:Salt-asmified.java[Asmified]
-
-== References
-

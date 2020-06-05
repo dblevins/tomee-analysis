@@ -1,6 +1,0 @@
-= org/apache/cxf/resource/ResourceResolver.class
-
- - link:ResourceResolver-asmified.java[Asmified]
-
-== References
-

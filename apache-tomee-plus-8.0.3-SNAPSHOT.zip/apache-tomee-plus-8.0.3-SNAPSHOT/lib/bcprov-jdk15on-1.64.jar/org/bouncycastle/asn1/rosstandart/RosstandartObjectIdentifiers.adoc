@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/rosstandart/RosstandartObjectIdentifiers.class
-
- - link:RosstandartObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

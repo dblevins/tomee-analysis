@@ -1,7 +1,0 @@
-= javax/xml/bind/annotation/XmlAccessType.class
-
- - link:XmlAccessType-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.annotation.XmlAccessType - 31

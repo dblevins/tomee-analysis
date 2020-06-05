@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/WSDLBuilder.class
-
- - link:WSDLBuilder-asmified.java[Asmified]
-
-== References
-

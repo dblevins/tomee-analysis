@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/InitiatorTokenBuilder.class
-
- - link:InitiatorTokenBuilder-asmified.java[Asmified]
-
-== References
-

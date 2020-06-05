@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ValueHolderRule.class
-
- - link:ValueHolderRule-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/RestCsrfPreventionFilter$StateChangingRequest.class
-
- - link:RestCsrfPreventionFilter$StateChangingRequest-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/JavaVersions.class
-
- - link:JavaVersions-asmified.java[Asmified]
-
-== References
-

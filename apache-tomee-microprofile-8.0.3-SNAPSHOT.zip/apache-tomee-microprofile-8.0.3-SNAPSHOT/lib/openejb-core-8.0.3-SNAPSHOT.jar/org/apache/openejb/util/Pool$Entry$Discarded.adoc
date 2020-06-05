@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Pool$Entry$Discarded.class
-
- - link:Pool$Entry$Discarded-asmified.java[Asmified]
-
-== References
-

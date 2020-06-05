@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/ListenerForHandler.class
-
- - link:ListenerForHandler-asmified.java[Asmified]
-
-== References
-

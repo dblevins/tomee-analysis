@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/util/XMLAttributeSupport.class
-
- - link:XMLAttributeSupport-asmified.java[Asmified]
-
-== References
-

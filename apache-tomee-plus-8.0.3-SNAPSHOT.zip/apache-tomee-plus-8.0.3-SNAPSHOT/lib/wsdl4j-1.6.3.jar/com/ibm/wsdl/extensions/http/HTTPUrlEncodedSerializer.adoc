@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/http/HTTPUrlEncodedSerializer.class
-
- - link:HTTPUrlEncodedSerializer-asmified.java[Asmified]
-
-== References
-

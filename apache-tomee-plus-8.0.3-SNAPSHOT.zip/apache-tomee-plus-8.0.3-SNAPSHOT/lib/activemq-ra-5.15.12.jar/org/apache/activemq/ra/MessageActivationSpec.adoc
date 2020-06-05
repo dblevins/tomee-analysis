@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/MessageActivationSpec.class
-
- - link:MessageActivationSpec-asmified.java[Asmified]
-
-== References
-

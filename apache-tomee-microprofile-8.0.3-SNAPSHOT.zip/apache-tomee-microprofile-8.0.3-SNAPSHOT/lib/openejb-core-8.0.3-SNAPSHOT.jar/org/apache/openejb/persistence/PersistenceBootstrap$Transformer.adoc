@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/PersistenceBootstrap$Transformer.class
-
- - link:PersistenceBootstrap$Transformer-asmified.java[Asmified]
-
-== References
-

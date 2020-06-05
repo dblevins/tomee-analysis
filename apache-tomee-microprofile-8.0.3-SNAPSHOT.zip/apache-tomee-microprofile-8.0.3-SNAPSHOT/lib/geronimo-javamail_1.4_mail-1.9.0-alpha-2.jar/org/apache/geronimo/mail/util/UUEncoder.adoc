@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/util/UUEncoder.class
-
- - link:UUEncoder-asmified.java[Asmified]
-
-== References
-

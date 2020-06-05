@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ArithmeticFactorBNF.class
-
- - link:ArithmeticFactorBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/GroupByClause.class
-
- - link:GroupByClause-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/isismtt/x509/DeclarationOfMajority.class
-
- - link:DeclarationOfMajority-asmified.java[Asmified]
-
-== References
-

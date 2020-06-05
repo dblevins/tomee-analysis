@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/util/ConcreteLSInput.class
-
- - link:ConcreteLSInput-asmified.java[Asmified]
-
-== References
-

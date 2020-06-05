@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/ContainerRule$ContainerApplicationComposers.class
-
- - link:ContainerRule$ContainerApplicationComposers-asmified.java[Asmified]
-
-== References
-

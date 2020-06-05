@@ -1,6 +1,0 @@
-= jakarta/ejb/EJBHome.class
-
- - link:EJBHome-asmified.java[Asmified]
-
-== References
-

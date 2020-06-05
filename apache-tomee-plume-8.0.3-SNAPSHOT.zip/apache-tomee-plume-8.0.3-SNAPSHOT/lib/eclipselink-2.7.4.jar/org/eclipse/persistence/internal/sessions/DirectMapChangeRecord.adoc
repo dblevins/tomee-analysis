@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/DirectMapChangeRecord.class
-
- - link:DirectMapChangeRecord-asmified.java[Asmified]
-
-== References
-

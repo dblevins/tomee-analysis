@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIMessages$PropertyKeys.class
-
- - link:UIMessages$PropertyKeys-asmified.java[Asmified]
-
-== References
-

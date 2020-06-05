@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick.class
-
- - link:XmlSchemaQuick-asmified.java[Asmified]
-
-== References
-

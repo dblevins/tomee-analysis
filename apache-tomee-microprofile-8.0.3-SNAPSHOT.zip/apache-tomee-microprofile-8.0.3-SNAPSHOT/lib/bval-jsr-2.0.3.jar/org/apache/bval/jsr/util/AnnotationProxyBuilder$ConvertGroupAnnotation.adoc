@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/AnnotationProxyBuilder$ConvertGroupAnnotation.class
-
- - link:AnnotationProxyBuilder$ConvertGroupAnnotation-asmified.java[Asmified]
-
-== References
-

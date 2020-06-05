@@ -1,6 +1,0 @@
-= jakarta/resource/NotSupportedException.class
-
- - link:NotSupportedException-asmified.java[Asmified]
-
-== References
-

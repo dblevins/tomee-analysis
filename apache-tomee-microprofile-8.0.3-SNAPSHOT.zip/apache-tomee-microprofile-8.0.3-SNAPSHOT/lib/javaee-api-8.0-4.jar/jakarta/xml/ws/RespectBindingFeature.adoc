@@ -1,6 +1,0 @@
-= jakarta/xml/ws/RespectBindingFeature.class
-
- - link:RespectBindingFeature-asmified.java[Asmified]
-
-== References
-

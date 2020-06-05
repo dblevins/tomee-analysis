@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/spi/status/ProgressListener.class
-
- - link:ProgressListener-asmified.java[Asmified]
-
-== References
-

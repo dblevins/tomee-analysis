@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/DivideOperator.class
-
- - link:DivideOperator-asmified.java[Asmified]
-
-== References
-

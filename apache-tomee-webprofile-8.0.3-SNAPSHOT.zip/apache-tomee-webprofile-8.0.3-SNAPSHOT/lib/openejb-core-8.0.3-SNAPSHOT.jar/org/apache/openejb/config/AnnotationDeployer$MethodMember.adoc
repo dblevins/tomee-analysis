@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AnnotationDeployer$MethodMember.class
-
- - link:AnnotationDeployer$MethodMember-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotatedClass$Creators.class
-
- - link:AnnotatedClass$Creators-asmified.java[Asmified]
-
-== References
-

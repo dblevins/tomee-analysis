@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/CompositeMetadataResolver$CompositeMetadataResolverIterable.class
-
- - link:CompositeMetadataResolver$CompositeMetadataResolverIterable-asmified.java[Asmified]
-
-== References
-

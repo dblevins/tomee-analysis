@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/bulkhead/BulkheadInterceptor.class
-
- - link:BulkheadInterceptor-asmified.java[Asmified]
-
-== References
-

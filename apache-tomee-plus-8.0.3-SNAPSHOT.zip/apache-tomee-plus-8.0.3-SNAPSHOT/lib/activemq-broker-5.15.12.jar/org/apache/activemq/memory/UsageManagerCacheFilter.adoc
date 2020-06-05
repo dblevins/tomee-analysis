@@ -1,6 +1,0 @@
-= org/apache/activemq/memory/UsageManagerCacheFilter.class
-
- - link:UsageManagerCacheFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/JBuilder.class
-
- - link:JBuilder-asmified.java[Asmified]
-
-== References
-

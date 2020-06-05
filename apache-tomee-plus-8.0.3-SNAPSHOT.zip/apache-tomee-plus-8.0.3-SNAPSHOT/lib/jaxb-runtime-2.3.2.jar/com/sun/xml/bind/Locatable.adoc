@@ -1,6 +1,0 @@
-= com/sun/xml/bind/Locatable.class
-
- - link:Locatable-asmified.java[Asmified]
-
-== References
-

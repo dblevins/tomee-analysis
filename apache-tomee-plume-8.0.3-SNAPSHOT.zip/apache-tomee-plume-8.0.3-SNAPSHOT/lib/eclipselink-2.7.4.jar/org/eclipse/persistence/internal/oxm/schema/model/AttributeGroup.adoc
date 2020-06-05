@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/schema/model/AttributeGroup.class
-
- - link:AttributeGroup-asmified.java[Asmified]
-
-== References
-

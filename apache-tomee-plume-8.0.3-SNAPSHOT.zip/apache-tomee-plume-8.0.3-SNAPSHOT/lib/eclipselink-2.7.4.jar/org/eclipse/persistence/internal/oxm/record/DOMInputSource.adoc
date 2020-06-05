@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/DOMInputSource.class
-
- - link:DOMInputSource-asmified.java[Asmified]
-
-== References
-

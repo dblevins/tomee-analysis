@@ -1,6 +1,0 @@
-= org/joda/time/format/PeriodFormatterBuilder$Separator.class
-
- - link:PeriodFormatterBuilder$Separator-asmified.java[Asmified]
-
-== References
-

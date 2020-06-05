@@ -1,6 +1,0 @@
-= org/apache/openejb/util/ListConfigurator.class
-
- - link:ListConfigurator-asmified.java[Asmified]
-
-== References
-

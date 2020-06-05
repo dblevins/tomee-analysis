@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/soap/SOAPMessageContextImpl.class
-
- - link:SOAPMessageContextImpl-asmified.java[Asmified]
-
-== References
-

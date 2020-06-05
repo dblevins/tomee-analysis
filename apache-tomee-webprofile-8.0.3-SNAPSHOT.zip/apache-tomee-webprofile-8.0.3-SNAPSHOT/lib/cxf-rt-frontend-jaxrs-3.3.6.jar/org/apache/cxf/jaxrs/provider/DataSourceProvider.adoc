@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/DataSourceProvider.class
-
- - link:DataSourceProvider-asmified.java[Asmified]
-
-== References
-

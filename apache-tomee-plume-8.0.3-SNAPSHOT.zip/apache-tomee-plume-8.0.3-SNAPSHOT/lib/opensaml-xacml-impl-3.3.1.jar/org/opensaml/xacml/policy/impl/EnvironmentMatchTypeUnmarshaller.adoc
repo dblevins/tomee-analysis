@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/EnvironmentMatchTypeUnmarshaller.class
-
- - link:EnvironmentMatchTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

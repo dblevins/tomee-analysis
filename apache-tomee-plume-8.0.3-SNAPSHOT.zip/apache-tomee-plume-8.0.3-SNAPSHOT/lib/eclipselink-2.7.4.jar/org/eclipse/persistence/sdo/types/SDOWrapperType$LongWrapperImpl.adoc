@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/types/SDOWrapperType$LongWrapperImpl.class
-
- - link:SDOWrapperType$LongWrapperImpl-asmified.java[Asmified]
-
-== References
-

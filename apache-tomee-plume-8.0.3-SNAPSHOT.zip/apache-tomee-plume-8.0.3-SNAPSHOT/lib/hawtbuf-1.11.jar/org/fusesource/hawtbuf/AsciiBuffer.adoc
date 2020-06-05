@@ -1,6 +1,0 @@
-= org/fusesource/hawtbuf/AsciiBuffer.class
-
- - link:AsciiBuffer-asmified.java[Asmified]
-
-== References
-

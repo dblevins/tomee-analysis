@@ -1,6 +1,0 @@
-= javax/persistence/Embedded.class
-
- - link:Embedded-asmified.java[Asmified]
-
-== References
-

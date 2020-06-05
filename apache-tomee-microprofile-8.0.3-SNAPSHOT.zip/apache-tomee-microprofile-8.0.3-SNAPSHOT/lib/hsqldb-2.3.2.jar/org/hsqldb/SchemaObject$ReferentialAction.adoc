@@ -1,6 +1,0 @@
-= org/hsqldb/SchemaObject$ReferentialAction.class
-
- - link:SchemaObject$ReferentialAction-asmified.java[Asmified]
-
-== References
-

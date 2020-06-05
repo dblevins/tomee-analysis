@@ -1,7 +1,0 @@
-= javax/json/bind/annotation/JsonbDateFormat.class
-
- - link:JsonbDateFormat-asmified.java[Asmified]
-
-== References
-
- - javax.json.bind.annotation.JsonbAnnotation - 1

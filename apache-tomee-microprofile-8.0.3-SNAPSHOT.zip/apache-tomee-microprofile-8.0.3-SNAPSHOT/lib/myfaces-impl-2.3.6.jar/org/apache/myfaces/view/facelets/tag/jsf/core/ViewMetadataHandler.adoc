@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/ViewMetadataHandler.class
-
- - link:ViewMetadataHandler-asmified.java[Asmified]
-
-== References
-

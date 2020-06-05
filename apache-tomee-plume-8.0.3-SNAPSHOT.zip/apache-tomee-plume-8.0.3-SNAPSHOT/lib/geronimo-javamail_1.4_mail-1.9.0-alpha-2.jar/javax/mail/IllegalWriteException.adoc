@@ -1,7 +1,0 @@
-= javax/mail/IllegalWriteException.class
-
- - link:IllegalWriteException-asmified.java[Asmified]
-
-== References
-
- - javax.mail.MessagingException - 3

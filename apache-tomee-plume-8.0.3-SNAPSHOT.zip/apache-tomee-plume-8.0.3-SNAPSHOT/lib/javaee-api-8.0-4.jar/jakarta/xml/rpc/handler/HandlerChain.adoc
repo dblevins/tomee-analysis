@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/handler/HandlerChain.class
-
- - link:HandlerChain-asmified.java[Asmified]
-
-== References
-

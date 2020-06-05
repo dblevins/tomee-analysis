@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/KahaDBStore$KahaDBTopicMessageStore$2.class
-
- - link:KahaDBStore$KahaDBTopicMessageStore$2-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/BeanMetadataProducer.class
-
- - link:BeanMetadataProducer-asmified.java[Asmified]
-
-== References
-

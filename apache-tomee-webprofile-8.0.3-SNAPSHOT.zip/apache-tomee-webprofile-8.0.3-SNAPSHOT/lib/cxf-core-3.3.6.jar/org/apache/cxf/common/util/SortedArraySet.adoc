@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/SortedArraySet.class
-
- - link:SortedArraySet-asmified.java[Asmified]
-
-== References
-

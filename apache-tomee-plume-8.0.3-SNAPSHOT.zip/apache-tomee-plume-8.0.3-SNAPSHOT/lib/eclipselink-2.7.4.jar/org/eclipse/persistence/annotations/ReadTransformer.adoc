@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/ReadTransformer.class
-
- - link:ReadTransformer-asmified.java[Asmified]
-
-== References
-

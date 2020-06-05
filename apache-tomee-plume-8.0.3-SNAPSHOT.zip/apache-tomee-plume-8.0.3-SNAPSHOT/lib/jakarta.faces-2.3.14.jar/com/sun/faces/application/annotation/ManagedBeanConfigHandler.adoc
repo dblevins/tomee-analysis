@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/ManagedBeanConfigHandler.class
-
- - link:ManagedBeanConfigHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/management/JMSEndpointStatsImpl.class
-
- - link:JMSEndpointStatsImpl-asmified.java[Asmified]
-
-== References
-

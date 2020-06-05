@@ -1,6 +1,0 @@
-= commonj/sdo/ChangeSummary.class
-
- - link:ChangeSummary-asmified.java[Asmified]
-
-== References
-

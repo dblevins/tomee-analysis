@@ -1,6 +1,0 @@
-= org/apache/catalina/manager/StatusTransformer.class
-
- - link:StatusTransformer-asmified.java[Asmified]
-
-== References
-

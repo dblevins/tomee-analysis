@@ -1,6 +1,0 @@
-= jakarta/resource/spi/work/WorkEvent.class
-
- - link:WorkEvent-asmified.java[Asmified]
-
-== References
-

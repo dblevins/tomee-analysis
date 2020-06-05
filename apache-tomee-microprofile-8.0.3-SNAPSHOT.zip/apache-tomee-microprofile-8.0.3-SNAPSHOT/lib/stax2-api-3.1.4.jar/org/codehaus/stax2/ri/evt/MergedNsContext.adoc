@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/evt/MergedNsContext.class
-
- - link:MergedNsContext-asmified.java[Asmified]
-
-== References
-

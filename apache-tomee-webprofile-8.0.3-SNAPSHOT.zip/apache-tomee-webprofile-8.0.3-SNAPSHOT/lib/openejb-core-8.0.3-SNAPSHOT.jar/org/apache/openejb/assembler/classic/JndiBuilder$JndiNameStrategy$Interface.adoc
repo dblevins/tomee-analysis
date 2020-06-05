@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/JndiBuilder$JndiNameStrategy$Interface.class
-
- - link:JndiBuilder$JndiNameStrategy$Interface-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/security/TempDestinationAuthorizationEntry.class
-
- - link:TempDestinationAuthorizationEntry-asmified.java[Asmified]
-
-== References
-

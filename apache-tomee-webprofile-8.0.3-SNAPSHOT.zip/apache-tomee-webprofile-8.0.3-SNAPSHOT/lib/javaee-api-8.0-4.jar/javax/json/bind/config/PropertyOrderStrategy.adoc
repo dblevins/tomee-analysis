@@ -1,6 +1,0 @@
-= javax/json/bind/config/PropertyOrderStrategy.class
-
- - link:PropertyOrderStrategy-asmified.java[Asmified]
-
-== References
-

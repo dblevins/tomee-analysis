@@ -1,6 +1,0 @@
-= org/apache/juli/OneLineFormatter$IndentingPrintWriter.class
-
- - link:OneLineFormatter$IndentingPrintWriter-asmified.java[Asmified]
-
-== References
-

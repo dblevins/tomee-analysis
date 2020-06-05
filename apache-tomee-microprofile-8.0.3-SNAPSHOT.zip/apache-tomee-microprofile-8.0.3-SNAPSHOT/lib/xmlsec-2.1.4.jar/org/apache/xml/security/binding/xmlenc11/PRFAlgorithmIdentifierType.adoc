@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmlenc11/PRFAlgorithmIdentifierType.class
-
- - link:PRFAlgorithmIdentifierType-asmified.java[Asmified]
-
-== References
-

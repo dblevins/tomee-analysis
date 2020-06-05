@@ -1,9 +1,0 @@
-= javax/xml/rpc/handler/GenericHandler.class
-
- - link:GenericHandler-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.handler.MessageContext - 3
- - javax.xml.rpc.handler.HandlerInfo - 1
- - javax.xml.rpc.handler.Handler - 1

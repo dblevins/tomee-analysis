@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/logic/DefaultLocalErrorPredicate.class
-
- - link:DefaultLocalErrorPredicate-asmified.java[Asmified]
-
-== References
-

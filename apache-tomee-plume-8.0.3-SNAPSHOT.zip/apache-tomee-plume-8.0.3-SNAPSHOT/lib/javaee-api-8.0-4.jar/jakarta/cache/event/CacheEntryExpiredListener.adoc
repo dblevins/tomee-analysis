@@ -1,6 +1,0 @@
-= jakarta/cache/event/CacheEntryExpiredListener.class
-
- - link:CacheEntryExpiredListener-asmified.java[Asmified]
-
-== References
-

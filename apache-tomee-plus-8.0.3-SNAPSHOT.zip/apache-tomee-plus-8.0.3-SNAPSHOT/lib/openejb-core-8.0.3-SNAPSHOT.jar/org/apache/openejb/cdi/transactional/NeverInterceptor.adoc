@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/transactional/NeverInterceptor.class
-
- - link:NeverInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BidiMap.class
-
- - link:BidiMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/NameRule.class
-
- - link:NameRule-asmified.java[Asmified]
-
-== References
-

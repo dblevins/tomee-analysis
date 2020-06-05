@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/IdempotentUrlPattern.class
-
- - link:IdempotentUrlPattern-asmified.java[Asmified]
-
-== References
-

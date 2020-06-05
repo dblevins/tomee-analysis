@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/util/MinimalPrettyPrinter.class
-
- - link:MinimalPrettyPrinter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/persistence/DiscriminatorValue.class
-
- - link:DiscriminatorValue-asmified.java[Asmified]
-
-== References
-

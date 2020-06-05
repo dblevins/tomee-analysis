@@ -1,6 +1,0 @@
-= org/apache/bval/util/reflection/TypeUtils$WildcardTypeBuilder.class
-
- - link:TypeUtils$WildcardTypeBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/HttpHeadersImpl$1.class
-
- - link:HttpHeadersImpl$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ValueChangeListenerTag.class
-
- - link:ValueChangeListenerTag-asmified.java[Asmified]
-
-== References
-

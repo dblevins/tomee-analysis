@@ -1,6 +1,0 @@
-= javax/faces/component/html/_MessageProperties.class
-
- - link:_MessageProperties-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/CdiBehavior.class
-
- - link:CdiBehavior-asmified.java[Asmified]
-
-== References
-

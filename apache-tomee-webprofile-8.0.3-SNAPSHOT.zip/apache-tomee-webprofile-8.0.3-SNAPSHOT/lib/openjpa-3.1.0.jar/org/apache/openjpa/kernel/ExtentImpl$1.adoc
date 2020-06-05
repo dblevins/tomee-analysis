@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ExtentImpl$1.class
-
- - link:ExtentImpl$1-asmified.java[Asmified]
-
-== References
-

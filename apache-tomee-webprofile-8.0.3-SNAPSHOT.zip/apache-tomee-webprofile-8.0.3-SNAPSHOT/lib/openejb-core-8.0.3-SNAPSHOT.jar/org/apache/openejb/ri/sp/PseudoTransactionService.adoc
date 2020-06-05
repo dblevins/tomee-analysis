@@ -1,6 +1,0 @@
-= org/apache/openejb/ri/sp/PseudoTransactionService.class
-
- - link:PseudoTransactionService-asmified.java[Asmified]
-
-== References
-

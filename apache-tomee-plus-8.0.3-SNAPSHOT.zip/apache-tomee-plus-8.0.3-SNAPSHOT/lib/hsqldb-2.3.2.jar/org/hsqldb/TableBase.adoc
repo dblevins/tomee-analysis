@@ -1,6 +1,0 @@
-= org/hsqldb/TableBase.class
-
- - link:TableBase-asmified.java[Asmified]
-
-== References
-

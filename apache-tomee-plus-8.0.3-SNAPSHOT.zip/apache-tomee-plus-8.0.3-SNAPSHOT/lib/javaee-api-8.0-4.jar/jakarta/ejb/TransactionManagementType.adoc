@@ -1,6 +1,0 @@
-= jakarta/ejb/TransactionManagementType.class
-
- - link:TransactionManagementType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/ManagedProperty.class
-
- - link:ManagedProperty-asmified.java[Asmified]
-
-== References
-

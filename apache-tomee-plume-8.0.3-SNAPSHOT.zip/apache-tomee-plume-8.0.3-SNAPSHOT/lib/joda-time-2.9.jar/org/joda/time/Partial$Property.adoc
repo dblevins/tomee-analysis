@@ -1,6 +1,0 @@
-= org/joda/time/Partial$Property.class
-
- - link:Partial$Property-asmified.java[Asmified]
-
-== References
-

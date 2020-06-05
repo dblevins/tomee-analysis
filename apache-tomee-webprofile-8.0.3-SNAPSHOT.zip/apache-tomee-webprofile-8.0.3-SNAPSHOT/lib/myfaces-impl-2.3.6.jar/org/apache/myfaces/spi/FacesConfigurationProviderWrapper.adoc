@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/FacesConfigurationProviderWrapper.class
-
- - link:FacesConfigurationProviderWrapper-asmified.java[Asmified]
-
-== References
-

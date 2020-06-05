@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MessageDatabase$TranInfo.class
-
- - link:MessageDatabase$TranInfo-asmified.java[Asmified]
-
-== References
-

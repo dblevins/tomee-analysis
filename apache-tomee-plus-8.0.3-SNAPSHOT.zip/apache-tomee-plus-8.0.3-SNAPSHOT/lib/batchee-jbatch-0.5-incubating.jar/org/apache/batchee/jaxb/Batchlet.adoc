@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Batchlet.class
-
- - link:Batchlet-asmified.java[Asmified]
-
-== References
-

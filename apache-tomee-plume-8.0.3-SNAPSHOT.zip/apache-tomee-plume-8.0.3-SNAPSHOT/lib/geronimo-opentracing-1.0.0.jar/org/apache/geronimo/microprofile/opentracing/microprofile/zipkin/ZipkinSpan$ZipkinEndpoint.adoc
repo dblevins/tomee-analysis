@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/microprofile/zipkin/ZipkinSpan$ZipkinEndpoint.class
-
- - link:ZipkinSpan$ZipkinEndpoint-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/ReadWritablePeriod.class
-
- - link:ReadWritablePeriod-asmified.java[Asmified]
-
-== References
-

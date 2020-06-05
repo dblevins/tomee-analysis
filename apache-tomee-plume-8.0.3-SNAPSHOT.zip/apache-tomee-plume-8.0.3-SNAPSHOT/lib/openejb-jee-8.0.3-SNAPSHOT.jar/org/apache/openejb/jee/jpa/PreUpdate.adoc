@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/PreUpdate.class
-
- - link:PreUpdate-asmified.java[Asmified]
-
-== References
-

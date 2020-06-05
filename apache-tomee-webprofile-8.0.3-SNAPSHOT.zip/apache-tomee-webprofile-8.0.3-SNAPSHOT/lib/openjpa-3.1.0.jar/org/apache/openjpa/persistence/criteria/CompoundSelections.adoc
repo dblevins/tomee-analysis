@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/CompoundSelections.class
-
- - link:CompoundSelections-asmified.java[Asmified]
-
-== References
-

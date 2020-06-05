@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/jsontype/TypeSerializer$1.class
-
- - link:TypeSerializer$1-asmified.java[Asmified]
-
-== References
-

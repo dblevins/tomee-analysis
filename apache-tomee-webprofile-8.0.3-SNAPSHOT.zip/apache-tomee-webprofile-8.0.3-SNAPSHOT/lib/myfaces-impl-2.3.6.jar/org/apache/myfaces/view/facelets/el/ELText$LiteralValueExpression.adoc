@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/ELText$LiteralValueExpression.class
-
- - link:ELText$LiteralValueExpression-asmified.java[Asmified]
-
-== References
-

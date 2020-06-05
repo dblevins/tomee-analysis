@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/Expression.class
-
- - link:Expression-asmified.java[Asmified]
-
-== References
-

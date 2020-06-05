@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/Type.class
-
- - link:Type-asmified.java[Asmified]
-
-== References
-

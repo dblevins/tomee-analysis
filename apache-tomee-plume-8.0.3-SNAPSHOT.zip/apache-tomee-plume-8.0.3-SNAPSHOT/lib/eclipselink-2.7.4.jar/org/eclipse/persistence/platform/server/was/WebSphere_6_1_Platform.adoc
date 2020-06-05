@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/server/was/WebSphere_6_1_Platform.class
-
- - link:WebSphere_6_1_Platform-asmified.java[Asmified]
-
-== References
-

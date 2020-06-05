@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/ParticipantFactory.class
-
- - link:ParticipantFactory-asmified.java[Asmified]
-
-== References
-

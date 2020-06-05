@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/HttpHeaderSecurityFilter$XFrameOption.class
-
- - link:HttpHeaderSecurityFilter$XFrameOption-asmified.java[Asmified]
-
-== References
-

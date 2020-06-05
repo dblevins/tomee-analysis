@@ -1,6 +1,0 @@
-= org/apache/webbeans/logger/WebBeansLoggerFacade.class
-
- - link:WebBeansLoggerFacade-asmified.java[Asmified]
-
-== References
-

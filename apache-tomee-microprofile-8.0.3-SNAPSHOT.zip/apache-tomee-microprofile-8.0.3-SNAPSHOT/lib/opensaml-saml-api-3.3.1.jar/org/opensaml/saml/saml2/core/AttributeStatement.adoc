@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/AttributeStatement.class
-
- - link:AttributeStatement-asmified.java[Asmified]
-
-== References
-

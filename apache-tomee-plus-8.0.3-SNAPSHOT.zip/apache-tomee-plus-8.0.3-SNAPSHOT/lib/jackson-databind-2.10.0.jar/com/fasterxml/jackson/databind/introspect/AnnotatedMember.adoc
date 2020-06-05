@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotatedMember.class
-
- - link:AnnotatedMember-asmified.java[Asmified]
-
-== References
-

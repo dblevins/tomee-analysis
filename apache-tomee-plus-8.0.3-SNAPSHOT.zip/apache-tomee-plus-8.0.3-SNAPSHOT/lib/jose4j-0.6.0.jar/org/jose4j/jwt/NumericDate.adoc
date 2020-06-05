@@ -1,6 +1,0 @@
-= org/jose4j/jwt/NumericDate.class
-
- - link:NumericDate-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/Context$ContextState.class
-
- - link:Context$ContextState-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/RuleTypeMarshaller.class
-
- - link:RuleTypeMarshaller-asmified.java[Asmified]
-
-== References
-

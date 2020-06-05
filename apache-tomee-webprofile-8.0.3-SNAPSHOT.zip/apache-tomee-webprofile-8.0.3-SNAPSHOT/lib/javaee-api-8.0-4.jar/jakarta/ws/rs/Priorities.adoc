@@ -1,6 +1,0 @@
-= jakarta/ws/rs/Priorities.class
-
- - link:Priorities-asmified.java[Asmified]
-
-== References
-

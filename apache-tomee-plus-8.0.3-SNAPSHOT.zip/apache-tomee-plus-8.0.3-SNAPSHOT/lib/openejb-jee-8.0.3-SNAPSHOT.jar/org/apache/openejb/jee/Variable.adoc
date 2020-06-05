@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Variable.class
-
- - link:Variable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/PATCH.class
-
- - link:PATCH-asmified.java[Asmified]
-
-== References
-

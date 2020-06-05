@@ -1,6 +1,0 @@
-= org/apache/cxf/resource/SecurityActions.class
-
- - link:SecurityActions-asmified.java[Asmified]
-
-== References
-

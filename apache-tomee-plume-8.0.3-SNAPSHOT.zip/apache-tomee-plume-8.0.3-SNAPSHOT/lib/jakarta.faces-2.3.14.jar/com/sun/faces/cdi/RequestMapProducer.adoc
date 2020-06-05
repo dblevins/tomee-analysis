@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/RequestMapProducer.class
-
- - link:RequestMapProducer-asmified.java[Asmified]
-
-== References
-

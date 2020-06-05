@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/math/linearalgebra/Matrix.class
-
- - link:Matrix-asmified.java[Asmified]
-
-== References
-

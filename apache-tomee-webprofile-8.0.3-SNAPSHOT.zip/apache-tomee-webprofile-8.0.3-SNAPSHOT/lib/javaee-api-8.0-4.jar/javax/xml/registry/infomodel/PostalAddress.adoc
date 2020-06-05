@@ -1,9 +1,0 @@
-= javax/xml/registry/infomodel/PostalAddress.class
-
- - link:PostalAddress-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 16
- - javax.xml.registry.infomodel.ClassificationScheme - 2
- - javax.xml.registry.infomodel.ExtensibleObject - 1

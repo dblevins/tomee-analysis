@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/translate/AggregateTranslator.class
-
- - link:AggregateTranslator-asmified.java[Asmified]
-
-== References
-

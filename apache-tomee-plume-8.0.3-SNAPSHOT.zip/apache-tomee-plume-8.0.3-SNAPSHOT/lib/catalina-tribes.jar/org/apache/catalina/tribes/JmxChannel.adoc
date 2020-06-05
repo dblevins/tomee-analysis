@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/JmxChannel.class
-
- - link:JmxChannel-asmified.java[Asmified]
-
-== References
-

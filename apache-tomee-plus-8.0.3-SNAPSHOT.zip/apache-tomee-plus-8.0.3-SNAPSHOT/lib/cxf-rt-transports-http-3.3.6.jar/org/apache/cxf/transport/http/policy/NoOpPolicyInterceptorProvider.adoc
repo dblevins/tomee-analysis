@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/policy/NoOpPolicyInterceptorProvider.class
-
- - link:NoOpPolicyInterceptorProvider-asmified.java[Asmified]
-
-== References
-

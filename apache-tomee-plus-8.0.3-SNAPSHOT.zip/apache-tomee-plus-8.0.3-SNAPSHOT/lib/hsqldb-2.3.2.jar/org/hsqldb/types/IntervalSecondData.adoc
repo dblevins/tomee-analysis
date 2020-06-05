@@ -1,6 +1,0 @@
-= org/hsqldb/types/IntervalSecondData.class
-
- - link:IntervalSecondData-asmified.java[Asmified]
-
-== References
-

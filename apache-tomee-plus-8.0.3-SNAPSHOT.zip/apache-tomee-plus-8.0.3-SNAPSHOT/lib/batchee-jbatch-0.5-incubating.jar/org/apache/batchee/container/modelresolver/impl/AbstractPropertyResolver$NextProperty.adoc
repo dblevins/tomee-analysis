@@ -1,6 +1,0 @@
-= org/apache/batchee/container/modelresolver/impl/AbstractPropertyResolver$NextProperty.class
-
- - link:AbstractPropertyResolver$NextProperty-asmified.java[Asmified]
-
-== References
-

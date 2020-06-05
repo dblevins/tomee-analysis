@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/FaceletCache$InstanceFactory.class
-
- - link:FaceletCache$InstanceFactory-asmified.java[Asmified]
-
-== References
-

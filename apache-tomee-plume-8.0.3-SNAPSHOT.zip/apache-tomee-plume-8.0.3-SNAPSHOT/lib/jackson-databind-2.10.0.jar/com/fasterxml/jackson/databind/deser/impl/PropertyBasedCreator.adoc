@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator.class
-
- - link:PropertyBasedCreator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/Yaml$EventIterable.class
-
- - link:Yaml$EventIterable-asmified.java[Asmified]
-
-== References
-

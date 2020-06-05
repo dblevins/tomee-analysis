@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/SimpleProducerFactory.class
-
- - link:SimpleProducerFactory-asmified.java[Asmified]
-
-== References
-

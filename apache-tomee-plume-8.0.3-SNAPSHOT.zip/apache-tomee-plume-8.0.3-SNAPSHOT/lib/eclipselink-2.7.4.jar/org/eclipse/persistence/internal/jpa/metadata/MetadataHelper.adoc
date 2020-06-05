@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/MetadataHelper.class
-
- - link:MetadataHelper-asmified.java[Asmified]
-
-== References
-

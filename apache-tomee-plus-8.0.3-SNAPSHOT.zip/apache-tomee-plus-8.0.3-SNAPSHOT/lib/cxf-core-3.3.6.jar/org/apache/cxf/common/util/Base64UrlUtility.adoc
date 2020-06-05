@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/Base64UrlUtility.class
-
- - link:Base64UrlUtility-asmified.java[Asmified]
-
-== References
-

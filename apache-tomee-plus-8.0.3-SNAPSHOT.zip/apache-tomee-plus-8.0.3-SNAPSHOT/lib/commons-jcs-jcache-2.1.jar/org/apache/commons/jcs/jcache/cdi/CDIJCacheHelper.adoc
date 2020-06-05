@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/cdi/CDIJCacheHelper.class
-
- - link:CDIJCacheHelper-asmified.java[Asmified]
-
-== References
-

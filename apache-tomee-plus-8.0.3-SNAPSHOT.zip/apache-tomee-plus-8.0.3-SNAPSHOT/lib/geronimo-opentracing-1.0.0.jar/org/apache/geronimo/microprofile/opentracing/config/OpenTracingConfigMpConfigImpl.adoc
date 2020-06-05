@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/config/OpenTracingConfigMpConfigImpl.class
-
- - link:OpenTracingConfigMpConfigImpl-asmified.java[Asmified]
-
-== References
-

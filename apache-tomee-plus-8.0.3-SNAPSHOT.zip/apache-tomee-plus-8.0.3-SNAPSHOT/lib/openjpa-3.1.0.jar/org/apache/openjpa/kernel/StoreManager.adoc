@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/StoreManager.class
-
- - link:StoreManager-asmified.java[Asmified]
-
-== References
-

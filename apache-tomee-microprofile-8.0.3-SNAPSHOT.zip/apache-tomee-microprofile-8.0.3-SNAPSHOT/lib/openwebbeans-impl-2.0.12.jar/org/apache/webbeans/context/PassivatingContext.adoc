@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/PassivatingContext.class
-
- - link:PassivatingContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/AliasEvent.class
-
- - link:AliasEvent-asmified.java[Asmified]
-
-== References
-

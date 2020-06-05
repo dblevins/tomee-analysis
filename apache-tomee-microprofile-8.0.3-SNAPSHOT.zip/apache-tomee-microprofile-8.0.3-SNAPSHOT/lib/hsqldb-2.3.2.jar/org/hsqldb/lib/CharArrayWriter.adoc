@@ -1,6 +1,0 @@
-= org/hsqldb/lib/CharArrayWriter.class
-
- - link:CharArrayWriter-asmified.java[Asmified]
-
-== References
-

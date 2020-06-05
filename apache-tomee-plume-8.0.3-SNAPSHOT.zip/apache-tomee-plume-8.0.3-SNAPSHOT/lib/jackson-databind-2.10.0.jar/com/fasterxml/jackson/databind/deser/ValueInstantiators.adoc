@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/ValueInstantiators.class
-
- - link:ValueInstantiators-asmified.java[Asmified]
-
-== References
-

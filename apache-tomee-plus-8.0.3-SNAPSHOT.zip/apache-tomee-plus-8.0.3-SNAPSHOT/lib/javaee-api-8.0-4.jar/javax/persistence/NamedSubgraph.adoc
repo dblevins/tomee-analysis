@@ -1,7 +1,0 @@
-= javax/persistence/NamedSubgraph.class
-
- - link:NamedSubgraph-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.NamedAttributeNode - 1

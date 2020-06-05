@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/jsonschema/JsonSerializableSchema.class
-
- - link:JsonSerializableSchema-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/PublicKeyJwsSignatureVerifier$PublicKeyJwsVerificationSignature.class
-
- - link:PublicKeyJwsSignatureVerifier$PublicKeyJwsVerificationSignature-asmified.java[Asmified]
-
-== References
-

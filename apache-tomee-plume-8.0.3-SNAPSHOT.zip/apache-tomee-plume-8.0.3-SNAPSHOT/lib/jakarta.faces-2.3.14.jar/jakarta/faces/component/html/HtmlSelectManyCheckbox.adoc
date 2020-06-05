@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlSelectManyCheckbox.class
-
- - link:HtmlSelectManyCheckbox-asmified.java[Asmified]
-
-== References
-

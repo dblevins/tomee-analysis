@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/NumberDeserializers$PrimitiveOrWrapperDeserializer.class
-
- - link:NumberDeserializers$PrimitiveOrWrapperDeserializer-asmified.java[Asmified]
-
-== References
-

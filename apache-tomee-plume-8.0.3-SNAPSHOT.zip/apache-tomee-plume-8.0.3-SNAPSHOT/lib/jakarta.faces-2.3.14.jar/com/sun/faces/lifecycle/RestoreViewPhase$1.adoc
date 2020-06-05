@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/RestoreViewPhase$1.class
-
- - link:RestoreViewPhase$1-asmified.java[Asmified]
-
-== References
-

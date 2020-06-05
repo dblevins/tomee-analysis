@@ -1,6 +1,0 @@
-= org/apache/commons/collections/buffer/TransformedBuffer.class
-
- - link:TransformedBuffer-asmified.java[Asmified]
-
-== References
-

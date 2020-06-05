@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/api/experimental/JsonbExtension.class
-
- - link:JsonbExtension-asmified.java[Asmified]
-
-== References
-

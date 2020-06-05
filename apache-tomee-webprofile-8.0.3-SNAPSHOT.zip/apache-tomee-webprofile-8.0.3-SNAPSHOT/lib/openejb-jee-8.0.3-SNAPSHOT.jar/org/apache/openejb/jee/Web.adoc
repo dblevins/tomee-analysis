@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Web.class
-
- - link:Web-asmified.java[Asmified]
-
-== References
-

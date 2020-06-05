@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/KeyValueTokenAssertionState.class
-
- - link:KeyValueTokenAssertionState-asmified.java[Asmified]
-
-== References
-

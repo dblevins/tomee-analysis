@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/groups/GroupsComputer.class
-
- - link:GroupsComputer-asmified.java[Asmified]
-
-== References
-

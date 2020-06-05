@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller.class
-
- - link:JAXBAttachmentUnmarshaller-asmified.java[Asmified]
-
-== References
-

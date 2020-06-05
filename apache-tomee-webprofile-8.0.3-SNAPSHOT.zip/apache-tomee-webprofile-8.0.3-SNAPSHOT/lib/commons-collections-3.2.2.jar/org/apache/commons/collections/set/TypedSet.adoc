@@ -1,6 +1,0 @@
-= org/apache/commons/collections/set/TypedSet.class
-
- - link:TypedSet-asmified.java[Asmified]
-
-== References
-

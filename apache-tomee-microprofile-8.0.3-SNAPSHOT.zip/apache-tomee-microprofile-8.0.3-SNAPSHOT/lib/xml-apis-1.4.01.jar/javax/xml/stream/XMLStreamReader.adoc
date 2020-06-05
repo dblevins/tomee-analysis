@@ -1,6 +1,0 @@
-= javax/xml/stream/XMLStreamReader.class
-
- - link:XMLStreamReader-asmified.java[Asmified]
-
-== References
-

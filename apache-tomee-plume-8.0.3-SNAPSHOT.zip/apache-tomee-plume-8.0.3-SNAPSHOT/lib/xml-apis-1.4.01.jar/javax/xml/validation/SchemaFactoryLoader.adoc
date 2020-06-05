@@ -1,6 +1,0 @@
-= javax/xml/validation/SchemaFactoryLoader.class
-
- - link:SchemaFactoryLoader-asmified.java[Asmified]
-
-== References
-

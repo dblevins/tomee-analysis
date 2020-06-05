@@ -1,6 +1,0 @@
-= org/apache/openejb/core/InstanceContext.class
-
- - link:InstanceContext-asmified.java[Asmified]
-
-== References
-

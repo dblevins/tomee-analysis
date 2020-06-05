@@ -1,6 +1,0 @@
-= org/apache/commons/collections/set/MapBackedSet.class
-
- - link:MapBackedSet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/sequenced/Setting.class
-
- - link:Setting-asmified.java[Asmified]
-
-== References
-

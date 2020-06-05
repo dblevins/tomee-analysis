@@ -1,6 +1,0 @@
-= org/apache/cxf/security/LoginSecurityContext.class
-
- - link:LoginSecurityContext-asmified.java[Asmified]
-
-== References
-

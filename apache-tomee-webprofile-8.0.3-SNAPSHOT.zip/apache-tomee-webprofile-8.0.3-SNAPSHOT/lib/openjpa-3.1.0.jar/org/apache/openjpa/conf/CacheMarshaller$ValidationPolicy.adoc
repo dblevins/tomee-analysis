@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/CacheMarshaller$ValidationPolicy.class
-
- - link:CacheMarshaller$ValidationPolicy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/QueryHintsHandler$ReadOnlyHint.class
-
- - link:QueryHintsHandler$ReadOnlyHint-asmified.java[Asmified]
-
-== References
-

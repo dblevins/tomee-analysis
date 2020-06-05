@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/spi/ClassLoadHelper.class
-
- - link:ClassLoadHelper-asmified.java[Asmified]
-
-== References
-

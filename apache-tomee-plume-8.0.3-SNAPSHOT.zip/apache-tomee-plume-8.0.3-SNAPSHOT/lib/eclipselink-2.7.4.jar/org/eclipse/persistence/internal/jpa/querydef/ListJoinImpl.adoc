@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/ListJoinImpl.class
-
- - link:ListJoinImpl-asmified.java[Asmified]
-
-== References
-

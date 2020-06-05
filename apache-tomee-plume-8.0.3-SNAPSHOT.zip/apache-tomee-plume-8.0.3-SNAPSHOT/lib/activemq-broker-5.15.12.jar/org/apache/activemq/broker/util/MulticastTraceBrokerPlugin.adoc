@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/util/MulticastTraceBrokerPlugin.class
-
- - link:MulticastTraceBrokerPlugin-asmified.java[Asmified]
-
-== References
-

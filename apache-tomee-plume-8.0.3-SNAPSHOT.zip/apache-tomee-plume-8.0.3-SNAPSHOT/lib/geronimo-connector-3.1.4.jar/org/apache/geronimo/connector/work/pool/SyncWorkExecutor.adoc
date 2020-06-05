@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/work/pool/SyncWorkExecutor.class
-
- - link:SyncWorkExecutor-asmified.java[Asmified]
-
-== References
-

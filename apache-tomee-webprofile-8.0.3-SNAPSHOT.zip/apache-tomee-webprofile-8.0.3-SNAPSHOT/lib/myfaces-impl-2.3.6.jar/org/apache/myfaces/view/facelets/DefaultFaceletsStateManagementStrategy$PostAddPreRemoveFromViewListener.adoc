@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/DefaultFaceletsStateManagementStrategy$PostAddPreRemoveFromViewListener.class
-
- - link:DefaultFaceletsStateManagementStrategy$PostAddPreRemoveFromViewListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/codec/digest/B64.class
-
- - link:B64-asmified.java[Asmified]
-
-== References
-

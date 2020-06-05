@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/PhaseListenerManager.class
-
- - link:PhaseListenerManager-asmified.java[Asmified]
-
-== References
-

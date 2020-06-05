@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/ApplicationComposerRule.class
-
- - link:ApplicationComposerRule-asmified.java[Asmified]
-
-== References
-

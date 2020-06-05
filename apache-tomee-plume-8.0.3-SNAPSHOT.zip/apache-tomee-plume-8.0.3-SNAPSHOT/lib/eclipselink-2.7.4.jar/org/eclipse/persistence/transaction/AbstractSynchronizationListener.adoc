@@ -1,6 +1,0 @@
-= org/eclipse/persistence/transaction/AbstractSynchronizationListener.class
-
- - link:AbstractSynchronizationListener-asmified.java[Asmified]
-
-== References
-

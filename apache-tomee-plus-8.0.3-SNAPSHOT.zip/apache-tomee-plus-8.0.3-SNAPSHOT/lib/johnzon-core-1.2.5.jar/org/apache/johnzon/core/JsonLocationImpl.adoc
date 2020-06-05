@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonLocationImpl.class
-
- - link:JsonLocationImpl-asmified.java[Asmified]
-
-== References
-

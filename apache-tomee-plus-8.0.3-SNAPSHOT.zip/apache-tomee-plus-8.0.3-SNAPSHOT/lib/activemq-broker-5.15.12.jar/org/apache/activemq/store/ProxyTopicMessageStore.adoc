@@ -1,6 +1,0 @@
-= org/apache/activemq/store/ProxyTopicMessageStore.class
-
- - link:ProxyTopicMessageStore-asmified.java[Asmified]
-
-== References
-

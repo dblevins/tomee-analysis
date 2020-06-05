@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlVirtualAccessMethodsSchema.class
-
- - link:XmlVirtualAccessMethodsSchema-asmified.java[Asmified]
-
-== References
-

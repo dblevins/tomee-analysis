@@ -1,6 +1,0 @@
-= jakarta/faces/component/FacesComponent.class
-
- - link:FacesComponent-asmified.java[Asmified]
-
-== References
-

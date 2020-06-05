@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/CompositeDestinationInterceptor.class
-
- - link:CompositeDestinationInterceptor-asmified.java[Asmified]
-
-== References
-

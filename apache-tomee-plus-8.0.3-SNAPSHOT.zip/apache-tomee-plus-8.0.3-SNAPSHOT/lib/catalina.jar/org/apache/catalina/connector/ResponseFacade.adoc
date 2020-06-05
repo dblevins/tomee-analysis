@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/ResponseFacade.class
-
- - link:ResponseFacade-asmified.java[Asmified]
-
-== References
-

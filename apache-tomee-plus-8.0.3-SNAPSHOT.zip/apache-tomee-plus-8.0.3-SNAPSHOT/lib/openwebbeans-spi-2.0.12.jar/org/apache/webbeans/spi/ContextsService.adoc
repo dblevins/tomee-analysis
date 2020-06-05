@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/ContextsService.class
-
- - link:ContextsService-asmified.java[Asmified]
-
-== References
-

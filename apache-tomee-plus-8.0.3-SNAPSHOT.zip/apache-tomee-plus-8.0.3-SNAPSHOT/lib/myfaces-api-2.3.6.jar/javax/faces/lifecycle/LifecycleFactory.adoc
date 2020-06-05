@@ -1,9 +1,0 @@
-= javax/faces/lifecycle/LifecycleFactory.class
-
- - link:LifecycleFactory-asmified.java[Asmified]
-
-== References
-
- - javax.faces.lifecycle.LifecycleFactory - 8
- - javax.faces.lifecycle.Lifecycle - 2
- - javax.faces.FacesWrapper - 1

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBMarshalListener.class
-
- - link:JAXBMarshalListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/MappingDefaults.class
-
- - link:MappingDefaults-asmified.java[Asmified]
-
-== References
-

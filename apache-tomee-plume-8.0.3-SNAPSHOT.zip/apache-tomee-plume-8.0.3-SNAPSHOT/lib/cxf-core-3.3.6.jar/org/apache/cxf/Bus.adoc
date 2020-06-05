@@ -1,6 +1,0 @@
-= org/apache/cxf/Bus.class
-
- - link:Bus-asmified.java[Asmified]
-
-== References
-

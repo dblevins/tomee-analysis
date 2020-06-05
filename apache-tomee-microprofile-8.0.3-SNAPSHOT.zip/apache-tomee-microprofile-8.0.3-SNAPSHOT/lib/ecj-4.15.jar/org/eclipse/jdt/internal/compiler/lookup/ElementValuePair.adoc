@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ElementValuePair.class
-
- - link:ElementValuePair-asmified.java[Asmified]
-
-== References
-

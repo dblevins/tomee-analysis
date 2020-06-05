@@ -1,6 +1,0 @@
-= org/apache/activemq/util/BooleanEditor.class
-
- - link:BooleanEditor-asmified.java[Asmified]
-
-== References
-

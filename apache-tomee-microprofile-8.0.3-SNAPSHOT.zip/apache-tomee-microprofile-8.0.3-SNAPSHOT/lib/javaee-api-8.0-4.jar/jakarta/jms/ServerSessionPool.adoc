@@ -1,6 +1,0 @@
-= jakarta/jms/ServerSessionPool.class
-
- - link:ServerSessionPool-asmified.java[Asmified]
-
-== References
-

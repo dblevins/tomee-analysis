@@ -1,6 +1,0 @@
-= org/apache/openejb/OpenEJBRuntimeException.class
-
- - link:OpenEJBRuntimeException-asmified.java[Asmified]
-
-== References
-

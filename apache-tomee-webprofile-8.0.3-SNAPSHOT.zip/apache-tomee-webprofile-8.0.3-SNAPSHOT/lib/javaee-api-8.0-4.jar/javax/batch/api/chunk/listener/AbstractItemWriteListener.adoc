@@ -1,7 +1,0 @@
-= javax/batch/api/chunk/listener/AbstractItemWriteListener.class
-
- - link:AbstractItemWriteListener-asmified.java[Asmified]
-
-== References
-
- - javax.batch.api.chunk.listener.ItemWriteListener - 1

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/GetCompleteBuilder.class
-
- - link:GetCompleteBuilder-asmified.java[Asmified]
-
-== References
-

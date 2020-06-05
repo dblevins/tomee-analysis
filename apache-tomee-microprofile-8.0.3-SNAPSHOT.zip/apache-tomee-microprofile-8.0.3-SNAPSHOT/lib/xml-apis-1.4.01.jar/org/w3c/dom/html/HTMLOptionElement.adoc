@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLOptionElement.class
-
- - link:HTMLOptionElement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/ImageDataContentHandler.class
-
- - link:ImageDataContentHandler-asmified.java[Asmified]
-
-== References
-

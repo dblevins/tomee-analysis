@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/LinkedHashSetEditor.class
-
- - link:LinkedHashSetEditor-asmified.java[Asmified]
-
-== References
-

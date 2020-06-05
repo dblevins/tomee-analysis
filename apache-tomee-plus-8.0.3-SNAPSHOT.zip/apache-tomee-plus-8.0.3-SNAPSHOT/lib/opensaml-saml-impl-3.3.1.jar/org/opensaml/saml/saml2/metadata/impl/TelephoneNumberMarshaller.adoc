@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/TelephoneNumberMarshaller.class
-
- - link:TelephoneNumberMarshaller-asmified.java[Asmified]
-
-== References
-

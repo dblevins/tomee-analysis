@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLTableSectionElement.class
-
- - link:HTMLTableSectionElement-asmified.java[Asmified]
-
-== References
-

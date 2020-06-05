@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/AutoDetachType.class
-
- - link:AutoDetachType-asmified.java[Asmified]
-
-== References
-

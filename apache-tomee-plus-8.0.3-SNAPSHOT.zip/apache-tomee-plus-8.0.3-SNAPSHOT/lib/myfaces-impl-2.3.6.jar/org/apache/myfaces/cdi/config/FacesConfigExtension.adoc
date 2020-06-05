@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/config/FacesConfigExtension.class
-
- - link:FacesConfigExtension-asmified.java[Asmified]
-
-== References
-

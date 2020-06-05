@@ -1,6 +1,0 @@
-= jakarta/xml/ws/ServiceMode.class
-
- - link:ServiceMode-asmified.java[Asmified]
-
-== References
-

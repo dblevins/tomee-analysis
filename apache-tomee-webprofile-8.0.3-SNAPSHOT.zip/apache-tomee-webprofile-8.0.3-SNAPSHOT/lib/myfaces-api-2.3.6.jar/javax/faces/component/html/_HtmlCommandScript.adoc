@@ -1,7 +1,0 @@
-= javax/faces/component/html/_HtmlCommandScript.class
-
- - link:_HtmlCommandScript-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.UICommand - 2

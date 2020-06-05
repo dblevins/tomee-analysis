@@ -1,6 +1,0 @@
-= org/apache/jasper/runtime/TagHandlerPool.class
-
- - link:TagHandlerPool-asmified.java[Asmified]
-
-== References
-

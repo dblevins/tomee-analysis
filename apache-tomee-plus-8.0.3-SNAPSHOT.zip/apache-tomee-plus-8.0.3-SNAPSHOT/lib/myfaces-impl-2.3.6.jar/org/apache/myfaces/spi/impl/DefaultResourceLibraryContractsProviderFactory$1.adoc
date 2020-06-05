@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/impl/DefaultResourceLibraryContractsProviderFactory$1.class
-
- - link:DefaultResourceLibraryContractsProviderFactory$1-asmified.java[Asmified]
-
-== References
-

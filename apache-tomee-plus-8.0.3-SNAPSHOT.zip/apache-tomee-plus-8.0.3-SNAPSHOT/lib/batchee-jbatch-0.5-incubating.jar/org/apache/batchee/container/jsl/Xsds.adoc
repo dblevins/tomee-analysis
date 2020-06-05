@@ -1,6 +1,0 @@
-= org/apache/batchee/container/jsl/Xsds.class
-
- - link:Xsds-asmified.java[Asmified]
-
-== References
-

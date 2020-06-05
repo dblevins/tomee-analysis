@@ -1,6 +1,0 @@
-= org/joda/time/chrono/BasicFixedMonthChronology.class
-
- - link:BasicFixedMonthChronology-asmified.java[Asmified]
-
-== References
-

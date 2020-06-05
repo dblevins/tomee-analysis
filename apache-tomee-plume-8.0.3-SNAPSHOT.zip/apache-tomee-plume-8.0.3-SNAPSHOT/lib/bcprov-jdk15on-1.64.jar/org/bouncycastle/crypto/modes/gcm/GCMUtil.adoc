@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/modes/gcm/GCMUtil.class
-
- - link:GCMUtil-asmified.java[Asmified]
-
-== References
-

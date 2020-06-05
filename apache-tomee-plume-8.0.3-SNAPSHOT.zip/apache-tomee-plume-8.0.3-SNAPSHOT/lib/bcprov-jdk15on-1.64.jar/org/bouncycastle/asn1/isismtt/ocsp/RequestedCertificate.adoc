@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/isismtt/ocsp/RequestedCertificate.class
-
- - link:RequestedCertificate-asmified.java[Asmified]
-
-== References
-

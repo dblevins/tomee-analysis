@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/resolver/ResolverSupport.class
-
- - link:ResolverSupport-asmified.java[Asmified]
-
-== References
-

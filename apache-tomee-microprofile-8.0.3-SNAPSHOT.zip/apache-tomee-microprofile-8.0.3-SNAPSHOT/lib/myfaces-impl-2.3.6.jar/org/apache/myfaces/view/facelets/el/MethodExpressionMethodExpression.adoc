@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/MethodExpressionMethodExpression.class
-
- - link:MethodExpressionMethodExpression-asmified.java[Asmified]
-
-== References
-

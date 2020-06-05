@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/Options.class
-
- - link:Options-asmified.java[Asmified]
-
-== References
-

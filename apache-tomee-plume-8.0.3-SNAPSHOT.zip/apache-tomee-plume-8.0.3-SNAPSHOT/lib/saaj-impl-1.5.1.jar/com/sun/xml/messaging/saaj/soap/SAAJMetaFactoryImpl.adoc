@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/SAAJMetaFactoryImpl.class
-
- - link:SAAJMetaFactoryImpl-asmified.java[Asmified]
-
-== References
-

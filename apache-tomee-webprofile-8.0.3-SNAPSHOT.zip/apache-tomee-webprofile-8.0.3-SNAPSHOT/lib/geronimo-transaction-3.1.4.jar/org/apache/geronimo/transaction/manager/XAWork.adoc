@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/XAWork.class
-
- - link:XAWork-asmified.java[Asmified]
-
-== References
-

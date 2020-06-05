@@ -1,6 +1,0 @@
-= org/apache/commons/collections/MultiHashMap.class
-
- - link:MultiHashMap-asmified.java[Asmified]
-
-== References
-

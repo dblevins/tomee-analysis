@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/SpringBeanLocator.class
-
- - link:SpringBeanLocator-asmified.java[Asmified]
-
-== References
-

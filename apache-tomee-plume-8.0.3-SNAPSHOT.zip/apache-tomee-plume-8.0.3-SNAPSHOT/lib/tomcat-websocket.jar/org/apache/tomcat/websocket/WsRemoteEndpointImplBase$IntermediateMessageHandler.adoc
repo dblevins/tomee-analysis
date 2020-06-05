@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$IntermediateMessageHandler.class
-
- - link:WsRemoteEndpointImplBase$IntermediateMessageHandler-asmified.java[Asmified]
-
-== References
-

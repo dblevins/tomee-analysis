@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/StatefulUserTransaction.class
-
- - link:StatefulUserTransaction-asmified.java[Asmified]
-
-== References
-

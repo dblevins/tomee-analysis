@@ -1,6 +1,0 @@
-= com/sun/faces/context/flash/FlashELResolver.class
-
- - link:FlashELResolver-asmified.java[Asmified]
-
-== References
-

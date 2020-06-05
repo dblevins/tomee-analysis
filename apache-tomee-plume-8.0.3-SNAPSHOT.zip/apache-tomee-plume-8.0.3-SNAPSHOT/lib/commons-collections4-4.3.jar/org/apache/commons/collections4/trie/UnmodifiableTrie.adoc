@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/trie/UnmodifiableTrie.class
-
- - link:UnmodifiableTrie-asmified.java[Asmified]
-
-== References
-

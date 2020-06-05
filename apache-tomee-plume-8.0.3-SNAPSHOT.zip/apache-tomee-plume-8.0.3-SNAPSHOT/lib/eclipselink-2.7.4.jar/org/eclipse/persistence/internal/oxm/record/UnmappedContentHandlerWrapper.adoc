@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/UnmappedContentHandlerWrapper.class
-
- - link:UnmappedContentHandlerWrapper-asmified.java[Asmified]
-
-== References
-

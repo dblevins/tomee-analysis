@@ -1,6 +1,0 @@
-= org/apache/catalina/Executor.class
-
- - link:Executor-asmified.java[Asmified]
-
-== References
-

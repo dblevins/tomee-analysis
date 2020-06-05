@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/platform/database/XMLTypePlaceholder.class
-
- - link:XMLTypePlaceholder-asmified.java[Asmified]
-
-== References
-

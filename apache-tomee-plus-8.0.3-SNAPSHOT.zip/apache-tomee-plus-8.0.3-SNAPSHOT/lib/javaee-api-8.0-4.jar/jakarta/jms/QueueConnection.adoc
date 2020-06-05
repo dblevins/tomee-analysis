@@ -1,6 +1,0 @@
-= jakarta/jms/QueueConnection.class
-
- - link:QueueConnection-asmified.java[Asmified]
-
-== References
-

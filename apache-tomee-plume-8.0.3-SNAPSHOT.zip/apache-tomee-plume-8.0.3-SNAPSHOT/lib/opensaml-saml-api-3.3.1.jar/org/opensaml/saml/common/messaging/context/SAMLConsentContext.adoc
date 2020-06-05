@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/context/SAMLConsentContext.class
-
- - link:SAMLConsentContext-asmified.java[Asmified]
-
-== References
-

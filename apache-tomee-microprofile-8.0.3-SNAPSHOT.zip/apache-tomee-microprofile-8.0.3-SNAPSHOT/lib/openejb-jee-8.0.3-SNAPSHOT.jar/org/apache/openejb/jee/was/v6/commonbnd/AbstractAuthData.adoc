@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/commonbnd/AbstractAuthData.class
-
- - link:AbstractAuthData-asmified.java[Asmified]
-
-== References
-

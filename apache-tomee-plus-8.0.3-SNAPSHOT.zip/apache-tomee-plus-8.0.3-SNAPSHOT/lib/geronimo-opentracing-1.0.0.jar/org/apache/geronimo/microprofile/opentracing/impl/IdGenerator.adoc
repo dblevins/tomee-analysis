@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/impl/IdGenerator.class
-
- - link:IdGenerator-asmified.java[Asmified]
-
-== References
-

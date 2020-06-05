@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/ArrayTypeImpl.class
-
- - link:ArrayTypeImpl-asmified.java[Asmified]
-
-== References
-

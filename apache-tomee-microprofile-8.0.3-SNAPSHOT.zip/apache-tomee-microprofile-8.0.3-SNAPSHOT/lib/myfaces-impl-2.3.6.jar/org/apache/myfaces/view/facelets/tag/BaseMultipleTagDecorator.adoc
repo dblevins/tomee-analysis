@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/BaseMultipleTagDecorator.class
-
- - link:BaseMultipleTagDecorator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/rfc8032/Ed25519$Algorithm.class
-
- - link:Ed25519$Algorithm-asmified.java[Asmified]
-
-== References
-

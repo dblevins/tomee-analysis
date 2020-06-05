@@ -1,6 +1,0 @@
-= com/sun/xml/bind/api/Messages.class
-
- - link:Messages-asmified.java[Asmified]
-
-== References
-

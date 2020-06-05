@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/ClientProxy.class
-
- - link:ClientProxy-asmified.java[Asmified]
-
-== References
-

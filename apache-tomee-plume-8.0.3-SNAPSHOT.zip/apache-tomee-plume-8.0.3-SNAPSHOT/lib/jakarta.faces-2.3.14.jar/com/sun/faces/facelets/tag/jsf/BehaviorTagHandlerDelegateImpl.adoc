@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/BehaviorTagHandlerDelegateImpl.class
-
- - link:BehaviorTagHandlerDelegateImpl-asmified.java[Asmified]
-
-== References
-

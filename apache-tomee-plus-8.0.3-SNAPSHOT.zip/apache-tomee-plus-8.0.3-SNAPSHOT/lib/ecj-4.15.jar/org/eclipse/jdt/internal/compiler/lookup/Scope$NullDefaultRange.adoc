@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/Scope$NullDefaultRange.class
-
- - link:Scope$NullDefaultRange-asmified.java[Asmified]
-
-== References
-

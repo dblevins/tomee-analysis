@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomcatWebAppBuilder.class
-
- - link:TomcatWebAppBuilder-asmified.java[Asmified]
-
-== References
-

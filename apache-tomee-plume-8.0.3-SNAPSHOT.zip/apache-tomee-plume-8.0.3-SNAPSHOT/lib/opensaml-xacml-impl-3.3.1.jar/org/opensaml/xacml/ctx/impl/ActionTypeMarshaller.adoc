@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ActionTypeMarshaller.class
-
- - link:ActionTypeMarshaller-asmified.java[Asmified]
-
-== References
-

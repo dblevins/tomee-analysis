@@ -1,7 +1,0 @@
-= javax/persistence/NamedStoredProcedureQueries.class
-
- - link:NamedStoredProcedureQueries-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.NamedStoredProcedureQuery - 1

@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/BusApplicationContextResourceResolver.class
-
- - link:BusApplicationContextResourceResolver-asmified.java[Asmified]
-
-== References
-

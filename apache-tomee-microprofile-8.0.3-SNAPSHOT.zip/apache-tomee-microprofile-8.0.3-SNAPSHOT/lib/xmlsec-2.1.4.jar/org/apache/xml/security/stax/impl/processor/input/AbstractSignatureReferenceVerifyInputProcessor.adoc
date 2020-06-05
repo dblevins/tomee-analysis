@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/processor/input/AbstractSignatureReferenceVerifyInputProcessor.class
-
- - link:AbstractSignatureReferenceVerifyInputProcessor-asmified.java[Asmified]
-
-== References
-

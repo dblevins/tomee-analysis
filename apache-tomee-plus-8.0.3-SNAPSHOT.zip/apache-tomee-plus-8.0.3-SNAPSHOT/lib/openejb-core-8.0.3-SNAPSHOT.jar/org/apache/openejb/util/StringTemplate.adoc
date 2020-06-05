@@ -1,6 +1,0 @@
-= org/apache/openejb/util/StringTemplate.class
-
- - link:StringTemplate-asmified.java[Asmified]
-
-== References
-

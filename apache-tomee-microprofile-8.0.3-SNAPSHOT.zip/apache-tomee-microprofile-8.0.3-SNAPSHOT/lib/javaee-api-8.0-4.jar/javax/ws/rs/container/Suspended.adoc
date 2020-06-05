@@ -1,6 +1,0 @@
-= javax/ws/rs/container/Suspended.class
-
- - link:Suspended-asmified.java[Asmified]
-
-== References
-

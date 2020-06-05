@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/RedirectImpl.class
-
- - link:RedirectImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaDestination$DestinationType.class
-
- - link:KahaDestination$DestinationType-asmified.java[Asmified]
-
-== References
-

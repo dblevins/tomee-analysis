@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/ChangeCipherSpec.class
-
- - link:ChangeCipherSpec-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/UUIDStringSeq.class
-
- - link:UUIDStringSeq-asmified.java[Asmified]
-
-== References
-

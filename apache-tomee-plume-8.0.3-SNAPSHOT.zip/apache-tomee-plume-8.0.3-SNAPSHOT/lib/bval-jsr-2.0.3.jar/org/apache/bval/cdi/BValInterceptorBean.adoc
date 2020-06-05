@@ -1,6 +1,0 @@
-= org/apache/bval/cdi/BValInterceptorBean.class
-
- - link:BValInterceptorBean-asmified.java[Asmified]
-
-== References
-

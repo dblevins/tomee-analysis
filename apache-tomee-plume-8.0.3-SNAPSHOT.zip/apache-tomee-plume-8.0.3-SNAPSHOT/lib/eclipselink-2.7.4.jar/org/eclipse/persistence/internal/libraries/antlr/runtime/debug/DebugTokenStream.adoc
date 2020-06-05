@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/DebugTokenStream.class
-
- - link:DebugTokenStream-asmified.java[Asmified]
-
-== References
-

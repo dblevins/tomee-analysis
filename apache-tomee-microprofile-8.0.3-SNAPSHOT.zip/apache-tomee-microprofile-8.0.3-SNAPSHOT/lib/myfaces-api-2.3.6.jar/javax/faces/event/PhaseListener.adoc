@@ -1,8 +1,0 @@
-= javax/faces/event/PhaseListener.class
-
- - link:PhaseListener-asmified.java[Asmified]
-
-== References
-
- - javax.faces.event.PhaseEvent - 2
- - javax.faces.event.PhaseId - 1

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ObjectBuildingQuery.class
-
- - link:ObjectBuildingQuery-asmified.java[Asmified]
-
-== References
-

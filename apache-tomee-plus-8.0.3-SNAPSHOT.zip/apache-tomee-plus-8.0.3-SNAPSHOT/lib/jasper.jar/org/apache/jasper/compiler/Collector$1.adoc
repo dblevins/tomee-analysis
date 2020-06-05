@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Collector$1.class
-
- - link:Collector$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/annotation/LifecycleProvider2.class
-
- - link:LifecycleProvider2-asmified.java[Asmified]
-
-== References
-

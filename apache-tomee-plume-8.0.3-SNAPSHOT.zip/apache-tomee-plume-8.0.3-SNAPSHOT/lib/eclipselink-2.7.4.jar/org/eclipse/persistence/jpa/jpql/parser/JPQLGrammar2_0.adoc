@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/JPQLGrammar2_0.class
-
- - link:JPQLGrammar2_0-asmified.java[Asmified]
-
-== References
-

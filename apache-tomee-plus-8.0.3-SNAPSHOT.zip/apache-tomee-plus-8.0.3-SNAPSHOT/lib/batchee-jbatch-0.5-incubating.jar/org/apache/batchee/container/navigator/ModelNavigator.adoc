@@ -1,6 +1,0 @@
-= org/apache/batchee/container/navigator/ModelNavigator.class
-
- - link:ModelNavigator-asmified.java[Asmified]
-
-== References
-

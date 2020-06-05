@@ -1,6 +1,0 @@
-= org/hsqldb/types/Type$TypedComparator.class
-
- - link:Type$TypedComparator-asmified.java[Asmified]
-
-== References
-

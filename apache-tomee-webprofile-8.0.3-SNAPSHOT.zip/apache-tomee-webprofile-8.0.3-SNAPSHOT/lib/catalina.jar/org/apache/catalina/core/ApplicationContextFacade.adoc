@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationContextFacade.class
-
- - link:ApplicationContextFacade-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/XMLReaderFactory.class
-
- - link:XMLReaderFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/ConnectionOpened.class
-
- - link:ConnectionOpened-asmified.java[Asmified]
-
-== References
-

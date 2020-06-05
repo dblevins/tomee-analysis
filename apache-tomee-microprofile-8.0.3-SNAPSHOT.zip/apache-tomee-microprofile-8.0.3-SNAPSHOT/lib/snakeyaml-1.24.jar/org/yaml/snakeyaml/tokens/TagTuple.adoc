@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/TagTuple.class
-
- - link:TagTuple-asmified.java[Asmified]
-
-== References
-

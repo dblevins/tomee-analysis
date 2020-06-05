@@ -1,6 +1,0 @@
-= com/sun/faces/config/manager/tasks/FindAnnotatedConfigClasses.class
-
- - link:FindAnnotatedConfigClasses-asmified.java[Asmified]
-
-== References
-

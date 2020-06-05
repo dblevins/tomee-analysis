@@ -1,6 +1,0 @@
-= jakarta/mail/util/SharedByteArrayInputStream.class
-
- - link:SharedByteArrayInputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/EventHandler.class
-
- - link:EventHandler-asmified.java[Asmified]
-
-== References
-

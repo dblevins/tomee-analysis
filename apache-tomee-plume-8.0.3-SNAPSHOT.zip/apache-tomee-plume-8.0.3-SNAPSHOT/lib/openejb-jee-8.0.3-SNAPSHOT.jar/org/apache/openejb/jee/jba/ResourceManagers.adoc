@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/ResourceManagers.class
-
- - link:ResourceManagers-asmified.java[Asmified]
-
-== References
-

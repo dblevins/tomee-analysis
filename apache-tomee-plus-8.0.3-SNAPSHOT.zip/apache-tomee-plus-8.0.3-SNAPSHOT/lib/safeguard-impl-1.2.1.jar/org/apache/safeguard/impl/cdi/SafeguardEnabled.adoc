@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/cdi/SafeguardEnabled.class
-
- - link:SafeguardEnabled-asmified.java[Asmified]
-
-== References
-

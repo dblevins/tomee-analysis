@@ -1,6 +1,0 @@
-= org/apache/cxf/transports/http/configuration/ConnectionType.class
-
- - link:ConnectionType-asmified.java[Asmified]
-
-== References
-

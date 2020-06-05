@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/DataSourceFactory.class
-
- - link:DataSourceFactory-asmified.java[Asmified]
-
-== References
-

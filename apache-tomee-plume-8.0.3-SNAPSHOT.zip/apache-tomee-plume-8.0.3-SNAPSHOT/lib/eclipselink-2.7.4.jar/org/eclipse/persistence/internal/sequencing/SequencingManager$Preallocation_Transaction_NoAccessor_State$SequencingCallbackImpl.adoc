@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sequencing/SequencingManager$Preallocation_Transaction_NoAccessor_State$SequencingCallbackImpl.class
-
- - link:SequencingManager$Preallocation_Transaction_NoAccessor_State$SequencingCallbackImpl-asmified.java[Asmified]
-
-== References
-

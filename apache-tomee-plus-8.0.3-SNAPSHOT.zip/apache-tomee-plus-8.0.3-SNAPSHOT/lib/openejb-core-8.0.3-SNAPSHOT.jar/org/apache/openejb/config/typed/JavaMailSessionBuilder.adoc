@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/JavaMailSessionBuilder.class
-
- - link:JavaMailSessionBuilder-asmified.java[Asmified]
-
-== References
-

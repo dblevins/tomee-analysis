@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ObjectExistsException.class
-
- - link:ObjectExistsException-asmified.java[Asmified]
-
-== References
-

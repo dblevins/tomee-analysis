@@ -1,7 +1,0 @@
-= javax/websocket/MessageHandler$Partial.class
-
- - link:MessageHandler$Partial-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.MessageHandler - 1

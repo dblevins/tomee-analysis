@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/ClientMessageObserver.class
-
- - link:ClientMessageObserver-asmified.java[Asmified]
-
-== References
-

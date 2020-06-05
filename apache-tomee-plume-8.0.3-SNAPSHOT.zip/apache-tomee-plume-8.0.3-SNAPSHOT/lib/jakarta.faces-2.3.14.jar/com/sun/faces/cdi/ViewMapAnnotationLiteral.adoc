@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/ViewMapAnnotationLiteral.class
-
- - link:ViewMapAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

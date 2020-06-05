@@ -1,6 +1,0 @@
-= org/apache/openejb/observer/ObserverManager$MethodInvocation.class
-
- - link:ObserverManager$MethodInvocation-asmified.java[Asmified]
-
-== References
-

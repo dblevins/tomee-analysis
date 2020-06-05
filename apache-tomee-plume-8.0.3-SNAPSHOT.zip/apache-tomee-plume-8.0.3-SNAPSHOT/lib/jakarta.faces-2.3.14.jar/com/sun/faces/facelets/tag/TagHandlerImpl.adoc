@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/TagHandlerImpl.class
-
- - link:TagHandlerImpl-asmified.java[Asmified]
-
-== References
-

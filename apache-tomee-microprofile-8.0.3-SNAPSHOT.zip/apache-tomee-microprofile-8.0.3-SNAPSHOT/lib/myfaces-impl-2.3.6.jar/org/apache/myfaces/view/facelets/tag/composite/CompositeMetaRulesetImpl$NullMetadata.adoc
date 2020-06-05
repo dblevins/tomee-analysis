@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeMetaRulesetImpl$NullMetadata.class
-
- - link:CompositeMetaRulesetImpl$NullMetadata-asmified.java[Asmified]
-
-== References
-

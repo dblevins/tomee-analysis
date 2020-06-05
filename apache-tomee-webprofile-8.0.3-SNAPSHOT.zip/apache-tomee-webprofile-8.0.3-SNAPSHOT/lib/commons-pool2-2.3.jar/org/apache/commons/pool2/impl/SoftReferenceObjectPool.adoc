@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/impl/SoftReferenceObjectPool.class
-
- - link:SoftReferenceObjectPool-asmified.java[Asmified]
-
-== References
-

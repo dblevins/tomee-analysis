@@ -1,7 +1,0 @@
-= javax/resource/spi/work/WorkListener.class
-
- - link:WorkListener-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.work.WorkEvent - 4

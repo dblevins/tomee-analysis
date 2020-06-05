@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/CollectionProxy.class
-
- - link:CollectionProxy-asmified.java[Asmified]
-
-== References
-

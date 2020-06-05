@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/BasicIndirectionPolicy.class
-
- - link:BasicIndirectionPolicy-asmified.java[Asmified]
-
-== References
-

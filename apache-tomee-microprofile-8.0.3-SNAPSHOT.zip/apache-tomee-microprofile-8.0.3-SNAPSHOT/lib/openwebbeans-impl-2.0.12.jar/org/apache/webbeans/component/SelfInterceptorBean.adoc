@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/SelfInterceptorBean.class
-
- - link:SelfInterceptorBean-asmified.java[Asmified]
-
-== References
-

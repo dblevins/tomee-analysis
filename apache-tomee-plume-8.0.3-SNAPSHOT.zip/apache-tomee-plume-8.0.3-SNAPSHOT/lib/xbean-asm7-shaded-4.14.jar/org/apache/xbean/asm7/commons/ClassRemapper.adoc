@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/ClassRemapper.class
-
- - link:ClassRemapper-asmified.java[Asmified]
-
-== References
-

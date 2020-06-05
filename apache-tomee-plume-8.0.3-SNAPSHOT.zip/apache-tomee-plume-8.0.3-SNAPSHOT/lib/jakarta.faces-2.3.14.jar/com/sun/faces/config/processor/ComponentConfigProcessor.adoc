@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/ComponentConfigProcessor.class
-
- - link:ComponentConfigProcessor-asmified.java[Asmified]
-
-== References
-

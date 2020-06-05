@@ -1,6 +1,0 @@
-= org/joda/time/format/PeriodPrinter.class
-
- - link:PeriodPrinter-asmified.java[Asmified]
-
-== References
-

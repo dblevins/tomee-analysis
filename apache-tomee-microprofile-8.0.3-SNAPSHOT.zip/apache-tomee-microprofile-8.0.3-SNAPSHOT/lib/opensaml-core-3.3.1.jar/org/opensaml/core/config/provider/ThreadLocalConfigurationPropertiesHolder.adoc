@@ -1,6 +1,0 @@
-= org/opensaml/core/config/provider/ThreadLocalConfigurationPropertiesHolder.class
-
- - link:ThreadLocalConfigurationPropertiesHolder-asmified.java[Asmified]
-
-== References
-

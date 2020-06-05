@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/core/sessions/CoreAbstractSession.class
-
- - link:CoreAbstractSession-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/ConvertDateTimeHandler.class
-
- - link:ConvertDateTimeHandler-asmified.java[Asmified]
-
-== References
-

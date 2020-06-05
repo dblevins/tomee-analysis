@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/stax/XMLSecNamespaceImpl.class
-
- - link:XMLSecNamespaceImpl-asmified.java[Asmified]
-
-== References
-

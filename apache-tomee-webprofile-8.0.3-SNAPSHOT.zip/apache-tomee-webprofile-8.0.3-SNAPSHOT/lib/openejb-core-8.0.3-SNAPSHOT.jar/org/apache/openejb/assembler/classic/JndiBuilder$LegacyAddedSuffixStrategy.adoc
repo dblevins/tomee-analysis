@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/JndiBuilder$LegacyAddedSuffixStrategy.class
-
- - link:JndiBuilder$LegacyAddedSuffixStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/CharChunk.class
-
- - link:CharChunk-asmified.java[Asmified]
-
-== References
-

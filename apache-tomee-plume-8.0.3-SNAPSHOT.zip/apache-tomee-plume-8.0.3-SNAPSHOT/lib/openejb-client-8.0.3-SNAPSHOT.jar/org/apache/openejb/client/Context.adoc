@@ -1,6 +1,0 @@
-= org/apache/openejb/client/Context.class
-
- - link:Context-asmified.java[Asmified]
-
-== References
-

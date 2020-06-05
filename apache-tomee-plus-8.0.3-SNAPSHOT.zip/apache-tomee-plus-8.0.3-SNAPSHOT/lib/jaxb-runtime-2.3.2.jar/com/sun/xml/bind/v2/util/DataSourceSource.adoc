@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/util/DataSourceSource.class
-
- - link:DataSourceSource-asmified.java[Asmified]
-
-== References
-

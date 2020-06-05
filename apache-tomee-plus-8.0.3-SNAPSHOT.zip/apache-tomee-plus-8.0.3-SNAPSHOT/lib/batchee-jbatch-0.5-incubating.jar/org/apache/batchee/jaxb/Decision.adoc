@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Decision.class
-
- - link:Decision-asmified.java[Asmified]
-
-== References
-

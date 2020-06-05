@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/PushContextFactoryBean.class
-
- - link:PushContextFactoryBean-asmified.java[Asmified]
-
-== References
-

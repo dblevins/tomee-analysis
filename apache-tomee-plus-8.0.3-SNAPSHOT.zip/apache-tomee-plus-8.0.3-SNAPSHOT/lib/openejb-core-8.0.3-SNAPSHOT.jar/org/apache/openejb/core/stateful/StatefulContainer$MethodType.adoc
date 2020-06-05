@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/StatefulContainer$MethodType.class
-
- - link:StatefulContainer$MethodType-asmified.java[Asmified]
-
-== References
-

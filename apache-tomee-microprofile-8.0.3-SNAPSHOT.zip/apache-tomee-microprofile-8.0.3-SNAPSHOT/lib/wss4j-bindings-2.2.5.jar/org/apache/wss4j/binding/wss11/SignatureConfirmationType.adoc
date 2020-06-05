@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wss11/SignatureConfirmationType.class
-
- - link:SignatureConfirmationType-asmified.java[Asmified]
-
-== References
-

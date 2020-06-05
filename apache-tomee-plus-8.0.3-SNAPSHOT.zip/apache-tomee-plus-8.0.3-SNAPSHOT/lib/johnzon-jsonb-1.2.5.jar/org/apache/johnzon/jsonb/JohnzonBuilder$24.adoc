@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/JohnzonBuilder$24.class
-
- - link:JohnzonBuilder$24-asmified.java[Asmified]
-
-== References
-

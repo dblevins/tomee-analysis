@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmlenc/CipherReferenceType.class
-
- - link:CipherReferenceType-asmified.java[Asmified]
-
-== References
-

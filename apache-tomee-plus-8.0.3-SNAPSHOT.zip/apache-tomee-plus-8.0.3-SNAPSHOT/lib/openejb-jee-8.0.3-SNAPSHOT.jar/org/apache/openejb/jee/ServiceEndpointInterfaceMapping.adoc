@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ServiceEndpointInterfaceMapping.class
-
- - link:ServiceEndpointInterfaceMapping-asmified.java[Asmified]
-
-== References
-

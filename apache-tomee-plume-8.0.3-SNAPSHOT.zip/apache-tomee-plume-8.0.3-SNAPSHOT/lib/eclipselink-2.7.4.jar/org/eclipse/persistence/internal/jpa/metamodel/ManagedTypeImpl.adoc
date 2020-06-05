@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metamodel/ManagedTypeImpl.class
-
- - link:ManagedTypeImpl-asmified.java[Asmified]
-
-== References
-

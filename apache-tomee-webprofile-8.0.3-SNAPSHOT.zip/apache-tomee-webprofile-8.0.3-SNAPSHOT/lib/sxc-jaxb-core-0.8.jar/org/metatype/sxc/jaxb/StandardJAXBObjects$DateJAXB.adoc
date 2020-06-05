@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/StandardJAXBObjects$DateJAXB.class
-
- - link:StandardJAXBObjects$DateJAXB-asmified.java[Asmified]
-
-== References
-

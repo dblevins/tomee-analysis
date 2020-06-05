@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwk/KeyType.class
-
- - link:KeyType-asmified.java[Asmified]
-
-== References
-

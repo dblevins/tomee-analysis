@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BinaryHeap.class
-
- - link:BinaryHeap-asmified.java[Asmified]
-
-== References
-

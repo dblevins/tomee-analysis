@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/PackageMapping.class
-
- - link:PackageMapping-asmified.java[Asmified]
-
-== References
-

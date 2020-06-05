@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/filters/IdentityInputFilter.class
-
- - link:IdentityInputFilter-asmified.java[Asmified]
-
-== References
-

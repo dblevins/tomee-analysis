@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Flow.class
-
- - link:Flow-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/ContainerConfiguration.class
-
- - link:ContainerConfiguration-asmified.java[Asmified]
-
-== References
-

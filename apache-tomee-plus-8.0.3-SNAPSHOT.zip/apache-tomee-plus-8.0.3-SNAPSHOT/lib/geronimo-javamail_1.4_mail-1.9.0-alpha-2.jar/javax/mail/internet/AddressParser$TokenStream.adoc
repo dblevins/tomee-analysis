@@ -1,9 +1,0 @@
-= javax/mail/internet/AddressParser$TokenStream.class
-
- - link:AddressParser$TokenStream-asmified.java[Asmified]
-
-== References
-
- - javax.mail.internet.AddressParser$AddressToken - 36
- - javax.mail.internet.AddressParser$TokenStream - 18
- - javax.mail.internet.AddressParser - 8

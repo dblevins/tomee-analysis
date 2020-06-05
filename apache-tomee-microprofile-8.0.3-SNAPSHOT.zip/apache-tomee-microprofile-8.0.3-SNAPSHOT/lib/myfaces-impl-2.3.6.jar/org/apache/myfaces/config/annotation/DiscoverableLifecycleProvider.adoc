@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/annotation/DiscoverableLifecycleProvider.class
-
- - link:DiscoverableLifecycleProvider-asmified.java[Asmified]
-
-== References
-

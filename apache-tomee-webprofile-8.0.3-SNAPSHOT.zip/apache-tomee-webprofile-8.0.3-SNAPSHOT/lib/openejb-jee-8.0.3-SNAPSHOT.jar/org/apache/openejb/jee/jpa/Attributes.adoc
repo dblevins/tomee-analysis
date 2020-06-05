@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/Attributes.class
-
- - link:Attributes-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/WrapperIterator.class
-
- - link:WrapperIterator-asmified.java[Asmified]
-
-== References
-

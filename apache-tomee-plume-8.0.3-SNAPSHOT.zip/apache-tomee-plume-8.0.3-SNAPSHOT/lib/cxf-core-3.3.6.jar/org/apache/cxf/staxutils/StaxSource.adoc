@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/StaxSource.class
-
- - link:StaxSource-asmified.java[Asmified]
-
-== References
-

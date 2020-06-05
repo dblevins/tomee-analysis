@@ -1,6 +1,0 @@
-= jakarta/batch/operations/NoSuchJobException.class
-
- - link:NoSuchJobException-asmified.java[Asmified]
-
-== References
-

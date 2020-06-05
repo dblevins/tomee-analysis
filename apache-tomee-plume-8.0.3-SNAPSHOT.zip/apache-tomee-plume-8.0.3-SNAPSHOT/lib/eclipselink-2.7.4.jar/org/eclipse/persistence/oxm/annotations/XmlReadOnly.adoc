@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlReadOnly.class
-
- - link:XmlReadOnly-asmified.java[Asmified]
-
-== References
-

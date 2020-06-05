@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/AbstractManagedType$IdAttributeFilter.class
-
- - link:AbstractManagedType$IdAttributeFilter-asmified.java[Asmified]
-
-== References
-

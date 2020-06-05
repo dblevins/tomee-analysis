@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/MappedTokenHandler.class
-
- - link:MappedTokenHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/StreamStartToken.class
-
- - link:StreamStartToken-asmified.java[Asmified]
-
-== References
-

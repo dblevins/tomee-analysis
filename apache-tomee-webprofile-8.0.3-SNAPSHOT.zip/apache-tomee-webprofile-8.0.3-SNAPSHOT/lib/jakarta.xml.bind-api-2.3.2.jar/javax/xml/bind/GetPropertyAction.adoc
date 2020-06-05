@@ -1,7 +1,0 @@
-= javax/xml/bind/GetPropertyAction.class
-
- - link:GetPropertyAction-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.GetPropertyAction - 1

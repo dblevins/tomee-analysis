@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/interceptors/SimpleCoordinator.class
-
- - link:SimpleCoordinator-asmified.java[Asmified]
-
-== References
-

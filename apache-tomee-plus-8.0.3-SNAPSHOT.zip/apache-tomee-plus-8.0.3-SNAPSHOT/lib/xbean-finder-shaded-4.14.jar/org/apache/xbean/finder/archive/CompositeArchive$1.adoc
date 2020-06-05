@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/archive/CompositeArchive$1.class
-
- - link:CompositeArchive$1-asmified.java[Asmified]
-
-== References
-

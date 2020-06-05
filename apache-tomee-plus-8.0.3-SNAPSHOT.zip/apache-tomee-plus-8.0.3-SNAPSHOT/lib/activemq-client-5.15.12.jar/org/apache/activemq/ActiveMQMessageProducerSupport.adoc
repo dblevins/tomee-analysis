@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQMessageProducerSupport.class
-
- - link:ActiveMQMessageProducerSupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wss10/SecurityTokenReferenceType.class
-
- - link:SecurityTokenReferenceType-asmified.java[Asmified]
-
-== References
-

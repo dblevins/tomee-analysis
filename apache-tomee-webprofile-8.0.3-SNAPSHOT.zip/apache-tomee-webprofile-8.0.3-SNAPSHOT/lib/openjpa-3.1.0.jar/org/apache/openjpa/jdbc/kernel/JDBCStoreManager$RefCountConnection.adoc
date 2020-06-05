@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/JDBCStoreManager$RefCountConnection.class
-
- - link:JDBCStoreManager$RefCountConnection-asmified.java[Asmified]
-
-== References
-

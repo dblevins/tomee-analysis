@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/DescriptorManager.class
-
- - link:DescriptorManager-asmified.java[Asmified]
-
-== References
-

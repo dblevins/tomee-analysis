@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/spi/DeploymentConfiguration.class
-
- - link:DeploymentConfiguration-asmified.java[Asmified]
-
-== References
-

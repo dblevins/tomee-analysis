@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/esf/ESFAttributes.class
-
- - link:ESFAttributes-asmified.java[Asmified]
-
-== References
-

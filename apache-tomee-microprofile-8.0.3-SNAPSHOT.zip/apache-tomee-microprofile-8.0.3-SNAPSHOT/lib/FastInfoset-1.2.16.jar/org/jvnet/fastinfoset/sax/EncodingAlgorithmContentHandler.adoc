@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/sax/EncodingAlgorithmContentHandler.class
-
- - link:EncodingAlgorithmContentHandler-asmified.java[Asmified]
-
-== References
-

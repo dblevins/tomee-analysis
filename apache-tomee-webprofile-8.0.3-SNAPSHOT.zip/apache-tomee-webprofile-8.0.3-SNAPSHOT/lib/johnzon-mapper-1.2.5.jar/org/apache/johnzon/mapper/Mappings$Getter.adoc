@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/Mappings$Getter.class
-
- - link:Mappings$Getter-asmified.java[Asmified]
-
-== References
-

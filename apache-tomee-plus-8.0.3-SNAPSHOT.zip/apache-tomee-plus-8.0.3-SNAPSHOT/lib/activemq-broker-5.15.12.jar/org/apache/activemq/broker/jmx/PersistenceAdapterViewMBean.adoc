@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/PersistenceAdapterViewMBean.class
-
- - link:PersistenceAdapterViewMBean-asmified.java[Asmified]
-
-== References
-

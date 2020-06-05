@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/io/AbstractXMLObjectUnmarshaller.class
-
- - link:AbstractXMLObjectUnmarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/core/StandardWrapperValve.class
-
- - link:StandardWrapperValve-asmified.java[Asmified]
-
-== References
-

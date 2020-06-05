@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/EJBExceptionMapper.class
-
- - link:EJBExceptionMapper-asmified.java[Asmified]
-
-== References
-

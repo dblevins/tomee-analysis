@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/spi/exceptions/BeanNotFoundException.class
-
- - link:BeanNotFoundException-asmified.java[Asmified]
-
-== References
-

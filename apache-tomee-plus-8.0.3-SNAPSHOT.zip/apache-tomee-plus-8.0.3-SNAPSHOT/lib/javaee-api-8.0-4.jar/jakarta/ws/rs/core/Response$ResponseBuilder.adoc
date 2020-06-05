@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Response$ResponseBuilder.class
-
- - link:Response$ResponseBuilder-asmified.java[Asmified]
-
-== References
-

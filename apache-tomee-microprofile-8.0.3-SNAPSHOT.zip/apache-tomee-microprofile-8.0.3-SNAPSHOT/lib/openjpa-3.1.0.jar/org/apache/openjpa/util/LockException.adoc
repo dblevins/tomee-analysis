@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/LockException.class
-
- - link:LockException-asmified.java[Asmified]
-
-== References
-

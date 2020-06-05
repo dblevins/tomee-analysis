@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/BeanAttributesImpl.class
-
- - link:BeanAttributesImpl-asmified.java[Asmified]
-
-== References
-

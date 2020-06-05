@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/faulttolerance/CircuitBreaker.class
-
- - link:CircuitBreaker-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLChoiceObjectMapping.class
-
- - link:XMLChoiceObjectMapping-asmified.java[Asmified]
-
-== References
-

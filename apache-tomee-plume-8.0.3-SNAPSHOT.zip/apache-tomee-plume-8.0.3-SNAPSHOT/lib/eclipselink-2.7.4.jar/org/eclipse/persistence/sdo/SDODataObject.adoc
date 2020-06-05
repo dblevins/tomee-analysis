@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/SDODataObject.class
-
- - link:SDODataObject-asmified.java[Asmified]
-
-== References
-

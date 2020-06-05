@@ -1,6 +1,0 @@
-= org/apache/activemq/network/jms/ReconnectionPolicy.class
-
- - link:ReconnectionPolicy-asmified.java[Asmified]
-
-== References
-

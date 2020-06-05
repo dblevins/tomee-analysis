@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/nio/NioReceiver.class
-
- - link:NioReceiver-asmified.java[Asmified]
-
-== References
-

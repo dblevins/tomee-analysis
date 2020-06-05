@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/rss/OReillyNewsGrabber.class
-
- - link:OReillyNewsGrabber-asmified.java[Asmified]
-
-== References
-

@@ -1,9 +1,0 @@
-= javax/persistence/metamodel/Metamodel.class
-
- - link:Metamodel-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.metamodel.EntityType - 2
- - javax.persistence.metamodel.ManagedType - 2
- - javax.persistence.metamodel.EmbeddableType - 2

@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationFilterFactory.class
-
- - link:ApplicationFilterFactory-asmified.java[Asmified]
-
-== References
-

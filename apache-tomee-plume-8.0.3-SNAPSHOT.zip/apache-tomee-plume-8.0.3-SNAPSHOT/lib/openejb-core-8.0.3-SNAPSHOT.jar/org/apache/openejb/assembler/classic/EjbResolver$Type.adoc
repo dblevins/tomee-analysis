@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/EjbResolver$Type.class
-
- - link:EjbResolver$Type-asmified.java[Asmified]
-
-== References
-

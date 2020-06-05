@@ -1,6 +1,0 @@
-= com/ibm/wsdl/ServiceImpl.class
-
- - link:ServiceImpl-asmified.java[Asmified]
-
-== References
-

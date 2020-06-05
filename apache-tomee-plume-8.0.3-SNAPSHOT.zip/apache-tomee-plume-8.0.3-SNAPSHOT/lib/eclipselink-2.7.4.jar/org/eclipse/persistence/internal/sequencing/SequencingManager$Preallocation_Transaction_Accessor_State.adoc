@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sequencing/SequencingManager$Preallocation_Transaction_Accessor_State.class
-
- - link:SequencingManager$Preallocation_Transaction_Accessor_State-asmified.java[Asmified]
-
-== References
-

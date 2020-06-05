@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/packaging/mime/internet/ParameterList.class
-
- - link:ParameterList-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/rights/UserManager.class
-
- - link:UserManager-asmified.java[Asmified]
-
-== References
-

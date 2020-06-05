@@ -1,6 +1,0 @@
-= org/w3c/dom/ls/LSSerializerFilter.class
-
- - link:LSSerializerFilter-asmified.java[Asmified]
-
-== References
-

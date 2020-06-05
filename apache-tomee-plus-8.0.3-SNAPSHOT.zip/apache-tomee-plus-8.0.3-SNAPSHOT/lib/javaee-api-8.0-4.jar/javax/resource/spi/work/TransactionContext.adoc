@@ -1,8 +1,0 @@
-= javax/resource/spi/work/TransactionContext.class
-
- - link:TransactionContext-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.work.ExecutionContext - 2
- - javax.resource.spi.work.WorkContext - 1

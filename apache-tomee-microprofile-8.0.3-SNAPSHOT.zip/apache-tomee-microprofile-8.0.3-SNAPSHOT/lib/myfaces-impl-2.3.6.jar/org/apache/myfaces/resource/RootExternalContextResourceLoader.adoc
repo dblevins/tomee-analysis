@@ -1,6 +1,0 @@
-= org/apache/myfaces/resource/RootExternalContextResourceLoader.class
-
- - link:RootExternalContextResourceLoader-asmified.java[Asmified]
-
-== References
-

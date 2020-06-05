@@ -1,6 +1,0 @@
-= org/jose4j/lang/ByteGenerator.class
-
- - link:ByteGenerator-asmified.java[Asmified]
-
-== References
-

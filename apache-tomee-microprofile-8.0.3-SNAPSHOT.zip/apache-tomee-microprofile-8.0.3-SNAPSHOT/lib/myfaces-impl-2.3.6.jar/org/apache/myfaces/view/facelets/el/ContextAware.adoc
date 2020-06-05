@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/ContextAware.class
-
- - link:ContextAware-asmified.java[Asmified]
-
-== References
-

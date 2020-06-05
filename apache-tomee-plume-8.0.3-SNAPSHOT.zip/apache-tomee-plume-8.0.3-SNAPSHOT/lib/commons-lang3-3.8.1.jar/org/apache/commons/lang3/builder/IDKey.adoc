@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/builder/IDKey.class
-
- - link:IDKey-asmified.java[Asmified]
-
-== References
-

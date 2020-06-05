@@ -1,4 +1,0 @@
-= apache-tomee-plus-8.0.3-SNAPSHOT/lib/catalina.jar
-
- - link:org/apache/naming/factory/webservices/ServiceRefFactory.adoc[org/apache/naming/factory/webservices/ServiceRefFactory.class] - 95
- - link:org/apache/naming/factory/webservices/ServiceProxy.adoc[org/apache/naming/factory/webservices/ServiceProxy.class] - 24

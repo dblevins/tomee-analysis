@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/pool/impl/ViewPoolImpl.class
-
- - link:ViewPoolImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ValueSet.class
-
- - link:ValueSet-asmified.java[Asmified]
-
-== References
-

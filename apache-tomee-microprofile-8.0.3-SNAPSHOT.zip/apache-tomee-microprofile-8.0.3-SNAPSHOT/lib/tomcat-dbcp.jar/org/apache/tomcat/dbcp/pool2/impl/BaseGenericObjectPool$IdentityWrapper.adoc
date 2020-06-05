@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/impl/BaseGenericObjectPool$IdentityWrapper.class
-
- - link:BaseGenericObjectPool$IdentityWrapper-asmified.java[Asmified]
-
-== References
-

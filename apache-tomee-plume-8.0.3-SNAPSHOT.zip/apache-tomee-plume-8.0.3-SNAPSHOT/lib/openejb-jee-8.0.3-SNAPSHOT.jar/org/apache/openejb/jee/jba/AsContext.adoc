@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/AsContext.class
-
- - link:AsContext-asmified.java[Asmified]
-
-== References
-

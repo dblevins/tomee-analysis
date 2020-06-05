@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/localization/EclipseLinkLocalization.class
-
- - link:EclipseLinkLocalization-asmified.java[Asmified]
-
-== References
-

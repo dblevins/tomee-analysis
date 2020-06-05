@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/EclipseLinkSemanticValidatorExtension$1.class
-
- - link:EclipseLinkSemanticValidatorExtension$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/event/EventContextImpl.class
-
- - link:EventContextImpl-asmified.java[Asmified]
-
-== References
-

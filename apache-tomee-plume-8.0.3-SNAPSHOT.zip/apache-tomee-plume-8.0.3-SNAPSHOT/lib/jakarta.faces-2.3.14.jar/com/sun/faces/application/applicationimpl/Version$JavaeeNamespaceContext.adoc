@@ -1,6 +1,0 @@
-= com/sun/faces/application/applicationimpl/Version$JavaeeNamespaceContext.class
-
- - link:Version$JavaeeNamespaceContext-asmified.java[Asmified]
-
-== References
-

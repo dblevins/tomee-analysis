@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/ClassFinder.class
-
- - link:ClassFinder-asmified.java[Asmified]
-
-== References
-

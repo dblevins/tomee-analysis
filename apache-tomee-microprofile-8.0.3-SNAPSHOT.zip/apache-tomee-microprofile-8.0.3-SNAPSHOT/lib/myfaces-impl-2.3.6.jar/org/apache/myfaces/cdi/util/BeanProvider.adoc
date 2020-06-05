@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/util/BeanProvider.class
-
- - link:BeanProvider-asmified.java[Asmified]
-
-== References
-

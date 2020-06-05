@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/MemoryTimerStore$TimerDataView.class
-
- - link:MemoryTimerStore$TimerDataView-asmified.java[Asmified]
-
-== References
-

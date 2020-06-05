@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ResultVariableFactory.class
-
- - link:ResultVariableFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/controller/SingleThreadedStepController.class
-
- - link:SingleThreadedStepController-asmified.java[Asmified]
-
-== References
-

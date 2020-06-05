@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/blueprint/BlueprintResourceFactory.class
-
- - link:BlueprintResourceFactory-asmified.java[Asmified]
-
-== References
-

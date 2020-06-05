@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/converters/ByteLocaleConverter.class
-
- - link:ByteLocaleConverter-asmified.java[Asmified]
-
-== References
-

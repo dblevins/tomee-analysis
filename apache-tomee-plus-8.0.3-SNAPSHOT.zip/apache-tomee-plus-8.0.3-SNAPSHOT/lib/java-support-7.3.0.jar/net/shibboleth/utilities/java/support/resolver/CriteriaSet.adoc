@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/resolver/CriteriaSet.class
-
- - link:CriteriaSet-asmified.java[Asmified]
-
-== References
-

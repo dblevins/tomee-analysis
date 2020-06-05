@@ -1,6 +1,0 @@
-= org/apache/tomee/common/NamingUtil$Resource.class
-
- - link:NamingUtil$Resource-asmified.java[Asmified]
-
-== References
-

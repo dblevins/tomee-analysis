@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/SoapFault.class
-
- - link:SoapFault-asmified.java[Asmified]
-
-== References
-

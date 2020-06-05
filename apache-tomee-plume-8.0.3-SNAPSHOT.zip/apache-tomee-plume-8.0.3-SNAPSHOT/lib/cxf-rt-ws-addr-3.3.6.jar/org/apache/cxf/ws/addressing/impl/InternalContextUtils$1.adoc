@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/impl/InternalContextUtils$1.class
-
- - link:InternalContextUtils$1-asmified.java[Asmified]
-
-== References
-

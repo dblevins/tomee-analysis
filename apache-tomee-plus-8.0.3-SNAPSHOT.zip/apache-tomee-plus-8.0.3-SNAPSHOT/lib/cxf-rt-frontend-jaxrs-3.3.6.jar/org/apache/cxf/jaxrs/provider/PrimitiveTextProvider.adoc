@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/PrimitiveTextProvider.class
-
- - link:PrimitiveTextProvider-asmified.java[Asmified]
-
-== References
-

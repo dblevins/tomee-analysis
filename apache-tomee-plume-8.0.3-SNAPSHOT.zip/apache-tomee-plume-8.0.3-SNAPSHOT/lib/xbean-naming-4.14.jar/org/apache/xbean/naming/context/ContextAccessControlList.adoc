@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ContextAccessControlList.class
-
- - link:ContextAccessControlList-asmified.java[Asmified]
-
-== References
-

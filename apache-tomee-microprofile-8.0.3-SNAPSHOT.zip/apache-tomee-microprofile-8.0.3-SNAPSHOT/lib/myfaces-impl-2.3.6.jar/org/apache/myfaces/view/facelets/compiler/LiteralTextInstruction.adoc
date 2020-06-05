@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/LiteralTextInstruction.class
-
- - link:LiteralTextInstruction-asmified.java[Asmified]
-
-== References
-

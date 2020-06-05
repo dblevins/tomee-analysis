@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/IntraVmArtifact$Handles.class
-
- - link:IntraVmArtifact$Handles-asmified.java[Asmified]
-
-== References
-

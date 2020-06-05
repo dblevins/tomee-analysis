@@ -1,6 +1,0 @@
-= org/hsqldb/lib/tar/TarReader$TarEntryHeader.class
-
- - link:TarReader$TarEntryHeader-asmified.java[Asmified]
-
-== References
-

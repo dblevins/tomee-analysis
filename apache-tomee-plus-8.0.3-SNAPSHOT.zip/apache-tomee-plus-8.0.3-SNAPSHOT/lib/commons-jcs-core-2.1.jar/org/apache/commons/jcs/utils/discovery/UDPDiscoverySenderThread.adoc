@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/discovery/UDPDiscoverySenderThread.class
-
- - link:UDPDiscoverySenderThread-asmified.java[Asmified]
-
-== References
-

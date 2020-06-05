@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/xml/XSISchemaLocation.class
-
- - link:XSISchemaLocation-asmified.java[Asmified]
-
-== References
-

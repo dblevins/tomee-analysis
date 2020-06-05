@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQTextMessage.class
-
- - link:ActiveMQTextMessage-asmified.java[Asmified]
-
-== References
-

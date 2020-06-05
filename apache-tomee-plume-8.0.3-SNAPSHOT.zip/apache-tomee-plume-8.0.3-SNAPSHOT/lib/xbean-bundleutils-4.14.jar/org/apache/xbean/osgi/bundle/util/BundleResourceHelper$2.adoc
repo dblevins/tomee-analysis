@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/BundleResourceHelper$2.class
-
- - link:BundleResourceHelper$2-asmified.java[Asmified]
-
-== References
-

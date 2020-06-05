@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/asymmetric/edec/SignatureSpi$EdDSA.class
-
- - link:SignatureSpi$EdDSA-asmified.java[Asmified]
-
-== References
-

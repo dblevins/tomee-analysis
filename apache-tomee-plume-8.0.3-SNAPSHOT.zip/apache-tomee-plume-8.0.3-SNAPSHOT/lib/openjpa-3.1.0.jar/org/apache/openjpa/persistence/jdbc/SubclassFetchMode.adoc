@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/SubclassFetchMode.class
-
- - link:SubclassFetchMode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/processor/Processor.class
-
- - link:Processor-asmified.java[Asmified]
-
-== References
-

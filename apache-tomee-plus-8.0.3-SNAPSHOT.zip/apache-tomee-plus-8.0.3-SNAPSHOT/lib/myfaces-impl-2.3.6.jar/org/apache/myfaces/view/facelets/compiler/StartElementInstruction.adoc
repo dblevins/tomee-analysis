@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/StartElementInstruction.class
-
- - link:StartElementInstruction-asmified.java[Asmified]
-
-== References
-

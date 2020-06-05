@@ -1,6 +1,0 @@
-= jakarta/mail/Service.class
-
- - link:Service-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/JCSEntry.class
-
- - link:JCSEntry-asmified.java[Asmified]
-
-== References
-

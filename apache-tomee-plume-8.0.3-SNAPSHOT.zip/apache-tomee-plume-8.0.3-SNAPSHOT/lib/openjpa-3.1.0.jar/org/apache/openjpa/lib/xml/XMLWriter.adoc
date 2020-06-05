@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/xml/XMLWriter.class
-
- - link:XMLWriter-asmified.java[Asmified]
-
-== References
-

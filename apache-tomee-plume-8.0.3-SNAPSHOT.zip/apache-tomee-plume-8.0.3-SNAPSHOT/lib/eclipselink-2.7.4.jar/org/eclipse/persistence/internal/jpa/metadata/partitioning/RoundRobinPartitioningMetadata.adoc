@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/partitioning/RoundRobinPartitioningMetadata.class
-
- - link:RoundRobinPartitioningMetadata-asmified.java[Asmified]
-
-== References
-

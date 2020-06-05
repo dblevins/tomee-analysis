@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/X509Data.class
-
- - link:X509Data-asmified.java[Asmified]
-
-== References
-

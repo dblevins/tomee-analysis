@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ExecuteInJTATransaction.class
-
- - link:ExecuteInJTATransaction-asmified.java[Asmified]
-
-== References
-

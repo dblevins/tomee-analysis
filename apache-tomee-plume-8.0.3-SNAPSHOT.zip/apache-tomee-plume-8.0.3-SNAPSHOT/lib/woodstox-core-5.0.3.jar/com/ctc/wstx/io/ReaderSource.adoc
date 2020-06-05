@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/ReaderSource.class
-
- - link:ReaderSource-asmified.java[Asmified]
-
-== References
-

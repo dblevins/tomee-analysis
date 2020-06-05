@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/core/IfTag.class
-
- - link:IfTag-asmified.java[Asmified]
-
-== References
-

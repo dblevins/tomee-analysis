@@ -1,6 +1,0 @@
-= jakarta/faces/application/ConfigurableNavigationHandler.class
-
- - link:ConfigurableNavigationHandler-asmified.java[Asmified]
-
-== References
-

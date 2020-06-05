@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesLocale$JAXB.class
-
- - link:FacesLocale$JAXB-asmified.java[Asmified]
-
-== References
-

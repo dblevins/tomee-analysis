@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/WSSPolicyException.class
-
- - link:WSSPolicyException-asmified.java[Asmified]
-
-== References
-

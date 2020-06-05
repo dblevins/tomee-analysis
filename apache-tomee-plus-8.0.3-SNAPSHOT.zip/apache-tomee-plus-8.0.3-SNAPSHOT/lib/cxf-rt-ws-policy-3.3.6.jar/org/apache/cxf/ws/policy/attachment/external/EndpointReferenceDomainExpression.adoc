@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/attachment/external/EndpointReferenceDomainExpression.class
-
- - link:EndpointReferenceDomainExpression-asmified.java[Asmified]
-
-== References
-

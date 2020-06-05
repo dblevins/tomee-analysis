@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/IMAPMimeBodyPart.class
-
- - link:IMAPMimeBodyPart-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/service/model/BindingOperationInfo.class
-
- - link:BindingOperationInfo-asmified.java[Asmified]
-
-== References
-

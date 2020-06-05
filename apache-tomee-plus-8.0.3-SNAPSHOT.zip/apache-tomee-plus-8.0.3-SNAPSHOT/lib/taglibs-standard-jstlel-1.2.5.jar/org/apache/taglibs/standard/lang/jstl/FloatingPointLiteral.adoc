@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/FloatingPointLiteral.class
-
- - link:FloatingPointLiteral-asmified.java[Asmified]
-
-== References
-

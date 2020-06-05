@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/EmptyExpression.class
-
- - link:EmptyExpression-asmified.java[Asmified]
-
-== References
-

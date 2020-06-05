@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/PoolingDataSource.class
-
- - link:PoolingDataSource-asmified.java[Asmified]
-
-== References
-

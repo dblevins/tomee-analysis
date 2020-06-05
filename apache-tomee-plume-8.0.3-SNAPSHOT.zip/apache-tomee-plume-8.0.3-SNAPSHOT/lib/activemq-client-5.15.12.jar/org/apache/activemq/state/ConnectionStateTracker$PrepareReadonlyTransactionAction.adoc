@@ -1,6 +1,0 @@
-= org/apache/activemq/state/ConnectionStateTracker$PrepareReadonlyTransactionAction.class
-
- - link:ConnectionStateTracker$PrepareReadonlyTransactionAction-asmified.java[Asmified]
-
-== References
-

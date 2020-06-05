@@ -1,9 +1,0 @@
-= javax/management/j2ee/statistics/JCAStats.class
-
- - link:JCAStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.JCAConnectionStats - 1
- - javax.management.j2ee.statistics.JCAConnectionPoolStats - 1
- - javax.management.j2ee.statistics.Stats - 1

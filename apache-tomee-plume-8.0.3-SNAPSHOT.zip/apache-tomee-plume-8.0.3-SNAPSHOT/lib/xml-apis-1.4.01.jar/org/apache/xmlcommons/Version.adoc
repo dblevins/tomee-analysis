@@ -1,6 +1,0 @@
-= org/apache/xmlcommons/Version.class
-
- - link:Version-asmified.java[Asmified]
-
-== References
-

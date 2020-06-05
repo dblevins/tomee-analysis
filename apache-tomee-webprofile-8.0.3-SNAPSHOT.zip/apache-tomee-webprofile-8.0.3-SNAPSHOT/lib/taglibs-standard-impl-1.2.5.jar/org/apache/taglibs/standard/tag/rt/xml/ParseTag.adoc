@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/xml/ParseTag.class
-
- - link:ParseTag-asmified.java[Asmified]
-
-== References
-

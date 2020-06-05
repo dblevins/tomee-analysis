@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/MarshallingTransportFilter.class
-
- - link:MarshallingTransportFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/ContentDecryptionProvider.class
-
- - link:ContentDecryptionProvider-asmified.java[Asmified]
-
-== References
-

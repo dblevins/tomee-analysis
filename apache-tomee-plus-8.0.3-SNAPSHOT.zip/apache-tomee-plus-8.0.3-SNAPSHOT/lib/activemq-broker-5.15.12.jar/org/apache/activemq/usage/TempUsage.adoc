@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/TempUsage.class
-
- - link:TempUsage-asmified.java[Asmified]
-
-== References
-

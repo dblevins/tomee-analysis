@@ -1,6 +1,0 @@
-= jakarta/activation/CommandInfo$Beans.class
-
- - link:CommandInfo$Beans-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/coyote/AbstractProtocol.class
-
- - link:AbstractProtocol-asmified.java[Asmified]
-
-== References
-

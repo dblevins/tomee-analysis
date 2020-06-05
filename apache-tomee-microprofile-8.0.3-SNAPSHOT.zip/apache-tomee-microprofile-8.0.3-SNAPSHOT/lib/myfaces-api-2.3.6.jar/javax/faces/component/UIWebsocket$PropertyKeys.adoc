@@ -1,7 +1,0 @@
-= javax/faces/component/UIWebsocket$PropertyKeys.class
-
- - link:UIWebsocket$PropertyKeys-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.UIWebsocket$PropertyKeys - 46

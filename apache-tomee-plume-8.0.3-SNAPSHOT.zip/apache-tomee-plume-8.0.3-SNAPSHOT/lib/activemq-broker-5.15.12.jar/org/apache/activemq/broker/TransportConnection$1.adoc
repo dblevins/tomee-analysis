@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/TransportConnection$1.class
-
- - link:TransportConnection$1-asmified.java[Asmified]
-
-== References
-

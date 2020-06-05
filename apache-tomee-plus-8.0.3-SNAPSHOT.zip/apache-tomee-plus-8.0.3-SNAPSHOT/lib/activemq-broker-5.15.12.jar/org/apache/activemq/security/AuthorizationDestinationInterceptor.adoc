@@ -1,6 +1,0 @@
-= org/apache/activemq/security/AuthorizationDestinationInterceptor.class
-
- - link:AuthorizationDestinationInterceptor-asmified.java[Asmified]
-
-== References
-

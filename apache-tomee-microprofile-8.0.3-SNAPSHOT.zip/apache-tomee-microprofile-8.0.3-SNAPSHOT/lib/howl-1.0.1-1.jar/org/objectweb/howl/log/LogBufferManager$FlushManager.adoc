@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogBufferManager$FlushManager.class
-
- - link:LogBufferManager$FlushManager-asmified.java[Asmified]
-
-== References
-

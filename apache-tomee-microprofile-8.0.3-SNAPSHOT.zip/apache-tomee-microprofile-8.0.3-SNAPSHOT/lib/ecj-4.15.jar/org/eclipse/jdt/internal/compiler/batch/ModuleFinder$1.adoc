@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/ModuleFinder$1.class
-
- - link:ModuleFinder$1-asmified.java[Asmified]
-
-== References
-

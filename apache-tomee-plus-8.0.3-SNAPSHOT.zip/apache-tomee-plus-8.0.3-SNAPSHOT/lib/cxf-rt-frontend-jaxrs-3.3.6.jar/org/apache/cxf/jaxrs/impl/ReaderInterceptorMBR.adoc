@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/ReaderInterceptorMBR.class
-
- - link:ReaderInterceptorMBR-asmified.java[Asmified]
-
-== References
-

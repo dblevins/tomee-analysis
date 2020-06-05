@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBContext$RootLevelXmlAdapter.class
-
- - link:JAXBContext$RootLevelXmlAdapter-asmified.java[Asmified]
-
-== References
-

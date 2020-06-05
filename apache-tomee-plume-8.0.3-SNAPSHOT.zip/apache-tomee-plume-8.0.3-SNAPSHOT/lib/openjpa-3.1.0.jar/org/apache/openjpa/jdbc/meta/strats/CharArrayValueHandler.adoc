@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/CharArrayValueHandler.class
-
- - link:CharArrayValueHandler-asmified.java[Asmified]
-
-== References
-

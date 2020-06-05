@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/viewstate/IntByteArraySerializedViewKey.class
-
- - link:IntByteArraySerializedViewKey-asmified.java[Asmified]
-
-== References
-

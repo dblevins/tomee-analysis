@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/ext/Attachment.class
-
- - link:Attachment-asmified.java[Asmified]
-
-== References
-

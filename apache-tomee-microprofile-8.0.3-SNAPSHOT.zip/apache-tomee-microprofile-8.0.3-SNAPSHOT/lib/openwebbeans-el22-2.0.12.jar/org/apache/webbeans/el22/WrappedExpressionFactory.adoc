@@ -1,6 +1,0 @@
-= org/apache/webbeans/el22/WrappedExpressionFactory.class
-
- - link:WrappedExpressionFactory-asmified.java[Asmified]
-
-== References
-

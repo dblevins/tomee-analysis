@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/DeploymentIndex.class
-
- - link:DeploymentIndex-asmified.java[Asmified]
-
-== References
-

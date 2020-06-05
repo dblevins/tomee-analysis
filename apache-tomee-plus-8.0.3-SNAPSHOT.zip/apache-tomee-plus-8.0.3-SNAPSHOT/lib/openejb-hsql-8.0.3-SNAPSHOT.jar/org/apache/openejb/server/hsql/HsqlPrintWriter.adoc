@@ -1,6 +1,0 @@
-= org/apache/openejb/server/hsql/HsqlPrintWriter.class
-
- - link:HsqlPrintWriter-asmified.java[Asmified]
-
-== References
-

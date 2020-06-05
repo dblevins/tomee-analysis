@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2delrestrict/impl/DelegateImpl.class
-
- - link:DelegateImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/PayloadType.class
-
- - link:PayloadType-asmified.java[Asmified]
-
-== References
-

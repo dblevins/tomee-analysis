@@ -1,6 +1,0 @@
-= jakarta/persistence/Column.class
-
- - link:Column-asmified.java[Asmified]
-
-== References
-

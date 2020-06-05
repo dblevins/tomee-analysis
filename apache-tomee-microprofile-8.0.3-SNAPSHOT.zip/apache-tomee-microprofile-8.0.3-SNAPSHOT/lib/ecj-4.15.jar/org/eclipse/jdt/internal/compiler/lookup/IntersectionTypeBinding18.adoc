@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/IntersectionTypeBinding18.class
-
- - link:IntersectionTypeBinding18-asmified.java[Asmified]
-
-== References
-

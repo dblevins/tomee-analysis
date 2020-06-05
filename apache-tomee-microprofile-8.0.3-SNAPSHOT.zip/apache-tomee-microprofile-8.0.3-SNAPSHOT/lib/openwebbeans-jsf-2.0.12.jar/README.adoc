@@ -1,2 +1,0 @@
-= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openwebbeans-jsf-2.0.12.jar
-

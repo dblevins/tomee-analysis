@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/EditableValueHolderRule$ValueChangedBindingMetadata.class
-
- - link:EditableValueHolderRule$ValueChangedBindingMetadata-asmified.java[Asmified]
-
-== References
-

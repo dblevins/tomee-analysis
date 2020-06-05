@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/jsrjsonp/JsrJsonpProvider.class
-
- - link:JsrJsonpProvider-asmified.java[Asmified]
-
-== References
-

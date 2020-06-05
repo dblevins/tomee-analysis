@@ -1,8 +1,0 @@
-= javax/faces/model/DataModel$DataModelIterator.class
-
- - link:DataModel$DataModelIterator-asmified.java[Asmified]
-
-== References
-
- - javax.faces.model.DataModel - 10
- - javax.faces.model.DataModel$DataModelIterator - 1

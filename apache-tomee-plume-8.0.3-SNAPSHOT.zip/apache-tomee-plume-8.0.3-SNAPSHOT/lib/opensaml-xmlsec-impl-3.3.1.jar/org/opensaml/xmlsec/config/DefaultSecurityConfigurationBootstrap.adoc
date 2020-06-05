@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/config/DefaultSecurityConfigurationBootstrap.class
-
- - link:DefaultSecurityConfigurationBootstrap-asmified.java[Asmified]
-
-== References
-

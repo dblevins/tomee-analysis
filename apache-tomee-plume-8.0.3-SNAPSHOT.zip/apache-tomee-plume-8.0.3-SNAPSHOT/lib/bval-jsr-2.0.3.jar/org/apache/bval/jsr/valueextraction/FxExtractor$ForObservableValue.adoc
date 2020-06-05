@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/FxExtractor$ForObservableValue.class
-
- - link:FxExtractor$ForObservableValue-asmified.java[Asmified]
-
-== References
-

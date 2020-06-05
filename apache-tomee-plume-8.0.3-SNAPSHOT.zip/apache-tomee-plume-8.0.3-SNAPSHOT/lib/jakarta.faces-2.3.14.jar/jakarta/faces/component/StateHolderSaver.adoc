@@ -1,6 +1,0 @@
-= jakarta/faces/component/StateHolderSaver.class
-
- - link:StateHolderSaver-asmified.java[Asmified]
-
-== References
-

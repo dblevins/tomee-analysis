@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ObjectMapper$1.class
-
- - link:ObjectMapper$1-asmified.java[Asmified]
-
-== References
-

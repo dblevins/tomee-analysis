@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ManagedCache.class
-
- - link:ManagedCache-asmified.java[Asmified]
-
-== References
-

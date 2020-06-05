@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/Property.class
-
- - link:Property-asmified.java[Asmified]
-
-== References
-

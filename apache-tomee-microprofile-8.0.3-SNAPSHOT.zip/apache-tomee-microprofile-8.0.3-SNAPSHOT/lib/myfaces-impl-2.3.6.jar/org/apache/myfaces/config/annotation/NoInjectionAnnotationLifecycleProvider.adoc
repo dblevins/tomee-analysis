@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/annotation/NoInjectionAnnotationLifecycleProvider.class
-
- - link:NoInjectionAnnotationLifecycleProvider-asmified.java[Asmified]
-
-== References
-

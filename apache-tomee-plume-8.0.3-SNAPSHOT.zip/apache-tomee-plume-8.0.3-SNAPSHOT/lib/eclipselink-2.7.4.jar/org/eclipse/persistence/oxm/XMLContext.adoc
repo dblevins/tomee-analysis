@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/XMLContext.class
-
- - link:XMLContext-asmified.java[Asmified]
-
-== References
-

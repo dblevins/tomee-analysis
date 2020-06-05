@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/PersistenceBootstrap.class
-
- - link:PersistenceBootstrap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/fiql/FiqlParser$TypeInfoObject.class
-
- - link:FiqlParser$TypeInfoObject-asmified.java[Asmified]
-
-== References
-

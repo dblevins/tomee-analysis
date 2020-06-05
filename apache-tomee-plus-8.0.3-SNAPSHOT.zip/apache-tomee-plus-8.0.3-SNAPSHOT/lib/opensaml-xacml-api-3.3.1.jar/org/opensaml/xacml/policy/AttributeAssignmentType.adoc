@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/AttributeAssignmentType.class
-
- - link:AttributeAssignmentType-asmified.java[Asmified]
-
-== References
-

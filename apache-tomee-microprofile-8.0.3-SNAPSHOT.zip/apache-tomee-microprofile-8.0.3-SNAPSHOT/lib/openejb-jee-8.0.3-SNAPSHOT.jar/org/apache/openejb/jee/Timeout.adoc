@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Timeout.class
-
- - link:Timeout-asmified.java[Asmified]
-
-== References
-

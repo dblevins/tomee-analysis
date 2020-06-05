@@ -1,6 +1,0 @@
-= jakarta/mail/FolderNotFoundException.class
-
- - link:FolderNotFoundException-asmified.java[Asmified]
-
-== References
-

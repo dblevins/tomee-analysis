@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/impl/SizeException.class
-
- - link:SizeException-asmified.java[Asmified]
-
-== References
-

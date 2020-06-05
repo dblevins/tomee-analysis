@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ObjectRecipe$FieldMember.class
-
- - link:ObjectRecipe$FieldMember-asmified.java[Asmified]
-
-== References
-

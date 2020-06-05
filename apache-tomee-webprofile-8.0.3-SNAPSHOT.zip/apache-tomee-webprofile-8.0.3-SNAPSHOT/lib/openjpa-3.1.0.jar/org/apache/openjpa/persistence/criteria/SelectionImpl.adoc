@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/SelectionImpl.class
-
- - link:SelectionImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/SOAPPartImpl$1.class
-
- - link:SOAPPartImpl$1-asmified.java[Asmified]
-
-== References
-

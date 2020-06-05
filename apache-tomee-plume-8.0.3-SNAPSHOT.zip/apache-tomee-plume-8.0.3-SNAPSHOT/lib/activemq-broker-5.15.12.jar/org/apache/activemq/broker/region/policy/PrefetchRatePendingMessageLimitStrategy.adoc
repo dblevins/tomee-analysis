@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/PrefetchRatePendingMessageLimitStrategy.class
-
- - link:PrefetchRatePendingMessageLimitStrategy-asmified.java[Asmified]
-
-== References
-

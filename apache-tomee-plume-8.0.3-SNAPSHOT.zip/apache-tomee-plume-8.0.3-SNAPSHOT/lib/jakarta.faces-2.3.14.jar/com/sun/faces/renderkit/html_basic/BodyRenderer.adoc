@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/BodyRenderer.class
-
- - link:BodyRenderer-asmified.java[Asmified]
-
-== References
-

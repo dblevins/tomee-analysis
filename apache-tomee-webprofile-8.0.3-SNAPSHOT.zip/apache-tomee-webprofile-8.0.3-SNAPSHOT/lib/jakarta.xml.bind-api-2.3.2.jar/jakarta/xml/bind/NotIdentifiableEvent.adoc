@@ -1,6 +1,0 @@
-= jakarta/xml/bind/NotIdentifiableEvent.class
-
- - link:NotIdentifiableEvent-asmified.java[Asmified]
-
-== References
-

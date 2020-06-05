@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XPathNode.class
-
- - link:XPathNode-asmified.java[Asmified]
-
-== References
-

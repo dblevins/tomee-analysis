@@ -1,6 +1,0 @@
-= org/apache/commons/daemon/DaemonController.class
-
- - link:DaemonController-asmified.java[Asmified]
-
-== References
-

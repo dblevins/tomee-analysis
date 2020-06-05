@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/OptionalExtractor$ForInt.class
-
- - link:OptionalExtractor$ForInt-asmified.java[Asmified]
-
-== References
-

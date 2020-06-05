@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/CdiEjbBean$EjbInjectionTargetFactory.class
-
- - link:CdiEjbBean$EjbInjectionTargetFactory-asmified.java[Asmified]
-
-== References
-

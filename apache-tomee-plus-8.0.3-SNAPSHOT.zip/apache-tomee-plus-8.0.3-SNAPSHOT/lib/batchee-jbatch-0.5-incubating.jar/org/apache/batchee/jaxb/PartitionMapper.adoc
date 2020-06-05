@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/PartitionMapper.class
-
- - link:PartitionMapper-asmified.java[Asmified]
-
-== References
-

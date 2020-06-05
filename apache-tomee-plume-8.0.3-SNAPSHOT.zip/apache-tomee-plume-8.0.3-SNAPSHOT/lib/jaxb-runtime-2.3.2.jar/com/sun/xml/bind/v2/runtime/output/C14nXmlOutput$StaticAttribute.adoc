@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/output/C14nXmlOutput$StaticAttribute.class
-
- - link:C14nXmlOutput$StaticAttribute-asmified.java[Asmified]
-
-== References
-

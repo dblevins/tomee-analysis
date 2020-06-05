@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/InterfaceContainerPolicy.class
-
- - link:InterfaceContainerPolicy-asmified.java[Asmified]
-
-== References
-

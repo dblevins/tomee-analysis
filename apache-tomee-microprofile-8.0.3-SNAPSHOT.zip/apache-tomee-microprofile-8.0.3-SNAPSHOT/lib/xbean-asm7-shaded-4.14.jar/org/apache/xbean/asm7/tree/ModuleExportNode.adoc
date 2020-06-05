@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/ModuleExportNode.class
-
- - link:ModuleExportNode-asmified.java[Asmified]
-
-== References
-

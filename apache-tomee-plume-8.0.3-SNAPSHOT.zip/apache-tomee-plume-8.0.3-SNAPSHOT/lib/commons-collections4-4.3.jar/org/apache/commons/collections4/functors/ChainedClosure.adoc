@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/ChainedClosure.class
-
- - link:ChainedClosure-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/util/WSCurrentTimeSource.class
-
- - link:WSCurrentTimeSource-asmified.java[Asmified]
-
-== References
-

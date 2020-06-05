@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ServiceDaemon$AddressMonitor.class
-
- - link:ServiceDaemon$AddressMonitor-asmified.java[Asmified]
-
-== References
-

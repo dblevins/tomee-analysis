@@ -1,7 +1,0 @@
-= javax/mail/search/SearchTerm.class
-
- - link:SearchTerm-asmified.java[Asmified]
-
-== References
-
- - javax.mail.Message - 1

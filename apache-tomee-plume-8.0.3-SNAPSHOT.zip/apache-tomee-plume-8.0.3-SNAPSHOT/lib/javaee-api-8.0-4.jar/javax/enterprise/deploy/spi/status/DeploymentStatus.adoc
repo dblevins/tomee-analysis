@@ -1,9 +1,0 @@
-= javax/enterprise/deploy/spi/status/DeploymentStatus.class
-
- - link:DeploymentStatus-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.deploy.shared.CommandType - 1
- - javax.enterprise.deploy.shared.StateType - 1
- - javax.enterprise.deploy.shared.ActionType - 1

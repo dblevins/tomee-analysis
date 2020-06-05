@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/JAXBSchemaInitializer.class
-
- - link:JAXBSchemaInitializer-asmified.java[Asmified]
-
-== References
-

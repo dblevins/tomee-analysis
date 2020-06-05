@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/component/DisplayValueOnlyCapable.class
-
- - link:DisplayValueOnlyCapable-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/faces/annotation/InitParameterMap.class
-
- - link:InitParameterMap-asmified.java[Asmified]
-
-== References
-
- - javax.inject.Qualifier - 1

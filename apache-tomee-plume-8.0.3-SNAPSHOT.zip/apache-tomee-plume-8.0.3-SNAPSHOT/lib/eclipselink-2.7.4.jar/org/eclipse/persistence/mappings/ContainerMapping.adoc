@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/ContainerMapping.class
-
- - link:ContainerMapping-asmified.java[Asmified]
-
-== References
-

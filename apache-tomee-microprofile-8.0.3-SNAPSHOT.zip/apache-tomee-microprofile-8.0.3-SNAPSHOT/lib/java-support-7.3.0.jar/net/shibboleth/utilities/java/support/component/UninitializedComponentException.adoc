@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/component/UninitializedComponentException.class
-
- - link:UninitializedComponentException-asmified.java[Asmified]
-
-== References
-

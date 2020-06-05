@@ -1,7 +1,0 @@
-= javax/xml/ws/spi/Invoker.class
-
- - link:Invoker-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.WebServiceContext - 1

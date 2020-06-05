@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/WSDataRef.class
-
- - link:WSDataRef-asmified.java[Asmified]
-
-== References
-

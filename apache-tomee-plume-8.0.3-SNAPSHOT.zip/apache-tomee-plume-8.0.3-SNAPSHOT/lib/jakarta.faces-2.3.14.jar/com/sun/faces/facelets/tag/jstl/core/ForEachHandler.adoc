@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/core/ForEachHandler.class
-
- - link:ForEachHandler-asmified.java[Asmified]
-
-== References
-

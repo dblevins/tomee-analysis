@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ProxyFactoryInfo.class
-
- - link:ProxyFactoryInfo-asmified.java[Asmified]
-
-== References
-

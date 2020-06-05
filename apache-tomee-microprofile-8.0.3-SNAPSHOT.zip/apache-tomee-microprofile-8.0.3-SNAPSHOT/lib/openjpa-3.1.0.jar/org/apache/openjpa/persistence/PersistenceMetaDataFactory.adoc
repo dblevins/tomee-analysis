@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistenceMetaDataFactory.class
-
- - link:PersistenceMetaDataFactory-asmified.java[Asmified]
-
-== References
-

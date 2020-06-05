@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/PersistenceObjectAttributeAccessor.class
-
- - link:PersistenceObjectAttributeAccessor-asmified.java[Asmified]
-
-== References
-

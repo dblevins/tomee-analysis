@@ -1,6 +1,0 @@
-= org/apache/batchee/container/proxy/CheckpointAlgorithmProxy.class
-
- - link:CheckpointAlgorithmProxy-asmified.java[Asmified]
-
-== References
-

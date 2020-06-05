@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/isismtt/ISISMTTObjectIdentifiers.class
-
- - link:ISISMTTObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

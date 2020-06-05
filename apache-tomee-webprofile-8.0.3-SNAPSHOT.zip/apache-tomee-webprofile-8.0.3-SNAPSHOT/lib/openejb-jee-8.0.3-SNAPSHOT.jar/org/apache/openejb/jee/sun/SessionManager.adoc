@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/SessionManager.class
-
- - link:SessionManager-asmified.java[Asmified]
-
-== References
-

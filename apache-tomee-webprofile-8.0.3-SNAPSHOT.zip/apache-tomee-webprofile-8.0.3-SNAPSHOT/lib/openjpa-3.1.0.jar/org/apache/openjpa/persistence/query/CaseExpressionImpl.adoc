@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/CaseExpressionImpl.class
-
- - link:CaseExpressionImpl-asmified.java[Asmified]
-
-== References
-

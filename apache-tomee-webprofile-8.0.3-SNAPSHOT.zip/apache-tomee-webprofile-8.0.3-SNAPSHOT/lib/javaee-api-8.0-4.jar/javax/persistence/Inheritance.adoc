@@ -1,7 +1,0 @@
-= javax/persistence/Inheritance.class
-
- - link:Inheritance-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.InheritanceType - 2

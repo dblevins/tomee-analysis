@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/translate/CodePointTranslator.class
-
- - link:CodePointTranslator-asmified.java[Asmified]
-
-== References
-

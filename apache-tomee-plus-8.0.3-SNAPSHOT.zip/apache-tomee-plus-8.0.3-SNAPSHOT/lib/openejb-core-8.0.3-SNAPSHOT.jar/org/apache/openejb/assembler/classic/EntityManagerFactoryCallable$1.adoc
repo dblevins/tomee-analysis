@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$1.class
-
- - link:EntityManagerFactoryCallable$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/AnnotatedType.class
-
- - link:AnnotatedType-asmified.java[Asmified]
-
-== References
-

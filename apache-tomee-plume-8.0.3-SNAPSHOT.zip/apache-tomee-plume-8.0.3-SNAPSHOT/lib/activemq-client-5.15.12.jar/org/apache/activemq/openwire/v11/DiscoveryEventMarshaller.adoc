@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v11/DiscoveryEventMarshaller.class
-
- - link:DiscoveryEventMarshaller-asmified.java[Asmified]
-
-== References
-

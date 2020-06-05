@@ -1,6 +1,0 @@
-= org/cryptacular/adapter/Converter.class
-
- - link:Converter-asmified.java[Asmified]
-
-== References
-

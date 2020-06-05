@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/NoFilter.class
-
- - link:NoFilter-asmified.java[Asmified]
-
-== References
-

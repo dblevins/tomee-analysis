@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/tcp/TcpTransportFactory.class
-
- - link:TcpTransportFactory-asmified.java[Asmified]
-
-== References
-

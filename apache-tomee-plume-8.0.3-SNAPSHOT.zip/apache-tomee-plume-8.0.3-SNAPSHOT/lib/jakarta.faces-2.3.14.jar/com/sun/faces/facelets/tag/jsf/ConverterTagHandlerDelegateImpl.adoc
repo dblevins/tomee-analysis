@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/ConverterTagHandlerDelegateImpl.class
-
- - link:ConverterTagHandlerDelegateImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/xml/namespace/NamespaceContext.class
-
- - link:NamespaceContext-asmified.java[Asmified]
-
-== References
-

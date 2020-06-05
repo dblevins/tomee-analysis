@@ -1,6 +1,0 @@
-= org/apache/cxf/databinding/DataReader.class
-
- - link:DataReader-asmified.java[Asmified]
-
-== References
-

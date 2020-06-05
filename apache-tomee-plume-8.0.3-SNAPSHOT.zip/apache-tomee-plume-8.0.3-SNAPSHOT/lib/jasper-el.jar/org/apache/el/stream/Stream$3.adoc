@@ -1,6 +1,0 @@
-= org/apache/el/stream/Stream$3.class
-
- - link:Stream$3-asmified.java[Asmified]
-
-== References
-

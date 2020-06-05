@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/ServiceRefType.class
-
- - link:ServiceRefType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/RetryingRequest.class
-
- - link:RetryingRequest-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/AutoDetachValue.class
-
- - link:AutoDetachValue-asmified.java[Asmified]
-
-== References
-

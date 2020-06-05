@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/utils/PrefixCollector.class
-
- - link:PrefixCollector-asmified.java[Asmified]
-
-== References
-

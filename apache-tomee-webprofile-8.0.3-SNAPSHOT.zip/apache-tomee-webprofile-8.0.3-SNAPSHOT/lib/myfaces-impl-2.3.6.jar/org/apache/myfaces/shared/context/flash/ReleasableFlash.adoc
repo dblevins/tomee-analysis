@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/context/flash/ReleasableFlash.class
-
- - link:ReleasableFlash-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/ConversationBean.class
-
- - link:ConversationBean-asmified.java[Asmified]
-
-== References
-

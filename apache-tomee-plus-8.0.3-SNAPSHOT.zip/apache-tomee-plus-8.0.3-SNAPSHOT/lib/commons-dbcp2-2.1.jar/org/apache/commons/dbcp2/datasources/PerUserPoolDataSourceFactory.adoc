@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/datasources/PerUserPoolDataSourceFactory.class
-
- - link:PerUserPoolDataSourceFactory-asmified.java[Asmified]
-
-== References
-

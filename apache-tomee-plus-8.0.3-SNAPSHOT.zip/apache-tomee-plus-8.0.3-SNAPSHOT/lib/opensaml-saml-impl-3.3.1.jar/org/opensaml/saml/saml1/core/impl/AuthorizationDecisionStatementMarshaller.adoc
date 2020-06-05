@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AuthorizationDecisionStatementMarshaller.class
-
- - link:AuthorizationDecisionStatementMarshaller-asmified.java[Asmified]
-
-== References
-

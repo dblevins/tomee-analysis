@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/DatasourceLogin.class
-
- - link:DatasourceLogin-asmified.java[Asmified]
-
-== References
-

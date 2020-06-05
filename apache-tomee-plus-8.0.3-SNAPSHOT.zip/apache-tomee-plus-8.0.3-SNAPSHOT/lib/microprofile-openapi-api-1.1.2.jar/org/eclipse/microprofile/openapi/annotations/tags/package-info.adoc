@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/tags/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/Printer.class
-
- - link:Printer-asmified.java[Asmified]
-
-== References
-

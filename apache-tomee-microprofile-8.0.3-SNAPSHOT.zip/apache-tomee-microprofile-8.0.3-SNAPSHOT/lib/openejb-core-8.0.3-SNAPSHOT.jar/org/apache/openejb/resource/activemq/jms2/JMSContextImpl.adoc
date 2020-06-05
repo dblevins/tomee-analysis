@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/JMSContextImpl.class
-
- - link:JMSContextImpl-asmified.java[Asmified]
-
-== References
-

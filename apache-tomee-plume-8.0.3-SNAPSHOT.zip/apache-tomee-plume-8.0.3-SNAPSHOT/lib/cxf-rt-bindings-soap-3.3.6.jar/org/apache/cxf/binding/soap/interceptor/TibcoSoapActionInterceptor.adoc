@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/interceptor/TibcoSoapActionInterceptor.class
-
- - link:TibcoSoapActionInterceptor-asmified.java[Asmified]
-
-== References
-

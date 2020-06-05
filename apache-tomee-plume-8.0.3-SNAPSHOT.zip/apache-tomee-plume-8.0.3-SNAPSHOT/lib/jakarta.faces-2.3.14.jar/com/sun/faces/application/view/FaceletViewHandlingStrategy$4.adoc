@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/FaceletViewHandlingStrategy$4.class
-
- - link:FaceletViewHandlingStrategy$4-asmified.java[Asmified]
-
-== References
-

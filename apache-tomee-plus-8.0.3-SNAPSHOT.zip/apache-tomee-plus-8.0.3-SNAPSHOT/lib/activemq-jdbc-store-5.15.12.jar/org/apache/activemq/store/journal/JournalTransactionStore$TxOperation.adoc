@@ -1,6 +1,0 @@
-= org/apache/activemq/store/journal/JournalTransactionStore$TxOperation.class
-
- - link:JournalTransactionStore$TxOperation-asmified.java[Asmified]
-
-== References
-

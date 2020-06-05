@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/http/behavior/IRemoteHttpCacheConstants.class
-
- - link:IRemoteHttpCacheConstants-asmified.java[Asmified]
-
-== References
-

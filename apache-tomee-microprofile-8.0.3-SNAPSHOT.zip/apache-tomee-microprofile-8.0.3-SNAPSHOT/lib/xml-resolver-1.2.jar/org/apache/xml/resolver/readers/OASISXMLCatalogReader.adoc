@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/readers/OASISXMLCatalogReader.class
-
- - link:OASISXMLCatalogReader-asmified.java[Asmified]
-
-== References
-

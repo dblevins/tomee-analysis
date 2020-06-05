@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/DataReference.class
-
- - link:DataReference-asmified.java[Asmified]
-
-== References
-

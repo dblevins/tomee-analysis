@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/server/wls/WebLogic_12_Platform$ContextHelper$3.class
-
- - link:WebLogic_12_Platform$ContextHelper$3-asmified.java[Asmified]
-
-== References
-

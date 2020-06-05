@@ -1,6 +1,0 @@
-= jakarta/faces/event/PreRenderViewEvent.class
-
- - link:PreRenderViewEvent-asmified.java[Asmified]
-
-== References
-

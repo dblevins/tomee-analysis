@@ -1,6 +1,0 @@
-= org/apache/juli/VerbatimFormatter.class
-
- - link:VerbatimFormatter-asmified.java[Asmified]
-
-== References
-

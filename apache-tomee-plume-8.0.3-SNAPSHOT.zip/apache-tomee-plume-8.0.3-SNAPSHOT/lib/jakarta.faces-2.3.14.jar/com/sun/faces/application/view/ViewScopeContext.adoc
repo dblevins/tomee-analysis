@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/ViewScopeContext.class
-
- - link:ViewScopeContext-asmified.java[Asmified]
-
-== References
-

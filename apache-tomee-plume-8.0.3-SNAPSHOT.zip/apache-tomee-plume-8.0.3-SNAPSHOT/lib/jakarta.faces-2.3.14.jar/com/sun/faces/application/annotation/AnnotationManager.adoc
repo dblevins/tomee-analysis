@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/AnnotationManager.class
-
- - link:AnnotationManager-asmified.java[Asmified]
-
-== References
-

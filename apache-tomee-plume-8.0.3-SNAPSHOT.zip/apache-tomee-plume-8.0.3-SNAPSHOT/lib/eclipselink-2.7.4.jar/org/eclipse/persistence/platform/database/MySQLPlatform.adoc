@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/MySQLPlatform.class
-
- - link:MySQLPlatform-asmified.java[Asmified]
-
-== References
-

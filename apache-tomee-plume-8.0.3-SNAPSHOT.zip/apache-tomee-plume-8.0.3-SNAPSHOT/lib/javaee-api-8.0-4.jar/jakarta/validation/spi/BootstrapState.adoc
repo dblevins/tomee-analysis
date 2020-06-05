@@ -1,6 +1,0 @@
-= jakarta/validation/spi/BootstrapState.class
-
- - link:BootstrapState-asmified.java[Asmified]
-
-== References
-

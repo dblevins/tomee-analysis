@@ -1,6 +1,0 @@
-= org/hsqldb/server/ServerProperties.class
-
- - link:ServerProperties-asmified.java[Asmified]
-
-== References
-

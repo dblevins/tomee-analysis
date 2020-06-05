@@ -1,6 +1,0 @@
-= jakarta/xml/bind/annotation/XmlIDREF.class
-
- - link:XmlIDREF-asmified.java[Asmified]
-
-== References
-

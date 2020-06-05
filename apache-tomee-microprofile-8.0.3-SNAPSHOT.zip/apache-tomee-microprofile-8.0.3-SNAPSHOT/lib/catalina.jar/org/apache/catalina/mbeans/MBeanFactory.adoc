@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/MBeanFactory.class
-
- - link:MBeanFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/ManagedBeanInfo$ListEntry.class
-
- - link:ManagedBeanInfo$ListEntry-asmified.java[Asmified]
-
-== References
-

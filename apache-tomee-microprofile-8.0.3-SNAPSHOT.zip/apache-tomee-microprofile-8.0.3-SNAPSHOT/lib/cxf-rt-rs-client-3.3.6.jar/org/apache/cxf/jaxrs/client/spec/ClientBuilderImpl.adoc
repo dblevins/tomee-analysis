@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spec/ClientBuilderImpl.class
-
- - link:ClientBuilderImpl-asmified.java[Asmified]
-
-== References
-

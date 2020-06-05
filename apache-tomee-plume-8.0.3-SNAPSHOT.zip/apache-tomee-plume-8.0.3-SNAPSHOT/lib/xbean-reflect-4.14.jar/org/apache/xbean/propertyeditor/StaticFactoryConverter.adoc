@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/StaticFactoryConverter.class
-
- - link:StaticFactoryConverter-asmified.java[Asmified]
-
-== References
-

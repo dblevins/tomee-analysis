@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/BlobValueHandler.class
-
- - link:BlobValueHandler-asmified.java[Asmified]
-
-== References
-

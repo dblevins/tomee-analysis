@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/ThreadSingletonServiceImpl$1.class
-
- - link:ThreadSingletonServiceImpl$1-asmified.java[Asmified]
-
-== References
-

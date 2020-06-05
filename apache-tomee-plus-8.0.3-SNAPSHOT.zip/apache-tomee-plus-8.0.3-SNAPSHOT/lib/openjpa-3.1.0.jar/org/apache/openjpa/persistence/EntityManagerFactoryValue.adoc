@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/EntityManagerFactoryValue.class
-
- - link:EntityManagerFactoryValue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/securityToken/ECKeyValueSecurityToken.class
-
- - link:ECKeyValueSecurityToken-asmified.java[Asmified]
-
-== References
-

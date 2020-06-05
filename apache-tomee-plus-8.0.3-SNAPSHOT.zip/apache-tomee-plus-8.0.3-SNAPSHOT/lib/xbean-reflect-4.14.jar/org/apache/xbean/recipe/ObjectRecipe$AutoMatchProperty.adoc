@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ObjectRecipe$AutoMatchProperty.class
-
- - link:ObjectRecipe$AutoMatchProperty-asmified.java[Asmified]
-
-== References
-

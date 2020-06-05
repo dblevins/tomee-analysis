@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/EagerResultList.class
-
- - link:EagerResultList-asmified.java[Asmified]
-
-== References
-

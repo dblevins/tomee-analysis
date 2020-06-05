@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spec/ClientRequestFilterInterceptor.class
-
- - link:ClientRequestFilterInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/NameSet.class
-
- - link:NameSet-asmified.java[Asmified]
-
-== References
-

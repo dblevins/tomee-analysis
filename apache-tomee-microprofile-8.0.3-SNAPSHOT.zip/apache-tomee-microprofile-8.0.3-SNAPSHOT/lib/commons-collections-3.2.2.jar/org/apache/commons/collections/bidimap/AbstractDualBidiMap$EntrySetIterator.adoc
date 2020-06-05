@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bidimap/AbstractDualBidiMap$EntrySetIterator.class
-
- - link:AbstractDualBidiMap$EntrySetIterator-asmified.java[Asmified]
-
-== References
-

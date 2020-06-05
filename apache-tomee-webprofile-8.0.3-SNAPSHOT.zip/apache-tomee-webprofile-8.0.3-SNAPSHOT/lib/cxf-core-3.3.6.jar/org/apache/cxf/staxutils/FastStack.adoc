@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/FastStack.class
-
- - link:FastStack-asmified.java[Asmified]
-
-== References
-

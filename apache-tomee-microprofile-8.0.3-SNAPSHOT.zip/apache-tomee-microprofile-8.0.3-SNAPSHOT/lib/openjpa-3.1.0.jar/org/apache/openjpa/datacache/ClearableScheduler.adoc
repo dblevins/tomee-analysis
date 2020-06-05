@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/ClearableScheduler.class
-
- - link:ClearableScheduler-asmified.java[Asmified]
-
-== References
-

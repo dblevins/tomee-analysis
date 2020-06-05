@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/ECPoint$AbstractFp.class
-
- - link:ECPoint$AbstractFp-asmified.java[Asmified]
-
-== References
-

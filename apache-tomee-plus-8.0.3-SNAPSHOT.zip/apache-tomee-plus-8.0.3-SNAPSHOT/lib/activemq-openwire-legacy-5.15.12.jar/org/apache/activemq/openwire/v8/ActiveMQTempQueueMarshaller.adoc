@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v8/ActiveMQTempQueueMarshaller.class
-
- - link:ActiveMQTempQueueMarshaller-asmified.java[Asmified]
-
-== References
-

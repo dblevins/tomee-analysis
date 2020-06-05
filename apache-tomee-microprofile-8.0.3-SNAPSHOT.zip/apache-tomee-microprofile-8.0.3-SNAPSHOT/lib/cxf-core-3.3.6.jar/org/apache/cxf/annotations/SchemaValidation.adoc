@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/SchemaValidation.class
-
- - link:SchemaValidation-asmified.java[Asmified]
-
-== References
-

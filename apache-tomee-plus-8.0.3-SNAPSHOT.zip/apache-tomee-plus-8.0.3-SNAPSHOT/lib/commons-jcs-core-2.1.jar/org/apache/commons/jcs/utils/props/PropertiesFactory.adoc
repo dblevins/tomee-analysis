@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/props/PropertiesFactory.class
-
- - link:PropertiesFactory-asmified.java[Asmified]
-
-== References
-

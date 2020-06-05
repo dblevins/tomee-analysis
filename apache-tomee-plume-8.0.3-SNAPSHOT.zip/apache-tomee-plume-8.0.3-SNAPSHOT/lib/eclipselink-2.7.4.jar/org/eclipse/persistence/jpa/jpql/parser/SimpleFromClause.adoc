@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SimpleFromClause.class
-
- - link:SimpleFromClause-asmified.java[Asmified]
-
-== References
-

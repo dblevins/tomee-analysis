@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/Queue.class
-
- - link:Queue-asmified.java[Asmified]
-
-== References
-

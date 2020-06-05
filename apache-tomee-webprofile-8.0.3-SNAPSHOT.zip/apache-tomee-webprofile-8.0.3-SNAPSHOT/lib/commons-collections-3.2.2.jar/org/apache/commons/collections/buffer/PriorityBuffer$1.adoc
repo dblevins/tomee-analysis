@@ -1,6 +1,0 @@
-= org/apache/commons/collections/buffer/PriorityBuffer$1.class
-
- - link:PriorityBuffer$1-asmified.java[Asmified]
-
-== References
-

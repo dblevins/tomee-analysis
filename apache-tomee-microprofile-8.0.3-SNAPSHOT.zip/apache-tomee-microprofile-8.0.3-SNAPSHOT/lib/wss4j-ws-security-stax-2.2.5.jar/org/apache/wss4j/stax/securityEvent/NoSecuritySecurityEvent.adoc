@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/NoSecuritySecurityEvent.class
-
- - link:NoSecuritySecurityEvent-asmified.java[Asmified]
-
-== References
-

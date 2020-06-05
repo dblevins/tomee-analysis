@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/transactionlog/LogXAResource.class
-
- - link:LogXAResource-asmified.java[Asmified]
-
-== References
-

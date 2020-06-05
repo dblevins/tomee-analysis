@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/support/JaxWsClientEndpointImpl.class
-
- - link:JaxWsClientEndpointImpl-asmified.java[Asmified]
-
-== References
-

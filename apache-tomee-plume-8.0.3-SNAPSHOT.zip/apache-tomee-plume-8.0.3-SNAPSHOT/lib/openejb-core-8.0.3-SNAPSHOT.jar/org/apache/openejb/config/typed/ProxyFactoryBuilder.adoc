@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/ProxyFactoryBuilder.class
-
- - link:ProxyFactoryBuilder-asmified.java[Asmified]
-
-== References
-

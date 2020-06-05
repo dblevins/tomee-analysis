@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/GroupByClauseFactory.class
-
- - link:GroupByClauseFactory-asmified.java[Asmified]
-
-== References
-

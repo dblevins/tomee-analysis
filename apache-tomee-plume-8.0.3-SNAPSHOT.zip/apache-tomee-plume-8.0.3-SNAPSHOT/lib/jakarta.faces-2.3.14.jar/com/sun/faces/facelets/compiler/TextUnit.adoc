@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/TextUnit.class
-
- - link:TextUnit-asmified.java[Asmified]
-
-== References
-

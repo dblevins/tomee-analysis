@@ -1,6 +1,0 @@
-= jakarta/xml/ws/WebServiceContext.class
-
- - link:WebServiceContext-asmified.java[Asmified]
-
-== References
-

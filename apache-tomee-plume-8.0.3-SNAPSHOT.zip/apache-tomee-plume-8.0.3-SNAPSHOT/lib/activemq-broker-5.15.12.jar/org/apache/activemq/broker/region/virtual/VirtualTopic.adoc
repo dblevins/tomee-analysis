@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/virtual/VirtualTopic.class
-
- - link:VirtualTopic-asmified.java[Asmified]
-
-== References
-

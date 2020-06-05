@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport.class
-
- - link:UpdateTagSupport-asmified.java[Asmified]
-
-== References
-

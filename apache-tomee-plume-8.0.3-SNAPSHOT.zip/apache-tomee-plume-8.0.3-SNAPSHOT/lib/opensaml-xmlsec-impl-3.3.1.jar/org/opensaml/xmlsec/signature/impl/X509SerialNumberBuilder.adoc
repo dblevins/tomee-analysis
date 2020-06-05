@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/X509SerialNumberBuilder.class
-
- - link:X509SerialNumberBuilder-asmified.java[Asmified]
-
-== References
-

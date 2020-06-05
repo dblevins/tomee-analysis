@@ -1,6 +1,0 @@
-= org/opensaml/profile/context/EventContext.class
-
- - link:EventContext-asmified.java[Asmified]
-
-== References
-

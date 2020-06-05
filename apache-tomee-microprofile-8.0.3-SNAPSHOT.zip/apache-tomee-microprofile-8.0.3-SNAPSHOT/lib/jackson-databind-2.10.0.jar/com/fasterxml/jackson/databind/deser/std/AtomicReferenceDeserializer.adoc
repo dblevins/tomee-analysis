@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/AtomicReferenceDeserializer.class
-
- - link:AtomicReferenceDeserializer-asmified.java[Asmified]
-
-== References
-

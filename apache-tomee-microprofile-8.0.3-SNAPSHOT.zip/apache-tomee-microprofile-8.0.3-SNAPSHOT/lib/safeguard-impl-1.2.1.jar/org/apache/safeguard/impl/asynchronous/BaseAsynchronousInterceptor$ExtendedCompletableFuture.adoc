@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ExtendedCompletableFuture.class
-
- - link:BaseAsynchronousInterceptor$ExtendedCompletableFuture-asmified.java[Asmified]
-
-== References
-

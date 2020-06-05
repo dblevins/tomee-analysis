@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/StreamBootstrapper.class
-
- - link:StreamBootstrapper-asmified.java[Asmified]
-
-== References
-

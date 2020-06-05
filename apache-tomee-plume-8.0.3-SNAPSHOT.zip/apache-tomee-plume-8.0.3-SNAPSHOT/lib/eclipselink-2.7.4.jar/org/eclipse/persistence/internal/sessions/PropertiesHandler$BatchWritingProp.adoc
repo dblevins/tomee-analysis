@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$BatchWritingProp.class
-
- - link:PropertiesHandler$BatchWritingProp-asmified.java[Asmified]
-
-== References
-

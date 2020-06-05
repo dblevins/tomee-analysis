@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeFormatterBuilder$UnpaddedNumber.class
-
- - link:DateTimeFormatterBuilder$UnpaddedNumber-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/metrics/FaultToleranceMetrics$Histogram.class
-
- - link:FaultToleranceMetrics$Histogram-asmified.java[Asmified]
-
-== References
-

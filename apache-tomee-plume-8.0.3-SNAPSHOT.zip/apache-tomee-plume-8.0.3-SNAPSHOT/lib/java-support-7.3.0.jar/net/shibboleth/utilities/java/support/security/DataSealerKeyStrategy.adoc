@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/security/DataSealerKeyStrategy.class
-
- - link:DataSealerKeyStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/CircularDependencyException.class
-
- - link:CircularDependencyException-asmified.java[Asmified]
-
-== References
-

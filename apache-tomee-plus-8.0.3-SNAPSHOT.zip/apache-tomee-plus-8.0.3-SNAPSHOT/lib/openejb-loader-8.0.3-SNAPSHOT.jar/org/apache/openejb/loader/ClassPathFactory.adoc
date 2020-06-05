@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/ClassPathFactory.class
-
- - link:ClassPathFactory-asmified.java[Asmified]
-
-== References
-

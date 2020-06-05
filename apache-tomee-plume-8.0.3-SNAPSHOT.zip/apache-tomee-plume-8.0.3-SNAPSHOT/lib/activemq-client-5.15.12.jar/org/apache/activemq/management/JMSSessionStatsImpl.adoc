@@ -1,6 +1,0 @@
-= org/apache/activemq/management/JMSSessionStatsImpl.class
-
- - link:JMSSessionStatsImpl-asmified.java[Asmified]
-
-== References
-

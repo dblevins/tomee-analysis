@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/DefaultMessageInterpolator$MessageWithParamsKey.class
-
- - link:DefaultMessageInterpolator$MessageWithParamsKey-asmified.java[Asmified]
-
-== References
-

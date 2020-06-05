@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/ThreadCursoredList.class
-
- - link:ThreadCursoredList-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/filter/impl/NodeProcessingMetadataFilter.class
-
- - link:NodeProcessingMetadataFilter-asmified.java[Asmified]
-
-== References
-

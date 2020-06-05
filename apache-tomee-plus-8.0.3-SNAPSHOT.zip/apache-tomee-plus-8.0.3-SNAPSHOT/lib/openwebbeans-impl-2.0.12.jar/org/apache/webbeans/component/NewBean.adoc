@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/NewBean.class
-
- - link:NewBean-asmified.java[Asmified]
-
-== References
-

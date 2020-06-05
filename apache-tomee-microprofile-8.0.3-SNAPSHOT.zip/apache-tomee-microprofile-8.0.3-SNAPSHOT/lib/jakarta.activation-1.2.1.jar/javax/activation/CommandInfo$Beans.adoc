@@ -1,7 +1,0 @@
-= javax/activation/CommandInfo$Beans.class
-
- - link:CommandInfo$Beans-asmified.java[Asmified]
-
-== References
-
- - javax.activation.CommandInfo$Beans$1 - 2

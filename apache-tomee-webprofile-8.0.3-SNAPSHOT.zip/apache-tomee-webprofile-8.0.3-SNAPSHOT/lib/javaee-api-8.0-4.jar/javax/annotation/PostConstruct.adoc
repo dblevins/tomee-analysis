@@ -1,6 +1,0 @@
-= javax/annotation/PostConstruct.class
-
- - link:PostConstruct-asmified.java[Asmified]
-
-== References
-

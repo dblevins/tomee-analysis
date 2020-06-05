@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/TimestampHelper.class
-
- - link:TimestampHelper-asmified.java[Asmified]
-
-== References
-

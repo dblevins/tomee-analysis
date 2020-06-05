@@ -1,6 +1,0 @@
-= com/ctc/wstx/sw/OutputElementBase.class
-
- - link:OutputElementBase-asmified.java[Asmified]
-
-== References
-

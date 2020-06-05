@@ -1,6 +1,0 @@
-= org/apache/openejb/core/WebContext.class
-
- - link:WebContext-asmified.java[Asmified]
-
-== References
-

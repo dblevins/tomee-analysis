@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/runtime/RuntimeNonElement.class
-
- - link:RuntimeNonElement-asmified.java[Asmified]
-
-== References
-

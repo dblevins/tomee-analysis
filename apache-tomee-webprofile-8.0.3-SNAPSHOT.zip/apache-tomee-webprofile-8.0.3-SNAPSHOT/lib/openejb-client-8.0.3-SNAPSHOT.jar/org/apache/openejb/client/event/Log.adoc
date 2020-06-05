@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/Log.class
-
- - link:Log-asmified.java[Asmified]
-
-== References
-

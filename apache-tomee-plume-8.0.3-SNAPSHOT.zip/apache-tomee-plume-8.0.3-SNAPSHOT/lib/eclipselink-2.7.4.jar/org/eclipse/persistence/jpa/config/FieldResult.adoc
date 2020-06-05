@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/FieldResult.class
-
- - link:FieldResult-asmified.java[Asmified]
-
-== References
-

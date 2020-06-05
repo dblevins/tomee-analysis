@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/sequenced/SequencedObject.class
-
- - link:SequencedObject-asmified.java[Asmified]
-
-== References
-

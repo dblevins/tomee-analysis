@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/summary/SumOfLogs.class
-
- - link:SumOfLogs-asmified.java[Asmified]
-
-== References
-

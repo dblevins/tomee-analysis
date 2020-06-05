@@ -1,6 +1,0 @@
-= org/slf4j/impl/JDK14LoggerAdapter.class
-
- - link:JDK14LoggerAdapter-asmified.java[Asmified]
-
-== References
-

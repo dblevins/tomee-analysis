@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/NameIDType.class
-
- - link:NameIDType-asmified.java[Asmified]
-
-== References
-

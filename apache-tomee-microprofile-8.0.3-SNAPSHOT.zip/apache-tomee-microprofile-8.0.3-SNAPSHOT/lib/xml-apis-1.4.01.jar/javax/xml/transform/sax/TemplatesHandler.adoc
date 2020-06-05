@@ -1,6 +1,0 @@
-= javax/xml/transform/sax/TemplatesHandler.class
-
- - link:TemplatesHandler-asmified.java[Asmified]
-
-== References
-

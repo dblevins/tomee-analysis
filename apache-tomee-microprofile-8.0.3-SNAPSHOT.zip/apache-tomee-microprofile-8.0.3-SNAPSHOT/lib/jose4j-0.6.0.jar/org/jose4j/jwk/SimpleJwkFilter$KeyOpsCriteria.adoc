@@ -1,6 +1,0 @@
-= org/jose4j/jwk/SimpleJwkFilter$KeyOpsCriteria.class
-
- - link:SimpleJwkFilter$KeyOpsCriteria-asmified.java[Asmified]
-
-== References
-

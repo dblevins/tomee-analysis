@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/UpdateStatement.class
-
- - link:UpdateStatement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/persistence/criteria/Predicate.class
-
- - link:Predicate-asmified.java[Asmified]
-
-== References
-

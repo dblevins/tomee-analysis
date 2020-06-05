@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/concurrent/ConcurrentReferenceHashMap$SoftEntry.class
-
- - link:ConcurrentReferenceHashMap$SoftEntry-asmified.java[Asmified]
-
-== References
-

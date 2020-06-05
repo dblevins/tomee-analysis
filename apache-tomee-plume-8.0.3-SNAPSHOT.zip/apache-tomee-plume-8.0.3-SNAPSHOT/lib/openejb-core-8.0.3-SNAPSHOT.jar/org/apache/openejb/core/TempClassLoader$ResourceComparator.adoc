@@ -1,6 +1,0 @@
-= org/apache/openejb/core/TempClassLoader$ResourceComparator.class
-
- - link:TempClassLoader$ResourceComparator-asmified.java[Asmified]
-
-== References
-

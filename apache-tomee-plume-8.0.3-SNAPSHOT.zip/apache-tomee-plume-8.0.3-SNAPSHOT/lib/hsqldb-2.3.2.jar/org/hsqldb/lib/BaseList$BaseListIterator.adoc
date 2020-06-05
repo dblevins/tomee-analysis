@@ -1,6 +1,0 @@
-= org/hsqldb/lib/BaseList$BaseListIterator.class
-
- - link:BaseList$BaseListIterator-asmified.java[Asmified]
-
-== References
-

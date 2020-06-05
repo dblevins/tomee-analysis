@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/internal/JsonPointerTracker.class
-
- - link:JsonPointerTracker-asmified.java[Asmified]
-
-== References
-

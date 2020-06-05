@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/FieldTranslation.class
-
- - link:FieldTranslation-asmified.java[Asmified]
-
-== References
-

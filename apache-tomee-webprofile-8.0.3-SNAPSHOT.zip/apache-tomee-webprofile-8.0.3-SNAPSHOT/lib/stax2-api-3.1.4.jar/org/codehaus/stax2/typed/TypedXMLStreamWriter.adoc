@@ -1,6 +1,0 @@
-= org/codehaus/stax2/typed/TypedXMLStreamWriter.class
-
- - link:TypedXMLStreamWriter-asmified.java[Asmified]
-
-== References
-

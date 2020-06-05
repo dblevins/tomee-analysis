@@ -1,7 +1,0 @@
-= javax/persistence/ParameterMode.class
-
- - link:ParameterMode-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.ParameterMode - 30

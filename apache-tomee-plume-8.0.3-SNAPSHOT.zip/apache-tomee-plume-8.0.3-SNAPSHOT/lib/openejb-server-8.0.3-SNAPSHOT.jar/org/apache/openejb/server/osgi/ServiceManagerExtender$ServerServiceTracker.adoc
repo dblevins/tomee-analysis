@@ -1,6 +1,0 @@
-= org/apache/openejb/server/osgi/ServiceManagerExtender$ServerServiceTracker.class
-
- - link:ServiceManagerExtender$ServerServiceTracker-asmified.java[Asmified]
-
-== References
-

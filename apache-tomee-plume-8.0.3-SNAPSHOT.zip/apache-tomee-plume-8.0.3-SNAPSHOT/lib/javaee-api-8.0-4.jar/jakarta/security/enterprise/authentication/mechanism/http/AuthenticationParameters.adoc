@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/authentication/mechanism/http/AuthenticationParameters.class
-
- - link:AuthenticationParameters-asmified.java[Asmified]
-
-== References
-

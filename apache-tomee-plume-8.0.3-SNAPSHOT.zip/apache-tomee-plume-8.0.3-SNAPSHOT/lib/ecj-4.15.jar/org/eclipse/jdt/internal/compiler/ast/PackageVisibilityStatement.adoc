@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/PackageVisibilityStatement.class
-
- - link:PackageVisibilityStatement-asmified.java[Asmified]
-
-== References
-

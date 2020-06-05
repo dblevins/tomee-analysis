@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/CriteriaBuilderImpl.class
-
- - link:CriteriaBuilderImpl-asmified.java[Asmified]
-
-== References
-

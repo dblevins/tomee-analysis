@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/EnumFieldDescriptor.class
-
- - link:EnumFieldDescriptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/descriptors/SignatureRSASHA384.class
-
- - link:SignatureRSASHA384-asmified.java[Asmified]
-
-== References
-

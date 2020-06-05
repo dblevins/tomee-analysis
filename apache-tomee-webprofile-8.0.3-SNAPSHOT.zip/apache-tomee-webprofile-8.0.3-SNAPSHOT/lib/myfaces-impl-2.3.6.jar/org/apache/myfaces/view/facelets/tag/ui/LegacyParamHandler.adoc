@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/LegacyParamHandler.class
-
- - link:LegacyParamHandler-asmified.java[Asmified]
-
-== References
-

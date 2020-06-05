@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/ActiveMQManagedConnection$1.class
-
- - link:ActiveMQManagedConnection$1-asmified.java[Asmified]
-
-== References
-

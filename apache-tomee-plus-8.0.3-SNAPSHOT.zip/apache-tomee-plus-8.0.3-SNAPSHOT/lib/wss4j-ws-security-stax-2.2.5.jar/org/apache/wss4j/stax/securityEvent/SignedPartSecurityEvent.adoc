@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/SignedPartSecurityEvent.class
-
- - link:SignedPartSecurityEvent-asmified.java[Asmified]
-
-== References
-

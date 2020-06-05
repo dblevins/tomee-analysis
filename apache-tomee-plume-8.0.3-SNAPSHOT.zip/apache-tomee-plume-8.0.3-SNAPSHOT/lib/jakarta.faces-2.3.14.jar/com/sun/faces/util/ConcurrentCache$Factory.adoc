@@ -1,6 +1,0 @@
-= com/sun/faces/util/ConcurrentCache$Factory.class
-
- - link:ConcurrentCache$Factory-asmified.java[Asmified]
-
-== References
-

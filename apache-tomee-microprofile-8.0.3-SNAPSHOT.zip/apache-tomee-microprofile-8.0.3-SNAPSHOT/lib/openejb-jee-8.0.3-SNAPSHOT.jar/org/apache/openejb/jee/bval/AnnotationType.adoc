@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/AnnotationType.class
-
- - link:AnnotationType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/DefaultBlobUploadStrategy.class
-
- - link:DefaultBlobUploadStrategy-asmified.java[Asmified]
-
-== References
-

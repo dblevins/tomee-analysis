@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/MemberOfExpression.class
-
- - link:MemberOfExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/container/proxy/ListenerFactory.class
-
- - link:ListenerFactory-asmified.java[Asmified]
-
-== References
-

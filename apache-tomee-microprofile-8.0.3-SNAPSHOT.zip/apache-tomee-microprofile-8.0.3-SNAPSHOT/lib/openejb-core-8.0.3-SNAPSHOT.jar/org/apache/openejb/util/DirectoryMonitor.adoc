@@ -1,6 +1,0 @@
-= org/apache/openejb/util/DirectoryMonitor.class
-
- - link:DirectoryMonitor-asmified.java[Asmified]
-
-== References
-

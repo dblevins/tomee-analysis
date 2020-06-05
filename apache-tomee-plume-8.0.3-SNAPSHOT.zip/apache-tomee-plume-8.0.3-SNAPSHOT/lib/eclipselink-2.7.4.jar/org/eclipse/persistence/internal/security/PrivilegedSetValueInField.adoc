@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/security/PrivilegedSetValueInField.class
-
- - link:PrivilegedSetValueInField-asmified.java[Asmified]
-
-== References
-

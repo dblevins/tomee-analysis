@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/set/PredicatedNavigableSet.class
-
- - link:PredicatedNavigableSet-asmified.java[Asmified]
-
-== References
-

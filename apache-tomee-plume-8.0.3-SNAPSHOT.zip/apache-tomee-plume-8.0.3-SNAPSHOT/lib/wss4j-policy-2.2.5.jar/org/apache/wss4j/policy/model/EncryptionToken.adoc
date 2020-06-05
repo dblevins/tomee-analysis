@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/EncryptionToken.class
-
- - link:EncryptionToken-asmified.java[Asmified]
-
-== References
-

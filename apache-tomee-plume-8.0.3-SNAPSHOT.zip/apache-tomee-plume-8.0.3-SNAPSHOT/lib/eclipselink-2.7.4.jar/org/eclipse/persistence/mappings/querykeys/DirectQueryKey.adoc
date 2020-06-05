@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/querykeys/DirectQueryKey.class
-
- - link:DirectQueryKey-asmified.java[Asmified]
-
-== References
-

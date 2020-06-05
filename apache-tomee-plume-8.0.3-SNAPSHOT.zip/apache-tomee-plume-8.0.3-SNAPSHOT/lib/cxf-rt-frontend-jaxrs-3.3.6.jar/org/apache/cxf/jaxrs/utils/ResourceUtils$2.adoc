@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/ResourceUtils$2.class
-
- - link:ResourceUtils$2-asmified.java[Asmified]
-
-== References
-

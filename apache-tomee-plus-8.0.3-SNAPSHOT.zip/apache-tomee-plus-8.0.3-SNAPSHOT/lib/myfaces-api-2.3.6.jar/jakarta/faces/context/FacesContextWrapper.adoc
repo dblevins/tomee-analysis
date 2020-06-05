@@ -1,6 +1,0 @@
-= jakarta/faces/context/FacesContextWrapper.class
-
- - link:FacesContextWrapper-asmified.java[Asmified]
-
-== References
-

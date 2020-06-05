@@ -1,6 +1,0 @@
-= jakarta/mail/internet/AddressParser$TokenStream.class
-
- - link:AddressParser$TokenStream-asmified.java[Asmified]
-
-== References
-

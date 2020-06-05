@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/descriptors/BlockEncryptionAES128GCM.class
-
- - link:BlockEncryptionAES128GCM-asmified.java[Asmified]
-
-== References
-

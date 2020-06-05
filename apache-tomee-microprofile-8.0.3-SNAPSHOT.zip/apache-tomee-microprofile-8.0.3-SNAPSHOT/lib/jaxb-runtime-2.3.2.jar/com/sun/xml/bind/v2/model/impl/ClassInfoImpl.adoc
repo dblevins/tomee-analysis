@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/impl/ClassInfoImpl.class
-
- - link:ClassInfoImpl-asmified.java[Asmified]
-
-== References
-

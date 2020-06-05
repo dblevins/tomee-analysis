@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/StaxStreamFilter.class
-
- - link:StaxStreamFilter-asmified.java[Asmified]
-
-== References
-

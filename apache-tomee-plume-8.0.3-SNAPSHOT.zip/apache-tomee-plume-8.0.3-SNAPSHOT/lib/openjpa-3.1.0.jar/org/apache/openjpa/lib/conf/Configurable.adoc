@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/Configurable.class
-
- - link:Configurable-asmified.java[Asmified]
-
-== References
-

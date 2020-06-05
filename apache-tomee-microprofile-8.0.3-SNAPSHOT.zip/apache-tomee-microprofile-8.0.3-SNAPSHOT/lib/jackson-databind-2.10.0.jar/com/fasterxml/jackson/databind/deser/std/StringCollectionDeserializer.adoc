@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/StringCollectionDeserializer.class
-
- - link:StringCollectionDeserializer-asmified.java[Asmified]
-
-== References
-

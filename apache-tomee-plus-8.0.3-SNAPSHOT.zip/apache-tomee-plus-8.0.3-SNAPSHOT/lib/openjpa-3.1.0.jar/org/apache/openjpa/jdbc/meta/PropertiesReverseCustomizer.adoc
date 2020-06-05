@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/PropertiesReverseCustomizer.class
-
- - link:PropertiesReverseCustomizer-asmified.java[Asmified]
-
-== References
-

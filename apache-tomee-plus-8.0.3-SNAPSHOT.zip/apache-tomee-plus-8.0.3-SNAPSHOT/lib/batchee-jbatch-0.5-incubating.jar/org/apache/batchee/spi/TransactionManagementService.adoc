@@ -1,6 +1,0 @@
-= org/apache/batchee/spi/TransactionManagementService.class
-
- - link:TransactionManagementService-asmified.java[Asmified]
-
-== References
-

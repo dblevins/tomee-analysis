@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/support/ContentReference.class
-
- - link:ContentReference-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/KeyGenerator.class
-
- - link:KeyGenerator-asmified.java[Asmified]
-
-== References
-

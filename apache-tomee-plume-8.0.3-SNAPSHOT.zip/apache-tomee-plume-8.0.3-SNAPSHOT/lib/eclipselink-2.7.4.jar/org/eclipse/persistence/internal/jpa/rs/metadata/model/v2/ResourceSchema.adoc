@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/ResourceSchema.class
-
- - link:ResourceSchema-asmified.java[Asmified]
-
-== References
-

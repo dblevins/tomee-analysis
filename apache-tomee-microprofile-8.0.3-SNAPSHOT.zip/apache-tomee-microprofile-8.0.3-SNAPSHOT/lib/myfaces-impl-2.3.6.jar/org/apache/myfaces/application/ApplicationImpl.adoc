@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/ApplicationImpl.class
-
- - link:ApplicationImpl-asmified.java[Asmified]
-
-== References
-

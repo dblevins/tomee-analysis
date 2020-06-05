@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/saaj/SoapFactoryImpl.class
-
- - link:SoapFactoryImpl-asmified.java[Asmified]
-
-== References
-

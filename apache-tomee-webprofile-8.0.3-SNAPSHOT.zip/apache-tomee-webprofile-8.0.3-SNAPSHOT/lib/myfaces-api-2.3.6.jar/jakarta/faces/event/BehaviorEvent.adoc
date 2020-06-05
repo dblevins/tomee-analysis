@@ -1,6 +1,0 @@
-= jakarta/faces/event/BehaviorEvent.class
-
- - link:BehaviorEvent-asmified.java[Asmified]
-
-== References
-

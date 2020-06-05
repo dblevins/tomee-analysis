@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/CommonTokenStream.class
-
- - link:CommonTokenStream-asmified.java[Asmified]
-
-== References
-

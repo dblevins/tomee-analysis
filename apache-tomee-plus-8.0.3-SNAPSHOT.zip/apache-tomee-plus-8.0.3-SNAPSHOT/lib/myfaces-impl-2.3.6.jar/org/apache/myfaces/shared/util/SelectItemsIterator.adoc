@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/SelectItemsIterator.class
-
- - link:SelectItemsIterator-asmified.java[Asmified]
-
-== References
-

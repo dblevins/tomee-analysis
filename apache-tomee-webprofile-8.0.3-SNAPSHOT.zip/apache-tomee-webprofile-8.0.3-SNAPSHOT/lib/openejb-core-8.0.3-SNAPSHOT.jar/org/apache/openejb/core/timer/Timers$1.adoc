@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/Timers$1.class
-
- - link:Timers$1-asmified.java[Asmified]
-
-== References
-

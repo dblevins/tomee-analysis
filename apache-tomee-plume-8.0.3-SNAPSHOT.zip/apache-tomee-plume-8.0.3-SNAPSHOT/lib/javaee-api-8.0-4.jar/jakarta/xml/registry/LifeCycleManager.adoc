@@ -1,6 +1,0 @@
-= jakarta/xml/registry/LifeCycleManager.class
-
- - link:LifeCycleManager-asmified.java[Asmified]
-
-== References
-

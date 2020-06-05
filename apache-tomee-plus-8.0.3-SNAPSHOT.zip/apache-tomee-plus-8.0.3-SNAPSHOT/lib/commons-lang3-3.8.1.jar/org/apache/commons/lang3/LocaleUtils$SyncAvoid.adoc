@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/LocaleUtils$SyncAvoid.class
-
- - link:LocaleUtils$SyncAvoid-asmified.java[Asmified]
-
-== References
-

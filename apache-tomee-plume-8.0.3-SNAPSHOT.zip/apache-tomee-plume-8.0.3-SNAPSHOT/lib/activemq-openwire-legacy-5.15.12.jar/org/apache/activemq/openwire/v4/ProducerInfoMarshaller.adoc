@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v4/ProducerInfoMarshaller.class
-
- - link:ProducerInfoMarshaller-asmified.java[Asmified]
-
-== References
-

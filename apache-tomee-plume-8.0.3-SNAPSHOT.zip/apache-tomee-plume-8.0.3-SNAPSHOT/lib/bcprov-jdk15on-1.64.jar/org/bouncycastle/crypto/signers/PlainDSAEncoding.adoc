@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/signers/PlainDSAEncoding.class
-
- - link:PlainDSAEncoding-asmified.java[Asmified]
-
-== References
-

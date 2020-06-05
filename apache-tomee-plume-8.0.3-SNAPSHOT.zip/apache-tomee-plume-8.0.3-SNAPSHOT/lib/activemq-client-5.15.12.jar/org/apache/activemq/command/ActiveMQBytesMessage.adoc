@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQBytesMessage.class
-
- - link:ActiveMQBytesMessage-asmified.java[Asmified]
-
-== References
-

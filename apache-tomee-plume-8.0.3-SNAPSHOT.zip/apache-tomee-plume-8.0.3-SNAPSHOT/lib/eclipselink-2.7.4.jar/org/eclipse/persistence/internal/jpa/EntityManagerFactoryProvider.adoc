@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/EntityManagerFactoryProvider.class
-
- - link:EntityManagerFactoryProvider-asmified.java[Asmified]
-
-== References
-

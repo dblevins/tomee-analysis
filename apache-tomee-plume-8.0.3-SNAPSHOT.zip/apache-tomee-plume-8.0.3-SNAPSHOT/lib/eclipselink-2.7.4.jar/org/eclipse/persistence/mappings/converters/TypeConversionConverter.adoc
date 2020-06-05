@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/converters/TypeConversionConverter.class
-
- - link:TypeConversionConverter-asmified.java[Asmified]
-
-== References
-

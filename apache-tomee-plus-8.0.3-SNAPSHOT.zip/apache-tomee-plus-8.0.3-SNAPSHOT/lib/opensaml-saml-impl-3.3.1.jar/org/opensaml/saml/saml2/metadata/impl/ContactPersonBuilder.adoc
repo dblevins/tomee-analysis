@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/ContactPersonBuilder.class
-
- - link:ContactPersonBuilder-asmified.java[Asmified]
-
-== References
-

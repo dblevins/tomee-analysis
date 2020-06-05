@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/DB2v6Delegate.class
-
- - link:DB2v6Delegate-asmified.java[Asmified]
-
-== References
-

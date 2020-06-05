@@ -1,6 +1,0 @@
-= org/codehaus/stax2/validation/ValidationContext.class
-
- - link:ValidationContext-asmified.java[Asmified]
-
-== References
-

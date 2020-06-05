@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/Tracer.class
-
- - link:Tracer-asmified.java[Asmified]
-
-== References
-

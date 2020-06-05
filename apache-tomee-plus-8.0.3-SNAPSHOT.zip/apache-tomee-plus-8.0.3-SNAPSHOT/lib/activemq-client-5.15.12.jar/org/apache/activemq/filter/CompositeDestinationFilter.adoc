@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/CompositeDestinationFilter.class
-
- - link:CompositeDestinationFilter-asmified.java[Asmified]
-
-== References
-

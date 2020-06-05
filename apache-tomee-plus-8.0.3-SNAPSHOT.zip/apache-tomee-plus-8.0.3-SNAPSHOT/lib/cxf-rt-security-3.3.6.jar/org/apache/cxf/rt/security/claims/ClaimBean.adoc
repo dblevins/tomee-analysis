@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/claims/ClaimBean.class
-
- - link:ClaimBean-asmified.java[Asmified]
-
-== References
-

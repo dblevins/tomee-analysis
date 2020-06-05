@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/BufferRecycler.class
-
- - link:BufferRecycler-asmified.java[Asmified]
-
-== References
-

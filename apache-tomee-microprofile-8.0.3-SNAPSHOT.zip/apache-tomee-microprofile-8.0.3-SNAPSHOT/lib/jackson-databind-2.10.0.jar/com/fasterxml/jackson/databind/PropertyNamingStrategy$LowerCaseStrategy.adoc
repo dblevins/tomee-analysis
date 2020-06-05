@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/PropertyNamingStrategy$LowerCaseStrategy.class
-
- - link:PropertyNamingStrategy$LowerCaseStrategy-asmified.java[Asmified]
-
-== References
-

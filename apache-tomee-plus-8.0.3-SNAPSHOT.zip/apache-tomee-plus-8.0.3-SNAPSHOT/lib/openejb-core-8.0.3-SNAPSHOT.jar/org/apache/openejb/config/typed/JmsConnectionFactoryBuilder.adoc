@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/JmsConnectionFactoryBuilder.class
-
- - link:JmsConnectionFactoryBuilder-asmified.java[Asmified]
-
-== References
-

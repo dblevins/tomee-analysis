@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/StringEditor.class
-
- - link:StringEditor-asmified.java[Asmified]
-
-== References
-

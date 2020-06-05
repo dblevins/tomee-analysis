@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/HtmlBasicInputRenderer.class
-
- - link:HtmlBasicInputRenderer-asmified.java[Asmified]
-
-== References
-

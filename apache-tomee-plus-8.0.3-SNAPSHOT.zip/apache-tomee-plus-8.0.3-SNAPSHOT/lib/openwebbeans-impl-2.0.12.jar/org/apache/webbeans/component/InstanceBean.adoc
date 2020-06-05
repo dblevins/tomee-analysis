@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/InstanceBean.class
-
- - link:InstanceBean-asmified.java[Asmified]
-
-== References
-

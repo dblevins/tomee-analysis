@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/spi/MutableTrigger.class
-
- - link:MutableTrigger-asmified.java[Asmified]
-
-== References
-

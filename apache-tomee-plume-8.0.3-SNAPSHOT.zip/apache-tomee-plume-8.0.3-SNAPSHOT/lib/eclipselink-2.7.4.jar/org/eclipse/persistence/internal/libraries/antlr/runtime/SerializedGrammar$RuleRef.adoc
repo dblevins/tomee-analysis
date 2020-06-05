@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/SerializedGrammar$RuleRef.class
-
- - link:SerializedGrammar$RuleRef-asmified.java[Asmified]
-
-== References
-

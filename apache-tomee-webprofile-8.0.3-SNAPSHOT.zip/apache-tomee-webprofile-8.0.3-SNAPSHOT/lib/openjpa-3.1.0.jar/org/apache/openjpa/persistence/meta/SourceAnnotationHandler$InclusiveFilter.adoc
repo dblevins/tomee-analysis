@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/SourceAnnotationHandler$InclusiveFilter.class
-
- - link:SourceAnnotationHandler$InclusiveFilter-asmified.java[Asmified]
-
-== References
-

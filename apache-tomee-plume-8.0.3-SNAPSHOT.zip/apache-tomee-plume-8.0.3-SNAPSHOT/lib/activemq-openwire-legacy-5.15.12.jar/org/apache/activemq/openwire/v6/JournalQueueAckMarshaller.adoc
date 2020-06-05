@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v6/JournalQueueAckMarshaller.class
-
- - link:JournalQueueAckMarshaller-asmified.java[Asmified]
-
-== References
-

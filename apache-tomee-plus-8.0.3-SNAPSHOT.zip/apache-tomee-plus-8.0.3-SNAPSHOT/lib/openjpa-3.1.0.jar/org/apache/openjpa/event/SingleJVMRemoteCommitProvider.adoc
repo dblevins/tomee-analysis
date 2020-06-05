@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/SingleJVMRemoteCommitProvider.class
-
- - link:SingleJVMRemoteCommitProvider-asmified.java[Asmified]
-
-== References
-

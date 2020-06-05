@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/securityToken/X509DefaultSecurityTokenImpl.class
-
- - link:X509DefaultSecurityTokenImpl-asmified.java[Asmified]
-
-== References
-

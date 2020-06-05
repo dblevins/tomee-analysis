@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext$SessionsXmlContextInput.class
-
- - link:DynamicJAXBContext$SessionsXmlContextInput-asmified.java[Asmified]
-
-== References
-

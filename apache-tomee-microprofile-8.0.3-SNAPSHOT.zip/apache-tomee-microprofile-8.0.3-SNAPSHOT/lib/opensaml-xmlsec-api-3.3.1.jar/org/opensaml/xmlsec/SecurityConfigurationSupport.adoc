@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/SecurityConfigurationSupport.class
-
- - link:SecurityConfigurationSupport-asmified.java[Asmified]
-
-== References
-

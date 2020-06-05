@@ -1,6 +1,0 @@
-= jakarta/faces/lifecycle/LifecycleWrapper.class
-
- - link:LifecycleWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/DelegatingFetchConfiguration.class
-
- - link:DelegatingFetchConfiguration-asmified.java[Asmified]
-
-== References
-

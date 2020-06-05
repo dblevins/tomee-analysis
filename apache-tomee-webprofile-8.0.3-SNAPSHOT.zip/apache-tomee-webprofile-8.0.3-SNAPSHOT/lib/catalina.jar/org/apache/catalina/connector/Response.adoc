@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/Response.class
-
- - link:Response-asmified.java[Asmified]
-
-== References
-

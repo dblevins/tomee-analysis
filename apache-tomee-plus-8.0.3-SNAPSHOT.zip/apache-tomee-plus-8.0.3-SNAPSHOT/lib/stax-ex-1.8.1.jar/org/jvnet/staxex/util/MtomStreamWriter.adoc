@@ -1,6 +1,0 @@
-= org/jvnet/staxex/util/MtomStreamWriter.class
-
- - link:MtomStreamWriter-asmified.java[Asmified]
-
-== References
-

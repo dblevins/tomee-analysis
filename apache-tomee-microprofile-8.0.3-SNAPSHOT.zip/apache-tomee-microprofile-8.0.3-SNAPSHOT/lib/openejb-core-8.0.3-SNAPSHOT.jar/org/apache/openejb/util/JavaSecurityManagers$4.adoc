@@ -1,6 +1,0 @@
-= org/apache/openejb/util/JavaSecurityManagers$4.class
-
- - link:JavaSecurityManagers$4-asmified.java[Asmified]
-
-== References
-

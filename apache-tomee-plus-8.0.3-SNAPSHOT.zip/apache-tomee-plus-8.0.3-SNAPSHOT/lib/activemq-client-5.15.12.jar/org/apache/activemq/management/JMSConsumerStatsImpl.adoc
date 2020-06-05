@@ -1,6 +1,0 @@
-= org/apache/activemq/management/JMSConsumerStatsImpl.class
-
- - link:JMSConsumerStatsImpl-asmified.java[Asmified]
-
-== References
-

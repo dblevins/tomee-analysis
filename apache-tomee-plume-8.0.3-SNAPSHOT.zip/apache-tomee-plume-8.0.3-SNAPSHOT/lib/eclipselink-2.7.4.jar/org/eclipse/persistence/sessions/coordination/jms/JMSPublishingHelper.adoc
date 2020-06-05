@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/coordination/jms/JMSPublishingHelper.class
-
- - link:JMSPublishingHelper-asmified.java[Asmified]
-
-== References
-

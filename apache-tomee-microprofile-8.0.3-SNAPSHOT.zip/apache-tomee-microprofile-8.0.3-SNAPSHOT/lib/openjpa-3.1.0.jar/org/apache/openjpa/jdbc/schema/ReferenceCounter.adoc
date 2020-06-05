@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/ReferenceCounter.class
-
- - link:ReferenceCounter-asmified.java[Asmified]
-
-== References
-

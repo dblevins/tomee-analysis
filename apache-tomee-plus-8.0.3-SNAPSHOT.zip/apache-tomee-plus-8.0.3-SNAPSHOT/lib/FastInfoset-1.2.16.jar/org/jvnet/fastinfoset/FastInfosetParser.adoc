@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/FastInfosetParser.class
-
- - link:FastInfosetParser-asmified.java[Asmified]
-
-== References
-

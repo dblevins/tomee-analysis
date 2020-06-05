@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/CatalinaCluster.class
-
- - link:CatalinaCluster-asmified.java[Asmified]
-
-== References
-

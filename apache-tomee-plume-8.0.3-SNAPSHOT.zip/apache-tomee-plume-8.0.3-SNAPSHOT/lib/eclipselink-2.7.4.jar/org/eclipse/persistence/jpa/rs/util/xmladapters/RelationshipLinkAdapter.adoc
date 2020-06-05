@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/xmladapters/RelationshipLinkAdapter.class
-
- - link:RelationshipLinkAdapter-asmified.java[Asmified]
-
-== References
-

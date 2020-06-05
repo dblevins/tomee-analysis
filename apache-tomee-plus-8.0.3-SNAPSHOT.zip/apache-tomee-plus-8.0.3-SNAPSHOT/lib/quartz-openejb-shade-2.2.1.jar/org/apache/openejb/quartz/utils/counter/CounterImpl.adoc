@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/counter/CounterImpl.class
-
- - link:CounterImpl-asmified.java[Asmified]
-
-== References
-

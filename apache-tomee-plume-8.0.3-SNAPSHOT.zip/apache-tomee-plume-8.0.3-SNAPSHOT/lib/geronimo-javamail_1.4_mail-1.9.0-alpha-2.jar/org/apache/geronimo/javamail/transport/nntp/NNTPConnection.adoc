@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/nntp/NNTPConnection.class
-
- - link:NNTPConnection-asmified.java[Asmified]
-
-== References
-

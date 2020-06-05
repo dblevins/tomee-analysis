@@ -1,6 +1,0 @@
-= org/eclipse/persistence/expressions/spatial/SpatialParameters.class
-
- - link:SpatialParameters-asmified.java[Asmified]
-
-== References
-

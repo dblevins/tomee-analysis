@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/archive/ArchiveIterator$1.class
-
- - link:ArchiveIterator$1-asmified.java[Asmified]
-
-== References
-

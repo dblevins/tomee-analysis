@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/ViewScopeProxyMap.class
-
- - link:ViewScopeProxyMap-asmified.java[Asmified]
-
-== References
-

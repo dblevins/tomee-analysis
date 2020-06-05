@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/queries/AbstractPlsqlTypeImpl.class
-
- - link:AbstractPlsqlTypeImpl-asmified.java[Asmified]
-
-== References
-

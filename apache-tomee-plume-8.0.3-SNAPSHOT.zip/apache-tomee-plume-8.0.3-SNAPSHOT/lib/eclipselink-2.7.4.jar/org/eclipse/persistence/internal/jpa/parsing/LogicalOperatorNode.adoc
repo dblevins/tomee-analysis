@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/LogicalOperatorNode.class
-
- - link:LogicalOperatorNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIComponentBase$AttributesMap.class
-
- - link:UIComponentBase$AttributesMap-asmified.java[Asmified]
-
-== References
-

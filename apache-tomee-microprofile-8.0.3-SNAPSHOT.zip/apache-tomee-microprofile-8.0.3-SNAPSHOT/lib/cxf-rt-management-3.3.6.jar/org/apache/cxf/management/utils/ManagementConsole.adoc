@@ -1,6 +1,0 @@
-= org/apache/cxf/management/utils/ManagementConsole.class
-
- - link:ManagementConsole-asmified.java[Asmified]
-
-== References
-

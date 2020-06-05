@@ -1,6 +1,0 @@
-= jakarta/persistence/PersistenceContext.class
-
- - link:PersistenceContext-asmified.java[Asmified]
-
-== References
-

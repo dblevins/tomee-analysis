@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/reference/ReferenceNodeSetData.class
-
- - link:ReferenceNodeSetData-asmified.java[Asmified]
-
-== References
-

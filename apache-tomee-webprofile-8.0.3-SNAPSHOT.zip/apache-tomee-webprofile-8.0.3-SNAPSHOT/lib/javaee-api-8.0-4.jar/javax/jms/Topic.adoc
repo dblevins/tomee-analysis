@@ -1,8 +1,0 @@
-= javax/jms/Topic.class
-
- - link:Topic-asmified.java[Asmified]
-
-== References
-
- - javax.jms.Destination - 1
- - javax.jms.JMSException - 1

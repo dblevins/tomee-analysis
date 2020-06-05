@@ -1,7 +1,0 @@
-= javax/resource/spi/AuthenticationMechanism.class
-
- - link:AuthenticationMechanism-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.AuthenticationMechanism$CredentialInterface - 2

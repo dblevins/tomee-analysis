@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/converters/FloatLocaleConverter.class
-
- - link:FloatLocaleConverter-asmified.java[Asmified]
-
-== References
-

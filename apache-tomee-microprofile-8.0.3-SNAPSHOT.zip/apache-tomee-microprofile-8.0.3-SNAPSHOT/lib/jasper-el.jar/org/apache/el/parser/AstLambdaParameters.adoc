@@ -1,6 +1,0 @@
-= org/apache/el/parser/AstLambdaParameters.class
-
- - link:AstLambdaParameters-asmified.java[Asmified]
-
-== References
-

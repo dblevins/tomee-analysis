@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/MenuRenderer.class
-
- - link:MenuRenderer-asmified.java[Asmified]
-
-== References
-

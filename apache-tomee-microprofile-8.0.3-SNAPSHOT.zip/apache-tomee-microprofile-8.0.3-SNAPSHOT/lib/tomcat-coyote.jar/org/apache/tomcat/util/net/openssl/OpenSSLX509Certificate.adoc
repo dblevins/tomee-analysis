@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/openssl/OpenSSLX509Certificate.class
-
- - link:OpenSSLX509Certificate-asmified.java[Asmified]
-
-== References
-

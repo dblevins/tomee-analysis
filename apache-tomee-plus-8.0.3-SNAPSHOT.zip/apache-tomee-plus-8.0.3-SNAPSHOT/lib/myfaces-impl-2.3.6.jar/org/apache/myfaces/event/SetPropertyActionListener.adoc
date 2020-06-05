@@ -1,6 +1,0 @@
-= org/apache/myfaces/event/SetPropertyActionListener.class
-
- - link:SetPropertyActionListener-asmified.java[Asmified]
-
-== References
-

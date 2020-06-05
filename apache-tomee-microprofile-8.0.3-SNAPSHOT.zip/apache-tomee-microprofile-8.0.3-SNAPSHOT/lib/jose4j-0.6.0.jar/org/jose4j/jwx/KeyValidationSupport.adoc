@@ -1,6 +1,0 @@
-= org/jose4j/jwx/KeyValidationSupport.class
-
- - link:KeyValidationSupport-asmified.java[Asmified]
-
-== References
-

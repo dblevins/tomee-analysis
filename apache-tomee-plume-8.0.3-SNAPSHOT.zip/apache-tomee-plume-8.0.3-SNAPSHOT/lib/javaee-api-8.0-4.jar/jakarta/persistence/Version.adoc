@@ -1,6 +1,0 @@
-= jakarta/persistence/Version.class
-
- - link:Version-asmified.java[Asmified]
-
-== References
-

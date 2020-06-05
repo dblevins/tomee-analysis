@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/ClientFactoryBean.class
-
- - link:ClientFactoryBean-asmified.java[Asmified]
-
-== References
-

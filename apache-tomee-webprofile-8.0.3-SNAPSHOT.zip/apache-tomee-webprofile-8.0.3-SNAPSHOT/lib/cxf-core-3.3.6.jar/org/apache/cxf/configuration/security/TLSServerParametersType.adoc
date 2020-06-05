@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/TLSServerParametersType.class
-
- - link:TLSServerParametersType-asmified.java[Asmified]
-
-== References
-

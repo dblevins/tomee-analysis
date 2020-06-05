@@ -1,6 +1,0 @@
-= org/opensaml/core/criterion/SatisfyAnyCriterion.class
-
- - link:SatisfyAnyCriterion-asmified.java[Asmified]
-
-== References
-

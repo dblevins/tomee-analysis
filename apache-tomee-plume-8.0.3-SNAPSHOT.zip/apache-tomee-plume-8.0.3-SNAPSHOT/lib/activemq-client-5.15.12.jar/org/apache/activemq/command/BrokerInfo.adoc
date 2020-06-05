@@ -1,6 +1,0 @@
-= org/apache/activemq/command/BrokerInfo.class
-
- - link:BrokerInfo-asmified.java[Asmified]
-
-== References
-

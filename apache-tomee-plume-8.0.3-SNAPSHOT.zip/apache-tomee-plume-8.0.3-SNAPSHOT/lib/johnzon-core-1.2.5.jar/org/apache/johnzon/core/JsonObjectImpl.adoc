@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonObjectImpl.class
-
- - link:JsonObjectImpl-asmified.java[Asmified]
-
-== References
-

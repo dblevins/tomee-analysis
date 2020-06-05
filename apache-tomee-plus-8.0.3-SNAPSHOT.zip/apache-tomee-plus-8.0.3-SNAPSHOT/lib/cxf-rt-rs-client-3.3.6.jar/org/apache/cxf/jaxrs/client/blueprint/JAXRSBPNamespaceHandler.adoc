@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/blueprint/JAXRSBPNamespaceHandler.class
-
- - link:JAXRSBPNamespaceHandler-asmified.java[Asmified]
-
-== References
-

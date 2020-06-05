@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/ModuleElementImpl$UsesDirectiveImpl.class
-
- - link:ModuleElementImpl$UsesDirectiveImpl-asmified.java[Asmified]
-
-== References
-

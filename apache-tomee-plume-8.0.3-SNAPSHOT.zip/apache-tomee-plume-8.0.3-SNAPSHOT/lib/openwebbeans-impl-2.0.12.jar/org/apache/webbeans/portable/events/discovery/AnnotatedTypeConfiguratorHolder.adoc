@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/discovery/AnnotatedTypeConfiguratorHolder.class
-
- - link:AnnotatedTypeConfiguratorHolder-asmified.java[Asmified]
-
-== References
-

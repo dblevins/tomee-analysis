@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/classes/XMLAttributes.class
-
- - link:XMLAttributes-asmified.java[Asmified]
-
-== References
-

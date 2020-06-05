@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/ViewDeclarationLanguageFactoryImpl.class
-
- - link:ViewDeclarationLanguageFactoryImpl-asmified.java[Asmified]
-
-== References
-

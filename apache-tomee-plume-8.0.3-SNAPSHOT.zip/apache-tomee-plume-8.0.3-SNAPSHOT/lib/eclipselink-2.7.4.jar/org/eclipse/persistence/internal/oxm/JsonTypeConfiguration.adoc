@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/JsonTypeConfiguration.class
-
- - link:JsonTypeConfiguration-asmified.java[Asmified]
-
-== References
-

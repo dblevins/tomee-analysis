@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/list/FixedSizeList.class
-
- - link:FixedSizeList-asmified.java[Asmified]
-
-== References
-

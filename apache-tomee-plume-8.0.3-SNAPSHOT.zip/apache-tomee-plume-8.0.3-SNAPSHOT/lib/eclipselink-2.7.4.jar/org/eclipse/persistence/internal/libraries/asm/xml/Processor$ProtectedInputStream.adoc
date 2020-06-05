@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/Processor$ProtectedInputStream.class
-
- - link:Processor$ProtectedInputStream-asmified.java[Asmified]
-
-== References
-

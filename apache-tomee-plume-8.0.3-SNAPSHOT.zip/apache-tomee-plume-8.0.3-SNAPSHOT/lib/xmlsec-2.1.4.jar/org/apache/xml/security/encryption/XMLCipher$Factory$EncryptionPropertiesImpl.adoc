@@ -1,6 +1,0 @@
-= org/apache/xml/security/encryption/XMLCipher$Factory$EncryptionPropertiesImpl.class
-
- - link:XMLCipher$Factory$EncryptionPropertiesImpl-asmified.java[Asmified]
-
-== References
-

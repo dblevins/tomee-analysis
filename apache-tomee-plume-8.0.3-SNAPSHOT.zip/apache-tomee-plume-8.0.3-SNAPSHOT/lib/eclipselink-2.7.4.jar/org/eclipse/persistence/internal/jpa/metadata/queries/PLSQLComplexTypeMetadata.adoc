@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/queries/PLSQLComplexTypeMetadata.class
-
- - link:PLSQLComplexTypeMetadata-asmified.java[Asmified]
-
-== References
-

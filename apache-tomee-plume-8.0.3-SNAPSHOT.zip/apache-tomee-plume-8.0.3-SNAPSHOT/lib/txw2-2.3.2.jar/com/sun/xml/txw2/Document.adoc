@@ -1,6 +1,0 @@
-= com/sun/xml/txw2/Document.class
-
- - link:Document-asmified.java[Asmified]
-
-== References
-

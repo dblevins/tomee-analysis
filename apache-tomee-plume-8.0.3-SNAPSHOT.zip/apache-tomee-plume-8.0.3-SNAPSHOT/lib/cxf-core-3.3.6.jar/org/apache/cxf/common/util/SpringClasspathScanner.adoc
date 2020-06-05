@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/SpringClasspathScanner.class
-
- - link:SpringClasspathScanner-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/AbstractSAMLObjectBuilder.class
-
- - link:AbstractSAMLObjectBuilder-asmified.java[Asmified]
-
-== References
-

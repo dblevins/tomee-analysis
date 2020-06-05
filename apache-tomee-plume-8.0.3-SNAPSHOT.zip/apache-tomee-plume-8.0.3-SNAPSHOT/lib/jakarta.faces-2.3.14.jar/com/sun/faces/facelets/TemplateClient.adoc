@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/TemplateClient.class
-
- - link:TemplateClient-asmified.java[Asmified]
-
-== References
-

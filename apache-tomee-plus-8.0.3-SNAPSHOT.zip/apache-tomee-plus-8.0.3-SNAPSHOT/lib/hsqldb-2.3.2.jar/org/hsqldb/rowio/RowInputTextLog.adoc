@@ -1,6 +1,0 @@
-= org/hsqldb/rowio/RowInputTextLog.class
-
- - link:RowInputTextLog-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/DelegatingBroker.class
-
- - link:DelegatingBroker-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/tld/TldResourcePath.class
-
- - link:TldResourcePath-asmified.java[Asmified]
-
-== References
-

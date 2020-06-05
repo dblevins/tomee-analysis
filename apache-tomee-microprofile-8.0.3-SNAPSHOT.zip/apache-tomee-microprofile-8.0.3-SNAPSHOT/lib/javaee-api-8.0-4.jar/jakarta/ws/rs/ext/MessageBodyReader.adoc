@@ -1,6 +1,0 @@
-= jakarta/ws/rs/ext/MessageBodyReader.class
-
- - link:MessageBodyReader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Min.class
-
- - link:Min-asmified.java[Asmified]
-
-== References
-

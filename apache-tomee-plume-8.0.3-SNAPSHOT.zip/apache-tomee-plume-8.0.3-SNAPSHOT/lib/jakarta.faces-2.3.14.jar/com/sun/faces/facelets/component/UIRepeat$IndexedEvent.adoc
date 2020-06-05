@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/component/UIRepeat$IndexedEvent.class
-
- - link:UIRepeat$IndexedEvent-asmified.java[Asmified]
-
-== References
-

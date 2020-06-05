@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/RequestedAttributeBuilder.class
-
- - link:RequestedAttributeBuilder-asmified.java[Asmified]
-
-== References
-

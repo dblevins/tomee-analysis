@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo.class
-
- - link:SEPersistenceUnitInfo-asmified.java[Asmified]
-
-== References
-

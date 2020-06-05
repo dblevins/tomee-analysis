@@ -1,6 +1,0 @@
-= jakarta/xml/soap/SOAPConnectionFactory.class
-
- - link:SOAPConnectionFactory-asmified.java[Asmified]
-
-== References
-

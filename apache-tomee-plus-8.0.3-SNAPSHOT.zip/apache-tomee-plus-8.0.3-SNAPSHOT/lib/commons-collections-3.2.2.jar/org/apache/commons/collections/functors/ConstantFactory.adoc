@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/ConstantFactory.class
-
- - link:ConstantFactory-asmified.java[Asmified]
-
-== References
-

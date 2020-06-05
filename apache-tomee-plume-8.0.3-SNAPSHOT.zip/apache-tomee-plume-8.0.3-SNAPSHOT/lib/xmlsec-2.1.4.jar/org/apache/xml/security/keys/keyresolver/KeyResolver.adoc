@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/keyresolver/KeyResolver.class
-
- - link:KeyResolver-asmified.java[Asmified]
-
-== References
-

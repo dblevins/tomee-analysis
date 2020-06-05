@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/AsyncChannelWrapperSecure$WriteTask.class
-
- - link:AsyncChannelWrapperSecure$WriteTask-asmified.java[Asmified]
-
-== References
-

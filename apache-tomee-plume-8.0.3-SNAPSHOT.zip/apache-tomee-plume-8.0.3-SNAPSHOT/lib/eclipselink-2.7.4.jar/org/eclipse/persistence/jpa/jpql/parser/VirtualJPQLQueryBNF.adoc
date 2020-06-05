@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/VirtualJPQLQueryBNF.class
-
- - link:VirtualJPQLQueryBNF-asmified.java[Asmified]
-
-== References
-

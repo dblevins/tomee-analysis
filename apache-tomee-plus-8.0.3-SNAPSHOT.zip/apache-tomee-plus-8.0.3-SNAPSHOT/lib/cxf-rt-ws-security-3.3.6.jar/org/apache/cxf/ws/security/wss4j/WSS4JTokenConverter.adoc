@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/WSS4JTokenConverter.class
-
- - link:WSS4JTokenConverter-asmified.java[Asmified]
-
-== References
-

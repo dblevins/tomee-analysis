@@ -1,6 +1,0 @@
-= org/apache/openejb/math/util/DoubleArray.class
-
- - link:DoubleArray-asmified.java[Asmified]
-
-== References
-

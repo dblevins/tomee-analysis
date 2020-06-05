@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/plugins/BeanValidationPlugin.class
-
- - link:BeanValidationPlugin-asmified.java[Asmified]
-
-== References
-

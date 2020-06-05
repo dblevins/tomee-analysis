@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/DataUtil.class
-
- - link:DataUtil-asmified.java[Asmified]
-
-== References
-

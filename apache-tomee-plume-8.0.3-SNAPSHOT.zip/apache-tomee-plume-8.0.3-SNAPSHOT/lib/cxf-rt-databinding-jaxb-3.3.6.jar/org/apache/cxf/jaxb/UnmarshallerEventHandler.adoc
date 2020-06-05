@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/UnmarshallerEventHandler.class
-
- - link:UnmarshallerEventHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/persistence/CacheRetrieveMode.class
-
- - link:CacheRetrieveMode-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.CacheRetrieveMode - 20

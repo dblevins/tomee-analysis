@@ -1,6 +1,0 @@
-= org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory.class
-
- - link:InterceptorDecoratorProxyFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/LowerExpression.class
-
- - link:LowerExpression-asmified.java[Asmified]
-
-== References
-

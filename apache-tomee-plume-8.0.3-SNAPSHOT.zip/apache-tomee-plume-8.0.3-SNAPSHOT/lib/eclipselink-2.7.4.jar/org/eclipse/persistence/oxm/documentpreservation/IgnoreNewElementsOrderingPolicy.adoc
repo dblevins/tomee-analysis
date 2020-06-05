@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/documentpreservation/IgnoreNewElementsOrderingPolicy.class
-
- - link:IgnoreNewElementsOrderingPolicy-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/jms/TransactionInProgressRuntimeException.class
-
- - link:TransactionInProgressRuntimeException-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSRuntimeException - 4

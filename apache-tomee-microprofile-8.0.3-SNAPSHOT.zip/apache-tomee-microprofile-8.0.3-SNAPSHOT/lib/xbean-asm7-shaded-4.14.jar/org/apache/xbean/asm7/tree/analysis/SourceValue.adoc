@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/SourceValue.class
-
- - link:SourceValue-asmified.java[Asmified]
-
-== References
-

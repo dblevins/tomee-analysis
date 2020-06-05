@@ -1,6 +1,0 @@
-= org/apache/activemq/EnhancedConnection.class
-
- - link:EnhancedConnection-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/ctc/wstx/evt/CompactStartElement.class
-
- - link:CompactStartElement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/WebsocketApplicationBean.class
-
- - link:WebsocketApplicationBean-asmified.java[Asmified]
-
-== References
-

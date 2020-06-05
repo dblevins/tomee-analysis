@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/xa/XALogger.class
-
- - link:XALogger-asmified.java[Asmified]
-
-== References
-

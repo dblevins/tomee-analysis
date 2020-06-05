@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/symmetric/Poly1305$Mac.class
-
- - link:Poly1305$Mac-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/remote/SequencingFunctionCall$DoesExist.class
-
- - link:SequencingFunctionCall$DoesExist-asmified.java[Asmified]
-
-== References
-

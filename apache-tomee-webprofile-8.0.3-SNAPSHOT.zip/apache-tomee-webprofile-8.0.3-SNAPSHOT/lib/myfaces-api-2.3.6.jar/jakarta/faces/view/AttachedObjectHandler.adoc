@@ -1,6 +1,0 @@
-= jakarta/faces/view/AttachedObjectHandler.class
-
- - link:AttachedObjectHandler-asmified.java[Asmified]
-
-== References
-

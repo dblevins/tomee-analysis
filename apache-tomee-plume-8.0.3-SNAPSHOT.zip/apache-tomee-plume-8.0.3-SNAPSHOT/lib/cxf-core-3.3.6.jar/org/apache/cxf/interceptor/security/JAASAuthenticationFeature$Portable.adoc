@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/security/JAASAuthenticationFeature$Portable.class
-
- - link:JAASAuthenticationFeature$Portable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/strategies/FinderFromMethod.class
-
- - link:FinderFromMethod-asmified.java[Asmified]
-
-== References
-

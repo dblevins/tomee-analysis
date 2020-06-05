@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/UserDataConstraint$JAXB.class
-
- - link:UserDataConstraint$JAXB-asmified.java[Asmified]
-
-== References
-

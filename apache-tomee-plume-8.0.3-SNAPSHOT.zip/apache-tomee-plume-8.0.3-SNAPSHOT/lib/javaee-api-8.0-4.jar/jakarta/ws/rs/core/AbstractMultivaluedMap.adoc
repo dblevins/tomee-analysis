@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/AbstractMultivaluedMap.class
-
- - link:AbstractMultivaluedMap-asmified.java[Asmified]
-
-== References
-

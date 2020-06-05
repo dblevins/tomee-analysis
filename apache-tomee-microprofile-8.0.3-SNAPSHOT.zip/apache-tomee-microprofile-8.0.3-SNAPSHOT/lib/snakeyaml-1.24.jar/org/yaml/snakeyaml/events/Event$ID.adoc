@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/Event$ID.class
-
- - link:Event$ID-asmified.java[Asmified]
-
-== References
-

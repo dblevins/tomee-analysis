@@ -1,6 +1,0 @@
-= com/sun/faces/application/resource/ZipDirectoryEntryScanner.class
-
- - link:ZipDirectoryEntryScanner-asmified.java[Asmified]
-
-== References
-

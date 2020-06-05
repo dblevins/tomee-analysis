@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/JPQLQueryProblemMessages.class
-
- - link:JPQLQueryProblemMessages-asmified.java[Asmified]
-
-== References
-

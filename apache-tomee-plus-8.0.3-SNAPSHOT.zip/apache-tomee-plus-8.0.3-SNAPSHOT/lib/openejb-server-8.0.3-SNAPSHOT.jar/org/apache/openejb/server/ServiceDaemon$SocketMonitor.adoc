@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ServiceDaemon$SocketMonitor.class
-
- - link:ServiceDaemon$SocketMonitor-asmified.java[Asmified]
-
-== References
-

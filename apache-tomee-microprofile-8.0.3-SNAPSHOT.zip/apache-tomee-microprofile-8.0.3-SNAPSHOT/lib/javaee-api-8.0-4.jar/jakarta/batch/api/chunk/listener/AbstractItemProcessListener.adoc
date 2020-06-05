@@ -1,6 +1,0 @@
-= jakarta/batch/api/chunk/listener/AbstractItemProcessListener.class
-
- - link:AbstractItemProcessListener-asmified.java[Asmified]
-
-== References
-

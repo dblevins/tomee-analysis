@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/UserIDBroker.class
-
- - link:UserIDBroker-asmified.java[Asmified]
-
-== References
-

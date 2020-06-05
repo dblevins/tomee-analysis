@@ -1,6 +1,0 @@
-= jakarta/faces/render/FacesBehaviorRenderer.class
-
- - link:FacesBehaviorRenderer-asmified.java[Asmified]
-
-== References
-

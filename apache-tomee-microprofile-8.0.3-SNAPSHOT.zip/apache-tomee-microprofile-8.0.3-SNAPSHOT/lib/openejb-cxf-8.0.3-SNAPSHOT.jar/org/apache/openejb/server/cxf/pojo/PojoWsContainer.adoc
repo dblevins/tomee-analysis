@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/pojo/PojoWsContainer.class
-
- - link:PojoWsContainer-asmified.java[Asmified]
-
-== References
-

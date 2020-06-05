@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/MIMEConfig.class
-
- - link:MIMEConfig-asmified.java[Asmified]
-
-== References
-

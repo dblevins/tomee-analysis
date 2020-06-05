@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/property/SingleMapNodeProperty$1.class
-
- - link:SingleMapNodeProperty$1-asmified.java[Asmified]
-
-== References
-

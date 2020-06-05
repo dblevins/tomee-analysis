@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/ClientBehaviorRedirectBehaviorAttachedObjectHandlerWrapper.class
-
- - link:ClientBehaviorRedirectBehaviorAttachedObjectHandlerWrapper-asmified.java[Asmified]
-
-== References
-

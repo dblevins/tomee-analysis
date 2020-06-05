@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/ObjectGraphImpl.class
-
- - link:ObjectGraphImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/logic/AnyMatchPredicate.class
-
- - link:AnyMatchPredicate-asmified.java[Asmified]
-
-== References
-

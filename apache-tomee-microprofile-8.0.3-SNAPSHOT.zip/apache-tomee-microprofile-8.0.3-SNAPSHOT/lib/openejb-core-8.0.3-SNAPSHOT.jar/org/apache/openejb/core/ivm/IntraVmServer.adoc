@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/IntraVmServer.class
-
- - link:IntraVmServer-asmified.java[Asmified]
-
-== References
-

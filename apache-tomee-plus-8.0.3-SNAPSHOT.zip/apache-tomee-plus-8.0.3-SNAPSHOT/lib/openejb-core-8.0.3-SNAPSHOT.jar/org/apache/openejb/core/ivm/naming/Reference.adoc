@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/Reference.class
-
- - link:Reference-asmified.java[Asmified]
-
-== References
-

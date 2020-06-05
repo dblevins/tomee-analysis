@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/xmlschema/ExtensionType.class
-
- - link:ExtensionType-asmified.java[Asmified]
-
-== References
-

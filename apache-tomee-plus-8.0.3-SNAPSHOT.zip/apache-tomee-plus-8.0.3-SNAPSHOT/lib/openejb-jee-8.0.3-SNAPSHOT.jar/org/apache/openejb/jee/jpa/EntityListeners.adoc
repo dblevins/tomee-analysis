@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/EntityListeners.class
-
- - link:EntityListeners-asmified.java[Asmified]
-
-== References
-

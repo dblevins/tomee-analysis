@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/DescriptorCompare.class
-
- - link:DescriptorCompare-asmified.java[Asmified]
-
-== References
-

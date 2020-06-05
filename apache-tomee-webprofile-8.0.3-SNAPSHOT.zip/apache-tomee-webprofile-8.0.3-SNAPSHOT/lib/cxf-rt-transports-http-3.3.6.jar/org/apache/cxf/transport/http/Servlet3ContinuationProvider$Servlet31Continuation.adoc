@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/Servlet3ContinuationProvider$Servlet31Continuation.class
-
- - link:Servlet3ContinuationProvider$Servlet31Continuation-asmified.java[Asmified]
-
-== References
-

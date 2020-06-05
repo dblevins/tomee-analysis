@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLLinkElement.class
-
- - link:HTMLLinkElement-asmified.java[Asmified]
-
-== References
-

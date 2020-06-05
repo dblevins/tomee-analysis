@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/BlobTransferPolicy.class
-
- - link:BlobTransferPolicy-asmified.java[Asmified]
-
-== References
-

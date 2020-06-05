@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/GroupByClauseBNF.class
-
- - link:GroupByClauseBNF-asmified.java[Asmified]
-
-== References
-

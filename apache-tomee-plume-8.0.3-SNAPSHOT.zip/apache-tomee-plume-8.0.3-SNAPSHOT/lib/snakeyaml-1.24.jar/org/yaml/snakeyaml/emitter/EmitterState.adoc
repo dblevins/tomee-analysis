@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/emitter/EmitterState.class
-
- - link:EmitterState-asmified.java[Asmified]
-
-== References
-

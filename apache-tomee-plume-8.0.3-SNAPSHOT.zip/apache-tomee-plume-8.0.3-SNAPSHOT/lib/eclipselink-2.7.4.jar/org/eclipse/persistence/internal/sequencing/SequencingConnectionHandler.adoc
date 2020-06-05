@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sequencing/SequencingConnectionHandler.class
-
- - link:SequencingConnectionHandler-asmified.java[Asmified]
-
-== References
-

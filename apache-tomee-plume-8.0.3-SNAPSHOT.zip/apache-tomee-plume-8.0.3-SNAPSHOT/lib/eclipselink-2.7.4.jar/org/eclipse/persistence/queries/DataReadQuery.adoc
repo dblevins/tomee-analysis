@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/DataReadQuery.class
-
- - link:DataReadQuery-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ProducerAck.class
-
- - link:ProducerAck-asmified.java[Asmified]
-
-== References
-

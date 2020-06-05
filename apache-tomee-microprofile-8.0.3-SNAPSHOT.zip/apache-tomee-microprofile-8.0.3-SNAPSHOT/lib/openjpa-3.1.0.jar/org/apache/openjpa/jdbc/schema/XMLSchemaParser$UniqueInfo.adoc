@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/XMLSchemaParser$UniqueInfo.class
-
- - link:XMLSchemaParser$UniqueInfo-asmified.java[Asmified]
-
-== References
-

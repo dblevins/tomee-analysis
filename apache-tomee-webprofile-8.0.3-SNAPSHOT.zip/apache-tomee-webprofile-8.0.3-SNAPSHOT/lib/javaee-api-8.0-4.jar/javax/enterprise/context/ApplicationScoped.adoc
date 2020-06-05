@@ -1,7 +1,0 @@
-= javax/enterprise/context/ApplicationScoped.class
-
- - link:ApplicationScoped-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.NormalScope - 1

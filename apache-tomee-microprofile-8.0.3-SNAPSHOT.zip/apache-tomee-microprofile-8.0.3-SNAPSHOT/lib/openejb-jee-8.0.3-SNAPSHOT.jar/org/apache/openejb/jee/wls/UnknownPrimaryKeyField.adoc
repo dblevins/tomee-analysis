@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/UnknownPrimaryKeyField.class
-
- - link:UnknownPrimaryKeyField-asmified.java[Asmified]
-
-== References
-

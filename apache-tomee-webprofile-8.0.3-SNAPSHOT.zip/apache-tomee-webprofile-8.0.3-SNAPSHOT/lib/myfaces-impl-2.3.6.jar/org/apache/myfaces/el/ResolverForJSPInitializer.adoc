@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/ResolverForJSPInitializer.class
-
- - link:ResolverForJSPInitializer-asmified.java[Asmified]
-
-== References
-

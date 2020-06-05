@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bidimap/TreeBidiMap$View.class
-
- - link:TreeBidiMap$View-asmified.java[Asmified]
-
-== References
-

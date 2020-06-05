@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.class
-
- - link:AbstractDOMSignatureMethod-asmified.java[Asmified]
-
-== References
-

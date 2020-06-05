@@ -1,6 +1,0 @@
-= com/ibm/wsdl/DefinitionImpl.class
-
- - link:DefinitionImpl-asmified.java[Asmified]
-
-== References
-

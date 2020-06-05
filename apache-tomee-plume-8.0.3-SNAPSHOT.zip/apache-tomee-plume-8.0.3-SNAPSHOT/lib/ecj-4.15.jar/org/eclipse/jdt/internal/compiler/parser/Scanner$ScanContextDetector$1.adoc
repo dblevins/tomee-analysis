@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/Scanner$ScanContextDetector$1.class
-
- - link:Scanner$ScanContextDetector$1-asmified.java[Asmified]
-
-== References
-

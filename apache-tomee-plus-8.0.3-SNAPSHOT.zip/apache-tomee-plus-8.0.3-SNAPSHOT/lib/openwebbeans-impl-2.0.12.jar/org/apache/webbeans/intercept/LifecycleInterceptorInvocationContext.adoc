@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/LifecycleInterceptorInvocationContext.class
-
- - link:LifecycleInterceptorInvocationContext-asmified.java[Asmified]
-
-== References
-

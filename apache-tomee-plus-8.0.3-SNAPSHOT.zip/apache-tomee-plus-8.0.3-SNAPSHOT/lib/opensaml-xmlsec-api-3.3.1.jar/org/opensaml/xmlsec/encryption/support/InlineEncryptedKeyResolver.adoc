@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/support/InlineEncryptedKeyResolver.class
-
- - link:InlineEncryptedKeyResolver-asmified.java[Asmified]
-
-== References
-

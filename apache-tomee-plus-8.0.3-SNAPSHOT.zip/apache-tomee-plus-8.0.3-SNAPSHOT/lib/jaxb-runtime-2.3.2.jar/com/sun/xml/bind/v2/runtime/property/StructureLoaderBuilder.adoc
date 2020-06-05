@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/property/StructureLoaderBuilder.class
-
- - link:StructureLoaderBuilder-asmified.java[Asmified]
-
-== References
-

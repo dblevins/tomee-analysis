@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/transform/AttachmentTransformParameterSpec.class
-
- - link:AttachmentTransformParameterSpec-asmified.java[Asmified]
-
-== References
-

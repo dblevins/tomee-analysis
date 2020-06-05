@@ -1,7 +1,0 @@
-= javax/faces/application/ResourceVisitOption.class
-
- - link:ResourceVisitOption-asmified.java[Asmified]
-
-== References
-
- - javax.faces.application.ResourceVisitOption - 16

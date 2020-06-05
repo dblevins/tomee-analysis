@@ -1,6 +1,0 @@
-= jakarta/annotation/Resource.class
-
- - link:Resource-asmified.java[Asmified]
-
-== References
-

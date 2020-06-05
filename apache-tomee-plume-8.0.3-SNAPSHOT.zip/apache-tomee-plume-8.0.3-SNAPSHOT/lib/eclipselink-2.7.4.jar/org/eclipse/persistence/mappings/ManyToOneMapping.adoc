@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/ManyToOneMapping.class
-
- - link:ManyToOneMapping-asmified.java[Asmified]
-
-== References
-

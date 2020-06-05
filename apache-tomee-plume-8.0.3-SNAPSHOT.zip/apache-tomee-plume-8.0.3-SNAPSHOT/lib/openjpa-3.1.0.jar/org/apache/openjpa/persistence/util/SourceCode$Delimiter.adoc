@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/util/SourceCode$Delimiter.class
-
- - link:SourceCode$Delimiter-asmified.java[Asmified]
-
-== References
-

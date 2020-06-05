@@ -1,6 +1,0 @@
-= org/apache/tomee/common/LookupFactory.class
-
- - link:LookupFactory-asmified.java[Asmified]
-
-== References
-

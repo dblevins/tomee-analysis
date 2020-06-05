@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLHRElement.class
-
- - link:HTMLHRElement-asmified.java[Asmified]
-
-== References
-

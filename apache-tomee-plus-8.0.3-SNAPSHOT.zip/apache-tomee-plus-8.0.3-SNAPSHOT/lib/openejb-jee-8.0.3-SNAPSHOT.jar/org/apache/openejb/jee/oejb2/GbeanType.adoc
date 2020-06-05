@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/GbeanType.class
-
- - link:GbeanType-asmified.java[Asmified]
-
-== References
-

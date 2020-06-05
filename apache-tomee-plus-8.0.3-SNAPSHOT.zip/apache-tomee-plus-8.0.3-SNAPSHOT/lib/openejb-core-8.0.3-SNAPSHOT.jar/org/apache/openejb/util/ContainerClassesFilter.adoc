@@ -1,6 +1,0 @@
-= org/apache/openejb/util/ContainerClassesFilter.class
-
- - link:ContainerClassesFilter-asmified.java[Asmified]
-
-== References
-

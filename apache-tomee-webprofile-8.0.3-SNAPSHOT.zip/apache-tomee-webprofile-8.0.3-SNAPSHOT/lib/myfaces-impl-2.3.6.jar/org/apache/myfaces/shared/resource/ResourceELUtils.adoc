@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/resource/ResourceELUtils.class
-
- - link:ResourceELUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/listeners/JobChainingJobListener.class
-
- - link:JobChainingJobListener-asmified.java[Asmified]
-
-== References
-

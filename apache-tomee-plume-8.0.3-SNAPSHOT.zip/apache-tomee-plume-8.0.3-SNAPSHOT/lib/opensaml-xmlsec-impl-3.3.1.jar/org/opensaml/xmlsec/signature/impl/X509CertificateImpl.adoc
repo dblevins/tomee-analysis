@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/X509CertificateImpl.class
-
- - link:X509CertificateImpl-asmified.java[Asmified]
-
-== References
-

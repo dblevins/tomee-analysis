@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/SPKIDataUnmarshaller.class
-
- - link:SPKIDataUnmarshaller-asmified.java[Asmified]
-
-== References
-

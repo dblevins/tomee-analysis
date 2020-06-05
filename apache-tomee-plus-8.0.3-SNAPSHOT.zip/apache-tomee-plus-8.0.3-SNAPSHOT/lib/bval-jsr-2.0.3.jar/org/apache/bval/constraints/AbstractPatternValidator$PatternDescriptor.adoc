@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/AbstractPatternValidator$PatternDescriptor.class
-
- - link:AbstractPatternValidator$PatternDescriptor-asmified.java[Asmified]
-
-== References
-

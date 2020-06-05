@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlDiscriminatorValue.class
-
- - link:XmlDiscriminatorValue-asmified.java[Asmified]
-
-== References
-

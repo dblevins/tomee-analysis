@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/access/AccessMode$Writer.class
-
- - link:AccessMode$Writer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ContextUtil$ListBindingEnumeration.class
-
- - link:ContextUtil$ListBindingEnumeration-asmified.java[Asmified]
-
-== References
-

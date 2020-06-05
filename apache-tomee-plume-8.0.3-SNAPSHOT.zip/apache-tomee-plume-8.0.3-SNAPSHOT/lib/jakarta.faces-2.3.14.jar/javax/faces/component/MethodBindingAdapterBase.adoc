@@ -1,7 +1,0 @@
-= javax/faces/component/MethodBindingAdapterBase.class
-
- - link:MethodBindingAdapterBase-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.MethodBindingAdapterBase - 1

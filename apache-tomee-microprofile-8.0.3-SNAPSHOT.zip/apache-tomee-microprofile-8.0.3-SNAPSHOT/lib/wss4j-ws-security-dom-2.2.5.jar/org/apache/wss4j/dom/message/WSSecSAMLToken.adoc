@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/WSSecSAMLToken.class
-
- - link:WSSecSAMLToken-asmified.java[Asmified]
-
-== References
-

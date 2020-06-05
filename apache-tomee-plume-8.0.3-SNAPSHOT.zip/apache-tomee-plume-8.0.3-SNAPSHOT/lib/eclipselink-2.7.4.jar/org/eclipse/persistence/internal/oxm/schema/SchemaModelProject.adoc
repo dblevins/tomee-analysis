@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/schema/SchemaModelProject.class
-
- - link:SchemaModelProject-asmified.java[Asmified]
-
-== References
-

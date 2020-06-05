@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/ConnectionFactory.class
-
- - link:ConnectionFactory-asmified.java[Asmified]
-
-== References
-

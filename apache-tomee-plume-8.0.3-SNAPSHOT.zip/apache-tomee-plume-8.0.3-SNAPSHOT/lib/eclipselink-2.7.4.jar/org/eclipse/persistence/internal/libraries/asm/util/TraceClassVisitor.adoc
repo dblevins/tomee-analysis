@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/TraceClassVisitor.class
-
- - link:TraceClassVisitor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/command/WireFormatInfo.class
-
- - link:WireFormatInfo-asmified.java[Asmified]
-
-== References
-

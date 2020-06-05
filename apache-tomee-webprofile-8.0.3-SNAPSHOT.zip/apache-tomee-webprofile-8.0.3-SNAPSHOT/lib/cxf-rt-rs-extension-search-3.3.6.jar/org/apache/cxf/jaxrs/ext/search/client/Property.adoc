@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/client/Property.class
-
- - link:Property-asmified.java[Asmified]
-
-== References
-

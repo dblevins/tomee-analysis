@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/ConnectorTransactionContext$ConnectorSynchronization.class
-
- - link:ConnectorTransactionContext$ConnectorSynchronization-asmified.java[Asmified]
-
-== References
-

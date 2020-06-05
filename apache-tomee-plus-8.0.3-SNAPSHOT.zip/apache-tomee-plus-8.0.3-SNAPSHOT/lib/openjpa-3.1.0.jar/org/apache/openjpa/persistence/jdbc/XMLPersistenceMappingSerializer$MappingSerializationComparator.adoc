@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/XMLPersistenceMappingSerializer$MappingSerializationComparator.class
-
- - link:XMLPersistenceMappingSerializer$MappingSerializationComparator-asmified.java[Asmified]
-
-== References
-

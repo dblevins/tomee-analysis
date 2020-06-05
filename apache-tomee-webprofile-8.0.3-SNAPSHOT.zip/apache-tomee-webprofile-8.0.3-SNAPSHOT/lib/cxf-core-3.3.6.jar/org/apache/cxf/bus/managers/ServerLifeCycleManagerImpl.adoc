@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/ServerLifeCycleManagerImpl.class
-
- - link:ServerLifeCycleManagerImpl-asmified.java[Asmified]
-
-== References
-

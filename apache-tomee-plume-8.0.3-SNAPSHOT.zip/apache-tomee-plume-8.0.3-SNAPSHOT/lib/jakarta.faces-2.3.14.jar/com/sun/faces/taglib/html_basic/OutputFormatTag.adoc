@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/OutputFormatTag.class
-
- - link:OutputFormatTag-asmified.java[Asmified]
-
-== References
-

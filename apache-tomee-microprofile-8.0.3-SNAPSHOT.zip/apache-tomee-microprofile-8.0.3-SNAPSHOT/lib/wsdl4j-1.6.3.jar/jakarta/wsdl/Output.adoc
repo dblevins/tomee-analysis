@@ -1,6 +1,0 @@
-= jakarta/wsdl/Output.class
-
- - link:Output-asmified.java[Asmified]
-
-== References
-

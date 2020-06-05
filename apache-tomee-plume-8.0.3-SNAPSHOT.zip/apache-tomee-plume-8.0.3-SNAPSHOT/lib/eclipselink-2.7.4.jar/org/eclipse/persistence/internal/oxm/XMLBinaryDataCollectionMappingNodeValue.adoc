@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLBinaryDataCollectionMappingNodeValue.class
-
- - link:XMLBinaryDataCollectionMappingNodeValue-asmified.java[Asmified]
-
-== References
-

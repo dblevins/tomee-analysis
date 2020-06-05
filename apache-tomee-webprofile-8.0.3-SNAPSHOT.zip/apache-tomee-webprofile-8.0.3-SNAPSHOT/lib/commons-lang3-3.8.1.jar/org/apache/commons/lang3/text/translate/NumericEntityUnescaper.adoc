@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/translate/NumericEntityUnescaper.class
-
- - link:NumericEntityUnescaper-asmified.java[Asmified]
-
-== References
-

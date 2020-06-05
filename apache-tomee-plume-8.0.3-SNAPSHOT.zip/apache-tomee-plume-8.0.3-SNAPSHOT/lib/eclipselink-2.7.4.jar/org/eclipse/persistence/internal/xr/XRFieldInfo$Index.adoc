@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRFieldInfo$Index.class
-
- - link:XRFieldInfo$Index-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/nio/PooledParallelSender.class
-
- - link:PooledParallelSender-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/ManagedBean.class
-
- - link:ManagedBean-asmified.java[Asmified]
-
-== References
-

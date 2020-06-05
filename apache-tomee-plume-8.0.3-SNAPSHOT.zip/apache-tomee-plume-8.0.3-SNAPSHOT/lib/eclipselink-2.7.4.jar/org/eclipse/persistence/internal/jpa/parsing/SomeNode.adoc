@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/SomeNode.class
-
- - link:SomeNode-asmified.java[Asmified]
-
-== References
-

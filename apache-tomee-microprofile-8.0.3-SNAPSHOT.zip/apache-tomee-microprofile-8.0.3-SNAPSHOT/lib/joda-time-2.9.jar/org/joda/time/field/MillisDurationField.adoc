@@ -1,6 +1,0 @@
-= org/joda/time/field/MillisDurationField.class
-
- - link:MillisDurationField-asmified.java[Asmified]
-
-== References
-

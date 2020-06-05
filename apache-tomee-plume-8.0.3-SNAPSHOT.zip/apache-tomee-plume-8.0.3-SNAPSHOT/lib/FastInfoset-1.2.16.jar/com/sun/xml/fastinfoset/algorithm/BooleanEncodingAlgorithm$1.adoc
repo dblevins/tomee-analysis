@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/BooleanEncodingAlgorithm$1.class
-
- - link:BooleanEncodingAlgorithm$1-asmified.java[Asmified]
-
-== References
-

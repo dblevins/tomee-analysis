@@ -1,8 +1,0 @@
-= javax/servlet/MultipartConfigElement.class
-
- - link:MultipartConfigElement-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.annotation.MultipartConfig - 5
- - javax.servlet.MultipartConfigElement - 2

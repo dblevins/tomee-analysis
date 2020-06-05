@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLBinaryDataHelper.class
-
- - link:XMLBinaryDataHelper-asmified.java[Asmified]
-
-== References
-

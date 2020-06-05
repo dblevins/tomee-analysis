@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/PersistentManagerSF.class
-
- - link:PersistentManagerSF-asmified.java[Asmified]
-
-== References
-

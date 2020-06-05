@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spring/JaxRsProxyClientConfiguration.class
-
- - link:JaxRsProxyClientConfiguration-asmified.java[Asmified]
-
-== References
-

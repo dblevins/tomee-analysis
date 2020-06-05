@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/UpdateOperation.class
-
- - link:UpdateOperation-asmified.java[Asmified]
-
-== References
-

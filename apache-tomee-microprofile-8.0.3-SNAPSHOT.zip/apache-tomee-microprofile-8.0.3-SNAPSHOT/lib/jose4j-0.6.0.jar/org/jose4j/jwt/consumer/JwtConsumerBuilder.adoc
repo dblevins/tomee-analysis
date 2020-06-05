@@ -1,6 +1,0 @@
-= org/jose4j/jwt/consumer/JwtConsumerBuilder.class
-
- - link:JwtConsumerBuilder-asmified.java[Asmified]
-
-== References
-

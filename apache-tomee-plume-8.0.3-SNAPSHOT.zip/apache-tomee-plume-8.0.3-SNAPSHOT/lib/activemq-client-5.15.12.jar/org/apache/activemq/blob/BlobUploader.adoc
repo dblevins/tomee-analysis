@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/BlobUploader.class
-
- - link:BlobUploader-asmified.java[Asmified]
-
-== References
-

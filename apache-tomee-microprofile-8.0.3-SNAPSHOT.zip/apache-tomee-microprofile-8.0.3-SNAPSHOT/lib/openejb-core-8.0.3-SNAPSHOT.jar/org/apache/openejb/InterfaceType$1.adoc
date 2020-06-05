@@ -1,6 +1,0 @@
-= org/apache/openejb/InterfaceType$1.class
-
- - link:InterfaceType$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/struct/DoubleLinkedList.class
-
- - link:DoubleLinkedList-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/ConverterClass.class
-
- - link:ConverterClass-asmified.java[Asmified]
-
-== References
-

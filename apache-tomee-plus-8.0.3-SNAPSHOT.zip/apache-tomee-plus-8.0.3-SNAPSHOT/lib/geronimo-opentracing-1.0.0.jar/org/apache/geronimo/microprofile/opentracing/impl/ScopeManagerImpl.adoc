@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/impl/ScopeManagerImpl.class
-
- - link:ScopeManagerImpl-asmified.java[Asmified]
-
-== References
-

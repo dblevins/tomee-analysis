@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/admin/JCSAdminBean.class
-
- - link:JCSAdminBean-asmified.java[Asmified]
-
-== References
-

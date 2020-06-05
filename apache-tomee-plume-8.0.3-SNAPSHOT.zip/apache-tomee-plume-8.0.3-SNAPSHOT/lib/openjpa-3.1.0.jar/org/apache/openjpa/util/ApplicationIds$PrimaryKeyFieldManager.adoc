@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ApplicationIds$PrimaryKeyFieldManager.class
-
- - link:ApplicationIds$PrimaryKeyFieldManager-asmified.java[Asmified]
-
-== References
-

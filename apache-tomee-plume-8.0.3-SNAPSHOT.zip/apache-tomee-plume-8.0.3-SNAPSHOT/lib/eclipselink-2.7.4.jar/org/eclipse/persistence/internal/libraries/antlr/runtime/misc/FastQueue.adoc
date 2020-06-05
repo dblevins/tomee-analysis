@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/misc/FastQueue.class
-
- - link:FastQueue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/core/compiler/IProblem.class
-
- - link:IProblem-asmified.java[Asmified]
-
-== References
-

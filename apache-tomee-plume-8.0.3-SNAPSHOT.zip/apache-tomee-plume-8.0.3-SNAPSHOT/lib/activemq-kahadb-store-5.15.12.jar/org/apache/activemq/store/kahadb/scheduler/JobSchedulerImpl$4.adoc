@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/scheduler/JobSchedulerImpl$4.class
-
- - link:JobSchedulerImpl$4-asmified.java[Asmified]
-
-== References
-

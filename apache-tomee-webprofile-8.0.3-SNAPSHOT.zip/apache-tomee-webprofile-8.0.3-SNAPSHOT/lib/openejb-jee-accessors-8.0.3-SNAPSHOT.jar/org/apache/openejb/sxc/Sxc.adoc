@@ -1,6 +1,0 @@
-= org/apache/openejb/sxc/Sxc.class
-
- - link:Sxc-asmified.java[Asmified]
-
-== References
-

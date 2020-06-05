@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/UpperExpression.class
-
- - link:UpperExpression-asmified.java[Asmified]
-
-== References
-

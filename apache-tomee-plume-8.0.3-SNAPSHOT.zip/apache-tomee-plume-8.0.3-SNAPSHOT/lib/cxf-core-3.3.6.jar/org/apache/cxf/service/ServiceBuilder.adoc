@@ -1,6 +1,0 @@
-= org/apache/cxf/service/ServiceBuilder.class
-
- - link:ServiceBuilder-asmified.java[Asmified]
-
-== References
-

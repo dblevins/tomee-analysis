@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/JpaJaxbUtil$1.class
-
- - link:JpaJaxbUtil$1-asmified.java[Asmified]
-
-== References
-

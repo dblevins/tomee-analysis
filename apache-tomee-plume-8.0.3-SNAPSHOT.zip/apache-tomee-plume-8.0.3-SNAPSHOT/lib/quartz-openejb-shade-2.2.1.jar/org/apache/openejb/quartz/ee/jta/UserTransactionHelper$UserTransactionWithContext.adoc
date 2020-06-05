@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext.class
-
- - link:UserTransactionHelper$UserTransactionWithContext-asmified.java[Asmified]
-
-== References
-

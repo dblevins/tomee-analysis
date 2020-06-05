@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/IntrospectionSupport.class
-
- - link:IntrospectionSupport-asmified.java[Asmified]
-
-== References
-

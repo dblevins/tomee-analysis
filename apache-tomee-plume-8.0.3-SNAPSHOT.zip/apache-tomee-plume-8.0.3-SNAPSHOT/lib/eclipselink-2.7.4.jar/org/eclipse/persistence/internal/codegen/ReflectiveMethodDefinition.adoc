@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/codegen/ReflectiveMethodDefinition.class
-
- - link:ReflectiveMethodDefinition-asmified.java[Asmified]
-
-== References
-

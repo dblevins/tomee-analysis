@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/converters/TemporalImpl.class
-
- - link:TemporalImpl-asmified.java[Asmified]
-
-== References
-

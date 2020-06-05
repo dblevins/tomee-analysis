@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/logging/behavior/ICacheEvent.class
-
- - link:ICacheEvent-asmified.java[Asmified]
-
-== References
-

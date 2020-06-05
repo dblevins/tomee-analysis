@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/Forwardable.class
-
- - link:Forwardable-asmified.java[Asmified]
-
-== References
-

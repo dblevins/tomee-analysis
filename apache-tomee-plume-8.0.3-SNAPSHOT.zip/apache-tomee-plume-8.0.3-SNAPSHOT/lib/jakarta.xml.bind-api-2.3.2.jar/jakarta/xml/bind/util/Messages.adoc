@@ -1,6 +1,0 @@
-= jakarta/xml/bind/util/Messages.class
-
- - link:Messages-asmified.java[Asmified]
-
-== References
-

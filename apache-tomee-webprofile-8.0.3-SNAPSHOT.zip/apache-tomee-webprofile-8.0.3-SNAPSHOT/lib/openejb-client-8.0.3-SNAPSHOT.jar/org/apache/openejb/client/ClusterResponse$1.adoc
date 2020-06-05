@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ClusterResponse$1.class
-
- - link:ClusterResponse$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/IntraVmCopyMonitor.class
-
- - link:IntraVmCopyMonitor-asmified.java[Asmified]
-
-== References
-

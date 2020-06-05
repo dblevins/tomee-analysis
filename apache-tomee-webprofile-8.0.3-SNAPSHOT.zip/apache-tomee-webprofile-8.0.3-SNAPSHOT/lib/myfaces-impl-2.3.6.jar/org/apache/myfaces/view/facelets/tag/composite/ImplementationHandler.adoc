@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/ImplementationHandler.class
-
- - link:ImplementationHandler-asmified.java[Asmified]
-
-== References
-

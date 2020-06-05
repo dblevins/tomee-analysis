@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPMyRightsResponse.class
-
- - link:IMAPMyRightsResponse-asmified.java[Asmified]
-
-== References
-

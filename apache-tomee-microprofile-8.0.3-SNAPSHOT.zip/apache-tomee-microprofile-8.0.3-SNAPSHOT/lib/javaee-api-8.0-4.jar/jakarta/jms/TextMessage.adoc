@@ -1,6 +1,0 @@
-= jakarta/jms/TextMessage.class
-
- - link:TextMessage-asmified.java[Asmified]
-
-== References
-

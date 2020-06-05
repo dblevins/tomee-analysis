@@ -1,6 +1,0 @@
-= org/apache/batchee/container/modelresolver/impl/FlowPropertyResolver.class
-
- - link:FlowPropertyResolver-asmified.java[Asmified]
-
-== References
-

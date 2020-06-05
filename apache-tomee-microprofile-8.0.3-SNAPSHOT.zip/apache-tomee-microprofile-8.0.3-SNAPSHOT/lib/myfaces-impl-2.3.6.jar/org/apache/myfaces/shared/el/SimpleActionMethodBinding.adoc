@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/el/SimpleActionMethodBinding.class
-
- - link:SimpleActionMethodBinding-asmified.java[Asmified]
-
-== References
-

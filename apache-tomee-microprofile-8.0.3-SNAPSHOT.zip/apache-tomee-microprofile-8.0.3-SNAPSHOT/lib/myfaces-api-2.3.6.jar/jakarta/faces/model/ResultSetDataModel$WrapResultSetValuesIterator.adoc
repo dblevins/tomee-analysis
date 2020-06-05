@@ -1,6 +1,0 @@
-= jakarta/faces/model/ResultSetDataModel$WrapResultSetValuesIterator.class
-
- - link:ResultSetDataModel$WrapResultSetValuesIterator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/html/ComponentResourceDelegate.class
-
- - link:ComponentResourceDelegate-asmified.java[Asmified]
-
-== References
-

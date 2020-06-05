@@ -1,6 +1,0 @@
-= jakarta/xml/registry/infomodel/ServiceBinding.class
-
- - link:ServiceBinding-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/ManagedContext$1.class
-
- - link:ManagedContext$1-asmified.java[Asmified]
-
-== References
-

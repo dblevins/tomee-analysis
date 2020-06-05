@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/dynamic/DynamicClientFactory.class
-
- - link:DynamicClientFactory-asmified.java[Asmified]
-
-== References
-

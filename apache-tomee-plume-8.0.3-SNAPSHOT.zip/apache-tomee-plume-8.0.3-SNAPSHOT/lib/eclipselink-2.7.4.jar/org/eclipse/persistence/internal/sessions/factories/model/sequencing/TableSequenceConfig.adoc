@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/sequencing/TableSequenceConfig.class
-
- - link:TableSequenceConfig-asmified.java[Asmified]
-
-== References
-

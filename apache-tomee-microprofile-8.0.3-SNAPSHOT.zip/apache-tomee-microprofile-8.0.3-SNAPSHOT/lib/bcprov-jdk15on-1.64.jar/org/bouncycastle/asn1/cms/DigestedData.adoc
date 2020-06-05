@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/DigestedData.class
-
- - link:DigestedData-asmified.java[Asmified]
-
-== References
-

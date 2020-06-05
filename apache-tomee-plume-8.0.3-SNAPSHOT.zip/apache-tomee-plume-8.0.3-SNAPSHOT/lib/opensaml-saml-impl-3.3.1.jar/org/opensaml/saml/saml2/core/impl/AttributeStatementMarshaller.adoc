@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/AttributeStatementMarshaller.class
-
- - link:AttributeStatementMarshaller-asmified.java[Asmified]
-
-== References
-

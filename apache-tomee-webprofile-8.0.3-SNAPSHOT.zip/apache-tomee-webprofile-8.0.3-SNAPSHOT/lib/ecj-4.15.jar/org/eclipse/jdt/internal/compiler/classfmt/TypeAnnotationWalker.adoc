@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/TypeAnnotationWalker.class
-
- - link:TypeAnnotationWalker-asmified.java[Asmified]
-
-== References
-

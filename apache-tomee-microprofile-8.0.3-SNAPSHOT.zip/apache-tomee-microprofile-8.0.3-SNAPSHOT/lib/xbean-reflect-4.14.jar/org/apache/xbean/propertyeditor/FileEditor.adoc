@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/FileEditor.class
-
- - link:FileEditor-asmified.java[Asmified]
-
-== References
-

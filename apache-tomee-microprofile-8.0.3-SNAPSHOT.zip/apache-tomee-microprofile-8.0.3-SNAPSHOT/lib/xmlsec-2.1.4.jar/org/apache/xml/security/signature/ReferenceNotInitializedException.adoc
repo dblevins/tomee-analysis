@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/ReferenceNotInitializedException.class
-
- - link:ReferenceNotInitializedException-asmified.java[Asmified]
-
-== References
-

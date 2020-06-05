@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/multicast/MulticastTransportFactory.class
-
- - link:MulticastTransportFactory-asmified.java[Asmified]
-
-== References
-

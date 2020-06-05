@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/ModuleResolutionAttribute.class
-
- - link:ModuleResolutionAttribute-asmified.java[Asmified]
-
-== References
-

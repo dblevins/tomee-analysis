@@ -1,6 +1,0 @@
-= org/apache/openejb/config/event/EnhanceScannableUrlsEvent.class
-
- - link:EnhanceScannableUrlsEvent-asmified.java[Asmified]
-
-== References
-

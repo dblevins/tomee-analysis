@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/DetachedState.class
-
- - link:DetachedState-asmified.java[Asmified]
-
-== References
-

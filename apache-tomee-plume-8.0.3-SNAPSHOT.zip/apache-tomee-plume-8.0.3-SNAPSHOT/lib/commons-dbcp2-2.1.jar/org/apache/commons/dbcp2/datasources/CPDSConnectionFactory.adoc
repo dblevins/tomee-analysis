@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/datasources/CPDSConnectionFactory.class
-
- - link:CPDSConnectionFactory-asmified.java[Asmified]
-
-== References
-

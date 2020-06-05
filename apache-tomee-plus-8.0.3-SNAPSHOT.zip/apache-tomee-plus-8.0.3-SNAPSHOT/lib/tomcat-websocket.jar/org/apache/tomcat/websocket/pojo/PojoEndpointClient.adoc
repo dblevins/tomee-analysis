@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/pojo/PojoEndpointClient.class
-
- - link:PojoEndpointClient-asmified.java[Asmified]
-
-== References
-

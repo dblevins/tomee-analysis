@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/DefaultBufferPool.class
-
- - link:DefaultBufferPool-asmified.java[Asmified]
-
-== References
-

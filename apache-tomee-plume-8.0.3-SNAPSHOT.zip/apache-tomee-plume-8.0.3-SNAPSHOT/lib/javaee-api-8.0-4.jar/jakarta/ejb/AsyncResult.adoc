@@ -1,6 +1,0 @@
-= jakarta/ejb/AsyncResult.class
-
- - link:AsyncResult-asmified.java[Asmified]
-
-== References
-

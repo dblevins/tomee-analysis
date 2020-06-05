@@ -1,6 +1,0 @@
-= jakarta/batch/operations/JobExecutionIsRunningException.class
-
- - link:JobExecutionIsRunningException-asmified.java[Asmified]
-
-== References
-

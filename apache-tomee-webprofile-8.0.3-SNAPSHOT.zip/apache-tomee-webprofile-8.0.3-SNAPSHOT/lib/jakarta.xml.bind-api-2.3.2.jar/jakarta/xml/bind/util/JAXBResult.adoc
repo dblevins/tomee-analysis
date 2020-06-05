@@ -1,6 +1,0 @@
-= jakarta/xml/bind/util/JAXBResult.class
-
- - link:JAXBResult-asmified.java[Asmified]
-
-== References
-

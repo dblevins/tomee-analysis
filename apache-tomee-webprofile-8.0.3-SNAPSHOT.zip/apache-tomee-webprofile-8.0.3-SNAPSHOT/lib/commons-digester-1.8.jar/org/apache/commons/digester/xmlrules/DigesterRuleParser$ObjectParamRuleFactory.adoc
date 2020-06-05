@@ -1,6 +1,0 @@
-= org/apache/commons/digester/xmlrules/DigesterRuleParser$ObjectParamRuleFactory.class
-
- - link:DigesterRuleParser$ObjectParamRuleFactory-asmified.java[Asmified]
-
-== References
-

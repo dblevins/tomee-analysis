@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/XMLStreamReaderWrapper.class
-
- - link:XMLStreamReaderWrapper-asmified.java[Asmified]
-
-== References
-

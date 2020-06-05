@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/JMS2.class
-
- - link:JMS2-asmified.java[Asmified]
-
-== References
-

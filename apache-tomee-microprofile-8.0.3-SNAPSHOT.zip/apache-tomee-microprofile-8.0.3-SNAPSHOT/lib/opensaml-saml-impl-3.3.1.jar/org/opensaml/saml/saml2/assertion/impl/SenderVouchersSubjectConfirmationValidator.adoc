@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/assertion/impl/SenderVouchersSubjectConfirmationValidator.class
-
- - link:SenderVouchersSubjectConfirmationValidator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/exception/helper/ExceptionMessageBuilder.class
-
- - link:ExceptionMessageBuilder-asmified.java[Asmified]
-
-== References
-

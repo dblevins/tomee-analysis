@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBContext$ContextPathInput.class
-
- - link:JAXBContext$ContextPathInput-asmified.java[Asmified]
-
-== References
-

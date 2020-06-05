@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/jpa/provider/DefaultEntityManagerProvider.class
-
- - link:DefaultEntityManagerProvider-asmified.java[Asmified]
-
-== References
-

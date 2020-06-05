@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/AlgorithmDescriptor$AlgorithmType.class
-
- - link:AlgorithmDescriptor$AlgorithmType-asmified.java[Asmified]
-
-== References
-

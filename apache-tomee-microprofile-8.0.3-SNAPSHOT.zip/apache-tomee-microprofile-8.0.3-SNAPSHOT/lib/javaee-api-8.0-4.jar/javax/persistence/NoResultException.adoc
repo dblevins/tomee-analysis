@@ -1,7 +1,0 @@
-= javax/persistence/NoResultException.class
-
- - link:NoResultException-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.PersistenceException - 3

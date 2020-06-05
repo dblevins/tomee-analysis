@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/AbstractReloadingMetadataResolver$1.class
-
- - link:AbstractReloadingMetadataResolver$1-asmified.java[Asmified]
-
-== References
-

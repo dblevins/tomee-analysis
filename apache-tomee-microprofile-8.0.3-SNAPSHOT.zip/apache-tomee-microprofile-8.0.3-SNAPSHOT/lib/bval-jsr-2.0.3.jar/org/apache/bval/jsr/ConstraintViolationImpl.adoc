@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/ConstraintViolationImpl.class
-
- - link:ConstraintViolationImpl-asmified.java[Asmified]
-
-== References
-

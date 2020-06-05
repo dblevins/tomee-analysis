@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/MetaDataCacheMaintenance.class
-
- - link:MetaDataCacheMaintenance-asmified.java[Asmified]
-
-== References
-

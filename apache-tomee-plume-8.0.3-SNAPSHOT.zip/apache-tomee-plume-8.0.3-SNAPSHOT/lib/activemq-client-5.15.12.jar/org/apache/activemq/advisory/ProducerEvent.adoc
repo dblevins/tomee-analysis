@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/ProducerEvent.class
-
- - link:ProducerEvent-asmified.java[Asmified]
-
-== References
-

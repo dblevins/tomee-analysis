@@ -1,6 +1,0 @@
-= org/apache/tomee/myfaces/TomEEFacesConfigResourceProviderFactory$1.class
-
- - link:TomEEFacesConfigResourceProviderFactory$1-asmified.java[Asmified]
-
-== References
-

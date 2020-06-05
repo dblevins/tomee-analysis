@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/ReadStrategy.class
-
- - link:ReadStrategy-asmified.java[Asmified]
-
-== References
-

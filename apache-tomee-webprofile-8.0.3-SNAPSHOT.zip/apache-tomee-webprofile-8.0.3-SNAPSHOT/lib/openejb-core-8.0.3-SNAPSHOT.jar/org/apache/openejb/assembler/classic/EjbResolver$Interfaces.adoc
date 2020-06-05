@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/EjbResolver$Interfaces.class
-
- - link:EjbResolver$Interfaces-asmified.java[Asmified]
-
-== References
-

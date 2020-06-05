@@ -1,6 +1,0 @@
-= serp/bytecode/Exceptions.class
-
- - link:Exceptions-asmified.java[Asmified]
-
-== References
-

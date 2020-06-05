@@ -1,6 +1,0 @@
-= jakarta/xml/bind/helpers/AbstractMarshallerImpl.class
-
- - link:AbstractMarshallerImpl-asmified.java[Asmified]
-
-== References
-

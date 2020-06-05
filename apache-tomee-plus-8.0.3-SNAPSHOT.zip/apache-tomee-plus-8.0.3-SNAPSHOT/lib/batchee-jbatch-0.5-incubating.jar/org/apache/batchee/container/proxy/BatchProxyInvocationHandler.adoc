@@ -1,6 +1,0 @@
-= org/apache/batchee/container/proxy/BatchProxyInvocationHandler.class
-
- - link:BatchProxyInvocationHandler-asmified.java[Asmified]
-
-== References
-

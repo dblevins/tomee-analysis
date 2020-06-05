@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/HashtableOfIntValues.class
-
- - link:HashtableOfIntValues-asmified.java[Asmified]
-
-== References
-

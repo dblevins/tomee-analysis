@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/JAXBExtensionHelper.class
-
- - link:JAXBExtensionHelper-asmified.java[Asmified]
-
-== References
-

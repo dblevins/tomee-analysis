@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/ConfigurationProvider.class
-
- - link:ConfigurationProvider-asmified.java[Asmified]
-
-== References
-

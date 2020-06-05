@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/SessionProfiler.class
-
- - link:SessionProfiler-asmified.java[Asmified]
-
-== References
-

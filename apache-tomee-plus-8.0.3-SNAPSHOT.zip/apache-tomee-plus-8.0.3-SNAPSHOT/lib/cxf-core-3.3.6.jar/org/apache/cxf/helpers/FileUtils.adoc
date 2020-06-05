@@ -1,6 +1,0 @@
-= org/apache/cxf/helpers/FileUtils.class
-
- - link:FileUtils-asmified.java[Asmified]
-
-== References
-

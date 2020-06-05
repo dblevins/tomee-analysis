@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/AnyGetterWriter.class
-
- - link:AnyGetterWriter-asmified.java[Asmified]
-
-== References
-

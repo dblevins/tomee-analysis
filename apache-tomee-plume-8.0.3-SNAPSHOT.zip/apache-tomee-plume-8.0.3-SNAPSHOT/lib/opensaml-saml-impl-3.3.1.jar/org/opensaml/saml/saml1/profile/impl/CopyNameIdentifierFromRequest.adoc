@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/profile/impl/CopyNameIdentifierFromRequest.class
-
- - link:CopyNameIdentifierFromRequest-asmified.java[Asmified]
-
-== References
-

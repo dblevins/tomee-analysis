@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/spring/EndpointDefinitionParser.class
-
- - link:EndpointDefinitionParser-asmified.java[Asmified]
-
-== References
-

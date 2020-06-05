@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/AnnotationWriter.class
-
- - link:AnnotationWriter-asmified.java[Asmified]
-
-== References
-

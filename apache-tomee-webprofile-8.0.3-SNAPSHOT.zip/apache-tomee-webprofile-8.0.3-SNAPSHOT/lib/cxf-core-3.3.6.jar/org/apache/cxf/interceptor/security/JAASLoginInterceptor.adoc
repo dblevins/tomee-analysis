@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/security/JAASLoginInterceptor.class
-
- - link:JAASLoginInterceptor-asmified.java[Asmified]
-
-== References
-

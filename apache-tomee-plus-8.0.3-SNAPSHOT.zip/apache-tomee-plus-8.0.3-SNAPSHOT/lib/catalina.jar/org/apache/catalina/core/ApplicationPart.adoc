@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationPart.class
-
- - link:ApplicationPart-asmified.java[Asmified]
-
-== References
-

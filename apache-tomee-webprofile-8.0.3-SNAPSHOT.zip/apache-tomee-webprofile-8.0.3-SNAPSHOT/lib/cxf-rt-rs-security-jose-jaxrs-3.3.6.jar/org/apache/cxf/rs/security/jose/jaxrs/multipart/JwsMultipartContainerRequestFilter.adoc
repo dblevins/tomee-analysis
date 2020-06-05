@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartContainerRequestFilter.class
-
- - link:JwsMultipartContainerRequestFilter-asmified.java[Asmified]
-
-== References
-

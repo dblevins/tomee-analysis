@@ -1,6 +1,0 @@
-= org/apache/activemq/util/LFUCache.class
-
- - link:LFUCache-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/EntityGroupName.class
-
- - link:EntityGroupName-asmified.java[Asmified]
-
-== References
-

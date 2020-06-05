@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/Assembler$ResourceInstance.class
-
- - link:Assembler$ResourceInstance-asmified.java[Asmified]
-
-== References
-

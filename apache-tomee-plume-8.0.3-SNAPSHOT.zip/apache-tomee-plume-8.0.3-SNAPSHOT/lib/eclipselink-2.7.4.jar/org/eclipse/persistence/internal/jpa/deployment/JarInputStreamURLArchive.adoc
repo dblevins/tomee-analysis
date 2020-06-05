@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/JarInputStreamURLArchive.class
-
- - link:JarInputStreamURLArchive-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessInjectionTargetImpl.class
-
- - link:ProcessInjectionTargetImpl-asmified.java[Asmified]
-
-== References
-

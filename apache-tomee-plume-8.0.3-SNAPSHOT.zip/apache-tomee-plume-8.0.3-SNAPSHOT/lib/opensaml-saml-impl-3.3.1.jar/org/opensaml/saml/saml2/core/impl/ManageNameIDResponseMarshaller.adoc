@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/ManageNameIDResponseMarshaller.class
-
- - link:ManageNameIDResponseMarshaller-asmified.java[Asmified]
-
-== References
-

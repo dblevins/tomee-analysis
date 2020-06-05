@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/Transformer.class
-
- - link:Transformer-asmified.java[Asmified]
-
-== References
-

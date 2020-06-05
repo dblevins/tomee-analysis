@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/NullSafeAccessor.class
-
- - link:NullSafeAccessor-asmified.java[Asmified]
-
-== References
-

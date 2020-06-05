@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/TablePerMultitenantPolicy.class
-
- - link:TablePerMultitenantPolicy-asmified.java[Asmified]
-
-== References
-

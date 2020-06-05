@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/LoadBundleTag$1.class
-
- - link:LoadBundleTag$1-asmified.java[Asmified]
-
-== References
-

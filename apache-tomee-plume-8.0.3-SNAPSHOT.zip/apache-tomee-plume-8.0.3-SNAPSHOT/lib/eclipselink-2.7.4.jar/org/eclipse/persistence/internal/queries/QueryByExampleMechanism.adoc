@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/QueryByExampleMechanism.class
-
- - link:QueryByExampleMechanism-asmified.java[Asmified]
-
-== References
-

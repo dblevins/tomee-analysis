@@ -1,6 +1,0 @@
-= org/apache/openejb/monitoring/ManagedMBean$FieldMember.class
-
- - link:ManagedMBean$FieldMember-asmified.java[Asmified]
-
-== References
-

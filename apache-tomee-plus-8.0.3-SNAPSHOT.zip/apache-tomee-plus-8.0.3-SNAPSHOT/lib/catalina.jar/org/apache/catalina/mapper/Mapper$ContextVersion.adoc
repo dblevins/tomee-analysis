@@ -1,6 +1,0 @@
-= org/apache/catalina/mapper/Mapper$ContextVersion.class
-
- - link:Mapper$ContextVersion-asmified.java[Asmified]
-
-== References
-

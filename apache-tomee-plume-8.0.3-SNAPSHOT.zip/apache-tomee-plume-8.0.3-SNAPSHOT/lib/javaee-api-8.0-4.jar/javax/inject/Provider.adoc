@@ -1,6 +1,0 @@
-= javax/inject/Provider.class
-
- - link:Provider-asmified.java[Asmified]
-
-== References
-

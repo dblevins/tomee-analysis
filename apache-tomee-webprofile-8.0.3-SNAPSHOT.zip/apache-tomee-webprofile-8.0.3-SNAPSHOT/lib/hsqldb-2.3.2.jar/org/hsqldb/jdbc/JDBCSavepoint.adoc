@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCSavepoint.class
-
- - link:JDBCSavepoint-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/_ViewAttributeMap.class
-
- - link:_ViewAttributeMap-asmified.java[Asmified]
-
-== References
-

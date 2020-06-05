@@ -1,6 +1,0 @@
-= jakarta/faces/component/_SharedRendererUtils.class
-
- - link:_SharedRendererUtils-asmified.java[Asmified]
-
-== References
-

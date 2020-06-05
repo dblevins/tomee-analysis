@@ -1,6 +1,0 @@
-= org/apache/openejb/client/event/ServerRemoved.class
-
- - link:ServerRemoved-asmified.java[Asmified]
-
-== References
-

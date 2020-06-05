@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/validate/CopyBeanInterceptorELResolver.class
-
- - link:CopyBeanInterceptorELResolver-asmified.java[Asmified]
-
-== References
-

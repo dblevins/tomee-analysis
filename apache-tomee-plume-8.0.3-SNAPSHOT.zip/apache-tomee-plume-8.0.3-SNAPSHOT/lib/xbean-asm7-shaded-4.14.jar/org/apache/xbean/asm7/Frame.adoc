@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/Frame.class
-
- - link:Frame-asmified.java[Asmified]
-
-== References
-

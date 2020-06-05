@@ -1,6 +1,0 @@
-= org/hsqldb/util/GridSwing.class
-
- - link:GridSwing-asmified.java[Asmified]
-
-== References
-

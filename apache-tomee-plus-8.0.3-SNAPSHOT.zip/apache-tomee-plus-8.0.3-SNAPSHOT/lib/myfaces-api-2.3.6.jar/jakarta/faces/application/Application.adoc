@@ -1,6 +1,0 @@
-= jakarta/faces/application/Application.class
-
- - link:Application-asmified.java[Asmified]
-
-== References
-

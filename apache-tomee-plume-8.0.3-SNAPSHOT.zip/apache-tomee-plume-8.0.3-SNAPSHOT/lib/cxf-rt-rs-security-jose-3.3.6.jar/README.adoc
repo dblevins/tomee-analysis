@@ -1,2 +1,0 @@
-= apache-tomee-plume-8.0.3-SNAPSHOT/lib/cxf-rt-rs-security-jose-3.3.6.jar
-

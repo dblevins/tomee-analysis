@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/interceptor/Soap12FaultInInterceptor.class
-
- - link:Soap12FaultInInterceptor-asmified.java[Asmified]
-
-== References
-

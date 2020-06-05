@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/DualBuilder$CustomWrapper$ForGetterMethod.class
-
- - link:DualBuilder$CustomWrapper$ForGetterMethod-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/JdbcInterceptor.class
-
- - link:JdbcInterceptor-asmified.java[Asmified]
-
-== References
-

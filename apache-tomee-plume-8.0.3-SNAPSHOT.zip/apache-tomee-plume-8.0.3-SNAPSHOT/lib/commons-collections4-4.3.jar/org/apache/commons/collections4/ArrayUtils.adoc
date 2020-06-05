@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/ArrayUtils.class
-
- - link:ArrayUtils-asmified.java[Asmified]
-
-== References
-

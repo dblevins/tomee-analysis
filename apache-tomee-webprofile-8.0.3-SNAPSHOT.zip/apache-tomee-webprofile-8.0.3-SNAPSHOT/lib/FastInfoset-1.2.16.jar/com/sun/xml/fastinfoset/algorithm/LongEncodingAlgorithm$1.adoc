@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/LongEncodingAlgorithm$1.class
-
- - link:LongEncodingAlgorithm$1-asmified.java[Asmified]
-
-== References
-

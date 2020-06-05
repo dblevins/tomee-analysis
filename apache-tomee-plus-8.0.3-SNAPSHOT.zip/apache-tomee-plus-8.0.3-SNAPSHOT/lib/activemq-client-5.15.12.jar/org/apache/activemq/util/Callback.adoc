@@ -1,6 +1,0 @@
-= org/apache/activemq/util/Callback.class
-
- - link:Callback-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/ServicesManagerLocator.class
-
- - link:ServicesManagerLocator-asmified.java[Asmified]
-
-== References
-

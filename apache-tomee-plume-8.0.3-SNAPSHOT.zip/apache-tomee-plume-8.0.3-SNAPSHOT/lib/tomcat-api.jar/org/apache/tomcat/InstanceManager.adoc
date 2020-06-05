@@ -1,6 +1,0 @@
-= org/apache/tomcat/InstanceManager.class
-
- - link:InstanceManager-asmified.java[Asmified]
-
-== References
-

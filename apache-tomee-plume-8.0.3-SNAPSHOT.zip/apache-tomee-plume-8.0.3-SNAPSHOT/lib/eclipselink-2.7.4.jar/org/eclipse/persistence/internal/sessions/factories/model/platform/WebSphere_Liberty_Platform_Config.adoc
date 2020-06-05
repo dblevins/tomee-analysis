@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/platform/WebSphere_Liberty_Platform_Config.class
-
- - link:WebSphere_Liberty_Platform_Config-asmified.java[Asmified]
-
-== References
-

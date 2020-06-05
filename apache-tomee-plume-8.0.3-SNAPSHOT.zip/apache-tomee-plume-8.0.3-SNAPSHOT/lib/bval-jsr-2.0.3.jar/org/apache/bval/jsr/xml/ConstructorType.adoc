@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/ConstructorType.class
-
- - link:ConstructorType-asmified.java[Asmified]
-
-== References
-

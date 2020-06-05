@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/jms/interceptor/JMSFaultType.class
-
- - link:JMSFaultType-asmified.java[Asmified]
-
-== References
-

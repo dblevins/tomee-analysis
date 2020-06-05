@@ -1,6 +1,0 @@
-= org/apache/openejb/rest/ThreadLocalServletRequest.class
-
- - link:ThreadLocalServletRequest-asmified.java[Asmified]
-
-== References
-

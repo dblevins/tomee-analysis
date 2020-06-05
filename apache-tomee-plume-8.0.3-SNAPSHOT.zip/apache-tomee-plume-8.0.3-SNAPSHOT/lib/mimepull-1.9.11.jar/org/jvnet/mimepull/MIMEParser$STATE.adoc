@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/MIMEParser$STATE.class
-
- - link:MIMEParser$STATE-asmified.java[Asmified]
-
-== References
-

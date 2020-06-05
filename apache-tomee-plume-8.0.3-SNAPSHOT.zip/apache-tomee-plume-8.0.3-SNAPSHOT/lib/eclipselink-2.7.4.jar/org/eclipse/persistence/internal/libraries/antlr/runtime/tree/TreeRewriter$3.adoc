@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeRewriter$3.class
-
- - link:TreeRewriter$3-asmified.java[Asmified]
-
-== References
-

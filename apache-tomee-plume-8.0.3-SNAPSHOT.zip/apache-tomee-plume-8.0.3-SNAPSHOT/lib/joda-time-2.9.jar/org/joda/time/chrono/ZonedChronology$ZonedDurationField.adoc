@@ -1,6 +1,0 @@
-= org/joda/time/chrono/ZonedChronology$ZonedDurationField.class
-
- - link:ZonedChronology$ZonedDurationField-asmified.java[Asmified]
-
-== References
-

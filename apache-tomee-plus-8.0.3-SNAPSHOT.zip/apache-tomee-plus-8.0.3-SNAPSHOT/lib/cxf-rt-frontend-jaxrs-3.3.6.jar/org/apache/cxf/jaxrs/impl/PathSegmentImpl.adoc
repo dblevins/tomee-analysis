@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/PathSegmentImpl.class
-
- - link:PathSegmentImpl-asmified.java[Asmified]
-
-== References
-

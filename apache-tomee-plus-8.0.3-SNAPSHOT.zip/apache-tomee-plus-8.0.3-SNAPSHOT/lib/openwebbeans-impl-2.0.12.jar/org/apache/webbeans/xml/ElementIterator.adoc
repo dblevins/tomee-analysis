@@ -1,6 +1,0 @@
-= org/apache/webbeans/xml/ElementIterator.class
-
- - link:ElementIterator-asmified.java[Asmified]
-
-== References
-

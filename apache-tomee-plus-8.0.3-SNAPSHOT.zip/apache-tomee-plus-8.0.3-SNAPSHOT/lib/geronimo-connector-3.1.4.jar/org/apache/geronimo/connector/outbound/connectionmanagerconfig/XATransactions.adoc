@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectionmanagerconfig/XATransactions.class
-
- - link:XATransactions-asmified.java[Asmified]
-
-== References
-

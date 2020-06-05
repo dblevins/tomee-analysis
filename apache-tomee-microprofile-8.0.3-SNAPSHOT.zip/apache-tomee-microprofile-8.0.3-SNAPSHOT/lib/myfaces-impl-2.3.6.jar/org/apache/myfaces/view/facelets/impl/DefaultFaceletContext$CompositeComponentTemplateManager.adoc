@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/impl/DefaultFaceletContext$CompositeComponentTemplateManager.class
-
- - link:DefaultFaceletContext$CompositeComponentTemplateManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/unmarshaller/DOMScanner.class
-
- - link:DOMScanner-asmified.java[Asmified]
-
-== References
-

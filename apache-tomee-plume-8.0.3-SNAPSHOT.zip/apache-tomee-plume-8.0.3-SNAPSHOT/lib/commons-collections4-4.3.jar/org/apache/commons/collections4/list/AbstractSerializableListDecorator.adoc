@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/list/AbstractSerializableListDecorator.class
-
- - link:AbstractSerializableListDecorator-asmified.java[Asmified]
-
-== References
-

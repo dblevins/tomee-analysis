@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/weaving/PersistenceWeaved.class
-
- - link:PersistenceWeaved-asmified.java[Asmified]
-
-== References
-

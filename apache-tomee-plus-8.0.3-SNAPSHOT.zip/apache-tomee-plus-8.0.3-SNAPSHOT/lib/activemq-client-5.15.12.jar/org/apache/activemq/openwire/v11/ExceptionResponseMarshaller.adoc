@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v11/ExceptionResponseMarshaller.class
-
- - link:ExceptionResponseMarshaller-asmified.java[Asmified]
-
-== References
-

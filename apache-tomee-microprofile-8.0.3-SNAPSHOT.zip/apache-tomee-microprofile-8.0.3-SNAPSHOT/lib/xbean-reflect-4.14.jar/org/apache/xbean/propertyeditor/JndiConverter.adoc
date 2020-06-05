@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/JndiConverter.class
-
- - link:JndiConverter-asmified.java[Asmified]
-
-== References
-

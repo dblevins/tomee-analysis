@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/SaxAppCtxConfig$SaxAppContextConfig$MultipleConfiguration.class
-
- - link:SaxAppCtxConfig$SaxAppContextConfig$MultipleConfiguration-asmified.java[Asmified]
-
-== References
-

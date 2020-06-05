@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/RowSetDynaClass.class
-
- - link:RowSetDynaClass-asmified.java[Asmified]
-
-== References
-

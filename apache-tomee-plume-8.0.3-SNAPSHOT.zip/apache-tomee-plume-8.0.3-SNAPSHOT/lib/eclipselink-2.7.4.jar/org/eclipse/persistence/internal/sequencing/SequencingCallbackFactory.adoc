@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sequencing/SequencingCallbackFactory.class
-
- - link:SequencingCallbackFactory-asmified.java[Asmified]
-
-== References
-

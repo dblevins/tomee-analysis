@@ -1,6 +1,0 @@
-= org/apache/batchee/container/cdi/BatchProducerBean.class
-
- - link:BatchProducerBean-asmified.java[Asmified]
-
-== References
-

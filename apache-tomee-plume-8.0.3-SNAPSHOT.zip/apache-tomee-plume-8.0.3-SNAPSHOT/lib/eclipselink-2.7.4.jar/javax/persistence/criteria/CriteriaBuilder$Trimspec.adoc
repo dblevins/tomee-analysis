@@ -1,7 +1,0 @@
-= javax/persistence/criteria/CriteriaBuilder$Trimspec.class
-
- - link:CriteriaBuilder$Trimspec-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.criteria.CriteriaBuilder$Trimspec - 25

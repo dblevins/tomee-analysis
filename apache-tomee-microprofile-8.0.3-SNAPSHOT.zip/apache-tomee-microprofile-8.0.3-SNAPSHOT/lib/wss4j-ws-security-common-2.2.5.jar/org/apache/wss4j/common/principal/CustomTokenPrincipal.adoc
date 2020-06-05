@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/principal/CustomTokenPrincipal.class
-
- - link:CustomTokenPrincipal-asmified.java[Asmified]
-
-== References
-

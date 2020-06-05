@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/CommandDatagramChannel.class
-
- - link:CommandDatagramChannel-asmified.java[Asmified]
-
-== References
-

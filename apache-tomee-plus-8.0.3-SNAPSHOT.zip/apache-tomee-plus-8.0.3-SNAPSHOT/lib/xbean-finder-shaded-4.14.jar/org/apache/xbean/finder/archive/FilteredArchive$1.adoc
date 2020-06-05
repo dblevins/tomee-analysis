@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/archive/FilteredArchive$1.class
-
- - link:FilteredArchive$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/rewrite/Substitution$MapElement.class
-
- - link:Substitution$MapElement-asmified.java[Asmified]
-
-== References
-

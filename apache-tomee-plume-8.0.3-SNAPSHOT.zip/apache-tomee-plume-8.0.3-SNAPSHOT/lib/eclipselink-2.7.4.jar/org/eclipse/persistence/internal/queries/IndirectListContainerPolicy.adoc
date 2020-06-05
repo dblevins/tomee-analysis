@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/IndirectListContainerPolicy.class
-
- - link:IndirectListContainerPolicy-asmified.java[Asmified]
-
-== References
-

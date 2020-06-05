@@ -1,6 +1,0 @@
-= org/apache/bval/util/reflection/TypeUtils.class
-
- - link:TypeUtils-asmified.java[Asmified]
-
-== References
-

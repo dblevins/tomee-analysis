@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/LoaderSF.class
-
- - link:LoaderSF-asmified.java[Asmified]
-
-== References
-

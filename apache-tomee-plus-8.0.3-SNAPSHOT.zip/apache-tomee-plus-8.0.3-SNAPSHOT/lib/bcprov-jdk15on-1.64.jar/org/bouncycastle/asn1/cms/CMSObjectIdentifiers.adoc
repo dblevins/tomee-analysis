@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/CMSObjectIdentifiers.class
-
- - link:CMSObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

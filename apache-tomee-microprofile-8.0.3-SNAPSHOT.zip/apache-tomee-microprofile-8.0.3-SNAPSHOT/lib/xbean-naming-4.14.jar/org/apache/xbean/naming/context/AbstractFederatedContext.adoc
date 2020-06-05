@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/AbstractFederatedContext.class
-
- - link:AbstractFederatedContext-asmified.java[Asmified]
-
-== References
-

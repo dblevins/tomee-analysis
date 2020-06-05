@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Duration$Normalize.class
-
- - link:Duration$Normalize-asmified.java[Asmified]
-
-== References
-

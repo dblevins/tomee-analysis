@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/StAXConnector.class
-
- - link:StAXConnector-asmified.java[Asmified]
-
-== References
-

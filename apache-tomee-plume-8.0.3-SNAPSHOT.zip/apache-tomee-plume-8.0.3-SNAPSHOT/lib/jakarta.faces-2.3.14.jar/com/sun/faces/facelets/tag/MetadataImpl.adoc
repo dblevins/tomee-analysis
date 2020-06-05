@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/MetadataImpl.class
-
- - link:MetadataImpl-asmified.java[Asmified]
-
-== References
-

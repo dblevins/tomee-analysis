@@ -1,6 +1,0 @@
-= org/apache/catalina/core/StandardWrapper.class
-
- - link:StandardWrapper-asmified.java[Asmified]
-
-== References
-

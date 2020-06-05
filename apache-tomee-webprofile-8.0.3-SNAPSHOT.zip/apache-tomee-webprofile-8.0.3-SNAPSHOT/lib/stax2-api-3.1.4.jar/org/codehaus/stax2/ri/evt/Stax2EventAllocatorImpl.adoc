@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/evt/Stax2EventAllocatorImpl.class
-
- - link:Stax2EventAllocatorImpl-asmified.java[Asmified]
-
-== References
-

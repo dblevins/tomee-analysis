@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/MergedStream.class
-
- - link:MergedStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/annotation/SessionMap.class
-
- - link:SessionMap-asmified.java[Asmified]
-
-== References
-

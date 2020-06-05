@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/DNConstraintsType.class
-
- - link:DNConstraintsType-asmified.java[Asmified]
-
-== References
-

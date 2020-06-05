@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/InactiveDurableSubscriptionView.class
-
- - link:InactiveDurableSubscriptionView-asmified.java[Asmified]
-
-== References
-

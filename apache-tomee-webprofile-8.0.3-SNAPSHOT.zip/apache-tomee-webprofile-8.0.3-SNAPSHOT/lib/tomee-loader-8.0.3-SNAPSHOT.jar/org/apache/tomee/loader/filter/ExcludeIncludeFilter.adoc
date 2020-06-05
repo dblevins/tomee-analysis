@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/filter/ExcludeIncludeFilter.class
-
- - link:ExcludeIncludeFilter-asmified.java[Asmified]
-
-== References
-

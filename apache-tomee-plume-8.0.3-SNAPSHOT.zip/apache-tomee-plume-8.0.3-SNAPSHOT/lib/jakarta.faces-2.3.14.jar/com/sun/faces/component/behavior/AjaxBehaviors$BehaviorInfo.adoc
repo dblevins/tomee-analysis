@@ -1,6 +1,0 @@
-= com/sun/faces/component/behavior/AjaxBehaviors$BehaviorInfo.class
-
- - link:AjaxBehaviors$BehaviorInfo-asmified.java[Asmified]
-
-== References
-

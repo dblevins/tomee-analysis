@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/ThreadLocalServletContext.class
-
- - link:ThreadLocalServletContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/FacesConfigExtensionImpl.class
-
- - link:FacesConfigExtensionImpl-asmified.java[Asmified]
-
-== References
-

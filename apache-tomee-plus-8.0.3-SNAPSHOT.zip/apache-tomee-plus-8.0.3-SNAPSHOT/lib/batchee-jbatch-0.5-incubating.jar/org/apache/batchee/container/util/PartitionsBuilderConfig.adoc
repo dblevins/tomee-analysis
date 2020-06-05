@@ -1,6 +1,0 @@
-= org/apache/batchee/container/util/PartitionsBuilderConfig.class
-
- - link:PartitionsBuilderConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/html/HtmlLibrary.class
-
- - link:HtmlLibrary-asmified.java[Asmified]
-
-== References
-

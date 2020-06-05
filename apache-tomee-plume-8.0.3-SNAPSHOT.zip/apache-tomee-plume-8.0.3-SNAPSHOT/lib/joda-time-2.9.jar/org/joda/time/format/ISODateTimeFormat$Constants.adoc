@@ -1,6 +1,0 @@
-= org/joda/time/format/ISODateTimeFormat$Constants.class
-
- - link:ISODateTimeFormat$Constants-asmified.java[Asmified]
-
-== References
-

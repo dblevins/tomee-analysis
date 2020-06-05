@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/algorithm/descriptors/DigestRIPEMD160.class
-
- - link:DigestRIPEMD160-asmified.java[Asmified]
-
-== References
-

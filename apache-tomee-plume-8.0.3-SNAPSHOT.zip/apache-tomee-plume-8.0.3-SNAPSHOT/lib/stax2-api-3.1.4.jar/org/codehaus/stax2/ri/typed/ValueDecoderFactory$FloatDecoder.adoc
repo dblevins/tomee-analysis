@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/ValueDecoderFactory$FloatDecoder.class
-
- - link:ValueDecoderFactory$FloatDecoder-asmified.java[Asmified]
-
-== References
-

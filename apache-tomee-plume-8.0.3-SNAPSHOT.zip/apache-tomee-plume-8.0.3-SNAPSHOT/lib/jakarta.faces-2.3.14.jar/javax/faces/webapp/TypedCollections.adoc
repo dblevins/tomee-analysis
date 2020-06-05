@@ -1,7 +1,0 @@
-= javax/faces/webapp/TypedCollections.class
-
- - link:TypedCollections-asmified.java[Asmified]
-
-== References
-
- - javax.faces.webapp.TypedCollections - 6

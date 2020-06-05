@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/EvidenceUnmarshaller.class
-
- - link:EvidenceUnmarshaller-asmified.java[Asmified]
-
-== References
-

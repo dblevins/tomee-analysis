@@ -1,9 +1,0 @@
-= javax/ws/rs/ext/MessageBodyReader.class
-
- - link:MessageBodyReader-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.MediaType - 2
- - javax.ws.rs.core.MultivaluedMap - 1
- - javax.ws.rs.WebApplicationException - 1

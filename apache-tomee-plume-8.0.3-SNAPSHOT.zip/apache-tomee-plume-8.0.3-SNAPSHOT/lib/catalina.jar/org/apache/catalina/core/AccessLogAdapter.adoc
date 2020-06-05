@@ -1,6 +1,0 @@
-= org/apache/catalina/core/AccessLogAdapter.class
-
- - link:AccessLogAdapter-asmified.java[Asmified]
-
-== References
-

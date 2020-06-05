@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ViewTag.class
-
- - link:ViewTag-asmified.java[Asmified]
-
-== References
-

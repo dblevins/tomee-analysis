@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataMethod.class
-
- - link:MetadataMethod-asmified.java[Asmified]
-
-== References
-

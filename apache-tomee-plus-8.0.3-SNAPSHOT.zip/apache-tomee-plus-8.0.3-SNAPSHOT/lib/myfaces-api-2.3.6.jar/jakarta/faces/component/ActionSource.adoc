@@ -1,6 +1,0 @@
-= jakarta/faces/component/ActionSource.class
-
- - link:ActionSource-asmified.java[Asmified]
-
-== References
-

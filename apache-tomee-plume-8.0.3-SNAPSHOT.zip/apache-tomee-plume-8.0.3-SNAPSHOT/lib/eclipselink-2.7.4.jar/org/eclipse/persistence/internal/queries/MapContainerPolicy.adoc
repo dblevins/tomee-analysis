@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/MapContainerPolicy.class
-
- - link:MapContainerPolicy-asmified.java[Asmified]
-
-== References
-

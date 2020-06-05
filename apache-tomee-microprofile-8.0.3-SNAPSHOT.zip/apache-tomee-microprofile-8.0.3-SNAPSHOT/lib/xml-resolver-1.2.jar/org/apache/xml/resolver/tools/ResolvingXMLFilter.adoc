@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/tools/ResolvingXMLFilter.class
-
- - link:ResolvingXMLFilter-asmified.java[Asmified]
-
-== References
-

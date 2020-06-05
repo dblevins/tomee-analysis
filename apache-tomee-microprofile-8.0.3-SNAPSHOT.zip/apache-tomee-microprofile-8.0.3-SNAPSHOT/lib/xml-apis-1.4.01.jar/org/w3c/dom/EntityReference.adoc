@@ -1,6 +1,0 @@
-= org/w3c/dom/EntityReference.class
-
- - link:EntityReference-asmified.java[Asmified]
-
-== References
-

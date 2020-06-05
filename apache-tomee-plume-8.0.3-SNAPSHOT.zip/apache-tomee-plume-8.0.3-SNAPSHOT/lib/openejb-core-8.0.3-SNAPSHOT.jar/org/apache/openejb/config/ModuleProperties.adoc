@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ModuleProperties.class
-
- - link:ModuleProperties-asmified.java[Asmified]
-
-== References
-

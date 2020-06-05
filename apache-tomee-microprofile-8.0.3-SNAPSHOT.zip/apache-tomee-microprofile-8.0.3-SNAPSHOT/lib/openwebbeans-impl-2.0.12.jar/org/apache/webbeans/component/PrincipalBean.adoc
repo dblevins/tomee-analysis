@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/PrincipalBean.class
-
- - link:PrincipalBean-asmified.java[Asmified]
-
-== References
-

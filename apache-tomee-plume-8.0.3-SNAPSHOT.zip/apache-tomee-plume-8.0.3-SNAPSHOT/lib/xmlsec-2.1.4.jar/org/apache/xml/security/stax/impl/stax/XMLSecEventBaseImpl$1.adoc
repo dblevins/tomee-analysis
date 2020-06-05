@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/stax/XMLSecEventBaseImpl$1.class
-
- - link:XMLSecEventBaseImpl$1-asmified.java[Asmified]
-
-== References
-

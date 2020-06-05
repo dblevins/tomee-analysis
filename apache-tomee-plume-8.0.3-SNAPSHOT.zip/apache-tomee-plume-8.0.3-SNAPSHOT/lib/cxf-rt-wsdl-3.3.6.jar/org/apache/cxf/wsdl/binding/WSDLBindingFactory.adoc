@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/binding/WSDLBindingFactory.class
-
- - link:WSDLBindingFactory-asmified.java[Asmified]
-
-== References
-

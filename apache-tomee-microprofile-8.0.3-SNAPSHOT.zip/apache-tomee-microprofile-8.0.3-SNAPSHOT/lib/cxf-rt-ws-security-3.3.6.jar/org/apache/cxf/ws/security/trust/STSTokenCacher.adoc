@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/trust/STSTokenCacher.class
-
- - link:STSTokenCacher-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/spi/AnnotationScanner.class
-
- - link:AnnotationScanner-asmified.java[Asmified]
-
-== References
-

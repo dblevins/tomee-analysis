@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/NoneLockManager.class
-
- - link:NoneLockManager-asmified.java[Asmified]
-
-== References
-

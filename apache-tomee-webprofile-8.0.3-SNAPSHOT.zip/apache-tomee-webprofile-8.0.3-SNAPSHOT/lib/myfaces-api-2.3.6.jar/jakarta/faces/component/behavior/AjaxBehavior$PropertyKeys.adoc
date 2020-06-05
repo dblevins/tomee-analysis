@@ -1,6 +1,0 @@
-= jakarta/faces/component/behavior/AjaxBehavior$PropertyKeys.class
-
- - link:AjaxBehavior$PropertyKeys-asmified.java[Asmified]
-
-== References
-

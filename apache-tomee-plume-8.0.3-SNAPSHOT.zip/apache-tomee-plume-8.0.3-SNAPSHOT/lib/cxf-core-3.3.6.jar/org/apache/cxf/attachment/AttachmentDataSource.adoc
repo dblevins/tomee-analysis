@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/AttachmentDataSource.class
-
- - link:AttachmentDataSource-asmified.java[Asmified]
-
-== References
-

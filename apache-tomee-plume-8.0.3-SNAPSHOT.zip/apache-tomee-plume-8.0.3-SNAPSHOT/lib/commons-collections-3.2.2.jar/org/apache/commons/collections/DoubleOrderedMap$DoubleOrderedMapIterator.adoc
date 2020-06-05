@@ -1,6 +1,0 @@
-= org/apache/commons/collections/DoubleOrderedMap$DoubleOrderedMapIterator.class
-
- - link:DoubleOrderedMap$DoubleOrderedMapIterator-asmified.java[Asmified]
-
-== References
-

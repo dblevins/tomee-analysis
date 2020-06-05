@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityToken/DsaKeyValueSecurityToken.class
-
- - link:DsaKeyValueSecurityToken-asmified.java[Asmified]
-
-== References
-

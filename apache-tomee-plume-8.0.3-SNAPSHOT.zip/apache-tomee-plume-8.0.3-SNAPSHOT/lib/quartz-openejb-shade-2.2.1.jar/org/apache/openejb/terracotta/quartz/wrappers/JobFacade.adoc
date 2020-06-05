@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/wrappers/JobFacade.class
-
- - link:JobFacade-asmified.java[Asmified]
-
-== References
-

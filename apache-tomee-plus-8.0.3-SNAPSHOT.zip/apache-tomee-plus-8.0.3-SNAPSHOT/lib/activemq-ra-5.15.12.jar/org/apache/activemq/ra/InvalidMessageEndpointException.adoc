@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/InvalidMessageEndpointException.class
-
- - link:InvalidMessageEndpointException-asmified.java[Asmified]
-
-== References
-

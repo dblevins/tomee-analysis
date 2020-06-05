@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/AbstractAccessLogValve$FirstByteTimeElement.class
-
- - link:AbstractAccessLogValve$FirstByteTimeElement-asmified.java[Asmified]
-
-== References
-

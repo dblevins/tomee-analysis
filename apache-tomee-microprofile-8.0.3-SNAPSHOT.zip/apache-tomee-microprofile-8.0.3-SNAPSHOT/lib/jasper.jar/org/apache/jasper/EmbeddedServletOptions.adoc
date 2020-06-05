@@ -1,6 +1,0 @@
-= org/apache/jasper/EmbeddedServletOptions.class
-
- - link:EmbeddedServletOptions-asmified.java[Asmified]
-
-== References
-

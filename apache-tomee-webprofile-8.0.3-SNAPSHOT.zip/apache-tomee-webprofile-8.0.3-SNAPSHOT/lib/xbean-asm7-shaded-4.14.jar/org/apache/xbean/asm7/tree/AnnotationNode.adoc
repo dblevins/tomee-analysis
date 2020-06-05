@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/AnnotationNode.class
-
- - link:AnnotationNode-asmified.java[Asmified]
-
-== References
-

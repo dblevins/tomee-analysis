@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/SchemaCollectionContextProxy$1.class
-
- - link:SchemaCollectionContextProxy$1-asmified.java[Asmified]
-
-== References
-

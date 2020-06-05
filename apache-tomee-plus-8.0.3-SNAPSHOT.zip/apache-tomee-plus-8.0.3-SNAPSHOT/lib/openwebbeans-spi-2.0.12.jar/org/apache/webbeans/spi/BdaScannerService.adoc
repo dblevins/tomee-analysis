@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/BdaScannerService.class
-
- - link:BdaScannerService-asmified.java[Asmified]
-
-== References
-

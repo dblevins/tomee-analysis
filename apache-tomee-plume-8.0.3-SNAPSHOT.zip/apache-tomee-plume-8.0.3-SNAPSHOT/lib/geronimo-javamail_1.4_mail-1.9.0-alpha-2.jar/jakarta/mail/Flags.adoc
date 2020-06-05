@@ -1,6 +1,0 @@
-= jakarta/mail/Flags.class
-
- - link:Flags-asmified.java[Asmified]
-
-== References
-

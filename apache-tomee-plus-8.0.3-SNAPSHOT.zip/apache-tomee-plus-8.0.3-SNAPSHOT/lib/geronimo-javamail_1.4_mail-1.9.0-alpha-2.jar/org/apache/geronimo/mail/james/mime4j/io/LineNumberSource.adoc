@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/io/LineNumberSource.class
-
- - link:LineNumberSource-asmified.java[Asmified]
-
-== References
-

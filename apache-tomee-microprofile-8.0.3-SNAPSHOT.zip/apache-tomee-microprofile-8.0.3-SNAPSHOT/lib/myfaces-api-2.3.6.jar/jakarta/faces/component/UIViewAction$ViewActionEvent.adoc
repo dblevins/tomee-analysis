@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIViewAction$ViewActionEvent.class
-
- - link:UIViewAction$ViewActionEvent-asmified.java[Asmified]
-
-== References
-

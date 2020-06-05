@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaMinExclusiveFacet.class
-
- - link:XmlSchemaMinExclusiveFacet-asmified.java[Asmified]
-
-== References
-

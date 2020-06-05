@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/ValueMappingInfo$2.class
-
- - link:ValueMappingInfo$2-asmified.java[Asmified]
-
-== References
-

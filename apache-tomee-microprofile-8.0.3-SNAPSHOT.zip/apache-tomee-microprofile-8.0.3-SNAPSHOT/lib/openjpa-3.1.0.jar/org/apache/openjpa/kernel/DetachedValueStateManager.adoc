@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/DetachedValueStateManager.class
-
- - link:DetachedValueStateManager-asmified.java[Asmified]
-
-== References
-

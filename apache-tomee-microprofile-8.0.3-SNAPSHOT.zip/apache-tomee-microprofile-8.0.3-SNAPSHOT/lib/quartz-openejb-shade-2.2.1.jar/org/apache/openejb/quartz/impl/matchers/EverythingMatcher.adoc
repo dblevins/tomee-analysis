@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/matchers/EverythingMatcher.class
-
- - link:EverythingMatcher-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/tar/TarHeaderField.class
-
- - link:TarHeaderField-asmified.java[Asmified]
-
-== References
-

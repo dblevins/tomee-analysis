@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.class
-
- - link:WSS4JStaxInInterceptor-asmified.java[Asmified]
-
-== References
-

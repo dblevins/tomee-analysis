@@ -1,7 +1,0 @@
-= javax/xml/rpc/holders/LongWrapperHolder.class
-
- - link:LongWrapperHolder-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.holders.Holder - 1

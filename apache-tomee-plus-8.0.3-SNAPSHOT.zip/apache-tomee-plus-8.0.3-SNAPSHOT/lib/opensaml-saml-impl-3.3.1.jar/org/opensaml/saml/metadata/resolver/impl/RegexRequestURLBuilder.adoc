@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/RegexRequestURLBuilder.class
-
- - link:RegexRequestURLBuilder-asmified.java[Asmified]
-
-== References
-

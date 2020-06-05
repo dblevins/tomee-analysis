@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/Closure.class
-
- - link:Closure-asmified.java[Asmified]
-
-== References
-

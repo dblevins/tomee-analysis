@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/CastExpression.class
-
- - link:CastExpression-asmified.java[Asmified]
-
-== References
-

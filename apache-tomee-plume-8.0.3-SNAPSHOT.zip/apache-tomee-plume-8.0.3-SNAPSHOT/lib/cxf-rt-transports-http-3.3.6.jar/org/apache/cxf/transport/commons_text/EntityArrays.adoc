@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/commons_text/EntityArrays.class
-
- - link:EntityArrays-asmified.java[Asmified]
-
-== References
-

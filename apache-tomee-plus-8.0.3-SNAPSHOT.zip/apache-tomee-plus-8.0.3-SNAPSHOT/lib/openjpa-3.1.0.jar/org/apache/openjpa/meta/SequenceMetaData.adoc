@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/SequenceMetaData.class
-
- - link:SequenceMetaData-asmified.java[Asmified]
-
-== References
-

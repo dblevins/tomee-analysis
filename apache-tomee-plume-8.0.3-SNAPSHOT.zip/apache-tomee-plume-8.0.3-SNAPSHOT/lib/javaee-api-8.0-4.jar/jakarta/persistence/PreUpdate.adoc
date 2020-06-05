@@ -1,6 +1,0 @@
-= jakarta/persistence/PreUpdate.class
-
- - link:PreUpdate-asmified.java[Asmified]
-
-== References
-

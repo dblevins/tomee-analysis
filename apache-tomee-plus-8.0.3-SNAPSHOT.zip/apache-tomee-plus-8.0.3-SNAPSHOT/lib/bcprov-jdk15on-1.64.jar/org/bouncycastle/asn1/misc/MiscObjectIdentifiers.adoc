@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/misc/MiscObjectIdentifiers.class
-
- - link:MiscObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

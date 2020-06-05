@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/server/WsWriteTimeout$1.class
-
- - link:WsWriteTimeout$1-asmified.java[Asmified]
-
-== References
-

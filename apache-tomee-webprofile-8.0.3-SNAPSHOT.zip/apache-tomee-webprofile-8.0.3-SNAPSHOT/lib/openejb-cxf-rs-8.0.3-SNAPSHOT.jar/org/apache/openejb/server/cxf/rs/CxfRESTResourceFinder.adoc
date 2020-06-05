@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CxfRESTResourceFinder.class
-
- - link:CxfRESTResourceFinder-asmified.java[Asmified]
-
-== References
-

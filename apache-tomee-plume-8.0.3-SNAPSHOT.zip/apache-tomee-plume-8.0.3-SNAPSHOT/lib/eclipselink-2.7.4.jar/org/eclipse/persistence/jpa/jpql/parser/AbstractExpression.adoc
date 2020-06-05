@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AbstractExpression.class
-
- - link:AbstractExpression-asmified.java[Asmified]
-
-== References
-

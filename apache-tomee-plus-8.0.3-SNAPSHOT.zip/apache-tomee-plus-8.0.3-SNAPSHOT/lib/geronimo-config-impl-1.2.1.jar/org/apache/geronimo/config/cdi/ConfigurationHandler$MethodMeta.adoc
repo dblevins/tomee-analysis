@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/cdi/ConfigurationHandler$MethodMeta.class
-
- - link:ConfigurationHandler$MethodMeta-asmified.java[Asmified]
-
-== References
-

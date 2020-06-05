@@ -1,6 +1,0 @@
-= org/apache/el/parser/AstFunction.class
-
- - link:AstFunction-asmified.java[Asmified]
-
-== References
-

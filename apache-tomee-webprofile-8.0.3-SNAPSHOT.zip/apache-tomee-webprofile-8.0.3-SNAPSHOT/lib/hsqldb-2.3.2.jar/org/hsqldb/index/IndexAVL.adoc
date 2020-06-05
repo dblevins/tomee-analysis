@@ -1,6 +1,0 @@
-= org/hsqldb/index/IndexAVL.class
-
- - link:IndexAVL-asmified.java[Asmified]
-
-== References
-

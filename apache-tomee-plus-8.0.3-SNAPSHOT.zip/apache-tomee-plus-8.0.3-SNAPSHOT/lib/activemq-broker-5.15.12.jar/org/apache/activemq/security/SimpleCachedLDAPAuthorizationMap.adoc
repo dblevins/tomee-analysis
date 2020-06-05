@@ -1,6 +1,0 @@
-= org/apache/activemq/security/SimpleCachedLDAPAuthorizationMap.class
-
- - link:SimpleCachedLDAPAuthorizationMap-asmified.java[Asmified]
-
-== References
-

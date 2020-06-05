@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaUpdateMessageCommand.class
-
- - link:KahaUpdateMessageCommand-asmified.java[Asmified]
-
-== References
-

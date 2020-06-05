@@ -1,6 +1,0 @@
-= jakarta/enterprise/concurrent/ManageableThread.class
-
- - link:ManageableThread-asmified.java[Asmified]
-
-== References
-

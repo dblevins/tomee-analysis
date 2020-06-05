@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/SetPropertyActionListenerTag.class
-
- - link:SetPropertyActionListenerTag-asmified.java[Asmified]
-
-== References
-

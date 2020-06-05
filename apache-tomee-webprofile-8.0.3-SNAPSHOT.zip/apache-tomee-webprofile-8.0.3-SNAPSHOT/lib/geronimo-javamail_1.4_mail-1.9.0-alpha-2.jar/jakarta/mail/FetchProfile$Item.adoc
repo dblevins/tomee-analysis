@@ -1,6 +1,0 @@
-= jakarta/mail/FetchProfile$Item.class
-
- - link:FetchProfile$Item-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/AbstractService.class
-
- - link:AbstractService-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/config/SecurityHeaderHandlerMapper.class
-
- - link:SecurityHeaderHandlerMapper-asmified.java[Asmified]
-
-== References
-

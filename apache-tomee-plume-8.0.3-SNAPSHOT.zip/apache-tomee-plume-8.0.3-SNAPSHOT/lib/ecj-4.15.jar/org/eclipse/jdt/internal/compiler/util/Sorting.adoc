@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/Sorting.class
-
- - link:Sorting-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/xml/registry/infomodel/RegistryPackage.class
-
- - link:RegistryPackage-asmified.java[Asmified]
-
-== References
-

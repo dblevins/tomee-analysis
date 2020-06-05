@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/ConfigurationConstants.class
-
- - link:ConfigurationConstants-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/EJBWebBeansConfigurator.class
-
- - link:EJBWebBeansConfigurator-asmified.java[Asmified]
-
-== References
-

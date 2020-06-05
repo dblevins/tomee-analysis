@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/DynaClass.class
-
- - link:DynaClass-asmified.java[Asmified]
-
-== References
-

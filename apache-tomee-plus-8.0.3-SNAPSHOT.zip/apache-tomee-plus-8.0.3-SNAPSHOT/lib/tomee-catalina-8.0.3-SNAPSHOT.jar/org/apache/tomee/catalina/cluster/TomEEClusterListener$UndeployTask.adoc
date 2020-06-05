@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/cluster/TomEEClusterListener$UndeployTask.class
-
- - link:TomEEClusterListener$UndeployTask-asmified.java[Asmified]
-
-== References
-

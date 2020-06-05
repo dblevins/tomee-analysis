@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/AfterDeploymentValidation.class
-
- - link:AfterDeploymentValidation-asmified.java[Asmified]
-
-== References
-

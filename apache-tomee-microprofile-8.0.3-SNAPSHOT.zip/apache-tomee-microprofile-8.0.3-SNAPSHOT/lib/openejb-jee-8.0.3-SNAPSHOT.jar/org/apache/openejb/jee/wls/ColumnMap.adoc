@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/ColumnMap.class
-
- - link:ColumnMap-asmified.java[Asmified]
-
-== References
-

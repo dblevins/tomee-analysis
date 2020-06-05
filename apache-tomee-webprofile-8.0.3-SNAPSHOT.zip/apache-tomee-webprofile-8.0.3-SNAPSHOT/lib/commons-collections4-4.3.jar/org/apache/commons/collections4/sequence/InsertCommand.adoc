@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/sequence/InsertCommand.class
-
- - link:InsertCommand-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessSyntheticObserverMethod.class
-
- - link:GProcessSyntheticObserverMethod-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/persist/RAFile.class
-
- - link:RAFile-asmified.java[Asmified]
-
-== References
-

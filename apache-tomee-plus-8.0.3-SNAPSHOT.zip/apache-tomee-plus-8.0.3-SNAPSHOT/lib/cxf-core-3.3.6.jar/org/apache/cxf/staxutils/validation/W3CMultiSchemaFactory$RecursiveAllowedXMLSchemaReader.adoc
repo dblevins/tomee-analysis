@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/validation/W3CMultiSchemaFactory$RecursiveAllowedXMLSchemaReader.class
-
- - link:W3CMultiSchemaFactory$RecursiveAllowedXMLSchemaReader-asmified.java[Asmified]
-
-== References
-

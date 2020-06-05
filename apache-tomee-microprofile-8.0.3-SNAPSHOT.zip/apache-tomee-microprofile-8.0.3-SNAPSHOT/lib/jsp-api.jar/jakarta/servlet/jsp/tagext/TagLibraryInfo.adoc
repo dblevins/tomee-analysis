@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/tagext/TagLibraryInfo.class
-
- - link:TagLibraryInfo-asmified.java[Asmified]
-
-== References
-

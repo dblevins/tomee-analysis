@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/MathVal.class
-
- - link:MathVal-asmified.java[Asmified]
-
-== References
-

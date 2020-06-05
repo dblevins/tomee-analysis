@@ -1,6 +1,0 @@
-= org/opensaml/security/x509/X509DigestCriterion.class
-
- - link:X509DigestCriterion-asmified.java[Asmified]
-
-== References
-

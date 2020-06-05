@@ -1,6 +1,0 @@
-= org/apache/el/parser/SimpleNode.class
-
- - link:SimpleNode-asmified.java[Asmified]
-
-== References
-

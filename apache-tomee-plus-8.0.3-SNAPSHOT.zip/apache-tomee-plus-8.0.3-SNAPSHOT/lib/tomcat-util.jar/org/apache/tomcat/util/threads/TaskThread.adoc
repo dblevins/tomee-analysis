@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/threads/TaskThread.class
-
- - link:TaskThread-asmified.java[Asmified]
-
-== References
-

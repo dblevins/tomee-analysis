@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/cmd/ConfigurationInfoEjb.class
-
- - link:ConfigurationInfoEjb-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/util/Path.class
-
- - link:Path-asmified.java[Asmified]
-
-== References
-

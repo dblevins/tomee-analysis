@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/loader/ApiBindings.class
-
- - link:ApiBindings-asmified.java[Asmified]
-
-== References
-

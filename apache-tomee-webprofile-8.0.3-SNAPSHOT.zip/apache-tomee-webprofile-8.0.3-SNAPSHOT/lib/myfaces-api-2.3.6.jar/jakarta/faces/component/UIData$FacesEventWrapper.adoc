@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIData$FacesEventWrapper.class
-
- - link:UIData$FacesEventWrapper-asmified.java[Asmified]
-
-== References
-

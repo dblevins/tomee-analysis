@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/PersistentValve.class
-
- - link:PersistentValve-asmified.java[Asmified]
-
-== References
-

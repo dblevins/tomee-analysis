@@ -1,2 +1,0 @@
-= apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-xmlsec-api-3.3.1.jar
-

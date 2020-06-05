@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/attachment/JAXBAttachmentSchemaValidationHack.class
-
- - link:JAXBAttachmentSchemaValidationHack-asmified.java[Asmified]
-
-== References
-

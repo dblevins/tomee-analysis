@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/future/CUScheduleFuture.class
-
- - link:CUScheduleFuture-asmified.java[Asmified]
-
-== References
-

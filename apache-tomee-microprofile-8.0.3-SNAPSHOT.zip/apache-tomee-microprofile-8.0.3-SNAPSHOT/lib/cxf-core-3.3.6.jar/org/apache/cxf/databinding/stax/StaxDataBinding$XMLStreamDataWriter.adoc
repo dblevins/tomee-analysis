@@ -1,6 +1,0 @@
-= org/apache/cxf/databinding/stax/StaxDataBinding$XMLStreamDataWriter.class
-
- - link:StaxDataBinding$XMLStreamDataWriter-asmified.java[Asmified]
-
-== References
-

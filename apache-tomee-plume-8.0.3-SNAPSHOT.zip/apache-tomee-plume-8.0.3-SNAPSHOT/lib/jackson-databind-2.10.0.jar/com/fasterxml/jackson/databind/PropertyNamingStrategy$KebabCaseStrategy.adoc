@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/PropertyNamingStrategy$KebabCaseStrategy.class
-
- - link:PropertyNamingStrategy$KebabCaseStrategy-asmified.java[Asmified]
-
-== References
-

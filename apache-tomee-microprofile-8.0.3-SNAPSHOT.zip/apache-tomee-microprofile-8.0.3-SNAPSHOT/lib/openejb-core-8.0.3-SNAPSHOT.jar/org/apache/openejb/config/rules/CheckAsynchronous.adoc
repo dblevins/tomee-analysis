@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckAsynchronous.class
-
- - link:CheckAsynchronous-asmified.java[Asmified]
-
-== References
-

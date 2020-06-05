@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/gnu/GNUObjectIdentifiers.class
-
- - link:GNUObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

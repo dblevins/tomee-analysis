@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/IteratorIterable.class
-
- - link:IteratorIterable-asmified.java[Asmified]
-
-== References
-

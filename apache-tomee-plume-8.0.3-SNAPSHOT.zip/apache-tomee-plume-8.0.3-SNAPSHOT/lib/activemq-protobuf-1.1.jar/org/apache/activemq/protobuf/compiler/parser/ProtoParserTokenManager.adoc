@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/parser/ProtoParserTokenManager.class
-
- - link:ProtoParserTokenManager-asmified.java[Asmified]
-
-== References
-

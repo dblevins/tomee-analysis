@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/ConfigurationException.class
-
- - link:ConfigurationException-asmified.java[Asmified]
-
-== References
-

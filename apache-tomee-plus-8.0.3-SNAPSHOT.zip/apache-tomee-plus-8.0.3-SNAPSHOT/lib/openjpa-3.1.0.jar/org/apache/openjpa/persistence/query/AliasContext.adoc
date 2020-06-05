@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/AliasContext.class
-
- - link:AliasContext-asmified.java[Asmified]
-
-== References
-

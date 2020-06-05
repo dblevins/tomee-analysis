@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMEnvelopedTransform.class
-
- - link:DOMEnvelopedTransform-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/reflect/TypeUtils.class
-
- - link:TypeUtils-asmified.java[Asmified]
-
-== References
-

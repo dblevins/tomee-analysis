@@ -1,6 +1,0 @@
-= jakarta/xml/soap/MimeHeader.class
-
- - link:MimeHeader-asmified.java[Asmified]
-
-== References
-

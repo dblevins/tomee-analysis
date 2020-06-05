@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/BasicCollection.class
-
- - link:BasicCollection-asmified.java[Asmified]
-
-== References
-

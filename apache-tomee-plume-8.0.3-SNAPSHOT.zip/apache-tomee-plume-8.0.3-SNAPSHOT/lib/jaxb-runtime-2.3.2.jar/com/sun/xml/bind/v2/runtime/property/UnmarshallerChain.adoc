@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/property/UnmarshallerChain.class
-
- - link:UnmarshallerChain-asmified.java[Asmified]
-
-== References
-

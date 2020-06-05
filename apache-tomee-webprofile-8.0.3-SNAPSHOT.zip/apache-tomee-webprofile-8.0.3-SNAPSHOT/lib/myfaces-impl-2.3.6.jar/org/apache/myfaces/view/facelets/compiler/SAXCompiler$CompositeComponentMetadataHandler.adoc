@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/SAXCompiler$CompositeComponentMetadataHandler.class
-
- - link:SAXCompiler$CompositeComponentMetadataHandler-asmified.java[Asmified]
-
-== References
-

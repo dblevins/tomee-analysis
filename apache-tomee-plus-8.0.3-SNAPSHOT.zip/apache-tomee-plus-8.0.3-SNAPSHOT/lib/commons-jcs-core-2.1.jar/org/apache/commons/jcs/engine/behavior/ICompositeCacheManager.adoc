@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/ICompositeCacheManager.class
-
- - link:ICompositeCacheManager-asmified.java[Asmified]
-
-== References
-

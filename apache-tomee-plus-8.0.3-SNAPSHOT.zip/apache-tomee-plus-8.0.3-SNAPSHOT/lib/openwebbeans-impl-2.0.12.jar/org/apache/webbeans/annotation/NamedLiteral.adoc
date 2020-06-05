@@ -1,6 +1,0 @@
-= org/apache/webbeans/annotation/NamedLiteral.class
-
- - link:NamedLiteral-asmified.java[Asmified]
-
-== References
-

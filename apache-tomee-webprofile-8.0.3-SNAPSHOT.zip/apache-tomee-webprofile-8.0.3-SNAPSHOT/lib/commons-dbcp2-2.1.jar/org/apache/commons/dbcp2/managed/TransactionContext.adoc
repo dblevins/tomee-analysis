@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/managed/TransactionContext.class
-
- - link:TransactionContext-asmified.java[Asmified]
-
-== References
-

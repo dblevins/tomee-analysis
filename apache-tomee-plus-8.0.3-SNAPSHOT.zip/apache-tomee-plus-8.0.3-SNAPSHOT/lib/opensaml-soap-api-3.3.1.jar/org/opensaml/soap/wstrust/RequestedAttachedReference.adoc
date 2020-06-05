@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/RequestedAttachedReference.class
-
- - link:RequestedAttachedReference-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/FetchPlanImpl.class
-
- - link:FetchPlanImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/ConnectionPool$PrivilegedNewTimer.class
-
- - link:ConnectionPool$PrivilegedNewTimer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/keyinfo/impl/provider/KeyInfoReferenceProvider.class
-
- - link:KeyInfoReferenceProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/OOBResponseDeliverer.class
-
- - link:OOBResponseDeliverer-asmified.java[Asmified]
-
-== References
-

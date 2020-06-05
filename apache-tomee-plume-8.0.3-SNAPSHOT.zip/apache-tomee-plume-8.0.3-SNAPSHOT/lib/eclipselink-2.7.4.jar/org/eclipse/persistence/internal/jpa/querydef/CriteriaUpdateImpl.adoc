@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl.class
-
- - link:CriteriaUpdateImpl-asmified.java[Asmified]
-
-== References
-

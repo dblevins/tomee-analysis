@@ -1,7 +1,0 @@
-= javax/faces/application/ProtectedViewException.class
-
- - link:ProtectedViewException-asmified.java[Asmified]
-
-== References
-
- - javax.faces.FacesException - 5

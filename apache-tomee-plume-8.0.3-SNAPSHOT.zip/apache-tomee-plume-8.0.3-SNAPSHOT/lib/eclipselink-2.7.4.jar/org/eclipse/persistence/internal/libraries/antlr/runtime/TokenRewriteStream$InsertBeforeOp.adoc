@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/TokenRewriteStream$InsertBeforeOp.class
-
- - link:TokenRewriteStream$InsertBeforeOp-asmified.java[Asmified]
-
-== References
-

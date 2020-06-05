@@ -1,8 +1,0 @@
-= javax/enterprise/concurrent/ManagedScheduledExecutorService.class
-
- - link:ManagedScheduledExecutorService-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.concurrent.Trigger - 2
- - javax.enterprise.concurrent.ManagedExecutorService - 1

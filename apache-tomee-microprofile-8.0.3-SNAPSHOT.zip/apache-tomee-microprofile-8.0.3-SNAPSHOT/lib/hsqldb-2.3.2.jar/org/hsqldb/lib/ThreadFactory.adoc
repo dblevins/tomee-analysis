@@ -1,6 +1,0 @@
-= org/hsqldb/lib/ThreadFactory.class
-
- - link:ThreadFactory-asmified.java[Asmified]
-
-== References
-

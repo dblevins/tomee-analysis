@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/nio/AutoInitNioSSLTransport.class
-
- - link:AutoInitNioSSLTransport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/HashPartitioning.class
-
- - link:HashPartitioning-asmified.java[Asmified]
-
-== References
-

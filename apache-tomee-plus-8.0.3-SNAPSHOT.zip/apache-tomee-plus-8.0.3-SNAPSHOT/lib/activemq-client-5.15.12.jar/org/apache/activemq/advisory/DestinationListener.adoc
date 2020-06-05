@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/DestinationListener.class
-
- - link:DestinationListener-asmified.java[Asmified]
-
-== References
-

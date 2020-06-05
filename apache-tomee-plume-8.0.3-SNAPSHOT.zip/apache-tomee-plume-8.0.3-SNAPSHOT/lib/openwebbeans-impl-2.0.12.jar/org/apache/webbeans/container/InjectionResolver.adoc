@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/InjectionResolver.class
-
- - link:InjectionResolver-asmified.java[Asmified]
-
-== References
-

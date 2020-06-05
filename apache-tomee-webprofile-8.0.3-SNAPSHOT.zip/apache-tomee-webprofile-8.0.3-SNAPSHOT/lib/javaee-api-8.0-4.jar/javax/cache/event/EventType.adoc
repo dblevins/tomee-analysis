@@ -1,6 +1,0 @@
-= javax/cache/event/EventType.class
-
- - link:EventType-asmified.java[Asmified]
-
-== References
-

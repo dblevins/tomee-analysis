@@ -1,6 +1,0 @@
-= jakarta/mail/util/SharedFileInputStream$SharedFileSource.class
-
- - link:SharedFileInputStream$SharedFileSource-asmified.java[Asmified]
-
-== References
-

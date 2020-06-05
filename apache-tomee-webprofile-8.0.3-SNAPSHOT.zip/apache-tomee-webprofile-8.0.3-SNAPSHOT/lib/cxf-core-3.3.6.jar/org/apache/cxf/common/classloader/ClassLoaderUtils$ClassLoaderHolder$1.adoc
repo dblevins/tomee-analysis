@@ -1,6 +1,0 @@
-= org/apache/cxf/common/classloader/ClassLoaderUtils$ClassLoaderHolder$1.class
-
- - link:ClassLoaderUtils$ClassLoaderHolder$1-asmified.java[Asmified]
-
-== References
-

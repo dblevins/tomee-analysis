@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/runtime/RuntimeLeafInfo.class
-
- - link:RuntimeLeafInfo-asmified.java[Asmified]
-
-== References
-

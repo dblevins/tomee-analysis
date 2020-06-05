@@ -1,6 +1,0 @@
-= com/sun/faces/ext/component/UIValidateWholeBean.class
-
- - link:UIValidateWholeBean-asmified.java[Asmified]
-
-== References
-

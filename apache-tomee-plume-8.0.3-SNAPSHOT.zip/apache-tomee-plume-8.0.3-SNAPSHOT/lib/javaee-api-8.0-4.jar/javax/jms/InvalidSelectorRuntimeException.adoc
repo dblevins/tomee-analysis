@@ -1,7 +1,0 @@
-= javax/jms/InvalidSelectorRuntimeException.class
-
- - link:InvalidSelectorRuntimeException-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSRuntimeException - 4

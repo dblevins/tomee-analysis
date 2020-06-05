@@ -1,6 +1,0 @@
-= org/opensaml/profile/context/navigate/ProfileIdLookup.class
-
- - link:ProfileIdLookup-asmified.java[Asmified]
-
-== References
-

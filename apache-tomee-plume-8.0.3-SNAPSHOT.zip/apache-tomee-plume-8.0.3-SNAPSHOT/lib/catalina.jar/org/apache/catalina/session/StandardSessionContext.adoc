@@ -1,6 +1,0 @@
-= org/apache/catalina/session/StandardSessionContext.class
-
- - link:StandardSessionContext-asmified.java[Asmified]
-
-== References
-

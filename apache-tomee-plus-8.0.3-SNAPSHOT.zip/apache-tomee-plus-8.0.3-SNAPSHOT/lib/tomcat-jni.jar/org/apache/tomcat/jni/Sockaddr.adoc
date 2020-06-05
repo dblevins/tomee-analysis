@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/Sockaddr.class
-
- - link:Sockaddr-asmified.java[Asmified]
-
-== References
-

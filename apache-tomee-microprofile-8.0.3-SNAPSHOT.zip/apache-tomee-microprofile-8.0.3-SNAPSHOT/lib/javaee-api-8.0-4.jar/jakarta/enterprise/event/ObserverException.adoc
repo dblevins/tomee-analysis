@@ -1,6 +1,0 @@
-= jakarta/enterprise/event/ObserverException.class
-
- - link:ObserverException-asmified.java[Asmified]
-
-== References
-

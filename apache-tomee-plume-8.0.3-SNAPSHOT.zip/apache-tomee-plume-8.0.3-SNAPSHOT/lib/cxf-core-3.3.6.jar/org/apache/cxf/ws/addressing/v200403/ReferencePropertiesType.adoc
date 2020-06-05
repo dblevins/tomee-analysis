@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/v200403/ReferencePropertiesType.class
-
- - link:ReferencePropertiesType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/SharedUtils.class
-
- - link:SharedUtils-asmified.java[Asmified]
-
-== References
-

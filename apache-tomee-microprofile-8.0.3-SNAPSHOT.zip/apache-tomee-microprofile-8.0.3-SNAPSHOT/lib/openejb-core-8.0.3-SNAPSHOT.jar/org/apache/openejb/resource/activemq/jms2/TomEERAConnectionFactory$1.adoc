@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/TomEERAConnectionFactory$1.class
-
- - link:TomEERAConnectionFactory$1-asmified.java[Asmified]
-
-== References
-

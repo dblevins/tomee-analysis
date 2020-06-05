@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ASMHelper$Opcodes.class
-
- - link:ASMHelper$Opcodes-asmified.java[Asmified]
-
-== References
-

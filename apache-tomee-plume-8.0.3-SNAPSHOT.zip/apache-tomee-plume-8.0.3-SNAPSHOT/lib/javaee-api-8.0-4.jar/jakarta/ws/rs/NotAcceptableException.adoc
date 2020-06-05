@@ -1,6 +1,0 @@
-= jakarta/ws/rs/NotAcceptableException.class
-
- - link:NotAcceptableException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= commonj/sdo/helper/CopyHelper.class
-
- - link:CopyHelper-asmified.java[Asmified]
-
-== References
-

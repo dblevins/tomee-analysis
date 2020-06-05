@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/ServletDefCreateRule.class
-
- - link:ServletDefCreateRule-asmified.java[Asmified]
-
-== References
-

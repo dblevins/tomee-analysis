@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlResponseWriterImpl.class
-
- - link:HtmlResponseWriterImpl-asmified.java[Asmified]
-
-== References
-

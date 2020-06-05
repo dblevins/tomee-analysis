@@ -1,6 +1,0 @@
-= com/sun/istack/localization/LocalizableMessageFactory$ResourceBundleSupplier.class
-
- - link:LocalizableMessageFactory$ResourceBundleSupplier-asmified.java[Asmified]
-
-== References
-

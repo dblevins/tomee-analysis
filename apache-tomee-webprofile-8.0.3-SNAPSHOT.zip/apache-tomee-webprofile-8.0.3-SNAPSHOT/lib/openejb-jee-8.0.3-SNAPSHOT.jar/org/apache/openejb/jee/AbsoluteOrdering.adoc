@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/AbsoluteOrdering.class
-
- - link:AbsoluteOrdering-asmified.java[Asmified]
-
-== References
-

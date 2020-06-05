@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/SequenceEndEvent.class
-
- - link:SequenceEndEvent-asmified.java[Asmified]
-
-== References
-

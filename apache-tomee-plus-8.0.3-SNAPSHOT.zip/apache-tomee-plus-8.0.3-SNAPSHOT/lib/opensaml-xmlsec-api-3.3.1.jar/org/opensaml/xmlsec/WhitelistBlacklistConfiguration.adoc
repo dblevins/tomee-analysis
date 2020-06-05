@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/WhitelistBlacklistConfiguration.class
-
- - link:WhitelistBlacklistConfiguration-asmified.java[Asmified]
-
-== References
-

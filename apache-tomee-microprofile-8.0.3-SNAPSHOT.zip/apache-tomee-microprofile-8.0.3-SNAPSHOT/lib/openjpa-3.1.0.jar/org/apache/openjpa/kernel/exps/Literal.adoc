@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Literal.class
-
- - link:Literal-asmified.java[Asmified]
-
-== References
-

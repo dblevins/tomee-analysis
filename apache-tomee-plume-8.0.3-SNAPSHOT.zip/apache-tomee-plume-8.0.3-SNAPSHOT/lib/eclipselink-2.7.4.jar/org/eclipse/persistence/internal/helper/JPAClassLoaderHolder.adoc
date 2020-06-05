@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/JPAClassLoaderHolder.class
-
- - link:JPAClassLoaderHolder-asmified.java[Asmified]
-
-== References
-

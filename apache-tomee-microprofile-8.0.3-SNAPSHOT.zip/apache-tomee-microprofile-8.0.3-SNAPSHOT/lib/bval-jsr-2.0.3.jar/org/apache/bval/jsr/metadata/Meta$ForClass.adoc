@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/Meta$ForClass.class
-
- - link:Meta$ForClass-asmified.java[Asmified]
-
-== References
-

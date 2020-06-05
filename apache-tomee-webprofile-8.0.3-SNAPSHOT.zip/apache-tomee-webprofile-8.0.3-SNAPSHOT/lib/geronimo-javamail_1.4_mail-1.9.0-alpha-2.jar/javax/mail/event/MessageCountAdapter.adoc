@@ -1,8 +1,0 @@
-= javax/mail/event/MessageCountAdapter.class
-
- - link:MessageCountAdapter-asmified.java[Asmified]
-
-== References
-
- - javax.mail.event.MessageCountEvent - 2
- - javax.mail.event.MessageCountListener - 1

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/BaseTree.class
-
- - link:BaseTree-asmified.java[Asmified]
-
-== References
-

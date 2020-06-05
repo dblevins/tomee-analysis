@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/DelegateMessage.class
-
- - link:DelegateMessage-asmified.java[Asmified]
-
-== References
-

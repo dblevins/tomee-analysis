@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlNamedAttributeNode.class
-
- - link:XmlNamedAttributeNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/CacheDistributionPolicy.class
-
- - link:CacheDistributionPolicy-asmified.java[Asmified]
-
-== References
-

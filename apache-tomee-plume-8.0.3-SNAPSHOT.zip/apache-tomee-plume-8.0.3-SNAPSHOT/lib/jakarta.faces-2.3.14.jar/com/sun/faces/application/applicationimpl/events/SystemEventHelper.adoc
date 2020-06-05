@@ -1,6 +1,0 @@
-= com/sun/faces/application/applicationimpl/events/SystemEventHelper.class
-
- - link:SystemEventHelper-asmified.java[Asmified]
-
-== References
-

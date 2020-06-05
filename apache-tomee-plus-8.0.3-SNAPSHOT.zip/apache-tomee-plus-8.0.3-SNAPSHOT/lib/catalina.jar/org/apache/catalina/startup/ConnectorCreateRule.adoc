@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/ConnectorCreateRule.class
-
- - link:ConnectorCreateRule-asmified.java[Asmified]
-
-== References
-

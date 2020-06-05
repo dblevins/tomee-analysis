@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/JAXBExtensibilityElement.class
-
- - link:JAXBExtensibilityElement-asmified.java[Asmified]
-
-== References
-

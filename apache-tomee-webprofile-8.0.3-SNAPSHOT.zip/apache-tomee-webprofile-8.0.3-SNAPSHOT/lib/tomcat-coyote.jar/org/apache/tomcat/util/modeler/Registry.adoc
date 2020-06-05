@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/modeler/Registry.class
-
- - link:Registry-asmified.java[Asmified]
-
-== References
-

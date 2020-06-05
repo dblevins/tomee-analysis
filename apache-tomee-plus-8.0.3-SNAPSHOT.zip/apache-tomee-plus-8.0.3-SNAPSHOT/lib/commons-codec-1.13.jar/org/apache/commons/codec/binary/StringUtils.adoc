@@ -1,6 +1,0 @@
-= org/apache/commons/codec/binary/StringUtils.class
-
- - link:StringUtils-asmified.java[Asmified]
-
-== References
-

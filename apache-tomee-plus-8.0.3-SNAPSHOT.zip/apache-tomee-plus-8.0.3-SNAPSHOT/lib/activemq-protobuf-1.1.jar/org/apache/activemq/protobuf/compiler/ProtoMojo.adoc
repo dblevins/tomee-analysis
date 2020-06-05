@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/ProtoMojo.class
-
- - link:ProtoMojo-asmified.java[Asmified]
-
-== References
-

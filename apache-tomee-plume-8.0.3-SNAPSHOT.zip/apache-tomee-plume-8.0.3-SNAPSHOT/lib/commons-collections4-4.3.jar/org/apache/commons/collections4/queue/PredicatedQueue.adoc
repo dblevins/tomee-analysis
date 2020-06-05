@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/queue/PredicatedQueue.class
-
- - link:PredicatedQueue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/InterbaseDictionary.class
-
- - link:InterbaseDictionary-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MethodInfoUtil$View.class
-
- - link:MethodInfoUtil$View-asmified.java[Asmified]
-
-== References
-

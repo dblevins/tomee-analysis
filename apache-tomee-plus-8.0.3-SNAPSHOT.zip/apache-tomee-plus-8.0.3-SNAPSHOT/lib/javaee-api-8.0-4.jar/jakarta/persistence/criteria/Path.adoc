@@ -1,6 +1,0 @@
-= jakarta/persistence/criteria/Path.class
-
- - link:Path-asmified.java[Asmified]
-
-== References
-

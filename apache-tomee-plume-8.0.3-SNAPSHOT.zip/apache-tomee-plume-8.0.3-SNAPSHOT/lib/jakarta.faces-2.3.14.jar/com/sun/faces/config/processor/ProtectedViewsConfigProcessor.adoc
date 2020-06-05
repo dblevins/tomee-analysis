@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/ProtectedViewsConfigProcessor.class
-
- - link:ProtectedViewsConfigProcessor-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/el/StandardELContext$StandardBeanNameResolver.class
-
- - link:StandardELContext$StandardBeanNameResolver-asmified.java[Asmified]
-
-== References
-
- - javax.el.BeanNameResolver - 2
- - javax.el.PropertyNotWritableException - 1

@@ -1,6 +1,0 @@
-= org/apache/juli/DateFormatCache.class
-
- - link:DateFormatCache-asmified.java[Asmified]
-
-== References
-

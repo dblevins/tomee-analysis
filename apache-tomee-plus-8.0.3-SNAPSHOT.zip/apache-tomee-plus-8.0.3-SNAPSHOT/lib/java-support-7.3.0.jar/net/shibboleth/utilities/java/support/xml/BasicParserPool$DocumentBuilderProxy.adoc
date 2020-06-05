@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/BasicParserPool$DocumentBuilderProxy.class
-
- - link:BasicParserPool$DocumentBuilderProxy-asmified.java[Asmified]
-
-== References
-

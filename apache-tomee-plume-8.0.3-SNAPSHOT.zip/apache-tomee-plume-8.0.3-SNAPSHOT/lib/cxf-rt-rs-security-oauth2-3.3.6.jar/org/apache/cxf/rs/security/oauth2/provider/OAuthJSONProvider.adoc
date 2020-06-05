@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/OAuthJSONProvider.class
-
- - link:OAuthJSONProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/managedproperty/ManagedPropertyInfo.class
-
- - link:ManagedPropertyInfo-asmified.java[Asmified]
-
-== References
-

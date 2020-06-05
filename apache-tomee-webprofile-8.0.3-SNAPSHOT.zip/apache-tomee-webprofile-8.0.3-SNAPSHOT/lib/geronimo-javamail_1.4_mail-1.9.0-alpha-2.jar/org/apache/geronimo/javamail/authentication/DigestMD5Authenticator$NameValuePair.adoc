@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/authentication/DigestMD5Authenticator$NameValuePair.class
-
- - link:DigestMD5Authenticator$NameValuePair-asmified.java[Asmified]
-
-== References
-

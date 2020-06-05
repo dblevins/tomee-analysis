@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/impl/LogoMarshaller.class
-
- - link:LogoMarshaller-asmified.java[Asmified]
-
-== References
-

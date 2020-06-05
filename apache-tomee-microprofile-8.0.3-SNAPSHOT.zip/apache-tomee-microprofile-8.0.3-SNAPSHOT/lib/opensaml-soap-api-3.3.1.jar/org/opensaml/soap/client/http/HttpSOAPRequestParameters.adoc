@@ -1,6 +1,0 @@
-= org/opensaml/soap/client/http/HttpSOAPRequestParameters.class
-
- - link:HttpSOAPRequestParameters-asmified.java[Asmified]
-
-== References
-

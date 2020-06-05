@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/EncryptedElementsAssertionState.class
-
- - link:EncryptedElementsAssertionState-asmified.java[Asmified]
-
-== References
-

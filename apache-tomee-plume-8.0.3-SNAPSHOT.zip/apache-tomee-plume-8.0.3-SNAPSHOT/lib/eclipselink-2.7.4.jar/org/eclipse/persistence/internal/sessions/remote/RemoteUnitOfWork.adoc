@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/remote/RemoteUnitOfWork.class
-
- - link:RemoteUnitOfWork-asmified.java[Asmified]
-
-== References
-

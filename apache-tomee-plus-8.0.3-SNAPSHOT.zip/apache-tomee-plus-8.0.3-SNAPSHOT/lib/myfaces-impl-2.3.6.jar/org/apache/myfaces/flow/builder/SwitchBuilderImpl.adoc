@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/builder/SwitchBuilderImpl.class
-
- - link:SwitchBuilderImpl-asmified.java[Asmified]
-
-== References
-

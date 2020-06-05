@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/validation/SchemaValidationTypeProvider.class
-
- - link:SchemaValidationTypeProvider-asmified.java[Asmified]
-
-== References
-

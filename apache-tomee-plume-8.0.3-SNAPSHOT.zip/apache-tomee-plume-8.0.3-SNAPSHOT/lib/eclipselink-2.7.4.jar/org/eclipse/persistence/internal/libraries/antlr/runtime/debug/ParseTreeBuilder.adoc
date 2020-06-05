@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/ParseTreeBuilder.class
-
- - link:ParseTreeBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/AnyTypeAdapter.class
-
- - link:AnyTypeAdapter-asmified.java[Asmified]
-
-== References
-

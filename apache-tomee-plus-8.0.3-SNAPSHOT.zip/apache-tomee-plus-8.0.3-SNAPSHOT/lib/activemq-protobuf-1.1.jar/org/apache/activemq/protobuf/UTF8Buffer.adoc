@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/UTF8Buffer.class
-
- - link:UTF8Buffer-asmified.java[Asmified]
-
-== References
-

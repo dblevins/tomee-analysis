@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/OpenTypeSupport$HealthStatusOpenTypeFactory.class
-
- - link:OpenTypeSupport$HealthStatusOpenTypeFactory-asmified.java[Asmified]
-
-== References
-

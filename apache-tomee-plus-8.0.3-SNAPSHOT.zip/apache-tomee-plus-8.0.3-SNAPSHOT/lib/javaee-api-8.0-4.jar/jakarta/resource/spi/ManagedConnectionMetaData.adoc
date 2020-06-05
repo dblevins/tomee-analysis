@@ -1,6 +1,0 @@
-= jakarta/resource/spi/ManagedConnectionMetaData.class
-
- - link:ManagedConnectionMetaData-asmified.java[Asmified]
-
-== References
-

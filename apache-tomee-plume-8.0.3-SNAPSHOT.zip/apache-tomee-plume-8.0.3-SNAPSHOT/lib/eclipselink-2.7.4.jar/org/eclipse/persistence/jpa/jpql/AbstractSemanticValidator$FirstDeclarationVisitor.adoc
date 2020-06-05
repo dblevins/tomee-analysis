@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/AbstractSemanticValidator$FirstDeclarationVisitor.class
-
- - link:AbstractSemanticValidator$FirstDeclarationVisitor-asmified.java[Asmified]
-
-== References
-

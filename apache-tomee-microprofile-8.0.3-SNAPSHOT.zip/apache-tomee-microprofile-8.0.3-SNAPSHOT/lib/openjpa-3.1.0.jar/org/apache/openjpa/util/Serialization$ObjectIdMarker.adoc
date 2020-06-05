@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/Serialization$ObjectIdMarker.class
-
- - link:Serialization$ObjectIdMarker-asmified.java[Asmified]
-
-== References
-

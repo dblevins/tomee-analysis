@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/ClassWriter.class
-
- - link:ClassWriter-asmified.java[Asmified]
-
-== References
-

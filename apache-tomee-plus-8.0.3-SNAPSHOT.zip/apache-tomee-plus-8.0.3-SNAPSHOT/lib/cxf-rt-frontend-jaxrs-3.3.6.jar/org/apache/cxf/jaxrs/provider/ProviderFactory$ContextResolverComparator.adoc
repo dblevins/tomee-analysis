@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ProviderFactory$ContextResolverComparator.class
-
- - link:ProviderFactory$ContextResolverComparator-asmified.java[Asmified]
-
-== References
-

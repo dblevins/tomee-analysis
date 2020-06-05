@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/IdentityWeakHashMap.class
-
- - link:IdentityWeakHashMap-asmified.java[Asmified]
-
-== References
-

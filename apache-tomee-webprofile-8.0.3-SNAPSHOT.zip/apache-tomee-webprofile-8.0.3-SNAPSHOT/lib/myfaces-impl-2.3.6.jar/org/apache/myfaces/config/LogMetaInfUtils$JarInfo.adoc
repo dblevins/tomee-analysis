@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/LogMetaInfUtils$JarInfo.class
-
- - link:LogMetaInfUtils$JarInfo-asmified.java[Asmified]
-
-== References
-

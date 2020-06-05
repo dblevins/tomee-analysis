@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlSelectableRendererBase.class
-
- - link:HtmlSelectableRendererBase-asmified.java[Asmified]
-
-== References
-

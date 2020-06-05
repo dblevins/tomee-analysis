@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/queue/AbstractQueueDecorator.class
-
- - link:AbstractQueueDecorator-asmified.java[Asmified]
-
-== References
-

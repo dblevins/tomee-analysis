@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/SignatureRemapper.class
-
- - link:SignatureRemapper-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/persistence/AttributeOverride.class
-
- - link:AttributeOverride-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.Column - 1
- - javax.persistence.AttributeOverrides - 1

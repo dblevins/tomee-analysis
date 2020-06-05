@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/JndiEncBuilder$JndiScope.class
-
- - link:JndiEncBuilder$JndiScope-asmified.java[Asmified]
-
-== References
-

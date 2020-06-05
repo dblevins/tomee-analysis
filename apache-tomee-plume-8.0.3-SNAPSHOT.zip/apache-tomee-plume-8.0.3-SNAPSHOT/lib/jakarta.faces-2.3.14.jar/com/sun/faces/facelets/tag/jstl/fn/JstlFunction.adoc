@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/fn/JstlFunction.class
-
- - link:JstlFunction-asmified.java[Asmified]
-
-== References
-

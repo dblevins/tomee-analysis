@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/digest/BCMessageDigest.class
-
- - link:BCMessageDigest-asmified.java[Asmified]
-
-== References
-

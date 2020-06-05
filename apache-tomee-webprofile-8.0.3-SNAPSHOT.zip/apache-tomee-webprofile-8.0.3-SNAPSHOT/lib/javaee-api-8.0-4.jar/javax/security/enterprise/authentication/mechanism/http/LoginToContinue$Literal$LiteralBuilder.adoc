@@ -1,8 +1,0 @@
-= javax/security/enterprise/authentication/mechanism/http/LoginToContinue$Literal$LiteralBuilder.class
-
- - link:LoginToContinue$Literal$LiteralBuilder-asmified.java[Asmified]
-
-== References
-
- - javax.security.enterprise.authentication.mechanism.http.LoginToContinue$Literal$LiteralBuilder - 4
- - javax.security.enterprise.authentication.mechanism.http.LoginToContinue$Literal - 3

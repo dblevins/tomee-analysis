@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/FacesConfigUnmarshaller.class
-
- - link:FacesConfigUnmarshaller-asmified.java[Asmified]
-
-== References
-

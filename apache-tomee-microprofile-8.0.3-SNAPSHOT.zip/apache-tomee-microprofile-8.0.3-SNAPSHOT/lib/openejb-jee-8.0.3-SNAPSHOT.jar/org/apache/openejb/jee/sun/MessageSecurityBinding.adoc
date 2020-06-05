@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/MessageSecurityBinding.class
-
- - link:MessageSecurityBinding-asmified.java[Asmified]
-
-== References
-

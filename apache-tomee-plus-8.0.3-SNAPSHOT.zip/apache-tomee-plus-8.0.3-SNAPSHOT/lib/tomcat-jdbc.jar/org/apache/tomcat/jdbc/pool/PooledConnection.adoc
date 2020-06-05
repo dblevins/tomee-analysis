@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/PooledConnection.class
-
- - link:PooledConnection-asmified.java[Asmified]
-
-== References
-

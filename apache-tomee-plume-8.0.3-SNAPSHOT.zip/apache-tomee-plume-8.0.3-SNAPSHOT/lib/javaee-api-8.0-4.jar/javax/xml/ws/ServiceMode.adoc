@@ -1,7 +1,0 @@
-= javax/xml/ws/ServiceMode.class
-
- - link:ServiceMode-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.Service$Mode - 2

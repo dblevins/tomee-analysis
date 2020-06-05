@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator.class
-
- - link:DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator-asmified.java[Asmified]
-
-== References
-

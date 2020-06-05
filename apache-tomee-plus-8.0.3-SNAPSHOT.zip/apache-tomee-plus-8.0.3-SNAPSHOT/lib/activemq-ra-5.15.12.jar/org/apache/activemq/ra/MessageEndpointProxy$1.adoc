@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/MessageEndpointProxy$1.class
-
- - link:MessageEndpointProxy$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/SequenceMapping.class
-
- - link:SequenceMapping-asmified.java[Asmified]
-
-== References
-

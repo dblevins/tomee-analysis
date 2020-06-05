@@ -1,6 +1,0 @@
-= jakarta/faces/application/ResourceHandler.class
-
- - link:ResourceHandler-asmified.java[Asmified]
-
-== References
-

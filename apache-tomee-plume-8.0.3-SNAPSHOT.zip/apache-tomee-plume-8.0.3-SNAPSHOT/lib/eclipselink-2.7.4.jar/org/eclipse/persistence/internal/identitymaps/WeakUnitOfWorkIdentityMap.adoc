@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/identitymaps/WeakUnitOfWorkIdentityMap.class
-
- - link:WeakUnitOfWorkIdentityMap-asmified.java[Asmified]
-
-== References
-

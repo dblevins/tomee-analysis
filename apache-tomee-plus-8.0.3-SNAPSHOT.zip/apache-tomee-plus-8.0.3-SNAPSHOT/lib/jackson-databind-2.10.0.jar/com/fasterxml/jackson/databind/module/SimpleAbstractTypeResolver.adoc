@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/module/SimpleAbstractTypeResolver.class
-
- - link:SimpleAbstractTypeResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/content/RetrievalMethod.class
-
- - link:RetrievalMethod-asmified.java[Asmified]
-
-== References
-

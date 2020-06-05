@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/TransportStatusDetector.class
-
- - link:TransportStatusDetector-asmified.java[Asmified]
-
-== References
-

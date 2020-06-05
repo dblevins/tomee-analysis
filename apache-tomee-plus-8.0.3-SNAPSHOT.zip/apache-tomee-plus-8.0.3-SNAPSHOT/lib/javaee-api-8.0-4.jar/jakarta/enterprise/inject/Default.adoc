@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/Default.class
-
- - link:Default-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/RenderKitConfigProcessor.class
-
- - link:RenderKitConfigProcessor-asmified.java[Asmified]
-
-== References
-

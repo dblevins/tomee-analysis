@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/parser/MediaTypeCache.class
-
- - link:MediaTypeCache-asmified.java[Asmified]
-
-== References
-

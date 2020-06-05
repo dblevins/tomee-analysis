@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/MimeIOException.class
-
- - link:MimeIOException-asmified.java[Asmified]
-
-== References
-

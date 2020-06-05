@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/DateTime.class
-
- - link:DateTime-asmified.java[Asmified]
-
-== References
-

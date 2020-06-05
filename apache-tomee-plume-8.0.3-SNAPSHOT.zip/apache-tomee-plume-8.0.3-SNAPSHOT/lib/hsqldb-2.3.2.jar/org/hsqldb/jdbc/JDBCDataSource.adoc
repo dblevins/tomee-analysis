@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCDataSource.class
-
- - link:JDBCDataSource-asmified.java[Asmified]
-
-== References
-

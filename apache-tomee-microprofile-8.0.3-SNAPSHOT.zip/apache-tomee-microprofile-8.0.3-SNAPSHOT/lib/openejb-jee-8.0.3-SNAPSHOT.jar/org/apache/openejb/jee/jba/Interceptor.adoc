@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/Interceptor.class
-
- - link:Interceptor-asmified.java[Asmified]
-
-== References
-

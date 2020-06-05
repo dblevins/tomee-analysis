@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/TCPRemoteCommitProvider$BroadcastWorkerThread.class
-
- - link:TCPRemoteCommitProvider$BroadcastWorkerThread-asmified.java[Asmified]
-
-== References
-

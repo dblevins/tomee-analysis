@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/InjectionFailedException.class
-
- - link:InjectionFailedException-asmified.java[Asmified]
-
-== References
-

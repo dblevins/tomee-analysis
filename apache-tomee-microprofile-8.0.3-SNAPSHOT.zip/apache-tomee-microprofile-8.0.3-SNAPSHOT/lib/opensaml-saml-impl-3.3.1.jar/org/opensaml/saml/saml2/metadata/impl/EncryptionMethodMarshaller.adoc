@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/EncryptionMethodMarshaller.class
-
- - link:EncryptionMethodMarshaller-asmified.java[Asmified]
-
-== References
-

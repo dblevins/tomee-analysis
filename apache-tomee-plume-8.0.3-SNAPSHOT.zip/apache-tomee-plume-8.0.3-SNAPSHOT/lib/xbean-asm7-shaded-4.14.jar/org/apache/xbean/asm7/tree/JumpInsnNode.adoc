@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/JumpInsnNode.class
-
- - link:JumpInsnNode-asmified.java[Asmified]
-
-== References
-

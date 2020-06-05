@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/ValueTypeIndexedMap$NullValue.class
-
- - link:ValueTypeIndexedMap$NullValue-asmified.java[Asmified]
-
-== References
-

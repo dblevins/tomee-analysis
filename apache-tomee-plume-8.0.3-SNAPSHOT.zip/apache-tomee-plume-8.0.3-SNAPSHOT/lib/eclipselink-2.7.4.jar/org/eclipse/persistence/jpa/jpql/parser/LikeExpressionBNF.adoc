@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/LikeExpressionBNF.class
-
- - link:LikeExpressionBNF-asmified.java[Asmified]
-
-== References
-

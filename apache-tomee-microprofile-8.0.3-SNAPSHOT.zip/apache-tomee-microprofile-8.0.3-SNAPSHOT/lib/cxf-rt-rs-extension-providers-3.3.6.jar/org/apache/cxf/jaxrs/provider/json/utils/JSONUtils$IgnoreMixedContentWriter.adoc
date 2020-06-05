@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/json/utils/JSONUtils$IgnoreMixedContentWriter.class
-
- - link:JSONUtils$IgnoreMixedContentWriter-asmified.java[Asmified]
-
-== References
-

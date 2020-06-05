@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/jsonschema/SchemaAware.class
-
- - link:SchemaAware-asmified.java[Asmified]
-
-== References
-

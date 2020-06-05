@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/interceptors/SwAInInterceptor.class
-
- - link:SwAInInterceptor-asmified.java[Asmified]
-
-== References
-

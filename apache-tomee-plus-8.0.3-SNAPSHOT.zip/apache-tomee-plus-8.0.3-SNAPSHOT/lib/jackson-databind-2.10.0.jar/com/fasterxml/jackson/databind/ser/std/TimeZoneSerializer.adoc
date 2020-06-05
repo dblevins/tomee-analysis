@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/TimeZoneSerializer.class
-
- - link:TimeZoneSerializer-asmified.java[Asmified]
-
-== References
-

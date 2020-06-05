@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/BundleResourceFinder$ResourceFinderCallback.class
-
- - link:BundleResourceFinder$ResourceFinderCallback-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/jvnet/staxex/XMLStreamWriterEx.class
-
- - link:XMLStreamWriterEx-asmified.java[Asmified]
-
-== References
-

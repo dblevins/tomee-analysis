@@ -1,6 +1,0 @@
-= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-webservices-8.0.3-SNAPSHOT.jar
-
- - link:org/apache/openejb/server/webservices/WsServlet.adoc[org/apache/openejb/server/webservices/WsServlet.class] - 17
- - link:org/apache/openejb/server/webservices/WsServlet$InstanceContext.adoc[org/apache/openejb/server/webservices/WsServlet$InstanceContext.class] - 11
- - link:org/apache/openejb/server/webservices/WsServlet$DefaultContext.adoc[org/apache/openejb/server/webservices/WsServlet$DefaultContext.class] - 4
- - link:org/apache/openejb/server/webservices/WsServlet$InvocationContext.adoc[org/apache/openejb/server/webservices/WsServlet$InvocationContext.class] - 3

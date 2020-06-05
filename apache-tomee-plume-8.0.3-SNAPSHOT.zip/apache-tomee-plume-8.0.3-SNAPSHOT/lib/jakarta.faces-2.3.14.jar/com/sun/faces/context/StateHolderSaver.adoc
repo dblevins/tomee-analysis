@@ -1,6 +1,0 @@
-= com/sun/faces/context/StateHolderSaver.class
-
- - link:StateHolderSaver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmlenc/AgreementMethodType.class
-
- - link:AgreementMethodType-asmified.java[Asmified]
-
-== References
-

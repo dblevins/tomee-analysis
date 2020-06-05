@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/calendar/AnnualCalendar.class
-
- - link:AnnualCalendar-asmified.java[Asmified]
-
-== References
-

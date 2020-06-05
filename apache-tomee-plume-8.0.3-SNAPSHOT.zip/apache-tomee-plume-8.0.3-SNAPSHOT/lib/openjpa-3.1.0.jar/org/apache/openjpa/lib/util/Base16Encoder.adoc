@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/Base16Encoder.class
-
- - link:Base16Encoder-asmified.java[Asmified]
-
-== References
-

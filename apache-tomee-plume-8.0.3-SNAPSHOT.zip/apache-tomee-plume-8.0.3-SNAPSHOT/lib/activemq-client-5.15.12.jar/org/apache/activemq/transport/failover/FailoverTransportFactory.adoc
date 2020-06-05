@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/failover/FailoverTransportFactory.class
-
- - link:FailoverTransportFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/WebAnnotationSet.class
-
- - link:WebAnnotationSet-asmified.java[Asmified]
-
-== References
-

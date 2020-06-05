@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/CXFRequestData.class
-
- - link:CXFRequestData-asmified.java[Asmified]
-
-== References
-

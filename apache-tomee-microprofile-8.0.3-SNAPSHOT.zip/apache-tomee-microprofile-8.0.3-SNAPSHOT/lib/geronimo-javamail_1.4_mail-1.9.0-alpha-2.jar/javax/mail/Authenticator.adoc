@@ -1,8 +1,0 @@
-= javax/mail/Authenticator.class
-
- - link:Authenticator-asmified.java[Asmified]
-
-== References
-
- - javax.mail.PasswordAuthentication - 3
- - javax.mail.Authenticator - 1

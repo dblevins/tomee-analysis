@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/AbstractThreadSafeAttributeMap$ValuesIterator.class
-
- - link:AbstractThreadSafeAttributeMap$ValuesIterator-asmified.java[Asmified]
-
-== References
-

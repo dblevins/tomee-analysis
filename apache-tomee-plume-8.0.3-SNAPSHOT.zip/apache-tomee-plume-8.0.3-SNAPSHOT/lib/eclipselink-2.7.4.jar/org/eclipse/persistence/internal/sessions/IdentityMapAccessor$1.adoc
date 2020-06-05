@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/IdentityMapAccessor$1.class
-
- - link:IdentityMapAccessor$1-asmified.java[Asmified]
-
-== References
-

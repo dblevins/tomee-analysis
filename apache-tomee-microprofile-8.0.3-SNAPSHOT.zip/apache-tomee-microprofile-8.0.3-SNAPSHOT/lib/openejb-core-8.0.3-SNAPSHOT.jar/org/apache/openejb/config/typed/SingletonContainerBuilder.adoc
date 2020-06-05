@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/SingletonContainerBuilder.class
-
- - link:SingletonContainerBuilder-asmified.java[Asmified]
-
-== References
-

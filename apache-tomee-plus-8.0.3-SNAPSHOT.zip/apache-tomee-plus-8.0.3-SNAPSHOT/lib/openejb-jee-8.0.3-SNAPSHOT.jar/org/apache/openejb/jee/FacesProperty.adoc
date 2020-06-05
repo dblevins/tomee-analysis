@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesProperty.class
-
- - link:FacesProperty-asmified.java[Asmified]
-
-== References
-

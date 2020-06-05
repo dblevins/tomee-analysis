@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/FetchPath.class
-
- - link:FetchPath-asmified.java[Asmified]
-
-== References
-

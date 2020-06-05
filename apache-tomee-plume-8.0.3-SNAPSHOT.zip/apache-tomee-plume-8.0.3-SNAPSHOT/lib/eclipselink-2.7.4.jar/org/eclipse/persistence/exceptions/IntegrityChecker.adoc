@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/IntegrityChecker.class
-
- - link:IntegrityChecker-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/tar/TarFileInputStream.class
-
- - link:TarFileInputStream-asmified.java[Asmified]
-
-== References
-

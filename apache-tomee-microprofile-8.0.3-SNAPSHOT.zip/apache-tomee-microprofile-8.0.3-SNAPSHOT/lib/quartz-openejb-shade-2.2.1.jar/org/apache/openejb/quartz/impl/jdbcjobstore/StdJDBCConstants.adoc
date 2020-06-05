@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/StdJDBCConstants.class
-
- - link:StdJDBCConstants-asmified.java[Asmified]
-
-== References
-

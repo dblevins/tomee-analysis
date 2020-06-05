@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/spring/JaxWsProxyFactoryBeanDefinitionParser.class
-
- - link:JaxWsProxyFactoryBeanDefinitionParser-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/xml/sax/ext/DeclHandler.class
-
- - link:DeclHandler-asmified.java[Asmified]
-
-== References
-

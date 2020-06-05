@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/jms/interceptor/SoapJMSConstants.class
-
- - link:SoapJMSConstants-asmified.java[Asmified]
-
-== References
-

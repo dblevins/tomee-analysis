@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/StaticDecryptionParametersResolver.class
-
- - link:StaticDecryptionParametersResolver-asmified.java[Asmified]
-
-== References
-

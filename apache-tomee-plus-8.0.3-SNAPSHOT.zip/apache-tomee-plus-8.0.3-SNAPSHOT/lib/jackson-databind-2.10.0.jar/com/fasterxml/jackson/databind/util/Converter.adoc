@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/Converter.class
-
- - link:Converter-asmified.java[Asmified]
-
-== References
-

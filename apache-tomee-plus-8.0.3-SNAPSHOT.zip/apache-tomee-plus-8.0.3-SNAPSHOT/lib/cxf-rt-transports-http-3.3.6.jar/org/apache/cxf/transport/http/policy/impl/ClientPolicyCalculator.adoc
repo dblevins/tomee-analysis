@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/policy/impl/ClientPolicyCalculator.class
-
- - link:ClientPolicyCalculator-asmified.java[Asmified]
-
-== References
-

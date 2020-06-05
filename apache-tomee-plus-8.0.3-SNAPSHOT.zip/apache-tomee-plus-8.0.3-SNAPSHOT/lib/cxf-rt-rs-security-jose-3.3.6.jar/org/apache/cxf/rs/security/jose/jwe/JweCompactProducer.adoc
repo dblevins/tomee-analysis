@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/JweCompactProducer.class
-
- - link:JweCompactProducer-asmified.java[Asmified]
-
-== References
-

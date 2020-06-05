@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ReadDescriptors$1.class
-
- - link:ReadDescriptors$1-asmified.java[Asmified]
-
-== References
-

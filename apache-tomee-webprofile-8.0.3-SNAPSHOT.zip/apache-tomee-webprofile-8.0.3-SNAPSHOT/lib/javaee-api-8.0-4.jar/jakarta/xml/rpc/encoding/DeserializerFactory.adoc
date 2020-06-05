@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/encoding/DeserializerFactory.class
-
- - link:DeserializerFactory-asmified.java[Asmified]
-
-== References
-

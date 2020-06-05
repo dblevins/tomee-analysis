@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/BasicBeanDescription.class
-
- - link:BasicBeanDescription-asmified.java[Asmified]
-
-== References
-

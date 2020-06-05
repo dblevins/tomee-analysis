@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/WebFragment.class
-
- - link:WebFragment-asmified.java[Asmified]
-
-== References
-

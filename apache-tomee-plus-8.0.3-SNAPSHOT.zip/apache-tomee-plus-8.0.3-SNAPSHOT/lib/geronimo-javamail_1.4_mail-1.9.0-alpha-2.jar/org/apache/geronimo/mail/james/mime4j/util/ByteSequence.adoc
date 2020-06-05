@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/util/ByteSequence.class
-
- - link:ByteSequence-asmified.java[Asmified]
-
-== References
-

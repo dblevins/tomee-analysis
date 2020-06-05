@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ExtensionLoader.class
-
- - link:ExtensionLoader-asmified.java[Asmified]
-
-== References
-

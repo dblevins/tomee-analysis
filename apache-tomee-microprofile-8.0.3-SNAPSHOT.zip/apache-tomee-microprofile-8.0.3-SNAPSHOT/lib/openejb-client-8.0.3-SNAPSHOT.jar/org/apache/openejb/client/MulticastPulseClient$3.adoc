@@ -1,6 +1,0 @@
-= org/apache/openejb/client/MulticastPulseClient$3.class
-
- - link:MulticastPulseClient$3-asmified.java[Asmified]
-
-== References
-

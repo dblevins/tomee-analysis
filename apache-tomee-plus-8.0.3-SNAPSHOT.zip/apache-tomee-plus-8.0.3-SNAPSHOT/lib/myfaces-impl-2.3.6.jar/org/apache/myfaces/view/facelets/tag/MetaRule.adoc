@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/MetaRule.class
-
- - link:MetaRule-asmified.java[Asmified]
-
-== References
-

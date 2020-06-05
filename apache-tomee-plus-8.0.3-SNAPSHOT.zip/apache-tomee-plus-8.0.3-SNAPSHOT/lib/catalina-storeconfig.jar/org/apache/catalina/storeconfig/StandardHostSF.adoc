@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/StandardHostSF.class
-
- - link:StandardHostSF-asmified.java[Asmified]
-
-== References
-

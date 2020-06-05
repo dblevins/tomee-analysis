@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/StringId.class
-
- - link:StringId-asmified.java[Asmified]
-
-== References
-

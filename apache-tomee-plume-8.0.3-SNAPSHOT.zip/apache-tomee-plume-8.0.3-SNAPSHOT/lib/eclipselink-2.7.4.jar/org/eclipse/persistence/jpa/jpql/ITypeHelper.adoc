@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/ITypeHelper.class
-
- - link:ITypeHelper-asmified.java[Asmified]
-
-== References
-

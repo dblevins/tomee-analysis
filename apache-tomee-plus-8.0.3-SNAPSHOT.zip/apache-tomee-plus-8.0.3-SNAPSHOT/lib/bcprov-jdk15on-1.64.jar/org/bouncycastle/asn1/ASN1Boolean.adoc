@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/ASN1Boolean.class
-
- - link:ASN1Boolean-asmified.java[Asmified]
-
-== References
-

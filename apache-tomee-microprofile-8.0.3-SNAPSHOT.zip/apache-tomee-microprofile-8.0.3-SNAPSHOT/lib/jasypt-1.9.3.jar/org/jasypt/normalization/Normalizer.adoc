@@ -1,6 +1,0 @@
-= org/jasypt/normalization/Normalizer.class
-
- - link:Normalizer-asmified.java[Asmified]
-
-== References
-

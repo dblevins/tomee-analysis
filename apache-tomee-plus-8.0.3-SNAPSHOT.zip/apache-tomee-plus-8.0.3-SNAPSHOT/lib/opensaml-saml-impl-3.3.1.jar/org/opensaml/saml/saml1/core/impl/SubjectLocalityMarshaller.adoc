@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/SubjectLocalityMarshaller.class
-
- - link:SubjectLocalityMarshaller-asmified.java[Asmified]
-
-== References
-

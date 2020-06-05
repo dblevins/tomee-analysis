@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/smtp/SMTPMessage.class
-
- - link:SMTPMessage-asmified.java[Asmified]
-
-== References
-

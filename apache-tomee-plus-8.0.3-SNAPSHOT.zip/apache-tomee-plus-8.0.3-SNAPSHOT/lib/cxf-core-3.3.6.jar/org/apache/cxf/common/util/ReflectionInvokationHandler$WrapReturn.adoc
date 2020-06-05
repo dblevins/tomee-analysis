@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ReflectionInvokationHandler$WrapReturn.class
-
- - link:ReflectionInvokationHandler$WrapReturn-asmified.java[Asmified]
-
-== References
-

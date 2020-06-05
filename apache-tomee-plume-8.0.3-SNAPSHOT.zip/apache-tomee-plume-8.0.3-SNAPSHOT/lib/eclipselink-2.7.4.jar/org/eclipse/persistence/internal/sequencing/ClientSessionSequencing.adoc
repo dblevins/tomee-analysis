@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sequencing/ClientSessionSequencing.class
-
- - link:ClientSessionSequencing-asmified.java[Asmified]
-
-== References
-

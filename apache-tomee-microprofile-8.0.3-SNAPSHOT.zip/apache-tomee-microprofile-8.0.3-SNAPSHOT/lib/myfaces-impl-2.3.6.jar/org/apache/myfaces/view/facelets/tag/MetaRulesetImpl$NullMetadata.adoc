@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/MetaRulesetImpl$NullMetadata.class
-
- - link:MetaRulesetImpl$NullMetadata-asmified.java[Asmified]
-
-== References
-

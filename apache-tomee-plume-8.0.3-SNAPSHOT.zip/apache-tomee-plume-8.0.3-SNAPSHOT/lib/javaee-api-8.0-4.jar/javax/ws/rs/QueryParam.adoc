@@ -1,6 +1,0 @@
-= javax/ws/rs/QueryParam.class
-
- - link:QueryParam-asmified.java[Asmified]
-
-== References
-

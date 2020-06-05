@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/AnalyzerAdapter.class
-
- - link:AnalyzerAdapter-asmified.java[Asmified]
-
-== References
-

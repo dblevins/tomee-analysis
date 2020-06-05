@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/facets/MinFacet.class
-
- - link:MinFacet-asmified.java[Asmified]
-
-== References
-

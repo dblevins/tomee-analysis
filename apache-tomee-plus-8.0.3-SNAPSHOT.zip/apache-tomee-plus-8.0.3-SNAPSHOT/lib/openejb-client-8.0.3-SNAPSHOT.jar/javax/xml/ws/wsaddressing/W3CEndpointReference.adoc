@@ -1,7 +1,0 @@
-= javax/xml/ws/wsaddressing/W3CEndpointReference.class
-
- - link:W3CEndpointReference-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.EndpointReference - 3

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy.class
-
- - link:TomEEJsonbPropertyVisibilityStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/EEFilter$AsynContextWrapper$ScopeAwareListener.class
-
- - link:EEFilter$AsynContextWrapper$ScopeAwareListener-asmified.java[Asmified]
-
-== References
-

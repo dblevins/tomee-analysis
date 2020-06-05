@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/NetworkDestinationViewMBean.class
-
- - link:NetworkDestinationViewMBean-asmified.java[Asmified]
-
-== References
-

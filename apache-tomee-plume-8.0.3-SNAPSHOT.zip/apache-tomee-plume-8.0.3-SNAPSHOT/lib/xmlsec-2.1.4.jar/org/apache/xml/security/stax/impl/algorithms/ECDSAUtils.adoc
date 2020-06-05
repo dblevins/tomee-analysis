@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/algorithms/ECDSAUtils.class
-
- - link:ECDSAUtils-asmified.java[Asmified]
-
-== References
-

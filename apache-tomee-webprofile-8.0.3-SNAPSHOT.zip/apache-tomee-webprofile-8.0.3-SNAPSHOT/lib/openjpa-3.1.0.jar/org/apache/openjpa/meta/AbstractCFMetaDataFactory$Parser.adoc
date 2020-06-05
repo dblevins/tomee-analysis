@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/AbstractCFMetaDataFactory$Parser.class
-
- - link:AbstractCFMetaDataFactory$Parser-asmified.java[Asmified]
-
-== References
-

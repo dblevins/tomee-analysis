@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/CompilationUnit.class
-
- - link:CompilationUnit-asmified.java[Asmified]
-
-== References
-

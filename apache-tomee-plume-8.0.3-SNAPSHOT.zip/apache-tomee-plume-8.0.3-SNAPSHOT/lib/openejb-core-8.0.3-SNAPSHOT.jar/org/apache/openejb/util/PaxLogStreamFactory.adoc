@@ -1,6 +1,0 @@
-= org/apache/openejb/util/PaxLogStreamFactory.class
-
- - link:PaxLogStreamFactory-asmified.java[Asmified]
-
-== References
-

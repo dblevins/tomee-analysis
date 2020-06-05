@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/DoubleLiteralNode.class
-
- - link:DoubleLiteralNode-asmified.java[Asmified]
-
-== References
-

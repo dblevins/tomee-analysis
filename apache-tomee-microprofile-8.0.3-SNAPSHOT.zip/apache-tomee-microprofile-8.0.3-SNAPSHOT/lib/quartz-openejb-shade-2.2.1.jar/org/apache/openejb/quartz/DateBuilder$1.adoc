@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/DateBuilder$1.class
-
- - link:DateBuilder$1-asmified.java[Asmified]
-
-== References
-

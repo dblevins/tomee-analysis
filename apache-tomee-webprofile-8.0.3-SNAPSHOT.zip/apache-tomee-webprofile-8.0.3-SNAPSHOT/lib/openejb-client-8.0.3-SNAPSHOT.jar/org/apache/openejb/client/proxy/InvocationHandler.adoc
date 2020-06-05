@@ -1,6 +1,0 @@
-= org/apache/openejb/client/proxy/InvocationHandler.class
-
- - link:InvocationHandler-asmified.java[Asmified]
-
-== References
-

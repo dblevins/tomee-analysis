@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MdbContainerInfo.class
-
- - link:MdbContainerInfo-asmified.java[Asmified]
-
-== References
-

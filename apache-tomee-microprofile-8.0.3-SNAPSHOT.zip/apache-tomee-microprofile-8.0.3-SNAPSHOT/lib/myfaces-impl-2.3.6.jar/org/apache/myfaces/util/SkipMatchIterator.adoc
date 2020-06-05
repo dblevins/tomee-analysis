@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/SkipMatchIterator.class
-
- - link:SkipMatchIterator-asmified.java[Asmified]
-
-== References
-

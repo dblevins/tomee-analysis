@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/TypeParameter.class
-
- - link:TypeParameter-asmified.java[Asmified]
-
-== References
-

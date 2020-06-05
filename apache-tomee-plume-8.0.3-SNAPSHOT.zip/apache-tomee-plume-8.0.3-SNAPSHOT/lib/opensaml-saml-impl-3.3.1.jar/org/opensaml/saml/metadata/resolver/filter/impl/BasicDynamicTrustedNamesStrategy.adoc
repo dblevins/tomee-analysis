@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/filter/impl/BasicDynamicTrustedNamesStrategy.class
-
- - link:BasicDynamicTrustedNamesStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/xmladapters/LinkAdapter.class
-
- - link:LinkAdapter-asmified.java[Asmified]
-
-== References
-

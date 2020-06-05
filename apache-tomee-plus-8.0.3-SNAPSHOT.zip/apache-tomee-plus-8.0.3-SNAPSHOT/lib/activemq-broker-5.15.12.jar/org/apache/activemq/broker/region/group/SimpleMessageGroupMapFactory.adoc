@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/group/SimpleMessageGroupMapFactory.class
-
- - link:SimpleMessageGroupMapFactory-asmified.java[Asmified]
-
-== References
-

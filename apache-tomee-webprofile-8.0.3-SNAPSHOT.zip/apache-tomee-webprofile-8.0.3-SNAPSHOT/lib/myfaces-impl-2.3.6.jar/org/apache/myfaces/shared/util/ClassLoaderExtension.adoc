@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/ClassLoaderExtension.class
-
- - link:ClassLoaderExtension-asmified.java[Asmified]
-
-== References
-

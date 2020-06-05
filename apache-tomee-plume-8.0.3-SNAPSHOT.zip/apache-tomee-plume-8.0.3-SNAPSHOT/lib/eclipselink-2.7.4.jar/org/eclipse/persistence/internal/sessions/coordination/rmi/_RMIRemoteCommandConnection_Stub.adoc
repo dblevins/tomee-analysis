@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/coordination/rmi/_RMIRemoteCommandConnection_Stub.class
-
- - link:_RMIRemoteCommandConnection_Stub-asmified.java[Asmified]
-
-== References
-

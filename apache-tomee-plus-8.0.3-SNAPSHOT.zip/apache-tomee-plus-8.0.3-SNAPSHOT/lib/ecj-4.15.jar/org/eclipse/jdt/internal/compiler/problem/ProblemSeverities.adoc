@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/problem/ProblemSeverities.class
-
- - link:ProblemSeverities-asmified.java[Asmified]
-
-== References
-

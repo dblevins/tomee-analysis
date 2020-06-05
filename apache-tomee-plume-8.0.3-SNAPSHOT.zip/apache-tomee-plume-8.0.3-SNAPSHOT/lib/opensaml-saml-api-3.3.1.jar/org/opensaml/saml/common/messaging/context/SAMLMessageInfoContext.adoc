@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/context/SAMLMessageInfoContext.class
-
- - link:SAMLMessageInfoContext-asmified.java[Asmified]
-
-== References
-

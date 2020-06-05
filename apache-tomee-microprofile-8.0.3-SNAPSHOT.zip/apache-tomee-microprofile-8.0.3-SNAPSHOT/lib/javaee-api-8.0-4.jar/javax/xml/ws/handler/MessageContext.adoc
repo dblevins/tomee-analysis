@@ -1,7 +1,0 @@
-= javax/xml/ws/handler/MessageContext.class
-
- - link:MessageContext-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.handler.MessageContext$Scope - 2

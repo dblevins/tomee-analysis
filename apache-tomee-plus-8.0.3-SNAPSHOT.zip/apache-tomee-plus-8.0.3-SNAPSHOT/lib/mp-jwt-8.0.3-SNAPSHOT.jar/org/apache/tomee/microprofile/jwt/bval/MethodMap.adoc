@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/bval/MethodMap.class
-
- - link:MethodMap-asmified.java[Asmified]
-
-== References
-

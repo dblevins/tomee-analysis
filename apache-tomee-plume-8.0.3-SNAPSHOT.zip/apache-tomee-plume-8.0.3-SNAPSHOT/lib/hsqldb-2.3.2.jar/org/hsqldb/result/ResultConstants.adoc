@@ -1,6 +1,0 @@
-= org/hsqldb/result/ResultConstants.class
-
- - link:ResultConstants-asmified.java[Asmified]
-
-== References
-

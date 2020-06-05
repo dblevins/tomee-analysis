@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/http/server/RemoteHttpCacheService.class
-
- - link:RemoteHttpCacheService-asmified.java[Asmified]
-
-== References
-

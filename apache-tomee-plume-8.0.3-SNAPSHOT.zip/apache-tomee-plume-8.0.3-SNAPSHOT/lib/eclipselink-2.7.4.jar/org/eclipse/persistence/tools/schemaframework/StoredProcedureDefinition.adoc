@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/schemaframework/StoredProcedureDefinition.class
-
- - link:StoredProcedureDefinition-asmified.java[Asmified]
-
-== References
-

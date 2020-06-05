@@ -1,7 +1,0 @@
-= javax/json/JsonWriterFactory.class
-
- - link:JsonWriterFactory-asmified.java[Asmified]
-
-== References
-
- - javax.json.JsonWriter - 3

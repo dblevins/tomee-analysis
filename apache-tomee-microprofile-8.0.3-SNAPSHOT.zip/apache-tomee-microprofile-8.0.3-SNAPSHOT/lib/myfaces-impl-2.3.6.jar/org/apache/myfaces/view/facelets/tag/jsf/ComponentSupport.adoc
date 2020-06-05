@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ComponentSupport.class
-
- - link:ComponentSupport-asmified.java[Asmified]
-
-== References
-

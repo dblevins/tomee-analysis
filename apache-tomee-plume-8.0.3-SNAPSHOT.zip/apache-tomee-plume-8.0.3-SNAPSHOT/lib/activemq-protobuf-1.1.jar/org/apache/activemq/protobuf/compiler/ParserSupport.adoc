@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/ParserSupport.class
-
- - link:ParserSupport-asmified.java[Asmified]
-
-== References
-

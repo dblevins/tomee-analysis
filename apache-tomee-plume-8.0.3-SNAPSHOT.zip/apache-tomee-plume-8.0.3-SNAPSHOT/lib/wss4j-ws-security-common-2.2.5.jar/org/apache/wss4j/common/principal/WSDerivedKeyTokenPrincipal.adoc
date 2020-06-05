@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/principal/WSDerivedKeyTokenPrincipal.class
-
- - link:WSDerivedKeyTokenPrincipal-asmified.java[Asmified]
-
-== References
-

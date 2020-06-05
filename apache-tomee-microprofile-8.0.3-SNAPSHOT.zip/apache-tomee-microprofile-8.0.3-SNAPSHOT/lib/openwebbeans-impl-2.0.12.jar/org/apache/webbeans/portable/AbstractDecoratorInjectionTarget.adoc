@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AbstractDecoratorInjectionTarget.class
-
- - link:AbstractDecoratorInjectionTarget-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/application/ViewHandlerImpl.class
-
- - link:ViewHandlerImpl-asmified.java[Asmified]
-
-== References
-

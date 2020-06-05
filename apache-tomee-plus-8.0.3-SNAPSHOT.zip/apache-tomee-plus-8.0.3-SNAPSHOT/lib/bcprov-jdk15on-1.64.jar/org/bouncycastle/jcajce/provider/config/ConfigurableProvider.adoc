@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/config/ConfigurableProvider.class
-
- - link:ConfigurableProvider-asmified.java[Asmified]
-
-== References
-

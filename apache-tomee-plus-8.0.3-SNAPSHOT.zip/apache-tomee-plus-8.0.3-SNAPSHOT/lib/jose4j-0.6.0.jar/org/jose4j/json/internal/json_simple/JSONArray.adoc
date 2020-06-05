@@ -1,6 +1,0 @@
-= org/jose4j/json/internal/json_simple/JSONArray.class
-
- - link:JSONArray-asmified.java[Asmified]
-
-== References
-

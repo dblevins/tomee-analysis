@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/ActiveMQResourceAdapterBuilder.class
-
- - link:ActiveMQResourceAdapterBuilder-asmified.java[Asmified]
-
-== References
-

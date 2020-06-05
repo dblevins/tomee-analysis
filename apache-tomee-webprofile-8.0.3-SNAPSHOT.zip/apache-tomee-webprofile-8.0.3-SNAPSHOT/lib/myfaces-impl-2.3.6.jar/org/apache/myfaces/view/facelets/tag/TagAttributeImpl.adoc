@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/TagAttributeImpl.class
-
- - link:TagAttributeImpl-asmified.java[Asmified]
-
-== References
-

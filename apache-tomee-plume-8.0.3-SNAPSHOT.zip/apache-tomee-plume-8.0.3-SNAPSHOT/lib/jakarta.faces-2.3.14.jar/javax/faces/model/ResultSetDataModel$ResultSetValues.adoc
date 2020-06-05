@@ -1,8 +1,0 @@
-= javax/faces/model/ResultSetDataModel$ResultSetValues.class
-
- - link:ResultSetDataModel$ResultSetValues-asmified.java[Asmified]
-
-== References
-
- - javax.faces.model.ResultSetDataModel$ResultSetMap - 9
- - javax.faces.model.ResultSetDataModel$ResultSetValuesIterator - 2

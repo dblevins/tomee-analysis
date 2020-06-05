@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/SlowConsumerEntry.class
-
- - link:SlowConsumerEntry-asmified.java[Asmified]
-
-== References
-

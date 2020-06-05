@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/nio/NIOInputStream.class
-
- - link:NIOInputStream-asmified.java[Asmified]
-
-== References
-

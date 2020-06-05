@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/FakedTrackingVariable$IteratorForReporting$Stage.class
-
- - link:FakedTrackingVariable$IteratorForReporting$Stage-asmified.java[Asmified]
-
-== References
-

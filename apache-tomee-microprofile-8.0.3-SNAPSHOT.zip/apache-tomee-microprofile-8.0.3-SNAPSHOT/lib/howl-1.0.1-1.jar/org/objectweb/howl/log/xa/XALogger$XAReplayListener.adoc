@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/xa/XALogger$XAReplayListener.class
-
- - link:XALogger$XAReplayListener-asmified.java[Asmified]
-
-== References
-

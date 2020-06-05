@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/CompositeFaceletHandler.class
-
- - link:CompositeFaceletHandler-asmified.java[Asmified]
-
-== References
-

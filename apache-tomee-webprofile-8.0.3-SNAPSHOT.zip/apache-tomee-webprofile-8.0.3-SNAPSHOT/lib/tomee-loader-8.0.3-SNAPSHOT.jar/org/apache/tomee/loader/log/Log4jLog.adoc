@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/log/Log4jLog.class
-
- - link:Log4jLog-asmified.java[Asmified]
-
-== References
-

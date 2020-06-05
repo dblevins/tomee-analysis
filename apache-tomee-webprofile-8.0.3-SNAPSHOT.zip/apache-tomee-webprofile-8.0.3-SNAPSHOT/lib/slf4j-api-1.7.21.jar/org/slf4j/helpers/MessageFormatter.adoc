@@ -1,6 +1,0 @@
-= org/slf4j/helpers/MessageFormatter.class
-
- - link:MessageFormatter-asmified.java[Asmified]
-
-== References
-

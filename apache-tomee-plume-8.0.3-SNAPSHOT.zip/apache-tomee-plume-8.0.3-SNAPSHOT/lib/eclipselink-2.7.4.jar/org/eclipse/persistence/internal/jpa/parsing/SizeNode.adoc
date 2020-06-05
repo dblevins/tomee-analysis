@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/SizeNode.class
-
- - link:SizeNode-asmified.java[Asmified]
-
-== References
-

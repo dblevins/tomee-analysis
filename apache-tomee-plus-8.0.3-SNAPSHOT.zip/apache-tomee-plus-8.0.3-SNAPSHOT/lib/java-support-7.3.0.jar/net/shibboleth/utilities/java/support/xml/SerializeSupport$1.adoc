@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/SerializeSupport$1.class
-
- - link:SerializeSupport$1-asmified.java[Asmified]
-
-== References
-

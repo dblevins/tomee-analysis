@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/GetterType.class
-
- - link:GetterType-asmified.java[Asmified]
-
-== References
-

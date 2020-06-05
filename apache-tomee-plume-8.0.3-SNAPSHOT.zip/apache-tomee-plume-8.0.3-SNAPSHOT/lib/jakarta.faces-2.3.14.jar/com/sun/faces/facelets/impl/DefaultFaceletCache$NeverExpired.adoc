@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/impl/DefaultFaceletCache$NeverExpired.class
-
- - link:DefaultFaceletCache$NeverExpired-asmified.java[Asmified]
-
-== References
-

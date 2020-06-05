@@ -1,6 +1,0 @@
-= io/opentracing/propagation/TextMapExtractAdapter.class
-
- - link:TextMapExtractAdapter-asmified.java[Asmified]
-
-== References
-

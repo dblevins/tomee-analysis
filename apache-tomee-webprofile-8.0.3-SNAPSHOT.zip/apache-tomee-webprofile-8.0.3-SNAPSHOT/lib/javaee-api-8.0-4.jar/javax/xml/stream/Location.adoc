@@ -1,6 +1,0 @@
-= javax/xml/stream/Location.class
-
- - link:Location-asmified.java[Asmified]
-
-== References
-

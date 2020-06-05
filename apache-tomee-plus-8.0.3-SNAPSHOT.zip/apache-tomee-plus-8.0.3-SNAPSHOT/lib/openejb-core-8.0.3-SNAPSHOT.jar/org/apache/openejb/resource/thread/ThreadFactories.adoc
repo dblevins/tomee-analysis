@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/thread/ThreadFactories.class
-
- - link:ThreadFactories-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/ArgumentListFunctionExpression.class
-
- - link:ArgumentListFunctionExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/plugins/BeanValidationPlugin$Visitor.class
-
- - link:BeanValidationPlugin$Visitor-asmified.java[Asmified]
-
-== References
-

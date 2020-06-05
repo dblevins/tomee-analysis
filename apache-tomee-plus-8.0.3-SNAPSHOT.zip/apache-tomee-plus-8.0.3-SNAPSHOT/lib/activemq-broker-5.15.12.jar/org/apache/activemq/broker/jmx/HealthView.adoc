@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/HealthView.class
-
- - link:HealthView-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/AttachedDeltaWrapper.class
-
- - link:AttachedDeltaWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/media/Encoding$Style.class
-
- - link:Encoding$Style-asmified.java[Asmified]
-
-== References
-

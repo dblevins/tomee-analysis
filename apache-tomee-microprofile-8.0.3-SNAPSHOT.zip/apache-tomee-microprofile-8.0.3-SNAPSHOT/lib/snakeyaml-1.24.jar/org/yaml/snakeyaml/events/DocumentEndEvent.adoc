@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/DocumentEndEvent.class
-
- - link:DocumentEndEvent-asmified.java[Asmified]
-
-== References
-

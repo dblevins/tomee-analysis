@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/utils/XmlSchemaNamedImpl.class
-
- - link:XmlSchemaNamedImpl-asmified.java[Asmified]
-
-== References
-

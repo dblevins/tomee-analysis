@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter.class
-
- - link:JsonMapObjectReaderWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/util/ObjectVector.class
-
- - link:ObjectVector-asmified.java[Asmified]
-
-== References
-

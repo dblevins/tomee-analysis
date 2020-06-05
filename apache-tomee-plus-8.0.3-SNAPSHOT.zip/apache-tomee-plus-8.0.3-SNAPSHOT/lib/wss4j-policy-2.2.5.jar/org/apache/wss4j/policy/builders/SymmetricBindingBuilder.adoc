@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/SymmetricBindingBuilder.class
-
- - link:SymmetricBindingBuilder-asmified.java[Asmified]
-
-== References
-

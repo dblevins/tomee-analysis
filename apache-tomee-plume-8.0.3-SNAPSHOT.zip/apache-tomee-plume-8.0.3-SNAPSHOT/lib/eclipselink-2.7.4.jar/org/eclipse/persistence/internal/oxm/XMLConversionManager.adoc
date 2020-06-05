@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/XMLConversionManager.class
-
- - link:XMLConversionManager-asmified.java[Asmified]
-
-== References
-

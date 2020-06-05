@@ -1,6 +1,0 @@
-= org/hsqldb/lib/Iterator.class
-
- - link:Iterator-asmified.java[Asmified]
-
-== References
-

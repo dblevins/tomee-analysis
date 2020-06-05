@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl$1.class
-
- - link:ManagedPropertyImpl$1-asmified.java[Asmified]
-
-== References
-

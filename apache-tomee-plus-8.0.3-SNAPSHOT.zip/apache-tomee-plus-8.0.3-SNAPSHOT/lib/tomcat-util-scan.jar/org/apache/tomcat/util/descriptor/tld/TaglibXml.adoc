@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/tld/TaglibXml.class
-
- - link:TaglibXml-asmified.java[Asmified]
-
-== References
-

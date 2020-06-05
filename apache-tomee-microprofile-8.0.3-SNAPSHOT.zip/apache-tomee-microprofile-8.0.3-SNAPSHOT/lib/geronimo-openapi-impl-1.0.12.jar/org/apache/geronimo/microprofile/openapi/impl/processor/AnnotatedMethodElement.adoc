@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/processor/AnnotatedMethodElement.class
-
- - link:AnnotatedMethodElement-asmified.java[Asmified]
-
-== References
-

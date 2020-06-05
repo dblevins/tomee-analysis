@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/LocalizedNameUnmarshaller.class
-
- - link:LocalizedNameUnmarshaller-asmified.java[Asmified]
-
-== References
-

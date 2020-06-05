@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/MdbInstanceManager$InstanceCreatorRunnable.class
-
- - link:MdbInstanceManager$InstanceCreatorRunnable-asmified.java[Asmified]
-
-== References
-

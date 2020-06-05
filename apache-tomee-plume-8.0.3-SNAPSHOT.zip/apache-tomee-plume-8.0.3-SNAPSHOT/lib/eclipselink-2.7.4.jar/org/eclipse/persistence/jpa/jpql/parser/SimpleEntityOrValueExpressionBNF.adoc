@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SimpleEntityOrValueExpressionBNF.class
-
- - link:SimpleEntityOrValueExpressionBNF-asmified.java[Asmified]
-
-== References
-

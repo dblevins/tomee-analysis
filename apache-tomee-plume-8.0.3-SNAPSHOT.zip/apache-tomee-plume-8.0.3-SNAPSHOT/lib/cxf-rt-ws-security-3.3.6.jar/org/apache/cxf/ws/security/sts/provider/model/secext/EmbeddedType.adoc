@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/secext/EmbeddedType.class
-
- - link:EmbeddedType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/xml/sax/XMLReader.class
-
- - link:XMLReader-asmified.java[Asmified]
-
-== References
-

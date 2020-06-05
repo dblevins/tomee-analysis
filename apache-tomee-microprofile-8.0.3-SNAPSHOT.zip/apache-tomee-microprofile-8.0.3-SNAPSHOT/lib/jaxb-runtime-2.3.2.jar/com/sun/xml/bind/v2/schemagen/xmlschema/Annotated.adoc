@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/xmlschema/Annotated.class
-
- - link:Annotated-asmified.java[Asmified]
-
-== References
-

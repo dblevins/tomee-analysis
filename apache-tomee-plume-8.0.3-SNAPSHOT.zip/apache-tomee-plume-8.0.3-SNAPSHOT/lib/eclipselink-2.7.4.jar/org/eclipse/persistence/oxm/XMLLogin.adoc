@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/XMLLogin.class
-
- - link:XMLLogin-asmified.java[Asmified]
-
-== References
-

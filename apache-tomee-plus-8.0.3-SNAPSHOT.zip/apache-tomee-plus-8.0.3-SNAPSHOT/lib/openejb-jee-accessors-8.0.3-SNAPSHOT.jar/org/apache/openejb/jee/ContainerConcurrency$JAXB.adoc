@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ContainerConcurrency$JAXB.class
-
- - link:ContainerConcurrency$JAXB-asmified.java[Asmified]
-
-== References
-

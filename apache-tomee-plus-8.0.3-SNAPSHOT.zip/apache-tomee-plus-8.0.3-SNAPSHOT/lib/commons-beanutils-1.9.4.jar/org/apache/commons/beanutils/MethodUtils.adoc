@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/MethodUtils.class
-
- - link:MethodUtils-asmified.java[Asmified]
-
-== References
-

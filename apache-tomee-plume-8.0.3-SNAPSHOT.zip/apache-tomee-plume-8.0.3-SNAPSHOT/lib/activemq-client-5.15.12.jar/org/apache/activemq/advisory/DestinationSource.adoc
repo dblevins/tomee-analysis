@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/DestinationSource.class
-
- - link:DestinationSource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/DynaProperty.class
-
- - link:DynaProperty-asmified.java[Asmified]
-
-== References
-

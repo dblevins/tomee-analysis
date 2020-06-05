@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/EmptyOrderedIterator.class
-
- - link:EmptyOrderedIterator-asmified.java[Asmified]
-
-== References
-

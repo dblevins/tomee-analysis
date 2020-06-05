@@ -1,6 +1,0 @@
-= org/apache/catalina/mapper/Mapper$MapElement.class
-
- - link:Mapper$MapElement-asmified.java[Asmified]
-
-== References
-

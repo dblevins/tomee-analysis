@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/adapter/BytesJDBCAdapter.class
-
- - link:BytesJDBCAdapter-asmified.java[Asmified]
-
-== References
-

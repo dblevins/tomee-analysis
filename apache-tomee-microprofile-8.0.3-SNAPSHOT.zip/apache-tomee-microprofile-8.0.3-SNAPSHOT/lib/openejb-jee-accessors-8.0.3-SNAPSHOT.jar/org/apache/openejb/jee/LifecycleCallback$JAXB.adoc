@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/LifecycleCallback$JAXB.class
-
- - link:LifecycleCallback$JAXB-asmified.java[Asmified]
-
-== References
-

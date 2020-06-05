@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/OrderingOrdering.class
-
- - link:OrderingOrdering-asmified.java[Asmified]
-
-== References
-

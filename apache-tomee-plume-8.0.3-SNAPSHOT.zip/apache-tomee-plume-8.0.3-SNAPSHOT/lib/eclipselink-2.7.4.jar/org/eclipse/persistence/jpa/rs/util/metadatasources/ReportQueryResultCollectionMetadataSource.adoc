@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/metadatasources/ReportQueryResultCollectionMetadataSource.class
-
- - link:ReportQueryResultCollectionMetadataSource-asmified.java[Asmified]
-
-== References
-

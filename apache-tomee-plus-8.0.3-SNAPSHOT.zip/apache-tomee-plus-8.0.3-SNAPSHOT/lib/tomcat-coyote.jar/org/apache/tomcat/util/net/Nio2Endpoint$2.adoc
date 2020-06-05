@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/Nio2Endpoint$2.class
-
- - link:Nio2Endpoint$2-asmified.java[Asmified]
-
-== References
-

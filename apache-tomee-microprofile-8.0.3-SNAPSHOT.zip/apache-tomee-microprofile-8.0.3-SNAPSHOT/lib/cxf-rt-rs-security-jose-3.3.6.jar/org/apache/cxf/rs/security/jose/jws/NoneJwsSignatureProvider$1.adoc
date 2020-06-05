@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/NoneJwsSignatureProvider$1.class
-
- - link:NoneJwsSignatureProvider$1-asmified.java[Asmified]
-
-== References
-

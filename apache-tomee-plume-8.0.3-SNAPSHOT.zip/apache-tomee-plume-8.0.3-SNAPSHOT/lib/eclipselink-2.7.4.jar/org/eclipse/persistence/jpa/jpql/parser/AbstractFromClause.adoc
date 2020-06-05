@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AbstractFromClause.class
-
- - link:AbstractFromClause-asmified.java[Asmified]
-
-== References
-

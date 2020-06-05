@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/annotation/ParameterName.class
-
- - link:ParameterName-asmified.java[Asmified]
-
-== References
-

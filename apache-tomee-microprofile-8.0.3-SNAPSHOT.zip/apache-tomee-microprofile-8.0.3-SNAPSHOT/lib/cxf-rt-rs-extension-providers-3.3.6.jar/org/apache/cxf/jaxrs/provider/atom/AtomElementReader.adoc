@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/atom/AtomElementReader.class
-
- - link:AtomElementReader-asmified.java[Asmified]
-
-== References
-

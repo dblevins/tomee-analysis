@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/util/ParameterizedTypeImpl.class
-
- - link:ParameterizedTypeImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/BooleanStream.class
-
- - link:BooleanStream-asmified.java[Asmified]
-
-== References
-

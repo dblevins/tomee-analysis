@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/StreamWriterContentHandler.class
-
- - link:StreamWriterContentHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/MapUtils$1.class
-
- - link:MapUtils$1-asmified.java[Asmified]
-
-== References
-

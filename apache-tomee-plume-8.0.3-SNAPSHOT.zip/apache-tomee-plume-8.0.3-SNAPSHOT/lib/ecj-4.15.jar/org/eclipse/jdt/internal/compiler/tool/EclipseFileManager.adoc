@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/tool/EclipseFileManager.class
-
- - link:EclipseFileManager-asmified.java[Asmified]
-
-== References
-

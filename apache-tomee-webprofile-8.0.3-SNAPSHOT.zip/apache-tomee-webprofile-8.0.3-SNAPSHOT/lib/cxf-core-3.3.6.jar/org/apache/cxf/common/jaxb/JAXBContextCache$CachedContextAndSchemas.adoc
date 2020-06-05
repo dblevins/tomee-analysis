@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBContextCache$CachedContextAndSchemas.class
-
- - link:JAXBContextCache$CachedContextAndSchemas-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/util/IOTools.class
-
- - link:IOTools-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/StoreQuery$Executor.class
-
- - link:StoreQuery$Executor-asmified.java[Asmified]
-
-== References
-

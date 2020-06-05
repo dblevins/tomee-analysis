@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionValidator.class
-
- - link:JobStoreSupport$TransactionValidator-asmified.java[Asmified]
-
-== References
-

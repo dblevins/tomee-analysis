@@ -1,6 +1,0 @@
-= com/sun/faces/application/ValidateComponentNesting.class
-
- - link:ValidateComponentNesting-asmified.java[Asmified]
-
-== References
-

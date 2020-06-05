@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ConnectionPoolTimeoutException.class
-
- - link:ConnectionPoolTimeoutException-asmified.java[Asmified]
-
-== References
-

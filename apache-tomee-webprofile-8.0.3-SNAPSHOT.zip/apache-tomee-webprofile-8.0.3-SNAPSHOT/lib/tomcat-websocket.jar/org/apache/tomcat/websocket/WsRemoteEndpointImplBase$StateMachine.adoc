@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$StateMachine.class
-
- - link:WsRemoteEndpointImplBase$StateMachine-asmified.java[Asmified]
-
-== References
-

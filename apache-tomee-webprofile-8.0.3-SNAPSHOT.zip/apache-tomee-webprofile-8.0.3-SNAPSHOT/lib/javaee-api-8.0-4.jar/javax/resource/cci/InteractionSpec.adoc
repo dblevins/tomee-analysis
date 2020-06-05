@@ -1,6 +1,0 @@
-= javax/resource/cci/InteractionSpec.class
-
- - link:InteractionSpec-asmified.java[Asmified]
-
-== References
-

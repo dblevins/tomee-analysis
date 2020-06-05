@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonProviderImpl.class
-
- - link:JsonProviderImpl-asmified.java[Asmified]
-
-== References
-

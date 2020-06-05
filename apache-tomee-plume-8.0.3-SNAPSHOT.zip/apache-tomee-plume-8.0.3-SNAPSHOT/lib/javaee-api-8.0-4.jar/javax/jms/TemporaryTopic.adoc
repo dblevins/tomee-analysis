@@ -1,8 +1,0 @@
-= javax/jms/TemporaryTopic.class
-
- - link:TemporaryTopic-asmified.java[Asmified]
-
-== References
-
- - javax.jms.Topic - 1
- - javax.jms.JMSException - 1

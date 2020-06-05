@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/service/AbstractReloadableService.class
-
- - link:AbstractReloadableService-asmified.java[Asmified]
-
-== References
-

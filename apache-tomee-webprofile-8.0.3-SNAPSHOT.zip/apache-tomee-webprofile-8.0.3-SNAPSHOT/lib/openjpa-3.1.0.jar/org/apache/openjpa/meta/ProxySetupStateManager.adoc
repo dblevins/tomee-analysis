@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/ProxySetupStateManager.class
-
- - link:ProxySetupStateManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/security/impl/SAMLProtocolMessageXMLSignatureSecurityHandler.class
-
- - link:SAMLProtocolMessageXMLSignatureSecurityHandler-asmified.java[Asmified]
-
-== References
-

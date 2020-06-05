@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/MultipleEndpointObserver.class
-
- - link:MultipleEndpointObserver-asmified.java[Asmified]
-
-== References
-

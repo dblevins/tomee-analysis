@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/AbstractUpdateManager$CustomMapping.class
-
- - link:AbstractUpdateManager$CustomMapping-asmified.java[Asmified]
-
-== References
-

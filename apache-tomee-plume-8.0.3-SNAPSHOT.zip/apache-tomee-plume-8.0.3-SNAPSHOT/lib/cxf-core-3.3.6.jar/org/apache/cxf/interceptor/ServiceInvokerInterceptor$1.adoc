@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/ServiceInvokerInterceptor$1.class
-
- - link:ServiceInvokerInterceptor$1-asmified.java[Asmified]
-
-== References
-

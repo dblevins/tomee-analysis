@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JDBCPersistenceAdapter$4.class
-
- - link:JDBCPersistenceAdapter$4-asmified.java[Asmified]
-
-== References
-

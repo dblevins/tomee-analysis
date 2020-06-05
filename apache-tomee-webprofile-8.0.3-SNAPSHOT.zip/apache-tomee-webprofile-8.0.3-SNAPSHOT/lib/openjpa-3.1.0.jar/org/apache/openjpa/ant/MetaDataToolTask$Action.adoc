@@ -1,6 +1,0 @@
-= org/apache/openjpa/ant/MetaDataToolTask$Action.class
-
- - link:MetaDataToolTask$Action-asmified.java[Asmified]
-
-== References
-

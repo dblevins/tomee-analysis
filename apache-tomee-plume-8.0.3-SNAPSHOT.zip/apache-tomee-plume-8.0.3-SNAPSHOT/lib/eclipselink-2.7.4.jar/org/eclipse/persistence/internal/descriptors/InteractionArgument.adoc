@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/InteractionArgument.class
-
- - link:InteractionArgument-asmified.java[Asmified]
-
-== References
-

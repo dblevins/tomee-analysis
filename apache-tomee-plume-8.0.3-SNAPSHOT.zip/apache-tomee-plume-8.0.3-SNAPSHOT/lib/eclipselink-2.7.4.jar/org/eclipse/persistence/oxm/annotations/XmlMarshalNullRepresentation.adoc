@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlMarshalNullRepresentation.class
-
- - link:XmlMarshalNullRepresentation-asmified.java[Asmified]
-
-== References
-

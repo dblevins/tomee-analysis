@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Compiler.class
-
- - link:Compiler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/Struct.class
-
- - link:Struct-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/HttpMethod.class
-
- - link:HttpMethod-asmified.java[Asmified]
-
-== References
-

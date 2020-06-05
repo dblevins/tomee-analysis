@@ -1,6 +1,0 @@
-= org/apache/commons/dbcp2/cpdsadapter/ConnectionImpl.class
-
- - link:ConnectionImpl-asmified.java[Asmified]
-
-== References
-

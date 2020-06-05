@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/DefaultClusteredJobStore$LocalLockState.class
-
- - link:DefaultClusteredJobStore$LocalLockState-asmified.java[Asmified]
-
-== References
-

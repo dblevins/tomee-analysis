@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/ExternalAnnotationProvider$2.class
-
- - link:ExternalAnnotationProvider$2-asmified.java[Asmified]
-
-== References
-

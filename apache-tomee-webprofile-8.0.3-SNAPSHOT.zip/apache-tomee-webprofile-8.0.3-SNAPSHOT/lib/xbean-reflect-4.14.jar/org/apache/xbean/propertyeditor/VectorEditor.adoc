@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/VectorEditor.class
-
- - link:VectorEditor-asmified.java[Asmified]
-
-== References
-

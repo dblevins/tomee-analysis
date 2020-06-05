@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/DiscoveryRange.class
-
- - link:DiscoveryRange-asmified.java[Asmified]
-
-== References
-

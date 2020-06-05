@@ -1,6 +1,0 @@
-= org/apache/webbeans/boot/Bootstrap$1.class
-
- - link:Bootstrap$1-asmified.java[Asmified]
-
-== References
-

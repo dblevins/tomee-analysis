@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/CarriedKeyName.class
-
- - link:CarriedKeyName-asmified.java[Asmified]
-
-== References
-

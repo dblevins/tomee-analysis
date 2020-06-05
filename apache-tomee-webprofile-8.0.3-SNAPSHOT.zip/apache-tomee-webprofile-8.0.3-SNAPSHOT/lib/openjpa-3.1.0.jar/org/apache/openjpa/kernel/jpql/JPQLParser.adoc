@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/jpql/JPQLParser.class
-
- - link:JPQLParser-asmified.java[Asmified]
-
-== References
-

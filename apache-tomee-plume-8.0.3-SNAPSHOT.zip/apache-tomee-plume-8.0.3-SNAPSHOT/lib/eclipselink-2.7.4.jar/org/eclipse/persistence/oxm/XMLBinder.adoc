@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/XMLBinder.class
-
- - link:XMLBinder-asmified.java[Asmified]
-
-== References
-

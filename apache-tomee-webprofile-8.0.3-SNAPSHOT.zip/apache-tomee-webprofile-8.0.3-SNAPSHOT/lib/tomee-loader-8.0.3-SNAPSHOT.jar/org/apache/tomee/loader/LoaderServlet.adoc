@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/LoaderServlet.class
-
- - link:LoaderServlet-asmified.java[Asmified]
-
-== References
-

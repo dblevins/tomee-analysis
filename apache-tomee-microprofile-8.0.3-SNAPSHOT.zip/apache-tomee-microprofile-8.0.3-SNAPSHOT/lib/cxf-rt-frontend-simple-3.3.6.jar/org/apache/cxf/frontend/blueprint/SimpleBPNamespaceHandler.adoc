@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/blueprint/SimpleBPNamespaceHandler.class
-
- - link:SimpleBPNamespaceHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/AbstractTransactionListener.class
-
- - link:AbstractTransactionListener-asmified.java[Asmified]
-
-== References
-

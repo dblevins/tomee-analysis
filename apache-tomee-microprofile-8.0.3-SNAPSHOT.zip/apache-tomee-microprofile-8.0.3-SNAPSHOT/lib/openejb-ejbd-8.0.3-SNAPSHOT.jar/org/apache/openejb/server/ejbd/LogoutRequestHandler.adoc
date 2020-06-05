@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/LogoutRequestHandler.class
-
- - link:LogoutRequestHandler-asmified.java[Asmified]
-
-== References
-

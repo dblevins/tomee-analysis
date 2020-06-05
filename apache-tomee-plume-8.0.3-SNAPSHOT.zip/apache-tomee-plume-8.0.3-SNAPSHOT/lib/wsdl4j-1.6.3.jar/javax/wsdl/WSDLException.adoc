@@ -1,6 +1,0 @@
-= javax/wsdl/WSDLException.class
-
- - link:WSDLException-asmified.java[Asmified]
-
-== References
-

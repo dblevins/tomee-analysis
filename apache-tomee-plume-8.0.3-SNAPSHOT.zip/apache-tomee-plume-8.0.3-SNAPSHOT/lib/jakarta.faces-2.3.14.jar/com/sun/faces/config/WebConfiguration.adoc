@@ -1,6 +1,0 @@
-= com/sun/faces/config/WebConfiguration.class
-
- - link:WebConfiguration-asmified.java[Asmified]
-
-== References
-

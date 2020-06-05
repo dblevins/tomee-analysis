@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/lateral/LateralElementDescriptor.class
-
- - link:LateralElementDescriptor-asmified.java[Asmified]
-
-== References
-

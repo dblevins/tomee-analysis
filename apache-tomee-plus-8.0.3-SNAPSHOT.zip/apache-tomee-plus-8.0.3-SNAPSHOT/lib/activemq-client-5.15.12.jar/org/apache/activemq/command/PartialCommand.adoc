@@ -1,6 +1,0 @@
-= org/apache/activemq/command/PartialCommand.class
-
- - link:PartialCommand-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler.class
-
- - link:AnnotationDeployer$ProcessAnnotatedBeans$ConcurrentMethodHandler-asmified.java[Asmified]
-
-== References
-

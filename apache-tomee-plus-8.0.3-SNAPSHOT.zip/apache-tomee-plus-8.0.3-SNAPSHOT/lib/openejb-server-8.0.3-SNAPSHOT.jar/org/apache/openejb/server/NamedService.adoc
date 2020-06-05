@@ -1,6 +1,0 @@
-= org/apache/openejb/server/NamedService.class
-
- - link:NamedService-asmified.java[Asmified]
-
-== References
-

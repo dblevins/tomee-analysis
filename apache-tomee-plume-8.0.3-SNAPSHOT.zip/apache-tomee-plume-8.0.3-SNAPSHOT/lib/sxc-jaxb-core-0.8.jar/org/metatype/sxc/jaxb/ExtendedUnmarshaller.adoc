@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/ExtendedUnmarshaller.class
-
- - link:ExtendedUnmarshaller-asmified.java[Asmified]
-
-== References
-

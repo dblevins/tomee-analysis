@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/ControlledValidationXmlBeanDefinitionReader$1.class
-
- - link:ControlledValidationXmlBeanDefinitionReader$1-asmified.java[Asmified]
-
-== References
-

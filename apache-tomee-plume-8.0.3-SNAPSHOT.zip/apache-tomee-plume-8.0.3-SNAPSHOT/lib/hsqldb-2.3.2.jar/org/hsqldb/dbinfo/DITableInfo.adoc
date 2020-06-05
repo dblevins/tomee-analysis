@@ -1,6 +1,0 @@
-= org/hsqldb/dbinfo/DITableInfo.class
-
- - link:DITableInfo-asmified.java[Asmified]
-
-== References
-

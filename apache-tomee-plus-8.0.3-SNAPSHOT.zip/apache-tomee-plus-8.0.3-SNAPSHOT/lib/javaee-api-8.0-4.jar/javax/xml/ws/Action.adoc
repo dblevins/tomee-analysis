@@ -1,7 +1,0 @@
-= javax/xml/ws/Action.class
-
- - link:Action-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.FaultAction - 1

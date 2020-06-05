@@ -1,6 +1,0 @@
-= org/apache/openejb/OpenEjbContainer$InvalidApplicationException.class
-
- - link:OpenEjbContainer$InvalidApplicationException-asmified.java[Asmified]
-
-== References
-

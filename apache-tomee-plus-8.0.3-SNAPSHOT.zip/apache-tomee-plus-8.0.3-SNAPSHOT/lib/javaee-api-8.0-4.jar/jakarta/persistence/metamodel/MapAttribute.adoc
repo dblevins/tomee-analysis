@@ -1,6 +1,0 @@
-= jakarta/persistence/metamodel/MapAttribute.class
-
- - link:MapAttribute-asmified.java[Asmified]
-
-== References
-

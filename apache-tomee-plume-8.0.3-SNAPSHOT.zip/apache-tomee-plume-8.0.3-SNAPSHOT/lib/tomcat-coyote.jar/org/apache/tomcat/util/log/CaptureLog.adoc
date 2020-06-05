@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/log/CaptureLog.class
-
- - link:CaptureLog-asmified.java[Asmified]
-
-== References
-

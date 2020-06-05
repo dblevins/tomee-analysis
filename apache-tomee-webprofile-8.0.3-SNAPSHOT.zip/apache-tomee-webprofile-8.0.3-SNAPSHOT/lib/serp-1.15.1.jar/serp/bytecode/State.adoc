@@ -1,6 +1,0 @@
-= serp/bytecode/State.class
-
- - link:State-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/ClassPathUtils.class
-
- - link:ClassPathUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/TreatExpression.class
-
- - link:TreatExpression-asmified.java[Asmified]
-
-== References
-

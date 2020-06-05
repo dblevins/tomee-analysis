@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MultiKahaDBTransactionStore.class
-
- - link:MultiKahaDBTransactionStore-asmified.java[Asmified]
-
-== References
-

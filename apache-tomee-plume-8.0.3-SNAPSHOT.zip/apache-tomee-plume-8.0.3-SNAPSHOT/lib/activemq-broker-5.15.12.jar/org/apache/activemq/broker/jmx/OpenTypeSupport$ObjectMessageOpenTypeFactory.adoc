@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/OpenTypeSupport$ObjectMessageOpenTypeFactory.class
-
- - link:OpenTypeSupport$ObjectMessageOpenTypeFactory-asmified.java[Asmified]
-
-== References
-

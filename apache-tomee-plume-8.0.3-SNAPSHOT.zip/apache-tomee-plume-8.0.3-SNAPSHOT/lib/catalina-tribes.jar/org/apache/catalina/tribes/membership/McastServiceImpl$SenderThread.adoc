@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/membership/McastServiceImpl$SenderThread.class
-
- - link:McastServiceImpl$SenderThread-asmified.java[Asmified]
-
-== References
-

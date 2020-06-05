@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/parser/MimeStreamParser.class
-
- - link:MimeStreamParser-asmified.java[Asmified]
-
-== References
-

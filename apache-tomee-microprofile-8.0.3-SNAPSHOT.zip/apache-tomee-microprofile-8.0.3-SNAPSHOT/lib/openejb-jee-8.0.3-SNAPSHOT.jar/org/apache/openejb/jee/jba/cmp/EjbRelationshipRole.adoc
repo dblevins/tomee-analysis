@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/EjbRelationshipRole.class
-
- - link:EjbRelationshipRole-asmified.java[Asmified]
-
-== References
-

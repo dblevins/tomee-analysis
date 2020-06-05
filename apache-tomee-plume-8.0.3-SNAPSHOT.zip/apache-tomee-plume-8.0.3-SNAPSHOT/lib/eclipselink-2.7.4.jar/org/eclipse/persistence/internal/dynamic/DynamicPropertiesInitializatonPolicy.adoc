@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/dynamic/DynamicPropertiesInitializatonPolicy.class
-
- - link:DynamicPropertiesInitializatonPolicy-asmified.java[Asmified]
-
-== References
-

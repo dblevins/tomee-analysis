@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/AnnotationUtils.class
-
- - link:AnnotationUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/session/SessionMessage.class
-
- - link:SessionMessage-asmified.java[Asmified]
-
-== References
-

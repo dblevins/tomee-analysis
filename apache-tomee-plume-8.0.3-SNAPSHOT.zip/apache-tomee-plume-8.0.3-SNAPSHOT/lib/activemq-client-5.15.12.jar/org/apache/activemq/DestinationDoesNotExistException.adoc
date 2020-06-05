@@ -1,6 +1,0 @@
-= org/apache/activemq/DestinationDoesNotExistException.class
-
- - link:DestinationDoesNotExistException-asmified.java[Asmified]
-
-== References
-

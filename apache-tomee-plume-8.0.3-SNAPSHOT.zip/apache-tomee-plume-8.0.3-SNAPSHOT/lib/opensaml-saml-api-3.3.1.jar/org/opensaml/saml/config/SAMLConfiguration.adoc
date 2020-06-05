@@ -1,6 +1,0 @@
-= org/opensaml/saml/config/SAMLConfiguration.class
-
- - link:SAMLConfiguration-asmified.java[Asmified]
-
-== References
-

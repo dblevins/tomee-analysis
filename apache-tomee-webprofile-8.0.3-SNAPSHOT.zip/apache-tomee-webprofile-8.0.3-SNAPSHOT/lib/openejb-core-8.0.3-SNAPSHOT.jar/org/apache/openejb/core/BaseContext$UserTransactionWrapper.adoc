@@ -1,6 +1,0 @@
-= org/apache/openejb/core/BaseContext$UserTransactionWrapper.class
-
- - link:BaseContext$UserTransactionWrapper-asmified.java[Asmified]
-
-== References
-

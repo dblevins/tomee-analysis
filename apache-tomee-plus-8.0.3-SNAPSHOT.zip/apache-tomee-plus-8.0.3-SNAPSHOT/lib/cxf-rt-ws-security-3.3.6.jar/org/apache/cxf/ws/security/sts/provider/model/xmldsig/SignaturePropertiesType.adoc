@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/xmldsig/SignaturePropertiesType.class
-
- - link:SignaturePropertiesType-asmified.java[Asmified]
-
-== References
-

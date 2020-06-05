@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/saml/builder/SAML2Constants.class
-
- - link:SAML2Constants-asmified.java[Asmified]
-
-== References
-

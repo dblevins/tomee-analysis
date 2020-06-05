@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/ElementCollection.class
-
- - link:ElementCollection-asmified.java[Asmified]
-
-== References
-

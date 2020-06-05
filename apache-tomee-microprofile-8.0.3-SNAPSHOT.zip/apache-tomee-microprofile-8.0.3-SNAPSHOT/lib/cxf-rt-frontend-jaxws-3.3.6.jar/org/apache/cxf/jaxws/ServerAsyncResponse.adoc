@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/ServerAsyncResponse.class
-
- - link:ServerAsyncResponse-asmified.java[Asmified]
-
-== References
-

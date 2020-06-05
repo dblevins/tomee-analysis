@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/CheckSignatureAdapter.class
-
- - link:CheckSignatureAdapter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= io/opentracing/propagation/TextMap.class
-
- - link:TextMap-asmified.java[Asmified]
-
-== References
-

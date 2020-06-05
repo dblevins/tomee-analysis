@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/XmlSchemaPrimitiveUtils.class
-
- - link:XmlSchemaPrimitiveUtils-asmified.java[Asmified]
-
-== References
-

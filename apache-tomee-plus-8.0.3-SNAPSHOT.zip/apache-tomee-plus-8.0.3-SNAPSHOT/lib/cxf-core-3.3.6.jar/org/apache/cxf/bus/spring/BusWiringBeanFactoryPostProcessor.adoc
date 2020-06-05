@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/BusWiringBeanFactoryPostProcessor.class
-
- - link:BusWiringBeanFactoryPostProcessor-asmified.java[Asmified]
-
-== References
-

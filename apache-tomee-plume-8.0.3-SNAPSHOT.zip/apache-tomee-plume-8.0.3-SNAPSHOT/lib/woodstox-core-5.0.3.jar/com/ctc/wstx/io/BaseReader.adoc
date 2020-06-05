@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/BaseReader.class
-
- - link:BaseReader-asmified.java[Asmified]
-
-== References
-

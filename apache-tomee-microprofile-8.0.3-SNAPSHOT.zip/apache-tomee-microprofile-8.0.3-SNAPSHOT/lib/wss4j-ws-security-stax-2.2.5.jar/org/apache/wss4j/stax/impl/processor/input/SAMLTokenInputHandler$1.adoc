@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/input/SAMLTokenInputHandler$1.class
-
- - link:SAMLTokenInputHandler$1-asmified.java[Asmified]
-
-== References
-

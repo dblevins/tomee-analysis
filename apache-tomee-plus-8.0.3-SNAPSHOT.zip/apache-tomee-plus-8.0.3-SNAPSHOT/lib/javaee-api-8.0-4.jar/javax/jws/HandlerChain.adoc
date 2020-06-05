@@ -1,6 +1,0 @@
-= javax/jws/HandlerChain.class
-
- - link:HandlerChain-asmified.java[Asmified]
-
-== References
-

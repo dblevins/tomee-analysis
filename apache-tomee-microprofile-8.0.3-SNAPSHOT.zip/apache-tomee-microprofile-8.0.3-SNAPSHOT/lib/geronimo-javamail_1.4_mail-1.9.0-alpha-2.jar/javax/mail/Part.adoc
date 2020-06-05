@@ -1,9 +1,0 @@
-= javax/mail/Part.class
-
- - link:Part-asmified.java[Asmified]
-
-== References
-
- - javax.mail.MessagingException - 25
- - javax.activation.DataHandler - 2
- - javax.mail.Multipart - 1

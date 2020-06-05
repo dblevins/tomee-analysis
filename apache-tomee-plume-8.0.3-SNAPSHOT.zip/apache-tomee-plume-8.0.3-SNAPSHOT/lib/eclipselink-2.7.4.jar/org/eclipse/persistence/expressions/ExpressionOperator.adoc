@@ -1,6 +1,0 @@
-= org/eclipse/persistence/expressions/ExpressionOperator.class
-
- - link:ExpressionOperator-asmified.java[Asmified]
-
-== References
-

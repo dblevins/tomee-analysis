@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2alg/SigningMethod.class
-
- - link:SigningMethod-asmified.java[Asmified]
-
-== References
-

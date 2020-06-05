@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/JweEncryption.class
-
- - link:JweEncryption-asmified.java[Asmified]
-
-== References
-

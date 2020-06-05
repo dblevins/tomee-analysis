@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/LifecycleConfigProcessor.class
-
- - link:LifecycleConfigProcessor-asmified.java[Asmified]
-
-== References
-

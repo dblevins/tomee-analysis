@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/util/Sequence.class
-
- - link:Sequence-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/Association.class
-
- - link:Association-asmified.java[Asmified]
-
-== References
-

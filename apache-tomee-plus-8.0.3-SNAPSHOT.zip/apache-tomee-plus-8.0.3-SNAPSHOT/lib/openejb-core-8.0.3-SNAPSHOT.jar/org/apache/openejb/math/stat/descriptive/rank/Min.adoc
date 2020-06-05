@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/rank/Min.class
-
- - link:Min-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/bcel/classfile/Constant.class
-
- - link:Constant-asmified.java[Asmified]
-
-== References
-

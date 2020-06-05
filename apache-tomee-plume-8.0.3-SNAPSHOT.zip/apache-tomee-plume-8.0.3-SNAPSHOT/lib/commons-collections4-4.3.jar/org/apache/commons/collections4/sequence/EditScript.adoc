@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/sequence/EditScript.class
-
- - link:EditScript-asmified.java[Asmified]
-
-== References
-

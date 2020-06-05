@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/metrics/annotation/Counted.class
-
- - link:Counted-asmified.java[Asmified]
-
-== References
-

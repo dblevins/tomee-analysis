@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/WhereNode.class
-
- - link:WhereNode-asmified.java[Asmified]
-
-== References
-

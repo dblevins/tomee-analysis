@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/ApplicationIdTool$ObjectIdLoader.class
-
- - link:ApplicationIdTool$ObjectIdLoader-asmified.java[Asmified]
-
-== References
-

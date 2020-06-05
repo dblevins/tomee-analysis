@@ -1,6 +1,0 @@
-= org/apache/catalina/util/SessionConfig.class
-
- - link:SessionConfig-asmified.java[Asmified]
-
-== References
-

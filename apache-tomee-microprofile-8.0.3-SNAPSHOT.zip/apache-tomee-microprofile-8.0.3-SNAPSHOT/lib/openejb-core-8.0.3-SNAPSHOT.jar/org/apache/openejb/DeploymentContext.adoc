@@ -1,6 +1,0 @@
-= org/apache/openejb/DeploymentContext.class
-
- - link:DeploymentContext-asmified.java[Asmified]
-
-== References
-

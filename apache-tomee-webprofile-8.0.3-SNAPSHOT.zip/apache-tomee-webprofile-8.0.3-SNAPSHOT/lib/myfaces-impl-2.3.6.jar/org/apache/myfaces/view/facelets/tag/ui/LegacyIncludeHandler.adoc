@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/LegacyIncludeHandler.class
-
- - link:LegacyIncludeHandler-asmified.java[Asmified]
-
-== References
-

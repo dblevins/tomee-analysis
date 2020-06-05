@@ -1,6 +1,0 @@
-= jakarta/mail/event/FolderEvent.class
-
- - link:FolderEvent-asmified.java[Asmified]
-
-== References
-

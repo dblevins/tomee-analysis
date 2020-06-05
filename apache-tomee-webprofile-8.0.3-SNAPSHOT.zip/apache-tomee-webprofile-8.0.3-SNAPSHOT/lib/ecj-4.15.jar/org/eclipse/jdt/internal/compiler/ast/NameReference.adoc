@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/NameReference.class
-
- - link:NameReference-asmified.java[Asmified]
-
-== References
-

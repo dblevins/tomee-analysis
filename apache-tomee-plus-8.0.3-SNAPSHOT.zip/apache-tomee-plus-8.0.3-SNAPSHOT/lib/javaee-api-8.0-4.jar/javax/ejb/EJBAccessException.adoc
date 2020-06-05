@@ -1,7 +1,0 @@
-= javax/ejb/EJBAccessException.class
-
- - link:EJBAccessException-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 3

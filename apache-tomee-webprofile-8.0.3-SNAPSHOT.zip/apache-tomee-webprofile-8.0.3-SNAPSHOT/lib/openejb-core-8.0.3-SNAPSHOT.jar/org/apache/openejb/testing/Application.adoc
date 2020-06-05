@@ -1,6 +1,0 @@
-= org/apache/openejb/testing/Application.class
-
- - link:Application-asmified.java[Asmified]
-
-== References
-

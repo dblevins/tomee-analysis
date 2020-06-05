@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/Tomee.class
-
- - link:Tomee-asmified.java[Asmified]
-
-== References
-

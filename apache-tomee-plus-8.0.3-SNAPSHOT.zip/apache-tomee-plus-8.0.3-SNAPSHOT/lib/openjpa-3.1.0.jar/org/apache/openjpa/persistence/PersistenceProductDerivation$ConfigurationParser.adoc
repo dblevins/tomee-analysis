@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistenceProductDerivation$ConfigurationParser.class
-
- - link:PersistenceProductDerivation$ConfigurationParser-asmified.java[Asmified]
-
-== References
-

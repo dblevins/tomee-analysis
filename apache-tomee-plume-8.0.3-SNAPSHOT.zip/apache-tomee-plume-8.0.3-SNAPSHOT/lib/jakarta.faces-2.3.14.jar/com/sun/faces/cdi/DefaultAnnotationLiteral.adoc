@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/DefaultAnnotationLiteral.class
-
- - link:DefaultAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

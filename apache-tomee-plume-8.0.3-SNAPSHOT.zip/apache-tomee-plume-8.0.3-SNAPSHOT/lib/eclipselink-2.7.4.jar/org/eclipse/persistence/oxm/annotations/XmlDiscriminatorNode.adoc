@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlDiscriminatorNode.class
-
- - link:XmlDiscriminatorNode-asmified.java[Asmified]
-
-== References
-

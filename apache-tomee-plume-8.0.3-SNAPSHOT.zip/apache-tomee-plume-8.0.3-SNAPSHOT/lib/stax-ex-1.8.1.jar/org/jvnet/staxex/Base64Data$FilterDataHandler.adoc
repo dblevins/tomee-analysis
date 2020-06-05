@@ -1,6 +1,0 @@
-= org/jvnet/staxex/Base64Data$FilterDataHandler.class
-
- - link:Base64Data$FilterDataHandler-asmified.java[Asmified]
-
-== References
-

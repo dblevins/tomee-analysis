@@ -1,6 +1,0 @@
-= org/joda/time/format/PeriodFormatterBuilder$CompositeAffix.class
-
- - link:PeriodFormatterBuilder$CompositeAffix-asmified.java[Asmified]
-
-== References
-

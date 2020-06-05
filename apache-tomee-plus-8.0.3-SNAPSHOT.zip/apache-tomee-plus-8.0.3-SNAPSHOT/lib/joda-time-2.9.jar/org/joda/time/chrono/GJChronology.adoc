@@ -1,6 +1,0 @@
-= org/joda/time/chrono/GJChronology.class
-
- - link:GJChronology-asmified.java[Asmified]
-
-== References
-

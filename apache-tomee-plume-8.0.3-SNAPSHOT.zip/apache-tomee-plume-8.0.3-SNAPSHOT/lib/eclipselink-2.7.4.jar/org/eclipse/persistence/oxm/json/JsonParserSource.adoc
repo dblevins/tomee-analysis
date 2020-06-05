@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/json/JsonParserSource.class
-
- - link:JsonParserSource-asmified.java[Asmified]
-
-== References
-

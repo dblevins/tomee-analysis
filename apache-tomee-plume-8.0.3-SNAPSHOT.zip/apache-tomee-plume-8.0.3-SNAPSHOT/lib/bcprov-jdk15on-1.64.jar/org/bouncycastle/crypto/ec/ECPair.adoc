@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/ec/ECPair.class
-
- - link:ECPair-asmified.java[Asmified]
-
-== References
-

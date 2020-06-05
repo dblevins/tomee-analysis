@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Like.class
-
- - link:Expressions$Like-asmified.java[Asmified]
-
-== References
-

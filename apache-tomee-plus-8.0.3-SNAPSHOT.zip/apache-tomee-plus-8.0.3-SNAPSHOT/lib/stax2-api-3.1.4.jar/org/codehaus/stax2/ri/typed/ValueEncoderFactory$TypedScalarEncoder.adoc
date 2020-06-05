@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/ValueEncoderFactory$TypedScalarEncoder.class
-
- - link:ValueEncoderFactory$TypedScalarEncoder-asmified.java[Asmified]
-
-== References
-

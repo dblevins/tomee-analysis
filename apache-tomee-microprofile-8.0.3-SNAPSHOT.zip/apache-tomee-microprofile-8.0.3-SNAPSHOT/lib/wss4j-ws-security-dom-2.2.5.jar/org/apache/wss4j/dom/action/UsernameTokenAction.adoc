@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/action/UsernameTokenAction.class
-
- - link:UsernameTokenAction-asmified.java[Asmified]
-
-== References
-

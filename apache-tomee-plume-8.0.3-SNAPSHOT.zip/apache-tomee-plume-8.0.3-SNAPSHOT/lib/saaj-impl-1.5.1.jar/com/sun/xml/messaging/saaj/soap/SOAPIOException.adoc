@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/SOAPIOException.class
-
- - link:SOAPIOException-asmified.java[Asmified]
-
-== References
-

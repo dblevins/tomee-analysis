@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/datasources/InstanceKeyDataSource.class
-
- - link:InstanceKeyDataSource-asmified.java[Asmified]
-
-== References
-

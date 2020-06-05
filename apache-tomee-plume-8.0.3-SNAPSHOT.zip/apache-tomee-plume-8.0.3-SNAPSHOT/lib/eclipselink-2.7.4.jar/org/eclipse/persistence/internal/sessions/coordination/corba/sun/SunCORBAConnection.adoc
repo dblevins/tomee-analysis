@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/coordination/corba/sun/SunCORBAConnection.class
-
- - link:SunCORBAConnection-asmified.java[Asmified]
-
-== References
-

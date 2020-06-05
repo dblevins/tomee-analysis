@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.class
-
- - link:PropertyValueBuffer-asmified.java[Asmified]
-
-== References
-

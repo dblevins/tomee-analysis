@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejb/CMPAttribute.class
-
- - link:CMPAttribute-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/chrono/GJChronology$CutoverField.class
-
- - link:GJChronology$CutoverField-asmified.java[Asmified]
-
-== References
-

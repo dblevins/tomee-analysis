@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/ICompilationUnit.class
-
- - link:ICompilationUnit-asmified.java[Asmified]
-
-== References
-

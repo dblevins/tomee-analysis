@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/meta/ClassArgParser.class
-
- - link:ClassArgParser-asmified.java[Asmified]
-
-== References
-

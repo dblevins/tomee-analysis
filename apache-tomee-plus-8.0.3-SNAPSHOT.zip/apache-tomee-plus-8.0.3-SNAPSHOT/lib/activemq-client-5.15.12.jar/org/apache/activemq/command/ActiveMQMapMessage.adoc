@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQMapMessage.class
-
- - link:ActiveMQMapMessage-asmified.java[Asmified]
-
-== References
-

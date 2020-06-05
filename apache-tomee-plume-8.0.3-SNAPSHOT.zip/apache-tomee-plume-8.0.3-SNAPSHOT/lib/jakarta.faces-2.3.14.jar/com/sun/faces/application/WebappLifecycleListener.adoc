@@ -1,6 +1,0 @@
-= com/sun/faces/application/WebappLifecycleListener.class
-
- - link:WebappLifecycleListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/selector/Token.class
-
- - link:Token-asmified.java[Asmified]
-
-== References
-

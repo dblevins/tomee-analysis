@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogEventListener.class
-
- - link:LogEventListener-asmified.java[Asmified]
-
-== References
-

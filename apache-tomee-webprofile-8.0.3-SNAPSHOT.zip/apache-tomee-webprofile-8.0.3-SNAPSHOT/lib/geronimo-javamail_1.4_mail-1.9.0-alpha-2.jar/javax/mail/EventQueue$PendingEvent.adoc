@@ -1,8 +1,0 @@
-= javax/mail/EventQueue$PendingEvent.class
-
- - link:EventQueue$PendingEvent-asmified.java[Asmified]
-
-== References
-
- - javax.mail.EventQueue - 3
- - javax.mail.event.MailEvent - 3

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesApplication.class
-
- - link:FacesApplication-asmified.java[Asmified]
-
-== References
-

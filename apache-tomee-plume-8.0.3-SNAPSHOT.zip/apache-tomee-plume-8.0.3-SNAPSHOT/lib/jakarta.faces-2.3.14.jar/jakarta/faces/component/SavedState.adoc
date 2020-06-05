@@ -1,6 +1,0 @@
-= jakarta/faces/component/SavedState.class
-
- - link:SavedState-asmified.java[Asmified]
-
-== References
-

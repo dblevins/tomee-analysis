@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/NamedNativeQuery.class
-
- - link:NamedNativeQuery-asmified.java[Asmified]
-
-== References
-

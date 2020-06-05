@@ -1,6 +1,0 @@
-= org/apache/openejb/web/LightweightWebAppBuilder$SimpleFilterConfig.class
-
- - link:LightweightWebAppBuilder$SimpleFilterConfig-asmified.java[Asmified]
-
-== References
-

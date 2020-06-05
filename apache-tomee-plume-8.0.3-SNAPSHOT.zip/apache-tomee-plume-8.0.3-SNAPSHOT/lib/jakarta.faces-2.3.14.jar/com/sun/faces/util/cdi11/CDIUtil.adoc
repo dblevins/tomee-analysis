@@ -1,6 +1,0 @@
-= com/sun/faces/util/cdi11/CDIUtil.class
-
- - link:CDIUtil-asmified.java[Asmified]
-
-== References
-

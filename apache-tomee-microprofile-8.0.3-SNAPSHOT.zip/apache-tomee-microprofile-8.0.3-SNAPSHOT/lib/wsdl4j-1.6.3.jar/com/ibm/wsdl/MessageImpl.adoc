@@ -1,6 +1,0 @@
-= com/ibm/wsdl/MessageImpl.class
-
- - link:MessageImpl-asmified.java[Asmified]
-
-== References
-

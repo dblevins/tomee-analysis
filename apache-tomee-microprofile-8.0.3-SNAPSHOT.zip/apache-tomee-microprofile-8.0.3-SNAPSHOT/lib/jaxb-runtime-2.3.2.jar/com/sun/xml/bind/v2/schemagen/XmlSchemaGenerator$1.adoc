@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/XmlSchemaGenerator$1.class
-
- - link:XmlSchemaGenerator$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/features/FeatureSetV2.class
-
- - link:FeatureSetV2-asmified.java[Asmified]
-
-== References
-

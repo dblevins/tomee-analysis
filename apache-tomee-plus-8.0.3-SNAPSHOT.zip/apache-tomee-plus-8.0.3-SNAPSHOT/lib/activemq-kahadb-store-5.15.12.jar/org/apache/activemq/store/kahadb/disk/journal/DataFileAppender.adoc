@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/journal/DataFileAppender.class
-
- - link:DataFileAppender-asmified.java[Asmified]
-
-== References
-

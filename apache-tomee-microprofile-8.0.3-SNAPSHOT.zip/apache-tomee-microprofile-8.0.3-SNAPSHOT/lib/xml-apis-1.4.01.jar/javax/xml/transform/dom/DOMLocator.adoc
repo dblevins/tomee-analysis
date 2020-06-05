@@ -1,6 +1,0 @@
-= javax/xml/transform/dom/DOMLocator.class
-
- - link:DOMLocator-asmified.java[Asmified]
-
-== References
-

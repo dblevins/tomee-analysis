@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/DefaultClusteredJobStore$1.class
-
- - link:DefaultClusteredJobStore$1-asmified.java[Asmified]
-
-== References
-

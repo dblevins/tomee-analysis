@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/UIText.class
-
- - link:UIText-asmified.java[Asmified]
-
-== References
-

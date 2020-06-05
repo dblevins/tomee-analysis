@@ -1,6 +1,0 @@
-= org/hsqldb/persist/LobManager$DELETE_BLOCKS.class
-
- - link:LobManager$DELETE_BLOCKS-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/chrono/ISOYearOfEraDateTimeField.class
-
- - link:ISOYearOfEraDateTimeField-asmified.java[Asmified]
-
-== References
-

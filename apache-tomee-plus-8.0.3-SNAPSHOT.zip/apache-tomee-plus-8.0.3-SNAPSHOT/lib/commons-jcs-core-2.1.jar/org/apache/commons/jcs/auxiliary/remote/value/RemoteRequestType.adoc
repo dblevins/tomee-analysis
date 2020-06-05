@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/value/RemoteRequestType.class
-
- - link:RemoteRequestType-asmified.java[Asmified]
-
-== References
-

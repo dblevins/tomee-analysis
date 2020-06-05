@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/transaction/JTAUserTransactionAdapter.class
-
- - link:JTAUserTransactionAdapter-asmified.java[Asmified]
-
-== References
-

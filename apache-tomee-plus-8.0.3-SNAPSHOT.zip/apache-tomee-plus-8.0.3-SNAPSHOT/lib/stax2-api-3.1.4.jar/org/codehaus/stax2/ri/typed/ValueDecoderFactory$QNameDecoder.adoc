@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/ValueDecoderFactory$QNameDecoder.class
-
- - link:ValueDecoderFactory$QNameDecoder-asmified.java[Asmified]
-
-== References
-

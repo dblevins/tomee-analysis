@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/impl/SpanBuilderImpl.class
-
- - link:SpanBuilderImpl-asmified.java[Asmified]
-
-== References
-

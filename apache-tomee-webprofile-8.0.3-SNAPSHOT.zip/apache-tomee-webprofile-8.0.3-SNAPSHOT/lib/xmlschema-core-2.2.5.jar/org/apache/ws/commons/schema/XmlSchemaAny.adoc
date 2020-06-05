@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaAny.class
-
- - link:XmlSchemaAny-asmified.java[Asmified]
-
-== References
-

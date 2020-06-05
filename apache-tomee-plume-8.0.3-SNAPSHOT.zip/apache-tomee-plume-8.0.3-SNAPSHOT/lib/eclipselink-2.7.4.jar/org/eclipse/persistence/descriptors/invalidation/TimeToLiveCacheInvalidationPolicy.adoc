@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/invalidation/TimeToLiveCacheInvalidationPolicy.class
-
- - link:TimeToLiveCacheInvalidationPolicy-asmified.java[Asmified]
-
-== References
-

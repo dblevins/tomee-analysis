@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/DelayedPriorityQueueProxy.class
-
- - link:DelayedPriorityQueueProxy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/SimpleVerifier.class
-
- - link:SimpleVerifier-asmified.java[Asmified]
-
-== References
-

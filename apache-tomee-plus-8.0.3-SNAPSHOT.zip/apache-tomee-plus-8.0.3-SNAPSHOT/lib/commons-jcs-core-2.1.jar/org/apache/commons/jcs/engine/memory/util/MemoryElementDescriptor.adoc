@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/memory/util/MemoryElementDescriptor.class
-
- - link:MemoryElementDescriptor-asmified.java[Asmified]
-
-== References
-

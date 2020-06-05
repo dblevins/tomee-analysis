@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/CacheStatisticsImpl.class
-
- - link:CacheStatisticsImpl-asmified.java[Asmified]
-
-== References
-

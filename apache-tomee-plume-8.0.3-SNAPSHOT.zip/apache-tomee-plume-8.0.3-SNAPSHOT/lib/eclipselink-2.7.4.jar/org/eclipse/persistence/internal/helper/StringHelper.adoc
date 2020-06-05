@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/StringHelper.class
-
- - link:StringHelper-asmified.java[Asmified]
-
-== References
-

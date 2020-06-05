@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/ResourceBackedMetadataResolver.class
-
- - link:ResourceBackedMetadataResolver-asmified.java[Asmified]
-
-== References
-

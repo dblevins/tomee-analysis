@@ -1,6 +1,0 @@
-= org/apache/openejb/config/provider/InvalidProviderDeclarationException.class
-
- - link:InvalidProviderDeclarationException-asmified.java[Asmified]
-
-== References
-

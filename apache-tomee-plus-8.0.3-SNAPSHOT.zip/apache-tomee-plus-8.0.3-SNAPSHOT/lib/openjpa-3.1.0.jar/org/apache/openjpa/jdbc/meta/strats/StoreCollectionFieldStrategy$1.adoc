@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/StoreCollectionFieldStrategy$1.class
-
- - link:StoreCollectionFieldStrategy$1-asmified.java[Asmified]
-
-== References
-

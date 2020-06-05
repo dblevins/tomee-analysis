@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/EcDsaJwsSignatureProvider.class
-
- - link:EcDsaJwsSignatureProvider-asmified.java[Asmified]
-
-== References
-

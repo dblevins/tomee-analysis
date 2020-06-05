@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/PluginDeclarationRule.class
-
- - link:PluginDeclarationRule-asmified.java[Asmified]
-
-== References
-

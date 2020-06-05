@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ArrayStateImage.class
-
- - link:ArrayStateImage-asmified.java[Asmified]
-
-== References
-

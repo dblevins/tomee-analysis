@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/plist/PListStoreImpl$1.class
-
- - link:PListStoreImpl$1-asmified.java[Asmified]
-
-== References
-

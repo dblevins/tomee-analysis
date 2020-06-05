@@ -1,6 +1,0 @@
-= org/joda/time/chrono/BasicWeekOfWeekyearDateTimeField.class
-
- - link:BasicWeekOfWeekyearDateTimeField-asmified.java[Asmified]
-
-== References
-

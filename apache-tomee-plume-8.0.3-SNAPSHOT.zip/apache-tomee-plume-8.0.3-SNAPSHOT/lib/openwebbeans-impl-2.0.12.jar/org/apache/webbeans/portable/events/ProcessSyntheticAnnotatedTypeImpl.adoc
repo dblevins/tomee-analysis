@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl.class
-
- - link:ProcessSyntheticAnnotatedTypeImpl-asmified.java[Asmified]
-
-== References
-

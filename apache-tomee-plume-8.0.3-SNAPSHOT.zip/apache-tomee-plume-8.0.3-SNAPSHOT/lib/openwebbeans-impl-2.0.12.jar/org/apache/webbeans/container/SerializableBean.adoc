@@ -1,6 +1,0 @@
-= org/apache/webbeans/container/SerializableBean.class
-
- - link:SerializableBean-asmified.java[Asmified]
-
-== References
-

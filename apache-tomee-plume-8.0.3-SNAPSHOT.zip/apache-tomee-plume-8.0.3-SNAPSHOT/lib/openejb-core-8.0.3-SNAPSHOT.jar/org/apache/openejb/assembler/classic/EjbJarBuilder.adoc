@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/EjbJarBuilder.class
-
- - link:EjbJarBuilder-asmified.java[Asmified]
-
-== References
-

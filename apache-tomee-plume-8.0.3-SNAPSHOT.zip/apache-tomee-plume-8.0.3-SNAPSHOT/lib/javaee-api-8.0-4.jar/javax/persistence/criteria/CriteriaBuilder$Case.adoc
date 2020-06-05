@@ -1,8 +1,0 @@
-= javax/persistence/criteria/CriteriaBuilder$Case.class
-
- - link:CriteriaBuilder$Case-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.criteria.Expression - 7
- - javax.persistence.criteria.CriteriaBuilder$Case - 2

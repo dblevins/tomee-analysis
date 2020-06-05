@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/DatagramTransport.class
-
- - link:DatagramTransport-asmified.java[Asmified]
-
-== References
-

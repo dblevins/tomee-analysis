@@ -1,6 +1,0 @@
-= org/apache/myfaces/util/IllegalXmlCharacterFilterWriter.class
-
- - link:IllegalXmlCharacterFilterWriter-asmified.java[Asmified]
-
-== References
-

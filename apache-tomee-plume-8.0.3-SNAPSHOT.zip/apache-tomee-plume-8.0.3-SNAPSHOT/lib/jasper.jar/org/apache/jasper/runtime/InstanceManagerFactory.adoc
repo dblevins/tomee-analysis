@@ -1,6 +1,0 @@
-= org/apache/jasper/runtime/InstanceManagerFactory.class
-
- - link:InstanceManagerFactory-asmified.java[Asmified]
-
-== References
-

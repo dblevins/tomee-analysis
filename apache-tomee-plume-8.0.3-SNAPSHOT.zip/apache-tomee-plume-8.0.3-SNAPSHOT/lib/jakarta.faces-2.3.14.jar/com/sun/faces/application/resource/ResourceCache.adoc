@@ -1,6 +1,0 @@
-= com/sun/faces/application/resource/ResourceCache.class
-
- - link:ResourceCache-asmified.java[Asmified]
-
-== References
-

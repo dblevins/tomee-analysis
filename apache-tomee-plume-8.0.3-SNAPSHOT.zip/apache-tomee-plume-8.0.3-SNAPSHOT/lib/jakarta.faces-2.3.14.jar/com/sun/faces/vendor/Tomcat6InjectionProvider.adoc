@@ -1,6 +1,0 @@
-= com/sun/faces/vendor/Tomcat6InjectionProvider.class
-
- - link:Tomcat6InjectionProvider-asmified.java[Asmified]
-
-== References
-

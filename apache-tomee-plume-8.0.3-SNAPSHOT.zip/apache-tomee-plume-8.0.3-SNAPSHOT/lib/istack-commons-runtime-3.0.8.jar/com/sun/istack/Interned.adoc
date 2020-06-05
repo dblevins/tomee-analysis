@@ -1,6 +1,0 @@
-= com/sun/istack/Interned.class
-
- - link:Interned-asmified.java[Asmified]
-
-== References
-

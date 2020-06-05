@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/util/FunctionLibrary.class
-
- - link:FunctionLibrary-asmified.java[Asmified]
-
-== References
-

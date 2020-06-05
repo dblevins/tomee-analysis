@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/HavingClauseBNF.class
-
- - link:HavingClauseBNF-asmified.java[Asmified]
-
-== References
-

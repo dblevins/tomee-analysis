@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/lateral/socket/tcp/LateralTCPDiscoveryListener.class
-
- - link:LateralTCPDiscoveryListener-asmified.java[Asmified]
-
-== References
-

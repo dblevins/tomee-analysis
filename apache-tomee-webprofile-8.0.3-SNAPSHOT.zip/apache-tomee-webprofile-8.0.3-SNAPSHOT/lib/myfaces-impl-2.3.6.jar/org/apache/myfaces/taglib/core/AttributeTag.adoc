@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/AttributeTag.class
-
- - link:AttributeTag-asmified.java[Asmified]
-
-== References
-

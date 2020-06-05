@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/IgnorableWhitespaceEvent.class
-
- - link:IgnorableWhitespaceEvent-asmified.java[Asmified]
-
-== References
-

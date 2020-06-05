@@ -1,9 +1,0 @@
-= javax/persistence/criteria/Predicate.class
-
- - link:Predicate-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.criteria.Expression - 2
- - javax.persistence.criteria.Predicate - 1
- - javax.persistence.criteria.Predicate$BooleanOperator - 1

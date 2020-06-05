@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/implementations/TransformXPointer.class
-
- - link:TransformXPointer-asmified.java[Asmified]
-
-== References
-

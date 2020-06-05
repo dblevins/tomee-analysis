@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/ApplicationMapProducer.class
-
- - link:ApplicationMapProducer-asmified.java[Asmified]
-
-== References
-

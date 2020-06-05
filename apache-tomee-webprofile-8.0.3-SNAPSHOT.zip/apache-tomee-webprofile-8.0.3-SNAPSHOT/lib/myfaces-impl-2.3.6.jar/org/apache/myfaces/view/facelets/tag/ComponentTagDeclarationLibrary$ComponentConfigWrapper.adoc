@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ComponentTagDeclarationLibrary$ComponentConfigWrapper.class
-
- - link:ComponentTagDeclarationLibrary$ComponentConfigWrapper-asmified.java[Asmified]
-
-== References
-

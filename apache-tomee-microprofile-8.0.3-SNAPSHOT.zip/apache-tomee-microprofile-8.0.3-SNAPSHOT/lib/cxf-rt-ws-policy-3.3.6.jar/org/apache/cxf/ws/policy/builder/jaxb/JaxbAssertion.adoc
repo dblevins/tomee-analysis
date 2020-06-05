@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/builder/jaxb/JaxbAssertion.class
-
- - link:JaxbAssertion-asmified.java[Asmified]
-
-== References
-

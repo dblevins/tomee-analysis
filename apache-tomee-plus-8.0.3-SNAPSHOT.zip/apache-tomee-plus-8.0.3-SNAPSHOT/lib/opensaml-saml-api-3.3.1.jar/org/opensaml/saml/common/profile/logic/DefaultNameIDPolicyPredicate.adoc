@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/logic/DefaultNameIDPolicyPredicate.class
-
- - link:DefaultNameIDPolicyPredicate-asmified.java[Asmified]
-
-== References
-

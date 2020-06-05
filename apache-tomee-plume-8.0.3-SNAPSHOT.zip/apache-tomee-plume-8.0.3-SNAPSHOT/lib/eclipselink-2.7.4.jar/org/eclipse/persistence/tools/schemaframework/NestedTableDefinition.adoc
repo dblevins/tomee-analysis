@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/schemaframework/NestedTableDefinition.class
-
- - link:NestedTableDefinition-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQTopicSubscriber.class
-
- - link:ActiveMQTopicSubscriber-asmified.java[Asmified]
-
-== References
-

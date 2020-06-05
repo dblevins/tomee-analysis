@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent.class
-
- - link:SimpleDiscoveryAgent$SimpleDiscoveryEvent-asmified.java[Asmified]
-
-== References
-

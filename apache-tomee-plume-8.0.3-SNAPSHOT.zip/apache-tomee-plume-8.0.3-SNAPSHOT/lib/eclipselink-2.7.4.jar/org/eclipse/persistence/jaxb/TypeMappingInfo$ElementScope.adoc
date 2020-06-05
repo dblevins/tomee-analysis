@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/TypeMappingInfo$ElementScope.class
-
- - link:TypeMappingInfo$ElementScope-asmified.java[Asmified]
-
-== References
-

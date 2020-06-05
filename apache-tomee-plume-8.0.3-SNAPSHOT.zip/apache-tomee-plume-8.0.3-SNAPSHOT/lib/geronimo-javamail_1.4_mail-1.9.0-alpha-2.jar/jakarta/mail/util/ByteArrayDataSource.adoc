@@ -1,6 +1,0 @@
-= jakarta/mail/util/ByteArrayDataSource.class
-
- - link:ByteArrayDataSource-asmified.java[Asmified]
-
-== References
-

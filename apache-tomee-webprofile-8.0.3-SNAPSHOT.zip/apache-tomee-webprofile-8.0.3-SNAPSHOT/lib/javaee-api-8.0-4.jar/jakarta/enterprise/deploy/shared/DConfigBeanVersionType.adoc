@@ -1,6 +1,0 @@
-= jakarta/enterprise/deploy/shared/DConfigBeanVersionType.class
-
- - link:DConfigBeanVersionType-asmified.java[Asmified]
-
-== References
-

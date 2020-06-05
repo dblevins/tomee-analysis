@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/util/Classpath$1.class
-
- - link:Classpath$1-asmified.java[Asmified]
-
-== References
-

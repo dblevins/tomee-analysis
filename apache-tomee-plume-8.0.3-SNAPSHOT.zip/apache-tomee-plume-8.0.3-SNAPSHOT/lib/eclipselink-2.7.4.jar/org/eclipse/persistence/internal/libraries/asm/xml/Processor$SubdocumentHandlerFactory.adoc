@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/Processor$SubdocumentHandlerFactory.class
-
- - link:Processor$SubdocumentHandlerFactory-asmified.java[Asmified]
-
-== References
-

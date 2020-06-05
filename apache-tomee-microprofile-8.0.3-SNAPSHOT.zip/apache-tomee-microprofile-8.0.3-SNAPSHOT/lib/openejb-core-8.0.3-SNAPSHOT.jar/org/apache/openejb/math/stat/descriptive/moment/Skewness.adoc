@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/moment/Skewness.class
-
- - link:Skewness-asmified.java[Asmified]
-
-== References
-

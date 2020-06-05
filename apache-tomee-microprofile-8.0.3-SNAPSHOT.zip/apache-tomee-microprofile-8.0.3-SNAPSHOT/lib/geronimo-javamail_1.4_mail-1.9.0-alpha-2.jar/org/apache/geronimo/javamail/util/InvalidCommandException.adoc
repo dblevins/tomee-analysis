@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/util/InvalidCommandException.class
-
- - link:InvalidCommandException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/security/JAASAuthenticationFilter.class
-
- - link:JAASAuthenticationFilter-asmified.java[Asmified]
-
-== References
-

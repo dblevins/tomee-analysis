@@ -1,6 +1,0 @@
-= org/hsqldb/SchemaObjectSet.class
-
- - link:SchemaObjectSet-asmified.java[Asmified]
-
-== References
-

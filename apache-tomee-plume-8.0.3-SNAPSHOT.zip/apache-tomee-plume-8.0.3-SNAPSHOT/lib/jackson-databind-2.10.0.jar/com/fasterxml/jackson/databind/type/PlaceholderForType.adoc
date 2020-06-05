@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/type/PlaceholderForType.class
-
- - link:PlaceholderForType-asmified.java[Asmified]
-
-== References
-

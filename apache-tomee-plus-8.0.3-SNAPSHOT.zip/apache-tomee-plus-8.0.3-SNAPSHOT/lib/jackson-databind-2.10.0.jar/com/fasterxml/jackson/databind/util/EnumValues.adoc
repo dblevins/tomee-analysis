@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/EnumValues.class
-
- - link:EnumValues-asmified.java[Asmified]
-
-== References
-

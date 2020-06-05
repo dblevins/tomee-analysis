@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/content/keyvalues/KeyValueContent.class
-
- - link:KeyValueContent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/cache/integration/CacheWriterException.class
-
- - link:CacheWriterException-asmified.java[Asmified]
-
-== References
-

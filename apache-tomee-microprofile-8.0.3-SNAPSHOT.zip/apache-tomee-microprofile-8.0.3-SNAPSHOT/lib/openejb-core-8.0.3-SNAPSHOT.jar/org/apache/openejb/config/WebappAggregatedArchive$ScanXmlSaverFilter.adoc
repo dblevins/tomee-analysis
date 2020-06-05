@@ -1,6 +1,0 @@
-= org/apache/openejb/config/WebappAggregatedArchive$ScanXmlSaverFilter.class
-
- - link:WebappAggregatedArchive$ScanXmlSaverFilter-asmified.java[Asmified]
-
-== References
-

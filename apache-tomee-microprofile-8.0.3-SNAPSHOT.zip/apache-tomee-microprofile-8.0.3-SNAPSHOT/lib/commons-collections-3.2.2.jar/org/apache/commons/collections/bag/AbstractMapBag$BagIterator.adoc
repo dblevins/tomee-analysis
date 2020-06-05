@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bag/AbstractMapBag$BagIterator.class
-
- - link:AbstractMapBag$BagIterator-asmified.java[Asmified]
-
-== References
-

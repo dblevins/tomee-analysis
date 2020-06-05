@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/IdClass.class
-
- - link:IdClass-asmified.java[Asmified]
-
-== References
-

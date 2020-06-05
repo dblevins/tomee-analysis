@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/agreement/X448Agreement.class
-
- - link:X448Agreement-asmified.java[Asmified]
-
-== References
-

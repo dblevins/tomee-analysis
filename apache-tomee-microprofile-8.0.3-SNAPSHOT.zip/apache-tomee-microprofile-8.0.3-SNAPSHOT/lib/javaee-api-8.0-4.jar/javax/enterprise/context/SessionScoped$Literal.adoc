@@ -1,9 +1,0 @@
-= javax/enterprise/context/SessionScoped$Literal.class
-
- - link:SessionScoped$Literal-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.SessionScoped$Literal - 4
- - javax.enterprise.util.AnnotationLiteral - 2
- - javax.enterprise.context.SessionScoped - 2

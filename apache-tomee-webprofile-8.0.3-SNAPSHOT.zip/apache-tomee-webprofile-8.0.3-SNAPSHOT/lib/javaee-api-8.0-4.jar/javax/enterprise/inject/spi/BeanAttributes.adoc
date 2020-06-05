@@ -1,6 +1,0 @@
-= javax/enterprise/inject/spi/BeanAttributes.class
-
- - link:BeanAttributes-asmified.java[Asmified]
-
-== References
-

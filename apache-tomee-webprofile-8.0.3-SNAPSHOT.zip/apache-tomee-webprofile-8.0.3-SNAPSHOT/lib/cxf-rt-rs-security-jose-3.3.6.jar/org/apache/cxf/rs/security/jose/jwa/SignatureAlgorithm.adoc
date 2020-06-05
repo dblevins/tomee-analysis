@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwa/SignatureAlgorithm.class
-
- - link:SignatureAlgorithm-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/math/field/GF2Polynomial.class
-
- - link:GF2Polynomial-asmified.java[Asmified]
-
-== References
-

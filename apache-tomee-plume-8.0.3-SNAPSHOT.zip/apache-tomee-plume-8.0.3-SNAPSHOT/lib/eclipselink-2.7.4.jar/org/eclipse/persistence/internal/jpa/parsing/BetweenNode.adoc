@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/BetweenNode.class
-
- - link:BetweenNode-asmified.java[Asmified]
-
-== References
-

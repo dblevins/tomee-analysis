@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/crypto/newhope/NHPublicKeyParameters.class
-
- - link:NHPublicKeyParameters-asmified.java[Asmified]
-
-== References
-

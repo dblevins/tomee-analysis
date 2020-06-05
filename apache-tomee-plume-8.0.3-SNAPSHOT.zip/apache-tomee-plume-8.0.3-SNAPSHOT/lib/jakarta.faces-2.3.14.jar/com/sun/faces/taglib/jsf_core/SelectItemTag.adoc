@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/SelectItemTag.class
-
- - link:SelectItemTag-asmified.java[Asmified]
-
-== References
-

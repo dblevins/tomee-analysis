@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/saaj/SoapConnectionFactoryImpl.class
-
- - link:SoapConnectionFactoryImpl-asmified.java[Asmified]
-
-== References
-

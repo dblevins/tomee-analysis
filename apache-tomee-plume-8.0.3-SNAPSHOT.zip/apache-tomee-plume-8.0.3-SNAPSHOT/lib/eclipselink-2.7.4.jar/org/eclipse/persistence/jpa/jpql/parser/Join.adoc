@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/Join.class
-
- - link:Join-asmified.java[Asmified]
-
-== References
-

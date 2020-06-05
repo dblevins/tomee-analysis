@@ -1,6 +1,0 @@
-= org/apache/activemq/security/SimpleAuthenticationPlugin.class
-
- - link:SimpleAuthenticationPlugin-asmified.java[Asmified]
-
-== References
-

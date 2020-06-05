@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/sequencing/XMLFileSequenceConfig.class
-
- - link:XMLFileSequenceConfig-asmified.java[Asmified]
-
-== References
-

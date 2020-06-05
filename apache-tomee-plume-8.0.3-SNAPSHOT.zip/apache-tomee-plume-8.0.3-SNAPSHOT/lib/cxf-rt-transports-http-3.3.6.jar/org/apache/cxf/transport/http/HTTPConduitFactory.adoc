@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HTTPConduitFactory.class
-
- - link:HTTPConduitFactory-asmified.java[Asmified]
-
-== References
-

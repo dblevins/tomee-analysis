@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyhandlers/StaxTransportBindingHandler.class
-
- - link:StaxTransportBindingHandler-asmified.java[Asmified]
-
-== References
-

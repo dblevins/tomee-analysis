@@ -1,6 +1,0 @@
-= org/apache/cxf/service/invoker/Factory.class
-
- - link:Factory-asmified.java[Asmified]
-
-== References
-

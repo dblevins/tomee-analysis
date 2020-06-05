@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/mime/MIMEMultipartRelatedSerializer.class
-
- - link:MIMEMultipartRelatedSerializer-asmified.java[Asmified]
-
-== References
-

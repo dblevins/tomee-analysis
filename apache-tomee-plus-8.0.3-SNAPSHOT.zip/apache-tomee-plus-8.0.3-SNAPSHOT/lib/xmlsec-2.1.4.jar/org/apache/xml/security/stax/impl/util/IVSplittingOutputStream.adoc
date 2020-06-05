@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/util/IVSplittingOutputStream.class
-
- - link:IVSplittingOutputStream-asmified.java[Asmified]
-
-== References
-

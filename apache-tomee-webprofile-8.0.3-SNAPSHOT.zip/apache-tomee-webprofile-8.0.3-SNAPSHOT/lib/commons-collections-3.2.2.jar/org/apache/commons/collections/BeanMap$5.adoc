@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BeanMap$5.class
-
- - link:BeanMap$5-asmified.java[Asmified]
-
-== References
-

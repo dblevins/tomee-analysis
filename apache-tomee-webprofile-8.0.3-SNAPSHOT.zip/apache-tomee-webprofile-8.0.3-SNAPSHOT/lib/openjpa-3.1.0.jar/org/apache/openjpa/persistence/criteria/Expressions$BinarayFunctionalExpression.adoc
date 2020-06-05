@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$BinarayFunctionalExpression.class
-
- - link:Expressions$BinarayFunctionalExpression-asmified.java[Asmified]
-
-== References
-

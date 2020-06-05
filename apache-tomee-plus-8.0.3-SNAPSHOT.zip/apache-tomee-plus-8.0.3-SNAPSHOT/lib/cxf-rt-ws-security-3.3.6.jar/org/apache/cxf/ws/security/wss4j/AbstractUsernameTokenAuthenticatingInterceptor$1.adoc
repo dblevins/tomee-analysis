@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor$1.class
-
- - link:AbstractUsernameTokenAuthenticatingInterceptor$1-asmified.java[Asmified]
-
-== References
-

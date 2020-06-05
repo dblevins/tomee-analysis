@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/stream/FixedTokenReplacementInputStream.class
-
- - link:FixedTokenReplacementInputStream-asmified.java[Asmified]
-
-== References
-

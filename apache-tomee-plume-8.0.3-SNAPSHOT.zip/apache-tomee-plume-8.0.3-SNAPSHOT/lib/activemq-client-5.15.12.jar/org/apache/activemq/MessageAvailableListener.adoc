@@ -1,6 +1,0 @@
-= org/apache/activemq/MessageAvailableListener.class
-
- - link:MessageAvailableListener-asmified.java[Asmified]
-
-== References
-

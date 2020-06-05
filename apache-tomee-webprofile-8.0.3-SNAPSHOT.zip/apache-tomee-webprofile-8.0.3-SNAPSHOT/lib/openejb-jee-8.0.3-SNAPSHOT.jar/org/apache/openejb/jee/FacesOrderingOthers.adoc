@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesOrderingOthers.class
-
- - link:FacesOrderingOthers-asmified.java[Asmified]
-
-== References
-

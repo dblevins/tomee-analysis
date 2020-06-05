@@ -1,6 +1,0 @@
-= org/joda/time/ReadableInterval.class
-
- - link:ReadableInterval-asmified.java[Asmified]
-
-== References
-

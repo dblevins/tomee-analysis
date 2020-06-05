@@ -1,6 +1,0 @@
-= jakarta/ws/rs/GET.class
-
- - link:GET-asmified.java[Asmified]
-
-== References
-

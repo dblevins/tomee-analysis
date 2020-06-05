@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v5/FlushCommandMarshaller.class
-
- - link:FlushCommandMarshaller-asmified.java[Asmified]
-
-== References
-

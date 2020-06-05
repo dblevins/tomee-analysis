@@ -1,6 +1,0 @@
-= org/apache/catalina/servlets/WebdavServlet.class
-
- - link:WebdavServlet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/managers/BindingFactoryManagerImpl$1.class
-
- - link:BindingFactoryManagerImpl$1-asmified.java[Asmified]
-
-== References
-

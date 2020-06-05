@@ -1,6 +1,0 @@
-= jakarta/mail/search/FromTerm.class
-
- - link:FromTerm-asmified.java[Asmified]
-
-== References
-

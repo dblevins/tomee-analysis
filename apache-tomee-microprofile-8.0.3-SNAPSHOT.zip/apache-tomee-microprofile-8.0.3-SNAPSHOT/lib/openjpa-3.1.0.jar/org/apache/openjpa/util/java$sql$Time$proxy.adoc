@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/java$sql$Time$proxy.class
-
- - link:java$sql$Time$proxy-asmified.java[Asmified]
-
-== References
-

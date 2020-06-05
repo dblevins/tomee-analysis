@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/RealmRuleSet.class
-
- - link:RealmRuleSet-asmified.java[Asmified]
-
-== References
-

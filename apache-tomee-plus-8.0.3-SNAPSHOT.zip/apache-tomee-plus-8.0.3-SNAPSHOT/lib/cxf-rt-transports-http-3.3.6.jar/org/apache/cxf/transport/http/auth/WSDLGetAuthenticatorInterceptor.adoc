@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/auth/WSDLGetAuthenticatorInterceptor.class
-
- - link:WSDLGetAuthenticatorInterceptor-asmified.java[Asmified]
-
-== References
-

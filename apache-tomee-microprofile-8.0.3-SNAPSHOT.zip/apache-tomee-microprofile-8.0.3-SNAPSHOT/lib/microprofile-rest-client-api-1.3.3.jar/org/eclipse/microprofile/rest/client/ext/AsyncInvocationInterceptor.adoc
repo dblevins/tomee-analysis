@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/rest/client/ext/AsyncInvocationInterceptor.class
-
- - link:AsyncInvocationInterceptor-asmified.java[Asmified]
-
-== References
-

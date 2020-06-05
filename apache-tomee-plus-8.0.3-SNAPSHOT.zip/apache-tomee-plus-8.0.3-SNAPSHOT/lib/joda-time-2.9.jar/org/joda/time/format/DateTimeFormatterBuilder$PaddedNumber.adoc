@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeFormatterBuilder$PaddedNumber.class
-
- - link:DateTimeFormatterBuilder$PaddedNumber-asmified.java[Asmified]
-
-== References
-

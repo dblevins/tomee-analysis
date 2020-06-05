@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/trust/STSTokenValidator.class
-
- - link:STSTokenValidator-asmified.java[Asmified]
-
-== References
-

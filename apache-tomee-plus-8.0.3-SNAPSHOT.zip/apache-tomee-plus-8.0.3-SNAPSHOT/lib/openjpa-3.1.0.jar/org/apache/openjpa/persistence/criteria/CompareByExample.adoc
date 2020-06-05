@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/CompareByExample.class
-
- - link:CompareByExample-asmified.java[Asmified]
-
-== References
-

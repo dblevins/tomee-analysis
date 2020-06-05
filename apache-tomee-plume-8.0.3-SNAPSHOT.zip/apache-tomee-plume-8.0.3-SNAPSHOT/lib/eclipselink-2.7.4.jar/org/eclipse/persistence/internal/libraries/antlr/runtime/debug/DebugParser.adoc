@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/DebugParser.class
-
- - link:DebugParser-asmified.java[Asmified]
-
-== References
-

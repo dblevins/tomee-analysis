@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/JPQLHelper.class
-
- - link:JPQLHelper-asmified.java[Asmified]
-
-== References
-

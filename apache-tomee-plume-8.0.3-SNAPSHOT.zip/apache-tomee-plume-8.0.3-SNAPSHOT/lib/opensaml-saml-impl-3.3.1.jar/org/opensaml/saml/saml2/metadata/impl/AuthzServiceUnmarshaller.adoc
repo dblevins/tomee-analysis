@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/AuthzServiceUnmarshaller.class
-
- - link:AuthzServiceUnmarshaller-asmified.java[Asmified]
-
-== References
-

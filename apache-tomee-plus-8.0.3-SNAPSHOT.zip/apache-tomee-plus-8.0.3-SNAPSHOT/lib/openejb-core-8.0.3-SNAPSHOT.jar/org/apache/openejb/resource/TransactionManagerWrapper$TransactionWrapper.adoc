@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/TransactionManagerWrapper$TransactionWrapper.class
-
- - link:TransactionManagerWrapper$TransactionWrapper-asmified.java[Asmified]
-
-== References
-

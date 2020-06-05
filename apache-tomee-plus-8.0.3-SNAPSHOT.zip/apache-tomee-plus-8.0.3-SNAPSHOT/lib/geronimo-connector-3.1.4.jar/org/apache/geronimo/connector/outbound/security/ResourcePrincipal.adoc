@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/security/ResourcePrincipal.class
-
- - link:ResourcePrincipal-asmified.java[Asmified]
-
-== References
-

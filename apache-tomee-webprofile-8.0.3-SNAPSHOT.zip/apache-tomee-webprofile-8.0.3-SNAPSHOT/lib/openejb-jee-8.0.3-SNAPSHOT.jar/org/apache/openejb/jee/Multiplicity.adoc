@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Multiplicity.class
-
- - link:Multiplicity-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/FilterListener$SimpleFilterChain.class
-
- - link:FilterListener$SimpleFilterChain-asmified.java[Asmified]
-
-== References
-

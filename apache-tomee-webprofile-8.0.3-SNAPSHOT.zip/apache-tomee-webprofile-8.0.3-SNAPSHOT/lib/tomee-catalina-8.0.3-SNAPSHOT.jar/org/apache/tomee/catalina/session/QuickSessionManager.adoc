@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/session/QuickSessionManager.class
-
- - link:QuickSessionManager-asmified.java[Asmified]
-
-== References
-

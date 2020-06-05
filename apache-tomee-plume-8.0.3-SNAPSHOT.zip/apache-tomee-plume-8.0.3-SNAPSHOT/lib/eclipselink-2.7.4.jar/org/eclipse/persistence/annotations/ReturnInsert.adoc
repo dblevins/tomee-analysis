@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/ReturnInsert.class
-
- - link:ReturnInsert-asmified.java[Asmified]
-
-== References
-

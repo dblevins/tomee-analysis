@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/StreamStartEvent.class
-
- - link:StreamStartEvent-asmified.java[Asmified]
-
-== References
-

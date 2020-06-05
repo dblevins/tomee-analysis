@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBUtils$BridgeWrapper.class
-
- - link:JAXBUtils$BridgeWrapper-asmified.java[Asmified]
-
-== References
-

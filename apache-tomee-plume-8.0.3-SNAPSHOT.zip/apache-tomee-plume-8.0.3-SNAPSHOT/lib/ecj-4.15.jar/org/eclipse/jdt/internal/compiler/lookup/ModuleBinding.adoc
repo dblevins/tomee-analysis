@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ModuleBinding.class
-
- - link:ModuleBinding-asmified.java[Asmified]
-
-== References
-

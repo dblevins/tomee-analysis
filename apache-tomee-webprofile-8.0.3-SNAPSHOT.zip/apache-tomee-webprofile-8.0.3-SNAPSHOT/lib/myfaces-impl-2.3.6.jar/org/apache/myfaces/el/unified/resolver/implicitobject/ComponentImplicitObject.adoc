@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/implicitobject/ComponentImplicitObject.class
-
- - link:ComponentImplicitObject-asmified.java[Asmified]
-
-== References
-

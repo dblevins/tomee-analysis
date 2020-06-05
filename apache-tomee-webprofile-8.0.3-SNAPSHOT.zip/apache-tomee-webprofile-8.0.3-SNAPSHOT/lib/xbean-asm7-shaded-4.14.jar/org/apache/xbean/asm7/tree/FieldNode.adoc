@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/FieldNode.class
-
- - link:FieldNode-asmified.java[Asmified]
-
-== References
-

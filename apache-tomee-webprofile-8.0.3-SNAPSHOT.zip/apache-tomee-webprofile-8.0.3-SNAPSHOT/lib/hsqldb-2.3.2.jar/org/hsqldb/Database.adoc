@@ -1,6 +1,0 @@
-= org/hsqldb/Database.class
-
- - link:Database-asmified.java[Asmified]
-
-== References
-

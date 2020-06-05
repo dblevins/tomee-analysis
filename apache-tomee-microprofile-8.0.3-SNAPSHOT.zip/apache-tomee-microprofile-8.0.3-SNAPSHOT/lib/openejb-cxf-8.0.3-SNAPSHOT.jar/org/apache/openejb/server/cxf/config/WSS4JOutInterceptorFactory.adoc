@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/config/WSS4JOutInterceptorFactory.class
-
- - link:WSS4JOutInterceptorFactory-asmified.java[Asmified]
-
-== References
-

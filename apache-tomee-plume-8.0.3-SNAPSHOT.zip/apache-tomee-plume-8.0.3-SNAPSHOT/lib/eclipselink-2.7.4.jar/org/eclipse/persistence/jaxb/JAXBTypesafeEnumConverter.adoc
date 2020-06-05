@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBTypesafeEnumConverter.class
-
- - link:JAXBTypesafeEnumConverter-asmified.java[Asmified]
-
-== References
-

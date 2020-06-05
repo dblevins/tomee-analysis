@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/PastOrPresent.class
-
- - link:PastOrPresent-asmified.java[Asmified]
-
-== References
-

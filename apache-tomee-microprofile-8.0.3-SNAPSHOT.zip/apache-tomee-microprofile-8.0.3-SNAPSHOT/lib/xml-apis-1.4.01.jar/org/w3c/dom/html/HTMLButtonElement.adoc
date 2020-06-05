@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLButtonElement.class
-
- - link:HTMLButtonElement-asmified.java[Asmified]
-
-== References
-

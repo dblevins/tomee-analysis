@@ -1,6 +1,0 @@
-= org/eclipse/persistence/config/ParserValidationType.class
-
- - link:ParserValidationType-asmified.java[Asmified]
-
-== References
-

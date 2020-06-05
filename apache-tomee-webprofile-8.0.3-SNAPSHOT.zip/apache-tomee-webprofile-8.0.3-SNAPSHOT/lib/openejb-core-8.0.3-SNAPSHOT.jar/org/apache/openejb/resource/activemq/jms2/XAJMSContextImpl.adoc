@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/XAJMSContextImpl.class
-
- - link:XAJMSContextImpl-asmified.java[Asmified]
-
-== References
-

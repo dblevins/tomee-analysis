@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/mutable/MutableObject.class
-
- - link:MutableObject-asmified.java[Asmified]
-
-== References
-

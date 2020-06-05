@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/platform/database/oracle/XMLTypeFactory.class
-
- - link:XMLTypeFactory-asmified.java[Asmified]
-
-== References
-

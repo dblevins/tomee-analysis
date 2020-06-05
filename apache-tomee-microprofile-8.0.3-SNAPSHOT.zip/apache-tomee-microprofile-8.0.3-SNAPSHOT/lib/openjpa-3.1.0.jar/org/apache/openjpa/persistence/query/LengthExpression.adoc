@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/LengthExpression.class
-
- - link:LengthExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/resource/spi/ConnectionEvent.class
-
- - link:ConnectionEvent-asmified.java[Asmified]
-
-== References
-

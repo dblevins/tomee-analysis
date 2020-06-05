@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/TransactionManagerMonitor.class
-
- - link:TransactionManagerMonitor-asmified.java[Asmified]
-
-== References
-

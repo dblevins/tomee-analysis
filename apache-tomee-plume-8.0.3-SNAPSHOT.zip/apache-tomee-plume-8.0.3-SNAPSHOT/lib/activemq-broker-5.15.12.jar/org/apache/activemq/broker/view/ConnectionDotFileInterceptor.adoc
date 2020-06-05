@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/view/ConnectionDotFileInterceptor.class
-
- - link:ConnectionDotFileInterceptor-asmified.java[Asmified]
-
-== References
-

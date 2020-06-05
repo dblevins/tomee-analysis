@@ -1,6 +1,0 @@
-= jakarta/jws/WebParam.class
-
- - link:WebParam-asmified.java[Asmified]
-
-== References
-

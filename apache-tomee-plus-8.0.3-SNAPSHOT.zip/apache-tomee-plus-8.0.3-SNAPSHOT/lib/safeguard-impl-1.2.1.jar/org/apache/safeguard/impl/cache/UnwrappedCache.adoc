@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/cache/UnwrappedCache.class
-
- - link:UnwrappedCache-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCClobClient$1.class
-
- - link:JDBCClobClient$1-asmified.java[Asmified]
-
-== References
-

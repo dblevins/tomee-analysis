@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/util/UnclosableWriter.class
-
- - link:UnclosableWriter-asmified.java[Asmified]
-
-== References
-

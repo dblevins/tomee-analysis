@@ -1,9 +1,0 @@
-= javax/xml/registry/infomodel/RegistryEntry.class
-
- - link:RegistryEntry-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 5
- - javax.xml.registry.infomodel.RegistryObject - 1
- - javax.xml.registry.infomodel.Versionable - 1

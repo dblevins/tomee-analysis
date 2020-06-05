@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/ConvertingWrapDynaBean.class
-
- - link:ConvertingWrapDynaBean-asmified.java[Asmified]
-
-== References
-

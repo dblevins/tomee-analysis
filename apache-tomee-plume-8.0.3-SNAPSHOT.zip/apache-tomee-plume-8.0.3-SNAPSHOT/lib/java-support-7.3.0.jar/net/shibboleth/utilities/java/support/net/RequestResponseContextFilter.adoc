@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/RequestResponseContextFilter.class
-
- - link:RequestResponseContextFilter-asmified.java[Asmified]
-
-== References
-

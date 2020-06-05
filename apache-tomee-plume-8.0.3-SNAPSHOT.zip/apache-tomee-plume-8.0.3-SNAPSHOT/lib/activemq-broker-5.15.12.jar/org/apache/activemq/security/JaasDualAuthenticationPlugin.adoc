@@ -1,6 +1,0 @@
-= org/apache/activemq/security/JaasDualAuthenticationPlugin.class
-
- - link:JaasDualAuthenticationPlugin-asmified.java[Asmified]
-
-== References
-

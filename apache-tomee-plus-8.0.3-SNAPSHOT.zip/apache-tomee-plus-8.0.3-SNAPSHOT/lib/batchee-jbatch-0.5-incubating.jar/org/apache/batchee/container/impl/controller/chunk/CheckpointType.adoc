@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/controller/chunk/CheckpointType.class
-
- - link:CheckpointType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/coyote/ajp/AjpMessage.class
-
- - link:AjpMessage-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/ServiceDescriptor.class
-
- - link:ServiceDescriptor-asmified.java[Asmified]
-
-== References
-

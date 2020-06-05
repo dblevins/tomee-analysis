@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSURIUnmarshaller.class
-
- - link:XSURIUnmarshaller-asmified.java[Asmified]
-
-== References
-

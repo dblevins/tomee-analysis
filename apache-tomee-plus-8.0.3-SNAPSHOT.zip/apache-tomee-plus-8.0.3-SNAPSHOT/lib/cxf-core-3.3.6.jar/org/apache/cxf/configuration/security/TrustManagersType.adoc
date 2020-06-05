@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/TrustManagersType.class
-
- - link:TrustManagersType-asmified.java[Asmified]
-
-== References
-

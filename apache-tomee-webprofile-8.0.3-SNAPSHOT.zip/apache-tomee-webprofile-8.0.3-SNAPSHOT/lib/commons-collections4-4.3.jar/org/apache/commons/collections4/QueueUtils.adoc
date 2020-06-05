@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/QueueUtils.class
-
- - link:QueueUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/tracing/TracerContext.class
-
- - link:TracerContext-asmified.java[Asmified]
-
-== References
-

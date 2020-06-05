@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/ISOLatinReader.class
-
- - link:ISOLatinReader-asmified.java[Asmified]
-
-== References
-

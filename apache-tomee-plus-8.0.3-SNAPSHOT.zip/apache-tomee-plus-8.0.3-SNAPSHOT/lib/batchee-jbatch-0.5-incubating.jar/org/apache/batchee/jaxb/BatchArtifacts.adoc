@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/BatchArtifacts.class
-
- - link:BatchArtifacts-asmified.java[Asmified]
-
-== References
-

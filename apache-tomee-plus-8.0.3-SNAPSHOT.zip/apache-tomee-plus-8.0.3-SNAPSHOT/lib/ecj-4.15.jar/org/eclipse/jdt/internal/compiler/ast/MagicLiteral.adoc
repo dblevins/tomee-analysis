@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/MagicLiteral.class
-
- - link:MagicLiteral-asmified.java[Asmified]
-
-== References
-

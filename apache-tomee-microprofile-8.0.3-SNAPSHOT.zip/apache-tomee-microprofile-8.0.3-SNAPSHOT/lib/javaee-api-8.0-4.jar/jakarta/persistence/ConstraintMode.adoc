@@ -1,6 +1,0 @@
-= jakarta/persistence/ConstraintMode.class
-
- - link:ConstraintMode-asmified.java[Asmified]
-
-== References
-

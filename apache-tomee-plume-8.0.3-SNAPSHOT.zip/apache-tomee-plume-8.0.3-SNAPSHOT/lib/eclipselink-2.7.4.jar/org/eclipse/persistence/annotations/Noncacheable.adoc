@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/Noncacheable.class
-
- - link:Noncacheable-asmified.java[Asmified]
-
-== References
-

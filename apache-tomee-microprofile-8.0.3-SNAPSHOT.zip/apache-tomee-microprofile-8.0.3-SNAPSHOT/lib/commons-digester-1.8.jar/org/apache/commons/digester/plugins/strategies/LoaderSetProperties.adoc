@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/strategies/LoaderSetProperties.class
-
- - link:LoaderSetProperties-asmified.java[Asmified]
-
-== References
-

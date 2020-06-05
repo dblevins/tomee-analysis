@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/record/ValidatingMarshalRecord.class
-
- - link:ValidatingMarshalRecord-asmified.java[Asmified]
-
-== References
-

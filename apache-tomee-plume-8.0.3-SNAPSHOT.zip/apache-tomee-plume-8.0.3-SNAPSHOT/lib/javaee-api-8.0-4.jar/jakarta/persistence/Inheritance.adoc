@@ -1,6 +1,0 @@
-= jakarta/persistence/Inheritance.class
-
- - link:Inheritance-asmified.java[Asmified]
-
-== References
-

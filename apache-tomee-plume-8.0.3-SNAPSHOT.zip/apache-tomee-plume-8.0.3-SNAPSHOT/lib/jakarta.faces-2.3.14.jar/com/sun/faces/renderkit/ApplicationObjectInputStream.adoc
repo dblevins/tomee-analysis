@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/ApplicationObjectInputStream.class
-
- - link:ApplicationObjectInputStream-asmified.java[Asmified]
-
-== References
-

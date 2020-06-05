@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/RpcMessage.class
-
- - link:RpcMessage-asmified.java[Asmified]
-
-== References
-

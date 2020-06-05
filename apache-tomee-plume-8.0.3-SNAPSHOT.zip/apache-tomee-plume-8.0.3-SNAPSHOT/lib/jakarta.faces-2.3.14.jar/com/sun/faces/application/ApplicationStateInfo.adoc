@@ -1,6 +1,0 @@
-= com/sun/faces/application/ApplicationStateInfo.class
-
- - link:ApplicationStateInfo-asmified.java[Asmified]
-
-== References
-

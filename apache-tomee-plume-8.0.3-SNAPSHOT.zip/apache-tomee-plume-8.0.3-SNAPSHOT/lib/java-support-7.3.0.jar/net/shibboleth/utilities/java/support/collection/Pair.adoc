@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/Pair.class
-
- - link:Pair-asmified.java[Asmified]
-
-== References
-

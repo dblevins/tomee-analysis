@@ -1,2 +1,0 @@
-= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/openejb-cxf-transport-8.0.3-SNAPSHOT.jar
-

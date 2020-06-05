@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/metadata/XMLMetadataSource.class
-
- - link:XMLMetadataSource-asmified.java[Asmified]
-
-== References
-

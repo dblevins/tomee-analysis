@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/HttpSessionImpl.class
-
- - link:HttpSessionImpl-asmified.java[Asmified]
-
-== References
-

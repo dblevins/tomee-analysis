@@ -1,6 +1,0 @@
-= jakarta/faces/convert/NumberConverter.class
-
- - link:NumberConverter-asmified.java[Asmified]
-
-== References
-

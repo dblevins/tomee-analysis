@@ -1,6 +1,0 @@
-= org/joda/time/ReadableDuration.class
-
- - link:ReadableDuration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= META-INF/versions/9/jakarta/xml/bind/ModuleUtil.class
-
- - link:ModuleUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/XPathExpression$XPathEvaluator.class
-
- - link:XPathExpression$XPathEvaluator-asmified.java[Asmified]
-
-== References
-

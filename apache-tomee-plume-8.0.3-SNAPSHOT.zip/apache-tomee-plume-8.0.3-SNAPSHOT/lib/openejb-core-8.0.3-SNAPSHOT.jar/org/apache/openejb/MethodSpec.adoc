@@ -1,6 +1,0 @@
-= org/apache/openejb/MethodSpec.class
-
- - link:MethodSpec-asmified.java[Asmified]
-
-== References
-

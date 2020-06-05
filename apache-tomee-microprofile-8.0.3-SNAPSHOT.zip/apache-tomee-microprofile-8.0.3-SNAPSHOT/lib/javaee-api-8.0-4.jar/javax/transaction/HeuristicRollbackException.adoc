@@ -1,6 +1,0 @@
-= javax/transaction/HeuristicRollbackException.class
-
- - link:HeuristicRollbackException-asmified.java[Asmified]
-
-== References
-

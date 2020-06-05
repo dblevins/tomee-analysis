@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/CompositeFormat.class
-
- - link:CompositeFormat-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/JNDIBaseStorable.class
-
- - link:JNDIBaseStorable-asmified.java[Asmified]
-
-== References
-

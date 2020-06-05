@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/meta/MetaDataIterator.class
-
- - link:MetaDataIterator-asmified.java[Asmified]
-
-== References
-

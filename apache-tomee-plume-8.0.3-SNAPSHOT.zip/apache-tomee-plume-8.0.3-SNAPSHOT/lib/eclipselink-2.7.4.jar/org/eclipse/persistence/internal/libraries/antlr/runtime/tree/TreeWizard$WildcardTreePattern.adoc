@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeWizard$WildcardTreePattern.class
-
- - link:TreeWizard$WildcardTreePattern-asmified.java[Asmified]
-
-== References
-

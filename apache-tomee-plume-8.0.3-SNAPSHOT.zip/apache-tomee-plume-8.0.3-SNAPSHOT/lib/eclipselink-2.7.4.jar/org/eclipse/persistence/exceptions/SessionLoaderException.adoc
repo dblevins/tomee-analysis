@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/SessionLoaderException.class
-
- - link:SessionLoaderException-asmified.java[Asmified]
-
-== References
-

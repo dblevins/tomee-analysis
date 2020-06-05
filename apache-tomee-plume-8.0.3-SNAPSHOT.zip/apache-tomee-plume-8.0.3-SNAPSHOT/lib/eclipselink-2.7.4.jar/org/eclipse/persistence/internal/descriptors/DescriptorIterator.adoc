@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/DescriptorIterator.class
-
- - link:DescriptorIterator-asmified.java[Asmified]
-
-== References
-

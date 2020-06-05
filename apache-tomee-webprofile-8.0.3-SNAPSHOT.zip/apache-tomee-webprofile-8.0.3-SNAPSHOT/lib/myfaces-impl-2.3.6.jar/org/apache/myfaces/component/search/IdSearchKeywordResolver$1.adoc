@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/search/IdSearchKeywordResolver$1.class
-
- - link:IdSearchKeywordResolver$1-asmified.java[Asmified]
-
-== References
-

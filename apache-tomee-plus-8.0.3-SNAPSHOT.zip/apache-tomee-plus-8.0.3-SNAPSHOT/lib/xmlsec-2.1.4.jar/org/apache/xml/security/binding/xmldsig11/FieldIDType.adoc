@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/FieldIDType.class
-
- - link:FieldIDType-asmified.java[Asmified]
-
-== References
-

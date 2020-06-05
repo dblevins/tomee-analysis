@@ -1,6 +1,0 @@
-= org/apache/webbeans/web/lifecycle/WebContainerLifecycle.class
-
- - link:WebContainerLifecycle-asmified.java[Asmified]
-
-== References
-

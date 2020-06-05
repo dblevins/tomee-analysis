@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/time/FastDateFormat.class
-
- - link:FastDateFormat-asmified.java[Asmified]
-
-== References
-

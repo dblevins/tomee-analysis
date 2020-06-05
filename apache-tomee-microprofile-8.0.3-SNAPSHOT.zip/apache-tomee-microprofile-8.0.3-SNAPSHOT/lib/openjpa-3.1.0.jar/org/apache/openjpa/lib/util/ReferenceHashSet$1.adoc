@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/ReferenceHashSet$1.class
-
- - link:ReferenceHashSet$1-asmified.java[Asmified]
-
-== References
-

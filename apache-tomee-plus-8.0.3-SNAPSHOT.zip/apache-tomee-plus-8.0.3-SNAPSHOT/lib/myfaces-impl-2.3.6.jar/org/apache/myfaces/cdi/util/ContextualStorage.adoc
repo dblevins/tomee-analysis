@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/util/ContextualStorage.class
-
- - link:ContextualStorage-asmified.java[Asmified]
-
-== References
-

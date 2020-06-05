@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/CommonsLoggingConverter.class
-
- - link:CommonsLoggingConverter-asmified.java[Asmified]
-
-== References
-

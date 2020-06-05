@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/AbstractSAMLObjectMarshaller.class
-
- - link:AbstractSAMLObjectMarshaller-asmified.java[Asmified]
-
-== References
-

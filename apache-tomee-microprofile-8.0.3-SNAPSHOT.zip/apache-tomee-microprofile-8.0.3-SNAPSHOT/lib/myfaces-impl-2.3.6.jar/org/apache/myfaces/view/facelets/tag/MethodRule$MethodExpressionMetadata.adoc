@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/MethodRule$MethodExpressionMetadata.class
-
- - link:MethodRule$MethodExpressionMetadata-asmified.java[Asmified]
-
-== References
-

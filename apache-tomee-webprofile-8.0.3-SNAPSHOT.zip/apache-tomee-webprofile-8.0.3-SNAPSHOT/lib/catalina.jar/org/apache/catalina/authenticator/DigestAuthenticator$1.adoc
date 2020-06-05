@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/DigestAuthenticator$1.class
-
- - link:DigestAuthenticator$1-asmified.java[Asmified]
-
-== References
-

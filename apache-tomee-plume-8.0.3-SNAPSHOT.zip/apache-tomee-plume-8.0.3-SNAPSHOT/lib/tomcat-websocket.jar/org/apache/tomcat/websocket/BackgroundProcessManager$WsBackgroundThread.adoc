@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/BackgroundProcessManager$WsBackgroundThread.class
-
- - link:BackgroundProcessManager$WsBackgroundThread-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/AbstractUIHandler.class
-
- - link:AbstractUIHandler-asmified.java[Asmified]
-
-== References
-

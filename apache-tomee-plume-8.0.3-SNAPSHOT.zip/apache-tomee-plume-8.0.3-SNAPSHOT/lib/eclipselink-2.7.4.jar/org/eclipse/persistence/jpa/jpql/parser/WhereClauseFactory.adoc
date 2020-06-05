@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/WhereClauseFactory.class
-
- - link:WhereClauseFactory-asmified.java[Asmified]
-
-== References
-

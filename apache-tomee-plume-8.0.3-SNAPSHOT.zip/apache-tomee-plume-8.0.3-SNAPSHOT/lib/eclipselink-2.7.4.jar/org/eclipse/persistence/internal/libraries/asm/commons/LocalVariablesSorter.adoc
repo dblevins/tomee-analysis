@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/LocalVariablesSorter.class
-
- - link:LocalVariablesSorter-asmified.java[Asmified]
-
-== References
-

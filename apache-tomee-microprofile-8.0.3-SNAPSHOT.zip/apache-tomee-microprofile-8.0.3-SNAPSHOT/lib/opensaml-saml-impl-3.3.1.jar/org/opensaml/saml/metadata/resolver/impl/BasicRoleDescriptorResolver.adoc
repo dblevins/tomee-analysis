@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/BasicRoleDescriptorResolver.class
-
- - link:BasicRoleDescriptorResolver-asmified.java[Asmified]
-
-== References
-

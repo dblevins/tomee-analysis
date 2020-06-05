@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/FaceletStateValueExpression.class
-
- - link:FaceletStateValueExpression-asmified.java[Asmified]
-
-== References
-

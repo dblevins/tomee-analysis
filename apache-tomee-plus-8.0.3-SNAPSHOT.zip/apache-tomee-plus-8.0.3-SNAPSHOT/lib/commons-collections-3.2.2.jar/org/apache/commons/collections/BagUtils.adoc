@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BagUtils.class
-
- - link:BagUtils-asmified.java[Asmified]
-
-== References
-

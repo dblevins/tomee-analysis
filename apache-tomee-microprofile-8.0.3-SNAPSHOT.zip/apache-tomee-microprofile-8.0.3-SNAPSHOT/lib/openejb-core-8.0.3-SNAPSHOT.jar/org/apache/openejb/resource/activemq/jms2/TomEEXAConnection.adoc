@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/TomEEXAConnection.class
-
- - link:TomEEXAConnection-asmified.java[Asmified]
-
-== References
-

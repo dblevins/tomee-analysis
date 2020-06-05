@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/multiset/PredicatedMultiSet.class
-
- - link:PredicatedMultiSet-asmified.java[Asmified]
-
-== References
-

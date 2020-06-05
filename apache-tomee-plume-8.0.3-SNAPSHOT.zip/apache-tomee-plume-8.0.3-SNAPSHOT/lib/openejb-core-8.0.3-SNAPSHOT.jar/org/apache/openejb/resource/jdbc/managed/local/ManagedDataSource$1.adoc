@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/managed/local/ManagedDataSource$1.class
-
- - link:ManagedDataSource$1-asmified.java[Asmified]
-
-== References
-

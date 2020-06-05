@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIColumn.class
-
- - link:UIColumn-asmified.java[Asmified]
-
-== References
-

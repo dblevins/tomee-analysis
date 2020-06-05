@@ -1,6 +1,0 @@
-= com/ctc/wstx/cfg/InputConfigFlags.class
-
- - link:InputConfigFlags-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/JtaEntityManagerRegistry$InstanceId.class
-
- - link:JtaEntityManagerRegistry$InstanceId-asmified.java[Asmified]
-
-== References
-

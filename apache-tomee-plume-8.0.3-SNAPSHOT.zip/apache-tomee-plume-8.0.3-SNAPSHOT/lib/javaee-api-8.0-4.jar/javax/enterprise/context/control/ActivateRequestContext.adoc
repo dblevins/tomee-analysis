@@ -1,7 +1,0 @@
-= javax/enterprise/context/control/ActivateRequestContext.class
-
- - link:ActivateRequestContext-asmified.java[Asmified]
-
-== References
-
- - javax.interceptor.InterceptorBinding - 1

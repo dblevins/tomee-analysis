@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/DiscriminatorImpl.class
-
- - link:DiscriminatorImpl-asmified.java[Asmified]
-
-== References
-

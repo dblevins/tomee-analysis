@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/ByteMessage.class
-
- - link:ByteMessage-asmified.java[Asmified]
-
-== References
-

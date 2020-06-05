@@ -1,8 +1,0 @@
-= javax/json/bind/serializer/JsonbDeserializer.class
-
- - link:JsonbDeserializer-asmified.java[Asmified]
-
-== References
-
- - javax.json.stream.JsonParser - 1
- - javax.json.bind.serializer.DeserializationContext - 1

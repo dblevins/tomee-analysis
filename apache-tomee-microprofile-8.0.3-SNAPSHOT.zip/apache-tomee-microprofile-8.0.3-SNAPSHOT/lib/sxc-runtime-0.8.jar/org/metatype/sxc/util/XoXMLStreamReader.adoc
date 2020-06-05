@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/XoXMLStreamReader.class
-
- - link:XoXMLStreamReader-asmified.java[Asmified]
-
-== References
-

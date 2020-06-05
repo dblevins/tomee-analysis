@@ -1,6 +1,0 @@
-= org/apache/myfaces/event/PostClientWindowAndViewInitializedEvent.class
-
- - link:PostClientWindowAndViewInitializedEvent-asmified.java[Asmified]
-
-== References
-

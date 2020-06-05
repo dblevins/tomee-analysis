@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/StreamingResponseProvider.class
-
- - link:StreamingResponseProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomcatJavaJndiBinder.class
-
- - link:TomcatJavaJndiBinder-asmified.java[Asmified]
-
-== References
-

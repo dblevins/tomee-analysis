@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/transformer/TransformIdentity$3.class
-
- - link:TransformIdentity$3-asmified.java[Asmified]
-
-== References
-

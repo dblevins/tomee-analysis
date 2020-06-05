@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/annotation/FieldLocatable.class
-
- - link:FieldLocatable-asmified.java[Asmified]
-
-== References
-

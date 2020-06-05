@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentDate.class
-
- - link:SafeRepresenter$RepresentDate-asmified.java[Asmified]
-
-== References
-

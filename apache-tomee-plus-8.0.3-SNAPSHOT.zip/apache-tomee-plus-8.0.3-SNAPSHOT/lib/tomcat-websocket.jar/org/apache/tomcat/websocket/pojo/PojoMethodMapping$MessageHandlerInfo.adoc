@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/pojo/PojoMethodMapping$MessageHandlerInfo.class
-
- - link:PojoMethodMapping$MessageHandlerInfo-asmified.java[Asmified]
-
-== References
-

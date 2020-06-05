@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/coordination/CommandConverter.class
-
- - link:CommandConverter-asmified.java[Asmified]
-
-== References
-

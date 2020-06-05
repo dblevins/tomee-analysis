@@ -1,6 +1,0 @@
-= org/hsqldb/server/OdbcPacketInputStream.class
-
- - link:OdbcPacketInputStream-asmified.java[Asmified]
-
-== References
-

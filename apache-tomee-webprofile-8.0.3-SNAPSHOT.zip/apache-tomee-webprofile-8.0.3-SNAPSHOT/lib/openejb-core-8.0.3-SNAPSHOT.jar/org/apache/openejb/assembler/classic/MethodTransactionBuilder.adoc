@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MethodTransactionBuilder.class
-
- - link:MethodTransactionBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ConvertNumberTag.class
-
- - link:ConvertNumberTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/UdpTransportServer$1.class
-
- - link:UdpTransportServer$1-asmified.java[Asmified]
-
-== References
-

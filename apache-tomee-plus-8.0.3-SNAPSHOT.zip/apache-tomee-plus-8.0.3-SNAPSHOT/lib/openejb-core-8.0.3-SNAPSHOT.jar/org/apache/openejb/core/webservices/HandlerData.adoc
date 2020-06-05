@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/HandlerData.class
-
- - link:HandlerData-asmified.java[Asmified]
-
-== References
-

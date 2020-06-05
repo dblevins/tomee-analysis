@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/stax/XMLSecEntityReferenceImpl.class
-
- - link:XMLSecEntityReferenceImpl-asmified.java[Asmified]
-
-== References
-

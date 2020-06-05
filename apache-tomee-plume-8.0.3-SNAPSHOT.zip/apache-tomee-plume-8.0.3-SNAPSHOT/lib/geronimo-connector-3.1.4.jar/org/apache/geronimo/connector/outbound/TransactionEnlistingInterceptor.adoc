@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/TransactionEnlistingInterceptor.class
-
- - link:TransactionEnlistingInterceptor-asmified.java[Asmified]
-
-== References
-

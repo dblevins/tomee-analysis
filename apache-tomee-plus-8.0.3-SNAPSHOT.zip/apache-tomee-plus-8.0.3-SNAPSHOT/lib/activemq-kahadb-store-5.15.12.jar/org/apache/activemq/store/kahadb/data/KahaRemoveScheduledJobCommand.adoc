@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaRemoveScheduledJobCommand.class
-
- - link:KahaRemoveScheduledJobCommand-asmified.java[Asmified]
-
-== References
-

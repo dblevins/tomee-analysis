@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/config/TomEEOpenAPIExtension.class
-
- - link:TomEEOpenAPIExtension-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/WsuIdAllocator.class
-
- - link:WsuIdAllocator-asmified.java[Asmified]
-
-== References
-

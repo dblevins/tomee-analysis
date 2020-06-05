@@ -1,6 +1,0 @@
-= org/joda/time/field/ImpreciseDateTimeField.class
-
- - link:ImpreciseDateTimeField-asmified.java[Asmified]
-
-== References
-

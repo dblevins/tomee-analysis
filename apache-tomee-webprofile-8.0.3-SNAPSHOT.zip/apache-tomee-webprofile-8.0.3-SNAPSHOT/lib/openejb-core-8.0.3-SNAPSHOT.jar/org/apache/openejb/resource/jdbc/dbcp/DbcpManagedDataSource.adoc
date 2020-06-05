@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/dbcp/DbcpManagedDataSource.class
-
- - link:DbcpManagedDataSource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/core/SetHandler.class
-
- - link:SetHandler-asmified.java[Asmified]
-
-== References
-

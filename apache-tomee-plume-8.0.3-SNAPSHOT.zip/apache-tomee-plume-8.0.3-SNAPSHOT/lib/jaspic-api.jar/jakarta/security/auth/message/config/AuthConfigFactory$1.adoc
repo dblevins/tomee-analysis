@@ -1,6 +1,0 @@
-= jakarta/security/auth/message/config/AuthConfigFactory$1.class
-
- - link:AuthConfigFactory$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/WSSecSignatureConfirmation.class
-
- - link:WSSecSignatureConfirmation-asmified.java[Asmified]
-
-== References
-

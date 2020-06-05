@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/scheduler/Job.class
-
- - link:Job-asmified.java[Asmified]
-
-== References
-

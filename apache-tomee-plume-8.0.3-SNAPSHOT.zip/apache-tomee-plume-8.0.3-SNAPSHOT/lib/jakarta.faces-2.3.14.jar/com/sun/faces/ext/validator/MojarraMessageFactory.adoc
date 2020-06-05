@@ -1,6 +1,0 @@
-= com/sun/faces/ext/validator/MojarraMessageFactory.class
-
- - link:MojarraMessageFactory-asmified.java[Asmified]
-
-== References
-

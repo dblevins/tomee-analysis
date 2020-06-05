@@ -1,6 +1,0 @@
-= org/apache/activemq/management/BoundaryStatisticImpl.class
-
- - link:BoundaryStatisticImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/security/RolePrefixSecurityContextImpl.class
-
- - link:RolePrefixSecurityContextImpl-asmified.java[Asmified]
-
-== References
-

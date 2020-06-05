@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/TextFormat$InvalidEscapeSequence.class
-
- - link:TextFormat$InvalidEscapeSequence-asmified.java[Asmified]
-
-== References
-

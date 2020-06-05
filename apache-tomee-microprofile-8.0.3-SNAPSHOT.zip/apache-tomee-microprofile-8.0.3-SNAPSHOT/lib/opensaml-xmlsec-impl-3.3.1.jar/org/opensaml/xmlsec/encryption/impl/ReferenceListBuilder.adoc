@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/ReferenceListBuilder.class
-
- - link:ReferenceListBuilder-asmified.java[Asmified]
-
-== References
-

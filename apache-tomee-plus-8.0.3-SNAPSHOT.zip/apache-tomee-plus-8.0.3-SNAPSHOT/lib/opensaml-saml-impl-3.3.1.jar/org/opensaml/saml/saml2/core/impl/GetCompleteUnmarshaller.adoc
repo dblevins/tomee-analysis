@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/GetCompleteUnmarshaller.class
-
- - link:GetCompleteUnmarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/grants/code/AuthorizationCodeDataProvider.class
-
- - link:AuthorizationCodeDataProvider-asmified.java[Asmified]
-
-== References
-

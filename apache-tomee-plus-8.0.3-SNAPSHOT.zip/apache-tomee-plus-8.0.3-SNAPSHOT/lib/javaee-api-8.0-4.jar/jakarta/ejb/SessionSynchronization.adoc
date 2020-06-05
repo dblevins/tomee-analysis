@@ -1,6 +1,0 @@
-= jakarta/ejb/SessionSynchronization.class
-
- - link:SessionSynchronization-asmified.java[Asmified]
-
-== References
-

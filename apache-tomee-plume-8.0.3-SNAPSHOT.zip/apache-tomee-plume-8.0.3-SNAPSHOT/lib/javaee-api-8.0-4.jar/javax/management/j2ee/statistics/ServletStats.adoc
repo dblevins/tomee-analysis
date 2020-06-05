@@ -1,8 +1,0 @@
-= javax/management/j2ee/statistics/ServletStats.class
-
- - link:ServletStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.TimeStatistic - 1
- - javax.management.j2ee.statistics.Stats - 1

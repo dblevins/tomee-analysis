@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Upper.class
-
- - link:Expressions$Upper-asmified.java[Asmified]
-
-== References
-

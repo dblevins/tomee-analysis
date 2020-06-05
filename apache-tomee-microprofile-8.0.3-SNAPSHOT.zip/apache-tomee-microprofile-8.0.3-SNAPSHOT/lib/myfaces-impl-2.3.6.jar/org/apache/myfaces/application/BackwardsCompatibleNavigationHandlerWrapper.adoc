@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/BackwardsCompatibleNavigationHandlerWrapper.class
-
- - link:BackwardsCompatibleNavigationHandlerWrapper-asmified.java[Asmified]
-
-== References
-

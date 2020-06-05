@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/JaccPermissionsBuilder.class
-
- - link:JaccPermissionsBuilder-asmified.java[Asmified]
-
-== References
-

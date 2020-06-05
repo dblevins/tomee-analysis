@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/arch/Processor.class
-
- - link:Processor-asmified.java[Asmified]
-
-== References
-

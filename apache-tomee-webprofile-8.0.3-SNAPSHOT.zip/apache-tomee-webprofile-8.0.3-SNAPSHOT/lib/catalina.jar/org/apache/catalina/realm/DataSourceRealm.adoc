@@ -1,6 +1,0 @@
-= org/apache/catalina/realm/DataSourceRealm.class
-
- - link:DataSourceRealm-asmified.java[Asmified]
-
-== References
-

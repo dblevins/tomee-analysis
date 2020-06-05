@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/trie/KeyAnalyzer.class
-
- - link:KeyAnalyzer-asmified.java[Asmified]
-
-== References
-

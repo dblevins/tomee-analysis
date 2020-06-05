@@ -1,7 +1,0 @@
-= javax/enterprise/deploy/spi/status/ClientConfiguration.class
-
- - link:ClientConfiguration-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.deploy.spi.exceptions.ClientExecuteException - 1

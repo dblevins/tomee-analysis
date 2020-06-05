@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/nodes/NodeTuple.class
-
- - link:NodeTuple-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/UsernameTokenAssertionState.class
-
- - link:UsernameTokenAssertionState-asmified.java[Asmified]
-
-== References
-

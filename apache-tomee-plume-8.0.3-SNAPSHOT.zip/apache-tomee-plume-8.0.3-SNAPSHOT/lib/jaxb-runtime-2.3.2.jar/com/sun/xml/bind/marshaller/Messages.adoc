@@ -1,6 +1,0 @@
-= com/sun/xml/bind/marshaller/Messages.class
-
- - link:Messages-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/config/processor/ConverterConfigProcessor.class
-
- - link:ConverterConfigProcessor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/InMemoryExpressionFactory$1.class
-
- - link:InMemoryExpressionFactory$1-asmified.java[Asmified]
-
-== References
-

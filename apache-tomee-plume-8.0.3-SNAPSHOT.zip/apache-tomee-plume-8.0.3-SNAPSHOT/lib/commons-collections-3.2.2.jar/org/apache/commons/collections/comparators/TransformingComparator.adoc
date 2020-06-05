@@ -1,6 +1,0 @@
-= org/apache/commons/collections/comparators/TransformingComparator.class
-
- - link:TransformingComparator-asmified.java[Asmified]
-
-== References
-

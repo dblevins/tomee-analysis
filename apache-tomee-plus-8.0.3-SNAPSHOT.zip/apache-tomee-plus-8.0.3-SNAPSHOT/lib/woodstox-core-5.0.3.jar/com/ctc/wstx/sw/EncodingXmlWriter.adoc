@@ -1,6 +1,0 @@
-= com/ctc/wstx/sw/EncodingXmlWriter.class
-
- - link:EncodingXmlWriter-asmified.java[Asmified]
-
-== References
-

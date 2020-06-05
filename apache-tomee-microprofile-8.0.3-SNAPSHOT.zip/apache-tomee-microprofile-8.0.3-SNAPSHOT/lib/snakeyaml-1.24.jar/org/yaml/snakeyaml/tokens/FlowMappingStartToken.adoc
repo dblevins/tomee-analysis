@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/FlowMappingStartToken.class
-
- - link:FlowMappingStartToken-asmified.java[Asmified]
-
-== References
-

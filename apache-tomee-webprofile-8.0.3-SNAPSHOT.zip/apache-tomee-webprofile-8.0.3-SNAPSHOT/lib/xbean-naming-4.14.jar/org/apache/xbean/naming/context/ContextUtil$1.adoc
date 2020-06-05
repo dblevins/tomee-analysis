@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ContextUtil$1.class
-
- - link:ContextUtil$1-asmified.java[Asmified]
-
-== References
-

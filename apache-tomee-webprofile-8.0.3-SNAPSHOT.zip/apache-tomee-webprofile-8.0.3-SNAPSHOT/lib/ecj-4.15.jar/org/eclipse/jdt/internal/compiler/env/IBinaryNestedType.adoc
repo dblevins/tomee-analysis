@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IBinaryNestedType.class
-
- - link:IBinaryNestedType-asmified.java[Asmified]
-
-== References
-

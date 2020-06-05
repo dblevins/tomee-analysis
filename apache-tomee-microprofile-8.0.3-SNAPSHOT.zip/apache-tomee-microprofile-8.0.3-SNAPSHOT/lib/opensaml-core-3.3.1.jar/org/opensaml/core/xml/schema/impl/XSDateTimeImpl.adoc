@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSDateTimeImpl.class
-
- - link:XSDateTimeImpl-asmified.java[Asmified]
-
-== References
-

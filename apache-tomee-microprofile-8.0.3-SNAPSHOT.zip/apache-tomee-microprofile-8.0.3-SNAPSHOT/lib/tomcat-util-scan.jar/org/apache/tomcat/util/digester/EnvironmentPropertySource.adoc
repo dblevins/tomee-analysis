@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/digester/EnvironmentPropertySource.class
-
- - link:EnvironmentPropertySource-asmified.java[Asmified]
-
-== References
-

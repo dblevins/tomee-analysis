@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/MySQLDictionary.class
-
- - link:MySQLDictionary-asmified.java[Asmified]
-
-== References
-

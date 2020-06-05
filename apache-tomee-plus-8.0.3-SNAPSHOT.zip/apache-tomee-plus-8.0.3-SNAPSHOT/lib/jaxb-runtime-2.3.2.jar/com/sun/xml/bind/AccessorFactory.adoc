@@ -1,6 +1,0 @@
-= com/sun/xml/bind/AccessorFactory.class
-
- - link:AccessorFactory-asmified.java[Asmified]
-
-== References
-

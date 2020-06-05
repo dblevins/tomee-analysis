@@ -1,6 +1,0 @@
-= org/apache/catalina/ContainerEvent.class
-
- - link:ContainerEvent-asmified.java[Asmified]
-
-== References
-

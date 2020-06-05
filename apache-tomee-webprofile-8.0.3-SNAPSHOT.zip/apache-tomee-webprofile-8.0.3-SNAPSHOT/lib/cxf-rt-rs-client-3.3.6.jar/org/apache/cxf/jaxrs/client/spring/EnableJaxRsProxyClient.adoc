@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spring/EnableJaxRsProxyClient.class
-
- - link:EnableJaxRsProxyClient-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/Disposable.class
-
- - link:Disposable-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/ScalarToken.class
-
- - link:ScalarToken-asmified.java[Asmified]
-
-== References
-

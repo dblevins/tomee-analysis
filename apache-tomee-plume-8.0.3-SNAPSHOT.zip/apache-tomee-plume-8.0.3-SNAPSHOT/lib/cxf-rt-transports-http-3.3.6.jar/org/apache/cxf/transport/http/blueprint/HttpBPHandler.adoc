@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/blueprint/HttpBPHandler.class
-
- - link:HttpBPHandler-asmified.java[Asmified]
-
-== References
-

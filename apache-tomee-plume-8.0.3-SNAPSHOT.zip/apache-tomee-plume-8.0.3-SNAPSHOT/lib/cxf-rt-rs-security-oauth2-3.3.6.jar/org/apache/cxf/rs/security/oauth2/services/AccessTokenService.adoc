@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/services/AccessTokenService.class
-
- - link:AccessTokenService-asmified.java[Asmified]
-
-== References
-

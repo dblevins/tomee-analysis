@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/AttributeServiceBuilder.class
-
- - link:AttributeServiceBuilder-asmified.java[Asmified]
-
-== References
-

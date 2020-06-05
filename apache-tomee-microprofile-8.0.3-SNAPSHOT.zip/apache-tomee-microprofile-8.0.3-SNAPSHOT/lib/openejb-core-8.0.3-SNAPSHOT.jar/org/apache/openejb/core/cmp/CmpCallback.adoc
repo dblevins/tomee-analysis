@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/CmpCallback.class
-
- - link:CmpCallback-asmified.java[Asmified]
-
-== References
-

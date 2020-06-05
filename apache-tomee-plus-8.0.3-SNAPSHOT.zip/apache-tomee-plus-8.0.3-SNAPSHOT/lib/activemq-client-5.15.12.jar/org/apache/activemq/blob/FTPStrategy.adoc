@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/FTPStrategy.class
-
- - link:FTPStrategy-asmified.java[Asmified]
-
-== References
-

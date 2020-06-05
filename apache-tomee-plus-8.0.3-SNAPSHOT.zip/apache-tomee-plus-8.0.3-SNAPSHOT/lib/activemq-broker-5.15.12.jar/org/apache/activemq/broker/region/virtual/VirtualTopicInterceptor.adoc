@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/virtual/VirtualTopicInterceptor.class
-
- - link:VirtualTopicInterceptor-asmified.java[Asmified]
-
-== References
-

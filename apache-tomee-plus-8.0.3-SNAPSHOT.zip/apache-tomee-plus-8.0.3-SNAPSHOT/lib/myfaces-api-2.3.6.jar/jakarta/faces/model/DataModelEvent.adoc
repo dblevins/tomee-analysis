@@ -1,6 +1,0 @@
-= jakarta/faces/model/DataModelEvent.class
-
- - link:DataModelEvent-asmified.java[Asmified]
-
-== References
-

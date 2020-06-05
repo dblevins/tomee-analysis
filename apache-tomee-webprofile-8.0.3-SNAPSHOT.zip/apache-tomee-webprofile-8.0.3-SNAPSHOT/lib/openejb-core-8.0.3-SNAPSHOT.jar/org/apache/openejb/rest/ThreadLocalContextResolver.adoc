@@ -1,6 +1,0 @@
-= org/apache/openejb/rest/ThreadLocalContextResolver.class
-
- - link:ThreadLocalContextResolver-asmified.java[Asmified]
-
-== References
-

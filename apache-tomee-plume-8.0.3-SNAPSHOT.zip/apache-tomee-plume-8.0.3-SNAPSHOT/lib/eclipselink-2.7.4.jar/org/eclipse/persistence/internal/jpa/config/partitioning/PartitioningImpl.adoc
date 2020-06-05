@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/partitioning/PartitioningImpl.class
-
- - link:PartitioningImpl-asmified.java[Asmified]
-
-== References
-

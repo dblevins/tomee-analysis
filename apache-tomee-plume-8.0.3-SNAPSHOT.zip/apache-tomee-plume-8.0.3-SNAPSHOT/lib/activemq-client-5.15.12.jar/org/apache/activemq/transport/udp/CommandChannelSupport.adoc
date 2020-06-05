@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/CommandChannelSupport.class
-
- - link:CommandChannelSupport-asmified.java[Asmified]
-
-== References
-

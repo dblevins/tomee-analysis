@@ -1,6 +1,0 @@
-= jakarta/mail/MultipartDataSource.class
-
- - link:MultipartDataSource-asmified.java[Asmified]
-
-== References
-

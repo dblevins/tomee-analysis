@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/asynchronous/AsynchronousInterceptor.class
-
- - link:AsynchronousInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/security/AuthenticationUser.class
-
- - link:AuthenticationUser-asmified.java[Asmified]
-
-== References
-

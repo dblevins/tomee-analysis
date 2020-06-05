@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v2/BrokerIdMarshaller.class
-
- - link:BrokerIdMarshaller-asmified.java[Asmified]
-
-== References
-

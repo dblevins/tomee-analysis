@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/plugins/BeanValidationPlugin$MinMaxTuple.class
-
- - link:BeanValidationPlugin$MinMaxTuple-asmified.java[Asmified]
-
-== References
-

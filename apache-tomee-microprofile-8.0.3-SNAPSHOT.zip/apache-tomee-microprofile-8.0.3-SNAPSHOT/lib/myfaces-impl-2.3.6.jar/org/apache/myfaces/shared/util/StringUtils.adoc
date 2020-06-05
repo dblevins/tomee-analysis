@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/StringUtils.class
-
- - link:StringUtils-asmified.java[Asmified]
-
-== References
-

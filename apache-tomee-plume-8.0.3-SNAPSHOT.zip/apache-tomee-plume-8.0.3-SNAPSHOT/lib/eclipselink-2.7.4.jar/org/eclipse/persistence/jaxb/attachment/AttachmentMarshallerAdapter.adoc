@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/attachment/AttachmentMarshallerAdapter.class
-
- - link:AttachmentMarshallerAdapter-asmified.java[Asmified]
-
-== References
-

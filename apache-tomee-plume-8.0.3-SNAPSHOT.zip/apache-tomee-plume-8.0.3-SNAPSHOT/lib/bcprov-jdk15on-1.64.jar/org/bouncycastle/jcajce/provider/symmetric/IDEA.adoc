@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/symmetric/IDEA.class
-
- - link:IDEA-asmified.java[Asmified]
-
-== References
-

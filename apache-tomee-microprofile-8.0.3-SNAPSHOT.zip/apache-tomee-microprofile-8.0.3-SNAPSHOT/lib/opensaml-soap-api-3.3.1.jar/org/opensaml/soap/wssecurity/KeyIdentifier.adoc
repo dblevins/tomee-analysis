@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/KeyIdentifier.class
-
- - link:KeyIdentifier-asmified.java[Asmified]
-
-== References
-

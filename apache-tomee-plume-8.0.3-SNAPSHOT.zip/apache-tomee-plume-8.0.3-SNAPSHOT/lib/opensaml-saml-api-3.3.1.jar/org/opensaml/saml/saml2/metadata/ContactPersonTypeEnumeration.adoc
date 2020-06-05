@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/ContactPersonTypeEnumeration.class
-
- - link:ContactPersonTypeEnumeration-asmified.java[Asmified]
-
-== References
-

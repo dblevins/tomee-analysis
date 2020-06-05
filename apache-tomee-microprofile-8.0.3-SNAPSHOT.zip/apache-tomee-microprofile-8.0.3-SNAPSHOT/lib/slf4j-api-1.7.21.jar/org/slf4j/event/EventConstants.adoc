@@ -1,6 +1,0 @@
-= org/slf4j/event/EventConstants.class
-
- - link:EventConstants-asmified.java[Asmified]
-
-== References
-

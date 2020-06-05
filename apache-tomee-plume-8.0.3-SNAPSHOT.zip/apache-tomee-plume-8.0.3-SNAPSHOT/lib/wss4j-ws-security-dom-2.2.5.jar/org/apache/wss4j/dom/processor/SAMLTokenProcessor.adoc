@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/processor/SAMLTokenProcessor.class
-
- - link:SAMLTokenProcessor-asmified.java[Asmified]
-
-== References
-

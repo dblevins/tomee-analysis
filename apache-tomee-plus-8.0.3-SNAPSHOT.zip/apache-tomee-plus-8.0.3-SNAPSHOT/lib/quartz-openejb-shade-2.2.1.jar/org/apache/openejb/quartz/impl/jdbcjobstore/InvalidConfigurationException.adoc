@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/InvalidConfigurationException.class
-
- - link:InvalidConfigurationException-asmified.java[Asmified]
-
-== References
-

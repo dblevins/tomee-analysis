@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/AbstractWSDLBasedEndpointFactory$SoapBindingServiceConfiguration.class
-
- - link:AbstractWSDLBasedEndpointFactory$SoapBindingServiceConfiguration-asmified.java[Asmified]
-
-== References
-

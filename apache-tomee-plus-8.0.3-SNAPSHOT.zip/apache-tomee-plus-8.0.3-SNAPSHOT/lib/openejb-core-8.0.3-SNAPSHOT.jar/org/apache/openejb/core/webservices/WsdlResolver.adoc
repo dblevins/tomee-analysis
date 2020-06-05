@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/WsdlResolver.class
-
- - link:WsdlResolver-asmified.java[Asmified]
-
-== References
-

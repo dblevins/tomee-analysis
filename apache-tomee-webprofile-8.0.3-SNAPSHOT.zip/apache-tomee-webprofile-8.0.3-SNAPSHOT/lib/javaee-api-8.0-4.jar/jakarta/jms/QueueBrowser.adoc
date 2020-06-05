@@ -1,6 +1,0 @@
-= jakarta/jms/QueueBrowser.class
-
- - link:QueueBrowser-asmified.java[Asmified]
-
-== References
-

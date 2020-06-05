@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/BeginWebBeansListener.class
-
- - link:BeginWebBeansListener-asmified.java[Asmified]
-
-== References
-

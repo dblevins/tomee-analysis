@@ -1,6 +1,0 @@
-= com/ctc/wstx/api/ValidatorConfig.class
-
- - link:ValidatorConfig-asmified.java[Asmified]
-
-== References
-

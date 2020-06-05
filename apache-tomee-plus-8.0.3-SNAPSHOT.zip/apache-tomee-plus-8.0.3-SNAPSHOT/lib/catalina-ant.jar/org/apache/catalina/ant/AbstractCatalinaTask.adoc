@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/AbstractCatalinaTask.class
-
- - link:AbstractCatalinaTask-asmified.java[Asmified]
-
-== References
-

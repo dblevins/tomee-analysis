@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/JMSRemoteCommitProvider.class
-
- - link:JMSRemoteCommitProvider-asmified.java[Asmified]
-
-== References
-

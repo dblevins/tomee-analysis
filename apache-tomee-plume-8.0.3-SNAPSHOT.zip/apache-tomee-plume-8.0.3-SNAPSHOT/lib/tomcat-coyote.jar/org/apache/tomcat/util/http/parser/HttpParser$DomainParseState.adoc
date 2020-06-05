@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/parser/HttpParser$DomainParseState.class
-
- - link:HttpParser$DomainParseState-asmified.java[Asmified]
-
-== References
-

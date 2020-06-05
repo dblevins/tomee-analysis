@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/httpclient/FileCachingHttpClientBuilder.class
-
- - link:FileCachingHttpClientBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/CoreLibrary.class
-
- - link:CoreLibrary-asmified.java[Asmified]
-
-== References
-

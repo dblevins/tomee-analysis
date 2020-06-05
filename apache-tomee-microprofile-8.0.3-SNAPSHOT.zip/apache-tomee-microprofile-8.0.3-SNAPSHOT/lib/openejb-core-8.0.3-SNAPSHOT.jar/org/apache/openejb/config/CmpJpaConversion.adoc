@@ -1,6 +1,0 @@
-= org/apache/openejb/config/CmpJpaConversion.class
-
- - link:CmpJpaConversion-asmified.java[Asmified]
-
-== References
-

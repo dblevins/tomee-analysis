@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/ModuleInfo$ServiceInfo.class
-
- - link:ModuleInfo$ServiceInfo-asmified.java[Asmified]
-
-== References
-

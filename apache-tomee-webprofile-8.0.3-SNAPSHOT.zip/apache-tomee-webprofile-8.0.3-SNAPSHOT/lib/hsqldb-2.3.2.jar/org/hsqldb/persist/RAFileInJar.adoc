@@ -1,6 +1,0 @@
-= org/hsqldb/persist/RAFileInJar.class
-
- - link:RAFileInJar-asmified.java[Asmified]
-
-== References
-

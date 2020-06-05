@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/BeanMetadataBean.class
-
- - link:BeanMetadataBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Node$JspAttribute.class
-
- - link:Node$JspAttribute-asmified.java[Asmified]
-
-== References
-

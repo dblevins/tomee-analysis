@@ -1,6 +1,0 @@
-= org/hsqldb/lib/tar/DbBackup.class
-
- - link:DbBackup-asmified.java[Asmified]
-
-== References
-

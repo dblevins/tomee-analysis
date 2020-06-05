@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/MetadataBuilder$ForExecutable.class
-
- - link:MetadataBuilder$ForExecutable-asmified.java[Asmified]
-
-== References
-

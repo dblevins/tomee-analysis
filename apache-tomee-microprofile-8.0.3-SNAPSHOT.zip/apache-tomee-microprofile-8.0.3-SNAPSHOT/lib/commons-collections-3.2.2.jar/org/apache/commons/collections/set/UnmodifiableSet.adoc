@@ -1,6 +1,0 @@
-= org/apache/commons/collections/set/UnmodifiableSet.class
-
- - link:UnmodifiableSet-asmified.java[Asmified]
-
-== References
-

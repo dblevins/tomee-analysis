@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/columns/AbstractDiscriminatorColumnImpl.class
-
- - link:AbstractDiscriminatorColumnImpl-asmified.java[Asmified]
-
-== References
-

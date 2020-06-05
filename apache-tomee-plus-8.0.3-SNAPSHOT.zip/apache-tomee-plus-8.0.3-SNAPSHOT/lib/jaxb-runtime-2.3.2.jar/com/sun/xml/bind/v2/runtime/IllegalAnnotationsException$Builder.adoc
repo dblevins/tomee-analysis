@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/IllegalAnnotationsException$Builder.class
-
- - link:IllegalAnnotationsException$Builder-asmified.java[Asmified]
-
-== References
-

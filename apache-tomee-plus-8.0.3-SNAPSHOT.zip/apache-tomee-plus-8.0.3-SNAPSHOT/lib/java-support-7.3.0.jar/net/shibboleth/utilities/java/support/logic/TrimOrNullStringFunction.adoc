@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/logic/TrimOrNullStringFunction.class
-
- - link:TrimOrNullStringFunction-asmified.java[Asmified]
-
-== References
-

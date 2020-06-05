@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/TrieUtils.class
-
- - link:TrieUtils-asmified.java[Asmified]
-
-== References
-

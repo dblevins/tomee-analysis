@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/OpenEJBContextConfig.class
-
- - link:OpenEJBContextConfig-asmified.java[Asmified]
-
-== References
-

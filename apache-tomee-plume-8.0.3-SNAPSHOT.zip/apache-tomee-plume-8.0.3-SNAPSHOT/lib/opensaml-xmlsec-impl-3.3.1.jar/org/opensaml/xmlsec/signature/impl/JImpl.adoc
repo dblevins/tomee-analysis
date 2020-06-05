@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/JImpl.class
-
- - link:JImpl-asmified.java[Asmified]
-
-== References
-

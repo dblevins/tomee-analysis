@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/ProcessValidationsPhase.class
-
- - link:ProcessValidationsPhase-asmified.java[Asmified]
-
-== References
-

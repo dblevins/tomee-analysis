@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/SOAPExceptionImpl.class
-
- - link:SOAPExceptionImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/StateCacheProviderFactory.class
-
- - link:StateCacheProviderFactory-asmified.java[Asmified]
-
-== References
-

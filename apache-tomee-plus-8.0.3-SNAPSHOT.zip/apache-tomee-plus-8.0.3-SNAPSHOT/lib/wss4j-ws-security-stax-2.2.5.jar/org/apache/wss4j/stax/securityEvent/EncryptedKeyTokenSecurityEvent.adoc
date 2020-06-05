@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/EncryptedKeyTokenSecurityEvent.class
-
- - link:EncryptedKeyTokenSecurityEvent-asmified.java[Asmified]
-
-== References
-

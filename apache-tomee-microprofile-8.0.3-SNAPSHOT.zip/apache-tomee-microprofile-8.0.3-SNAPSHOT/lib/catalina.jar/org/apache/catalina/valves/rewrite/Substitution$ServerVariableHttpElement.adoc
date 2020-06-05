@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/rewrite/Substitution$ServerVariableHttpElement.class
-
- - link:Substitution$ServerVariableHttpElement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/jmx/ConnectionPoolMBean.class
-
- - link:ConnectionPoolMBean-asmified.java[Asmified]
-
-== References
-

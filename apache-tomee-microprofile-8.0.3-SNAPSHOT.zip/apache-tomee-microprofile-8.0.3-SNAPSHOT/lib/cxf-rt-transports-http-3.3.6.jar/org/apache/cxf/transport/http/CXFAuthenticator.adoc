@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/CXFAuthenticator.class
-
- - link:CXFAuthenticator-asmified.java[Asmified]
-
-== References
-

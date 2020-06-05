@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/jar/BundleJarFile$EmptyInputStream.class
-
- - link:BundleJarFile$EmptyInputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/WireFormatNegotiator.class
-
- - link:WireFormatNegotiator-asmified.java[Asmified]
-
-== References
-

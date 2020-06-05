@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/BeanContextConfig.class
-
- - link:BeanContextConfig-asmified.java[Asmified]
-
-== References
-

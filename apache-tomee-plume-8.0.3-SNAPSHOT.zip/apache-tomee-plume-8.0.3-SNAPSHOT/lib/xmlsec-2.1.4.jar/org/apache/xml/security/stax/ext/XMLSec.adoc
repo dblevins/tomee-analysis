@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/XMLSec.class
-
- - link:XMLSec-asmified.java[Asmified]
-
-== References
-

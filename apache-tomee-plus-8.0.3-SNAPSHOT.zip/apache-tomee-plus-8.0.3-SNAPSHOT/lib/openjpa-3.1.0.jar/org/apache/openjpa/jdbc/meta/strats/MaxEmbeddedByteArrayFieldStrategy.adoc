@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/MaxEmbeddedByteArrayFieldStrategy.class
-
- - link:MaxEmbeddedByteArrayFieldStrategy-asmified.java[Asmified]
-
-== References
-

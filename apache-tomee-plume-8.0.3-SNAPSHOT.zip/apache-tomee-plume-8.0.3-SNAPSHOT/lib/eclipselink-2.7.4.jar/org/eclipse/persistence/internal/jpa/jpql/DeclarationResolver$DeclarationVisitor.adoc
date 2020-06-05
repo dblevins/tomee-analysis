@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/DeclarationResolver$DeclarationVisitor.class
-
- - link:DeclarationResolver$DeclarationVisitor-asmified.java[Asmified]
-
-== References
-

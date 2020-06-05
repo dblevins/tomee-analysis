@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/RequestProducer.class
-
- - link:RequestProducer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/VariableMapperWrapper.class
-
- - link:VariableMapperWrapper-asmified.java[Asmified]
-
-== References
-

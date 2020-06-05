@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/Servlet.class
-
- - link:Servlet-asmified.java[Asmified]
-
-== References
-

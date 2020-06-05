@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/multimap/TransformedMultiValuedMap.class
-
- - link:TransformedMultiValuedMap-asmified.java[Asmified]
-
-== References
-

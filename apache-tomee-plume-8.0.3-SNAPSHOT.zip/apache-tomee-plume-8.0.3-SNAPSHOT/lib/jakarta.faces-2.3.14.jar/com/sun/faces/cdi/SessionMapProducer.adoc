@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/SessionMapProducer.class
-
- - link:SessionMapProducer-asmified.java[Asmified]
-
-== References
-

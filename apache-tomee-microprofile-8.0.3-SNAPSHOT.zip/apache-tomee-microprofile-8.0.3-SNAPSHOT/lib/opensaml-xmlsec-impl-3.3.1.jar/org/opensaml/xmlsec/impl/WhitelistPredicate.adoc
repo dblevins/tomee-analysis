@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/WhitelistPredicate.class
-
- - link:WhitelistPredicate-asmified.java[Asmified]
-
-== References
-

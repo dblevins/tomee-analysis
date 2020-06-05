@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb3/Query.class
-
- - link:Query-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/connector/RequestFacade.class
-
- - link:RequestFacade-asmified.java[Asmified]
-
-== References
-

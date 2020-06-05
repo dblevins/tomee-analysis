@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/core/queries/CoreMappedKeyMapContainerPolicy.class
-
- - link:CoreMappedKeyMapContainerPolicy-asmified.java[Asmified]
-
-== References
-

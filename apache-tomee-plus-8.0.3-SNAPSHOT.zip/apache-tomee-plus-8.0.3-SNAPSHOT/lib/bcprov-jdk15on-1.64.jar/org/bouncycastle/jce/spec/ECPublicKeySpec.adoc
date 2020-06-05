@@ -1,6 +1,0 @@
-= org/bouncycastle/jce/spec/ECPublicKeySpec.class
-
- - link:ECPublicKeySpec-asmified.java[Asmified]
-
-== References
-

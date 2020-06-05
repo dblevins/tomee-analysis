@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationContext$DispatchData.class
-
- - link:ApplicationContext$DispatchData-asmified.java[Asmified]
-
-== References
-

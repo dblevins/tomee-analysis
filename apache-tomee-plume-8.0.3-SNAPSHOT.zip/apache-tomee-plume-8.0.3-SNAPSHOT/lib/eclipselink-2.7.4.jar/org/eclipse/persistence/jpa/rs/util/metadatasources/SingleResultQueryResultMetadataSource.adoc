@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/metadatasources/SingleResultQueryResultMetadataSource.class
-
- - link:SingleResultQueryResultMetadataSource-asmified.java[Asmified]
-
-== References
-

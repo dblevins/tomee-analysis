@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonLongImpl.class
-
- - link:JsonLongImpl-asmified.java[Asmified]
-
-== References
-

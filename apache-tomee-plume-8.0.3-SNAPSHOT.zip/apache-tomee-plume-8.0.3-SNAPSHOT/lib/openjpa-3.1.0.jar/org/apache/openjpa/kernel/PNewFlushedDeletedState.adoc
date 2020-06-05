@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PNewFlushedDeletedState.class
-
- - link:PNewFlushedDeletedState-asmified.java[Asmified]
-
-== References
-

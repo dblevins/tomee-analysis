@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/trust/STSTokenRetriever$TokenRequestParams.class
-
- - link:STSTokenRetriever$TokenRequestParams-asmified.java[Asmified]
-
-== References
-

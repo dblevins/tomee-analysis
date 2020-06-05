@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/ExtendedResult.class
-
- - link:ExtendedResult-asmified.java[Asmified]
-
-== References
-

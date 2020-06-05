@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/NotNullPredicate.class
-
- - link:NotNullPredicate-asmified.java[Asmified]
-
-== References
-

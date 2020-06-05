@@ -1,7 +1,0 @@
-= javax/xml/bind/ValidationEvent.class
-
- - link:ValidationEvent-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.ValidationEventLocator - 1

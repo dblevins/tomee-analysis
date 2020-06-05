@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/util/CDIUtils.class
-
- - link:CDIUtils-asmified.java[Asmified]
-
-== References
-

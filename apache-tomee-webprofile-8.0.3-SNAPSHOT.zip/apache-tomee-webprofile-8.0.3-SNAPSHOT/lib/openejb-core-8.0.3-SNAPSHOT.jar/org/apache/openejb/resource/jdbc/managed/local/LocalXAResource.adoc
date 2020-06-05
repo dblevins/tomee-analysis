@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/managed/local/LocalXAResource.class
-
- - link:LocalXAResource-asmified.java[Asmified]
-
-== References
-

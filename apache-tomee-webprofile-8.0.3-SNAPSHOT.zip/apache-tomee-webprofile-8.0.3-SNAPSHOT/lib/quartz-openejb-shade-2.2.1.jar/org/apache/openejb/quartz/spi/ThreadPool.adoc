@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/spi/ThreadPool.class
-
- - link:ThreadPool-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/wsdl/BindingInput.class
-
- - link:BindingInput-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/spi/Context.class
-
- - link:Context-asmified.java[Asmified]
-
-== References
-

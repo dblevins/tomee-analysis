@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/misc/DoubleKeyMap.class
-
- - link:DoubleKeyMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/DeclareFacetHandler.class
-
- - link:DeclareFacetHandler-asmified.java[Asmified]
-
-== References
-

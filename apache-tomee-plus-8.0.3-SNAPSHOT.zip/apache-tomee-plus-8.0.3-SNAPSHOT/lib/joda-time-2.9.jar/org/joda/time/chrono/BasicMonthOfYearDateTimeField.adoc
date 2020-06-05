@@ -1,6 +1,0 @@
-= org/joda/time/chrono/BasicMonthOfYearDateTimeField.class
-
- - link:BasicMonthOfYearDateTimeField-asmified.java[Asmified]
-
-== References
-

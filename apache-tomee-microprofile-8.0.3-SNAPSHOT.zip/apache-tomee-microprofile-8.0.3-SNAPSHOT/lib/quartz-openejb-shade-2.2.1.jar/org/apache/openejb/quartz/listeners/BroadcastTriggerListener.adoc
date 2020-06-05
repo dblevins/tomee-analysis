@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/listeners/BroadcastTriggerListener.class
-
- - link:BroadcastTriggerListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/ws/rs/client/RxInvokerProvider.class
-
- - link:RxInvokerProvider-asmified.java[Asmified]
-
-== References
-

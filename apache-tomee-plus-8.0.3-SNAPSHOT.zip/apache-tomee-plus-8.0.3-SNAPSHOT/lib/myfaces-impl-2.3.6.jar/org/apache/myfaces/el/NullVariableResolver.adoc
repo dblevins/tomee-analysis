@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/NullVariableResolver.class
-
- - link:NullVariableResolver-asmified.java[Asmified]
-
-== References
-

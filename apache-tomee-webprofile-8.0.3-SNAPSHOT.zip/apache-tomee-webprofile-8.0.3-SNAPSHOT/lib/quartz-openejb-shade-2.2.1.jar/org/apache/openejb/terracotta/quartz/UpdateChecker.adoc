@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/UpdateChecker.class
-
- - link:UpdateChecker-asmified.java[Asmified]
-
-== References
-

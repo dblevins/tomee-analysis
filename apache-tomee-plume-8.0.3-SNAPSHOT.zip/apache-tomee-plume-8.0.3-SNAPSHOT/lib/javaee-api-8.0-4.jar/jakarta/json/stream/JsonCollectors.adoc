@@ -1,6 +1,0 @@
-= jakarta/json/stream/JsonCollectors.class
-
- - link:JsonCollectors-asmified.java[Asmified]
-
-== References
-

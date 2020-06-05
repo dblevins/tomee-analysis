@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/introspector/BeanAccess.class
-
- - link:BeanAccess-asmified.java[Asmified]
-
-== References
-

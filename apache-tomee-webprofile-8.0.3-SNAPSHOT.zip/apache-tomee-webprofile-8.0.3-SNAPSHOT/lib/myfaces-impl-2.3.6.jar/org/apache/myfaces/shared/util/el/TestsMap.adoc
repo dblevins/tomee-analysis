@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/el/TestsMap.class
-
- - link:TestsMap-asmified.java[Asmified]
-
-== References
-

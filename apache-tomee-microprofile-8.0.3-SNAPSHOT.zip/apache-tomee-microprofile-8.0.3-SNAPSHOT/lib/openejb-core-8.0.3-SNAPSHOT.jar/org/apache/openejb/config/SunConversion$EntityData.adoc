@@ -1,6 +1,0 @@
-= org/apache/openejb/config/SunConversion$EntityData.class
-
- - link:SunConversion$EntityData-asmified.java[Asmified]
-
-== References
-

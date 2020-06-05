@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/AbstractLinkedMap$LinkIterator.class
-
- - link:AbstractLinkedMap$LinkIterator-asmified.java[Asmified]
-
-== References
-

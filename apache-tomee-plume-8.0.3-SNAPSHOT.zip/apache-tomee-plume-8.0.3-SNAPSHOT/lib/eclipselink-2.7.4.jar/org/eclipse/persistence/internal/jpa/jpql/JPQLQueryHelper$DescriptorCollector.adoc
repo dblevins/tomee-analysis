@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/JPQLQueryHelper$DescriptorCollector.class
-
- - link:JPQLQueryHelper$DescriptorCollector-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/WebBeansType.class
-
- - link:WebBeansType-asmified.java[Asmified]
-
-== References
-

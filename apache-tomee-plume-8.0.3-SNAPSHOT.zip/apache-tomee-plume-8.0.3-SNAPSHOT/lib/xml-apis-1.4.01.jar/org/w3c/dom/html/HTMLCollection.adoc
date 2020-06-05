@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLCollection.class
-
- - link:HTMLCollection-asmified.java[Asmified]
-
-== References
-

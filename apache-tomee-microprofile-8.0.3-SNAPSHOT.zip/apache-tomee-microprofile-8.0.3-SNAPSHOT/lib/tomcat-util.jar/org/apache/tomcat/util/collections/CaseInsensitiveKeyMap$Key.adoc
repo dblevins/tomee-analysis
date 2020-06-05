@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/collections/CaseInsensitiveKeyMap$Key.class
-
- - link:CaseInsensitiveKeyMap$Key-asmified.java[Asmified]
-
-== References
-

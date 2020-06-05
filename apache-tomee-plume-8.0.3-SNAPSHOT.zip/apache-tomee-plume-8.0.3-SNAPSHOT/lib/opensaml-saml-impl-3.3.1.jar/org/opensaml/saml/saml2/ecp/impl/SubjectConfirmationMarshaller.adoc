@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/ecp/impl/SubjectConfirmationMarshaller.class
-
- - link:SubjectConfirmationMarshaller-asmified.java[Asmified]
-
-== References
-

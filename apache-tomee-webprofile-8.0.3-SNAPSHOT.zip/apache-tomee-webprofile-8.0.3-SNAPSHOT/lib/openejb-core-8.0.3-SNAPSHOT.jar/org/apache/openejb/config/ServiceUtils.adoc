@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ServiceUtils.class
-
- - link:ServiceUtils-asmified.java[Asmified]
-
-== References
-

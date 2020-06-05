@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/RequestScoped.class
-
- - link:RequestScoped-asmified.java[Asmified]
-
-== References
-

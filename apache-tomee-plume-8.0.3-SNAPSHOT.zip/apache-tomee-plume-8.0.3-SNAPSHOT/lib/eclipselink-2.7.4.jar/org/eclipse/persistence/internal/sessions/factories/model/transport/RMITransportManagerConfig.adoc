@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/transport/RMITransportManagerConfig.class
-
- - link:RMITransportManagerConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/nntp/NNTPMessage.class
-
- - link:NNTPMessage-asmified.java[Asmified]
-
-== References
-

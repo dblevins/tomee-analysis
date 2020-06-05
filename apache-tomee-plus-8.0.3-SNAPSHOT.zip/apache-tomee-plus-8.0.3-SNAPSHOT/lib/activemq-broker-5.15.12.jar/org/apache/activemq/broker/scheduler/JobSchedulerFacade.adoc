@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/scheduler/JobSchedulerFacade.class
-
- - link:JobSchedulerFacade-asmified.java[Asmified]
-
-== References
-

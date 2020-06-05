@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/impl/DefaultFacelet$ApplyToken.class
-
- - link:DefaultFacelet$ApplyToken-asmified.java[Asmified]
-
-== References
-

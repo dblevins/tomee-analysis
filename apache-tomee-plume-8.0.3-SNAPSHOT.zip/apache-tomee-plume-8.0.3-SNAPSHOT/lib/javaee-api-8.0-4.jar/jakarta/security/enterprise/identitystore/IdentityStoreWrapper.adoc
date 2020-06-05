@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/identitystore/IdentityStoreWrapper.class
-
- - link:IdentityStoreWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,9 +1,0 @@
-= javax/validation/constraints/Size.class
-
- - link:Size-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Payload - 1
- - javax.validation.Constraint - 1
- - javax.validation.constraints.Size$List - 1

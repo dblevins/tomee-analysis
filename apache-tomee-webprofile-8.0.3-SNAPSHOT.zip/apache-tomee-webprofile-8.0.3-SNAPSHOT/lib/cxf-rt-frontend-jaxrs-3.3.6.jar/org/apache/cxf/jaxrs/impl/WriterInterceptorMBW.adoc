@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/WriterInterceptorMBW.class
-
- - link:WriterInterceptorMBW-asmified.java[Asmified]
-
-== References
-

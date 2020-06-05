@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wss10/KeyIdentifierType.class
-
- - link:KeyIdentifierType-asmified.java[Asmified]
-
-== References
-

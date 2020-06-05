@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/InterceptionFactoryBean.class
-
- - link:InterceptionFactoryBean-asmified.java[Asmified]
-
-== References
-

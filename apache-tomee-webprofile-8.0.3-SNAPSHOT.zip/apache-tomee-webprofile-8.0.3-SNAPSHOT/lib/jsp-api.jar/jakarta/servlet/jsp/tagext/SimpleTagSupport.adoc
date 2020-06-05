@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/tagext/SimpleTagSupport.class
-
- - link:SimpleTagSupport-asmified.java[Asmified]
-
-== References
-

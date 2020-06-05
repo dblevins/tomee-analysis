@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/OrderSlotImpl.class
-
- - link:OrderSlotImpl-asmified.java[Asmified]
-
-== References
-

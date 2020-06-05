@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIComponent$BundleMap$1.class
-
- - link:UIComponent$BundleMap$1-asmified.java[Asmified]
-
-== References
-

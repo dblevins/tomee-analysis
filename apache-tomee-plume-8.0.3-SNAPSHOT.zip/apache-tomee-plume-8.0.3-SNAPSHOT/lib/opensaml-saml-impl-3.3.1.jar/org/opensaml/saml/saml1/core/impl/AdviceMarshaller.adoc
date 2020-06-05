@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AdviceMarshaller.class
-
- - link:AdviceMarshaller-asmified.java[Asmified]
-
-== References
-

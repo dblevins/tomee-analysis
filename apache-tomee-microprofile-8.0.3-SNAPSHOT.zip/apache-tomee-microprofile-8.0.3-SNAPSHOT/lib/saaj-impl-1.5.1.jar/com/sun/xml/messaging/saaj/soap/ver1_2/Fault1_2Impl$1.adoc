@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/ver1_2/Fault1_2Impl$1.class
-
- - link:Fault1_2Impl$1-asmified.java[Asmified]
-
-== References
-

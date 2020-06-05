@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/math/linearalgebra/GoppaCode.class
-
- - link:GoppaCode-asmified.java[Asmified]
-
-== References
-

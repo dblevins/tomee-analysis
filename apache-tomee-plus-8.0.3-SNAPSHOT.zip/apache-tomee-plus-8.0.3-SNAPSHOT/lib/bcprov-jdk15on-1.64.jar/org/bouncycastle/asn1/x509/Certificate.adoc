@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/x509/Certificate.class
-
- - link:Certificate-asmified.java[Asmified]
-
-== References
-

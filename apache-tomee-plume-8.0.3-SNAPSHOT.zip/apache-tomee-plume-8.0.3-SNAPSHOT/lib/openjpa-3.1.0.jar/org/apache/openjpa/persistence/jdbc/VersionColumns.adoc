@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/VersionColumns.class
-
- - link:VersionColumns-asmified.java[Asmified]
-
-== References
-

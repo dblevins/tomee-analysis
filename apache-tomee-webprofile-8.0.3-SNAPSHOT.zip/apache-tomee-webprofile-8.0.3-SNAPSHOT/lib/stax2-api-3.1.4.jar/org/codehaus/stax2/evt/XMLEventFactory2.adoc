@@ -1,6 +1,0 @@
-= org/codehaus/stax2/evt/XMLEventFactory2.class
-
- - link:XMLEventFactory2-asmified.java[Asmified]
-
-== References
-

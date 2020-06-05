@@ -1,6 +1,0 @@
-= org/apache/activemq/MessageTransformerSupport.class
-
- - link:MessageTransformerSupport-asmified.java[Asmified]
-
-== References
-

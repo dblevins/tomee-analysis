@@ -1,6 +1,0 @@
-= jakarta/jms/TopicRequestor.class
-
- - link:TopicRequestor-asmified.java[Asmified]
-
-== References
-

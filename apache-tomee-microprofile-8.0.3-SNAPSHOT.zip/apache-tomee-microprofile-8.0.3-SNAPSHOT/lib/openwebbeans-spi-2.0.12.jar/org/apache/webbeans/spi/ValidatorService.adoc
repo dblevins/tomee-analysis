@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/ValidatorService.class
-
- - link:ValidatorService-asmified.java[Asmified]
-
-== References
-

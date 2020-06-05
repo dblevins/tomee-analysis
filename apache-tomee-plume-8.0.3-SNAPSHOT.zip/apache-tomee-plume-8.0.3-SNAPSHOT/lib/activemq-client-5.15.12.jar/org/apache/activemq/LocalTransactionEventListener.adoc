@@ -1,6 +1,0 @@
-= org/apache/activemq/LocalTransactionEventListener.class
-
- - link:LocalTransactionEventListener-asmified.java[Asmified]
-
-== References
-

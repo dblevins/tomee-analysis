@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/AbstractAccessLogValve$ConnectionStatusElement.class
-
- - link:AbstractAccessLogValve$ConnectionStatusElement-asmified.java[Asmified]
-
-== References
-

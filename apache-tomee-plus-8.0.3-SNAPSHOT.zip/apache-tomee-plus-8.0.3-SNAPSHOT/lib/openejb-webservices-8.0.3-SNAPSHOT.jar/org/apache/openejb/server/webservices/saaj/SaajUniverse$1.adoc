@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/saaj/SaajUniverse$1.class
-
- - link:SaajUniverse$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/xml/soap/MessageFactory.class
-
- - link:MessageFactory-asmified.java[Asmified]
-
-== References
-

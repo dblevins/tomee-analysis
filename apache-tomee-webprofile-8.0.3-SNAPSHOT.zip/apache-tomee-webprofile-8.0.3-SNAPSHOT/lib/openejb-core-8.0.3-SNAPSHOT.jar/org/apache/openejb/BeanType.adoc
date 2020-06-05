@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanType.class
-
- - link:BeanType-asmified.java[Asmified]
-
-== References
-

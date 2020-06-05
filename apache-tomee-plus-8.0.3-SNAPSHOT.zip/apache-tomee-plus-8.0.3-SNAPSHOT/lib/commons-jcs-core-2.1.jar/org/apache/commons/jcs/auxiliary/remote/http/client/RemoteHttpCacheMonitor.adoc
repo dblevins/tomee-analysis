@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/http/client/RemoteHttpCacheMonitor.class
-
- - link:RemoteHttpCacheMonitor-asmified.java[Asmified]
-
-== References
-

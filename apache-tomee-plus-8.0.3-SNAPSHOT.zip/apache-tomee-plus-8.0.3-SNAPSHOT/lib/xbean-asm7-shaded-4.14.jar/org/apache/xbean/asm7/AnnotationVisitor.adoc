@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/AnnotationVisitor.class
-
- - link:AnnotationVisitor-asmified.java[Asmified]
-
-== References
-

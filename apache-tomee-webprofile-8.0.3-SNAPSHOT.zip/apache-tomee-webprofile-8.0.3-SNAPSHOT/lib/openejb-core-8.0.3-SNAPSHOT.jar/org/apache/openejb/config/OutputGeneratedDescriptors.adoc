@@ -1,6 +1,0 @@
-= org/apache/openejb/config/OutputGeneratedDescriptors.class
-
- - link:OutputGeneratedDescriptors-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/DB2MainframePlatform.class
-
- - link:DB2MainframePlatform-asmified.java[Asmified]
-
-== References
-

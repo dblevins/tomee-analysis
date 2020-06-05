@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/microprofile/cdi/TracedExecutorServiceInterceptor.class
-
- - link:TracedExecutorServiceInterceptor-asmified.java[Asmified]
-
-== References
-

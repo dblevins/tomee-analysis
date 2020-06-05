@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.class
-
- - link:StdValueInstantiator-asmified.java[Asmified]
-
-== References
-

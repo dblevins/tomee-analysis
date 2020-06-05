@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidateProperty$FindDescriptor.class
-
- - link:ValidateProperty$FindDescriptor-asmified.java[Asmified]
-
-== References
-

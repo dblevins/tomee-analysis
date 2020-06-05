@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/ContextResourceLink.class
-
- - link:ContextResourceLink-asmified.java[Asmified]
-
-== References
-

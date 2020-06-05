@@ -1,6 +1,0 @@
-= org/apache/bval/util/ValidatorUtils.class
-
- - link:ValidatorUtils-asmified.java[Asmified]
-
-== References
-

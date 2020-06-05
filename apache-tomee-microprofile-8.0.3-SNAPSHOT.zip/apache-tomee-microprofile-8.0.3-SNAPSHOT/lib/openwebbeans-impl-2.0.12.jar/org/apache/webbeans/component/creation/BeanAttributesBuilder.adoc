@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/BeanAttributesBuilder.class
-
- - link:BeanAttributesBuilder-asmified.java[Asmified]
-
-== References
-

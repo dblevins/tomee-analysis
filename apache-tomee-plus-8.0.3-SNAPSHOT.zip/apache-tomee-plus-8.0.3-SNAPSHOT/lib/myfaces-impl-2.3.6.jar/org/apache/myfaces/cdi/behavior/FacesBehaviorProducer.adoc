@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/behavior/FacesBehaviorProducer.class
-
- - link:FacesBehaviorProducer-asmified.java[Asmified]
-
-== References
-

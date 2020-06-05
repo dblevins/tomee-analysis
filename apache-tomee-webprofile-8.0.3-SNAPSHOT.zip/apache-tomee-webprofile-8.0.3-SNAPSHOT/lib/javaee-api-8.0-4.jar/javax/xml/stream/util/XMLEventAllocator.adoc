@@ -1,6 +1,0 @@
-= javax/xml/stream/util/XMLEventAllocator.class
-
- - link:XMLEventAllocator-asmified.java[Asmified]
-
-== References
-

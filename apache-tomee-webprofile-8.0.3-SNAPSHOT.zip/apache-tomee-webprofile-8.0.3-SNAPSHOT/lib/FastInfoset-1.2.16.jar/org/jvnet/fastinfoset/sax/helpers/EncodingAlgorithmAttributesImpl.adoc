@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/sax/helpers/EncodingAlgorithmAttributesImpl.class
-
- - link:EncodingAlgorithmAttributesImpl-asmified.java[Asmified]
-
-== References
-

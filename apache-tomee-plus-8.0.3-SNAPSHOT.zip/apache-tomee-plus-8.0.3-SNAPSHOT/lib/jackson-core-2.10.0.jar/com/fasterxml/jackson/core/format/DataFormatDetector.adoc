@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/format/DataFormatDetector.class
-
- - link:DataFormatDetector-asmified.java[Asmified]
-
-== References
-

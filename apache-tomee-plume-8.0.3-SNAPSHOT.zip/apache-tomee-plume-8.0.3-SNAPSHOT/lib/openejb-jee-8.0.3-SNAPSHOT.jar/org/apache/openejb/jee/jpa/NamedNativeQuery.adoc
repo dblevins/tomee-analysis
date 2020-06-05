@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/NamedNativeQuery.class
-
- - link:NamedNativeQuery-asmified.java[Asmified]
-
-== References
-

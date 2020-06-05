@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/executor/DefaultThreadPoolService.class
-
- - link:DefaultThreadPoolService-asmified.java[Asmified]
-
-== References
-

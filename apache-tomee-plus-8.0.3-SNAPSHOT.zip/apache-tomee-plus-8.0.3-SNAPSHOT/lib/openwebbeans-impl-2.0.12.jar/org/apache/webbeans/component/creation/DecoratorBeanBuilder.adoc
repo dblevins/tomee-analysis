@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/DecoratorBeanBuilder.class
-
- - link:DecoratorBeanBuilder-asmified.java[Asmified]
-
-== References
-

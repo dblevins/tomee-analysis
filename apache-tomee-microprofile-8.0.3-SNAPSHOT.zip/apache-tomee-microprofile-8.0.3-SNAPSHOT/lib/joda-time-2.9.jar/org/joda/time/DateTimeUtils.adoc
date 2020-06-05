@@ -1,6 +1,0 @@
-= org/joda/time/DateTimeUtils.class
-
- - link:DateTimeUtils-asmified.java[Asmified]
-
-== References
-

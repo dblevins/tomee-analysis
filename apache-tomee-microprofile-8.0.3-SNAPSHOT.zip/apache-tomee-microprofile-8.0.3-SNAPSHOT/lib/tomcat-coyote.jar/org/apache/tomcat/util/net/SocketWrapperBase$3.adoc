@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SocketWrapperBase$3.class
-
- - link:SocketWrapperBase$3-asmified.java[Asmified]
-
-== References
-

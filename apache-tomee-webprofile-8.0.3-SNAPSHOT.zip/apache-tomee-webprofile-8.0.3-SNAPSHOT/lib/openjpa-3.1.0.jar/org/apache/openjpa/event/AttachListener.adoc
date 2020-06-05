@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/AttachListener.class
-
- - link:AttachListener-asmified.java[Asmified]
-
-== References
-

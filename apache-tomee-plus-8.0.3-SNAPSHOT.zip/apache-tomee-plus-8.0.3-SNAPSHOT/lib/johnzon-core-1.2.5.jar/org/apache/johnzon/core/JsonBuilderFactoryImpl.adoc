@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonBuilderFactoryImpl.class
-
- - link:JsonBuilderFactoryImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/NullIsExceptionPredicate.class
-
- - link:NullIsExceptionPredicate-asmified.java[Asmified]
-
-== References
-

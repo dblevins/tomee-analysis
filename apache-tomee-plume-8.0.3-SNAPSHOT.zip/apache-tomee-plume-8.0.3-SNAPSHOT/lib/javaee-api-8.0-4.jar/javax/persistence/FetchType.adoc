@@ -1,7 +1,0 @@
-= javax/persistence/FetchType.class
-
- - link:FetchType-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.FetchType - 21

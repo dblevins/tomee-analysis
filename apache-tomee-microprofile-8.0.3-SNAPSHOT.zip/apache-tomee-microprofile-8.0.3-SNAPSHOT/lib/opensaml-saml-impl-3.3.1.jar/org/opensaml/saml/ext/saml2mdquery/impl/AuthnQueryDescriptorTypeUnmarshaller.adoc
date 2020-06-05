@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdquery/impl/AuthnQueryDescriptorTypeUnmarshaller.class
-
- - link:AuthnQueryDescriptorTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

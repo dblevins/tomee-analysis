@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/AuthenticatedData.class
-
- - link:AuthenticatedData-asmified.java[Asmified]
-
-== References
-

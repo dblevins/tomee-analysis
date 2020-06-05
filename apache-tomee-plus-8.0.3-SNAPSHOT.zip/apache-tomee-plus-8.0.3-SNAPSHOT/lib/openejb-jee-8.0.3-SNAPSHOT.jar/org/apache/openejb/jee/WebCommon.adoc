@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/WebCommon.class
-
- - link:WebCommon-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/facelets/FaceletValidatorTagImpl.class
-
- - link:FaceletValidatorTagImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/profile/impl/AddNameIDToSubjects$1.class
-
- - link:AddNameIDToSubjects$1-asmified.java[Asmified]
-
-== References
-

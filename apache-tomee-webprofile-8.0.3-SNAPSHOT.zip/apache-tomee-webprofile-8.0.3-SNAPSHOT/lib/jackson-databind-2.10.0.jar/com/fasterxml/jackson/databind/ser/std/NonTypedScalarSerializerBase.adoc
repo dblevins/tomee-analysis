@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/NonTypedScalarSerializerBase.class
-
- - link:NonTypedScalarSerializerBase-asmified.java[Asmified]
-
-== References
-

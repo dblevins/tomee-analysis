@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/blueprint/HttpConduitBPBeanDefinitionParser.class
-
- - link:HttpConduitBPBeanDefinitionParser-asmified.java[Asmified]
-
-== References
-

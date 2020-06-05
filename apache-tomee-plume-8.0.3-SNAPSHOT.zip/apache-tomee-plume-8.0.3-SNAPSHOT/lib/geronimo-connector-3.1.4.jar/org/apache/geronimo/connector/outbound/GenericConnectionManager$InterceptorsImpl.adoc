@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/GenericConnectionManager$InterceptorsImpl.class
-
- - link:GenericConnectionManager$InterceptorsImpl-asmified.java[Asmified]
-
-== References
-

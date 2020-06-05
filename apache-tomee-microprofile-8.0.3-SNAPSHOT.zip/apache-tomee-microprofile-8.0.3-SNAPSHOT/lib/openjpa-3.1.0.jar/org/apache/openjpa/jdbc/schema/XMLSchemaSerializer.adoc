@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/XMLSchemaSerializer.class
-
- - link:XMLSchemaSerializer-asmified.java[Asmified]
-
-== References
-

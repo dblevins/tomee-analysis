@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/InboundResourceadapter$JAXB.class
-
- - link:InboundResourceadapter$JAXB-asmified.java[Asmified]
-
-== References
-

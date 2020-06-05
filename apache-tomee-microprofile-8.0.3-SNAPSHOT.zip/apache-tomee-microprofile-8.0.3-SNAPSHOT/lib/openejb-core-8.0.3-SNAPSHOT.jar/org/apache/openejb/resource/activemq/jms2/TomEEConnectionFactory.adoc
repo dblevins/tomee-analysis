@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/TomEEConnectionFactory.class
-
- - link:TomEEConnectionFactory-asmified.java[Asmified]
-
-== References
-

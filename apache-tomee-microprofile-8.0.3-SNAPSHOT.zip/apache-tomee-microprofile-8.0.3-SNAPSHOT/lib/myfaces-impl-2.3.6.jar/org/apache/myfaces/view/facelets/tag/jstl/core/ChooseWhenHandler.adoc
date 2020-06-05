@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jstl/core/ChooseWhenHandler.class
-
- - link:ChooseWhenHandler-asmified.java[Asmified]
-
-== References
-

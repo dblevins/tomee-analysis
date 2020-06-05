@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/routing/RouterException.class
-
- - link:RouterException-asmified.java[Asmified]
-
-== References
-

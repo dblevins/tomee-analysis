@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/PreLoginMappingAdapter.class
-
- - link:PreLoginMappingAdapter-asmified.java[Asmified]
-
-== References
-

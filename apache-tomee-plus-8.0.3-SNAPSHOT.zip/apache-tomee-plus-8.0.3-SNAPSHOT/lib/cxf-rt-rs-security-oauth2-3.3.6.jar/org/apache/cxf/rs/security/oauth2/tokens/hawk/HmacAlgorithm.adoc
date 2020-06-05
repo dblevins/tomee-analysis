@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/tokens/hawk/HmacAlgorithm.class
-
- - link:HmacAlgorithm-asmified.java[Asmified]
-
-== References
-

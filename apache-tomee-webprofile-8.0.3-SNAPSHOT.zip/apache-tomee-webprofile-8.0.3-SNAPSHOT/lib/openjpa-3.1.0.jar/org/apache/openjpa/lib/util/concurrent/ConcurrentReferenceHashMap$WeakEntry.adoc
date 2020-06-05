@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/concurrent/ConcurrentReferenceHashMap$WeakEntry.class
-
- - link:ConcurrentReferenceHashMap$WeakEntry-asmified.java[Asmified]
-
-== References
-

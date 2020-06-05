@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/osgi/OSGiBeanLocator.class
-
- - link:OSGiBeanLocator-asmified.java[Asmified]
-
-== References
-

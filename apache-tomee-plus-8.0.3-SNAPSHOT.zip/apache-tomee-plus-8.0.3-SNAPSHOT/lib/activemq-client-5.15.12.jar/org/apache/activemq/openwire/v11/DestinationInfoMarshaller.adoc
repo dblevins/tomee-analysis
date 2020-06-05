@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v11/DestinationInfoMarshaller.class
-
- - link:DestinationInfoMarshaller-asmified.java[Asmified]
-
-== References
-

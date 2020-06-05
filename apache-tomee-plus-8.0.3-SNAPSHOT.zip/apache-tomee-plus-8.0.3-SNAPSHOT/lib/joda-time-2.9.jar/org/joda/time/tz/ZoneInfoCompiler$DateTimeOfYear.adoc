@@ -1,6 +1,0 @@
-= org/joda/time/tz/ZoneInfoCompiler$DateTimeOfYear.class
-
- - link:ZoneInfoCompiler$DateTimeOfYear-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/DefaultFaceletsStateManagementStrategy.class
-
- - link:DefaultFaceletsStateManagementStrategy-asmified.java[Asmified]
-
-== References
-

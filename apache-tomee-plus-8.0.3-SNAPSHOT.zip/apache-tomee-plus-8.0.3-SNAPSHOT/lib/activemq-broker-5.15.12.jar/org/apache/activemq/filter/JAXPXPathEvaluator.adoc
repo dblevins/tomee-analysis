@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/JAXPXPathEvaluator.class
-
- - link:JAXPXPathEvaluator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/ServiceMBean.class
-
- - link:ServiceMBean-asmified.java[Asmified]
-
-== References
-

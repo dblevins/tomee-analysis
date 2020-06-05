@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/fragment/PersistenceUnitFragment.class
-
- - link:PersistenceUnitFragment-asmified.java[Asmified]
-
-== References
-

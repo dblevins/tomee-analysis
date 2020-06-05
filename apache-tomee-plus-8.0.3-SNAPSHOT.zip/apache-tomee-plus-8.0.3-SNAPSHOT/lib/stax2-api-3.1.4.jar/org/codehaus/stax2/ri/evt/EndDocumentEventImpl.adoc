@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/evt/EndDocumentEventImpl.class
-
- - link:EndDocumentEventImpl-asmified.java[Asmified]
-
-== References
-

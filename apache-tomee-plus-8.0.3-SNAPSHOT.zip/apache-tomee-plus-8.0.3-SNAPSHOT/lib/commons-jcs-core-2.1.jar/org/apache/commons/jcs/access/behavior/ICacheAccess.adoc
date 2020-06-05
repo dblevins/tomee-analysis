@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/access/behavior/ICacheAccess.class
-
- - link:ICacheAccess-asmified.java[Asmified]
-
-== References
-

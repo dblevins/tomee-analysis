@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/InternalBridge.class
-
- - link:InternalBridge-asmified.java[Asmified]
-
-== References
-

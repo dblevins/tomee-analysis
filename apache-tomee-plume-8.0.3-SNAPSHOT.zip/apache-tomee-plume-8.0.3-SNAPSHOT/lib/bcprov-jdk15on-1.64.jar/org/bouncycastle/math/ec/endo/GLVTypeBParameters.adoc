@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/endo/GLVTypeBParameters.class
-
- - link:GLVTypeBParameters-asmified.java[Asmified]
-
-== References
-

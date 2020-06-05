@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/JohnzonMessageBodyReader.class
-
- - link:JohnzonMessageBodyReader-asmified.java[Asmified]
-
-== References
-

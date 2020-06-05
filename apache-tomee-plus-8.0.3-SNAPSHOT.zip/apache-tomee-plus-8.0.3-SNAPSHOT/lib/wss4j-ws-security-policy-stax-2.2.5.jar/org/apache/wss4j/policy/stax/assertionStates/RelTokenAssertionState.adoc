@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/RelTokenAssertionState.class
-
- - link:RelTokenAssertionState-asmified.java[Asmified]
-
-== References
-

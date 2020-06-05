@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/ProxyConnectorViewMBean.class
-
- - link:ProxyConnectorViewMBean-asmified.java[Asmified]
-
-== References
-

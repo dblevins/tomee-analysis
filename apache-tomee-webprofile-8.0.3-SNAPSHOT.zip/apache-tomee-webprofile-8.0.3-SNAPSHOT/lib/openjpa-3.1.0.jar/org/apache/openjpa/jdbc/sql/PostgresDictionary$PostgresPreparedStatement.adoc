@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/PostgresDictionary$PostgresPreparedStatement.class
-
- - link:PostgresDictionary$PostgresPreparedStatement-asmified.java[Asmified]
-
-== References
-

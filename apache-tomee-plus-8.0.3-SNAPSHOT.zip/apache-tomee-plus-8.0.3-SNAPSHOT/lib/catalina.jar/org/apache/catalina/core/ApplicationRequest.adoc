@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationRequest.class
-
- - link:ApplicationRequest-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/security/PermissionCheck.class
-
- - link:PermissionCheck-asmified.java[Asmified]
-
-== References
-

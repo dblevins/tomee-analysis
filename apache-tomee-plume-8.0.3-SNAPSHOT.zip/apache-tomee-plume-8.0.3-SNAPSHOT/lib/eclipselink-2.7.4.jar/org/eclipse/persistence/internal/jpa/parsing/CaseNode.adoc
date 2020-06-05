@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/CaseNode.class
-
- - link:CaseNode-asmified.java[Asmified]
-
-== References
-

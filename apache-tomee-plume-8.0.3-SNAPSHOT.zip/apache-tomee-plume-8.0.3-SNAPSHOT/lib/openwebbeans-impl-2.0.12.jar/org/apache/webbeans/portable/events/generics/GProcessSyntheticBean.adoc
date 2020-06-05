@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessSyntheticBean.class
-
- - link:GProcessSyntheticBean-asmified.java[Asmified]
-
-== References
-

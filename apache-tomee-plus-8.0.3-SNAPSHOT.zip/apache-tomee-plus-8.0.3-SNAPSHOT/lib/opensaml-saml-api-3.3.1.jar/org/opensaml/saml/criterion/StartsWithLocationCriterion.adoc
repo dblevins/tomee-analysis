@@ -1,6 +1,0 @@
-= org/opensaml/saml/criterion/StartsWithLocationCriterion.class
-
- - link:StartsWithLocationCriterion-asmified.java[Asmified]
-
-== References
-

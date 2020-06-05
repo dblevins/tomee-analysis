@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIForm$1.class
-
- - link:UIForm$1-asmified.java[Asmified]
-
-== References
-

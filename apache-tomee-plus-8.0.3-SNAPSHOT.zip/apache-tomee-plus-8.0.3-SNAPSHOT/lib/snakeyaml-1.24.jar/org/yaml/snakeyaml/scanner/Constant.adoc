@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/scanner/Constant.class
-
- - link:Constant-asmified.java[Asmified]
-
-== References
-

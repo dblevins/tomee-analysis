@@ -1,6 +1,0 @@
-= org/apache/activemq/util/StopWatch.class
-
- - link:StopWatch-asmified.java[Asmified]
-
-== References
-

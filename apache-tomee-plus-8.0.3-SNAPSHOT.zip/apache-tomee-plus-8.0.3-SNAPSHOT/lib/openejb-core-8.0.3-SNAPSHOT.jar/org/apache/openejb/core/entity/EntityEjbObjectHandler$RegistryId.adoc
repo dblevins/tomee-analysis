@@ -1,6 +1,0 @@
-= org/apache/openejb/core/entity/EntityEjbObjectHandler$RegistryId.class
-
- - link:EntityEjbObjectHandler$RegistryId-asmified.java[Asmified]
-
-== References
-

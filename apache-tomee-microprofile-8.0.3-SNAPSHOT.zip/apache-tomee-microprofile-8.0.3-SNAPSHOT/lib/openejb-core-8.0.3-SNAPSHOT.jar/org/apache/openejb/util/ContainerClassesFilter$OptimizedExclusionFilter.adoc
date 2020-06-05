@@ -1,6 +1,0 @@
-= org/apache/openejb/util/ContainerClassesFilter$OptimizedExclusionFilter.class
-
- - link:ContainerClassesFilter$OptimizedExclusionFilter-asmified.java[Asmified]
-
-== References
-

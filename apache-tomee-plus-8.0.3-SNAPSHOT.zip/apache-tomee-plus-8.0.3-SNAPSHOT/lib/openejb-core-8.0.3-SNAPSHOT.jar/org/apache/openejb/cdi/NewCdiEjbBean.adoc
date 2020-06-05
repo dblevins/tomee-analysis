@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/NewCdiEjbBean.class
-
- - link:NewCdiEjbBean-asmified.java[Asmified]
-
-== References
-

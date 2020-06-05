@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/CollectionUtil.class
-
- - link:CollectionUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/DependentValueClasses.class
-
- - link:DependentValueClasses-asmified.java[Asmified]
-
-== References
-

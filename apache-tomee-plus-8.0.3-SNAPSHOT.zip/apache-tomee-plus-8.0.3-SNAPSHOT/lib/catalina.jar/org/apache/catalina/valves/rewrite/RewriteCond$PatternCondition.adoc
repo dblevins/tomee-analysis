@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/rewrite/RewriteCond$PatternCondition.class
-
- - link:RewriteCond$PatternCondition-asmified.java[Asmified]
-
-== References
-

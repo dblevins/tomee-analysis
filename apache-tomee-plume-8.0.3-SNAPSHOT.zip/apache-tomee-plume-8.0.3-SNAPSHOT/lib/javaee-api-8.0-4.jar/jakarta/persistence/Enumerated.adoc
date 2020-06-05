@@ -1,6 +1,0 @@
-= jakarta/persistence/Enumerated.class
-
- - link:Enumerated-asmified.java[Asmified]
-
-== References
-

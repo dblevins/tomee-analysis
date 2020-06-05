@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/ReportQueryVisitor.class
-
- - link:ReportQueryVisitor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/ReferenceListImpl.class
-
- - link:ReferenceListImpl-asmified.java[Asmified]
-
-== References
-

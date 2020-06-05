@@ -1,6 +1,0 @@
-= org/hsqldb/util/Traceable.class
-
- - link:Traceable-asmified.java[Asmified]
-
-== References
-

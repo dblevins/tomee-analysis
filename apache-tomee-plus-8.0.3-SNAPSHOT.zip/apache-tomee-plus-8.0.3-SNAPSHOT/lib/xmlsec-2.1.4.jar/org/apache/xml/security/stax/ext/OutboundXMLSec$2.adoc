@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/OutboundXMLSec$2.class
-
- - link:OutboundXMLSec$2-asmified.java[Asmified]
-
-== References
-

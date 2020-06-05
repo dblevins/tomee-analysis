@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/XMLImpl.class
-
- - link:XMLImpl-asmified.java[Asmified]
-
-== References
-

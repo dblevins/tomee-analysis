@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/validation/JAXRSBeanValidationOutInterceptor.class
-
- - link:JAXRSBeanValidationOutInterceptor-asmified.java[Asmified]
-
-== References
-

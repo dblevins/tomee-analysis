@@ -1,6 +1,0 @@
-= jakarta/servlet/ServletRequestAttributeEvent.class
-
- - link:ServletRequestAttributeEvent-asmified.java[Asmified]
-
-== References
-

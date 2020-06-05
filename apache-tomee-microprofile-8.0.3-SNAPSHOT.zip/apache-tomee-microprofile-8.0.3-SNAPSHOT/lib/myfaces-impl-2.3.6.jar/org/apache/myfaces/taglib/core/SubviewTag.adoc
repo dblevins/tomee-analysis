@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/SubviewTag.class
-
- - link:SubviewTag-asmified.java[Asmified]
-
-== References
-

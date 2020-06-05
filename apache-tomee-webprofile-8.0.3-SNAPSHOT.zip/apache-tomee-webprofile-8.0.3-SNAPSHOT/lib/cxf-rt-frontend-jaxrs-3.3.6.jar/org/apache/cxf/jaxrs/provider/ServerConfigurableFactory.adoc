@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ServerConfigurableFactory.class
-
- - link:ServerConfigurableFactory-asmified.java[Asmified]
-
-== References
-

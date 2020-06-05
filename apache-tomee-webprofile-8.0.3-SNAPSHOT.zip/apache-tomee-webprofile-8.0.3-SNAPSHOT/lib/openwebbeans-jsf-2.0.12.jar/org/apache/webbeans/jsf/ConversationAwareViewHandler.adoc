@@ -1,6 +1,0 @@
-= org/apache/webbeans/jsf/ConversationAwareViewHandler.class
-
- - link:ConversationAwareViewHandler-asmified.java[Asmified]
-
-== References
-

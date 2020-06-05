@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/Method.class
-
- - link:Method-asmified.java[Asmified]
-
-== References
-

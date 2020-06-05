@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/ManagedTransportConnector.class
-
- - link:ManagedTransportConnector-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/Files.class
-
- - link:Files-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/nodes/MappingNode.class
-
- - link:MappingNode-asmified.java[Asmified]
-
-== References
-

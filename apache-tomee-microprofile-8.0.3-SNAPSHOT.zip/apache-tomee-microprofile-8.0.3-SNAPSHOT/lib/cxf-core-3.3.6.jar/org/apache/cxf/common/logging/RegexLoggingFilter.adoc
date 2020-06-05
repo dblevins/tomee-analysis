@@ -1,6 +1,0 @@
-= org/apache/cxf/common/logging/RegexLoggingFilter.class
-
- - link:RegexLoggingFilter-asmified.java[Asmified]
-
-== References
-

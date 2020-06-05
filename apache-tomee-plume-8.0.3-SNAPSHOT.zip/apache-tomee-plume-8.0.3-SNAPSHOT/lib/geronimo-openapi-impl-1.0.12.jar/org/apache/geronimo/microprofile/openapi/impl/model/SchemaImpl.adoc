@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/SchemaImpl.class
-
- - link:SchemaImpl-asmified.java[Asmified]
-
-== References
-

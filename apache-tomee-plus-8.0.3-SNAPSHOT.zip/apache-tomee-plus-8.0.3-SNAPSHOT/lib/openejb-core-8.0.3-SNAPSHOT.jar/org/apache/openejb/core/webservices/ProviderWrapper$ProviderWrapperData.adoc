@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/ProviderWrapper$ProviderWrapperData.class
-
- - link:ProviderWrapper$ProviderWrapperData-asmified.java[Asmified]
-
-== References
-

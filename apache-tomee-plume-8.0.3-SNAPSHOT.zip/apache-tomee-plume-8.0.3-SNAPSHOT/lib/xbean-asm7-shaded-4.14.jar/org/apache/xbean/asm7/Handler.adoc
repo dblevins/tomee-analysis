@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/Handler.class
-
- - link:Handler-asmified.java[Asmified]
-
-== References
-

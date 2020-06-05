@@ -1,6 +1,0 @@
-= org/apache/openejb/util/reflection/Reflections.class
-
- - link:Reflections-asmified.java[Asmified]
-
-== References
-

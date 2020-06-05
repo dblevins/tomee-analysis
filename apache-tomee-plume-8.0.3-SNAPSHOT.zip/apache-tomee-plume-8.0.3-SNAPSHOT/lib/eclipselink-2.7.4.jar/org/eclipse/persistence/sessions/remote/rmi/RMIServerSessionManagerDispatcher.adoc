@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/remote/rmi/RMIServerSessionManagerDispatcher.class
-
- - link:RMIServerSessionManagerDispatcher-asmified.java[Asmified]
-
-== References
-

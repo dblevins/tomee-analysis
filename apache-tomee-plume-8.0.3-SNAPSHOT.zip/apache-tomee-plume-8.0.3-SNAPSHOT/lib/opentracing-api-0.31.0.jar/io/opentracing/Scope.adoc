@@ -1,6 +1,0 @@
-= io/opentracing/Scope.class
-
- - link:Scope-asmified.java[Asmified]
-
-== References
-

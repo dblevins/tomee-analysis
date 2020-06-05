@@ -1,6 +1,0 @@
-= org/apache/naming/ContextAccessController.class
-
- - link:ContextAccessController-asmified.java[Asmified]
-
-== References
-

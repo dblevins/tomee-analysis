@@ -1,8 +1,0 @@
-= javax/el/JreCompat.class
-
- - link:JreCompat-asmified.java[Asmified]
-
-== References
-
- - javax.el.JreCompat - 7
- - javax.el.Jre9Compat - 3

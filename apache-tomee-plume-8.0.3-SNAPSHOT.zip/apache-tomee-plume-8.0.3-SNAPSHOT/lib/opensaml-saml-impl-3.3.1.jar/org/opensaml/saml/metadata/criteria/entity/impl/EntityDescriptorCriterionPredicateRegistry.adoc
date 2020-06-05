@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/criteria/entity/impl/EntityDescriptorCriterionPredicateRegistry.class
-
- - link:EntityDescriptorCriterionPredicateRegistry-asmified.java[Asmified]
-
-== References
-

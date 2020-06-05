@@ -1,6 +1,0 @@
-= jakarta/websocket/OnError.class
-
- - link:OnError-asmified.java[Asmified]
-
-== References
-

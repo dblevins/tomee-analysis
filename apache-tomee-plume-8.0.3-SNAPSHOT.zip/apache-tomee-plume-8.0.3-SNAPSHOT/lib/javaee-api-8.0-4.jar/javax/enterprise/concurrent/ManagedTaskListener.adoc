@@ -1,7 +1,0 @@
-= javax/enterprise/concurrent/ManagedTaskListener.class
-
- - link:ManagedTaskListener-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.concurrent.ManagedExecutorService - 4

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ServiceUtils$ProviderInfo.class
-
- - link:ServiceUtils$ProviderInfo-asmified.java[Asmified]
-
-== References
-

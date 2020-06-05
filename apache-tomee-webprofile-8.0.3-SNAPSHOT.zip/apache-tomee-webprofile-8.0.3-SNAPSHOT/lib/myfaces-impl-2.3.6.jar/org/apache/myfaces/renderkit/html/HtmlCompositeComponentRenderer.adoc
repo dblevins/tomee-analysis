@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlCompositeComponentRenderer.class
-
- - link:HtmlCompositeComponentRenderer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/auth/LdapAuthBeanTester.class
-
- - link:LdapAuthBeanTester-asmified.java[Asmified]
-
-== References
-

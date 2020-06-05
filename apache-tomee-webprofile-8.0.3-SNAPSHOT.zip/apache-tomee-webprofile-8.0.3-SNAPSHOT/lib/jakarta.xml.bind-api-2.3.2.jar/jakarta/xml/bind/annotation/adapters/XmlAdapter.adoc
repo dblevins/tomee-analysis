@@ -1,6 +1,0 @@
-= jakarta/xml/bind/annotation/adapters/XmlAdapter.class
-
- - link:XmlAdapter-asmified.java[Asmified]
-
-== References
-

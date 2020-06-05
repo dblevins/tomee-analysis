@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/DebugEventRepeater.class
-
- - link:DebugEventRepeater-asmified.java[Asmified]
-
-== References
-

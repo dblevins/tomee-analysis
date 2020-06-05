@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQSession$1.class
-
- - link:ActiveMQSession$1-asmified.java[Asmified]
-
-== References
-

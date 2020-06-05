@@ -1,6 +1,0 @@
-= org/apache/activemq/network/DemandForwardingBridgeSupport$10.class
-
- - link:DemandForwardingBridgeSupport$10-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/CriteriaDeleteImpl.class
-
- - link:CriteriaDeleteImpl-asmified.java[Asmified]
-
-== References
-

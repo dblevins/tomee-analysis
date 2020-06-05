@@ -1,6 +1,0 @@
-= org/hsqldb/ColumnSchema.class
-
- - link:ColumnSchema-asmified.java[Asmified]
-
-== References
-

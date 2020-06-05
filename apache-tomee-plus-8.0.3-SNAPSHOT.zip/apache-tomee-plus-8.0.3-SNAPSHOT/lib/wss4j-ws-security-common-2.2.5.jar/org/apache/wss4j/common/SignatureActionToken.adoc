@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/SignatureActionToken.class
-
- - link:SignatureActionToken-asmified.java[Asmified]
-
-== References
-

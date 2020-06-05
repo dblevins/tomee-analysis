@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/StringValueTransformer.class
-
- - link:StringValueTransformer-asmified.java[Asmified]
-
-== References
-

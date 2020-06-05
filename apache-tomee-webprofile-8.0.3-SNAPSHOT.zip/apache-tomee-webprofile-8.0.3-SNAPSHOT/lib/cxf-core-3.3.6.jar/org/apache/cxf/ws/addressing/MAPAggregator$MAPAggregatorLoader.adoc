@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/MAPAggregator$MAPAggregatorLoader.class
-
- - link:MAPAggregator$MAPAggregatorLoader-asmified.java[Asmified]
-
-== References
-

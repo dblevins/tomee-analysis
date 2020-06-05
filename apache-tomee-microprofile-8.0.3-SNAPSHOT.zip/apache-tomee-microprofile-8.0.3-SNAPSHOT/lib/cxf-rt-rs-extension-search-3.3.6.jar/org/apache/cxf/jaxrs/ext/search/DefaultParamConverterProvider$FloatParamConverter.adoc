@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$FloatParamConverter.class
-
- - link:DefaultParamConverterProvider$FloatParamConverter-asmified.java[Asmified]
-
-== References
-

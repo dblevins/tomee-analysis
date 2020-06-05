@@ -1,6 +1,0 @@
-= org/apache/tomee/myfaces/TomEEFacesConfigurationProvider.class
-
- - link:TomEEFacesConfigurationProvider-asmified.java[Asmified]
-
-== References
-

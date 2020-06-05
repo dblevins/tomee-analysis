@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/icao/ICAOObjectIdentifiers.class
-
- - link:ICAOObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

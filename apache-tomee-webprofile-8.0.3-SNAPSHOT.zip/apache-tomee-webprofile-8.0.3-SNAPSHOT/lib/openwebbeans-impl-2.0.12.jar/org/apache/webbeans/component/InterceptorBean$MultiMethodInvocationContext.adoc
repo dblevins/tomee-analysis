@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext.class
-
- - link:InterceptorBean$MultiMethodInvocationContext-asmified.java[Asmified]
-
-== References
-

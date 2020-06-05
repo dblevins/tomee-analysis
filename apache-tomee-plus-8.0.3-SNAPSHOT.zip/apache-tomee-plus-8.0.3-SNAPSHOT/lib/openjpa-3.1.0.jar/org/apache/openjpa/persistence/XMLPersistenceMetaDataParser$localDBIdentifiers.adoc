@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/XMLPersistenceMetaDataParser$localDBIdentifiers.class
-
- - link:XMLPersistenceMetaDataParser$localDBIdentifiers-asmified.java[Asmified]
-
-== References
-

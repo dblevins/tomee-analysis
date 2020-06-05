@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/DynamicMappingGenerator$1.class
-
- - link:DynamicMappingGenerator$1-asmified.java[Asmified]
-
-== References
-

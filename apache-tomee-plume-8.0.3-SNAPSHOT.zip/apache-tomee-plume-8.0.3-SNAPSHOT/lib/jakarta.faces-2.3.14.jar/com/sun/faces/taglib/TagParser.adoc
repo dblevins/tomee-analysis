@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/TagParser.class
-
- - link:TagParser-asmified.java[Asmified]
-
-== References
-

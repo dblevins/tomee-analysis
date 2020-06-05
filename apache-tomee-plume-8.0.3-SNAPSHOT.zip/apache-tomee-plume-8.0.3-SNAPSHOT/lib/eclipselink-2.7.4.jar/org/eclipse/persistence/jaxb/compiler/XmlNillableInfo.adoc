@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/XmlNillableInfo.class
-
- - link:XmlNillableInfo-asmified.java[Asmified]
-
-== References
-

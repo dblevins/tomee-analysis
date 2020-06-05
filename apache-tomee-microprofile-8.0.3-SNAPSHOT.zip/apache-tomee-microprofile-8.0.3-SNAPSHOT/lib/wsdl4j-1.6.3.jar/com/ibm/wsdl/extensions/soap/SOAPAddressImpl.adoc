@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/soap/SOAPAddressImpl.class
-
- - link:SOAPAddressImpl-asmified.java[Asmified]
-
-== References
-

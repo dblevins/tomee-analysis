@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SelectExpressionBNF.class
-
- - link:SelectExpressionBNF-asmified.java[Asmified]
-
-== References
-

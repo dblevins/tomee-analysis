@@ -1,6 +1,0 @@
-= org/apache/openejb/core/interceptor/ReflectionInvocationContext$InterceptorInvocation.class
-
- - link:ReflectionInvocationContext$InterceptorInvocation-asmified.java[Asmified]
-
-== References
-

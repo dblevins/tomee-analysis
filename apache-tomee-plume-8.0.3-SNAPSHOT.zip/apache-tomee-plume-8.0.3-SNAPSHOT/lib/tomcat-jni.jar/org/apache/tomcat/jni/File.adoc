@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/File.class
-
- - link:File-asmified.java[Asmified]
-
-== References
-

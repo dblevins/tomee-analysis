@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/New.class
-
- - link:New-asmified.java[Asmified]
-
-== References
-

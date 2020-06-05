@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/AbstractDynamicMetadataResolver$PersistentCacheInitializationMetrics.class
-
- - link:AbstractDynamicMetadataResolver$PersistentCacheInitializationMetrics-asmified.java[Asmified]
-
-== References
-

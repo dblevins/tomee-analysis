@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/JspConfig.class
-
- - link:JspConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejb/EJBMethodCategory.class
-
- - link:EJBMethodCategory-asmified.java[Asmified]
-
-== References
-

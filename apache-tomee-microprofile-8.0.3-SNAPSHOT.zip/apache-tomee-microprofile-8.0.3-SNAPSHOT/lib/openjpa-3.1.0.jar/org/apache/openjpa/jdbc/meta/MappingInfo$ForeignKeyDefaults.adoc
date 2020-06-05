@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/MappingInfo$ForeignKeyDefaults.class
-
- - link:MappingInfo$ForeignKeyDefaults-asmified.java[Asmified]
-
-== References
-

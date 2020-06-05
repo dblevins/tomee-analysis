@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/ResourceEnvRef.class
-
- - link:ResourceEnvRef-asmified.java[Asmified]
-
-== References
-

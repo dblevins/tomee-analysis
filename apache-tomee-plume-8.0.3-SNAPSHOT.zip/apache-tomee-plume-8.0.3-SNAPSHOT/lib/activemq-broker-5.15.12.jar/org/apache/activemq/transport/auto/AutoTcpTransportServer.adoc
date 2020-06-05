@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/auto/AutoTcpTransportServer.class
-
- - link:AutoTcpTransportServer-asmified.java[Asmified]
-
-== References
-

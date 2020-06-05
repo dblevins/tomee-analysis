@@ -1,6 +1,0 @@
-= org/apache/batchee/container/modelresolver/impl/ControlElementPropertyResolver.class
-
- - link:ControlElementPropertyResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/TextFormat$Tokenizer.class
-
- - link:TextFormat$Tokenizer-asmified.java[Asmified]
-
-== References
-

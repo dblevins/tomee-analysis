@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesManagedProperty$JAXB.class
-
- - link:FacesManagedProperty$JAXB-asmified.java[Asmified]
-
-== References
-

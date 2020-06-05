@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/fmt/ParseDateTag.class
-
- - link:ParseDateTag-asmified.java[Asmified]
-
-== References
-

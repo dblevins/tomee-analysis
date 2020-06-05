@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/EncryptedAssertionUnmarshaller.class
-
- - link:EncryptedAssertionUnmarshaller-asmified.java[Asmified]
-
-== References
-

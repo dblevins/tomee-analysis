@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/CreatedTime.class
-
- - link:CreatedTime-asmified.java[Asmified]
-
-== References
-

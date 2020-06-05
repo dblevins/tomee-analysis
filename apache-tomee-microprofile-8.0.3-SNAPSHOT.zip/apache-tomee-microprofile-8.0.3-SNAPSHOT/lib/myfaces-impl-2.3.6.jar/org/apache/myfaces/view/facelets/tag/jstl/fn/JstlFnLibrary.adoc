@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jstl/fn/JstlFnLibrary.class
-
- - link:JstlFnLibrary-asmified.java[Asmified]
-
-== References
-

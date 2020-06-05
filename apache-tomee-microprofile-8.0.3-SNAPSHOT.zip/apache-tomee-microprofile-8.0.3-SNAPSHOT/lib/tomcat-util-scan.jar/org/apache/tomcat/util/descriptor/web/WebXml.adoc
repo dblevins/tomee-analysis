@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/WebXml.class
-
- - link:WebXml-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/wsdl/xml/WSDLLocator.class
-
- - link:WSDLLocator-asmified.java[Asmified]
-
-== References
-

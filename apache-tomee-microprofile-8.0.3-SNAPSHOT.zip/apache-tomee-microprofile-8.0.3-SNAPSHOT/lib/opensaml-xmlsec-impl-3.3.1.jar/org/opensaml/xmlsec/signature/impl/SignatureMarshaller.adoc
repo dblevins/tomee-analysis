@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/SignatureMarshaller.class
-
- - link:SignatureMarshaller-asmified.java[Asmified]
-
-== References
-

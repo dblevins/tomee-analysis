@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/EmbeddedId.class
-
- - link:EmbeddedId-asmified.java[Asmified]
-
-== References
-

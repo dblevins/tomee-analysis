@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/StatusType.class
-
- - link:StatusType-asmified.java[Asmified]
-
-== References
-

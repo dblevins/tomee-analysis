@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/ActionSourceRule$ActionListenerMapper2.class
-
- - link:ActionSourceRule$ActionListenerMapper2-asmified.java[Asmified]
-
-== References
-

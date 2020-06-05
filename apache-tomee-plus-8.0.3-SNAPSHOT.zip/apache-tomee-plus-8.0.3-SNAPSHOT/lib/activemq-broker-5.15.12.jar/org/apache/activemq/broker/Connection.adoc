@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/Connection.class
-
- - link:Connection-asmified.java[Asmified]
-
-== References
-

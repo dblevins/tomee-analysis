@@ -1,6 +1,0 @@
-= org/apache/openejb/client/HandlerChainMetaData.class
-
- - link:HandlerChainMetaData-asmified.java[Asmified]
-
-== References
-

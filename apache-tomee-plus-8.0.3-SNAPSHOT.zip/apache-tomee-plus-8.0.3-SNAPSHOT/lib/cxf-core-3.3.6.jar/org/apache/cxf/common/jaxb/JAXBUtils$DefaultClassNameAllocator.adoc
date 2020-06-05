@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBUtils$DefaultClassNameAllocator.class
-
- - link:JAXBUtils$DefaultClassNameAllocator-asmified.java[Asmified]
-
-== References
-

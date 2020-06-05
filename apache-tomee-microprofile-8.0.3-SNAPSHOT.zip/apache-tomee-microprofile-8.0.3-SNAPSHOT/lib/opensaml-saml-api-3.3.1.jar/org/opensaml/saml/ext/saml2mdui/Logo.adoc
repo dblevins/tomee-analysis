@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/Logo.class
-
- - link:Logo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/AbstractPath.class
-
- - link:AbstractPath-asmified.java[Asmified]
-
-== References
-

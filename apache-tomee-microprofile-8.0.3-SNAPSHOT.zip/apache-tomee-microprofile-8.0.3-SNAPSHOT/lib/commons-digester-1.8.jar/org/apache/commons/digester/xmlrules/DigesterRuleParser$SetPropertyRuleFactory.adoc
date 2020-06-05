@@ -1,6 +1,0 @@
-= org/apache/commons/digester/xmlrules/DigesterRuleParser$SetPropertyRuleFactory.class
-
- - link:DigesterRuleParser$SetPropertyRuleFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/conversation/ConversationStorageBean.class
-
- - link:ConversationStorageBean-asmified.java[Asmified]
-
-== References
-

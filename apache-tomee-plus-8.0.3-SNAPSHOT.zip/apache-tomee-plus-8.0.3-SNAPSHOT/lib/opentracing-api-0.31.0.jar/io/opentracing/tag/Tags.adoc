@@ -1,6 +1,0 @@
-= io/opentracing/tag/Tags.class
-
- - link:Tags-asmified.java[Asmified]
-
-== References
-

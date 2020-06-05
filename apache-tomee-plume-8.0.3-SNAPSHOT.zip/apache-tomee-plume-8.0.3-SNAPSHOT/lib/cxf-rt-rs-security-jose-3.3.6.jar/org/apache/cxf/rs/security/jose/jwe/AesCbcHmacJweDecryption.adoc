@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/AesCbcHmacJweDecryption.class
-
- - link:AesCbcHmacJweDecryption-asmified.java[Asmified]
-
-== References
-

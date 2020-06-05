@@ -1,6 +1,0 @@
-= jakarta/validation/Path$Node.class
-
- - link:Path$Node-asmified.java[Asmified]
-
-== References
-

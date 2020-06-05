@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/cfg/PackageVersion.class
-
- - link:PackageVersion-asmified.java[Asmified]
-
-== References
-

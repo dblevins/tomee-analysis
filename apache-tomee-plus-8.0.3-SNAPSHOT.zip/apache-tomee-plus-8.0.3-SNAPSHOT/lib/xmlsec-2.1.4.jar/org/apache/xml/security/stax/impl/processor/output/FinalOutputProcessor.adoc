@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/processor/output/FinalOutputProcessor.class
-
- - link:FinalOutputProcessor-asmified.java[Asmified]
-
-== References
-

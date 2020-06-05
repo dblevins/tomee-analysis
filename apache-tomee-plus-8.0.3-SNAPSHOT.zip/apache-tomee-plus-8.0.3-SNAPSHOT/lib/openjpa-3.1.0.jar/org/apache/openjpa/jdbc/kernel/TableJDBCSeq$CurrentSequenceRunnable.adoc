@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/TableJDBCSeq$CurrentSequenceRunnable.class
-
- - link:TableJDBCSeq$CurrentSequenceRunnable-asmified.java[Asmified]
-
-== References
-

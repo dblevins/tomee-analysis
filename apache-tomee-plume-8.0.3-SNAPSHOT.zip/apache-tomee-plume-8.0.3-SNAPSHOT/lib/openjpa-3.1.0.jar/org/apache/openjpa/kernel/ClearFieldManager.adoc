@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ClearFieldManager.class
-
- - link:ClearFieldManager-asmified.java[Asmified]
-
-== References
-

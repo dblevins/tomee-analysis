@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/JoinAssociationPathExpressionBNF.class
-
- - link:JoinAssociationPathExpressionBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/collection/AbstractSerializableCollectionDecorator.class
-
- - link:AbstractSerializableCollectionDecorator-asmified.java[Asmified]
-
-== References
-

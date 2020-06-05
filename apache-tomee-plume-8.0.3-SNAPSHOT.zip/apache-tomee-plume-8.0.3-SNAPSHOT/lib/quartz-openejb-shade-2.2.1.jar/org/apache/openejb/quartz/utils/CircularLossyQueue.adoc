@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/CircularLossyQueue.class
-
- - link:CircularLossyQueue-asmified.java[Asmified]
-
-== References
-

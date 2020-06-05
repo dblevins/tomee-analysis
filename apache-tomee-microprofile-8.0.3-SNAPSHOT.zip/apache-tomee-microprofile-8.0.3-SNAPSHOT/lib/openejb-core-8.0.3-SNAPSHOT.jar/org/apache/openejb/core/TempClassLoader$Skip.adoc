@@ -1,6 +1,0 @@
-= org/apache/openejb/core/TempClassLoader$Skip.class
-
- - link:TempClassLoader$Skip-asmified.java[Asmified]
-
-== References
-

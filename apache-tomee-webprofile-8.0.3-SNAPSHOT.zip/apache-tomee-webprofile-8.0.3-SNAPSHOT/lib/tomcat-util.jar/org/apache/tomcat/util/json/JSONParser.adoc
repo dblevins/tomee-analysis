@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/json/JSONParser.class
-
- - link:JSONParser-asmified.java[Asmified]
-
-== References
-

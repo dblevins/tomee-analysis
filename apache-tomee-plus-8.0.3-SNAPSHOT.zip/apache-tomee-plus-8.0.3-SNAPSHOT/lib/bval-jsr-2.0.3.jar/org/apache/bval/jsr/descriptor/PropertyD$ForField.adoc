@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/PropertyD$ForField.class
-
- - link:PropertyD$ForField-asmified.java[Asmified]
-
-== References
-

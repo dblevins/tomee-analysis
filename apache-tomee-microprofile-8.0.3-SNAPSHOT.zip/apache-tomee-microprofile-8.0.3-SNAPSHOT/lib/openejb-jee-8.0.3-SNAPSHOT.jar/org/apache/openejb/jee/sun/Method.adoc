@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/Method.class
-
- - link:Method-asmified.java[Asmified]
-
-== References
-

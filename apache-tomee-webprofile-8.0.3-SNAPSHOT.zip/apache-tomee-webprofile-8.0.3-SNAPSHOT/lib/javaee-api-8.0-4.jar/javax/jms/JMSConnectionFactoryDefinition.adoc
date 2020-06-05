@@ -1,6 +1,0 @@
-= javax/jms/JMSConnectionFactoryDefinition.class
-
- - link:JMSConnectionFactoryDefinition-asmified.java[Asmified]
-
-== References
-

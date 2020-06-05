@@ -1,6 +1,0 @@
-= org/apache/openejb/api/internal/Internal.class
-
- - link:Internal-asmified.java[Asmified]
-
-== References
-

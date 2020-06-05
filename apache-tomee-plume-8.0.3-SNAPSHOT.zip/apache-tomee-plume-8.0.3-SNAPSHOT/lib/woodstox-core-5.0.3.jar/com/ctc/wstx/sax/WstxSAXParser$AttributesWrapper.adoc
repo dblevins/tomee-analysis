@@ -1,6 +1,0 @@
-= com/ctc/wstx/sax/WstxSAXParser$AttributesWrapper.class
-
- - link:WstxSAXParser$AttributesWrapper-asmified.java[Asmified]
-
-== References
-

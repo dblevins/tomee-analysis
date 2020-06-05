@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/OneToOneMapping$ShallowMode.class
-
- - link:OneToOneMapping$ShallowMode-asmified.java[Asmified]
-
-== References
-

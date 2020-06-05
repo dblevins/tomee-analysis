@@ -1,8 +1,0 @@
-= javax/xml/bind/annotation/XmlSchema.class
-
- - link:XmlSchema-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.annotation.XmlNsForm - 4
- - javax.xml.bind.annotation.XmlNs - 1

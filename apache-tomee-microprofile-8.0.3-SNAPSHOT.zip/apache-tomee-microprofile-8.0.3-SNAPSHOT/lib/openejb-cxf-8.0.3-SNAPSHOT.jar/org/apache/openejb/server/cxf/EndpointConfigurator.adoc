@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/EndpointConfigurator.class
-
- - link:EndpointConfigurator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/Proxys$EnsureExceptionIsUnwrapped.class
-
- - link:Proxys$EnsureExceptionIsUnwrapped-asmified.java[Asmified]
-
-== References
-

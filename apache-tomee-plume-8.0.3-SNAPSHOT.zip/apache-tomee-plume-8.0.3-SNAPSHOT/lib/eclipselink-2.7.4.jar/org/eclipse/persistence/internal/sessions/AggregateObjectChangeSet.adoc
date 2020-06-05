@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/AggregateObjectChangeSet.class
-
- - link:AggregateObjectChangeSet-asmified.java[Asmified]
-
-== References
-

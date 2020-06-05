@@ -1,6 +1,0 @@
-= org/opensaml/core/config/InitializationException.class
-
- - link:InitializationException-asmified.java[Asmified]
-
-== References
-

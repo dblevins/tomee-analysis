@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/AbstractJwsReaderProvider.class
-
- - link:AbstractJwsReaderProvider-asmified.java[Asmified]
-
-== References
-

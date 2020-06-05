@@ -1,7 +1,0 @@
-= javax/faces/component/StateHolderSaver$StateHolderTupleIndices.class
-
- - link:StateHolderSaver$StateHolderTupleIndices-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.StateHolderSaver$StateHolderTupleIndices - 26

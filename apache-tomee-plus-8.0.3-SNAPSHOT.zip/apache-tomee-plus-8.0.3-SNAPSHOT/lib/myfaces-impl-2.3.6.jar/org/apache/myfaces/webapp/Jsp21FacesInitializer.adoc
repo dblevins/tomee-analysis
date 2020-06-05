@@ -1,6 +1,0 @@
-= org/apache/myfaces/webapp/Jsp21FacesInitializer.class
-
- - link:Jsp21FacesInitializer-asmified.java[Asmified]
-
-== References
-

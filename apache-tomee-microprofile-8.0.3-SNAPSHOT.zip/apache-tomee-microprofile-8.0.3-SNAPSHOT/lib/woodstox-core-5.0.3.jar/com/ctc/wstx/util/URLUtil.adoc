@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/URLUtil.class
-
- - link:URLUtil-asmified.java[Asmified]
-
-== References
-

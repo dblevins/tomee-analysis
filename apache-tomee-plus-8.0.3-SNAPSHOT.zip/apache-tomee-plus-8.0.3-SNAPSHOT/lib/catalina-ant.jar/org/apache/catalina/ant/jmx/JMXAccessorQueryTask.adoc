@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/jmx/JMXAccessorQueryTask.class
-
- - link:JMXAccessorQueryTask-asmified.java[Asmified]
-
-== References
-

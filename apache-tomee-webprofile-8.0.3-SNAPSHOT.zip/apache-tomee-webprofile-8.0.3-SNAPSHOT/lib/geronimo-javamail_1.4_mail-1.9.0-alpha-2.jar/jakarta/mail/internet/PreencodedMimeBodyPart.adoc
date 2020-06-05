@@ -1,6 +1,0 @@
-= jakarta/mail/internet/PreencodedMimeBodyPart.class
-
- - link:PreencodedMimeBodyPart-asmified.java[Asmified]
-
-== References
-

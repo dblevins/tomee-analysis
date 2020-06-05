@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/DebugTreeNodeStream.class
-
- - link:DebugTreeNodeStream-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/enterprise/context/SessionScoped.class
-
- - link:SessionScoped-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.NormalScope - 1

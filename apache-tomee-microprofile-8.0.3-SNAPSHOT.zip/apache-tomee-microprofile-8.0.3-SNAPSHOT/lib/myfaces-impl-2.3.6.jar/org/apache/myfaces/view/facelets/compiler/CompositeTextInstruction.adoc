@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/CompositeTextInstruction.class
-
- - link:CompositeTextInstruction-asmified.java[Asmified]
-
-== References
-

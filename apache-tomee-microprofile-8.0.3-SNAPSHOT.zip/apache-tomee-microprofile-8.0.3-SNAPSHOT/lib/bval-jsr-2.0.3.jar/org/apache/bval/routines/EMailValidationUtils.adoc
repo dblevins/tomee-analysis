@@ -1,6 +1,0 @@
-= org/apache/bval/routines/EMailValidationUtils.class
-
- - link:EMailValidationUtils-asmified.java[Asmified]
-
-== References
-

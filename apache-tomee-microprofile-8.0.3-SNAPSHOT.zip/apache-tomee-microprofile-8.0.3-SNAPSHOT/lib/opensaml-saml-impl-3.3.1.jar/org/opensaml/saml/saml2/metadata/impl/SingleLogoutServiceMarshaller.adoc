@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/SingleLogoutServiceMarshaller.class
-
- - link:SingleLogoutServiceMarshaller-asmified.java[Asmified]
-
-== References
-

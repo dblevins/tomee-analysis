@@ -1,6 +1,0 @@
-= javax/enterprise/context/ContextException.class
-
- - link:ContextException-asmified.java[Asmified]
-
-== References
-

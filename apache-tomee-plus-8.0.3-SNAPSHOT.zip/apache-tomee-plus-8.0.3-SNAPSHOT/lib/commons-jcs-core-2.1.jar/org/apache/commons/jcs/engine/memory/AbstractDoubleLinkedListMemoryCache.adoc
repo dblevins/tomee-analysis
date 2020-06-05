@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/memory/AbstractDoubleLinkedListMemoryCache.class
-
- - link:AbstractDoubleLinkedListMemoryCache-asmified.java[Asmified]
-
-== References
-

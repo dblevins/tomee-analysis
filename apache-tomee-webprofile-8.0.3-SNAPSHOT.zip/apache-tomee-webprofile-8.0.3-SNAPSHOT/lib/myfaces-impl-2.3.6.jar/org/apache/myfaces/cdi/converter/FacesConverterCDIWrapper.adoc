@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/converter/FacesConverterCDIWrapper.class
-
- - link:FacesConverterCDIWrapper-asmified.java[Asmified]
-
-== References
-

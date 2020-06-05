@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/mappings/InverseReferenceMapping.class
-
- - link:InverseReferenceMapping-asmified.java[Asmified]
-
-== References
-

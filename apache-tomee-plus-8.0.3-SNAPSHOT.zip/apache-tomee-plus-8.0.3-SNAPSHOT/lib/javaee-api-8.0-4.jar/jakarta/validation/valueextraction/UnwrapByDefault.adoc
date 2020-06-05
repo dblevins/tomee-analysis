@@ -1,6 +1,0 @@
-= jakarta/validation/valueextraction/UnwrapByDefault.class
-
- - link:UnwrapByDefault-asmified.java[Asmified]
-
-== References
-

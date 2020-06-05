@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/bidimap/AbstractBidiMapDecorator.class
-
- - link:AbstractBidiMapDecorator-asmified.java[Asmified]
-
-== References
-

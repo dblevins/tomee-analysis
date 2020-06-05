@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/InsertFacetHandler$RelocateFacetListener.class
-
- - link:InsertFacetHandler$RelocateFacetListener-asmified.java[Asmified]
-
-== References
-

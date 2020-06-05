@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/ObjectIdGenerators$IntSequenceGenerator.class
-
- - link:ObjectIdGenerators$IntSequenceGenerator-asmified.java[Asmified]
-
-== References
-

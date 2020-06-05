@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/graph/Edge.class
-
- - link:Edge-asmified.java[Asmified]
-
-== References
-

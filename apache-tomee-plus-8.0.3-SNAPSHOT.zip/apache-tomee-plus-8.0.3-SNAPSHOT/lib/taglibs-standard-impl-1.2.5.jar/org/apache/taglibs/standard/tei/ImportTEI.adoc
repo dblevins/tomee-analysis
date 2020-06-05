@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tei/ImportTEI.class
-
- - link:ImportTEI-asmified.java[Asmified]
-
-== References
-

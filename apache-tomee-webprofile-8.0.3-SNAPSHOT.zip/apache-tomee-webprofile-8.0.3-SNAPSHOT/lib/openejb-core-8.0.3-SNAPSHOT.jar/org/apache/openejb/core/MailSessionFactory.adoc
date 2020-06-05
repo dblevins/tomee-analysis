@@ -1,6 +1,0 @@
-= org/apache/openejb/core/MailSessionFactory.class
-
- - link:MailSessionFactory-asmified.java[Asmified]
-
-== References
-

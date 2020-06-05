@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/MessageEvictionStrategySupport.class
-
- - link:MessageEvictionStrategySupport-asmified.java[Asmified]
-
-== References
-

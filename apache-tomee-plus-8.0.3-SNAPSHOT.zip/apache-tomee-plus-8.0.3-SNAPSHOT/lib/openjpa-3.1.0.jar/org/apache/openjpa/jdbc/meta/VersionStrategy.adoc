@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/VersionStrategy.class
-
- - link:VersionStrategy-asmified.java[Asmified]
-
-== References
-

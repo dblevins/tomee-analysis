@@ -1,7 +1,0 @@
-= javax/persistence/Enumerated.class
-
- - link:Enumerated-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.EnumType - 2

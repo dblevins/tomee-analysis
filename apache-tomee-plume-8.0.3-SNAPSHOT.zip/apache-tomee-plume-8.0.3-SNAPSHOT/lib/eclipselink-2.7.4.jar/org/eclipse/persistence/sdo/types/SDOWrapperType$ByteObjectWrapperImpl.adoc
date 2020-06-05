@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/types/SDOWrapperType$ByteObjectWrapperImpl.class
-
- - link:SDOWrapperType$ByteObjectWrapperImpl-asmified.java[Asmified]
-
-== References
-

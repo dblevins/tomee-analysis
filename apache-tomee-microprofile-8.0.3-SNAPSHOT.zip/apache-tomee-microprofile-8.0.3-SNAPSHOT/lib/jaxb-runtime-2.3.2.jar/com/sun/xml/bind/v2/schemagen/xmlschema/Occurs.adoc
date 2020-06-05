@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/xmlschema/Occurs.class
-
- - link:Occurs-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/ContextLocalEjb.class
-
- - link:ContextLocalEjb-asmified.java[Asmified]
-
-== References
-

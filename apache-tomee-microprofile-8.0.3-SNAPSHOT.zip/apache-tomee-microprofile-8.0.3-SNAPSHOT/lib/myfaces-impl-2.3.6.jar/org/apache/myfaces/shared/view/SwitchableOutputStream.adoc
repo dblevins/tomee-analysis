@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/view/SwitchableOutputStream.class
-
- - link:SwitchableOutputStream-asmified.java[Asmified]
-
-== References
-

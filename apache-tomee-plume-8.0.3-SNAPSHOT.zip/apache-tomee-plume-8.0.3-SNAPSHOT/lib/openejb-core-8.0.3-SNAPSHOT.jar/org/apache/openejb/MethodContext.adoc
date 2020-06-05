@@ -1,6 +1,0 @@
-= org/apache/openejb/MethodContext.class
-
- - link:MethodContext-asmified.java[Asmified]
-
-== References
-

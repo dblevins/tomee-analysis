@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/xa/IsDifferentXaDataSourceWrapper.class
-
- - link:IsDifferentXaDataSourceWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/AprEndpoint$SocketList.class
-
- - link:AprEndpoint$SocketList-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/nntp/NNTPSSLStore.class
-
- - link:NNTPSSLStore-asmified.java[Asmified]
-
-== References
-

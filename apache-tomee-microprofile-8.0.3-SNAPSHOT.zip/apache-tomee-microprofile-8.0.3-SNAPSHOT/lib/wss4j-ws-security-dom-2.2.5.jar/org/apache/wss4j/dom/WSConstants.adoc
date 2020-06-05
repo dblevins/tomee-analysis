@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/WSConstants.class
-
- - link:WSConstants-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/annotation/constraint/NullableElements.class
-
- - link:NullableElements-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/RelationToManyInverseKeyFieldStrategy.class
-
- - link:RelationToManyInverseKeyFieldStrategy-asmified.java[Asmified]
-
-== References
-

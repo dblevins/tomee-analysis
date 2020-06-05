@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/jcajce/provider/sphincs/SignatureSpi.class
-
- - link:SignatureSpi-asmified.java[Asmified]
-
-== References
-

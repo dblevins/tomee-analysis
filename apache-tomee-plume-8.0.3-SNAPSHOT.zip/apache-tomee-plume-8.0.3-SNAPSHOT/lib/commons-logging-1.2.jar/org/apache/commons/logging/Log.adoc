@@ -1,6 +1,0 @@
-= org/apache/commons/logging/Log.class
-
- - link:Log-asmified.java[Asmified]
-
-== References
-

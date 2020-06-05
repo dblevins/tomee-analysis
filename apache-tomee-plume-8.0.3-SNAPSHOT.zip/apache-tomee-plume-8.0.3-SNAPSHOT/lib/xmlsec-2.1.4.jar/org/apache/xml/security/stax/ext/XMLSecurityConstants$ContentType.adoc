@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/XMLSecurityConstants$ContentType.class
-
- - link:XMLSecurityConstants$ContentType-asmified.java[Asmified]
-
-== References
-

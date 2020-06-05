@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/ProxyListIterator.class
-
- - link:ProxyListIterator-asmified.java[Asmified]
-
-== References
-

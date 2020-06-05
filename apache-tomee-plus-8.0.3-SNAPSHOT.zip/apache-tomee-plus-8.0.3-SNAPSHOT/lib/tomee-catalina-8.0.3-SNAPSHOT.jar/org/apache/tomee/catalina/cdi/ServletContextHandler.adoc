@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/cdi/ServletContextHandler.class
-
- - link:ServletContextHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/weaving/jpa/StaticWeave.class
-
- - link:StaticWeave-asmified.java[Asmified]
-
-== References
-

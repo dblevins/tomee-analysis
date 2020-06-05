@@ -1,6 +1,0 @@
-= org/apache/naming/NamingContextEnumeration.class
-
- - link:NamingContextEnumeration-asmified.java[Asmified]
-
-== References
-

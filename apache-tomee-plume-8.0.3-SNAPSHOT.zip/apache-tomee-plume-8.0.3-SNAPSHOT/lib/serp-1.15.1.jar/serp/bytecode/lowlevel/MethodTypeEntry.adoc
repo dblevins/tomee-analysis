@@ -1,6 +1,0 @@
-= serp/bytecode/lowlevel/MethodTypeEntry.class
-
- - link:MethodTypeEntry-asmified.java[Asmified]
-
-== References
-

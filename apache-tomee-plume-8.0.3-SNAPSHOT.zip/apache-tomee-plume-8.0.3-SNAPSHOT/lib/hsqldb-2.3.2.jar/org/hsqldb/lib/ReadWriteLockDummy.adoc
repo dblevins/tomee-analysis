@@ -1,6 +1,0 @@
-= org/hsqldb/lib/ReadWriteLockDummy.class
-
- - link:ReadWriteLockDummy-asmified.java[Asmified]
-
-== References
-

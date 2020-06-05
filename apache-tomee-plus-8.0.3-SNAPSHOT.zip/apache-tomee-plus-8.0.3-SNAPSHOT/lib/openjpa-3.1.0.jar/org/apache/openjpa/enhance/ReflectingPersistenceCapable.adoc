@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/ReflectingPersistenceCapable.class
-
- - link:ReflectingPersistenceCapable-asmified.java[Asmified]
-
-== References
-

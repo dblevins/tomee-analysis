@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/ProcessorInfo.class
-
- - link:ProcessorInfo-asmified.java[Asmified]
-
-== References
-

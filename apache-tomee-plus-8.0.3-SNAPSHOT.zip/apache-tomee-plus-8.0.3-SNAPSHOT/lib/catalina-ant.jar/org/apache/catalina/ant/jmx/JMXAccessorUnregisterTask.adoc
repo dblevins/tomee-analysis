@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/jmx/JMXAccessorUnregisterTask.class
-
- - link:JMXAccessorUnregisterTask-asmified.java[Asmified]
-
-== References
-

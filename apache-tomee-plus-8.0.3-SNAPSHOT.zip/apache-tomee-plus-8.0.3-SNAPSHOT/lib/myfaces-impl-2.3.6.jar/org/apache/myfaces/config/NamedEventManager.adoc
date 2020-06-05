@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/NamedEventManager.class
-
- - link:NamedEventManager-asmified.java[Asmified]
-
-== References
-

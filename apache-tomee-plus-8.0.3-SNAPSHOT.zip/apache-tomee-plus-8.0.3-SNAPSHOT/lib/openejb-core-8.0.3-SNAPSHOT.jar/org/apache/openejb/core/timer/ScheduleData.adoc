@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/ScheduleData.class
-
- - link:ScheduleData-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/XMLSignatureException.class
-
- - link:XMLSignatureException-asmified.java[Asmified]
-
-== References
-

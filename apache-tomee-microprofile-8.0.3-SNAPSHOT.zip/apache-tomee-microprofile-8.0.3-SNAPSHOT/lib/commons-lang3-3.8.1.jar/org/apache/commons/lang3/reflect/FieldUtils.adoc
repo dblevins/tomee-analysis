@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/reflect/FieldUtils.class
-
- - link:FieldUtils-asmified.java[Asmified]
-
-== References
-

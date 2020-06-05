@@ -1,6 +1,0 @@
-= jakarta/ws/rs/client/WebTarget.class
-
- - link:WebTarget-asmified.java[Asmified]
-
-== References
-

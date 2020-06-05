@@ -1,6 +1,0 @@
-= jakarta/validation/ValidatorFactory.class
-
- - link:ValidatorFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/ManageNameIDServiceMarshaller.class
-
- - link:ManageNameIDServiceMarshaller-asmified.java[Asmified]
-
-== References
-

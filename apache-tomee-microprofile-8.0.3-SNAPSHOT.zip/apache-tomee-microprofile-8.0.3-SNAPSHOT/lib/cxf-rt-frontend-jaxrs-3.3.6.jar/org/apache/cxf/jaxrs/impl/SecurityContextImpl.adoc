@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/SecurityContextImpl.class
-
- - link:SecurityContextImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/algorithms/HMACSignatureAlgorithm.class
-
- - link:HMACSignatureAlgorithm-asmified.java[Asmified]
-
-== References
-

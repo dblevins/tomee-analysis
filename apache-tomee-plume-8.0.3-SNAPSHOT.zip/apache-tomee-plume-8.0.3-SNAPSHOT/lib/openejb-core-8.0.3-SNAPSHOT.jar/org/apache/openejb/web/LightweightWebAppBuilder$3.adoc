@@ -1,6 +1,0 @@
-= org/apache/openejb/web/LightweightWebAppBuilder$3.class
-
- - link:LightweightWebAppBuilder$3-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlFormRendererBase.class
-
- - link:HtmlFormRendererBase-asmified.java[Asmified]
-
-== References
-

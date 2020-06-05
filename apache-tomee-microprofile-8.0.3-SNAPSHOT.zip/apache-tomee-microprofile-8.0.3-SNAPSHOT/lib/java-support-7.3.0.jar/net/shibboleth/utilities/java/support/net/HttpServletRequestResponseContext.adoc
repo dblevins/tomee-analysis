@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/HttpServletRequestResponseContext.class
-
- - link:HttpServletRequestResponseContext-asmified.java[Asmified]
-
-== References
-

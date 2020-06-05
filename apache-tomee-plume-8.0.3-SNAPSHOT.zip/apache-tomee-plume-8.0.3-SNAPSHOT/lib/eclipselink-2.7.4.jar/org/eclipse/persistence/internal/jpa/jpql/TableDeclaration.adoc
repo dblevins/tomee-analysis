@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/TableDeclaration.class
-
- - link:TableDeclaration-asmified.java[Asmified]
-
-== References
-

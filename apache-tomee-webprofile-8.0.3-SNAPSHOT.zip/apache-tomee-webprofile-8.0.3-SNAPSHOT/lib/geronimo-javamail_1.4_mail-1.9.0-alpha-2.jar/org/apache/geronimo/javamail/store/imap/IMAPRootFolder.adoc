@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/IMAPRootFolder.class
-
- - link:IMAPRootFolder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/CalendarConverter.class
-
- - link:CalendarConverter-asmified.java[Asmified]
-
-== References
-

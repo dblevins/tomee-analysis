@@ -1,6 +1,0 @@
-= org/apache/batchee/container/exception/IllegalBatchPropertyException.class
-
- - link:IllegalBatchPropertyException-asmified.java[Asmified]
-
-== References
-

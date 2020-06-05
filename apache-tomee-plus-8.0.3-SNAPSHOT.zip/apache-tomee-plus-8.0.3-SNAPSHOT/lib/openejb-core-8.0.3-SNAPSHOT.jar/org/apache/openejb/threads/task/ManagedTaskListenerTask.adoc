@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/task/ManagedTaskListenerTask.class
-
- - link:ManagedTaskListenerTask-asmified.java[Asmified]
-
-== References
-

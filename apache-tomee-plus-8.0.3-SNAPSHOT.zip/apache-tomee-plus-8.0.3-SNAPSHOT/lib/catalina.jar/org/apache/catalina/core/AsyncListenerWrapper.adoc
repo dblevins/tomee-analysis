@@ -1,6 +1,0 @@
-= org/apache/catalina/core/AsyncListenerWrapper.class
-
- - link:AsyncListenerWrapper-asmified.java[Asmified]
-
-== References
-

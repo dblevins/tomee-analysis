@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/common/EnvEntryEnum.class
-
- - link:EnvEntryEnum-asmified.java[Asmified]
-
-== References
-

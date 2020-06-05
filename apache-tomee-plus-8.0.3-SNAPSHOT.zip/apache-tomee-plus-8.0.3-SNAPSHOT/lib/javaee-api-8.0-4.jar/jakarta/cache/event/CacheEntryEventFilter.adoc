@@ -1,6 +1,0 @@
-= jakarta/cache/event/CacheEntryEventFilter.class
-
- - link:CacheEntryEventFilter-asmified.java[Asmified]
-
-== References
-

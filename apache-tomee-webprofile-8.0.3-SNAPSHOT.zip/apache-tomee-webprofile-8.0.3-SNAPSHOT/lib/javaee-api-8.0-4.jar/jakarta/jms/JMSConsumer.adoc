@@ -1,6 +1,0 @@
-= jakarta/jms/JMSConsumer.class
-
- - link:JMSConsumer-asmified.java[Asmified]
-
-== References
-

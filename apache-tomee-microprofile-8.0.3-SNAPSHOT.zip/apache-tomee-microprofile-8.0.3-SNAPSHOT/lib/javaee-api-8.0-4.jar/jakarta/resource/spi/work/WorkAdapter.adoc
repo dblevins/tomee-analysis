@@ -1,6 +1,0 @@
-= jakarta/resource/spi/work/WorkAdapter.class
-
- - link:WorkAdapter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/el/parser/AstIdentifier.class
-
- - link:AstIdentifier-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/GroupSequenceType.class
-
- - link:GroupSequenceType-asmified.java[Asmified]
-
-== References
-

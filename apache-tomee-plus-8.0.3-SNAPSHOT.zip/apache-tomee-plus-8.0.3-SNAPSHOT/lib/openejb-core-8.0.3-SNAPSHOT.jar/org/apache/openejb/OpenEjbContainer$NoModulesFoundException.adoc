@@ -1,6 +1,0 @@
-= org/apache/openejb/OpenEjbContainer$NoModulesFoundException.class
-
- - link:OpenEjbContainer$NoModulesFoundException-asmified.java[Asmified]
-
-== References
-

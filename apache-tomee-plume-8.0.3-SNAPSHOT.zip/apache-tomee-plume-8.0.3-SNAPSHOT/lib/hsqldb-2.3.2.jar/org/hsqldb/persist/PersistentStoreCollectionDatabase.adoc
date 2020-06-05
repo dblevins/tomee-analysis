@@ -1,6 +1,0 @@
-= org/hsqldb/persist/PersistentStoreCollectionDatabase.class
-
- - link:PersistentStoreCollectionDatabase-asmified.java[Asmified]
-
-== References
-

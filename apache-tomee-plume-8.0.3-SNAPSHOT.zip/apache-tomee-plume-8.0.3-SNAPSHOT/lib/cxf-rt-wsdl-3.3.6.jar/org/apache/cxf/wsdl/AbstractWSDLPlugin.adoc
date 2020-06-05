@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/AbstractWSDLPlugin.class
-
- - link:AbstractWSDLPlugin-asmified.java[Asmified]
-
-== References
-

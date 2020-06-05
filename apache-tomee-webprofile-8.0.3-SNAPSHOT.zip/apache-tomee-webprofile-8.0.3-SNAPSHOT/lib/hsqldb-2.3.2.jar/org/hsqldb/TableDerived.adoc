@@ -1,6 +1,0 @@
-= org/hsqldb/TableDerived.class
-
- - link:TableDerived-asmified.java[Asmified]
-
-== References
-

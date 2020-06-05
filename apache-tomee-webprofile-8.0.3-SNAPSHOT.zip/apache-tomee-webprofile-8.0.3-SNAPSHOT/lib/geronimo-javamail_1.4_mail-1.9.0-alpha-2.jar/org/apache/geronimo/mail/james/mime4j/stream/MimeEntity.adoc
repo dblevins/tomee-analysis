@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/stream/MimeEntity.class
-
- - link:MimeEntity-asmified.java[Asmified]
-
-== References
-

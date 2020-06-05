@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdui/DiscoHints.class
-
- - link:DiscoHints-asmified.java[Asmified]
-
-== References
-

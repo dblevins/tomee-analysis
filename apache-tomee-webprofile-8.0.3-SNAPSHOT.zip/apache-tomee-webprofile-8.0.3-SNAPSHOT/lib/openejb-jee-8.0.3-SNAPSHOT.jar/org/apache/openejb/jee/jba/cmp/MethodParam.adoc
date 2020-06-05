@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/MethodParam.class
-
- - link:MethodParam-asmified.java[Asmified]
-
-== References
-

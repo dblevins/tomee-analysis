@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/claims/interceptor/ClaimsAuthorizingInterceptor.class
-
- - link:ClaimsAuthorizingInterceptor-asmified.java[Asmified]
-
-== References
-

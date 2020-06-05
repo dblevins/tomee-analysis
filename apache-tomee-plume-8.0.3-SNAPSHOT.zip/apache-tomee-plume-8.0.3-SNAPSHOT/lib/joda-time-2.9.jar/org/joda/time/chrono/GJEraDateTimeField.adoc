@@ -1,6 +1,0 @@
-= org/joda/time/chrono/GJEraDateTimeField.class
-
- - link:GJEraDateTimeField-asmified.java[Asmified]
-
-== References
-

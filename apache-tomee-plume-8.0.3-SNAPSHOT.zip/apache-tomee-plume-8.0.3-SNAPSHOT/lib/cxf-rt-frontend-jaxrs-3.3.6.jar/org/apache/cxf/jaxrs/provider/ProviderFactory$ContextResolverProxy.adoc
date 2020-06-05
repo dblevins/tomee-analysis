@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ProviderFactory$ContextResolverProxy.class
-
- - link:ProviderFactory$ContextResolverProxy-asmified.java[Asmified]
-
-== References
-

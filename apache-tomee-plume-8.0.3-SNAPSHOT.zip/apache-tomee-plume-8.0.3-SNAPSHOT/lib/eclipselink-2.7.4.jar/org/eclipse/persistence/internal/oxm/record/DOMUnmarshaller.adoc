@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/DOMUnmarshaller.class
-
- - link:DOMUnmarshaller-asmified.java[Asmified]
-
-== References
-

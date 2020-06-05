@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/TransportLoggerViewMBean.class
-
- - link:TransportLoggerViewMBean-asmified.java[Asmified]
-
-== References
-

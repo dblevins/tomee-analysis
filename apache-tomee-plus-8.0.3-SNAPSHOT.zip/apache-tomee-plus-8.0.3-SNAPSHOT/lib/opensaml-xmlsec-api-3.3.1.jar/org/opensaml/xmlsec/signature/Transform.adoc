@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/Transform.class
-
- - link:Transform-asmified.java[Asmified]
-
-== References
-

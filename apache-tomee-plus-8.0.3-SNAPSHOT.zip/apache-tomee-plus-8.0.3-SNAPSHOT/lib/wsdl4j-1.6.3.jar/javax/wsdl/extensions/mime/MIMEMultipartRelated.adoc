@@ -1,6 +1,0 @@
-= javax/wsdl/extensions/mime/MIMEMultipartRelated.class
-
- - link:MIMEMultipartRelated-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/FacesFlowProvider.class
-
- - link:FacesFlowProvider-asmified.java[Asmified]
-
-== References
-

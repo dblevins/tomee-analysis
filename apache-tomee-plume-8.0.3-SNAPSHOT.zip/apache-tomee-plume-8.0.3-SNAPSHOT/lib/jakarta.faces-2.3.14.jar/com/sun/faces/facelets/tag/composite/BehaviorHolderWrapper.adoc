@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/BehaviorHolderWrapper.class
-
- - link:BehaviorHolderWrapper-asmified.java[Asmified]
-
-== References
-

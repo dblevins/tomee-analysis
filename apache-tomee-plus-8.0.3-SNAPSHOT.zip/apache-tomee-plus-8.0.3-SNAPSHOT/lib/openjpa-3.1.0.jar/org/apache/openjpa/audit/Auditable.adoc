@@ -1,6 +1,0 @@
-= org/apache/openjpa/audit/Auditable.class
-
- - link:Auditable-asmified.java[Asmified]
-
-== References
-

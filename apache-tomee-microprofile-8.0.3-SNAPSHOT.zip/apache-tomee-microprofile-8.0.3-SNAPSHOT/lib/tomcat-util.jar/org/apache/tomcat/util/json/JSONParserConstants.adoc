@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/json/JSONParserConstants.class
-
- - link:JSONParserConstants-asmified.java[Asmified]
-
-== References
-

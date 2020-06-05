@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPSizeResponse.class
-
- - link:IMAPSizeResponse-asmified.java[Asmified]
-
-== References
-

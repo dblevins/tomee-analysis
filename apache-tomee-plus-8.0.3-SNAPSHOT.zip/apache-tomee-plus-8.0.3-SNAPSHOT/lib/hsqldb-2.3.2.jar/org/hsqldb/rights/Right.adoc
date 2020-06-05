@@ -1,6 +1,0 @@
-= org/hsqldb/rights/Right.class
-
- - link:Right-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/keyvalue/UnmodifiableMapEntry.class
-
- - link:UnmodifiableMapEntry-asmified.java[Asmified]
-
-== References
-

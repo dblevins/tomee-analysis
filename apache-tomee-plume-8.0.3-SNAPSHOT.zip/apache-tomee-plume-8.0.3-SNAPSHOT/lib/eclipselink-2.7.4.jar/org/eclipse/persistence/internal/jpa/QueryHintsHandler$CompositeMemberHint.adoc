@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/QueryHintsHandler$CompositeMemberHint.class
-
- - link:QueryHintsHandler$CompositeMemberHint-asmified.java[Asmified]
-
-== References
-

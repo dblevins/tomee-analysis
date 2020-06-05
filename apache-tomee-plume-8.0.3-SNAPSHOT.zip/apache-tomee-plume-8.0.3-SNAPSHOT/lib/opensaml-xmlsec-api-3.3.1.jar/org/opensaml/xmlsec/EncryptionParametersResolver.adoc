@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/EncryptionParametersResolver.class
-
- - link:EncryptionParametersResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/SecureConversationTokenBuilder.class
-
- - link:SecureConversationTokenBuilder-asmified.java[Asmified]
-
-== References
-

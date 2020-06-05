@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/Job.class
-
- - link:Job-asmified.java[Asmified]
-
-== References
-

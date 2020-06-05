@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/security/callback/CertificateToNameMapper.class
-
- - link:CertificateToNameMapper-asmified.java[Asmified]
-
-== References
-

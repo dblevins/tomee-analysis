@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/EntityCommands.class
-
- - link:EntityCommands-asmified.java[Asmified]
-
-== References
-

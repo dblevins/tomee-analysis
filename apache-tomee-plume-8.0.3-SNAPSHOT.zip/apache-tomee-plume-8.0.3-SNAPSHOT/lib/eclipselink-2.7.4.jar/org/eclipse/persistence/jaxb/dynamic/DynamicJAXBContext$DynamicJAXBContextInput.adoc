@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext$DynamicJAXBContextInput.class
-
- - link:DynamicJAXBContext$DynamicJAXBContextInput-asmified.java[Asmified]
-
-== References
-

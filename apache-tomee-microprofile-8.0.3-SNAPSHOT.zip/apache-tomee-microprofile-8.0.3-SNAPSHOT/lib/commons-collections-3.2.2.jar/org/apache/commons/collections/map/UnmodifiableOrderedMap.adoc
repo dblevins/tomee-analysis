@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/UnmodifiableOrderedMap.class
-
- - link:UnmodifiableOrderedMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/Http2Exception.class
-
- - link:Http2Exception-asmified.java[Asmified]
-
-== References
-

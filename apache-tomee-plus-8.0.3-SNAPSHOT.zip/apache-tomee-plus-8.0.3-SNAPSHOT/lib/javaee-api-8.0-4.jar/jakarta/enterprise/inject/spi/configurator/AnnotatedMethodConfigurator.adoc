@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/configurator/AnnotatedMethodConfigurator.class
-
- - link:AnnotatedMethodConfigurator-asmified.java[Asmified]
-
-== References
-

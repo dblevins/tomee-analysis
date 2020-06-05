@@ -1,6 +1,0 @@
-= org/apache/openejb/server/DiscoveryRegistry$Monitor.class
-
- - link:DiscoveryRegistry$Monitor-asmified.java[Asmified]
-
-== References
-

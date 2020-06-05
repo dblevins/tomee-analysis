@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/resource/ContractResourceLoader.class
-
- - link:ContractResourceLoader-asmified.java[Asmified]
-
-== References
-

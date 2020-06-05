@@ -1,7 +1,0 @@
-= javax/persistence/PessimisticLockException.class
-
- - link:PessimisticLockException-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.PersistenceException - 7

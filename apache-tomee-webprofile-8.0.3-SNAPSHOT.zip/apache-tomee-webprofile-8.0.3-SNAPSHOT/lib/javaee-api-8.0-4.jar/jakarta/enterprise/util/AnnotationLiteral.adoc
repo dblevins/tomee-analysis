@@ -1,6 +1,0 @@
-= jakarta/enterprise/util/AnnotationLiteral.class
-
- - link:AnnotationLiteral-asmified.java[Asmified]
-
-== References
-

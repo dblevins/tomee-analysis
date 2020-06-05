@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HttpDestinationFeature.class
-
- - link:HttpDestinationFeature-asmified.java[Asmified]
-
-== References
-

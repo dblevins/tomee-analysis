@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ProxyDate.class
-
- - link:ProxyDate-asmified.java[Asmified]
-
-== References
-

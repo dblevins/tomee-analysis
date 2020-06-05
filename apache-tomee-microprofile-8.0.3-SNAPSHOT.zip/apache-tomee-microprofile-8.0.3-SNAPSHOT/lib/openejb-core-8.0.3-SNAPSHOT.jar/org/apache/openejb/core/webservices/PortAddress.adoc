@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/PortAddress.class
-
- - link:PortAddress-asmified.java[Asmified]
-
-== References
-

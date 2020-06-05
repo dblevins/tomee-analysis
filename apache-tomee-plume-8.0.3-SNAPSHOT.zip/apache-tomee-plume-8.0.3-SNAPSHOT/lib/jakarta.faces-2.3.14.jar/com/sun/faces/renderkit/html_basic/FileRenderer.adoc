@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/FileRenderer.class
-
- - link:FileRenderer-asmified.java[Asmified]
-
-== References
-

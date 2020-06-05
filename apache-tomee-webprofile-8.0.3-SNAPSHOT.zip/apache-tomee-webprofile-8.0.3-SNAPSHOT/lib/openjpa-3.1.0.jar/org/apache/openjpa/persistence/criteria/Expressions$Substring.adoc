@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Substring.class
-
- - link:Expressions$Substring-asmified.java[Asmified]
-
-== References
-

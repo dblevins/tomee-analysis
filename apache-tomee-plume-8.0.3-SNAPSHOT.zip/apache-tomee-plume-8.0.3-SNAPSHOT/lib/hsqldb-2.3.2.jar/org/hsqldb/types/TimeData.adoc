@@ -1,6 +1,0 @@
-= org/hsqldb/types/TimeData.class
-
- - link:TimeData-asmified.java[Asmified]
-
-== References
-

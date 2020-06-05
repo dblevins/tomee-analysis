@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/component/DestructableComponent.class
-
- - link:DestructableComponent-asmified.java[Asmified]
-
-== References
-

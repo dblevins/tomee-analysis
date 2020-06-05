@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/config/OpenAPIConfigMpConfigImpl.class
-
- - link:OpenAPIConfigMpConfigImpl-asmified.java[Asmified]
-
-== References
-

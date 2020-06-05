@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRDynamicEntity.class
-
- - link:XRDynamicEntity-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/AntCompiler$SystemLogHandler.class
-
- - link:AntCompiler$SystemLogHandler-asmified.java[Asmified]
-
-== References
-

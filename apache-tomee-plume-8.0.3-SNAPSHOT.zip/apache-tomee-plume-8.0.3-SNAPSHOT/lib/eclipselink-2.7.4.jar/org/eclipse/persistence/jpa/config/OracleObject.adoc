@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/OracleObject.class
-
- - link:OracleObject-asmified.java[Asmified]
-
-== References
-

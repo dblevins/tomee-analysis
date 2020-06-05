@@ -1,6 +1,0 @@
-= org/hsqldb/result/ResultMetaData.class
-
- - link:ResultMetaData-asmified.java[Asmified]
-
-== References
-

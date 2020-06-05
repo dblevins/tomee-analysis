@@ -1,6 +1,0 @@
-= javax/xml/ws/WebEndpoint.class
-
- - link:WebEndpoint-asmified.java[Asmified]
-
-== References
-

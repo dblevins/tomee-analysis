@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/agreement/jpake/JPAKERound3Payload.class
-
- - link:JPAKERound3Payload-asmified.java[Asmified]
-
-== References
-

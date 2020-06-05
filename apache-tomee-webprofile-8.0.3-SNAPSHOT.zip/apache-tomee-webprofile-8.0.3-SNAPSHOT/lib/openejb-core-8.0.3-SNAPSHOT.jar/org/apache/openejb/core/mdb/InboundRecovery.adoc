@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/InboundRecovery.class
-
- - link:InboundRecovery-asmified.java[Asmified]
-
-== References
-

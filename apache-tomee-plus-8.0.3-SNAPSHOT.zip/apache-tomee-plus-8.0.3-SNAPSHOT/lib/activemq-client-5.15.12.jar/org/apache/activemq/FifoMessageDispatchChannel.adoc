@@ -1,6 +1,0 @@
-= org/apache/activemq/FifoMessageDispatchChannel.class
-
- - link:FifoMessageDispatchChannel-asmified.java[Asmified]
-
-== References
-

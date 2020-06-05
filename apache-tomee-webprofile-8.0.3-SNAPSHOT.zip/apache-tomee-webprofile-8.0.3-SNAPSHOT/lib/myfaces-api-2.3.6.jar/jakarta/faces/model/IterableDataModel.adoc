@@ -1,6 +1,0 @@
-= jakarta/faces/model/IterableDataModel.class
-
- - link:IterableDataModel-asmified.java[Asmified]
-
-== References
-

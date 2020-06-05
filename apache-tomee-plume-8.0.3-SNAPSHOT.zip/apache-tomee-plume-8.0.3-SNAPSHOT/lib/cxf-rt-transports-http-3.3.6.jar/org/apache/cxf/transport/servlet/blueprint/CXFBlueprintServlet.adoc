@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/blueprint/CXFBlueprintServlet.class
-
- - link:CXFBlueprintServlet-asmified.java[Asmified]
-
-== References
-

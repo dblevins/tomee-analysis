@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/ComponentRef.class
-
- - link:ComponentRef-asmified.java[Asmified]
-
-== References
-

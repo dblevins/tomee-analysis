@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/Type.class
-
- - link:Type-asmified.java[Asmified]
-
-== References
-

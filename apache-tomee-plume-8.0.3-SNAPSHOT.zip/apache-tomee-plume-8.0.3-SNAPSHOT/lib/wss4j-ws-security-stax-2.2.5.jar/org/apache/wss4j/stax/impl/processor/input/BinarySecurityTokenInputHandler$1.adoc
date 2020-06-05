@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/input/BinarySecurityTokenInputHandler$1.class
-
- - link:BinarySecurityTokenInputHandler$1-asmified.java[Asmified]
-
-== References
-

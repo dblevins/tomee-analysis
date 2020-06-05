@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/converter/BooleanConverter.class
-
- - link:BooleanConverter-asmified.java[Asmified]
-
-== References
-

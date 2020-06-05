@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/modes/kgcm/KGCMMultiplier.class
-
- - link:KGCMMultiplier-asmified.java[Asmified]
-
-== References
-

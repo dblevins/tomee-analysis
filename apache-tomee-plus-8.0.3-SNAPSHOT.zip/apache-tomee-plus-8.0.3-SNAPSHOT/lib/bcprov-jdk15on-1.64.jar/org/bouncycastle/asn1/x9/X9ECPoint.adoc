@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/x9/X9ECPoint.class
-
- - link:X9ECPoint-asmified.java[Asmified]
-
-== References
-

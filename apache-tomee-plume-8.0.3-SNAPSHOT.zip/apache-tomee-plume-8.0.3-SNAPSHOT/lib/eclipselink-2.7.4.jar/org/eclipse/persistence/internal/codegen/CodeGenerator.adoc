@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/codegen/CodeGenerator.class
-
- - link:CodeGenerator-asmified.java[Asmified]
-
-== References
-

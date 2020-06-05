@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/CharLiteral.class
-
- - link:CharLiteral-asmified.java[Asmified]
-
-== References
-

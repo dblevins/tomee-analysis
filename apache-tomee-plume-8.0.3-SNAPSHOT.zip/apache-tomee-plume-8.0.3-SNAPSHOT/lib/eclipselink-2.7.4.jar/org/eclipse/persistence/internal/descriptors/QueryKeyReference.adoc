@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/QueryKeyReference.class
-
- - link:QueryKeyReference-asmified.java[Asmified]
-
-== References
-

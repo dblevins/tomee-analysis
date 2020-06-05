@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/ComponentResourceContainer.class
-
- - link:ComponentResourceContainer-asmified.java[Asmified]
-
-== References
-

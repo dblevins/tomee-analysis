@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/filter/ContainsFilter.class
-
- - link:ContainsFilter-asmified.java[Asmified]
-
-== References
-

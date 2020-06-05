@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/MultitenantIdAccessor.class
-
- - link:MultitenantIdAccessor-asmified.java[Asmified]
-
-== References
-

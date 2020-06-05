@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/json/UTF8JsonGenerator.class
-
- - link:UTF8JsonGenerator-asmified.java[Asmified]
-
-== References
-

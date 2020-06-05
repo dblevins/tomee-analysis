@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/Other.class
-
- - link:Other-asmified.java[Asmified]
-
-== References
-

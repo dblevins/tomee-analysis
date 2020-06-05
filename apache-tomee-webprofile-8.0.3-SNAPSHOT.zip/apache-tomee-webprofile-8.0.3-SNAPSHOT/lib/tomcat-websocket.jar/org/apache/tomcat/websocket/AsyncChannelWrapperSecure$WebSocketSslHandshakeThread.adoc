@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/AsyncChannelWrapperSecure$WebSocketSslHandshakeThread.class
-
- - link:AsyncChannelWrapperSecure$WebSocketSslHandshakeThread-asmified.java[Asmified]
-
-== References
-

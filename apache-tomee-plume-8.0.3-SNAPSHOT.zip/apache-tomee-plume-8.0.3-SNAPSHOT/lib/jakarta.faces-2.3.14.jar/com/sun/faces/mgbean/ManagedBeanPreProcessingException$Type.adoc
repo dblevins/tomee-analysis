@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/ManagedBeanPreProcessingException$Type.class
-
- - link:ManagedBeanPreProcessingException$Type-asmified.java[Asmified]
-
-== References
-

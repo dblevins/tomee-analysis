@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/QueryResultMapping$FetchInfo.class
-
- - link:QueryResultMapping$FetchInfo-asmified.java[Asmified]
-
-== References
-

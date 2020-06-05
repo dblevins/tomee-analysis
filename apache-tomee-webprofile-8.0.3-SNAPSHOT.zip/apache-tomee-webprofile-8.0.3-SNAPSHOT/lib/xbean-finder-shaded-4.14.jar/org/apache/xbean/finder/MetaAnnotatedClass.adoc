@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/MetaAnnotatedClass.class
-
- - link:MetaAnnotatedClass-asmified.java[Asmified]
-
-== References
-

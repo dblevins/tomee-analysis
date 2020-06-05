@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Divide.class
-
- - link:Divide-asmified.java[Asmified]
-
-== References
-

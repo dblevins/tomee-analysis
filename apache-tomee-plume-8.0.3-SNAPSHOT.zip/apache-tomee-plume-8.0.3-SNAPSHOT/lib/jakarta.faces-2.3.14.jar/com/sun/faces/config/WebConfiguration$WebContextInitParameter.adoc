@@ -1,6 +1,0 @@
-= com/sun/faces/config/WebConfiguration$WebContextInitParameter.class
-
- - link:WebConfiguration$WebContextInitParameter-asmified.java[Asmified]
-
-== References
-

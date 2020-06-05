@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IModuleAwareNameEnvironment.class
-
- - link:IModuleAwareNameEnvironment-asmified.java[Asmified]
-
-== References
-

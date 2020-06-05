@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/http/client/AbstractHttpClient.class
-
- - link:AbstractHttpClient-asmified.java[Asmified]
-
-== References
-

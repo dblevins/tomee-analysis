@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/MissingAccessorException.class
-
- - link:MissingAccessorException-asmified.java[Asmified]
-
-== References
-

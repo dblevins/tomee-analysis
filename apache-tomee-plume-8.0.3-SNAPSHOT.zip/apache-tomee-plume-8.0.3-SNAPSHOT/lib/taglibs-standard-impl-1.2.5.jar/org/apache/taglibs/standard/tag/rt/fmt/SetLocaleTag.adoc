@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/fmt/SetLocaleTag.class
-
- - link:SetLocaleTag-asmified.java[Asmified]
-
-== References
-

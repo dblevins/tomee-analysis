@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlGroupRenderer.class
-
- - link:HtmlGroupRenderer-asmified.java[Asmified]
-
-== References
-

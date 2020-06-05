@@ -1,6 +1,0 @@
-= org/apache/openejb/core/stateful/SimpleCache$1.class
-
- - link:SimpleCache$1-asmified.java[Asmified]
-
-== References
-

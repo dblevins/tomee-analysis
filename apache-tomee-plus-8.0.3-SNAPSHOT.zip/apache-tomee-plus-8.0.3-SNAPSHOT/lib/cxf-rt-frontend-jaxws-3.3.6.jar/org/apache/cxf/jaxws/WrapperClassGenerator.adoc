@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/WrapperClassGenerator.class
-
- - link:WrapperClassGenerator-asmified.java[Asmified]
-
-== References
-

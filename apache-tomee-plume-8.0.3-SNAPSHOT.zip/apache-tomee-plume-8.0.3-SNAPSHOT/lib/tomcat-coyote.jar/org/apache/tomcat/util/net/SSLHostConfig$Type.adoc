@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SSLHostConfig$Type.class
-
- - link:SSLHostConfig$Type-asmified.java[Asmified]
-
-== References
-

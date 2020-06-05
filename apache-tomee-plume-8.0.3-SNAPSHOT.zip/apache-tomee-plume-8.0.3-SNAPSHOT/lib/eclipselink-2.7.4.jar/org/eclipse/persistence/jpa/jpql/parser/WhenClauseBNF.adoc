@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/WhenClauseBNF.class
-
- - link:WhenClauseBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/AbstractDiskCache$1.class
-
- - link:AbstractDiskCache$1-asmified.java[Asmified]
-
-== References
-

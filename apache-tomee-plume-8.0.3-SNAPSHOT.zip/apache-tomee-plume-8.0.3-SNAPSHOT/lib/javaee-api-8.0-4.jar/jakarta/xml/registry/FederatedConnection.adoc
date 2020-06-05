@@ -1,6 +1,0 @@
-= jakarta/xml/registry/FederatedConnection.class
-
- - link:FederatedConnection-asmified.java[Asmified]
-
-== References
-

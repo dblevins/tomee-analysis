@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/common/ResAuthEnum.class
-
- - link:ResAuthEnum-asmified.java[Asmified]
-
-== References
-

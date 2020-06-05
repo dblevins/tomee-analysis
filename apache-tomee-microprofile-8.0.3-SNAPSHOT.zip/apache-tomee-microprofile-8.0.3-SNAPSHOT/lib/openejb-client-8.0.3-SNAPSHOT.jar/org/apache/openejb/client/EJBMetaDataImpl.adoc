@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EJBMetaDataImpl.class
-
- - link:EJBMetaDataImpl-asmified.java[Asmified]
-
-== References
-

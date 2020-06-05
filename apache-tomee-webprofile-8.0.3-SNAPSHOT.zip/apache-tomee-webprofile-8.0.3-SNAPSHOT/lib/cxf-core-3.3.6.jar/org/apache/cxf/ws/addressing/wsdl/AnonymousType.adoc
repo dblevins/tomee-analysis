@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/wsdl/AnonymousType.class
-
- - link:AnonymousType-asmified.java[Asmified]
-
-== References
-

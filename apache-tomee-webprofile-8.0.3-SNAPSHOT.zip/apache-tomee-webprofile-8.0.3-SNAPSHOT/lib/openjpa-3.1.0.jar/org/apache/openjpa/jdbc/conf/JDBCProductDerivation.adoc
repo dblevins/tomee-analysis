@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/conf/JDBCProductDerivation.class
-
- - link:JDBCProductDerivation-asmified.java[Asmified]
-
-== References
-

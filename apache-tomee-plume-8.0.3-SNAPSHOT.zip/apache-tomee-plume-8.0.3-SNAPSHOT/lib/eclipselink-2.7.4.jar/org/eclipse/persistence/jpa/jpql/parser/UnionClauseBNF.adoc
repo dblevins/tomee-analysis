@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/UnionClauseBNF.class
-
- - link:UnionClauseBNF-asmified.java[Asmified]
-
-== References
-

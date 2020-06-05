@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/event/ResourceCreated.class
-
- - link:ResourceCreated-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/ext/AttachmentRemovalCallback.class
-
- - link:AttachmentRemovalCallback-asmified.java[Asmified]
-
-== References
-

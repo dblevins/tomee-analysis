@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/MetricImpl.class
-
- - link:MetricImpl-asmified.java[Asmified]
-
-== References
-

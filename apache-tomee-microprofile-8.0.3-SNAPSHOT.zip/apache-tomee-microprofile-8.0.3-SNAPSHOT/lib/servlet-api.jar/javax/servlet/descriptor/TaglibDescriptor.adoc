@@ -1,6 +1,0 @@
-= javax/servlet/descriptor/TaglibDescriptor.class
-
- - link:TaglibDescriptor-asmified.java[Asmified]
-
-== References
-

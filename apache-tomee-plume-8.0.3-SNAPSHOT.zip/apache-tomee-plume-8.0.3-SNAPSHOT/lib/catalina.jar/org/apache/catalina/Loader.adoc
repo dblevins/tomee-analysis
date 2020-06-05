@@ -1,6 +1,0 @@
-= org/apache/catalina/Loader.class
-
- - link:Loader-asmified.java[Asmified]
-
-== References
-

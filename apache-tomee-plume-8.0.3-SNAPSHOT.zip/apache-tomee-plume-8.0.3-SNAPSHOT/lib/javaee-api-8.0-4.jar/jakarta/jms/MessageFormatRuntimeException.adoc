@@ -1,6 +1,0 @@
-= jakarta/jms/MessageFormatRuntimeException.class
-
- - link:MessageFormatRuntimeException-asmified.java[Asmified]
-
-== References
-

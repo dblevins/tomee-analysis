@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/Asn1Parser.class
-
- - link:Asn1Parser-asmified.java[Asmified]
-
-== References
-

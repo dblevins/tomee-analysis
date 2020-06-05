@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/factory/CDIBatchArtifactFactory.class
-
- - link:CDIBatchArtifactFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/querykeys/QueryKey.class
-
- - link:QueryKey-asmified.java[Asmified]
-
-== References
-

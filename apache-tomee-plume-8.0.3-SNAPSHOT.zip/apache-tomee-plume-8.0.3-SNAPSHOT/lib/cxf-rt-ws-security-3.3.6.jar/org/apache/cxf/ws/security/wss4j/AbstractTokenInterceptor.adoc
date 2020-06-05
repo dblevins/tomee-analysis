@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.class
-
- - link:AbstractTokenInterceptor-asmified.java[Asmified]
-
-== References
-

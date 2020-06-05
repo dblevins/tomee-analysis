@@ -1,6 +1,0 @@
-= javax/servlet/jsp/ErrorData.class
-
- - link:ErrorData-asmified.java[Asmified]
-
-== References
-

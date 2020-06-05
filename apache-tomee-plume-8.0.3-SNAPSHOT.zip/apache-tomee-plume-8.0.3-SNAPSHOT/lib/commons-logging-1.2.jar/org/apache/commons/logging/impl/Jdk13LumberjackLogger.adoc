@@ -1,6 +1,0 @@
-= org/apache/commons/logging/impl/Jdk13LumberjackLogger.class
-
- - link:Jdk13LumberjackLogger-asmified.java[Asmified]
-
-== References
-

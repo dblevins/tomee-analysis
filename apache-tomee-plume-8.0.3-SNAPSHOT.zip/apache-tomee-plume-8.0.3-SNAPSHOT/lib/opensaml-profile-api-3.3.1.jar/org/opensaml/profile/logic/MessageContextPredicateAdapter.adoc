@@ -1,6 +1,0 @@
-= org/opensaml/profile/logic/MessageContextPredicateAdapter.class
-
- - link:MessageContextPredicateAdapter-asmified.java[Asmified]
-
-== References
-

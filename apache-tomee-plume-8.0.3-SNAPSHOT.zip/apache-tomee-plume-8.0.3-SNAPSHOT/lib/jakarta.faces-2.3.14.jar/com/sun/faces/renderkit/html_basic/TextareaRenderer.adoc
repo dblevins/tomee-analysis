@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/TextareaRenderer.class
-
- - link:TextareaRenderer-asmified.java[Asmified]
-
-== References
-

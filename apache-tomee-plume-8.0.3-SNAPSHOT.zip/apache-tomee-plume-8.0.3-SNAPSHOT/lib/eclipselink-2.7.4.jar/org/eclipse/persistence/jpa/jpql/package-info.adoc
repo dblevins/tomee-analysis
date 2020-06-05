@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

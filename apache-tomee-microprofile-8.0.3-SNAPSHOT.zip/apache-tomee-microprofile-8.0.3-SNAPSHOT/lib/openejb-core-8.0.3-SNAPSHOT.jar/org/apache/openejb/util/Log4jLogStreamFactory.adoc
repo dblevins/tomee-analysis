@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Log4jLogStreamFactory.class
-
- - link:Log4jLogStreamFactory-asmified.java[Asmified]
-
-== References
-

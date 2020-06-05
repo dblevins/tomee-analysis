@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/ValidationConfigType.class
-
- - link:ValidationConfigType-asmified.java[Asmified]
-
-== References
-

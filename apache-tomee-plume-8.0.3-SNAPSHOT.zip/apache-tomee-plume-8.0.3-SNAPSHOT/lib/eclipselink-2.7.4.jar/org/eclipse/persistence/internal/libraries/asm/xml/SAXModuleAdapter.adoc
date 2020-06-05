@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/SAXModuleAdapter.class
-
- - link:SAXModuleAdapter-asmified.java[Asmified]
-
-== References
-

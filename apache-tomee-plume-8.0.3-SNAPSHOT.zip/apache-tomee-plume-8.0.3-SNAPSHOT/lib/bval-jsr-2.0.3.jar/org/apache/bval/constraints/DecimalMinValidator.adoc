@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/DecimalMinValidator.class
-
- - link:DecimalMinValidator-asmified.java[Asmified]
-
-== References
-

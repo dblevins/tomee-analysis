@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/SelectItemsIterator$IterableItemIterator.class
-
- - link:SelectItemsIterator$IterableItemIterator-asmified.java[Asmified]
-
-== References
-

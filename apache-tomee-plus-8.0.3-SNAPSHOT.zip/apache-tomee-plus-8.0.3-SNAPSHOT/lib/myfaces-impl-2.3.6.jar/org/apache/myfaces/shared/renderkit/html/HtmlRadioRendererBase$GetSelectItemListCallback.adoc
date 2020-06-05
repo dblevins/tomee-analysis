@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlRadioRendererBase$GetSelectItemListCallback.class
-
- - link:HtmlRadioRendererBase$GetSelectItemListCallback-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/global/GlobalContextManager.class
-
- - link:GlobalContextManager-asmified.java[Asmified]
-
-== References
-

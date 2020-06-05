@@ -1,6 +1,0 @@
-= org/apache/commons/digester/xmlrules/DigesterRuleParser$SetNestedPropertiesAliasRule.class
-
- - link:DigesterRuleParser$SetNestedPropertiesAliasRule-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/io/LineReaderInputStreamAdaptor.class
-
- - link:LineReaderInputStreamAdaptor-asmified.java[Asmified]
-
-== References
-

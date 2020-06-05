@@ -1,6 +1,0 @@
-= org/apache/activemq/memory/list/DestinationBasedMessageList.class
-
- - link:DestinationBasedMessageList-asmified.java[Asmified]
-
-== References
-

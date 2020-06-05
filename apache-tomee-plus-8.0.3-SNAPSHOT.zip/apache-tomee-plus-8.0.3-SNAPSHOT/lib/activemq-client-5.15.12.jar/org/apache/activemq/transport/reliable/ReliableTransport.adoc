@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/reliable/ReliableTransport.class
-
- - link:ReliableTransport-asmified.java[Asmified]
-
-== References
-

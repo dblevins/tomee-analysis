@@ -1,6 +1,0 @@
-= org/eclipse/persistence/services/jboss/MBeanJBossRuntimeServicesMBean.class
-
- - link:MBeanJBossRuntimeServicesMBean-asmified.java[Asmified]
-
-== References
-

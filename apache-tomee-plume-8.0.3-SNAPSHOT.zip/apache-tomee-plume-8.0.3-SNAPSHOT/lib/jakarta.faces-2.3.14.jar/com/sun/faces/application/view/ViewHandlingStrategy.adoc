@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/ViewHandlingStrategy.class
-
- - link:ViewHandlingStrategy-asmified.java[Asmified]
-
-== References
-

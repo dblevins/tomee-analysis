@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ee/jta/JTAJobRunShellFactory.class
-
- - link:JTAJobRunShellFactory-asmified.java[Asmified]
-
-== References
-

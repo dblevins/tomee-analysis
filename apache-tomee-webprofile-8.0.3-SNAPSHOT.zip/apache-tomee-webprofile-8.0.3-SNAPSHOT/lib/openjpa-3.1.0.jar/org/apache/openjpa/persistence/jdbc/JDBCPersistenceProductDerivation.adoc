@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/JDBCPersistenceProductDerivation.class
-
- - link:JDBCPersistenceProductDerivation-asmified.java[Asmified]
-
-== References
-

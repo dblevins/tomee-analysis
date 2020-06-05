@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/security/ClaimsAuthorizingFilter.class
-
- - link:ClaimsAuthorizingFilter-asmified.java[Asmified]
-
-== References
-

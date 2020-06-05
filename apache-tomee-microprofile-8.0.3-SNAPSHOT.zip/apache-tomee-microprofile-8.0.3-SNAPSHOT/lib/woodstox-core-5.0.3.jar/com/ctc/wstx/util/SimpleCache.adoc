@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/SimpleCache.class
-
- - link:SimpleCache-asmified.java[Asmified]
-
-== References
-

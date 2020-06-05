@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/virtual/VirtualDestination.class
-
- - link:VirtualDestination-asmified.java[Asmified]
-
-== References
-

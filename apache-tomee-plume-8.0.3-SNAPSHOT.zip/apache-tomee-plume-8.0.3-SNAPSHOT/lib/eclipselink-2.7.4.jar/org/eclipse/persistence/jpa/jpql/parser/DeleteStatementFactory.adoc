@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/DeleteStatementFactory.class
-
- - link:DeleteStatementFactory-asmified.java[Asmified]
-
-== References
-

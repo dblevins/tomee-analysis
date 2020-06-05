@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/Property.class
-
- - link:Property-asmified.java[Asmified]
-
-== References
-

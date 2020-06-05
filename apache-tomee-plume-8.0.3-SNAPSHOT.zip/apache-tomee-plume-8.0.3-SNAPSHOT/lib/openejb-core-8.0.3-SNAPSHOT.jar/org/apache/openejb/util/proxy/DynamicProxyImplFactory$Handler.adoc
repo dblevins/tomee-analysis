@@ -1,6 +1,0 @@
-= org/apache/openejb/util/proxy/DynamicProxyImplFactory$Handler.class
-
- - link:DynamicProxyImplFactory$Handler-asmified.java[Asmified]
-
-== References
-

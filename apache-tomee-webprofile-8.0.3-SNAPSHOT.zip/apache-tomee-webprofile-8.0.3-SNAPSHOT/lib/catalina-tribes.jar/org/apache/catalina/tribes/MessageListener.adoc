@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/MessageListener.class
-
- - link:MessageListener-asmified.java[Asmified]
-
-== References
-

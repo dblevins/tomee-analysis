@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener$AutomaticLifeCycleValidationTraversableResolver.class
-
- - link:BeanValidationListener$AutomaticLifeCycleValidationTraversableResolver-asmified.java[Asmified]
-
-== References
-

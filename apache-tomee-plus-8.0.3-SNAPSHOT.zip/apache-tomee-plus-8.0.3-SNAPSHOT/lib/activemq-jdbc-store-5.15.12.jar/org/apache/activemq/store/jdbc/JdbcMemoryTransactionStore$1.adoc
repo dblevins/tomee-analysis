@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JdbcMemoryTransactionStore$1.class
-
- - link:JdbcMemoryTransactionStore$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/jpql/Token.class
-
- - link:Token-asmified.java[Asmified]
-
-== References
-

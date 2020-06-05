@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeFormatterBuilder$Composite.class
-
- - link:DateTimeFormatterBuilder$Composite-asmified.java[Asmified]
-
-== References
-

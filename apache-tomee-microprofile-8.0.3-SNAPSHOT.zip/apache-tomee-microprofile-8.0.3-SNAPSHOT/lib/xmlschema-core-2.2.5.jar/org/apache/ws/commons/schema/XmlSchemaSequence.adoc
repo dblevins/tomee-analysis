@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaSequence.class
-
- - link:XmlSchemaSequence-asmified.java[Asmified]
-
-== References
-

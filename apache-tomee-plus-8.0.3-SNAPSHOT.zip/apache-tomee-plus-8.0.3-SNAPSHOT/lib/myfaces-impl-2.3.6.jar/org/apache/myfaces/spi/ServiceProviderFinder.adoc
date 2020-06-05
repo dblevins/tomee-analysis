@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/ServiceProviderFinder.class
-
- - link:ServiceProviderFinder-asmified.java[Asmified]
-
-== References
-

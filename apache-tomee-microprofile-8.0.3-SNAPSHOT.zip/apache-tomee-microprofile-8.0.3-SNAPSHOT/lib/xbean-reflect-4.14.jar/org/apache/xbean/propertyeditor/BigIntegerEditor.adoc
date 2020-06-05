@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/BigIntegerEditor.class
-
- - link:BigIntegerEditor-asmified.java[Asmified]
-
-== References
-

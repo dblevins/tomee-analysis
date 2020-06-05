@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/JndiEncInfo.class
-
- - link:JndiEncInfo-asmified.java[Asmified]
-
-== References
-

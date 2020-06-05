@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/ContainerPoolConf.class
-
- - link:ContainerPoolConf-asmified.java[Asmified]
-
-== References
-

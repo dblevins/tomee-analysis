@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/LazySet.class
-
- - link:LazySet-asmified.java[Asmified]
-
-== References
-

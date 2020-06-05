@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/MailProviderRegistry.class
-
- - link:MailProviderRegistry-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/IorSecurityConfig.class
-
- - link:IorSecurityConfig-asmified.java[Asmified]
-
-== References
-

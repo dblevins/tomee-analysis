@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/resource/ResourceLoaderWrapper.class
-
- - link:ResourceLoaderWrapper-asmified.java[Asmified]
-
-== References
-

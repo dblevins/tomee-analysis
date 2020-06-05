@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlCommandLinkTag.class
-
- - link:HtmlCommandLinkTag-asmified.java[Asmified]
-
-== References
-

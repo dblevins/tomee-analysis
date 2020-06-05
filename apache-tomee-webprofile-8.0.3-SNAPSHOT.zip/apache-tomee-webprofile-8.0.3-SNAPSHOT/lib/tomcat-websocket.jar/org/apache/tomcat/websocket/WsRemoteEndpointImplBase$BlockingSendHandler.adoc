@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$BlockingSendHandler.class
-
- - link:WsRemoteEndpointImplBase$BlockingSendHandler-asmified.java[Asmified]
-
-== References
-

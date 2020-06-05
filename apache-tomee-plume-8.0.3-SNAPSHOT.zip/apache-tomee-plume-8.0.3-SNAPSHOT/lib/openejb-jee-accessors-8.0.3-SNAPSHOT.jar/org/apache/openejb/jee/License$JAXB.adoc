@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/License$JAXB.class
-
- - link:License$JAXB-asmified.java[Asmified]
-
-== References
-

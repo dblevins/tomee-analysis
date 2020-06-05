@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/ShortEncodingAlgorithm.class
-
- - link:ShortEncodingAlgorithm-asmified.java[Asmified]
-
-== References
-

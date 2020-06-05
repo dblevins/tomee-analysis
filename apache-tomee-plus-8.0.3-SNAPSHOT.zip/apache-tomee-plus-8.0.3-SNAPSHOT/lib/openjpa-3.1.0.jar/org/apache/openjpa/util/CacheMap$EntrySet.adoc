@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/CacheMap$EntrySet.class
-
- - link:CacheMap$EntrySet-asmified.java[Asmified]
-
-== References
-

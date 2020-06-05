@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/RootImpl.class
-
- - link:RootImpl-asmified.java[Asmified]
-
-== References
-

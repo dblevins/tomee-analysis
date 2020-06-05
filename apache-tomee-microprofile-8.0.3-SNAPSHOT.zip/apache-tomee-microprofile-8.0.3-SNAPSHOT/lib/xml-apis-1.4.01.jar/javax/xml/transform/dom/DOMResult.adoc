@@ -1,6 +1,0 @@
-= javax/xml/transform/dom/DOMResult.class
-
- - link:DOMResult-asmified.java[Asmified]
-
-== References
-

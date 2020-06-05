@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor$PolicyBasedWSS4JOutInterceptorInternal.class
-
- - link:PolicyBasedWSS4JOutInterceptor$PolicyBasedWSS4JOutInterceptorInternal-asmified.java[Asmified]
-
-== References
-

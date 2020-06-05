@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/managed/local/ManagedConnection$ClosingSynchronization.class
-
- - link:ManagedConnection$ClosingSynchronization-asmified.java[Asmified]
-
-== References
-

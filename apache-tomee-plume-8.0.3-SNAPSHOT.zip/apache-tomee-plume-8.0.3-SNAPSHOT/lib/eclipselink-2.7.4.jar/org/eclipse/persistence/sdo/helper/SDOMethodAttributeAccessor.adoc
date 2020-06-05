@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/helper/SDOMethodAttributeAccessor.class
-
- - link:SDOMethodAttributeAccessor-asmified.java[Asmified]
-
-== References
-

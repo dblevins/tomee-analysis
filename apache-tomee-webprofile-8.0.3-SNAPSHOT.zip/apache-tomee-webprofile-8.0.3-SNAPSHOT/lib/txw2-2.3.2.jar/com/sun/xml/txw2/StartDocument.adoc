@@ -1,6 +1,0 @@
-= com/sun/xml/txw2/StartDocument.class
-
- - link:StartDocument-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/identifier/DefaultIdentifierConfiguration.class
-
- - link:DefaultIdentifierConfiguration-asmified.java[Asmified]
-
-== References
-

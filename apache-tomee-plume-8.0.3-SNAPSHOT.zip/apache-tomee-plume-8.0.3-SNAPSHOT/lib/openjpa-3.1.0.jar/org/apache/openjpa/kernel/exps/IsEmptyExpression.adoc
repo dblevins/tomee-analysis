@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/IsEmptyExpression.class
-
- - link:IsEmptyExpression-asmified.java[Asmified]
-
-== References
-

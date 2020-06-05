@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/impl/CompilerStats.class
-
- - link:CompilerStats-asmified.java[Asmified]
-
-== References
-

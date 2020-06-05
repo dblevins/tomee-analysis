@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejb/SubscriptionDurabilityEnum.class
-
- - link:SubscriptionDurabilityEnum-asmified.java[Asmified]
-
-== References
-

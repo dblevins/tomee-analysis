@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/JweJwtCompactConsumer.class
-
- - link:JweJwtCompactConsumer-asmified.java[Asmified]
-
-== References
-

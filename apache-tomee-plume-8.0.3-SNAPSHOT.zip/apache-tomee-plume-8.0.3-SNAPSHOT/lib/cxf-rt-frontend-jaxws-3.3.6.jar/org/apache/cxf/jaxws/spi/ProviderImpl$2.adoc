@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/spi/ProviderImpl$2.class
-
- - link:ProviderImpl$2-asmified.java[Asmified]
-
-== References
-

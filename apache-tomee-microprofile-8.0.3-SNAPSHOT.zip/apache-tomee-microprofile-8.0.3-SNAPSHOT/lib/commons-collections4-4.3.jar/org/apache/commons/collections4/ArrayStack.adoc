@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/ArrayStack.class
-
- - link:ArrayStack-asmified.java[Asmified]
-
-== References
-

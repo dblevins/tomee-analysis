@@ -1,6 +1,0 @@
-= org/apache/jasper/servlet/JasperLoader.class
-
- - link:JasperLoader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/implicitobject/HeaderImplicitObject.class
-
- - link:HeaderImplicitObject-asmified.java[Asmified]
-
-== References
-

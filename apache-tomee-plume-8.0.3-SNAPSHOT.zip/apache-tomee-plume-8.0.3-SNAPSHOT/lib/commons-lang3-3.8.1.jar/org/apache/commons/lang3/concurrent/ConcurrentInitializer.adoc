@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/concurrent/ConcurrentInitializer.class
-
- - link:ConcurrentInitializer-asmified.java[Asmified]
-
-== References
-

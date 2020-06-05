@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/PartialViewContextFactoryImpl.class
-
- - link:PartialViewContextFactoryImpl-asmified.java[Asmified]
-
-== References
-

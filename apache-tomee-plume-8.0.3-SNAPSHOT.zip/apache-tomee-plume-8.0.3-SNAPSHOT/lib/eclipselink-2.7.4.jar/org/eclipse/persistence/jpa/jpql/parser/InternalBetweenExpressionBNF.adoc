@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalBetweenExpressionBNF.class
-
- - link:InternalBetweenExpressionBNF-asmified.java[Asmified]
-
-== References
-

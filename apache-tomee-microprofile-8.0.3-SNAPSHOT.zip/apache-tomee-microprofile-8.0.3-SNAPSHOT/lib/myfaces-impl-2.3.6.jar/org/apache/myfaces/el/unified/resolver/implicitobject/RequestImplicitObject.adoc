@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/implicitobject/RequestImplicitObject.class
-
- - link:RequestImplicitObject-asmified.java[Asmified]
-
-== References
-

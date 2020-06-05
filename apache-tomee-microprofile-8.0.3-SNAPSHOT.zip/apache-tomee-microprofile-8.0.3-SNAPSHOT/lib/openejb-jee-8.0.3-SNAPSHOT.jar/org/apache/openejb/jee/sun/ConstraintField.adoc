@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/ConstraintField.class
-
- - link:ConstraintField-asmified.java[Asmified]
-
-== References
-

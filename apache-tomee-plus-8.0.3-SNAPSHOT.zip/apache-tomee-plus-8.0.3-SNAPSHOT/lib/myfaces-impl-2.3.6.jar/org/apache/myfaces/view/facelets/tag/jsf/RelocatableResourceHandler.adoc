@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/RelocatableResourceHandler.class
-
- - link:RelocatableResourceHandler-asmified.java[Asmified]
-
-== References
-

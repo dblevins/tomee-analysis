@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/DelegateValidator.class
-
- - link:DelegateValidator-asmified.java[Asmified]
-
-== References
-

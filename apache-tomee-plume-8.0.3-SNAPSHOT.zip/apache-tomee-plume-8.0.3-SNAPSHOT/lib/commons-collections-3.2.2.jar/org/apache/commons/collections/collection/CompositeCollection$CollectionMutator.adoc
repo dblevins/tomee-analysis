@@ -1,6 +1,0 @@
-= org/apache/commons/collections/collection/CompositeCollection$CollectionMutator.class
-
- - link:CompositeCollection$CollectionMutator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/BinaryMappingContentHandler.class
-
- - link:BinaryMappingContentHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/ResultObjectProviderIterator.class
-
- - link:ResultObjectProviderIterator-asmified.java[Asmified]
-
-== References
-

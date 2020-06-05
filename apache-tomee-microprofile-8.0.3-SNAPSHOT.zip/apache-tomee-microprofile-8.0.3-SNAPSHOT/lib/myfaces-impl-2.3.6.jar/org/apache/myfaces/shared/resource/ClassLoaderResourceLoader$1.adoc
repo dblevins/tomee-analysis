@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/resource/ClassLoaderResourceLoader$1.class
-
- - link:ClassLoaderResourceLoader$1-asmified.java[Asmified]
-
-== References
-

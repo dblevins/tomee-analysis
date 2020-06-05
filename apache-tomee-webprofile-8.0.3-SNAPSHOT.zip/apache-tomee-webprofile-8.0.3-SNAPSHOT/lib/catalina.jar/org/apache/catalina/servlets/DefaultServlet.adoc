@@ -1,6 +1,0 @@
-= org/apache/catalina/servlets/DefaultServlet.class
-
- - link:DefaultServlet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/JaxbJavaee$HandlerChainsNamespaceFilter.class
-
- - link:JaxbJavaee$HandlerChainsNamespaceFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/common/xmlschema/XmlSchemaUtils.class
-
- - link:XmlSchemaUtils-asmified.java[Asmified]
-
-== References
-

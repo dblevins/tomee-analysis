@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ValidatorBuilder$OpenEJBValidatorFactory.class
-
- - link:ValidatorBuilder$OpenEJBValidatorFactory-asmified.java[Asmified]
-
-== References
-

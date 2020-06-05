@@ -1,6 +1,0 @@
-= org/apache/openejb/api/Proxy.class
-
- - link:Proxy-asmified.java[Asmified]
-
-== References
-

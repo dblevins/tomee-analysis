@@ -1,6 +1,0 @@
-= org/jvnet/staxex/Base64Data$Base64StreamingDataHandler.class
-
- - link:Base64Data$Base64StreamingDataHandler-asmified.java[Asmified]
-
-== References
-

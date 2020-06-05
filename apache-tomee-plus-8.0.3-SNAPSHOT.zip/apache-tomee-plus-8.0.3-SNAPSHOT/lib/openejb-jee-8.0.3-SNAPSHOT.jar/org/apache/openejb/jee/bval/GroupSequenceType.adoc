@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/GroupSequenceType.class
-
- - link:GroupSequenceType-asmified.java[Asmified]
-
-== References
-

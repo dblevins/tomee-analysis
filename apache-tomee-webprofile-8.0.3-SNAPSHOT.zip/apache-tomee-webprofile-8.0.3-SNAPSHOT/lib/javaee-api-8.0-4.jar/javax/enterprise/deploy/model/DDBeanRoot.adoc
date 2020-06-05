@@ -1,9 +1,0 @@
-= javax/enterprise/deploy/model/DDBeanRoot.class
-
- - link:DDBeanRoot-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.deploy.model.DDBean - 1
- - javax.enterprise.deploy.shared.ModuleType - 1
- - javax.enterprise.deploy.model.DeployableObject - 1

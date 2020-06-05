@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/FileItem.class
-
- - link:FileItem-asmified.java[Asmified]
-
-== References
-

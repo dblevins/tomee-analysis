@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ResourceIdGeneratorImpl.class
-
- - link:WadlGenerator$ResourceIdGeneratorImpl-asmified.java[Asmified]
-
-== References
-

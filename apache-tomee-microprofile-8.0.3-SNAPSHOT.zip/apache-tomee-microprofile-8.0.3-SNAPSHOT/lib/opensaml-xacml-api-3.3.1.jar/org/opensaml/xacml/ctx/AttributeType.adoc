@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/AttributeType.class
-
- - link:AttributeType-asmified.java[Asmified]
-
-== References
-

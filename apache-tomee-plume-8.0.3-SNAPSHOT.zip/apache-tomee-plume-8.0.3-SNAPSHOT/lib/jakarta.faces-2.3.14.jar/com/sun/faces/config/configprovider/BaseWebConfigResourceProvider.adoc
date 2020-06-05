@@ -1,6 +1,0 @@
-= com/sun/faces/config/configprovider/BaseWebConfigResourceProvider.class
-
- - link:BaseWebConfigResourceProvider-asmified.java[Asmified]
-
-== References
-

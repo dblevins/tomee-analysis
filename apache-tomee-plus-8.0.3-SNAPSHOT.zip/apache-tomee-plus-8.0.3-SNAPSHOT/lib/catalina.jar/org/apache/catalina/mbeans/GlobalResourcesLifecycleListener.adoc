@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/GlobalResourcesLifecycleListener.class
-
- - link:GlobalResourcesLifecycleListener-asmified.java[Asmified]
-
-== References
-

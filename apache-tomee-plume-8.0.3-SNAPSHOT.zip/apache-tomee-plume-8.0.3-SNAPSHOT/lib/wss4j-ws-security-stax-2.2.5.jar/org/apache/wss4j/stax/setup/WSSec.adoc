@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/setup/WSSec.class
-
- - link:WSSec-asmified.java[Asmified]
-
-== References
-

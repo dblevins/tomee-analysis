@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Memoizer$1.class
-
- - link:Memoizer$1-asmified.java[Asmified]
-
-== References
-

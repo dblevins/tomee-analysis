@@ -1,6 +1,0 @@
-= jakarta/persistence/metamodel/Type.class
-
- - link:Type-asmified.java[Asmified]
-
-== References
-

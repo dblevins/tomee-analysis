@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQMessageAudit.class
-
- - link:ActiveMQMessageAudit-asmified.java[Asmified]
-
-== References
-

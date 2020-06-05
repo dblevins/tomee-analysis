@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/TransformerPredicate.class
-
- - link:TransformerPredicate-asmified.java[Asmified]
-
-== References
-

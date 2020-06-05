@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/OpenTypeSupport$SlowConsumerEntryOpenTypeFactory.class
-
- - link:OpenTypeSupport$SlowConsumerEntryOpenTypeFactory-asmified.java[Asmified]
-
-== References
-

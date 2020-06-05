@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/handler/Handler.class
-
- - link:Handler-asmified.java[Asmified]
-
-== References
-

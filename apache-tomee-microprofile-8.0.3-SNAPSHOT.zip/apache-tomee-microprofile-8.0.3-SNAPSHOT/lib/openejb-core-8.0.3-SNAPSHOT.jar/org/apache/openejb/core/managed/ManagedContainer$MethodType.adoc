@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/ManagedContainer$MethodType.class
-
- - link:ManagedContainer$MethodType-asmified.java[Asmified]
-
-== References
-

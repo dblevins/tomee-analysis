@@ -1,6 +1,0 @@
-= org/apache/bval/util/reflection/Reflection$Interfaces.class
-
- - link:Reflection$Interfaces-asmified.java[Asmified]
-
-== References
-

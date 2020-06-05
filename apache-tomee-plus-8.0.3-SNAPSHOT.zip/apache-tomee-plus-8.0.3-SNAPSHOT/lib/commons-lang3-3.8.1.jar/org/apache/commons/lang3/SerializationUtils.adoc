@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/SerializationUtils.class
-
- - link:SerializationUtils-asmified.java[Asmified]
-
-== References
-

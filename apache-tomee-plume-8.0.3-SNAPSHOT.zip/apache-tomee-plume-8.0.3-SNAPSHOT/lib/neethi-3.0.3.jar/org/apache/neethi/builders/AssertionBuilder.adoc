@@ -1,6 +1,0 @@
-= org/apache/neethi/builders/AssertionBuilder.class
-
- - link:AssertionBuilder-asmified.java[Asmified]
-
-== References
-

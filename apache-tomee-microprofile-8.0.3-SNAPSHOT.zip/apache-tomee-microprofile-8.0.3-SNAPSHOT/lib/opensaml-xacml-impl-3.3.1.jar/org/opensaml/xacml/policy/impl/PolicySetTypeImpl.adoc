@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/PolicySetTypeImpl.class
-
- - link:PolicySetTypeImpl-asmified.java[Asmified]
-
-== References
-

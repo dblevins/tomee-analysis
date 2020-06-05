@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/MultiColumnVersionStrategy.class
-
- - link:MultiColumnVersionStrategy-asmified.java[Asmified]
-
-== References
-

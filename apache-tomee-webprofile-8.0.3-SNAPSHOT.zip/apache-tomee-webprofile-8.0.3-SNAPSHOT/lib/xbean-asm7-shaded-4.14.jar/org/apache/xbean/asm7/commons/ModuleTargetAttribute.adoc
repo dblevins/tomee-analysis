@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/ModuleTargetAttribute.class
-
- - link:ModuleTargetAttribute-asmified.java[Asmified]
-
-== References
-

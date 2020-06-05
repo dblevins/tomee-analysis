@@ -1,6 +1,0 @@
-= org/apache/cxf/message/StringMap.class
-
- - link:StringMap-asmified.java[Asmified]
-
-== References
-

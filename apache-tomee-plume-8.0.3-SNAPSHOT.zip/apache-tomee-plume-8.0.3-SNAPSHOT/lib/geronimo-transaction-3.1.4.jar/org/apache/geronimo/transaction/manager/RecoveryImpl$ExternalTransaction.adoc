@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/RecoveryImpl$ExternalTransaction.class
-
- - link:RecoveryImpl$ExternalTransaction-asmified.java[Asmified]
-
-== References
-

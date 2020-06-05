@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/RequestBodyImpl.class
-
- - link:RequestBodyImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/EncodingHandler.class
-
- - link:EncodingHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/ParserAdapter.class
-
- - link:ParserAdapter-asmified.java[Asmified]
-
-== References
-

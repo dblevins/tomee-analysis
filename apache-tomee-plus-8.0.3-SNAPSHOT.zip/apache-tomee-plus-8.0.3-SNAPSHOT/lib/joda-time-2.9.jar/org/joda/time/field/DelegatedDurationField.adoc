@@ -1,6 +1,0 @@
-= org/joda/time/field/DelegatedDurationField.class
-
- - link:DelegatedDurationField-asmified.java[Asmified]
-
-== References
-

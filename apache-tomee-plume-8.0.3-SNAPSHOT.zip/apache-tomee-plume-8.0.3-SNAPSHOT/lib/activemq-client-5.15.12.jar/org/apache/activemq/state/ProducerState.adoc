@@ -1,6 +1,0 @@
-= org/apache/activemq/state/ProducerState.class
-
- - link:ProducerState-asmified.java[Asmified]
-
-== References
-

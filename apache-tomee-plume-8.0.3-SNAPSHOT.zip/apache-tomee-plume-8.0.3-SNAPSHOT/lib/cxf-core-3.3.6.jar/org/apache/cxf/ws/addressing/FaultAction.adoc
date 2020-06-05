@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/FaultAction.class
-
- - link:FaultAction-asmified.java[Asmified]
-
-== References
-

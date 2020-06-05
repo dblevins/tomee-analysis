@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/ui/DefineHandler.class
-
- - link:DefineHandler-asmified.java[Asmified]
-
-== References
-

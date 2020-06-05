@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/ExpiresFilter$ExpiresConfiguration.class
-
- - link:ExpiresFilter$ExpiresConfiguration-asmified.java[Asmified]
-
-== References
-

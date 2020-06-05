@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/OldestMessageWithLowestPriorityEvictionStrategy.class
-
- - link:OldestMessageWithLowestPriorityEvictionStrategy-asmified.java[Asmified]
-
-== References
-

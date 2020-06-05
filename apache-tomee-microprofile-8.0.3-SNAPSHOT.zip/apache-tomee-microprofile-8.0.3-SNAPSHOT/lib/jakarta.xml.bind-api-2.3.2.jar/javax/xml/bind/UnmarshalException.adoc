@@ -1,8 +1,0 @@
-= javax/xml/bind/UnmarshalException.class
-
- - link:UnmarshalException-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.UnmarshalException - 4
- - javax.xml.bind.JAXBException - 2

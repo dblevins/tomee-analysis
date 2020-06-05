@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/ServiceModelPolicyUpdater.class
-
- - link:ServiceModelPolicyUpdater-asmified.java[Asmified]
-
-== References
-

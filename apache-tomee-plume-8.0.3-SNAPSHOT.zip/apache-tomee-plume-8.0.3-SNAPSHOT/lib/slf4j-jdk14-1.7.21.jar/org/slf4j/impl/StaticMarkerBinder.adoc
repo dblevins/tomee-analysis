@@ -1,6 +1,0 @@
-= org/slf4j/impl/StaticMarkerBinder.class
-
- - link:StaticMarkerBinder-asmified.java[Asmified]
-
-== References
-

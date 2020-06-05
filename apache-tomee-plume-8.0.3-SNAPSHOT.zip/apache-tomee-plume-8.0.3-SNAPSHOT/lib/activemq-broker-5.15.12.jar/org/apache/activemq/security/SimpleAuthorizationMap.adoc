@@ -1,6 +1,0 @@
-= org/apache/activemq/security/SimpleAuthorizationMap.class
-
- - link:SimpleAuthorizationMap-asmified.java[Asmified]
-
-== References
-

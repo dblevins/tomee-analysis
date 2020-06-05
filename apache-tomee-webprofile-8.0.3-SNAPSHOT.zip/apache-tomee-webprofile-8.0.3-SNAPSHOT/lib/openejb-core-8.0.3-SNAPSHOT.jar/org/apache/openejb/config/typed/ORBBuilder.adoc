@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/ORBBuilder.class
-
- - link:ORBBuilder-asmified.java[Asmified]
-
-== References
-

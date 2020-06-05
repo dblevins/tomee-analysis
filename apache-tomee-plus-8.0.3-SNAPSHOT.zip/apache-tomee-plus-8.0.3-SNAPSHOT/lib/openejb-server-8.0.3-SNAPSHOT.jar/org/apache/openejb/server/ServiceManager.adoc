@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ServiceManager.class
-
- - link:ServiceManager-asmified.java[Asmified]
-
-== References
-

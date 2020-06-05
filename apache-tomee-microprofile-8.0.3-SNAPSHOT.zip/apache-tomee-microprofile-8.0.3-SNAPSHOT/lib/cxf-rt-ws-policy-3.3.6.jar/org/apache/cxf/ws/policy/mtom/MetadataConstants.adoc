@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/mtom/MetadataConstants.class
-
- - link:MetadataConstants-asmified.java[Asmified]
-
-== References
-

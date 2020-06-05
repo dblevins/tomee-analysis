@@ -1,6 +1,0 @@
-= javax/xml/parsers/FactoryFinder.class
-
- - link:FactoryFinder-asmified.java[Asmified]
-
-== References
-

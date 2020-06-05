@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/TransportLoggerFactorySPI.class
-
- - link:TransportLoggerFactorySPI-asmified.java[Asmified]
-
-== References
-

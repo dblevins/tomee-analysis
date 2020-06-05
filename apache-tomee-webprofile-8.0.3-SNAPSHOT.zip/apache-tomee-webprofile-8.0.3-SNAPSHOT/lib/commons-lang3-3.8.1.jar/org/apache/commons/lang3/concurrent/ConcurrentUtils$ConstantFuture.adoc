@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/concurrent/ConcurrentUtils$ConstantFuture.class
-
- - link:ConcurrentUtils$ConstantFuture-asmified.java[Asmified]
-
-== References
-

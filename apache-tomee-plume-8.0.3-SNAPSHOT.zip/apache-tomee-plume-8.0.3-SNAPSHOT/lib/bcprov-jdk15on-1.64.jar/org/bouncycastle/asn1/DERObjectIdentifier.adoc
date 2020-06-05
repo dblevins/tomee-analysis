@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/DERObjectIdentifier.class
-
- - link:DERObjectIdentifier-asmified.java[Asmified]
-
-== References
-

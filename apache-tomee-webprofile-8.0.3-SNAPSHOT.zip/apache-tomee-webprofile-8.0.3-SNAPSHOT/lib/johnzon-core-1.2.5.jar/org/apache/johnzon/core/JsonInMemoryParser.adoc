@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonInMemoryParser.class
-
- - link:JsonInMemoryParser-asmified.java[Asmified]
-
-== References
-

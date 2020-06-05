@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AppContextConfigDeployer.class
-
- - link:AppContextConfigDeployer-asmified.java[Asmified]
-
-== References
-

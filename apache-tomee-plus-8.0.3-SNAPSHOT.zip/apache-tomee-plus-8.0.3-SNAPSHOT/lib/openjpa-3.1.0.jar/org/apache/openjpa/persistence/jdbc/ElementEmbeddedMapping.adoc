@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/ElementEmbeddedMapping.class
-
- - link:ElementEmbeddedMapping-asmified.java[Asmified]
-
-== References
-

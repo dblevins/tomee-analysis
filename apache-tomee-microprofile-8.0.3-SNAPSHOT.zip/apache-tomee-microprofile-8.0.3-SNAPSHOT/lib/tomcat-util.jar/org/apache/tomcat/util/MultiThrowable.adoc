@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/MultiThrowable.class
-
- - link:MultiThrowable-asmified.java[Asmified]
-
-== References
-

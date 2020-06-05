@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/AbstractTempRegion.class
-
- - link:AbstractTempRegion-asmified.java[Asmified]
-
-== References
-

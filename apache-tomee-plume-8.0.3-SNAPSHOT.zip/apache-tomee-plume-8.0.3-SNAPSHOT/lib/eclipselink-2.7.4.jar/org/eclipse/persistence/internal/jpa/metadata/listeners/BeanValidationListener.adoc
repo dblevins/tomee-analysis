@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/listeners/BeanValidationListener.class
-
- - link:BeanValidationListener-asmified.java[Asmified]
-
-== References
-

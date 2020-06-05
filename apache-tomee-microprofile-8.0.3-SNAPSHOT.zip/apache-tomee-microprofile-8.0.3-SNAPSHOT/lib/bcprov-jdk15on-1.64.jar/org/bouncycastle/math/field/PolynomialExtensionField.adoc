@@ -1,6 +1,0 @@
-= org/bouncycastle/math/field/PolynomialExtensionField.class
-
- - link:PolynomialExtensionField-asmified.java[Asmified]
-
-== References
-

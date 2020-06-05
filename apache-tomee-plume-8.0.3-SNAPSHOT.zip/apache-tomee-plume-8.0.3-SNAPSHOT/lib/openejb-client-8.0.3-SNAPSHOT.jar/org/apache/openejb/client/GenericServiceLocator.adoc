@@ -1,6 +1,0 @@
-= org/apache/openejb/client/GenericServiceLocator.class
-
- - link:GenericServiceLocator-asmified.java[Asmified]
-
-== References
-

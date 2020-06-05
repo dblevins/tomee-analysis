@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/UnresolvedAnnotationBinding.class
-
- - link:UnresolvedAnnotationBinding-asmified.java[Asmified]
-
-== References
-

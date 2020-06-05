@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/ClassTypeExpression.class
-
- - link:ClassTypeExpression-asmified.java[Asmified]
-
-== References
-

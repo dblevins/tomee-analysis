@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/SelectBooleanCheckboxTag.class
-
- - link:SelectBooleanCheckboxTag-asmified.java[Asmified]
-
-== References
-

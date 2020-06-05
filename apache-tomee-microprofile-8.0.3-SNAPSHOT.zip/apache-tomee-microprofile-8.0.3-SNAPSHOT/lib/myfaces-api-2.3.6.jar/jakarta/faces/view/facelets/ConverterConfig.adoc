@@ -1,6 +1,0 @@
-= jakarta/faces/view/facelets/ConverterConfig.class
-
- - link:ConverterConfig-asmified.java[Asmified]
-
-== References
-

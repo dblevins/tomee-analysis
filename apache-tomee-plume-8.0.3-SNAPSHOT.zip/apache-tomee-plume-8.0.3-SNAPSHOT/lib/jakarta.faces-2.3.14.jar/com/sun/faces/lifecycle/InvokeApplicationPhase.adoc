@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/InvokeApplicationPhase.class
-
- - link:InvokeApplicationPhase-asmified.java[Asmified]
-
-== References
-

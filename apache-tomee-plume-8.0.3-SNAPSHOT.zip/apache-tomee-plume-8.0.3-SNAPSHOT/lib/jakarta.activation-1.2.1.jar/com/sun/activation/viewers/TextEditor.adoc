@@ -1,6 +1,0 @@
-= com/sun/activation/viewers/TextEditor.class
-
- - link:TextEditor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ImportSql.class
-
- - link:ImportSql-asmified.java[Asmified]
-
-== References
-

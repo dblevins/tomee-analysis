@@ -1,6 +1,0 @@
-= jakarta/websocket/SendHandler.class
-
- - link:SendHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/common/annotation/AnnotationProcessor.class
-
- - link:AnnotationProcessor-asmified.java[Asmified]
-
-== References
-

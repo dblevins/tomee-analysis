@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/queries/FetchGroupMetadata.class
-
- - link:FetchGroupMetadata-asmified.java[Asmified]
-
-== References
-

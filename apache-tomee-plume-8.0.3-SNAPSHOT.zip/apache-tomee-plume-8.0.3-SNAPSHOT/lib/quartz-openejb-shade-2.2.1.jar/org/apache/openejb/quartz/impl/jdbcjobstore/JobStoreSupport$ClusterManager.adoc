@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreSupport$ClusterManager.class
-
- - link:JobStoreSupport$ClusterManager-asmified.java[Asmified]
-
-== References
-

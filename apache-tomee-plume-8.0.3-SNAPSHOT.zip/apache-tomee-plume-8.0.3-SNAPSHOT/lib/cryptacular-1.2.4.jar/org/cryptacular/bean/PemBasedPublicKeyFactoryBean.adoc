@@ -1,6 +1,0 @@
-= org/cryptacular/bean/PemBasedPublicKeyFactoryBean.class
-
- - link:PemBasedPublicKeyFactoryBean-asmified.java[Asmified]
-
-== References
-

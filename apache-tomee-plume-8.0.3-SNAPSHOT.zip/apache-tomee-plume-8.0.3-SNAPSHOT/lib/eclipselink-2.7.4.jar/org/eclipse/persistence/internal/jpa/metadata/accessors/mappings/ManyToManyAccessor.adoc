@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/ManyToManyAccessor.class
-
- - link:ManyToManyAccessor-asmified.java[Asmified]
-
-== References
-

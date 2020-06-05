@@ -1,6 +1,0 @@
-= org/hsqldb/StatementTypes.class
-
- - link:StatementTypes-asmified.java[Asmified]
-
-== References
-

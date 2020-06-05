@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/LongEditor.class
-
- - link:LongEditor-asmified.java[Asmified]
-
-== References
-

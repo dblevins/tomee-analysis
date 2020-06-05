@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/JpaHelper.class
-
- - link:JpaHelper-asmified.java[Asmified]
-
-== References
-

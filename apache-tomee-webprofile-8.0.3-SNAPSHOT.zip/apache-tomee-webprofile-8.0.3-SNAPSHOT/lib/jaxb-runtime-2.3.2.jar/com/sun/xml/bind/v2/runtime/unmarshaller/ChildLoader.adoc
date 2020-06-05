@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/ChildLoader.class
-
- - link:ChildLoader-asmified.java[Asmified]
-
-== References
-

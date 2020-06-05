@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/xmlschema/FixedOrDefault.class
-
- - link:FixedOrDefault-asmified.java[Asmified]
-
-== References
-

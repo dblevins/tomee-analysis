@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/xml/PersistenceUnitDefaultsImpl.class
-
- - link:PersistenceUnitDefaultsImpl-asmified.java[Asmified]
-
-== References
-

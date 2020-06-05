@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PNonTransDeletedState.class
-
- - link:PNonTransDeletedState-asmified.java[Asmified]
-
-== References
-

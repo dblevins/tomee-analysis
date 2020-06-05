@@ -1,6 +1,0 @@
-= jakarta/persistence/metamodel/Metamodel.class
-
- - link:Metamodel-asmified.java[Asmified]
-
-== References
-

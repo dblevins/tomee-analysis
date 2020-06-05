@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ConcurrentLockType.class
-
- - link:ConcurrentLockType-asmified.java[Asmified]
-
-== References
-

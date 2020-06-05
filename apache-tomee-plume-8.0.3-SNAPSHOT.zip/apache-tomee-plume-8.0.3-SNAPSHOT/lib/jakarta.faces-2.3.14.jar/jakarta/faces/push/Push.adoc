@@ -1,6 +1,0 @@
-= jakarta/faces/push/Push.class
-
- - link:Push-asmified.java[Asmified]
-
-== References
-

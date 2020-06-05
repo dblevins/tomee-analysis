@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/mappings/AbstractDirectMappingImpl.class
-
- - link:AbstractDirectMappingImpl-asmified.java[Asmified]
-
-== References
-

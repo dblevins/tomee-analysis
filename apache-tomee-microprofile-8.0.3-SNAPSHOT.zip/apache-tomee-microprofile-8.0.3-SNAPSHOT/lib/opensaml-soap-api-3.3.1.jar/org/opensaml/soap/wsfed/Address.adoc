@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsfed/Address.class
-
- - link:Address-asmified.java[Asmified]
-
-== References
-

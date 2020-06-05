@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/blueprint/SoapBindingBPInfoConfigDefinitionParser.class
-
- - link:SoapBindingBPInfoConfigDefinitionParser-asmified.java[Asmified]
-
-== References
-

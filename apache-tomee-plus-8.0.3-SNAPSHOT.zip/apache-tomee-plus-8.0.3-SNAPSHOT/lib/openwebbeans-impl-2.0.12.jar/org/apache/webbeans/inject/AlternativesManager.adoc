@@ -1,6 +1,0 @@
-= org/apache/webbeans/inject/AlternativesManager.class
-
- - link:AlternativesManager-asmified.java[Asmified]
-
-== References
-

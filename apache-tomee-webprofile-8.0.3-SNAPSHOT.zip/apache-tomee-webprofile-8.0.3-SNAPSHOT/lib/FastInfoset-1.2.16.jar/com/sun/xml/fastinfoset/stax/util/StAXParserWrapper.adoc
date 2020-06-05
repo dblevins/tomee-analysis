@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/stax/util/StAXParserWrapper.class
-
- - link:StAXParserWrapper-asmified.java[Asmified]
-
-== References
-

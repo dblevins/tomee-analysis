@@ -1,6 +1,0 @@
-= org/apache/webbeans/ejb/common/util/EjbConstants.class
-
- - link:EjbConstants-asmified.java[Asmified]
-
-== References
-

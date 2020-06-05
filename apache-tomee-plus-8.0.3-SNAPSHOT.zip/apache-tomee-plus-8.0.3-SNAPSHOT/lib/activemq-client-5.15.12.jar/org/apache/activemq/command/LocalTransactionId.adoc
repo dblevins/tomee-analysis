@@ -1,6 +1,0 @@
-= org/apache/activemq/command/LocalTransactionId.class
-
- - link:LocalTransactionId-asmified.java[Asmified]
-
-== References
-

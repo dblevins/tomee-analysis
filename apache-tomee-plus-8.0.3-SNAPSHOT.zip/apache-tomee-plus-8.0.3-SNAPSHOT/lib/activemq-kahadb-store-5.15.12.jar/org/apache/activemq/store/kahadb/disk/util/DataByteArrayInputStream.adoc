@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream.class
-
- - link:DataByteArrayInputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/group/CachedMessageGroupMap$1.class
-
- - link:CachedMessageGroupMap$1-asmified.java[Asmified]
-
-== References
-

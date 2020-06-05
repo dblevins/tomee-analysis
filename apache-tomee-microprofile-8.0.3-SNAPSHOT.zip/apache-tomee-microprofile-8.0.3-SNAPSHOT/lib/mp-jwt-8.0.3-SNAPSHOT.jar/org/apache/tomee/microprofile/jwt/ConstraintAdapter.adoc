@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/ConstraintAdapter.class
-
- - link:ConstraintAdapter-asmified.java[Asmified]
-
-== References
-

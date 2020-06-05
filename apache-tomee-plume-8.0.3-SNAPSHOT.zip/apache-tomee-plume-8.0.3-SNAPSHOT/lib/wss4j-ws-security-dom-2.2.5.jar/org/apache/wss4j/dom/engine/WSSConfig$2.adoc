@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/engine/WSSConfig$2.class
-
- - link:WSSConfig$2-asmified.java[Asmified]
-
-== References
-

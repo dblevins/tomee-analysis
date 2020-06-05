@@ -1,6 +1,0 @@
-= jakarta/faces/event/PreRemoveFromViewEvent.class
-
- - link:PreRemoveFromViewEvent-asmified.java[Asmified]
-
-== References
-

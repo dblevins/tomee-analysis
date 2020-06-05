@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JDBCTopicMessageStore$LastRecovered.class
-
- - link:JDBCTopicMessageStore$LastRecovered-asmified.java[Asmified]
-
-== References
-

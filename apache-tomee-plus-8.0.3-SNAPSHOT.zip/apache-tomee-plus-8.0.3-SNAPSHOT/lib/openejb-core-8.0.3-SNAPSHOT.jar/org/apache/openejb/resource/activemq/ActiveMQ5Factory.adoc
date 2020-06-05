@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/ActiveMQ5Factory.class
-
- - link:ActiveMQ5Factory-asmified.java[Asmified]
-
-== References
-

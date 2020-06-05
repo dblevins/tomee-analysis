@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

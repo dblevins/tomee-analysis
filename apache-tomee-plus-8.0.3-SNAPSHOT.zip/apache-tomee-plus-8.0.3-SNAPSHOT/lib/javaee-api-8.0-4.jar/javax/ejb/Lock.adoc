@@ -1,7 +1,0 @@
-= javax/ejb/Lock.class
-
- - link:Lock-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.LockType - 2

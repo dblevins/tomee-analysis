@@ -1,6 +1,0 @@
-= org/apache/openejb/config/SystemAppInfo.class
-
- - link:SystemAppInfo-asmified.java[Asmified]
-
-== References
-

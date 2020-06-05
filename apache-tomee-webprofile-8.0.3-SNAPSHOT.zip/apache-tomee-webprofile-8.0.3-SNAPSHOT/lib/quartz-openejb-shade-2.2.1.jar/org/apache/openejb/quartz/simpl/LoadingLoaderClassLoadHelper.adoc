@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/LoadingLoaderClassLoadHelper.class
-
- - link:LoadingLoaderClassLoadHelper-asmified.java[Asmified]
-
-== References
-

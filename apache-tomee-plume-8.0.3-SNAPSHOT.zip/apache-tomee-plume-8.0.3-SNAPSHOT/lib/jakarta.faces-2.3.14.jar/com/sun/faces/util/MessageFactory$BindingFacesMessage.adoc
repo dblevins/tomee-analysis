@@ -1,6 +1,0 @@
-= com/sun/faces/util/MessageFactory$BindingFacesMessage.class
-
- - link:MessageFactory$BindingFacesMessage-asmified.java[Asmified]
-
-== References
-

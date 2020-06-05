@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/HttpsTokenBuilder.class
-
- - link:HttpsTokenBuilder-asmified.java[Asmified]
-
-== References
-

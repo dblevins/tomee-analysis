@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/BasicDataSourceMXBean.class
-
- - link:BasicDataSourceMXBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/implicitobject/SessionScopeImplicitObject.class
-
- - link:SessionScopeImplicitObject-asmified.java[Asmified]
-
-== References
-

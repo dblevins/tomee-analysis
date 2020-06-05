@@ -1,6 +1,0 @@
-= org/apache/tomee/jasper/TomEEJasperInitializer.class
-
- - link:TomEEJasperInitializer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/Symbol.class
-
- - link:Symbol-asmified.java[Asmified]
-
-== References
-

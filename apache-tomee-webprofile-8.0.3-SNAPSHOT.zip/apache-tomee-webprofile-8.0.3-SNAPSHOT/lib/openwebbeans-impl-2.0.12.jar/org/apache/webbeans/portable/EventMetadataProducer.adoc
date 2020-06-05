@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/EventMetadataProducer.class
-
- - link:EventMetadataProducer-asmified.java[Asmified]
-
-== References
-

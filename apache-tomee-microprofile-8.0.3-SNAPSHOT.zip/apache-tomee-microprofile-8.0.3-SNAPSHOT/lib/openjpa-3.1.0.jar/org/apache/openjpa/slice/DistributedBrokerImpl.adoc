@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/DistributedBrokerImpl.class
-
- - link:DistributedBrokerImpl-asmified.java[Asmified]
-
-== References
-

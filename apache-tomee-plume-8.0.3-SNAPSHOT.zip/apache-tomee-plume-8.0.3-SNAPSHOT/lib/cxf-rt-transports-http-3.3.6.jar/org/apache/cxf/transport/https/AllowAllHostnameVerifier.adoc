@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/AllowAllHostnameVerifier.class
-
- - link:AllowAllHostnameVerifier-asmified.java[Asmified]
-
-== References
-

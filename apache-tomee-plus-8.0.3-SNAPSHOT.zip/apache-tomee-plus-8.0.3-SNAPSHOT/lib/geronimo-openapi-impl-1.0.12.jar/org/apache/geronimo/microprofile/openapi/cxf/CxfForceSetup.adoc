@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/cxf/CxfForceSetup.class
-
- - link:CxfForceSetup-asmified.java[Asmified]
-
-== References
-

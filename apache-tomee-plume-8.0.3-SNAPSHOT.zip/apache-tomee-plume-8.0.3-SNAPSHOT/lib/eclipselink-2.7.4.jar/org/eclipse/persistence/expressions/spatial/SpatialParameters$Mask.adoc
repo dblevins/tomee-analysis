@@ -1,6 +1,0 @@
-= org/eclipse/persistence/expressions/spatial/SpatialParameters$Mask.class
-
- - link:SpatialParameters$Mask-asmified.java[Asmified]
-
-== References
-

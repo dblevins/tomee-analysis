@@ -1,8 +1,0 @@
-= javax/ws/rs/ext/RuntimeDelegateFinder.class
-
- - link:RuntimeDelegateFinder-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.ext.RuntimeDelegateFinder - 6
- - javax.ws.rs.ext.RuntimeDelegate - 3

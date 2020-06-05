@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/Assert$AssertException.class
-
- - link:Assert$AssertException-asmified.java[Asmified]
-
-== References
-

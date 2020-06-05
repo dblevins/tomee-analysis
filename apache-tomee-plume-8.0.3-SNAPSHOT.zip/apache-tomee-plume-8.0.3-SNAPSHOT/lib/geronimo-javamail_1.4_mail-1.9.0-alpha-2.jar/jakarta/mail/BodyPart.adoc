@@ -1,6 +1,0 @@
-= jakarta/mail/BodyPart.class
-
- - link:BodyPart-asmified.java[Asmified]
-
-== References
-

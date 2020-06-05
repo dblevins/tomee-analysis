@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Node.class
-
- - link:Node-asmified.java[Asmified]
-
-== References
-

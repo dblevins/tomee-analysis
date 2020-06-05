@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/common/JoseHeaders.class
-
- - link:JoseHeaders-asmified.java[Asmified]
-
-== References
-

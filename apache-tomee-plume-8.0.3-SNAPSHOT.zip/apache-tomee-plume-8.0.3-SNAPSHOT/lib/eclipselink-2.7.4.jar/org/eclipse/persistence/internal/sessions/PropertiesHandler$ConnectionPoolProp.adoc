@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$ConnectionPoolProp.class
-
- - link:PropertiesHandler$ConnectionPoolProp-asmified.java[Asmified]
-
-== References
-

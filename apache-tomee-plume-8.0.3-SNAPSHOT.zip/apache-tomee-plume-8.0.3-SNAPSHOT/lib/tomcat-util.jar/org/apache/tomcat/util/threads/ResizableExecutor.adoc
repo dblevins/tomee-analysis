@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/threads/ResizableExecutor.class
-
- - link:ResizableExecutor-asmified.java[Asmified]
-
-== References
-

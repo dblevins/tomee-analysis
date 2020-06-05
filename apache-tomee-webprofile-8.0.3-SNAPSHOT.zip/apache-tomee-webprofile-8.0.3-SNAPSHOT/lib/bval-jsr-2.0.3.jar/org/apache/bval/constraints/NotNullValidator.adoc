@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/NotNullValidator.class
-
- - link:NotNullValidator-asmified.java[Asmified]
-
-== References
-

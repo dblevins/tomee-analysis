@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomEEContainerListener.class
-
- - link:TomEEContainerListener-asmified.java[Asmified]
-
-== References
-

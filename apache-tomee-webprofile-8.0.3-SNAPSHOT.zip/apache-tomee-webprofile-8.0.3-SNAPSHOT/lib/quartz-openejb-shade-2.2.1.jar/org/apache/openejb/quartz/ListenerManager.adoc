@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/ListenerManager.class
-
- - link:ListenerManager-asmified.java[Asmified]
-
-== References
-

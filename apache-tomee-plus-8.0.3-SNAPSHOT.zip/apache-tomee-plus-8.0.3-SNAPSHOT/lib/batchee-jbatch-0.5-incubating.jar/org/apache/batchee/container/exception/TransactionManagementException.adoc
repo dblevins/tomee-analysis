@@ -1,6 +1,0 @@
-= org/apache/batchee/container/exception/TransactionManagementException.class
-
- - link:TransactionManagementException-asmified.java[Asmified]
-
-== References
-

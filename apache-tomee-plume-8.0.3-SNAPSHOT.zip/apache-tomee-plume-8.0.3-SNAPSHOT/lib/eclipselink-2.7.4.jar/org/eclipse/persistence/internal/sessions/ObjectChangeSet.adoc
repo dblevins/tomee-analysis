@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/ObjectChangeSet.class
-
- - link:ObjectChangeSet-asmified.java[Asmified]
-
-== References
-

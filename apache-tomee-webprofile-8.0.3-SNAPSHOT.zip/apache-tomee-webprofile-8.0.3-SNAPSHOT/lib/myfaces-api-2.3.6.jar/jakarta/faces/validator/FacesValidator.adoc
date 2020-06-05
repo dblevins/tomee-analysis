@@ -1,6 +1,0 @@
-= jakarta/faces/validator/FacesValidator.class
-
- - link:FacesValidator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$1.class
-
- - link:GeronimoOpenAPIExtension$1-asmified.java[Asmified]
-
-== References
-

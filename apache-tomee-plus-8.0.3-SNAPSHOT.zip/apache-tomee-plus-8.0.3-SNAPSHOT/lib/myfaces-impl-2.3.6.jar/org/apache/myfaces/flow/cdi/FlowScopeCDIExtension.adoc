@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/cdi/FlowScopeCDIExtension.class
-
- - link:FlowScopeCDIExtension-asmified.java[Asmified]
-
-== References
-

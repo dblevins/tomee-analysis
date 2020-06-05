@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/InterceptorMetadataBean.class
-
- - link:InterceptorMetadataBean-asmified.java[Asmified]
-
-== References
-

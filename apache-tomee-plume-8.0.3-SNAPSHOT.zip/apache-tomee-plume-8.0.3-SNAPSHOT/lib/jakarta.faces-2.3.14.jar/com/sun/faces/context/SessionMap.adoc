@@ -1,6 +1,0 @@
-= com/sun/faces/context/SessionMap.class
-
- - link:SessionMap-asmified.java[Asmified]
-
-== References
-

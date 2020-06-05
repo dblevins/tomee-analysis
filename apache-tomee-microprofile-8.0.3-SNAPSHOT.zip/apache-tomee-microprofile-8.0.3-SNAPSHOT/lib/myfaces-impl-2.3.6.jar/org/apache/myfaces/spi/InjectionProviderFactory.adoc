@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/InjectionProviderFactory.class
-
- - link:InjectionProviderFactory-asmified.java[Asmified]
-
-== References
-

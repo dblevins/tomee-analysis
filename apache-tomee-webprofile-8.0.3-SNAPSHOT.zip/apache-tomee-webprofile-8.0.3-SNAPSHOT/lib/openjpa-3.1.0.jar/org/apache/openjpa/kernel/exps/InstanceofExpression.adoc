@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/InstanceofExpression.class
-
- - link:InstanceofExpression-asmified.java[Asmified]
-
-== References
-

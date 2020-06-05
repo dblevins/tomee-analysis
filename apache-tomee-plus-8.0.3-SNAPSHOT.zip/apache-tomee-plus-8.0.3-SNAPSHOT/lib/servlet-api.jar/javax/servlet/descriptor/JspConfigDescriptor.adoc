@@ -1,8 +1,0 @@
-= javax/servlet/descriptor/JspConfigDescriptor.class
-
- - link:JspConfigDescriptor-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.descriptor.JspPropertyGroupDescriptor - 1
- - javax.servlet.descriptor.TaglibDescriptor - 1

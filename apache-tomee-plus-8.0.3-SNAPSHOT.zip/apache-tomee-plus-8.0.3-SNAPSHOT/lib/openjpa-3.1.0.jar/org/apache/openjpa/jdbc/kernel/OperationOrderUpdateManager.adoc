@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/OperationOrderUpdateManager.class
-
- - link:OperationOrderUpdateManager-asmified.java[Asmified]
-
-== References
-

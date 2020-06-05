@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/SecurePart$Modifier.class
-
- - link:SecurePart$Modifier-asmified.java[Asmified]
-
-== References
-

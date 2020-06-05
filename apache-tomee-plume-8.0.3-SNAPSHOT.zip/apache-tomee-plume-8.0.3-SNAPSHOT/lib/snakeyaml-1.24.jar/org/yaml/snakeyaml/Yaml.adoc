@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/Yaml.class
-
- - link:Yaml-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl11/AbstractWrapperWSDLLocator.class
-
- - link:AbstractWrapperWSDLLocator-asmified.java[Asmified]
-
-== References
-

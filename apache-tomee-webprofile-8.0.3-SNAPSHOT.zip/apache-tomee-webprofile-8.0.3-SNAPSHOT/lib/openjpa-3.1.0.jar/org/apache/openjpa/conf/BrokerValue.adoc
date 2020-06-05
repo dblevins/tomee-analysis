@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/BrokerValue.class
-
- - link:BrokerValue-asmified.java[Asmified]
-
-== References
-

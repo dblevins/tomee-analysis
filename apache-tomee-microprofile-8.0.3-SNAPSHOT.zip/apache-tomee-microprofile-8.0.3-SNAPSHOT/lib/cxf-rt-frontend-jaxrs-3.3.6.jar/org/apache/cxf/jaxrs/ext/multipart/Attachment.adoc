@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/multipart/Attachment.class
-
- - link:Attachment-asmified.java[Asmified]
-
-== References
-

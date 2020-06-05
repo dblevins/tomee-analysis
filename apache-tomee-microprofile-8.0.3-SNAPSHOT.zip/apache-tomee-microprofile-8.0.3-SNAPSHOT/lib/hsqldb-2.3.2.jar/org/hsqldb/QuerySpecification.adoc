@@ -1,6 +1,0 @@
-= org/hsqldb/QuerySpecification.class
-
- - link:QuerySpecification-asmified.java[Asmified]
-
-== References
-

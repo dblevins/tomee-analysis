@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/BrokerContext.class
-
- - link:BrokerContext-asmified.java[Asmified]
-
-== References
-

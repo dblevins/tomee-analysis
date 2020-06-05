@@ -1,6 +1,0 @@
-= jakarta/jms/MessageProducer.class
-
- - link:MessageProducer-asmified.java[Asmified]
-
-== References
-

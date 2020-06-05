@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/TriggerBuilder.class
-
- - link:TriggerBuilder-asmified.java[Asmified]
-
-== References
-

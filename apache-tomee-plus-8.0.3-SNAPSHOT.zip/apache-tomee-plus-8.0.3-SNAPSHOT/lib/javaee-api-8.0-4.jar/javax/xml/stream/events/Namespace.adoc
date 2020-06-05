@@ -1,6 +1,0 @@
-= javax/xml/stream/events/Namespace.class
-
- - link:Namespace-asmified.java[Asmified]
-
-== References
-

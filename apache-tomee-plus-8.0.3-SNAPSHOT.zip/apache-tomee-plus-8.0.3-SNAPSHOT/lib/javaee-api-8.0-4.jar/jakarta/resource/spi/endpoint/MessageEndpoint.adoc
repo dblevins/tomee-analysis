@@ -1,6 +1,0 @@
-= jakarta/resource/spi/endpoint/MessageEndpoint.class
-
- - link:MessageEndpoint-asmified.java[Asmified]
-
-== References
-

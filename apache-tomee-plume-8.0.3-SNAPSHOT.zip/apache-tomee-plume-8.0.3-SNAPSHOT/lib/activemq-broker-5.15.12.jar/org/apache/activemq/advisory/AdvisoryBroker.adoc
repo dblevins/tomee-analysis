@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/AdvisoryBroker.class
-
- - link:AdvisoryBroker-asmified.java[Asmified]
-
-== References
-

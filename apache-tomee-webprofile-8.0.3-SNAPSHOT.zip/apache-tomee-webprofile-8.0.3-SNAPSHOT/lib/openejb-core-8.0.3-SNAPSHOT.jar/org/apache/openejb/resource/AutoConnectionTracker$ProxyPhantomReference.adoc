@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/AutoConnectionTracker$ProxyPhantomReference.class
-
- - link:AutoConnectionTracker$ProxyPhantomReference-asmified.java[Asmified]
-
-== References
-

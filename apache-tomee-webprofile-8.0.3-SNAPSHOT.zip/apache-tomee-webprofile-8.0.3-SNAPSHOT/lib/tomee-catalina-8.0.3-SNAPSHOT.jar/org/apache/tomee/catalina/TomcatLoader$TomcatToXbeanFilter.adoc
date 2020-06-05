@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomcatLoader$TomcatToXbeanFilter.class
-
- - link:TomcatLoader$TomcatToXbeanFilter-asmified.java[Asmified]
-
-== References
-

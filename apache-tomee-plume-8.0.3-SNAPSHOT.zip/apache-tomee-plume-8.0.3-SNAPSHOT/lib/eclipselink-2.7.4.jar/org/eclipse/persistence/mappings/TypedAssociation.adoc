@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/TypedAssociation.class
-
- - link:TypedAssociation-asmified.java[Asmified]
-
-== References
-

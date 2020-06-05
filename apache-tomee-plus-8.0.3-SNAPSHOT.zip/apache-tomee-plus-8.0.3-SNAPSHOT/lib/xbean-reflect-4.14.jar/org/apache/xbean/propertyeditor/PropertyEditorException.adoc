@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/PropertyEditorException.class
-
- - link:PropertyEditorException-asmified.java[Asmified]
-
-== References
-

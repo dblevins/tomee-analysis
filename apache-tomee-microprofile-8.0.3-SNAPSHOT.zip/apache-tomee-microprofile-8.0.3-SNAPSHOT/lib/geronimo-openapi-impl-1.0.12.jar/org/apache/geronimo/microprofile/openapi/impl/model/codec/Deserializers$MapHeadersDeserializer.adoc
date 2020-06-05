@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$MapHeadersDeserializer.class
-
- - link:Deserializers$MapHeadersDeserializer-asmified.java[Asmified]
-
-== References
-

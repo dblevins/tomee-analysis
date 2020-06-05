@@ -1,6 +1,0 @@
-= org/jose4j/jwt/consumer/IssValidator.class
-
- - link:IssValidator-asmified.java[Asmified]
-
-== References
-

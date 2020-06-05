@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/jdbc/database/Database.class
-
- - link:Database-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/XMLRoot.class
-
- - link:XMLRoot-asmified.java[Asmified]
-
-== References
-

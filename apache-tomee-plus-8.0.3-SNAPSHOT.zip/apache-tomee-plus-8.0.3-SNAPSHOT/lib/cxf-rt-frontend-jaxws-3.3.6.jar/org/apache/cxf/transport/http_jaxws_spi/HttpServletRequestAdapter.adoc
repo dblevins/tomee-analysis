@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http_jaxws_spi/HttpServletRequestAdapter.class
-
- - link:HttpServletRequestAdapter-asmified.java[Asmified]
-
-== References
-

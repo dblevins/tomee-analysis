@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/JAXBSetMethodAttributeAccessor.class
-
- - link:JAXBSetMethodAttributeAccessor-asmified.java[Asmified]
-
-== References
-

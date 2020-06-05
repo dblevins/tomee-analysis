@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/odata/ODataParser$TypedValue.class
-
- - link:ODataParser$TypedValue-asmified.java[Asmified]
-
-== References
-

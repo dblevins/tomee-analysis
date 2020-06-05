@@ -1,6 +1,0 @@
-= org/apache/openejb/util/DaemonThreadFactory.class
-
- - link:DaemonThreadFactory-asmified.java[Asmified]
-
-== References
-

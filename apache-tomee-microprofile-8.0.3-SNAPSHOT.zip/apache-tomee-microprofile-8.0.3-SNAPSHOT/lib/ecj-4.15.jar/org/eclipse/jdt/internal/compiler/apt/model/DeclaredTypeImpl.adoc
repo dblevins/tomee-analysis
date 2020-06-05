@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/DeclaredTypeImpl.class
-
- - link:DeclaredTypeImpl-asmified.java[Asmified]
-
-== References
-

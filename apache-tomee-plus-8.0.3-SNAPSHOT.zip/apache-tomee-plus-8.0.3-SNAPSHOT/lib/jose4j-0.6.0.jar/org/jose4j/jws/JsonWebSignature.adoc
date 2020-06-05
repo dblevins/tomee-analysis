@@ -1,6 +1,0 @@
-= org/jose4j/jws/JsonWebSignature.class
-
- - link:JsonWebSignature-asmified.java[Asmified]
-
-== References
-

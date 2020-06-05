@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/holders/BigIntegerHolder.class
-
- - link:BigIntegerHolder-asmified.java[Asmified]
-
-== References
-

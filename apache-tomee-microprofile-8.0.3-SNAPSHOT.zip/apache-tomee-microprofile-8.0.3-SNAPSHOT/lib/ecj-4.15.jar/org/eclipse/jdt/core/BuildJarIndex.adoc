@@ -1,6 +1,0 @@
-= org/eclipse/jdt/core/BuildJarIndex.class
-
- - link:BuildJarIndex-asmified.java[Asmified]
-
-== References
-

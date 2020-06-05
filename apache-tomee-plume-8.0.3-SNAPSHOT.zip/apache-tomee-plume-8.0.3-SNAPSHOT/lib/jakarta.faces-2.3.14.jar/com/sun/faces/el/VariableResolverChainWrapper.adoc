@@ -1,6 +1,0 @@
-= com/sun/faces/el/VariableResolverChainWrapper.class
-
- - link:VariableResolverChainWrapper-asmified.java[Asmified]
-
-== References
-

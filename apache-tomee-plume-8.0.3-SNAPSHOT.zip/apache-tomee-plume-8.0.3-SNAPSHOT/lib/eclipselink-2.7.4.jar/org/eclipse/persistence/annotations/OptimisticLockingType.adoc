@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/OptimisticLockingType.class
-
- - link:OptimisticLockingType-asmified.java[Asmified]
-
-== References
-

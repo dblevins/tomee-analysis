@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/InitialContextBuilder.class
-
- - link:InitialContextBuilder-asmified.java[Asmified]
-
-== References
-

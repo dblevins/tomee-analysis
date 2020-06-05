@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl.class
-
- - link:CompoundSelectionImpl-asmified.java[Asmified]
-
-== References
-

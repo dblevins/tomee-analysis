@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/ListEditor.class
-
- - link:ListEditor-asmified.java[Asmified]
-
-== References
-

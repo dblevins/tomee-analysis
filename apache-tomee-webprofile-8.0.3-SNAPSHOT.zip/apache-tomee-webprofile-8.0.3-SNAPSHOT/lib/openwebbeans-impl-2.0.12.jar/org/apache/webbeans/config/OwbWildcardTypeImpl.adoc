@@ -1,6 +1,0 @@
-= org/apache/webbeans/config/OwbWildcardTypeImpl.class
-
- - link:OwbWildcardTypeImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/transform/AttachmentCompleteSignatureTransform.class
-
- - link:AttachmentCompleteSignatureTransform-asmified.java[Asmified]
-
-== References
-

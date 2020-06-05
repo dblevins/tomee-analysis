@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/NamedGroup.class
-
- - link:NamedGroup-asmified.java[Asmified]
-
-== References
-

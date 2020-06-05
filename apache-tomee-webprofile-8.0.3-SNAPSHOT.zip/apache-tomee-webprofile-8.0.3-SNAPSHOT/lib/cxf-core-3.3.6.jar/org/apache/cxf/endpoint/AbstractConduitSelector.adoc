@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/AbstractConduitSelector.class
-
- - link:AbstractConduitSelector-asmified.java[Asmified]
-
-== References
-

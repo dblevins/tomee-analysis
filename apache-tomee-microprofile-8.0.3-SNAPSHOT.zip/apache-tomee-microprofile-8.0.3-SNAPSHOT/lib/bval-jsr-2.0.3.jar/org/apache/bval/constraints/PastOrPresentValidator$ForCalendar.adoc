@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/PastOrPresentValidator$ForCalendar.class
-
- - link:PastOrPresentValidator$ForCalendar-asmified.java[Asmified]
-
-== References
-

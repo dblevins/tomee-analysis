@@ -1,6 +1,0 @@
-= org/apache/catalina/mbeans/BaseCatalinaMBean.class
-
- - link:BaseCatalinaMBean-asmified.java[Asmified]
-
-== References
-

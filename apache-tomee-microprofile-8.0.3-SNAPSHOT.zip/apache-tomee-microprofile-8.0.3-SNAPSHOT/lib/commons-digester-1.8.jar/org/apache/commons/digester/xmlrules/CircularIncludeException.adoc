@@ -1,6 +1,0 @@
-= org/apache/commons/digester/xmlrules/CircularIncludeException.class
-
- - link:CircularIncludeException-asmified.java[Asmified]
-
-== References
-

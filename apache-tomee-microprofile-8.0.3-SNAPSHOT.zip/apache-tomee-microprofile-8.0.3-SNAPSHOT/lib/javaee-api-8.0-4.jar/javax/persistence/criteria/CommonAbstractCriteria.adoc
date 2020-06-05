@@ -1,8 +1,0 @@
-= javax/persistence/criteria/CommonAbstractCriteria.class
-
- - link:CommonAbstractCriteria-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.criteria.Predicate - 1
- - javax.persistence.criteria.Subquery - 1

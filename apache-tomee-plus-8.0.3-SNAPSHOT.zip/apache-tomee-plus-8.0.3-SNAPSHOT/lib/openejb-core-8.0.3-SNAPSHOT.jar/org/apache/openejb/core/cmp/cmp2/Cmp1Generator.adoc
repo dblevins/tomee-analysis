@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/cmp2/Cmp1Generator.class
-
- - link:Cmp1Generator-asmified.java[Asmified]
-
-== References
-

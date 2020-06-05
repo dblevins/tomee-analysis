@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/QueryDefinitionImpl$1.class
-
- - link:QueryDefinitionImpl$1-asmified.java[Asmified]
-
-== References
-

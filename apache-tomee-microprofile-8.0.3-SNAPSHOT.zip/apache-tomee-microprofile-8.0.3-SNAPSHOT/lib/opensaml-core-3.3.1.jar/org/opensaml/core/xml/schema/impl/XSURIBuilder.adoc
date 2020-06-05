@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSURIBuilder.class
-
- - link:XSURIBuilder-asmified.java[Asmified]
-
-== References
-

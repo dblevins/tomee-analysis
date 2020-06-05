@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/PropertyExpression$4.class
-
- - link:PropertyExpression$4-asmified.java[Asmified]
-
-== References
-

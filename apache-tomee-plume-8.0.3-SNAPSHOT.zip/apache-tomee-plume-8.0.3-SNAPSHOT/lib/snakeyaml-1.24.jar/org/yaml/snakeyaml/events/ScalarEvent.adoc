@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/ScalarEvent.class
-
- - link:ScalarEvent-asmified.java[Asmified]
-
-== References
-

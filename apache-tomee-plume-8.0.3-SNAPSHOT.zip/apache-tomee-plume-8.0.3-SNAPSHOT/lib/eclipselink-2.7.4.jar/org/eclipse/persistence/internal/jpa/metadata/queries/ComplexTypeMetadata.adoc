@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/queries/ComplexTypeMetadata.class
-
- - link:ComplexTypeMetadata-asmified.java[Asmified]
-
-== References
-

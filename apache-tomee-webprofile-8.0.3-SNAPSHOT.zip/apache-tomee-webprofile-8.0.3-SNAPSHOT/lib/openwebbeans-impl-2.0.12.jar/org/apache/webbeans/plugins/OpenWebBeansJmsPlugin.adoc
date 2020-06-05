@@ -1,6 +1,0 @@
-= org/apache/webbeans/plugins/OpenWebBeansJmsPlugin.class
-
- - link:OpenWebBeansJmsPlugin-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/Consistency.class
-
- - link:Consistency-asmified.java[Asmified]
-
-== References
-

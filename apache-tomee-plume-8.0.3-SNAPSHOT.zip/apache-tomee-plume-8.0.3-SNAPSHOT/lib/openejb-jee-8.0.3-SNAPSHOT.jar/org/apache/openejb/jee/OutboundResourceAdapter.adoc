@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/OutboundResourceAdapter.class
-
- - link:OutboundResourceAdapter-asmified.java[Asmified]
-
-== References
-

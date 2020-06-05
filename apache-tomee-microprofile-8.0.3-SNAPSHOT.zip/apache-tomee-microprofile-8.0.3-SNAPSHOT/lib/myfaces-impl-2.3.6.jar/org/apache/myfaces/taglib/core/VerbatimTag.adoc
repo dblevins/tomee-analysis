@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/VerbatimTag.class
-
- - link:VerbatimTag-asmified.java[Asmified]
-
-== References
-

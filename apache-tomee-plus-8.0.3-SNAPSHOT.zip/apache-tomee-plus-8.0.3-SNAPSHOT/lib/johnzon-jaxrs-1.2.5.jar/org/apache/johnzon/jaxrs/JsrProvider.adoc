@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/JsrProvider.class
-
- - link:JsrProvider-asmified.java[Asmified]
-
-== References
-

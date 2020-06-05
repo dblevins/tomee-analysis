@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/Server.class
-
- - link:Server-asmified.java[Asmified]
-
-== References
-

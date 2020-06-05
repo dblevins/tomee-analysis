@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/Converter.class
-
- - link:Converter-asmified.java[Asmified]
-
-== References
-

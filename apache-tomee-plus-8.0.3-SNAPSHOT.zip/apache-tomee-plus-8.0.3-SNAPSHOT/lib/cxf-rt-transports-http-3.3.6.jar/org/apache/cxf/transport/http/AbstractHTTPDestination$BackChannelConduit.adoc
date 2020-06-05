@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/AbstractHTTPDestination$BackChannelConduit.class
-
- - link:AbstractHTTPDestination$BackChannelConduit-asmified.java[Asmified]
-
-== References
-

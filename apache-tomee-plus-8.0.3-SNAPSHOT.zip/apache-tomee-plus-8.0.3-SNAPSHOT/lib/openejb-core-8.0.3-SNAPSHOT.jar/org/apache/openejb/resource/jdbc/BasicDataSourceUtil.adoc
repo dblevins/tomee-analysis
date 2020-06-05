@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/BasicDataSourceUtil.class
-
- - link:BasicDataSourceUtil-asmified.java[Asmified]
-
-== References
-

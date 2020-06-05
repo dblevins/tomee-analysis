@@ -1,6 +1,0 @@
-= javax/faces/FactoryFinder$2.class
-
- - link:FactoryFinder$2-asmified.java[Asmified]
-
-== References
-

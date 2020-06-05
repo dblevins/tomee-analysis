@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/InterceptorComparator.class
-
- - link:InterceptorComparator-asmified.java[Asmified]
-
-== References
-

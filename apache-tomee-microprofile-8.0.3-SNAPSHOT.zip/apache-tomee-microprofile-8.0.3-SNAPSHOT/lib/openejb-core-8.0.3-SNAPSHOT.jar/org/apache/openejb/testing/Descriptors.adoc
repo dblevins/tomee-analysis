@@ -1,6 +1,0 @@
-= org/apache/openejb/testing/Descriptors.class
-
- - link:Descriptors-asmified.java[Asmified]
-
-== References
-

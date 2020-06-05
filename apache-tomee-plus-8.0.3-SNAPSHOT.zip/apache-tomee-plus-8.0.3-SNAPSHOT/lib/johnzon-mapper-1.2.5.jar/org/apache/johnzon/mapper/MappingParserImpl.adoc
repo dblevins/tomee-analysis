@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/MappingParserImpl.class
-
- - link:MappingParserImpl-asmified.java[Asmified]
-
-== References
-

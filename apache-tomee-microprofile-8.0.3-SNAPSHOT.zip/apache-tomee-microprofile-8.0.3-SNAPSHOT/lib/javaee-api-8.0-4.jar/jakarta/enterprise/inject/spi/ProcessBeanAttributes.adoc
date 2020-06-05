@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/ProcessBeanAttributes.class
-
- - link:ProcessBeanAttributes-asmified.java[Asmified]
-
-== References
-

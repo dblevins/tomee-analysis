@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/stax/LowLevelFastInfosetStreamWriter.class
-
- - link:LowLevelFastInfosetStreamWriter-asmified.java[Asmified]
-
-== References
-

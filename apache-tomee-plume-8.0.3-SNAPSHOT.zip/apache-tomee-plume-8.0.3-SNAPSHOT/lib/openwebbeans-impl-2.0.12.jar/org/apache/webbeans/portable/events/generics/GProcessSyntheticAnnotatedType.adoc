@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessSyntheticAnnotatedType.class
-
- - link:GProcessSyntheticAnnotatedType-asmified.java[Asmified]
-
-== References
-

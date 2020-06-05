@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/session/DatabaseSessionConfig.class
-
- - link:DatabaseSessionConfig-asmified.java[Asmified]
-
-== References
-

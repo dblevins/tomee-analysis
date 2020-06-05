@@ -1,6 +1,0 @@
-= jakarta/faces/application/NavigationCaseWrapper.class
-
- - link:NavigationCaseWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/LocaleCharsetInfo.class
-
- - link:LocaleCharsetInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/faces/view/facelets/TagAttributes.class
-
- - link:TagAttributes-asmified.java[Asmified]
-
-== References
-
- - javax.faces.view.facelets.TagAttribute - 4
- - javax.faces.view.facelets.Tag - 2

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/LockableServiceSupport$1.class
-
- - link:LockableServiceSupport$1-asmified.java[Asmified]
-
-== References
-

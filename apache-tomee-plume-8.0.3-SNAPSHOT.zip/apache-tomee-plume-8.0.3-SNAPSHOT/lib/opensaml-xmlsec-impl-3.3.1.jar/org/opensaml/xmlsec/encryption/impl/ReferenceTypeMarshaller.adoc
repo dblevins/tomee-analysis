@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/ReferenceTypeMarshaller.class
-
- - link:ReferenceTypeMarshaller-asmified.java[Asmified]
-
-== References
-

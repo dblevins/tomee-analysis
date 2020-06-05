@@ -1,6 +1,0 @@
-= org/joda/time/field/ImpreciseDateTimeField$LinkedDurationField.class
-
- - link:ImpreciseDateTimeField$LinkedDurationField-asmified.java[Asmified]
-
-== References
-

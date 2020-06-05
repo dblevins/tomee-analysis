@@ -1,6 +1,0 @@
-= org/apache/catalina/webresources/Cache$EvictionOrder.class
-
- - link:Cache$EvictionOrder-asmified.java[Asmified]
-
-== References
-

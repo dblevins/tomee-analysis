@@ -1,9 +1,0 @@
-= javax/el/Util$MethodWrapper.class
-
- - link:Util$MethodWrapper-asmified.java[Asmified]
-
-== References
-
- - javax.el.Util$Wrapper - 2
- - javax.el.Util$1 - 1
- - javax.el.Util$MethodWrapper - 1

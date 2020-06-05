@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/commonbnd/MessageDestinationRefBinding.class
-
- - link:MessageDestinationRefBinding-asmified.java[Asmified]
-
-== References
-

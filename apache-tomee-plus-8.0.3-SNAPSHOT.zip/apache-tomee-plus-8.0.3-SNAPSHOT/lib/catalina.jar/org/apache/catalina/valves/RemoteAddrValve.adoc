@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/RemoteAddrValve.class
-
- - link:RemoteAddrValve-asmified.java[Asmified]
-
-== References
-

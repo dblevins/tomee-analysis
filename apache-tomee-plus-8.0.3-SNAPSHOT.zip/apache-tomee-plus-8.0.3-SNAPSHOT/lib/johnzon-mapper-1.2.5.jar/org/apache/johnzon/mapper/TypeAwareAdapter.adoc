@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/TypeAwareAdapter.class
-
- - link:TypeAwareAdapter-asmified.java[Asmified]
-
-== References
-

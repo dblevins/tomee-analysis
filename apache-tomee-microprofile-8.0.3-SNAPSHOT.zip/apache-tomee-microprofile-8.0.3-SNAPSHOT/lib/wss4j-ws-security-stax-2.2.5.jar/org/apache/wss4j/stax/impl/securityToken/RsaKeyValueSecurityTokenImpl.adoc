@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/securityToken/RsaKeyValueSecurityTokenImpl.class
-
- - link:RsaKeyValueSecurityTokenImpl-asmified.java[Asmified]
-
-== References
-

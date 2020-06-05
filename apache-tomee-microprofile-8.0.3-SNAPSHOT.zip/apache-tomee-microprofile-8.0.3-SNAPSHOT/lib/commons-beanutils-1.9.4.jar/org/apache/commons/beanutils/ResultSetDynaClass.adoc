@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/ResultSetDynaClass.class
-
- - link:ResultSetDynaClass-asmified.java[Asmified]
-
-== References
-

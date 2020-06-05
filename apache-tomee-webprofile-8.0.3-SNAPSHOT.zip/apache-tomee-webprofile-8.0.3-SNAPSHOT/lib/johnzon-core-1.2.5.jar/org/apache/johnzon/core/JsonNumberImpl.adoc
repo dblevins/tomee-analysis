@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonNumberImpl.class
-
- - link:JsonNumberImpl-asmified.java[Asmified]
-
-== References
-

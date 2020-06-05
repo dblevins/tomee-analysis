@@ -1,6 +1,0 @@
-= jakarta/mail/internet/MimeMultipart.class
-
- - link:MimeMultipart-asmified.java[Asmified]
-
-== References
-

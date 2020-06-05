@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/GroupChannel$HeartbeatRunnable.class
-
- - link:GroupChannel$HeartbeatRunnable-asmified.java[Asmified]
-
-== References
-

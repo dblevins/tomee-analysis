@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bidimap/UnmodifiableBidiMap.class
-
- - link:UnmodifiableBidiMap-asmified.java[Asmified]
-
-== References
-

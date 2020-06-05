@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/ManagedBus.class
-
- - link:ManagedBus-asmified.java[Asmified]
-
-== References
-

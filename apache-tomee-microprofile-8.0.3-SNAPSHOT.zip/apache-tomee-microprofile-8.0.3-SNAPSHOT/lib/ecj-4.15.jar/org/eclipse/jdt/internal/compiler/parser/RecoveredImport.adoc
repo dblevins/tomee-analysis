@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/RecoveredImport.class
-
- - link:RecoveredImport-asmified.java[Asmified]
-
-== References
-

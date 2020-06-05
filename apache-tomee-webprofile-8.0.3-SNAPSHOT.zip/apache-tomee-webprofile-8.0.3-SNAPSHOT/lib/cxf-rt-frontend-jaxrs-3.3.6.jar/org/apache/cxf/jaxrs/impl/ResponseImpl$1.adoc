@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/ResponseImpl$1.class
-
- - link:ResponseImpl$1-asmified.java[Asmified]
-
-== References
-

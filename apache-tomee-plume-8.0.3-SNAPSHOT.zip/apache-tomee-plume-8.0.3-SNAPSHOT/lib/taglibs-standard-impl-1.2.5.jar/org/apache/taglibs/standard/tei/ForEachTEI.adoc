@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tei/ForEachTEI.class
-
- - link:ForEachTEI-asmified.java[Asmified]
-
-== References
-

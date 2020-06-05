@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ExtentImpl$CloseableIterator.class
-
- - link:ExtentImpl$CloseableIterator-asmified.java[Asmified]
-
-== References
-

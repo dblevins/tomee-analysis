@@ -1,6 +1,0 @@
-= org/opensaml/security/x509/tls/CertificateNameOptions.class
-
- - link:CertificateNameOptions-asmified.java[Asmified]
-
-== References
-

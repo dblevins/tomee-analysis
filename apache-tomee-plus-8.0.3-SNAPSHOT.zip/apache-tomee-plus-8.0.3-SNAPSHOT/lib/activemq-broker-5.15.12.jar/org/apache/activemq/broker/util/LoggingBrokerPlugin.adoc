@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/util/LoggingBrokerPlugin.class
-
- - link:LoggingBrokerPlugin-asmified.java[Asmified]
-
-== References
-

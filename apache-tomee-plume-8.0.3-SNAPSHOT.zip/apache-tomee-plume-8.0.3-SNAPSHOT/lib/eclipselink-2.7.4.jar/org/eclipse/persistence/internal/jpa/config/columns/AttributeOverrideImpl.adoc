@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/columns/AttributeOverrideImpl.class
-
- - link:AttributeOverrideImpl-asmified.java[Asmified]
-
-== References
-

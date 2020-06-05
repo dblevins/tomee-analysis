@@ -1,6 +1,0 @@
-= org/apache/catalina/Globals.class
-
- - link:Globals-asmified.java[Asmified]
-
-== References
-

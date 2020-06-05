@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/Compiler.class
-
- - link:Compiler-asmified.java[Asmified]
-
-== References
-

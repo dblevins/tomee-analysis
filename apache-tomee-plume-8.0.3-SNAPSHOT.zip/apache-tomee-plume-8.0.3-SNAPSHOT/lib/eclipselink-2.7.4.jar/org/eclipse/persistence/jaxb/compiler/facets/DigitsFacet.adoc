@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/facets/DigitsFacet.class
-
- - link:DigitsFacet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/StatelessEJBHomeHandler.class
-
- - link:StatelessEJBHomeHandler-asmified.java[Asmified]
-
-== References
-

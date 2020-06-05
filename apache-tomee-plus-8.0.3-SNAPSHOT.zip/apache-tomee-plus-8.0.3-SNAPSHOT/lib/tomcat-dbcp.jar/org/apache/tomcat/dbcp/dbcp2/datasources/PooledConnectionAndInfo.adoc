@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/datasources/PooledConnectionAndInfo.class
-
- - link:PooledConnectionAndInfo-asmified.java[Asmified]
-
-== References
-

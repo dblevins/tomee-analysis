@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/queries/NamedQueryMetadata.class
-
- - link:NamedQueryMetadata-asmified.java[Asmified]
-
-== References
-

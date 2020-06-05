@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/creational/WrappedCreationalContext.class
-
- - link:WrappedCreationalContext-asmified.java[Asmified]
-
-== References
-

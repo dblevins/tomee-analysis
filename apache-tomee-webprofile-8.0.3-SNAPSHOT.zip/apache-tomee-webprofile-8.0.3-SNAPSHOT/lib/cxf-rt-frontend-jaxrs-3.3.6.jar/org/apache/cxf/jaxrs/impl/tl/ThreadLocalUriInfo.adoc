@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/tl/ThreadLocalUriInfo.class
-
- - link:ThreadLocalUriInfo-asmified.java[Asmified]
-
-== References
-

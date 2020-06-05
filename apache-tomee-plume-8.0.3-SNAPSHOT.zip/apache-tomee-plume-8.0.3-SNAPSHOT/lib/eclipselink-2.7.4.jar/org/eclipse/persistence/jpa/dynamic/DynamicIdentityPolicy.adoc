@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/dynamic/DynamicIdentityPolicy.class
-
- - link:DynamicIdentityPolicy-asmified.java[Asmified]
-
-== References
-

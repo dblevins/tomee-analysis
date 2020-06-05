@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/osgi/CXFActivator$1.class
-
- - link:CXFActivator$1-asmified.java[Asmified]
-
-== References
-

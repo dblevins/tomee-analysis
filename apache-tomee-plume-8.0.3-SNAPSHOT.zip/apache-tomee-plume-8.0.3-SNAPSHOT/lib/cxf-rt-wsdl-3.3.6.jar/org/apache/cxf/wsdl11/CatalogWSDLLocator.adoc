@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl11/CatalogWSDLLocator.class
-
- - link:CatalogWSDLLocator-asmified.java[Asmified]
-
-== References
-

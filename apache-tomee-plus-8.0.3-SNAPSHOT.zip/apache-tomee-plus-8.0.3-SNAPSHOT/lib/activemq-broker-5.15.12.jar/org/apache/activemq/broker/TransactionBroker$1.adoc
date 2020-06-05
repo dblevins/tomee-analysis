@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/TransactionBroker$1.class
-
- - link:TransactionBroker$1-asmified.java[Asmified]
-
-== References
-

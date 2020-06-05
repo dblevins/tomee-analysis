@@ -1,6 +1,0 @@
-= com/sun/faces/context/FacesContextFactoryImpl.class
-
- - link:FacesContextFactoryImpl-asmified.java[Asmified]
-
-== References
-

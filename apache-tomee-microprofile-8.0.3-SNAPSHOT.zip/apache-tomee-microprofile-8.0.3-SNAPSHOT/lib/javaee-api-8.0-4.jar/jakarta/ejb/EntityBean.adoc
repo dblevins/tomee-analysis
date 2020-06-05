@@ -1,6 +1,0 @@
-= jakarta/ejb/EntityBean.class
-
- - link:EntityBean-asmified.java[Asmified]
-
-== References
-

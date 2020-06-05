@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/ext/WSSSecurityProperties.class
-
- - link:WSSSecurityProperties-asmified.java[Asmified]
-
-== References
-

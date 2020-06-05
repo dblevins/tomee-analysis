@@ -1,8 +1,0 @@
-= javax/persistence/metamodel/EntityType.class
-
- - link:EntityType-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.metamodel.Bindable - 1
- - javax.persistence.metamodel.IdentifiableType - 1

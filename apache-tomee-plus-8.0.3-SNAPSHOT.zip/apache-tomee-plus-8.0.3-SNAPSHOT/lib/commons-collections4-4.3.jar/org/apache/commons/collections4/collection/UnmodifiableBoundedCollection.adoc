@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/collection/UnmodifiableBoundedCollection.class
-
- - link:UnmodifiableBoundedCollection-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/AbstractFeature.class
-
- - link:AbstractFeature-asmified.java[Asmified]
-
-== References
-

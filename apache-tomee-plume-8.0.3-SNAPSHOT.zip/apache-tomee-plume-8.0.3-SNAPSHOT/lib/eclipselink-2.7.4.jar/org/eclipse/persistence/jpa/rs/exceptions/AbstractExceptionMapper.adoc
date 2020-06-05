@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/exceptions/AbstractExceptionMapper.class
-
- - link:AbstractExceptionMapper-asmified.java[Asmified]
-
-== References
-

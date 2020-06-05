@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/SQLCall.class
-
- - link:SQLCall-asmified.java[Asmified]
-
-== References
-

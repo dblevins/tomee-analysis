@@ -1,6 +1,0 @@
-= org/joda/time/field/ZeroIsMaxDateTimeField.class
-
- - link:ZeroIsMaxDateTimeField-asmified.java[Asmified]
-
-== References
-

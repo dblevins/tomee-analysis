@@ -1,6 +1,0 @@
-= jakarta/mail/internet/ContentType.class
-
- - link:ContentType-asmified.java[Asmified]
-
-== References
-

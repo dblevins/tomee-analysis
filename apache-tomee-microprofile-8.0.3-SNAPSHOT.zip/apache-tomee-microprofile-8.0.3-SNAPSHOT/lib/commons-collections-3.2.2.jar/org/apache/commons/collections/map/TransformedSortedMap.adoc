@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/TransformedSortedMap.class
-
- - link:TransformedSortedMap-asmified.java[Asmified]
-
-== References
-

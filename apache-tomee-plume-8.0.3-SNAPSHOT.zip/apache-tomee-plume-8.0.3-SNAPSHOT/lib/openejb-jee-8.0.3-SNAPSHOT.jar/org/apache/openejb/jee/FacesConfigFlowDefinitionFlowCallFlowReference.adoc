@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesConfigFlowDefinitionFlowCallFlowReference.class
-
- - link:FacesConfigFlowDefinitionFlowCallFlowReference-asmified.java[Asmified]
-
-== References
-

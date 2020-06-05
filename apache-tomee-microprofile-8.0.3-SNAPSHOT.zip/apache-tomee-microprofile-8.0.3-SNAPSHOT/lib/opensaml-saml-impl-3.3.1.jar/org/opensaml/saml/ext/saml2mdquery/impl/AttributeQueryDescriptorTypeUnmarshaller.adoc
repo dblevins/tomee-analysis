@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdquery/impl/AttributeQueryDescriptorTypeUnmarshaller.class
-
- - link:AttributeQueryDescriptorTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

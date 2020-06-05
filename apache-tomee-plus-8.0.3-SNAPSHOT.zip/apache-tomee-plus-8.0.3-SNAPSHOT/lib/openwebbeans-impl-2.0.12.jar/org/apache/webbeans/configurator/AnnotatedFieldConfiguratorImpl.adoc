@@ -1,6 +1,0 @@
-= org/apache/webbeans/configurator/AnnotatedFieldConfiguratorImpl.class
-
- - link:AnnotatedFieldConfiguratorImpl-asmified.java[Asmified]
-
-== References
-

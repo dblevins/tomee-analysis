@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/TableGenerator.class
-
- - link:TableGenerator-asmified.java[Asmified]
-
-== References
-

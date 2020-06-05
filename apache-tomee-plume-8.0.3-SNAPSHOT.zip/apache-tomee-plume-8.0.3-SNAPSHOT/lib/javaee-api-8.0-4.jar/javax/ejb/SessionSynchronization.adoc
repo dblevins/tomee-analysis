@@ -1,7 +1,0 @@
-= javax/ejb/SessionSynchronization.class
-
- - link:SessionSynchronization-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 3

@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/DocumentFragmentNodeList.class
-
- - link:DocumentFragmentNodeList-asmified.java[Asmified]
-
-== References
-

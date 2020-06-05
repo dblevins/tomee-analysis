@@ -1,6 +1,0 @@
-= org/apache/openejb/sxc/ApplicationXml.class
-
- - link:ApplicationXml-asmified.java[Asmified]
-
-== References
-

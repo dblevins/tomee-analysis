@@ -1,6 +1,0 @@
-= org/apache/openejb/jpa/integration/eclipselink/PrefixSessionCustomizer.class
-
- - link:PrefixSessionCustomizer-asmified.java[Asmified]
-
-== References
-

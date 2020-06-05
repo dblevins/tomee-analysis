@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/PersistenceContextSynchronization.class
-
- - link:PersistenceContextSynchronization-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/server/StatementPortal.class
-
- - link:StatementPortal-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/SaxAppCtxConfig$SaxAppContextConfig$Pojo.class
-
- - link:SaxAppCtxConfig$SaxAppContextConfig$Pojo-asmified.java[Asmified]
-
-== References
-

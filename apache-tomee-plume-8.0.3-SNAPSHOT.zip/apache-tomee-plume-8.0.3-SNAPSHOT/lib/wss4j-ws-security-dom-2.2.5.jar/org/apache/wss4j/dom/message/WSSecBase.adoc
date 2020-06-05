@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/WSSecBase.class
-
- - link:WSSecBase-asmified.java[Asmified]
-
-== References
-

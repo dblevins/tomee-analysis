@@ -1,6 +1,0 @@
-= org/apache/activemq/util/GenerateJDBCStatements.class
-
- - link:GenerateJDBCStatements-asmified.java[Asmified]
-
-== References
-

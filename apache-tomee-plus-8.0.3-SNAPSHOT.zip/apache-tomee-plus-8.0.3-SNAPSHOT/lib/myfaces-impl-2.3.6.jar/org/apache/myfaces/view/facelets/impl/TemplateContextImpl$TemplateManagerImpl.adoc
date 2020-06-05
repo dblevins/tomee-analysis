@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/impl/TemplateContextImpl$TemplateManagerImpl.class
-
- - link:TemplateContextImpl$TemplateManagerImpl-asmified.java[Asmified]
-
-== References
-

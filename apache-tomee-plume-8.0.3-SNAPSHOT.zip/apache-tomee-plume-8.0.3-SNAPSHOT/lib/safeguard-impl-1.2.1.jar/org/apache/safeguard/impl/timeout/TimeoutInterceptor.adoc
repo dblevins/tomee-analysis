@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/timeout/TimeoutInterceptor.class
-
- - link:TimeoutInterceptor-asmified.java[Asmified]
-
-== References
-

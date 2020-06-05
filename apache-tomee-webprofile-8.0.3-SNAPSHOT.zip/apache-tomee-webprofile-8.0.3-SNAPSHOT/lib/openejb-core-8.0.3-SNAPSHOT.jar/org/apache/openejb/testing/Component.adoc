@@ -1,6 +1,0 @@
-= org/apache/openejb/testing/Component.class
-
- - link:Component-asmified.java[Asmified]
-
-== References
-

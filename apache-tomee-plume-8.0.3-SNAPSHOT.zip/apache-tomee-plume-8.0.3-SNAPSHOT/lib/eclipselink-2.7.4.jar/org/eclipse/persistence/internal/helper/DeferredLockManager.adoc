@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/DeferredLockManager.class
-
- - link:DeferredLockManager-asmified.java[Asmified]
-
-== References
-

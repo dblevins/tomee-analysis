@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/QueryRedirectorHelper.class
-
- - link:QueryRedirectorHelper-asmified.java[Asmified]
-
-== References
-

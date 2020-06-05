@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/WSSecHeader.class
-
- - link:WSSecHeader-asmified.java[Asmified]
-
-== References
-

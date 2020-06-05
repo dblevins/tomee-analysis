@@ -1,7 +1,0 @@
-= javax/xml/registry/UnexpectedObjectException.class
-
- - link:UnexpectedObjectException-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 5

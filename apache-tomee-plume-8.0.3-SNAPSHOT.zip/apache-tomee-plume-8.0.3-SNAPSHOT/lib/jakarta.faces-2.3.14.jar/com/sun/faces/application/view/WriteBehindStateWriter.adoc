@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/WriteBehindStateWriter.class
-
- - link:WriteBehindStateWriter-asmified.java[Asmified]
-
-== References
-

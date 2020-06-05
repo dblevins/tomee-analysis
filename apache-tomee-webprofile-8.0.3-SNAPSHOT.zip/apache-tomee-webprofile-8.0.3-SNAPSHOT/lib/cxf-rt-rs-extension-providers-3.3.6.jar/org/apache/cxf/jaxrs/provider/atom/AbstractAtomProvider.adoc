@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/atom/AbstractAtomProvider.class
-
- - link:AbstractAtomProvider-asmified.java[Asmified]
-
-== References
-

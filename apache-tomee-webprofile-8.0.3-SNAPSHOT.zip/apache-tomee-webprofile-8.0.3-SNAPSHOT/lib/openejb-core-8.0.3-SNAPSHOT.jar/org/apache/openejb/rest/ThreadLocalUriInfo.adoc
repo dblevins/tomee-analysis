@@ -1,6 +1,0 @@
-= org/apache/openejb/rest/ThreadLocalUriInfo.class
-
- - link:ThreadLocalUriInfo-asmified.java[Asmified]
-
-== References
-

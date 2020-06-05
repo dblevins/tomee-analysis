@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlCommandScriptRenderer.class
-
- - link:HtmlCommandScriptRenderer-asmified.java[Asmified]
-
-== References
-

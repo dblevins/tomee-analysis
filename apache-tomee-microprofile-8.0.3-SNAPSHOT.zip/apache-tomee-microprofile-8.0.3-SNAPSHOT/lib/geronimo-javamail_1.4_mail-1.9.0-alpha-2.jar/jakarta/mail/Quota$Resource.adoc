@@ -1,6 +1,0 @@
-= jakarta/mail/Quota$Resource.class
-
- - link:Quota$Resource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/helper/SDOTypesGenerator$GlobalRef.class
-
- - link:SDOTypesGenerator$GlobalRef-asmified.java[Asmified]
-
-== References
-

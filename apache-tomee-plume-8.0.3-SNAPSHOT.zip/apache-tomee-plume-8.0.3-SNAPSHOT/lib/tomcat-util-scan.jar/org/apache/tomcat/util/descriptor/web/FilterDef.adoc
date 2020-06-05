@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/FilterDef.class
-
- - link:FilterDef-asmified.java[Asmified]
-
-== References
-

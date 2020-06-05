@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/ExistenceChecking.class
-
- - link:ExistenceChecking-asmified.java[Asmified]
-
-== References
-

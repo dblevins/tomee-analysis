@@ -1,6 +1,0 @@
-= jakarta/security/jacc/URLPatternSpec.class
-
- - link:URLPatternSpec-asmified.java[Asmified]
-
-== References
-

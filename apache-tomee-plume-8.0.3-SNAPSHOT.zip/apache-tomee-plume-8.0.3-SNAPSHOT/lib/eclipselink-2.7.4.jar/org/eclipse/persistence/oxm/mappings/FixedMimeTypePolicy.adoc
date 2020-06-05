@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/FixedMimeTypePolicy.class
-
- - link:FixedMimeTypePolicy-asmified.java[Asmified]
-
-== References
-

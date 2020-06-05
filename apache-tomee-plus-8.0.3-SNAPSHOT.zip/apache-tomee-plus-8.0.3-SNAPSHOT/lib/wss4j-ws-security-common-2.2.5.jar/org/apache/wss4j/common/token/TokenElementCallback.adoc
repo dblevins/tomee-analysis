@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/token/TokenElementCallback.class
-
- - link:TokenElementCallback-asmified.java[Asmified]
-
-== References
-

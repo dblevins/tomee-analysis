@@ -1,2 +1,0 @@
-= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/myfaces-api-2.3.6.jar
-

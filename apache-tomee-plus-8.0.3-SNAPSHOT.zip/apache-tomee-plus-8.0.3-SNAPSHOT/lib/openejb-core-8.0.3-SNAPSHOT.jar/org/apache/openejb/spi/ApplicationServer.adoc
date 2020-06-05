@@ -1,6 +1,0 @@
-= org/apache/openejb/spi/ApplicationServer.class
-
- - link:ApplicationServer-asmified.java[Asmified]
-
-== References
-

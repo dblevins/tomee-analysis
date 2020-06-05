@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/nio/NioReadEntity.class
-
- - link:NioReadEntity-asmified.java[Asmified]
-
-== References
-

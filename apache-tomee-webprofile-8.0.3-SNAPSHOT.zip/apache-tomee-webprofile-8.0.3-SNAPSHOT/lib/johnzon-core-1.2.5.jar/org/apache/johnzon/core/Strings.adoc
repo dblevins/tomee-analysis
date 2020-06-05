@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/Strings.class
-
- - link:Strings-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/security/enterprise/identitystore/IdentityStore$ValidationType.class
-
- - link:IdentityStore$ValidationType-asmified.java[Asmified]
-
-== References
-

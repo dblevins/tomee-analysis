@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/journal/TargetedDataFileAppender$WriteBatch.class
-
- - link:TargetedDataFileAppender$WriteBatch-asmified.java[Asmified]
-
-== References
-

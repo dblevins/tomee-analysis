@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/Log4JConfigView.class
-
- - link:Log4JConfigView-asmified.java[Asmified]
-
-== References
-

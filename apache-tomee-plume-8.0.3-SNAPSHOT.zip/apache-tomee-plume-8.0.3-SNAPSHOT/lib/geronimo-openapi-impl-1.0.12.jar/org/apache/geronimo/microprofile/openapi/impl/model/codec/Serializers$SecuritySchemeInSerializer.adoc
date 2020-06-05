@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$SecuritySchemeInSerializer.class
-
- - link:Serializers$SecuritySchemeInSerializer-asmified.java[Asmified]
-
-== References
-

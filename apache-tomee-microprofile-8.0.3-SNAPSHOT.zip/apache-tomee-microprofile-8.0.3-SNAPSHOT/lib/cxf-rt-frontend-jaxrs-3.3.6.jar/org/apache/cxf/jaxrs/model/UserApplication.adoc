@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/UserApplication.class
-
- - link:UserApplication-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/ContentTypeUtils.class
-
- - link:ContentTypeUtils-asmified.java[Asmified]
-
-== References
-

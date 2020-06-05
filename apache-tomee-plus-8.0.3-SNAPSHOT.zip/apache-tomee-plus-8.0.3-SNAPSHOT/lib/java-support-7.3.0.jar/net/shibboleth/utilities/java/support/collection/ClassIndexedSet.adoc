@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/ClassIndexedSet.class
-
- - link:ClassIndexedSet-asmified.java[Asmified]
-
-== References
-

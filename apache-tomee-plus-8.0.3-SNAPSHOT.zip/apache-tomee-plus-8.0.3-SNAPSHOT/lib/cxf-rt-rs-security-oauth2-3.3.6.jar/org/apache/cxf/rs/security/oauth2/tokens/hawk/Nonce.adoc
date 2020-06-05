@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/tokens/hawk/Nonce.class
-
- - link:Nonce-asmified.java[Asmified]
-
-== References
-

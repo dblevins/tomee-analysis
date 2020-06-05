@@ -1,6 +1,0 @@
-= jakarta/ejb/TimerConfig.class
-
- - link:TimerConfig-asmified.java[Asmified]
-
-== References
-

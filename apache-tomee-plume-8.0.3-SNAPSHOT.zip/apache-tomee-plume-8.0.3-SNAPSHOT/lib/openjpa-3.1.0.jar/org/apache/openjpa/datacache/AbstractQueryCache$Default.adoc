@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/AbstractQueryCache$Default.class
-
- - link:AbstractQueryCache$Default-asmified.java[Asmified]
-
-== References
-

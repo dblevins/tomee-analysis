@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl11/WSDLManagerImpl.class
-
- - link:WSDLManagerImpl-asmified.java[Asmified]
-
-== References
-

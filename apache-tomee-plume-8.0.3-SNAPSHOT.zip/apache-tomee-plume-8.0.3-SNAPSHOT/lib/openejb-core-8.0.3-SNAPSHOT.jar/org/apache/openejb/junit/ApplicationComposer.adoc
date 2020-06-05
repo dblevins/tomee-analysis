@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/ApplicationComposer.class
-
- - link:ApplicationComposer-asmified.java[Asmified]
-
-== References
-

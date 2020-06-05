@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/IdentityMap$IdentityEntry.class
-
- - link:IdentityMap$IdentityEntry-asmified.java[Asmified]
-
-== References
-

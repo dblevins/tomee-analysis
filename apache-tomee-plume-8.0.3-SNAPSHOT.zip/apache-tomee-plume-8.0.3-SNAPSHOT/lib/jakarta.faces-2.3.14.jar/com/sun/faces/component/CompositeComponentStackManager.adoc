@@ -1,6 +1,0 @@
-= com/sun/faces/component/CompositeComponentStackManager.class
-
- - link:CompositeComponentStackManager-asmified.java[Asmified]
-
-== References
-

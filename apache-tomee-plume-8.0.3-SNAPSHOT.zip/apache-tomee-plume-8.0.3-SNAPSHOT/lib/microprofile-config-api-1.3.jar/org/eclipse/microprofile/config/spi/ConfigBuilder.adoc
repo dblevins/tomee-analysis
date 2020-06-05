@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/config/spi/ConfigBuilder.class
-
- - link:ConfigBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Link.class
-
- - link:Link-asmified.java[Asmified]
-
-== References
-

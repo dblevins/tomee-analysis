@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/trie/AbstractPatriciaTrie$TrieMapIterator.class
-
- - link:AbstractPatriciaTrie$TrieMapIterator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/CertStoreType.class
-
- - link:CertStoreType-asmified.java[Asmified]
-
-== References
-

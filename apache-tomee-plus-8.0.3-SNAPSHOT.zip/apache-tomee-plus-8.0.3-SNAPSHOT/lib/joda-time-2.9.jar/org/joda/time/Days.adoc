@@ -1,6 +1,0 @@
-= org/joda/time/Days.class
-
- - link:Days-asmified.java[Asmified]
-
-== References
-

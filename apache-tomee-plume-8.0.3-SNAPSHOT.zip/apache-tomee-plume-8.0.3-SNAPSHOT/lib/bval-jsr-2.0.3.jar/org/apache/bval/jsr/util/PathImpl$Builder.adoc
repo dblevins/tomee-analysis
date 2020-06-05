@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/PathImpl$Builder.class
-
- - link:PathImpl$Builder-asmified.java[Asmified]
-
-== References
-

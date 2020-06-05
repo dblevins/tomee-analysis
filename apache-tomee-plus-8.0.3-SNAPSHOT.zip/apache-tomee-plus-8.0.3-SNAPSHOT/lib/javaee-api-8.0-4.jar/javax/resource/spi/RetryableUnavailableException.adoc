@@ -1,8 +1,0 @@
-= javax/resource/spi/RetryableUnavailableException.class
-
- - link:RetryableUnavailableException-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.UnavailableException - 6
- - javax.resource.spi.RetryableException - 1

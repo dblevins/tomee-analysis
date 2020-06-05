@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/KeepAliveServer$1.class
-
- - link:KeepAliveServer$1-asmified.java[Asmified]
-
-== References
-

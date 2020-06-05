@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/Constraint.class
-
- - link:Constraint-asmified.java[Asmified]
-
-== References
-

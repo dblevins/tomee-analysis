@@ -1,6 +1,0 @@
-= org/apache/xml/security/encryption/XMLCipherParameters.class
-
- - link:XMLCipherParameters-asmified.java[Asmified]
-
-== References
-

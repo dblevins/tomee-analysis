@@ -1,6 +1,0 @@
-= org/apache/activemq/store/PersistenceAdapterSupport$1.class
-
- - link:PersistenceAdapterSupport$1-asmified.java[Asmified]
-
-== References
-

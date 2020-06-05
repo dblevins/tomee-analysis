@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/PastOrPresent$List.class
-
- - link:PastOrPresent$List-asmified.java[Asmified]
-
-== References
-

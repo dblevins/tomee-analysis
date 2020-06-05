@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/plugins/BeanValidationPlugin$FacetCustomization.class
-
- - link:BeanValidationPlugin$FacetCustomization-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/persistence/PostPersist.class
-
- - link:PostPersist-asmified.java[Asmified]
-
-== References
-

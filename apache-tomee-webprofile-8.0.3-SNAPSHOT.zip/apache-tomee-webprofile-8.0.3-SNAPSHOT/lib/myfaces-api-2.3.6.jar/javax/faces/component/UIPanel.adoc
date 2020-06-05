@@ -1,8 +1,0 @@
-= javax/faces/component/UIPanel.class
-
- - link:UIPanel-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.UIComponentBase - 2
- - javax.faces.component.UIPanel - 1

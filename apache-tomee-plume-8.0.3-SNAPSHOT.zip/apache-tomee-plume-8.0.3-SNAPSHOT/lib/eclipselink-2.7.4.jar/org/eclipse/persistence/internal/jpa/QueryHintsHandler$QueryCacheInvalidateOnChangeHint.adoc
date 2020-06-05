@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/QueryHintsHandler$QueryCacheInvalidateOnChangeHint.class
-
- - link:QueryHintsHandler$QueryCacheInvalidateOnChangeHint-asmified.java[Asmified]
-
-== References
-

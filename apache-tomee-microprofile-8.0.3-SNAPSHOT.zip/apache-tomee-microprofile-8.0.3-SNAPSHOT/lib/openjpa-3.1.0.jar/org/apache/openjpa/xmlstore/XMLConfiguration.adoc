@@ -1,6 +1,0 @@
-= org/apache/openjpa/xmlstore/XMLConfiguration.class
-
- - link:XMLConfiguration-asmified.java[Asmified]
-
-== References
-

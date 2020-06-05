@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/xml/wsdl11/XmlBindingPlugin.class
-
- - link:XmlBindingPlugin-asmified.java[Asmified]
-
-== References
-

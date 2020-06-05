@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/Partition.class
-
- - link:Partition-asmified.java[Asmified]
-
-== References
-

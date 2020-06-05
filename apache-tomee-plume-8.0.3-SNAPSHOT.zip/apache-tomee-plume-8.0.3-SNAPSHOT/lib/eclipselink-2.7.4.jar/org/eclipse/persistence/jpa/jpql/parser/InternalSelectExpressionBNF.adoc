@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalSelectExpressionBNF.class
-
- - link:InternalSelectExpressionBNF-asmified.java[Asmified]
-
-== References
-

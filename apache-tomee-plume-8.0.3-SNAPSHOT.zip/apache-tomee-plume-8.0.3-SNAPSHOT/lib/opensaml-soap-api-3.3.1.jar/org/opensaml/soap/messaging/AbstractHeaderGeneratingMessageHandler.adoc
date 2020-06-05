@@ -1,6 +1,0 @@
-= org/opensaml/soap/messaging/AbstractHeaderGeneratingMessageHandler.class
-
- - link:AbstractHeaderGeneratingMessageHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlOutputLabelTag.class
-
- - link:HtmlOutputLabelTag-asmified.java[Asmified]
-
-== References
-

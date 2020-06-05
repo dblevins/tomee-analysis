@@ -1,6 +1,0 @@
-= javax/xml/bind/annotation/XmlValue.class
-
- - link:XmlValue-asmified.java[Asmified]
-
-== References
-

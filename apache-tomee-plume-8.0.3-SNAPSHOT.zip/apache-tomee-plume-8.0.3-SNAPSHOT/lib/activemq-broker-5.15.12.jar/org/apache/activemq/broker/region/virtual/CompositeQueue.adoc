@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/virtual/CompositeQueue.class
-
- - link:CompositeQueue-asmified.java[Asmified]
-
-== References
-

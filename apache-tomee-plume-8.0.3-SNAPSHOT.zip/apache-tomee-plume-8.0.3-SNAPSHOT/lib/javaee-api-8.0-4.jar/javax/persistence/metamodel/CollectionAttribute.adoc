@@ -1,7 +1,0 @@
-= javax/persistence/metamodel/CollectionAttribute.class
-
- - link:CollectionAttribute-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.metamodel.PluralAttribute - 1

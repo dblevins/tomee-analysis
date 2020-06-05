@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/DirectMapMapping.class
-
- - link:DirectMapMapping-asmified.java[Asmified]
-
-== References
-

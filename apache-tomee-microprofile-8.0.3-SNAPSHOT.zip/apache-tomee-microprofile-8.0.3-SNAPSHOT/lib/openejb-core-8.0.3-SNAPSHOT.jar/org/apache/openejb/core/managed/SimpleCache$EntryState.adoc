@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/SimpleCache$EntryState.class
-
- - link:SimpleCache$EntryState-asmified.java[Asmified]
-
-== References
-

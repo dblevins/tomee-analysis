@@ -1,6 +1,0 @@
-= org/apache/openejb/spi/ContainerSystem.class
-
- - link:ContainerSystem-asmified.java[Asmified]
-
-== References
-

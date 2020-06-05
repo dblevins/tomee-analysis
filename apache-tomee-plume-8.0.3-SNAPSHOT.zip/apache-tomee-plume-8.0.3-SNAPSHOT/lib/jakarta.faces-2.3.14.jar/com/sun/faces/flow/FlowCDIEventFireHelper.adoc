@@ -1,6 +1,0 @@
-= com/sun/faces/flow/FlowCDIEventFireHelper.class
-
- - link:FlowCDIEventFireHelper-asmified.java[Asmified]
-
-== References
-

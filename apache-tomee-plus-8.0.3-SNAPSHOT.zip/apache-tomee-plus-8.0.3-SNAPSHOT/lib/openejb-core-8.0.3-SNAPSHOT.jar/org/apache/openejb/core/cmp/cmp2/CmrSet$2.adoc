@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/cmp2/CmrSet$2.class
-
- - link:CmrSet$2-asmified.java[Asmified]
-
-== References
-

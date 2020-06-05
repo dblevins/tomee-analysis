@@ -1,6 +1,0 @@
-= com/sun/activation/viewers/ImageViewerCanvas.class
-
- - link:ImageViewerCanvas-asmified.java[Asmified]
-
-== References
-

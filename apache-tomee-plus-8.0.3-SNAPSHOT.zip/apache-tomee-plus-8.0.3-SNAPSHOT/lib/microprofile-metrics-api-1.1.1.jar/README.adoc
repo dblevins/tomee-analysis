@@ -1,2 +1,0 @@
-= apache-tomee-plus-8.0.3-SNAPSHOT/lib/microprofile-metrics-api-1.1.1.jar
-

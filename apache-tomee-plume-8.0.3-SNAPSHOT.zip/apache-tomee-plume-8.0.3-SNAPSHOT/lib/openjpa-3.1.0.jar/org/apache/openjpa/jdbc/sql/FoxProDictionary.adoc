@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/FoxProDictionary.class
-
- - link:FoxProDictionary-asmified.java[Asmified]
-
-== References
-

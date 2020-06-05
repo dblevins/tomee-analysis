@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/pool/WriteConnectionPoolConfig.class
-
- - link:WriteConnectionPoolConfig-asmified.java[Asmified]
-
-== References
-

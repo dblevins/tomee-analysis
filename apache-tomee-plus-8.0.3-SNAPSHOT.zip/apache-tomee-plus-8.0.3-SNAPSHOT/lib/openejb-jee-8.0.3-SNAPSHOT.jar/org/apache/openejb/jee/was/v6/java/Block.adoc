@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/Block.class
-
- - link:Block-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/PersistenceContextTypeType.class
-
- - link:PersistenceContextTypeType-asmified.java[Asmified]
-
-== References
-

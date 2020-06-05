@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/UpdateObjectQuery.class
-
- - link:UpdateObjectQuery-asmified.java[Asmified]
-
-== References
-

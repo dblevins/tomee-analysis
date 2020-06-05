@@ -1,6 +1,0 @@
-= org/joda/time/convert/ReadablePeriodConverter.class
-
- - link:ReadablePeriodConverter-asmified.java[Asmified]
-
-== References
-

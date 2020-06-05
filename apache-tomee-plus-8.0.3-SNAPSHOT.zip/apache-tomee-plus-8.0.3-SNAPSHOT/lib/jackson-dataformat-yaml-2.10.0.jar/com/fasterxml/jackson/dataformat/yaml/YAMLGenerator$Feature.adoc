@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/dataformat/yaml/YAMLGenerator$Feature.class
-
- - link:YAMLGenerator$Feature-asmified.java[Asmified]
-
-== References
-

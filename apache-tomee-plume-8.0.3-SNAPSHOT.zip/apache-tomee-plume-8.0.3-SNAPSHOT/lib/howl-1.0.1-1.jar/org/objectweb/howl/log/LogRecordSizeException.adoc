@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/LogRecordSizeException.class
-
- - link:LogRecordSizeException-asmified.java[Asmified]
-
-== References
-

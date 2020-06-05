@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MethodConcurrencyBuilder$MethodConcurrencyComparator.class
-
- - link:MethodConcurrencyBuilder$MethodConcurrencyComparator-asmified.java[Asmified]
-
-== References
-

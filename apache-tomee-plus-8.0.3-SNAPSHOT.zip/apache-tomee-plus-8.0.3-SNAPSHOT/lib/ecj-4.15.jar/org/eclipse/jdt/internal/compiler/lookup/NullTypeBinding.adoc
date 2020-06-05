@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/NullTypeBinding.class
-
- - link:NullTypeBinding-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ControlCommand.class
-
- - link:ControlCommand-asmified.java[Asmified]
-
-== References
-

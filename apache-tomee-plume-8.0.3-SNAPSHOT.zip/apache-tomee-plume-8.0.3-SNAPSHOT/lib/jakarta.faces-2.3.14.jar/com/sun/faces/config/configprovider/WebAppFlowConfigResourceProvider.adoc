@@ -1,6 +1,0 @@
-= com/sun/faces/config/configprovider/WebAppFlowConfigResourceProvider.class
-
- - link:WebAppFlowConfigResourceProvider-asmified.java[Asmified]
-
-== References
-

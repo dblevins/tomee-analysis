@@ -1,6 +1,0 @@
-= org/apache/bval/util/CloseableAble.class
-
- - link:CloseableAble-asmified.java[Asmified]
-
-== References
-

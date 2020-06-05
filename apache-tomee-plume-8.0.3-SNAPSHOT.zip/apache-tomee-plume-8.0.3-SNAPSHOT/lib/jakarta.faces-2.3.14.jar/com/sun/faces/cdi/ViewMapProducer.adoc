@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/ViewMapProducer.class
-
- - link:ViewMapProducer-asmified.java[Asmified]
-
-== References
-

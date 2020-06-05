@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/Encoder$1.class
-
- - link:Encoder$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/columns/OverrideMetadata.class
-
- - link:OverrideMetadata-asmified.java[Asmified]
-
-== References
-

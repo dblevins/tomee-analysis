@@ -1,6 +1,0 @@
-= org/apache/webbeans/annotation/EmptyAnnotationLiteral.class
-
- - link:EmptyAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/expression/Resolver.class
-
- - link:Resolver-asmified.java[Asmified]
-
-== References
-

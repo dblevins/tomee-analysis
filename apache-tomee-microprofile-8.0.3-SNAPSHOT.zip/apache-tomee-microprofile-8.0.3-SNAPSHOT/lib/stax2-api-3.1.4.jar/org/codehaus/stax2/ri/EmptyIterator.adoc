@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/EmptyIterator.class
-
- - link:EmptyIterator-asmified.java[Asmified]
-
-== References
-

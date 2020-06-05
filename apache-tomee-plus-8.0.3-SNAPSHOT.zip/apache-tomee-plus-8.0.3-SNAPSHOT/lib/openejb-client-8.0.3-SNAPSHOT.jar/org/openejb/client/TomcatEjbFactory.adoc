@@ -1,6 +1,0 @@
-= org/openejb/client/TomcatEjbFactory.class
-
- - link:TomcatEjbFactory-asmified.java[Asmified]
-
-== References
-

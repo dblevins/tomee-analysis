@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalUpdateClauseBNF.class
-
- - link:InternalUpdateClauseBNF-asmified.java[Asmified]
-
-== References
-

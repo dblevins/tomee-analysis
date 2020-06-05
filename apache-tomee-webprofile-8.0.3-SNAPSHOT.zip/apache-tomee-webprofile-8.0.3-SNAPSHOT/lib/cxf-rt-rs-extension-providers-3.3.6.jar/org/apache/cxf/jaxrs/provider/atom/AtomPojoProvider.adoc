@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/atom/AtomPojoProvider.class
-
- - link:AtomPojoProvider-asmified.java[Asmified]
-
-== References
-

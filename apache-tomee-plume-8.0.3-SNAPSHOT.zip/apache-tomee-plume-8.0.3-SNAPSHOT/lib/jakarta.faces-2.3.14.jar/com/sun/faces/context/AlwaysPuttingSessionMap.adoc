@@ -1,6 +1,0 @@
-= com/sun/faces/context/AlwaysPuttingSessionMap.class
-
- - link:AlwaysPuttingSessionMap-asmified.java[Asmified]
-
-== References
-

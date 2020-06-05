@@ -1,6 +1,0 @@
-= org/apache/cxf/management/ManagementConstants.class
-
- - link:ManagementConstants-asmified.java[Asmified]
-
-== References
-

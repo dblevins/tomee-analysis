@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/NotNode.class
-
- - link:NotNode-asmified.java[Asmified]
-
-== References
-

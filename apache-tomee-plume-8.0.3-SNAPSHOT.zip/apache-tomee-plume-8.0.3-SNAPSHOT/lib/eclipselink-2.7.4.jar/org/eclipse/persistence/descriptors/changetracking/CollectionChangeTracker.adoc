@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/changetracking/CollectionChangeTracker.class
-
- - link:CollectionChangeTracker-asmified.java[Asmified]
-
-== References
-

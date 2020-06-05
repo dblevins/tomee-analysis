@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MessageDatabase$PurgeRecoveredXATransactionStrategy.class
-
- - link:MessageDatabase$PurgeRecoveredXATransactionStrategy-asmified.java[Asmified]
-
-== References
-

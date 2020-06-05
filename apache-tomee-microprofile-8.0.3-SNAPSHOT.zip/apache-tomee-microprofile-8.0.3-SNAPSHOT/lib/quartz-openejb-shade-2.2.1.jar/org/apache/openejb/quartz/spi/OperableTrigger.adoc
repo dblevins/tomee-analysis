@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/spi/OperableTrigger.class
-
- - link:OperableTrigger-asmified.java[Asmified]
-
-== References
-

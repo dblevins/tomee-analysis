@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalAggregateFunctionBNF.class
-
- - link:InternalAggregateFunctionBNF-asmified.java[Asmified]
-
-== References
-

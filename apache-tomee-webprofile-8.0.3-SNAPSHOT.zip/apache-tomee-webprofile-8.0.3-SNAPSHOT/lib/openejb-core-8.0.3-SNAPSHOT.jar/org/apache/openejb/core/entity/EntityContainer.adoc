@@ -1,6 +1,0 @@
-= org/apache/openejb/core/entity/EntityContainer.class
-
- - link:EntityContainer-asmified.java[Asmified]
-
-== References
-

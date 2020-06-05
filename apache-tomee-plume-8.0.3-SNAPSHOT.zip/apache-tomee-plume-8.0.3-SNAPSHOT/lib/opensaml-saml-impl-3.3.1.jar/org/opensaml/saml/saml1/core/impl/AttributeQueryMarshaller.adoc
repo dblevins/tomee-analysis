@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AttributeQueryMarshaller.class
-
- - link:AttributeQueryMarshaller-asmified.java[Asmified]
-
-== References
-

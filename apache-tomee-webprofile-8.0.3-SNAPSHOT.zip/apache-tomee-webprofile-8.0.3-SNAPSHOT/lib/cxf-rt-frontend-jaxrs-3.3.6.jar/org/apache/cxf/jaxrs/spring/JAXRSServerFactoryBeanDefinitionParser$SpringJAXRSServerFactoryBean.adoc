@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/spring/JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean.class
-
- - link:JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean-asmified.java[Asmified]
-
-== References
-

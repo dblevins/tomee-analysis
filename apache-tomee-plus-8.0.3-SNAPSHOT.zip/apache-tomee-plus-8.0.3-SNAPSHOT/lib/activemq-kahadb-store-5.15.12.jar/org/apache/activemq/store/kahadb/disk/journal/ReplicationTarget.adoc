@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/journal/ReplicationTarget.class
-
- - link:ReplicationTarget-asmified.java[Asmified]
-
-== References
-

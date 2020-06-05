@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/translate/JavaUnicodeEscaper.class
-
- - link:JavaUnicodeEscaper-asmified.java[Asmified]
-
-== References
-

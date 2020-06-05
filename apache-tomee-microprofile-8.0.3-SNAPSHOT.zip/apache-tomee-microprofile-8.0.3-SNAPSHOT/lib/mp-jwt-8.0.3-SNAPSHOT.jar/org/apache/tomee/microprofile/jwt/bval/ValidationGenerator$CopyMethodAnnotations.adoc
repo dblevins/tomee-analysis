@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/bval/ValidationGenerator$CopyMethodAnnotations.class
-
- - link:ValidationGenerator$CopyMethodAnnotations-asmified.java[Asmified]
-
-== References
-

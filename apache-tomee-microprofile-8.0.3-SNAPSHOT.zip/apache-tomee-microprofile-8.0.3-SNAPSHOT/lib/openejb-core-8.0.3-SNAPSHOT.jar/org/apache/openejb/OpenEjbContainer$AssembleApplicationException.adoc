@@ -1,6 +1,0 @@
-= org/apache/openejb/OpenEjbContainer$AssembleApplicationException.class
-
- - link:OpenEjbContainer$AssembleApplicationException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/WTauNafMultiplier.class
-
- - link:WTauNafMultiplier-asmified.java[Asmified]
-
-== References
-

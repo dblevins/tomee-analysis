@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/server/RegistryKeepAliveRunner.class
-
- - link:RegistryKeepAliveRunner-asmified.java[Asmified]
-
-== References
-

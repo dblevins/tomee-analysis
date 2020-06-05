@@ -1,6 +1,0 @@
-= org/hsqldb/SchemaObject$ViewCheckModes.class
-
- - link:SchemaObject$ViewCheckModes-asmified.java[Asmified]
-
-== References
-

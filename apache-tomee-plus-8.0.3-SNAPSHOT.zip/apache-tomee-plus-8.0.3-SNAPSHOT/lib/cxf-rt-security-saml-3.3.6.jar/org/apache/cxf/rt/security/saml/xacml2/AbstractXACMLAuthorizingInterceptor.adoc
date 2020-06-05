@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/saml/xacml2/AbstractXACMLAuthorizingInterceptor.class
-
- - link:AbstractXACMLAuthorizingInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/v200409/AppliesTo.class
-
- - link:AppliesTo-asmified.java[Asmified]
-
-== References
-

@@ -1,2 +1,0 @@
-= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/FastInfoset-1.2.16.jar
-

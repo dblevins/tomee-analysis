@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/holders/CalendarHolder.class
-
- - link:CalendarHolder-asmified.java[Asmified]
-
-== References
-

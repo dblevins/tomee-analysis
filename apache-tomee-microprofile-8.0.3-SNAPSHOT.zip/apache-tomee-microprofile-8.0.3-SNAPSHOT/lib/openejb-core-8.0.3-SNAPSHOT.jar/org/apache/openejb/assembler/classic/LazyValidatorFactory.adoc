@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/LazyValidatorFactory.class
-
- - link:LazyValidatorFactory-asmified.java[Asmified]
-
-== References
-

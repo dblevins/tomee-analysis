@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ComplexQueryResult.class
-
- - link:ComplexQueryResult-asmified.java[Asmified]
-
-== References
-

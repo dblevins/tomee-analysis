@@ -1,6 +1,0 @@
-= org/apache/batchee/spi/PersistenceManagerService.class
-
- - link:PersistenceManagerService-asmified.java[Asmified]
-
-== References
-

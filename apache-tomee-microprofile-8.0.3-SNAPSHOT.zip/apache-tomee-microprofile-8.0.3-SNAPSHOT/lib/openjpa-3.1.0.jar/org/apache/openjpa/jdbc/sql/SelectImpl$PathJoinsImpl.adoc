@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/sql/SelectImpl$PathJoinsImpl.class
-
- - link:SelectImpl$PathJoinsImpl-asmified.java[Asmified]
-
-== References
-

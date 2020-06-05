@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/encodings/ISO9796d1Encoding.class
-
- - link:ISO9796d1Encoding-asmified.java[Asmified]
-
-== References
-

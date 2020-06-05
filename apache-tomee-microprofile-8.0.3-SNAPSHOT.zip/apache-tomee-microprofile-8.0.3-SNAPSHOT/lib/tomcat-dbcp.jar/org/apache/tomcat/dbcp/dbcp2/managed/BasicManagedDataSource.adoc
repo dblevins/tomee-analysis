@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/managed/BasicManagedDataSource.class
-
- - link:BasicManagedDataSource-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/vm/VMTransportServer.class
-
- - link:VMTransportServer-asmified.java[Asmified]
-
-== References
-

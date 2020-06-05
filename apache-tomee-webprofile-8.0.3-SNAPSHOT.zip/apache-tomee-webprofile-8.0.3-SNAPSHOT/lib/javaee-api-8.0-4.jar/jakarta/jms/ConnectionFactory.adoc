@@ -1,6 +1,0 @@
-= jakarta/jms/ConnectionFactory.class
-
- - link:ConnectionFactory-asmified.java[Asmified]
-
-== References
-

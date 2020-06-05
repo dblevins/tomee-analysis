@@ -1,6 +1,0 @@
-= org/apache/activemq/util/TransactionTemplate.class
-
- - link:TransactionTemplate-asmified.java[Asmified]
-
-== References
-

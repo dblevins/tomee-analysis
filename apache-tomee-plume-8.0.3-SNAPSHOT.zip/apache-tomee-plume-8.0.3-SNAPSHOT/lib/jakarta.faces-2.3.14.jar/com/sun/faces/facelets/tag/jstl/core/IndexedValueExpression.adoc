@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/core/IndexedValueExpression.class
-
- - link:IndexedValueExpression-asmified.java[Asmified]
-
-== References
-

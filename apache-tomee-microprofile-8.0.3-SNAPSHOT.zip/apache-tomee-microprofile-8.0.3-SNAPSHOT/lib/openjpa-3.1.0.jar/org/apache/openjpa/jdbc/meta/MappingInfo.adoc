@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/MappingInfo.class
-
- - link:MappingInfo-asmified.java[Asmified]
-
-== References
-

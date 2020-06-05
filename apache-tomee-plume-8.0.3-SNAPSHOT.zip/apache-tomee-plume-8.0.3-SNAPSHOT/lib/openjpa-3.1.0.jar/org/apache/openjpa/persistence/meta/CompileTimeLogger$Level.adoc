@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/CompileTimeLogger$Level.class
-
- - link:CompileTimeLogger$Level-asmified.java[Asmified]
-
-== References
-

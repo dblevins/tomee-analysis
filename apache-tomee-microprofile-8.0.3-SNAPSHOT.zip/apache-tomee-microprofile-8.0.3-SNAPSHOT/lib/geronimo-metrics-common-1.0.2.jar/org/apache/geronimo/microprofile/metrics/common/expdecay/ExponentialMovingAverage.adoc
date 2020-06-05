@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/expdecay/ExponentialMovingAverage.class
-
- - link:ExponentialMovingAverage-asmified.java[Asmified]
-
-== References
-

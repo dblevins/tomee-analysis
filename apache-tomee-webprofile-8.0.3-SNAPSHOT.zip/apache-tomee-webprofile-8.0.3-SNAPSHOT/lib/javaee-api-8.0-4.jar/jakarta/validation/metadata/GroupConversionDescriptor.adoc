@@ -1,6 +1,0 @@
-= jakarta/validation/metadata/GroupConversionDescriptor.class
-
- - link:GroupConversionDescriptor-asmified.java[Asmified]
-
-== References
-

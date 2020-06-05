@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/support/JaxWsServiceConfiguration.class
-
- - link:JaxWsServiceConfiguration-asmified.java[Asmified]
-
-== References
-

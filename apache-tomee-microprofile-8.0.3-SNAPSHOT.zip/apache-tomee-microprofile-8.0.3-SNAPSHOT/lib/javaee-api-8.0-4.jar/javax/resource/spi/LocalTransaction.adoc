@@ -1,7 +1,0 @@
-= javax/resource/spi/LocalTransaction.class
-
- - link:LocalTransaction-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 3

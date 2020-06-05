@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/changesets/CollectionChangeRecord.class
-
- - link:CollectionChangeRecord-asmified.java[Asmified]
-
-== References
-

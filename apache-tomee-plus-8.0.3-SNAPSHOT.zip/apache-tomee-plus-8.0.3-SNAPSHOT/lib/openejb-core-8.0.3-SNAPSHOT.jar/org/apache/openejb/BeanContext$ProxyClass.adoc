@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanContext$ProxyClass.class
-
- - link:BeanContext$ProxyClass-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/ItemReader.class
-
- - link:ItemReader-asmified.java[Asmified]
-
-== References
-

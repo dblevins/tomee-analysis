@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/adaptor/ELAdaptor.class
-
- - link:ELAdaptor-asmified.java[Asmified]
-
-== References
-

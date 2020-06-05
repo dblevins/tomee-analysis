@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/WSSecSignatureBase.class
-
- - link:WSSecSignatureBase-asmified.java[Asmified]
-
-== References
-

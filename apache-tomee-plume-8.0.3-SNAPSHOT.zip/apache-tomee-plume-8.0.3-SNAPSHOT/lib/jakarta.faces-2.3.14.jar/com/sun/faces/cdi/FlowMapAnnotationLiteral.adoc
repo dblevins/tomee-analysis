@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/FlowMapAnnotationLiteral.class
-
- - link:FlowMapAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

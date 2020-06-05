@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/index/impl/SAMLArtifactMetadataIndex.class
-
- - link:SAMLArtifactMetadataIndex-asmified.java[Asmified]
-
-== References
-

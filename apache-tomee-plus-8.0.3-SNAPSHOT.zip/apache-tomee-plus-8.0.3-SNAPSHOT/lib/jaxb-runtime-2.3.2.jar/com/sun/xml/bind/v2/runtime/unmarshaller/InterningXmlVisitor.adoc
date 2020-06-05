@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/unmarshaller/InterningXmlVisitor.class
-
- - link:InterningXmlVisitor-asmified.java[Asmified]
-
-== References
-

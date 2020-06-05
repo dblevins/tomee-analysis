@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonParserReaderBuilder.class
-
- - link:JsonParserReader$JsonParserReaderBuilder-asmified.java[Asmified]
-
-== References
-

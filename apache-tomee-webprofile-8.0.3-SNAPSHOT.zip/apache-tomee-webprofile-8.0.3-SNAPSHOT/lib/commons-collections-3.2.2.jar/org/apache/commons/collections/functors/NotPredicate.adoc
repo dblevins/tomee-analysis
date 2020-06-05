@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/NotPredicate.class
-
- - link:NotPredicate-asmified.java[Asmified]
-
-== References
-

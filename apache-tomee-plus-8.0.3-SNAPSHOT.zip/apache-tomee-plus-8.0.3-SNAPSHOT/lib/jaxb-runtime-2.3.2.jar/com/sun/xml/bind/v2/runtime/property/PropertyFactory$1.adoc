@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/property/PropertyFactory$1.class
-
- - link:PropertyFactory$1-asmified.java[Asmified]
-
-== References
-

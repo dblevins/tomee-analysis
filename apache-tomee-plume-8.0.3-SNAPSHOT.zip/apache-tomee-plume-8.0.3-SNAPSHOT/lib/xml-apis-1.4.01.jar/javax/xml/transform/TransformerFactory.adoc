@@ -1,6 +1,0 @@
-= javax/xml/transform/TransformerFactory.class
-
- - link:TransformerFactory-asmified.java[Asmified]
-
-== References
-

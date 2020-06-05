@@ -1,6 +1,0 @@
-= jakarta/persistence/ManyToMany.class
-
- - link:ManyToMany-asmified.java[Asmified]
-
-== References
-

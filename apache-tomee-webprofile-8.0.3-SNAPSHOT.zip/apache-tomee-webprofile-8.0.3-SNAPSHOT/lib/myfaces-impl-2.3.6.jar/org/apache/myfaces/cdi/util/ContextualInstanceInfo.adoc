@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/util/ContextualInstanceInfo.class
-
- - link:ContextualInstanceInfo-asmified.java[Asmified]
-
-== References
-

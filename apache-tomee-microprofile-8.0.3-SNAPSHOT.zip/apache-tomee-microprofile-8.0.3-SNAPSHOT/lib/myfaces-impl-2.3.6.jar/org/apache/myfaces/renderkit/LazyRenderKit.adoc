@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/LazyRenderKit.class
-
- - link:LazyRenderKit-asmified.java[Asmified]
-
-== References
-

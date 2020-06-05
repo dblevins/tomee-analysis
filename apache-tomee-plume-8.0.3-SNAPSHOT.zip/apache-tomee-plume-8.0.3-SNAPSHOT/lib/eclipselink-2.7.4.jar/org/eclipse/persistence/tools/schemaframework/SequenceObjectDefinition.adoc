@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/schemaframework/SequenceObjectDefinition.class
-
- - link:SequenceObjectDefinition-asmified.java[Asmified]
-
-== References
-

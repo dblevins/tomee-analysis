@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityToken/SecurityTokenProvider.class
-
- - link:SecurityTokenProvider-asmified.java[Asmified]
-
-== References
-

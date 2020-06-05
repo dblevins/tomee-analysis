@@ -1,6 +1,0 @@
-= org/apache/cxf/management/annotation/ManagedResource.class
-
- - link:ManagedResource-asmified.java[Asmified]
-
-== References
-

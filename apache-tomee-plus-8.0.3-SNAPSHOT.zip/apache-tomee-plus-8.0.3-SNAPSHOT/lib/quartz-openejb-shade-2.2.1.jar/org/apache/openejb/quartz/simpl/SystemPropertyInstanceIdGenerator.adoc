@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/SystemPropertyInstanceIdGenerator.class
-
- - link:SystemPropertyInstanceIdGenerator-asmified.java[Asmified]
-
-== References
-

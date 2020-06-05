@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/handlers/MessageHandler.class
-
- - link:MessageHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/tool/ModuleLocationHandler$ModuleLocationWrapper.class
-
- - link:ModuleLocationHandler$ModuleLocationWrapper-asmified.java[Asmified]
-
-== References
-

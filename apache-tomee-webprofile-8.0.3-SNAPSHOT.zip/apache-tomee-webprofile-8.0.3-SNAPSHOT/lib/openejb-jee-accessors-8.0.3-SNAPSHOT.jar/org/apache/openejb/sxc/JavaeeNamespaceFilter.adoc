@@ -1,6 +1,0 @@
-= org/apache/openejb/sxc/JavaeeNamespaceFilter.class
-
- - link:JavaeeNamespaceFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/ResourceBundleProvider.class
-
- - link:ResourceBundleProvider-asmified.java[Asmified]
-
-== References
-

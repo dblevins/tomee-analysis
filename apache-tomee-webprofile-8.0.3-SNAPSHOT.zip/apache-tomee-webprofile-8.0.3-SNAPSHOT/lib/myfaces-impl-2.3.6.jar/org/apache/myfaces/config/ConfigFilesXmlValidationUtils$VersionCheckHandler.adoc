@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/ConfigFilesXmlValidationUtils$VersionCheckHandler.class
-
- - link:ConfigFilesXmlValidationUtils$VersionCheckHandler-asmified.java[Asmified]
-
-== References
-

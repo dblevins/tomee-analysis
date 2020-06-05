@@ -1,6 +1,0 @@
-= javax/persistence/spi/ClassTransformer.class
-
- - link:ClassTransformer-asmified.java[Asmified]
-
-== References
-

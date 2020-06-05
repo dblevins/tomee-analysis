@@ -1,6 +1,0 @@
-= javax/cache/annotation/CacheValue.class
-
- - link:CacheValue-asmified.java[Asmified]
-
-== References
-

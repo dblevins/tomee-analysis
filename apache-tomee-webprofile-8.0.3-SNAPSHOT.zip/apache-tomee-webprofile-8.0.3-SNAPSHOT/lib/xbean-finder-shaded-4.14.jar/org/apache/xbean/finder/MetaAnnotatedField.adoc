@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/MetaAnnotatedField.class
-
- - link:MetaAnnotatedField-asmified.java[Asmified]
-
-== References
-

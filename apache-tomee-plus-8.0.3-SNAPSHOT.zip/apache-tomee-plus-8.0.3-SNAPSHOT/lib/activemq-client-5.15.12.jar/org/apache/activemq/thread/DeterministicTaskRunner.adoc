@@ -1,6 +1,0 @@
-= org/apache/activemq/thread/DeterministicTaskRunner.class
-
- - link:DeterministicTaskRunner-asmified.java[Asmified]
-
-== References
-

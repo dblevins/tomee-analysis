@@ -1,6 +1,0 @@
-= org/opensaml/core/metrics/FilteredMetricRegistry.class
-
- - link:FilteredMetricRegistry-asmified.java[Asmified]
-
-== References
-

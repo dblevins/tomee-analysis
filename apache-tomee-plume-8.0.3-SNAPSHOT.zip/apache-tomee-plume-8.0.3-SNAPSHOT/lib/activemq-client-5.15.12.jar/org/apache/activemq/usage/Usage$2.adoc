@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/Usage$2.class
-
- - link:Usage$2-asmified.java[Asmified]
-
-== References
-

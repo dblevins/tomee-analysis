@@ -1,6 +1,0 @@
-= com/ctc/wstx/cfg/XmlConsts.class
-
- - link:XmlConsts-asmified.java[Asmified]
-
-== References
-

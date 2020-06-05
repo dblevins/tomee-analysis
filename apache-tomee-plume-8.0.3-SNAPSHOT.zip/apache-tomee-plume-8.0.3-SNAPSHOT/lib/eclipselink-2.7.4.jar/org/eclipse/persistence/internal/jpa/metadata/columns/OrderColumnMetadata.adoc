@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/columns/OrderColumnMetadata.class
-
- - link:OrderColumnMetadata-asmified.java[Asmified]
-
-== References
-

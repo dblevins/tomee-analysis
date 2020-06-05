@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistenceMetaDataDefaults$MemberFilter.class
-
- - link:PersistenceMetaDataDefaults$MemberFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/JNDIContext$5.class
-
- - link:JNDIContext$5-asmified.java[Asmified]
-
-== References
-

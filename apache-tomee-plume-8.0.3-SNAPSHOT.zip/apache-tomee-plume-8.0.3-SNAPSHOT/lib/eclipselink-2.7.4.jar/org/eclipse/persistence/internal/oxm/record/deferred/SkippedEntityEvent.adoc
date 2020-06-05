@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/SkippedEntityEvent.class
-
- - link:SkippedEntityEvent-asmified.java[Asmified]
-
-== References
-

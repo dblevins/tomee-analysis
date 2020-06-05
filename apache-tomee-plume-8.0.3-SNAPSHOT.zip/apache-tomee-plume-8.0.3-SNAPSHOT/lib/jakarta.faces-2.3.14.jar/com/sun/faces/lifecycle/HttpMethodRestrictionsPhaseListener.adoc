@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/HttpMethodRestrictionsPhaseListener.class
-
- - link:HttpMethodRestrictionsPhaseListener-asmified.java[Asmified]
-
-== References
-

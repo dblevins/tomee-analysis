@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/OrganizationNameMarshaller.class
-
- - link:OrganizationNameMarshaller-asmified.java[Asmified]
-
-== References
-

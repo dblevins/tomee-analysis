@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/HttpHeaderSecurityFilter.class
-
- - link:HttpHeaderSecurityFilter-asmified.java[Asmified]
-
-== References
-

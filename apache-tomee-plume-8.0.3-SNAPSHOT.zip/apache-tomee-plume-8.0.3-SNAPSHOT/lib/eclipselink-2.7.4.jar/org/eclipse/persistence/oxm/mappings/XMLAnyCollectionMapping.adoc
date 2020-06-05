@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLAnyCollectionMapping.class
-
- - link:XMLAnyCollectionMapping-asmified.java[Asmified]
-
-== References
-

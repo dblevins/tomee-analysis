@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/server/ClientSession.class
-
- - link:ClientSession-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/corespi/se/DefaultJndiService.class
-
- - link:DefaultJndiService-asmified.java[Asmified]
-
-== References
-

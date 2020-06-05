@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/NoneMetaDataFactory.class
-
- - link:NoneMetaDataFactory-asmified.java[Asmified]
-
-== References
-

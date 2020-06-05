@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/KeyInfoReferenceMarshaller.class
-
- - link:KeyInfoReferenceMarshaller-asmified.java[Asmified]
-
-== References
-

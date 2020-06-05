@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/messaging/WSSecurityMessagingSupport.class
-
- - link:WSSecurityMessagingSupport-asmified.java[Asmified]
-
-== References
-

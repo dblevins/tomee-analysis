@@ -1,6 +1,0 @@
-= org/apache/cxf/management/jmx/type/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

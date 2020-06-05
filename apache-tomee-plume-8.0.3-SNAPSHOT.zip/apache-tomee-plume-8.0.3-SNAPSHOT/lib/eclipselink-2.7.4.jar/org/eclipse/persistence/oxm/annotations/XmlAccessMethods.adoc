@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlAccessMethods.class
-
- - link:XmlAccessMethods-asmified.java[Asmified]
-
-== References
-

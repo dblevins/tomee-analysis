@@ -1,6 +1,0 @@
-= org/apache/openejb/dyni/DynamicSubclass.class
-
- - link:DynamicSubclass-asmified.java[Asmified]
-
-== References
-

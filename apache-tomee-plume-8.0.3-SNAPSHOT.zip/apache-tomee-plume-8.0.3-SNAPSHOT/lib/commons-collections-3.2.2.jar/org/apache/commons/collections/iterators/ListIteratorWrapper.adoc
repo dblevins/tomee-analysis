@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/ListIteratorWrapper.class
-
- - link:ListIteratorWrapper-asmified.java[Asmified]
-
-== References
-

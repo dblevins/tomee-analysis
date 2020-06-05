@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/concurrent/ConcurrentHashMap.class
-
- - link:ConcurrentHashMap-asmified.java[Asmified]
-
-== References
-

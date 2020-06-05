@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/PartialResponseWriterImpl.class
-
- - link:PartialResponseWriterImpl-asmified.java[Asmified]
-
-== References
-

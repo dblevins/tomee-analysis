@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/TransportFilter.class
-
- - link:TransportFilter-asmified.java[Asmified]
-
-== References
-

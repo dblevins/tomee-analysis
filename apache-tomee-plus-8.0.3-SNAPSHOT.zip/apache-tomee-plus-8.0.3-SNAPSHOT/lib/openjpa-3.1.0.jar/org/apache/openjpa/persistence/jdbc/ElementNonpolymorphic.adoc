@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/ElementNonpolymorphic.class
-
- - link:ElementNonpolymorphic-asmified.java[Asmified]
-
-== References
-

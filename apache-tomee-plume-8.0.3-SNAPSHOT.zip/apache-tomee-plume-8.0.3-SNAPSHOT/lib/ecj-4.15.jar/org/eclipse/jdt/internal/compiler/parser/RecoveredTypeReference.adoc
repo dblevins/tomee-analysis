@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/RecoveredTypeReference.class
-
- - link:RecoveredTypeReference-asmified.java[Asmified]
-
-== References
-

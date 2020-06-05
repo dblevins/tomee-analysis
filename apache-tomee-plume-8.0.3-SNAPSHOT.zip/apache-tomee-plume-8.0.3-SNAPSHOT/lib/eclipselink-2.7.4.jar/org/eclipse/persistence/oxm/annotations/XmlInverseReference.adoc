@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlInverseReference.class
-
- - link:XmlInverseReference-asmified.java[Asmified]
-
-== References
-

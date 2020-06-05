@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/RecoveredXATransactionViewMBean.class
-
- - link:RecoveredXATransactionViewMBean-asmified.java[Asmified]
-
-== References
-

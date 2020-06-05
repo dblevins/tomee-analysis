@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Filter.class
-
- - link:Filter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/vendor/WebContainerInjectionProvider.class
-
- - link:WebContainerInjectionProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/javamodel/JavaMethod.class
-
- - link:JavaMethod-asmified.java[Asmified]
-
-== References
-

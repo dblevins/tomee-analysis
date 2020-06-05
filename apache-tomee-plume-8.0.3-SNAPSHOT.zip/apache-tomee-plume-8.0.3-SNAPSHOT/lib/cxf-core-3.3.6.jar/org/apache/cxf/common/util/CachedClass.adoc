@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/CachedClass.class
-
- - link:CachedClass-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/cache/event/CacheEntryRemovedListener.class
-
- - link:CacheEntryRemovedListener-asmified.java[Asmified]
-
-== References
-

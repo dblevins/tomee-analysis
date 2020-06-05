@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/AbstractObjectLevelReadQueryVisitor$CountFunctionVisitor.class
-
- - link:AbstractObjectLevelReadQueryVisitor$CountFunctionVisitor-asmified.java[Asmified]
-
-== References
-

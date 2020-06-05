@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/RemoteDebugEventSocketListener.class
-
- - link:RemoteDebugEventSocketListener-asmified.java[Asmified]
-
-== References
-

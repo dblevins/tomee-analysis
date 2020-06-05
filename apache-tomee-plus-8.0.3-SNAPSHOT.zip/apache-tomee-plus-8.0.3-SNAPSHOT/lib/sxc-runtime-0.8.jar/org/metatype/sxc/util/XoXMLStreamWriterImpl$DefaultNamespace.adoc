@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/XoXMLStreamWriterImpl$DefaultNamespace.class
-
- - link:XoXMLStreamWriterImpl$DefaultNamespace-asmified.java[Asmified]
-
-== References
-

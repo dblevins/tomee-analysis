@@ -1,6 +1,0 @@
-= javax/xml/parsers/DocumentBuilder.class
-
- - link:DocumentBuilder-asmified.java[Asmified]
-
-== References
-

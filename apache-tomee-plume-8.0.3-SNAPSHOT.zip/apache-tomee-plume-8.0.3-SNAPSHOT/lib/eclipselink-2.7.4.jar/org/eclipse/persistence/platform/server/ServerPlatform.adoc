@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/server/ServerPlatform.class
-
- - link:ServerPlatform-asmified.java[Asmified]
-
-== References
-

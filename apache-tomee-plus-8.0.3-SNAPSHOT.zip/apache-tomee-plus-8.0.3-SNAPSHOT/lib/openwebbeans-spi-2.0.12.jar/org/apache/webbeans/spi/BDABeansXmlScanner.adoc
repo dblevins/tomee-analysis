@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/BDABeansXmlScanner.class
-
- - link:BDABeansXmlScanner-asmified.java[Asmified]
-
-== References
-

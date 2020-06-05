@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TransportGuarantee.class
-
- - link:TransportGuarantee-asmified.java[Asmified]
-
-== References
-

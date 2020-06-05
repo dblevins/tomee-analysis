@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/XidImporter.class
-
- - link:XidImporter-asmified.java[Asmified]
-
-== References
-

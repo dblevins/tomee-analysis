@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/EqualPredicate.class
-
- - link:EqualPredicate-asmified.java[Asmified]
-
-== References
-

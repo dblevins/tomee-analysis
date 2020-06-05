@@ -1,7 +1,0 @@
-= javax/persistence/Basic.class
-
- - link:Basic-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.FetchType - 2

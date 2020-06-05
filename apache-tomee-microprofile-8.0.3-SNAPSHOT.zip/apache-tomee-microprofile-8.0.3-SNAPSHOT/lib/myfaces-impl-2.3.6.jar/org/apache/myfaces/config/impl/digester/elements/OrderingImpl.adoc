@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/OrderingImpl.class
-
- - link:OrderingImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/cmp2/CmpField.class
-
- - link:CmpField-asmified.java[Asmified]
-
-== References
-

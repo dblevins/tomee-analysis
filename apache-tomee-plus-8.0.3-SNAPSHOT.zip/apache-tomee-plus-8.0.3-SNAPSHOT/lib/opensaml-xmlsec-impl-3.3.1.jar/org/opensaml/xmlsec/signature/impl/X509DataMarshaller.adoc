@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/impl/X509DataMarshaller.class
-
- - link:X509DataMarshaller-asmified.java[Asmified]
-
-== References
-

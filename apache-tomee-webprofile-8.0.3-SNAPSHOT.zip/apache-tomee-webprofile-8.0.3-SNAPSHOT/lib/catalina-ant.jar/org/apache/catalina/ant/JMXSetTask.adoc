@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/JMXSetTask.class
-
- - link:JMXSetTask-asmified.java[Asmified]
-
-== References
-

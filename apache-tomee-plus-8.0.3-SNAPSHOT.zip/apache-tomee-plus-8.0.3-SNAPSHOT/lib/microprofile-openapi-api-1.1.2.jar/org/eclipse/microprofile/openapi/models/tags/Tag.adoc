@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/tags/Tag.class
-
- - link:Tag-asmified.java[Asmified]
-
-== References
-

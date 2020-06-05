@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/IndividualDeadLetterStrategy.class
-
- - link:IndividualDeadLetterStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/operation/IssueOperation.class
-
- - link:IssueOperation-asmified.java[Asmified]
-
-== References
-

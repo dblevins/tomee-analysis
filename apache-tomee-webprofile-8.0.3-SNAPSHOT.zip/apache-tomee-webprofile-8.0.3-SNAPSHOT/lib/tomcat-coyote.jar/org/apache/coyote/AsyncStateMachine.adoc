@@ -1,6 +1,0 @@
-= org/apache/coyote/AsyncStateMachine.class
-
- - link:AsyncStateMachine-asmified.java[Asmified]
-
-== References
-

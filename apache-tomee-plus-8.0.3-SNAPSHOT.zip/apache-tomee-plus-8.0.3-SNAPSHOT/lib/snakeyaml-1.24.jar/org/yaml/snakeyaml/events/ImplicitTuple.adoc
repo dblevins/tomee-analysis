@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/ImplicitTuple.class
-
- - link:ImplicitTuple-asmified.java[Asmified]
-
-== References
-

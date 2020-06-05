@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/sql/SetDataSourceTagSupport.class
-
- - link:SetDataSourceTagSupport-asmified.java[Asmified]
-
-== References
-

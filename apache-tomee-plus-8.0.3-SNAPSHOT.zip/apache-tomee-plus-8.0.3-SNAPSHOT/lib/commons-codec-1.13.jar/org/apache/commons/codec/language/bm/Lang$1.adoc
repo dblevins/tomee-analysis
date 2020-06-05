@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/bm/Lang$1.class
-
- - link:Lang$1-asmified.java[Asmified]
-
-== References
-

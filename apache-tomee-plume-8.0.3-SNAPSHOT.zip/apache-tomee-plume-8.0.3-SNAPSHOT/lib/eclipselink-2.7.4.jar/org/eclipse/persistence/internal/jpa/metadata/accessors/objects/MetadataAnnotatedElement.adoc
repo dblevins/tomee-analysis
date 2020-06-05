@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAnnotatedElement.class
-
- - link:MetadataAnnotatedElement-asmified.java[Asmified]
-
-== References
-

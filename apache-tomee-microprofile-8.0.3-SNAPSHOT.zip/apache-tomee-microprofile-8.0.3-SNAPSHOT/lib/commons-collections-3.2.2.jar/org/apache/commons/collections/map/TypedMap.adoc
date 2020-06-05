@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/TypedMap.class
-
- - link:TypedMap-asmified.java[Asmified]
-
-== References
-

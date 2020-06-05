@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/authentication/DigestMD5Authenticator.class
-
- - link:DigestMD5Authenticator-asmified.java[Asmified]
-
-== References
-

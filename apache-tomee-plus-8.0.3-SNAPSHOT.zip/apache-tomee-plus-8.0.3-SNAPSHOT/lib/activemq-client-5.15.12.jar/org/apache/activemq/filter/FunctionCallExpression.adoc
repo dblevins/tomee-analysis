@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/FunctionCallExpression.class
-
- - link:FunctionCallExpression-asmified.java[Asmified]
-
-== References
-

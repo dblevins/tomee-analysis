@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/SimpleWorkManager$1.class
-
- - link:SimpleWorkManager$1-asmified.java[Asmified]
-
-== References
-

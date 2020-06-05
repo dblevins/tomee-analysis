@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/ComplexKeyGenerator.class
-
- - link:ComplexKeyGenerator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/DatagramEndpoint.class
-
- - link:DatagramEndpoint-asmified.java[Asmified]
-
-== References
-

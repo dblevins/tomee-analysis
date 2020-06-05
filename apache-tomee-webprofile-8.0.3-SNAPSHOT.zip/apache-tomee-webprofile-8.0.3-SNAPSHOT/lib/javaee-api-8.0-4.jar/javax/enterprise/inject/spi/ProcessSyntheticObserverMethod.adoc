@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/ProcessSyntheticObserverMethod.class
-
- - link:ProcessSyntheticObserverMethod-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.Extension - 1
- - javax.enterprise.inject.spi.ProcessObserverMethod - 1

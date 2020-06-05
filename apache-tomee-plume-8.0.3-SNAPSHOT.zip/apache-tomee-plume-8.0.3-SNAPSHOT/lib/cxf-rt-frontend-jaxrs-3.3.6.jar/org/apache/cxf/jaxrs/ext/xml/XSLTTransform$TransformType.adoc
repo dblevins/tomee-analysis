@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/xml/XSLTTransform$TransformType.class
-
- - link:XSLTTransform$TransformType-asmified.java[Asmified]
-
-== References
-

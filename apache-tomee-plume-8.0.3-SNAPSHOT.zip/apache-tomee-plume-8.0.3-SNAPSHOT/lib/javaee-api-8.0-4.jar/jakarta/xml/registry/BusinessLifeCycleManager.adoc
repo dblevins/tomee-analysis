@@ -1,6 +1,0 @@
-= jakarta/xml/registry/BusinessLifeCycleManager.class
-
- - link:BusinessLifeCycleManager-asmified.java[Asmified]
-
-== References
-

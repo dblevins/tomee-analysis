@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/ValueMetaDataImpl.class
-
- - link:ValueMetaDataImpl-asmified.java[Asmified]
-
-== References
-

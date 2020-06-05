@@ -1,6 +1,0 @@
-= org/apache/jasper/JspC$1.class
-
- - link:JspC$1-asmified.java[Asmified]
-
-== References
-

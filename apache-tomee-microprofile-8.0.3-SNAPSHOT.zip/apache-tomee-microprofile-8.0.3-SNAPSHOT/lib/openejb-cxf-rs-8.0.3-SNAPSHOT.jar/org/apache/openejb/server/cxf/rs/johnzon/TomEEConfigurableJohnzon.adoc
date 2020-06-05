@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/johnzon/TomEEConfigurableJohnzon.class
-
- - link:TomEEConfigurableJohnzon-asmified.java[Asmified]
-
-== References
-

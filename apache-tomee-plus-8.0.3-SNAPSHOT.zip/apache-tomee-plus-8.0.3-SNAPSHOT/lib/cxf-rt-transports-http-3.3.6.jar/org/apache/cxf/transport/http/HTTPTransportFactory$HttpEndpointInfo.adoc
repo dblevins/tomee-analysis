@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HTTPTransportFactory$HttpEndpointInfo.class
-
- - link:HTTPTransportFactory$HttpEndpointInfo-asmified.java[Asmified]
-
-== References
-

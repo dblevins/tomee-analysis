@@ -1,6 +1,0 @@
-= org/opensaml/security/messaging/ClientTLSSecurityParametersContext.class
-
- - link:ClientTLSSecurityParametersContext-asmified.java[Asmified]
-
-== References
-

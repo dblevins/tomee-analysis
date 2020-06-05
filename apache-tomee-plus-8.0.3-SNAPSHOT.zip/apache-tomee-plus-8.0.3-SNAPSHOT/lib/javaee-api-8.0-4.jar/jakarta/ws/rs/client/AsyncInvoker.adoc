@@ -1,6 +1,0 @@
-= jakarta/ws/rs/client/AsyncInvoker.class
-
- - link:AsyncInvoker-asmified.java[Asmified]
-
-== References
-

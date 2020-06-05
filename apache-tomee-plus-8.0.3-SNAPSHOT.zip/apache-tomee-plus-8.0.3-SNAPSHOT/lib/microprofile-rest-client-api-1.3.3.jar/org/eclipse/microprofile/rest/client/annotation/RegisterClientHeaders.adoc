@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/rest/client/annotation/RegisterClientHeaders.class
-
- - link:RegisterClientHeaders-asmified.java[Asmified]
-
-== References
-

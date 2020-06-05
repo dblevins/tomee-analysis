@@ -1,9 +1,0 @@
-= javax/persistence/NamedEntityGraph.class
-
- - link:NamedEntityGraph-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.NamedSubgraph - 2
- - javax.persistence.NamedAttributeNode - 1
- - javax.persistence.NamedEntityGraphs - 1

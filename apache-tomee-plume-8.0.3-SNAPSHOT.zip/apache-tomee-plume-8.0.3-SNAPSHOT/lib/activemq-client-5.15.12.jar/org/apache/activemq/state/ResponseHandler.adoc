@@ -1,6 +1,0 @@
-= org/apache/activemq/state/ResponseHandler.class
-
- - link:ResponseHandler-asmified.java[Asmified]
-
-== References
-

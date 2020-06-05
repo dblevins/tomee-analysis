@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/EEFilter.class
-
- - link:EEFilter-asmified.java[Asmified]
-
-== References
-

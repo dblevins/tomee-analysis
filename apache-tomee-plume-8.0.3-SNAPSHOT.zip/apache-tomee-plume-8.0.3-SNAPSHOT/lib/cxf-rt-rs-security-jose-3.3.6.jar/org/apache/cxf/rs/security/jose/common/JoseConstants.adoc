@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/common/JoseConstants.class
-
- - link:JoseConstants-asmified.java[Asmified]
-
-== References
-

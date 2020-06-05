@@ -1,6 +1,0 @@
-= org/eclipse/persistence/tools/schemaframework/PopulationManager.class
-
- - link:PopulationManager-asmified.java[Asmified]
-
-== References
-

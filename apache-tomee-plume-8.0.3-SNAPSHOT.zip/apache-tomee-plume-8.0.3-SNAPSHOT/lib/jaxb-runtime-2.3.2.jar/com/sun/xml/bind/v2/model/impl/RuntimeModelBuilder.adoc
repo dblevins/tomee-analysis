@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/impl/RuntimeModelBuilder.class
-
- - link:RuntimeModelBuilder-asmified.java[Asmified]
-
-== References
-

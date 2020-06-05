@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/NewIDImpl.class
-
- - link:NewIDImpl-asmified.java[Asmified]
-
-== References
-

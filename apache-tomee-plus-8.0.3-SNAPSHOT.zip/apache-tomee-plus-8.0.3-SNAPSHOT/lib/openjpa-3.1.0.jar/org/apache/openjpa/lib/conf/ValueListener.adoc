@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/ValueListener.class
-
- - link:ValueListener-asmified.java[Asmified]
-
-== References
-

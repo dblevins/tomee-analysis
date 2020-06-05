@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/TempFiles.class
-
- - link:TempFiles-asmified.java[Asmified]
-
-== References
-

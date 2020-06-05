@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/WebAppElResolver.class
-
- - link:WebAppElResolver-asmified.java[Asmified]
-
-== References
-

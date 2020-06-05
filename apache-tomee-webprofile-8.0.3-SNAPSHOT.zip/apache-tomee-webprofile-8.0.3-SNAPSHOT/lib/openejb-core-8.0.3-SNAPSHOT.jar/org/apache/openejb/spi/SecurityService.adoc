@@ -1,6 +1,0 @@
-= org/apache/openejb/spi/SecurityService.class
-
- - link:SecurityService-asmified.java[Asmified]
-
-== References
-

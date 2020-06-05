@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/Finder.class
-
- - link:Finder-asmified.java[Asmified]
-
-== References
-

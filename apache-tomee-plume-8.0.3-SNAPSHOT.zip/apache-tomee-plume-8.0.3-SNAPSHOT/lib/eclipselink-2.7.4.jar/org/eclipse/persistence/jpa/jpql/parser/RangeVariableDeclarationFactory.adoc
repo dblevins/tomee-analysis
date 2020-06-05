@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/RangeVariableDeclarationFactory.class
-
- - link:RangeVariableDeclarationFactory-asmified.java[Asmified]
-
-== References
-

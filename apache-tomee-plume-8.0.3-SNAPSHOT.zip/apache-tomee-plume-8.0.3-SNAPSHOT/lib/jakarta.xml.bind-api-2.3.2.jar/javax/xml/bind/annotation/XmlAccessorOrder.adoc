@@ -1,7 +1,0 @@
-= javax/xml/bind/annotation/XmlAccessorOrder.class
-
- - link:XmlAccessorOrder-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.annotation.XmlAccessOrder - 2

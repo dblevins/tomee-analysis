@@ -1,6 +1,0 @@
-= org/opensaml/security/criteria/UsageCriterion.class
-
- - link:UsageCriterion-asmified.java[Asmified]
-
-== References
-

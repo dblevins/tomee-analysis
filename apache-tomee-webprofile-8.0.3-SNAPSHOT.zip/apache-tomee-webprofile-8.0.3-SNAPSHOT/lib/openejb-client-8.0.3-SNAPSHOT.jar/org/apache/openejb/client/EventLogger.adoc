@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EventLogger.class
-
- - link:EventLogger-asmified.java[Asmified]
-
-== References
-

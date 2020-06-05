@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/EnumConverter.class
-
- - link:EnumConverter-asmified.java[Asmified]
-
-== References
-

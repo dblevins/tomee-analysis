@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/HierarchicalQueryClauseBNF.class
-
- - link:HierarchicalQueryClauseBNF-asmified.java[Asmified]
-
-== References
-

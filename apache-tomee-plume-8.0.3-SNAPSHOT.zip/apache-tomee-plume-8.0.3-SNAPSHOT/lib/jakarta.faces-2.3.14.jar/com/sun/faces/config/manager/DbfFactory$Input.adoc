@@ -1,6 +1,0 @@
-= com/sun/faces/config/manager/DbfFactory$Input.class
-
- - link:DbfFactory$Input-asmified.java[Asmified]
-
-== References
-

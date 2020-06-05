@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/SAXUnmarshallerHandler$1.class
-
- - link:SAXUnmarshallerHandler$1-asmified.java[Asmified]
-
-== References
-

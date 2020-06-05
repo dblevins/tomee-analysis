@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/columns/AbstractColumnImpl.class
-
- - link:AbstractColumnImpl-asmified.java[Asmified]
-
-== References
-

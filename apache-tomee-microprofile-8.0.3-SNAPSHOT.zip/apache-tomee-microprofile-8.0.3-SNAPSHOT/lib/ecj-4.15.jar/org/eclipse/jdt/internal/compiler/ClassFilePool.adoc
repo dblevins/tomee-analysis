@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ClassFilePool.class
-
- - link:ClassFilePool-asmified.java[Asmified]
-
-== References
-

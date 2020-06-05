@@ -1,6 +1,0 @@
-= jakarta/json/EmptyJsonObject.class
-
- - link:EmptyJsonObject-asmified.java[Asmified]
-
-== References
-

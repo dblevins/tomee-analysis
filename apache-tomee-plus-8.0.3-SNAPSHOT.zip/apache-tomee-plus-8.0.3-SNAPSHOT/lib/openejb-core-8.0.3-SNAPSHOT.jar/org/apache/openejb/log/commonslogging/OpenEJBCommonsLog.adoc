@@ -1,6 +1,0 @@
-= org/apache/openejb/log/commonslogging/OpenEJBCommonsLog.class
-
- - link:OpenEJBCommonsLog-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/tables/IndexImpl.class
-
- - link:IndexImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/realm/TomEEDataSourceRealm.class
-
- - link:TomEEDataSourceRealm-asmified.java[Asmified]
-
-== References
-

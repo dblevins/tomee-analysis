@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/EmbedValueHandler.class
-
- - link:EmbedValueHandler-asmified.java[Asmified]
-
-== References
-

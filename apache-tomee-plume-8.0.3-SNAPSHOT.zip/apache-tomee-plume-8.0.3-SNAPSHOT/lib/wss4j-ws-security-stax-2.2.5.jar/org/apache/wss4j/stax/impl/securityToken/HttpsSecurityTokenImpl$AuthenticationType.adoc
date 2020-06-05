@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/securityToken/HttpsSecurityTokenImpl$AuthenticationType.class
-
- - link:HttpsSecurityTokenImpl$AuthenticationType-asmified.java[Asmified]
-
-== References
-

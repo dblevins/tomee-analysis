@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/ThreadLocalCachingConnectionInterceptor.class
-
- - link:ThreadLocalCachingConnectionInterceptor-asmified.java[Asmified]
-
-== References
-

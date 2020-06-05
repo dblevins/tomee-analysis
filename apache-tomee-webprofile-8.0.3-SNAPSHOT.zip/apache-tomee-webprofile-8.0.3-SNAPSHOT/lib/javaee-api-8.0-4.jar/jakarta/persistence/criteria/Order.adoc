@@ -1,6 +1,0 @@
-= jakarta/persistence/criteria/Order.class
-
- - link:Order-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/UILiteralText.class
-
- - link:UILiteralText-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/FutureToSendHandler.class
-
- - link:FutureToSendHandler-asmified.java[Asmified]
-
-== References
-

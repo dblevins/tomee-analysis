@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/PropertyMetadata$MergeInfo.class
-
- - link:PropertyMetadata$MergeInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/FalsePredicate.class
-
- - link:FalsePredicate-asmified.java[Asmified]
-
-== References
-

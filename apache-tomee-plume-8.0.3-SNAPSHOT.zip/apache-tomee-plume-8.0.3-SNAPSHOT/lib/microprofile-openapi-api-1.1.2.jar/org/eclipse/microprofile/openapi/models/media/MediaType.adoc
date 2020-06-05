@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/media/MediaType.class
-
- - link:MediaType-asmified.java[Asmified]
-
-== References
-

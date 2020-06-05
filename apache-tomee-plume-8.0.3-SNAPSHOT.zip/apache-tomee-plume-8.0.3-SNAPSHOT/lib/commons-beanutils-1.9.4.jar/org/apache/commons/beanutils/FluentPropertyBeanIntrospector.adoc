@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/FluentPropertyBeanIntrospector.class
-
- - link:FluentPropertyBeanIntrospector-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/TCPRemoteCommitProvider$HostAddress$SocketPoolableObjectFactory.class
-
- - link:TCPRemoteCommitProvider$HostAddress$SocketPoolableObjectFactory-asmified.java[Asmified]
-
-== References
-

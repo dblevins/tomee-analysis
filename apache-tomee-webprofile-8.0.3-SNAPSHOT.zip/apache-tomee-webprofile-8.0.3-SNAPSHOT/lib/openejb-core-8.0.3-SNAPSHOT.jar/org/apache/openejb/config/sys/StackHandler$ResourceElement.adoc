@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/StackHandler$ResourceElement.class
-
- - link:StackHandler$ResourceElement-asmified.java[Asmified]
-
-== References
-

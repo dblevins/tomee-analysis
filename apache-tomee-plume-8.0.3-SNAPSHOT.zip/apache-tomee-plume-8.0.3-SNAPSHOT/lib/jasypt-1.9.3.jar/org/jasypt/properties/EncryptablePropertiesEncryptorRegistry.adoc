@@ -1,6 +1,0 @@
-= org/jasypt/properties/EncryptablePropertiesEncryptorRegistry.class
-
- - link:EncryptablePropertiesEncryptorRegistry-asmified.java[Asmified]
-
-== References
-

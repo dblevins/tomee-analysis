@@ -1,6 +1,0 @@
-= org/codehaus/stax2/validation/XMLValidationProblem.class
-
- - link:XMLValidationProblem-asmified.java[Asmified]
-
-== References
-

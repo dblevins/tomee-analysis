@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/LockWhenLoaded.class
-
- - link:LockWhenLoaded-asmified.java[Asmified]
-
-== References
-

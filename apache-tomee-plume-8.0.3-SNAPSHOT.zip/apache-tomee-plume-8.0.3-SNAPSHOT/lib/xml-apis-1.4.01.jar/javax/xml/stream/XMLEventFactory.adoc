@@ -1,6 +1,0 @@
-= javax/xml/stream/XMLEventFactory.class
-
- - link:XMLEventFactory-asmified.java[Asmified]
-
-== References
-

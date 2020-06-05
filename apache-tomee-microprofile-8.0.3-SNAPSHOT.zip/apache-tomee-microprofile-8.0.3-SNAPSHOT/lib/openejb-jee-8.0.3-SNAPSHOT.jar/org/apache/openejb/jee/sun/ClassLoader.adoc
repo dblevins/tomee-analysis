@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/ClassLoader.class
-
- - link:ClassLoader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/opentracing/ClientTracingRegistrar.class
-
- - link:ClientTracingRegistrar-asmified.java[Asmified]
-
-== References
-

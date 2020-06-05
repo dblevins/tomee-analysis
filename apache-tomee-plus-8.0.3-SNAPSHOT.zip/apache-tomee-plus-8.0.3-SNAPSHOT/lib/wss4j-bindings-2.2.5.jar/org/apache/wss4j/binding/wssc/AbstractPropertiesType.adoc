@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wssc/AbstractPropertiesType.class
-
- - link:AbstractPropertiesType-asmified.java[Asmified]
-
-== References
-

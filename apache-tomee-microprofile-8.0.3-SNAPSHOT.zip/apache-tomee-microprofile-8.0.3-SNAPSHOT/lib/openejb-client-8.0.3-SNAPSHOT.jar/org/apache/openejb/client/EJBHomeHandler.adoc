@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EJBHomeHandler.class
-
- - link:EJBHomeHandler-asmified.java[Asmified]
-
-== References
-

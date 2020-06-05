@@ -1,6 +1,0 @@
-= org/apache/commons/digester/PathCallParamRule.class
-
- - link:PathCallParamRule-asmified.java[Asmified]
-
-== References
-

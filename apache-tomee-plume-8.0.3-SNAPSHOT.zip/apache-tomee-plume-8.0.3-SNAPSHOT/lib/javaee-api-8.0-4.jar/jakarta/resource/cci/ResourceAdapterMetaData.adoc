@@ -1,6 +1,0 @@
-= jakarta/resource/cci/ResourceAdapterMetaData.class
-
- - link:ResourceAdapterMetaData-asmified.java[Asmified]
-
-== References
-

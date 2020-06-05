@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/JMSConnectionFactory$JAXB.class
-
- - link:JMSConnectionFactory$JAXB-asmified.java[Asmified]
-
-== References
-

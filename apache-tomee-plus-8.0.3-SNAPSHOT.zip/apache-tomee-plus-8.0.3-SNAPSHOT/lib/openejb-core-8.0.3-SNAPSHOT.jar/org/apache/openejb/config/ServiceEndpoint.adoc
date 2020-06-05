@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ServiceEndpoint.class
-
- - link:ServiceEndpoint-asmified.java[Asmified]
-
-== References
-

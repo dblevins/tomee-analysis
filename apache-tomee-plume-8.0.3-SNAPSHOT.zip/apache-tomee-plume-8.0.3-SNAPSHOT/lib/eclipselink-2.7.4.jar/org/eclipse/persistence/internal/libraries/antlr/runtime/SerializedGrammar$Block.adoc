@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/SerializedGrammar$Block.class
-
- - link:SerializedGrammar$Block-asmified.java[Asmified]
-
-== References
-

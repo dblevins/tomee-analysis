@@ -1,6 +1,0 @@
-= org/apache/catalina/loader/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

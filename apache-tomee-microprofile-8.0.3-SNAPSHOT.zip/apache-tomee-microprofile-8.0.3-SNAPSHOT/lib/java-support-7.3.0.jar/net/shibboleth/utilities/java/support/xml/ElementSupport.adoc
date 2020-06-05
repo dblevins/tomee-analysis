@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/ElementSupport.class
-
- - link:ElementSupport-asmified.java[Asmified]
-
-== References
-

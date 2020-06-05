@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ejbd/EjbDaemon$1.class
-
- - link:EjbDaemon$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/codec/binary/BaseNCodec.class
-
- - link:BaseNCodec-asmified.java[Asmified]
-
-== References
-

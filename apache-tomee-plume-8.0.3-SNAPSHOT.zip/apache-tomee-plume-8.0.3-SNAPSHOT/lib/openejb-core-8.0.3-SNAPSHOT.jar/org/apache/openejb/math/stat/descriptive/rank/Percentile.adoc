@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/rank/Percentile.class
-
- - link:Percentile-asmified.java[Asmified]
-
-== References
-

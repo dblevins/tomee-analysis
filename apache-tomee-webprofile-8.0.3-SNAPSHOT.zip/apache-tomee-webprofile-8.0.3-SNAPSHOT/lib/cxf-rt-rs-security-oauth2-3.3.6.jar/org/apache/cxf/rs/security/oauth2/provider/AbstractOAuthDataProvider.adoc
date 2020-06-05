@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/provider/AbstractOAuthDataProvider.class
-
- - link:AbstractOAuthDataProvider-asmified.java[Asmified]
-
-== References
-

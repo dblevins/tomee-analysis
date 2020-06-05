@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/impl/IndexedListSerializer.class
-
- - link:IndexedListSerializer-asmified.java[Asmified]
-
-== References
-

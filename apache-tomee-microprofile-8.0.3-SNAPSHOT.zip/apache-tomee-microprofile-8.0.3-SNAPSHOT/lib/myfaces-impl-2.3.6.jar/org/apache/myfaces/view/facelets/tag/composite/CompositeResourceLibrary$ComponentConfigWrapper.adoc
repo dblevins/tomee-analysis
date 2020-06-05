@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeResourceLibrary$ComponentConfigWrapper.class
-
- - link:CompositeResourceLibrary$ComponentConfigWrapper-asmified.java[Asmified]
-
-== References
-

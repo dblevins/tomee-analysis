@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/stax/events/ReadIterator.class
-
- - link:ReadIterator-asmified.java[Asmified]
-
-== References
-

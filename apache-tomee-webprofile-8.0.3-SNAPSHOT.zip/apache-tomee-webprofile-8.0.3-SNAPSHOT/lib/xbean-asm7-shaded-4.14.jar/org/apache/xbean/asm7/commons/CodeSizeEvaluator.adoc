@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/CodeSizeEvaluator.class
-
- - link:CodeSizeEvaluator-asmified.java[Asmified]
-
-== References
-

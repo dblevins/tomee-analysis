@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/JWTLogCategories.class
-
- - link:JWTLogCategories-asmified.java[Asmified]
-
-== References
-

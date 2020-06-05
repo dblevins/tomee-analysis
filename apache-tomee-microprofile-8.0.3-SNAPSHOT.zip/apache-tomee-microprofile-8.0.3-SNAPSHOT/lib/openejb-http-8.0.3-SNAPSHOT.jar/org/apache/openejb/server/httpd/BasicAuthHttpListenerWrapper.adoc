@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/BasicAuthHttpListenerWrapper.class
-
- - link:BasicAuthHttpListenerWrapper-asmified.java[Asmified]
-
-== References
-

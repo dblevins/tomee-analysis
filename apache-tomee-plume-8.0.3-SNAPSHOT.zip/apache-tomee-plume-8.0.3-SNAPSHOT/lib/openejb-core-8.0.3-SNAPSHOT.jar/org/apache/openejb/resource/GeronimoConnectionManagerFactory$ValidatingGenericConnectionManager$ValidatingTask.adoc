@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager$ValidatingTask.class
-
- - link:GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager$ValidatingTask-asmified.java[Asmified]
-
-== References
-

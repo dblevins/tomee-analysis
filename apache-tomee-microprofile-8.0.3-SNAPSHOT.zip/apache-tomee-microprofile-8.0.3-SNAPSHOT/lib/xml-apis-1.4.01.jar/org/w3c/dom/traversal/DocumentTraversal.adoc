@@ -1,6 +1,0 @@
-= org/w3c/dom/traversal/DocumentTraversal.class
-
- - link:DocumentTraversal-asmified.java[Asmified]
-
-== References
-

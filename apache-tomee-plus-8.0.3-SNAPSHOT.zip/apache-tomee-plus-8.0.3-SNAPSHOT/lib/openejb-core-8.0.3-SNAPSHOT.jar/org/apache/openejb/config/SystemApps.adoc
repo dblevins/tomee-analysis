@@ -1,6 +1,0 @@
-= org/apache/openejb/config/SystemApps.class
-
- - link:SystemApps-asmified.java[Asmified]
-
-== References
-

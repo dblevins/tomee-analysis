@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sequencing/TableSequence.class
-
- - link:TableSequence-asmified.java[Asmified]
-
-== References
-

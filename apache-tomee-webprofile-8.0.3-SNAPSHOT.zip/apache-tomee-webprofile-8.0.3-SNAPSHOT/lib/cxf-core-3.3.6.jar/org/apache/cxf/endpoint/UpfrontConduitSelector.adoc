@@ -1,6 +1,0 @@
-= org/apache/cxf/endpoint/UpfrontConduitSelector.class
-
- - link:UpfrontConduitSelector-asmified.java[Asmified]
-
-== References
-

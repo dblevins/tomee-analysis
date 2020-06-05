@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/oracle/Oracle9Platform$NTypeBindCallCustomParameter.class
-
- - link:Oracle9Platform$NTypeBindCallCustomParameter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/filter/impl/PredicateFilter$Direction.class
-
- - link:PredicateFilter$Direction-asmified.java[Asmified]
-
-== References
-

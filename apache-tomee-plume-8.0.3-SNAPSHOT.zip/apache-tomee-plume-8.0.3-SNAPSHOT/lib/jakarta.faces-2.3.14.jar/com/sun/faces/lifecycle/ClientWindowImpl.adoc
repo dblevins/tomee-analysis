@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/ClientWindowImpl.class
-
- - link:ClientWindowImpl-asmified.java[Asmified]
-
-== References
-

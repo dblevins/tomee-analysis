@@ -1,6 +1,0 @@
-= com/sun/xml/txw2/output/SaxSerializer.class
-
- - link:SaxSerializer-asmified.java[Asmified]
-
-== References
-

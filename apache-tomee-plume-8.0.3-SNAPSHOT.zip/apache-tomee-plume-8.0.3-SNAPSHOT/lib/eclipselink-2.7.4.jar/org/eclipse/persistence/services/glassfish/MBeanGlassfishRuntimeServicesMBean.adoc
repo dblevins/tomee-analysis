@@ -1,6 +1,0 @@
-= org/eclipse/persistence/services/glassfish/MBeanGlassfishRuntimeServicesMBean.class
-
- - link:MBeanGlassfishRuntimeServicesMBean-asmified.java[Asmified]
-
-== References
-

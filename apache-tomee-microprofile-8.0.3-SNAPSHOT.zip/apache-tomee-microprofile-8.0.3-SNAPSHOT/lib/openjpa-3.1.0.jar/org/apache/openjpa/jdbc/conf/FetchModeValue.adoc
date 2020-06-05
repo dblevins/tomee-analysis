@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/conf/FetchModeValue.class
-
- - link:FetchModeValue-asmified.java[Asmified]
-
-== References
-

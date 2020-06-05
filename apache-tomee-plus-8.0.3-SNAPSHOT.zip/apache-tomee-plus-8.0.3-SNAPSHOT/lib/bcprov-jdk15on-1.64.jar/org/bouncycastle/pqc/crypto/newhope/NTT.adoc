@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/crypto/newhope/NTT.class
-
- - link:NTT-asmified.java[Asmified]
-
-== References
-

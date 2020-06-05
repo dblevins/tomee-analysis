@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/threadpool/ThreadPoolManager$1.class
-
- - link:ThreadPoolManager$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/GeneralCaseExpression.class
-
- - link:GeneralCaseExpression-asmified.java[Asmified]
-
-== References
-

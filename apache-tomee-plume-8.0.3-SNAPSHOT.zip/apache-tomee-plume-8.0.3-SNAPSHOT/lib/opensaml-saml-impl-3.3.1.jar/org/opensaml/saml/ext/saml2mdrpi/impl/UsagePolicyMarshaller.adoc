@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdrpi/impl/UsagePolicyMarshaller.class
-
- - link:UsagePolicyMarshaller-asmified.java[Asmified]
-
-== References
-

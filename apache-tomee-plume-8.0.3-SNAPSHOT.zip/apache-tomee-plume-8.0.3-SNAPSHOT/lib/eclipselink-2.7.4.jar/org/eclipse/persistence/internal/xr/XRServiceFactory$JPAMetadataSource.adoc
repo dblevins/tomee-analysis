@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRServiceFactory$JPAMetadataSource.class
-
- - link:XRServiceFactory$JPAMetadataSource-asmified.java[Asmified]
-
-== References
-

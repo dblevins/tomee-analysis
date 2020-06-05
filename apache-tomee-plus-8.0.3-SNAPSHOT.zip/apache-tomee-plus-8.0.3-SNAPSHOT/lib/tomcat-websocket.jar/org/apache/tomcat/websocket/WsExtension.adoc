@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsExtension.class
-
- - link:WsExtension-asmified.java[Asmified]
-
-== References
-

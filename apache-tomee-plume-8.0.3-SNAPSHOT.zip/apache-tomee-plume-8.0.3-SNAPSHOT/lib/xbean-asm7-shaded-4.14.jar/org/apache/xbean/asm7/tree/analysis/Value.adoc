@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/analysis/Value.class
-
- - link:Value-asmified.java[Asmified]
-
-== References
-

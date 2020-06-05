@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/CrawlerSessionManagerValve.class
-
- - link:CrawlerSessionManagerValve-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/MultiANewArrayInsnNode.class
-
- - link:MultiANewArrayInsnNode-asmified.java[Asmified]
-
-== References
-

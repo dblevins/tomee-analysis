@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaChoice.class
-
- - link:XmlSchemaChoice-asmified.java[Asmified]
-
-== References
-

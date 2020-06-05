@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bag/TypedBag.class
-
- - link:TypedBag-asmified.java[Asmified]
-
-== References
-

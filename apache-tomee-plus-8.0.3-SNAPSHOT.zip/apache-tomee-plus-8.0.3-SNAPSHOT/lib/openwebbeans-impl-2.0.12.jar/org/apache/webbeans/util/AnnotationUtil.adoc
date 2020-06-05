@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/AnnotationUtil.class
-
- - link:AnnotationUtil-asmified.java[Asmified]
-
-== References
-

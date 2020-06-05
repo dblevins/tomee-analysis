@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/Context.class
-
- - link:Context-asmified.java[Asmified]
-
-== References
-

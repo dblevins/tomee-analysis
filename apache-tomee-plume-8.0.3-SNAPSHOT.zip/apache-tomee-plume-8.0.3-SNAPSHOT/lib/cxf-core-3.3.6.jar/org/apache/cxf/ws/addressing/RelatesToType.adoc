@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/RelatesToType.class
-
- - link:RelatesToType-asmified.java[Asmified]
-
-== References
-

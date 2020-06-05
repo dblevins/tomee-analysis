@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/DetachStateType.class
-
- - link:DetachStateType-asmified.java[Asmified]
-
-== References
-

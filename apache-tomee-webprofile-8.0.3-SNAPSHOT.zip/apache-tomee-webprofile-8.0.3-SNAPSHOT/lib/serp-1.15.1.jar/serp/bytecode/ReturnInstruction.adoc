@@ -1,6 +1,0 @@
-= serp/bytecode/ReturnInstruction.class
-
- - link:ReturnInstruction-asmified.java[Asmified]
-
-== References
-

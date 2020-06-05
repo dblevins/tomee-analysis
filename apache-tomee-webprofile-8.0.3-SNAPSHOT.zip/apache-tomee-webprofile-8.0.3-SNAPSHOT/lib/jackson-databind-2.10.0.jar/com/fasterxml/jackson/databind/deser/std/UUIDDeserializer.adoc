@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/UUIDDeserializer.class
-
- - link:UUIDDeserializer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalConnectByClauseBNF.class
-
- - link:InternalConnectByClauseBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/remote/ObjectDescriptor.class
-
- - link:ObjectDescriptor-asmified.java[Asmified]
-
-== References
-

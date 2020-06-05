@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/Oracle8Platform.class
-
- - link:Oracle8Platform-asmified.java[Asmified]
-
-== References
-

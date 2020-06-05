@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ExceptionType.class
-
- - link:ExceptionType-asmified.java[Asmified]
-
-== References
-

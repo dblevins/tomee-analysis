@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/InvalidDigestValueException.class
-
- - link:InvalidDigestValueException-asmified.java[Asmified]
-
-== References
-

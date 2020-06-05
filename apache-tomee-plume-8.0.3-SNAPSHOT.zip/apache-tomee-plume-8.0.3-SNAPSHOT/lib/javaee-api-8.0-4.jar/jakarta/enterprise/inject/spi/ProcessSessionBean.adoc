@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/ProcessSessionBean.class
-
- - link:ProcessSessionBean-asmified.java[Asmified]
-
-== References
-

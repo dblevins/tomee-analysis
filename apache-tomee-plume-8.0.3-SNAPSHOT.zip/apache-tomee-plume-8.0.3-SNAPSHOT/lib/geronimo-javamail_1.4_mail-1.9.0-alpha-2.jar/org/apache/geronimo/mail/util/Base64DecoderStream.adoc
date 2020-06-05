@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/util/Base64DecoderStream.class
-
- - link:Base64DecoderStream-asmified.java[Asmified]
-
-== References
-

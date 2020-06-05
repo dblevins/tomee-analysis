@@ -1,6 +1,0 @@
-= com/sun/faces/context/RequestHeaderValuesMap.class
-
- - link:RequestHeaderValuesMap-asmified.java[Asmified]
-
-== References
-

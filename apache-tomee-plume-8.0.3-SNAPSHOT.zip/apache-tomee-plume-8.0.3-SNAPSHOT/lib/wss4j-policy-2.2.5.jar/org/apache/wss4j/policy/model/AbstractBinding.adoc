@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/AbstractBinding.class
-
- - link:AbstractBinding-asmified.java[Asmified]
-
-== References
-

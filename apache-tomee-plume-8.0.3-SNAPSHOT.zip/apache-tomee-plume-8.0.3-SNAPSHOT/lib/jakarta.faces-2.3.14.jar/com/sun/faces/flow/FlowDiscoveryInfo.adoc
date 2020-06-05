@@ -1,6 +1,0 @@
-= com/sun/faces/flow/FlowDiscoveryInfo.class
-
- - link:FlowDiscoveryInfo-asmified.java[Asmified]
-
-== References
-

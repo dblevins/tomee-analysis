@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/jaxrs/JacksonOpenAPIYamlBodyWriter$Mapper.class
-
- - link:JacksonOpenAPIYamlBodyWriter$Mapper-asmified.java[Asmified]
-
-== References
-

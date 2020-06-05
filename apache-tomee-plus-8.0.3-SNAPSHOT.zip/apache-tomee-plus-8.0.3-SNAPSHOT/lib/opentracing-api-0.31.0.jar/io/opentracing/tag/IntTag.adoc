@@ -1,6 +1,0 @@
-= io/opentracing/tag/IntTag.class
-
- - link:IntTag-asmified.java[Asmified]
-
-== References
-

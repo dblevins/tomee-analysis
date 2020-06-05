@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/impl/TypeInfoSetImpl.class
-
- - link:TypeInfoSetImpl-asmified.java[Asmified]
-
-== References
-

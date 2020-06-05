@@ -1,6 +1,0 @@
-= org/apache/activemq/util/DataByteArrayOutputStream.class
-
- - link:DataByteArrayOutputStream-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/operation/IssueSingleOperation.class
-
- - link:IssueSingleOperation-asmified.java[Asmified]
-
-== References
-

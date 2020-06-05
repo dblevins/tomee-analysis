@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBContextProxy.class
-
- - link:JAXBContextProxy-asmified.java[Asmified]
-
-== References
-

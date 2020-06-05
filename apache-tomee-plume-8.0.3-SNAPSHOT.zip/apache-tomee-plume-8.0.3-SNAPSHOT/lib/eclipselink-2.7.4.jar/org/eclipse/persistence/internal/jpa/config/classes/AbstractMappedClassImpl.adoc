@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/classes/AbstractMappedClassImpl.class
-
- - link:AbstractMappedClassImpl-asmified.java[Asmified]
-
-== References
-

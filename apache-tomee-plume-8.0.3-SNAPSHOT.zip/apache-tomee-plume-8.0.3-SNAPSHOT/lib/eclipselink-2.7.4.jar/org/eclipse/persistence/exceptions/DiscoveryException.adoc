@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/DiscoveryException.class
-
- - link:DiscoveryException-asmified.java[Asmified]
-
-== References
-

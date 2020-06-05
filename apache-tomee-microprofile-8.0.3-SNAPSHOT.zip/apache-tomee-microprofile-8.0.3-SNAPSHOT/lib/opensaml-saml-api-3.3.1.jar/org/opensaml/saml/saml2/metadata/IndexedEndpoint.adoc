@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/IndexedEndpoint.class
-
- - link:IndexedEndpoint-asmified.java[Asmified]
-
-== References
-

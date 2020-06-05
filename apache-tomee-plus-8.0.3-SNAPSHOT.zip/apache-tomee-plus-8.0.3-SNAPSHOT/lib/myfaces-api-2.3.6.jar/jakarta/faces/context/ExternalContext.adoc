@@ -1,6 +1,0 @@
-= jakarta/faces/context/ExternalContext.class
-
- - link:ExternalContext-asmified.java[Asmified]
-
-== References
-

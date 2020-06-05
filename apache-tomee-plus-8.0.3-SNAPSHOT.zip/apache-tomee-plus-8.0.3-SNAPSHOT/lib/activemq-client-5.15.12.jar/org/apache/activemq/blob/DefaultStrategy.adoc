@@ -1,6 +1,0 @@
-= org/apache/activemq/blob/DefaultStrategy.class
-
- - link:DefaultStrategy-asmified.java[Asmified]
-
-== References
-

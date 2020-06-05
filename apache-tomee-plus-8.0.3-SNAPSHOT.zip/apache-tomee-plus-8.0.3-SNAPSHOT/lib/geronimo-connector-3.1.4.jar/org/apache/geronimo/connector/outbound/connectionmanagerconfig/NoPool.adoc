@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectionmanagerconfig/NoPool.class
-
- - link:NoPool-asmified.java[Asmified]
-
-== References
-

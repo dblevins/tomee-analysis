@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/TransportFactory.class
-
- - link:TransportFactory-asmified.java[Asmified]
-
-== References
-

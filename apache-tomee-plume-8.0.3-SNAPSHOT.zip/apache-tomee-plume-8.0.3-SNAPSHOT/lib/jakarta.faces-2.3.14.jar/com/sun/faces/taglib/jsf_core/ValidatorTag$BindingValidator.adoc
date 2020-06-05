@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/ValidatorTag$BindingValidator.class
-
- - link:ValidatorTag$BindingValidator-asmified.java[Asmified]
-
-== References
-

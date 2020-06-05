@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/util/HttpPartWrapper.class
-
- - link:HttpPartWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/xml/bind/annotation/XmlAttachmentRef.class
-
- - link:XmlAttachmentRef-asmified.java[Asmified]
-
-== References
-

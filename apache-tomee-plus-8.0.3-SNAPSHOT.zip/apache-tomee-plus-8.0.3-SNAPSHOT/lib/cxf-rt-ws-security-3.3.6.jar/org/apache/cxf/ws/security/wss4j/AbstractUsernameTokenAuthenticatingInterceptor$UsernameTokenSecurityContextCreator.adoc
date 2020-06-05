@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor$UsernameTokenSecurityContextCreator.class
-
- - link:AbstractUsernameTokenAuthenticatingInterceptor$UsernameTokenSecurityContextCreator-asmified.java[Asmified]
-
-== References
-

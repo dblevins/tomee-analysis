@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ManagedBeanImpl.class
-
- - link:ManagedBeanImpl-asmified.java[Asmified]
-
-== References
-

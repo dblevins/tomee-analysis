@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/MessageID.class
-
- - link:MessageID-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/node/BinaryNode.class
-
- - link:BinaryNode-asmified.java[Asmified]
-
-== References
-

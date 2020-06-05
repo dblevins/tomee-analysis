@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/RoundDispatcher.class
-
- - link:RoundDispatcher-asmified.java[Asmified]
-
-== References
-

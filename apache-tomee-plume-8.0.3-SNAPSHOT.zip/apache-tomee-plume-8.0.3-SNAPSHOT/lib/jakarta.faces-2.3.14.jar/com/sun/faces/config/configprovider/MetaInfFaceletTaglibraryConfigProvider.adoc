@@ -1,6 +1,0 @@
-= com/sun/faces/config/configprovider/MetaInfFaceletTaglibraryConfigProvider.class
-
- - link:MetaInfFaceletTaglibraryConfigProvider-asmified.java[Asmified]
-
-== References
-

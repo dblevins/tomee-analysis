@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/PlsqlTable.class
-
- - link:PlsqlTable-asmified.java[Asmified]
-
-== References
-

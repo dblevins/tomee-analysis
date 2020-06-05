@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/AbstractRemoteCacheNoWaitFacade.class
-
- - link:AbstractRemoteCacheNoWaitFacade-asmified.java[Asmified]
-
-== References
-

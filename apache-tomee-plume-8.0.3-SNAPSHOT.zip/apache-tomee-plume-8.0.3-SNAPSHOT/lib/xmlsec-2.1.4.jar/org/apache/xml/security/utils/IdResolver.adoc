@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/IdResolver.class
-
- - link:IdResolver-asmified.java[Asmified]
-
-== References
-

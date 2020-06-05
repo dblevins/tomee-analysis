@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlVariableNode$DEFAULT.class
-
- - link:XmlVariableNode$DEFAULT-asmified.java[Asmified]
-
-== References
-

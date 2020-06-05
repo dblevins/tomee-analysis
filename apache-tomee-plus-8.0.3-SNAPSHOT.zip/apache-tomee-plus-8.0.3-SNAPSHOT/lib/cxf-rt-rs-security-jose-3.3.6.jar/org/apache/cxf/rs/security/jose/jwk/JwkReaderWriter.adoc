@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwk/JwkReaderWriter.class
-
- - link:JwkReaderWriter-asmified.java[Asmified]
-
-== References
-

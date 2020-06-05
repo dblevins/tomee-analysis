@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/SPKIData.class
-
- - link:SPKIData-asmified.java[Asmified]
-
-== References
-

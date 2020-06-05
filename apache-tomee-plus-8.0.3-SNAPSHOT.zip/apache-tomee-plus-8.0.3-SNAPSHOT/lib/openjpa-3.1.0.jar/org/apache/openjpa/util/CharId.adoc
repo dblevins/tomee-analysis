@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/CharId.class
-
- - link:CharId-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/ReadableDateTime.class
-
- - link:ReadableDateTime-asmified.java[Asmified]
-
-== References
-

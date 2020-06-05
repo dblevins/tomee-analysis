@@ -1,6 +1,0 @@
-= com/sun/faces/context/StateContext.class
-
- - link:StateContext-asmified.java[Asmified]
-
-== References
-

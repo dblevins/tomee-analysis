@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/BuiltInEncodingAlgorithm.class
-
- - link:BuiltInEncodingAlgorithm-asmified.java[Asmified]
-
-== References
-

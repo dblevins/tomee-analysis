@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PessimisticLockException.class
-
- - link:PessimisticLockException-asmified.java[Asmified]
-
-== References
-

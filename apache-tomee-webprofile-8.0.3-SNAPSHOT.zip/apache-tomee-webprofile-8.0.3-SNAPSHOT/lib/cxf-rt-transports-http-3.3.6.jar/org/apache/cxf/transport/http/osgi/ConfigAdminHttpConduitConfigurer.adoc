@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/osgi/ConfigAdminHttpConduitConfigurer.class
-
- - link:ConfigAdminHttpConduitConfigurer-asmified.java[Asmified]
-
-== References
-

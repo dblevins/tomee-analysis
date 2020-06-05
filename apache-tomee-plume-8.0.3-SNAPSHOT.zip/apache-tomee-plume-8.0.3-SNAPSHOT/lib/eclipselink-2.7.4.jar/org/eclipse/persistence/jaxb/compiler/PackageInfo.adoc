@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/PackageInfo.class
-
- - link:PackageInfo-asmified.java[Asmified]
-
-== References
-

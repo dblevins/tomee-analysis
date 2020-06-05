@@ -1,6 +1,0 @@
-= org/jasypt/util/binary/BasicBinaryEncryptor.class
-
- - link:BasicBinaryEncryptor-asmified.java[Asmified]
-
-== References
-

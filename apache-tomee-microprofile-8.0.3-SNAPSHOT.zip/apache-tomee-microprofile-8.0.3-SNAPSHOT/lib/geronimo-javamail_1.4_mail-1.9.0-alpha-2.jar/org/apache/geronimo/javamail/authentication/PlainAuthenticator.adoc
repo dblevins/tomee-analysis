@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/authentication/PlainAuthenticator.class
-
- - link:PlainAuthenticator-asmified.java[Asmified]
-
-== References
-

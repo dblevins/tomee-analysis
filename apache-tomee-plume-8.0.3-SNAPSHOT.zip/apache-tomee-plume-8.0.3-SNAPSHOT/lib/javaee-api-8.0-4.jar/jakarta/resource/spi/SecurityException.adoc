@@ -1,6 +1,0 @@
-= jakarta/resource/spi/SecurityException.class
-
- - link:SecurityException-asmified.java[Asmified]
-
-== References
-

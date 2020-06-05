@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InternalLowerExpressionBNF.class
-
- - link:InternalLowerExpressionBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/LazyMap.class
-
- - link:LazyMap-asmified.java[Asmified]
-
-== References
-

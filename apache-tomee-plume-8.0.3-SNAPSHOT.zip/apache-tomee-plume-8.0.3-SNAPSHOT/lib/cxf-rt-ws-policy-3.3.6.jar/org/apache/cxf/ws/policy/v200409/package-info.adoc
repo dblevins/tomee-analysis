@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/v200409/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

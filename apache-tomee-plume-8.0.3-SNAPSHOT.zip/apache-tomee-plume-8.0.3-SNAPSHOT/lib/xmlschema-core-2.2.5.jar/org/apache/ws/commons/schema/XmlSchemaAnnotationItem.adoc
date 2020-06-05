@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaAnnotationItem.class
-
- - link:XmlSchemaAnnotationItem-asmified.java[Asmified]
-
-== References
-

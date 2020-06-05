@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/analysis/SourceValue.class
-
- - link:SourceValue-asmified.java[Asmified]
-
-== References
-

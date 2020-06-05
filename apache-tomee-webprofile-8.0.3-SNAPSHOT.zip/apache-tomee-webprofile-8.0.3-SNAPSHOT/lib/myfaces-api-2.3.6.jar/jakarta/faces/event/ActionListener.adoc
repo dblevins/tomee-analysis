@@ -1,6 +1,0 @@
-= jakarta/faces/event/ActionListener.class
-
- - link:ActionListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/security/jacc/WebRoleRefPermission.class
-
- - link:WebRoleRefPermission-asmified.java[Asmified]
-
-== References
-

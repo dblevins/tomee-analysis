@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/CallQueryMechanism.class
-
- - link:CallQueryMechanism-asmified.java[Asmified]
-
-== References
-

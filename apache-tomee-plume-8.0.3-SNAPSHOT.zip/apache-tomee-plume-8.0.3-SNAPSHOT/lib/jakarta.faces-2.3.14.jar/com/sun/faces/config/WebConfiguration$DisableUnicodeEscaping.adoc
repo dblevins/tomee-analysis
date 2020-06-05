@@ -1,6 +1,0 @@
-= com/sun/faces/config/WebConfiguration$DisableUnicodeEscaping.class
-
- - link:WebConfiguration$DisableUnicodeEscaping-asmified.java[Asmified]
-
-== References
-

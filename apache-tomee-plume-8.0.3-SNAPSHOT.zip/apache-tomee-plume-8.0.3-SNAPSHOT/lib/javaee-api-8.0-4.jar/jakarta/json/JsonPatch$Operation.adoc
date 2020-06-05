@@ -1,6 +1,0 @@
-= jakarta/json/JsonPatch$Operation.class
-
- - link:JsonPatch$Operation-asmified.java[Asmified]
-
-== References
-

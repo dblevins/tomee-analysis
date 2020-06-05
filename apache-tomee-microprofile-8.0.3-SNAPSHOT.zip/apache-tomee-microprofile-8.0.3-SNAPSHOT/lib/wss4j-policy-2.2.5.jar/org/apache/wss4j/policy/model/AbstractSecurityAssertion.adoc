@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/AbstractSecurityAssertion.class
-
- - link:AbstractSecurityAssertion-asmified.java[Asmified]
-
-== References
-

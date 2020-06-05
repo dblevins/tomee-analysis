@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/AnnotationProxy.class
-
- - link:AnnotationProxy-asmified.java[Asmified]
-
-== References
-

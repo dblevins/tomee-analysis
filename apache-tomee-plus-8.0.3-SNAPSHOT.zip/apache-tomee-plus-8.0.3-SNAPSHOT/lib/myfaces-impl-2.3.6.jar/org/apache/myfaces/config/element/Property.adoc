@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/Property.class
-
- - link:Property-asmified.java[Asmified]
-
-== References
-

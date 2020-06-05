@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/util/SingleLinkedList$Entries.class
-
- - link:SingleLinkedList$Entries-asmified.java[Asmified]
-
-== References
-

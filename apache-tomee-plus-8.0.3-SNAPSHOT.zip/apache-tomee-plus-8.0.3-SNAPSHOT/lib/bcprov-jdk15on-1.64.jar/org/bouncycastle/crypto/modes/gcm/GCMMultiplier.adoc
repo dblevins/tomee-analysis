@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/modes/gcm/GCMMultiplier.class
-
- - link:GCMMultiplier-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeVisitor.class
-
- - link:TreeVisitor-asmified.java[Asmified]
-
-== References
-

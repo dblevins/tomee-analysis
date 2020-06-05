@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/platform/database/oracle/TIMESTAMPTZWrapper.class
-
- - link:TIMESTAMPTZWrapper-asmified.java[Asmified]
-
-== References
-

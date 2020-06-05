@@ -1,6 +1,0 @@
-= org/apache/juli/ClassLoaderLogManager$1.class
-
- - link:ClassLoaderLogManager$1-asmified.java[Asmified]
-
-== References
-

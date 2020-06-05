@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/FxExtractor$Activation.class
-
- - link:FxExtractor$Activation-asmified.java[Asmified]
-
-== References
-

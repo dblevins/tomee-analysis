@@ -1,6 +1,0 @@
-= org/hsqldb/lib/Storage.class
-
- - link:Storage-asmified.java[Asmified]
-
-== References
-

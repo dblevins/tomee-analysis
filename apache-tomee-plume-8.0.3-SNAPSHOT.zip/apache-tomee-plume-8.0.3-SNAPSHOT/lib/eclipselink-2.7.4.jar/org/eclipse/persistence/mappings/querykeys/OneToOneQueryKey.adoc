@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/querykeys/OneToOneQueryKey.class
-
- - link:OneToOneQueryKey-asmified.java[Asmified]
-
-== References
-

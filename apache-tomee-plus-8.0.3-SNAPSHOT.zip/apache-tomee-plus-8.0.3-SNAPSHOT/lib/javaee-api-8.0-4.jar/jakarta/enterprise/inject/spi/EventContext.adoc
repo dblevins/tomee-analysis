@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/EventContext.class
-
- - link:EventContext-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/ws/rs/core/FeatureContext.class
-
- - link:FeatureContext-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.FeatureContext - 1
- - javax.ws.rs.core.Configurable - 1

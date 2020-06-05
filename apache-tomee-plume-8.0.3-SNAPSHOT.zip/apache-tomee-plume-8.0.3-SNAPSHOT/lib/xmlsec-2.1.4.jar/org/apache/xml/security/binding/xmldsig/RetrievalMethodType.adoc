@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/RetrievalMethodType.class
-
- - link:RetrievalMethodType-asmified.java[Asmified]
-
-== References
-

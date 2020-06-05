@@ -1,6 +1,0 @@
-= org/apache/cxf/helpers/XPathUtils$1.class
-
- - link:XPathUtils$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/reject/CURejectHandler.class
-
- - link:CURejectHandler-asmified.java[Asmified]
-
-== References
-

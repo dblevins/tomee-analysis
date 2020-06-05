@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckAssemblyBindings.class
-
- - link:CheckAssemblyBindings-asmified.java[Asmified]
-
-== References
-

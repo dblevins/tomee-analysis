@@ -1,6 +1,0 @@
-= commonj/sdo/helper/XSDHelper.class
-
- - link:XSDHelper-asmified.java[Asmified]
-
-== References
-

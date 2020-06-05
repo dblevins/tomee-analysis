@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/IdempotentMethods.class
-
- - link:IdempotentMethods-asmified.java[Asmified]
-
-== References
-

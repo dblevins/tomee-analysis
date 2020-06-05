@@ -1,6 +1,0 @@
-= org/eclipse/persistence/config/CacheIsolationType.class
-
- - link:CacheIsolationType-asmified.java[Asmified]
-
-== References
-

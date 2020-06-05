@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/input/SignatureConfirmationInputHandler.class
-
- - link:SignatureConfirmationInputHandler-asmified.java[Asmified]
-
-== References
-

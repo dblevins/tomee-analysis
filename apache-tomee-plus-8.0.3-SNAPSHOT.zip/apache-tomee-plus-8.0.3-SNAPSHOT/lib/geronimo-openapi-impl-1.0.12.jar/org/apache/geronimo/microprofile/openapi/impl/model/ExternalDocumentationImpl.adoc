@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/ExternalDocumentationImpl.class
-
- - link:ExternalDocumentationImpl-asmified.java[Asmified]
-
-== References
-

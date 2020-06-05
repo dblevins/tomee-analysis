@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/common/gzip/GZIPOutInterceptor.class
-
- - link:GZIPOutInterceptor-asmified.java[Asmified]
-
-== References
-

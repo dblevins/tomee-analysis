@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonReaderImpl.class
-
- - link:JsonReaderImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v12/ConsumerIdMarshaller.class
-
- - link:ConsumerIdMarshaller-asmified.java[Asmified]
-
-== References
-

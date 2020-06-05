@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/Comment.class
-
- - link:Comment-asmified.java[Asmified]
-
-== References
-

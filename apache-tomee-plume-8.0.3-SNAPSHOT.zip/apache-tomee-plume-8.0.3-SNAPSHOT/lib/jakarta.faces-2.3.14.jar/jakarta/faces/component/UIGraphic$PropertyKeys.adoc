@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIGraphic$PropertyKeys.class
-
- - link:UIGraphic$PropertyKeys-asmified.java[Asmified]
-
-== References
-

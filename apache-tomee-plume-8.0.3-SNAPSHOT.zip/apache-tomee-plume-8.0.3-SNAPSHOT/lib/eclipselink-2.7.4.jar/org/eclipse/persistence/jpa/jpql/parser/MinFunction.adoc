@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/MinFunction.class
-
- - link:MinFunction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/MethodTooLargeException.class
-
- - link:MethodTooLargeException-asmified.java[Asmified]
-
-== References
-

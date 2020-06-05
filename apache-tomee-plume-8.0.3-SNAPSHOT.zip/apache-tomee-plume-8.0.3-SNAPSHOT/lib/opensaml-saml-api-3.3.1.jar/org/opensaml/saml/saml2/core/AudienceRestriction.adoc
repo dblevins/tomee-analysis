@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/AudienceRestriction.class
-
- - link:AudienceRestriction-asmified.java[Asmified]
-
-== References
-

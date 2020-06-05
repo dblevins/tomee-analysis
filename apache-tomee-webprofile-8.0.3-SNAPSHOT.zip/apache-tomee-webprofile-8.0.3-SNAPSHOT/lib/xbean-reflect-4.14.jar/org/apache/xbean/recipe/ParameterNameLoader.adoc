@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ParameterNameLoader.class
-
- - link:ParameterNameLoader-asmified.java[Asmified]
-
-== References
-

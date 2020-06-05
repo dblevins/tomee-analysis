@@ -1,6 +1,0 @@
-= jakarta/el/LambdaExpression.class
-
- - link:LambdaExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/HsqlDateTime.class
-
- - link:HsqlDateTime-asmified.java[Asmified]
-
-== References
-

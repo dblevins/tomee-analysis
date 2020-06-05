@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/impl/DefaultFacesFlowProvider.class
-
- - link:DefaultFacesFlowProvider-asmified.java[Asmified]
-
-== References
-

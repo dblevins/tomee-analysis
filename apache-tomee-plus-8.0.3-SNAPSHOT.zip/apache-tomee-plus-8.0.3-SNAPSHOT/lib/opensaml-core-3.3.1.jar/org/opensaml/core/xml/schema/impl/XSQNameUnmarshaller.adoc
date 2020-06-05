@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSQNameUnmarshaller.class
-
- - link:XSQNameUnmarshaller-asmified.java[Asmified]
-
-== References
-

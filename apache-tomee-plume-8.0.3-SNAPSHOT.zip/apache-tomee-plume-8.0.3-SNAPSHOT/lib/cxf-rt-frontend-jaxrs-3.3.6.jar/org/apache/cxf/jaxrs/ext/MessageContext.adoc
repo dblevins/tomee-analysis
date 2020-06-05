@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/MessageContext.class
-
- - link:MessageContext-asmified.java[Asmified]
-
-== References
-

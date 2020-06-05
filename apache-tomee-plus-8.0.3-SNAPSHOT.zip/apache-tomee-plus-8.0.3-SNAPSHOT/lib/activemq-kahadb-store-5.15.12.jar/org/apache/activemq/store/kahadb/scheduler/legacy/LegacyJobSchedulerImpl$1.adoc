@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/scheduler/legacy/LegacyJobSchedulerImpl$1.class
-
- - link:LegacyJobSchedulerImpl$1-asmified.java[Asmified]
-
-== References
-

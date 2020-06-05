@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/config/XIncludeHandler$1.class
-
- - link:XIncludeHandler$1-asmified.java[Asmified]
-
-== References
-

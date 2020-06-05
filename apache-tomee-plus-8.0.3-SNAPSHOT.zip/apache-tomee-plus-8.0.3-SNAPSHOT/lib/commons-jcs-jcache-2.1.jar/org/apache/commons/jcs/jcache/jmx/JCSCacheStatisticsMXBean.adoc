@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/jmx/JCSCacheStatisticsMXBean.class
-
- - link:JCSCacheStatisticsMXBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlSelectManyCheckbox$PropertyKeys.class
-
- - link:HtmlSelectManyCheckbox$PropertyKeys-asmified.java[Asmified]
-
-== References
-

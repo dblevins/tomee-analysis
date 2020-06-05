@@ -1,6 +1,0 @@
-= jakarta/inject/Inject.class
-
- - link:Inject-asmified.java[Asmified]
-
-== References
-

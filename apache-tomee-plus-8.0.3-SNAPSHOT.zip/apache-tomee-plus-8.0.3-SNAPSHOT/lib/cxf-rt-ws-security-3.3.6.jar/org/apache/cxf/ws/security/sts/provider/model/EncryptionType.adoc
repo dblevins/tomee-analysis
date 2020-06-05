@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/EncryptionType.class
-
- - link:EncryptionType-asmified.java[Asmified]
-
-== References
-

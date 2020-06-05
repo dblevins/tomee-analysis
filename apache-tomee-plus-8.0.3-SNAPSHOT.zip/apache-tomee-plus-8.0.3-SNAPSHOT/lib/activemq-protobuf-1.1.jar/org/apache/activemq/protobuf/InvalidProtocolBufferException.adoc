@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/InvalidProtocolBufferException.class
-
- - link:InvalidProtocolBufferException-asmified.java[Asmified]
-
-== References
-

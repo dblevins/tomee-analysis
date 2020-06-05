@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ProviderFactory$MessageBodyWriterComparator.class
-
- - link:ProviderFactory$MessageBodyWriterComparator-asmified.java[Asmified]
-
-== References
-

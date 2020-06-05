@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/Files$PatternFileFilter.class
-
- - link:Files$PatternFileFilter-asmified.java[Asmified]
-
-== References
-

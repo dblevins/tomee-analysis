@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate.class
-
- - link:TriggerPersistenceDelegate-asmified.java[Asmified]
-
-== References
-

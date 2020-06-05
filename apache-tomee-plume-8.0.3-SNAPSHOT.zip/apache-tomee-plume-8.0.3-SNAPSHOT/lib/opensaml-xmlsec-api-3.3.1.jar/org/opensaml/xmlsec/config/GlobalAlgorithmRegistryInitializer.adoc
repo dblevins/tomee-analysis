@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/config/GlobalAlgorithmRegistryInitializer.class
-
- - link:GlobalAlgorithmRegistryInitializer-asmified.java[Asmified]
-
-== References
-

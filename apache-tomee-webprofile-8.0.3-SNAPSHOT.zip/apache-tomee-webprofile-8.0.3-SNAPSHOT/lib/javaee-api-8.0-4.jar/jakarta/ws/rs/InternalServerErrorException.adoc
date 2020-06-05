@@ -1,6 +1,0 @@
-= jakarta/ws/rs/InternalServerErrorException.class
-
- - link:InternalServerErrorException-asmified.java[Asmified]
-
-== References
-

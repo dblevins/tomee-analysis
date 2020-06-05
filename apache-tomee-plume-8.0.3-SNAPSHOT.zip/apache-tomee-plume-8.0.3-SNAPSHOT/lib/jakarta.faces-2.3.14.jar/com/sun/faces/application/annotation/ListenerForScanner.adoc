@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/ListenerForScanner.class
-
- - link:ListenerForScanner-asmified.java[Asmified]
-
-== References
-

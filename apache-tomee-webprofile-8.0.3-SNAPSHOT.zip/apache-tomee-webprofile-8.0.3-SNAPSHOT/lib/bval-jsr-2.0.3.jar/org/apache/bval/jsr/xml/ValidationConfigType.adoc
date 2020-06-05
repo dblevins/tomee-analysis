@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/ValidationConfigType.class
-
- - link:ValidationConfigType-asmified.java[Asmified]
-
-== References
-

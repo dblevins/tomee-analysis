@@ -1,6 +1,0 @@
-= org/hsqldb/lib/LongDeque.class
-
- - link:LongDeque-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/ManagedTransactionContext.class
-
- - link:ManagedTransactionContext-asmified.java[Asmified]
-
-== References
-

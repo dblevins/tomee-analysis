@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/DatabaseRecord.class
-
- - link:DatabaseRecord-asmified.java[Asmified]
-
-== References
-

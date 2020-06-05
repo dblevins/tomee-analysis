@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/DefaultFacesConfigurationProvider.class
-
- - link:DefaultFacesConfigurationProvider-asmified.java[Asmified]
-
-== References
-

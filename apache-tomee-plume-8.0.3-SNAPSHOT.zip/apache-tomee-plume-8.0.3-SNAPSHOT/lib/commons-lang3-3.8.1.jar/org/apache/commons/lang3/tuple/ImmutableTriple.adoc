@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/tuple/ImmutableTriple.class
-
- - link:ImmutableTriple-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/ManagedPropertyLiteral.class
-
- - link:ManagedPropertyLiteral-asmified.java[Asmified]
-
-== References
-

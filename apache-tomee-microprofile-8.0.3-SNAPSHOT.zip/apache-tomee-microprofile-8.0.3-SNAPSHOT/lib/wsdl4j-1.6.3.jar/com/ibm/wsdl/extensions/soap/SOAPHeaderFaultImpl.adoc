@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/soap/SOAPHeaderFaultImpl.class
-
- - link:SOAPHeaderFaultImpl-asmified.java[Asmified]
-
-== References
-

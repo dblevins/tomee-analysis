@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/pop3/connection/POP3Connection.class
-
- - link:POP3Connection-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/gm/GMNamedCurves.class
-
- - link:GMNamedCurves-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/util/UsernameTokenUtil.class
-
- - link:UsernameTokenUtil-asmified.java[Asmified]
-
-== References
-

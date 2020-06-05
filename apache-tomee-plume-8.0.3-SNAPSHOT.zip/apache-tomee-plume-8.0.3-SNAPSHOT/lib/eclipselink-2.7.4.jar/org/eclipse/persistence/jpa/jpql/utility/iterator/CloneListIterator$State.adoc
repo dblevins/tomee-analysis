@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/utility/iterator/CloneListIterator$State.class
-
- - link:CloneListIterator$State-asmified.java[Asmified]
-
-== References
-

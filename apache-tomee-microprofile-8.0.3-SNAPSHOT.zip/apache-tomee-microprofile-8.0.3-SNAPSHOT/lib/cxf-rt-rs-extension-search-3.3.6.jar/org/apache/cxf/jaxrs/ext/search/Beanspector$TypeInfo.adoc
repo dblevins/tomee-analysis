@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/Beanspector$TypeInfo.class
-
- - link:Beanspector$TypeInfo-asmified.java[Asmified]
-
-== References
-

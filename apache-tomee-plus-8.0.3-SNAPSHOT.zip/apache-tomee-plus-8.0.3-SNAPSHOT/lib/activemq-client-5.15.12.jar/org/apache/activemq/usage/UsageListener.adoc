@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/UsageListener.class
-
- - link:UsageListener-asmified.java[Asmified]
-
-== References
-

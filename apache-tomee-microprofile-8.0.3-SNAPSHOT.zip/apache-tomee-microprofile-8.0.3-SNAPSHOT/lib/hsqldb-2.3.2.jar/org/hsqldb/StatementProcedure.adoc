@@ -1,6 +1,0 @@
-= org/hsqldb/StatementProcedure.class
-
- - link:StatementProcedure-asmified.java[Asmified]
-
-== References
-

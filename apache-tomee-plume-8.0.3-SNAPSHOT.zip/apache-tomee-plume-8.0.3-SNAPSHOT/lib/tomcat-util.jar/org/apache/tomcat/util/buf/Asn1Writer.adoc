@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/Asn1Writer.class
-
- - link:Asn1Writer-asmified.java[Asmified]
-
-== References
-

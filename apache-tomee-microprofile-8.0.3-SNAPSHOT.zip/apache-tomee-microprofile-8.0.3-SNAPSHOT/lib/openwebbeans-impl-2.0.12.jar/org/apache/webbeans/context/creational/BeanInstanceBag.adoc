@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/creational/BeanInstanceBag.class
-
- - link:BeanInstanceBag-asmified.java[Asmified]
-
-== References
-

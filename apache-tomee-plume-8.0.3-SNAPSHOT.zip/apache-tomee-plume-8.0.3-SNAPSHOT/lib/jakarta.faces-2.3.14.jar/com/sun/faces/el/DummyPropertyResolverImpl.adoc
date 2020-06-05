@@ -1,6 +1,0 @@
-= com/sun/faces/el/DummyPropertyResolverImpl.class
-
- - link:DummyPropertyResolverImpl-asmified.java[Asmified]
-
-== References
-

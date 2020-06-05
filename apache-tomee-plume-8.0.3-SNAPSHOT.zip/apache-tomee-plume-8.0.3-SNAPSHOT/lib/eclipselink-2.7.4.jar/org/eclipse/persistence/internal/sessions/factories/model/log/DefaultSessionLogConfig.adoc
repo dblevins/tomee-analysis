@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/log/DefaultSessionLogConfig.class
-
- - link:DefaultSessionLogConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/codehaus/stax2/io/Stax2ByteArraySource.class
-
- - link:Stax2ByteArraySource-asmified.java[Asmified]
-
-== References
-

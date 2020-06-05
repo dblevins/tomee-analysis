@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQQueueSender.class
-
- - link:ActiveMQQueueSender-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/AuxiliaryCacheConfigurator.class
-
- - link:AuxiliaryCacheConfigurator-asmified.java[Asmified]
-
-== References
-

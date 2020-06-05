@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/lifecycle/SingletonResourceProvider.class
-
- - link:SingletonResourceProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/management/jmx/export/runtime/ModelMBeanInfoSupporter.class
-
- - link:ModelMBeanInfoSupporter-asmified.java[Asmified]
-
-== References
-

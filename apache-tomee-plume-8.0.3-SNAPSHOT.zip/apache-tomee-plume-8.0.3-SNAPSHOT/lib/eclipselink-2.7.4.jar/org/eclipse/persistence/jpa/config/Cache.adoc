@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Cache.class
-
- - link:Cache-asmified.java[Asmified]
-
-== References
-

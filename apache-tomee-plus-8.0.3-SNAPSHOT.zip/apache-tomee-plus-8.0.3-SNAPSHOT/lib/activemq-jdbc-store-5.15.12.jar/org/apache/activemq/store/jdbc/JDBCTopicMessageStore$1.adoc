@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JDBCTopicMessageStore$1.class
-
- - link:JDBCTopicMessageStore$1-asmified.java[Asmified]
-
-== References
-

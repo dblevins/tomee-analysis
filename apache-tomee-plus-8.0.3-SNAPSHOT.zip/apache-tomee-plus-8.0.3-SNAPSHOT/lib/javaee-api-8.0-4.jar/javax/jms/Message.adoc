@@ -1,8 +1,0 @@
-= javax/jms/Message.class
-
- - link:Message-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSException - 49
- - javax.jms.Destination - 4

@@ -1,9 +1,0 @@
-= javax/faces/context/FlashFactory.class
-
- - link:FlashFactory-asmified.java[Asmified]
-
-== References
-
- - javax.faces.context.FlashFactory - 8
- - javax.faces.context.Flash - 1
- - javax.faces.FacesWrapper - 1

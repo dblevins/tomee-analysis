@@ -1,6 +1,0 @@
-= org/apache/openejb/testing/SimpleLog.class
-
- - link:SimpleLog-asmified.java[Asmified]
-
-== References
-

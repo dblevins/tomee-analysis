@@ -1,6 +1,0 @@
-= org/apache/activemq/store/memory/MemoryTransactionStore$4.class
-
- - link:MemoryTransactionStore$4-asmified.java[Asmified]
-
-== References
-

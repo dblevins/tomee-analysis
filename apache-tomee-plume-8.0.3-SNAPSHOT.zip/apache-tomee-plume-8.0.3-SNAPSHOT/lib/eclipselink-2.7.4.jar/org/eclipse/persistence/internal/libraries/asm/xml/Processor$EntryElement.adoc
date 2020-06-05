@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/Processor$EntryElement.class
-
- - link:Processor$EntryElement-asmified.java[Asmified]
-
-== References
-

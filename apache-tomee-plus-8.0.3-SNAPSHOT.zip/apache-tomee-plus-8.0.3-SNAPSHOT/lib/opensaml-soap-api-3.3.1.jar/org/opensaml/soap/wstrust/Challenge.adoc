@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/Challenge.class
-
- - link:Challenge-asmified.java[Asmified]
-
-== References
-

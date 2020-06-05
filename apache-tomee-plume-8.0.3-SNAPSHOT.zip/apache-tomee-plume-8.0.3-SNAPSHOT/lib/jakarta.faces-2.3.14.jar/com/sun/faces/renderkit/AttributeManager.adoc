@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/AttributeManager.class
-
- - link:AttributeManager-asmified.java[Asmified]
-
-== References
-

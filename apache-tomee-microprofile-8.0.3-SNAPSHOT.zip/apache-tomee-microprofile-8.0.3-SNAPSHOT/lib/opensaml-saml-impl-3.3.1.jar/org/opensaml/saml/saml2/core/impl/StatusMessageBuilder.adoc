@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/StatusMessageBuilder.class
-
- - link:StatusMessageBuilder-asmified.java[Asmified]
-
-== References
-

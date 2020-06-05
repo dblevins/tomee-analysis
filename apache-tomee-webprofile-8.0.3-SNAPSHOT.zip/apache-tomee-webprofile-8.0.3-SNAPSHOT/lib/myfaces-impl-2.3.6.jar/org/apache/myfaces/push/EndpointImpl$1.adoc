@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/EndpointImpl$1.class
-
- - link:EndpointImpl$1-asmified.java[Asmified]
-
-== References
-

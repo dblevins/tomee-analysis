@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/UnitOfWorkImpl$4.class
-
- - link:UnitOfWorkImpl$4-asmified.java[Asmified]
-
-== References
-

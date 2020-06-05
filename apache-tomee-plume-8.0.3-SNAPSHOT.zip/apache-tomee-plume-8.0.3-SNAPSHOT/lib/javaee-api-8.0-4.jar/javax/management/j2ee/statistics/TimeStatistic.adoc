@@ -1,7 +1,0 @@
-= javax/management/j2ee/statistics/TimeStatistic.class
-
- - link:TimeStatistic-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.Statistic - 1

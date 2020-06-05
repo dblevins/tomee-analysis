@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/WebappBeanManager$1.class
-
- - link:WebappBeanManager$1-asmified.java[Asmified]
-
-== References
-

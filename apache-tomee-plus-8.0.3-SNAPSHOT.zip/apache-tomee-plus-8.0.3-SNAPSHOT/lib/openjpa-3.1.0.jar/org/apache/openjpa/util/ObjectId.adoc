@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ObjectId.class
-
- - link:ObjectId-asmified.java[Asmified]
-
-== References
-

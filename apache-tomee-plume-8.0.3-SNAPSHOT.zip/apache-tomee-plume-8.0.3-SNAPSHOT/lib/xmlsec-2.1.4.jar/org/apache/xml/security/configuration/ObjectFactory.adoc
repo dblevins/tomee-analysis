@@ -1,6 +1,0 @@
-= org/apache/xml/security/configuration/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

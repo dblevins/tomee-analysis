@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/TypeBinding$1.class
-
- - link:TypeBinding$1-asmified.java[Asmified]
-
-== References
-

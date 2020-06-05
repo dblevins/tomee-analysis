@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/FaceletFullStateManagementStrategy$1.class
-
- - link:FaceletFullStateManagementStrategy$1-asmified.java[Asmified]
-
-== References
-

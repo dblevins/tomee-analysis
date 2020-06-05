@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/EndpointReference.class
-
- - link:EndpointReference-asmified.java[Asmified]
-
-== References
-

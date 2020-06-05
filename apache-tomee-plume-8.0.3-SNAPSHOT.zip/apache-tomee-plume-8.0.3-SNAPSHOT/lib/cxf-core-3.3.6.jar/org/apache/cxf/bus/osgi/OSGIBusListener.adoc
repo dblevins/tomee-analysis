@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/osgi/OSGIBusListener.class
-
- - link:OSGIBusListener-asmified.java[Asmified]
-
-== References
-

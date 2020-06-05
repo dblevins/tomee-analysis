@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart.class
-
- - link:MimeBodyPart-asmified.java[Asmified]
-
-== References
-

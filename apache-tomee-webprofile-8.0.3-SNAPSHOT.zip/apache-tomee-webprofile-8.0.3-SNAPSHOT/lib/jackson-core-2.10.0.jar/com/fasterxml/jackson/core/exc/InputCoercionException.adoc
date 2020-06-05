@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/exc/InputCoercionException.class
-
- - link:InputCoercionException-asmified.java[Asmified]
-
-== References
-

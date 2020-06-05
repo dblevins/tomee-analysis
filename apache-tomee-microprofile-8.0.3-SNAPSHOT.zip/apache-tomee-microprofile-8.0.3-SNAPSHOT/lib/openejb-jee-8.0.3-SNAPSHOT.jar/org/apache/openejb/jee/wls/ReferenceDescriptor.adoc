@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/ReferenceDescriptor.class
-
- - link:ReferenceDescriptor-asmified.java[Asmified]
-
-== References
-

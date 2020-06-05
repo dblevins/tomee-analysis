@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/PastOrPresentValidator$ForMonthDay.class
-
- - link:PastOrPresentValidator$ForMonthDay-asmified.java[Asmified]
-
-== References
-

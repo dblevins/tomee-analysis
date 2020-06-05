@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/AbstractCachingMessageProvider.class
-
- - link:AbstractCachingMessageProvider-asmified.java[Asmified]
-
-== References
-

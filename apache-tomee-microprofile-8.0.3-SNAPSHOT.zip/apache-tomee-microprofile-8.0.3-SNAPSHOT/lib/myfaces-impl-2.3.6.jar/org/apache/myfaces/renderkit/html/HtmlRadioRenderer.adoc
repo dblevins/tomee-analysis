@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlRadioRenderer.class
-
- - link:HtmlRadioRenderer-asmified.java[Asmified]
-
-== References
-

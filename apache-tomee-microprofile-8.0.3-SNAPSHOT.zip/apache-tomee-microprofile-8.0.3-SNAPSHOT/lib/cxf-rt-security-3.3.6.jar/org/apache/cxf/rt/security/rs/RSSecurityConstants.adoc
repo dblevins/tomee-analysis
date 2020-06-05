@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/rs/RSSecurityConstants.class
-
- - link:RSSecurityConstants-asmified.java[Asmified]
-
-== References
-

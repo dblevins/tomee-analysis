@@ -1,7 +1,0 @@
-= javax/ws/rs/DELETE.class
-
- - link:DELETE-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.HttpMethod - 1

@@ -1,6 +1,0 @@
-= javax/transaction/HeuristicMixedException.class
-
- - link:HeuristicMixedException-asmified.java[Asmified]
-
-== References
-

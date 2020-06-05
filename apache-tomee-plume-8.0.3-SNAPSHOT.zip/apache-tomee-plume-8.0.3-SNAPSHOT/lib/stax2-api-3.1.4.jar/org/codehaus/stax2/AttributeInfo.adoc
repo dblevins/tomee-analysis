@@ -1,6 +1,0 @@
-= org/codehaus/stax2/AttributeInfo.class
-
- - link:AttributeInfo-asmified.java[Asmified]
-
-== References
-

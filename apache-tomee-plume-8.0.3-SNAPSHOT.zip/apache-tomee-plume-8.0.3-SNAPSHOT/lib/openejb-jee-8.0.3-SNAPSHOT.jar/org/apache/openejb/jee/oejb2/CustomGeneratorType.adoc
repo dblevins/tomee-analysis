@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/CustomGeneratorType.class
-
- - link:CustomGeneratorType-asmified.java[Asmified]
-
-== References
-

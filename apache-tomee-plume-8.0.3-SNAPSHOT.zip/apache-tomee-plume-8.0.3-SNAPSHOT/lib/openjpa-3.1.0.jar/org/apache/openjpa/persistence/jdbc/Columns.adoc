@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/Columns.class
-
- - link:Columns-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/InjectionUtils$1.class
-
- - link:InjectionUtils$1-asmified.java[Asmified]
-
-== References
-

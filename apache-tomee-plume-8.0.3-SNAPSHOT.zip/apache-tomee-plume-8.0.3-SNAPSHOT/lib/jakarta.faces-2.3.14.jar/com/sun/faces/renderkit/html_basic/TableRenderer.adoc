@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/TableRenderer.class
-
- - link:TableRenderer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/digester/ObjectCreateRule.class
-
- - link:ObjectCreateRule-asmified.java[Asmified]
-
-== References
-

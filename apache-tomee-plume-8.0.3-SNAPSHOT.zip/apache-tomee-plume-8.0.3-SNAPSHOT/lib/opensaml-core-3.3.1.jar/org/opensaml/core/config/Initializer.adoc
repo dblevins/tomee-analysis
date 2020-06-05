@@ -1,6 +1,0 @@
-= org/opensaml/core/config/Initializer.class
-
- - link:Initializer-asmified.java[Asmified]
-
-== References
-

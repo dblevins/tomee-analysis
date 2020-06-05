@@ -1,6 +1,0 @@
-= org/apache/openejb/math/util/ResizableDoubleArray.class
-
- - link:ResizableDoubleArray-asmified.java[Asmified]
-
-== References
-

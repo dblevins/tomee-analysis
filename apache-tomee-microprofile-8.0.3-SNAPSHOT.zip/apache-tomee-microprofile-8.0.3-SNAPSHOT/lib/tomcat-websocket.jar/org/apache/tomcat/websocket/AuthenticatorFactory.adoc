@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/AuthenticatorFactory.class
-
- - link:AuthenticatorFactory-asmified.java[Asmified]
-
-== References
-

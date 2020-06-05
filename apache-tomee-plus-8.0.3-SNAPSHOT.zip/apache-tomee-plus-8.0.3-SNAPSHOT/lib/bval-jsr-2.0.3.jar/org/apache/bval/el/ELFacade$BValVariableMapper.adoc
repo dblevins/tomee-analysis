@@ -1,6 +1,0 @@
-= org/apache/bval/el/ELFacade$BValVariableMapper.class
-
- - link:ELFacade$BValVariableMapper-asmified.java[Asmified]
-
-== References
-

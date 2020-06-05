@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/application/DefaultViewHandlerSupport.class
-
- - link:DefaultViewHandlerSupport-asmified.java[Asmified]
-
-== References
-

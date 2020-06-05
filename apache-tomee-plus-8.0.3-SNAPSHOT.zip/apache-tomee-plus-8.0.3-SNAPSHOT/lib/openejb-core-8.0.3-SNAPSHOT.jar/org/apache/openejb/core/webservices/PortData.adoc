@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/PortData.class
-
- - link:PortData-asmified.java[Asmified]
-
-== References
-

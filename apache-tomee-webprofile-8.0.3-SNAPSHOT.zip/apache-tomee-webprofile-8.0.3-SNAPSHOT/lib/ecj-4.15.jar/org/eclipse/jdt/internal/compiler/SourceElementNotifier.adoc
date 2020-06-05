@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/SourceElementNotifier.class
-
- - link:SourceElementNotifier-asmified.java[Asmified]
-
-== References
-

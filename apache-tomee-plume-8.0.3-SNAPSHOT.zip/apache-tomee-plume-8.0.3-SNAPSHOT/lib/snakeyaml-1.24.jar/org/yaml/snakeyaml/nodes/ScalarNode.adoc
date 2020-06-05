@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/nodes/ScalarNode.class
-
- - link:ScalarNode-asmified.java[Asmified]
-
-== References
-

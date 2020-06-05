@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentResourceTagHandler.class
-
- - link:CompositeComponentResourceTagHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/profile/impl/AddNameIDToSubjects$NameIDPolicyLookupFunction.class
-
- - link:AddNameIDToSubjects$NameIDPolicyLookupFunction-asmified.java[Asmified]
-
-== References
-

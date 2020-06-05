@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/DBWSException.class
-
- - link:DBWSException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ResultTypeImpl.class
-
- - link:ResultTypeImpl-asmified.java[Asmified]
-
-== References
-

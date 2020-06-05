@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/management/ManagementServer.class
-
- - link:ManagementServer-asmified.java[Asmified]
-
-== References
-

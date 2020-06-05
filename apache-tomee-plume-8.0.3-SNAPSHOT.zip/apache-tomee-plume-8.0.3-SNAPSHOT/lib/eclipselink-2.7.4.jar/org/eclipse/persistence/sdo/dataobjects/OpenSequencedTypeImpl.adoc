@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sdo/dataobjects/OpenSequencedTypeImpl.class
-
- - link:OpenSequencedTypeImpl-asmified.java[Asmified]
-
-== References
-

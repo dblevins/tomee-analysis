@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/Encryptor.class
-
- - link:Encryptor-asmified.java[Asmified]
-
-== References
-

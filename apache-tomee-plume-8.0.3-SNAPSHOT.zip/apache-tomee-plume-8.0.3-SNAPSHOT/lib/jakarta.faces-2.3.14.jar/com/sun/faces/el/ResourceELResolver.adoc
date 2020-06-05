@@ -1,6 +1,0 @@
-= com/sun/faces/el/ResourceELResolver.class
-
- - link:ResourceELResolver-asmified.java[Asmified]
-
-== References
-

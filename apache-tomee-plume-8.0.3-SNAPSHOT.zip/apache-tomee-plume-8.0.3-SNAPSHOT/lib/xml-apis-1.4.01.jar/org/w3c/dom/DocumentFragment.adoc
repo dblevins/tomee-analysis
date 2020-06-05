@@ -1,6 +1,0 @@
-= org/w3c/dom/DocumentFragment.class
-
- - link:DocumentFragment-asmified.java[Asmified]
-
-== References
-

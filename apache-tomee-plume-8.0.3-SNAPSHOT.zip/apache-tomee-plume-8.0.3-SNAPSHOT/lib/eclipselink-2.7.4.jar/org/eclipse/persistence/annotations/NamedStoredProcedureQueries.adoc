@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/NamedStoredProcedureQueries.class
-
- - link:NamedStoredProcedureQueries-asmified.java[Asmified]
-
-== References
-

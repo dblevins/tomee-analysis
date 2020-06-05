@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/FastInfoset.class
-
- - link:FastInfoset-asmified.java[Asmified]
-
-== References
-

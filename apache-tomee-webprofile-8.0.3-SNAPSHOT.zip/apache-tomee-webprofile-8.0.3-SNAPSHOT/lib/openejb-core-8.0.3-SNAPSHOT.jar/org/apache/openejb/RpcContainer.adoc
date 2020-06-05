@@ -1,6 +1,0 @@
-= org/apache/openejb/RpcContainer.class
-
- - link:RpcContainer-asmified.java[Asmified]
-
-== References
-

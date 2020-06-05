@@ -1,6 +1,0 @@
-= org/apache/openejb/config/MappedNameBuilder.class
-
- - link:MappedNameBuilder-asmified.java[Asmified]
-
-== References
-

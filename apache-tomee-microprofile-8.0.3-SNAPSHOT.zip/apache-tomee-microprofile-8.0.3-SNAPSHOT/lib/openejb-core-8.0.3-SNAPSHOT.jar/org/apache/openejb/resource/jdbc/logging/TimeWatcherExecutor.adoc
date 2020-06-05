@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/logging/TimeWatcherExecutor.class
-
- - link:TimeWatcherExecutor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/WeakHashMapEditor.class
-
- - link:WeakHashMapEditor-asmified.java[Asmified]
-
-== References
-

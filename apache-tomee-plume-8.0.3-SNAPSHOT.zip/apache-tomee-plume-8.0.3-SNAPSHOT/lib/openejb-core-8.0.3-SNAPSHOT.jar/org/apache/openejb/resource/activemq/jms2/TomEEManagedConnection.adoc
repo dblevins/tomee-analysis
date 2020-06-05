@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/TomEEManagedConnection.class
-
- - link:TomEEManagedConnection-asmified.java[Asmified]
-
-== References
-

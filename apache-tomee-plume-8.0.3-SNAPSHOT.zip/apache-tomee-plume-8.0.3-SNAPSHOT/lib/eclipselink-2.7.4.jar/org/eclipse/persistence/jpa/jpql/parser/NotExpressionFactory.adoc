@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/NotExpressionFactory.class
-
- - link:NotExpressionFactory-asmified.java[Asmified]
-
-== References
-

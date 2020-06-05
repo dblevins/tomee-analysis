@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/Files.class
-
- - link:Files-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/remote/RemoteCacheAttributes.class
-
- - link:RemoteCacheAttributes-asmified.java[Asmified]
-
-== References
-

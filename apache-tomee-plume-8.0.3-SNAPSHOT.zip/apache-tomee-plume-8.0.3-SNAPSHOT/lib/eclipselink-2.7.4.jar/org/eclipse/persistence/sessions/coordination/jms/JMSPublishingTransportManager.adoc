@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/coordination/jms/JMSPublishingTransportManager.class
-
- - link:JMSPublishingTransportManager-asmified.java[Asmified]
-
-== References
-

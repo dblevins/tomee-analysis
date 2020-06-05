@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/LoaderService.class
-
- - link:LoaderService-asmified.java[Asmified]
-
-== References
-

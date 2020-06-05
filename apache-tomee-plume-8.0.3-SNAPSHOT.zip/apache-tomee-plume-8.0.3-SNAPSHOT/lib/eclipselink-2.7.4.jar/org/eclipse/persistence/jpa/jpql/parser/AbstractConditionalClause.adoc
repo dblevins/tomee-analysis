@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AbstractConditionalClause.class
-
- - link:AbstractConditionalClause-asmified.java[Asmified]
-
-== References
-

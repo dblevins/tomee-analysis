@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/asynchronous/AsynchronousInterceptor$Cache.class
-
- - link:AsynchronousInterceptor$Cache-asmified.java[Asmified]
-
-== References
-

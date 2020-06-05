@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/CertificateStoreAppender.class
-
- - link:CertificateStoreAppender-asmified.java[Asmified]
-
-== References
-

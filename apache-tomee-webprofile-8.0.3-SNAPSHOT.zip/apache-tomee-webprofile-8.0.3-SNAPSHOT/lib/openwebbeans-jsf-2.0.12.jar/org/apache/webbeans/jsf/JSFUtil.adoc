@@ -1,6 +1,0 @@
-= org/apache/webbeans/jsf/JSFUtil.class
-
- - link:JSFUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/util/ReservedWords.class
-
- - link:ReservedWords-asmified.java[Asmified]
-
-== References
-

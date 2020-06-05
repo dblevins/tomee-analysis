@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/ReflectionInvokationHandler$WrapperIterator.class
-
- - link:ReflectionInvokationHandler$WrapperIterator-asmified.java[Asmified]
-
-== References
-

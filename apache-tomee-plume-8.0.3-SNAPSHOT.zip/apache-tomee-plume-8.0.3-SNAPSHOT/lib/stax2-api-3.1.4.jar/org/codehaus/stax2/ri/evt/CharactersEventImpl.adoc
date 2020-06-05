@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/evt/CharactersEventImpl.class
-
- - link:CharactersEventImpl-asmified.java[Asmified]
-
-== References
-

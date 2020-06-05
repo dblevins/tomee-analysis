@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/SimpleBootstrapContext.class
-
- - link:SimpleBootstrapContext-asmified.java[Asmified]
-
-== References
-

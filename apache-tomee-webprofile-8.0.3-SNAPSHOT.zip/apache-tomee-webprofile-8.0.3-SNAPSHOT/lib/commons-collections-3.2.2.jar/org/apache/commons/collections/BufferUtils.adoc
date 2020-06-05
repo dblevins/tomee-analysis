@@ -1,6 +1,0 @@
-= org/apache/commons/collections/BufferUtils.class
-
- - link:BufferUtils-asmified.java[Asmified]
-
-== References
-

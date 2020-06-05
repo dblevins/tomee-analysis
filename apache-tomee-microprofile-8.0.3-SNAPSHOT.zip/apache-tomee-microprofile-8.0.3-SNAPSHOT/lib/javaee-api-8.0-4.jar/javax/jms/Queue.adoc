@@ -1,8 +1,0 @@
-= javax/jms/Queue.class
-
- - link:Queue-asmified.java[Asmified]
-
-== References
-
- - javax.jms.Destination - 1
- - javax.jms.JMSException - 1

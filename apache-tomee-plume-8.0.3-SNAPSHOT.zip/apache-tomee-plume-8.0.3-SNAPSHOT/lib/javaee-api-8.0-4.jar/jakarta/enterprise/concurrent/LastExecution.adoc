@@ -1,6 +1,0 @@
-= jakarta/enterprise/concurrent/LastExecution.class
-
- - link:LastExecution-asmified.java[Asmified]
-
-== References
-

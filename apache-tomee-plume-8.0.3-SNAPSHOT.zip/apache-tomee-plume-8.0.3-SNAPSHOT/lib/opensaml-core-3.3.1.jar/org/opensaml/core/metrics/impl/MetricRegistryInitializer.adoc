@@ -1,6 +1,0 @@
-= org/opensaml/core/metrics/impl/MetricRegistryInitializer.class
-
- - link:MetricRegistryInitializer-asmified.java[Asmified]
-
-== References
-

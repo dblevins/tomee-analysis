@@ -1,6 +1,0 @@
-= org/apache/webbeans/corespi/scanner/xbean/CdiArchive.class
-
- - link:CdiArchive-asmified.java[Asmified]
-
-== References
-

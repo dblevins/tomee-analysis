@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationSessionCookieConfig.class
-
- - link:ApplicationSessionCookieConfig-asmified.java[Asmified]
-
-== References
-

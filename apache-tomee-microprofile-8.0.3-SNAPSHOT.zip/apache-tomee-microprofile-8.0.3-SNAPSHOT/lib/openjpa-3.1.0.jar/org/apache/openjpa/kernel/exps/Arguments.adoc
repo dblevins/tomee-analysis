@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Arguments.class
-
- - link:Arguments-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/rest/ThreadLocalSecurityContext.class
-
- - link:ThreadLocalSecurityContext-asmified.java[Asmified]
-
-== References
-

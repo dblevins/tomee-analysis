@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ContainerBase$StopChild.class
-
- - link:ContainerBase$StopChild-asmified.java[Asmified]
-
-== References
-

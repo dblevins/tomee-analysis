@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/ManifestType.class
-
- - link:ManifestType-asmified.java[Asmified]
-
-== References
-

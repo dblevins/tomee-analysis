@@ -1,6 +1,0 @@
-= org/apache/openejb/client/KeepAliveStyle.class
-
- - link:KeepAliveStyle-asmified.java[Asmified]
-
-== References
-

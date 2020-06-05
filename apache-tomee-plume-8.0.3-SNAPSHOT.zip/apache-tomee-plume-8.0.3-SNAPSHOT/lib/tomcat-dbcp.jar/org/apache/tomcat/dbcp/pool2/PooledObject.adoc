@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/pool2/PooledObject.class
-
- - link:PooledObject-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/java$util$GregorianCalendar$proxy.class
-
- - link:java$util$GregorianCalendar$proxy-asmified.java[Asmified]
-
-== References
-

@@ -1,9 +1,0 @@
-= javax/persistence/EntityGraph.class
-
- - link:EntityGraph-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.Subgraph - 9
- - javax.persistence.metamodel.Attribute - 5
- - javax.persistence.AttributeNode - 1

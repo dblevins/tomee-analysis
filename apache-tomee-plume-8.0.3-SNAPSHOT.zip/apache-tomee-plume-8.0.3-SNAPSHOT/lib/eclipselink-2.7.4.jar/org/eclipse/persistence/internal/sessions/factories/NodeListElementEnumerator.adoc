@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/NodeListElementEnumerator.class
-
- - link:NodeListElementEnumerator-asmified.java[Asmified]
-
-== References
-

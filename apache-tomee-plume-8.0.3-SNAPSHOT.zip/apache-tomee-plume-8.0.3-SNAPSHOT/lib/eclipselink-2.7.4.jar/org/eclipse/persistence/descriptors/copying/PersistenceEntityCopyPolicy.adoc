@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/copying/PersistenceEntityCopyPolicy.class
-
- - link:PersistenceEntityCopyPolicy-asmified.java[Asmified]
-
-== References
-

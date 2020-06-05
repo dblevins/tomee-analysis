@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/LegacyCompositionHandler.class
-
- - link:LegacyCompositionHandler-asmified.java[Asmified]
-
-== References
-

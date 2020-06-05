@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/EventHandler$CompositeComponentRelativeListener.class
-
- - link:EventHandler$CompositeComponentRelativeListener-asmified.java[Asmified]
-
-== References
-

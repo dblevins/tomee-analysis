@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/ResponseAbstractType.class
-
- - link:ResponseAbstractType-asmified.java[Asmified]
-
-== References
-

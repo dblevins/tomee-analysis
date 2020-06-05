@@ -1,6 +1,0 @@
-= org/joda/time/DateTimeField.class
-
- - link:DateTimeField-asmified.java[Asmified]
-
-== References
-

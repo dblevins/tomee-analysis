@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/CharStream.class
-
- - link:CharStream-asmified.java[Asmified]
-
-== References
-

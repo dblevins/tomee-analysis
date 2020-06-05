@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HttpServletRequestSnapshot.class
-
- - link:HttpServletRequestSnapshot-asmified.java[Asmified]
-
-== References
-

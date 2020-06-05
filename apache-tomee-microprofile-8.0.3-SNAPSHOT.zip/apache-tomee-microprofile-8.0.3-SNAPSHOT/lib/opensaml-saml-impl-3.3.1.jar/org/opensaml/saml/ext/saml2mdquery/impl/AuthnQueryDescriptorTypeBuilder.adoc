@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2mdquery/impl/AuthnQueryDescriptorTypeBuilder.class
-
- - link:AuthnQueryDescriptorTypeBuilder-asmified.java[Asmified]
-
-== References
-

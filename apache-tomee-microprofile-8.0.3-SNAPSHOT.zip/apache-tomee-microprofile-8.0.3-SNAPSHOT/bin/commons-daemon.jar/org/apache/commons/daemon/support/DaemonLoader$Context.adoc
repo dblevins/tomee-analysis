@@ -1,6 +1,0 @@
-= org/apache/commons/daemon/support/DaemonLoader$Context.class
-
- - link:DaemonLoader$Context-asmified.java[Asmified]
-
-== References
-

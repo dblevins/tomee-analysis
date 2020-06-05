@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/MethodBasedFieldTransformation.class
-
- - link:MethodBasedFieldTransformation-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/messaging/AbstractToken.class
-
- - link:AbstractToken-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/InterceptorPayload.class
-
- - link:InterceptorPayload-asmified.java[Asmified]
-
-== References
-

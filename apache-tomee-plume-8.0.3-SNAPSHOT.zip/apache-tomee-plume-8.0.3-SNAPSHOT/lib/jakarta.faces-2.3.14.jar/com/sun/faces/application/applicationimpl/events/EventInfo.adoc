@@ -1,6 +1,0 @@
-= com/sun/faces/application/applicationimpl/events/EventInfo.class
-
- - link:EventInfo-asmified.java[Asmified]
-
-== References
-

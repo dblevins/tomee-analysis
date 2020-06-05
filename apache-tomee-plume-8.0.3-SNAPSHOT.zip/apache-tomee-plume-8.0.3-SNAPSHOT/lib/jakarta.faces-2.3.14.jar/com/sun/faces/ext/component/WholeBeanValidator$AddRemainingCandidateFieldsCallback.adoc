@@ -1,6 +1,0 @@
-= com/sun/faces/ext/component/WholeBeanValidator$AddRemainingCandidateFieldsCallback.class
-
- - link:WholeBeanValidator$AddRemainingCandidateFieldsCallback-asmified.java[Asmified]
-
-== References
-

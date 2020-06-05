@@ -1,6 +1,0 @@
-= org/apache/openejb/client/EJBInvocationHandler.class
-
- - link:EJBInvocationHandler-asmified.java[Asmified]
-
-== References
-

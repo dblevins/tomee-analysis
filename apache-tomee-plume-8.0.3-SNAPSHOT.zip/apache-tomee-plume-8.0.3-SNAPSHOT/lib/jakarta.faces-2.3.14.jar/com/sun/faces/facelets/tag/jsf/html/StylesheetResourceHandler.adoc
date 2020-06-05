@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/html/StylesheetResourceHandler.class
-
- - link:StylesheetResourceHandler-asmified.java[Asmified]
-
-== References
-

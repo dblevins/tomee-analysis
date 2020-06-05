@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/viewstate/SerializedViewCollection.class
-
- - link:SerializedViewCollection-asmified.java[Asmified]
-
-== References
-

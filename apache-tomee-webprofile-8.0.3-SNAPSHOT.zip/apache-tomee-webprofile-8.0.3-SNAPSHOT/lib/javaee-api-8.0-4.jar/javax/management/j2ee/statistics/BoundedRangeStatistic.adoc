@@ -1,8 +1,0 @@
-= javax/management/j2ee/statistics/BoundedRangeStatistic.class
-
- - link:BoundedRangeStatistic-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.BoundaryStatistic - 1
- - javax.management.j2ee.statistics.RangeStatistic - 1

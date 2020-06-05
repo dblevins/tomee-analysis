@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/ByteChunk$ByteOutputChannel.class
-
- - link:ByteChunk$ByteOutputChannel-asmified.java[Asmified]
-
-== References
-

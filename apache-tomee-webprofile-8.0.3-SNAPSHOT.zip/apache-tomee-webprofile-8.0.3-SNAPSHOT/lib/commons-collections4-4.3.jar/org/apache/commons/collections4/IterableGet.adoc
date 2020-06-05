@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/IterableGet.class
-
- - link:IterableGet-asmified.java[Asmified]
-
-== References
-

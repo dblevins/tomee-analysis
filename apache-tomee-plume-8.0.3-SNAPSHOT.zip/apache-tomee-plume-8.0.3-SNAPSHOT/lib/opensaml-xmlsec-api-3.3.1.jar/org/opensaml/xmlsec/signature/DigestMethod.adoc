@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/DigestMethod.class
-
- - link:DigestMethod-asmified.java[Asmified]
-
-== References
-

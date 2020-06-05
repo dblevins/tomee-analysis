@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/DirectConnector.class
-
- - link:DirectConnector-asmified.java[Asmified]
-
-== References
-

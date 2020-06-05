@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/el/ContextualCompositeMethodExpression.class
-
- - link:ContextualCompositeMethodExpression-asmified.java[Asmified]
-
-== References
-

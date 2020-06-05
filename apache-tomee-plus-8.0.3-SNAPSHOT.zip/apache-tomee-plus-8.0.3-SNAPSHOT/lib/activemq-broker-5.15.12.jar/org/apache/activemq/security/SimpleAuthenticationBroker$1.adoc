@@ -1,6 +1,0 @@
-= org/apache/activemq/security/SimpleAuthenticationBroker$1.class
-
- - link:SimpleAuthenticationBroker$1-asmified.java[Asmified]
-
-== References
-

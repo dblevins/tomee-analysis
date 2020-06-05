@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/xml/JSTLVariableStack.class
-
- - link:JSTLVariableStack-asmified.java[Asmified]
-
-== References
-

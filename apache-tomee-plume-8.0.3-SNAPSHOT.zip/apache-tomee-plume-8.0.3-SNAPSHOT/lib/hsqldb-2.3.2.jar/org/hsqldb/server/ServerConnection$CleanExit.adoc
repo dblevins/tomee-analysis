@@ -1,6 +1,0 @@
-= org/hsqldb/server/ServerConnection$CleanExit.class
-
- - link:ServerConnection$CleanExit-asmified.java[Asmified]
-
-== References
-

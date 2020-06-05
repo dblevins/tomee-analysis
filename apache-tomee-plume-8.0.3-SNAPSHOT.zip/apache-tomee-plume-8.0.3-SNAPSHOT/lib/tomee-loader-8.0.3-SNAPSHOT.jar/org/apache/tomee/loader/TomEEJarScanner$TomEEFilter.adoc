@@ -1,6 +1,0 @@
-= org/apache/tomee/loader/TomEEJarScanner$TomEEFilter.class
-
- - link:TomEEJarScanner$TomEEFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/BeanPropertyValueChangeClosure.class
-
- - link:BeanPropertyValueChangeClosure-asmified.java[Asmified]
-
-== References
-

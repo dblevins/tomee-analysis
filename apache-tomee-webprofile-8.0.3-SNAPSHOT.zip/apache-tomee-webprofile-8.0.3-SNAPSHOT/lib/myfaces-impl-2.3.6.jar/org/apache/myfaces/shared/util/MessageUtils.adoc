@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/MessageUtils.class
-
- - link:MessageUtils-asmified.java[Asmified]
-
-== References
-

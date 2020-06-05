@@ -1,8 +1,0 @@
-= javax/management/j2ee/statistics/EJBStats.class
-
- - link:EJBStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.CountStatistic - 2
- - javax.management.j2ee.statistics.Stats - 1

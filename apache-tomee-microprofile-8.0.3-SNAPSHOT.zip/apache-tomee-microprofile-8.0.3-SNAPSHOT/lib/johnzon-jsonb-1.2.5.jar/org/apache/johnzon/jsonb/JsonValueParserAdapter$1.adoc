@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/JsonValueParserAdapter$1.class
-
- - link:JsonValueParserAdapter$1-asmified.java[Asmified]
-
-== References
-

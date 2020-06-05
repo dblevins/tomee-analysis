@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/NamespaceSupport.class
-
- - link:NamespaceSupport-asmified.java[Asmified]
-
-== References
-

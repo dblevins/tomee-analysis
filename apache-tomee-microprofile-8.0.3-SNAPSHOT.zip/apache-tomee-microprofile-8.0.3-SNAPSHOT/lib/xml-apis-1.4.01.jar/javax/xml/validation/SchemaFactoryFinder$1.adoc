@@ -1,6 +1,0 @@
-= javax/xml/validation/SchemaFactoryFinder$1.class
-
- - link:SchemaFactoryFinder$1-asmified.java[Asmified]
-
-== References
-

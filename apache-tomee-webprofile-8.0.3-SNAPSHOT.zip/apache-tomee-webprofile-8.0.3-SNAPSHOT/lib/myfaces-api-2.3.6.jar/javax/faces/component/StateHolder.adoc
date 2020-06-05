@@ -1,7 +1,0 @@
-= javax/faces/component/StateHolder.class
-
- - link:StateHolder-asmified.java[Asmified]
-
-== References
-
- - javax.faces.context.FacesContext - 2

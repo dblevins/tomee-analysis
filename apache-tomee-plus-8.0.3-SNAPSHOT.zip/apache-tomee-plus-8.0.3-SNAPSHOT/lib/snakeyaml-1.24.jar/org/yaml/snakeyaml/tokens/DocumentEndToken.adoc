@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/tokens/DocumentEndToken.class
-
- - link:DocumentEndToken-asmified.java[Asmified]
-
-== References
-

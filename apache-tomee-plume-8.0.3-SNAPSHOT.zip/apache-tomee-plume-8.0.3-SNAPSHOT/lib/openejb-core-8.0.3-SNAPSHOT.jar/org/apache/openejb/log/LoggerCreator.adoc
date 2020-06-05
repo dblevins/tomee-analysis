@@ -1,6 +1,0 @@
-= org/apache/openejb/log/LoggerCreator.class
-
- - link:LoggerCreator-asmified.java[Asmified]
-
-== References
-

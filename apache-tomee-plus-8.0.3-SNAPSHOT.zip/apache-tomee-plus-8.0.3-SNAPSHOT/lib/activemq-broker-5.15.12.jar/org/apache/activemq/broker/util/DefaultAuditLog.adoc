@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/util/DefaultAuditLog.class
-
- - link:DefaultAuditLog-asmified.java[Asmified]
-
-== References
-

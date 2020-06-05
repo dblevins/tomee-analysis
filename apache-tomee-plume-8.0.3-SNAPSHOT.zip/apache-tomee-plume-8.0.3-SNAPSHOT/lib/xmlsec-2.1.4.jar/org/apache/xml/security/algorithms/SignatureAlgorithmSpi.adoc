@@ -1,6 +1,0 @@
-= org/apache/xml/security/algorithms/SignatureAlgorithmSpi.class
-
- - link:SignatureAlgorithmSpi-asmified.java[Asmified]
-
-== References
-

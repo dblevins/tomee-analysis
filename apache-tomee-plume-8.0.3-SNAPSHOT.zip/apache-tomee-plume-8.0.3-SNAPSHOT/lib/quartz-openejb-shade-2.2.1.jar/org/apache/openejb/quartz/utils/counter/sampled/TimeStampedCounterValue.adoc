@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/counter/sampled/TimeStampedCounterValue.class
-
- - link:TimeStampedCounterValue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/bm/Rule$2.class
-
- - link:Rule$2-asmified.java[Asmified]
-
-== References
-

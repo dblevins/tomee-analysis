@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ServiceAccessController$Access.class
-
- - link:ServiceAccessController$Access-asmified.java[Asmified]
-
-== References
-

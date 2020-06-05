@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AggregateExpressionBNF.class
-
- - link:AggregateExpressionBNF-asmified.java[Asmified]
-
-== References
-

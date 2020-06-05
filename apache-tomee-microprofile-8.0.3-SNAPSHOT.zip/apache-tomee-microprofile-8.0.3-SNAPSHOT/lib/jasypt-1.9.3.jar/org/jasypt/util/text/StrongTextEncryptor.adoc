@@ -1,6 +1,0 @@
-= org/jasypt/util/text/StrongTextEncryptor.class
-
- - link:StrongTextEncryptor-asmified.java[Asmified]
-
-== References
-

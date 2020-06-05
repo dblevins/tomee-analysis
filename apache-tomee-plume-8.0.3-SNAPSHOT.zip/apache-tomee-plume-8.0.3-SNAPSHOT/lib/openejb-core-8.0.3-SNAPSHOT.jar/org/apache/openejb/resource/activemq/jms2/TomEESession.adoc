@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/activemq/jms2/TomEESession.class
-
- - link:TomEESession-asmified.java[Asmified]
-
-== References
-

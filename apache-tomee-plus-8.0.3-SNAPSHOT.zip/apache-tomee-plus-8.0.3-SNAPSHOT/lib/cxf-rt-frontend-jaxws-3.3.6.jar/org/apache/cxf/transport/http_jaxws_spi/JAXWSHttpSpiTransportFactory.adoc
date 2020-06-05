@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http_jaxws_spi/JAXWSHttpSpiTransportFactory.class
-
- - link:JAXWSHttpSpiTransportFactory-asmified.java[Asmified]
-
-== References
-

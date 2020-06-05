@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlOutcomeTargetButtonRendererBase.class
-
- - link:HtmlOutcomeTargetButtonRendererBase-asmified.java[Asmified]
-
-== References
-

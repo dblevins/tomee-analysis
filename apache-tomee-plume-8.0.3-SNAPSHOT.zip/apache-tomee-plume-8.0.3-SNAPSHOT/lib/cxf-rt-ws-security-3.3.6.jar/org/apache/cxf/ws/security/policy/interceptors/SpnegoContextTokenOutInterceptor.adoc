@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/interceptors/SpnegoContextTokenOutInterceptor.class
-
- - link:SpnegoContextTokenOutInterceptor-asmified.java[Asmified]
-
-== References
-

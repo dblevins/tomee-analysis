@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/DelayedLinkedListProxy.class
-
- - link:DelayedLinkedListProxy-asmified.java[Asmified]
-
-== References
-

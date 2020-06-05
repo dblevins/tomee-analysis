@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/Jndi.class
-
- - link:Jndi-asmified.java[Asmified]
-
-== References
-

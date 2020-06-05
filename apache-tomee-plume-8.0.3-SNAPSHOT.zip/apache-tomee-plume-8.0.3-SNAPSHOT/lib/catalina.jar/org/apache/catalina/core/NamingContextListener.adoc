@@ -1,6 +1,0 @@
-= org/apache/catalina/core/NamingContextListener.class
-
- - link:NamingContextListener-asmified.java[Asmified]
-
-== References
-

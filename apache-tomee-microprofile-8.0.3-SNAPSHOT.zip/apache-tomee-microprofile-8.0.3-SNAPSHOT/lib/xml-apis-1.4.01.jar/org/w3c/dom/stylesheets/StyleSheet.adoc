@@ -1,6 +1,0 @@
-= org/w3c/dom/stylesheets/StyleSheet.class
-
- - link:StyleSheet-asmified.java[Asmified]
-
-== References
-

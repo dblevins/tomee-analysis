@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/view/JspViewDeclarationLanguageBase.class
-
- - link:JspViewDeclarationLanguageBase-asmified.java[Asmified]
-
-== References
-

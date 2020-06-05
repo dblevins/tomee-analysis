@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/NotEmptyValidatorForMap.class
-
- - link:NotEmptyValidatorForMap-asmified.java[Asmified]
-
-== References
-

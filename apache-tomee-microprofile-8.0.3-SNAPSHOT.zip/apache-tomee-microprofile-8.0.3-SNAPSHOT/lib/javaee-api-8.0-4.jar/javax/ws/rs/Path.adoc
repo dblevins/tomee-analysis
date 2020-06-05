@@ -1,6 +1,0 @@
-= javax/ws/rs/Path.class
-
- - link:Path-asmified.java[Asmified]
-
-== References
-

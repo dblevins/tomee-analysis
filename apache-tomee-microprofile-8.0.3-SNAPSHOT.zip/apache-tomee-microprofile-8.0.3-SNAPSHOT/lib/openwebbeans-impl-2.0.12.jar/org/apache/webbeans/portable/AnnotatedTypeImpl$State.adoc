@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AnnotatedTypeImpl$State.class
-
- - link:AnnotatedTypeImpl$State-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/RequestScopedBeanInterceptorHandler.class
-
- - link:RequestScopedBeanInterceptorHandler-asmified.java[Asmified]
-
-== References
-

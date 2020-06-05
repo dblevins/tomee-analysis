@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/service/factory/XercesXsdValidationImpl.class
-
- - link:XercesXsdValidationImpl-asmified.java[Asmified]
-
-== References
-

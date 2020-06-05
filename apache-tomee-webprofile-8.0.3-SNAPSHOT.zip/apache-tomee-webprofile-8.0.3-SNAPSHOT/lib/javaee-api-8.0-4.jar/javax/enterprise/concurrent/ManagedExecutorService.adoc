@@ -1,6 +1,0 @@
-= javax/enterprise/concurrent/ManagedExecutorService.class
-
- - link:ManagedExecutorService-asmified.java[Asmified]
-
-== References
-

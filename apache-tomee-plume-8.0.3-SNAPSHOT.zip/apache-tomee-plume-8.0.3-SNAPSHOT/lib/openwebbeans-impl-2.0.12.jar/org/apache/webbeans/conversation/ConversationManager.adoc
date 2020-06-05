@@ -1,6 +1,0 @@
-= org/apache/webbeans/conversation/ConversationManager.class
-
- - link:ConversationManager-asmified.java[Asmified]
-
-== References
-

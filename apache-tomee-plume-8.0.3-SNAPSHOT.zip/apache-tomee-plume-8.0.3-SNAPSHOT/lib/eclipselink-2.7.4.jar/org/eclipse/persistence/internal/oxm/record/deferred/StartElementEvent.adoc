@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/StartElementEvent.class
-
- - link:StartElementEvent-asmified.java[Asmified]
-
-== References
-

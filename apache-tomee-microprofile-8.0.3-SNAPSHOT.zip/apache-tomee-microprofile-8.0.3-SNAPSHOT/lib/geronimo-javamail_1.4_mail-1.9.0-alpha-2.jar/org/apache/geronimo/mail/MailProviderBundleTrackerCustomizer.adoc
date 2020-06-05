@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/MailProviderBundleTrackerCustomizer.class
-
- - link:MailProviderBundleTrackerCustomizer-asmified.java[Asmified]
-
-== References
-

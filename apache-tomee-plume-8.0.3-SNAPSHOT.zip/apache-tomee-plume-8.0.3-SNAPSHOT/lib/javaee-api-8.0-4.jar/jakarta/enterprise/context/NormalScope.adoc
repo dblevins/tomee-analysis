@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/NormalScope.class
-
- - link:NormalScope-asmified.java[Asmified]
-
-== References
-

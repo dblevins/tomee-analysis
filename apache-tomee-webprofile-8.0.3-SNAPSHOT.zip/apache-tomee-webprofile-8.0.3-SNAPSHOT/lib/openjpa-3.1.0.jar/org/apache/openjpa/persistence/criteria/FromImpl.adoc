@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/FromImpl.class
-
- - link:FromImpl-asmified.java[Asmified]
-
-== References
-

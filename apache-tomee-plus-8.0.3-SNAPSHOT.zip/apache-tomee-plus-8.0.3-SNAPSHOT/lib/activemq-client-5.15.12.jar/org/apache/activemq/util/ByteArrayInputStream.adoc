@@ -1,6 +1,0 @@
-= org/apache/activemq/util/ByteArrayInputStream.class
-
- - link:ByteArrayInputStream-asmified.java[Asmified]
-
-== References
-

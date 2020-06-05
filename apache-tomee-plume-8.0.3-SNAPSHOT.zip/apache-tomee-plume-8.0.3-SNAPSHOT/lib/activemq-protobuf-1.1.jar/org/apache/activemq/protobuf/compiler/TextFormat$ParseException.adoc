@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/TextFormat$ParseException.class
-
- - link:TextFormat$ParseException-asmified.java[Asmified]
-
-== References
-

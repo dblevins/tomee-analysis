@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/ChangedFieldsLockingPolicy.class
-
- - link:ChangedFieldsLockingPolicy-asmified.java[Asmified]
-
-== References
-

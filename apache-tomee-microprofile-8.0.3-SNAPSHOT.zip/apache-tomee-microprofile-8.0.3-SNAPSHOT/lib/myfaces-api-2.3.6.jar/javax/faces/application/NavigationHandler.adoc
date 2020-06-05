@@ -1,8 +1,0 @@
-= javax/faces/application/NavigationHandler.class
-
- - link:NavigationHandler-asmified.java[Asmified]
-
-== References
-
- - javax.faces.context.FacesContext - 3
- - javax.faces.application.NavigationHandler - 1

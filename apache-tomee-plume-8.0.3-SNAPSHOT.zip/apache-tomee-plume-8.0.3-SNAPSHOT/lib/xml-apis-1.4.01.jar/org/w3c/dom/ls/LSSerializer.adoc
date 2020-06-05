@@ -1,6 +1,0 @@
-= org/w3c/dom/ls/LSSerializer.class
-
- - link:LSSerializer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/utils/DOMUtil.class
-
- - link:DOMUtil-asmified.java[Asmified]
-
-== References
-

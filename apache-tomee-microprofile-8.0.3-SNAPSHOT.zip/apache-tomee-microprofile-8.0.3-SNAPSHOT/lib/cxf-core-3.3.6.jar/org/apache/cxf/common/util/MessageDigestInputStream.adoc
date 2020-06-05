@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/MessageDigestInputStream.class
-
- - link:MessageDigestInputStream-asmified.java[Asmified]
-
-== References
-

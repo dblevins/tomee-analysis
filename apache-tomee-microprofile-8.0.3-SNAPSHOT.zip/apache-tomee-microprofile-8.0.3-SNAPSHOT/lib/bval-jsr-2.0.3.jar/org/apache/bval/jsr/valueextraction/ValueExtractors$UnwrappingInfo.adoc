@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/ValueExtractors$UnwrappingInfo.class
-
- - link:ValueExtractors$UnwrappingInfo-asmified.java[Asmified]
-
-== References
-

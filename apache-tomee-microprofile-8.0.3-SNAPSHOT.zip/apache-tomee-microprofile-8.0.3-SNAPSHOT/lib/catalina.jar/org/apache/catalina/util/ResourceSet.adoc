@@ -1,6 +1,0 @@
-= org/apache/catalina/util/ResourceSet.class
-
- - link:ResourceSet-asmified.java[Asmified]
-
-== References
-

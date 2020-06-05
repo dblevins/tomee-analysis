@@ -1,6 +1,0 @@
-= com/sun/xml/bind/marshaller/SAX2DOMEx.class
-
- - link:SAX2DOMEx-asmified.java[Asmified]
-
-== References
-

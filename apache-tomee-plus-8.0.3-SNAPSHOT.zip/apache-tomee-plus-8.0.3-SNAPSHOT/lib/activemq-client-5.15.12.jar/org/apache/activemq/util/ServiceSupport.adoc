@@ -1,6 +1,0 @@
-= org/apache/activemq/util/ServiceSupport.class
-
- - link:ServiceSupport-asmified.java[Asmified]
-
-== References
-

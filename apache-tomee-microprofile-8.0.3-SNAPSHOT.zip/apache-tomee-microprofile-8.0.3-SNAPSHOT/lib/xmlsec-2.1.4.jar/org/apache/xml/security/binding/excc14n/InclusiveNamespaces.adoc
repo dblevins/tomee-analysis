@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/excc14n/InclusiveNamespaces.class
-
- - link:InclusiveNamespaces-asmified.java[Asmified]
-
-== References
-

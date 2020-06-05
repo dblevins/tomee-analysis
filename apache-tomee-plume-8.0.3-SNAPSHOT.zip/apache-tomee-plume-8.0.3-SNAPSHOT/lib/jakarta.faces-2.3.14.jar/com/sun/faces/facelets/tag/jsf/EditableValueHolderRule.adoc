@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/EditableValueHolderRule.class
-
- - link:EditableValueHolderRule-asmified.java[Asmified]
-
-== References
-

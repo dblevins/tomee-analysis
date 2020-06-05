@@ -1,6 +1,0 @@
-= jakarta/faces/model/CollectionDataModel.class
-
- - link:CollectionDataModel-asmified.java[Asmified]
-
-== References
-

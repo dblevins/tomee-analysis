@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/converters/LongLocaleConverter.class
-
- - link:LongLocaleConverter-asmified.java[Asmified]
-
-== References
-

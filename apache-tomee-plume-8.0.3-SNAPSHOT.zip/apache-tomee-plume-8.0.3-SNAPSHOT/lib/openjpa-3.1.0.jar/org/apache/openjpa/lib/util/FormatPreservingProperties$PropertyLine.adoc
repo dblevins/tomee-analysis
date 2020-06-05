@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/FormatPreservingProperties$PropertyLine.class
-
- - link:FormatPreservingProperties$PropertyLine-asmified.java[Asmified]
-
-== References
-

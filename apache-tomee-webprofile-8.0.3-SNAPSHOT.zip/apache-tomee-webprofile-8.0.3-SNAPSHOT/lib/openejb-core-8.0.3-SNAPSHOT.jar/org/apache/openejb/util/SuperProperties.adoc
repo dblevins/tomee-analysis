@@ -1,6 +1,0 @@
-= org/apache/openejb/util/SuperProperties.class
-
- - link:SuperProperties-asmified.java[Asmified]
-
-== References
-

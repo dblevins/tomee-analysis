@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/cursors/FilePendingMessageCursor$DiskIterator.class
-
- - link:FilePendingMessageCursor$DiskIterator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonParserFactoryImpl.class
-
- - link:JsonParserFactoryImpl-asmified.java[Asmified]
-
-== References
-

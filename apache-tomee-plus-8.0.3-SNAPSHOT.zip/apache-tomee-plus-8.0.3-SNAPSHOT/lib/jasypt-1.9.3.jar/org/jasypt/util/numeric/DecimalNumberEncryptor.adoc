@@ -1,6 +1,0 @@
-= org/jasypt/util/numeric/DecimalNumberEncryptor.class
-
- - link:DecimalNumberEncryptor-asmified.java[Asmified]
-
-== References
-

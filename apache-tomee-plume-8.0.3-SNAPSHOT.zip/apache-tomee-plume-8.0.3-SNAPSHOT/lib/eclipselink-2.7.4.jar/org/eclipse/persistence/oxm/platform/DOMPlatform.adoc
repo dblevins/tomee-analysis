@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/platform/DOMPlatform.class
-
- - link:DOMPlatform-asmified.java[Asmified]
-
-== References
-

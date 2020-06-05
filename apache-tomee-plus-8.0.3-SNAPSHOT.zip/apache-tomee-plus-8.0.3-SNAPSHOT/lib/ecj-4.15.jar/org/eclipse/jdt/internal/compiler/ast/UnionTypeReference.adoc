@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/UnionTypeReference.class
-
- - link:UnionTypeReference-asmified.java[Asmified]
-
-== References
-

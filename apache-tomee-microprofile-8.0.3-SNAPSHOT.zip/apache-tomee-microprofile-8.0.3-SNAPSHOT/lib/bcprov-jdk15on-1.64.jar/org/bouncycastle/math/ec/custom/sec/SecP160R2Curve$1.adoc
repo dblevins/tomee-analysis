@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/custom/sec/SecP160R2Curve$1.class
-
- - link:SecP160R2Curve$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/LocaleUtils.class
-
- - link:LocaleUtils-asmified.java[Asmified]
-
-== References
-

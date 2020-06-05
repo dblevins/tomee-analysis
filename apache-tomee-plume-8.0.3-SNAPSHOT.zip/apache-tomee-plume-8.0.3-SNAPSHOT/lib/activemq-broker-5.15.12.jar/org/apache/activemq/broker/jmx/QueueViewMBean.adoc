@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/QueueViewMBean.class
-
- - link:QueueViewMBean-asmified.java[Asmified]
-
-== References
-

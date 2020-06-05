@@ -1,7 +1,0 @@
-= javax/mail/MethodNotSupportedException.class
-
- - link:MethodNotSupportedException-asmified.java[Asmified]
-
-== References
-
- - javax.mail.MessagingException - 3

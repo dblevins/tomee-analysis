@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/transform/XSLTFeature$Portable.class
-
- - link:XSLTFeature$Portable-asmified.java[Asmified]
-
-== References
-

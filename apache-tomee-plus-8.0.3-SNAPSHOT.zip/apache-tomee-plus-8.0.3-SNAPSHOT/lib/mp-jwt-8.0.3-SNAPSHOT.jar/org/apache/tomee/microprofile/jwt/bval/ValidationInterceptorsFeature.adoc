@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/bval/ValidationInterceptorsFeature.class
-
- - link:ValidationInterceptorsFeature-asmified.java[Asmified]
-
-== References
-

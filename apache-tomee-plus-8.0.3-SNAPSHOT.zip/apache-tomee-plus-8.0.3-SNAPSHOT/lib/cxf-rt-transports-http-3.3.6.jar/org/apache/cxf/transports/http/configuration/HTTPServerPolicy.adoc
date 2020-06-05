@@ -1,6 +1,0 @@
-= org/apache/cxf/transports/http/configuration/HTTPServerPolicy.class
-
- - link:HTTPServerPolicy-asmified.java[Asmified]
-
-== References
-

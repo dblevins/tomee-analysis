@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/UserTagHandler.class
-
- - link:UserTagHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/BeanIntrospectionData.class
-
- - link:BeanIntrospectionData-asmified.java[Asmified]
-
-== References
-

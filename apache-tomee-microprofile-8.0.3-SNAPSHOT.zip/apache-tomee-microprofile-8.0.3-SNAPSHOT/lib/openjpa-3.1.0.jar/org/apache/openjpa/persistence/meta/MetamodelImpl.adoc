@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/MetamodelImpl.class
-
- - link:MetamodelImpl-asmified.java[Asmified]
-
-== References
-

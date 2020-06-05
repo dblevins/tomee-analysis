@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCDriver$1.class
-
- - link:JDBCDriver$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/ResourceComparator.class
-
- - link:ResourceComparator-asmified.java[Asmified]
-
-== References
-

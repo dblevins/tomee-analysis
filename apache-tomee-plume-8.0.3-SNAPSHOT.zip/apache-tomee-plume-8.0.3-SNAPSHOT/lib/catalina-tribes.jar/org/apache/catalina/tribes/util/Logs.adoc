@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/util/Logs.class
-
- - link:Logs-asmified.java[Asmified]
-
-== References
-

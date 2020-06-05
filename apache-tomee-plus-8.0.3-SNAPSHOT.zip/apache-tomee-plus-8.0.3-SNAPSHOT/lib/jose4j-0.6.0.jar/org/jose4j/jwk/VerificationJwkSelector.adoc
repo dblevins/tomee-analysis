@@ -1,6 +1,0 @@
-= org/jose4j/jwk/VerificationJwkSelector.class
-
- - link:VerificationJwkSelector-asmified.java[Asmified]
-
-== References
-

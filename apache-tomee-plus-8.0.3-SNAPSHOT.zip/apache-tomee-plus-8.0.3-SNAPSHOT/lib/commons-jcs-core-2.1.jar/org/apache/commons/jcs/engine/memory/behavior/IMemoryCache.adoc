@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/memory/behavior/IMemoryCache.class
-
- - link:IMemoryCache-asmified.java[Asmified]
-
-== References
-

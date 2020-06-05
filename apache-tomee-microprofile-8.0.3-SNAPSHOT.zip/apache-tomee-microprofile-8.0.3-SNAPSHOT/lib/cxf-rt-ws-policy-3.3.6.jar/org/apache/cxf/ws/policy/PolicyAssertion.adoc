@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/PolicyAssertion.class
-
- - link:PolicyAssertion-asmified.java[Asmified]
-
-== References
-

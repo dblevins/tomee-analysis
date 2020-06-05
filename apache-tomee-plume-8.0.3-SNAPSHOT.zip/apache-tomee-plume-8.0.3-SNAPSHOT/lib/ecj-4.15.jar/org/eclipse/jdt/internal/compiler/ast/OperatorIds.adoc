@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/OperatorIds.class
-
- - link:OperatorIds-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/digests/Blake2sDigest.class
-
- - link:Blake2sDigest-asmified.java[Asmified]
-
-== References
-

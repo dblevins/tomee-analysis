@@ -1,6 +1,0 @@
-= org/apache/openejb/core/BaseContext$State.class
-
- - link:BaseContext$State-asmified.java[Asmified]
-
-== References
-

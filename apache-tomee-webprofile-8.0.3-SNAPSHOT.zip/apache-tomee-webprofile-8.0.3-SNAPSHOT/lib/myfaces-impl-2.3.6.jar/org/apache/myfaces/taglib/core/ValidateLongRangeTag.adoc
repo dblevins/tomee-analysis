@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ValidateLongRangeTag.class
-
- - link:ValidateLongRangeTag-asmified.java[Asmified]
-
-== References
-

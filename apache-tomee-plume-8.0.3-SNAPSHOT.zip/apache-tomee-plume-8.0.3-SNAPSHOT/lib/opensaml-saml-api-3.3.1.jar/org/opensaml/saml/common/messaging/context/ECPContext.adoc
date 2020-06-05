@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/context/ECPContext.class
-
- - link:ECPContext-asmified.java[Asmified]
-
-== References
-

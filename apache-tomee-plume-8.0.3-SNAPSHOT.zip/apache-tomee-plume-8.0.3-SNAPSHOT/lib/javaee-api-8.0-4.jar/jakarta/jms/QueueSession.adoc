@@ -1,6 +1,0 @@
-= jakarta/jms/QueueSession.class
-
- - link:QueueSession-asmified.java[Asmified]
-
-== References
-

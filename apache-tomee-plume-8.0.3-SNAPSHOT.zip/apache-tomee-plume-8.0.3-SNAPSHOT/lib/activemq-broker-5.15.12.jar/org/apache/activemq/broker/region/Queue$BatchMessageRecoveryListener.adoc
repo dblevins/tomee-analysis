@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/Queue$BatchMessageRecoveryListener.class
-
- - link:Queue$BatchMessageRecoveryListener-asmified.java[Asmified]
-
-== References
-

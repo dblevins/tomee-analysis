@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/InboundConnectionProxy.class
-
- - link:InboundConnectionProxy-asmified.java[Asmified]
-
-== References
-

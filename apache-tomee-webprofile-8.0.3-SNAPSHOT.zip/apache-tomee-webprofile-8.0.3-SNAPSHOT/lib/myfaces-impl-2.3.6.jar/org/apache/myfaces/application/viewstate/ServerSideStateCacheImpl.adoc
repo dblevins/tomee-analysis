@@ -1,6 +1,0 @@
-= org/apache/myfaces/application/viewstate/ServerSideStateCacheImpl.class
-
- - link:ServerSideStateCacheImpl-asmified.java[Asmified]
-
-== References
-

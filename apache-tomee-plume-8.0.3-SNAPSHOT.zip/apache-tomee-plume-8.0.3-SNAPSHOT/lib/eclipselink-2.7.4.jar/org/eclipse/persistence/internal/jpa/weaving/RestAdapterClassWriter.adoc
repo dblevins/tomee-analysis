@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/weaving/RestAdapterClassWriter.class
-
- - link:RestAdapterClassWriter-asmified.java[Asmified]
-
-== References
-

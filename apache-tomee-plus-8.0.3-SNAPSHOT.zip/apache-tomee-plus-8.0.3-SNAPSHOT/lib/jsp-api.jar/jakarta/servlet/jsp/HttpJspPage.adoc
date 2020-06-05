@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/HttpJspPage.class
-
- - link:HttpJspPage-asmified.java[Asmified]
-
-== References
-

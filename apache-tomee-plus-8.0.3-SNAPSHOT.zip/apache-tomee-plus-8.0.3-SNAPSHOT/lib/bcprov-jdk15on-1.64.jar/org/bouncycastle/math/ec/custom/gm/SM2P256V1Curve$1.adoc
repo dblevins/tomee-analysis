@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/custom/gm/SM2P256V1Curve$1.class
-
- - link:SM2P256V1Curve$1-asmified.java[Asmified]
-
-== References
-

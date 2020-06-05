@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/ConsumerStoppedEvent.class
-
- - link:ConsumerStoppedEvent-asmified.java[Asmified]
-
-== References
-

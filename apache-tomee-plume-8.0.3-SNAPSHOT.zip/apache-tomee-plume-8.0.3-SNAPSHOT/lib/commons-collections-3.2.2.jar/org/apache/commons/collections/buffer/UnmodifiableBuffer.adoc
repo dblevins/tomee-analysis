@@ -1,6 +1,0 @@
-= org/apache/commons/collections/buffer/UnmodifiableBuffer.class
-
- - link:UnmodifiableBuffer-asmified.java[Asmified]
-
-== References
-

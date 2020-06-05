@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/impl/XSIntegerUnmarshaller.class
-
- - link:XSIntegerUnmarshaller-asmified.java[Asmified]
-
-== References
-

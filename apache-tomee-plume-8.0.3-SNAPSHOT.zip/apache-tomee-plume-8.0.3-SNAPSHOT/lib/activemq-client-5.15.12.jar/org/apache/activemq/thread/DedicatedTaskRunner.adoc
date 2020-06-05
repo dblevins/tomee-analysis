@@ -1,6 +1,0 @@
-= org/apache/activemq/thread/DedicatedTaskRunner.class
-
- - link:DedicatedTaskRunner-asmified.java[Asmified]
-
-== References
-

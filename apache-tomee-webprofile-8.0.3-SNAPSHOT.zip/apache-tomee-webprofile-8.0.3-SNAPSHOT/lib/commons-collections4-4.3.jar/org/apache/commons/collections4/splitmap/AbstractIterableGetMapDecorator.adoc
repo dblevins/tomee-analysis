@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/splitmap/AbstractIterableGetMapDecorator.class
-
- - link:AbstractIterableGetMapDecorator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/xml/registry/DeleteException.class
-
- - link:DeleteException-asmified.java[Asmified]
-
-== References
-

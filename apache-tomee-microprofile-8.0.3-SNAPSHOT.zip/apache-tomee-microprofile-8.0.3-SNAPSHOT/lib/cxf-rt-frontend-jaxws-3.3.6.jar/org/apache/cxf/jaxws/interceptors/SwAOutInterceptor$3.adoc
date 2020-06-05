@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/interceptors/SwAOutInterceptor$3.class
-
- - link:SwAOutInterceptor$3-asmified.java[Asmified]
-
-== References
-

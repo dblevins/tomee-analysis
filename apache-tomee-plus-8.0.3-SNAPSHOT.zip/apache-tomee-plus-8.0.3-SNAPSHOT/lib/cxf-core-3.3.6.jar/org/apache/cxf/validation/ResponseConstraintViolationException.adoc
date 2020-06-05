@@ -1,6 +1,0 @@
-= org/apache/cxf/validation/ResponseConstraintViolationException.class
-
- - link:ResponseConstraintViolationException-asmified.java[Asmified]
-
-== References
-

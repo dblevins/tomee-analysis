@@ -1,6 +1,0 @@
-= org/jose4j/jwa/AlgorithmFactoryFactory.class
-
- - link:AlgorithmFactoryFactory-asmified.java[Asmified]
-
-== References
-

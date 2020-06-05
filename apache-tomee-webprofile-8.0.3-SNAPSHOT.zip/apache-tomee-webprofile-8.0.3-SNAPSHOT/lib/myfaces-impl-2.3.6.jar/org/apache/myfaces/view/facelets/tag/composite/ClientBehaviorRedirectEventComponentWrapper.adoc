@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/ClientBehaviorRedirectEventComponentWrapper.class
-
- - link:ClientBehaviorRedirectEventComponentWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/persistence/MapKeyJoinColumns.class
-
- - link:MapKeyJoinColumns-asmified.java[Asmified]
-
-== References
-

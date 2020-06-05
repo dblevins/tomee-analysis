@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/cms/MetaData.class
-
- - link:MetaData-asmified.java[Asmified]
-
-== References
-

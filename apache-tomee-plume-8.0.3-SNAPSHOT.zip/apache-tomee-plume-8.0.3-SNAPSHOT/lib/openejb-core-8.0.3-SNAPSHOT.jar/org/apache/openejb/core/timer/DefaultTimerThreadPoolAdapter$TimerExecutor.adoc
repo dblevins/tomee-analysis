@@ -1,6 +1,0 @@
-= org/apache/openejb/core/timer/DefaultTimerThreadPoolAdapter$TimerExecutor.class
-
- - link:DefaultTimerThreadPoolAdapter$TimerExecutor-asmified.java[Asmified]
-
-== References
-

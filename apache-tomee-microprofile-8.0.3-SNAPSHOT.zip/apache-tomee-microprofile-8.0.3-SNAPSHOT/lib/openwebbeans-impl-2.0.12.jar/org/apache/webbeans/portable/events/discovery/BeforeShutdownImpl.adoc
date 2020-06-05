@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/discovery/BeforeShutdownImpl.class
-
- - link:BeforeShutdownImpl-asmified.java[Asmified]
-
-== References
-

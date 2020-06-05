@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/codec/StringDigester$OutputFormat.class
-
- - link:StringDigester$OutputFormat-asmified.java[Asmified]
-
-== References
-

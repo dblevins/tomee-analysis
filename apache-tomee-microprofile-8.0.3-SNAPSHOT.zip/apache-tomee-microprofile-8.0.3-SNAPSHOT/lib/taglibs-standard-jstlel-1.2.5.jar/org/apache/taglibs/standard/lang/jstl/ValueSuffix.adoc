@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/ValueSuffix.class
-
- - link:ValueSuffix-asmified.java[Asmified]
-
-== References
-

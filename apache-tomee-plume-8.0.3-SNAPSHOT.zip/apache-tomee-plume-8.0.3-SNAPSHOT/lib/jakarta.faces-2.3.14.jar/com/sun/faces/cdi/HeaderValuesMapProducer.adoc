@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/HeaderValuesMapProducer.class
-
- - link:HeaderValuesMapProducer-asmified.java[Asmified]
-
-== References
-

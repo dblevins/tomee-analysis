@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/event/EventUtils.class
-
- - link:EventUtils-asmified.java[Asmified]
-
-== References
-

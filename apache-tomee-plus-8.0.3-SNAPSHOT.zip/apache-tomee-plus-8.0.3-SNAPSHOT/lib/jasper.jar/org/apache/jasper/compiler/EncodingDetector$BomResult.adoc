@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/EncodingDetector$BomResult.class
-
- - link:EncodingDetector$BomResult-asmified.java[Asmified]
-
-== References
-

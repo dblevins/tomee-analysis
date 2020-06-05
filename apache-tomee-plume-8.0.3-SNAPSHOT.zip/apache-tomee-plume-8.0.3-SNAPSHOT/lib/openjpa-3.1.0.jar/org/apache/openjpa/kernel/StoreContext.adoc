@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/StoreContext.class
-
- - link:StoreContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Variant.class
-
- - link:Variant-asmified.java[Asmified]
-
-== References
-

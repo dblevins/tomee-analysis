@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/TableSwitchInsnNode.class
-
- - link:TableSwitchInsnNode-asmified.java[Asmified]
-
-== References
-

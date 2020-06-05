@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/ManagedSecurityService.class
-
- - link:ManagedSecurityService-asmified.java[Asmified]
-
-== References
-

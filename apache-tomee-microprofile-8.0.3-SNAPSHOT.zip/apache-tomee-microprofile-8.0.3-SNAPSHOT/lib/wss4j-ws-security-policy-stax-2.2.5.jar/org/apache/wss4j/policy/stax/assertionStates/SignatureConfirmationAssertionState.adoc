@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/SignatureConfirmationAssertionState.class
-
- - link:SignatureConfirmationAssertionState-asmified.java[Asmified]
-
-== References
-

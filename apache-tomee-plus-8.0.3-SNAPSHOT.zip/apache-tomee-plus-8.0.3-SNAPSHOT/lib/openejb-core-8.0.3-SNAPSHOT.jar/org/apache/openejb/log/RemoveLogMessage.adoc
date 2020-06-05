@@ -1,6 +1,0 @@
-= org/apache/openejb/log/RemoveLogMessage.class
-
- - link:RemoveLogMessage-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/base/BaseDateTime.class
-
- - link:BaseDateTime-asmified.java[Asmified]
-
-== References
-

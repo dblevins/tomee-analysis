@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/util/stax/SaajStaxWriter$NamespaceDeclaration.class
-
- - link:SaajStaxWriter$NamespaceDeclaration-asmified.java[Asmified]
-
-== References
-

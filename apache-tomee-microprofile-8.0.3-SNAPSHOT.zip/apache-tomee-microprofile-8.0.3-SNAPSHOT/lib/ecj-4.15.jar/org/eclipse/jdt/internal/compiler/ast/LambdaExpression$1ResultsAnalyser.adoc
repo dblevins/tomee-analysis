@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/LambdaExpression$1ResultsAnalyser.class
-
- - link:LambdaExpression$1ResultsAnalyser-asmified.java[Asmified]
-
-== References
-

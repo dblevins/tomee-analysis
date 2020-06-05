@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/ReturnInsert.class
-
- - link:ReturnInsert-asmified.java[Asmified]
-
-== References
-

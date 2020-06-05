@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/httpclient/HttpClientBuilder.class
-
- - link:HttpClientBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/EditableValueHolder.class
-
- - link:EditableValueHolder-asmified.java[Asmified]
-
-== References
-

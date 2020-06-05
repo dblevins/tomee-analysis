@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/list/TransformedList.class
-
- - link:TransformedList-asmified.java[Asmified]
-
-== References
-

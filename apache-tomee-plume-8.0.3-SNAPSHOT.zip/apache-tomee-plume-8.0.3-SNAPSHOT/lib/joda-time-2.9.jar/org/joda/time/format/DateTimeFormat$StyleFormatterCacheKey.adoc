@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeFormat$StyleFormatterCacheKey.class
-
- - link:DateTimeFormat$StyleFormatterCacheKey-asmified.java[Asmified]
-
-== References
-

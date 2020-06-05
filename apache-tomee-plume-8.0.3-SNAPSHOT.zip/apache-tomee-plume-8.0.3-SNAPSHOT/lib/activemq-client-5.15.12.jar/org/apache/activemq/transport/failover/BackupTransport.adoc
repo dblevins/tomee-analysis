@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/failover/BackupTransport.class
-
- - link:BackupTransport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/WikiGenerator$1.class
-
- - link:WikiGenerator$1-asmified.java[Asmified]
-
-== References
-

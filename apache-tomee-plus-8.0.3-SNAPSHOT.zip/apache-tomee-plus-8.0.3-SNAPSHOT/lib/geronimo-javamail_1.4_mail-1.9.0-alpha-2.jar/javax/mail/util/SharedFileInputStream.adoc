@@ -1,9 +1,0 @@
-= javax/mail/util/SharedFileInputStream.class
-
- - link:SharedFileInputStream-asmified.java[Asmified]
-
-== References
-
- - javax.mail.util.SharedFileInputStream - 18
- - javax.mail.util.SharedFileInputStream$SharedFileSource - 15
- - javax.mail.internet.SharedInputStream - 1

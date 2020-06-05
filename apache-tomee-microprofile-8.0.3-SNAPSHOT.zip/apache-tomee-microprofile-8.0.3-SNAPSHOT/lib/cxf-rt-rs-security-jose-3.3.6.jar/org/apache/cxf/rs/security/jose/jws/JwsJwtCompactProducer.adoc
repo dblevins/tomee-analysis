@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/JwsJwtCompactProducer.class
-
- - link:JwsJwtCompactProducer-asmified.java[Asmified]
-
-== References
-

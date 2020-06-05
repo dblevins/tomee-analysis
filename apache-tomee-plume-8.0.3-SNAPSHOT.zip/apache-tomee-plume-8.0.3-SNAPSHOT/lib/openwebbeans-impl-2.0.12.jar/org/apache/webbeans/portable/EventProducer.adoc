@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/EventProducer.class
-
- - link:EventProducer-asmified.java[Asmified]
-
-== References
-

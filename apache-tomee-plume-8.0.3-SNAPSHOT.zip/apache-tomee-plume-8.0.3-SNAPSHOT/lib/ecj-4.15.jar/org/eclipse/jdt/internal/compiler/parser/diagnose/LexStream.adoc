@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/diagnose/LexStream.class
-
- - link:LexStream-asmified.java[Asmified]
-
-== References
-

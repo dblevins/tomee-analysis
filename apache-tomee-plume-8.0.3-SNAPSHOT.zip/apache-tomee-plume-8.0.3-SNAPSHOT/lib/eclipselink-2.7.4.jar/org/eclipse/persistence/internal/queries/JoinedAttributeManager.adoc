@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/JoinedAttributeManager.class
-
- - link:JoinedAttributeManager-asmified.java[Asmified]
-
-== References
-

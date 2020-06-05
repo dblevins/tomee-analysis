@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/types/CString.class
-
- - link:CString-asmified.java[Asmified]
-
-== References
-

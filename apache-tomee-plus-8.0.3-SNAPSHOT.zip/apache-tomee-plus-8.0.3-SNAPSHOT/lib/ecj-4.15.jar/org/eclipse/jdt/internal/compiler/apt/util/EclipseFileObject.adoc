@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/util/EclipseFileObject.class
-
- - link:EclipseFileObject-asmified.java[Asmified]
-
-== References
-

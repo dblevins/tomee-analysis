@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/RandomAccessResultList$Null.class
-
- - link:RandomAccessResultList$Null-asmified.java[Asmified]
-
-== References
-

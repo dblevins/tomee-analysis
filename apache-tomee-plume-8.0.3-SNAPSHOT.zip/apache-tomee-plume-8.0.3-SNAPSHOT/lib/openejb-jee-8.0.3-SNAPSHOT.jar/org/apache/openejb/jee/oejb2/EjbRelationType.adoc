@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/EjbRelationType.class
-
- - link:EjbRelationType-asmified.java[Asmified]
-
-== References
-

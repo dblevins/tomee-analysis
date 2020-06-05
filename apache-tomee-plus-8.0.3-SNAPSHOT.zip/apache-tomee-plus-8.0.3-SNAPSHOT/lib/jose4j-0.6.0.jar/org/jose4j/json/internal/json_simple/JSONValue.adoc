@@ -1,6 +1,0 @@
-= org/jose4j/json/internal/json_simple/JSONValue.class
-
- - link:JSONValue-asmified.java[Asmified]
-
-== References
-

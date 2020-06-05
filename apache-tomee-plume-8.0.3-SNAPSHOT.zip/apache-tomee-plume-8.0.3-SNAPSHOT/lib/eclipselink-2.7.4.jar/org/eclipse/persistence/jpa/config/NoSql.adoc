@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/NoSql.class
-
- - link:NoSql-asmified.java[Asmified]
-
-== References
-

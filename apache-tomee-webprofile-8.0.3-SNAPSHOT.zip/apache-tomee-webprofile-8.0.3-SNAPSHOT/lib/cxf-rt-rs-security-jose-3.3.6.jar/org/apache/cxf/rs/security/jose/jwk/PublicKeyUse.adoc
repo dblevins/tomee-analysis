@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwk/PublicKeyUse.class
-
- - link:PublicKeyUse-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/handlers/XMLHandler.class
-
- - link:XMLHandler-asmified.java[Asmified]
-
-== References
-

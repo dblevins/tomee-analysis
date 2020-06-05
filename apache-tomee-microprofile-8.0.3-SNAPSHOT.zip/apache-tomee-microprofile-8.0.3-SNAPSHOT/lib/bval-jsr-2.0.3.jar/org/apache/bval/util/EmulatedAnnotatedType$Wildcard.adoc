@@ -1,6 +1,0 @@
-= org/apache/bval/util/EmulatedAnnotatedType$Wildcard.class
-
- - link:EmulatedAnnotatedType$Wildcard-asmified.java[Asmified]
-
-== References
-

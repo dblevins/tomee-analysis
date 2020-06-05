@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/bval/MethodConstraints.class
-
- - link:MethodConstraints-asmified.java[Asmified]
-
-== References
-

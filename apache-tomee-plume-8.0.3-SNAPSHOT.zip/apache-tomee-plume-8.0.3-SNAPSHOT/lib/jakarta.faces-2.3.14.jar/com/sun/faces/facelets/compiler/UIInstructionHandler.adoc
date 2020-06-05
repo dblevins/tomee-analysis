@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/UIInstructionHandler.class
-
- - link:UIInstructionHandler-asmified.java[Asmified]
-
-== References
-

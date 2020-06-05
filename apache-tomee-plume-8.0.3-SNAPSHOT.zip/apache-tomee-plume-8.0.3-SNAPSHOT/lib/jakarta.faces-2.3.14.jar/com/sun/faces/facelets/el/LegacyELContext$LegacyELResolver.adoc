@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/el/LegacyELContext$LegacyELResolver.class
-
- - link:LegacyELContext$LegacyELResolver-asmified.java[Asmified]
-
-== References
-

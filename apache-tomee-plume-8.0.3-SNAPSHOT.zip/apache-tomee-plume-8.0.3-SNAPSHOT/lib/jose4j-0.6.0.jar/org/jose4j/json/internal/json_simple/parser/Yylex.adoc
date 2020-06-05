@@ -1,6 +1,0 @@
-= org/jose4j/json/internal/json_simple/parser/Yylex.class
-
- - link:Yylex-asmified.java[Asmified]
-
-== References
-

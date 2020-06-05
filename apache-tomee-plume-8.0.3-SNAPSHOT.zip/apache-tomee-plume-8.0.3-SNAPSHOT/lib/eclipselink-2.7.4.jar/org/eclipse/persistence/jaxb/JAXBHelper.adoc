@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBHelper.class
-
- - link:JAXBHelper-asmified.java[Asmified]
-
-== References
-

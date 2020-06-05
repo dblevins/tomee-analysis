@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/MetadataReader$ForElement.class
-
- - link:MetadataReader$ForElement-asmified.java[Asmified]
-
-== References
-

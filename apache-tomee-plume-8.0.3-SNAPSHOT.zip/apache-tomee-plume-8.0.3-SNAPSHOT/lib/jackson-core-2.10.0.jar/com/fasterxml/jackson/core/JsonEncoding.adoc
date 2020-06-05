@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/JsonEncoding.class
-
- - link:JsonEncoding-asmified.java[Asmified]
-
-== References
-

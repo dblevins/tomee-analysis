@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/ValidatorMappingProvider.class
-
- - link:ValidatorMappingProvider-asmified.java[Asmified]
-
-== References
-

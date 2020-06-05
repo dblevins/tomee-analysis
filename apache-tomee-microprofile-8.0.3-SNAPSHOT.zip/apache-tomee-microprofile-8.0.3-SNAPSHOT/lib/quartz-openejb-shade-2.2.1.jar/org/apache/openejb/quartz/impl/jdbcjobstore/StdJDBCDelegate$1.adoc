@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/StdJDBCDelegate$1.class
-
- - link:StdJDBCDelegate$1-asmified.java[Asmified]
-
-== References
-

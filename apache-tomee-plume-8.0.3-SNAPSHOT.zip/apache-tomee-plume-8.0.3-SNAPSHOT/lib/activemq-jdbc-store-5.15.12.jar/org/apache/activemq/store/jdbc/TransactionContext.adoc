@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/TransactionContext.class
-
- - link:TransactionContext-asmified.java[Asmified]
-
-== References
-

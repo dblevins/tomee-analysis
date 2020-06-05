@@ -1,6 +1,0 @@
-= jakarta/faces/event/PreDestroyViewMapEvent.class
-
- - link:PreDestroyViewMapEvent-asmified.java[Asmified]
-
-== References
-

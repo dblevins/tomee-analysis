@@ -1,6 +1,0 @@
-= jakarta/jms/QueueRequestor.class
-
- - link:QueueRequestor-asmified.java[Asmified]
-
-== References
-

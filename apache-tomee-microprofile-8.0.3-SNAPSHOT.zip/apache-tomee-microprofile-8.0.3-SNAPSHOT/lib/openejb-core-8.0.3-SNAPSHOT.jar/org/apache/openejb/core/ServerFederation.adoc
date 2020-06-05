@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ServerFederation.class
-
- - link:ServerFederation-asmified.java[Asmified]
-
-== References
-

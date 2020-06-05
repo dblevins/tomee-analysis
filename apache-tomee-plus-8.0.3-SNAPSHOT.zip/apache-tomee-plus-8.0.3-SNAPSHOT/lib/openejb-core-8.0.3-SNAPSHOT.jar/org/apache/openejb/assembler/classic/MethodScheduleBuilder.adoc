@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/MethodScheduleBuilder.class
-
- - link:MethodScheduleBuilder-asmified.java[Asmified]
-
-== References
-

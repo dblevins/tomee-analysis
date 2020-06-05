@@ -1,6 +1,0 @@
-= jakarta/faces/component/_PassThroughAttributesMap.class
-
- - link:_PassThroughAttributesMap-asmified.java[Asmified]
-
-== References
-

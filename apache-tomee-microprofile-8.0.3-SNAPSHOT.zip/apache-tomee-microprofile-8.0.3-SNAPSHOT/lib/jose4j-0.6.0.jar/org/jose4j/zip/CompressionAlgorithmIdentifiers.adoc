@@ -1,6 +1,0 @@
-= org/jose4j/zip/CompressionAlgorithmIdentifiers.class
-
- - link:CompressionAlgorithmIdentifiers-asmified.java[Asmified]
-
-== References
-

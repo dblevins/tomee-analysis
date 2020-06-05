@@ -1,6 +1,0 @@
-= com/sun/faces/context/InjectionFacesContextFactory.class
-
- - link:InjectionFacesContextFactory-asmified.java[Asmified]
-
-== References
-

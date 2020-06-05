@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ResponseTypeImplBuilder.class
-
- - link:ResponseTypeImplBuilder-asmified.java[Asmified]
-
-== References
-

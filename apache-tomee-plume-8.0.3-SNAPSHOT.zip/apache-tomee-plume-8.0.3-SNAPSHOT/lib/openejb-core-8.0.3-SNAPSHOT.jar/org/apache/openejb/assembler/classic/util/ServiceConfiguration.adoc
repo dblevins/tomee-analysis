@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/util/ServiceConfiguration.class
-
- - link:ServiceConfiguration-asmified.java[Asmified]
-
-== References
-

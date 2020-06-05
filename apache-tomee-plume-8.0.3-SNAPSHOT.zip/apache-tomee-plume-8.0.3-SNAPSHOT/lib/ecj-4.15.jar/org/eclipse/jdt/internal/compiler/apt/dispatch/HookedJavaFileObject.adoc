@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/HookedJavaFileObject.class
-
- - link:HookedJavaFileObject-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/ListNode$ListNodeIterator.class
-
- - link:ListNode$ListNodeIterator-asmified.java[Asmified]
-
-== References
-

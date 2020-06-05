@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/TCPRemoteCommitProvider$TCPPortListener$ReceiveSocketHandler.class
-
- - link:TCPRemoteCommitProvider$TCPPortListener$ReceiveSocketHandler-asmified.java[Asmified]
-
-== References
-

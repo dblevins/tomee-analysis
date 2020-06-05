@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/LegacyMethodBinding.class
-
- - link:LegacyMethodBinding-asmified.java[Asmified]
-
-== References
-

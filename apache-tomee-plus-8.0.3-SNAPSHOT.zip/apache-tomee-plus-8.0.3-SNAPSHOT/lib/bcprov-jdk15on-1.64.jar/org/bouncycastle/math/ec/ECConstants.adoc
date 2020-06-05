@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/ECConstants.class
-
- - link:ECConstants-asmified.java[Asmified]
-
-== References
-

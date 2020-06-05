@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/AbstractAccessLogValve$LocalServerNameElement.class
-
- - link:AbstractAccessLogValve$LocalServerNameElement-asmified.java[Asmified]
-
-== References
-

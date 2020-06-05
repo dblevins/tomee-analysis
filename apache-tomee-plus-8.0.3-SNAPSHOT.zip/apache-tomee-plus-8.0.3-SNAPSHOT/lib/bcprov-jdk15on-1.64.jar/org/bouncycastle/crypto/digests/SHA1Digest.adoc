@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/digests/SHA1Digest.class
-
- - link:SHA1Digest-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/rights/Grantee.class
-
- - link:Grantee-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/oracle/annotations/PLSQLRecords.class
-
- - link:PLSQLRecords-asmified.java[Asmified]
-
-== References
-

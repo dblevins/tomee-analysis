@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/Ordering.class
-
- - link:Ordering-asmified.java[Asmified]
-
-== References
-

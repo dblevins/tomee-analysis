@@ -1,6 +1,0 @@
-= org/apache/cxf/resource/SinglePropertyResolver.class
-
- - link:SinglePropertyResolver-asmified.java[Asmified]
-
-== References
-

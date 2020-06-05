@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/PathNavigation$Callback.class
-
- - link:PathNavigation$Callback-asmified.java[Asmified]
-
-== References
-

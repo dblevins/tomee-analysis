@@ -1,6 +1,0 @@
-= org/apache/activemq/command/BaseEndpoint.class
-
- - link:BaseEndpoint-asmified.java[Asmified]
-
-== References
-

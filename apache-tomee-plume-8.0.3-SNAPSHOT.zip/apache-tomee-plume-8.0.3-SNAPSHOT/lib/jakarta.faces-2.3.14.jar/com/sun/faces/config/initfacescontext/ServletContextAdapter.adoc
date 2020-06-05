@@ -1,6 +1,0 @@
-= com/sun/faces/config/initfacescontext/ServletContextAdapter.class
-
- - link:ServletContextAdapter-asmified.java[Asmified]
-
-== References
-

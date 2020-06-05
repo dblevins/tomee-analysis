@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/HttpsMessageTrustDecider.class
-
- - link:HttpsMessageTrustDecider-asmified.java[Asmified]
-
-== References
-

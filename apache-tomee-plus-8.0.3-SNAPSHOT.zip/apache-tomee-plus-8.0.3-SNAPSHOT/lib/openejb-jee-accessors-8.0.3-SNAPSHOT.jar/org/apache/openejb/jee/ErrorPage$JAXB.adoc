@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ErrorPage$JAXB.class
-
- - link:ErrorPage$JAXB-asmified.java[Asmified]
-
-== References
-

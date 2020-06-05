@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/claims/ClaimCollection.class
-
- - link:ClaimCollection-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/metrics/annotation/Timed.class
-
- - link:Timed-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/SingleFieldManager.class
-
- - link:SingleFieldManager-asmified.java[Asmified]
-
-== References
-

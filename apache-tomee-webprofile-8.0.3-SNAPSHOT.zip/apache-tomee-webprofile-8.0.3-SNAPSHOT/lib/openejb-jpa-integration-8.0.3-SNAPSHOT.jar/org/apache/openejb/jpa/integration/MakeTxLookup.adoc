@@ -1,6 +1,0 @@
-= org/apache/openejb/jpa/integration/MakeTxLookup.class
-
- - link:MakeTxLookup-asmified.java[Asmified]
-
-== References
-

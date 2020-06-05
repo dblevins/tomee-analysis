@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/UnproxyableBean.class
-
- - link:UnproxyableBean-asmified.java[Asmified]
-
-== References
-

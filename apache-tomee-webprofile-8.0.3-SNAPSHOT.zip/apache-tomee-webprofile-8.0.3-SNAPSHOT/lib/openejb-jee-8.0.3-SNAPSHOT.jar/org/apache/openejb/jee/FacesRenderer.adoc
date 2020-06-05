@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesRenderer.class
-
- - link:FacesRenderer-asmified.java[Asmified]
-
-== References
-

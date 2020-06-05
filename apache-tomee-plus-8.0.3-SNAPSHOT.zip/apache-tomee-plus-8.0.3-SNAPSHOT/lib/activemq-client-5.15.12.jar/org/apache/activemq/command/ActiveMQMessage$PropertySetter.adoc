@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQMessage$PropertySetter.class
-
- - link:ActiveMQMessage$PropertySetter-asmified.java[Asmified]
-
-== References
-

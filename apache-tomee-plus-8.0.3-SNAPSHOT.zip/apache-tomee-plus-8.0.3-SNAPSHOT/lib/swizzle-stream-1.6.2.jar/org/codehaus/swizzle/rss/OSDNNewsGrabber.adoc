@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/rss/OSDNNewsGrabber.class
-
- - link:OSDNNewsGrabber-asmified.java[Asmified]
-
-== References
-

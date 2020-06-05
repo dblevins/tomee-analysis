@@ -1,6 +1,0 @@
-= javax/json/bind/config/PropertyVisibilityStrategy.class
-
- - link:PropertyVisibilityStrategy-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/User.class
-
- - link:User-asmified.java[Asmified]
-
-== References
-

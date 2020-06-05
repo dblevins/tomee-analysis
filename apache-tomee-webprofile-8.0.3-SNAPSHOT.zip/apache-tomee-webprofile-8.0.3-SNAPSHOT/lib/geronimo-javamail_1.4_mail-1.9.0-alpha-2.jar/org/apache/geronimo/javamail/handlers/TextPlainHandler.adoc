@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/handlers/TextPlainHandler.class
-
- - link:TextPlainHandler-asmified.java[Asmified]
-
-== References
-

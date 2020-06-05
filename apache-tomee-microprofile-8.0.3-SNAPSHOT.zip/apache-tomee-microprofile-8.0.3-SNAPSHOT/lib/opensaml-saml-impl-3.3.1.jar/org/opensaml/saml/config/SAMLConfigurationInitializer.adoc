@@ -1,6 +1,0 @@
-= org/opensaml/saml/config/SAMLConfigurationInitializer.class
-
- - link:SAMLConfigurationInitializer-asmified.java[Asmified]
-
-== References
-

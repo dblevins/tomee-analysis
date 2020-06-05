@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/SecuritySupport.class
-
- - link:SecuritySupport-asmified.java[Asmified]
-
-== References
-

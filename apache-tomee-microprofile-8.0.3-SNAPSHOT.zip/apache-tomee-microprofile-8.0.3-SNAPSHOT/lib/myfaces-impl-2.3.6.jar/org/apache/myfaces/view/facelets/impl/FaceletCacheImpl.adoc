@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/impl/FaceletCacheImpl.class
-
- - link:FaceletCacheImpl-asmified.java[Asmified]
-
-== References
-

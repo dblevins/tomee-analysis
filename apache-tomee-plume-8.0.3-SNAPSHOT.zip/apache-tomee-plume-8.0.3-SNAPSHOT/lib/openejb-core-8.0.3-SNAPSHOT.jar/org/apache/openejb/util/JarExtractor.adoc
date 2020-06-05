@@ -1,6 +1,0 @@
-= org/apache/openejb/util/JarExtractor.class
-
- - link:JarExtractor-asmified.java[Asmified]
-
-== References
-

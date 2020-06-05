@@ -1,6 +1,0 @@
-= jakarta/mail/Authenticator.class
-
- - link:Authenticator-asmified.java[Asmified]
-
-== References
-

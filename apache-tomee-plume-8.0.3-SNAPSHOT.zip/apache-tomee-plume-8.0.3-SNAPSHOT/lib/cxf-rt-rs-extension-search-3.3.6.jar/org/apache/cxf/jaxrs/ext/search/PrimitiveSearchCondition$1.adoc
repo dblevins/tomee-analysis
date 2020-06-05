@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/PrimitiveSearchCondition$1.class
-
- - link:PrimitiveSearchCondition$1-asmified.java[Asmified]
-
-== References
-

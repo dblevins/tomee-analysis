@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/soap/SOAPBodySerializer.class
-
- - link:SOAPBodySerializer-asmified.java[Asmified]
-
-== References
-

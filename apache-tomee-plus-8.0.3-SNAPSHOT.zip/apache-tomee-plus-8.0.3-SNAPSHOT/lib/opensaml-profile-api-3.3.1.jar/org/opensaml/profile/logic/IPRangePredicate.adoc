@@ -1,6 +1,0 @@
-= org/opensaml/profile/logic/IPRangePredicate.class
-
- - link:IPRangePredicate-asmified.java[Asmified]
-
-== References
-

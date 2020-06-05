@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/trust/STSUtils.class
-
- - link:STSUtils-asmified.java[Asmified]
-
-== References
-

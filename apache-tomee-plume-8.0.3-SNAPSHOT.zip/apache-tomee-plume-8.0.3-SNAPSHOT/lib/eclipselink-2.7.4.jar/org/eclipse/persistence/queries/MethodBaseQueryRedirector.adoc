@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/MethodBaseQueryRedirector.class
-
- - link:MethodBaseQueryRedirector-asmified.java[Asmified]
-
-== References
-

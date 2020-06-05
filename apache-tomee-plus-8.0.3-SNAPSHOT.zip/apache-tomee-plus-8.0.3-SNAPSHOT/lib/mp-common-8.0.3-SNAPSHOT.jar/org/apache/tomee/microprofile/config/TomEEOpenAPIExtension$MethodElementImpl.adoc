@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/config/TomEEOpenAPIExtension$MethodElementImpl.class
-
- - link:TomEEOpenAPIExtension$MethodElementImpl-asmified.java[Asmified]
-
-== References
-

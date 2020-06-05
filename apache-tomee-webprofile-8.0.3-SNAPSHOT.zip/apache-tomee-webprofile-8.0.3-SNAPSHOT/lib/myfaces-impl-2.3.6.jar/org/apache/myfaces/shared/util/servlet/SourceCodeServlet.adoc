@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/servlet/SourceCodeServlet.class
-
- - link:SourceCodeServlet-asmified.java[Asmified]
-
-== References
-

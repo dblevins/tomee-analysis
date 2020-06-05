@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/DestinationsViewFilter.class
-
- - link:DestinationsViewFilter-asmified.java[Asmified]
-
-== References
-

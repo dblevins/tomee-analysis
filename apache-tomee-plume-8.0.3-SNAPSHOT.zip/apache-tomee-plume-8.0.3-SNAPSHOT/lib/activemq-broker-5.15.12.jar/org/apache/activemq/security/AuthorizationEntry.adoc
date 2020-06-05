@@ -1,6 +1,0 @@
-= org/apache/activemq/security/AuthorizationEntry.class
-
- - link:AuthorizationEntry-asmified.java[Asmified]
-
-== References
-

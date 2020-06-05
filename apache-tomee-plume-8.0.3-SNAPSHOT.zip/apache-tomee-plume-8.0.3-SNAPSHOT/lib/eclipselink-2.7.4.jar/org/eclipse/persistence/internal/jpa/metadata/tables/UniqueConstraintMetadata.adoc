@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/tables/UniqueConstraintMetadata.class
-
- - link:UniqueConstraintMetadata-asmified.java[Asmified]
-
-== References
-

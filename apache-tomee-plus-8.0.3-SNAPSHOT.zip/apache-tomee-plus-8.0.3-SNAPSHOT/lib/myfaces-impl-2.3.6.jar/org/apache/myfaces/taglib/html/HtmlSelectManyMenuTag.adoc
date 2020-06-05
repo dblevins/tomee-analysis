@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlSelectManyMenuTag.class
-
- - link:HtmlSelectManyMenuTag-asmified.java[Asmified]
-
-== References
-

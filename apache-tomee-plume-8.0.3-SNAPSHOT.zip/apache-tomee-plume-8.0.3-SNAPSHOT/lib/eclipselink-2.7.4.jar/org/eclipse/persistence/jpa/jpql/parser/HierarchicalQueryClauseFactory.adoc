@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/HierarchicalQueryClauseFactory.class
-
- - link:HierarchicalQueryClauseFactory-asmified.java[Asmified]
-
-== References
-

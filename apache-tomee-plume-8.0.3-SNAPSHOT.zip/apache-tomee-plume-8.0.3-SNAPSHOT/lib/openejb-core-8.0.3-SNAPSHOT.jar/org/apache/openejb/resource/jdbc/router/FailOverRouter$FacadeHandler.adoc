@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/router/FailOverRouter$FacadeHandler.class
-
- - link:FailOverRouter$FacadeHandler-asmified.java[Asmified]
-
-== References
-

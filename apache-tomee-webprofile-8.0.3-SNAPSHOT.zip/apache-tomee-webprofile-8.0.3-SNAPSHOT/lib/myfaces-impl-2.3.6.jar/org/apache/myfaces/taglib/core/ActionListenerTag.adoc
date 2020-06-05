@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ActionListenerTag.class
-
- - link:ActionListenerTag-asmified.java[Asmified]
-
-== References
-

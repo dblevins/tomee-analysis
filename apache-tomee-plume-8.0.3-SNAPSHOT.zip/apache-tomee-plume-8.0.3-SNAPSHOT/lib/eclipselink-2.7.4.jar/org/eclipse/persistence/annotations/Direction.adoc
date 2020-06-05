@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/Direction.class
-
- - link:Direction-asmified.java[Asmified]
-
-== References
-

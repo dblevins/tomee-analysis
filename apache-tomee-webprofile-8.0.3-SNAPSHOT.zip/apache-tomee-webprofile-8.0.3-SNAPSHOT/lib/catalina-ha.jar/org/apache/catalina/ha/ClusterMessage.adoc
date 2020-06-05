@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/ClusterMessage.class
-
- - link:ClusterMessage-asmified.java[Asmified]
-
-== References
-

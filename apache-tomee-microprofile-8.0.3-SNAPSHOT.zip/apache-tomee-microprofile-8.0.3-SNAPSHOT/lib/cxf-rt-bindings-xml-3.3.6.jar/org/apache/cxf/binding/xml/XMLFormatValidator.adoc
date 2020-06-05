@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/xml/XMLFormatValidator.class
-
- - link:XMLFormatValidator-asmified.java[Asmified]
-
-== References
-

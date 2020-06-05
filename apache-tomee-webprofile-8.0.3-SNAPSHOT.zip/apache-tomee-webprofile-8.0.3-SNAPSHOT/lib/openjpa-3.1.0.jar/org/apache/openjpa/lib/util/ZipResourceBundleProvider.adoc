@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/ZipResourceBundleProvider.class
-
- - link:ZipResourceBundleProvider-asmified.java[Asmified]
-
-== References
-

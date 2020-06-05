@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_StyleProperties.class
-
- - link:_StyleProperties-asmified.java[Asmified]
-
-== References
-

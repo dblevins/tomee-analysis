@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/impl/ByteConstant.class
-
- - link:ByteConstant-asmified.java[Asmified]
-
-== References
-

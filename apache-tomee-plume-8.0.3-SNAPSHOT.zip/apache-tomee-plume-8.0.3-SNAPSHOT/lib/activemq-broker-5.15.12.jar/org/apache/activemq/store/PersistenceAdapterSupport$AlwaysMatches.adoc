@@ -1,6 +1,0 @@
-= org/apache/activemq/store/PersistenceAdapterSupport$AlwaysMatches.class
-
- - link:PersistenceAdapterSupport$AlwaysMatches-asmified.java[Asmified]
-
-== References
-

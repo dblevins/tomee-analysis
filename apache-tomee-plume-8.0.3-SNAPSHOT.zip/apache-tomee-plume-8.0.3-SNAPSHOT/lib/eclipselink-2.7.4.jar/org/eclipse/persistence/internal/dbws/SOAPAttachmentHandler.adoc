@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/dbws/SOAPAttachmentHandler.class
-
- - link:SOAPAttachmentHandler-asmified.java[Asmified]
-
-== References
-

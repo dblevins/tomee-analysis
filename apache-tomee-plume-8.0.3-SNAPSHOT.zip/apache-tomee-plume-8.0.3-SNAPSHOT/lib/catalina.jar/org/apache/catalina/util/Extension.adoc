@@ -1,6 +1,0 @@
-= org/apache/catalina/util/Extension.class
-
- - link:Extension-asmified.java[Asmified]
-
-== References
-

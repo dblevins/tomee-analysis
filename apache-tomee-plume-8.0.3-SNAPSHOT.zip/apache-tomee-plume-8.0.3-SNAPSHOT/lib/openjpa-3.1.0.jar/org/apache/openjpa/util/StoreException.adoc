@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/StoreException.class
-
- - link:StoreException-asmified.java[Asmified]
-
-== References
-

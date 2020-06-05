@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/Utils.class
-
- - link:Utils-asmified.java[Asmified]
-
-== References
-

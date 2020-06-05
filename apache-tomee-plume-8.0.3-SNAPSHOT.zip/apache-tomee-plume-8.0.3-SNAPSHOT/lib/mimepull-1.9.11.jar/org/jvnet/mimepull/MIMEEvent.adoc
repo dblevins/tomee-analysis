@@ -1,6 +1,0 @@
-= org/jvnet/mimepull/MIMEEvent.class
-
- - link:MIMEEvent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/resource/spi/LazyAssociatableConnectionManager.class
-
- - link:LazyAssociatableConnectionManager-asmified.java[Asmified]
-
-== References
-

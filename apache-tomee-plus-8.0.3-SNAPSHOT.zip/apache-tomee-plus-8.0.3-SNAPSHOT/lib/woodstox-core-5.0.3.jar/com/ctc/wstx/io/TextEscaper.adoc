@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/TextEscaper.class
-
- - link:TextEscaper-asmified.java[Asmified]
-
-== References
-

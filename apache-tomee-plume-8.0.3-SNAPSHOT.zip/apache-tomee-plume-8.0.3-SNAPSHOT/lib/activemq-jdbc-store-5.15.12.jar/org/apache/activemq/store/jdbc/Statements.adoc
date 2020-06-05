@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/Statements.class
-
- - link:Statements-asmified.java[Asmified]
-
-== References
-

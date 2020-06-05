@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/EncryptedIDMarshaller.class
-
- - link:EncryptedIDMarshaller-asmified.java[Asmified]
-
-== References
-

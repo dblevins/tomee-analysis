@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/MultiQueryMetaData$Parameter$Mode.class
-
- - link:MultiQueryMetaData$Parameter$Mode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/ws/rs/container/ContainerRequestContext.class
-
- - link:ContainerRequestContext-asmified.java[Asmified]
-
-== References
-

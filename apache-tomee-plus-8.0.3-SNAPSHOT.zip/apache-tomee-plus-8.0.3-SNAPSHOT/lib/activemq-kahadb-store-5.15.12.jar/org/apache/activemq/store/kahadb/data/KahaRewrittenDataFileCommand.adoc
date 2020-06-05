@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaRewrittenDataFileCommand.class
-
- - link:KahaRewrittenDataFileCommand-asmified.java[Asmified]
-
-== References
-

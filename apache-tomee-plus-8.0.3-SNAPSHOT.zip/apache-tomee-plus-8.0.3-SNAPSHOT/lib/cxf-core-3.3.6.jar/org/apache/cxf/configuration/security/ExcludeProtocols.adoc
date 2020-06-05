@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/ExcludeProtocols.class
-
- - link:ExcludeProtocols-asmified.java[Asmified]
-
-== References
-

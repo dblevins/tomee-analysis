@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/localization/JAXBLocalization.class
-
- - link:JAXBLocalization-asmified.java[Asmified]
-
-== References
-

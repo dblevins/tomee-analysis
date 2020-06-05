@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/QueryBuilderImpl.class
-
- - link:QueryBuilderImpl-asmified.java[Asmified]
-
-== References
-

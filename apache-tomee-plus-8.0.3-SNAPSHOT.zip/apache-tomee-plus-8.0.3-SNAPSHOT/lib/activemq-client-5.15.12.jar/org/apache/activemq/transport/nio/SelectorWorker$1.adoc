@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/nio/SelectorWorker$1.class
-
- - link:SelectorWorker$1-asmified.java[Asmified]
-
-== References
-

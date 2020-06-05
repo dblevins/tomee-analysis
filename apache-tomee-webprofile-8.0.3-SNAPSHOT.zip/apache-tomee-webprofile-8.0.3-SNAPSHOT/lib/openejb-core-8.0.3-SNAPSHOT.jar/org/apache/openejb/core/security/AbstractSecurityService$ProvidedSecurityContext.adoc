@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/AbstractSecurityService$ProvidedSecurityContext.class
-
- - link:AbstractSecurityService$ProvidedSecurityContext-asmified.java[Asmified]
-
-== References
-

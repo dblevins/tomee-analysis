@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/util/VariableMarshaller.class
-
- - link:VariableMarshaller-asmified.java[Asmified]
-
-== References
-

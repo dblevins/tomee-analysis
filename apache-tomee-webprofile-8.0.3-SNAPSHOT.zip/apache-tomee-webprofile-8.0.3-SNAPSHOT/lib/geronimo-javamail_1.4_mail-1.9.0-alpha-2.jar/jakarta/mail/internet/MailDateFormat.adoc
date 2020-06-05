@@ -1,6 +1,0 @@
-= jakarta/mail/internet/MailDateFormat.class
-
- - link:MailDateFormat-asmified.java[Asmified]
-
-== References
-

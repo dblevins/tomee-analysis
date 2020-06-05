@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spec/TLSConfiguration.class
-
- - link:TLSConfiguration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/DatasourceCall.class
-
- - link:DatasourceCall-asmified.java[Asmified]
-
-== References
-

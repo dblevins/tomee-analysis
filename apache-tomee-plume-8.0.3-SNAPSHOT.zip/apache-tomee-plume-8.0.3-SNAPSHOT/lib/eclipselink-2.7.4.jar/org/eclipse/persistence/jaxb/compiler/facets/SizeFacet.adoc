@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/facets/SizeFacet.class
-
- - link:SizeFacet-asmified.java[Asmified]
-
-== References
-

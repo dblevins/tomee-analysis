@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/UnproxyableResolutionException.class
-
- - link:UnproxyableResolutionException-asmified.java[Asmified]
-
-== References
-

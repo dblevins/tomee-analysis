@@ -1,7 +1,0 @@
-= javax/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer.class
-
- - link:ObserverMethodConfigurator$EventConsumer-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.EventContext - 1

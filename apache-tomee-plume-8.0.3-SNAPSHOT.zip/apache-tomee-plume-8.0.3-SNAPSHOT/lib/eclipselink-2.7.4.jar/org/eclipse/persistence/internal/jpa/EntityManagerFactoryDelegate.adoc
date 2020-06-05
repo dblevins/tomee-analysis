@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/EntityManagerFactoryDelegate.class
-
- - link:EntityManagerFactoryDelegate-asmified.java[Asmified]
-
-== References
-

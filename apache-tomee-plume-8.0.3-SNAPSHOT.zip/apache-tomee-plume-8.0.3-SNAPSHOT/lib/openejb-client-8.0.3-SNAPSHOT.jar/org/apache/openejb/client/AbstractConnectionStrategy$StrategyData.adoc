@@ -1,6 +1,0 @@
-= org/apache/openejb/client/AbstractConnectionStrategy$StrategyData.class
-
- - link:AbstractConnectionStrategy$StrategyData-asmified.java[Asmified]
-
-== References
-

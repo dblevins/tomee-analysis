@@ -1,6 +1,0 @@
-= javax/enterprise/concurrent/ContextService.class
-
- - link:ContextService-asmified.java[Asmified]
-
-== References
-

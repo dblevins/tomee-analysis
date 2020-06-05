@@ -1,6 +1,0 @@
-= com/ibm/wsdl/BindingOutputImpl.class
-
- - link:BindingOutputImpl-asmified.java[Asmified]
-
-== References
-

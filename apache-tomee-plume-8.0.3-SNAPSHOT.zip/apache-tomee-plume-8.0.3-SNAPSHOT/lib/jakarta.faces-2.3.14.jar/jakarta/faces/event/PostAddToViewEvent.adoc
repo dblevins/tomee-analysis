@@ -1,6 +1,0 @@
-= jakarta/faces/event/PostAddToViewEvent.class
-
- - link:PostAddToViewEvent-asmified.java[Asmified]
-
-== References
-

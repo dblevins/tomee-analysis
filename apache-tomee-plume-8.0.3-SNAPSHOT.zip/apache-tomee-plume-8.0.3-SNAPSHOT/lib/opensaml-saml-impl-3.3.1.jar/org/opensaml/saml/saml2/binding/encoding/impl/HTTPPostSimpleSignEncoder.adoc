@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/binding/encoding/impl/HTTPPostSimpleSignEncoder.class
-
- - link:HTTPPostSimpleSignEncoder-asmified.java[Asmified]
-
-== References
-

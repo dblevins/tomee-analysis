@@ -1,6 +1,0 @@
-= jakarta/security/jacc/EJBRoleRefPermission.class
-
- - link:EJBRoleRefPermission-asmified.java[Asmified]
-
-== References
-

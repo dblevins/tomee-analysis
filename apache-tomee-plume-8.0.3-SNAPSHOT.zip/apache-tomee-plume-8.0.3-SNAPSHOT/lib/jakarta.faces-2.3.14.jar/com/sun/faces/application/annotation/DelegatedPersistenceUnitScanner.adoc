@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/DelegatedPersistenceUnitScanner.class
-
- - link:DelegatedPersistenceUnitScanner-asmified.java[Asmified]
-
-== References
-

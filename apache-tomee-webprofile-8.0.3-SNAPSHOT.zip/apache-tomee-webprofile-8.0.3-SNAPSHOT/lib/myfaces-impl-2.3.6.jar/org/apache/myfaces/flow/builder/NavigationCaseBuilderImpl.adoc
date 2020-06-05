@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/builder/NavigationCaseBuilderImpl.class
-
- - link:NavigationCaseBuilderImpl-asmified.java[Asmified]
-
-== References
-

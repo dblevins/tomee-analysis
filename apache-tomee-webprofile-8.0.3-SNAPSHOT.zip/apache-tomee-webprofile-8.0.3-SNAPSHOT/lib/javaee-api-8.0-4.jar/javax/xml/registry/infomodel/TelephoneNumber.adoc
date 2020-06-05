@@ -1,7 +1,0 @@
-= javax/xml/registry/infomodel/TelephoneNumber.class
-
- - link:TelephoneNumber-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 12

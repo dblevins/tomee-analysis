@@ -1,6 +1,0 @@
-= jakarta/websocket/CloseReason$CloseCodes.class
-
- - link:CloseReason$CloseCodes-asmified.java[Asmified]
-
-== References
-

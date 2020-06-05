@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/jcajce/provider/mceliece/BCMcEliecePublicKey.class
-
- - link:BCMcEliecePublicKey-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/interceptors/WebFaultOutInterceptor.class
-
- - link:WebFaultOutInterceptor-asmified.java[Asmified]
-
-== References
-

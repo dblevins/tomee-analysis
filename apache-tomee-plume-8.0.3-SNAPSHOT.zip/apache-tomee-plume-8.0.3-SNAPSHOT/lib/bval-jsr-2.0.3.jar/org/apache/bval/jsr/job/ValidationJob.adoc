@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidationJob.class
-
- - link:ValidationJob-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/CommonToken.class
-
- - link:CommonToken-asmified.java[Asmified]
-
-== References
-

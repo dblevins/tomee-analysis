@@ -1,6 +1,0 @@
-= com/sun/xml/bind/util/Which.class
-
- - link:Which-asmified.java[Asmified]
-
-== References
-

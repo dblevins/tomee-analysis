@@ -1,6 +1,0 @@
-= javax/faces/component/html/_FocusBlurProperties.class
-
- - link:_FocusBlurProperties-asmified.java[Asmified]
-
-== References
-

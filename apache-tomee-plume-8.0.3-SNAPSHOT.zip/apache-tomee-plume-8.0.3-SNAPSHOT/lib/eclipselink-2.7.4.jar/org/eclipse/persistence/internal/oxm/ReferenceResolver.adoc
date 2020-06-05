@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/ReferenceResolver.class
-
- - link:ReferenceResolver-asmified.java[Asmified]
-
-== References
-

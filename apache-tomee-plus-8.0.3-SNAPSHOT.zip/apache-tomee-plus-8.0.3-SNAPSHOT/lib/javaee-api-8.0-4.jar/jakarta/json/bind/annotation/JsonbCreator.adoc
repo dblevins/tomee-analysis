@@ -1,6 +1,0 @@
-= jakarta/json/bind/annotation/JsonbCreator.class
-
- - link:JsonbCreator-asmified.java[Asmified]
-
-== References
-

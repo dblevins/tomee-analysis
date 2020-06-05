@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/DelegateActionListener.class
-
- - link:DelegateActionListener-asmified.java[Asmified]
-
-== References
-

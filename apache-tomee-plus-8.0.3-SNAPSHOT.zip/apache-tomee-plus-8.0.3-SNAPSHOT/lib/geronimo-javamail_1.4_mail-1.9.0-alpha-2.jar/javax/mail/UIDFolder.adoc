@@ -1,8 +1,0 @@
-= javax/mail/UIDFolder.class
-
- - link:UIDFolder-asmified.java[Asmified]
-
-== References
-
- - javax.mail.MessagingException - 5
- - javax.mail.Message - 4

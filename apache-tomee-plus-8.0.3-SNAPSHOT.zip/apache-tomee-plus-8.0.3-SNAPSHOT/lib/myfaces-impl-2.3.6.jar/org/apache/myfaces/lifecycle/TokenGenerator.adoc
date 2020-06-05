@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/TokenGenerator.class
-
- - link:TokenGenerator-asmified.java[Asmified]
-
-== References
-

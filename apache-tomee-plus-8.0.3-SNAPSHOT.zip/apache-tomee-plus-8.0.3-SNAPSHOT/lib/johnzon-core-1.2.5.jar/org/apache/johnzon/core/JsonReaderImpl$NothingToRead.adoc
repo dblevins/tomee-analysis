@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonReaderImpl$NothingToRead.class
-
- - link:JsonReaderImpl$NothingToRead-asmified.java[Asmified]
-
-== References
-

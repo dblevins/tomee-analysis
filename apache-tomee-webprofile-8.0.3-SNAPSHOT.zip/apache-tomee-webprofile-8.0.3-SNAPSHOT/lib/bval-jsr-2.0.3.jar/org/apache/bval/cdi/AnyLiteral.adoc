@@ -1,6 +1,0 @@
-= org/apache/bval/cdi/AnyLiteral.class
-
- - link:AnyLiteral-asmified.java[Asmified]
-
-== References
-

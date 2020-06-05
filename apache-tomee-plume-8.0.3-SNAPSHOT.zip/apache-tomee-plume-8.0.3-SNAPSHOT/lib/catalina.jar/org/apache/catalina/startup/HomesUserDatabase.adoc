@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/HomesUserDatabase.class
-
- - link:HomesUserDatabase-asmified.java[Asmified]
-
-== References
-

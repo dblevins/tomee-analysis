@@ -1,6 +1,0 @@
-= org/opensaml/xacml/profile/saml/impl/ReferencedPoliciesTypeMarshaller.class
-
- - link:ReferencedPoliciesTypeMarshaller-asmified.java[Asmified]
-
-== References
-

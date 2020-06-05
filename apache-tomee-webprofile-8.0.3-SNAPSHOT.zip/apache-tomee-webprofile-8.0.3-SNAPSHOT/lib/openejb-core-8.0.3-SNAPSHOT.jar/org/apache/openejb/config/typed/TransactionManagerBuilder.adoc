@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/TransactionManagerBuilder.class
-
- - link:TransactionManagerBuilder-asmified.java[Asmified]
-
-== References
-

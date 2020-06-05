@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/LocaleUtils.class
-
- - link:LocaleUtils-asmified.java[Asmified]
-
-== References
-

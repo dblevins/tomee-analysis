@@ -1,6 +1,0 @@
-= org/apache/cxf/bindings/xformat/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

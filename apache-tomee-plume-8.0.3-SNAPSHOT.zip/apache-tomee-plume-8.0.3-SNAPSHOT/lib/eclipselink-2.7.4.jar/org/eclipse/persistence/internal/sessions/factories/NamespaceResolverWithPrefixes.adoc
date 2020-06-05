@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/NamespaceResolverWithPrefixes.class
-
- - link:NamespaceResolverWithPrefixes-asmified.java[Asmified]
-
-== References
-

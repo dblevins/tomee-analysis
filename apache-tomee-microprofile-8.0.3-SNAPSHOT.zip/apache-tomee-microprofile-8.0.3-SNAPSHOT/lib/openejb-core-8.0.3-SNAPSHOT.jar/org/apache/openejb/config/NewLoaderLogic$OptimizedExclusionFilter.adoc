@@ -1,6 +1,0 @@
-= org/apache/openejb/config/NewLoaderLogic$OptimizedExclusionFilter.class
-
- - link:NewLoaderLogic$OptimizedExclusionFilter-asmified.java[Asmified]
-
-== References
-

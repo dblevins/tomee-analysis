@@ -1,9 +1,0 @@
-= javax/enterprise/inject/Specializes$Literal.class
-
- - link:Specializes$Literal-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.Specializes$Literal - 4
- - javax.enterprise.inject.Specializes - 2
- - javax.enterprise.util.AnnotationLiteral - 2

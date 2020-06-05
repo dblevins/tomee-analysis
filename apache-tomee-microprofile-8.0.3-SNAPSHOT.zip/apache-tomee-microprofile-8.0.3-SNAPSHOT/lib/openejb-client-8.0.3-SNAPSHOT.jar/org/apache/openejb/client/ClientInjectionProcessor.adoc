@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ClientInjectionProcessor.class
-
- - link:ClientInjectionProcessor-asmified.java[Asmified]
-
-== References
-

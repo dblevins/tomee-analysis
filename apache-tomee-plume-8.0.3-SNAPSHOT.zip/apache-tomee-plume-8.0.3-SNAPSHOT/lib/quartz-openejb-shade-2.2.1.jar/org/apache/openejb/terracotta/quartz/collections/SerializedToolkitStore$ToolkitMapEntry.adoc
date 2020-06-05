@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/collections/SerializedToolkitStore$ToolkitMapEntry.class
-
- - link:SerializedToolkitStore$ToolkitMapEntry-asmified.java[Asmified]
-
-== References
-

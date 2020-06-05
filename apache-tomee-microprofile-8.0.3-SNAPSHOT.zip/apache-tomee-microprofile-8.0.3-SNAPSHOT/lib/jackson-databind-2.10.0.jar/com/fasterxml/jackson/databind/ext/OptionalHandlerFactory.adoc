@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ext/OptionalHandlerFactory.class
-
- - link:OptionalHandlerFactory-asmified.java[Asmified]
-
-== References
-

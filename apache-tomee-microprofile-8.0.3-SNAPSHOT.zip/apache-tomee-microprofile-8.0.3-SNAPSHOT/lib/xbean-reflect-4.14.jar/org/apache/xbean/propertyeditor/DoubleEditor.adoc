@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/DoubleEditor.class
-
- - link:DoubleEditor-asmified.java[Asmified]
-
-== References
-

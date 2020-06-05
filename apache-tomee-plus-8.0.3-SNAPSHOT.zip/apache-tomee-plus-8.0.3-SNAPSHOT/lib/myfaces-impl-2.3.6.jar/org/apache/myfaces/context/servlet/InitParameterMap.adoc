@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/servlet/InitParameterMap.class
-
- - link:InitParameterMap-asmified.java[Asmified]
-
-== References
-

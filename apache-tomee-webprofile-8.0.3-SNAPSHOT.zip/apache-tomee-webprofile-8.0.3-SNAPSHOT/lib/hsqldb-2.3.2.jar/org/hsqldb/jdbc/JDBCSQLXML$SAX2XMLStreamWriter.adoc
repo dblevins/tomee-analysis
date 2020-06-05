@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCSQLXML$SAX2XMLStreamWriter.class
-
- - link:JDBCSQLXML$SAX2XMLStreamWriter-asmified.java[Asmified]
-
-== References
-

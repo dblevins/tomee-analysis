@@ -1,6 +1,0 @@
-= org/apache/myfaces/convert/ConverterUtils.class
-
- - link:ConverterUtils-asmified.java[Asmified]
-
-== References
-

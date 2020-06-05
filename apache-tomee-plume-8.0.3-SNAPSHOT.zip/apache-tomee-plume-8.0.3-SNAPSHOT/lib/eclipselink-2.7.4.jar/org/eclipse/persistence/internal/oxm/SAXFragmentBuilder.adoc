@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/SAXFragmentBuilder.class
-
- - link:SAXFragmentBuilder-asmified.java[Asmified]
-
-== References
-

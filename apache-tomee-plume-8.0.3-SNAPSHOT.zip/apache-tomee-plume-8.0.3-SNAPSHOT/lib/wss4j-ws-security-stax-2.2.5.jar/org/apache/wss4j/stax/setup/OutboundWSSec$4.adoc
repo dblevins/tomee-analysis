@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/setup/OutboundWSSec$4.class
-
- - link:OutboundWSSec$4-asmified.java[Asmified]
-
-== References
-

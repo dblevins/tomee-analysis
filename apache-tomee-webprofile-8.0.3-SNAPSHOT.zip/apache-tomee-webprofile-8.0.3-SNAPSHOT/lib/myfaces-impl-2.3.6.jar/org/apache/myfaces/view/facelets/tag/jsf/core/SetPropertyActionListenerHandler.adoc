@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/SetPropertyActionListenerHandler.class
-
- - link:SetPropertyActionListenerHandler-asmified.java[Asmified]
-
-== References
-

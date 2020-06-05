@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/handler/MessageContext.class
-
- - link:MessageContext-asmified.java[Asmified]
-
-== References
-

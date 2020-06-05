@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/ConversionException.class
-
- - link:ConversionException-asmified.java[Asmified]
-
-== References
-

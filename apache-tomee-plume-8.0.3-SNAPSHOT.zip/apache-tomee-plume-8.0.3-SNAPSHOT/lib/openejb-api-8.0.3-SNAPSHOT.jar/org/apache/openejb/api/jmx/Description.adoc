@@ -1,6 +1,0 @@
-= org/apache/openejb/api/jmx/Description.class
-
- - link:Description-asmified.java[Asmified]
-
-== References
-

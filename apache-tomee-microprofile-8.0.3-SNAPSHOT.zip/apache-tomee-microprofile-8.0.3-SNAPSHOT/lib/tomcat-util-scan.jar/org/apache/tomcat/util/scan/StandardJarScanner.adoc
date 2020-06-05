@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/scan/StandardJarScanner.class
-
- - link:StandardJarScanner-asmified.java[Asmified]
-
-== References
-

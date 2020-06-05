@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/DefaultTagDecorator$Mapper.class
-
- - link:DefaultTagDecorator$Mapper-asmified.java[Asmified]
-
-== References
-

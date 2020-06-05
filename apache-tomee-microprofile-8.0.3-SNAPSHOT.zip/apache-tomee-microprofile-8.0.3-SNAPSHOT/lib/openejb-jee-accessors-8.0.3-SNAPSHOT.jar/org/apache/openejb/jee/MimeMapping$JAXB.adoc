@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MimeMapping$JAXB.class
-
- - link:MimeMapping$JAXB-asmified.java[Asmified]
-
-== References
-

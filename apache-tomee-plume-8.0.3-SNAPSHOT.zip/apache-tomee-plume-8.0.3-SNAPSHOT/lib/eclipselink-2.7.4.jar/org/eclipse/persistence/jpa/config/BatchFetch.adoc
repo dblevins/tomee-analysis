@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/BatchFetch.class
-
- - link:BatchFetch-asmified.java[Asmified]
-
-== References
-

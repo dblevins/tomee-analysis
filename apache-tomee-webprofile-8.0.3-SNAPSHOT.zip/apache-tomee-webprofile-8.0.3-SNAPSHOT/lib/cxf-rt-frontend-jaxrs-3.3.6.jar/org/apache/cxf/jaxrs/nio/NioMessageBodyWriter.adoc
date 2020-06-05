@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/nio/NioMessageBodyWriter.class
-
- - link:NioMessageBodyWriter-asmified.java[Asmified]
-
-== References
-

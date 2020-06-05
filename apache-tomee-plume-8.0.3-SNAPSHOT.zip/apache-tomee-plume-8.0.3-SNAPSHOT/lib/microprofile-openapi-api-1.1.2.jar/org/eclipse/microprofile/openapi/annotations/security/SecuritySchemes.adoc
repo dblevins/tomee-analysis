@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/security/SecuritySchemes.class
-
- - link:SecuritySchemes-asmified.java[Asmified]
-
-== References
-

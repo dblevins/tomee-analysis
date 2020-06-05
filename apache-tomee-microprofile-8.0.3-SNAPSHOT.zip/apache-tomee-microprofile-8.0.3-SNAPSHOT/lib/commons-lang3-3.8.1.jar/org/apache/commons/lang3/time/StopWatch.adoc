@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/time/StopWatch.class
-
- - link:StopWatch-asmified.java[Asmified]
-
-== References
-

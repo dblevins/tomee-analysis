@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/InheritancePolicy.class
-
- - link:InheritancePolicy-asmified.java[Asmified]
-
-== References
-

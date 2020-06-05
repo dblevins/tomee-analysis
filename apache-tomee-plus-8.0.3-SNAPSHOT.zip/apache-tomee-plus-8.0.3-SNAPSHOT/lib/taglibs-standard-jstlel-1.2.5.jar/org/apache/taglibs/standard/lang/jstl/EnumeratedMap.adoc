@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/EnumeratedMap.class
-
- - link:EnumeratedMap-asmified.java[Asmified]
-
-== References
-

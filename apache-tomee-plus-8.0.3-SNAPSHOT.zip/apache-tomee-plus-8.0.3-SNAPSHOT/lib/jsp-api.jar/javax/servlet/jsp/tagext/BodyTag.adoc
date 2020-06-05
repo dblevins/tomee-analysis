@@ -1,9 +1,0 @@
-= javax/servlet/jsp/tagext/BodyTag.class
-
- - link:BodyTag-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.jsp.tagext.BodyContent - 1
- - javax.servlet.jsp.JspException - 1
- - javax.servlet.jsp.tagext.IterationTag - 1

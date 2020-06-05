@@ -1,6 +1,0 @@
-= serp/bytecode/LoadInstruction.class
-
- - link:LoadInstruction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/management/persistence/StatusExchangeDataFilter.class
-
- - link:StatusExchangeDataFilter-asmified.java[Asmified]
-
-== References
-

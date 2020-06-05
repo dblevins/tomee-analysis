@@ -1,6 +1,0 @@
-= com/sun/faces/application/ViewMemberInstanceFactoryMetadataMap.class
-
- - link:ViewMemberInstanceFactoryMetadataMap-asmified.java[Asmified]
-
-== References
-
