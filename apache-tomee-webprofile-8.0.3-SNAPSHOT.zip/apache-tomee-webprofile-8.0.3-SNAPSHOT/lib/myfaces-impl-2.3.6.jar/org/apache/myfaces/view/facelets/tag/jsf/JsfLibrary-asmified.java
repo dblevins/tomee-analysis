@@ -46,7 +46,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/view/facelets/t
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("element");
 methodVisitor.visitLdcInsn("oam.passthrough.Element");
-methodVisitor.visitLdcInsn("javax.faces.passthrough.Element");
+methodVisitor.visitLdcInsn("jakarta.faces.passthrough.Element");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/view/facelets/tag/jsf/JsfElementHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/JsfLibrary", "addComponent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);

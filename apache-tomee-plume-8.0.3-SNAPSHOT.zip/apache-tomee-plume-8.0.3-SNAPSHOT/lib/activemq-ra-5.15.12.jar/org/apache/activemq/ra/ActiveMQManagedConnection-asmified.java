@@ -59,7 +59,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "localAndXATransa
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljakarta/security/auth/Subject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljavax/security/auth/Subject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "destroyed", "Z", null, null)
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/security/auth/Subject;Lorg/apache/activemq/ActiveMQConnection;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V", null, new String[] { "jakarta/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/security/auth/Subject;Lorg/apache/activemq/ActiveMQConnection;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -92,7 +92,7 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQManagedCo
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "subject", "Ljavax/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "info", "Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;");
@@ -127,7 +127,7 @@ methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/ra/ActiveMQManagedConnection", "jakarta/security/auth/Subject", "org/apache/activemq/ActiveMQConnection", "org/apache/activemq/ra/ActiveMQConnectionRequestInfo"}, 1, new Object[] {"jakarta/jms/JMSException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/activemq/ra/ActiveMQManagedConnection", "javax/security/auth/Subject", "org/apache/activemq/ActiveMQConnection", "org/apache/activemq/ra/ActiveMQConnectionRequestInfo"}, 1, new Object[] {"jakarta/jms/JMSException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "jakarta/resource/ResourceException");
 methodVisitor.visitInsn(DUP);
@@ -208,7 +208,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "associate", "(Ljakarta/security/auth/Subject;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V", null, new String[] { "jakarta/jms/JMSException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "associate", "(Ljavax/security/auth/Subject;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V", null, new String[] { "jakarta/jms/JMSException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/ra/ActiveMQConnectionRequestInfo", "getUserName", "()Ljava/lang/String;", false);
@@ -254,7 +254,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "subject", "Ljavax/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "info", "Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;");
@@ -446,7 +446,7 @@ methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnection", "(Ljakarta/security/auth/Subject;Ljakarta/resource/spi/ConnectionRequestInfo;)Ljava/lang/Object;", null, new String[] { "jakarta/resource/ResourceException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnection", "(Ljavax/security/auth/Subject;Ljakarta/resource/spi/ConnectionRequestInfo;)Ljava/lang/Object;", null, new String[] { "jakarta/resource/ResourceException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/ra/ManagedConnectionProxy");
 methodVisitor.visitInsn(DUP);
@@ -740,7 +740,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "matches", "(Ljakarta/security/auth/Subject;Ljakarta/resource/spi/ConnectionRequestInfo;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "matches", "(Ljavax/security/auth/Subject;Ljakarta/resource/spi/ConnectionRequestInfo;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -770,7 +770,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "subject", "Ljavax/security/auth/Subject;");
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label4);
 methodVisitor.visitInsn(ICONST_1);
@@ -780,7 +780,7 @@ methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/ra/ActiveMQManagedConnection", "jakarta/security/auth/Subject", "jakarta/resource/spi/ConnectionRequestInfo"}, 2, new Object[] {Opcodes.INTEGER, Opcodes.INTEGER});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/activemq/ra/ActiveMQManagedConnection", "javax/security/auth/Subject", "jakarta/resource/spi/ConnectionRequestInfo"}, 2, new Object[] {Opcodes.INTEGER, Opcodes.INTEGER});
 methodVisitor.visitInsn(IXOR);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
@@ -793,8 +793,8 @@ Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "subject", "Ljakarta/security/auth/Subject;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/ra/ActiveMQManagedConnection", "subject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label7);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);

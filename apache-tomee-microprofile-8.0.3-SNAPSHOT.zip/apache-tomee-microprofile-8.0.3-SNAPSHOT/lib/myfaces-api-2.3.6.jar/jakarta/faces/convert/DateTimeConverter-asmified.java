@@ -31,19 +31,19 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONV
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATE_ID", "Ljava/lang/String;", null, "javax.faces.converter.DateTimeConverter.DATE");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATE_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.DateTimeConverter.DATE");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATETIME_ID", "Ljava/lang/String;", null, "javax.faces.converter.DateTimeConverter.DATETIME");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATETIME_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.DateTimeConverter.DATETIME");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "STRING_ID", "Ljava/lang/String;", null, "javax.faces.converter.STRING");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "STRING_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.STRING");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TIME_ID", "Ljava/lang/String;", null, "javax.faces.converter.DateTimeConverter.TIME");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TIME_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.DateTimeConverter.TIME");
 fieldVisitor.visitEnd();
 }
 {
@@ -295,7 +295,7 @@ methodVisitor.visitJumpInsn(IFEQ, label17);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.DateTimeConverter.DATE");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.DateTimeConverter.DATE");
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);
@@ -317,7 +317,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.DateTimeConverter.TIME");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.DateTimeConverter.TIME");
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);
@@ -343,7 +343,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.DateTimeConverter.DATETIME");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.DateTimeConverter.DATETIME");
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);
@@ -420,7 +420,7 @@ methodVisitor.visitJumpInsn(IFEQ, label22);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.DateTimeConverter.DATE");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.DateTimeConverter.DATE");
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);
@@ -435,7 +435,7 @@ methodVisitor.visitJumpInsn(IFEQ, label23);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.DateTimeConverter.TIME");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.DateTimeConverter.TIME");
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);
@@ -450,7 +450,7 @@ methodVisitor.visitJumpInsn(IFEQ, label24);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.DateTimeConverter.DATETIME");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.DateTimeConverter.DATETIME");
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);
@@ -550,7 +550,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.STRING");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.STRING");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -597,7 +597,7 @@ methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.STRING");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.STRING");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);

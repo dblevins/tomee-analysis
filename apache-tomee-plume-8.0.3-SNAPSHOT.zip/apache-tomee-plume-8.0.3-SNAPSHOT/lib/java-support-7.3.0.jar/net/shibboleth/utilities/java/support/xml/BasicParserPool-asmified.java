@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "net/shibboleth/utilities/java/support/xml/BasicParserPool", null, "net/shibboleth/utilities/java/support/component/AbstractInitializableComponent", new String[] { "net/shibboleth/utilities/java/support/xml/ParserPool" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/ThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/ThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("net/shibboleth/utilities/java/support/xml/BasicParserPool$DocumentBuilderProxy", "net/shibboleth/utilities/java/support/xml/BasicParserPool", "DocumentBuilderProxy", ACC_PROTECTED);
@@ -1245,7 +1245,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/HashMap", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);

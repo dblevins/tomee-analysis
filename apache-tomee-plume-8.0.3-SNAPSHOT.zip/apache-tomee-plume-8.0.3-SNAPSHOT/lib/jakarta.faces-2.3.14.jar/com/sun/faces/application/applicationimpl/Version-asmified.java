@@ -158,7 +158,7 @@ methodVisitor.visitTypeInsn(NEW, "com/sun/faces/application/applicationimpl/Vers
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/application/applicationimpl/Version$JavaeeNamespaceContext", "<init>", "(Lcom/sun/faces/application/applicationimpl/Version;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/xpath/XPath", "setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/xpath/XPath", "setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URL", "openStream", "()Ljava/io/InputStream;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
@@ -168,7 +168,7 @@ methodVisitor.visitTypeInsn(NEW, "org/xml/sax/InputSource");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/xml/sax/InputSource", "<init>", "(Ljava/io/InputStream;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Lorg/xml/sax/InputSource;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Lorg/xml/sax/InputSource;)Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/io/InputStream"}, 0, null);

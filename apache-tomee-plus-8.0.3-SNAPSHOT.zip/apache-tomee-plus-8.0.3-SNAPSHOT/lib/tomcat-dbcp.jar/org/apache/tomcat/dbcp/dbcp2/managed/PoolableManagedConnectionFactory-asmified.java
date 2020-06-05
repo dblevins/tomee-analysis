@@ -29,12 +29,12 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transactionRegis
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/tomcat/dbcp/dbcp2/managed/XAConnectionFactory;Ljakarta/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/tomcat/dbcp/dbcp2/managed/XAConnectionFactory;Ljavax/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/PoolableConnectionFactory", "<init>", "(Lorg/apache/tomcat/dbcp/dbcp2/ConnectionFactory;Ljakarta/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/PoolableConnectionFactory", "<init>", "(Lorg/apache/tomcat/dbcp/dbcp2/ConnectionFactory;Ljavax/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/dbcp/dbcp2/managed/XAConnectionFactory", "getTransactionRegistry", "()Lorg/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry;", true);
@@ -102,7 +102,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/dbcp/dbcp2/managed/PoolableManagedConnectionFactory", "getMaxOpenPreparedStatements", "()I", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/dbcp/pool2/impl/GenericKeyedObjectPoolConfig", "setMaxTotal", "(I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/dbcp/dbcp2/managed/PoolableManagedConnectionFactory", "getDataSourceJmxName", "()Ljakarta/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/dbcp/dbcp2/managed/PoolableManagedConnectionFactory", "getDataSourceJmxName", "()Ljavax/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/dbcp/dbcp2/managed/PoolableManagedConnectionFactory", "getConnectionIndex", "()Ljava/util/concurrent/atomic/AtomicLong;", false);
@@ -114,7 +114,7 @@ methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
@@ -136,7 +136,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/dbcp/pool2/impl/
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/tomcat/dbcp/pool2/impl/GenericKeyedObjectPoolConfig", "jakarta/management/ObjectName", Opcodes.LONG}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/tomcat/dbcp/pool2/impl/GenericKeyedObjectPoolConfig", "javax/management/ObjectName", Opcodes.LONG}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/dbcp/pool2/impl/GenericKeyedObjectPoolConfig", "setJmxEnabled", "(Z)V", false);

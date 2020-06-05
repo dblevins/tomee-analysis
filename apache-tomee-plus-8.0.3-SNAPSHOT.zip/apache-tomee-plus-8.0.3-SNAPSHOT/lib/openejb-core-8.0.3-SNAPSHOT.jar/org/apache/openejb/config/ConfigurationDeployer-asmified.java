@@ -449,7 +449,7 @@ methodVisitor.visitLdcInsn("buildSchema(ForeignKeys=true)");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/jpa/unit/PersistenceUnit", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitLdcInsn("javax.persistence.schema-generation.database.action");
+methodVisitor.visitLdcInsn("jakarta.persistence.schema-generation.database.action");
 methodVisitor.visitLdcInsn("create");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/jpa/unit/PersistenceUnit", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);

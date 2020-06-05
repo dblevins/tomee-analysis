@@ -229,7 +229,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "asManagedConnector", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljakarta/management/ObjectName;)Lorg/apache/activemq/broker/jmx/ManagedTransportConnector;", null, new String[] { "java/io/IOException", "java/net/URISyntaxException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "asManagedConnector", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljavax/management/ObjectName;)Lorg/apache/activemq/broker/jmx/ManagedTransportConnector;", null, new String[] { "java/io/IOException", "java/net/URISyntaxException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/broker/jmx/ManagedTransportConnector");
 methodVisitor.visitInsn(DUP);
@@ -237,7 +237,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/TransportConnector", "getServer", "()Lorg/apache/activemq/transport/TransportServer;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedTransportConnector", "<init>", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljakarta/management/ObjectName;Lorg/apache/activemq/transport/TransportServer;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/ManagedTransportConnector", "<init>", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljavax/management/ObjectName;Lorg/apache/activemq/transport/TransportServer;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);

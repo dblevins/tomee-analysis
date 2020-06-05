@@ -173,7 +173,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "channel", "Lorg/apache/catal
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljakarta/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "oname", "Ljavax/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -264,7 +264,7 @@ methodVisitor.visitLdcInsn(new Long(60000L));
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "maxIdleTime", "J");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljakarta/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljavax/management/ObjectName;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -337,8 +337,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn(",component=Receiver");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/jmx/JmxRegistry", "registerJmx", "(Ljava/lang/String;Ljava/lang/Object;)Ljakarta/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/jmx/JmxRegistry", "registerJmx", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljavax/management/ObjectName;");
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/catalina/tribes/jmx/JmxRegistry"}, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -362,7 +362,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "executor", "Ljava/util/concurrent/ExecutorService;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljakarta/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljavax/management/ObjectName;");
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -374,13 +374,13 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/jmx/JmxRegistry", "unregisterJmx", "(Ljakarta/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/tribes/jmx/JmxRegistry", "unregisterJmx", "(Ljavax/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/catalina/tribes/jmx/JmxRegistry"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljakarta/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/tribes/transport/ReceiverBase", "oname", "Ljavax/management/ObjectName;");
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);

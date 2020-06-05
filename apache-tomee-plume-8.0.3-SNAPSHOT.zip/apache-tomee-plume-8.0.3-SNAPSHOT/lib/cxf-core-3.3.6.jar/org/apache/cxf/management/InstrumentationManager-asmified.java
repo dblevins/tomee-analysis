@@ -25,27 +25,27 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/management/InstrumentationManager", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "register", "(Lorg/apache/cxf/management/ManagedComponent;)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/JMException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "register", "(Lorg/apache/cxf/management/ManagedComponent;)Ljavax/management/ObjectName;", null, new String[] { "javax/management/JMException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "register", "(Lorg/apache/cxf/management/ManagedComponent;Z)Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/JMException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "register", "(Lorg/apache/cxf/management/ManagedComponent;Z)Ljavax/management/ObjectName;", null, new String[] { "javax/management/JMException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "register", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)V", null, new String[] { "jakarta/management/JMException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "register", "(Ljava/lang/Object;Ljavax/management/ObjectName;)V", null, new String[] { "javax/management/JMException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "register", "(Ljava/lang/Object;Ljakarta/management/ObjectName;Z)V", null, new String[] { "jakarta/management/JMException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "register", "(Ljava/lang/Object;Ljavax/management/ObjectName;Z)V", null, new String[] { "javax/management/JMException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unregister", "(Lorg/apache/cxf/management/ManagedComponent;)V", null, new String[] { "jakarta/management/JMException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unregister", "(Lorg/apache/cxf/management/ManagedComponent;)V", null, new String[] { "javax/management/JMException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unregister", "(Ljakarta/management/ObjectName;)V", null, new String[] { "jakarta/management/JMException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "unregister", "(Ljavax/management/ObjectName;)V", null, new String[] { "javax/management/JMException" });
 methodVisitor.visitEnd();
 }
 {
@@ -53,7 +53,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "shutdown", "
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMBeanServer", "()Ljakarta/management/MBeanServer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMBeanServer", "()Ljavax/management/MBeanServer;", null, null);
 methodVisitor.visitEnd();
 }
 {

@@ -770,7 +770,7 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceObjectNameProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljakarta/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "produceObjectNameProperty", "(Ljakarta/enterprise/inject/spi/InjectionPoint;)Ljavax/management/ObjectName;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Ljakarta/enterprise/inject/Produces;", true);
 annotationVisitor0.visitEnd();
@@ -788,10 +788,10 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn(Type.getType("Ljakarta/management/ObjectName;"));
-methodVisitor.visitLdcInsn(Type.getType("Ljakarta/management/ObjectName;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/management/ObjectName;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/management/ObjectName;"));
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/util/DependencyInjections", "convertTo", "(Ljava/lang/String;Ljava/lang/reflect/Type;Ljava/lang/Class;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);

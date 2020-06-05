@@ -689,7 +689,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitLdcInsn("//s:stackTrace/text()");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/interceptor/Fault", "getDetail", "()Lorg/w3c/dom/Element;", false);
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/xpath/XPathConstants", "STRING", "Ljavax/xml/namespace/QName;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/xpath/XPathConstants", "STRING", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/helpers/XPathUtils", "getValue", "(Ljava/lang/String;Lorg/w3c/dom/Node;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 6);

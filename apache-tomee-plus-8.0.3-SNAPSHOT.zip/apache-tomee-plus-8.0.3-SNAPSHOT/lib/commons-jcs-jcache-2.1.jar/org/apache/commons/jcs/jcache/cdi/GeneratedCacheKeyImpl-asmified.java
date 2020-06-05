@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/GeneratedCacheKeyImpl", null, "java/lang/Object", new String[] { "jakarta/cache/annotation/GeneratedCacheKey" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/GeneratedCacheKeyImpl", null, "java/lang/Object", new String[] { "javax/cache/annotation/GeneratedCacheKey" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "params", "[Ljava/lang/Object;", null, null);

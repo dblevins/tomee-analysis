@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/management/ManagedComponent", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getObjectName", "()Ljakarta/management/ObjectName;", null, new String[] { "jakarta/management/JMException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getObjectName", "()Ljavax/management/ObjectName;", null, new String[] { "javax/management/JMException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

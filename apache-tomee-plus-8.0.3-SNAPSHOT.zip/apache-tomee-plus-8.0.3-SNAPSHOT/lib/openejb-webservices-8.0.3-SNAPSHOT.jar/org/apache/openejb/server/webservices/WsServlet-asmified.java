@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEF
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ENDPOINT_CONTENT", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljakarta/xml/rpc/server/ServletEndpointContext;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ENDPOINT_CONTENT", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljavax/xml/rpc/server/ServletEndpointContext;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -87,7 +87,7 @@ methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/xml/rpc/ServiceException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/rpc/ServiceException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/webservices/WsServlet", "config", "Ljakarta/servlet/ServletConfig;");
@@ -97,23 +97,23 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservi
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/webservices/WsServlet", "pojo", "Ljava/lang/Object;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/WsServlet", "pojo", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/rpc/server/ServiceLifecycle");
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/rpc/server/ServiceLifecycle");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/WsServlet", "pojo", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/rpc/server/ServiceLifecycle");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/rpc/server/ServiceLifecycle");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/webservices/WsServlet$InstanceContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletConfig", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/WsServlet$InstanceContext", "<init>", "(Ljakarta/servlet/ServletContext;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/rpc/server/ServiceLifecycle", "init", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/rpc/server/ServiceLifecycle", "init", "(Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/rpc/ServiceException"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/rpc/ServiceException"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/ServletException");
 methodVisitor.visitInsn(DUP);
@@ -184,7 +184,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/ServletException",
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openejb/server/httpd/HttpListener"}, 0, null);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/webservices/WsServlet", "getContext", "()Ljakarta/xml/rpc/server/ServletEndpointContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/webservices/WsServlet", "getContext", "()Ljavax/xml/rpc/server/ServletEndpointContext;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/webservices/WsServlet", "ENDPOINT_CONTENT", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/webservices/WsServlet$InvocationContext");
@@ -223,7 +223,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/WsServlet", "pojo", "Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"jakarta/xml/rpc/server/ServletEndpointContext", "org/apache/openejb/server/httpd/HttpRequest", "org/apache/openejb/server/httpd/HttpResponse"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"javax/xml/rpc/server/ServletEndpointContext", "org/apache/openejb/server/httpd/HttpRequest", "org/apache/openejb/server/httpd/HttpResponse"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
@@ -271,13 +271,13 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "destroy", "()V", null, null
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/WsServlet", "pojo", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/xml/rpc/server/ServiceLifecycle");
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/rpc/server/ServiceLifecycle");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/WsServlet", "pojo", "Ljava/lang/Object;");
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/rpc/server/ServiceLifecycle");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/rpc/server/ServiceLifecycle", "destroy", "()V", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/rpc/server/ServiceLifecycle");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/rpc/server/ServiceLifecycle", "destroy", "()V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitInsn(RETURN);
@@ -375,11 +375,11 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getContext", "()Ljakarta/xml/rpc/server/ServletEndpointContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getContext", "()Ljavax/xml/rpc/server/ServletEndpointContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/webservices/WsServlet", "ENDPOINT_CONTENT", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/rpc/server/ServletEndpointContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/rpc/server/ServletEndpointContext");
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 Label label0 = new Label();
@@ -388,18 +388,18 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/rpc/server/ServletEndpointContext"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/rpc/server/ServletEndpointContext"}, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/webservices/WsServlet", "DEFAULT_CONTEXT", "Lorg/apache/openejb/server/webservices/WsServlet$DefaultContext;");
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"jakarta/xml/rpc/server/ServletEndpointContext"});
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/rpc/server/ServletEndpointContext"});
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "()Ljakarta/xml/rpc/server/ServletEndpointContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "()Ljavax/xml/rpc/server/ServletEndpointContext;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/webservices/WsServlet", "getContext", "()Ljakarta/xml/rpc/server/ServletEndpointContext;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/webservices/WsServlet", "getContext", "()Ljavax/xml/rpc/server/ServletEndpointContext;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();

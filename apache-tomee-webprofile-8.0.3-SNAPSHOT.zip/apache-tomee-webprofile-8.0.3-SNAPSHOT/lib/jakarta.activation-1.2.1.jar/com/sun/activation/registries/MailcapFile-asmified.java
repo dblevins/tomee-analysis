@@ -1285,7 +1285,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/activation/registries/MailcapFile", "addReverse", "Z");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.activation.addreverse");
+methodVisitor.visitLdcInsn("jakarta.activation.addreverse");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "getBoolean", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/activation/registries/MailcapFile", "addReverse", "Z");
 methodVisitor.visitLabel(label1);

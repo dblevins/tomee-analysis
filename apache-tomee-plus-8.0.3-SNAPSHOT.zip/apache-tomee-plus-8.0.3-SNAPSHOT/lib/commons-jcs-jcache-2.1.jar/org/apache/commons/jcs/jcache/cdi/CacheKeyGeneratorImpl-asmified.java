@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/CacheKeyGeneratorImpl", null, "java/lang/Object", new String[] { "jakarta/cache/annotation/CacheKeyGenerator" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/CacheKeyGeneratorImpl", null, "java/lang/Object", new String[] { "javax/cache/annotation/CacheKeyGenerator" });
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
@@ -34,10 +34,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateCacheKey", "(Ljakarta/cache/annotation/CacheKeyInvocationContext;)Ljakarta/cache/annotation/GeneratedCacheKey;", "(Ljakarta/cache/annotation/CacheKeyInvocationContext<+Ljava/lang/annotation/Annotation;>;)Ljakarta/cache/annotation/GeneratedCacheKey;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateCacheKey", "(Ljavax/cache/annotation/CacheKeyInvocationContext;)Ljavax/cache/annotation/GeneratedCacheKey;", "(Ljavax/cache/annotation/CacheKeyInvocationContext<+Ljava/lang/annotation/Annotation;>;)Ljavax/cache/annotation/GeneratedCacheKey;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/annotation/CacheKeyInvocationContext", "getKeyParameters", "()[Ljakarta/cache/annotation/CacheInvocationParameter;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/annotation/CacheKeyInvocationContext", "getKeyParameters", "()[Ljavax/cache/annotation/CacheInvocationParameter;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -47,7 +47,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 4);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljakarta/cache/annotation/CacheInvocationParameter;", "[Ljava/lang/Object;", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljavax/cache/annotation/CacheInvocationParameter;", "[Ljava/lang/Object;", Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -58,7 +58,7 @@ methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ILOAD, 4);
 methodVisitor.visitInsn(AALOAD);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/annotation/CacheInvocationParameter", "getValue", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/annotation/CacheInvocationParameter", "getValue", "()Ljava/lang/Object;", true);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitIincInsn(4, 1);
 methodVisitor.visitJumpInsn(GOTO, label0);

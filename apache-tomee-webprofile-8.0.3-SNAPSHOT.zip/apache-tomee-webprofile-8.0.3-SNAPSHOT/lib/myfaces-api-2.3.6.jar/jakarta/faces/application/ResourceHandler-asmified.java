@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "jakarta/faces/application/ResourceHandler", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOCALE_PREFIX", "Ljava/lang/String;", null, "javax.faces.resource.localePrefix");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOCALE_PREFIX", "Ljava/lang/String;", null, "jakarta.faces.resource.localePrefix");
 fieldVisitor.visitEnd();
 }
 {
@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESO
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESOURCE_CONTRACT_XML", "Ljava/lang/String;", null, "javax.faces.contract.xml");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESOURCE_CONTRACT_XML", "Ljava/lang/String;", null, "jakarta.faces.contract.xml");
 fieldVisitor.visitEnd();
 }
 {

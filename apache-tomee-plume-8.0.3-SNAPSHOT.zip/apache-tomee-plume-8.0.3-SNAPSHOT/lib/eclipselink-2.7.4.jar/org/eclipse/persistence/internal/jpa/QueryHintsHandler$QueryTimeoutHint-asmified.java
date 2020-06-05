@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/QueryHintsHand
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.persistence.query.timeout");
+methodVisitor.visitLdcInsn("jakarta.persistence.query.timeout");
 methodVisitor.visitLdcInsn("");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/QueryHintsHandler$Hint", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
@@ -44,7 +44,7 @@ methodVisitor = classWriter.visitMethod(0, "applyToDatabaseQuery", "(Ljava/lang/
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.persistence.query.timeout");
+methodVisitor.visitLdcInsn("jakarta.persistence.query.timeout");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/jpa/QueryHintsHandler", "parseIntegerHint", "(Ljava/lang/Object;Ljava/lang/String;)I", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/queries/DatabaseQuery", "setQueryTimeout", "(I)V", false);
 methodVisitor.visitVarInsn(ALOAD, 2);

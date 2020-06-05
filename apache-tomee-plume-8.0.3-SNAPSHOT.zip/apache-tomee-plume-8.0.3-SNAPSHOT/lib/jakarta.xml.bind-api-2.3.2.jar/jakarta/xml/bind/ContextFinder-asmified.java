@@ -37,7 +37,7 @@ classWriter.visitInnerClass("jakarta/xml/bind/ContextFinder$1", null, null, 0);
 classWriter.visitInnerClass("jakarta/xml/bind/ServiceLoaderUtil$ExceptionHandler", "jakarta/xml/bind/ServiceLoaderUtil", "ExceptionHandler", ACC_STATIC | ACC_ABSTRACT);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAXB_CONTEXT_FACTORY_DEPRECATED", "Ljava/lang/String;", null, "javax.xml.bind.context.factory");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAXB_CONTEXT_FACTORY_DEPRECATED", "Ljava/lang/String;", null, "jakarta.xml.bind.context.factory");
 fieldVisitor.visitEnd();
 }
 {
@@ -702,7 +702,7 @@ methodVisitor.visitLdcInsn("jakarta.xml.bind.JAXBContextFactory");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("javax.xml.bind.context.factory");
+methodVisitor.visitLdcInsn("jakarta.xml.bind.context.factory");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/xml/bind/ContextFinder", "classNameFromPackageProperties", "(Ljava/net/URL;[Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
@@ -873,7 +873,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
-methodVisitor.visitLdcInsn("javax.xml.bind.context.factory");
+methodVisitor.visitLdcInsn("jakarta.xml.bind.context.factory");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/xml/bind/ContextFinder", "getDeprecatedSystemProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1408,7 +1408,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("javax.xml.bind.context.factory");
+methodVisitor.visitLdcInsn("jakarta.xml.bind.context.factory");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/xml/bind/ContextFinder", "classNameFromPackageProperties", "(Ljava/net/URL;[Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -1460,7 +1460,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("javax.xml.bind.context.factory");
+methodVisitor.visitLdcInsn("jakarta.xml.bind.context.factory");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/xml/bind/ContextFinder", "classNameFromPackageProperties", "(Ljava/net/URL;[Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);

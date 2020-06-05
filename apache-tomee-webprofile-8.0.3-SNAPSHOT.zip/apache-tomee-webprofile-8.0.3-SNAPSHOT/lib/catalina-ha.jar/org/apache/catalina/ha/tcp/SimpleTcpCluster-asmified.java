@@ -109,7 +109,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "clusterDeployer", "Lorg/apac
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onameClusterDeployer", "Ljakarta/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "onameClusterDeployer", "Ljavax/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -129,7 +129,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "channelStartOptions", "I", n
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "memberOnameMap", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/catalina/tribes/Member;Ljakarta/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "memberOnameMap", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/catalina/tribes/Member;Ljavax/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -887,8 +887,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "clusterDeployer", "Lorg/apache/catalina/ha/ClusterDeployer;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "register", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "onameClusterDeployer", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "register", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "onameClusterDeployer", "Ljavax/management/ObjectName;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1293,16 +1293,16 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "destroyInternal", "()V", null, new String[] { "org/apache/catalina/LifecycleException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "onameClusterDeployer", "Ljakarta/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "onameClusterDeployer", "Ljavax/management/ObjectName;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "onameClusterDeployer", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "unregister", "(Ljakarta/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "onameClusterDeployer", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "unregister", "(Ljavax/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "onameClusterDeployer", "Ljakarta/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "onameClusterDeployer", "Ljavax/management/ObjectName;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -1791,14 +1791,14 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/tribes/Member", "getName", "()Ljava/lang/String;", true);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/management/ObjectName", "quote", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/management/ObjectName", "quote", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "register", "(Ljava/lang/Object;Ljava/lang/String;)Ljakarta/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "register", "(Ljava/lang/Object;Ljava/lang/String;)Ljavax/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "memberOnameMap", "Ljava/util/Map;");
@@ -1823,16 +1823,16 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "memberOnameMap", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "unregister", "(Ljakarta/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/ha/tcp/SimpleTcpCluster", "unregister", "(Ljavax/management/ObjectName;)V", false);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/ObjectName"}, 0, null);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();

@@ -119,7 +119,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAuthContext", "(Ljava/lang/String;Ljakarta/security/auth/Subject;Ljava/util/Map;)Ljakarta/security/auth/message/config/ServerAuthContext;", null, new String[] { "jakarta/security/auth/message/AuthException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAuthContext", "(Ljava/lang/String;Ljavax/security/auth/Subject;Ljava/util/Map;)Ljakarta/security/auth/message/config/ServerAuthContext;", null, new String[] { "jakarta/security/auth/message/AuthException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -192,7 +192,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 10);
 Label label11 = new Label();
 methodVisitor.visitLabel(label11);
-methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/catalina/authenticator/jaspic/SimpleServerAuthConfig", "java/lang/String", "jakarta/security/auth/Subject", "java/util/Map", "jakarta/security/auth/message/config/ServerAuthContext", "java/lang/Object", "java/util/Map", "java/util/List", Opcodes.INTEGER, "java/lang/String", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 11, new Object[] {"org/apache/catalina/authenticator/jaspic/SimpleServerAuthConfig", "java/lang/String", "javax/security/auth/Subject", "java/util/Map", "jakarta/security/auth/message/config/ServerAuthContext", "java/lang/Object", "java/util/Map", "java/util/List", Opcodes.INTEGER, "java/lang/String", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 10);
 Label label12 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label12);
@@ -275,7 +275,7 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/authenticator/jaspic/SimpleServerAuthConfig", "createServerAuthContext", "(Ljava/util/List;)Ljakarta/security/auth/message/config/ServerAuthContext;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/authenticator/jaspic/SimpleServerAuthConfig", "serverAuthContext", "Ljakarta/security/auth/message/config/ServerAuthContext;");
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/catalina/authenticator/jaspic/SimpleServerAuthConfig", "java/lang/String", "jakarta/security/auth/Subject", "java/util/Map", "jakarta/security/auth/message/config/ServerAuthContext", "java/lang/Object"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/catalina/authenticator/jaspic/SimpleServerAuthConfig", "java/lang/String", "javax/security/auth/Subject", "java/util/Map", "jakarta/security/auth/message/config/ServerAuthContext", "java/lang/Object"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/authenticator/jaspic/SimpleServerAuthConfig", "serverAuthContext", "Ljakarta/security/auth/message/config/ServerAuthContext;");
 methodVisitor.visitVarInsn(ASTORE, 4);

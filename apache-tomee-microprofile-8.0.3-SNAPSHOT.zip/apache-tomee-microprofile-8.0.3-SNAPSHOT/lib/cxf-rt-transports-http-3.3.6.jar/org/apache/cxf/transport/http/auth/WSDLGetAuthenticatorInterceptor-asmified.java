@@ -132,7 +132,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/configuration/secur
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/configuration/security/AuthorizationPolicy", "getPassword", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/http/auth/WSDLGetAuthenticatorInterceptor", "authenticate", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/security/auth/Subject");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/security/auth/Subject");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitJumpInsn(IFNONNULL, label5);
@@ -206,13 +206,13 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/http/auth/WSDLGetAuthenticatorInterceptor", "doAuthenticate", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/transport/http/auth/WSDLGetAuthenticatorInterceptor", "doAuthenticate", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/security/auth/Subject;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doAuthenticate", "(Ljava/lang/String;Ljava/lang/String;)Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doAuthenticate", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -223,9 +223,9 @@ methodVisitor.visitTryCatchBlock(label0, label1, label3, "javax/security/auth/lo
 Label label4 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label4, "java/security/GeneralSecurityException");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/security/auth/Subject");
+methodVisitor.visitTypeInsn(NEW, "javax/security/auth/Subject");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/security/auth/Subject", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/auth/Subject", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "javax/security/auth/login/LoginContext");
 methodVisitor.visitInsn(DUP);
@@ -238,7 +238,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/transport/http/auth/WSDLGetAuthenticatorInterceptor$1", "<init>", "(Lorg/apache/cxf/transport/http/auth/WSDLGetAuthenticatorInterceptor;Ljava/lang/String;Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/auth/login/LoginContext", "<init>", "(Ljava/lang/String;Ljakarta/security/auth/Subject;Ljavax/security/auth/callback/CallbackHandler;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/auth/login/LoginContext", "<init>", "(Ljava/lang/String;Ljavax/security/auth/Subject;Ljavax/security/auth/callback/CallbackHandler;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/login/LoginContext", "login", "()V", false);

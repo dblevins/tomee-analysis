@@ -27,11 +27,11 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/ws/policy/attachment/wsdl11/W
 classWriter.visitInnerClass("org/apache/cxf/ws/policy/attachment/wsdl11/Wsdl11AttachmentPolicyProvider$ExtensibleInfo", "org/apache/cxf/ws/policy/attachment/wsdl11/Wsdl11AttachmentPolicyProvider", "ExtensibleInfo", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "extensors", "Ljava/util/List;", "Ljava/util/List<Ljakarta/wsdl/extensions/ExtensibilityElement;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "extensors", "Ljava/util/List;", "Ljava/util/List<Ljavax/wsdl/extensions/ExtensibilityElement;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<Ljakarta/wsdl/extensions/ExtensibilityElement;>;)V", null);
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/util/List;)V", "(Ljava/util/List<Ljavax/wsdl/extensions/ExtensibilityElement;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
@@ -58,7 +58,7 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/extensions/ExtensibilityElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/extensions/ExtensibilityElement");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -111,7 +111,7 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/extensions/ExtensibilityElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/extensions/ExtensibilityElement");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 4);

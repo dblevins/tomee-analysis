@@ -25,23 +25,23 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/tomcat/util/net/SSLSupport", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CIPHER_SUITE_KEY", "Ljava/lang/String;", null, "javax.servlet.request.cipher_suite");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CIPHER_SUITE_KEY", "Ljava/lang/String;", null, "jakarta.servlet.request.cipher_suite");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "KEY_SIZE_KEY", "Ljava/lang/String;", null, "javax.servlet.request.key_size");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "KEY_SIZE_KEY", "Ljava/lang/String;", null, "jakarta.servlet.request.key_size");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CERTIFICATE_KEY", "Ljava/lang/String;", null, "javax.servlet.request.X509Certificate");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CERTIFICATE_KEY", "Ljava/lang/String;", null, "jakarta.servlet.request.X509Certificate");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION_ID_KEY", "Ljava/lang/String;", null, "javax.servlet.request.ssl_session_id");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION_ID_KEY", "Ljava/lang/String;", null, "jakarta.servlet.request.ssl_session_id");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION_MGR", "Ljava/lang/String;", null, "javax.servlet.request.ssl_session_mgr");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION_MGR", "Ljava/lang/String;", null, "jakarta.servlet.request.ssl_session_mgr");
 fieldVisitor.visitEnd();
 }
 {

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "net/shibboleth/utilities/java/support/collection/IndexingObjectStore", "<T:Ljava/lang/Object;>Ljava/lang/Object;", "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/ThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/ThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("net/shibboleth/utilities/java/support/collection/IndexingObjectStore$StoredObjectWrapper", "net/shibboleth/utilities/java/support/collection/IndexingObjectStore", "StoredObjectWrapper", ACC_PRIVATE);

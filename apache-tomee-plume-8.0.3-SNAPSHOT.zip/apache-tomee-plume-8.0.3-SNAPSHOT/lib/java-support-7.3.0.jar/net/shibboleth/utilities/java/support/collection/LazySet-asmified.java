@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "net/shibboleth/utilities/java/support/collection/LazySet", "<ElementType:Ljava/lang/Object;>Ljava/lang/Object;Ljava/util/Set<TElementType;>;Ljava/io/Serializable;", "java/lang/Object", new String[] { "java/util/Set", "java/io/Serializable" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/NotThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/NotThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 {

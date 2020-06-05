@@ -22,37 +22,37 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/factory/WSDLFactoryImpl", null, "jakarta/wsdl/factory/WSDLFactory", null);
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/factory/WSDLFactoryImpl", null, "javax/wsdl/factory/WSDLFactory", null);
 
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/wsdl/factory/WSDLFactory", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/wsdl/factory/WSDLFactory", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newDefinition", "()Ljakarta/wsdl/Definition;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newDefinition", "()Ljavax/wsdl/Definition;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/DefinitionImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ibm/wsdl/DefinitionImpl", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ibm/wsdl/factory/WSDLFactoryImpl", "newPopulatedExtensionRegistry", "()Ljakarta/wsdl/extensions/ExtensionRegistry;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ibm/wsdl/factory/WSDLFactoryImpl", "newPopulatedExtensionRegistry", "()Ljavax/wsdl/extensions/ExtensionRegistry;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "setExtensionRegistry", "(Ljakarta/wsdl/extensions/ExtensionRegistry;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "setExtensionRegistry", "(Ljavax/wsdl/extensions/ExtensionRegistry;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newWSDLReader", "()Ljakarta/wsdl/xml/WSDLReader;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newWSDLReader", "()Ljavax/wsdl/xml/WSDLReader;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/xml/WSDLReaderImpl");
 methodVisitor.visitInsn(DUP);
@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newWSDLWriter", "()Ljakarta/wsdl/xml/WSDLWriter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newWSDLWriter", "()Ljavax/wsdl/xml/WSDLWriter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/xml/WSDLWriterImpl");
 methodVisitor.visitInsn(DUP);
@@ -72,7 +72,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newPopulatedExtensionRegistry", "()Ljakarta/wsdl/extensions/ExtensionRegistry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newPopulatedExtensionRegistry", "()Ljavax/wsdl/extensions/ExtensionRegistry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/extensions/PopulatedExtensionRegistry");
 methodVisitor.visitInsn(DUP);

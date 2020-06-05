@@ -25,75 +25,75 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "jakarta/servlet/RequestDispatcher", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_REQUEST_URI", "Ljava/lang/String;", null, "javax.servlet.forward.request_uri");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_REQUEST_URI", "Ljava/lang/String;", null, "jakarta.servlet.forward.request_uri");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_CONTEXT_PATH", "Ljava/lang/String;", null, "javax.servlet.forward.context_path");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_CONTEXT_PATH", "Ljava/lang/String;", null, "jakarta.servlet.forward.context_path");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_MAPPING", "Ljava/lang/String;", null, "javax.servlet.forward.mapping");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_MAPPING", "Ljava/lang/String;", null, "jakarta.servlet.forward.mapping");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_PATH_INFO", "Ljava/lang/String;", null, "javax.servlet.forward.path_info");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_PATH_INFO", "Ljava/lang/String;", null, "jakarta.servlet.forward.path_info");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_SERVLET_PATH", "Ljava/lang/String;", null, "javax.servlet.forward.servlet_path");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_SERVLET_PATH", "Ljava/lang/String;", null, "jakarta.servlet.forward.servlet_path");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_QUERY_STRING", "Ljava/lang/String;", null, "javax.servlet.forward.query_string");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORWARD_QUERY_STRING", "Ljava/lang/String;", null, "jakarta.servlet.forward.query_string");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_REQUEST_URI", "Ljava/lang/String;", null, "javax.servlet.include.request_uri");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_REQUEST_URI", "Ljava/lang/String;", null, "jakarta.servlet.include.request_uri");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_CONTEXT_PATH", "Ljava/lang/String;", null, "javax.servlet.include.context_path");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_CONTEXT_PATH", "Ljava/lang/String;", null, "jakarta.servlet.include.context_path");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_PATH_INFO", "Ljava/lang/String;", null, "javax.servlet.include.path_info");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_PATH_INFO", "Ljava/lang/String;", null, "jakarta.servlet.include.path_info");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_MAPPING", "Ljava/lang/String;", null, "javax.servlet.include.mapping");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_MAPPING", "Ljava/lang/String;", null, "jakarta.servlet.include.mapping");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_SERVLET_PATH", "Ljava/lang/String;", null, "javax.servlet.include.servlet_path");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_SERVLET_PATH", "Ljava/lang/String;", null, "jakarta.servlet.include.servlet_path");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_QUERY_STRING", "Ljava/lang/String;", null, "javax.servlet.include.query_string");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INCLUDE_QUERY_STRING", "Ljava/lang/String;", null, "jakarta.servlet.include.query_string");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_EXCEPTION", "Ljava/lang/String;", null, "javax.servlet.error.exception");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_EXCEPTION", "Ljava/lang/String;", null, "jakarta.servlet.error.exception");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_EXCEPTION_TYPE", "Ljava/lang/String;", null, "javax.servlet.error.exception_type");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_EXCEPTION_TYPE", "Ljava/lang/String;", null, "jakarta.servlet.error.exception_type");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_MESSAGE", "Ljava/lang/String;", null, "javax.servlet.error.message");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_MESSAGE", "Ljava/lang/String;", null, "jakarta.servlet.error.message");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_REQUEST_URI", "Ljava/lang/String;", null, "javax.servlet.error.request_uri");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_REQUEST_URI", "Ljava/lang/String;", null, "jakarta.servlet.error.request_uri");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_SERVLET_NAME", "Ljava/lang/String;", null, "javax.servlet.error.servlet_name");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_SERVLET_NAME", "Ljava/lang/String;", null, "jakarta.servlet.error.servlet_name");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_STATUS_CODE", "Ljava/lang/String;", null, "javax.servlet.error.status_code");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERROR_STATUS_CODE", "Ljava/lang/String;", null, "jakarta.servlet.error.status_code");
 fieldVisitor.visitEnd();
 }
 {

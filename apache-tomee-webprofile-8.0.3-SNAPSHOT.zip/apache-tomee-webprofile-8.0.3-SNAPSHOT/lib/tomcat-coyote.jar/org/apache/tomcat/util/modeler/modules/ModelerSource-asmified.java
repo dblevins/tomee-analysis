@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "loadDescriptors", "(Lorg/apache/tomcat/util/modeler/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List;", "(Lorg/apache/tomcat/util/modeler/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<Ljakarta/management/ObjectName;>;", new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "loadDescriptors", "(Lorg/apache/tomcat/util/modeler/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List;", "(Lorg/apache/tomcat/util/modeler/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<Ljavax/management/ObjectName;>;", new String[] { "java/lang/Exception" });
 methodVisitor.visitEnd();
 }
 {

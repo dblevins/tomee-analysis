@@ -94,7 +94,7 @@ methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.xml.ws.addressing.context.inbound");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.addressing.context.inbound");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/AddressingProperties");
 methodVisitor.visitVarInsn(ASTORE, 3);

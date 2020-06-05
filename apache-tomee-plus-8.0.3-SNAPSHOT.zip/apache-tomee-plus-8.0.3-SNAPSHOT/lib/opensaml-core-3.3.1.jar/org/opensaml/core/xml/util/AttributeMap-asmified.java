@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/core/xml/util/AttributeMap", "Ljava/lang/Object;Ljava/util/Map<Ljavax/xml/namespace/QName;Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/util/Map" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/NotThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/NotThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);

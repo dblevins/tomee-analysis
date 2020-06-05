@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/securit
 classWriter.visitInnerClass("org/apache/openejb/core/security/AbstractSecurityService$Identity", "org/apache/openejb/core/security/AbstractSecurityService", "Identity", ACC_PROTECTED | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "subject", "Ljakarta/security/auth/Subject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "subject", "Ljavax/security/auth/Subject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -35,13 +35,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "token", "Ljava/u
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/security/auth/Subject;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/security/auth/Subject;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "subject", "Ljavax/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/UUID", "randomUUID", "()Ljava/util/UUID;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "token", "Ljava/util/UUID;");
@@ -50,13 +50,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/security/auth/Subject;Ljava/util/UUID;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/security/auth/Subject;Ljava/util/UUID;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "subject", "Ljavax/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "token", "Ljava/util/UUID;");
@@ -65,10 +65,10 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubject", "()Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "subject", "Ljavax/security/auth/Subject;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -83,10 +83,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/openejb/core/security/AbstractSecurityService$Identity;)Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/openejb/core/security/AbstractSecurityService$Identity;)Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "subject", "Ljavax/security/auth/Subject;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

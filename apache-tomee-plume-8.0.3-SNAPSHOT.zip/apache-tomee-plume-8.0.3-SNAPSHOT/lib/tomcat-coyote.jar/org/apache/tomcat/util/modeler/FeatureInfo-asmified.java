@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "name", "Ljava/lang/String;
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "info", "Ljakarta/management/MBeanFeatureInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "info", "Ljavax/management/MBeanFeatureInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,7 +57,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/FeatureInfo", "name", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/FeatureInfo", "info", "Ljakarta/management/MBeanFeatureInfo;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/FeatureInfo", "info", "Ljavax/management/MBeanFeatureInfo;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/FeatureInfo", "type", "Ljava/lang/String;");

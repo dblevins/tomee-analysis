@@ -25,15 +25,15 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "jakarta/xml/ws/spi/http/HttpExchange", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "REQUEST_CIPHER_SUITE", "Ljava/lang/String;", null, "javax.xml.ws.spi.http.request.cipher.suite");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "REQUEST_CIPHER_SUITE", "Ljava/lang/String;", null, "jakarta.xml.ws.spi.http.request.cipher.suite");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "REQUEST_KEY_SIZE", "Ljava/lang/String;", null, "javax.xml.ws.spi.http.request.key.size");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "REQUEST_KEY_SIZE", "Ljava/lang/String;", null, "jakarta.xml.ws.spi.http.request.key.size");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "REQUEST_X509CERTIFICATE", "Ljava/lang/String;", null, "javax.xml.ws.spi.http.request.cert.X509Certificate");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "REQUEST_X509CERTIFICATE", "Ljava/lang/String;", null, "jakarta.xml.ws.spi.http.request.cert.X509Certificate");
 fieldVisitor.visitEnd();
 }
 {

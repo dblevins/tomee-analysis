@@ -178,7 +178,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/s
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/QueryTagSupport", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.sql.maxRows");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.sql.maxRows");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/jstl/core/Config", "find", "(Ljakarta/servlet/jsp/PageContext;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);

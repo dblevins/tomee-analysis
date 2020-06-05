@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "net/shibboleth/utilities/java/support/security/AccessControlService", null, "java/lang/Object", new String[] { "net/shibboleth/utilities/java/support/component/InitializableComponent", "net/shibboleth/utilities/java/support/component/IdentifiedComponent", "net/shibboleth/utilities/java/support/component/UnmodifiableComponent" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/ThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/ThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 {

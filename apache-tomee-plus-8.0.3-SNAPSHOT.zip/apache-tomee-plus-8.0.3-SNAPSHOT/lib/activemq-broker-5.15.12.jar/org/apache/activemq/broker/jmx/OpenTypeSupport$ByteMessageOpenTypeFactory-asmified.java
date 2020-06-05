@@ -54,7 +54,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/Ope
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("BodyLength");
 methodVisitor.visitLdcInsn("Body length");
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/management/openmbean/SimpleType", "LONG", "Ljavax/management/openmbean/SimpleType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/management/openmbean/SimpleType", "LONG", "Ljavax/management/openmbean/SimpleType;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/OpenTypeSupport$ByteMessageOpenTypeFactory", "addItem", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/OpenType;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("BodyPreview");
@@ -62,7 +62,7 @@ methodVisitor.visitLdcInsn("Body preview");
 methodVisitor.visitTypeInsn(NEW, "javax/management/openmbean/ArrayType");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/management/openmbean/SimpleType", "BYTE", "Ljavax/management/openmbean/SimpleType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/management/openmbean/SimpleType", "BYTE", "Ljavax/management/openmbean/SimpleType;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/openmbean/ArrayType", "<init>", "(ILjavax/management/openmbean/OpenType;)V", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/OpenTypeSupport$ByteMessageOpenTypeFactory", "addItem", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/OpenType;)V", false);
 methodVisitor.visitInsn(RETURN);

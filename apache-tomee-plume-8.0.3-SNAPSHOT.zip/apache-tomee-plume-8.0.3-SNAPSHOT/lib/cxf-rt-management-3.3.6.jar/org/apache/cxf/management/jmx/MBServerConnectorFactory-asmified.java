@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "server", "Ljakarta/management/MBeanServer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "server", "Ljavax/management/MBeanServer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -168,10 +168,10 @@ methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMBeanServer", "(Ljakarta/management/MBeanServer;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMBeanServer", "(Ljavax/management/MBeanServer;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "server", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "server", "Ljavax/management/MBeanServer;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
@@ -219,11 +219,11 @@ Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "server", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "server", "Ljavax/management/MBeanServer;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory$MBeanServerHolder", "access$200", "()Ljakarta/management/MBeanServer;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "server", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory$MBeanServerHolder", "access$200", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "server", "Ljavax/management/MBeanServer;");
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitTypeInsn(NEW, "javax/management/remote/JMXServiceURL");
@@ -285,8 +285,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "environment", "Ljava/util/Map;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "rmiServer", "Ljavax/management/remote/rmi/RMIJRMPServerImpl;");
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "server", "Ljakarta/management/MBeanServer;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/remote/rmi/RMIConnectorServer", "<init>", "(Ljavax/management/remote/JMXServiceURL;Ljava/util/Map;Ljavax/management/remote/rmi/RMIServerImpl;Ljakarta/management/MBeanServer;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "server", "Ljavax/management/MBeanServer;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/remote/rmi/RMIConnectorServer", "<init>", "(Ljavax/management/remote/JMXServiceURL;Ljava/util/Map;Ljavax/management/remote/rmi/RMIServerImpl;Ljavax/management/MBeanServer;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "connectorServer", "Ljavax/management/remote/JMXConnectorServer;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory", "threaded", "Z");
 Label label5 = new Label();

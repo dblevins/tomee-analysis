@@ -112,7 +112,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.xml.ws.addressing.context.inbound");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.addressing.context.inbound");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "getContextualProperty", "(Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/AddressingProperties");
 methodVisitor.visitVarInsn(ASTORE, 5);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/DefinitionImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "jakarta/wsdl/Definition" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/DefinitionImpl", null, "com/ibm/wsdl/AbstractWSDLElement", new String[] { "javax/wsdl/Definition" });
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -47,7 +47,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "imports", "Ljava/util/Map;
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "types", "Ljakarta/wsdl/Types;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "types", "Ljavax/wsdl/Types;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -71,7 +71,7 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED, "nativeAttributeNames", "Lj
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED, "extReg", "Ljakarta/wsdl/extensions/ExtensionRegistry;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "extReg", "Ljavax/wsdl/extensions/ExtensionRegistry;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -104,7 +104,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V
 methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "imports", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljakarta/wsdl/Types;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljavax/wsdl/Types;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
@@ -131,7 +131,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Lja
 methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "nativeAttributeNames", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "extReg", "Ljakarta/wsdl/extensions/ExtensionRegistry;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "extReg", "Ljavax/wsdl/extensions/ExtensionRegistry;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -317,29 +317,29 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTypes", "(Ljakarta/wsdl/Types;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTypes", "(Ljavax/wsdl/Types;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljakarta/wsdl/Types;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljavax/wsdl/Types;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTypes", "()Ljakarta/wsdl/Types;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTypes", "()Ljavax/wsdl/Types;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljakarta/wsdl/Types;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljavax/wsdl/Types;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addImport", "(Ljakarta/wsdl/Import;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addImport", "(Ljavax/wsdl/Import;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Import", "getNamespaceURI", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Import", "getNamespaceURI", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "imports", "Ljava/util/Map;");
@@ -370,10 +370,10 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeImport", "(Ljakarta/wsdl/Import;)Ljakarta/wsdl/Import;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeImport", "(Ljavax/wsdl/Import;)Ljavax/wsdl/Import;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Import", "getNamespaceURI", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Import", "getNamespaceURI", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "imports", "Ljava/util/Map;");
@@ -420,12 +420,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMessage", "(Ljakarta/wsdl/Message;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMessage", "(Ljavax/wsdl/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "messages", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Message", "getQName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Message", "getQName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -434,13 +434,13 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessage", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Message;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessage", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Message;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "messages", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Message");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Message");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -451,7 +451,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("message");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ibm/wsdl/DefinitionImpl", "getFromImports", "(Ljava/lang/String;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Message");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Message");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -460,13 +460,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeMessage", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Message;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeMessage", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Message;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "messages", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Message");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Message");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -481,12 +481,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addBinding", "(Ljakarta/wsdl/Binding;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addBinding", "(Ljavax/wsdl/Binding;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "bindings", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Binding", "getQName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Binding", "getQName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -495,13 +495,13 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinding", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Binding;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBinding", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Binding;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "bindings", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Binding");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Binding");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -512,7 +512,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("binding");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ibm/wsdl/DefinitionImpl", "getFromImports", "(Ljava/lang/String;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Binding");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Binding");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -521,13 +521,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeBinding", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Binding;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeBinding", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Binding;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "bindings", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Binding");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Binding");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -542,12 +542,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPortType", "(Ljakarta/wsdl/PortType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPortType", "(Ljavax/wsdl/PortType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "portTypes", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/PortType", "getQName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/PortType", "getQName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -556,13 +556,13 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPortType", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/PortType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPortType", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/PortType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "portTypes", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/PortType");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/PortType");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -573,7 +573,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("portType");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ibm/wsdl/DefinitionImpl", "getFromImports", "(Ljava/lang/String;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/PortType");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/PortType");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -582,13 +582,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removePortType", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/PortType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removePortType", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/PortType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "portTypes", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/PortType");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/PortType");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -603,12 +603,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addService", "(Ljakarta/wsdl/Service;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addService", "(Ljavax/wsdl/Service;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "services", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Service", "getQName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Service", "getQName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -617,13 +617,13 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getService", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Service;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getService", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Service;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "services", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Service");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Service");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -634,7 +634,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("service");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ibm/wsdl/DefinitionImpl", "getFromImports", "(Ljava/lang/String;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Service");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Service");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -643,13 +643,13 @@ methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeService", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Service;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeService", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Service;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "services", "Ljava/util/Map;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Service");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Service");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -664,7 +664,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBinding", "()Ljakarta/wsdl/Binding;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBinding", "()Ljavax/wsdl/Binding;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/BindingImpl");
 methodVisitor.visitInsn(DUP);
@@ -674,7 +674,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBindingFault", "()Ljakarta/wsdl/BindingFault;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBindingFault", "()Ljavax/wsdl/BindingFault;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/BindingFaultImpl");
 methodVisitor.visitInsn(DUP);
@@ -684,7 +684,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBindingInput", "()Ljakarta/wsdl/BindingInput;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBindingInput", "()Ljavax/wsdl/BindingInput;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/BindingInputImpl");
 methodVisitor.visitInsn(DUP);
@@ -694,7 +694,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBindingOperation", "()Ljakarta/wsdl/BindingOperation;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBindingOperation", "()Ljavax/wsdl/BindingOperation;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/BindingOperationImpl");
 methodVisitor.visitInsn(DUP);
@@ -704,7 +704,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBindingOutput", "()Ljakarta/wsdl/BindingOutput;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createBindingOutput", "()Ljavax/wsdl/BindingOutput;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/BindingOutputImpl");
 methodVisitor.visitInsn(DUP);
@@ -714,7 +714,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFault", "()Ljakarta/wsdl/Fault;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createFault", "()Ljavax/wsdl/Fault;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/FaultImpl");
 methodVisitor.visitInsn(DUP);
@@ -724,7 +724,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createImport", "()Ljakarta/wsdl/Import;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createImport", "()Ljavax/wsdl/Import;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/ImportImpl");
 methodVisitor.visitInsn(DUP);
@@ -734,7 +734,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInput", "()Ljakarta/wsdl/Input;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInput", "()Ljavax/wsdl/Input;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/InputImpl");
 methodVisitor.visitInsn(DUP);
@@ -744,7 +744,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessage", "()Ljakarta/wsdl/Message;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createMessage", "()Ljavax/wsdl/Message;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/MessageImpl");
 methodVisitor.visitInsn(DUP);
@@ -754,7 +754,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOperation", "()Ljakarta/wsdl/Operation;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOperation", "()Ljavax/wsdl/Operation;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/OperationImpl");
 methodVisitor.visitInsn(DUP);
@@ -764,7 +764,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOutput", "()Ljakarta/wsdl/Output;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createOutput", "()Ljavax/wsdl/Output;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/OutputImpl");
 methodVisitor.visitInsn(DUP);
@@ -774,7 +774,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPart", "()Ljakarta/wsdl/Part;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPart", "()Ljavax/wsdl/Part;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/PartImpl");
 methodVisitor.visitInsn(DUP);
@@ -784,7 +784,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPort", "()Ljakarta/wsdl/Port;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPort", "()Ljavax/wsdl/Port;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/PortImpl");
 methodVisitor.visitInsn(DUP);
@@ -794,7 +794,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPortType", "()Ljakarta/wsdl/PortType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createPortType", "()Ljavax/wsdl/PortType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/PortTypeImpl");
 methodVisitor.visitInsn(DUP);
@@ -804,7 +804,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createService", "()Ljakarta/wsdl/Service;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createService", "()Ljavax/wsdl/Service;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/ServiceImpl");
 methodVisitor.visitInsn(DUP);
@@ -814,7 +814,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTypes", "()Ljakarta/wsdl/Types;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createTypes", "()Ljavax/wsdl/Types;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/TypesImpl");
 methodVisitor.visitInsn(DUP);
@@ -824,20 +824,20 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExtensionRegistry", "(Ljakarta/wsdl/extensions/ExtensionRegistry;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExtensionRegistry", "(Ljavax/wsdl/extensions/ExtensionRegistry;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "extReg", "Ljakarta/wsdl/extensions/ExtensionRegistry;");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ibm/wsdl/DefinitionImpl", "extReg", "Ljavax/wsdl/extensions/ExtensionRegistry;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtensionRegistry", "()Ljakarta/wsdl/extensions/ExtensionRegistry;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtensionRegistry", "()Ljavax/wsdl/extensions/ExtensionRegistry;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "extReg", "Ljakarta/wsdl/extensions/ExtensionRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "extReg", "Ljavax/wsdl/extensions/ExtensionRegistry;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -865,13 +865,13 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Import");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Import");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Import", "getDefinition", "()Ljakarta/wsdl/Definition;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Import", "getDefinition", "()Ljavax/wsdl/Definition;", true);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitJumpInsn(IFNULL, label2);
@@ -881,7 +881,7 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getService", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Service;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getService", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Service;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
@@ -892,7 +892,7 @@ Label label5 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label5);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getMessage", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Message;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getMessage", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Message;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label5);
@@ -902,7 +902,7 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPNE, label6);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getBinding", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/Binding;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getBinding", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/Binding;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label6);
@@ -911,7 +911,7 @@ methodVisitor.visitLdcInsn("portType");
 methodVisitor.visitJumpInsn(IF_ACMPNE, label4);
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getPortType", "(Ljavax/xml/namespace/QName;)Ljakarta/wsdl/PortType;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getPortType", "(Ljavax/xml/namespace/QName;)Ljavax/wsdl/PortType;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -979,7 +979,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljakarta/wsdl/Types;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljavax/wsdl/Types;");
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -989,7 +989,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("\n");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljakarta/wsdl/Types;");
+methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/DefinitionImpl", "types", "Ljavax/wsdl/Types;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);
@@ -1176,17 +1176,17 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Import");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Import");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Import", "getDefinition", "()Ljakarta/wsdl/Definition;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Import", "getDefinition", "()Ljavax/wsdl/Definition;", true);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getAllBindings", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getAllBindings", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -1235,17 +1235,17 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Import");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Import");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Import", "getDefinition", "()Ljakarta/wsdl/Definition;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Import", "getDefinition", "()Ljavax/wsdl/Definition;", true);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getAllPortTypes", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getAllPortTypes", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -1294,17 +1294,17 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/Import");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/Import");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Import", "getDefinition", "()Ljakarta/wsdl/Definition;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Import", "getDefinition", "()Ljavax/wsdl/Definition;", true);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getAllServices", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getAllServices", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitJumpInsn(GOTO, label2);

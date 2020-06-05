@@ -250,7 +250,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "analyze", "(Ljava/lang/Clas
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
-methodVisitor.visitLdcInsn("javax.validation.constraint.");
+methodVisitor.visitLdcInsn("jakarta.validation.constraint.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);

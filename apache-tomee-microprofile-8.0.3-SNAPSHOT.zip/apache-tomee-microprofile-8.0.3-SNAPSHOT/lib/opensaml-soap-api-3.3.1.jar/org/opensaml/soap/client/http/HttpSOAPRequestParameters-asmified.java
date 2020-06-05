@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/soap/client/http/HttpSOAPRequestParameters", null, "java/lang/Object", new String[] { "org/opensaml/soap/client/SOAPClient$SOAPRequestParameters" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/ThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/ThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/opensaml/soap/client/SOAPClient$SOAPRequestParameters", "org/opensaml/soap/client/SOAPClient", "SOAPRequestParameters", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);

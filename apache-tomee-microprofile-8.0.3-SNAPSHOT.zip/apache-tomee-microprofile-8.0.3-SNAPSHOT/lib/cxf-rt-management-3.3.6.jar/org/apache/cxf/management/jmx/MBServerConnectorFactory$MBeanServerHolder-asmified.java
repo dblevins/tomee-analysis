@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_SUPER, "org/apache/cxf/management/jmx/MBServerConnec
 classWriter.visitInnerClass("org/apache/cxf/management/jmx/MBServerConnectorFactory$MBeanServerHolder", "org/apache/cxf/management/jmx/MBServerConnectorFactory", "MBeanServerHolder", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "INSTANCE", "Ljakarta/management/MBeanServer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "INSTANCE", "Ljavax/management/MBeanServer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -40,9 +40,9 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "()Ljakarta/management/MBeanServer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "()Ljavax/management/MBeanServer;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory$MBeanServerHolder", "INSTANCE", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory$MBeanServerHolder", "INSTANCE", "Ljavax/management/MBeanServer;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();
@@ -50,8 +50,8 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/management/MBeanServerFactory", "createMBeanServer", "()Ljakarta/management/MBeanServer;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory$MBeanServerHolder", "INSTANCE", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/management/MBeanServerFactory", "createMBeanServer", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/management/jmx/MBServerConnectorFactory$MBeanServerHolder", "INSTANCE", "Ljavax/management/MBeanServer;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 0);
 methodVisitor.visitEnd();

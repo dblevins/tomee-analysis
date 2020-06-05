@@ -203,7 +203,7 @@ Label label8 = new Label();
 methodVisitor.visitJumpInsn(IF_ACMPEQ, label8);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getSessionMap", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax.faces.request.charset");
+methodVisitor.visitLdcInsn("jakarta.faces.request.charset");
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getResponseCharacterEncoding", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/binding/soap/wsdl/extensions/SoapAddress", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/soap/SOAPAddress", "jakarta/wsdl/extensions/soap12/SOAP12Address" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/binding/soap/wsdl/extensions/SoapAddress", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/soap/SOAPAddress", "javax/wsdl/extensions/soap12/SOAP12Address" });
 
 classWriter.visitEnd();
 

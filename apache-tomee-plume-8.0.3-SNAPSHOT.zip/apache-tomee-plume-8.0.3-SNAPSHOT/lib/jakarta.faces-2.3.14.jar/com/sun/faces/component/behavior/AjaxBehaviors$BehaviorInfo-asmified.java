@@ -167,7 +167,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.faces.behavior.Ajax");
+methodVisitor.visitLdcInsn("jakarta.faces.behavior.Ajax");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "createBehavior", "(Ljava/lang/String;)Ljakarta/faces/component/behavior/Behavior;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/behavior/AjaxBehavior");
 methodVisitor.visitVarInsn(ASTORE, 3);

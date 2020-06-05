@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/opensaml/profile/context/ProfileRequestContext", "<InboundMessageType:Ljava/lang/Object;OutboundMessageType:Ljava/lang/Object;>Lorg/opensaml/messaging/context/InOutOperationContext<TInboundMessageType;TOutboundMessageType;>;", "org/opensaml/messaging/context/InOutOperationContext", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/ThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/ThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 {

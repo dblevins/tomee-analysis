@@ -43,7 +43,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "UND
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "REQUEST_CHAR_SET", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.fmt.request.charset");
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "REQUEST_CHAR_SET", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.fmt.request.charset");
 fieldVisitor.visitEnd();
 }
 {
@@ -61,7 +61,7 @@ methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.localizationContext");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.localizationContext");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/jstl/core/Config", "find", "(Ljakarta/servlet/jsp/PageContext;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -117,7 +117,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/jstl/fmt/Local
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.locale");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.locale");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/jstl/fmt/JakartaInline", "getLocale", "(Ljakarta/servlet/jsp/PageContext;Ljava/lang/String;)Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -147,7 +147,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.fallbackLocale");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.fallbackLocale");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/jstl/fmt/JakartaInline", "getLocale", "(Ljakarta/servlet/jsp/PageContext;Ljava/lang/String;)Ljava/util/Locale;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -389,7 +389,7 @@ Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.request.charset");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.request.charset");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletResponse", "getCharacterEncoding", "()Ljava/lang/String;", true);
 methodVisitor.visitInsn(ICONST_3);

@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/QueryHintsHand
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.persistence.cache.storeMode");
+methodVisitor.visitLdcInsn("jakarta.persistence.cache.storeMode");
 methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/CacheStoreMode", "USE", "Ljakarta/persistence/CacheStoreMode;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/CacheStoreMode", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/QueryHintsHandler$CacheStoreModeHint", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);

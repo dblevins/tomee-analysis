@@ -72,10 +72,10 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "notificationClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljakarta/management/Notification;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "notificationClass", "()Ljava/lang/Class;", "()Ljava/lang/Class<+Ljavax/management/Notification;>;", null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visit(null, Type.getType("Ljakarta/management/Notification;"));
+annotationVisitor0.visit(null, Type.getType("Ljavax/management/Notification;"));
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

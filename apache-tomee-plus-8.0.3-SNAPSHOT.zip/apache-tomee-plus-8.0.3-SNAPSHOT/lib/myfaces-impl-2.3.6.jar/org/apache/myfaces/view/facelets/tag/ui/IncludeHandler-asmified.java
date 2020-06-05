@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/ui/IncludeHandler", null, "jakarta/faces/view/facelets/TagHandler", new String[] { "org/apache/myfaces/view/facelets/tag/ComponentContainerHandler" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ERROR_PAGE_INCLUDE_PATH", "Ljava/lang/String;", null, "javax.faces.error.xhtml");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ERROR_PAGE_INCLUDE_PATH", "Ljava/lang/String;", null, "jakarta.faces.error.xhtml");
 fieldVisitor.visitEnd();
 }
 {
@@ -306,7 +306,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/faces/application/ProjectStage"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "isProjectStage", "(Ljakarta/faces/application/ProjectStage;)Z", false);
 Label label24 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label24);
-methodVisitor.visitLdcInsn("javax.faces.error.xhtml");
+methodVisitor.visitLdcInsn("jakarta.faces.error.xhtml");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label24);

@@ -265,7 +265,7 @@ methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label9);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("javax.faces.encodedURL");
+methodVisitor.visitLdcInsn("jakarta.faces.encodedURL");
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/renderkit/html/HtmlRendererUtils", "renderHiddenInputField", "(Ljakarta/faces/context/ResponseWriter;Ljava/lang/Object;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label9);

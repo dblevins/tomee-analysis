@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/webservices/WsServlet$InvocationContext", null, "java/lang/Object", new String[] { "jakarta/xml/rpc/server/ServletEndpointContext" });
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/webservices/WsServlet$InvocationContext", null, "java/lang/Object", new String[] { "javax/xml/rpc/server/ServletEndpointContext" });
 
 classWriter.visitInnerClass("org/apache/openejb/server/webservices/WsServlet$InvocationContext", "org/apache/openejb/server/webservices/WsServlet", "InvocationContext", ACC_PRIVATE | ACC_STATIC);
 
@@ -43,13 +43,13 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageContext", "()Ljakarta/xml/rpc/handler/MessageContext;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMessageContext", "()Ljavax/xml/rpc/handler/MessageContext;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/WsServlet$InvocationContext", "request", "Ljakarta/servlet/http/HttpServletRequest;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/webservices/WsConstants", "MESSAGE_CONTEXT", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/xml/rpc/handler/MessageContext");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/rpc/handler/MessageContext");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/osgi/PersistenceActivator", null, "java/lang/Object", new String[] { "org/osgi/framework/BundleActivator" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PERSISTENCE_PROVIDER_ARIES", "Ljava/lang/String;", null, "javax.persistence.provider");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PERSISTENCE_PROVIDER_ARIES", "Ljava/lang/String;", null, "jakarta.persistence.provider");
 fieldVisitor.visitEnd();
 }
 {
@@ -67,7 +67,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Hashtable", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.persistence.provider");
+methodVisitor.visitLdcInsn("jakarta.persistence.provider");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/persistence/osgi/PersistenceActivator", "OSGI_PERSISTENCE_PROVIDER", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Hashtable", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);

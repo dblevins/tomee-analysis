@@ -139,7 +139,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "staticResourcesL
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jmxNames", "Ljava/util/List;", "Ljava/util/List<Ljakarta/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jmxNames", "Ljava/util/List;", "Ljava/util/List<Ljavax/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -1691,10 +1691,10 @@ Label label13 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label13);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/ObjectName");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/ObjectName");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "unregisterSilently", "(Ljakarta/management/ObjectName;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "unregisterSilently", "(Ljavax/management/ObjectName;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label12);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -2886,7 +2886,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/Logs$Lo
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "set", "(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/openejb/monitoring/ObjectNameBuilder;", false);
 methodVisitor.visitVarInsn(ASTORE, 13);
 methodVisitor.visitVarInsn(ALOAD, 13);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljakarta/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljavax/management/ObjectName;", false);
 methodVisitor.visitVarInsn(ASTORE, 14);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$RestServiceMBean");
 methodVisitor.visitInsn(DUP);
@@ -2894,7 +2894,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 12);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$RestServiceMBean", "<init>", "(Lorg/apache/openejb/server/cxf/rs/CxfRsHttpListener;Lorg/apache/openejb/server/cxf/rs/Logs$LogResourceEndpointInfo;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 14);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "registerDynamicWrapperSilently", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "registerDynamicWrapperSilently", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener", "jmxNames", "Ljava/util/List;");
@@ -2938,7 +2938,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()
 methodVisitor.visitVarInsn(ASTORE, 15);
 Label label12 = new Label();
 methodVisitor.visitLabel(label12);
-methodVisitor.visitFrame(Opcodes.F_FULL, 16, new Object[] {"org/apache/openejb/server/cxf/rs/CxfRsHttpListener", "jakarta/ws/rs/core/Application", "java/lang/String", "java/util/Map", "org/apache/cxf/jaxrs/JAXRSServerFactoryBean", "java/lang/String", "java/util/List", Opcodes.INTEGER, Opcodes.INTEGER, "org/apache/cxf/jaxrs/JAXRSServiceImpl", "java/util/List", "java/util/Iterator", "org/apache/openejb/server/cxf/rs/Logs$LogResourceEndpointInfo", "org/apache/openejb/monitoring/ObjectNameBuilder", "jakarta/management/ObjectName", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 16, new Object[] {"org/apache/openejb/server/cxf/rs/CxfRsHttpListener", "jakarta/ws/rs/core/Application", "java/lang/String", "java/util/Map", "org/apache/cxf/jaxrs/JAXRSServerFactoryBean", "java/lang/String", "java/util/List", Opcodes.INTEGER, Opcodes.INTEGER, "org/apache/cxf/jaxrs/JAXRSServiceImpl", "java/util/List", "java/util/Iterator", "org/apache/openejb/server/cxf/rs/Logs$LogResourceEndpointInfo", "org/apache/openejb/monitoring/ObjectNameBuilder", "javax/management/ObjectName", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 15);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label13 = new Label();

@@ -185,23 +185,23 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ATTA
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_DESCRIPTION", "Ljava/lang/String;", null, "javax.xml.ws.wsdl.description");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_DESCRIPTION", "Ljava/lang/String;", null, "jakarta.xml.ws.wsdl.description");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_SERVICE", "Ljava/lang/String;", null, "javax.xml.ws.wsdl.service");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_SERVICE", "Ljava/lang/String;", null, "jakarta.xml.ws.wsdl.service");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_PORT", "Ljava/lang/String;", null, "javax.xml.ws.wsdl.port");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_PORT", "Ljava/lang/String;", null, "jakarta.xml.ws.wsdl.port");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_INTERFACE", "Ljava/lang/String;", null, "javax.xml.ws.wsdl.interface");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_INTERFACE", "Ljava/lang/String;", null, "jakarta.xml.ws.wsdl.interface");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_OPERATION", "Ljava/lang/String;", null, "javax.xml.ws.wsdl.operation");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_OPERATION", "Ljava/lang/String;", null, "jakarta.xml.ws.wsdl.operation");
 fieldVisitor.visitEnd();
 }
 {
@@ -229,11 +229,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONT
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONNECTION_TIMEOUT", "Ljava/lang/String;", null, "javax.xml.ws.client.connectionTimeout");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONNECTION_TIMEOUT", "Ljava/lang/String;", null, "jakarta.xml.ws.client.connectionTimeout");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RECEIVE_TIMEOUT", "Ljava/lang/String;", null, "javax.xml.ws.client.receiveTimeout");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RECEIVE_TIMEOUT", "Ljava/lang/String;", null, "jakarta.xml.ws.client.receiveTimeout");
 fieldVisitor.visitEnd();
 }
 {

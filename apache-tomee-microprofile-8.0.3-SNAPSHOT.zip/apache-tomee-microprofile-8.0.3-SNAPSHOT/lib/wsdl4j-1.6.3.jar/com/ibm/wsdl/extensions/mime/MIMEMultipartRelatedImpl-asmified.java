@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/mime/MIMEMultipartRelatedImpl", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/mime/MIMEMultipartRelated" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/mime/MIMEMultipartRelatedImpl", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/mime/MIMEMultipartRelated" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "elementType", "Ljavax/xml/namespace/QName;", null, null);
@@ -99,7 +99,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMIMEPart", "(Ljakarta/wsdl/extensions/mime/MIMEPart;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMIMEPart", "(Ljavax/wsdl/extensions/mime/MIMEPart;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/mime/MIMEMultipartRelatedImpl", "mimeParts", "Ljava/util/List;");
@@ -111,7 +111,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeMIMEPart", "(Ljakarta/wsdl/extensions/mime/MIMEPart;)Ljakarta/wsdl/extensions/mime/MIMEPart;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeMIMEPart", "(Ljavax/wsdl/extensions/mime/MIMEPart;)Ljavax/wsdl/extensions/mime/MIMEPart;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/mime/MIMEMultipartRelatedImpl", "mimeParts", "Ljava/util/List;");

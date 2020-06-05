@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/NoFilter", "Ljava/lang/Object;Ljakarta/cache/event/CacheEntryEventFilter<Ljava/lang/Object;Ljava/lang/Object;>;", "java/lang/Object", new String[] { "jakarta/cache/event/CacheEntryEventFilter" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/NoFilter", "Ljava/lang/Object;Ljavax/cache/event/CacheEntryEventFilter<Ljava/lang/Object;Ljava/lang/Object;>;", "java/lang/Object", new String[] { "javax/cache/event/CacheEntryEventFilter" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Ljakarta/cache/event/CacheEntryEventFilter;", "Ljakarta/cache/event/CacheEntryEventFilter<Ljava/lang/Object;Ljava/lang/Object;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Ljavax/cache/event/CacheEntryEventFilter;", "Ljavax/cache/event/CacheEntryEventFilter<Ljava/lang/Object;Ljava/lang/Object;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "(Ljakarta/cache/event/CacheEntryEvent;)Z", "(Ljakarta/cache/event/CacheEntryEvent<**>;)Z", new String[] { "jakarta/cache/event/CacheEntryListenerException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "(Ljavax/cache/event/CacheEntryEvent;)Z", "(Ljavax/cache/event/CacheEntryEvent<**>;)Z", new String[] { "javax/cache/event/CacheEntryListenerException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IRETURN);
@@ -51,7 +51,7 @@ methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/commons/jcs/jcache/NoFilter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/jcs/jcache/NoFilter", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/commons/jcs/jcache/NoFilter", "INSTANCE", "Ljakarta/cache/event/CacheEntryEventFilter;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/commons/jcs/jcache/NoFilter", "INSTANCE", "Ljavax/cache/event/CacheEntryEventFilter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();

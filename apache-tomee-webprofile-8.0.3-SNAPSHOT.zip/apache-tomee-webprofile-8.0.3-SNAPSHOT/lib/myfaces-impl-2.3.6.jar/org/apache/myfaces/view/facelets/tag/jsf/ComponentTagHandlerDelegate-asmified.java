@@ -200,13 +200,13 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf
 methodVisitor.visitJumpInsn(IFNULL, label12);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentTagHandlerDelegate", "_rendererType", "Ljava/lang/String;");
-methodVisitor.visitLdcInsn("javax.faces.resource.Script");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Script");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label13 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label13);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/ComponentTagHandlerDelegate", "_rendererType", "Ljava/lang/String;");
-methodVisitor.visitLdcInsn("javax.faces.resource.Stylesheet");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Stylesheet");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label12);
 methodVisitor.visitLabel(label13);

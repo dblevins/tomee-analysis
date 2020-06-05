@@ -146,7 +146,7 @@ methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.timeZone");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.timeZone");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetTimeZoneSupport", "scope", "I");

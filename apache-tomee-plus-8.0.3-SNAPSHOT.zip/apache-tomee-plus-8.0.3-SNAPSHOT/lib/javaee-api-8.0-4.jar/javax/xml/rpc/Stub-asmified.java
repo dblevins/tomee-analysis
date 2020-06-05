@@ -25,19 +25,19 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "javax/xml/rpc/Stub", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "USERNAME_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.security.auth.username");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "USERNAME_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.security.auth.username");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PASSWORD_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.security.auth.password");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PASSWORD_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.security.auth.password");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENDPOINT_ADDRESS_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.service.endpoint.address");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENDPOINT_ADDRESS_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.service.endpoint.address");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION_MAINTAIN_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.session.maintain");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION_MAINTAIN_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.session.maintain");
 fieldVisitor.visitEnd();
 }
 {

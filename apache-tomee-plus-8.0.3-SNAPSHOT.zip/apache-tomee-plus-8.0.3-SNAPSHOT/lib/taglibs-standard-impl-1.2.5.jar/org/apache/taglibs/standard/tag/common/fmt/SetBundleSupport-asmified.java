@@ -107,7 +107,7 @@ methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetBundleSupport", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.localizationContext");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.localizationContext");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/SetBundleSupport", "scope", "I");

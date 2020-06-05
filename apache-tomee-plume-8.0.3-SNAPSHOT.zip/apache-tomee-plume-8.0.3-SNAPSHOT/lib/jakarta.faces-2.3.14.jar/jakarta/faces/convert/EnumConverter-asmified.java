@@ -29,11 +29,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONV
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENUM_ID", "Ljava/lang/String;", null, "javax.faces.converter.EnumConverter.ENUM");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENUM_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.EnumConverter.ENUM");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENUM_NO_CLASS_ID", "Ljava/lang/String;", null, "javax.faces.converter.EnumConverter.ENUM_NO_CLASS");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENUM_NO_CLASS_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.EnumConverter.ENUM_NO_CLASS");
 fieldVisitor.visitEnd();
 }
 {
@@ -97,7 +97,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label5);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.EnumConverter.ENUM_NO_CLASS");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.EnumConverter.ENUM_NO_CLASS");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -145,7 +145,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.EnumConverter.ENUM");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.EnumConverter.ENUM");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -193,7 +193,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label2);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.EnumConverter.ENUM_NO_CLASS");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.EnumConverter.ENUM_NO_CLASS");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -233,7 +233,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.EnumConverter.ENUM");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.EnumConverter.ENUM");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);

@@ -42,7 +42,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExtension", "(Ljava/util/Map;)Ljakarta/wsdl/extensions/ExtensibilityElement;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljakarta/wsdl/extensions/ExtensibilityElement;", new String[] { "jakarta/wsdl/WSDLException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExtension", "(Ljava/util/Map;)Ljavax/wsdl/extensions/ExtensibilityElement;", "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljavax/wsdl/extensions/ExtensibilityElement;", new String[] { "javax/wsdl/WSDLException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -53,20 +53,20 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("address");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/wsdl11/SoapAddressPlugin", "getOption", "(Ljava/util/Map;Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/wsdl11/SoapAddressPlugin", "createExtension", "(ZLjava/lang/String;)Ljakarta/wsdl/extensions/ExtensibilityElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/wsdl11/SoapAddressPlugin", "createExtension", "(ZLjava/lang/String;)Ljavax/wsdl/extensions/ExtensibilityElement;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExtension", "(ZLjava/lang/String;)Ljakarta/wsdl/extensions/ExtensibilityElement;", null, new String[] { "jakarta/wsdl/WSDLException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createExtension", "(ZLjava/lang/String;)Ljavax/wsdl/extensions/ExtensibilityElement;", null, new String[] { "javax/wsdl/WSDLException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/wsdl11/SoapAddressPlugin", "registry", "Ljakarta/wsdl/extensions/ExtensionRegistry;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/binding/soap/wsdl11/SoapAddressPlugin", "registry", "Ljavax/wsdl/extensions/ExtensionRegistry;");
 methodVisitor.visitVarInsn(ILOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/SOAPBindingUtil", "createSoapAddress", "(Ljakarta/wsdl/extensions/ExtensionRegistry;Z)Lorg/apache/cxf/binding/soap/wsdl/extensions/SoapAddress;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/binding/soap/SOAPBindingUtil", "createSoapAddress", "(Ljavax/wsdl/extensions/ExtensionRegistry;Z)Lorg/apache/cxf/binding/soap/wsdl/extensions/SoapAddress;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);

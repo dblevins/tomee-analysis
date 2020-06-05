@@ -37,11 +37,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "faultactor", "Ljava/lang/Str
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "detail", "Ljavax/xml/soap/Detail;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "detail", "Ljakarta/xml/soap/Detail;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/String;Ljava/lang/String;Ljavax/xml/soap/Detail;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/namespace/QName;Ljava/lang/String;Ljava/lang/String;Ljakarta/xml/soap/Detail;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -57,7 +57,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "javax/xml/rpc/soap/SOAPFaultException", "faultactor", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitFieldInsn(PUTFIELD, "javax/xml/rpc/soap/SOAPFaultException", "detail", "Ljavax/xml/soap/Detail;");
+methodVisitor.visitFieldInsn(PUTFIELD, "javax/xml/rpc/soap/SOAPFaultException", "detail", "Ljakarta/xml/soap/Detail;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 5);
 methodVisitor.visitEnd();
@@ -90,10 +90,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDetail", "()Ljavax/xml/soap/Detail;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDetail", "()Ljakarta/xml/soap/Detail;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "javax/xml/rpc/soap/SOAPFaultException", "detail", "Ljavax/xml/soap/Detail;");
+methodVisitor.visitFieldInsn(GETFIELD, "javax/xml/rpc/soap/SOAPFaultException", "detail", "Ljakarta/xml/soap/Detail;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

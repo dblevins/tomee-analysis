@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/modeler/BaseAttributeFilter", null, "java/lang/Object", new String[] { "jakarta/management/NotificationFilter" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/modeler/BaseAttributeFilter", null, "java/lang/Object", new String[] { "javax/management/NotificationFilter" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -167,7 +167,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isNotificationEnabled", "(Ljakarta/management/Notification;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isNotificationEnabled", "(Ljavax/management/Notification;)Z", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -186,7 +186,7 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/management/AttributeChangeNotification");
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/management/AttributeChangeNotification");
 Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label7);
 methodVisitor.visitInsn(ICONST_0);
@@ -194,18 +194,18 @@ methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/AttributeChangeNotification");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/AttributeChangeNotification");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLdcInsn("jmx.attribute.change");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/AttributeChangeNotification", "getType", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/AttributeChangeNotification", "getType", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label8);
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitLabel(label8);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/AttributeChangeNotification"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/AttributeChangeNotification"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseAttributeFilter", "names", "Ljava/util/Set;");
 methodVisitor.visitInsn(DUP);
@@ -227,7 +227,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/BaseAttributeFilter", "names", "Ljava/util/Set;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/AttributeChangeNotification", "getAttributeName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/AttributeChangeNotification", "getAttributeName", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(MONITOREXIT);

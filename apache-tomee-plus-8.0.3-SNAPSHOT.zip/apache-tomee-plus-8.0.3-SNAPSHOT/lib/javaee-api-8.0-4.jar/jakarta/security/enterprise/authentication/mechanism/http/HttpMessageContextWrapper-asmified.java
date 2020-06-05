@@ -132,11 +132,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientSubject", "()Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientSubject", "()Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/enterprise/authentication/mechanism/http/HttpMessageContextWrapper", "getWrapped", "()Ljakarta/security/enterprise/authentication/mechanism/http/HttpMessageContext;", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/security/enterprise/authentication/mechanism/http/HttpMessageContext", "getClientSubject", "()Ljakarta/security/auth/Subject;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/security/enterprise/authentication/mechanism/http/HttpMessageContext", "getClientSubject", "()Ljavax/security/auth/Subject;", true);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

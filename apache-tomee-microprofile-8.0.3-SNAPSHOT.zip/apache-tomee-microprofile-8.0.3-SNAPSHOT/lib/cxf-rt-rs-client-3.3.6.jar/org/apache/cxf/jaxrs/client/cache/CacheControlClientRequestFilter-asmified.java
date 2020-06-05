@@ -50,17 +50,17 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "CLIENT_CACHE_CONT
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Ljakarta/cache/Cache;", "Ljakarta/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Ljavax/cache/Cache;", "Ljavax/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/cache/Cache;)V", "(Ljakarta/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/cache/Cache;)V", "(Ljavax/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter", "cache", "Ljakarta/cache/Cache;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter", "cache", "Ljavax/cache/Cache;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -104,9 +104,9 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/cache/Key", "<init>", "(Ljava/net/URI;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter", "cache", "Ljakarta/cache/Cache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter", "cache", "Ljavax/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/Cache", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/Cache", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/client/cache/Entry");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
@@ -136,10 +136,10 @@ methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/util/StringUtils", "isEmpty", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter", "cache", "Ljakarta/cache/Cache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter", "cache", "Ljavax/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/Cache", "remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/Cache", "remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
@@ -243,11 +243,11 @@ methodVisitor.visitMaxs(4, 12);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCache", "(Ljakarta/cache/Cache;)Lorg/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter;", "(Ljakarta/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;)Lorg/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCache", "(Ljavax/cache/Cache;)Lorg/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter;", "(Ljavax/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;)Lorg/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter", "cache", "Ljakarta/cache/Cache;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientRequestFilter", "cache", "Ljavax/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);

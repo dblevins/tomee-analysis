@@ -125,7 +125,7 @@ methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/activation/registries/LogSuppor
 methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "FINE", "Ljava/util/logging/Level;");
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/activation/registries/LogSupport", "level", "Ljava/util/logging/Level;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitLdcInsn("javax.activation.debug");
+methodVisitor.visitLdcInsn("jakarta.activation.debug");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "getBoolean", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/activation/registries/LogSupport", "debug", "Z");
 methodVisitor.visitLabel(label1);

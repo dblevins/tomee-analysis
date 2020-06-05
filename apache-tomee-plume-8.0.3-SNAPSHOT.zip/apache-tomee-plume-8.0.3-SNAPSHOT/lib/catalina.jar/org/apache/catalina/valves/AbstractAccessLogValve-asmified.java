@@ -449,7 +449,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/valves/AbstractAcces
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.servlet.request.X509Certificate");
+methodVisitor.visitLdcInsn("jakarta.servlet.request.X509Certificate");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Request", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);

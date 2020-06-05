@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/TempStateCacheView", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/cache/Cache<TK;TV;>;", "java/lang/Object", new String[] { "jakarta/cache/Cache" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/TempStateCacheView", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/cache/Cache<TK;TV;>;", "java/lang/Object", new String[] { "javax/cache/Cache" });
 
-classWriter.visitInnerClass("jakarta/cache/Cache$Entry", "jakarta/cache/Cache", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("javax/cache/Cache$Entry", "javax/cache/Cache", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
@@ -102,10 +102,10 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");
-methodVisitor.visitLdcInsn(Type.getType("Ljakarta/cache/configuration/CompleteConfiguration;"));
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "getConfiguration", "(Ljava/lang/Class;)Ljakarta/cache/configuration/Configuration;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/cache/configuration/CompleteConfiguration");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/configuration/CompleteConfiguration", "isStatisticsEnabled", "()Z", true);
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/cache/configuration/CompleteConfiguration;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "getConfiguration", "(Ljava/lang/Class;)Ljavax/cache/configuration/Configuration;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/cache/configuration/CompleteConfiguration");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/configuration/CompleteConfiguration", "isStatisticsEnabled", "()Z", true);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -274,14 +274,14 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadAll", "(Ljava/util/Set;ZLjakarta/cache/integration/CompletionListener;)V", "(Ljava/util/Set<+TK;>;ZLjakarta/cache/integration/CompletionListener;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadAll", "(Ljava/util/Set;ZLjavax/cache/integration/CompletionListener;)V", "(Ljava/util/Set<+TK;>;ZLjavax/cache/integration/CompletionListener;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ILOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "loadAll", "(Ljava/util/Set;ZLjakarta/cache/integration/CompletionListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "loadAll", "(Ljava/util/Set;ZLjavax/cache/integration/CompletionListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -616,38 +616,38 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfiguration", "(Ljava/lang/Class;)Ljakarta/cache/configuration/Configuration;", "<C::Ljakarta/cache/configuration/Configuration<TK;TV;>;>(Ljava/lang/Class<TC;>;)TC;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConfiguration", "(Ljava/lang/Class;)Ljavax/cache/configuration/Configuration;", "<C::Ljavax/cache/configuration/Configuration<TK;TV;>;>(Ljava/lang/Class<TC;>;)TC;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "getConfiguration", "(Ljava/lang/Class;)Ljakarta/cache/configuration/Configuration;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "getConfiguration", "(Ljava/lang/Class;)Ljavax/cache/configuration/Configuration;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "invoke", "(Ljava/lang/Object;Ljakarta/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(TK;Ljakarta/cache/processor/EntryProcessor<TK;TV;TT;>;[Ljava/lang/Object;)TT;", new String[] { "jakarta/cache/processor/EntryProcessorException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "invoke", "(Ljava/lang/Object;Ljavax/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(TK;Ljavax/cache/processor/EntryProcessor<TK;TV;TT;>;[Ljava/lang/Object;)TT;", new String[] { "javax/cache/processor/EntryProcessorException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "invoke", "(Ljava/lang/Object;Ljakarta/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "invoke", "(Ljava/lang/Object;Ljavax/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "invokeAll", "(Ljava/util/Set;Ljakarta/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/util/Map;", "<T:Ljava/lang/Object;>(Ljava/util/Set<+TK;>;Ljakarta/cache/processor/EntryProcessor<TK;TV;TT;>;[Ljava/lang/Object;)Ljava/util/Map<TK;Ljakarta/cache/processor/EntryProcessorResult<TT;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "invokeAll", "(Ljava/util/Set;Ljavax/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/util/Map;", "<T:Ljava/lang/Object;>(Ljava/util/Set<+TK;>;Ljavax/cache/processor/EntryProcessor<TK;TV;TT;>;[Ljava/lang/Object;)Ljava/util/Map<TK;Ljavax/cache/processor/EntryProcessorResult<TT;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "invokeAll", "(Ljava/util/Set;Ljakarta/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "invokeAll", "(Ljava/util/Set;Ljavax/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/util/Map;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -663,11 +663,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCacheManager", "()Ljakarta/cache/CacheManager;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCacheManager", "()Ljavax/cache/CacheManager;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "getCacheManager", "()Ljakarta/cache/CacheManager;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "getCacheManager", "()Ljavax/cache/CacheManager;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -704,29 +704,29 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerCacheEntryListener", "(Ljakarta/cache/configuration/CacheEntryListenerConfiguration;)V", "(Ljakarta/cache/configuration/CacheEntryListenerConfiguration<TK;TV;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerCacheEntryListener", "(Ljavax/cache/configuration/CacheEntryListenerConfiguration;)V", "(Ljavax/cache/configuration/CacheEntryListenerConfiguration<TK;TV;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "registerCacheEntryListener", "(Ljakarta/cache/configuration/CacheEntryListenerConfiguration;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "registerCacheEntryListener", "(Ljavax/cache/configuration/CacheEntryListenerConfiguration;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deregisterCacheEntryListener", "(Ljakarta/cache/configuration/CacheEntryListenerConfiguration;)V", "(Ljakarta/cache/configuration/CacheEntryListenerConfiguration<TK;TV;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deregisterCacheEntryListener", "(Ljavax/cache/configuration/CacheEntryListenerConfiguration;)V", "(Ljavax/cache/configuration/CacheEntryListenerConfiguration<TK;TV;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "deregisterCacheEntryListener", "(Ljakarta/cache/configuration/CacheEntryListenerConfiguration;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache", "deregisterCacheEntryListener", "(Ljavax/cache/configuration/CacheEntryListenerConfiguration;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljakarta/cache/Cache$Entry<TK;TV;>;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<Ljavax/cache/Cache$Entry<TK;TV;>;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/TempStateCacheView", "cache", "Lorg/apache/commons/jcs/jcache/JCSCache;");

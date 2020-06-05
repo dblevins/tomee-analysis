@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/ra/ActiveMQManagedConnection$2", null, "java/lang/Object", new String[] { "org/apache/activemq/LocalTransactionEventListener" });
 
-classWriter.visitOuterClass("org/apache/activemq/ra/ActiveMQManagedConnection", "<init>", "(Ljakarta/security/auth/Subject;Lorg/apache/activemq/ActiveMQConnection;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V");
+classWriter.visitOuterClass("org/apache/activemq/ra/ActiveMQManagedConnection", "<init>", "(Ljavax/security/auth/Subject;Lorg/apache/activemq/ActiveMQConnection;Lorg/apache/activemq/ra/ActiveMQConnectionRequestInfo;)V");
 
 classWriter.visitInnerClass("org/apache/activemq/ra/ActiveMQManagedConnection$2", null, null, 0);
 

@@ -33,11 +33,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARA
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_RETRIEVE_MODE", "Ljava/lang/String;", null, "javax.persistence.cache.retrieveMode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_RETRIEVE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.cache.retrieveMode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_STORE_MODE", "Ljava/lang/String;", null, "javax.persistence.cache.storeMode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_STORE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.cache.storeMode");
 fieldVisitor.visitEnd();
 }
 {
@@ -93,7 +93,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PESS
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PESSIMISTIC_LOCK_TIMEOUT", "Ljava/lang/String;", null, "javax.persistence.lock.timeout");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PESSIMISTIC_LOCK_TIMEOUT", "Ljava/lang/String;", null, "jakarta.persistence.lock.timeout");
 fieldVisitor.visitEnd();
 }
 {
@@ -129,7 +129,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "QUERY_TIMEOUT", "Ljava/lang/String;", null, "javax.persistence.query.timeout");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "QUERY_TIMEOUT", "Ljava/lang/String;", null, "jakarta.persistence.query.timeout");
 fieldVisitor.visitEnd();
 }
 {
@@ -225,7 +225,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FETC
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_FETCH_GRAPH", "Ljava/lang/String;", null, "javax.persistence.fetchgraph");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_FETCH_GRAPH", "Ljava/lang/String;", null, "jakarta.persistence.fetchgraph");
 fieldVisitor.visitEnd();
 }
 {
@@ -237,7 +237,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOAD
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_LOAD_GRAPH", "Ljava/lang/String;", null, "javax.persistence.loadgraph");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JPA_LOAD_GRAPH", "Ljava/lang/String;", null, "jakarta.persistence.loadgraph");
 fieldVisitor.visitEnd();
 }
 {
@@ -273,7 +273,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INDI
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PESSIMISTIC_LOCK_SCOPE", "Ljava/lang/String;", null, "javax.persistence.lock.scope");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PESSIMISTIC_LOCK_SCOPE", "Ljava/lang/String;", null, "jakarta.persistence.lock.scope");
 fieldVisitor.visitEnd();
 }
 {

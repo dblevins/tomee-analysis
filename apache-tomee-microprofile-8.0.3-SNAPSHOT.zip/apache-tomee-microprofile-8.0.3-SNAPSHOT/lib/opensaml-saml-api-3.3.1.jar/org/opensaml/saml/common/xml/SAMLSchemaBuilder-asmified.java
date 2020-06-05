@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/saml/common/xml/SAMLSchemaBuilder", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/ThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/ThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("org/opensaml/saml/common/xml/SAMLSchemaBuilder$SAML1Version", "org/opensaml/saml/common/xml/SAMLSchemaBuilder", "SAML1Version", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);

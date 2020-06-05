@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "MBEA
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_mbs", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/management/MBeanServer;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_mbs", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/management/MBeanServer;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -72,13 +72,13 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", 
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/MBeanServer");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/MBeanServer");
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/instrumentation/jmx/JMXInstrument", "getObjectName", "()Ljakarta/management/ObjectName;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/instrumentation/jmx/JMXInstrument", "getObjectName", "()Ljavax/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label1);
@@ -100,7 +100,7 @@ methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanServer", "()Ljava/util/Set;", "()Ljava/util/Set<Ljakarta/management/MBeanServer;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanServer", "()Ljava/util/Set;", "()Ljava/util/Set<Ljavax/management/MBeanServer;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/JMXProvider", "_mbs", "Ljava/util/Set;");
@@ -114,12 +114,12 @@ methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/instrumentation/jmx/J
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/JMXProvider", "_mbs", "Ljava/util/Set;");
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/management/MBeanServerFactory", "findMBeanServer", "(Ljava/lang/String;)Ljava/util/ArrayList;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/management/MBeanServerFactory", "findMBeanServer", "(Ljava/lang/String;)Ljava/util/ArrayList;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "addAll", "(Ljava/util/Collection;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/instrumentation/jmx/JMXProvider", "_mbs", "Ljava/util/Set;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/management/ManagementFactory", "getPlatformMBeanServer", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/management/ManagementFactory", "getPlatformMBeanServer", "()Ljavax/management/MBeanServer;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label0);
@@ -153,7 +153,7 @@ Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/MBeanServer");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/MBeanServer");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label5 = new Label();
@@ -163,7 +163,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", t
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label6);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/MBeanServer"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/MBeanServer"}, 0, null);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/UserException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("jmx-server-failed-creation");
@@ -240,7 +240,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createObjectName", "(Lorg/apache/openjpa/instrumentation/jmx/JMXInstrument;Ljava/util/Map;)Ljakarta/management/ObjectName;", "(Lorg/apache/openjpa/instrumentation/jmx/JMXInstrument;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljakarta/management/ObjectName;", new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createObjectName", "(Lorg/apache/openjpa/instrumentation/jmx/JMXInstrument;Ljava/util/Map;)Ljavax/management/ObjectName;", "(Lorg/apache/openjpa/instrumentation/jmx/JMXInstrument;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljavax/management/ObjectName;", new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -317,11 +317,11 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 5);
 methodVisitor.visitEnd();
@@ -378,13 +378,13 @@ Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/management/MBeanServer");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/management/MBeanServer");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/instrumentation/jmx/JMXInstrument");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/instrumentation/jmx/JMXInstrument", "getObjectName", "()Ljakarta/management/ObjectName;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/instrumentation/jmx/JMXInstrument", "getObjectName", "()Ljavax/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label6);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

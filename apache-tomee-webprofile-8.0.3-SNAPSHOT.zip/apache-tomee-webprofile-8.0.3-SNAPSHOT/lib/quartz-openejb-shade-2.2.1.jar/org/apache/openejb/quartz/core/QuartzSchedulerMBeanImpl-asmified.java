@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", null, "jakarta/management/StandardMBean", new String[] { "jakarta/management/NotificationEmitter", "org/apache/openejb/quartz/core/jmx/QuartzSchedulerMBean", "org/apache/openejb/quartz/JobListener", "org/apache/openejb/quartz/SchedulerListener" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", null, "javax/management/StandardMBean", new String[] { "javax/management/NotificationEmitter", "org/apache/openejb/quartz/core/jmx/QuartzSchedulerMBean", "org/apache/openejb/quartz/JobListener", "org/apache/openejb/quartz/SchedulerListener" });
 
 classWriter.visitInnerClass("org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$1", "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", null, ACC_STATIC | ACC_SYNTHETIC);
 
@@ -33,7 +33,7 @@ classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC
 classWriter.visitInnerClass("org/apache/openejb/quartz/Trigger$TriggerState", "org/apache/openejb/quartz/Trigger", "TriggerState", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "NOTIFICATION_INFO", "[Ljakarta/management/MBeanNotificationInfo;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "NOTIFICATION_INFO", "[Ljavax/management/MBeanNotificationInfo;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -61,11 +61,11 @@ fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "sequenceNumber
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/openejb/quartz/core/QuartzScheduler;)V", null, new String[] { "jakarta/management/NotCompliantMBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/openejb/quartz/core/QuartzScheduler;)V", null, new String[] { "javax/management/NotCompliantMBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/quartz/core/jmx/QuartzSchedulerMBean;"));
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/StandardMBean", "<init>", "(Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/StandardMBean", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter");
 methodVisitor.visitInsn(DUP);
@@ -2869,7 +2869,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "sendNotification", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/Notification");
+methodVisitor.visitTypeInsn(NEW, "javax/management/Notification");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -2878,65 +2878,65 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/core/QuartzSch
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicLong", "incrementAndGet", "()J", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/Notification", "<init>", "(Ljava/lang/String;Ljava/lang/Object;JJLjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/Notification", "<init>", "(Ljava/lang/String;Ljava/lang/Object;JJLjava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/Notification", "setUserData", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/Notification", "setUserData", "(Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/Notification"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/Notification"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "emitter", "Lorg/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter;");
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "sendNotification", "(Ljakarta/management/Notification;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "sendNotification", "(Ljavax/management/Notification;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(9, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotificationListener", "(Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "emitter", "Lorg/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "addNotificationListener", "(Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "addNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNotificationInfo", "()[Ljakarta/management/MBeanNotificationInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "NOTIFICATION_INFO", "[Ljakarta/management/MBeanNotificationInfo;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "NOTIFICATION_INFO", "[Ljavax/management/MBeanNotificationInfo;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljakarta/management/NotificationListener;)V", null, new String[] { "jakarta/management/ListenerNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljavax/management/NotificationListener;)V", null, new String[] { "javax/management/ListenerNotFoundException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "emitter", "Lorg/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "removeNotificationListener", "(Ljakarta/management/NotificationListener;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "removeNotificationListener", "(Ljavax/management/NotificationListener;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "jakarta/management/ListenerNotFoundException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", null, new String[] { "javax/management/ListenerNotFoundException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "emitter", "Lorg/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "removeNotificationListener", "(Ljakarta/management/NotificationListener;Ljakarta/management/NotificationFilter;Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "removeNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -3079,23 +3079,23 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitLdcInsn("schedulerShutdown");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitVarInsn(ASTORE, 0);
-methodVisitor.visitLdcInsn(Type.getType("Ljakarta/management/Notification;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/management/Notification;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLdcInsn("QuartzScheduler JMX Event");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/MBeanNotificationInfo");
+methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/MBeanNotificationInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanNotificationInfo");
+methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanNotificationInfo");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("QuartzScheduler JMX Event");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanNotificationInfo", "<init>", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanNotificationInfo", "<init>", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(AASTORE);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "NOTIFICATION_INFO", "[Ljakarta/management/MBeanNotificationInfo;");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "NOTIFICATION_INFO", "[Ljavax/management/MBeanNotificationInfo;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(8, 3);
 methodVisitor.visitEnd();

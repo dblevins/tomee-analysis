@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/VmDeploymentFactory", null, "java/lang/Object", new String[] { "jakarta/enterprise/deploy/spi/factories/DeploymentFactory" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/VmDeploymentFactory", null, "java/lang/Object", new String[] { "javax/enterprise/deploy/spi/factories/DeploymentFactory" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "URI_SCHEME", "Ljava/lang/String;", null, "openejb");
@@ -68,14 +68,14 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDisconnectedDeploymentManager", "(Ljava/lang/String;)Ljakarta/enterprise/deploy/spi/DeploymentManager;", null, new String[] { "jakarta/enterprise/deploy/spi/exceptions/DeploymentManagerCreationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDisconnectedDeploymentManager", "(Ljava/lang/String;)Ljavax/enterprise/deploy/spi/DeploymentManager;", null, new String[] { "javax/enterprise/deploy/spi/exceptions/DeploymentManagerCreationException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/VmDeploymentFactory", "handlesURI", "(Ljava/lang/String;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/deploy/spi/exceptions/DeploymentManagerCreationException");
+methodVisitor.visitTypeInsn(NEW, "javax/enterprise/deploy/spi/exceptions/DeploymentManagerCreationException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -85,7 +85,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/deploy/spi/exceptions/DeploymentManagerCreationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/deploy/spi/exceptions/DeploymentManagerCreationException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -101,7 +101,7 @@ methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeploymentManager", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljakarta/enterprise/deploy/spi/DeploymentManager;", null, new String[] { "jakarta/enterprise/deploy/spi/exceptions/DeploymentManagerCreationException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDeploymentManager", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/enterprise/deploy/spi/DeploymentManager;", null, new String[] { "javax/enterprise/deploy/spi/exceptions/DeploymentManagerCreationException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/VmDeploymentManager");
 methodVisitor.visitInsn(DUP);

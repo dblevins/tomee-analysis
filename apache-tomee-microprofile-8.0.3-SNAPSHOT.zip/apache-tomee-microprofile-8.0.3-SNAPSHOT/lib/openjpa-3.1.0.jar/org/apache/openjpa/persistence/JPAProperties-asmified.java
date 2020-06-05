@@ -33,83 +33,83 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PREF
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROVIDER", "Ljava/lang/String;", null, "javax.persistence.provider");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROVIDER", "Ljava/lang/String;", null, "jakarta.persistence.provider");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TRANSACTION_TYPE", "Ljava/lang/String;", null, "javax.persistence.transactionType");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TRANSACTION_TYPE", "Ljava/lang/String;", null, "jakarta.persistence.transactionType");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATASOURCE", "Ljava/lang/String;", null, "javax.persistence.dataSource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATASOURCE", "Ljava/lang/String;", null, "jakarta.persistence.dataSource");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATASOURCE_JTA", "Ljava/lang/String;", null, "javax.persistence.jtaDataSource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATASOURCE_JTA", "Ljava/lang/String;", null, "jakarta.persistence.jtaDataSource");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATASOURCE_NONJTA", "Ljava/lang/String;", null, "javax.persistence.nonJtaDataSource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DATASOURCE_NONJTA", "Ljava/lang/String;", null, "jakarta.persistence.nonJtaDataSource");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_DRIVER", "Ljava/lang/String;", null, "javax.persistence.jdbc.driver");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_DRIVER", "Ljava/lang/String;", null, "jakarta.persistence.jdbc.driver");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_URL", "Ljava/lang/String;", null, "javax.persistence.jdbc.url");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_URL", "Ljava/lang/String;", null, "jakarta.persistence.jdbc.url");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_USER", "Ljava/lang/String;", null, "javax.persistence.jdbc.user");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_USER", "Ljava/lang/String;", null, "jakarta.persistence.jdbc.user");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_PASSWORD", "Ljava/lang/String;", null, "javax.persistence.jdbc.password");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_PASSWORD", "Ljava/lang/String;", null, "jakarta.persistence.jdbc.password");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOCK_SCOPE", "Ljava/lang/String;", null, "javax.persistence.lock.scope");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOCK_SCOPE", "Ljava/lang/String;", null, "jakarta.persistence.lock.scope");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOCK_TIMEOUT", "Ljava/lang/String;", null, "javax.persistence.lock.timeout");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOCK_TIMEOUT", "Ljava/lang/String;", null, "jakarta.persistence.lock.timeout");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "QUERY_TIMEOUT", "Ljava/lang/String;", null, "javax.persistence.query.timeout");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "QUERY_TIMEOUT", "Ljava/lang/String;", null, "jakarta.persistence.query.timeout");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_MODE", "Ljava/lang/String;", null, "javax.persistence.sharedCache.mode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.sharedCache.mode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_STORE_MODE", "Ljava/lang/String;", null, "javax.persistence.cache.storeMode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_STORE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.cache.storeMode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_RETRIEVE_MODE", "Ljava/lang/String;", null, "javax.persistence.cache.retrieveMode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACHE_RETRIEVE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.cache.retrieveMode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_FACTORY", "Ljava/lang/String;", null, "javax.persistence.validation.factory");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_FACTORY", "Ljava/lang/String;", null, "jakarta.persistence.validation.factory");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_MODE", "Ljava/lang/String;", null, "javax.persistence.validation.mode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.validation.mode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_PRE_PERSIST", "Ljava/lang/String;", null, "javax.persistence.validation.group.pre-persist");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_PRE_PERSIST", "Ljava/lang/String;", null, "jakarta.persistence.validation.group.pre-persist");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_PRE_REMOVE", "Ljava/lang/String;", null, "javax.persistence.validation.group.pre-remove");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_PRE_REMOVE", "Ljava/lang/String;", null, "jakarta.persistence.validation.group.pre-remove");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_PRE_UPDATE", "Ljava/lang/String;", null, "javax.persistence.validation.group.pre-update");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATE_PRE_UPDATE", "Ljava/lang/String;", null, "jakarta.persistence.validation.group.pre-update");
 fieldVisitor.visitEnd();
 }
 {
@@ -264,7 +264,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/String");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
-methodVisitor.visitLdcInsn("javax.persistence.cache.retrieveMode");
+methodVisitor.visitLdcInsn("jakarta.persistence.cache.retrieveMode");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label3);
@@ -286,7 +286,7 @@ methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/String");
 methodVisitor.visitJumpInsn(IFEQ, label1);
-methodVisitor.visitLdcInsn("javax.persistence.cache.storeMode");
+methodVisitor.visitLdcInsn("jakarta.persistence.cache.storeMode");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label1);

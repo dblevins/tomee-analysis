@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getBindingFactory", "(Ljakarta/wsdl/Binding;Lorg/apache/cxf/Bus;Ljava/lang/StringBuilder;)Lorg/apache/cxf/binding/BindingFactory;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getBindingFactory", "(Ljavax/wsdl/Binding;Lorg/apache/cxf/Bus;Ljava/lang/StringBuilder;)Lorg/apache/cxf/binding/BindingFactory;", null, null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -43,7 +43,7 @@ methodVisitor.visitTryCatchBlock(label0, label1, label2, "org/apache/cxf/BusExce
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Binding", "getExtensibilityElements", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Binding", "getExtensibilityElements", "()Ljava/util/List;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
 methodVisitor.visitVarInsn(ASTORE, 4);
 Label label3 = new Label();
@@ -57,11 +57,11 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/wsdl/extensions/ExtensibilityElement");
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/wsdl/extensions/ExtensibilityElement");
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/extensions/ExtensibilityElement");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/extensions/ExtensibilityElement");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ICONST_0);
@@ -71,7 +71,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "delete"
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/ExtensibilityElement", "getElementType", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/ExtensibilityElement", "getElementType", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getNamespaceURI", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitInsn(POP);
@@ -89,7 +89,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/binding/BindingFactoryManager", "getBindingFactory", "(Ljava/lang/String;)Lorg/apache/cxf/binding/BindingFactory;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "jakarta/wsdl/extensions/ExtensibilityElement"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "javax/wsdl/extensions/ExtensibilityElement"}, 0, null);
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label2);

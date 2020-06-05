@@ -5603,7 +5603,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/config/ConfigurationFactory;"));
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/util/Messages", "<init>", "(Ljava/lang/Class;)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/config/ConfigurationFactory", "messages", "Lorg/apache/openejb/util/Messages;");
-methodVisitor.visitLdcInsn("jakarta.wsdl.xml.WSDLLocator");
+methodVisitor.visitLdcInsn("javax.wsdl.xml.WSDLLocator");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/config/ConfigurationFactory", "exists", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/config/ConfigurationFactory", "WSDL4J_AVAILABLE", "Z");
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");

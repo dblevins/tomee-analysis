@@ -583,7 +583,7 @@ Label label9 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label9);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/BindingProvider", "getRequestContext", "()Ljava/util/Map;", true);
-methodVisitor.visitLdcInsn("javax.xml.ws.service.endpoint.address");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.service.endpoint.address");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/webservices/PortRefData", "getAddresses", "()Ljava/util/List;", false);
 methodVisitor.visitInsn(ICONST_0);

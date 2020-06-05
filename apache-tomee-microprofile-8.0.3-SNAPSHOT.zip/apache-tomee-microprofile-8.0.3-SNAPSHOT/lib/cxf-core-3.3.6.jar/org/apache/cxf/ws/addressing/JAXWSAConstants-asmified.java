@@ -105,19 +105,19 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NS_W
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CLIENT_ADDRESSING_PROPERTIES", "Ljava/lang/String;", null, "javax.xml.ws.addressing.context");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CLIENT_ADDRESSING_PROPERTIES", "Ljava/lang/String;", null, "jakarta.xml.ws.addressing.context");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ADDRESSING_PROPERTIES_INBOUND", "Ljava/lang/String;", null, "javax.xml.ws.addressing.context.inbound");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ADDRESSING_PROPERTIES_INBOUND", "Ljava/lang/String;", null, "jakarta.xml.ws.addressing.context.inbound");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ADDRESSING_PROPERTIES_OUTBOUND", "Ljava/lang/String;", null, "javax.xml.ws.addressing.context.outbound");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ADDRESSING_PROPERTIES_OUTBOUND", "Ljava/lang/String;", null, "jakarta.xml.ws.addressing.context.outbound");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "CLIENT_ADDRESSING_PROPERTIES_INBOUND", "Ljava/lang/String;", null, "javax.xml.ws.addressing.context.inbound");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "CLIENT_ADDRESSING_PROPERTIES_INBOUND", "Ljava/lang/String;", null, "jakarta.xml.ws.addressing.context.inbound");
 {
 annotationVisitor0 = fieldVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -125,7 +125,7 @@ annotationVisitor0.visitEnd();
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "CLIENT_ADDRESSING_PROPERTIES_OUTBOUND", "Ljava/lang/String;", null, "javax.xml.ws.addressing.context.outbound");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "CLIENT_ADDRESSING_PROPERTIES_OUTBOUND", "Ljava/lang/String;", null, "jakarta.xml.ws.addressing.context.outbound");
 {
 annotationVisitor0 = fieldVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -133,7 +133,7 @@ annotationVisitor0.visitEnd();
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "SERVER_ADDRESSING_PROPERTIES_INBOUND", "Ljava/lang/String;", null, "javax.xml.ws.addressing.context.inbound");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "SERVER_ADDRESSING_PROPERTIES_INBOUND", "Ljava/lang/String;", null, "jakarta.xml.ws.addressing.context.inbound");
 {
 annotationVisitor0 = fieldVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();
@@ -141,7 +141,7 @@ annotationVisitor0.visitEnd();
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "SERVER_ADDRESSING_PROPERTIES_OUTBOUND", "Ljava/lang/String;", null, "javax.xml.ws.addressing.context.outbound");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_DEPRECATED, "SERVER_ADDRESSING_PROPERTIES_OUTBOUND", "Ljava/lang/String;", null, "jakarta.xml.ws.addressing.context.outbound");
 {
 annotationVisitor0 = fieldVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
 annotationVisitor0.visitEnd();

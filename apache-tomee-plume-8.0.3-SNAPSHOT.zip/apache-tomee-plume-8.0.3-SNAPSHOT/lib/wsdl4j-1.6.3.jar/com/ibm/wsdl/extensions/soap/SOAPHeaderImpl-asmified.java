@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/soap/SOAPHeaderImpl", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/soap/SOAPHeader" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/soap/SOAPHeaderImpl", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/soap/SOAPHeader" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "elementType", "Ljavax/xml/namespace/QName;", null, null);
@@ -229,7 +229,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSOAPHeaderFault", "(Ljakarta/wsdl/extensions/soap/SOAPHeaderFault;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSOAPHeaderFault", "(Ljavax/wsdl/extensions/soap/SOAPHeaderFault;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/soap/SOAPHeaderImpl", "soapHeaderFaults", "Ljava/util/List;");
@@ -241,7 +241,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeSOAPHeaderFault", "(Ljakarta/wsdl/extensions/soap/SOAPHeaderFault;)Ljakarta/wsdl/extensions/soap/SOAPHeaderFault;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeSOAPHeaderFault", "(Ljavax/wsdl/extensions/soap/SOAPHeaderFault;)Ljavax/wsdl/extensions/soap/SOAPHeaderFault;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/soap/SOAPHeaderImpl", "soapHeaderFaults", "Ljava/util/List;");

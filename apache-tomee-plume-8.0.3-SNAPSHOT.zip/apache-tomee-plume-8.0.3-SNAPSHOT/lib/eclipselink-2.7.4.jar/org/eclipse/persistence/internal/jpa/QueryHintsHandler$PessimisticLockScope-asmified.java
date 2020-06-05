@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/QueryHintsHand
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.persistence.lock.scope");
+methodVisitor.visitLdcInsn("jakarta.persistence.lock.scope");
 methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/PessimisticLockScope", "NORMAL", "Ljakarta/persistence/PessimisticLockScope;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/PessimisticLockScope", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/QueryHintsHandler$Hint", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);

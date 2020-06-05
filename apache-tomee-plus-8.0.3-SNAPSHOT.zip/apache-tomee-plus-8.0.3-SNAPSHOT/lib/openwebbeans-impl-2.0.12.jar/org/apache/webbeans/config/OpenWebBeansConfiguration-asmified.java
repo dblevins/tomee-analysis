@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONV
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ALLOW_PROXYING_PARAM", "Ljava/lang/String;", null, "javax.enterprise.inject.allowProxying.classes");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ALLOW_PROXYING_PARAM", "Ljava/lang/String;", null, "jakarta.enterprise.inject.allowProxying.classes");
 fieldVisitor.visitEnd();
 }
 {

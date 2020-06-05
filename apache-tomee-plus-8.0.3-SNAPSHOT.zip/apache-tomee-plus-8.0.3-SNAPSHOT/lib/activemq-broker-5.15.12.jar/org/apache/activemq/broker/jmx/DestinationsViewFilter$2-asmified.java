@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/broker/jmx/DestinationsViewFilter$2", "Lcom/google/common/collect/Ordering<Ljava/util/Map$Entry<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;>;", "com/google/common/collect/Ordering", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/broker/jmx/DestinationsViewFilter$2", "Lcom/google/common/collect/Ordering<Ljava/util/Map$Entry<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;>;", "com/google/common/collect/Ordering", null);
 
 classWriter.visitOuterClass("org/apache/activemq/broker/jmx/DestinationsViewFilter", "getOrdering", "()Lcom/google/common/collect/Ordering;");
 
@@ -58,7 +58,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljava/util/Map$Entry;Ljava/util/Map$Entry;)I", "(Ljava/util/Map$Entry<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;Ljava/util/Map$Entry<Ljakarta/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;)I", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "compare", "(Ljava/util/Map$Entry;Ljava/util/Map$Entry;)I", "(Ljava/util/Map$Entry<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;Ljava/util/Map$Entry<Ljavax/management/ObjectName;Lorg/apache/activemq/broker/jmx/DestinationView;>;)I", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();

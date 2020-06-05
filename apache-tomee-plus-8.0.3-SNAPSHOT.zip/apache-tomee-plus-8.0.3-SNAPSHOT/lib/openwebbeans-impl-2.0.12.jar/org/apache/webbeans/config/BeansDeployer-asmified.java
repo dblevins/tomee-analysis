@@ -4160,7 +4160,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.enterprise.inject.allowProxying.classes");
+methodVisitor.visitLdcInsn("jakarta.enterprise.inject.allowProxying.classes");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/OpenWebBeansConfiguration", "addConfigListValue", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);

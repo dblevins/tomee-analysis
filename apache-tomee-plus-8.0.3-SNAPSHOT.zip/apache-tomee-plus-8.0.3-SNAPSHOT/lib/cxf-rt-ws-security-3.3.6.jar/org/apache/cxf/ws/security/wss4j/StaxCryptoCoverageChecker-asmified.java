@@ -187,7 +187,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/ws/security/wss4j/StaxCry
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.xml.ws.addressing.context.inbound");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.addressing.context.inbound");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/binding/soap/SoapMessage", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/ws/addressing/AddressingProperties");
 methodVisitor.visitVarInsn(ASTORE, 4);

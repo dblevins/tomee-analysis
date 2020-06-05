@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "jakarta/faces/validator/MethodExpressionValidator", null, "java/lang/Object", new String[] { "jakarta/faces/validator/Validator", "jakarta/faces/component/StateHolder" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "BEANS_VALIDATION_AVAILABLE", "Ljava/lang/String;", null, "javax.faces.private.BEANS_VALIDATION_AVAILABLE");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "BEANS_VALIDATION_AVAILABLE", "Ljava/lang/String;", null, "jakarta.faces.private.BEANS_VALIDATION_AVAILABLE");
 fieldVisitor.visitEnd();
 }
 {
@@ -296,11 +296,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.faces.private.BEANS_VALIDATION_AVAILABLE");
+methodVisitor.visitLdcInsn("jakarta.faces.private.BEANS_VALIDATION_AVAILABLE");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.faces.private.BEANS_VALIDATION_AVAILABLE");
+methodVisitor.visitLdcInsn("jakarta.faces.private.BEANS_VALIDATION_AVAILABLE");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Boolean");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
@@ -314,7 +314,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/validator/BeanValidator", "<init>", "()V", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.faces.private.BEANS_VALIDATION_AVAILABLE");
+methodVisitor.visitLdcInsn("jakarta.faces.private.BEANS_VALIDATION_AVAILABLE");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -326,7 +326,7 @@ methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.faces.private.BEANS_VALIDATION_AVAILABLE");
+methodVisitor.visitLdcInsn("jakarta.faces.private.BEANS_VALIDATION_AVAILABLE");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "FALSE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);

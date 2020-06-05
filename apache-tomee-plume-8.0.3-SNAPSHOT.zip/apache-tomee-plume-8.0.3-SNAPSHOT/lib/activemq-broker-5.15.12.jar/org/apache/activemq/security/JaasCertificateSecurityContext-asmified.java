@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/security/JaasCertificateSecurityContext", null, "org/apache/activemq/security/SecurityContext", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljakarta/security/auth/Subject;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "subject", "Ljavax/security/auth/Subject;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -33,14 +33,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "certs", "[Ljava/security/cer
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljakarta/security/auth/Subject;[Ljava/security/cert/X509Certificate;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljavax/security/auth/Subject;[Ljava/security/cert/X509Certificate;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/security/SecurityContext", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/security/JaasCertificateSecurityContext", "subject", "Ljakarta/security/auth/Subject;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/security/JaasCertificateSecurityContext", "subject", "Ljavax/security/auth/Subject;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/security/JaasCertificateSecurityContext", "certs", "[Ljava/security/cert/X509Certificate;");
@@ -52,8 +52,8 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPrincipals", "()Ljava/util/Set;", "()Ljava/util/Set<Ljava/security/Principal;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/security/JaasCertificateSecurityContext", "subject", "Ljakarta/security/auth/Subject;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/security/JaasCertificateSecurityContext", "subject", "Ljavax/security/auth/Subject;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

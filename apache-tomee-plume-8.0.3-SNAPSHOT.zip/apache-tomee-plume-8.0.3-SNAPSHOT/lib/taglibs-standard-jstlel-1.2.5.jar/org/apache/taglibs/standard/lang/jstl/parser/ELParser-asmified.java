@@ -1957,7 +1957,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitIntInsn(BIPUSH, 30);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/lang/jstl/parser/ELParser", "jj_consume_token", "(I)Lorg/apache/taglibs/standard/lang/jstl/parser/Token;", false);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.functions.allowed");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.functions.allowed");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);

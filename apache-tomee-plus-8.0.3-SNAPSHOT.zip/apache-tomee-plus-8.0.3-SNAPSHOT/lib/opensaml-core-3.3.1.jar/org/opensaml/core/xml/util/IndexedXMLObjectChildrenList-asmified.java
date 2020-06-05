@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/core/xml/util/IndexedXMLObjectChildrenList", "<ElementType::Lorg/opensaml/core/xml/XMLObject;>Lorg/opensaml/core/xml/util/XMLObjectChildrenList<TElementType;>;", "org/opensaml/core/xml/util/XMLObjectChildrenList", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/NotThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/NotThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 {

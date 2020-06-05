@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/http/HTTPBindingSerializer", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/ExtensionSerializer", "jakarta/wsdl/extensions/ExtensionDeserializer", "java/io/Serializable" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/http/HTTPBindingSerializer", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/ExtensionSerializer", "javax/wsdl/extensions/ExtensionDeserializer", "java/io/Serializable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1L));
@@ -38,10 +38,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshall", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljakarta/wsdl/extensions/ExtensibilityElement;Ljava/io/PrintWriter;Ljakarta/wsdl/Definition;Ljakarta/wsdl/extensions/ExtensionRegistry;)V", null, new String[] { "jakarta/wsdl/WSDLException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "marshall", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;Ljavax/wsdl/extensions/ExtensibilityElement;Ljava/io/PrintWriter;Ljavax/wsdl/Definition;Ljavax/wsdl/extensions/ExtensionRegistry;)V", null, new String[] { "javax/wsdl/WSDLException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/extensions/http/HTTPBinding");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/extensions/http/HTTPBinding");
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 7);
 Label label0 = new Label();
@@ -49,7 +49,7 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitLdcInsn("http://schemas.xmlsoap.org/wsdl/http/");
 methodVisitor.visitLdcInsn("binding");
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/ibm/wsdl/util/xml/DOMUtils", "getQualifiedValue", "(Ljava/lang/String;Ljava/lang/String;Ljakarta/wsdl/Definition;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/ibm/wsdl/util/xml/DOMUtils", "getQualifiedValue", "(Ljava/lang/String;Ljava/lang/String;Ljavax/wsdl/Definition;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 8);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
@@ -63,11 +63,11 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/PrintWriter", "print", "(Ljava/lang/String;)V", false);
 methodVisitor.visitLdcInsn("verb");
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/http/HTTPBinding", "getVerb", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/http/HTTPBinding", "getVerb", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/ibm/wsdl/util/xml/DOMUtils", "printAttribute", "(Ljava/lang/String;Ljava/lang/String;Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/http/HTTPBinding", "getRequired", "()Ljava/lang/Boolean;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/http/HTTPBinding", "getRequired", "()Ljava/lang/Boolean;", true);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 Label label1 = new Label();
@@ -77,7 +77,7 @@ methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "com/ibm/wsdl/util/xml/DOMUtils", "printQualifiedAttribute", "(Ljavax/xml/namespace/QName;Ljava/lang/String;Ljakarta/wsdl/Definition;Ljava/io/PrintWriter;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "com/ibm/wsdl/util/xml/DOMUtils", "printQualifiedAttribute", "(Ljavax/xml/namespace/QName;Ljava/lang/String;Ljavax/wsdl/Definition;Ljava/io/PrintWriter;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitLdcInsn("/>");
@@ -88,13 +88,13 @@ methodVisitor.visitMaxs(4, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshall", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;Lorg/w3c/dom/Element;Ljakarta/wsdl/Definition;Ljakarta/wsdl/extensions/ExtensionRegistry;)Ljakarta/wsdl/extensions/ExtensibilityElement;", null, new String[] { "jakarta/wsdl/WSDLException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unmarshall", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;Lorg/w3c/dom/Element;Ljavax/wsdl/Definition;Ljavax/wsdl/extensions/ExtensionRegistry;)Ljavax/wsdl/extensions/ExtensibilityElement;", null, new String[] { "javax/wsdl/WSDLException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/wsdl/extensions/ExtensionRegistry", "createExtension", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;)Ljakarta/wsdl/extensions/ExtensibilityElement;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/wsdl/extensions/http/HTTPBinding");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/wsdl/extensions/ExtensionRegistry", "createExtension", "(Ljava/lang/Class;Ljavax/xml/namespace/QName;)Ljavax/wsdl/extensions/ExtensibilityElement;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/wsdl/extensions/http/HTTPBinding");
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitLdcInsn("verb");
@@ -110,7 +110,7 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 7);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/http/HTTPBinding", "setVerb", "(Ljava/lang/String;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/http/HTTPBinding", "setVerb", "(Ljava/lang/String;)V", true);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 8);
 Label label1 = new Label();
@@ -120,7 +120,7 @@ methodVisitor.visitTypeInsn(NEW, "java/lang/Boolean");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Boolean", "<init>", "(Ljava/lang/String;)V", false);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/http/HTTPBinding", "setRequired", "(Ljava/lang/Boolean;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/http/HTTPBinding", "setRequired", "(Ljava/lang/Boolean;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitVarInsn(ALOAD, 6);
 methodVisitor.visitInsn(ARETURN);

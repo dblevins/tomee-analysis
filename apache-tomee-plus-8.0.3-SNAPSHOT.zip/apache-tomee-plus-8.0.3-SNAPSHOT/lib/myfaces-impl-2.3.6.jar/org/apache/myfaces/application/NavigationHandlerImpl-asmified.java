@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SKIP_ITERATION_HINT", "Ljava/lang/String;", null, "javax.faces.visit.SKIP_ITERATION");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SKIP_ITERATION_HINT", "Ljava/lang/String;", null, "jakarta.faces.visit.SKIP_ITERATION");
 fieldVisitor.visitEnd();
 }
 {
@@ -588,7 +588,7 @@ methodVisitor.visitJumpInsn(IFEQ, label37);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax.faces.visit.SKIP_ITERATION");
+methodVisitor.visitLdcInsn("jakarta.faces.visit.SKIP_ITERATION");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -609,7 +609,7 @@ methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax.faces.visit.SKIP_ITERATION");
+methodVisitor.visitLdcInsn("jakarta.faces.visit.SKIP_ITERATION");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitJumpInsn(GOTO, label37);
@@ -619,7 +619,7 @@ methodVisitor.visitVarInsn(ASTORE, 22);
 methodVisitor.visitLabel(label10);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax.faces.visit.SKIP_ITERATION");
+methodVisitor.visitLdcInsn("jakarta.faces.visit.SKIP_ITERATION");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 22);

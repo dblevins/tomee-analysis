@@ -30,7 +30,7 @@ annotationVisitor0.visit("value", new Integer(4999));
 annotationVisitor0.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Ljakarta/cache/Cache;", "Ljakarta/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cache", "Ljavax/cache/Cache;", "Ljavax/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -46,13 +46,13 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cacheResponseInputStream", "
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/cache/Cache;)V", "(Ljakarta/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/cache/Cache;)V", "(Ljavax/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor", "cache", "Ljakarta/cache/Cache;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor", "cache", "Ljavax/cache/Cache;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
@@ -67,11 +67,11 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCache", "(Ljakarta/cache/Cache;)Lorg/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor;", "(Ljakarta/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;)Lorg/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCache", "(Ljavax/cache/Cache;)Lorg/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor;", "(Ljavax/cache/Cache<Lorg/apache/cxf/jaxrs/client/cache/Key;Lorg/apache/cxf/jaxrs/client/cache/Entry;>;)Lorg/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor", "cache", "Ljakarta/cache/Cache;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor", "cache", "Ljavax/cache/Cache;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 2);
@@ -292,14 +292,14 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/ws/rs/ext/ReaderIntercep
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 12);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor", "cache", "Ljakarta/cache/Cache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/client/cache/CacheControlClientReaderInterceptor", "cache", "Ljavax/cache/Cache;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/client/cache/Key");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitVarInsn(ALOAD, 12);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/client/cache/Key", "<init>", "(Ljava/net/URI;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 10);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/cache/Cache", "put", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/cache/Cache", "put", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 8);

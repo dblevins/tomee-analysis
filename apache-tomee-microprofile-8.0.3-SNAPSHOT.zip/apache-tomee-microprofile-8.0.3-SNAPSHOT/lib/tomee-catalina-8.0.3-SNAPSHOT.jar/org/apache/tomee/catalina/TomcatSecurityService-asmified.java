@@ -41,7 +41,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "ONL
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "RUN_AS_STACK", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljava/util/LinkedList<Ljakarta/security/auth/Subject;>;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "RUN_AS_STACK", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljava/util/LinkedList<Ljavax/security/auth/Subject;>;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -209,11 +209,11 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/security/Princi
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/TomcatSecurityService", "createSubject", "(Lorg/apache/catalina/Realm;Ljava/security/Principal;)Ljakarta/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/TomcatSecurityService", "createSubject", "(Lorg/apache/catalina/Realm;Ljava/security/Principal;)Ljavax/security/auth/Subject;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/catalina/TomcatSecurityService", "registerSubject", "(Ljakarta/security/auth/Subject;)Ljava/util/UUID;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/catalina/TomcatSecurityService", "registerSubject", "(Ljavax/security/auth/Subject;)Ljava/util/UUID;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
@@ -271,7 +271,7 @@ methodVisitor.visitMaxs(3, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createSubject", "(Lorg/apache/catalina/Realm;Ljava/security/Principal;)Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createSubject", "(Lorg/apache/catalina/Realm;Ljava/security/Principal;)Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
@@ -301,7 +301,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitTypeInsn(NEW, "jakarta/security/auth/Subject");
+methodVisitor.visitTypeInsn(NEW, "javax/security/auth/Subject");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -311,7 +311,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/security/auth/Subject", "<init>", "(ZLjava/util/Set;Ljava/util/Set;Ljava/util/Set;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/auth/Subject", "<init>", "(ZLjava/util/Set;Ljava/util/Set;Ljava/util/Set;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 4);
 methodVisitor.visitEnd();
@@ -421,8 +421,8 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "getSubject", "()Ljakarta/security/auth/Subject;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "getSubject", "()Ljavax/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
@@ -478,13 +478,13 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/TomcatSecurityService", "createSubject", "(Lorg/apache/catalina/Realm;Ljava/security/Principal;)Ljakarta/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/TomcatSecurityService", "createSubject", "(Lorg/apache/catalina/Realm;Ljava/security/Principal;)Ljavax/security/auth/Subject;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/security/AbstractSecurityService$Identity");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "<init>", "(Ljakarta/security/auth/Subject;Ljava/util/UUID;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/security/AbstractSecurityService$Identity", "<init>", "(Ljavax/security/auth/Subject;Ljava/util/UUID;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openejb/core/security/AbstractSecurityService$Identity"}, 0, null);
@@ -518,7 +518,7 @@ Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/catalina/TomcatSecurityService", "createRunAsSubject", "(Ljava/lang/String;)Ljakarta/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/catalina/TomcatSecurityService", "createRunAsSubject", "(Ljava/lang/String;)Ljavax/security/auth/Subject;", false);
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/catalina/TomcatSecurityService", "RUN_AS_STACK", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
@@ -613,11 +613,11 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRunAsSubject", "(Lorg/apache/openejb/BeanContext;)Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRunAsSubject", "(Lorg/apache/openejb/BeanContext;)Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/security/AbstractSecurityService", "getRunAsSubject", "(Lorg/apache/openejb/BeanContext;)Ljakarta/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/security/AbstractSecurityService", "getRunAsSubject", "(Lorg/apache/openejb/BeanContext;)Ljavax/security/auth/Subject;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -625,7 +625,7 @@ methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/security/auth/Subject"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/security/auth/Subject"}, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomee/catalina/TomcatSecurityService", "RUN_AS_STACK", "Ljava/lang/ThreadLocal;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/LinkedList");
@@ -640,13 +640,13 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/LinkedList"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/LinkedList", "getFirst", "()Ljava/lang/Object;", false);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/security/auth/Subject");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/security/auth/Subject");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createRunAsSubject", "(Ljava/lang/String;)Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createRunAsSubject", "(Ljava/lang/String;)Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -666,7 +666,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/catalina/TomcatSecurityService$RunAsRole", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
 methodVisitor.visitInsn(POP);
-methodVisitor.visitTypeInsn(NEW, "jakarta/security/auth/Subject");
+methodVisitor.visitTypeInsn(NEW, "javax/security/auth/Subject");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitVarInsn(ALOAD, 2);
@@ -676,7 +676,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V
 methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/security/auth/Subject", "<init>", "(ZLjava/util/Set;Ljava/util/Set;Ljava/util/Set;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/auth/Subject", "<init>", "(ZLjava/util/Set;Ljava/util/Set;Ljava/util/Set;)V", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(7, 3);
 methodVisitor.visitEnd();
@@ -711,12 +711,12 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/concurrent/Callable");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/Callable", "call", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/security/auth/Subject");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/security/auth/Subject");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/security/AbstractSecurityService$SecurityContext");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/security/AbstractSecurityService$SecurityContext", "<init>", "(Ljakarta/security/auth/Subject;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/security/AbstractSecurityService$SecurityContext", "<init>", "(Ljavax/security/auth/Subject;)V", false);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label2);

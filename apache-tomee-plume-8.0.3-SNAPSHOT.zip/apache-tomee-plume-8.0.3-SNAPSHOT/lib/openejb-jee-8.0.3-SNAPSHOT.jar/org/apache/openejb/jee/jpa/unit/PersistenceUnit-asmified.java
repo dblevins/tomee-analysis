@@ -608,7 +608,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/jee/jpa/unit/Persiste
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.persistence.validation.mode");
+methodVisitor.visitLdcInsn("jakarta.persistence.validation.mode");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/jpa/unit/PersistenceUnit", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);

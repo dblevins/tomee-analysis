@@ -693,7 +693,7 @@ methodVisitor.visitJumpInsn(IFNULL, label4);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/messaging/saaj/util/stax/SaajStaxWriter", "soap", "Ljakarta/xml/soap/SOAPMessage;");
-methodVisitor.visitLdcInsn("javax.xml.soap.character-set-encoding");
+methodVisitor.visitLdcInsn("jakarta.xml.soap.character-set-encoding");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/xml/soap/SOAPMessage", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label1);

@@ -61,7 +61,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "managementContext", "Lorg/ap
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljakarta/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljavax/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -107,8 +107,8 @@ methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "objectName", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "unregisterMBean", "(Ljavax/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/ManagementContext", "stop", "()V", false);
@@ -408,7 +408,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Lj
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
@@ -420,8 +420,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitLdcInsn(":Type=TransportLoggerControl");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "objectName", "Ljavax/management/ObjectName;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/transport/TransportLoggerControl");
@@ -430,8 +430,8 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "managementContext", "Lorg/apache/activemq/broker/jmx/ManagementContext;");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/transport/TransportLoggerControl", "<init>", "(Lorg/apache/activemq/broker/jmx/ManagementContext;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "objectName", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AnnotatedMBean", "registerMBean", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljakarta/management/ObjectName;)V", false);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/AnnotatedMBean", "registerMBean", "(Lorg/apache/activemq/broker/jmx/ManagementContext;Ljava/lang/Object;Ljavax/management/ObjectName;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/transport/TransportLoggerFactory", "transportLoggerControlCreated", "Z");

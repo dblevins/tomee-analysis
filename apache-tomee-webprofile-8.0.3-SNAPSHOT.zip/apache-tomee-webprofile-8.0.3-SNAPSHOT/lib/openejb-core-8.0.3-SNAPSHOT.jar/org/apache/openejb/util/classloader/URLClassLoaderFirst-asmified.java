@@ -103,7 +103,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/classloader/URLClassLoaderFirst", "list", "(Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/util/classloader/URLClassLoaderFirst", "FILTERABLE_RESOURCES", "Ljava/util/Collection;");
 methodVisitor.visitLdcInsn("openejb.classloader.filterable-resources");
-methodVisitor.visitLdcInsn("META-INF/services/jakarta.validation.spi.ValidationProvider,META-INF/services/jakarta.ws.rs.client.ClientBuilder,META-INF/services/jakarta.json.spi.JsonProvider,META-INF/services/jakarta.cache.spi.CachingProvider,META-INF/javamail.default.providers,META-INF/javamail.default.address.map,META-INF/javamail.charset.map,META-INF/mailcap,org/slf4j/impl/StaticLoggerBinder.class");
+methodVisitor.visitLdcInsn("META-INF/services/jakarta.validation.spi.ValidationProvider,META-INF/services/jakarta.ws.rs.client.ClientBuilder,META-INF/services/jakarta.json.spi.JsonProvider,META-INF/services/javax.cache.spi.CachingProvider,META-INF/javamail.default.providers,META-INF/javamail.default.address.map,META-INF/javamail.charset.map,META-INF/mailcap,org/slf4j/impl/StaticLoggerBinder.class");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/classloader/URLClassLoaderFirst", "list", "(Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 0);

@@ -27,31 +27,31 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/config/
 classWriter.visitInnerClass("org/eclipse/persistence/config/PersistenceUnitProperties$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TRANSACTION_TYPE", "Ljava/lang/String;", null, "javax.persistence.transactionType");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TRANSACTION_TYPE", "Ljava/lang/String;", null, "jakarta.persistence.transactionType");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JTA_DATASOURCE", "Ljava/lang/String;", null, "javax.persistence.jtaDataSource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JTA_DATASOURCE", "Ljava/lang/String;", null, "jakarta.persistence.jtaDataSource");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NON_JTA_DATASOURCE", "Ljava/lang/String;", null, "javax.persistence.nonJtaDataSource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NON_JTA_DATASOURCE", "Ljava/lang/String;", null, "jakarta.persistence.nonJtaDataSource");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_DRIVER", "Ljava/lang/String;", null, "javax.persistence.jdbc.driver");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_DRIVER", "Ljava/lang/String;", null, "jakarta.persistence.jdbc.driver");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_URL", "Ljava/lang/String;", null, "javax.persistence.jdbc.url");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_URL", "Ljava/lang/String;", null, "jakarta.persistence.jdbc.url");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_USER", "Ljava/lang/String;", null, "javax.persistence.jdbc.user");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_USER", "Ljava/lang/String;", null, "jakarta.persistence.jdbc.user");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_PASSWORD", "Ljava/lang/String;", null, "javax.persistence.jdbc.password");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JDBC_PASSWORD", "Ljava/lang/String;", null, "jakarta.persistence.jdbc.password");
 fieldVisitor.visitEnd();
 }
 {
@@ -291,23 +291,23 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACH
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATOR_FACTORY", "Ljava/lang/String;", null, "javax.persistence.validation.factory");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATOR_FACTORY", "Ljava/lang/String;", null, "jakarta.persistence.validation.factory");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATION_MODE", "Ljava/lang/String;", null, "javax.persistence.validation.mode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATION_MODE", "Ljava/lang/String;", null, "jakarta.persistence.validation.mode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATION_GROUP_PRE_PERSIST", "Ljava/lang/String;", null, "javax.persistence.validation.group.pre-persist");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATION_GROUP_PRE_PERSIST", "Ljava/lang/String;", null, "jakarta.persistence.validation.group.pre-persist");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATION_GROUP_PRE_UPDATE", "Ljava/lang/String;", null, "javax.persistence.validation.group.pre-update");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATION_GROUP_PRE_UPDATE", "Ljava/lang/String;", null, "jakarta.persistence.validation.group.pre-update");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATION_GROUP_PRE_REMOVE", "Ljava/lang/String;", null, "javax.persistence.validation.group.pre-remove");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATION_GROUP_PRE_REMOVE", "Ljava/lang/String;", null, "jakarta.persistence.validation.group.pre-remove");
 fieldVisitor.visitEnd();
 }
 {
@@ -331,7 +331,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CACH
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SHARED_CACHE_MODE", "Ljava/lang/String;", null, "javax.persistence.sharedCache.mode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SHARED_CACHE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.sharedCache.mode");
 fieldVisitor.visitEnd();
 }
 {
@@ -527,59 +527,59 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TARG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_DATABASE_ACTION", "Ljava/lang/String;", null, "javax.persistence.schema-generation.database.action");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_DATABASE_ACTION", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.database.action");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_SCRIPTS_ACTION", "Ljava/lang/String;", null, "javax.persistence.schema-generation.scripts.action");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_SCRIPTS_ACTION", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.scripts.action");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_CREATE_SOURCE", "Ljava/lang/String;", null, "javax.persistence.schema-generation.create-source");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_CREATE_SOURCE", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.create-source");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_DROP_SOURCE", "Ljava/lang/String;", null, "javax.persistence.schema-generation.drop-source");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_DROP_SOURCE", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.drop-source");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_CREATE_DATABASE_SCHEMAS", "Ljava/lang/String;", null, "javax.persistence.schema-generation.create-database-schemas");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_CREATE_DATABASE_SCHEMAS", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.create-database-schemas");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_SCRIPTS_CREATE_TARGET", "Ljava/lang/String;", null, "javax.persistence.schema-generation.scripts.create-target");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_SCRIPTS_CREATE_TARGET", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.scripts.create-target");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_SCRIPTS_DROP_TARGET", "Ljava/lang/String;", null, "javax.persistence.schema-generation.scripts.drop-target");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_SCRIPTS_DROP_TARGET", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.scripts.drop-target");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_DATABASE_PRODUCT_NAME", "Ljava/lang/String;", null, "javax.persistence.database-product-name");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_DATABASE_PRODUCT_NAME", "Ljava/lang/String;", null, "jakarta.persistence.database-product-name");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_DATABASE_MAJOR_VERSION", "Ljava/lang/String;", null, "javax.persistence.database-major-version");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_DATABASE_MAJOR_VERSION", "Ljava/lang/String;", null, "jakarta.persistence.database-major-version");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_DATABASE_MINOR_VERSION", "Ljava/lang/String;", null, "javax.persistence.database-minor-version");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_DATABASE_MINOR_VERSION", "Ljava/lang/String;", null, "jakarta.persistence.database-minor-version");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_CREATE_SCRIPT_SOURCE", "Ljava/lang/String;", null, "javax.persistence.schema-generation.create-script-source");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_CREATE_SCRIPT_SOURCE", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.create-script-source");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_DROP_SCRIPT_SOURCE", "Ljava/lang/String;", null, "javax.persistence.schema-generation.drop-script-source");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_DROP_SCRIPT_SOURCE", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.drop-script-source");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_CONNECTION", "Ljava/lang/String;", null, "javax.persistence.schema-generation.connection");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_CONNECTION", "Ljava/lang/String;", null, "jakarta.persistence.schema-generation.connection");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_SQL_LOAD_SCRIPT_SOURCE", "Ljava/lang/String;", null, "javax.persistence.sql-load-script-source");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SCHEMA_GENERATION_SQL_LOAD_SCRIPT_SOURCE", "Ljava/lang/String;", null, "jakarta.persistence.sql-load-script-source");
 fieldVisitor.visitEnd();
 }
 {
@@ -651,7 +651,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "BATC
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CDI_BEANMANAGER", "Ljava/lang/String;", null, "javax.persistence.bean.manager");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CDI_BEANMANAGER", "Ljava/lang/String;", null, "jakarta.persistence.bean.manager");
 fieldVisitor.visitEnd();
 }
 {
@@ -871,11 +871,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PERS
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PESSIMISTIC_LOCK_TIMEOUT", "Ljava/lang/String;", null, "javax.persistence.lock.timeout");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PESSIMISTIC_LOCK_TIMEOUT", "Ljava/lang/String;", null, "jakarta.persistence.lock.timeout");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "QUERY_TIMEOUT", "Ljava/lang/String;", null, "javax.persistence.query.timeout");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "QUERY_TIMEOUT", "Ljava/lang/String;", null, "jakarta.persistence.query.timeout");
 fieldVisitor.visitEnd();
 }
 {
@@ -1085,7 +1085,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "(I)V", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/config/PersistenceUnitProperties", "PROPERTY_LOG_OVERRIDES", "Ljava/util/Map;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/config/PersistenceUnitProperties", "PROPERTY_LOG_OVERRIDES", "Ljava/util/Map;");
-methodVisitor.visitLdcInsn("javax.persistence.jdbc.password");
+methodVisitor.visitLdcInsn("jakarta.persistence.jdbc.password");
 methodVisitor.visitLdcInsn("xxxxxx");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);

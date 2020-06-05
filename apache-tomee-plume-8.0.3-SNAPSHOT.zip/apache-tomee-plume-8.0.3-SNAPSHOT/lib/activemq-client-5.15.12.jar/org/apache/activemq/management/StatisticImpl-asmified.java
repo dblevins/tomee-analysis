@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/management/StatisticImpl", null, "java/lang/Object", new String[] { "jakarta/management/j2ee/statistics/Statistic", "org/apache/activemq/management/Resettable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/management/StatisticImpl", null, "java/lang/Object", new String[] { "javax/management/j2ee/statistics/Statistic", "org/apache/activemq/management/Resettable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "enabled", "Z", null, null);

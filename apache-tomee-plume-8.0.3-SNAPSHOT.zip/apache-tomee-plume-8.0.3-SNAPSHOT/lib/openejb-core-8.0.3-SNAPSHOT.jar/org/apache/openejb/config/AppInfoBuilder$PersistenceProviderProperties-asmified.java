@@ -63,19 +63,19 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PREF
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROVIDER_PROP", "Ljava/lang/String;", null, "javax.persistence.provider");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROVIDER_PROP", "Ljava/lang/String;", null, "jakarta.persistence.provider");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TRANSACTIONTYPE_PROP", "Ljava/lang/String;", null, "javax.persistence.transactionType");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TRANSACTIONTYPE_PROP", "Ljava/lang/String;", null, "jakarta.persistence.transactionType");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JTADATASOURCE_PROP", "Ljava/lang/String;", null, "javax.persistence.jtaDataSource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JTADATASOURCE_PROP", "Ljava/lang/String;", null, "jakarta.persistence.jtaDataSource");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NON_JTADATASOURCE_PROP", "Ljava/lang/String;", null, "javax.persistence.nonJtaDataSource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NON_JTADATASOURCE_PROP", "Ljava/lang/String;", null, "jakarta.persistence.nonJtaDataSource");
 fieldVisitor.visitEnd();
 }
 {
@@ -847,11 +847,11 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn("javax.persistence.jtaDataSource");
+methodVisitor.visitLdcInsn("jakarta.persistence.jtaDataSource");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitLdcInsn("javax.persistence.nonJtaDataSource");
+methodVisitor.visitLdcInsn("jakarta.persistence.nonJtaDataSource");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
@@ -1163,7 +1163,7 @@ methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/persistence/Persiste
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/config/AppInfoBuilder$PersistenceProviderProperties", "DEFAULT_PERSISTENCE_PROVIDER", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getOptions", "()Lorg/apache/openejb/loader/Options;", false);
-methodVisitor.visitLdcInsn("javax.persistence.provider");
+methodVisitor.visitLdcInsn("jakarta.persistence.provider");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/Options", "get", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
@@ -1176,21 +1176,21 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/Options"
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/config/AppInfoBuilder$PersistenceProviderProperties", "forceProviderEnv", "Z");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getOptions", "()Lorg/apache/openejb/loader/Options;", false);
-methodVisitor.visitLdcInsn("javax.persistence.transactionType");
+methodVisitor.visitLdcInsn("jakarta.persistence.transactionType");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/Options", "get", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/config/AppInfoBuilder$PersistenceProviderProperties", "transactionTypeEnv", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getOptions", "()Lorg/apache/openejb/loader/Options;", false);
-methodVisitor.visitLdcInsn("javax.persistence.jtaDataSource");
+methodVisitor.visitLdcInsn("jakarta.persistence.jtaDataSource");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/Options", "get", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/config/AppInfoBuilder$PersistenceProviderProperties", "jtaDataSourceEnv", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getOptions", "()Lorg/apache/openejb/loader/Options;", false);
-methodVisitor.visitLdcInsn("javax.persistence.nonJtaDataSource");
+methodVisitor.visitLdcInsn("jakarta.persistence.nonJtaDataSource");
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/Options", "get", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);

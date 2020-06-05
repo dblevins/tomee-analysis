@@ -38,12 +38,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "jakarta/management/AttributeNotFoundException", "jakarta/management/MBeanException", "jakarta/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/management/AttributeNotFoundException", "javax/management/MBeanException", "javax/management/ReflectionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/RuntimeOperationsException");
+methodVisitor.visitTypeInsn(NEW, "javax/management/RuntimeOperationsException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -54,7 +54,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/mbeans/ConnectorMBean", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
 methodVisitor.visitLdcInsn("mBean.nullName");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/RuntimeOperationsException", "<init>", "(Ljava/lang/RuntimeException;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/RuntimeOperationsException", "<init>", "(Ljava/lang/RuntimeException;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -70,12 +70,12 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttribute", "(Ljakarta/management/Attribute;)V", null, new String[] { "jakarta/management/AttributeNotFoundException", "jakarta/management/MBeanException", "jakarta/management/ReflectionException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAttribute", "(Ljavax/management/Attribute;)V", null, new String[] { "javax/management/AttributeNotFoundException", "javax/management/MBeanException", "javax/management/ReflectionException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/RuntimeOperationsException");
+methodVisitor.visitTypeInsn(NEW, "javax/management/RuntimeOperationsException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -86,20 +86,20 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/mbeans/ConnectorMBean", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
 methodVisitor.visitLdcInsn("mBean.nullAttribute");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/RuntimeOperationsException", "<init>", "(Ljava/lang/RuntimeException;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/RuntimeOperationsException", "<init>", "(Ljava/lang/RuntimeException;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/Attribute", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/Attribute", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/Attribute", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/Attribute", "getValue", "()Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label1);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/RuntimeOperationsException");
+methodVisitor.visitTypeInsn(NEW, "javax/management/RuntimeOperationsException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
 methodVisitor.visitInsn(DUP);
@@ -110,7 +110,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/mbeans/ConnectorMBean", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
 methodVisitor.visitLdcInsn("mBean.nullName");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/RuntimeOperationsException", "<init>", "(Ljava/lang/RuntimeException;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/RuntimeOperationsException", "<init>", "(Ljava/lang/RuntimeException;Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/lang/Object"}, 0, null);

@@ -22,13 +22,13 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCache$4", "Ljava/lang/Object;Ljava/util/Iterator<Ljakarta/cache/Cache$Entry<TK;TV;>;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
+classWriter.visit(V1_6, ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCache$4", "Ljava/lang/Object;Ljava/util/Iterator<Ljavax/cache/Cache$Entry<TK;TV;>;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
 
 classWriter.visitOuterClass("org/apache/commons/jcs/jcache/JCSCache", "iterator", "()Ljava/util/Iterator;");
 
 classWriter.visitInnerClass("org/apache/commons/jcs/jcache/JCSCache$4", null, null, 0);
 
-classWriter.visitInnerClass("jakarta/cache/Cache$Entry", "jakarta/cache/Cache", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("javax/cache/Cache$Entry", "javax/cache/Cache", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lastKey", "Ljava/lang/Object;", "TK;", null);
@@ -71,7 +71,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljakarta/cache/Cache$Entry;", "()Ljakarta/cache/Cache$Entry<TK;TV;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljavax/cache/Cache$Entry;", "()Ljavax/cache/Cache$Entry<TK;TV;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -139,7 +139,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "next", "()Ljava/lang/Object;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache$4", "next", "()Ljakarta/cache/Cache$Entry;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/JCSCache$4", "next", "()Ljavax/cache/Cache$Entry;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

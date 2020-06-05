@@ -170,7 +170,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/xml/xpath/XPathFactory", "new
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitFieldInsn(GETSTATIC, "java/lang/Boolean", "TRUE", "Ljava/lang/Boolean;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/xpath/XPathFactory", "setFeature", "(Ljava/lang/String;Z)V", false);
@@ -196,7 +196,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/w3c/dom/Document", "getDocum
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label7);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/xml/xpath/XPath"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/xpath/XPath"}, 0, null);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitLabel(label8);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/w3c/dom/Element"});
@@ -259,7 +259,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()
 methodVisitor.visitVarInsn(ASTORE, 12);
 Label label13 = new Label();
 methodVisitor.visitLabel(label13);
-methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/cxf/ws/security/wss4j/policyvalidators/SecuredElementsPolicyValidator", "org/apache/cxf/ws/security/wss4j/policyvalidators/PolicyValidatorParameters", "java/util/Collection", "javax/xml/xpath/XPathFactory", "jakarta/xml/xpath/XPath", "org/w3c/dom/Element", "java/util/Collection", "java/util/Iterator", "org/apache/cxf/ws/policy/AssertionInfo", "org/apache/wss4j/policy/model/RequiredElements", "java/util/List", "org/apache/cxf/helpers/MapNamespaceContext", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/apache/cxf/ws/security/wss4j/policyvalidators/SecuredElementsPolicyValidator", "org/apache/cxf/ws/security/wss4j/policyvalidators/PolicyValidatorParameters", "java/util/Collection", "javax/xml/xpath/XPathFactory", "javax/xml/xpath/XPath", "org/w3c/dom/Element", "java/util/Collection", "java/util/Iterator", "org/apache/cxf/ws/policy/AssertionInfo", "org/apache/wss4j/policy/model/RequiredElements", "java/util/List", "org/apache/cxf/helpers/MapNamespaceContext", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 12);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
 Label label14 = new Label();
@@ -313,7 +313,7 @@ methodVisitor.visitLabel(label16);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/xpath/XPath", "setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/xpath/XPath", "setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", true);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitVarInsn(ALOAD, 6);
@@ -347,7 +347,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append"
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/ws/policy/AssertionInfo", "setNotAsserted", "(Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label12);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/cxf/ws/security/wss4j/policyvalidators/SecuredElementsPolicyValidator", "org/apache/cxf/ws/security/wss4j/policyvalidators/PolicyValidatorParameters", "java/util/Collection", "javax/xml/xpath/XPathFactory", "jakarta/xml/xpath/XPath", "org/w3c/dom/Element", "java/util/Collection", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/cxf/ws/security/wss4j/policyvalidators/SecuredElementsPolicyValidator", "org/apache/cxf/ws/security/wss4j/policyvalidators/PolicyValidatorParameters", "java/util/Collection", "javax/xml/xpath/XPathFactory", "javax/xml/xpath/XPath", "org/w3c/dom/Element", "java/util/Collection", "java/util/Iterator"}, 0, new Object[] {});
 methodVisitor.visitJumpInsn(GOTO, label10);
 methodVisitor.visitLabel(label11);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);

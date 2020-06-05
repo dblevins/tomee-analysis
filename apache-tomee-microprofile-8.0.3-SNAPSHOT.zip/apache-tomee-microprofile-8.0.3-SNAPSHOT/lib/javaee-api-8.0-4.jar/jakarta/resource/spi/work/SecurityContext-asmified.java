@@ -62,7 +62,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setupSecurityContext", "(Ljavax/security/auth/callback/CallbackHandler;Ljakarta/security/auth/Subject;Ljakarta/security/auth/Subject;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setupSecurityContext", "(Ljavax/security/auth/callback/CallbackHandler;Ljavax/security/auth/Subject;Ljavax/security/auth/Subject;)V", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

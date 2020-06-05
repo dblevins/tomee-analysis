@@ -54,7 +54,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.sql.dataSource");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.sql.dataSource");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/jstl/core/Config", "find", "(Ljakarta/servlet/jsp/PageContext;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitLabel(label3);

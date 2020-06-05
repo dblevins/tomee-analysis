@@ -190,7 +190,7 @@ methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/FileWriter", "<init>", "(Ljava/io/File;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitLdcInsn("javax.xml.bind.context.factory=org.eclipse.persistence.jaxb.JAXBContextFactory");
+methodVisitor.visitLdcInsn("jakarta.xml.bind.context.factory=org.eclipse.persistence.jaxb.JAXBContextFactory");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/FileWriter", "write", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");

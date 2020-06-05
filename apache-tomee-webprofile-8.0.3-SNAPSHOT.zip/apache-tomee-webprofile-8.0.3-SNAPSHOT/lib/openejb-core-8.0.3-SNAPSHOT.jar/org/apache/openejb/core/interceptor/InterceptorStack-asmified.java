@@ -313,7 +313,7 @@ methodVisitor.visitMaxs(8, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "invoke", "(Ljakarta/xml/rpc/handler/MessageContext;[Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_VARARGS, "invoke", "(Ljavax/xml/rpc/handler/MessageContext;[Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -334,7 +334,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/interceptor/InterceptorStack", "targetMethod", "Ljava/lang/reflect/Method;");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/JaxRpcInvocationContext", "<init>", "(Lorg/apache/openejb/core/Operation;Ljava/util/List;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljakarta/xml/rpc/handler/MessageContext;[Ljava/lang/Object;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/interceptor/JaxRpcInvocationContext", "<init>", "(Lorg/apache/openejb/core/Operation;Ljava/util/List;Ljava/lang/Object;Ljava/lang/reflect/Method;Ljavax/xml/rpc/handler/MessageContext;[Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/core/ThreadContext", "getThreadContext", "()Lorg/apache/openejb/core/ThreadContext;", false);
 methodVisitor.visitLdcInsn(Type.getType("Ljakarta/interceptor/InvocationContext;"));

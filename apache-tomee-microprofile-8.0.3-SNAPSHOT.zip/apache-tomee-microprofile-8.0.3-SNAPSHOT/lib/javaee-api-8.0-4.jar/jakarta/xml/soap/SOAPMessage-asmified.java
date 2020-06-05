@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "jakarta/xml/soap/SOAPMessage", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CHARACTER_SET_ENCODING", "Ljava/lang/String;", null, "javax.xml.soap.character-set-encoding");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CHARACTER_SET_ENCODING", "Ljava/lang/String;", null, "jakarta.xml.soap.character-set-encoding");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WRITE_XML_DECLARATION", "Ljava/lang/String;", null, "javax.xml.soap.write-xml-declaration");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WRITE_XML_DECLARATION", "Ljava/lang/String;", null, "jakarta.xml.soap.write-xml-declaration");
 fieldVisitor.visitEnd();
 }
 {

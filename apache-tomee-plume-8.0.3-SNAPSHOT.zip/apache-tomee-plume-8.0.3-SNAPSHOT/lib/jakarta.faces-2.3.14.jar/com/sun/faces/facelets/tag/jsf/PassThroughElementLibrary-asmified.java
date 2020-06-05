@@ -41,7 +41,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/faces/facelets/tag/Abstrac
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("element");
 methodVisitor.visitLdcInsn("jakarta.faces.Panel");
-methodVisitor.visitLdcInsn("javax.faces.passthrough.Element");
+methodVisitor.visitLdcInsn("jakarta.faces.passthrough.Element");
 methodVisitor.visitLdcInsn(Type.getType("Lcom/sun/faces/facelets/tag/jsf/PassThroughElementComponentHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jsf/PassThroughElementLibrary", "addComponent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitInsn(RETURN);

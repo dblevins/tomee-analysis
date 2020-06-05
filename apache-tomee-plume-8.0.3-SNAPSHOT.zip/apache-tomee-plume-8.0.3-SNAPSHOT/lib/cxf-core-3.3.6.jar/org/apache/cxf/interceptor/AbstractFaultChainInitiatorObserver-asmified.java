@@ -176,14 +176,14 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message",
 methodVisitor.visitLabel(label13);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.xml.ws.addressing.context.inbound");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.addressing.context.inbound");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 Label label14 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label14);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitLdcInsn("javax.xml.ws.addressing.context.inbound");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.addressing.context.inbound");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.xml.ws.addressing.context.inbound");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.addressing.context.inbound");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/taglibs/standard/tag/common/fmt/RequestEncodingSupport", null, "jakarta/servlet/jsp/tagext/TagSupport", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "REQUEST_CHAR_SET", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.fmt.request.charset");
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "REQUEST_CHAR_SET", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.fmt.request.charset");
 fieldVisitor.visitEnd();
 }
 {
@@ -84,7 +84,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/fmt/RequestEncodingSupport", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.request.charset");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.request.charset");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getAttribute", "(Ljava/lang/String;I)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");

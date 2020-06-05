@@ -54,7 +54,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/broker/jmx/Ope
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("ContentMap");
 methodVisitor.visitLdcInsn("Content map");
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/management/openmbean/SimpleType", "STRING", "Ljavax/management/openmbean/SimpleType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/management/openmbean/SimpleType", "STRING", "Ljavax/management/openmbean/SimpleType;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/broker/jmx/OpenTypeSupport$MapMessageOpenTypeFactory", "addItem", "(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/OpenType;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 1);

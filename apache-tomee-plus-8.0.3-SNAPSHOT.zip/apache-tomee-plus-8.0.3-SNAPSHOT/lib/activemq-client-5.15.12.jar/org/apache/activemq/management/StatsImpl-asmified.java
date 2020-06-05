@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/management/StatsImpl", null, "org/apache/activemq/management/StatisticImpl", new String[] { "jakarta/management/j2ee/statistics/Stats", "org/apache/activemq/management/Resettable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/management/StatsImpl", null, "org/apache/activemq/management/StatisticImpl", new String[] { "javax/management/j2ee/statistics/Stats", "org/apache/activemq/management/Resettable" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "set", "Ljava/util/Set;", "Ljava/util/Set<Lorg/apache/activemq/management/StatisticImpl;>;", null);
@@ -59,7 +59,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/management/StatsImpl", "getStatistics", "()[Ljakarta/management/j2ee/statistics/Statistic;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/management/StatsImpl", "getStatistics", "()[Ljavax/management/j2ee/statistics/Statistic;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARRAYLENGTH);
@@ -68,7 +68,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 3);
 Label label0 = new Label();
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljakarta/management/j2ee/statistics/Statistic;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljavax/management/j2ee/statistics/Statistic;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 3);
 methodVisitor.visitVarInsn(ILOAD, 2);
 Label label1 = new Label();
@@ -97,7 +97,7 @@ methodVisitor.visitMaxs(2, 6);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatistic", "(Ljava/lang/String;)Ljakarta/management/j2ee/statistics/Statistic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatistic", "(Ljava/lang/String;)Ljavax/management/j2ee/statistics/Statistic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/management/StatsImpl", "set", "Ljava/util/Set;");
@@ -179,12 +179,12 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatistics", "()[Ljakarta/management/j2ee/statistics/Statistic;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStatistics", "()[Ljavax/management/j2ee/statistics/Statistic;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/management/StatsImpl", "set", "Ljava/util/Set;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/management/j2ee/statistics/Statistic");
+methodVisitor.visitTypeInsn(ANEWARRAY, "javax/management/j2ee/statistics/Statistic");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/management/StatsImpl", "set", "Ljava/util/Set;");

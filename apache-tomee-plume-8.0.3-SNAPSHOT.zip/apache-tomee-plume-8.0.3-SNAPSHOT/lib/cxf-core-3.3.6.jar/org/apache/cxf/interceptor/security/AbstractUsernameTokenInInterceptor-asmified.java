@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createSubject", "(Lorg/apache/cxf/common/security/SecurityToken;)Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createSubject", "(Lorg/apache/cxf/common/security/SecurityToken;)Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/common/security/SecurityToken", "getTokenType", "()Lorg/apache/cxf/common/security/TokenType;", true);
@@ -60,13 +60,13 @@ methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/common/security/UsernameT
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/interceptor/security/AbstractUsernameTokenInInterceptor", "createSubject", "(Lorg/apache/cxf/common/security/UsernameToken;)Ljakarta/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/interceptor/security/AbstractUsernameTokenInInterceptor", "createSubject", "(Lorg/apache/cxf/common/security/UsernameToken;)Ljavax/security/auth/Subject;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createSubject", "(Lorg/apache/cxf/common/security/UsernameToken;)Ljakarta/security/auth/Subject;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createSubject", "(Lorg/apache/cxf/common/security/UsernameToken;)Ljavax/security/auth/Subject;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

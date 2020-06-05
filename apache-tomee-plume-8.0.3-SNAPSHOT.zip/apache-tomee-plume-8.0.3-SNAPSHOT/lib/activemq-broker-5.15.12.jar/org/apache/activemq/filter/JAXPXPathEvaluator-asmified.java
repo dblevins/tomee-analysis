@@ -145,8 +145,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/filter/JAXPXPathEval
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/filter/JAXPXPathEvaluator", "xpathExpression", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/xpath/XPathConstants", "BOOLEAN", "Ljavax/xml/namespace/QName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/xpath/XPathConstants", "BOOLEAN", "Ljavax/xml/namespace/QName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Boolean");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
 methodVisitor.visitLabel(label1);
@@ -185,8 +185,8 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/filter/JAXPXPathEval
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/filter/JAXPXPathEvaluator", "xpathExpression", "Ljava/lang/String;");
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/xml/xpath/XPathConstants", "BOOLEAN", "Ljavax/xml/namespace/QName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", true);
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/xml/xpath/XPathConstants", "BOOLEAN", "Ljavax/xml/namespace/QName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/xpath/XPath", "evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Boolean");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Boolean", "booleanValue", "()Z", false);
 methodVisitor.visitLabel(label1);

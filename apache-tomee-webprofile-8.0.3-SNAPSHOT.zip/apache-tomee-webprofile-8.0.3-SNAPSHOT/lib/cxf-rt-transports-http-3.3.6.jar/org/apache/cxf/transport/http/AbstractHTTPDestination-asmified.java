@@ -83,11 +83,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "HTT
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SSL_CIPHER_SUITE_ATTRIBUTE", "Ljava/lang/String;", null, "javax.servlet.request.cipher_suite");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SSL_CIPHER_SUITE_ATTRIBUTE", "Ljava/lang/String;", null, "jakarta.servlet.request.cipher_suite");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SSL_PEER_CERT_CHAIN_ATTRIBUTE", "Ljava/lang/String;", null, "javax.servlet.request.X509Certificate");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "SSL_PEER_CERT_CHAIN_ATTRIBUTE", "Ljava/lang/String;", null, "jakarta.servlet.request.X509Certificate");
 fieldVisitor.visitEnd();
 }
 {
@@ -930,7 +930,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "propogateSecureSession", "(Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/cxf/message/Message;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.servlet.request.cipher_suite");
+methodVisitor.visitLdcInsn("jakarta.servlet.request.cipher_suite");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -938,7 +938,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.servlet.request.X509Certificate");
+methodVisitor.visitLdcInsn("jakarta.servlet.request.X509Certificate");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/security/cert/Certificate;");
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/security/cert/Certificate;");

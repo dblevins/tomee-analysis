@@ -63,7 +63,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/webbeans/config/DeploymentValidationService", "webBeansContext", "Lorg/apache/webbeans/config/WebBeansContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/WebBeansContext", "getOpenWebBeansConfiguration", "()Lorg/apache/webbeans/config/OpenWebBeansConfiguration;", false);
-methodVisitor.visitLdcInsn("javax.enterprise.inject.allowProxying.classes");
+methodVisitor.visitLdcInsn("jakarta.enterprise.inject.allowProxying.classes");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/webbeans/config/OpenWebBeansConfiguration", "getConfigListValues", "(Ljava/lang/String;)Ljava/util/Set;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/webbeans/config/DeploymentValidationService", "allowProxyingClasses", "Ljava/util/Set;");
 methodVisitor.visitLabel(label0);

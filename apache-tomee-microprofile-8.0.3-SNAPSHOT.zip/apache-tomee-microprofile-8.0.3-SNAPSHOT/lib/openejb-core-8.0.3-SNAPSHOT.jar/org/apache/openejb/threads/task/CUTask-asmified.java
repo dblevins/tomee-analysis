@@ -162,8 +162,8 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/core/security/AbstractSecurityService");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/ThreadContext", "getBeanContext", "()Lorg/apache/openejb/BeanContext;", false);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/security/AbstractSecurityService", "getRunAsSubject", "(Lorg/apache/openejb/BeanContext;)Ljakarta/security/auth/Subject;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/security/AbstractSecurityService$SecurityContext", "<init>", "(Ljakarta/security/auth/Subject;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/security/AbstractSecurityService", "getRunAsSubject", "(Lorg/apache/openejb/BeanContext;)Ljavax/security/auth/Subject;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/security/AbstractSecurityService$SecurityContext", "<init>", "(Ljavax/security/auth/Subject;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getContextClassLoader", "()Ljava/lang/ClassLoader;", false);

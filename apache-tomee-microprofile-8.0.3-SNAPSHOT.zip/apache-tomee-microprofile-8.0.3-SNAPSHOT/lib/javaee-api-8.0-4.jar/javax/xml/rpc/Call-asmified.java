@@ -25,31 +25,31 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "javax/xml/rpc/Call", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "USERNAME_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.security.auth.username");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "USERNAME_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.security.auth.username");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PASSWORD_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.security.auth.password");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PASSWORD_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.security.auth.password");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "OPERATION_STYLE_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.soap.operation.style");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "OPERATION_STYLE_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.soap.operation.style");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SOAPACTION_USE_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.soap.http.soapaction.use");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SOAPACTION_USE_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.soap.http.soapaction.use");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SOAPACTION_URI_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.soap.http.soapaction.uri");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SOAPACTION_URI_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.soap.http.soapaction.uri");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENCODINGSTYLE_URI_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.encodingstyle.namespace.uri");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENCODINGSTYLE_URI_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.encodingstyle.namespace.uri");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION_MAINTAIN_PROPERTY", "Ljava/lang/String;", null, "javax.xml.rpc.session.maintain");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION_MAINTAIN_PROPERTY", "Ljava/lang/String;", null, "jakarta.xml.rpc.session.maintain");
 fieldVisitor.visitEnd();
 }
 {

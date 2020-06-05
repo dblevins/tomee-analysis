@@ -344,7 +344,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/webresources/ExtractingRoot", "getContext", "()Lorg/apache/catalina/Context;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getServletContext", "()Ljakarta/servlet/ServletContext;", true);
-methodVisitor.visitLdcInsn("javax.servlet.context.tempdir");
+methodVisitor.visitLdcInsn("jakarta.servlet.context.tempdir");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/io/File");
 methodVisitor.visitVarInsn(ASTORE, 1);

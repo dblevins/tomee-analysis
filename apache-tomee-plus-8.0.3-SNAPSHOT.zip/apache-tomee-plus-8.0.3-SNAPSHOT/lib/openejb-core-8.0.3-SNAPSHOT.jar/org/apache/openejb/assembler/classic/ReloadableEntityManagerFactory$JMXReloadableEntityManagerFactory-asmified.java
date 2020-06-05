@@ -417,7 +417,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/Logger", "
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory$JMXReloadableEntityManagerFactory", "reloadableEntityManagerFactory", "Lorg/apache/openejb/assembler/classic/ReloadableEntityManagerFactory;");
-methodVisitor.visitLdcInsn("javax.persistence.validation.mode");
+methodVisitor.visitLdcInsn("jakarta.persistence.validation.mode");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)V", false);
 methodVisitor.visitLabel(label3);

@@ -32,7 +32,7 @@ classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/QueryHintsHand
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.persistence.cache.retrieveMode");
+methodVisitor.visitLdcInsn("jakarta.persistence.cache.retrieveMode");
 methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/persistence/CacheRetrieveMode", "USE", "Ljakarta/persistence/CacheRetrieveMode;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/CacheRetrieveMode", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/QueryHintsHandler$CacheRetrieveModeHint", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);

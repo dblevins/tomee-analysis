@@ -22,22 +22,22 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", null, "java/lang/Object", new String[] { "jakarta/enterprise/deploy/spi/status/ProgressObject" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", null, "java/lang/Object", new String[] { "javax/enterprise/deploy/spi/status/ProgressObject" });
 
 classWriter.visitInnerClass("org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "org/apache/openejb/config/VmDeploymentManager", "ProgressObjectImpl", ACC_PUBLIC);
 
 classWriter.visitInnerClass("org/apache/openejb/config/VmDeploymentManager$DeploymentStatusImpl", "org/apache/openejb/config/VmDeploymentManager", "DeploymentStatusImpl", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "targetModuleIds", "Ljava/util/Set;", "Ljava/util/Set<Ljakarta/enterprise/deploy/spi/TargetModuleID;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "targetModuleIds", "Ljava/util/Set;", "Ljava/util/Set<Ljavax/enterprise/deploy/spi/TargetModuleID;>;", null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "event", "Ljakarta/enterprise/deploy/spi/status/ProgressEvent;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "event", "Ljavax/enterprise/deploy/spi/status/ProgressEvent;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "deploymentStatus", "Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "deploymentStatus", "Ljavax/enterprise/deploy/spi/status/DeploymentStatus;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/config/VmDeploymentManager;Ljakarta/enterprise/deploy/shared/CommandType;Ljava/util/Set;)V", "(Ljakarta/enterprise/deploy/shared/CommandType;Ljava/util/Set<Ljakarta/enterprise/deploy/spi/TargetModuleID;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/config/VmDeploymentManager;Ljavax/enterprise/deploy/shared/CommandType;Ljava/util/Set;)V", "(Ljavax/enterprise/deploy/shared/CommandType;Ljava/util/Set<Ljavax/enterprise/deploy/spi/TargetModuleID;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -59,23 +59,23 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/VmDeploymentManager$DeploymentStatusImpl");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/VmDeploymentManager$DeploymentStatusImpl", "<init>", "(Ljakarta/enterprise/deploy/shared/CommandType;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/VmDeploymentManager$DeploymentStatusImpl", "<init>", "(Ljavax/enterprise/deploy/shared/CommandType;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljavax/enterprise/deploy/spi/status/DeploymentStatus;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/deploy/spi/status/ProgressEvent");
+methodVisitor.visitTypeInsn(NEW, "javax/enterprise/deploy/spi/status/ProgressEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/deploy/spi/status/ProgressEvent", "<init>", "(Ljava/lang/Object;Ljakarta/enterprise/deploy/spi/TargetModuleID;Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "event", "Ljakarta/enterprise/deploy/spi/status/ProgressEvent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljavax/enterprise/deploy/spi/status/DeploymentStatus;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/deploy/spi/status/ProgressEvent", "<init>", "(Ljava/lang/Object;Ljavax/enterprise/deploy/spi/TargetModuleID;Ljavax/enterprise/deploy/spi/status/DeploymentStatus;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "event", "Ljavax/enterprise/deploy/spi/status/ProgressEvent;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/config/VmDeploymentManager;Ljakarta/enterprise/deploy/shared/CommandType;Ljava/lang/Exception;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/config/VmDeploymentManager;Ljavax/enterprise/deploy/shared/CommandType;Ljava/lang/Exception;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -90,30 +90,30 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/VmDeploymentManager$
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/VmDeploymentManager$DeploymentStatusImpl", "<init>", "(Ljakarta/enterprise/deploy/shared/CommandType;Ljava/lang/Exception;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/VmDeploymentManager$DeploymentStatusImpl", "<init>", "(Ljavax/enterprise/deploy/shared/CommandType;Ljava/lang/Exception;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljavax/enterprise/deploy/spi/status/DeploymentStatus;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/deploy/spi/status/ProgressEvent");
+methodVisitor.visitTypeInsn(NEW, "javax/enterprise/deploy/spi/status/ProgressEvent");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/deploy/spi/status/ProgressEvent", "<init>", "(Ljava/lang/Object;Ljakarta/enterprise/deploy/spi/TargetModuleID;Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "event", "Ljakarta/enterprise/deploy/spi/status/ProgressEvent;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljavax/enterprise/deploy/spi/status/DeploymentStatus;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/deploy/spi/status/ProgressEvent", "<init>", "(Ljava/lang/Object;Ljavax/enterprise/deploy/spi/TargetModuleID;Ljavax/enterprise/deploy/spi/status/DeploymentStatus;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "event", "Ljavax/enterprise/deploy/spi/status/ProgressEvent;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getResultTargetModuleIDs", "()[Ljakarta/enterprise/deploy/spi/TargetModuleID;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getResultTargetModuleIDs", "()[Ljavax/enterprise/deploy/spi/TargetModuleID;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "targetModuleIds", "Ljava/util/Set;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/enterprise/deploy/spi/TargetModuleID");
+methodVisitor.visitTypeInsn(ANEWARRAY, "javax/enterprise/deploy/spi/TargetModuleID");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -122,24 +122,24 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentMa
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "targetModuleIds", "Ljava/util/Set;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
-methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/enterprise/deploy/spi/TargetModuleID");
+methodVisitor.visitTypeInsn(ANEWARRAY, "javax/enterprise/deploy/spi/TargetModuleID");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "[Ljakarta/enterprise/deploy/spi/TargetModuleID;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/enterprise/deploy/spi/TargetModuleID;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getDeploymentStatus", "()Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_SYNCHRONIZED, "getDeploymentStatus", "()Ljavax/enterprise/deploy/spi/status/DeploymentStatus;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljakarta/enterprise/deploy/spi/status/DeploymentStatus;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "deploymentStatus", "Ljavax/enterprise/deploy/spi/status/DeploymentStatus;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientConfiguration", "(Ljakarta/enterprise/deploy/spi/TargetModuleID;)Ljakarta/enterprise/deploy/spi/status/ClientConfiguration;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientConfiguration", "(Ljavax/enterprise/deploy/spi/TargetModuleID;)Ljavax/enterprise/deploy/spi/status/ClientConfiguration;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -155,12 +155,12 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "cancel", "()V", null, new String[] { "jakarta/enterprise/deploy/spi/exceptions/OperationUnsupportedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "cancel", "()V", null, new String[] { "javax/enterprise/deploy/spi/exceptions/OperationUnsupportedException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/deploy/spi/exceptions/OperationUnsupportedException");
+methodVisitor.visitTypeInsn(NEW, "javax/enterprise/deploy/spi/exceptions/OperationUnsupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("cancel is not supported");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/deploy/spi/exceptions/OperationUnsupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/deploy/spi/exceptions/OperationUnsupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -174,29 +174,29 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "stop", "()V", null, new String[] { "jakarta/enterprise/deploy/spi/exceptions/OperationUnsupportedException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "stop", "()V", null, new String[] { "javax/enterprise/deploy/spi/exceptions/OperationUnsupportedException" });
 methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "jakarta/enterprise/deploy/spi/exceptions/OperationUnsupportedException");
+methodVisitor.visitTypeInsn(NEW, "javax/enterprise/deploy/spi/exceptions/OperationUnsupportedException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitLdcInsn("stop is not supported");
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/enterprise/deploy/spi/exceptions/OperationUnsupportedException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/enterprise/deploy/spi/exceptions/OperationUnsupportedException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addProgressListener", "(Ljakarta/enterprise/deploy/spi/status/ProgressListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addProgressListener", "(Ljavax/enterprise/deploy/spi/status/ProgressListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "event", "Ljakarta/enterprise/deploy/spi/status/ProgressEvent;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/enterprise/deploy/spi/status/ProgressListener", "handleProgressEvent", "(Ljakarta/enterprise/deploy/spi/status/ProgressEvent;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/VmDeploymentManager$ProgressObjectImpl", "event", "Ljavax/enterprise/deploy/spi/status/ProgressEvent;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/enterprise/deploy/spi/status/ProgressListener", "handleProgressEvent", "(Ljavax/enterprise/deploy/spi/status/ProgressEvent;)V", true);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeProgressListener", "(Ljakarta/enterprise/deploy/spi/status/ProgressListener;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeProgressListener", "(Ljavax/enterprise/deploy/spi/status/ProgressListener;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);

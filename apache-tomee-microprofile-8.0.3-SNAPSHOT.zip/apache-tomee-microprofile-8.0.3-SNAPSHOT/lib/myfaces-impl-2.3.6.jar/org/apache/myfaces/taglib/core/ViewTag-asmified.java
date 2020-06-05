@@ -170,7 +170,7 @@ methodVisitor.visitVarInsn(ISTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ViewTag", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getRequest", "()Ljakarta/servlet/ServletRequest;", false);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.locale");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.locale");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getLocale", "()Ljava/util/Locale;", false);
@@ -375,7 +375,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/taglib/core/ViewTag", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getRequest", "()Ljakarta/servlet/ServletRequest;", false);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.locale");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.locale");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/servlet/jsp/jstl/core/Config", "set", "(Ljakarta/servlet/ServletRequest;Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label0);

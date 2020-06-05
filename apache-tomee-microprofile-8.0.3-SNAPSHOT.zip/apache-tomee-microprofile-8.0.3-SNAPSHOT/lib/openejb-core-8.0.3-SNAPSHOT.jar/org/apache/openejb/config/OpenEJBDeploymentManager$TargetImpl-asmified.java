@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetImpl", null, "java/lang/Object", new String[] { "jakarta/enterprise/deploy/spi/Target", "java/lang/Comparable", "java/io/Serializable" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/OpenEJBDeploymentManager$TargetImpl", null, "java/lang/Object", new String[] { "javax/enterprise/deploy/spi/Target", "java/lang/Comparable", "java/io/Serializable" });
 
 classWriter.visitInnerClass("org/apache/openejb/config/OpenEJBDeploymentManager$TargetImpl", "org/apache/openejb/config/OpenEJBDeploymentManager", "TargetImpl", ACC_PUBLIC | ACC_STATIC);
 

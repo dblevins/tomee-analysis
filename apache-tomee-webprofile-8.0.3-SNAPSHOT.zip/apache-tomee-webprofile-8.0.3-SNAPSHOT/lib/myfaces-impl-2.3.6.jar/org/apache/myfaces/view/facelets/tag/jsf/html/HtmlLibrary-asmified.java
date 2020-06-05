@@ -156,13 +156,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/t
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("outputScript");
 methodVisitor.visitLdcInsn("jakarta.faces.Output");
-methodVisitor.visitLdcInsn("javax.faces.resource.Script");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Script");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/view/facelets/tag/jsf/html/HtmlOutputScriptHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/html/HtmlLibrary", "addComponent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("outputStylesheet");
 methodVisitor.visitLdcInsn("jakarta.faces.Output");
-methodVisitor.visitLdcInsn("javax.faces.resource.Stylesheet");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Stylesheet");
 methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/view/facelets/tag/jsf/html/HtmlOutputStylesheetHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/html/HtmlLibrary", "addComponent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);

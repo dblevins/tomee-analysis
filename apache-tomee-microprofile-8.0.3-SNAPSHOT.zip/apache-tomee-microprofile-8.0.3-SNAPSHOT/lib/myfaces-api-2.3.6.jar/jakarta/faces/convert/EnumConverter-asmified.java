@@ -29,11 +29,11 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONV
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENUM_ID", "Ljava/lang/String;", null, "javax.faces.converter.EnumConverter.ENUM");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENUM_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.EnumConverter.ENUM");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENUM_NO_CLASS_ID", "Ljava/lang/String;", null, "javax.faces.converter.EnumConverter.ENUM_NO_CLASS");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ENUM_NO_CLASS_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.EnumConverter.ENUM_NO_CLASS");
 fieldVisitor.visitEnd();
 }
 {
@@ -177,7 +177,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.EnumConverter.ENUM");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.EnumConverter.ENUM");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);
@@ -266,7 +266,7 @@ methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.EnumConverter.ENUM");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.EnumConverter.ENUM");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);
@@ -297,7 +297,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.EnumConverter.ENUM_NO_CLASS");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.EnumConverter.ENUM_NO_CLASS");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/convert/_MessageUtils", "getErrorMessage", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;[Ljava/lang/Object;)Ljakarta/faces/application/FacesMessage;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/convert/ConverterException", "<init>", "(Ljakarta/faces/application/FacesMessage;)V", false);

@@ -41,11 +41,11 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "moduleType", "Ljava/lang/Cla
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/wsdl/Definition;Ljava/lang/Class;)V", "(Ljakarta/wsdl/Definition;Ljava/lang/Class<+Lorg/apache/openejb/config/DeploymentModule;>;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/wsdl/Definition;Ljava/lang/Class;)V", "(Ljavax/wsdl/Definition;Ljava/lang/Class<+Lorg/apache/openejb/config/DeploymentModule;>;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/WsdlVisitor", "<init>", "(Ljakarta/wsdl/Definition;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/webservices/WsdlVisitor", "<init>", "(Ljavax/wsdl/Definition;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "moduleType", "Ljava/lang/Class;");
@@ -66,8 +66,8 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "moduleType", "Ljava/lang/Class;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "definition", "Ljakarta/wsdl/Definition;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getQName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "definition", "Ljavax/wsdl/Definition;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getQName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationContext", "<init>", "(Ljava/lang/Class;Ljava/lang/String;)V", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "context", "Lorg/apache/openejb/config/ValidationContext;");
@@ -119,10 +119,10 @@ methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/Definition;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/Definition;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Definition", "getServices", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Definition", "getServices", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "values", "()Ljava/util/Collection;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "size", "()I", true);
 methodVisitor.visitInsn(ICONST_1);
@@ -142,11 +142,11 @@ methodVisitor.visitMaxs(4, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/Output;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/Output;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Output", "getMessage", "()Ljakarta/wsdl/Message;", true);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Message", "getParts", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Output", "getMessage", "()Ljavax/wsdl/Message;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Message", "getParts", "()Ljava/util/Map;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "size", "()I", true);
@@ -166,7 +166,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("The output message must contain zero or one parts: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Output", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Output", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationFailure", "<init>", "(Ljava/lang/String;)V", false);
@@ -178,12 +178,12 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/Operation;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/Operation;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "operationNames", "Ljava/util/List;");
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Operation", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Operation", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
@@ -197,7 +197,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("No two operations can have the same name: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Operation", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Operation", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationFailure", "<init>", "(Ljava/lang/String;)V", false);
@@ -209,12 +209,12 @@ methodVisitor.visitMaxs(5, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/Fault;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/Fault;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Fault", "getMessage", "()Ljakarta/wsdl/Message;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Fault", "getMessage", "()Ljavax/wsdl/Message;", true);
 methodVisitor.visitLdcInsn("message");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Message", "getPart", "(Ljava/lang/String;)Ljakarta/wsdl/Part;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Message", "getPart", "(Ljava/lang/String;)Ljavax/wsdl/Part;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
@@ -229,7 +229,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("The fault message must contain one part named 'message' : ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Fault", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Fault", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationFailure", "<init>", "(Ljava/lang/String;)V", false);
@@ -237,10 +237,10 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/Validati
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/wsdl/Part"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/wsdl/Part"}, 0, null);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "XSD_STRING", "Ljavax/xml/namespace/QName;");
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Part", "getTypeName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Part", "getTypeName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -253,7 +253,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("The fault message must contain one part of type 'xsd:string' : ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Fault", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Fault", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationFailure", "<init>", "(Ljava/lang/String;)V", false);
@@ -265,15 +265,15 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/BindingInput;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/BindingInput;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/BindingInput", "getExtensibilityElements", "()Ljava/util/List;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "getSOAPBody", "(Ljava/util/List;)Ljakarta/wsdl/extensions/soap/SOAPBody;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/BindingInput", "getExtensibilityElements", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "getSOAPBody", "(Ljava/util/List;)Ljavax/wsdl/extensions/soap/SOAPBody;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/soap/SOAPBody", "getUse", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/soap/SOAPBody", "getUse", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -284,7 +284,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/wsdl/extensions/soap/SOAPBody", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/wsdl/extensions/soap/SOAPBody", "java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "context", "Lorg/apache/openejb/config/ValidationContext;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/ValidationFailure");
@@ -295,7 +295,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("The use attribute of the binding input operation must be 'encoded': ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/BindingInput", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/BindingInput", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationFailure", "<init>", "(Ljava/lang/String;)V", false);
@@ -307,15 +307,15 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/BindingOutput;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/BindingOutput;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/BindingOutput", "getExtensibilityElements", "()Ljava/util/List;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "getSOAPBody", "(Ljava/util/List;)Ljakarta/wsdl/extensions/soap/SOAPBody;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/BindingOutput", "getExtensibilityElements", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "getSOAPBody", "(Ljava/util/List;)Ljavax/wsdl/extensions/soap/SOAPBody;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/soap/SOAPBody", "getUse", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/soap/SOAPBody", "getUse", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -326,7 +326,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/wsdl/extensions/soap/SOAPBody", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/wsdl/extensions/soap/SOAPBody", "java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "context", "Lorg/apache/openejb/config/ValidationContext;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/ValidationFailure");
@@ -337,7 +337,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("The use attribute of the binding output operation must be 'encoded': ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/BindingOutput", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/BindingOutput", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationFailure", "<init>", "(Ljava/lang/String;)V", false);
@@ -349,15 +349,15 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/BindingFault;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/BindingFault;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/BindingFault", "getExtensibilityElements", "()Ljava/util/List;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "getSOAPBody", "(Ljava/util/List;)Ljakarta/wsdl/extensions/soap/SOAPBody;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/BindingFault", "getExtensibilityElements", "()Ljava/util/List;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "getSOAPBody", "(Ljava/util/List;)Ljavax/wsdl/extensions/soap/SOAPBody;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/soap/SOAPBody", "getUse", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/soap/SOAPBody", "getUse", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
 Label label0 = new Label();
@@ -368,7 +368,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"jakarta/wsdl/extensions/soap/SOAPBody", "java/lang/String"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/wsdl/extensions/soap/SOAPBody", "java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "context", "Lorg/apache/openejb/config/ValidationContext;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/ValidationFailure");
@@ -379,7 +379,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("The use attribute of the binding fault operation must be 'encoded': ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/BindingFault", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/BindingFault", "getName", "()Ljava/lang/String;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationFailure", "<init>", "(Ljava/lang/String;)V", false);
@@ -391,26 +391,26 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/Binding;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/Binding;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "getSOAPBinding", "(Ljakarta/wsdl/Binding;)Ljakarta/wsdl/extensions/soap/SOAPBinding;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "getSOAPBinding", "(Ljavax/wsdl/Binding;)Ljavax/wsdl/extensions/soap/SOAPBinding;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/soap/SOAPBinding", "getStyle", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/soap/SOAPBinding", "getStyle", "()Ljava/lang/String;", true);
 methodVisitor.visitJumpInsn(IFNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/soap/SOAPBinding", "getStyle", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/soap/SOAPBinding", "getStyle", "()Ljava/lang/String;", true);
 methodVisitor.visitLdcInsn("rpc");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/wsdl/extensions/soap/SOAPBinding"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/wsdl/extensions/soap/SOAPBinding"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/webservices/LightWeightMappingValidator", "context", "Lorg/apache/openejb/config/ValidationContext;");
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/ValidationFailure");
@@ -421,7 +421,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>"
 methodVisitor.visitLdcInsn("The messaging style of the binding must be rpc: ");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Binding", "getQName", "()Ljavax/xml/namespace/QName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Binding", "getQName", "()Ljavax/xml/namespace/QName;", true);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/ValidationFailure", "<init>", "(Ljava/lang/String;)V", false);
@@ -433,10 +433,10 @@ methodVisitor.visitMaxs(5, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljakarta/wsdl/Service;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "visit", "(Ljavax/wsdl/Service;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/Service", "getPorts", "()Ljava/util/Map;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/Service", "getPorts", "()Ljava/util/Map;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "values", "()Ljava/util/Collection;", true);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "size", "()I", true);
 methodVisitor.visitInsn(ICONST_1);

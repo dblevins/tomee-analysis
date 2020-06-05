@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/wsdl/TExtensibilityElementImpl", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/ExtensibilityElement" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/wsdl/TExtensibilityElementImpl", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/ExtensibilityElement" });
 
 {
 fieldVisitor = classWriter.visitField(0, "elementType", "Ljavax/xml/namespace/QName;", null, null);

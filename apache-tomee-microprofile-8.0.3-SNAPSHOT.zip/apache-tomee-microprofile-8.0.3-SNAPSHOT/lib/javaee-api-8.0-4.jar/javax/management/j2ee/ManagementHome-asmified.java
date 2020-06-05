@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "javax/management/j2ee/ManagementHome", null, "java/lang/Object", new String[] { "javax/ejb/EJBHome" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "javax/management/j2ee/ManagementHome", null, "java/lang/Object", new String[] { "jakarta/ejb/EJBHome" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "create", "()Ljavax/management/j2ee/Management;", null, new String[] { "javax/ejb/CreateException", "java/rmi/RemoteException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "create", "()Ljavax/management/j2ee/Management;", null, new String[] { "jakarta/ejb/CreateException", "java/rmi/RemoteException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

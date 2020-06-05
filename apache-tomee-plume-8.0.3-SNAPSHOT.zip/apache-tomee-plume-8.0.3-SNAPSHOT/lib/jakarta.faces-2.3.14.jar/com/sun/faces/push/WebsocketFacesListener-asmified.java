@@ -234,7 +234,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/component/UIOutput", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 12);
 methodVisitor.visitVarInsn(ALOAD, 12);
-methodVisitor.visitLdcInsn("javax.faces.resource.Script");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Script");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIOutput", "setRendererType", "(Ljava/lang/String;)V", false);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/component/UIOutput");
 methodVisitor.visitInsn(DUP);

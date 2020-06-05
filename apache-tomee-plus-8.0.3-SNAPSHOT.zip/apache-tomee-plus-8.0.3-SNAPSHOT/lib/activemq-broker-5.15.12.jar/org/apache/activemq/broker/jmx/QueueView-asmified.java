@@ -62,7 +62,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label1);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
-methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"jakarta/management/openmbean/CompositeData", "org/apache/activemq/broker/region/QueueMessageReference", "org/apache/activemq/command/Message"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"javax/management/openmbean/CompositeData", "org/apache/activemq/broker/region/QueueMessageReference", "org/apache/activemq/command/Message"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/broker/jmx/OpenTypeSupport", "convert", "(Ljava/lang/Object;)Ljavax/management/openmbean/CompositeData;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);

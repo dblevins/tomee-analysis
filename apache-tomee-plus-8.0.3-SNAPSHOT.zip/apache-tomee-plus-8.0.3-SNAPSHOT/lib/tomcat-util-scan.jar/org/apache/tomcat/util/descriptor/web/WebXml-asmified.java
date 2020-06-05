@@ -8783,7 +8783,7 @@ methodVisitor.visitJumpInsn(GOTO, label39);
 methodVisitor.visitLabel(label38);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.servlet.context.orderedLibs");
+methodVisitor.visitLdcInsn("jakarta.servlet.context.orderedLibs");
 methodVisitor.visitVarInsn(ALOAD, 7);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label37);

@@ -22,10 +22,10 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "<A::Ljava/lang/annotation/Annotation;>Lorg/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl<TA;>;Ljakarta/cache/annotation/CacheInvocationContext<TA;>;", "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", new String[] { "jakarta/cache/annotation/CacheInvocationContext" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "<A::Ljava/lang/annotation/Annotation;>Lorg/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl<TA;>;Ljavax/cache/annotation/CacheInvocationContext<TA;>;", "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", new String[] { "javax/cache/annotation/CacheInvocationContext" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parameters", "[Ljakarta/cache/annotation/CacheInvocationParameter;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parameters", "[Ljavax/cache/annotation/CacheInvocationParameter;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -38,7 +38,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "<init>", "(Ljakarta/interceptor/InvocationContext;Ljava/lang/annotation/Annotation;Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "parameters", "[Ljakarta/cache/annotation/CacheInvocationParameter;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "parameters", "[Ljavax/cache/annotation/CacheInvocationParameter;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(4, 4);
 methodVisitor.visitEnd();
@@ -54,21 +54,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllParameters", "()[Ljakarta/cache/annotation/CacheInvocationParameter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAllParameters", "()[Ljavax/cache/annotation/CacheInvocationParameter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "parameters", "[Ljakarta/cache/annotation/CacheInvocationParameter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "parameters", "[Ljavax/cache/annotation/CacheInvocationParameter;");
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "doGetAllParameters", "([Ljava/lang/Integer;)[Ljakarta/cache/annotation/CacheInvocationParameter;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "parameters", "[Ljakarta/cache/annotation/CacheInvocationParameter;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "doGetAllParameters", "([Ljava/lang/Integer;)[Ljavax/cache/annotation/CacheInvocationParameter;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "parameters", "[Ljavax/cache/annotation/CacheInvocationParameter;");
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "parameters", "[Ljakarta/cache/annotation/CacheInvocationParameter;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "parameters", "[Ljavax/cache/annotation/CacheInvocationParameter;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(3, 1);
 methodVisitor.visitEnd();
@@ -98,7 +98,7 @@ methodVisitor.visitMaxs(3, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doGetAllParameters", "([Ljava/lang/Integer;)[Ljakarta/cache/annotation/CacheInvocationParameter;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doGetAllParameters", "([Ljava/lang/Integer;)[Ljavax/cache/annotation/CacheInvocationParameter;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/cdi/CacheInvocationContextImpl", "delegate", "Ljakarta/interceptor/InvocationContext;");
@@ -125,7 +125,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitInsn(ARRAYLENGTH);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
-methodVisitor.visitTypeInsn(ANEWARRAY, "jakarta/cache/annotation/CacheInvocationParameter");
+methodVisitor.visitTypeInsn(ANEWARRAY, "javax/cache/annotation/CacheInvocationParameter");
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label2 = new Label();
@@ -134,7 +134,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 6);
 Label label3 = new Label();
 methodVisitor.visitLabel(label3);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"[Ljakarta/cache/annotation/CacheInvocationParameter;", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"[Ljavax/cache/annotation/CacheInvocationParameter;", Opcodes.INTEGER}, 0, null);
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitInsn(ARRAYLENGTH);

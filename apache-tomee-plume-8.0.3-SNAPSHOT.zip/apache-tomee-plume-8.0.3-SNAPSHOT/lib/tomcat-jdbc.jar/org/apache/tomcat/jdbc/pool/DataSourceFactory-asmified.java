@@ -967,7 +967,7 @@ Label label47 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label47);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/management/ObjectName", "quote", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/management/ObjectName", "quote", "(Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/jdbc/pool/PoolConfiguration", "setName", "(Ljava/lang/String;)V", true);
 methodVisitor.visitLabel(label47);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);

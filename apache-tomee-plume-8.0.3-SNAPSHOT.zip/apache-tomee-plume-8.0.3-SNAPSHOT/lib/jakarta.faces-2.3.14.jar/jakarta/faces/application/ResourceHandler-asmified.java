@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JSF_
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESOURCE_CONTRACT_XML", "Ljava/lang/String;", null, "javax.faces.contract.xml");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESOURCE_CONTRACT_XML", "Ljava/lang/String;", null, "jakarta.faces.contract.xml");
 fieldVisitor.visitEnd();
 }
 {
@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WEBA
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOCALE_PREFIX", "Ljava/lang/String;", null, "javax.faces.resource.localePrefix");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "LOCALE_PREFIX", "Ljava/lang/String;", null, "jakarta.faces.resource.localePrefix");
 fieldVisitor.visitEnd();
 }
 {

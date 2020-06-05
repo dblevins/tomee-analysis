@@ -84,12 +84,12 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/view/f
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/faces/view/facelets/ComponentConfig", "getRendererType", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
-methodVisitor.visitLdcInsn("javax.faces.resource.Script");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Script");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label1);
-methodVisitor.visitLdcInsn("javax.faces.resource.Stylesheet");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Stylesheet");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label2 = new Label();

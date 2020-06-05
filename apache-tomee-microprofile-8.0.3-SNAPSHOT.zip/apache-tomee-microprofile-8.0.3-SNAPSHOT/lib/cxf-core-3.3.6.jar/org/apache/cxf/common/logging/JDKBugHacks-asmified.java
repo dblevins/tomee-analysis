@@ -351,7 +351,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitLdcInsn("org.apache.cxf.JDKBugHacks.policy");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/logging/JDKBugHacks", "skipHack", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label10);
-methodVisitor.visitLdcInsn("jakarta.security.auth.Policy");
+methodVisitor.visitLdcInsn("javax.security.auth.Policy");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);

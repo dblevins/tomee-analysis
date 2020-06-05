@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/jmx/JCSCacheStatisticsMXBean", null, "java/lang/Object", new String[] { "jakarta/cache/management/CacheStatisticsMXBean" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/jmx/JCSCacheStatisticsMXBean", null, "java/lang/Object", new String[] { "javax/cache/management/CacheStatisticsMXBean" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "statistics", "Lorg/apache/commons/jcs/jcache/Statistics;", null, null);

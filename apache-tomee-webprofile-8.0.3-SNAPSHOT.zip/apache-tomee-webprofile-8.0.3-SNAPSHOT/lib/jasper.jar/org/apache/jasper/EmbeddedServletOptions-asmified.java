@@ -1207,7 +1207,7 @@ methodVisitor.visitLabel(label52);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.servlet.context.tempdir");
+methodVisitor.visitLdcInsn("jakarta.servlet.context.tempdir");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/io/File");
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/jasper/EmbeddedServletOptions", "scratchDir", "Ljava/io/File;");

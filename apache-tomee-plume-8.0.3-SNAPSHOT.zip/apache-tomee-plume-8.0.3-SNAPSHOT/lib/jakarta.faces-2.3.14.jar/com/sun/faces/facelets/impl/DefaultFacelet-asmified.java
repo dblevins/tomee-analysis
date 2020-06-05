@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "APP
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_ERROR_XHTML", "Ljava/lang/String;", null, "javax.faces.error.xhtml");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_ERROR_XHTML", "Ljava/lang/String;", null, "jakarta.faces.error.xhtml");
 fieldVisitor.visitEnd();
 }
 {
@@ -520,7 +520,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "include", "(Lcom/sun/faces/facelets/impl/DefaultFaceletContext;Ljakarta/faces/component/UIComponent;Ljava/lang/String;)V", null, new String[] { "java/io/IOException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.faces.error.xhtml");
+methodVisitor.visitLdcInsn("jakarta.faces.error.xhtml");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);

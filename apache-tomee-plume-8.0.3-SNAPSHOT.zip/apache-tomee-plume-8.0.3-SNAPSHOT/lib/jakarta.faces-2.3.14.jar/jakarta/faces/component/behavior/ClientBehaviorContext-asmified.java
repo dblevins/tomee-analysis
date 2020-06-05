@@ -31,11 +31,11 @@ classWriter.visitInnerClass("jakarta/faces/component/behavior/ClientBehaviorCont
 classWriter.visitInnerClass("jakarta/faces/component/behavior/ClientBehaviorContext$ClientBehaviorContextImpl", "jakarta/faces/component/behavior/ClientBehaviorContext", "ClientBehaviorContextImpl", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "BEHAVIOR_SOURCE_PARAM_NAME", "Ljava/lang/String;", null, "javax.faces.source");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "BEHAVIOR_SOURCE_PARAM_NAME", "Ljava/lang/String;", null, "jakarta.faces.source");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "BEHAVIOR_EVENT_PARAM_NAME", "Ljava/lang/String;", null, "javax.faces.behavior.event");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "BEHAVIOR_EVENT_PARAM_NAME", "Ljava/lang/String;", null, "jakarta.faces.behavior.event");
 fieldVisitor.visitEnd();
 }
 {

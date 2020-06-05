@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ERRO
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EXCEPTION_KEY", "Ljava/lang/String;", null, "javax.servlet.error.exception");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EXCEPTION_KEY", "Ljava/lang/String;", null, "jakarta.servlet.error.exception");
 fieldVisitor.visitEnd();
 }
 {

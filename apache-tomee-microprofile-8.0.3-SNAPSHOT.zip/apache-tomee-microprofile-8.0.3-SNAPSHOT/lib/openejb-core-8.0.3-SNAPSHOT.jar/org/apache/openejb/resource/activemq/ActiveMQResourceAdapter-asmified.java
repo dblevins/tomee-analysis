@@ -49,7 +49,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "bootstrapContext", "Ljakarta
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mbeanNames", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/openejb/BeanContext;Ljakarta/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mbeanNames", "Ljava/util/Map;", "Ljava/util/Map<Lorg/apache/openejb/BeanContext;Ljavax/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {

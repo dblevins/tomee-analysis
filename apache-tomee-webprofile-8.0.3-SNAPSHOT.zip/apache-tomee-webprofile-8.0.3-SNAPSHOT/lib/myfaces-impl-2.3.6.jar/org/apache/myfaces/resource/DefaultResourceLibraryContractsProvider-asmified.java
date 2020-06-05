@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MET
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "META_INF_CONTRACTS_SUFFIX", "Ljava/lang/String;", null, "javax.faces.contract.xml");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "META_INF_CONTRACTS_SUFFIX", "Ljava/lang/String;", null, "jakarta.faces.contract.xml");
 fieldVisitor.visitEnd();
 }
 {
@@ -155,7 +155,7 @@ methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/resource/DefaultResourceLibraryContractsProvider", "getClassLoader", "()Ljava/lang/ClassLoader;", false);
 methodVisitor.visitLdcInsn("META-INF/contracts/");
-methodVisitor.visitLdcInsn("javax.faces.contract.xml");
+methodVisitor.visitLdcInsn("jakarta.faces.contract.xml");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/util/Classpath", "search", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;)[Ljava/net/URL;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitInsn(ICONST_0);

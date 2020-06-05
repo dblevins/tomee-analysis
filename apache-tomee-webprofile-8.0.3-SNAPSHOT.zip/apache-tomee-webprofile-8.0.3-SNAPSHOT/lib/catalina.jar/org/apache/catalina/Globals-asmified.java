@@ -85,23 +85,23 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SEND
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CERTIFICATES_ATTR", "Ljava/lang/String;", null, "javax.servlet.request.X509Certificate");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CERTIFICATES_ATTR", "Ljava/lang/String;", null, "jakarta.servlet.request.X509Certificate");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CIPHER_SUITE_ATTR", "Ljava/lang/String;", null, "javax.servlet.request.cipher_suite");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CIPHER_SUITE_ATTR", "Ljava/lang/String;", null, "jakarta.servlet.request.cipher_suite");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "KEY_SIZE_ATTR", "Ljava/lang/String;", null, "javax.servlet.request.key_size");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "KEY_SIZE_ATTR", "Ljava/lang/String;", null, "jakarta.servlet.request.key_size");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SSL_SESSION_ID_ATTR", "Ljava/lang/String;", null, "javax.servlet.request.ssl_session_id");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SSL_SESSION_ID_ATTR", "Ljava/lang/String;", null, "jakarta.servlet.request.ssl_session_id");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SSL_SESSION_MGR_ATTR", "Ljava/lang/String;", null, "javax.servlet.request.ssl_session_mgr");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SSL_SESSION_MGR_ATTR", "Ljava/lang/String;", null, "jakarta.servlet.request.ssl_session_mgr");
 fieldVisitor.visitEnd();
 }
 {

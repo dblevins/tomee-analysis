@@ -41,15 +41,15 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JAVAX_PERSISTENCE_SHARED_CACHE_MODE", "Ljava/lang/String;", null, "javax.persistence.sharedCache.mode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JAVAX_PERSISTENCE_SHARED_CACHE_MODE", "Ljava/lang/String;", null, "jakarta.persistence.sharedCache.mode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JAVAX_PERSISTENCE_VALIDATION_MODE", "Ljava/lang/String;", null, "javax.persistence.validation.mode");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JAVAX_PERSISTENCE_VALIDATION_MODE", "Ljava/lang/String;", null, "jakarta.persistence.validation.mode");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JAVAX_PERSISTENCE_TRANSACTION_TYPE", "Ljava/lang/String;", null, "javax.persistence.transactionType");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "JAVAX_PERSISTENCE_TRANSACTION_TYPE", "Ljava/lang/String;", null, "jakarta.persistence.transactionType");
 fieldVisitor.visitEnd();
 }
 {
@@ -77,7 +77,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "entityManagerFac
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljakarta/management/ObjectName;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "objectName", "Ljavax/management/ObjectName;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -767,30 +767,30 @@ methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "generateObjectName", "()Ljakarta/management/ObjectName;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "generateObjectName", "()Ljavax/management/ObjectName;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "isRegistered", "(Ljakarta/management/ObjectName;)Z", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "isRegistered", "(Ljavax/management/ObjectName;)Z", true);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/MBeanServer"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/MBeanServer"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "mBeanify", "()Ljava/lang/Object;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 Label label6 = new Label();
@@ -817,7 +817,7 @@ methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/N
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "LOGGER", "Lorg/apache/openejb/util/Logger;");
 methodVisitor.visitLdcInsn("can't register the mbean for the entity manager factory {0}");
 methodVisitor.visitInsn(ICONST_1);
@@ -836,7 +836,7 @@ methodVisitor.visitMaxs(6, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "generateObjectName", "()Ljakarta/management/ObjectName;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "generateObjectName", "()Ljavax/management/ObjectName;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/monitoring/ObjectNameBuilder");
 methodVisitor.visitInsn(DUP);
@@ -856,14 +856,14 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/Obje
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljakarta/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljavax/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "isRegistered", "(Ljakarta/management/ObjectName;)Z", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "isRegistered", "(Ljavax/management/ObjectName;)Z", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -886,12 +886,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/Obje
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljakarta/management/ObjectName;", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/monitoring/ObjectNameBuilder", "build", "()Ljavax/management/ObjectName;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openejb/monitoring/ObjectNameBuilder", "jakarta/management/MBeanServer"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openejb/monitoring/ObjectNameBuilder", "javax/management/MBeanServer"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(4, 3);
 methodVisitor.visitEnd();
@@ -940,20 +940,20 @@ Label label1 = new Label();
 Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljakarta/management/MBeanServer;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/monitoring/LocalMBeanServer", "get", "()Ljavax/management/MBeanServer;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljakarta/management/ObjectName;");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "unregisterMBean", "(Ljakarta/management/ObjectName;)V", true);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "objectName", "Ljavax/management/ObjectName;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "unregisterMBean", "(Ljavax/management/ObjectName;)V", true);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "jakarta/management/MBeanServer"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory", "javax/management/MBeanServer"}, 1, new Object[] {"java/lang/Exception"});
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/OpenEJBException");
 methodVisitor.visitInsn(DUP);
@@ -1026,12 +1026,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/assembler/class
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "getProperties", "()Ljava/util/Properties;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.persistence.sharedCache.mode");
+methodVisitor.visitLdcInsn("jakarta.persistence.sharedCache.mode");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "containsKey", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.persistence.sharedCache.mode");
+methodVisitor.visitLdcInsn("jakarta.persistence.sharedCache.mode");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/SharedCacheMode", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
@@ -1058,12 +1058,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/assembler/class
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "getProperties", "()Ljava/util/Properties;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.persistence.validation.mode");
+methodVisitor.visitLdcInsn("jakarta.persistence.validation.mode");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "containsKey", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.persistence.validation.mode");
+methodVisitor.visitLdcInsn("jakarta.persistence.validation.mode");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/ValidationMode", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
@@ -1216,12 +1216,12 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/assembler/class
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "getProperties", "()Ljava/util/Properties;", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.persistence.transactionType");
+methodVisitor.visitLdcInsn("jakarta.persistence.transactionType");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "containsKey", "(Ljava/lang/Object;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax.persistence.transactionType");
+methodVisitor.visitLdcInsn("jakarta.persistence.transactionType");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/spi/PersistenceUnitTransactionType", "name", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);

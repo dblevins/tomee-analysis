@@ -631,7 +631,7 @@ Label label25 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label25);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/dbws/ProviderHelper", "mc", "Ljakarta/xml/ws/handler/MessageContext;");
-methodVisitor.visitLdcInsn("javax.xml.ws.binding.attachments.inbound");
+methodVisitor.visitLdcInsn("jakarta.xml.ws.binding.attachments.inbound");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/xml/ws/handler/MessageContext", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
 methodVisitor.visitVarInsn(ASTORE, 2);

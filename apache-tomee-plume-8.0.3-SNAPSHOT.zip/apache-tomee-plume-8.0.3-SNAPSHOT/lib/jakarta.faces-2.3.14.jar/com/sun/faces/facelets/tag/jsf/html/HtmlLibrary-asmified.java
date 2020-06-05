@@ -175,13 +175,13 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jsf/htm
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("outputScript");
 methodVisitor.visitLdcInsn("jakarta.faces.Output");
-methodVisitor.visitLdcInsn("javax.faces.resource.Script");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Script");
 methodVisitor.visitLdcInsn(Type.getType("Lcom/sun/faces/facelets/tag/jsf/html/ScriptResourceHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jsf/html/HtmlLibrary", "addComponent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("outputStylesheet");
 methodVisitor.visitLdcInsn("jakarta.faces.Output");
-methodVisitor.visitLdcInsn("javax.faces.resource.Stylesheet");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Stylesheet");
 methodVisitor.visitLdcInsn(Type.getType("Lcom/sun/faces/facelets/tag/jsf/html/StylesheetResourceHandler;"));
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/facelets/tag/jsf/html/HtmlLibrary", "addComponent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);

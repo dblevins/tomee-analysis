@@ -79,7 +79,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "abortConsumer", "(Ljakarta/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "abortConsumer", "(Ljavax/management/ObjectName;)V", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "aborts the slow consumer gracefully by sending a shutdown control message to just that consumer");
@@ -88,7 +88,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "abortConnection", "(Ljakarta/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "abortConnection", "(Ljavax/management/ObjectName;)V", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "aborts the slow consumer forcefully by shutting down it's connection, note: all other users of the connection will be affected");

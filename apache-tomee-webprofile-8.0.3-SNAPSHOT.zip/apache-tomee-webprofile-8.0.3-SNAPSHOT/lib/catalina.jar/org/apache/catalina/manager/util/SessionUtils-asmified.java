@@ -29,7 +29,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "STR
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JSTL_LOCALE_KEY", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.fmt.locale");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JSTL_LOCALE_KEY", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.fmt.locale");
 fieldVisitor.visitEnd();
 }
 {
@@ -461,7 +461,7 @@ methodVisitor.visitTypeInsn(INSTANCEOF, "java/security/Principal");
 Label label16 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label16);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/security/auth/Subject");
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/security/auth/Subject");
 Label label17 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label17);
 methodVisitor.visitLabel(label16);
@@ -599,7 +599,7 @@ methodVisitor.visitLdcInsn("org.springframework.web.servlet.i18n.SessionLocaleRe
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_2);
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.locale");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.locale");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_3);

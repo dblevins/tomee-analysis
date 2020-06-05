@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "net/shibboleth/utilities/java/support/xml/SchemaBuilder", null, "java/lang/Object", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/NotThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/NotThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("net/shibboleth/utilities/java/support/xml/SchemaBuilder$SchemaLanguage", "net/shibboleth/utilities/java/support/xml/SchemaBuilder", "SchemaLanguage", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
@@ -515,7 +515,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "net/shibboleth/utilities/java/support/xm
 methodVisitor.visitLdcInsn("No SchemaFactory features set, setting FEATURE_SECURE_PROCESSING by default");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/validation/SchemaFactory", "setFeature", "(Ljava/lang/String;Z)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -534,7 +534,7 @@ methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/validation/SchemaFactory"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/property/accessExternalSchema");
+methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/property/accessExternalSchema");
 methodVisitor.visitLdcInsn("all");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/validation/SchemaFactory", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);

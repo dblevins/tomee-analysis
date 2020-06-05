@@ -102,7 +102,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/AsyncContextImpl$RunnableWrapper", "coyoteRequest", "Lorg/apache/coyote/Request;");
-methodVisitor.visitLdcInsn("javax.servlet.error.exception");
+methodVisitor.visitLdcInsn("jakarta.servlet.error.exception");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Request", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);

@@ -25,15 +25,15 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "jakarta/ejb/embeddable/EJBContainer", null, "java/lang/Object", new String[] { "java/lang/AutoCloseable" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROVIDER", "Ljava/lang/String;", null, "javax.ejb.embeddable.provider");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROVIDER", "Ljava/lang/String;", null, "jakarta.ejb.embeddable.provider");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "APP_NAME", "Ljava/lang/String;", null, "javax.ejb.embeddable.appName");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "APP_NAME", "Ljava/lang/String;", null, "jakarta.ejb.embeddable.appName");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "MODULES", "Ljava/lang/String;", null, "javax.ejb.embeddable.modules");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "MODULES", "Ljava/lang/String;", null, "jakarta.ejb.embeddable.modules");
 fieldVisitor.visitEnd();
 }
 {

@@ -34,7 +34,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addChild", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "jakarta/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addChild", "(Ljava/lang/String;Ljava/lang/String;)V", null, new String[] { "javax/management/MBeanException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
@@ -107,10 +107,10 @@ methodVisitor.visitJumpInsn(GOTO, label7);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/catalina/mbeans/ContainerMBean", "java/lang/String", "java/lang/String", "org/apache/catalina/Container", Opcodes.INTEGER, "org/apache/catalina/core/ContainerBase"}, 1, new Object[] {"org/apache/catalina/LifecycleException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanException");
+methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanException", "<init>", "(Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanException", "<init>", "(Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
@@ -133,7 +133,7 @@ methodVisitor.visitMaxs(3, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeChild", "(Ljava/lang/String;)V", null, new String[] { "jakarta/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeChild", "(Ljava/lang/String;)V", null, new String[] { "javax/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 Label label0 = new Label();
@@ -156,7 +156,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addValve", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addValve", "(Ljava/lang/String;)Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/ContainerMBean", "newInstance", "(Ljava/lang/String;)Ljava/lang/Object;", false);
@@ -176,8 +176,8 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/JmxEnabled");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/JmxEnabled", "getObjectName", "()Ljakarta/management/ObjectName;", true);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/JmxEnabled", "getObjectName", "()Ljavax/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "toString", "()Ljava/lang/String;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/catalina/Valve", "org/apache/catalina/Container"}, 0, null);
@@ -187,12 +187,12 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeValve", "(Ljava/lang/String;)V", null, new String[] { "jakarta/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeValve", "(Ljava/lang/String;)V", null, new String[] { "javax/management/MBeanException" });
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/MalformedObjectNameException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/MalformedObjectNameException");
 Label label3 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/NullPointerException");
 methodVisitor.visitVarInsn(ALOAD, 0);
@@ -200,32 +200,32 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/Contain
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/Container");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/ObjectName");
+methodVisitor.visitTypeInsn(NEW, "javax/management/ObjectName");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/ObjectName", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitLabel(label1);
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label4);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/catalina/mbeans/ContainerMBean", "java/lang/String", "org/apache/catalina/Container"}, 1, new Object[] {"jakarta/management/MalformedObjectNameException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/catalina/mbeans/ContainerMBean", "java/lang/String", "org/apache/catalina/Container"}, 1, new Object[] {"javax/management/MalformedObjectNameException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanException");
+methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanException", "<init>", "(Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanException", "<init>", "(Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/NullPointerException"});
 methodVisitor.visitVarInsn(ASTORE, 4);
-methodVisitor.visitTypeInsn(NEW, "jakarta/management/MBeanException");
+methodVisitor.visitTypeInsn(NEW, "javax/management/MBeanException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/MBeanException", "<init>", "(Ljava/lang/Exception;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/MBeanException", "<init>", "(Ljava/lang/Exception;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label4);
-methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/management/ObjectName"}, 0, null);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/management/ObjectName"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label5);
@@ -242,7 +242,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 7);
 Label label6 = new Label();
 methodVisitor.visitLabel(label6);
-methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/catalina/mbeans/ContainerMBean", "java/lang/String", "org/apache/catalina/Container", "jakarta/management/ObjectName", "[Lorg/apache/catalina/Valve;", "[Lorg/apache/catalina/Valve;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/catalina/mbeans/ContainerMBean", "java/lang/String", "org/apache/catalina/Container", "javax/management/ObjectName", "[Lorg/apache/catalina/Valve;", "[Lorg/apache/catalina/Valve;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ILOAD, 7);
 methodVisitor.visitVarInsn(ILOAD, 6);
 methodVisitor.visitJumpInsn(IF_ICMPGE, label5);
@@ -256,11 +256,11 @@ Label label7 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label7);
 methodVisitor.visitVarInsn(ALOAD, 8);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/JmxEnabled");
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/JmxEnabled", "getObjectName", "()Ljakarta/management/ObjectName;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/JmxEnabled", "getObjectName", "()Ljavax/management/ObjectName;", true);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/management/ObjectName", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/management/ObjectName", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label7);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Container", "getPipeline", "()Lorg/apache/catalina/Pipeline;", true);
@@ -271,13 +271,13 @@ methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitIincInsn(7, 1);
 methodVisitor.visitJumpInsn(GOTO, label6);
 methodVisitor.visitLabel(label5);
-methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/catalina/mbeans/ContainerMBean", "java/lang/String", "org/apache/catalina/Container", "jakarta/management/ObjectName"}, 0, new Object[] {});
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/catalina/mbeans/ContainerMBean", "java/lang/String", "org/apache/catalina/Container", "javax/management/ObjectName"}, 0, new Object[] {});
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(3, 10);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addLifecycleListener", "(Ljava/lang/String;)V", null, new String[] { "jakarta/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addLifecycleListener", "(Ljava/lang/String;)V", null, new String[] { "javax/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/ContainerMBean", "newInstance", "(Ljava/lang/String;)Ljava/lang/Object;", false);
@@ -295,7 +295,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeLifecycleListeners", "(Ljava/lang/String;)V", null, new String[] { "jakarta/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeLifecycleListeners", "(Ljava/lang/String;)V", null, new String[] { "javax/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContainerMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -343,7 +343,7 @@ methodVisitor.visitMaxs(2, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findLifecycleListenerNames", "()[Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findLifecycleListenerNames", "()[Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContainerMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);
@@ -394,7 +394,7 @@ methodVisitor.visitMaxs(2, 8);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findContainerListenerNames", "()[Ljava/lang/String;", null, new String[] { "jakarta/management/MBeanException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findContainerListenerNames", "()[Ljava/lang/String;", null, new String[] { "javax/management/MBeanException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/ContainerMBean", "doGetManagedResource", "()Ljava/lang/Object;", false);

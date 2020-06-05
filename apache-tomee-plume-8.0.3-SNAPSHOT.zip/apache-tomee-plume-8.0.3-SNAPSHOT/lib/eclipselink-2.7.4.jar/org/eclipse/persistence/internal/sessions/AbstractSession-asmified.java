@@ -3986,7 +3986,7 @@ methodVisitor.visitJumpInsn(IFNONNULL, label0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.persistence.bean.manager");
+methodVisitor.visitLdcInsn("jakarta.persistence.bean.manager");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/AbstractSession", "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/AbstractSession", "createInjectionManager", "(Ljava/lang/Object;)Lorg/eclipse/persistence/internal/sessions/cdi/InjectionManager;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/sessions/AbstractSession", "injectionManager", "Lorg/eclipse/persistence/internal/sessions/cdi/InjectionManager;");

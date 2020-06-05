@@ -41,39 +41,39 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "APPL
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PAGE", "Ljava/lang/String;", null, "javax.servlet.jsp.jspPage");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PAGE", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspPage");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PAGECONTEXT", "Ljava/lang/String;", null, "javax.servlet.jsp.jspPageContext");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PAGECONTEXT", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspPageContext");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "REQUEST", "Ljava/lang/String;", null, "javax.servlet.jsp.jspRequest");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "REQUEST", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspRequest");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESPONSE", "Ljava/lang/String;", null, "javax.servlet.jsp.jspResponse");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESPONSE", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspResponse");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONFIG", "Ljava/lang/String;", null, "javax.servlet.jsp.jspConfig");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONFIG", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspConfig");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION", "Ljava/lang/String;", null, "javax.servlet.jsp.jspSession");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SESSION", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspSession");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "OUT", "Ljava/lang/String;", null, "javax.servlet.jsp.jspOut");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "OUT", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspOut");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "APPLICATION", "Ljava/lang/String;", null, "javax.servlet.jsp.jspApplication");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "APPLICATION", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspApplication");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "EXCEPTION", "Ljava/lang/String;", null, "javax.servlet.jsp.jspException");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "EXCEPTION", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jspException");
 fieldVisitor.visitEnd();
 }
 {
@@ -156,7 +156,7 @@ methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitVarInsn(ISTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getRequest", "()Ljakarta/servlet/ServletRequest;", false);
-methodVisitor.visitLdcInsn("javax.servlet.error.status_code");
+methodVisitor.visitLdcInsn("jakarta.servlet.error.status_code");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Integer");
 methodVisitor.visitVarInsn(ASTORE, 2);
@@ -172,18 +172,18 @@ methodVisitor.visitTypeInsn(NEW, "jakarta/servlet/jsp/ErrorData");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getRequest", "()Ljakarta/servlet/ServletRequest;", false);
-methodVisitor.visitLdcInsn("javax.servlet.error.exception");
+methodVisitor.visitLdcInsn("jakarta.servlet.error.exception");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Throwable");
 methodVisitor.visitVarInsn(ILOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getRequest", "()Ljakarta/servlet/ServletRequest;", false);
-methodVisitor.visitLdcInsn("javax.servlet.error.request_uri");
+methodVisitor.visitLdcInsn("jakarta.servlet.error.request_uri");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/servlet/jsp/PageContext", "getRequest", "()Ljakarta/servlet/ServletRequest;", false);
-methodVisitor.visitLdcInsn("javax.servlet.error.servlet_name");
+methodVisitor.visitLdcInsn("jakarta.servlet.error.servlet_name");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/servlet/jsp/ErrorData", "<init>", "(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V", false);

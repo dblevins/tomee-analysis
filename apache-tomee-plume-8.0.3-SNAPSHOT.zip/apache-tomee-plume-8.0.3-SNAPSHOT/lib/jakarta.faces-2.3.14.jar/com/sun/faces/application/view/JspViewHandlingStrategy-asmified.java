@@ -505,7 +505,7 @@ methodVisitor.visitJumpInsn(IFEQ, label8);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getRequest", "()Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/servlet/ServletRequest");
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.fmt.locale");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.fmt.locale");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getViewRoot", "()Ljakarta/faces/component/UIViewRoot;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getLocale", "()Ljava/util/Locale;", false);

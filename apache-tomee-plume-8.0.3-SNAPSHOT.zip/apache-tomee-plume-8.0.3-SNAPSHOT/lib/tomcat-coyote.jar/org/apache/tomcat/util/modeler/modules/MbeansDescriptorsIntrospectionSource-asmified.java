@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE, "type", "Ljava/lang/String;",
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mbeans", "Ljava/util/List;", "Ljava/util/List<Ljakarta/management/ObjectName;>;", null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mbeans", "Ljava/util/List;", "Ljava/util/List<Ljavax/management/ObjectName;>;", null);
 fieldVisitor.visitEnd();
 }
 {
@@ -95,7 +95,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadDescriptors", "(Lorg/apache/tomcat/util/modeler/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List;", "(Lorg/apache/tomcat/util/modeler/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<Ljakarta/management/ObjectName;>;", new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadDescriptors", "(Lorg/apache/tomcat/util/modeler/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List;", "(Lorg/apache/tomcat/util/modeler/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<Ljavax/management/ObjectName;>;", new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -1053,7 +1053,7 @@ methodVisitor.visitLdcInsn(Type.getType("Ljava/math/BigInteger;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 20);
-methodVisitor.visitLdcInsn(Type.getType("Ljakarta/management/ObjectName;"));
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/management/ObjectName;"));
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitIntInsn(BIPUSH, 21);

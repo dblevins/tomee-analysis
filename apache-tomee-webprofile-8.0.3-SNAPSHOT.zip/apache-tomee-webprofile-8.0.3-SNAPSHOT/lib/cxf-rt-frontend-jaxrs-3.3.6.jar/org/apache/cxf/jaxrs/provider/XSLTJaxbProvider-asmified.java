@@ -1681,7 +1681,7 @@ methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/transform/sax/SAXTransformerFa
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/jaxrs/provider/XSLTJaxbProvider", "factory", "Ljavax/xml/transform/sax/SAXTransformerFactory;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/XSLTJaxbProvider", "factory", "Ljavax/xml/transform/sax/SAXTransformerFactory;");
-methodVisitor.visitLdcInsn("http://jakarta.xml.XMLConstants/feature/secure-processing");
+methodVisitor.visitLdcInsn("http://javax.xml.XMLConstants/feature/secure-processing");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/jaxrs/provider/XSLTJaxbProvider", "secureProcessing", "Z");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/sax/SAXTransformerFactory", "setFeature", "(Ljava/lang/String;Z)V", false);

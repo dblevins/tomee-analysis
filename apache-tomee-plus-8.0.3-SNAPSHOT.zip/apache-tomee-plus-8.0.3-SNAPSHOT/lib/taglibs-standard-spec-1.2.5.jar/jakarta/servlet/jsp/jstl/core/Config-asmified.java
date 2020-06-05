@@ -25,27 +25,27 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "jakarta/servlet/jsp/jstl/core/Config", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FMT_LOCALE", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.fmt.locale");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FMT_LOCALE", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.fmt.locale");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FMT_FALLBACK_LOCALE", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.fmt.fallbackLocale");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FMT_FALLBACK_LOCALE", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.fmt.fallbackLocale");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FMT_LOCALIZATION_CONTEXT", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.fmt.localizationContext");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FMT_LOCALIZATION_CONTEXT", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.fmt.localizationContext");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FMT_TIME_ZONE", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.fmt.timeZone");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FMT_TIME_ZONE", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.fmt.timeZone");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SQL_DATA_SOURCE", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.sql.dataSource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SQL_DATA_SOURCE", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.sql.dataSource");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SQL_MAX_ROWS", "Ljava/lang/String;", null, "javax.servlet.jsp.jstl.sql.maxRows");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "SQL_MAX_ROWS", "Ljava/lang/String;", null, "jakarta.servlet.jsp.jstl.sql.maxRows");
 fieldVisitor.visitEnd();
 }
 {

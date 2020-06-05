@@ -332,7 +332,7 @@ methodVisitor.visitMaxs(4, 5);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "implies", "(Ljakarta/security/auth/Subject;)Z", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "implies", "(Ljavax/security/auth/Subject;)Z", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ICONST_0);
 methodVisitor.visitInsn(IRETURN);

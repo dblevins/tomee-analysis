@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "Lorg/apache/tomcat/dbcp/dbcp2/DelegatingConnection<Ljava/sql/Connection;>;Lorg/apache/tomcat/dbcp/dbcp2/PoolableConnectionMXBean;", "org/apache/tomcat/dbcp/dbcp2/DelegatingConnection", new String[] { "org/apache/tomcat/dbcp/dbcp2/PoolableConnectionMXBean" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "MBEAN_SERVER", "Ljakarta/management/MBeanServer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "MBEAN_SERVER", "Ljavax/management/MBeanServer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -57,14 +57,14 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "fastFailValidati
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool;Ljakarta/management/ObjectName;Ljava/util/Collection;Z)V", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool<Lorg/apache/tomcat/dbcp/dbcp2/PoolableConnection;>;Ljakarta/management/ObjectName;Ljava/util/Collection<Ljava/lang/String;>;Z)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool;Ljavax/management/ObjectName;Ljava/util/Collection;Z)V", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool<Lorg/apache/tomcat/dbcp/dbcp2/PoolableConnection;>;Ljavax/management/ObjectName;Ljava/util/Collection<Ljava/lang/String;>;Z)V", null);
 methodVisitor.visitCode();
 Label label0 = new Label();
 Label label1 = new Label();
 Label label2 = new Label();
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/InstanceAlreadyExistsException");
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/MBeanRegistrationException");
-methodVisitor.visitTryCatchBlock(label0, label1, label2, "jakarta/management/NotCompliantMBeanException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/InstanceAlreadyExistsException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/MBeanRegistrationException");
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/management/NotCompliantMBeanException");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/DelegatingConnection", "<init>", "(Ljava/sql/Connection;)V", false);
@@ -76,7 +76,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "pool", "Lorg/apache/tomcat/dbcp/pool2/ObjectPool;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/dbcp/dbcp2/ObjectNameWrapper", "wrap", "(Ljakarta/management/ObjectName;)Lorg/apache/tomcat/dbcp/dbcp2/ObjectNameWrapper;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/dbcp/dbcp2/ObjectNameWrapper", "wrap", "(Ljavax/management/ObjectName;)Lorg/apache/tomcat/dbcp/dbcp2/ObjectNameWrapper;", false);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "jmxObjectName", "Lorg/apache/tomcat/dbcp/dbcp2/ObjectNameWrapper;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -88,15 +88,15 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label3);
 methodVisitor.visitLabel(label0);
-methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljavax/management/MBeanServer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljakarta/management/ObjectName;)Ljakarta/management/ObjectInstance;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/management/MBeanServer", "registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
-methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "java/sql/Connection", "org/apache/tomcat/dbcp/pool2/ObjectPool", "jakarta/management/ObjectName", "java/util/Collection", Opcodes.INTEGER}, 1, new Object[] {"jakarta/management/JMException"});
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "java/sql/Connection", "org/apache/tomcat/dbcp/pool2/ObjectPool", "javax/management/ObjectName", "java/util/Collection", Opcodes.INTEGER}, 1, new Object[] {"javax/management/JMException"});
 methodVisitor.visitVarInsn(ASTORE, 6);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
@@ -105,7 +105,7 @@ methodVisitor.visitMaxs(3, 7);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool;Ljakarta/management/ObjectName;)V", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool<Lorg/apache/tomcat/dbcp/dbcp2/PoolableConnection;>;Ljakarta/management/ObjectName;)V", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool;Ljavax/management/ObjectName;)V", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool<Lorg/apache/tomcat/dbcp/dbcp2/PoolableConnection;>;Ljavax/management/ObjectName;)V", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
@@ -113,7 +113,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ICONST_1);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "<init>", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool;Ljakarta/management/ObjectName;Ljava/util/Collection;Z)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "<init>", "(Ljava/sql/Connection;Lorg/apache/tomcat/dbcp/pool2/ObjectPool;Ljavax/management/ObjectName;Ljava/util/Collection;Z)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(6, 4);
 methodVisitor.visitEnd();
@@ -643,8 +643,8 @@ Label label2 = new Label();
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/NoClassDefFoundError");
 methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
 methodVisitor.visitLabel(label0);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/management/ManagementFactory", "getPlatformMBeanServer", "()Ljakarta/management/MBeanServer;", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/management/ManagementFactory", "getPlatformMBeanServer", "()Ljavax/management/MBeanServer;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/tomcat/dbcp/dbcp2/PoolableConnection", "MBEAN_SERVER", "Ljavax/management/MBeanServer;");
 methodVisitor.visitLabel(label1);
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label3);

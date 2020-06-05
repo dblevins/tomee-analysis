@@ -5358,7 +5358,7 @@ methodVisitor.visitLabel(label4);
 methodVisitor.visitFrame(Opcodes.F_FULL, 15, new Object[] {"org/apache/tomee/catalina/TomcatWebAppBuilder", "org/apache/catalina/core/StandardContext", "org/apache/catalina/Realm", "java/lang/ClassLoader", "java/lang/Thread", "java/lang/ClassLoader", "org/apache/tomee/catalina/TomcatWebAppBuilder$ContextInfo", "java/lang/String", "org/apache/openejb/assembler/classic/WebAppInfo", "org/apache/catalina/core/NamingContextListener", "java/lang/String", "javax/naming/Context", "javax/naming/Context", "javax/naming/Context", "org/apache/openejb/core/WebContext"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getServletContext", "()Ljakarta/servlet/ServletContext;", false);
-methodVisitor.visitLdcInsn("javax.faces.validator.beanValidator.ValidatorFactory");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.beanValidator.ValidatorFactory");
 methodVisitor.visitVarInsn(ALOAD, 11);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);

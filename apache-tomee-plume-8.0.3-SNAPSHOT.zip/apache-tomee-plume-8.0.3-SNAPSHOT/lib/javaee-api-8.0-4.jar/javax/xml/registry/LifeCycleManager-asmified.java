@@ -181,7 +181,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createExtern
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createExtrinsicObject", "(Ljavax/activation/DataHandler;)Ljavax/xml/registry/infomodel/ExtrinsicObject;", null, new String[] { "javax/xml/registry/JAXRException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createExtrinsicObject", "(Ljakarta/activation/DataHandler;)Ljavax/xml/registry/infomodel/ExtrinsicObject;", null, new String[] { "javax/xml/registry/JAXRException" });
 methodVisitor.visitEnd();
 }
 {

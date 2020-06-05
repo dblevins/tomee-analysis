@@ -25,15 +25,15 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "jakarta/security/auth/message/ServerAuth", null, "java/lang/Object", null);
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "validateRequest", "(Ljakarta/security/auth/message/MessageInfo;Ljakarta/security/auth/Subject;Ljakarta/security/auth/Subject;)Ljakarta/security/auth/message/AuthStatus;", null, new String[] { "jakarta/security/auth/message/AuthException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "validateRequest", "(Ljakarta/security/auth/message/MessageInfo;Ljavax/security/auth/Subject;Ljavax/security/auth/Subject;)Ljakarta/security/auth/message/AuthStatus;", null, new String[] { "jakarta/security/auth/message/AuthException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "secureResponse", "(Ljakarta/security/auth/message/MessageInfo;Ljakarta/security/auth/Subject;)Ljakarta/security/auth/message/AuthStatus;", null, new String[] { "jakarta/security/auth/message/AuthException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "secureResponse", "(Ljakarta/security/auth/message/MessageInfo;Ljavax/security/auth/Subject;)Ljakarta/security/auth/message/AuthStatus;", null, new String[] { "jakarta/security/auth/message/AuthException" });
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cleanSubject", "(Ljakarta/security/auth/message/MessageInfo;Ljakarta/security/auth/Subject;)V", null, new String[] { "jakarta/security/auth/message/AuthException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cleanSubject", "(Ljakarta/security/auth/message/MessageInfo;Ljavax/security/auth/Subject;)V", null, new String[] { "jakarta/security/auth/message/AuthException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

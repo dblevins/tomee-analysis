@@ -192,7 +192,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/persistence/ValidationMode
 Label label8 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label8);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("javax.persistence.validation.factory");
+methodVisitor.visitLdcInsn("jakarta.persistence.validation.factory");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable", "potentialValidators", "Ljava/util/Map;");
 Label label9 = new Label();
@@ -246,7 +246,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemIn
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label11);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("javax.persistence.bean.manager");
+methodVisitor.visitLdcInsn("jakarta.persistence.bean.manager");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/assembler/classic/EntityManagerFactoryCallable", "appClassLoader", "Ljava/lang/ClassLoader;");
 methodVisitor.visitInsn(ICONST_1);

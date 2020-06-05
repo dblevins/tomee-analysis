@@ -31,7 +31,7 @@ classWriter.visitInnerClass("org/apache/tomcat/util/modeler/NoDescriptorRegistry
 classWriter.visitInnerClass("org/apache/tomcat/util/modeler/NoDescriptorRegistry$NoJmxMBeanServer", "org/apache/tomcat/util/modeler/NoDescriptorRegistry", "NoJmxMBeanServer", ACC_PRIVATE | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mBeanServer", "Ljakarta/management/MBeanServer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mBeanServer", "Ljavax/management/MBeanServer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -48,7 +48,7 @@ methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/modeler/NoDescriptorReg
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/modeler/NoDescriptorRegistry$NoJmxMBeanServer", "<init>", "(Lorg/apache/tomcat/util/modeler/NoDescriptorRegistry$1;)V", false);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/NoDescriptorRegistry", "mBeanServer", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/modeler/NoDescriptorRegistry", "mBeanServer", "Ljavax/management/MBeanServer;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/modeler/NoDescriptorRegistry$PassthroughMBean");
 methodVisitor.visitInsn(DUP);
@@ -74,7 +74,7 @@ methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljava/util/List;Ljava/lang/String;Z)V", "(Ljava/util/List<Ljakarta/management/ObjectName;>;Ljava/lang/String;Z)V", new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljava/util/List;Ljava/lang/String;Z)V", "(Ljava/util/List<Ljavax/management/ObjectName;>;Ljava/lang/String;Z)V", new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 4);
@@ -105,7 +105,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "(Ljakarta/management/ObjectName;Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "(Ljavax/management/ObjectName;Ljava/lang/String;)Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -113,7 +113,7 @@ methodVisitor.visitMaxs(1, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethodInfo", "(Ljakarta/management/ObjectName;Ljava/lang/String;)Ljakarta/management/MBeanOperationInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMethodInfo", "(Ljavax/management/ObjectName;Ljava/lang/String;)Ljavax/management/MBeanOperationInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -129,7 +129,7 @@ methodVisitor.visitMaxs(1, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "load", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/util/List;", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/util/List<Ljakarta/management/ObjectName;>;", new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "load", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/util/List;", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/util/List<Ljavax/management/ObjectName;>;", new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyList", "()Ljava/util/List;", false);
 methodVisitor.visitInsn(ARETURN);
@@ -144,24 +144,24 @@ methodVisitor.visitMaxs(0, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerComponent", "(Ljava/lang/Object;Ljakarta/management/ObjectName;Ljava/lang/String;)V", null, new String[] { "java/lang/Exception" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "registerComponent", "(Ljava/lang/Object;Ljavax/management/ObjectName;Ljava/lang/String;)V", null, new String[] { "java/lang/Exception" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unregisterComponent", "(Ljakarta/management/ObjectName;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unregisterComponent", "(Ljavax/management/ObjectName;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanServer", "()Ljakarta/management/MBeanServer;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMBeanServer", "()Ljavax/management/MBeanServer;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/NoDescriptorRegistry", "mBeanServer", "Ljakarta/management/MBeanServer;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/modeler/NoDescriptorRegistry", "mBeanServer", "Ljavax/management/MBeanServer;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

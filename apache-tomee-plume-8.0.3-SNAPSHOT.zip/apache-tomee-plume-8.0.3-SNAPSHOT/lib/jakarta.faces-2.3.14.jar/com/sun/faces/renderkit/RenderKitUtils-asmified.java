@@ -644,7 +644,7 @@ methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/faces/component/behavior/Cl
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getApplication", "()Ljakarta/faces/application/Application;", false);
-methodVisitor.visitLdcInsn("javax.faces.behavior.Ajax");
+methodVisitor.visitLdcInsn("jakarta.faces.behavior.Ajax");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "createBehavior", "(Ljava/lang/String;)Ljakarta/faces/component/behavior/Behavior;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/behavior/AjaxBehavior");
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -2181,7 +2181,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/faces/component/UIOutput", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ASTORE, 0);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax.faces.resource.Script");
+methodVisitor.visitLdcInsn("jakarta.faces.resource.Script");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIOutput", "setRendererType", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIOutput", "getAttributes", "()Ljava/util/Map;", false);

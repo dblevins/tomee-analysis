@@ -25,19 +25,19 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "jakarta/faces/context/PartialViewContext", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARTIAL_EVENT_PARAM_NAME", "Ljava/lang/String;", null, "javax.faces.partial.event");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARTIAL_EVENT_PARAM_NAME", "Ljava/lang/String;", null, "jakarta.faces.partial.event");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARTIAL_RENDER_PARAM_NAME", "Ljava/lang/String;", null, "javax.faces.partial.render");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARTIAL_RENDER_PARAM_NAME", "Ljava/lang/String;", null, "jakarta.faces.partial.render");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARTIAL_EXECUTE_PARAM_NAME", "Ljava/lang/String;", null, "javax.faces.partial.execute");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PARTIAL_EXECUTE_PARAM_NAME", "Ljava/lang/String;", null, "jakarta.faces.partial.execute");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESET_VALUES_PARAM_NAME", "Ljava/lang/String;", null, "javax.faces.partial.resetValues");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESET_VALUES_PARAM_NAME", "Ljava/lang/String;", null, "jakarta.faces.partial.resetValues");
 fieldVisitor.visitEnd();
 }
 {

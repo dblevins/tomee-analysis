@@ -185,7 +185,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/LinkedHashSet", "<init>"
 methodVisitor.visitVarInsn(ASTORE, 7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/startup/WebappServiceLoader", "servletContext", "Ljakarta/servlet/ServletContext;");
-methodVisitor.visitLdcInsn("javax.servlet.context.orderedLibs");
+methodVisitor.visitLdcInsn("jakarta.servlet.context.orderedLibs");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletContext", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
 methodVisitor.visitVarInsn(ASTORE, 8);

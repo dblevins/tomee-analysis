@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/soap/client/http/PipelineFactoryHttpSOAPClient", "<OutboundMessageType:Ljava/lang/Object;InboundMessageType:Ljava/lang/Object;>Lorg/opensaml/soap/client/http/AbstractPipelineHttpSOAPClient<TOutboundMessageType;TInboundMessageType;>;", "org/opensaml/soap/client/http/AbstractPipelineHttpSOAPClient", null);
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/ThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/ThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 {

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_SUPER, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", null, "jakarta/management/NotificationBroadcasterSupport", null);
+classWriter.visit(V1_6, ACC_SUPER, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", null, "javax/management/NotificationBroadcasterSupport", null);
 
 classWriter.visitInnerClass("org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "Emitter", ACC_PRIVATE);
 
@@ -39,17 +39,17 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "this$0", "Lorg/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/NotificationBroadcasterSupport", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/NotificationBroadcasterSupport", "<init>", "()V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNotificationInfo", "()[Ljakarta/management/MBeanNotificationInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "this$0", "Lorg/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl;");
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "getNotificationInfo", "()[Ljakarta/management/MBeanNotificationInfo;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

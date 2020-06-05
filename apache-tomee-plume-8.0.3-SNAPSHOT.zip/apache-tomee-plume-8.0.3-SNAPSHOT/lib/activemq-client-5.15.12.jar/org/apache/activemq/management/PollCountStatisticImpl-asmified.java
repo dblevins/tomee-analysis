@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/management/PollCountStatisticImpl", null, "org/apache/activemq/management/StatisticImpl", new String[] { "jakarta/management/j2ee/statistics/CountStatistic" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/activemq/management/PollCountStatisticImpl", null, "org/apache/activemq/management/StatisticImpl", new String[] { "javax/management/j2ee/statistics/CountStatistic" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parent", "Lorg/apache/activemq/management/PollCountStatisticImpl;", null, null);

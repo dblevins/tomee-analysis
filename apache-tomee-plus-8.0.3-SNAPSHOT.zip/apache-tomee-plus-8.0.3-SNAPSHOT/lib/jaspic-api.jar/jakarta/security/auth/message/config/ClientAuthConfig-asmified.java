@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "jakarta/security/auth/message/config/ClientAuthConfig", null, "java/lang/Object", new String[] { "jakarta/security/auth/message/config/AuthConfig" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAuthContext", "(Ljava/lang/String;Ljakarta/security/auth/Subject;Ljava/util/Map;)Ljakarta/security/auth/message/config/ClientAuthContext;", null, new String[] { "jakarta/security/auth/message/AuthException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAuthContext", "(Ljava/lang/String;Ljavax/security/auth/Subject;Ljava/util/Map;)Ljakarta/security/auth/message/config/ClientAuthContext;", null, new String[] { "jakarta/security/auth/message/AuthException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

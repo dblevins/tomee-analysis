@@ -45,7 +45,7 @@ annotationVisitor0.visitEnd();
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "PERSISTENCE_PROVIDER_PROPERTY", "Ljava/lang/String;", null, "javax.persistence.provider");
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "PERSISTENCE_PROVIDER_PROPERTY", "Ljava/lang/String;", null, "jakarta.persistence.provider");
 fieldVisitor.visitEnd();
 }
 {

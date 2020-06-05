@@ -2784,7 +2784,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitJumpInsn(IFNULL, label1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/coyote/http11/Http11Processor", "request", "Lorg/apache/coyote/Request;");
-methodVisitor.visitLdcInsn("javax.servlet.request.X509Certificate");
+methodVisitor.visitLdcInsn("jakarta.servlet.request.X509Certificate");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/coyote/Request", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
 methodVisitor.visitLabel(label1);

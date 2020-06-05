@@ -281,7 +281,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.faces.visit.SKIP_ITERATION");
+methodVisitor.visitLdcInsn("jakarta.faces.visit.SKIP_ITERATION");
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/application/view/FormOmittedChecker", "SKIP_ITERATION_HINT", "Ljava/lang/String;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 0);

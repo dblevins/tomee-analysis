@@ -566,7 +566,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSubscriptions", "()[Ljakarta/management/ObjectName;", null, new String[] { "java/io/IOException", "jakarta/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSubscriptions", "()[Ljavax/management/ObjectName;", null, new String[] { "java/io/IOException", "javax/management/MalformedObjectNameException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "Subscription MBeans matching this destination");
@@ -575,7 +575,7 @@ annotationVisitor0.visitEnd();
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSlowConsumerStrategy", "()Ljakarta/management/ObjectName;", null, new String[] { "java/io/IOException", "jakarta/management/MalformedObjectNameException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getSlowConsumerStrategy", "()Ljavax/management/ObjectName;", null, new String[] { "java/io/IOException", "javax/management/MalformedObjectNameException" });
 {
 annotationVisitor0 = methodVisitor.visitAnnotation("Lorg/apache/activemq/broker/jmx/MBeanInfo;", true);
 annotationVisitor0.visit("value", "Optional slowConsumer handler MBean for this destination");

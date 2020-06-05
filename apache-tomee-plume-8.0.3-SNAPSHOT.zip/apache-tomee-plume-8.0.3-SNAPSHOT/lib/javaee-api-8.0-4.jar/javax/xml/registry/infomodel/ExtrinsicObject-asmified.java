@@ -29,7 +29,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getMimeType"
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRepositoryItem", "()Ljavax/activation/DataHandler;", null, new String[] { "javax/xml/registry/JAXRException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getRepositoryItem", "()Ljakarta/activation/DataHandler;", null, new String[] { "javax/xml/registry/JAXRException" });
 methodVisitor.visitEnd();
 }
 {
@@ -45,7 +45,7 @@ methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setOpaque", 
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setRepositoryItem", "(Ljavax/activation/DataHandler;)V", null, new String[] { "javax/xml/registry/JAXRException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setRepositoryItem", "(Ljakarta/activation/DataHandler;)V", null, new String[] { "javax/xml/registry/JAXRException" });
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

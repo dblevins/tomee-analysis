@@ -214,7 +214,7 @@ methodVisitor.visitJumpInsn(GOTO, label8);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/SetDataSourceTagSupport", "pageContext", "Ljakarta/servlet/jsp/PageContext;");
-methodVisitor.visitLdcInsn("javax.servlet.jsp.jstl.sql.dataSource");
+methodVisitor.visitLdcInsn("jakarta.servlet.jsp.jstl.sql.dataSource");
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/SetDataSourceTagSupport", "scope", "I");

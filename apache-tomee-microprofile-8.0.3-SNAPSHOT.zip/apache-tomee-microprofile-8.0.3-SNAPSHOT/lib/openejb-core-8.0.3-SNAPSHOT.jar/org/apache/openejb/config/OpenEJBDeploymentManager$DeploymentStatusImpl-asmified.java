@@ -22,16 +22,16 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", null, "java/lang/Object", new String[] { "jakarta/enterprise/deploy/spi/status/DeploymentStatus" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", null, "java/lang/Object", new String[] { "javax/enterprise/deploy/spi/status/DeploymentStatus" });
 
 classWriter.visitInnerClass("org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "org/apache/openejb/config/OpenEJBDeploymentManager", "DeploymentStatusImpl", ACC_PUBLIC | ACC_STATIC);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "command", "Ljakarta/enterprise/deploy/shared/CommandType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "command", "Ljavax/enterprise/deploy/shared/CommandType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "state", "Ljakarta/enterprise/deploy/shared/StateType;", null, null);
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "state", "Ljavax/enterprise/deploy/shared/StateType;", null, null);
 fieldVisitor.visitEnd();
 }
 {
@@ -39,16 +39,16 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "message", "Ljava
 fieldVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/deploy/shared/CommandType;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/deploy/shared/CommandType;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "command", "Ljakarta/enterprise/deploy/shared/CommandType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "command", "Ljavax/enterprise/deploy/shared/CommandType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/deploy/shared/StateType", "COMPLETED", "Ljakarta/enterprise/deploy/shared/StateType;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/deploy/shared/StateType", "COMPLETED", "Ljavax/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "message", "Ljava/lang/String;");
@@ -57,16 +57,16 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljakarta/enterprise/deploy/shared/CommandType;Ljava/lang/Exception;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/deploy/shared/CommandType;Ljava/lang/Exception;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "command", "Ljakarta/enterprise/deploy/shared/CommandType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "command", "Ljavax/enterprise/deploy/shared/CommandType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/deploy/shared/StateType", "FAILED", "Ljakarta/enterprise/deploy/shared/StateType;");
-methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/deploy/shared/StateType", "FAILED", "Ljavax/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitTypeInsn(NEW, "java/io/StringWriter");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/StringWriter", "<init>", "()V", false);
@@ -87,18 +87,18 @@ methodVisitor.visitMaxs(5, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCommand", "()Ljakarta/enterprise/deploy/shared/CommandType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCommand", "()Ljavax/enterprise/deploy/shared/CommandType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "command", "Ljakarta/enterprise/deploy/shared/CommandType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "command", "Ljavax/enterprise/deploy/shared/CommandType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAction", "()Ljakarta/enterprise/deploy/shared/ActionType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAction", "()Ljavax/enterprise/deploy/shared/ActionType;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/deploy/shared/ActionType", "EXECUTE", "Ljakarta/enterprise/deploy/shared/ActionType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/deploy/shared/ActionType", "EXECUTE", "Ljavax/enterprise/deploy/shared/ActionType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -113,10 +113,10 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getState", "()Ljakarta/enterprise/deploy/shared/StateType;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getState", "()Ljavax/enterprise/deploy/shared/StateType;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
@@ -124,9 +124,9 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isRunning", "()Z", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/deploy/shared/StateType", "RUNNING", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/deploy/shared/StateType", "RUNNING", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -135,9 +135,9 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCompleted", "()Z", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/deploy/shared/StateType", "COMPLETED", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/deploy/shared/StateType", "COMPLETED", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -146,9 +146,9 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isFailed", "()Z", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitFieldInsn(GETSTATIC, "jakarta/enterprise/deploy/shared/StateType", "FAILED", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/enterprise/deploy/shared/StateType", "FAILED", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 1);
@@ -165,14 +165,14 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("DeploymentStatus[");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "command", "Ljakarta/enterprise/deploy/shared/CommandType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "command", "Ljavax/enterprise/deploy/shared/CommandType;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitIntInsn(BIPUSH, 44);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(C)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljakarta/enterprise/deploy/shared/StateType;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl", "state", "Ljavax/enterprise/deploy/shared/StateType;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 0);

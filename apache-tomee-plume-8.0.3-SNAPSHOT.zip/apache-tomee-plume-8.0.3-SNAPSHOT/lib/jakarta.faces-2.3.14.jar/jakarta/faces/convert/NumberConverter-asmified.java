@@ -29,23 +29,23 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CONV
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CURRENCY_ID", "Ljava/lang/String;", null, "javax.faces.converter.NumberConverter.CURRENCY");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CURRENCY_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.NumberConverter.CURRENCY");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NUMBER_ID", "Ljava/lang/String;", null, "javax.faces.converter.NumberConverter.NUMBER");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "NUMBER_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.NumberConverter.NUMBER");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PATTERN_ID", "Ljava/lang/String;", null, "javax.faces.converter.NumberConverter.PATTERN");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PATTERN_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.NumberConverter.PATTERN");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PERCENT_ID", "Ljava/lang/String;", null, "javax.faces.converter.NumberConverter.PERCENT");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PERCENT_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.NumberConverter.PERCENT");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "STRING_ID", "Ljava/lang/String;", null, "javax.faces.converter.STRING");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "STRING_ID", "Ljava/lang/String;", null, "jakarta.faces.converter.STRING");
 fieldVisitor.visitEnd();
 }
 {
@@ -662,7 +662,7 @@ methodVisitor.visitJumpInsn(IFNULL, label21);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.NumberConverter.PATTERN");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.NumberConverter.PATTERN");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -694,7 +694,7 @@ methodVisitor.visitJumpInsn(IFEQ, label22);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.NumberConverter.CURRENCY");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.NumberConverter.CURRENCY");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -728,7 +728,7 @@ methodVisitor.visitJumpInsn(IFEQ, label23);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.NumberConverter.NUMBER");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.NumberConverter.NUMBER");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -762,7 +762,7 @@ methodVisitor.visitJumpInsn(IFEQ, label24);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.NumberConverter.PERCENT");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.NumberConverter.PERCENT");
 methodVisitor.visitInsn(ICONST_3);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -895,7 +895,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.STRING");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.STRING");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);
@@ -918,7 +918,7 @@ methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitTypeInsn(NEW, "jakarta/faces/convert/ConverterException");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.faces.converter.STRING");
+methodVisitor.visitLdcInsn("jakarta.faces.converter.STRING");
 methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
 methodVisitor.visitInsn(DUP);

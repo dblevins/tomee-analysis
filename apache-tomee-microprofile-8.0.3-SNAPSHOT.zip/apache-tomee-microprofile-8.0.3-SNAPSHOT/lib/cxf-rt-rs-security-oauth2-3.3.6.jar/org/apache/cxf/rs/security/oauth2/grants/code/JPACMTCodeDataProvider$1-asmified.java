@@ -63,7 +63,7 @@ methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/grants
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider", "access$000", "(Lorg/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider;)I", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFLE, label0);
-methodVisitor.visitLdcInsn("javax.persistence.lock.timeout");
+methodVisitor.visitLdcInsn("jakarta.persistence.lock.timeout");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider$1", "this$0", "Lorg/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider", "access$000", "(Lorg/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider;)I", false);

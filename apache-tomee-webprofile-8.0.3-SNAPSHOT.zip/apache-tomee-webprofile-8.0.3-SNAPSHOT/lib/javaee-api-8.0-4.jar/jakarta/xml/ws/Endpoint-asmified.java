@@ -25,11 +25,11 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "jakarta/xml/ws/Endpoint", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_SERVICE", "Ljava/lang/String;", null, "javax.xml.ws.wsdl.service");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_SERVICE", "Ljava/lang/String;", null, "jakarta.xml.ws.wsdl.service");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_PORT", "Ljava/lang/String;", null, "javax.xml.ws.wsdl.port");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "WSDL_PORT", "Ljava/lang/String;", null, "jakarta.xml.ws.wsdl.port");
 fieldVisitor.visitEnd();
 }
 {

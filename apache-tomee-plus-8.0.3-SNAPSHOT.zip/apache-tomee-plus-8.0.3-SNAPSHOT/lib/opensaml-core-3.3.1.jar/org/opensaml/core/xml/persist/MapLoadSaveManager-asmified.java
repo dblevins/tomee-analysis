@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/core/xml/persist/MapLoadSaveManager", "<T::Lorg/opensaml/core/xml/XMLObject;>Ljava/lang/Object;Lorg/opensaml/core/xml/persist/XMLObjectLoadSaveManager<TT;>;", "java/lang/Object", new String[] { "org/opensaml/core/xml/persist/XMLObjectLoadSaveManager" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/NotThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/NotThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 {

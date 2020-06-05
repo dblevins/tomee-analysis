@@ -45,7 +45,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DISA
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATOR_FACTORY_KEY", "Ljava/lang/String;", null, "javax.faces.validator.beanValidator.ValidatorFactory");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "VALIDATOR_FACTORY_KEY", "Ljava/lang/String;", null, "jakarta.faces.validator.beanValidator.ValidatorFactory");
 fieldVisitor.visitEnd();
 }
 {
@@ -473,7 +473,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getApplicationMap", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.faces.validator.beanValidator.ValidatorFactory");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.beanValidator.ValidatorFactory");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 3);
@@ -495,7 +495,7 @@ methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/validation/Validation", "buildDefaultValidatorFactory", "()Ljakarta/validation/ValidatorFactory;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax.faces.validator.beanValidator.ValidatorFactory");
+methodVisitor.visitLdcInsn("jakarta.faces.validator.beanValidator.ValidatorFactory");
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);

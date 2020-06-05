@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/NoWriter", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/cache/integration/CacheWriter<TK;TV;>;", "java/lang/Object", new String[] { "jakarta/cache/integration/CacheWriter" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/NoWriter", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/cache/integration/CacheWriter<TK;TV;>;", "java/lang/Object", new String[] { "javax/cache/integration/CacheWriter" });
 
-classWriter.visitInnerClass("jakarta/cache/Cache$Entry", "jakarta/cache/Cache", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+classWriter.visitInnerClass("javax/cache/Cache$Entry", "javax/cache/Cache", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Lorg/apache/commons/jcs/jcache/NoWriter;", null, null);
@@ -40,21 +40,21 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Ljakarta/cache/Cache$Entry;)V", "(Ljakarta/cache/Cache$Entry<+TK;+TV;>;)V", new String[] { "jakarta/cache/integration/CacheWriterException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Ljavax/cache/Cache$Entry;)V", "(Ljavax/cache/Cache$Entry<+TK;+TV;>;)V", new String[] { "javax/cache/integration/CacheWriterException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delete", "(Ljava/lang/Object;)V", null, new String[] { "jakarta/cache/integration/CacheWriterException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "delete", "(Ljava/lang/Object;)V", null, new String[] { "javax/cache/integration/CacheWriterException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(0, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeAll", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<Ljakarta/cache/Cache$Entry<+TK;+TV;>;>;)V", new String[] { "jakarta/cache/integration/CacheWriterException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeAll", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<Ljavax/cache/Cache$Entry<+TK;+TV;>;>;)V", new String[] { "javax/cache/integration/CacheWriterException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);
@@ -68,11 +68,11 @@ Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
-methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/cache/Cache$Entry");
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/cache/Cache$Entry");
 methodVisitor.visitVarInsn(ASTORE, 3);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/NoWriter", "write", "(Ljakarta/cache/Cache$Entry;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/commons/jcs/jcache/NoWriter", "write", "(Ljavax/cache/Cache$Entry;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label0);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -81,7 +81,7 @@ methodVisitor.visitMaxs(2, 4);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deleteAll", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<*>;)V", new String[] { "jakarta/cache/integration/CacheWriterException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deleteAll", "(Ljava/util/Collection;)V", "(Ljava/util/Collection<*>;)V", new String[] { "javax/cache/integration/CacheWriterException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);

@@ -25,27 +25,27 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "jakarta/servlet/AsyncContext", null, "java/lang/Object", null);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_REQUEST_URI", "Ljava/lang/String;", null, "javax.servlet.async.request_uri");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_REQUEST_URI", "Ljava/lang/String;", null, "jakarta.servlet.async.request_uri");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_CONTEXT_PATH", "Ljava/lang/String;", null, "javax.servlet.async.context_path");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_CONTEXT_PATH", "Ljava/lang/String;", null, "jakarta.servlet.async.context_path");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_MAPPING", "Ljava/lang/String;", null, "javax.servlet.async.mapping");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_MAPPING", "Ljava/lang/String;", null, "jakarta.servlet.async.mapping");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_PATH_INFO", "Ljava/lang/String;", null, "javax.servlet.async.path_info");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_PATH_INFO", "Ljava/lang/String;", null, "jakarta.servlet.async.path_info");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_SERVLET_PATH", "Ljava/lang/String;", null, "javax.servlet.async.servlet_path");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_SERVLET_PATH", "Ljava/lang/String;", null, "jakarta.servlet.async.servlet_path");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_QUERY_STRING", "Ljava/lang/String;", null, "javax.servlet.async.query_string");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ASYNC_QUERY_STRING", "Ljava/lang/String;", null, "jakarta.servlet.async.query_string");
 fieldVisitor.visitEnd();
 }
 {

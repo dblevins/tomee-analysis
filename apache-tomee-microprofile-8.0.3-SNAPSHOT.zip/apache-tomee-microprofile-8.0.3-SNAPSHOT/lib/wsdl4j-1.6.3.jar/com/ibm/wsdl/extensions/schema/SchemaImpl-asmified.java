@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/schema/SchemaImpl", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/schema/Schema" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/schema/SchemaImpl", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/schema/Schema" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "elementType", "Ljavax/xml/namespace/QName;", null, null);
@@ -102,7 +102,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createImport", "()Ljakarta/wsdl/extensions/schema/SchemaImport;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createImport", "()Ljavax/wsdl/extensions/schema/SchemaImport;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/extensions/schema/SchemaImportImpl");
 methodVisitor.visitInsn(DUP);
@@ -112,10 +112,10 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addImport", "(Ljakarta/wsdl/extensions/schema/SchemaImport;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addImport", "(Ljavax/wsdl/extensions/schema/SchemaImport;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/wsdl/extensions/schema/SchemaImport", "getNamespaceURI", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/wsdl/extensions/schema/SchemaImport", "getNamespaceURI", "()Ljava/lang/String;", true);
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/schema/SchemaImpl", "imports", "Ljava/util/Map;");
@@ -155,7 +155,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInclude", "()Ljakarta/wsdl/extensions/schema/SchemaReference;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createInclude", "()Ljavax/wsdl/extensions/schema/SchemaReference;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl");
 methodVisitor.visitInsn(DUP);
@@ -165,7 +165,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addInclude", "(Ljakarta/wsdl/extensions/schema/SchemaReference;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addInclude", "(Ljavax/wsdl/extensions/schema/SchemaReference;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/schema/SchemaImpl", "includes", "Ljava/util/List;");
@@ -186,7 +186,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createRedefine", "()Ljakarta/wsdl/extensions/schema/SchemaReference;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createRedefine", "()Ljavax/wsdl/extensions/schema/SchemaReference;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "com/ibm/wsdl/extensions/schema/SchemaReferenceImpl");
 methodVisitor.visitInsn(DUP);
@@ -196,7 +196,7 @@ methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRedefine", "(Ljakarta/wsdl/extensions/schema/SchemaReference;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addRedefine", "(Ljavax/wsdl/extensions/schema/SchemaReference;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/schema/SchemaImpl", "redefines", "Ljava/util/List;");

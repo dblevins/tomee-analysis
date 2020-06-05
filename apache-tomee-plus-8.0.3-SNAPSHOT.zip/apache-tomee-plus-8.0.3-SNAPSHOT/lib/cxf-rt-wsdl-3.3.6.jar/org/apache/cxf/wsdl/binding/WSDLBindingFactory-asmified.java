@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/cxf/wsdl/binding/WSDLBindingFactory", null, "java/lang/Object", new String[] { "org/apache/cxf/binding/BindingFactory" });
 
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createBindingInfo", "(Lorg/apache/cxf/service/model/ServiceInfo;Ljakarta/wsdl/Binding;Ljava/lang/String;)Lorg/apache/cxf/service/model/BindingInfo;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "createBindingInfo", "(Lorg/apache/cxf/service/model/ServiceInfo;Ljavax/wsdl/Binding;Ljava/lang/String;)Lorg/apache/cxf/service/model/BindingInfo;", null, null);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

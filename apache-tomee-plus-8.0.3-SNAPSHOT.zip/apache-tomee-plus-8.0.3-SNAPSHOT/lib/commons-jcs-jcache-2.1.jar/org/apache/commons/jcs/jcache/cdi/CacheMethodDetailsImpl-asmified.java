@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "<A::Ljava/lang/annotation/Annotation;>Ljava/lang/Object;Ljakarta/cache/annotation/CacheMethodDetails<TA;>;", "java/lang/Object", new String[] { "jakarta/cache/annotation/CacheMethodDetails" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/cdi/CacheMethodDetailsImpl", "<A::Ljava/lang/annotation/Annotation;>Ljava/lang/Object;Ljavax/cache/annotation/CacheMethodDetails<TA;>;", "java/lang/Object", new String[] { "javax/cache/annotation/CacheMethodDetails" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "delegate", "Ljakarta/interceptor/InvocationContext;", null, null);

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "org/eclipse/persistence/platform/server/JMXServerPlatformBase$1", null, "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("org/eclipse/persistence/platform/server/JMXServerPlatformBase", "getMBeanServer", "()Ljakarta/management/MBeanServer;");
+classWriter.visitOuterClass("org/eclipse/persistence/platform/server/JMXServerPlatformBase", "getMBeanServer", "()Ljavax/management/MBeanServer;");
 
 classWriter.visitInnerClass("org/eclipse/persistence/platform/server/JMXServerPlatformBase$1", null, null, 0);
 
@@ -45,10 +45,10 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/util/List;", "()Ljava/util/List<Ljakarta/management/MBeanServer;>;", null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()Ljava/util/List;", "()Ljava/util/List<Ljavax/management/MBeanServer;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
-methodVisitor.visitMethodInsn(INVOKESTATIC, "jakarta/management/MBeanServerFactory", "findMBeanServer", "(Ljava/lang/String;)Ljava/util/ArrayList;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/management/MBeanServerFactory", "findMBeanServer", "(Ljava/lang/String;)Ljava/util/ArrayList;", false);
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

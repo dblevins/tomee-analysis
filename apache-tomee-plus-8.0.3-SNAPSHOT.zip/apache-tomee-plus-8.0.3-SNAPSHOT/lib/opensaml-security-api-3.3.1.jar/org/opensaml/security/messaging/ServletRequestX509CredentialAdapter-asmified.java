@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/security/messaging/ServletRequestX509CredentialAdapter", null, "org/opensaml/security/credential/AbstractCredential", new String[] { "org/opensaml/security/x509/X509Credential" });
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "X509_CERT_REQUEST_ATTRIBUTE", "Ljava/lang/String;", null, "javax.servlet.request.X509Certificate");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "X509_CERT_REQUEST_ATTRIBUTE", "Ljava/lang/String;", null, "jakarta.servlet.request.X509Certificate");
 fieldVisitor.visitEnd();
 }
 {
@@ -42,7 +42,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/security/credential/AbstractCredential", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax.servlet.request.X509Certificate");
+methodVisitor.visitLdcInsn("jakarta.servlet.request.X509Certificate");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/ServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/security/cert/X509Certificate;");
 methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/security/cert/X509Certificate;");
@@ -58,7 +58,7 @@ methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/opensaml/security/messaging/ServletRequestX509CredentialAdapter", "jakarta/servlet/ServletRequest", "[Ljava/security/cert/X509Certificate;"}, 0, new Object[] {});
 methodVisitor.visitTypeInsn(NEW, "org/opensaml/security/SecurityException");
 methodVisitor.visitInsn(DUP);
-methodVisitor.visitLdcInsn("Servlet request does not contain X.509 certificates in attribute javax.servlet.request.X509Certificate");
+methodVisitor.visitLdcInsn("Servlet request does not contain X.509 certificates in attribute jakarta.servlet.request.X509Certificate");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/security/SecurityException", "<init>", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label1);

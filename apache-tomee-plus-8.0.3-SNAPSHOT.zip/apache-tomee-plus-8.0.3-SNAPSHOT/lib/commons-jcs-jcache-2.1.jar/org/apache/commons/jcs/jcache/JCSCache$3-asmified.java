@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCache$3", "Ljava/lang/Object;Ljakarta/cache/processor/EntryProcessorResult<TT;>;", "java/lang/Object", new String[] { "jakarta/cache/processor/EntryProcessorResult" });
+classWriter.visit(V1_6, ACC_SUPER, "org/apache/commons/jcs/jcache/JCSCache$3", "Ljava/lang/Object;Ljavax/cache/processor/EntryProcessorResult<TT;>;", "java/lang/Object", new String[] { "javax/cache/processor/EntryProcessorResult" });
 
-classWriter.visitOuterClass("org/apache/commons/jcs/jcache/JCSCache", "invokeAll", "(Ljava/util/Set;Ljakarta/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/util/Map;");
+classWriter.visitOuterClass("org/apache/commons/jcs/jcache/JCSCache", "invokeAll", "(Ljava/util/Set;Ljavax/cache/processor/EntryProcessor;[Ljava/lang/Object;)Ljava/util/Map;");
 
 classWriter.visitInnerClass("org/apache/commons/jcs/jcache/JCSCache$3", null, null, 0);
 
@@ -52,7 +52,7 @@ methodVisitor.visitMaxs(2, 3);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljava/lang/Object;", "()TT;", new String[] { "jakarta/cache/processor/EntryProcessorException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "()Ljava/lang/Object;", "()TT;", new String[] { "javax/cache/processor/EntryProcessorException" });
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/commons/jcs/jcache/JCSCache$3", "val$e", "Ljava/lang/Exception;");

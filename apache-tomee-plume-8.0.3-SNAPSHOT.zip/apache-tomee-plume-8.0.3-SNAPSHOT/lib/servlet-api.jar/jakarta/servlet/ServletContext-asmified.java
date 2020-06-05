@@ -29,11 +29,11 @@ classWriter.visitInnerClass("jakarta/servlet/ServletRegistration$Dynamic", "jaka
 classWriter.visitInnerClass("jakarta/servlet/FilterRegistration$Dynamic", "jakarta/servlet/FilterRegistration", "Dynamic", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TEMPDIR", "Ljava/lang/String;", null, "javax.servlet.context.tempdir");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "TEMPDIR", "Ljava/lang/String;", null, "jakarta.servlet.context.tempdir");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ORDERED_LIBS", "Ljava/lang/String;", null, "javax.servlet.context.orderedLibs");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "ORDERED_LIBS", "Ljava/lang/String;", null, "jakarta.servlet.context.orderedLibs");
 fieldVisitor.visitEnd();
 }
 {

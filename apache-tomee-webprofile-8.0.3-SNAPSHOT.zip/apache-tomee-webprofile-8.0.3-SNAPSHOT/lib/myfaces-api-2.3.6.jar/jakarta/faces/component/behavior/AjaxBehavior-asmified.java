@@ -27,7 +27,7 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "jakarta/faces/component/behavio
 classWriter.visitInnerClass("jakarta/faces/component/behavior/AjaxBehavior$PropertyKeys", "jakarta/faces/component/behavior/AjaxBehavior", "PropertyKeys", ACC_PRIVATE | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "BEHAVIOR_ID", "Ljava/lang/String;", null, "javax.faces.behavior.Ajax");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "BEHAVIOR_ID", "Ljava/lang/String;", null, "jakarta.faces.behavior.Ajax");
 fieldVisitor.visitEnd();
 }
 {
@@ -521,7 +521,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRendererType", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("javax.faces.behavior.Ajax");
+methodVisitor.visitLdcInsn("jakarta.faces.behavior.Ajax");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/mime/MIMEPartImpl", null, "java/lang/Object", new String[] { "jakarta/wsdl/extensions/mime/MIMEPart" });
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "com/ibm/wsdl/extensions/mime/MIMEPartImpl", null, "java/lang/Object", new String[] { "javax/wsdl/extensions/mime/MIMEPart" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PROTECTED, "elementType", "Ljavax/xml/namespace/QName;", null, null);
@@ -99,7 +99,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addExtensibilityElement", "(Ljakarta/wsdl/extensions/ExtensibilityElement;)V", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addExtensibilityElement", "(Ljavax/wsdl/extensions/ExtensibilityElement;)V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/mime/MIMEPartImpl", "extElements", "Ljava/util/List;");
@@ -111,7 +111,7 @@ methodVisitor.visitMaxs(2, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeExtensibilityElement", "(Ljakarta/wsdl/extensions/ExtensibilityElement;)Ljakarta/wsdl/extensions/ExtensibilityElement;", null, null);
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeExtensibilityElement", "(Ljavax/wsdl/extensions/ExtensibilityElement;)Ljavax/wsdl/extensions/ExtensibilityElement;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "com/ibm/wsdl/extensions/mime/MIMEPartImpl", "extElements", "Ljava/util/List;");

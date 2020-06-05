@@ -29,7 +29,7 @@ classWriter.visitInnerClass("com/sun/faces/lifecycle/RestoreViewPhase$1", null, 
 classWriter.visitInnerClass("com/sun/faces/config/WebConfiguration$BooleanWebContextInitParameter", "com/sun/faces/config/WebConfiguration", "BooleanWebContextInitParameter", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEBAPP_ERROR_PAGE_MARKER", "Ljava/lang/String;", null, "javax.servlet.error.message");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "WEBAPP_ERROR_PAGE_MARKER", "Ljava/lang/String;", null, "jakarta.servlet.error.message");
 fieldVisitor.visitEnd();
 }
 {
@@ -165,7 +165,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getRequestMap", "()Ljava/util/Map;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("javax.servlet.include.path_info");
+methodVisitor.visitLdcInsn("jakarta.servlet.include.path_info");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -182,7 +182,7 @@ methodVisitor.visitVarInsn(ALOAD, 5);
 Label label12 = new Label();
 methodVisitor.visitJumpInsn(IFNONNULL, label12);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("javax.servlet.include.servlet_path");
+methodVisitor.visitLdcInsn("jakarta.servlet.include.servlet_path");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 5);
@@ -1207,7 +1207,7 @@ methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getRequestMap", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax.servlet.error.message");
+methodVisitor.visitLdcInsn("jakarta.servlet.error.message");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label0);
@@ -1274,7 +1274,7 @@ methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/lifecycle/RestoreViewPhas
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/util/FacesLogger", "LIFECYCLE", "Lcom/sun/faces/util/FacesLogger;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/faces/util/FacesLogger", "getLogger", "()Ljava/util/logging/Logger;", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/lifecycle/RestoreViewPhase", "LOGGER", "Ljava/util/logging/Logger;");
-methodVisitor.visitLdcInsn("javax.faces.visit.SKIP_ITERATION");
+methodVisitor.visitLdcInsn("jakarta.faces.visit.SKIP_ITERATION");
 methodVisitor.visitFieldInsn(PUTSTATIC, "com/sun/faces/lifecycle/RestoreViewPhase", "SKIP_ITERATION_HINT", "Ljava/lang/String;");
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(1, 0);

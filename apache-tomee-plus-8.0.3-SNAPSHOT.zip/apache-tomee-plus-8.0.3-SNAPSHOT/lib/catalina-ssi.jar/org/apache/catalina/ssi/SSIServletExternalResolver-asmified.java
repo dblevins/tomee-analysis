@@ -1017,7 +1017,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/ssi/SSIServletExternalResolver", "req", "Ljakarta/servlet/http/HttpServletRequest;");
-methodVisitor.visitLdcInsn("javax.servlet.forward.request_uri");
+methodVisitor.visitLdcInsn("jakarta.servlet.forward.request_uri");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "jakarta/servlet/http/HttpServletRequest", "getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 2);

@@ -25,7 +25,7 @@ AnnotationVisitor annotationVisitor0;
 classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "net/shibboleth/utilities/java/support/xml/SimpleNamespaceContext", null, "java/lang/Object", new String[] { "javax/xml/namespace/NamespaceContext" });
 
 {
-annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/concurrent/ThreadSafe;", false);
+annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/annotation/concurrent/ThreadSafe;", false);
 annotationVisitor0.visitEnd();
 }
 classWriter.visitInnerClass("com/google/common/collect/ImmutableBiMap$Builder", "com/google/common/collect/ImmutableBiMap", "Builder", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);

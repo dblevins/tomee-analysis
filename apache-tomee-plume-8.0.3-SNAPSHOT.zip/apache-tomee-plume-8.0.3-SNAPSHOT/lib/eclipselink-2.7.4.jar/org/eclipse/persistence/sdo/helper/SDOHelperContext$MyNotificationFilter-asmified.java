@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/sdo/helper/SDOHelperContext$MyNotificationFilter", null, "jakarta/management/NotificationFilterSupport", null);
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/sdo/helper/SDOHelperContext$MyNotificationFilter", null, "javax/management/NotificationFilterSupport", null);
 
 classWriter.visitInnerClass("org/eclipse/persistence/sdo/helper/SDOHelperContext$MyNotificationFilter", "org/eclipse/persistence/sdo/helper/SDOHelperContext", "MyNotificationFilter", ACC_PUBLIC | ACC_STATIC);
 
@@ -30,10 +30,10 @@ classWriter.visitInnerClass("org/eclipse/persistence/sdo/helper/SDOHelperContext
 methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/NotificationFilterSupport", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/NotificationFilterSupport", "<init>", "()V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/sdo/helper/SDOHelperContext", "access$0", "()Ljava/lang/String;", false);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "jakarta/management/NotificationFilterSupport", "enableType", "(Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/management/NotificationFilterSupport", "enableType", "(Ljava/lang/String;)V", false);
 methodVisitor.visitInsn(RETURN);
 methodVisitor.visitMaxs(2, 1);
 methodVisitor.visitEnd();

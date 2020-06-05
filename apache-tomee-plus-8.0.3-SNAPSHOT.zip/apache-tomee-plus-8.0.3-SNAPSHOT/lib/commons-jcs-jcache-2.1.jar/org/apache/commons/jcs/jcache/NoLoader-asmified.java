@@ -22,7 +22,7 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/NoLoader", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljakarta/cache/integration/CacheLoader<TK;TV;>;", "java/lang/Object", new String[] { "jakarta/cache/integration/CacheLoader" });
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/commons/jcs/jcache/NoLoader", "<K:Ljava/lang/Object;V:Ljava/lang/Object;>Ljava/lang/Object;Ljavax/cache/integration/CacheLoader<TK;TV;>;", "java/lang/Object", new String[] { "javax/cache/integration/CacheLoader" });
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INSTANCE", "Lorg/apache/commons/jcs/jcache/NoLoader;", null, null);
@@ -38,7 +38,7 @@ methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "load", "(Ljava/lang/Object;)Ljava/lang/Object;", "(TK;)TV;", new String[] { "jakarta/cache/integration/CacheLoaderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "load", "(Ljava/lang/Object;)Ljava/lang/Object;", "(TK;)TV;", new String[] { "javax/cache/integration/CacheLoaderException" });
 methodVisitor.visitCode();
 methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitInsn(ARETURN);
@@ -46,7 +46,7 @@ methodVisitor.visitMaxs(1, 2);
 methodVisitor.visitEnd();
 }
 {
-methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadAll", "(Ljava/lang/Iterable;)Ljava/util/Map;", "(Ljava/lang/Iterable<+TK;>;)Ljava/util/Map<TK;TV;>;", new String[] { "jakarta/cache/integration/CacheLoaderException" });
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadAll", "(Ljava/lang/Iterable;)Ljava/util/Map;", "(Ljava/lang/Iterable<+TK;>;)Ljava/util/Map<TK;TV;>;", new String[] { "javax/cache/integration/CacheLoaderException" });
 methodVisitor.visitCode();
 methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
 methodVisitor.visitInsn(DUP);
