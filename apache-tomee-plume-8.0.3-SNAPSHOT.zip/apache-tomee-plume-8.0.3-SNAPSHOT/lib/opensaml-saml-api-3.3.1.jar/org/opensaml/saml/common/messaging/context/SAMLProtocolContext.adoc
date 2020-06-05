@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/context/SAMLProtocolContext.class
-
- - link:SAMLProtocolContext-asmified.java[Asmified]
-
-== References
-

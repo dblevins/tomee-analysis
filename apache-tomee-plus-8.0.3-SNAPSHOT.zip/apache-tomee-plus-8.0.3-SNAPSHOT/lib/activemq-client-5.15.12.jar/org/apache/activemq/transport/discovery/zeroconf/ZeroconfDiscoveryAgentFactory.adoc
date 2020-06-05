@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/zeroconf/ZeroconfDiscoveryAgentFactory.class
-
- - link:ZeroconfDiscoveryAgentFactory-asmified.java[Asmified]
-
-== References
-

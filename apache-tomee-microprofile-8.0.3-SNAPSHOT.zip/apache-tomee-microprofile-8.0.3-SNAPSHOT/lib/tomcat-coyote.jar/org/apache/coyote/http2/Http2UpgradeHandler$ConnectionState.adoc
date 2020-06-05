@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/Http2UpgradeHandler$ConnectionState.class
-
- - link:Http2UpgradeHandler$ConnectionState-asmified.java[Asmified]
-
-== References
-

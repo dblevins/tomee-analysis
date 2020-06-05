@@ -1,6 +1,0 @@
-= org/apache/cxf/workqueue/AutomaticWorkQueue.class
-
- - link:AutomaticWorkQueue-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/ConfigurableImpl$Instantiator.class
-
- - link:ConfigurableImpl$Instantiator-asmified.java[Asmified]
-
-== References
-

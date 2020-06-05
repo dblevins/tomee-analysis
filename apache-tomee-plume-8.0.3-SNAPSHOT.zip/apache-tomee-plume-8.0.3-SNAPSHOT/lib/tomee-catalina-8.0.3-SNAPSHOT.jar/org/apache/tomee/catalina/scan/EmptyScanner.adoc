@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/scan/EmptyScanner.class
-
- - link:EmptyScanner-asmified.java[Asmified]
-
-== References
-

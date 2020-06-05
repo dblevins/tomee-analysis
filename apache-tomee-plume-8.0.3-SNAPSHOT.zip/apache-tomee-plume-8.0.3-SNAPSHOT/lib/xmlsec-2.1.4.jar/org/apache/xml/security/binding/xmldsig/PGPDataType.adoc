@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/PGPDataType.class
-
- - link:PGPDataType-asmified.java[Asmified]
-
-== References
-

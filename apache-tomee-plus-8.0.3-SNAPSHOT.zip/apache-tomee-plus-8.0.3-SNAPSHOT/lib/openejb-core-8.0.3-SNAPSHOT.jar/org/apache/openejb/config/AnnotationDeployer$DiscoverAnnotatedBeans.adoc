@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AnnotationDeployer$DiscoverAnnotatedBeans.class
-
- - link:AnnotationDeployer$DiscoverAnnotatedBeans-asmified.java[Asmified]
-
-== References
-

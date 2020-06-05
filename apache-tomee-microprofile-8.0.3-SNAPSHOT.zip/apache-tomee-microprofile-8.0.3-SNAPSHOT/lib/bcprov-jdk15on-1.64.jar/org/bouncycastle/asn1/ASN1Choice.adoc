@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/ASN1Choice.class
-
- - link:ASN1Choice-asmified.java[Asmified]
-
-== References
-

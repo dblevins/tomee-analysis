@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/io/IOContext.class
-
- - link:IOContext-asmified.java[Asmified]
-
-== References
-

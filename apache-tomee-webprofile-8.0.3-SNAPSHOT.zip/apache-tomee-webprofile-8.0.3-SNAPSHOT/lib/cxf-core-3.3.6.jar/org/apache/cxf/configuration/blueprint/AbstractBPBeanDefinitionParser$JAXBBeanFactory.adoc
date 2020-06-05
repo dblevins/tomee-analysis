@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/blueprint/AbstractBPBeanDefinitionParser$JAXBBeanFactory.class
-
- - link:AbstractBPBeanDefinitionParser$JAXBBeanFactory-asmified.java[Asmified]
-
-== References
-

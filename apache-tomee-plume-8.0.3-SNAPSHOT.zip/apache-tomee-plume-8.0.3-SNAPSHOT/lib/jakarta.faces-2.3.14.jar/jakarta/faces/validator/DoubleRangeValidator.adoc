@@ -1,6 +1,0 @@
-= jakarta/faces/validator/DoubleRangeValidator.class
-
- - link:DoubleRangeValidator-asmified.java[Asmified]
-
-== References
-

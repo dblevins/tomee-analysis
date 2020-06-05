@@ -1,6 +1,0 @@
-= org/apache/activemq/store/PListStore.class
-
- - link:PListStore-asmified.java[Asmified]
-
-== References
-

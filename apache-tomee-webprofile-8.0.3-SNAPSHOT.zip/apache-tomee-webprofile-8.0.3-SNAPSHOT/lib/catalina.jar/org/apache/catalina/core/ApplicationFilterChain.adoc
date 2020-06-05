@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationFilterChain.class
-
- - link:ApplicationFilterChain-asmified.java[Asmified]
-
-== References
-

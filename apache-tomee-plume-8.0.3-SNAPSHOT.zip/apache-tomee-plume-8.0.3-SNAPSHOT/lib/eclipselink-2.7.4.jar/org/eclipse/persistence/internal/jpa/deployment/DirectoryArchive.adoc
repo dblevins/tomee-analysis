@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/DirectoryArchive.class
-
- - link:DirectoryArchive-asmified.java[Asmified]
-
-== References
-

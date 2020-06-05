@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/HashMapEditor.class
-
- - link:HashMapEditor-asmified.java[Asmified]
-
-== References
-

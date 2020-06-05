@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/rcm/RemoteCommandManagerConfig.class
-
- - link:RemoteCommandManagerConfig-asmified.java[Asmified]
-
-== References
-

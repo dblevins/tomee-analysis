@@ -1,6 +1,0 @@
-= org/fusesource/hawtbuf/codec/VarSignedIntegerCodec.class
-
- - link:VarSignedIntegerCodec-asmified.java[Asmified]
-
-== References
-

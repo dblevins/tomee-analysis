@@ -1,6 +1,0 @@
-= jakarta/websocket/ContainerProvider.class
-
- - link:ContainerProvider-asmified.java[Asmified]
-
-== References
-

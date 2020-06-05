@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlSelectOneMenuTag.class
-
- - link:HtmlSelectOneMenuTag-asmified.java[Asmified]
-
-== References
-

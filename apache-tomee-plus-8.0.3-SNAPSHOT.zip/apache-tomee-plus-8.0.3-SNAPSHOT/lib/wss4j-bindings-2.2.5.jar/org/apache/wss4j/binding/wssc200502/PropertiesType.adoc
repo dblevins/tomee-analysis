@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wssc200502/PropertiesType.class
-
- - link:PropertiesType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/context/Flash.class
-
- - link:Flash-asmified.java[Asmified]
-
-== References
-

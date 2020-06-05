@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2cb/impl/ChannelBindingsUnmarshaller.class
-
- - link:ChannelBindingsUnmarshaller-asmified.java[Asmified]
-
-== References
-

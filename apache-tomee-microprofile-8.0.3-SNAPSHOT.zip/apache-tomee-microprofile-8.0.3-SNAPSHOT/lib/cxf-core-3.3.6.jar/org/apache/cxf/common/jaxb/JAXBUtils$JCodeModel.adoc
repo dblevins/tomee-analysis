@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBUtils$JCodeModel.class
-
- - link:JAXBUtils$JCodeModel-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/JobListener.class
-
- - link:JobListener-asmified.java[Asmified]
-
-== References
-

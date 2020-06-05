@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral.class
-
- - link:CxfRSService$ContextLiteral-asmified.java[Asmified]
-
-== References
-

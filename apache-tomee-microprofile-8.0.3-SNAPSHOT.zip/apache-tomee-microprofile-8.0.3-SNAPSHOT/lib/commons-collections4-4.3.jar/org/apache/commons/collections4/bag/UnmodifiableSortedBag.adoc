@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/bag/UnmodifiableSortedBag.class
-
- - link:UnmodifiableSortedBag-asmified.java[Asmified]
-
-== References
-

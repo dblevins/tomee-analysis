@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/ICacheServiceAdmin.class
-
- - link:ICacheServiceAdmin-asmified.java[Asmified]
-
-== References
-

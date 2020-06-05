@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/claims/ClaimsSecurityContext.class
-
- - link:ClaimsSecurityContext-asmified.java[Asmified]
-
-== References
-

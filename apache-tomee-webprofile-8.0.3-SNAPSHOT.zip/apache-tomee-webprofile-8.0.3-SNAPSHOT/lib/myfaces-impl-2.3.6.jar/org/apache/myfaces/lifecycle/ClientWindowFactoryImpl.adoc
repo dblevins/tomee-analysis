@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/ClientWindowFactoryImpl.class
-
- - link:ClientWindowFactoryImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/LifecycleImpl$PostConstructApplicationListener.class
-
- - link:LifecycleImpl$PostConstructApplicationListener-asmified.java[Asmified]
-
-== References
-

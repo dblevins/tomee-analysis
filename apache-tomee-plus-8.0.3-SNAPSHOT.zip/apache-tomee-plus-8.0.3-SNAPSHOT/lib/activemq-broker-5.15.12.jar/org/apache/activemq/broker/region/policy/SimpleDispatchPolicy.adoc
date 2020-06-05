@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/SimpleDispatchPolicy.class
-
- - link:SimpleDispatchPolicy-asmified.java[Asmified]
-
-== References
-

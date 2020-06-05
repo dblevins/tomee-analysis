@@ -1,6 +1,0 @@
-= org/apache/activemq/security/SimpleCachedLDAPAuthorizationMap$CachedLDAPAuthorizationMapNamespaceChangeListener.class
-
- - link:SimpleCachedLDAPAuthorizationMap$CachedLDAPAuthorizationMapNamespaceChangeListener-asmified.java[Asmified]
-
-== References
-

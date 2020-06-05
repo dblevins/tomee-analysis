@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/implicitobject/ViewScopeImplicitObject.class
-
- - link:ViewScopeImplicitObject-asmified.java[Asmified]
-
-== References
-

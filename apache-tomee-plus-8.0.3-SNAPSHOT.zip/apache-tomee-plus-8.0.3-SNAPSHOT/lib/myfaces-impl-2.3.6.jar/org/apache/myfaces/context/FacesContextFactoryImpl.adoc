@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/FacesContextFactoryImpl.class
-
- - link:FacesContextFactoryImpl-asmified.java[Asmified]
-
-== References
-

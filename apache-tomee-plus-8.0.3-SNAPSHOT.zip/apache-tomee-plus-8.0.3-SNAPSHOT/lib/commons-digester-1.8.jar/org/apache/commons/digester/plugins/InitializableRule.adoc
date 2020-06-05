@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/InitializableRule.class
-
- - link:InitializableRule-asmified.java[Asmified]
-
-== References
-

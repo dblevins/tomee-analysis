@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsRemoteEndpointBase.class
-
- - link:WsRemoteEndpointBase-asmified.java[Asmified]
-
-== References
-

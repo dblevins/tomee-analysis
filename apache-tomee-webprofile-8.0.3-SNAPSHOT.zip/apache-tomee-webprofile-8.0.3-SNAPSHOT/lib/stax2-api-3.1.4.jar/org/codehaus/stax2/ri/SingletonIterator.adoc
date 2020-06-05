@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/SingletonIterator.class
-
- - link:SingletonIterator-asmified.java[Asmified]
-
-== References
-

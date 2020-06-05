@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/microprofile/server/ServletTracingSetup.class
-
- - link:ServletTracingSetup-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/DumperOptions$FlowStyle.class
-
- - link:DumperOptions$FlowStyle-asmified.java[Asmified]
-
-== References
-

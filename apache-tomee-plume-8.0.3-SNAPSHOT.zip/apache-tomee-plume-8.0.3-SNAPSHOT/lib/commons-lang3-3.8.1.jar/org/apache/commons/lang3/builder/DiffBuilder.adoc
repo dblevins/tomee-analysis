@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/builder/DiffBuilder.class
-
- - link:DiffBuilder-asmified.java[Asmified]
-
-== References
-

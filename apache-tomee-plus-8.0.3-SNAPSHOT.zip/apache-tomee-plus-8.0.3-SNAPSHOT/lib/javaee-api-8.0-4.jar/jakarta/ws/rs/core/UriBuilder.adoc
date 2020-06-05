@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/UriBuilder.class
-
- - link:UriBuilder-asmified.java[Asmified]
-
-== References
-

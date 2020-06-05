@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/memory/mru/MRUMemoryCache.class
-
- - link:MRUMemoryCache-asmified.java[Asmified]
-
-== References
-

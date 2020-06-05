@@ -1,9 +1,0 @@
-= javax/faces/component/UIComponentBase$BehaviorsMap.class
-
- - link:UIComponentBase$BehaviorsMap-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component.behavior.ClientBehavior - 6
- - javax.faces.component.UIComponentBase$BehaviorsMap - 3
- - javax.faces.component.UIComponentBase$1 - 1

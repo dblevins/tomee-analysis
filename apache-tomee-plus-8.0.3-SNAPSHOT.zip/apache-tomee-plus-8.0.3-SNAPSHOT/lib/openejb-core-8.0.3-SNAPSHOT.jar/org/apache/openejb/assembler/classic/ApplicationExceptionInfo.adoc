@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ApplicationExceptionInfo.class
-
- - link:ApplicationExceptionInfo-asmified.java[Asmified]
-
-== References
-

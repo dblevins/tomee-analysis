@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/DiscoveryListener.class
-
- - link:DiscoveryListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/jul/formatter/AsyncConsoleHandler.class
-
- - link:AsyncConsoleHandler-asmified.java[Asmified]
-
-== References
-

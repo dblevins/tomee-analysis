@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/UnitOfWorkTransformerValueHolder.class
-
- - link:UnitOfWorkTransformerValueHolder-asmified.java[Asmified]
-
-== References
-

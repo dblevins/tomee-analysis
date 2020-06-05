@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/RegexValidatorTag.class
-
- - link:RegexValidatorTag-asmified.java[Asmified]
-
-== References
-

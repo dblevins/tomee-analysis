@@ -1,6 +1,0 @@
-= org/apache/openejb/util/LogStreamAsync$Message.class
-
- - link:LogStreamAsync$Message-asmified.java[Asmified]
-
-== References
-

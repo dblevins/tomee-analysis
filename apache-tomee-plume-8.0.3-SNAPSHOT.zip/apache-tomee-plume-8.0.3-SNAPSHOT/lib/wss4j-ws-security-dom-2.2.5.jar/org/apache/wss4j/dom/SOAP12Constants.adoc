@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/SOAP12Constants.class
-
- - link:SOAP12Constants-asmified.java[Asmified]
-
-== References
-

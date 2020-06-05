@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/validate/WholeBeanValidator$FacesMessageInterpolator.class
-
- - link:WholeBeanValidator$FacesMessageInterpolator-asmified.java[Asmified]
-
-== References
-

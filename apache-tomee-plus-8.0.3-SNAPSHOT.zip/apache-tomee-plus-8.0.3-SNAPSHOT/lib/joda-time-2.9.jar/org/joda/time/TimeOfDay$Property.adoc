@@ -1,6 +1,0 @@
-= org/joda/time/TimeOfDay$Property.class
-
- - link:TimeOfDay$Property-asmified.java[Asmified]
-
-== References
-

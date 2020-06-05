@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/ConstantExpression.class
-
- - link:ConstantExpression-asmified.java[Asmified]
-
-== References
-

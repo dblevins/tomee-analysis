@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/smtp/SMTPConnection$SendStatus.class
-
- - link:SMTPConnection$SendStatus-asmified.java[Asmified]
-
-== References
-

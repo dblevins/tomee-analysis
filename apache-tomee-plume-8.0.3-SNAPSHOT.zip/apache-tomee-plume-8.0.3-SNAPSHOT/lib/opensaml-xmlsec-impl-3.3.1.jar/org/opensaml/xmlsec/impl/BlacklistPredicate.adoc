@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/BlacklistPredicate.class
-
- - link:BlacklistPredicate-asmified.java[Asmified]
-
-== References
-

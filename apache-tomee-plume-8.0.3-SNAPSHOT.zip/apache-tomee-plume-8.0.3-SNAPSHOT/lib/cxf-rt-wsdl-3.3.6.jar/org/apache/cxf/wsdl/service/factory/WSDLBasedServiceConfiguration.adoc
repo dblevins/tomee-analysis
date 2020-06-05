@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/service/factory/WSDLBasedServiceConfiguration.class
-
- - link:WSDLBasedServiceConfiguration-asmified.java[Asmified]
-
-== References
-

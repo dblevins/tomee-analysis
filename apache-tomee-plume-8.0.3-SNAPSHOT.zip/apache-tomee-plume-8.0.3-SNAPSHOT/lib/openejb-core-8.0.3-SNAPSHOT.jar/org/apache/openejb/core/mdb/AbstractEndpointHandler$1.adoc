@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/AbstractEndpointHandler$1.class
-
- - link:AbstractEndpointHandler$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/DTLSTransport.class
-
- - link:DTLSTransport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections/buffer/AbstractBufferDecorator.class
-
- - link:AbstractBufferDecorator-asmified.java[Asmified]
-
-== References
-

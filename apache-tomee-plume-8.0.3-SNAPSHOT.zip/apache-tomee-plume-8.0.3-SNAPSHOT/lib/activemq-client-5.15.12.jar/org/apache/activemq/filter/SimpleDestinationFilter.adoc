@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/SimpleDestinationFilter.class
-
- - link:SimpleDestinationFilter-asmified.java[Asmified]
-
-== References
-

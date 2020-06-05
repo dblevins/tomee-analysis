@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/impl/CDIAnnotationInjectionProvider.class
-
- - link:CDIAnnotationInjectionProvider-asmified.java[Asmified]
-
-== References
-

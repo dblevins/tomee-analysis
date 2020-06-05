@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/JpaCache.class
-
- - link:JpaCache-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/modes/GOFBBlockCipher.class
-
- - link:GOFBBlockCipher-asmified.java[Asmified]
-
-== References
-

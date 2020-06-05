@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/Attribute.class
-
- - link:Attribute-asmified.java[Asmified]
-
-== References
-

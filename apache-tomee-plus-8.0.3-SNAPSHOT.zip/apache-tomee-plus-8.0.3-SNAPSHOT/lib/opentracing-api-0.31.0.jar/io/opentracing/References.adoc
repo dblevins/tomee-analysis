@@ -1,6 +1,0 @@
-= io/opentracing/References.class
-
- - link:References-asmified.java[Asmified]
-
-== References
-

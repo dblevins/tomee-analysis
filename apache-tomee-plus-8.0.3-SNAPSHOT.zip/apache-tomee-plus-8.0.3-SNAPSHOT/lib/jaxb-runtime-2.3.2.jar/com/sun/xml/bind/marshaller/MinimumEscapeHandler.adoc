@@ -1,6 +1,0 @@
-= com/sun/xml/bind/marshaller/MinimumEscapeHandler.class
-
- - link:MinimumEscapeHandler-asmified.java[Asmified]
-
-== References
-

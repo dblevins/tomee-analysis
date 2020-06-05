@@ -1,7 +1,0 @@
-= javax/faces/view/ViewScoped.class
-
- - link:ViewScoped-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.NormalScope - 1

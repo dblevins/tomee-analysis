@@ -1,6 +1,0 @@
-= org/apache/neethi/ExactlyOne.class
-
- - link:ExactlyOne-asmified.java[Asmified]
-
-== References
-

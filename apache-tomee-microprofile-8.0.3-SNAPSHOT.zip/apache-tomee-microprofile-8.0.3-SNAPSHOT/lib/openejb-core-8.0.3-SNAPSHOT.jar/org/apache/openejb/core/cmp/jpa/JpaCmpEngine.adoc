@@ -1,6 +1,0 @@
-= org/apache/openejb/core/cmp/jpa/JpaCmpEngine.class
-
- - link:JpaCmpEngine-asmified.java[Asmified]
-
-== References
-

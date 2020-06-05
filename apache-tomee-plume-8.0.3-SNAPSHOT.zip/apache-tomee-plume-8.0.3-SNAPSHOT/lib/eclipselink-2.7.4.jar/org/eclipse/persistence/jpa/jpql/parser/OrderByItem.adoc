@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/OrderByItem.class
-
- - link:OrderByItem-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/json/JsonGeneratorImpl.class
-
- - link:JsonGeneratorImpl-asmified.java[Asmified]
-
-== References
-

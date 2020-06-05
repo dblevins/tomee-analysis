@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/ActionSourceRule.class
-
- - link:ActionSourceRule-asmified.java[Asmified]
-
-== References
-

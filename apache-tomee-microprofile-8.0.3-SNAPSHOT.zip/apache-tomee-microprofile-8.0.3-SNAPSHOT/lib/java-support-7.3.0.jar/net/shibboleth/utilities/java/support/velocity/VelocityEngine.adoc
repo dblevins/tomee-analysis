@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/velocity/VelocityEngine.class
-
- - link:VelocityEngine-asmified.java[Asmified]
-
-== References
-

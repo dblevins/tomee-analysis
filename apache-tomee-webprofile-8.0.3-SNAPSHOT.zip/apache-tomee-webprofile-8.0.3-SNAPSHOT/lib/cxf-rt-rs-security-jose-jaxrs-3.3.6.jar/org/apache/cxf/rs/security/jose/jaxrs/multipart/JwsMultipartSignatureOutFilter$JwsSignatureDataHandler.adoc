@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartSignatureOutFilter$JwsSignatureDataHandler.class
-
- - link:JwsMultipartSignatureOutFilter$JwsSignatureDataHandler-asmified.java[Asmified]
-
-== References
-

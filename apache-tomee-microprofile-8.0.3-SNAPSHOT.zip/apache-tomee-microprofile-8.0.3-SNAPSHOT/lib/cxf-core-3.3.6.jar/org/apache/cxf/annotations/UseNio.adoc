@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/UseNio.class
-
- - link:UseNio-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/scope/ScopeExtension.class
-
- - link:ScopeExtension-asmified.java[Asmified]
-
-== References
-

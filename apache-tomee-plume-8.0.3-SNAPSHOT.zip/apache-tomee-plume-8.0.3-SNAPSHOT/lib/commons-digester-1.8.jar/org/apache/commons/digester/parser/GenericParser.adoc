@@ -1,6 +1,0 @@
-= org/apache/commons/digester/parser/GenericParser.class
-
- - link:GenericParser-asmified.java[Asmified]
-
-== References
-

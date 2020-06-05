@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonMergePatchDiff.class
-
- - link:JsonMergePatchDiff-asmified.java[Asmified]
-
-== References
-

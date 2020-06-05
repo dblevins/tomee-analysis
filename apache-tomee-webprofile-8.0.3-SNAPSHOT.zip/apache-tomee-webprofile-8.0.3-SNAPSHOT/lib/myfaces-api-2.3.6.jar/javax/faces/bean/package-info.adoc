@@ -1,6 +1,0 @@
-= javax/faces/bean/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

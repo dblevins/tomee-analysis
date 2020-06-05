@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/KeyColumn.class
-
- - link:KeyColumn-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/platform/database/oracle/TIMESTAMPTypes.class
-
- - link:TIMESTAMPTypes-asmified.java[Asmified]
-
-== References
-

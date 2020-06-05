@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/LifecycleListener.class
-
- - link:LifecycleListener-asmified.java[Asmified]
-
-== References
-

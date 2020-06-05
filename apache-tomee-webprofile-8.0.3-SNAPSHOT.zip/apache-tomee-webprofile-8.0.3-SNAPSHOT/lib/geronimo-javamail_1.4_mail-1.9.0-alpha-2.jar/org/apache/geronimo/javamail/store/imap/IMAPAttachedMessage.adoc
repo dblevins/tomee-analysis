@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/IMAPAttachedMessage.class
-
- - link:IMAPAttachedMessage-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/activation/MimeTypeParameterList.class
-
- - link:MimeTypeParameterList-asmified.java[Asmified]
-
-== References
-
- - javax.activation.MimeTypeParseException - 14
- - javax.activation.MimeTypeParameterList - 12

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/EntityBeanType$CmpFieldMapping.class
-
- - link:EntityBeanType$CmpFieldMapping-asmified.java[Asmified]
-
-== References
-

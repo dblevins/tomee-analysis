@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/PendingMessageLimitStrategy.class
-
- - link:PendingMessageLimitStrategy-asmified.java[Asmified]
-
-== References
-

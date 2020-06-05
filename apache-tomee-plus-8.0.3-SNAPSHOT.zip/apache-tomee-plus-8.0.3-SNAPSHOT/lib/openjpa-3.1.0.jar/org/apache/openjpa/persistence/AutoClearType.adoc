@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/AutoClearType.class
-
- - link:AutoClearType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/IElementInfo.class
-
- - link:IElementInfo-asmified.java[Asmified]
-
-== References
-

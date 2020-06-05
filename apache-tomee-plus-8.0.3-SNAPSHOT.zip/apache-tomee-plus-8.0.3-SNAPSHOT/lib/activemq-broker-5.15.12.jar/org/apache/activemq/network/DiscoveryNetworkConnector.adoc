@@ -1,6 +1,0 @@
-= org/apache/activemq/network/DiscoveryNetworkConnector.class
-
- - link:DiscoveryNetworkConnector-asmified.java[Asmified]
-
-== References
-

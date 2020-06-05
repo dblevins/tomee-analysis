@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/config/spi/Converter.class
-
- - link:Converter-asmified.java[Asmified]
-
-== References
-

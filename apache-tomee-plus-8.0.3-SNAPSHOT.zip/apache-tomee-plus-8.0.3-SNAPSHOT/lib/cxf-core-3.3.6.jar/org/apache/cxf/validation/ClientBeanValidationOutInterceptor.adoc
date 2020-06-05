@@ -1,6 +1,0 @@
-= org/apache/cxf/validation/ClientBeanValidationOutInterceptor.class
-
- - link:ClientBeanValidationOutInterceptor-asmified.java[Asmified]
-
-== References
-

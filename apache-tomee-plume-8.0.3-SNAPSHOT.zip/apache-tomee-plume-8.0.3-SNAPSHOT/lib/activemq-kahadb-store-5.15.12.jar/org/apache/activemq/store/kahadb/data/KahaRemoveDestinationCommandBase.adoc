@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaRemoveDestinationCommandBase.class
-
- - link:KahaRemoveDestinationCommandBase-asmified.java[Asmified]
-
-== References
-

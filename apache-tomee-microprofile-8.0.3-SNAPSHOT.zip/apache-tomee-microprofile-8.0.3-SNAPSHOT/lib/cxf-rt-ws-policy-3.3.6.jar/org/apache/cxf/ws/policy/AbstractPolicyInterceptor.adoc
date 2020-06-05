@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/AbstractPolicyInterceptor.class
-
- - link:AbstractPolicyInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/jws/WebService.class
-
- - link:WebService-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl.class
-
- - link:ClientConfigurableImpl-asmified.java[Asmified]
-
-== References
-

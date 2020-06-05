@@ -1,6 +1,0 @@
-= jakarta/validation/groups/ConvertGroup.class
-
- - link:ConvertGroup-asmified.java[Asmified]
-
-== References
-

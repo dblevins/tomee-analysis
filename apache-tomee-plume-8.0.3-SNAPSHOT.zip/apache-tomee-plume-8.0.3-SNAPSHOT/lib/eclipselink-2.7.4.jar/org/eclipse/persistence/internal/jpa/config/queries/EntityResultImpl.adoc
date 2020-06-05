@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/queries/EntityResultImpl.class
-
- - link:EntityResultImpl-asmified.java[Asmified]
-
-== References
-

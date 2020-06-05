@@ -1,6 +1,0 @@
-= jakarta/websocket/Decoder$Text.class
-
- - link:Decoder$Text-asmified.java[Asmified]
-
-== References
-

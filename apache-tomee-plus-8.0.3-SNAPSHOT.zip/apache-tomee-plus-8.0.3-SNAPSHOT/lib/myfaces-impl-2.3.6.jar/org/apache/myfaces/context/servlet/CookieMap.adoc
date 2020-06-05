@@ -1,6 +1,0 @@
-= org/apache/myfaces/context/servlet/CookieMap.class
-
- - link:CookieMap-asmified.java[Asmified]
-
-== References
-

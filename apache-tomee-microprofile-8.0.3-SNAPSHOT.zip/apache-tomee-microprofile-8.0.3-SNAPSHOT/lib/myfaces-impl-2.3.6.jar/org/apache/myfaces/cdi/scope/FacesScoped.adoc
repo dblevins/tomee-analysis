@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/scope/FacesScoped.class
-
- - link:FacesScoped-asmified.java[Asmified]
-
-== References
-

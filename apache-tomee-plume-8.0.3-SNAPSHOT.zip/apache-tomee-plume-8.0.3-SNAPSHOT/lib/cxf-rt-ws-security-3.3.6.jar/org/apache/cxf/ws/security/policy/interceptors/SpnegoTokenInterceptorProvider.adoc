@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/interceptors/SpnegoTokenInterceptorProvider.class
-
- - link:SpnegoTokenInterceptorProvider-asmified.java[Asmified]
-
-== References
-

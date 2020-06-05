@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/ThreadUtils$ThreadPredicate.class
-
- - link:ThreadUtils$ThreadPredicate-asmified.java[Asmified]
-
-== References
-

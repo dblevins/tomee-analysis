@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/oracle/plsql/OraclePLSQLTypes.class
-
- - link:OraclePLSQLTypes-asmified.java[Asmified]
-
-== References
-

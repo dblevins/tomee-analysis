@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AbstractSchemaNameFactory.class
-
- - link:AbstractSchemaNameFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/ECPointFormat.class
-
- - link:ECPointFormat-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/PendingSubscriberMessageStoragePolicy.class
-
- - link:PendingSubscriberMessageStoragePolicy-asmified.java[Asmified]
-
-== References
-

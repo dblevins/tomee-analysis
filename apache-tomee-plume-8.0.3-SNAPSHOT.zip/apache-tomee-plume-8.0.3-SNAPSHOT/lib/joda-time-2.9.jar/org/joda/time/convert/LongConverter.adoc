@@ -1,6 +1,0 @@
-= org/joda/time/convert/LongConverter.class
-
- - link:LongConverter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/cdi/ConfigInjectionProducer.class
-
- - link:ConfigInjectionProducer-asmified.java[Asmified]
-
-== References
-

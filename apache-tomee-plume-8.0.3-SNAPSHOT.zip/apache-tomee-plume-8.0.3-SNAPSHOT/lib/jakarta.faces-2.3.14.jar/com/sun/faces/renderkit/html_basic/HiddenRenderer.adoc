@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/HiddenRenderer.class
-
- - link:HiddenRenderer-asmified.java[Asmified]
-
-== References
-

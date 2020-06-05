@@ -1,6 +1,0 @@
-= org/apache/openejb/core/singleton/SingletonEjbHomeHandler.class
-
- - link:SingletonEjbHomeHandler-asmified.java[Asmified]
-
-== References
-

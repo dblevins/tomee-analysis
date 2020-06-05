@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ConstructorExpression.class
-
- - link:ConstructorExpression-asmified.java[Asmified]
-
-== References
-

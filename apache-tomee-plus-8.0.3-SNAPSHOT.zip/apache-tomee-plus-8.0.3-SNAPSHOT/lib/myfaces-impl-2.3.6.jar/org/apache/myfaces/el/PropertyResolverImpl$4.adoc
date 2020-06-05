@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/PropertyResolverImpl$4.class
-
- - link:PropertyResolverImpl$4-asmified.java[Asmified]
-
-== References
-

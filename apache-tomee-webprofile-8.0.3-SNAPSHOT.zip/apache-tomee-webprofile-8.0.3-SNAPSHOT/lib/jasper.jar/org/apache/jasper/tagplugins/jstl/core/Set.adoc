@@ -1,6 +1,0 @@
-= org/apache/jasper/tagplugins/jstl/core/Set.class
-
- - link:Set-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/PersistenceBuilder.class
-
- - link:PersistenceBuilder-asmified.java[Asmified]
-
-== References
-

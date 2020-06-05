@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/Clinit.class
-
- - link:Clinit-asmified.java[Asmified]
-
-== References
-

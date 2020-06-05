@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/AutoDetach.class
-
- - link:AutoDetach-asmified.java[Asmified]
-
-== References
-

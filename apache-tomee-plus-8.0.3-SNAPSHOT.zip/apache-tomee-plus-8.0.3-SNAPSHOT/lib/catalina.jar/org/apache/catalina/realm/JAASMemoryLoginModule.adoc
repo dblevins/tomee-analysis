@@ -1,6 +1,0 @@
-= org/apache/catalina/realm/JAASMemoryLoginModule.class
-
- - link:JAASMemoryLoginModule-asmified.java[Asmified]
-
-== References
-

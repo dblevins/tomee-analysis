@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$EndMessageHandler.class
-
- - link:WsRemoteEndpointImplBase$EndMessageHandler-asmified.java[Asmified]
-
-== References
-

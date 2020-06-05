@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/SchemaGenerationAction.class
-
- - link:SchemaGenerationAction-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/DataCacheStoreManager$PCDataHolder.class
-
- - link:DataCacheStoreManager$PCDataHolder-asmified.java[Asmified]
-
-== References
-

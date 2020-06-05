@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyhandlers/SymmetricBindingHandler.class
-
- - link:SymmetricBindingHandler-asmified.java[Asmified]
-
-== References
-

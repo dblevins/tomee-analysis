@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/ProjectHelper.class
-
- - link:ProjectHelper-asmified.java[Asmified]
-
-== References
-

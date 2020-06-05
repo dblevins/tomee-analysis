@@ -1,6 +1,0 @@
-= jakarta/mail/internet/ParameterList$ParameterValue.class
-
- - link:ParameterList$ParameterValue-asmified.java[Asmified]
-
-== References
-

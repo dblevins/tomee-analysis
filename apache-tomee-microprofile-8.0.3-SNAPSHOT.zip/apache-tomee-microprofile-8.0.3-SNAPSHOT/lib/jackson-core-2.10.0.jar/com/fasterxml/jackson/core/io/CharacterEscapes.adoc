@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/io/CharacterEscapes.class
-
- - link:CharacterEscapes-asmified.java[Asmified]
-
-== References
-

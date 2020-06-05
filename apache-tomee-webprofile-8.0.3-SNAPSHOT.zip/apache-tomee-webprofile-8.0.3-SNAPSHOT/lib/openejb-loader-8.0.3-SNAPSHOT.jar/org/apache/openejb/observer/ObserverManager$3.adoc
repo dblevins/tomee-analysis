@@ -1,6 +1,0 @@
-= org/apache/openejb/observer/ObserverManager$3.class
-
- - link:ObserverManager$3-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/ServerServiceFilter.class
-
- - link:ServerServiceFilter-asmified.java[Asmified]
-
-== References
-

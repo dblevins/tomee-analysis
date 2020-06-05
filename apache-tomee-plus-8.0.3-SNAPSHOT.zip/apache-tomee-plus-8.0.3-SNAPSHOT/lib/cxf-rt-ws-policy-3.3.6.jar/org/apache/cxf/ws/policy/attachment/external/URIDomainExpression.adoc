@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/attachment/external/URIDomainExpression.class
-
- - link:URIDomainExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/indexed/IndexedDiskCacheFactory.class
-
- - link:IndexedDiskCacheFactory-asmified.java[Asmified]
-
-== References
-

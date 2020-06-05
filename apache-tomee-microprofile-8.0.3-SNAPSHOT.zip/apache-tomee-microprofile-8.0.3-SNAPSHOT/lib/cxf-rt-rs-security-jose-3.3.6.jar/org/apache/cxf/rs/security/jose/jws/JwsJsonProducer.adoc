@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/JwsJsonProducer.class
-
- - link:JwsJsonProducer-asmified.java[Asmified]
-
-== References
-

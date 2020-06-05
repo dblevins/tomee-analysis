@@ -1,6 +1,0 @@
-= org/apache/catalina/realm/JNDIRealm$User.class
-
- - link:JNDIRealm$User-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/triggers/SimpleTriggerImpl.class
-
- - link:SimpleTriggerImpl-asmified.java[Asmified]
-
-== References
-

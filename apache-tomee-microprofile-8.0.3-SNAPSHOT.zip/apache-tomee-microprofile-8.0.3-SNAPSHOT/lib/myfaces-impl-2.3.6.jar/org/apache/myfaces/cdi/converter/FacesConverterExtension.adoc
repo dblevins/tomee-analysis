@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/converter/FacesConverterExtension.class
-
- - link:FacesConverterExtension-asmified.java[Asmified]
-
-== References
-

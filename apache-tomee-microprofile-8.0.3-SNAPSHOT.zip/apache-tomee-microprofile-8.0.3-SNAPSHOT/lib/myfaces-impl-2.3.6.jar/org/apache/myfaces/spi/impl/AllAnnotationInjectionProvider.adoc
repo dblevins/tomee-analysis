@@ -1,6 +1,0 @@
-= org/apache/myfaces/spi/impl/AllAnnotationInjectionProvider.class
-
- - link:AllAnnotationInjectionProvider-asmified.java[Asmified]
-
-== References
-

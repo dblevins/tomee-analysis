@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/DatabaseSessionImpl.class
-
- - link:DatabaseSessionImpl-asmified.java[Asmified]
-
-== References
-

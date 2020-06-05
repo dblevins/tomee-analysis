@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/security/PrivilegedClassForName.class
-
- - link:PrivilegedClassForName-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/WebSockets.class
-
- - link:WebSockets-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/cache/processor/MutableEntry.class
-
- - link:MutableEntry-asmified.java[Asmified]
-
-== References
-

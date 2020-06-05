@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/ActionsType.class
-
- - link:ActionsType-asmified.java[Asmified]
-
-== References
-

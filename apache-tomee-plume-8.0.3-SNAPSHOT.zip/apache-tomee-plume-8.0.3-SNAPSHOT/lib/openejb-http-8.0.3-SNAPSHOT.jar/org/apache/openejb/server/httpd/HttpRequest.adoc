@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/HttpRequest.class
-
- - link:HttpRequest-asmified.java[Asmified]
-
-== References
-

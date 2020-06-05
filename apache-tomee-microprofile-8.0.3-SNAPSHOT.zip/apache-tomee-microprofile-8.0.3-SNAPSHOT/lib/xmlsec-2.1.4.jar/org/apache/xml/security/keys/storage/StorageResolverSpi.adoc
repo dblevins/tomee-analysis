@@ -1,6 +1,0 @@
-= org/apache/xml/security/keys/storage/StorageResolverSpi.class
-
- - link:StorageResolverSpi-asmified.java[Asmified]
-
-== References
-

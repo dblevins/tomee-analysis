@@ -1,8 +1,0 @@
-= javax/security/enterprise/authentication/mechanism/http/FormAuthenticationMechanismDefinition.class
-
- - link:FormAuthenticationMechanismDefinition-asmified.java[Asmified]
-
-== References
-
- - javax.security.enterprise.authentication.mechanism.http.LoginToContinue - 1
- - javax.enterprise.util.Nonbinding - 1

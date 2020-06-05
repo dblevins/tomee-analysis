@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl.class
-
- - link:ManagedScheduledExecutorServiceImpl-asmified.java[Asmified]
-
-== References
-

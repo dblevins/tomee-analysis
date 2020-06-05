@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/info/Info.class
-
- - link:Info-asmified.java[Asmified]
-
-== References
-

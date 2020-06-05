@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ExtractExpressionBNF.class
-
- - link:ExtractExpressionBNF-asmified.java[Asmified]
-
-== References
-

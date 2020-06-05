@@ -1,6 +1,0 @@
-= org/apache/catalina/loader/WebappLoader.class
-
- - link:WebappLoader-asmified.java[Asmified]
-
-== References
-

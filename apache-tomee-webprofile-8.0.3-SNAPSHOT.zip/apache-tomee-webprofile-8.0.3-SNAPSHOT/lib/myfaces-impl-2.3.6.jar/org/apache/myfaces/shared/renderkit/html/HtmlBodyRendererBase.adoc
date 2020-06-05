@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlBodyRendererBase.class
-
- - link:HtmlBodyRendererBase-asmified.java[Asmified]
-
-== References
-

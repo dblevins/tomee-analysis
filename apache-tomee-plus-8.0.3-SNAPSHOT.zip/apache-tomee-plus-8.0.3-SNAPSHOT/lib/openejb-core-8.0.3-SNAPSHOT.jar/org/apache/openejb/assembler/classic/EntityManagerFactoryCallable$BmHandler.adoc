@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler.class
-
- - link:EntityManagerFactoryCallable$BmHandler-asmified.java[Asmified]
-
-== References
-

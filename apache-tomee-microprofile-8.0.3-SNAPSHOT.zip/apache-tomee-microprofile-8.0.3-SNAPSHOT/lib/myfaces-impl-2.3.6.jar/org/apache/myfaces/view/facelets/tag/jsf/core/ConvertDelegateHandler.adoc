@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/ConvertDelegateHandler.class
-
- - link:ConvertDelegateHandler-asmified.java[Asmified]
-
-== References
-

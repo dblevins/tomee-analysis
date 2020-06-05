@@ -1,6 +1,0 @@
-= jakarta/servlet/annotation/WebFilter.class
-
- - link:WebFilter-asmified.java[Asmified]
-
-== References
-

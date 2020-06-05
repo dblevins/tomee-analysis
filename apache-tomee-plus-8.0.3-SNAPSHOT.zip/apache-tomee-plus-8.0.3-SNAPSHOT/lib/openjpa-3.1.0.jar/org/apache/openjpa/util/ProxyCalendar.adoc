@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ProxyCalendar.class
-
- - link:ProxyCalendar-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/modes/gcm/GCMExponentiator.class
-
- - link:GCMExponentiator-asmified.java[Asmified]
-
-== References
-

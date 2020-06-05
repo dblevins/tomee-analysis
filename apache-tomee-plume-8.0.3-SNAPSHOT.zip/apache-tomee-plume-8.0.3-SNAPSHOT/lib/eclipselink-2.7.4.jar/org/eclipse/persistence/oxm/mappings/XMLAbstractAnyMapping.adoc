@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLAbstractAnyMapping.class
-
- - link:XMLAbstractAnyMapping-asmified.java[Asmified]
-
-== References
-

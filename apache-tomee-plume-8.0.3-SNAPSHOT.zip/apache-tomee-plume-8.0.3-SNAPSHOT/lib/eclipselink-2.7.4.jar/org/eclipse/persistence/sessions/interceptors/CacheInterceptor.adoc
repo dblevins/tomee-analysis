@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/interceptors/CacheInterceptor.class
-
- - link:CacheInterceptor-asmified.java[Asmified]
-
-== References
-

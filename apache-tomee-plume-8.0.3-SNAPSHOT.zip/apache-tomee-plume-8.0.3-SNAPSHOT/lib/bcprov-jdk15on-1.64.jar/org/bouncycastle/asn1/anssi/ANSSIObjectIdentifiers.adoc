@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/anssi/ANSSIObjectIdentifiers.class
-
- - link:ANSSIObjectIdentifiers-asmified.java[Asmified]
-
-== References
-

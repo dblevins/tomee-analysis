@@ -1,6 +1,0 @@
-= javax/transaction/xa/XAResource.class
-
- - link:XAResource-asmified.java[Asmified]
-
-== References
-

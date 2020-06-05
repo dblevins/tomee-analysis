@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/TypeExpression.class
-
- - link:TypeExpression-asmified.java[Asmified]
-
-== References
-

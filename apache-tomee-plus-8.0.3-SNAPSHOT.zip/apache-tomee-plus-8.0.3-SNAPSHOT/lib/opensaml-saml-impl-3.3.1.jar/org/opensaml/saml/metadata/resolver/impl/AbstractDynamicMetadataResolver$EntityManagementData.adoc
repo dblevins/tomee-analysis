@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/AbstractDynamicMetadataResolver$EntityManagementData.class
-
- - link:AbstractDynamicMetadataResolver$EntityManagementData-asmified.java[Asmified]
-
-== References
-

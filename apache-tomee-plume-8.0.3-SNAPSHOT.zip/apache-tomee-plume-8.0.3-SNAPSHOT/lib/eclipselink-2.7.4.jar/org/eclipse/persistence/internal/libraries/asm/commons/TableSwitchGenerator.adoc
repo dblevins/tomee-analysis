@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/TableSwitchGenerator.class
-
- - link:TableSwitchGenerator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/scan/JarFileUrlJar.class
-
- - link:JarFileUrlJar-asmified.java[Asmified]
-
-== References
-

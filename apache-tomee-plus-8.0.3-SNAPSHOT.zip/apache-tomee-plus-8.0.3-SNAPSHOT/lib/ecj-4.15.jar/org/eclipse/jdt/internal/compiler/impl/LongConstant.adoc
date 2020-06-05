@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/impl/LongConstant.class
-
- - link:LongConstant-asmified.java[Asmified]
-
-== References
-

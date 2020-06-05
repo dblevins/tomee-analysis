@@ -1,6 +1,0 @@
-= org/hsqldb/lib/LongKeyIntValueHashMap$Values.class
-
- - link:LongKeyIntValueHashMap$Values-asmified.java[Asmified]
-
-== References
-

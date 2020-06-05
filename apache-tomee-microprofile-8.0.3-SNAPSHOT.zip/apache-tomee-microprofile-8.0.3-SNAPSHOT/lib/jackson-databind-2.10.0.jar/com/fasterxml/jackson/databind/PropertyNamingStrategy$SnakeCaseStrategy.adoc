@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/PropertyNamingStrategy$SnakeCaseStrategy.class
-
- - link:PropertyNamingStrategy$SnakeCaseStrategy-asmified.java[Asmified]
-
-== References
-

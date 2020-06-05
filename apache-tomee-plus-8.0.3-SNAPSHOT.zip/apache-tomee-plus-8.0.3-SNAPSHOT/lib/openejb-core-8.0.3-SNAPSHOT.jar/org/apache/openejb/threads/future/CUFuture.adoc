@@ -1,6 +1,0 @@
-= org/apache/openejb/threads/future/CUFuture.class
-
- - link:CUFuture-asmified.java[Asmified]
-
-== References
-

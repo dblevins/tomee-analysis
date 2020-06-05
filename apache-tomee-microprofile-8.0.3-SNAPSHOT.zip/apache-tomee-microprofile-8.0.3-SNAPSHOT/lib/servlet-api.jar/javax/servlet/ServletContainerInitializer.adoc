@@ -1,8 +1,0 @@
-= javax/servlet/ServletContainerInitializer.class
-
- - link:ServletContainerInitializer-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.ServletException - 1
- - javax.servlet.ServletContext - 1

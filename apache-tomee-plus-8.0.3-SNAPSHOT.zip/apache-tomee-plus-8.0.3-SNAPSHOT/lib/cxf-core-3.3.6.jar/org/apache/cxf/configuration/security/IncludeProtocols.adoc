@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/IncludeProtocols.class
-
- - link:IncludeProtocols-asmified.java[Asmified]
-
-== References
-

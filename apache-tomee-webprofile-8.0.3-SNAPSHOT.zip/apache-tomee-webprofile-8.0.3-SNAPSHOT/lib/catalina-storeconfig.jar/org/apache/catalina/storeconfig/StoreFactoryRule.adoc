@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/StoreFactoryRule.class
-
- - link:StoreFactoryRule-asmified.java[Asmified]
-
-== References
-

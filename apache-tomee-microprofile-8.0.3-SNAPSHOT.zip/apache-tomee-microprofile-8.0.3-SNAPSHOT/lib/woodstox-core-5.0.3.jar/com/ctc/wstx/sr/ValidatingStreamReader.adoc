@@ -1,6 +1,0 @@
-= com/ctc/wstx/sr/ValidatingStreamReader.class
-
- - link:ValidatingStreamReader-asmified.java[Asmified]
-
-== References
-

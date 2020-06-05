@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/IntegerLiteral.class
-
- - link:IntegerLiteral-asmified.java[Asmified]
-
-== References
-

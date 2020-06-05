@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/Form$3.class
-
- - link:Form$3-asmified.java[Asmified]
-
-== References
-

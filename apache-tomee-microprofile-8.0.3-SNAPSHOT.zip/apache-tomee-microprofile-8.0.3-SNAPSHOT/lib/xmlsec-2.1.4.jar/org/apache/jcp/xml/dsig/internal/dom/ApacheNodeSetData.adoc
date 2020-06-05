@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/ApacheNodeSetData.class
-
- - link:ApacheNodeSetData-asmified.java[Asmified]
-
-== References
-

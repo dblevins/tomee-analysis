@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/resolver/ResolverTuple.class
-
- - link:ResolverTuple-asmified.java[Asmified]
-
-== References
-

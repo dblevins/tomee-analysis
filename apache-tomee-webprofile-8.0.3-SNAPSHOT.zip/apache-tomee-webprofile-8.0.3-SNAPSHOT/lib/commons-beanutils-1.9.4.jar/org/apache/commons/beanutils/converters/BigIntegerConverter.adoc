@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/BigIntegerConverter.class
-
- - link:BigIntegerConverter-asmified.java[Asmified]
-
-== References
-

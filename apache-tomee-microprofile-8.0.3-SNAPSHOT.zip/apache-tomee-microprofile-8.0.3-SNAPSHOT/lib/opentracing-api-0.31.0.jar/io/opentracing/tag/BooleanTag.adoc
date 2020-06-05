@@ -1,6 +1,0 @@
-= io/opentracing/tag/BooleanTag.class
-
- - link:BooleanTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataFactory.class
-
- - link:MetadataFactory-asmified.java[Asmified]
-
-== References
-

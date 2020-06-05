@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/NioSelectorPool.class
-
- - link:NioSelectorPool-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/UnivariateStatistic.class
-
- - link:UnivariateStatistic-asmified.java[Asmified]
-
-== References
-

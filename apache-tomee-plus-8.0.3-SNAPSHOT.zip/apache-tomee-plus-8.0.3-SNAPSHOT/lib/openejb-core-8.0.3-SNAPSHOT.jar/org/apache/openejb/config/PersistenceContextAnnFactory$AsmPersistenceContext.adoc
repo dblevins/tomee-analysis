@@ -1,6 +1,0 @@
-= org/apache/openejb/config/PersistenceContextAnnFactory$AsmPersistenceContext.class
-
- - link:PersistenceContextAnnFactory$AsmPersistenceContext-asmified.java[Asmified]
-
-== References
-

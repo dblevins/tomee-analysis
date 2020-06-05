@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCColumnMetaData.class
-
- - link:JDBCColumnMetaData-asmified.java[Asmified]
-
-== References
-

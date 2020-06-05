@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler.class
-
- - link:CompositeComponentTagHandler-asmified.java[Asmified]
-
-== References
-

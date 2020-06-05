@@ -1,6 +1,0 @@
-= org/apache/commons/codec/digest/PureJavaCrc32C.class
-
- - link:PureJavaCrc32C-asmified.java[Asmified]
-
-== References
-

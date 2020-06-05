@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/Expression.class
-
- - link:Expression-asmified.java[Asmified]
-
-== References
-

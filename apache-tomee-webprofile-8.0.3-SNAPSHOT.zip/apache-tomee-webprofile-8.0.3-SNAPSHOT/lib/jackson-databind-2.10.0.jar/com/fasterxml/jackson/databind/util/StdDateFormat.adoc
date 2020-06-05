@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/StdDateFormat.class
-
- - link:StdDateFormat-asmified.java[Asmified]
-
-== References
-

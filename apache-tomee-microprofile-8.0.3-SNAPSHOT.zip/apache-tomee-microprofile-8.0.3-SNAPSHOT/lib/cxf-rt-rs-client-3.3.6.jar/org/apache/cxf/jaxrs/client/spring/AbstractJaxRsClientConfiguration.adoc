@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/spring/AbstractJaxRsClientConfiguration.class
-
- - link:AbstractJaxRsClientConfiguration-asmified.java[Asmified]
-
-== References
-

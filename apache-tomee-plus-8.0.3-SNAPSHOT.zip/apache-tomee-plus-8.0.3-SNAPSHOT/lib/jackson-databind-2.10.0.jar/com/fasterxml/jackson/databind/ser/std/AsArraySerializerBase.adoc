@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/AsArraySerializerBase.class
-
- - link:AsArraySerializerBase-asmified.java[Asmified]
-
-== References
-

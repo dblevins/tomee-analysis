@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ClientMetaData.class
-
- - link:ClientMetaData-asmified.java[Asmified]
-
-== References
-

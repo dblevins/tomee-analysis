@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCClobFile$WriterAdapter.class
-
- - link:JDBCClobFile$WriterAdapter-asmified.java[Asmified]
-
-== References
-

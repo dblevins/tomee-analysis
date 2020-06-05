@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/IdentificationVariableDeclNode.class
-
- - link:IdentificationVariableDeclNode-asmified.java[Asmified]
-
-== References
-

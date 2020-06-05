@@ -1,6 +1,0 @@
-= org/apache/openejb/config/SunConversion.class
-
- - link:SunConversion-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/modeler/BaseAttributeFilter.class
-
- - link:BaseAttributeFilter-asmified.java[Asmified]
-
-== References
-

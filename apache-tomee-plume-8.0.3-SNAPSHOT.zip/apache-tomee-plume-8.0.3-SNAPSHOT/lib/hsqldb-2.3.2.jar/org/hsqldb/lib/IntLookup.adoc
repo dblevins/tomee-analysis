@@ -1,6 +1,0 @@
-= org/hsqldb/lib/IntLookup.class
-
- - link:IntLookup-asmified.java[Asmified]
-
-== References
-

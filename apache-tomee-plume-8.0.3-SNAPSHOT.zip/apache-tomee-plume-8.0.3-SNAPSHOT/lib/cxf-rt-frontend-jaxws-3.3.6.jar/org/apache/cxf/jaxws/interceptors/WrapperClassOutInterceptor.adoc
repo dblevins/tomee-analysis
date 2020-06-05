@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/interceptors/WrapperClassOutInterceptor.class
-
- - link:WrapperClassOutInterceptor-asmified.java[Asmified]
-
-== References
-

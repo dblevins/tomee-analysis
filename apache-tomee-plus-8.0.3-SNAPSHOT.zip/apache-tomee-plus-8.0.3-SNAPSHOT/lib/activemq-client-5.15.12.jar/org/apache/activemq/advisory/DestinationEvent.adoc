@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/DestinationEvent.class
-
- - link:DestinationEvent-asmified.java[Asmified]
-
-== References
-

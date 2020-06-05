@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/Http2Parser$1.class
-
- - link:Http2Parser$1-asmified.java[Asmified]
-
-== References
-

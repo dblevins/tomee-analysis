@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/plugin/InstantdbDataSourcePlugin.class
-
- - link:InstantdbDataSourcePlugin-asmified.java[Asmified]
-
-== References
-

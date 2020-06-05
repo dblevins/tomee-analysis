@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCPreparedStatement.class
-
- - link:JDBCPreparedStatement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/WebAppClassPath.class
-
- - link:WebAppClassPath-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/ConnectorStatistics.class
-
- - link:ConnectorStatistics-asmified.java[Asmified]
-
-== References
-

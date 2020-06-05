@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/ProcessInjectionPoint.class
-
- - link:ProcessInjectionPoint-asmified.java[Asmified]
-
-== References
-

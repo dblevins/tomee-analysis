@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/CollectionChangeTrackerImpl.class
-
- - link:CollectionChangeTrackerImpl-asmified.java[Asmified]
-
-== References
-

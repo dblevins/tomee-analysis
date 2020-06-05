@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/processor/reflect/MethodElement$1.class
-
- - link:MethodElement$1-asmified.java[Asmified]
-
-== References
-

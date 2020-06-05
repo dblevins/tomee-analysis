@@ -1,6 +1,0 @@
-= org/apache/bval/util/EmulatedAnnotatedType$Parameterized.class
-
- - link:EmulatedAnnotatedType$Parameterized-asmified.java[Asmified]
-
-== References
-

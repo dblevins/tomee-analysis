@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/transform/TransformUtils.class
-
- - link:TransformUtils-asmified.java[Asmified]
-
-== References
-

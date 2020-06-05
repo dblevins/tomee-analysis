@@ -1,6 +1,0 @@
-= org/apache/openejb/async/AsynchronousPool$FutureAdapter.class
-
- - link:AsynchronousPool$FutureAdapter-asmified.java[Asmified]
-
-== References
-

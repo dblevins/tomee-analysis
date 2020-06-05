@@ -1,7 +1,0 @@
-= javax/json/bind/annotation/JsonbCreator.class
-
- - link:JsonbCreator-asmified.java[Asmified]
-
-== References
-
- - javax.json.bind.annotation.JsonbAnnotation - 1

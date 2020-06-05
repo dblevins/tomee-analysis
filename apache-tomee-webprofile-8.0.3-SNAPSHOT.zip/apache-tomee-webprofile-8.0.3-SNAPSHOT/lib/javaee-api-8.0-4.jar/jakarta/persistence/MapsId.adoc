@@ -1,6 +1,0 @@
-= jakarta/persistence/MapsId.class
-
- - link:MapsId-asmified.java[Asmified]
-
-== References
-

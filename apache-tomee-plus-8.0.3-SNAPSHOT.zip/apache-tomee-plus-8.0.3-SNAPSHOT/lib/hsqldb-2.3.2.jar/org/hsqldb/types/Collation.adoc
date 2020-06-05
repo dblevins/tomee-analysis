@@ -1,6 +1,0 @@
-= org/hsqldb/types/Collation.class
-
- - link:Collation-asmified.java[Asmified]
-
-== References
-

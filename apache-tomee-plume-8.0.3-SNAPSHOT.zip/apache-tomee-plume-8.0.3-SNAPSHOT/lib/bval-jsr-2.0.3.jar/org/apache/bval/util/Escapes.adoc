@@ -1,6 +1,0 @@
-= org/apache/bval/util/Escapes.class
-
- - link:Escapes-asmified.java[Asmified]
-
-== References
-

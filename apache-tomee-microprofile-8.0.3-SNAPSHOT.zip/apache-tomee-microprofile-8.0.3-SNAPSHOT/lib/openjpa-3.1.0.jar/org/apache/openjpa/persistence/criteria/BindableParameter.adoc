@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/BindableParameter.class
-
- - link:BindableParameter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/tld/ValidatorXml.class
-
- - link:ValidatorXml-asmified.java[Asmified]
-
-== References
-

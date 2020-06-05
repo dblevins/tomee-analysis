@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/springmvc/SpringViewResolverProvider.class
-
- - link:SpringViewResolverProvider-asmified.java[Asmified]
-
-== References
-

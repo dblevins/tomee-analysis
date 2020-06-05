@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/TimestampSecurityEvent.class
-
- - link:TimestampSecurityEvent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/installer/PathsInterface.class
-
- - link:PathsInterface-asmified.java[Asmified]
-
-== References
-

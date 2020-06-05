@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/TrimmedTagUnit.class
-
- - link:TrimmedTagUnit-asmified.java[Asmified]
-
-== References
-

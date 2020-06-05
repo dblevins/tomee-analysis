@@ -1,6 +1,0 @@
-= org/apache/openejb/util/classloader/ClassLoaderAwareHandler.class
-
- - link:ClassLoaderAwareHandler-asmified.java[Asmified]
-
-== References
-

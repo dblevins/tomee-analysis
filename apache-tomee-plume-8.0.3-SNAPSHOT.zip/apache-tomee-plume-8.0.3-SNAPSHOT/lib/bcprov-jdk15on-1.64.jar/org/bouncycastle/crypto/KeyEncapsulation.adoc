@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/KeyEncapsulation.class
-
- - link:KeyEncapsulation-asmified.java[Asmified]
-
-== References
-

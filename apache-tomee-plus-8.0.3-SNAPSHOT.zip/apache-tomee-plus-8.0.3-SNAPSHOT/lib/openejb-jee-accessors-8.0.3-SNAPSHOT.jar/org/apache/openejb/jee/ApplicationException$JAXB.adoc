@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/ApplicationException$JAXB.class
-
- - link:ApplicationException$JAXB-asmified.java[Asmified]
-
-== References
-

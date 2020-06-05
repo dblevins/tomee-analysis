@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/pojo/PojoEndpoint.class
-
- - link:PojoEndpoint-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/JaccProvider$Factory.class
-
- - link:JaccProvider$Factory-asmified.java[Asmified]
-
-== References
-

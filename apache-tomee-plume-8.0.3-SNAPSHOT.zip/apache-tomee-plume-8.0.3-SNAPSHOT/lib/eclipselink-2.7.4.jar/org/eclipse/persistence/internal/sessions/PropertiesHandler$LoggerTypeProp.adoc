@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/PropertiesHandler$LoggerTypeProp.class
-
- - link:PropertiesHandler$LoggerTypeProp-asmified.java[Asmified]
-
-== References
-

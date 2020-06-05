@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonIdentityReference.class
-
- - link:JsonIdentityReference-asmified.java[Asmified]
-
-== References
-

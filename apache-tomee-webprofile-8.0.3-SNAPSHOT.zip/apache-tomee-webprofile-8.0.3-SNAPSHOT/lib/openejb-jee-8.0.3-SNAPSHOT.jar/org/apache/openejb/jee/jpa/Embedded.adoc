@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/Embedded.class
-
- - link:Embedded-asmified.java[Asmified]
-
-== References
-

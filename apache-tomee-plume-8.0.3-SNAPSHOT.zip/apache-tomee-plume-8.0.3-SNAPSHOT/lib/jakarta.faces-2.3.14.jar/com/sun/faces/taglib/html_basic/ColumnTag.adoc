@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/ColumnTag.class
-
- - link:ColumnTag-asmified.java[Asmified]
-
-== References
-

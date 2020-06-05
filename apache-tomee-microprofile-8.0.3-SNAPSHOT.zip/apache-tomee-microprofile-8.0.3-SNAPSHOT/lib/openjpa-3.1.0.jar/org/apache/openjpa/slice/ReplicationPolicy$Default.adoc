@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/ReplicationPolicy$Default.class
-
- - link:ReplicationPolicy$Default-asmified.java[Asmified]
-
-== References
-

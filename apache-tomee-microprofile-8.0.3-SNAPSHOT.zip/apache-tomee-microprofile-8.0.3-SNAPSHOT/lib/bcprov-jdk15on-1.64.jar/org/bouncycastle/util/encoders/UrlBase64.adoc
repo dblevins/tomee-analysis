@@ -1,6 +1,0 @@
-= org/bouncycastle/util/encoders/UrlBase64.class
-
- - link:UrlBase64-asmified.java[Asmified]
-
-== References
-

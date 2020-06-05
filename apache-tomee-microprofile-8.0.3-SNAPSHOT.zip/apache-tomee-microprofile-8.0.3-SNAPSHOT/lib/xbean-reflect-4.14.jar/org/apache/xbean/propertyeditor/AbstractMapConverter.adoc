@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/AbstractMapConverter.class
-
- - link:AbstractMapConverter-asmified.java[Asmified]
-
-== References
-

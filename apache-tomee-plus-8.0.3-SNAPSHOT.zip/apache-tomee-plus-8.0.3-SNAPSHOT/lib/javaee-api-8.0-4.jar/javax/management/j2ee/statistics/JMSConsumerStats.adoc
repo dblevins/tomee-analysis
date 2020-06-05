@@ -1,7 +1,0 @@
-= javax/management/j2ee/statistics/JMSConsumerStats.class
-
- - link:JMSConsumerStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.JMSEndpointStats - 1

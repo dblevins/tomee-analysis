@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/JohnzonProperty.class
-
- - link:JohnzonProperty-asmified.java[Asmified]
-
-== References
-

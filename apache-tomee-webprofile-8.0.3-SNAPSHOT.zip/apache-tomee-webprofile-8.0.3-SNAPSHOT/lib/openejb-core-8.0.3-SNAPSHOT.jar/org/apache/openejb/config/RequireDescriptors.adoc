@@ -1,6 +1,0 @@
-= org/apache/openejb/config/RequireDescriptors.class
-
- - link:RequireDescriptors-asmified.java[Asmified]
-
-== References
-

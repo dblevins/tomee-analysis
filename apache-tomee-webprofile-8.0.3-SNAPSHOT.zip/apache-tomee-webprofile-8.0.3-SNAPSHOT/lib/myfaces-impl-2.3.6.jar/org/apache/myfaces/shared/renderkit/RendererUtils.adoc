@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/RendererUtils.class
-
- - link:RendererUtils-asmified.java[Asmified]
-
-== References
-

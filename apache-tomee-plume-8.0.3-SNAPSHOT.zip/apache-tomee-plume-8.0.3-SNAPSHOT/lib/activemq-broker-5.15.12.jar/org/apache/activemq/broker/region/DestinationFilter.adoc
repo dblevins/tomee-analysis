@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/DestinationFilter.class
-
- - link:DestinationFilter-asmified.java[Asmified]
-
-== References
-

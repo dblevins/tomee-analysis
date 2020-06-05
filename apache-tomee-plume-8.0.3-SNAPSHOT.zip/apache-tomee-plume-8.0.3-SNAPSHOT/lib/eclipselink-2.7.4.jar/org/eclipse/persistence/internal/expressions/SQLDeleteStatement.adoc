@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/SQLDeleteStatement.class
-
- - link:SQLDeleteStatement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2alg/impl/SigningMethodUnmarshaller.class
-
- - link:SigningMethodUnmarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/JMXGetTask.class
-
- - link:JMXGetTask-asmified.java[Asmified]
-
-== References
-

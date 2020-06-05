@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory.class
-
- - link:CdiJohnzonAdapterFactory-asmified.java[Asmified]
-
-== References
-

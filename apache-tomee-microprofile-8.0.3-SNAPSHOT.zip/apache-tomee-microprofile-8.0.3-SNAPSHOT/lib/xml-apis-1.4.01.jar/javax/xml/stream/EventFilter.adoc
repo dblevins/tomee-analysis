@@ -1,6 +1,0 @@
-= javax/xml/stream/EventFilter.class
-
- - link:EventFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/configuration/PropertiesType.class
-
- - link:PropertiesType-asmified.java[Asmified]
-
-== References
-

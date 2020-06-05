@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlCommandScript$PropertyKeys.class
-
- - link:HtmlCommandScript$PropertyKeys-asmified.java[Asmified]
-
-== References
-

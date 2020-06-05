@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/PojoConfig.class
-
- - link:PojoConfig-asmified.java[Asmified]
-
-== References
-

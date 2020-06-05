@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/URLConnectionInfo.class
-
- - link:URLConnectionInfo-asmified.java[Asmified]
-
-== References
-

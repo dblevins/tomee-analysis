@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/security/impl/EndpointURLSchemeSecurityHandler.class
-
- - link:EndpointURLSchemeSecurityHandler-asmified.java[Asmified]
-
-== References
-

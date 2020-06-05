@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/WelcomeFileList$JAXB.class
-
- - link:WelcomeFileList$JAXB-asmified.java[Asmified]
-
-== References
-

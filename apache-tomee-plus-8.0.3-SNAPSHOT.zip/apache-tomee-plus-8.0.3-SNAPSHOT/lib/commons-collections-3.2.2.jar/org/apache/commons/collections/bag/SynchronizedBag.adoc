@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bag/SynchronizedBag.class
-
- - link:SynchronizedBag-asmified.java[Asmified]
-
-== References
-

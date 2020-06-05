@@ -1,6 +1,0 @@
-= org/codehaus/stax2/typed/TypedArrayDecoder.class
-
- - link:TypedArrayDecoder-asmified.java[Asmified]
-
-== References
-

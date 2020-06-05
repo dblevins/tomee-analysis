@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/DelegatingBundle$Cache.class
-
- - link:DelegatingBundle$Cache-asmified.java[Asmified]
-
-== References
-

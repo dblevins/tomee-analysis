@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityToken/SecurityTokenConstants$TokenType.class
-
- - link:SecurityTokenConstants$TokenType-asmified.java[Asmified]
-
-== References
-

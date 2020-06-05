@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/StdSchedulerFactory.class
-
- - link:StdSchedulerFactory-asmified.java[Asmified]
-
-== References
-

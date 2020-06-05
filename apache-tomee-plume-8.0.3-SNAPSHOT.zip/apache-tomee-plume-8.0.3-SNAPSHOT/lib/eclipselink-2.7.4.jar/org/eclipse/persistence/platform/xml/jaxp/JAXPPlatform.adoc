@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/xml/jaxp/JAXPPlatform.class
-
- - link:JAXPPlatform-asmified.java[Asmified]
-
-== References
-

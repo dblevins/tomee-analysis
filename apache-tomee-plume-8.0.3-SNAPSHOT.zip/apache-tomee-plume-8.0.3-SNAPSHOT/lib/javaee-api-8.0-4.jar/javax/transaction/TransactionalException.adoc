@@ -1,6 +1,0 @@
-= javax/transaction/TransactionalException.class
-
- - link:TransactionalException-asmified.java[Asmified]
-
-== References
-

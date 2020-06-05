@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/ConcreteBeanPropertyBase.class
-
- - link:ConcreteBeanPropertyBase-asmified.java[Asmified]
-
-== References
-

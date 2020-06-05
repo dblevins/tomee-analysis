@@ -1,8 +1,0 @@
-= javax/servlet/annotation/ServletSecurity.class
-
- - link:ServletSecurity-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.annotation.HttpConstraint - 2
- - javax.servlet.annotation.HttpMethodConstraint - 1

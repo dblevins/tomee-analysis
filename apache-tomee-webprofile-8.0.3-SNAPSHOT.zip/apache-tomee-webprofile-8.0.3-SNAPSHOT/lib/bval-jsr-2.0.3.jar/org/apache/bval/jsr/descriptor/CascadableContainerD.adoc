@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/CascadableContainerD.class
-
- - link:CascadableContainerD-asmified.java[Asmified]
-
-== References
-

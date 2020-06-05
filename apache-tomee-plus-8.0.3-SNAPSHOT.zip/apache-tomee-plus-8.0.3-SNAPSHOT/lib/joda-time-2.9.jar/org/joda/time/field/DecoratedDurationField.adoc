@@ -1,6 +1,0 @@
-= org/joda/time/field/DecoratedDurationField.class
-
- - link:DecoratedDurationField-asmified.java[Asmified]
-
-== References
-

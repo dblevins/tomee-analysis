@@ -1,6 +1,0 @@
-= com/sun/faces/mgbean/ManagedBeanCreationException.class
-
- - link:ManagedBeanCreationException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/event/ListenerFor.class
-
- - link:ListenerFor-asmified.java[Asmified]
-
-== References
-

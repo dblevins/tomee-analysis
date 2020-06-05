@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/SQLResultSetMapping.class
-
- - link:SQLResultSetMapping-asmified.java[Asmified]
-
-== References
-

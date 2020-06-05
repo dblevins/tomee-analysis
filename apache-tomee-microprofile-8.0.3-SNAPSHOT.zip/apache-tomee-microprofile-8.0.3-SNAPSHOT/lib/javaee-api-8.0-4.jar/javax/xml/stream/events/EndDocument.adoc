@@ -1,6 +1,0 @@
-= javax/xml/stream/events/EndDocument.class
-
- - link:EndDocument-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/AbstractFaultChainInitiatorObserver.class
-
- - link:AbstractFaultChainInitiatorObserver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/persist/TableSpaceManagerSimple.class
-
- - link:TableSpaceManagerSimple-asmified.java[Asmified]
-
-== References
-

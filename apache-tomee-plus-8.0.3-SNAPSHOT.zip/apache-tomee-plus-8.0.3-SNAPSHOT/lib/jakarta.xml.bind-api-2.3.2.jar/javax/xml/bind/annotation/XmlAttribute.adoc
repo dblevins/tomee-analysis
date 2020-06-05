@@ -1,6 +1,0 @@
-= javax/xml/bind/annotation/XmlAttribute.class
-
- - link:XmlAttribute-asmified.java[Asmified]
-
-== References
-

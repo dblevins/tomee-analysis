@@ -1,6 +1,0 @@
-= jakarta/mail/internet/MimeMessage$RecipientType.class
-
- - link:MimeMessage$RecipientType-asmified.java[Asmified]
-
-== References
-

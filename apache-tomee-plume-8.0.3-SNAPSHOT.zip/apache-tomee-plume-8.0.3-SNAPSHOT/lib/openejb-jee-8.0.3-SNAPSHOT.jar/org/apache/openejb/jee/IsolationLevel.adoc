@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/IsolationLevel.class
-
- - link:IsolationLevel-asmified.java[Asmified]
-
-== References
-

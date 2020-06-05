@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/stax/StAXDocumentSerializer.class
-
- - link:StAXDocumentSerializer-asmified.java[Asmified]
-
-== References
-

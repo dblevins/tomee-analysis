@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/CryptoServicesPermission.class
-
- - link:CryptoServicesPermission-asmified.java[Asmified]
-
-== References
-

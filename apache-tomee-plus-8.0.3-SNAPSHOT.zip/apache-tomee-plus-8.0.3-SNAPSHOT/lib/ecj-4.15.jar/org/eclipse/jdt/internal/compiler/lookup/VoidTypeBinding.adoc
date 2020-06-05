@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/VoidTypeBinding.class
-
- - link:VoidTypeBinding-asmified.java[Asmified]
-
-== References
-

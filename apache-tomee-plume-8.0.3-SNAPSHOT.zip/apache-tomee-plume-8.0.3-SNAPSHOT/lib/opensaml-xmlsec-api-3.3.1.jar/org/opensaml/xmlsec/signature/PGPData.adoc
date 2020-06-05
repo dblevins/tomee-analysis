@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/signature/PGPData.class
-
- - link:PGPData-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/journal/CallerBufferingDataFileAppender$WriteBatch.class
-
- - link:CallerBufferingDataFileAppender$WriteBatch-asmified.java[Asmified]
-
-== References
-

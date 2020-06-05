@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/HandlerChainInvoker.class
-
- - link:HandlerChainInvoker-asmified.java[Asmified]
-
-== References
-

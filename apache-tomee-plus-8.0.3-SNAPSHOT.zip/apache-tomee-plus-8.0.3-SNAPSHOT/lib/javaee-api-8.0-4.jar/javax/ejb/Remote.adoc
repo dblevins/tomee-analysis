@@ -1,6 +1,0 @@
-= javax/ejb/Remote.class
-
- - link:Remote-asmified.java[Asmified]
-
-== References
-

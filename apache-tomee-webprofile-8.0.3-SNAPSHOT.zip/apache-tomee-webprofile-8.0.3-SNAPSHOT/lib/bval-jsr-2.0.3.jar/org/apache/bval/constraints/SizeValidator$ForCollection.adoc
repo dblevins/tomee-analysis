@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/SizeValidator$ForCollection.class
-
- - link:SizeValidator$ForCollection-asmified.java[Asmified]
-
-== References
-

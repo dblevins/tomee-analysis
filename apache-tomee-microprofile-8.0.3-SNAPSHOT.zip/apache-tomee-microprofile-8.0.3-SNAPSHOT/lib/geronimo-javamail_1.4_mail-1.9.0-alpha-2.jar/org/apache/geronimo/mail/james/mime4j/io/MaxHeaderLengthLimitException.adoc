@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/io/MaxHeaderLengthLimitException.class
-
- - link:MaxHeaderLengthLimitException-asmified.java[Asmified]
-
-== References
-

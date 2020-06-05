@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/text/ExtendedMessageFormat.class
-
- - link:ExtendedMessageFormat-asmified.java[Asmified]
-
-== References
-

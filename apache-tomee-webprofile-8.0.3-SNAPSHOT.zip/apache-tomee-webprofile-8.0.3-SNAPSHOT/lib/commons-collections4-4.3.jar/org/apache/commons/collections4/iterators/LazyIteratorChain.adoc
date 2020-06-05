@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/iterators/LazyIteratorChain.class
-
- - link:LazyIteratorChain-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/annotation/constraint/NotLive.class
-
- - link:NotLive-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/context/ExternalContextImpl$ALLOWABLE_COOKIE_PROPERTIES.class
-
- - link:ExternalContextImpl$ALLOWABLE_COOKIE_PROPERTIES-asmified.java[Asmified]
-
-== References
-

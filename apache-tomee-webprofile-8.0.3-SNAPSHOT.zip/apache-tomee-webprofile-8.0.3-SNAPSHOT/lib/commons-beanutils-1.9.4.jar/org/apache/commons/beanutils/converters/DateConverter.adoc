@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/converters/DateConverter.class
-
- - link:DateConverter-asmified.java[Asmified]
-
-== References
-

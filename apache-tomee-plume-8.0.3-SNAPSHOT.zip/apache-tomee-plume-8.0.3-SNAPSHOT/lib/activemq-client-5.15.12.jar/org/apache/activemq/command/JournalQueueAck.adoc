@@ -1,6 +1,0 @@
-= org/apache/activemq/command/JournalQueueAck.class
-
- - link:JournalQueueAck-asmified.java[Asmified]
-
-== References
-

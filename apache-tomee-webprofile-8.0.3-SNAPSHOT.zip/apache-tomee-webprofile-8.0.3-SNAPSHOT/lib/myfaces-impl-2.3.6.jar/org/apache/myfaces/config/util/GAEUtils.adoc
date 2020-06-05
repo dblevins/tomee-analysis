@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/util/GAEUtils.class
-
- - link:GAEUtils-asmified.java[Asmified]
-
-== References
-

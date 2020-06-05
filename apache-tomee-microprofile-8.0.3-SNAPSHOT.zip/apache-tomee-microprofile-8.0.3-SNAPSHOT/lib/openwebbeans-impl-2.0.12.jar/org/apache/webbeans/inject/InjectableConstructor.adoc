@@ -1,6 +1,0 @@
-= org/apache/webbeans/inject/InjectableConstructor.class
-
- - link:InjectableConstructor-asmified.java[Asmified]
-
-== References
-

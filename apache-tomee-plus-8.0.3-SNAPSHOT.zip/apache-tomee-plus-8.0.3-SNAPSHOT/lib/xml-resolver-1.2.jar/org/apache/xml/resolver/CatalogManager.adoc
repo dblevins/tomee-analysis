@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/CatalogManager.class
-
- - link:CatalogManager-asmified.java[Asmified]
-
-== References
-

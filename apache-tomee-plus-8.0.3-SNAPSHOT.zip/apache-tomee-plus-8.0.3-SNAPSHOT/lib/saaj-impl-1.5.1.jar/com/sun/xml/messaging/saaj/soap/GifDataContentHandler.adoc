@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/GifDataContentHandler.class
-
- - link:GifDataContentHandler-asmified.java[Asmified]
-
-== References
-

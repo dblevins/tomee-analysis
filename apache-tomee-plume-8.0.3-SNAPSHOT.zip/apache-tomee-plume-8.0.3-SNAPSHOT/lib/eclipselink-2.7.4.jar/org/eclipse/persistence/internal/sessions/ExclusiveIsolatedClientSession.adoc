@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/ExclusiveIsolatedClientSession.class
-
- - link:ExclusiveIsolatedClientSession-asmified.java[Asmified]
-
-== References
-

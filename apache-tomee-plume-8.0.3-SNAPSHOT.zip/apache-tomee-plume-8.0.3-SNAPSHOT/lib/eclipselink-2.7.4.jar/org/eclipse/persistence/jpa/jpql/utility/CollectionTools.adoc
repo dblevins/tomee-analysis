@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/utility/CollectionTools.class
-
- - link:CollectionTools-asmified.java[Asmified]
-
-== References
-

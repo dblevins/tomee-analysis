@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/ConfigurationImpl.class
-
- - link:ConfigurationImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeRewriter$fptr.class
-
- - link:TreeRewriter$fptr-asmified.java[Asmified]
-
-== References
-

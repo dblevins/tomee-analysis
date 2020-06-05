@@ -1,6 +1,0 @@
-= org/apache/cxf/rt/security/saml/interceptor/WSS4JBasicAuthValidator$1.class
-
- - link:WSS4JBasicAuthValidator$1-asmified.java[Asmified]
-
-== References
-

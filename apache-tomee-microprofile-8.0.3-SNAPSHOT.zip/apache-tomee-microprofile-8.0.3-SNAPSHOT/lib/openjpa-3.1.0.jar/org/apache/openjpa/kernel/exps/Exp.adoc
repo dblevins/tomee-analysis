@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Exp.class
-
- - link:Exp-asmified.java[Asmified]
-
-== References
-

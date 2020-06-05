@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/LocaleBeanUtilsBean.class
-
- - link:LocaleBeanUtilsBean-asmified.java[Asmified]
-
-== References
-

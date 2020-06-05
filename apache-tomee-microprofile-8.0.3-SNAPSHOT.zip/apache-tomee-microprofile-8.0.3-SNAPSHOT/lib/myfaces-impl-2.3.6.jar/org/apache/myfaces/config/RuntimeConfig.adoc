@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/RuntimeConfig.class
-
- - link:RuntimeConfig-asmified.java[Asmified]
-
-== References
-

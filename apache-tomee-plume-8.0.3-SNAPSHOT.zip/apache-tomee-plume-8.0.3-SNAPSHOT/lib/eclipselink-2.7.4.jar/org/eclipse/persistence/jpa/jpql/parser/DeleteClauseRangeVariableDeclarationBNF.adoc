@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/DeleteClauseRangeVariableDeclarationBNF.class
-
- - link:DeleteClauseRangeVariableDeclarationBNF-asmified.java[Asmified]
-
-== References
-

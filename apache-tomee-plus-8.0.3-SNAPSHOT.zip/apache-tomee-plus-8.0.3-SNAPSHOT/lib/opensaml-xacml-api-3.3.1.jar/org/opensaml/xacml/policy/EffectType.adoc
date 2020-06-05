@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/EffectType.class
-
- - link:EffectType-asmified.java[Asmified]
-
-== References
-

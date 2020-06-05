@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/StatusImpl.class
-
- - link:StatusImpl-asmified.java[Asmified]
-
-== References
-

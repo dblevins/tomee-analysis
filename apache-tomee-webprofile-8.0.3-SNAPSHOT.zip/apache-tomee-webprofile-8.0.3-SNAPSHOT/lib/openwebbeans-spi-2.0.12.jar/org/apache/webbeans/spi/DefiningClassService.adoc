@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/DefiningClassService.class
-
- - link:DefiningClassService-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/rules/CheckDependsOn$1.class
-
- - link:CheckDependsOn$1-asmified.java[Asmified]
-
-== References
-

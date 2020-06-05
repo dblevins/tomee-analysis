@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/common/Listener.class
-
- - link:Listener-asmified.java[Asmified]
-
-== References
-

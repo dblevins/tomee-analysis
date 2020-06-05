@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/OneToOne.class
-
- - link:OneToOne-asmified.java[Asmified]
-
-== References
-

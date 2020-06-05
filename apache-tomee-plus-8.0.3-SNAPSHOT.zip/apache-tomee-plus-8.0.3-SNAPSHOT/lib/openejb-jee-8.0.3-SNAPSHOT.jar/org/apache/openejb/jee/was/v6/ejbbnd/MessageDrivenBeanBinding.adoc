@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejbbnd/MessageDrivenBeanBinding.class
-
- - link:MessageDrivenBeanBinding-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/RpcChannel.class
-
- - link:RpcChannel-asmified.java[Asmified]
-
-== References
-

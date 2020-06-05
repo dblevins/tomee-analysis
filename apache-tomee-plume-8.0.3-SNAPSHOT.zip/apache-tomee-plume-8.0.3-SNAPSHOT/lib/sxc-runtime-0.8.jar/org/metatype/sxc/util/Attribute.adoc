@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/Attribute.class
-
- - link:Attribute-asmified.java[Asmified]
-
-== References
-

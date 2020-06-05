@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/MappedSuperclass.class
-
- - link:MappedSuperclass-asmified.java[Asmified]
-
-== References
-

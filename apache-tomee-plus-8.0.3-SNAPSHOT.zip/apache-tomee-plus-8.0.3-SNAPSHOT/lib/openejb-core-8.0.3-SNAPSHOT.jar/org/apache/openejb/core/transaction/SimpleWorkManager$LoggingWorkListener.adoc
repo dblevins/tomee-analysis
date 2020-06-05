@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/SimpleWorkManager$LoggingWorkListener.class
-
- - link:SimpleWorkManager$LoggingWorkListener-asmified.java[Asmified]
-
-== References
-

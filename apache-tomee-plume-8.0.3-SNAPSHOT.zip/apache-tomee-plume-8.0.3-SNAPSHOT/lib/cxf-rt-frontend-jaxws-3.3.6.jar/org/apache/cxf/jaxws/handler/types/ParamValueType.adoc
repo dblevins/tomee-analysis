@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/types/ParamValueType.class
-
- - link:ParamValueType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/sax/SAXDocumentParser.class
-
- - link:SAXDocumentParser-asmified.java[Asmified]
-
-== References
-

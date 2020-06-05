@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/tools/StAX2SAXReader.class
-
- - link:StAX2SAXReader-asmified.java[Asmified]
-
-== References
-

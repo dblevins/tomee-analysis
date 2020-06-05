@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.class
-
- - link:CrossOriginResourceSharingFilter-asmified.java[Asmified]
-
-== References
-

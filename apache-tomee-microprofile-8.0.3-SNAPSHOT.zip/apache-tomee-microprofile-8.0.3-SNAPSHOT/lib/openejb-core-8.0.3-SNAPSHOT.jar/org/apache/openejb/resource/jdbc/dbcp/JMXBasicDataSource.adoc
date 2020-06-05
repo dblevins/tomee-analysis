@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/dbcp/JMXBasicDataSource.class
-
- - link:JMXBasicDataSource-asmified.java[Asmified]
-
-== References
-

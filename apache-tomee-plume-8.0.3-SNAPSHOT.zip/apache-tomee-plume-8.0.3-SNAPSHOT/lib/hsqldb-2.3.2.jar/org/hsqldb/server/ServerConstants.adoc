@@ -1,6 +1,0 @@
-= org/hsqldb/server/ServerConstants.class
-
- - link:ServerConstants-asmified.java[Asmified]
-
-== References
-

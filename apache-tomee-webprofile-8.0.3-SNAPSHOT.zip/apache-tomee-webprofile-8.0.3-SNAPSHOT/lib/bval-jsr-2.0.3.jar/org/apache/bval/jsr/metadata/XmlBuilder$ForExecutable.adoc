@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/XmlBuilder$ForExecutable.class
-
- - link:XmlBuilder$ForExecutable-asmified.java[Asmified]
-
-== References
-

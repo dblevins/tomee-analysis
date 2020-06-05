@@ -1,6 +1,0 @@
-= org/apache/catalina/users/MemoryUserDatabaseFactory.class
-
- - link:MemoryUserDatabaseFactory-asmified.java[Asmified]
-
-== References
-

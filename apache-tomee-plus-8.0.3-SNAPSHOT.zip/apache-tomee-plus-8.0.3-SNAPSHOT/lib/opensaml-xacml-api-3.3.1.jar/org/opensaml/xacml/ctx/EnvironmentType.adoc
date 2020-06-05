@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/EnvironmentType.class
-
- - link:EnvironmentType-asmified.java[Asmified]
-
-== References
-

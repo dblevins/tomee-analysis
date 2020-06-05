@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/TypeElementImpl$SourceLocationComparator.class
-
- - link:TypeElementImpl$SourceLocationComparator-asmified.java[Asmified]
-
-== References
-

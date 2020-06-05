@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwt/JoseJwtProducerConsumer.class
-
- - link:JoseJwtProducerConsumer-asmified.java[Asmified]
-
-== References
-

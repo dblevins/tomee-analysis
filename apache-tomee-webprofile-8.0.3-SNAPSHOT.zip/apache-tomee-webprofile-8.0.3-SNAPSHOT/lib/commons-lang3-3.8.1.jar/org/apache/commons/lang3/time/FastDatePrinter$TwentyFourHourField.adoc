@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/time/FastDatePrinter$TwentyFourHourField.class
-
- - link:FastDatePrinter$TwentyFourHourField-asmified.java[Asmified]
-
-== References
-

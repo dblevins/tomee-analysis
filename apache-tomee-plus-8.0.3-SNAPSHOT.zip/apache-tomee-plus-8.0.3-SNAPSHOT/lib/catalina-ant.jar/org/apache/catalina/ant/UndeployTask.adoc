@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/UndeployTask.class
-
- - link:UndeployTask-asmified.java[Asmified]
-
-== References
-

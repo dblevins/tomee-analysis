@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/RadioRenderer$Group.class
-
- - link:RadioRenderer$Group-asmified.java[Asmified]
-
-== References
-

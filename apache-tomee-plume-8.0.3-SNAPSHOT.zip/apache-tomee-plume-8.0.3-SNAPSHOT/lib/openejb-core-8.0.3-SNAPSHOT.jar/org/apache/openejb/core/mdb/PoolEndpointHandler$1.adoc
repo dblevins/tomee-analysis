@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/PoolEndpointHandler$1.class
-
- - link:PoolEndpointHandler$1-asmified.java[Asmified]
-
-== References
-

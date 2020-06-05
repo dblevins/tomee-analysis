@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/EmptyOperator.class
-
- - link:EmptyOperator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/converters/DurationConverter.class
-
- - link:DurationConverter-asmified.java[Asmified]
-
-== References
-

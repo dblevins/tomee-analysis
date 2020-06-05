@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/CachingMessageBodyWriter.class
-
- - link:CachingMessageBodyWriter-asmified.java[Asmified]
-
-== References
-

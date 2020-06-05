@@ -1,6 +1,0 @@
-= org/apache/catalina/startup/Catalina.class
-
- - link:Catalina-asmified.java[Asmified]
-
-== References
-

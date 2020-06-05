@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/heroku/HerokuDatabasePropertiesProvider$1.class
-
- - link:HerokuDatabasePropertiesProvider$1-asmified.java[Asmified]
-
-== References
-

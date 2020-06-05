@@ -1,6 +1,0 @@
-= org/apache/commons/digester/StackAction.class
-
- - link:StackAction-asmified.java[Asmified]
-
-== References
-

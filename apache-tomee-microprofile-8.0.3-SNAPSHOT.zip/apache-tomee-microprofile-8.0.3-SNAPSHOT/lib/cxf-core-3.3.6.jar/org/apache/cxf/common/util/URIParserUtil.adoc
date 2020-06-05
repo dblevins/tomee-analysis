@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/URIParserUtil.class
-
- - link:URIParserUtil-asmified.java[Asmified]
-
-== References
-

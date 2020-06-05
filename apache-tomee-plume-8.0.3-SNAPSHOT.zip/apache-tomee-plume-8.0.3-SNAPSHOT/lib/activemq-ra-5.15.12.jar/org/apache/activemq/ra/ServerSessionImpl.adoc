@@ -1,6 +1,0 @@
-= org/apache/activemq/ra/ServerSessionImpl.class
-
- - link:ServerSessionImpl-asmified.java[Asmified]
-
-== References
-

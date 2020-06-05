@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/ExceptionFactory.class
-
- - link:ExceptionFactory-asmified.java[Asmified]
-
-== References
-

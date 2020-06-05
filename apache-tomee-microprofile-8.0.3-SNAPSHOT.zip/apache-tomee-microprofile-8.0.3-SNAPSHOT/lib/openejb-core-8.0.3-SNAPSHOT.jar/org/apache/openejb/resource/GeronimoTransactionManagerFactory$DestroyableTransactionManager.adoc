@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/GeronimoTransactionManagerFactory$DestroyableTransactionManager.class
-
- - link:GeronimoTransactionManagerFactory$DestroyableTransactionManager-asmified.java[Asmified]
-
-== References
-

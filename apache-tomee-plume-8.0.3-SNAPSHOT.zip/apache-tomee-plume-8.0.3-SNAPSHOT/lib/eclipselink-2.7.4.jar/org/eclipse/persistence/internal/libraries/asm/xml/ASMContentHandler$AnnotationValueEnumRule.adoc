@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$AnnotationValueEnumRule.class
-
- - link:ASMContentHandler$AnnotationValueEnumRule-asmified.java[Asmified]
-
-== References
-

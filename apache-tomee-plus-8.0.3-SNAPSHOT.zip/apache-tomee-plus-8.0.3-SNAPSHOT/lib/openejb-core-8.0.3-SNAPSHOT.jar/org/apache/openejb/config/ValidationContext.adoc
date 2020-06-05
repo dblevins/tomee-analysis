@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ValidationContext.class
-
- - link:ValidationContext-asmified.java[Asmified]
-
-== References
-

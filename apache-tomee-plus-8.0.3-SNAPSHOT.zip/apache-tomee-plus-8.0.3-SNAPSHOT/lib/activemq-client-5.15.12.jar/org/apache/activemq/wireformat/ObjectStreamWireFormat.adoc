@@ -1,6 +1,0 @@
-= org/apache/activemq/wireformat/ObjectStreamWireFormat.class
-
- - link:ObjectStreamWireFormat-asmified.java[Asmified]
-
-== References
-

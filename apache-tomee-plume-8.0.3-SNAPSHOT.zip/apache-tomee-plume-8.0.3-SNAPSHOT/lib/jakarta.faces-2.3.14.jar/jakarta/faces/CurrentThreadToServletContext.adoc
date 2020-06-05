@@ -1,6 +1,0 @@
-= jakarta/faces/CurrentThreadToServletContext.class
-
- - link:CurrentThreadToServletContext-asmified.java[Asmified]
-
-== References
-

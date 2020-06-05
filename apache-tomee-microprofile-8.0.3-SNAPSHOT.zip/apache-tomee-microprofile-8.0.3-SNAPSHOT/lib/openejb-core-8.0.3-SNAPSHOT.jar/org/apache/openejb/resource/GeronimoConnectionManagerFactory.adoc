@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/GeronimoConnectionManagerFactory.class
-
- - link:GeronimoConnectionManagerFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/servlet/FilterConfig.class
-
- - link:FilterConfig-asmified.java[Asmified]
-
-== References
-
- - javax.servlet.ServletContext - 1

@@ -1,6 +1,0 @@
-= org/opensaml/saml/security/impl/InlineSelfEncryptionParametersStrategy.class
-
- - link:InlineSelfEncryptionParametersStrategy-asmified.java[Asmified]
-
-== References
-

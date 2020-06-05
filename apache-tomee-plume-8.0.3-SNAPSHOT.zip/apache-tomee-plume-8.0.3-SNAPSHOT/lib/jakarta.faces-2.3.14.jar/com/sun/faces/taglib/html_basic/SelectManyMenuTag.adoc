@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/SelectManyMenuTag.class
-
- - link:SelectManyMenuTag-asmified.java[Asmified]
-
-== References
-

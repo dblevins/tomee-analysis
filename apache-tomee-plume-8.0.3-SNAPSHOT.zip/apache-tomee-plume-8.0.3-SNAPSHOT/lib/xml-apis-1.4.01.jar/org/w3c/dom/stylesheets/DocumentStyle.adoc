@@ -1,6 +1,0 @@
-= org/w3c/dom/stylesheets/DocumentStyle.class
-
- - link:DocumentStyle-asmified.java[Asmified]
-
-== References
-

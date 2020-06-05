@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/provisining/MavenResolver$QuickMvnMetadataParser.class
-
- - link:MavenResolver$QuickMvnMetadataParser-asmified.java[Asmified]
-
-== References
-

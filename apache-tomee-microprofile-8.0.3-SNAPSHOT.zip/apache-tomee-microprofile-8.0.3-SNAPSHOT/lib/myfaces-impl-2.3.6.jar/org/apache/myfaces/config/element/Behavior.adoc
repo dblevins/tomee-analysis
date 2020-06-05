@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/Behavior.class
-
- - link:Behavior-asmified.java[Asmified]
-
-== References
-

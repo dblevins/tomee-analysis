@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/BusEntityResolver.class
-
- - link:BusEntityResolver-asmified.java[Asmified]
-
-== References
-

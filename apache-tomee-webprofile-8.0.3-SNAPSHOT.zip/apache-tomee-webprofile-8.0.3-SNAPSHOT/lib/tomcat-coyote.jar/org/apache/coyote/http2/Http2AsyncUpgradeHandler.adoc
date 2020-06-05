@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/Http2AsyncUpgradeHandler.class
-
- - link:Http2AsyncUpgradeHandler-asmified.java[Asmified]
-
-== References
-

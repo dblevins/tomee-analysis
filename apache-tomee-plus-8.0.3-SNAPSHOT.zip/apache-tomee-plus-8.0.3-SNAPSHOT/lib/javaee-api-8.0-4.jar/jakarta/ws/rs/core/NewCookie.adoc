@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/NewCookie.class
-
- - link:NewCookie-asmified.java[Asmified]
-
-== References
-

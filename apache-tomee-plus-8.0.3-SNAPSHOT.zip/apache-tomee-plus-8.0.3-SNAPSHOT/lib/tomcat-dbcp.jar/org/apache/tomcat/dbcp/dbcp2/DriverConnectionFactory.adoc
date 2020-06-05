@@ -1,6 +1,0 @@
-= org/apache/tomcat/dbcp/dbcp2/DriverConnectionFactory.class
-
- - link:DriverConnectionFactory-asmified.java[Asmified]
-
-== References
-

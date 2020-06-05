@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityToken/SubjectAndPrincipalSecurityToken.class
-
- - link:SubjectAndPrincipalSecurityToken-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/event/NotificationManager$CDICompletionFuture.class
-
- - link:NotificationManager$CDICompletionFuture-asmified.java[Asmified]
-
-== References
-

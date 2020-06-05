@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/introspector/PropertySubstitute.class
-
- - link:PropertySubstitute-asmified.java[Asmified]
-
-== References
-

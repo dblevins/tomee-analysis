@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/EnumerationUtils.class
-
- - link:EnumerationUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/SystemPropertyAction.class
-
- - link:SystemPropertyAction-asmified.java[Asmified]
-
-== References
-

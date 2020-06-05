@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/TldTaglib.class
-
- - link:TldTaglib-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/MetaDataRepository$QueryKey.class
-
- - link:MetaDataRepository$QueryKey-asmified.java[Asmified]
-
-== References
-

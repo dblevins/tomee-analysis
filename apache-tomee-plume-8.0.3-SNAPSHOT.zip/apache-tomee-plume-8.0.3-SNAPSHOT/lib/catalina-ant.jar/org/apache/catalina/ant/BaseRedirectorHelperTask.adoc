@@ -1,6 +1,0 @@
-= org/apache/catalina/ant/BaseRedirectorHelperTask.class
-
- - link:BaseRedirectorHelperTask-asmified.java[Asmified]
-
-== References
-

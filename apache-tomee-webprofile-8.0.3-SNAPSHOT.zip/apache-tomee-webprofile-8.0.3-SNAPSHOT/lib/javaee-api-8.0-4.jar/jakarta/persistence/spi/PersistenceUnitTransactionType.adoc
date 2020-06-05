@@ -1,6 +1,0 @@
-= jakarta/persistence/spi/PersistenceUnitTransactionType.class
-
- - link:PersistenceUnitTransactionType-asmified.java[Asmified]
-
-== References
-

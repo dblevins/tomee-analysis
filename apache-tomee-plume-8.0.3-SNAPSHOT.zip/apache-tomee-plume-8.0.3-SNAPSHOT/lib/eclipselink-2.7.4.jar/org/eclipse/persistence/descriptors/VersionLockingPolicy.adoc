@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/VersionLockingPolicy.class
-
- - link:VersionLockingPolicy-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/validation/ConstraintViolation.class
-
- - link:ConstraintViolation-asmified.java[Asmified]
-
-== References
-
- - javax.validation.metadata.ConstraintDescriptor - 1
- - javax.validation.Path - 1

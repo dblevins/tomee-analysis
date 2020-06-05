@@ -1,6 +1,0 @@
-= org/apache/openejb/server/Restart.class
-
- - link:Restart-asmified.java[Asmified]
-
-== References
-

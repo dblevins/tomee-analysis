@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/ConstructorD.class
-
- - link:ConstructorD-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Pool$Stats.class
-
- - link:Pool$Stats-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/java/JavaClass.class
-
- - link:JavaClass-asmified.java[Asmified]
-
-== References
-

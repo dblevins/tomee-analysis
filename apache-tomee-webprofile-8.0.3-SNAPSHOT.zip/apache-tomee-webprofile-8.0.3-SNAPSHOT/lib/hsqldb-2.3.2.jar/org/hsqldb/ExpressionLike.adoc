@@ -1,6 +1,0 @@
-= org/hsqldb/ExpressionLike.class
-
- - link:ExpressionLike-asmified.java[Asmified]
-
-== References
-

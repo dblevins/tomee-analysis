@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/SessionType$JAXB.class
-
- - link:SessionType$JAXB-asmified.java[Asmified]
-
-== References
-

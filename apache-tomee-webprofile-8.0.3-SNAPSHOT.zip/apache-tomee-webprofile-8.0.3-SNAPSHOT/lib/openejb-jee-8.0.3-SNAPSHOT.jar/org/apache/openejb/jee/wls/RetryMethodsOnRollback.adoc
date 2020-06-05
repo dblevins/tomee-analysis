@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/RetryMethodsOnRollback.class
-
- - link:RetryMethodsOnRollback-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/NSStack$Mapping.class
-
- - link:NSStack$Mapping-asmified.java[Asmified]
-
-== References
-

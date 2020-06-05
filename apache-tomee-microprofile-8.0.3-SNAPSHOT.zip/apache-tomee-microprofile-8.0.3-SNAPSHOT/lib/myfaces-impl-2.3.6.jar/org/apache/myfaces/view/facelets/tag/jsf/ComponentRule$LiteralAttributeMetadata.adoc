@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/ComponentRule$LiteralAttributeMetadata.class
-
- - link:ComponentRule$LiteralAttributeMetadata-asmified.java[Asmified]
-
-== References
-

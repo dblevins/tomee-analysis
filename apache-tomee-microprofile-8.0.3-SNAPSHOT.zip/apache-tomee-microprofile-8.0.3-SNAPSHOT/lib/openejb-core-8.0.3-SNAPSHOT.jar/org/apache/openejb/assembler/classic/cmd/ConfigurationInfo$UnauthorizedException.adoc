@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/cmd/ConfigurationInfo$UnauthorizedException.class
-
- - link:ConfigurationInfo$UnauthorizedException-asmified.java[Asmified]
-
-== References
-

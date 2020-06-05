@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/ResponseProtection.class
-
- - link:ResponseProtection-asmified.java[Asmified]
-
-== References
-

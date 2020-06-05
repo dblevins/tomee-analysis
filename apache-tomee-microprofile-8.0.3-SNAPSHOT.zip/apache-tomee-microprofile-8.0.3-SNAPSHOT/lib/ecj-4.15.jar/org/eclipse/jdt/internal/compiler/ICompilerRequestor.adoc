@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ICompilerRequestor.class
-
- - link:ICompilerRequestor-asmified.java[Asmified]
-
-== References
-

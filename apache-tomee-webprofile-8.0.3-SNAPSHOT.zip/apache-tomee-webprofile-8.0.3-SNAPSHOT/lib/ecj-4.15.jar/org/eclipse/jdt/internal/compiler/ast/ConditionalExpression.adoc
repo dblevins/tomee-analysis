@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/ConditionalExpression.class
-
- - link:ConditionalExpression-asmified.java[Asmified]
-
-== References
-

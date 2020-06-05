@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HttpConduitFeature$Portable.class
-
- - link:HttpConduitFeature$Portable-asmified.java[Asmified]
-
-== References
-

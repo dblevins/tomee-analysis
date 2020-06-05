@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/DTLSEpoch.class
-
- - link:DTLSEpoch-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/push/WebsocketEndpoint.class
-
- - link:WebsocketEndpoint-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ResultVariableFactory$SelectClauseVisitor.class
-
- - link:ResultVariableFactory$SelectClauseVisitor-asmified.java[Asmified]
-
-== References
-

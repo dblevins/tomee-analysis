@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ProblemMethodBinding.class
-
- - link:ProblemMethodBinding-asmified.java[Asmified]
-
-== References
-

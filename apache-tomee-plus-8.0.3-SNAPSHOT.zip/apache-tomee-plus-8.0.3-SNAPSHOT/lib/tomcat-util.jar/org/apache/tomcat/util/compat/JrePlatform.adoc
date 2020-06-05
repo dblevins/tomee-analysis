@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/compat/JrePlatform.class
-
- - link:JrePlatform-asmified.java[Asmified]
-
-== References
-

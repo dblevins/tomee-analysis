@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/CmpJarBuilder.class
-
- - link:CmpJarBuilder-asmified.java[Asmified]
-
-== References
-

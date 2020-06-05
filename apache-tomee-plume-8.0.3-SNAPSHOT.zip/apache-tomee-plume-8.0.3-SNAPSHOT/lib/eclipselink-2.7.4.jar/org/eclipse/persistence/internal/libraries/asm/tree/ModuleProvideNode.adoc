@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/ModuleProvideNode.class
-
- - link:ModuleProvideNode-asmified.java[Asmified]
-
-== References
-

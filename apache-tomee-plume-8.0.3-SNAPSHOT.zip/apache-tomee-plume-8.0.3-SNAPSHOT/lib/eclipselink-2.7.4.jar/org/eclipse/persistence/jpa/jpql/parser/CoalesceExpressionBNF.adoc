@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/CoalesceExpressionBNF.class
-
- - link:CoalesceExpressionBNF-asmified.java[Asmified]
-
-== References
-

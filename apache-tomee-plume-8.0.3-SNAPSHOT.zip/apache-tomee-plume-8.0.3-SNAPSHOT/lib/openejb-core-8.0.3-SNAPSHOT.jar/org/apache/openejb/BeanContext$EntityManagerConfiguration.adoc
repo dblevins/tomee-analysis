@@ -1,6 +1,0 @@
-= org/apache/openejb/BeanContext$EntityManagerConfiguration.class
-
- - link:BeanContext$EntityManagerConfiguration-asmified.java[Asmified]
-
-== References
-

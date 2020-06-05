@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/DefaultHelper.class
-
- - link:DefaultHelper-asmified.java[Asmified]
-
-== References
-

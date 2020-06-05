@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/JsonLocation.class
-
- - link:JsonLocation-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/smime/SMIMECapability.class
-
- - link:SMIMECapability-asmified.java[Asmified]
-
-== References
-

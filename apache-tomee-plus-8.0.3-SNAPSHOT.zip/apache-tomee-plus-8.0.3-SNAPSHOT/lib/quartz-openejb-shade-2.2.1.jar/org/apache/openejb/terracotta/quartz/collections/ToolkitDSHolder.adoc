@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/collections/ToolkitDSHolder.class
-
- - link:ToolkitDSHolder-asmified.java[Asmified]
-
-== References
-

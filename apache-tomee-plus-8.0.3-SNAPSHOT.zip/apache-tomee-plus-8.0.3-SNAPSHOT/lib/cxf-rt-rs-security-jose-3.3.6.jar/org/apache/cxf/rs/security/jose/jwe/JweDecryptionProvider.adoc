@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/JweDecryptionProvider.class
-
- - link:JweDecryptionProvider-asmified.java[Asmified]
-
-== References
-

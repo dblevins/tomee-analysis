@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/Nio2Endpoint$Nio2SocketWrapper$Nio2OperationState.class
-
- - link:Nio2Endpoint$Nio2SocketWrapper$Nio2OperationState-asmified.java[Asmified]
-
-== References
-

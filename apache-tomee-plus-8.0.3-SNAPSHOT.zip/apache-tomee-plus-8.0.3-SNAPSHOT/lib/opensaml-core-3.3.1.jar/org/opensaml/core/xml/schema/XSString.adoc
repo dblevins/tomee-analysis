@@ -1,6 +1,0 @@
-= org/opensaml/core/xml/schema/XSString.class
-
- - link:XSString-asmified.java[Asmified]
-
-== References
-

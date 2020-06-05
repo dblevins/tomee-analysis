@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/StringCache.class
-
- - link:StringCache-asmified.java[Asmified]
-
-== References
-

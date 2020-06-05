@@ -1,6 +1,0 @@
-= org/apache/activemq/network/NetworkBridgeListener.class
-
- - link:NetworkBridgeListener-asmified.java[Asmified]
-
-== References
-

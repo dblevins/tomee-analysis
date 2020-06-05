@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jws/HmacJwsSignatureProvider.class
-
- - link:HmacJwsSignatureProvider-asmified.java[Asmified]
-
-== References
-

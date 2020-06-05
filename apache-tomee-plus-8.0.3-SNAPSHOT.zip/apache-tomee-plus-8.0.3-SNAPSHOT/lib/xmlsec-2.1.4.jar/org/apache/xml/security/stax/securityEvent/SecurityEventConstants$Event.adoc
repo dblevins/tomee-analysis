@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityEvent/SecurityEventConstants$Event.class
-
- - link:SecurityEventConstants$Event-asmified.java[Asmified]
-
-== References
-

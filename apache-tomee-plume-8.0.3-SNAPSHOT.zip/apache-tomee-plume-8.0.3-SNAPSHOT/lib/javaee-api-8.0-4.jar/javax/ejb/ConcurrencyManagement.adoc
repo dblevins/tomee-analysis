@@ -1,7 +1,0 @@
-= javax/ejb/ConcurrencyManagement.class
-
- - link:ConcurrencyManagement-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.ConcurrencyManagementType - 2

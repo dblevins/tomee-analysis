@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/DeployTimeEnhancer.class
-
- - link:DeployTimeEnhancer-asmified.java[Asmified]
-
-== References
-

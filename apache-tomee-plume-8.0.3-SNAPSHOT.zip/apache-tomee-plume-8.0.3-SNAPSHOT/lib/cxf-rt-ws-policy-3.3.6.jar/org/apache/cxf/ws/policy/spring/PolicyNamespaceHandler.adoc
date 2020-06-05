@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/spring/PolicyNamespaceHandler.class
-
- - link:PolicyNamespaceHandler-asmified.java[Asmified]
-
-== References
-

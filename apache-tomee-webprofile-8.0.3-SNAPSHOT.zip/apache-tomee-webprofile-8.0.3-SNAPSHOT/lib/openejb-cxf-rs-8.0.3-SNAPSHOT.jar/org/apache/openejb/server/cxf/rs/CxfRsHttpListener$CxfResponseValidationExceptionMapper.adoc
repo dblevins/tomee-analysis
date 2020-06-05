@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/CxfRsHttpListener$CxfResponseValidationExceptionMapper.class
-
- - link:CxfRsHttpListener$CxfResponseValidationExceptionMapper-asmified.java[Asmified]
-
-== References
-

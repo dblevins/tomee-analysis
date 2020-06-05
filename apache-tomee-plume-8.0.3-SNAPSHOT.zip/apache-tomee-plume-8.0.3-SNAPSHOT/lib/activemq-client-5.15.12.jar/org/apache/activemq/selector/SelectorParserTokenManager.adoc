@@ -1,6 +1,0 @@
-= org/apache/activemq/selector/SelectorParserTokenManager.class
-
- - link:SelectorParserTokenManager-asmified.java[Asmified]
-
-== References
-

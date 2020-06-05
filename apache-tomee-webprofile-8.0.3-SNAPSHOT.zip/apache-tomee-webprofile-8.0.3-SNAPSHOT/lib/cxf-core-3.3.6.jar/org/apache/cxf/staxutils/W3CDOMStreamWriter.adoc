@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/W3CDOMStreamWriter.class
-
- - link:W3CDOMStreamWriter-asmified.java[Asmified]
-
-== References
-

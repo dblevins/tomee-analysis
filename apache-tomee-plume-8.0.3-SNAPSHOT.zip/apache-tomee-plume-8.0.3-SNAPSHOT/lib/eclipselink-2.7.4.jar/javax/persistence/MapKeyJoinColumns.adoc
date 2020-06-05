@@ -1,9 +1,0 @@
-= javax/persistence/MapKeyJoinColumns.class
-
- - link:MapKeyJoinColumns-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.ForeignKey - 2
- - javax.persistence.ConstraintMode - 1
- - javax.persistence.MapKeyJoinColumn - 1

@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/strategies/LoaderFromStream.class
-
- - link:LoaderFromStream-asmified.java[Asmified]
-
-== References
-

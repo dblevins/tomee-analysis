@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/RemoteAddrFilter.class
-
- - link:RemoteAddrFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/codehaus/stax2/ri/typed/ValueEncoderFactory$Base64Encoder.class
-
- - link:ValueEncoderFactory$Base64Encoder-asmified.java[Asmified]
-
-== References
-

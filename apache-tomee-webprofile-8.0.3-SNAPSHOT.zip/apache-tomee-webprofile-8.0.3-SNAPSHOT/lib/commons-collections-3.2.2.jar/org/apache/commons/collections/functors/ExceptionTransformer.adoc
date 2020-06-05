@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/ExceptionTransformer.class
-
- - link:ExceptionTransformer-asmified.java[Asmified]
-
-== References
-

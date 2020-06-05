@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/bcel/classfile/ConstantDouble.class
-
- - link:ConstantDouble-asmified.java[Asmified]
-
-== References
-

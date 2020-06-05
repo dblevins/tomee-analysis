@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/queries/EntityResultMetadata.class
-
- - link:EntityResultMetadata-asmified.java[Asmified]
-
-== References
-

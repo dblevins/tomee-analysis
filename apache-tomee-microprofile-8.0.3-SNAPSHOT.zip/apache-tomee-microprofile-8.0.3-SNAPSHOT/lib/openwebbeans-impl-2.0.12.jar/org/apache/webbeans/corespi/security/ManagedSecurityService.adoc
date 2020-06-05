@@ -1,6 +1,0 @@
-= org/apache/webbeans/corespi/security/ManagedSecurityService.class
-
- - link:ManagedSecurityService-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ResourceFinder.class
-
- - link:ResourceFinder-asmified.java[Asmified]
-
-== References
-

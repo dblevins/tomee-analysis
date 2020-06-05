@@ -1,6 +1,0 @@
-= org/apache/catalina/session/PersistentManagerBase.class
-
- - link:PersistentManagerBase-asmified.java[Asmified]
-
-== References
-

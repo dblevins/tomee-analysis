@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

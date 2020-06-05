@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/deploy/FileMessageFactory.class
-
- - link:FileMessageFactory-asmified.java[Asmified]
-
-== References
-

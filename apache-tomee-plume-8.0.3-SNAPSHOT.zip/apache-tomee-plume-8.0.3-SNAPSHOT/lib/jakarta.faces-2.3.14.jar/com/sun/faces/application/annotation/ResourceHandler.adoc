@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/ResourceHandler.class
-
- - link:ResourceHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/flow/FlowDiscoveryCDIExtension.class
-
- - link:FlowDiscoveryCDIExtension-asmified.java[Asmified]
-
-== References
-

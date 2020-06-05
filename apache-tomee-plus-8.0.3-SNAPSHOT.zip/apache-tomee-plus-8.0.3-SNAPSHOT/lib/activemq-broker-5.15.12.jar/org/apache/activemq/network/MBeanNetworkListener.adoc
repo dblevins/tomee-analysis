@@ -1,6 +1,0 @@
-= org/apache/activemq/network/MBeanNetworkListener.class
-
- - link:MBeanNetworkListener-asmified.java[Asmified]
-
-== References
-

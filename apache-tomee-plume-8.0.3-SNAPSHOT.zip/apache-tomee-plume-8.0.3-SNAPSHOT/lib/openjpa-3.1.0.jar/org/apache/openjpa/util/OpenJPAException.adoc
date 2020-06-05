@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/OpenJPAException.class
-
- - link:OpenJPAException-asmified.java[Asmified]
-
-== References
-

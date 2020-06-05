@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$1.class
-
- - link:MetricsExtension$1-asmified.java[Asmified]
-
-== References
-

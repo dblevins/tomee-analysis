@@ -1,9 +1,0 @@
-= javax/validation/constraints/AssertFalse.class
-
- - link:AssertFalse-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Payload - 1
- - javax.validation.Constraint - 1
- - javax.validation.constraints.AssertFalse$List - 1

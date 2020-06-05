@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/PriorityClass.class
-
- - link:PriorityClass-asmified.java[Asmified]
-
-== References
-

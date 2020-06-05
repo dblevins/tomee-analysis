@@ -1,6 +1,0 @@
-= javax/enterprise/inject/Alternative.class
-
- - link:Alternative-asmified.java[Asmified]
-
-== References
-

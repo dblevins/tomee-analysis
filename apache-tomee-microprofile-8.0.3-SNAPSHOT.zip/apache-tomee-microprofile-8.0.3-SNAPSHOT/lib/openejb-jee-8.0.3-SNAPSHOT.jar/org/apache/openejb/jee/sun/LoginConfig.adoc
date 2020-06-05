@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/LoginConfig.class
-
- - link:LoginConfig-asmified.java[Asmified]
-
-== References
-

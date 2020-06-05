@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/security/TLSClientParametersType.class
-
- - link:TLSClientParametersType-asmified.java[Asmified]
-
-== References
-

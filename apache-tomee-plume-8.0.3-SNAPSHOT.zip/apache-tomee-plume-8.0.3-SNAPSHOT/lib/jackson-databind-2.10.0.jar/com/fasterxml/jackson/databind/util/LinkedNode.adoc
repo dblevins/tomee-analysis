@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/LinkedNode.class
-
- - link:LinkedNode-asmified.java[Asmified]
-
-== References
-

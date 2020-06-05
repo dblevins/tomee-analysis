@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/documentpreservation/XMLBinderCacheEntry.class
-
- - link:XMLBinderCacheEntry-asmified.java[Asmified]
-
-== References
-

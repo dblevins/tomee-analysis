@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/impl/DataReferenceUnmarshaller.class
-
- - link:DataReferenceUnmarshaller-asmified.java[Asmified]
-
-== References
-

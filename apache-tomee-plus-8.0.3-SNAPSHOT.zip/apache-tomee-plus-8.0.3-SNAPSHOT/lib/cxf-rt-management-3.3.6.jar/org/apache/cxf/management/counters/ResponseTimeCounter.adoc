@@ -1,6 +1,0 @@
-= org/apache/cxf/management/counters/ResponseTimeCounter.class
-
- - link:ResponseTimeCounter-asmified.java[Asmified]
-
-== References
-

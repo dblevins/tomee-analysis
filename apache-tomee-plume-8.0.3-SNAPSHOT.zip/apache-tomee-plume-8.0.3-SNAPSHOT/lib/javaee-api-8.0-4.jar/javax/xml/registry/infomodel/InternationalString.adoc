@@ -1,8 +1,0 @@
-= javax/xml/registry/infomodel/InternationalString.class
-
- - link:InternationalString-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 10
- - javax.xml.registry.infomodel.LocalizedString - 3

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/ValidationXMLReader$1.class
-
- - link:ValidationXMLReader$1-asmified.java[Asmified]
-
-== References
-

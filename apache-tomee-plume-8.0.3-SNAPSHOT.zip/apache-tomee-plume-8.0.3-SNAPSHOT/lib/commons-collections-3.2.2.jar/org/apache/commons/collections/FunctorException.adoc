@@ -1,6 +1,0 @@
-= org/apache/commons/collections/FunctorException.class
-
- - link:FunctorException-asmified.java[Asmified]
-
-== References
-

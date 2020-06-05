@@ -1,6 +1,0 @@
-= org/apache/openejb/util/OpenEJBScripter$1.class
-
- - link:OpenEJBScripter$1-asmified.java[Asmified]
-
-== References
-

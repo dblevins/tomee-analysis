@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.class
-
- - link:RequestSecurityTokenType-asmified.java[Asmified]
-
-== References
-

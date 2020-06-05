@@ -1,6 +1,0 @@
-= org/apache/openejb/util/CountingLatch$Sync.class
-
- - link:CountingLatch$Sync-asmified.java[Asmified]
-
-== References
-

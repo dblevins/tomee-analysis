@@ -1,6 +1,0 @@
-= javax/transaction/xa/XAException.class
-
- - link:XAException-asmified.java[Asmified]
-
-== References
-

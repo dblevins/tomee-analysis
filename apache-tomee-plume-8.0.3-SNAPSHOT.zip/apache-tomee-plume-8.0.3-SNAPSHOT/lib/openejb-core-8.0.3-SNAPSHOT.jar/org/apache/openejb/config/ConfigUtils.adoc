@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ConfigUtils.class
-
- - link:ConfigUtils-asmified.java[Asmified]
-
-== References
-

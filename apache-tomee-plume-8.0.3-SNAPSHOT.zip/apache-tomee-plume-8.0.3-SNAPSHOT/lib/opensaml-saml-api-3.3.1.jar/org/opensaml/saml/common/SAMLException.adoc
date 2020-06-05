@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/SAMLException.class
-
- - link:SAMLException-asmified.java[Asmified]
-
-== References
-

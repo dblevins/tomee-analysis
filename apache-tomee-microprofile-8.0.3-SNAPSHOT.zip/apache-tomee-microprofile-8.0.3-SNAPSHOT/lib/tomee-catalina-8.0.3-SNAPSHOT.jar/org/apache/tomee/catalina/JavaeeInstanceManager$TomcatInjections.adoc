@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/JavaeeInstanceManager$TomcatInjections.class
-
- - link:JavaeeInstanceManager$TomcatInjections-asmified.java[Asmified]
-
-== References
-

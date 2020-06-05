@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/SpnegoAuthenticator.class
-
- - link:SpnegoAuthenticator-asmified.java[Asmified]
-
-== References
-

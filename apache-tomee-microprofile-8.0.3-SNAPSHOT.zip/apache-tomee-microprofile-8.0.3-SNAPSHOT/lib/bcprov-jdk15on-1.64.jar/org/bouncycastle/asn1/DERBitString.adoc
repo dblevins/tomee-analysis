@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/DERBitString.class
-
- - link:DERBitString-asmified.java[Asmified]
-
-== References
-

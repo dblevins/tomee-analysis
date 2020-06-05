@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/jdbc/JDBCEventConnectionDecorator$EventStatement.class
-
- - link:JDBCEventConnectionDecorator$EventStatement-asmified.java[Asmified]
-
-== References
-

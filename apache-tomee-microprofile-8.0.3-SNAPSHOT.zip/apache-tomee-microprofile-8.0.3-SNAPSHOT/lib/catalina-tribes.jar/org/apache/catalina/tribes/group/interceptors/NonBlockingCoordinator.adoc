@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/group/interceptors/NonBlockingCoordinator.class
-
- - link:NonBlockingCoordinator-asmified.java[Asmified]
-
-== References
-

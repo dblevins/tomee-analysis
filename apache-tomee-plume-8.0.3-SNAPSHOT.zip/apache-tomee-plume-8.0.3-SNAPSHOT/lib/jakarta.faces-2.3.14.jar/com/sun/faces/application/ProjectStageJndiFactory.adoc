@@ -1,6 +1,0 @@
-= com/sun/faces/application/ProjectStageJndiFactory.class
-
- - link:ProjectStageJndiFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/stax/events/StAXEventWriter.class
-
- - link:StAXEventWriter-asmified.java[Asmified]
-
-== References
-

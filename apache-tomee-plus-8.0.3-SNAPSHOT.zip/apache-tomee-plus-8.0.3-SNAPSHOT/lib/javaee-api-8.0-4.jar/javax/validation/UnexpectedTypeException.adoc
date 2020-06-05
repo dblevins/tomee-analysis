@@ -1,7 +1,0 @@
-= javax/validation/UnexpectedTypeException.class
-
- - link:UnexpectedTypeException-asmified.java[Asmified]
-
-== References
-
- - javax.validation.ConstraintDeclarationException - 5

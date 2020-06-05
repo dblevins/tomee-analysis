@@ -1,7 +1,0 @@
-= javax/enterprise/deploy/model/XpathEvent.class
-
- - link:XpathEvent-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.deploy.model.DDBean - 5

@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$TypeElementImpl.class
-
- - link:GeronimoOpenAPIExtension$TypeElementImpl-asmified.java[Asmified]
-
-== References
-

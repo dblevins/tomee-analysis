@@ -1,6 +1,0 @@
-= jakarta/persistence/criteria/CommonAbstractCriteria.class
-
- - link:CommonAbstractCriteria-asmified.java[Asmified]
-
-== References
-

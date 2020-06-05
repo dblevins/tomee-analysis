@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/MinValidatorForNumber.class
-
- - link:MinValidatorForNumber-asmified.java[Asmified]
-
-== References
-

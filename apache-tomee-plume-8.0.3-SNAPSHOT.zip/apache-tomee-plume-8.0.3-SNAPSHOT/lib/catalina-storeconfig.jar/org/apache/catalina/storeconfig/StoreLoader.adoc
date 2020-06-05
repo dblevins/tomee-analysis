@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/StoreLoader.class
-
- - link:StoreLoader-asmified.java[Asmified]
-
-== References
-

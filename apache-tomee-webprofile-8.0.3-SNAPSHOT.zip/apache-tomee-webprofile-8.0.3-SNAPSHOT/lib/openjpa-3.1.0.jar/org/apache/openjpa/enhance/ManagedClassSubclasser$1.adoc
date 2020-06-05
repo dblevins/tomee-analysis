@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/ManagedClassSubclasser$1.class
-
- - link:ManagedClassSubclasser$1-asmified.java[Asmified]
-
-== References
-

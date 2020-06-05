@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/wrappers/FiredTrigger.class
-
- - link:FiredTrigger-asmified.java[Asmified]
-
-== References
-

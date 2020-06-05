@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/dynamic/JPADynamicHelper.class
-
- - link:JPADynamicHelper-asmified.java[Asmified]
-
-== References
-

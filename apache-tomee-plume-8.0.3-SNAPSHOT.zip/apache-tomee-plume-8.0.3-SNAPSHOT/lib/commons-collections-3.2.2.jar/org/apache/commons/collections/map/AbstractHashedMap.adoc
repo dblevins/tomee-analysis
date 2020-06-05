@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/AbstractHashedMap.class
-
- - link:AbstractHashedMap-asmified.java[Asmified]
-
-== References
-

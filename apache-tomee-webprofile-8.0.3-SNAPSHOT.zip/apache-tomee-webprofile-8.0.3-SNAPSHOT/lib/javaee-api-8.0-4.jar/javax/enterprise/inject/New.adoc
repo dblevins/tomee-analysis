@@ -1,8 +1,0 @@
-= javax/enterprise/inject/New.class
-
- - link:New-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.New - 1
- - javax.inject.Qualifier - 1

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/MdbResourceAdapter.class
-
- - link:MdbResourceAdapter-asmified.java[Asmified]
-
-== References
-

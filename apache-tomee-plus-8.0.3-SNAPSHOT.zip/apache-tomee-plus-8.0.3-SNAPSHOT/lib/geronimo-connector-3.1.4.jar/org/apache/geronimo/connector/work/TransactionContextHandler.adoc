@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/work/TransactionContextHandler.class
-
- - link:TransactionContextHandler-asmified.java[Asmified]
-
-== References
-

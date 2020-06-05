@@ -1,6 +1,0 @@
-= org/hsqldb/StatementCompound.class
-
- - link:StatementCompound-asmified.java[Asmified]
-
-== References
-

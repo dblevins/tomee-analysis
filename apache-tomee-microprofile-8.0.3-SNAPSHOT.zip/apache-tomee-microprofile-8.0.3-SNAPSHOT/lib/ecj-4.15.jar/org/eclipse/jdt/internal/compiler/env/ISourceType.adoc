@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/ISourceType.class
-
- - link:ISourceType-asmified.java[Asmified]
-
-== References
-

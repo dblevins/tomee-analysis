@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ExpressionStoreQuery.class
-
- - link:ExpressionStoreQuery-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/resource/spi/work/TransactionContext.class
-
- - link:TransactionContext-asmified.java[Asmified]
-
-== References
-

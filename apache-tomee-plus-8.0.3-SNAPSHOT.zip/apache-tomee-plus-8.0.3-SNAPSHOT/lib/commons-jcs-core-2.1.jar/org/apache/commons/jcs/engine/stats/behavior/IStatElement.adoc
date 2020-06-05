@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/stats/behavior/IStatElement.class
-
- - link:IStatElement-asmified.java[Asmified]
-
-== References
-

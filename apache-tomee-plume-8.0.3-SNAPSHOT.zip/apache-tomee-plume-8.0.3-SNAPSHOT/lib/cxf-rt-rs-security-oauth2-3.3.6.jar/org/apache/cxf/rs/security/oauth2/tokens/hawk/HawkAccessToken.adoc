@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/tokens/hawk/HawkAccessToken.class
-
- - link:HawkAccessToken-asmified.java[Asmified]
-
-== References
-

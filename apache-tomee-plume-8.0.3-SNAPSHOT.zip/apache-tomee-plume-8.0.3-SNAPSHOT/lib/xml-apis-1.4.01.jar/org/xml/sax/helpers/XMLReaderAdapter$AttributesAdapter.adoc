@@ -1,6 +1,0 @@
-= org/xml/sax/helpers/XMLReaderAdapter$AttributesAdapter.class
-
- - link:XMLReaderAdapter$AttributesAdapter-asmified.java[Asmified]
-
-== References
-

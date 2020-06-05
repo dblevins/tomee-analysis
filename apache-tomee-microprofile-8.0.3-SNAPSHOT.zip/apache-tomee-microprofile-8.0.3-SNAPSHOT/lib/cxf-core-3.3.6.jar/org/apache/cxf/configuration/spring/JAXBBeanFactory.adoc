@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/spring/JAXBBeanFactory.class
-
- - link:JAXBBeanFactory-asmified.java[Asmified]
-
-== References
-

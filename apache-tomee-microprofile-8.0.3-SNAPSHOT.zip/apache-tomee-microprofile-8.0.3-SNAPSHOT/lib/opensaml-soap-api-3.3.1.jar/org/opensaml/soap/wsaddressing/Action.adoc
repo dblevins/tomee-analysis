@@ -1,6 +1,0 @@
-= org/opensaml/soap/wsaddressing/Action.class
-
- - link:Action-asmified.java[Asmified]
-
-== References
-

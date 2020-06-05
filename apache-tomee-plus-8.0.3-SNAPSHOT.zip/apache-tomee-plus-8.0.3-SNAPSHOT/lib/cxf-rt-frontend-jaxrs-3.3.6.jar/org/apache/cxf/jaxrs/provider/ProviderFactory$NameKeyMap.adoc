@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ProviderFactory$NameKeyMap.class
-
- - link:ProviderFactory$NameKeyMap-asmified.java[Asmified]
-
-== References
-

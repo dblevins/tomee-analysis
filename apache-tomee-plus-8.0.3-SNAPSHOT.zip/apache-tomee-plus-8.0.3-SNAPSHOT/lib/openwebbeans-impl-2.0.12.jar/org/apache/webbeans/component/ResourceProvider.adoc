@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/ResourceProvider.class
-
- - link:ResourceProvider-asmified.java[Asmified]
-
-== References
-

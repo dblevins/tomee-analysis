@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/html/DefaultTagDecorator$1.class
-
- - link:DefaultTagDecorator$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/InsertFacetHandler.class
-
- - link:InsertFacetHandler-asmified.java[Asmified]
-
-== References
-

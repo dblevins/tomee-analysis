@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/security/DelegatingAuthenticationInterceptor.class
-
- - link:DelegatingAuthenticationInterceptor-asmified.java[Asmified]
-
-== References
-

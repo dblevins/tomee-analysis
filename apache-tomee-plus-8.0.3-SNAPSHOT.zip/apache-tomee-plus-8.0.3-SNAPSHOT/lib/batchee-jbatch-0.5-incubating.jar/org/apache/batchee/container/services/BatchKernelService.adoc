@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/BatchKernelService.class
-
- - link:BatchKernelService-asmified.java[Asmified]
-
-== References
-

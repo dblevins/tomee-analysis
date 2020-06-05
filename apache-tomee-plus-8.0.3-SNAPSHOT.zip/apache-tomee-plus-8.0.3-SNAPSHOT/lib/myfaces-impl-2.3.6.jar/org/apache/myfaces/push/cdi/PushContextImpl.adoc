@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/cdi/PushContextImpl.class
-
- - link:PushContextImpl-asmified.java[Asmified]
-
-== References
-

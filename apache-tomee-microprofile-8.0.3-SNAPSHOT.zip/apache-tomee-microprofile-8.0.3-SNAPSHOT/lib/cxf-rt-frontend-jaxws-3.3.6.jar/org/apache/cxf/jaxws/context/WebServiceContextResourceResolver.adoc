@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/context/WebServiceContextResourceResolver.class
-
- - link:WebServiceContextResourceResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/logging/impl/WeakHashtable$1.class
-
- - link:WeakHashtable$1-asmified.java[Asmified]
-
-== References
-

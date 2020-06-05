@@ -1,6 +1,0 @@
-= org/apache/activemq/transaction/LocalTransaction.class
-
- - link:LocalTransaction-asmified.java[Asmified]
-
-== References
-

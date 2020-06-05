@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Array.class
-
- - link:Array-asmified.java[Asmified]
-
-== References
-

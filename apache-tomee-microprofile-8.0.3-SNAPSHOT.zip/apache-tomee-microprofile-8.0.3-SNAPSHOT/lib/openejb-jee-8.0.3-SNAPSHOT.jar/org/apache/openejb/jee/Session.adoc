@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Session.class
-
- - link:Session-asmified.java[Asmified]
-
-== References
-

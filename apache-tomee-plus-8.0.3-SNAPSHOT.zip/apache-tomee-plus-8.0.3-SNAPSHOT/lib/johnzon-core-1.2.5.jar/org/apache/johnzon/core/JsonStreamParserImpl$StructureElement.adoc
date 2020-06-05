@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonStreamParserImpl$StructureElement.class
-
- - link:JsonStreamParserImpl$StructureElement-asmified.java[Asmified]
-
-== References
-

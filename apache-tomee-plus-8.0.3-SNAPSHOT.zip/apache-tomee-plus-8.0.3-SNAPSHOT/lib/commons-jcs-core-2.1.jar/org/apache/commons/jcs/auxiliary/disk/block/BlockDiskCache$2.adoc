@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/block/BlockDiskCache$2.class
-
- - link:BlockDiskCache$2-asmified.java[Asmified]
-
-== References
-

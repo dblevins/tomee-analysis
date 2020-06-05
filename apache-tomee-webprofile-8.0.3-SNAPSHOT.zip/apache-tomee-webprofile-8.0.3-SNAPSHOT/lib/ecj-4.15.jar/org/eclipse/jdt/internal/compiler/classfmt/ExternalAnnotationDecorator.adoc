@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/ExternalAnnotationDecorator.class
-
- - link:ExternalAnnotationDecorator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/URITemplate$CurlyBraceTokenizer.class
-
- - link:URITemplate$CurlyBraceTokenizer-asmified.java[Asmified]
-
-== References
-

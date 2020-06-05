@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/util/DefaultPrettyPrinter$NopIndenter.class
-
- - link:DefaultPrettyPrinter$NopIndenter-asmified.java[Asmified]
-
-== References
-

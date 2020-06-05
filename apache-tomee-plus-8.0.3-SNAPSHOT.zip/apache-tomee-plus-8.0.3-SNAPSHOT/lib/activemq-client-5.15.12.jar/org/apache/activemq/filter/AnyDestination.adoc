@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/AnyDestination.class
-
- - link:AnyDestination-asmified.java[Asmified]
-
-== References
-

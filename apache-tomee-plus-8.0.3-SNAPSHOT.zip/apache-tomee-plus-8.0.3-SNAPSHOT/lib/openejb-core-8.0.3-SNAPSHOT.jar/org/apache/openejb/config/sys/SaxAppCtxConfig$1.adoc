@@ -1,6 +1,0 @@
-= org/apache/openejb/config/sys/SaxAppCtxConfig$1.class
-
- - link:SaxAppCtxConfig$1-asmified.java[Asmified]
-
-== References
-

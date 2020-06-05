@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/impl/DefaultFaceletContext.class
-
- - link:DefaultFaceletContext-asmified.java[Asmified]
-
-== References
-

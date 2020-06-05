@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/SimpleJobFactory.class
-
- - link:SimpleJobFactory-asmified.java[Asmified]
-
-== References
-

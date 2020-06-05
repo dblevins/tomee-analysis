@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/TokenRewriteStream.class
-
- - link:TokenRewriteStream-asmified.java[Asmified]
-
-== References
-

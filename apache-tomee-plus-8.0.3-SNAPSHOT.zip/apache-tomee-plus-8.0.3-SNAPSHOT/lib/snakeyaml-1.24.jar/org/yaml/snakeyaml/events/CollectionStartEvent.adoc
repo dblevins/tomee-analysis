@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/CollectionStartEvent.class
-
- - link:CollectionStartEvent-asmified.java[Asmified]
-
-== References
-

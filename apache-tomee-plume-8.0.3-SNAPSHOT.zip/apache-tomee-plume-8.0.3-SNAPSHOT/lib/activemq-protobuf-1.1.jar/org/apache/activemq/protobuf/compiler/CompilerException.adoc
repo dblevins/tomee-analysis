@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/CompilerException.class
-
- - link:CompilerException-asmified.java[Asmified]
-
-== References
-

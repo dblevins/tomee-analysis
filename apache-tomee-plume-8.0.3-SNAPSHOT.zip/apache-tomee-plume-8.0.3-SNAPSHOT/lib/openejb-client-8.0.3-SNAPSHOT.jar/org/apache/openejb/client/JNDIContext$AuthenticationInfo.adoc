@@ -1,6 +1,0 @@
-= org/apache/openejb/client/JNDIContext$AuthenticationInfo.class
-
- - link:JNDIContext$AuthenticationInfo-asmified.java[Asmified]
-
-== References
-

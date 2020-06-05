@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/ExceptionFactory.class
-
- - link:ExceptionFactory-asmified.java[Asmified]
-
-== References
-

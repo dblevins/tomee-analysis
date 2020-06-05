@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/schema/XMLSchemaFileReference.class
-
- - link:XMLSchemaFileReference-asmified.java[Asmified]
-
-== References
-

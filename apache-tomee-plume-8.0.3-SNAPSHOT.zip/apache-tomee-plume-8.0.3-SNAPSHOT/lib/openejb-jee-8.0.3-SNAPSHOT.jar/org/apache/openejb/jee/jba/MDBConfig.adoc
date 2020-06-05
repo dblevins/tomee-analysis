@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/MDBConfig.class
-
- - link:MDBConfig-asmified.java[Asmified]
-
-== References
-

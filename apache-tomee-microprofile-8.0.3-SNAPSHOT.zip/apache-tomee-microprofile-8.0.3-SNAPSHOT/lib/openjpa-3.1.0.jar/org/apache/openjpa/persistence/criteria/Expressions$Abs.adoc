@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Abs.class
-
- - link:Expressions$Abs-asmified.java[Asmified]
-
-== References
-

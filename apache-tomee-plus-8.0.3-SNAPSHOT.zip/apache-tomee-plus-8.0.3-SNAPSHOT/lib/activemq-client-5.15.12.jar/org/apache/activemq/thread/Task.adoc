@@ -1,6 +1,0 @@
-= org/apache/activemq/thread/Task.class
-
- - link:Task-asmified.java[Asmified]
-
-== References
-

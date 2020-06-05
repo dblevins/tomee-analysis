@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/interceptor/ResetAbandonedTimerMBean.class
-
- - link:ResetAbandonedTimerMBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/Name.class
-
- - link:Name-asmified.java[Asmified]
-
-== References
-

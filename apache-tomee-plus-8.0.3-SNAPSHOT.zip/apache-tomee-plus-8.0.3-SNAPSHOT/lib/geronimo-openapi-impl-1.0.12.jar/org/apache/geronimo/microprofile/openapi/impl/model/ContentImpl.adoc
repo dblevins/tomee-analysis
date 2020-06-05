@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/ContentImpl.class
-
- - link:ContentImpl-asmified.java[Asmified]
-
-== References
-

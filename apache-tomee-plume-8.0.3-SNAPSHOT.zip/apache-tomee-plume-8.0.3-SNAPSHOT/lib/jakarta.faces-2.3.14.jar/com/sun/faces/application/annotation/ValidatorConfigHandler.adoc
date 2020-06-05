@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/ValidatorConfigHandler.class
-
- - link:ValidatorConfigHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/Statement.class
-
- - link:Statement-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/PerMessageDeflate.class
-
- - link:PerMessageDeflate-asmified.java[Asmified]
-
-== References
-

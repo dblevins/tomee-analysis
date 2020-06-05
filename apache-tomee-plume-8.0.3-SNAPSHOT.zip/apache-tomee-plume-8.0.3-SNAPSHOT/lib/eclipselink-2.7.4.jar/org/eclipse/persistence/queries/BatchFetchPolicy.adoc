@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/BatchFetchPolicy.class
-
- - link:BatchFetchPolicy-asmified.java[Asmified]
-
-== References
-

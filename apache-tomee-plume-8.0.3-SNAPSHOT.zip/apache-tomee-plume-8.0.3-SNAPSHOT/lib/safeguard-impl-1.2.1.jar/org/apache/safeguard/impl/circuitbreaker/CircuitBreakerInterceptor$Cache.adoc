@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache.class
-
- - link:CircuitBreakerInterceptor$Cache-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/xml/transform/Result.class
-
- - link:Result-asmified.java[Asmified]
-
-== References
-

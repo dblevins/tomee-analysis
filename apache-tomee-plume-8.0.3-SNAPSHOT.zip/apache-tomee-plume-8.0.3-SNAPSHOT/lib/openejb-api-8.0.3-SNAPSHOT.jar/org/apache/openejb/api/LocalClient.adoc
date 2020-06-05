@@ -1,6 +1,0 @@
-= org/apache/openejb/api/LocalClient.class
-
- - link:LocalClient-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/securityEvent/RequiredElementSecurityEvent.class
-
- - link:RequiredElementSecurityEvent-asmified.java[Asmified]
-
-== References
-

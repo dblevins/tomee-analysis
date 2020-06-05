@@ -1,6 +1,0 @@
-= com/ctc/wstx/sw/BaseNsStreamWriter.class
-
- - link:BaseNsStreamWriter-asmified.java[Asmified]
-
-== References
-

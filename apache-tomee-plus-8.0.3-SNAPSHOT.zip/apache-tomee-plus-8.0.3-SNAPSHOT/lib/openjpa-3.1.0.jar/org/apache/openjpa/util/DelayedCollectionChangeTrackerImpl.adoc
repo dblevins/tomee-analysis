@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/DelayedCollectionChangeTrackerImpl.class
-
- - link:DelayedCollectionChangeTrackerImpl-asmified.java[Asmified]
-
-== References
-

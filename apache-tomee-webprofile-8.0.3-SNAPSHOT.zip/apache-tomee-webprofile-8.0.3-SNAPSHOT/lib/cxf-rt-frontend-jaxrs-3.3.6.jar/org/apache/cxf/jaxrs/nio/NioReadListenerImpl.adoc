@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/nio/NioReadListenerImpl.class
-
- - link:NioReadListenerImpl-asmified.java[Asmified]
-
-== References
-

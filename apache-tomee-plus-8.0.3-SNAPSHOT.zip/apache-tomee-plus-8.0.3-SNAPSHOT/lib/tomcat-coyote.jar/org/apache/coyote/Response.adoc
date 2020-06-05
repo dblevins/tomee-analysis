@@ -1,6 +1,0 @@
-= org/apache/coyote/Response.class
-
- - link:Response-asmified.java[Asmified]
-
-== References
-

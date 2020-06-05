@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IBinaryTypeAnnotation.class
-
- - link:IBinaryTypeAnnotation-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/UIComponent$EventListenerWrapper.class
-
- - link:UIComponent$EventListenerWrapper-asmified.java[Asmified]
-
-== References
-

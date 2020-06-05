@@ -1,6 +1,0 @@
-= org/bouncycastle/math/raw/Nat128.class
-
- - link:Nat128-asmified.java[Asmified]
-
-== References
-

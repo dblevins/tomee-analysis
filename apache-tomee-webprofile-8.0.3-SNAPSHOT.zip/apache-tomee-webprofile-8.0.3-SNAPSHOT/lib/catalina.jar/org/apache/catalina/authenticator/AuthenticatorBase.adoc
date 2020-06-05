@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/AuthenticatorBase.class
-
- - link:AuthenticatorBase-asmified.java[Asmified]
-
-== References
-

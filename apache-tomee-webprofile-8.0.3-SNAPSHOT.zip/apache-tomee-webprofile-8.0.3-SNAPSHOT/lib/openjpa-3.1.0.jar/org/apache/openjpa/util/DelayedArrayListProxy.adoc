@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/DelayedArrayListProxy.class
-
- - link:DelayedArrayListProxy-asmified.java[Asmified]
-
-== References
-

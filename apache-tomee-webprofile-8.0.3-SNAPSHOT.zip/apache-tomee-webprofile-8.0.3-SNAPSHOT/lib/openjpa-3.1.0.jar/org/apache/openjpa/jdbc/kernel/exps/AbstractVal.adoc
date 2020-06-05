@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/AbstractVal.class
-
- - link:AbstractVal-asmified.java[Asmified]
-
-== References
-

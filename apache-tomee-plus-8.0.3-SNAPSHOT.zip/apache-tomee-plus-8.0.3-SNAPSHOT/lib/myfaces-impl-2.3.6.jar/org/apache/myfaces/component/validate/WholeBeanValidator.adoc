@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/validate/WholeBeanValidator.class
-
- - link:WholeBeanValidator-asmified.java[Asmified]
-
-== References
-

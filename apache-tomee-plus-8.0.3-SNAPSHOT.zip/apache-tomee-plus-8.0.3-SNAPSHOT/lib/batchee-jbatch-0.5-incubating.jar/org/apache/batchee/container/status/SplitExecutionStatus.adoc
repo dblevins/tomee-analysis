@@ -1,6 +1,0 @@
-= org/apache/batchee/container/status/SplitExecutionStatus.class
-
- - link:SplitExecutionStatus-asmified.java[Asmified]
-
-== References
-

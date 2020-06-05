@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/tls/MaxFragmentLength.class
-
- - link:MaxFragmentLength-asmified.java[Asmified]
-
-== References
-

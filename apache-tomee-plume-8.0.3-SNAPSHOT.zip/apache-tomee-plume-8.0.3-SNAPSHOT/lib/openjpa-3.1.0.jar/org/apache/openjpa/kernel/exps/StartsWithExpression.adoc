@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/StartsWithExpression.class
-
- - link:StartsWithExpression-asmified.java[Asmified]
-
-== References
-

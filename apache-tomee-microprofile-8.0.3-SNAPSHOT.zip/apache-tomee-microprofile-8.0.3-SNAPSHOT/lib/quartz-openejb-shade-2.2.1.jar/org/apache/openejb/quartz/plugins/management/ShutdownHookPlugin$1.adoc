@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/plugins/management/ShutdownHookPlugin$1.class
-
- - link:ShutdownHookPlugin$1-asmified.java[Asmified]
-
-== References
-

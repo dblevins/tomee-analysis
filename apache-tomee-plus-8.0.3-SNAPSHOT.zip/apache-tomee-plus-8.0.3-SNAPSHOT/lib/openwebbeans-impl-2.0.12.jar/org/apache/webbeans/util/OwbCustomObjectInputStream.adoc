@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/OwbCustomObjectInputStream.class
-
- - link:OwbCustomObjectInputStream-asmified.java[Asmified]
-
-== References
-

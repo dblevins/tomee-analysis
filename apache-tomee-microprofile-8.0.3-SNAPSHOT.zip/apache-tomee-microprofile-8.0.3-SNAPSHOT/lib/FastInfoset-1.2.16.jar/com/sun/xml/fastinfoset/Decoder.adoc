@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/Decoder.class
-
- - link:Decoder-asmified.java[Asmified]
-
-== References
-

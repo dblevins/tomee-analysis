@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/Scope$Substitutor.class
-
- - link:Scope$Substitutor-asmified.java[Asmified]
-
-== References
-

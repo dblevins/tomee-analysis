@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/BuiltInEncodingAlgorithm$WordListener.class
-
- - link:BuiltInEncodingAlgorithm$WordListener-asmified.java[Asmified]
-
-== References
-

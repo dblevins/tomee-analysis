@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/logic/EntityGroupNamePredicate.class
-
- - link:EntityGroupNamePredicate-asmified.java[Asmified]
-
-== References
-

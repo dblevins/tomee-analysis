@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/jacc/BasicPolicyConfiguration.class
-
- - link:BasicPolicyConfiguration-asmified.java[Asmified]
-
-== References
-

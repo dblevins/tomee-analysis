@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GenericBeanEvent.class
-
- - link:GenericBeanEvent-asmified.java[Asmified]
-
-== References
-

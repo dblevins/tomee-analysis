@@ -1,6 +1,0 @@
-= org/apache/openejb/config/provider/MalformedProviderNameException.class
-
- - link:MalformedProviderNameException-asmified.java[Asmified]
-
-== References
-

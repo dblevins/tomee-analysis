@@ -1,6 +1,0 @@
-= org/apache/jasper/tagplugins/jstl/core/ForEach.class
-
- - link:ForEach-asmified.java[Asmified]
-
-== References
-

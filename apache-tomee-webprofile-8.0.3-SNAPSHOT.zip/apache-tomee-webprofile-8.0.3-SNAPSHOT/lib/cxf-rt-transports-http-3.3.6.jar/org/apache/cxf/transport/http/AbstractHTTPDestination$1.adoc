@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/AbstractHTTPDestination$1.class
-
- - link:AbstractHTTPDestination$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/interceptor/JAXRSOutExceptionMapperInterceptor.class
-
- - link:JAXRSOutExceptionMapperInterceptor-asmified.java[Asmified]
-
-== References
-

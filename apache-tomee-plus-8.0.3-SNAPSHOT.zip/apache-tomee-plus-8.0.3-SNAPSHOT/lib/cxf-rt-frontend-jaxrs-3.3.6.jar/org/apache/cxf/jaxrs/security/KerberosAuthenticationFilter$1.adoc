@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/security/KerberosAuthenticationFilter$1.class
-
- - link:KerberosAuthenticationFilter$1-asmified.java[Asmified]
-
-== References
-

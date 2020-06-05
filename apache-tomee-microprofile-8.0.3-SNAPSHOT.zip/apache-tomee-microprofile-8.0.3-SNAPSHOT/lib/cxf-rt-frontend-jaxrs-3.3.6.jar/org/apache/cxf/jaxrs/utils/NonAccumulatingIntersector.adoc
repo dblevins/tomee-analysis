@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/NonAccumulatingIntersector.class
-
- - link:NonAccumulatingIntersector-asmified.java[Asmified]
-
-== References
-

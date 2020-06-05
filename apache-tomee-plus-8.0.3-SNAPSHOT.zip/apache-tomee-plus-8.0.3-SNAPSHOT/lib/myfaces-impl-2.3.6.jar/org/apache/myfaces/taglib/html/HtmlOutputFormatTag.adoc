@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlOutputFormatTag.class
-
- - link:HtmlOutputFormatTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/util/stax/SaajStaxWriter$AttributeDeclaration.class
-
- - link:SaajStaxWriter$AttributeDeclaration-asmified.java[Asmified]
-
-== References
-

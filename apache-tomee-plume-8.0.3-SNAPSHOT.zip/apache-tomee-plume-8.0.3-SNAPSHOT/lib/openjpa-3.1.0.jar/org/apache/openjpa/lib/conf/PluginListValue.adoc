@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/PluginListValue.class
-
- - link:PluginListValue-asmified.java[Asmified]
-
-== References
-

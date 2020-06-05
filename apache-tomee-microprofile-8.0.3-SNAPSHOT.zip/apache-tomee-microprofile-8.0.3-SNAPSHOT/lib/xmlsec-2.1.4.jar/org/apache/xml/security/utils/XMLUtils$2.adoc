@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/XMLUtils$2.class
-
- - link:XMLUtils$2-asmified.java[Asmified]
-
-== References
-

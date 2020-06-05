@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/Math.class
-
- - link:Math-asmified.java[Asmified]
-
-== References
-

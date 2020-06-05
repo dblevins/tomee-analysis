@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/pojo/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

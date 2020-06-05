@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Sum.class
-
- - link:Expressions$Sum-asmified.java[Asmified]
-
-== References
-

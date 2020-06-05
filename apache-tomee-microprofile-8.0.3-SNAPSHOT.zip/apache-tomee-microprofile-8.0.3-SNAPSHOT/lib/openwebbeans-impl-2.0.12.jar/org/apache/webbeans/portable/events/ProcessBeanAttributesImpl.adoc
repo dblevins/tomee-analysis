@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/ProcessBeanAttributesImpl.class
-
- - link:ProcessBeanAttributesImpl-asmified.java[Asmified]
-
-== References
-

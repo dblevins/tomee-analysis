@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/el/ContextualCompositeValueExpression.class
-
- - link:ContextualCompositeValueExpression-asmified.java[Asmified]
-
-== References
-

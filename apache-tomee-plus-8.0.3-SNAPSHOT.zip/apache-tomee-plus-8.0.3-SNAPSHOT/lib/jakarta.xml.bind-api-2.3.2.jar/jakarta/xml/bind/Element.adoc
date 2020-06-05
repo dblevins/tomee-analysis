@@ -1,6 +1,0 @@
-= jakarta/xml/bind/Element.class
-
- - link:Element-asmified.java[Asmified]
-
-== References
-

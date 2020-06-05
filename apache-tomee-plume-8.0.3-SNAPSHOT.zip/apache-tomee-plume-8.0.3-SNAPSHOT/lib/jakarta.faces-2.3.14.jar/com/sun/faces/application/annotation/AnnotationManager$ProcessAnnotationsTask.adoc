@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/AnnotationManager$ProcessAnnotationsTask.class
-
- - link:AnnotationManager$ProcessAnnotationsTask-asmified.java[Asmified]
-
-== References
-

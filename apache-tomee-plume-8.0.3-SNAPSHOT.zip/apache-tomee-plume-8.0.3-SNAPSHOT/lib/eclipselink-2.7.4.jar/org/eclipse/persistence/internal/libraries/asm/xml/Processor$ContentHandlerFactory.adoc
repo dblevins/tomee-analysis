@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/Processor$ContentHandlerFactory.class
-
- - link:Processor$ContentHandlerFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/jsf/OwbExceptionHandlerFactory.class
-
- - link:OwbExceptionHandlerFactory-asmified.java[Asmified]
-
-== References
-

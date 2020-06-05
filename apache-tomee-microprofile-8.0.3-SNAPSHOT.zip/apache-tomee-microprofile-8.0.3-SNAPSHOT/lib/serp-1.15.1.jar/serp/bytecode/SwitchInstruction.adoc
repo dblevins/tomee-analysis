@@ -1,6 +1,0 @@
-= serp/bytecode/SwitchInstruction.class
-
- - link:SwitchInstruction-asmified.java[Asmified]
-
-== References
-

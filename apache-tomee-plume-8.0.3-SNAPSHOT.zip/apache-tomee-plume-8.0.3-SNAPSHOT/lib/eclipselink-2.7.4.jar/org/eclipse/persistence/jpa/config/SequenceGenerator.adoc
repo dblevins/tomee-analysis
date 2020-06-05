@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/SequenceGenerator.class
-
- - link:SequenceGenerator-asmified.java[Asmified]
-
-== References
-

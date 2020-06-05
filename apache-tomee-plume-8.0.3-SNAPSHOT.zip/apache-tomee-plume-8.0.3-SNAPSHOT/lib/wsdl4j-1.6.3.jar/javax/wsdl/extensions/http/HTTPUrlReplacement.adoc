@@ -1,6 +1,0 @@
-= javax/wsdl/extensions/http/HTTPUrlReplacement.class
-
- - link:HTTPUrlReplacement-asmified.java[Asmified]
-
-== References
-

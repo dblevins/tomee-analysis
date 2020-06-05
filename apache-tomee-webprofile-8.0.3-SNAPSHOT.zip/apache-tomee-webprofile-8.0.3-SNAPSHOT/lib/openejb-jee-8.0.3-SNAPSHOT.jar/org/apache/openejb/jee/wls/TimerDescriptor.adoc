@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/TimerDescriptor.class
-
- - link:TimerDescriptor-asmified.java[Asmified]
-
-== References
-

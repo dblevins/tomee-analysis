@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/cdi/FlowBuilderFactoryBean.class
-
- - link:FlowBuilderFactoryBean-asmified.java[Asmified]
-
-== References
-

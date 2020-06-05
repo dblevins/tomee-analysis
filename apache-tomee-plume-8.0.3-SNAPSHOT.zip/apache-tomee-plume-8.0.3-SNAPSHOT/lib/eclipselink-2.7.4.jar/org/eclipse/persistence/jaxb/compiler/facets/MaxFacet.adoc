@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/facets/MaxFacet.class
-
- - link:MaxFacet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/component/UnmodifiableComponent.class
-
- - link:UnmodifiableComponent-asmified.java[Asmified]
-
-== References
-

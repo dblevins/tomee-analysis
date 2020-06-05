@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/stats/StatElement.class
-
- - link:StatElement-asmified.java[Asmified]
-
-== References
-

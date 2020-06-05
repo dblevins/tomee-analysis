@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/TextFormat.class
-
- - link:TextFormat-asmified.java[Asmified]
-
-== References
-

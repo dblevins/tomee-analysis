@@ -1,6 +1,0 @@
-= org/apache/batchee/container/impl/JobOperatorImpl.class
-
- - link:JobOperatorImpl-asmified.java[Asmified]
-
-== References
-

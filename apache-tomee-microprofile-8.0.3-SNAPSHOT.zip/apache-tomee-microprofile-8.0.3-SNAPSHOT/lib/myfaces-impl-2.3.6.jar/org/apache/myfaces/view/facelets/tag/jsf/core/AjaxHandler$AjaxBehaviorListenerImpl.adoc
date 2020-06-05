@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/AjaxHandler$AjaxBehaviorListenerImpl.class
-
- - link:AjaxHandler$AjaxBehaviorListenerImpl-asmified.java[Asmified]
-
-== References
-

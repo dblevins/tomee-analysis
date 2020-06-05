@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/NullPredicate.class
-
- - link:NullPredicate-asmified.java[Asmified]
-
-== References
-

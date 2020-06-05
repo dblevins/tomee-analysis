@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/DefaultInterceptorHandler.class
-
- - link:DefaultInterceptorHandler-asmified.java[Asmified]
-
-== References
-

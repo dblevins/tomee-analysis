@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/jsonFormatVisitors/JsonObjectFormatVisitor$Base.class
-
- - link:JsonObjectFormatVisitor$Base-asmified.java[Asmified]
-
-== References
-

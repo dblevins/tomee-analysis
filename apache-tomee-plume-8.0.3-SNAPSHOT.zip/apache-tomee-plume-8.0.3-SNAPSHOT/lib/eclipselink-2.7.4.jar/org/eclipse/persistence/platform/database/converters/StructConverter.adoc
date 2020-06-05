@@ -1,6 +1,0 @@
-= org/eclipse/persistence/platform/database/converters/StructConverter.class
-
- - link:StructConverter-asmified.java[Asmified]
-
-== References
-

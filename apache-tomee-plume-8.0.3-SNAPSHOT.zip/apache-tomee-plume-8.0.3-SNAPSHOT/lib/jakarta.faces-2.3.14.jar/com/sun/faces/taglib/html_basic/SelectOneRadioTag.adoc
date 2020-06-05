@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/SelectOneRadioTag.class
-
- - link:SelectOneRadioTag-asmified.java[Asmified]
-
-== References
-

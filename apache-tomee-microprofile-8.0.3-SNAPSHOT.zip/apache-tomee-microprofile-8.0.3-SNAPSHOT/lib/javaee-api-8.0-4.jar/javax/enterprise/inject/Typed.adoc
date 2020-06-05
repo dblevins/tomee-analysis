@@ -1,6 +1,0 @@
-= javax/enterprise/inject/Typed.class
-
- - link:Typed-asmified.java[Asmified]
-
-== References
-

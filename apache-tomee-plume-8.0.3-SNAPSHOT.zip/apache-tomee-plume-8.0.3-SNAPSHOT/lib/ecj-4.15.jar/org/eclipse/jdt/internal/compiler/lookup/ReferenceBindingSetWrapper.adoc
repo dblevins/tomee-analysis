@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ReferenceBindingSetWrapper.class
-
- - link:ReferenceBindingSetWrapper-asmified.java[Asmified]
-
-== References
-

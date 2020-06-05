@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/ValidationMappingParser.class
-
- - link:ValidationMappingParser-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/management/j2ee/statistics/JCAConnectionPoolStats.class
-
- - link:JCAConnectionPoolStats-asmified.java[Asmified]
-
-== References
-

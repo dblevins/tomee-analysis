@@ -1,6 +1,0 @@
-= org/opensaml/security/x509/impl/BasicPKIXValidationInformation.class
-
- - link:BasicPKIXValidationInformation-asmified.java[Asmified]
-
-== References
-

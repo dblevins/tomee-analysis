@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/SchemaManager.class
-
- - link:SchemaManager-asmified.java[Asmified]
-
-== References
-

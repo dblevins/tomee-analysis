@@ -1,7 +1,0 @@
-= javax/persistence/GenerationType.class
-
- - link:GenerationType-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.GenerationType - 31

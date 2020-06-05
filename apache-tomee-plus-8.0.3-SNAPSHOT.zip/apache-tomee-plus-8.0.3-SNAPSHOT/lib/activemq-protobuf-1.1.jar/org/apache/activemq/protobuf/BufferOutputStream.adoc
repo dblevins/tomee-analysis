@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/BufferOutputStream.class
-
- - link:BufferOutputStream-asmified.java[Asmified]
-
-== References
-

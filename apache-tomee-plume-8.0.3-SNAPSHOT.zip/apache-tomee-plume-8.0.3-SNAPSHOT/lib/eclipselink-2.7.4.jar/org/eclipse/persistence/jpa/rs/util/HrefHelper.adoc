@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/HrefHelper.class
-
- - link:HrefHelper-asmified.java[Asmified]
-
-== References
-

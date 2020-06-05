@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/ec/ECNewRandomnessTransform.class
-
- - link:ECNewRandomnessTransform-asmified.java[Asmified]
-
-== References
-

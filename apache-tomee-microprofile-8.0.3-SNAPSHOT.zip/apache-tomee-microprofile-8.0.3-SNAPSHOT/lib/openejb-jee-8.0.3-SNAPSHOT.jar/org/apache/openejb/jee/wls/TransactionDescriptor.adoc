@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/TransactionDescriptor.class
-
- - link:TransactionDescriptor-asmified.java[Asmified]
-
-== References
-

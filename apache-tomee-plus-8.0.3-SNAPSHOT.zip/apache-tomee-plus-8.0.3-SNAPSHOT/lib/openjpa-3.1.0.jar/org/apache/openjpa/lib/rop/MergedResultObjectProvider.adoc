@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/MergedResultObjectProvider.class
-
- - link:MergedResultObjectProvider-asmified.java[Asmified]
-
-== References
-

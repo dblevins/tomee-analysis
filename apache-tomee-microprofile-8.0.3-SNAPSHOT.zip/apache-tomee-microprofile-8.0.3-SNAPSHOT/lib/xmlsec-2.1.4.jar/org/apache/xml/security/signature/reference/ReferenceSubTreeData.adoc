@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/reference/ReferenceSubTreeData.class
-
- - link:ReferenceSubTreeData-asmified.java[Asmified]
-
-== References
-

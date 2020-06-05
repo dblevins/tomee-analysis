@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/FaceletsCompilerUtils.class
-
- - link:FaceletsCompilerUtils-asmified.java[Asmified]
-
-== References
-

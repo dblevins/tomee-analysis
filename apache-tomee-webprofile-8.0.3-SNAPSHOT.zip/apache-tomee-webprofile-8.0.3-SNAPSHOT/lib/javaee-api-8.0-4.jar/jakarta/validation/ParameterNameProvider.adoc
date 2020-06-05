@@ -1,6 +1,0 @@
-= jakarta/validation/ParameterNameProvider.class
-
- - link:ParameterNameProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/ClientConfig.class
-
- - link:ClientConfig-asmified.java[Asmified]
-
-== References
-

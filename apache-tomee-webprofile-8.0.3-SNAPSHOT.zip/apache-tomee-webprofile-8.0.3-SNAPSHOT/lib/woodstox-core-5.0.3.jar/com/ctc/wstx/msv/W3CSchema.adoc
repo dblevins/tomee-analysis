@@ -1,6 +1,0 @@
-= com/ctc/wstx/msv/W3CSchema.class
-
- - link:W3CSchema-asmified.java[Asmified]
-
-== References
-

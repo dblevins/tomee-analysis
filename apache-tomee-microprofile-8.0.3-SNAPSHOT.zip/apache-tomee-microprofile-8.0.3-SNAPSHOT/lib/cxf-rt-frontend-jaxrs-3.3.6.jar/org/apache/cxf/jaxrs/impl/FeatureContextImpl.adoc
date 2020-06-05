@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/FeatureContextImpl.class
-
- - link:FeatureContextImpl-asmified.java[Asmified]
-
-== References
-

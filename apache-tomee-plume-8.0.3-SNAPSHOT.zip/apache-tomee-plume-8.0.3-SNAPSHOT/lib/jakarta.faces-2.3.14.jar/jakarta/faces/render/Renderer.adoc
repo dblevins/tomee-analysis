@@ -1,6 +1,0 @@
-= jakarta/faces/render/Renderer.class
-
- - link:Renderer-asmified.java[Asmified]
-
-== References
-

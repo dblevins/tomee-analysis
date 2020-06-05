@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/DelayedTreeSetProxy.class
-
- - link:DelayedTreeSetProxy-asmified.java[Asmified]
-
-== References
-

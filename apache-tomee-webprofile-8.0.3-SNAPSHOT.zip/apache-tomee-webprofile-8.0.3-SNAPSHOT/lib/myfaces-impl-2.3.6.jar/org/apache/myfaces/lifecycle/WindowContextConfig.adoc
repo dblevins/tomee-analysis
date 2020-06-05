@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/WindowContextConfig.class
-
- - link:WindowContextConfig-asmified.java[Asmified]
-
-== References
-

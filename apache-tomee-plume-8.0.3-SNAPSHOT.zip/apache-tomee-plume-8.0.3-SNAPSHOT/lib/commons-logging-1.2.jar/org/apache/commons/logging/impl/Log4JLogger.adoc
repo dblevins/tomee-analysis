@@ -1,6 +1,0 @@
-= org/apache/commons/logging/impl/Log4JLogger.class
-
- - link:Log4JLogger-asmified.java[Asmified]
-
-== References
-

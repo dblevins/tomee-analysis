@@ -1,6 +1,0 @@
-= jakarta/resource/spi/UnavailableException.class
-
- - link:UnavailableException-asmified.java[Asmified]
-
-== References
-

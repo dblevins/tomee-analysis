@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/BasicEncryptionConfiguration.class
-
- - link:BasicEncryptionConfiguration-asmified.java[Asmified]
-
-== References
-

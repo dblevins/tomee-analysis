@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/PathItem$HttpMethod.class
-
- - link:PathItem$HttpMethod-asmified.java[Asmified]
-
-== References
-

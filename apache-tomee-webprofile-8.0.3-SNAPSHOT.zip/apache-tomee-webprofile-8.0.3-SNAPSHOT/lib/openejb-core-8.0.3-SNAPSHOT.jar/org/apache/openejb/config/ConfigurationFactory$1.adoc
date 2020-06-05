@@ -1,6 +1,0 @@
-= org/apache/openejb/config/ConfigurationFactory$1.class
-
- - link:ConfigurationFactory$1-asmified.java[Asmified]
-
-== References
-

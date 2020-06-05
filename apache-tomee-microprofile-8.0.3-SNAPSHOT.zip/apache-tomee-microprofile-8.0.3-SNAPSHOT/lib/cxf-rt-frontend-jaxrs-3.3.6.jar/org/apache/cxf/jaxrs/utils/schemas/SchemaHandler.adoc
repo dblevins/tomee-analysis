@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/schemas/SchemaHandler.class
-
- - link:SchemaHandler-asmified.java[Asmified]
-
-== References
-

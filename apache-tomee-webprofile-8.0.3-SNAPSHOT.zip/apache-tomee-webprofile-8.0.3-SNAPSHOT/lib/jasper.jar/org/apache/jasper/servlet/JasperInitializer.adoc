@@ -1,6 +1,0 @@
-= org/apache/jasper/servlet/JasperInitializer.class
-
- - link:JasperInitializer-asmified.java[Asmified]
-
-== References
-

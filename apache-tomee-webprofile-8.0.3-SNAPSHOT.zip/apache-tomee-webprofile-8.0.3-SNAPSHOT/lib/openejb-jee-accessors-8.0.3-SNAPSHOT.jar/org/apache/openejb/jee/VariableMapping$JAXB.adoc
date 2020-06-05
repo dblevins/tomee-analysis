@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/VariableMapping$JAXB.class
-
- - link:VariableMapping$JAXB-asmified.java[Asmified]
-
-== References
-

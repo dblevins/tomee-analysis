@@ -1,6 +1,0 @@
-= org/opensaml/soap/util/SOAPSupport.class
-
- - link:SOAPSupport-asmified.java[Asmified]
-
-== References
-

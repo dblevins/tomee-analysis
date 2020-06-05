@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wsu10/AttributedURI.class
-
- - link:AttributedURI-asmified.java[Asmified]
-
-== References
-

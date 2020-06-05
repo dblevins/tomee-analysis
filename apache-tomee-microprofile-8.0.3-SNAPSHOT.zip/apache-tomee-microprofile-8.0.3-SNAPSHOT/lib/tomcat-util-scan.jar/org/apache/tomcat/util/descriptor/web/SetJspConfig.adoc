@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/SetJspConfig.class
-
- - link:SetJspConfig-asmified.java[Asmified]
-
-== References
-

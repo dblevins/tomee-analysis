@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/IdentityWeakHashMap$EntryReference.class
-
- - link:IdentityWeakHashMap$EntryReference-asmified.java[Asmified]
-
-== References
-

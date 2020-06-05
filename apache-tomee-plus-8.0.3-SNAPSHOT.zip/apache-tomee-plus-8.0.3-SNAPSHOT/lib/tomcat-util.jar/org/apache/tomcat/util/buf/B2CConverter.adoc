@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/B2CConverter.class
-
- - link:B2CConverter-asmified.java[Asmified]
-
-== References
-

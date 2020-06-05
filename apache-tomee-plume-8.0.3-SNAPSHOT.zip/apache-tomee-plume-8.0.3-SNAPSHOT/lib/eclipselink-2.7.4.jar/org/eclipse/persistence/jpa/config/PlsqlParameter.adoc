@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/PlsqlParameter.class
-
- - link:PlsqlParameter-asmified.java[Asmified]
-
-== References
-

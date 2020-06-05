@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/InstrumentationFactory$1.class
-
- - link:InstrumentationFactory$1-asmified.java[Asmified]
-
-== References
-

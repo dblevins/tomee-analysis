@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/impl/NamedNodeMapImpl.class
-
- - link:NamedNodeMapImpl-asmified.java[Asmified]
-
-== References
-

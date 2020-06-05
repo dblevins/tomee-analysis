@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/instrumentation/Instrument.class
-
- - link:Instrument-asmified.java[Asmified]
-
-== References
-

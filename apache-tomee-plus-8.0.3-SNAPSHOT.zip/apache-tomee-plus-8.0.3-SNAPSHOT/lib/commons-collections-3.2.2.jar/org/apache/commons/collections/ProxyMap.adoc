@@ -1,6 +1,0 @@
-= org/apache/commons/collections/ProxyMap.class
-
- - link:ProxyMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/transform/DelegatingNamespaceContext.class
-
- - link:DelegatingNamespaceContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/schemagen/xmlschema/ComplexRestriction.class
-
- - link:ComplexRestriction-asmified.java[Asmified]
-
-== References
-

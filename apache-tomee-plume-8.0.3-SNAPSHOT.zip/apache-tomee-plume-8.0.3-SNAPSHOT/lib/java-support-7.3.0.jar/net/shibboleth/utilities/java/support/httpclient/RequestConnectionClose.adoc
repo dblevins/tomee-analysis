@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/httpclient/RequestConnectionClose.class
-
- - link:RequestConnectionClose-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/event/EventImpl.class
-
- - link:EventImpl-asmified.java[Asmified]
-
-== References
-

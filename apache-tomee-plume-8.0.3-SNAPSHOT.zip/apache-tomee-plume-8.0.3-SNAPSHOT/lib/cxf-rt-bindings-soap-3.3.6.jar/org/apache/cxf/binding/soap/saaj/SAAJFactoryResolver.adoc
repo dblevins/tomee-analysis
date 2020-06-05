@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver.class
-
- - link:SAAJFactoryResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/list/AbstractLinkedList$LinkedListIterator.class
-
- - link:AbstractLinkedList$LinkedListIterator-asmified.java[Asmified]
-
-== References
-

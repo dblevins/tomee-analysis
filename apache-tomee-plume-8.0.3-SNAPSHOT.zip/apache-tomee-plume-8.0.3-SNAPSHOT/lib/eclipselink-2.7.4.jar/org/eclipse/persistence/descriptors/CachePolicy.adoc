@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/CachePolicy.class
-
- - link:CachePolicy-asmified.java[Asmified]
-
-== References
-

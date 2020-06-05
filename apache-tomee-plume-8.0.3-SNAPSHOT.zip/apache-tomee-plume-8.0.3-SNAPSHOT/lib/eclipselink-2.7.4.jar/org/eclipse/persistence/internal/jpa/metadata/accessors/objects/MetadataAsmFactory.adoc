@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory.class
-
- - link:MetadataAsmFactory-asmified.java[Asmified]
-
-== References
-

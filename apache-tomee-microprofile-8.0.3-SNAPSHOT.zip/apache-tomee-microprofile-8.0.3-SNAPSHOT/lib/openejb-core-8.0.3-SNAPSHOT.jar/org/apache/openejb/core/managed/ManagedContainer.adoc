@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/ManagedContainer.class
-
- - link:ManagedContainer-asmified.java[Asmified]
-
-== References
-

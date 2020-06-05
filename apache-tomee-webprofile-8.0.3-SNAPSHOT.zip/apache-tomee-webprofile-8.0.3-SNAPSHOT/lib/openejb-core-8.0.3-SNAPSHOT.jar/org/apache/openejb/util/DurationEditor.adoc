@@ -1,6 +1,0 @@
-= org/apache/openejb/util/DurationEditor.class
-
- - link:DurationEditor-asmified.java[Asmified]
-
-== References
-

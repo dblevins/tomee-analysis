@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler.class
-
- - link:SecurityContextTokenInputHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/management/JMSProducerStatsImpl.class
-
- - link:JMSProducerStatsImpl-asmified.java[Asmified]
-
-== References
-

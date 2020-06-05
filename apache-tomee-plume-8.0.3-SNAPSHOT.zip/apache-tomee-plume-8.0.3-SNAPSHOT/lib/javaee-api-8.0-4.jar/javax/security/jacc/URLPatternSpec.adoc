@@ -1,9 +1,0 @@
-= javax/security/jacc/URLPatternSpec.class
-
- - link:URLPatternSpec-asmified.java[Asmified]
-
-== References
-
- - javax.security.jacc.URLPatternSpec$URLPattern - 39
- - javax.security.jacc.URLPatternSpec - 8
- - javax.servlet.http.HttpServletRequest - 4

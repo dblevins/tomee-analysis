@@ -1,6 +1,0 @@
-= jakarta/xml/registry/Connection.class
-
- - link:Connection-asmified.java[Asmified]
-
-== References
-

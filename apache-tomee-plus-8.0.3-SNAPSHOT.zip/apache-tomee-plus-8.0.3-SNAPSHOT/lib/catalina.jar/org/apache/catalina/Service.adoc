@@ -1,6 +1,0 @@
-= org/apache/catalina/Service.class
-
- - link:Service-asmified.java[Asmified]
-
-== References
-

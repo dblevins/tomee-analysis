@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/assertion/StatementValidator.class
-
- - link:StatementValidator-asmified.java[Asmified]
-
-== References
-

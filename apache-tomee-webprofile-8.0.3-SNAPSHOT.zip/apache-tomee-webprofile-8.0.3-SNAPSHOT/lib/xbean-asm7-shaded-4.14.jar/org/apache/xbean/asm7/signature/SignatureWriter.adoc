@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/signature/SignatureWriter.class
-
- - link:SignatureWriter-asmified.java[Asmified]
-
-== References
-

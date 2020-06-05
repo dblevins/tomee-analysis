@@ -1,6 +1,0 @@
-= org/metatype/sxc/util/XmlFactories.class
-
- - link:XmlFactories-asmified.java[Asmified]
-
-== References
-

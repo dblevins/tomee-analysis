@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/pool/impl/SoftViewEntry.class
-
- - link:SoftViewEntry-asmified.java[Asmified]
-
-== References
-

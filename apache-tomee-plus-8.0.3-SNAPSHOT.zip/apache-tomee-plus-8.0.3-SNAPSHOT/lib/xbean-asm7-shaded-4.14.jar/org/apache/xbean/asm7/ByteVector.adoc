@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/ByteVector.class
-
- - link:ByteVector-asmified.java[Asmified]
-
-== References
-

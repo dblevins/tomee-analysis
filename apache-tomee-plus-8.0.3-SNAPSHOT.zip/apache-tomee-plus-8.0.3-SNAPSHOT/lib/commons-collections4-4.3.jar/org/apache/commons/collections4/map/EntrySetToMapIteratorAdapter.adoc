@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/map/EntrySetToMapIteratorAdapter.class
-
- - link:EntrySetToMapIteratorAdapter-asmified.java[Asmified]
-
-== References
-

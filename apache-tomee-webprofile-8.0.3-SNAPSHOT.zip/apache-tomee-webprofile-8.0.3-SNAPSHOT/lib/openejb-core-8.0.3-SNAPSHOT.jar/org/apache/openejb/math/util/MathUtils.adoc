@@ -1,6 +1,0 @@
-= org/apache/openejb/math/util/MathUtils.class
-
- - link:MathUtils-asmified.java[Asmified]
-
-== References
-

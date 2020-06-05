@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/InstantiationCopyPolicy.class
-
- - link:InstantiationCopyPolicy-asmified.java[Asmified]
-
-== References
-

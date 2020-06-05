@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/IMAPSSLStore.class
-
- - link:IMAPSSLStore-asmified.java[Asmified]
-
-== References
-

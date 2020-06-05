@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/ConstraintCached.class
-
- - link:ConstraintCached-asmified.java[Asmified]
-
-== References
-

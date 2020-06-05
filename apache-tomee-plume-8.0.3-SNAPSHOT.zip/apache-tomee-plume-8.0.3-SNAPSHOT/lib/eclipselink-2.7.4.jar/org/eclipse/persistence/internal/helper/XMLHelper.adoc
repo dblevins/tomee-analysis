@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/XMLHelper.class
-
- - link:XMLHelper-asmified.java[Asmified]
-
-== References
-

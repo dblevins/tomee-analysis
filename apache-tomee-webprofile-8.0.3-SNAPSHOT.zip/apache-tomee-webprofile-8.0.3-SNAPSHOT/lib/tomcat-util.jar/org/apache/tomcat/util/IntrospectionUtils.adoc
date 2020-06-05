@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/IntrospectionUtils.class
-
- - link:IntrospectionUtils-asmified.java[Asmified]
-
-== References
-

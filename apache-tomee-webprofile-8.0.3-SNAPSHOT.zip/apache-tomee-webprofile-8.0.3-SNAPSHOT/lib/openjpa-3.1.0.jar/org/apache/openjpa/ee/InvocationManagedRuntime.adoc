@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/InvocationManagedRuntime.class
-
- - link:InvocationManagedRuntime-asmified.java[Asmified]
-
-== References
-

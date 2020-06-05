@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/xml/ValidatingErrorHandler.class
-
- - link:ValidatingErrorHandler-asmified.java[Asmified]
-
-== References
-

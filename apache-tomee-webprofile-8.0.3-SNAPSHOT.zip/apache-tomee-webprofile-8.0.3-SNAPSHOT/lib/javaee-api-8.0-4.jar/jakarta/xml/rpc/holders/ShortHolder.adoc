@@ -1,6 +1,0 @@
-= jakarta/xml/rpc/holders/ShortHolder.class
-
- - link:ShortHolder-asmified.java[Asmified]
-
-== References
-

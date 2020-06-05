@@ -1,6 +1,0 @@
-= com/ibm/wsdl/InputImpl.class
-
- - link:InputImpl-asmified.java[Asmified]
-
-== References
-

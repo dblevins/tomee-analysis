@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/mock/MockTransport.class
-
- - link:MockTransport-asmified.java[Asmified]
-
-== References
-

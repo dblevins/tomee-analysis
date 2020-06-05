@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/ControlledValidationXmlBeanDefinitionReader$StaleFastinfosetException.class
-
- - link:ControlledValidationXmlBeanDefinitionReader$StaleFastinfosetException-asmified.java[Asmified]
-
-== References
-

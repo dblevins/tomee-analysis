@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/MultiViewHandler.class
-
- - link:MultiViewHandler-asmified.java[Asmified]
-
-== References
-

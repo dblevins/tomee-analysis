@@ -1,6 +1,0 @@
-= org/apache/commons/digester/SetNestedPropertiesRule$AnyChildRules.class
-
- - link:SetNestedPropertiesRule$AnyChildRules-asmified.java[Asmified]
-
-== References
-

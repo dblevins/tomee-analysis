@@ -1,6 +1,0 @@
-= org/hsqldb/lib/tar/TarReader.class
-
- - link:TarReader-asmified.java[Asmified]
-
-== References
-

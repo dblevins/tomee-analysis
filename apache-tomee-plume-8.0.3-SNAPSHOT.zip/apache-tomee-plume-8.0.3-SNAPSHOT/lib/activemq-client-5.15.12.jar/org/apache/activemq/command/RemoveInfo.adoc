@@ -1,6 +1,0 @@
-= org/apache/activemq/command/RemoveInfo.class
-
- - link:RemoveInfo-asmified.java[Asmified]
-
-== References
-

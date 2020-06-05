@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/profile/impl/AbstractResponseShellAction$1.class
-
- - link:AbstractResponseShellAction$1-asmified.java[Asmified]
-
-== References
-

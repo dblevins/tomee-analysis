@@ -1,6 +1,0 @@
-= org/apache/tomee/jul/formatter/SimpleTomEEFormatter.class
-
- - link:SimpleTomEEFormatter-asmified.java[Asmified]
-
-== References
-

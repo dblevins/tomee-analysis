@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/TempMessageDatabase$Operation.class
-
- - link:TempMessageDatabase$Operation-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/X509TokenBuilder.class
-
- - link:X509TokenBuilder-asmified.java[Asmified]
-
-== References
-

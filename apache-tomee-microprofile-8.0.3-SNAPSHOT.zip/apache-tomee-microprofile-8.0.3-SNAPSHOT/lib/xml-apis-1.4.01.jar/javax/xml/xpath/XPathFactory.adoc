@@ -1,6 +1,0 @@
-= javax/xml/xpath/XPathFactory.class
-
- - link:XPathFactory-asmified.java[Asmified]
-
-== References
-

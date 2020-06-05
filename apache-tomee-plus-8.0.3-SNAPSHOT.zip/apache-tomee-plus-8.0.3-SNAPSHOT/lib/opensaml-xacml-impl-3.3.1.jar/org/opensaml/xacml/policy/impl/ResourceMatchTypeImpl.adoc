@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/ResourceMatchTypeImpl.class
-
- - link:ResourceMatchTypeImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/JPAInitializer.class
-
- - link:JPAInitializer-asmified.java[Asmified]
-
-== References
-

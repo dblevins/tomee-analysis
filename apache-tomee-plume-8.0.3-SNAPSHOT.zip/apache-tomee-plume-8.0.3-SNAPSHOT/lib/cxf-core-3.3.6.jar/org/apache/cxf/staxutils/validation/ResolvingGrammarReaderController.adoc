@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/validation/ResolvingGrammarReaderController.class
-
- - link:ResolvingGrammarReaderController-asmified.java[Asmified]
-
-== References
-

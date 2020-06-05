@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_UniversalProperties.class
-
- - link:_UniversalProperties-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/JettyHttpEjbServer.class
-
- - link:JettyHttpEjbServer-asmified.java[Asmified]
-
-== References
-

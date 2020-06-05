@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/jaspic/SimpleServerAuthContext.class
-
- - link:SimpleServerAuthContext-asmified.java[Asmified]
-
-== References
-

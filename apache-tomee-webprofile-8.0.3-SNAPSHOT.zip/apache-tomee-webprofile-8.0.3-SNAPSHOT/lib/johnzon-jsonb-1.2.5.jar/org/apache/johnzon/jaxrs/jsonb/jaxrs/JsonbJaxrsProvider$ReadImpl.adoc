@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider$ReadImpl.class
-
- - link:JsonbJaxrsProvider$ReadImpl-asmified.java[Asmified]
-
-== References
-

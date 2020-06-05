@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/json/JsonWriteFeature.class
-
- - link:JsonWriteFeature-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/transaction/Synchronization.class
-
- - link:Synchronization-asmified.java[Asmified]
-
-== References
-

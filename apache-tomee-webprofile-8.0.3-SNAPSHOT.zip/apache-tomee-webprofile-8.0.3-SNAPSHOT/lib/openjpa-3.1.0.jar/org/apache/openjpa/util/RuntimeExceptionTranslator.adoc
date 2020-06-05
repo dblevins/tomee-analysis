@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/RuntimeExceptionTranslator.class
-
- - link:RuntimeExceptionTranslator-asmified.java[Asmified]
-
-== References
-

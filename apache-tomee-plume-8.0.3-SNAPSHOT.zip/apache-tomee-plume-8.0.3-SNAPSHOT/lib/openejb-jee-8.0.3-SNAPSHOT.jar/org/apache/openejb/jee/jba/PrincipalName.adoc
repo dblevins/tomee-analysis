@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/PrincipalName.class
-
- - link:PrincipalName-asmified.java[Asmified]
-
-== References
-

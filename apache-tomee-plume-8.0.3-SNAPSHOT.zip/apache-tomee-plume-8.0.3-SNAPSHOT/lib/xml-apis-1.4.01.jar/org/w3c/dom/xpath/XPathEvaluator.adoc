@@ -1,6 +1,0 @@
-= org/w3c/dom/xpath/XPathEvaluator.class
-
- - link:XPathEvaluator-asmified.java[Asmified]
-
-== References
-

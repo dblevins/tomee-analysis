@@ -1,6 +1,0 @@
-= jakarta/activation/CommandMap.class
-
- - link:CommandMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/IDPListBuilder.class
-
- - link:IDPListBuilder-asmified.java[Asmified]
-
-== References
-

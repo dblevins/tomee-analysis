@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JacksonAnnotationsInside.class
-
- - link:JacksonAnnotationsInside-asmified.java[Asmified]
-
-== References
-

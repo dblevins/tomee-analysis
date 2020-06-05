@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/ElementProxy.class
-
- - link:ElementProxy-asmified.java[Asmified]
-
-== References
-

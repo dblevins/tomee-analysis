@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/DTDAttribute.class
-
- - link:DTDAttribute-asmified.java[Asmified]
-
-== References
-

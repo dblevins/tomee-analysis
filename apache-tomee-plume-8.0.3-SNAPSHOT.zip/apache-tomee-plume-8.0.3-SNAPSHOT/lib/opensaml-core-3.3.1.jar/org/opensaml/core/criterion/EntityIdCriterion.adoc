@@ -1,6 +1,0 @@
-= org/opensaml/core/criterion/EntityIdCriterion.class
-
- - link:EntityIdCriterion-asmified.java[Asmified]
-
-== References
-

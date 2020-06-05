@@ -1,6 +1,0 @@
-= org/codehaus/swizzle/Grep.class
-
- - link:Grep-asmified.java[Asmified]
-
-== References
-

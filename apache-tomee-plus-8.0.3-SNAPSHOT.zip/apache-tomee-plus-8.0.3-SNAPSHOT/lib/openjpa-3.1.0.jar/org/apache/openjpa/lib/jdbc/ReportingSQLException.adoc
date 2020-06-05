@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/jdbc/ReportingSQLException.class
-
- - link:ReportingSQLException-asmified.java[Asmified]
-
-== References
-

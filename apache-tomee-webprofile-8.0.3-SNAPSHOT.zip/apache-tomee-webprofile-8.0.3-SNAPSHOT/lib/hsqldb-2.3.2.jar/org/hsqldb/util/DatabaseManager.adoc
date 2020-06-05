@@ -1,6 +1,0 @@
-= org/hsqldb/util/DatabaseManager.class
-
- - link:DatabaseManager-asmified.java[Asmified]
-
-== References
-

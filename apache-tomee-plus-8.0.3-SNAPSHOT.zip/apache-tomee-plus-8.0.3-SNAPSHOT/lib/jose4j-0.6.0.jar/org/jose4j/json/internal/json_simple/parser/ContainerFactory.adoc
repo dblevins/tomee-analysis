@@ -1,6 +1,0 @@
-= org/jose4j/json/internal/json_simple/parser/ContainerFactory.class
-
- - link:ContainerFactory-asmified.java[Asmified]
-
-== References
-

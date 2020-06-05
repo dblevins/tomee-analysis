@@ -1,6 +1,0 @@
-= jakarta/transaction/TransactionSynchronizationRegistry.class
-
- - link:TransactionSynchronizationRegistry-asmified.java[Asmified]
-
-== References
-

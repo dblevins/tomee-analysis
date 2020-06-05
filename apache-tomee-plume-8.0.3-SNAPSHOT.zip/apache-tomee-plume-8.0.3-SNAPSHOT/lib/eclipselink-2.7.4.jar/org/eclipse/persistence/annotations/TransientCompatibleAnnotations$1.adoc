@@ -1,6 +1,0 @@
-= org/eclipse/persistence/annotations/TransientCompatibleAnnotations$1.class
-
- - link:TransientCompatibleAnnotations$1-asmified.java[Asmified]
-
-== References
-

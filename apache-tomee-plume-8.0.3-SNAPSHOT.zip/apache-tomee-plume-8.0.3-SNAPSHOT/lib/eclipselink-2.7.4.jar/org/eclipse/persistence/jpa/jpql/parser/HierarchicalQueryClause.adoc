@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/HierarchicalQueryClause.class
-
- - link:HierarchicalQueryClause-asmified.java[Asmified]
-
-== References
-

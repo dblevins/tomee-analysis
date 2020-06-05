@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/AnnotationMethodDeclaration.class
-
- - link:AnnotationMethodDeclaration-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonManagedReference.class
-
- - link:JsonManagedReference-asmified.java[Asmified]
-
-== References
-

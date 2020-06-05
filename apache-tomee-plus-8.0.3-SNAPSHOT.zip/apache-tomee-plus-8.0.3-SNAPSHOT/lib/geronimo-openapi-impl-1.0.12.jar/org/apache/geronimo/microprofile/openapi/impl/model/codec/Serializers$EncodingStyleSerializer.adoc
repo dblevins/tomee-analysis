@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$EncodingStyleSerializer.class
-
- - link:Serializers$EncodingStyleSerializer-asmified.java[Asmified]
-
-== References
-

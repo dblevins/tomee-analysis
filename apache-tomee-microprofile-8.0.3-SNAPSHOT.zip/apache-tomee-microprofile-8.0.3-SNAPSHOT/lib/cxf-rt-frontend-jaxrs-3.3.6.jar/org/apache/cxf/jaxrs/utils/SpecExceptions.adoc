@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/utils/SpecExceptions.class
-
- - link:SpecExceptions-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/DaitchMokotoffSoundex$Rule.class
-
- - link:DaitchMokotoffSoundex$Rule-asmified.java[Asmified]
-
-== References
-

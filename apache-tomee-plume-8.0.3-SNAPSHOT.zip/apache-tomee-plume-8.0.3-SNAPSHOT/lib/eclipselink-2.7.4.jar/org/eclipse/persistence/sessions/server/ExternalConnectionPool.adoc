@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/server/ExternalConnectionPool.class
-
- - link:ExternalConnectionPool-asmified.java[Asmified]
-
-== References
-

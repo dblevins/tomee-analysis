@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/JsonObjectGenerator.class
-
- - link:JsonObjectGenerator-asmified.java[Asmified]
-
-== References
-

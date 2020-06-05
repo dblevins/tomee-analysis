@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/partitioning/PinnedPartitioningPolicy.class
-
- - link:PinnedPartitioningPolicy-asmified.java[Asmified]
-
-== References
-

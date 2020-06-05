@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/AbstractQueryImpl$ResultType.class
-
- - link:AbstractQueryImpl$ResultType-asmified.java[Asmified]
-
-== References
-

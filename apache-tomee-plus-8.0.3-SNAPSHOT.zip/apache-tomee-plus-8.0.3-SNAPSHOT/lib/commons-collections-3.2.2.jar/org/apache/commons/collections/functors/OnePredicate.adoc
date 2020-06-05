@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/OnePredicate.class
-
- - link:OnePredicate-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Pool.class
-
- - link:Pool-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/ibm/wsdl/util/xml/DOM2Writer.class
-
- - link:DOM2Writer-asmified.java[Asmified]
-
-== References
-

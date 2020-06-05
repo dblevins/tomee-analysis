@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/NodeImpl$BeanNodeImpl.class
-
- - link:NodeImpl$BeanNodeImpl-asmified.java[Asmified]
-
-== References
-

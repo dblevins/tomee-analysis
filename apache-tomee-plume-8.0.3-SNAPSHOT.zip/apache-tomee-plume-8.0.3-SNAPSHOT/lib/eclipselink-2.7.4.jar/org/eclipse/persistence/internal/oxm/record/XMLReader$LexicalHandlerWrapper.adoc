@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/XMLReader$LexicalHandlerWrapper.class
-
- - link:XMLReader$LexicalHandlerWrapper-asmified.java[Asmified]
-
-== References
-

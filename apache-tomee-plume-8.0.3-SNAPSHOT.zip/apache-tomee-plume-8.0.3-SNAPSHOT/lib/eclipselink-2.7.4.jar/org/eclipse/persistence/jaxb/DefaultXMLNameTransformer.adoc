@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/DefaultXMLNameTransformer.class
-
- - link:DefaultXMLNameTransformer-asmified.java[Asmified]
-
-== References
-

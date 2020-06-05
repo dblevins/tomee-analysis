@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/PersistentCollection.class
-
- - link:PersistentCollection-asmified.java[Asmified]
-
-== References
-

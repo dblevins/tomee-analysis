@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/visitor/PropertyValidationException.class
-
- - link:PropertyValidationException-asmified.java[Asmified]
-
-== References
-

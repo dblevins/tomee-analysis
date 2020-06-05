@@ -1,6 +1,0 @@
-= jakarta/servlet/ServletConfig.class
-
- - link:ServletConfig-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/queries/FetchAttributeImpl.class
-
- - link:FetchAttributeImpl-asmified.java[Asmified]
-
-== References
-

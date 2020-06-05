@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/AddDefaultCharsetFilter$ResponseWrapper.class
-
- - link:AddDefaultCharsetFilter$ResponseWrapper-asmified.java[Asmified]
-
-== References
-

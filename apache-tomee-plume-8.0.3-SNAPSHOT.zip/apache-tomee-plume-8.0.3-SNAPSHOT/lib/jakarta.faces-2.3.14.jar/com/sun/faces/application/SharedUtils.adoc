@@ -1,6 +1,0 @@
-= com/sun/faces/application/SharedUtils.class
-
- - link:SharedUtils-asmified.java[Asmified]
-
-== References
-

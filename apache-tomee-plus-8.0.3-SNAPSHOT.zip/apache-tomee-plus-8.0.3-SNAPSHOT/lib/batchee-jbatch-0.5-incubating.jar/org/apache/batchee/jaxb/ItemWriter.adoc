@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/ItemWriter.class
-
- - link:ItemWriter-asmified.java[Asmified]
-
-== References
-

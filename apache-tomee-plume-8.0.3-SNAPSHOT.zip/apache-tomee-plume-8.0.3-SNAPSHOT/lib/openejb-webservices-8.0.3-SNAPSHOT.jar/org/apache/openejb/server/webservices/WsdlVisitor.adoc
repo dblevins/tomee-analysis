@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/WsdlVisitor.class
-
- - link:WsdlVisitor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/Scheduler.class
-
- - link:Scheduler-asmified.java[Asmified]
-
-== References
-

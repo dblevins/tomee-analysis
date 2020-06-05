@@ -1,6 +1,0 @@
-= javax/cache/annotation/CachePut.class
-
- - link:CachePut-asmified.java[Asmified]
-
-== References
-

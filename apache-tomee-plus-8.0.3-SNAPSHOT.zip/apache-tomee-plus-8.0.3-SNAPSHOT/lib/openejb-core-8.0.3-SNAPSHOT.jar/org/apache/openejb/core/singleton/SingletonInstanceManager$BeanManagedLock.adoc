@@ -1,6 +1,0 @@
-= org/apache/openejb/core/singleton/SingletonInstanceManager$BeanManagedLock.class
-
- - link:SingletonInstanceManager$BeanManagedLock-asmified.java[Asmified]
-
-== References
-

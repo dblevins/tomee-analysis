@@ -1,6 +1,0 @@
-= org/apache/openejb/util/References$Visitor.class
-
- - link:References$Visitor-asmified.java[Asmified]
-
-== References
-

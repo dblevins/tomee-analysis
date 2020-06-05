@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/jaxrs/CdiMetricsEndpoints.class
-
- - link:CdiMetricsEndpoints-asmified.java[Asmified]
-
-== References
-

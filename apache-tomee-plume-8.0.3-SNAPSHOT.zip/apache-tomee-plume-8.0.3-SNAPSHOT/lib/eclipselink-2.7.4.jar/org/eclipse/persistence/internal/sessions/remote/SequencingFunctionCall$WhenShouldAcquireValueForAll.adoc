@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/remote/SequencingFunctionCall$WhenShouldAcquireValueForAll.class
-
- - link:SequencingFunctionCall$WhenShouldAcquireValueForAll-asmified.java[Asmified]
-
-== References
-

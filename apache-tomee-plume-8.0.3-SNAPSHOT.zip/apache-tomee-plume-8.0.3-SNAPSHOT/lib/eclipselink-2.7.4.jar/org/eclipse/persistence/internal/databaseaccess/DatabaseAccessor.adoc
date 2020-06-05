@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/DatabaseAccessor.class
-
- - link:DatabaseAccessor-asmified.java[Asmified]
-
-== References
-

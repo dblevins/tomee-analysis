@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/DefaultPropertyResolver.class
-
- - link:DefaultPropertyResolver-asmified.java[Asmified]
-
-== References
-

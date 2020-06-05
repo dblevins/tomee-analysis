@@ -1,6 +1,0 @@
-= org/xml/sax/ext/Attributes2.class
-
- - link:Attributes2-asmified.java[Asmified]
-
-== References
-

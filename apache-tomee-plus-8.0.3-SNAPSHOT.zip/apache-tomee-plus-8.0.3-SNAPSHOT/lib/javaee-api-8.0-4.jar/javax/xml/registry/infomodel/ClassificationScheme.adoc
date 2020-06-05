@@ -1,9 +1,0 @@
-= javax/xml/registry/infomodel/ClassificationScheme.class
-
- - link:ClassificationScheme-asmified.java[Asmified]
-
-== References
-
- - javax.xml.registry.JAXRException - 10
- - javax.xml.registry.infomodel.Concept - 2
- - javax.xml.registry.infomodel.RegistryEntry - 1

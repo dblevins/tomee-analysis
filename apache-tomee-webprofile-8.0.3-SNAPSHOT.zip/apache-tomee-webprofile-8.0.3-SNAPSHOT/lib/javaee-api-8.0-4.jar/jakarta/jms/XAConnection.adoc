@@ -1,6 +1,0 @@
-= jakarta/jms/XAConnection.class
-
- - link:XAConnection-asmified.java[Asmified]
-
-== References
-

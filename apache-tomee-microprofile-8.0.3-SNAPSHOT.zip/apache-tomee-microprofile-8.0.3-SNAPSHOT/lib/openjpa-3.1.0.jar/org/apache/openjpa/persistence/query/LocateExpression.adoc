@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/LocateExpression.class
-
- - link:LocateExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SecureNio2Channel$5.class
-
- - link:SecureNio2Channel$5-asmified.java[Asmified]
-
-== References
-

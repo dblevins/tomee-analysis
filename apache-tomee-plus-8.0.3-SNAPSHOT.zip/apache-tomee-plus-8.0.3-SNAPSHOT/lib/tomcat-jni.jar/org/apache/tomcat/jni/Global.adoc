@@ -1,6 +1,0 @@
-= org/apache/tomcat/jni/Global.class
-
- - link:Global-asmified.java[Asmified]
-
-== References
-

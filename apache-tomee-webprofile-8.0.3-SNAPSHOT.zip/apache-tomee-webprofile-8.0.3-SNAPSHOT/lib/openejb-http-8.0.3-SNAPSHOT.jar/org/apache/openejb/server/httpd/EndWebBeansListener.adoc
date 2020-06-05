@@ -1,6 +1,0 @@
-= org/apache/openejb/server/httpd/EndWebBeansListener.class
-
- - link:EndWebBeansListener-asmified.java[Asmified]
-
-== References
-

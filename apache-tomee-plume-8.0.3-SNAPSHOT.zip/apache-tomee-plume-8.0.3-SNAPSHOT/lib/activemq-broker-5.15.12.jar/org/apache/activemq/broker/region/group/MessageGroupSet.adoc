@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/group/MessageGroupSet.class
-
- - link:MessageGroupSet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/AbstractPCResultObjectProvider.class
-
- - link:AbstractPCResultObjectProvider-asmified.java[Asmified]
-
-== References
-

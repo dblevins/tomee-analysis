@@ -1,6 +1,0 @@
-= org/apache/openejb/server/Start.class
-
- - link:Start-asmified.java[Asmified]
-
-== References
-

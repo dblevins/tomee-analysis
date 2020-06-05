@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/jmx/JMXs.class
-
- - link:JMXs-asmified.java[Asmified]
-
-== References
-

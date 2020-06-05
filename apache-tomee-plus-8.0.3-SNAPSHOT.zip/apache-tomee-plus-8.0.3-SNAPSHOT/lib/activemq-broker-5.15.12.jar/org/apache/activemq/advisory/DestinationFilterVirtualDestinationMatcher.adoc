@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/DestinationFilterVirtualDestinationMatcher.class
-
- - link:DestinationFilterVirtualDestinationMatcher-asmified.java[Asmified]
-
-== References
-

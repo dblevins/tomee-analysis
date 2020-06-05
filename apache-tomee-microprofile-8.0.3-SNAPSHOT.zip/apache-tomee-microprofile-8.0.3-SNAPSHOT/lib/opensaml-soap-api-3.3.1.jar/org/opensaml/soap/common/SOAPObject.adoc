@@ -1,6 +1,0 @@
-= org/opensaml/soap/common/SOAPObject.class
-
- - link:SOAPObject-asmified.java[Asmified]
-
-== References
-

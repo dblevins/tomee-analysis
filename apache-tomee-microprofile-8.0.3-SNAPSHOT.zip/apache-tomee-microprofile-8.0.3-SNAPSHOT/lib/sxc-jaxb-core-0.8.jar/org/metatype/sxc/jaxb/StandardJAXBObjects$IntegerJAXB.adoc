@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/StandardJAXBObjects$IntegerJAXB.class
-
- - link:StandardJAXBObjects$IntegerJAXB-asmified.java[Asmified]
-
-== References
-

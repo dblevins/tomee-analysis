@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCClobFile$ReaderAdapter.class
-
- - link:JDBCClobFile$ReaderAdapter-asmified.java[Asmified]
-
-== References
-

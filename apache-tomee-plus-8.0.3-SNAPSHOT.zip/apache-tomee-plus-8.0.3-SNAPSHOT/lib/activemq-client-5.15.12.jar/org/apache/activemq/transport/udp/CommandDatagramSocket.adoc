@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/udp/CommandDatagramSocket.class
-
- - link:CommandDatagramSocket-asmified.java[Asmified]
-
-== References
-

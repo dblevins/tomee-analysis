@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy.class
-
- - link:RestCsrfPreventionFilter$RestCsrfPreventionStrategy-asmified.java[Asmified]
-
-== References
-

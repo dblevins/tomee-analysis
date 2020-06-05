@@ -1,7 +1,0 @@
-= javax/resource/cci/ResultSetInfo.class
-
- - link:ResultSetInfo-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 11

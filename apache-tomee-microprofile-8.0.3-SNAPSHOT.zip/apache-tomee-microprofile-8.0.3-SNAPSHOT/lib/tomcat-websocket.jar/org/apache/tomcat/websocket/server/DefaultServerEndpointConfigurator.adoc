@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/server/DefaultServerEndpointConfigurator.class
-
- - link:DefaultServerEndpointConfigurator-asmified.java[Asmified]
-
-== References
-

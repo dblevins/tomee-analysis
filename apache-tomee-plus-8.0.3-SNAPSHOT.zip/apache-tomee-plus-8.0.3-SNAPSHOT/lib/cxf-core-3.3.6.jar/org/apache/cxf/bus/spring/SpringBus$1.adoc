@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/SpringBus$1.class
-
- - link:SpringBus$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/server/ServerConnection$1.class
-
- - link:ServerConnection$1-asmified.java[Asmified]
-
-== References
-

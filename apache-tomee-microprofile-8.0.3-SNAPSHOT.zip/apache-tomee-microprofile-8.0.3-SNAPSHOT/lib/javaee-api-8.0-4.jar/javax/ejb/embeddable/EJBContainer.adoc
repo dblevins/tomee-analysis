@@ -1,9 +1,0 @@
-= javax/ejb/embeddable/EJBContainer.class
-
- - link:EJBContainer-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 7
- - javax.ejb.embeddable.EJBContainer - 6
- - javax.ejb.spi.EJBContainerProvider - 3

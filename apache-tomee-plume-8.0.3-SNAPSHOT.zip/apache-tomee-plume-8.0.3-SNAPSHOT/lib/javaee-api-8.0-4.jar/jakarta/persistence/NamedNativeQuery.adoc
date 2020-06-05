@@ -1,6 +1,0 @@
-= jakarta/persistence/NamedNativeQuery.class
-
- - link:NamedNativeQuery-asmified.java[Asmified]
-
-== References
-

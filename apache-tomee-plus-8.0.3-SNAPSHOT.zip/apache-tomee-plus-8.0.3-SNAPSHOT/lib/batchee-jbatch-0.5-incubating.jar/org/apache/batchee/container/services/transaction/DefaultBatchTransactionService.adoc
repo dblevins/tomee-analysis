@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/transaction/DefaultBatchTransactionService.class
-
- - link:DefaultBatchTransactionService-asmified.java[Asmified]
-
-== References
-

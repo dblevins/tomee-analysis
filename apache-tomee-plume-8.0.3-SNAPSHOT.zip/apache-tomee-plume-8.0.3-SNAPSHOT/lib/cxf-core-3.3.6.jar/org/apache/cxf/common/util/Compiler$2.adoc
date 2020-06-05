@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/Compiler$2.class
-
- - link:Compiler$2-asmified.java[Asmified]
-
-== References
-

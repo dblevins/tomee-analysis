@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/FieldBinding.class
-
- - link:FieldBinding-asmified.java[Asmified]
-
-== References
-

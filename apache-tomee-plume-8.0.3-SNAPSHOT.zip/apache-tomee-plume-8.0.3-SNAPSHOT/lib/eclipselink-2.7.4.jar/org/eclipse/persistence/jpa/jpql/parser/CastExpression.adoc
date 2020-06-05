@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/CastExpression.class
-
- - link:CastExpression-asmified.java[Asmified]
-
-== References
-

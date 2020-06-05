@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/DecorateHandler.class
-
- - link:DecorateHandler-asmified.java[Asmified]
-
-== References
-

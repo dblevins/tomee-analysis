@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v11/SessionInfoMarshaller.class
-
- - link:SessionInfoMarshaller-asmified.java[Asmified]
-
-== References
-

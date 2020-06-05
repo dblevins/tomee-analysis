@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/modeler/RegistryMBean.class
-
- - link:RegistryMBean-asmified.java[Asmified]
-
-== References
-

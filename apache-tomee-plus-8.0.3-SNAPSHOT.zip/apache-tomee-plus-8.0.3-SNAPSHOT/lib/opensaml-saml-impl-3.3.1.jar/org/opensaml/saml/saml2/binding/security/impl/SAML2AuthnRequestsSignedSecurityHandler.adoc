@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/binding/security/impl/SAML2AuthnRequestsSignedSecurityHandler.class
-
- - link:SAML2AuthnRequestsSignedSecurityHandler-asmified.java[Asmified]
-
-== References
-

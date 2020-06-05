@@ -1,6 +1,0 @@
-= org/apache/webbeans/inject/impl/InjectionPointFactory.class
-
- - link:InjectionPointFactory-asmified.java[Asmified]
-
-== References
-

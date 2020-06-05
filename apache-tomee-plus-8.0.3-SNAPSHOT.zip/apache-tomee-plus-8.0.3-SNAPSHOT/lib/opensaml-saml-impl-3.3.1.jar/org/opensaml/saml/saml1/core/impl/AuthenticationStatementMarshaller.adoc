@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AuthenticationStatementMarshaller.class
-
- - link:AuthenticationStatementMarshaller-asmified.java[Asmified]
-
-== References
-

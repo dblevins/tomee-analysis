@@ -1,8 +1,0 @@
-= javax/ejb/EJBLocalHome.class
-
- - link:EJBLocalHome-asmified.java[Asmified]
-
-== References
-
- - javax.ejb.EJBException - 1
- - javax.ejb.RemoveException - 1

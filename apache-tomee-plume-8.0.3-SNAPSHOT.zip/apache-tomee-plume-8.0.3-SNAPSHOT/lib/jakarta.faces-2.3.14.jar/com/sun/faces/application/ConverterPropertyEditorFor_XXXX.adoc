@@ -1,6 +1,0 @@
-= com/sun/faces/application/ConverterPropertyEditorFor_XXXX.class
-
- - link:ConverterPropertyEditorFor_XXXX-asmified.java[Asmified]
-
-== References
-

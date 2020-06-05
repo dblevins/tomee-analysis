@@ -1,6 +1,0 @@
-= org/bouncycastle/jcajce/provider/digest/Whirlpool$Mappings.class
-
- - link:Whirlpool$Mappings-asmified.java[Asmified]
-
-== References
-

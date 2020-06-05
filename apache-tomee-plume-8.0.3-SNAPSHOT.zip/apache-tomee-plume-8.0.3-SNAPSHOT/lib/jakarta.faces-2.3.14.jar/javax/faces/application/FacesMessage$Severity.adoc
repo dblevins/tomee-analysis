@@ -1,8 +1,0 @@
-= javax/faces/application/FacesMessage$Severity.class
-
- - link:FacesMessage$Severity-asmified.java[Asmified]
-
-== References
-
- - javax.faces.application.FacesMessage$Severity - 2
- - javax.faces.application.FacesMessage$1 - 1

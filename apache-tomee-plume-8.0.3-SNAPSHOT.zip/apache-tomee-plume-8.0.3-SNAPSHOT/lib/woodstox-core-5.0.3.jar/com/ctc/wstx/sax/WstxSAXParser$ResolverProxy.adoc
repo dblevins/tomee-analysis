@@ -1,6 +1,0 @@
-= com/ctc/wstx/sax/WstxSAXParser$ResolverProxy.class
-
- - link:WstxSAXParser$ResolverProxy-asmified.java[Asmified]
-
-== References
-

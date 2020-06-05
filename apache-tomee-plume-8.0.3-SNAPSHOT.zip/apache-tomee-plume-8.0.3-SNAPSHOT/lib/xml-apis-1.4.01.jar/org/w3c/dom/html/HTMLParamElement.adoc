@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLParamElement.class
-
- - link:HTMLParamElement-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/faces/component/_LocaleUtils.class
-
- - link:_LocaleUtils-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component._LocaleUtils - 4
- - javax.faces.component._LocaleUtils$SyncAvoid - 2

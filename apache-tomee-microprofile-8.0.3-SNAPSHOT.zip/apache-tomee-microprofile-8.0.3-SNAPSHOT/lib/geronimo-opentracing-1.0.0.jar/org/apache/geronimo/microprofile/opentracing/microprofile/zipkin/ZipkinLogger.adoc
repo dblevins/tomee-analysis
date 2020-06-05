@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/microprofile/zipkin/ZipkinLogger.class
-
- - link:ZipkinLogger-asmified.java[Asmified]
-
-== References
-

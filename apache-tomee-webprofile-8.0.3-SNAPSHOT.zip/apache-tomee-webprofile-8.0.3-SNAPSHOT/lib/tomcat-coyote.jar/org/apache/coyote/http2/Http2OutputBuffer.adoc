@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/Http2OutputBuffer.class
-
- - link:Http2OutputBuffer-asmified.java[Asmified]
-
-== References
-

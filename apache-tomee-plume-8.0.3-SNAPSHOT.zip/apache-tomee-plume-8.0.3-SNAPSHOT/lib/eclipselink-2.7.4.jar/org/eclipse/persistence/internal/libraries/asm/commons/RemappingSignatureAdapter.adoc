@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/RemappingSignatureAdapter.class
-
- - link:RemappingSignatureAdapter-asmified.java[Asmified]
-
-== References
-

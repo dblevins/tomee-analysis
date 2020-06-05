@@ -1,6 +1,0 @@
-= org/apache/el/parser/SimpleCharStream.class
-
- - link:SimpleCharStream-asmified.java[Asmified]
-
-== References
-

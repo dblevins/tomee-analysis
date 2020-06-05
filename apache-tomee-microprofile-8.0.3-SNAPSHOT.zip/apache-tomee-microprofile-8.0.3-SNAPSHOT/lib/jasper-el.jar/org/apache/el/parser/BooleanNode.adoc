@@ -1,6 +1,0 @@
-= org/apache/el/parser/BooleanNode.class
-
- - link:BooleanNode-asmified.java[Asmified]
-
-== References
-

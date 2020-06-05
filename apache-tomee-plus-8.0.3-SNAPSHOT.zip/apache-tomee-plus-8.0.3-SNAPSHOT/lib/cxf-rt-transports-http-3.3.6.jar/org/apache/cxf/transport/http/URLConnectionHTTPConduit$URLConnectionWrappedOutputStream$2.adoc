@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.class
-
- - link:URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2-asmified.java[Asmified]
-
-== References
-

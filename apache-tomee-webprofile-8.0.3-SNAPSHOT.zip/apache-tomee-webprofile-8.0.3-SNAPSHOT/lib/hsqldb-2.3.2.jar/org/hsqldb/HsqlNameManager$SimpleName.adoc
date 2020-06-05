@@ -1,6 +1,0 @@
-= org/hsqldb/HsqlNameManager$SimpleName.class
-
- - link:HsqlNameManager$SimpleName-asmified.java[Asmified]
-
-== References
-

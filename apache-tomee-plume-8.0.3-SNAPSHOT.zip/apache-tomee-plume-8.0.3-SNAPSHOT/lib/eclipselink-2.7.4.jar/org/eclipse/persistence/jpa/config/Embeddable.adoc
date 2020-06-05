@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/Embeddable.class
-
- - link:Embeddable-asmified.java[Asmified]
-
-== References
-

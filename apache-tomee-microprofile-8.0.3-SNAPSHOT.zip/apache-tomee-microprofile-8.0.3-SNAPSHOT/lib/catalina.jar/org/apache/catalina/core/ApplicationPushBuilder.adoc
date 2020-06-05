@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ApplicationPushBuilder.class
-
- - link:ApplicationPushBuilder-asmified.java[Asmified]
-
-== References
-

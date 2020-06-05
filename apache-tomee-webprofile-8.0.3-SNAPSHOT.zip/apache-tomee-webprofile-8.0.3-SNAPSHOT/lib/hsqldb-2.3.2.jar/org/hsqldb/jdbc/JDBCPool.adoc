@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCPool.class
-
- - link:JDBCPool-asmified.java[Asmified]
-
-== References
-

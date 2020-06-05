@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/EntityManagerImpl.class
-
- - link:EntityManagerImpl-asmified.java[Asmified]
-
-== References
-

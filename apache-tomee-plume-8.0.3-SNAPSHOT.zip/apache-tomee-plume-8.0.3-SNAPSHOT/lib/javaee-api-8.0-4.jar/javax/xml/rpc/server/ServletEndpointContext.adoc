@@ -1,7 +1,0 @@
-= javax/xml/rpc/server/ServletEndpointContext.class
-
- - link:ServletEndpointContext-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.handler.MessageContext - 1

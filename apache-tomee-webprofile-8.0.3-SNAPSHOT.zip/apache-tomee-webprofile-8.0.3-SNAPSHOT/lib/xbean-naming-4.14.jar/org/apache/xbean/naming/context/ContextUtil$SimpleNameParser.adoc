@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ContextUtil$SimpleNameParser.class
-
- - link:ContextUtil$SimpleNameParser-asmified.java[Asmified]
-
-== References
-

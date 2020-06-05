@@ -1,6 +1,0 @@
-= org/apache/commons/collections/MultiHashMap$Values.class
-
- - link:MultiHashMap$Values-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/ClassMetaData$ListingOrderComparator.class
-
- - link:ClassMetaData$ListingOrderComparator-asmified.java[Asmified]
-
-== References
-

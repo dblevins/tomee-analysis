@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/JDBCColumnOrder.class
-
- - link:JDBCColumnOrder-asmified.java[Asmified]
-
-== References
-

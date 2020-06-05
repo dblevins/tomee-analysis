@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/core/UrlTag.class
-
- - link:UrlTag-asmified.java[Asmified]
-
-== References
-

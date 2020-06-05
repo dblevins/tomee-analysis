@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/ContextsCatalog.class
-
- - link:ContextsCatalog-asmified.java[Asmified]
-
-== References
-

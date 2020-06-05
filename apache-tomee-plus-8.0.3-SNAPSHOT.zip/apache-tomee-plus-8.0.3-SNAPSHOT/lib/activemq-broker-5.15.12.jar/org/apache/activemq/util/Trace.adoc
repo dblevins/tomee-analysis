@@ -1,6 +1,0 @@
-= org/apache/activemq/util/Trace.class
-
- - link:Trace-asmified.java[Asmified]
-
-== References
-

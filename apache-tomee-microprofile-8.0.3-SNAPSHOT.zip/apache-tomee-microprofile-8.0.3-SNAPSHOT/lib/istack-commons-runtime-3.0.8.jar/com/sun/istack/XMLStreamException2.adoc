@@ -1,6 +1,0 @@
-= com/sun/istack/XMLStreamException2.class
-
- - link:XMLStreamException2-asmified.java[Asmified]
-
-== References
-

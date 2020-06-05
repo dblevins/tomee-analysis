@@ -1,6 +1,0 @@
-= org/apache/commons/collections/bidimap/AbstractDualBidiMap$MapEntry.class
-
- - link:AbstractDualBidiMap$MapEntry-asmified.java[Asmified]
-
-== References
-

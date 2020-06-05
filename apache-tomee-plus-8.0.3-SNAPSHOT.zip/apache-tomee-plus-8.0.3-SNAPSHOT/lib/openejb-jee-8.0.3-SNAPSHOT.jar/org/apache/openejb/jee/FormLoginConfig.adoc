@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FormLoginConfig.class
-
- - link:FormLoginConfig-asmified.java[Asmified]
-
-== References
-

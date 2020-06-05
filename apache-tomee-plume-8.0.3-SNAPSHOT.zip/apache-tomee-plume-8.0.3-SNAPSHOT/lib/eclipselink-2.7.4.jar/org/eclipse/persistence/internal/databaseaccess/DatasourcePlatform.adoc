@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/DatasourcePlatform.class
-
- - link:DatasourcePlatform-asmified.java[Asmified]
-
-== References
-

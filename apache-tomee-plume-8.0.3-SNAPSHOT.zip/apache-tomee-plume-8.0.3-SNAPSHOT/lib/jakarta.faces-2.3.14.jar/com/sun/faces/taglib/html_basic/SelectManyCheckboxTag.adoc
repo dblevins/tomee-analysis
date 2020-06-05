@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/SelectManyCheckboxTag.class
-
- - link:SelectManyCheckboxTag-asmified.java[Asmified]
-
-== References
-

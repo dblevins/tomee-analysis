@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/queries/SortedCollectionContainerPolicy.class
-
- - link:SortedCollectionContainerPolicy-asmified.java[Asmified]
-
-== References
-

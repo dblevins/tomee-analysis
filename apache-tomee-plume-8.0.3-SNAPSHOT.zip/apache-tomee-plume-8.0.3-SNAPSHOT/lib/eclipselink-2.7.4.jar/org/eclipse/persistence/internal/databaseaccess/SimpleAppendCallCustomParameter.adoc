@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/SimpleAppendCallCustomParameter.class
-
- - link:SimpleAppendCallCustomParameter-asmified.java[Asmified]
-
-== References
-

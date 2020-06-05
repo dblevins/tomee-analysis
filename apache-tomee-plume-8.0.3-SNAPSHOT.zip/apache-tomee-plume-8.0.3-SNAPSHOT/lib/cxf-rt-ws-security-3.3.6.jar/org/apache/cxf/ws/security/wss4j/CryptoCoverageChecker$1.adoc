@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/CryptoCoverageChecker$1.class
-
- - link:CryptoCoverageChecker$1-asmified.java[Asmified]
-
-== References
-

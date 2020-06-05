@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor$SoapActionInAttemptTwoInterceptor.class
-
- - link:SoapActionInInterceptor$SoapActionInAttemptTwoInterceptor-asmified.java[Asmified]
-
-== References
-

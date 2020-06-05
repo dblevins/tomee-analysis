@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/EqualsAssignmentNode.class
-
- - link:EqualsAssignmentNode-asmified.java[Asmified]
-
-== References
-

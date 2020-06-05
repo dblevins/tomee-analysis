@@ -1,6 +1,0 @@
-= org/hsqldb/auth/DenyException.class
-
- - link:DenyException-asmified.java[Asmified]
-
-== References
-

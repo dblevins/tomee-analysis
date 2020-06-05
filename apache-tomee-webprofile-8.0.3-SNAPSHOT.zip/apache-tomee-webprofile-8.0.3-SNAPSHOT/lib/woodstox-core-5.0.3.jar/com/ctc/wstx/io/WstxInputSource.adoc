@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/WstxInputSource.class
-
- - link:WstxInputSource-asmified.java[Asmified]
-
-== References
-

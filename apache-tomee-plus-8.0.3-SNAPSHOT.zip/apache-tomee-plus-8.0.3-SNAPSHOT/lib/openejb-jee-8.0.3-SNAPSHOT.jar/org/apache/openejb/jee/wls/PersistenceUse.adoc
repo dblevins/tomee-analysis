@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/PersistenceUse.class
-
- - link:PersistenceUse-asmified.java[Asmified]
-
-== References
-

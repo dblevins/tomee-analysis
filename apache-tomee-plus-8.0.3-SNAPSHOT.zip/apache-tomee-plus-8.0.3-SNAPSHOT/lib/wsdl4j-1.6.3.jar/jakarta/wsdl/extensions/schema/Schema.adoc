@@ -1,6 +1,0 @@
-= jakarta/wsdl/extensions/schema/Schema.class
-
- - link:Schema-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/DependsOn.class
-
- - link:DependsOn-asmified.java[Asmified]
-
-== References
-

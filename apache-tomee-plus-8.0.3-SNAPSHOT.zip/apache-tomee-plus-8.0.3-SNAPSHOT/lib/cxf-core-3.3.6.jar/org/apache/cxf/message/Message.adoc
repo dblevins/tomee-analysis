@@ -1,6 +1,0 @@
-= org/apache/cxf/message/Message.class
-
- - link:Message-asmified.java[Asmified]
-
-== References
-

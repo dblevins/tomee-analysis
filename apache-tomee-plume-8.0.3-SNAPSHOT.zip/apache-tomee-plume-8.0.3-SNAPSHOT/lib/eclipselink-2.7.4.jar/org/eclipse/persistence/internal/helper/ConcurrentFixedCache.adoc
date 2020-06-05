@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/helper/ConcurrentFixedCache.class
-
- - link:ConcurrentFixedCache-asmified.java[Asmified]
-
-== References
-

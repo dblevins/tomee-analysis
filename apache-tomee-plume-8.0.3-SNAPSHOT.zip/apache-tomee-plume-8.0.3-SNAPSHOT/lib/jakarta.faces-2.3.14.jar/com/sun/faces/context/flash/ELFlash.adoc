@@ -1,6 +1,0 @@
-= com/sun/faces/context/flash/ELFlash.class
-
- - link:ELFlash-asmified.java[Asmified]
-
-== References
-

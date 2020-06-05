@@ -1,6 +1,0 @@
-= javax/cache/Cache.class
-
- - link:Cache-asmified.java[Asmified]
-
-== References
-

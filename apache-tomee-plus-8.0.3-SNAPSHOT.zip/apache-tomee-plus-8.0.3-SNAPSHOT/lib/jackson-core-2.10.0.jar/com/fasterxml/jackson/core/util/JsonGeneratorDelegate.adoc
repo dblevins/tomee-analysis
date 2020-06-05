@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/util/JsonGeneratorDelegate.class
-
- - link:JsonGeneratorDelegate-asmified.java[Asmified]
-
-== References
-

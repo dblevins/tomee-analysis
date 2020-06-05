@@ -1,9 +1,0 @@
-= javax/validation/ConstraintViolationException.class
-
- - link:ConstraintViolationException-asmified.java[Asmified]
-
-== References
-
- - javax.validation.ConstraintViolation - 4
- - javax.validation.ValidationException - 2
- - javax.validation.ConstraintViolationException - 1

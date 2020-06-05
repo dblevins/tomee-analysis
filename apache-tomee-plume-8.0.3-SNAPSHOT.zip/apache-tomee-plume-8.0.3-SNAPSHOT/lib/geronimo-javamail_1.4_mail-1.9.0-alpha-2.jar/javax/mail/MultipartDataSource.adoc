@@ -1,9 +1,0 @@
-= javax/mail/MultipartDataSource.class
-
- - link:MultipartDataSource-asmified.java[Asmified]
-
-== References
-
- - javax.mail.MessagingException - 1
- - javax.activation.DataSource - 1
- - javax.mail.BodyPart - 1

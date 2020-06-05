@@ -1,6 +1,0 @@
-= org/bouncycastle/util/Properties.class
-
- - link:Properties-asmified.java[Asmified]
-
-== References
-

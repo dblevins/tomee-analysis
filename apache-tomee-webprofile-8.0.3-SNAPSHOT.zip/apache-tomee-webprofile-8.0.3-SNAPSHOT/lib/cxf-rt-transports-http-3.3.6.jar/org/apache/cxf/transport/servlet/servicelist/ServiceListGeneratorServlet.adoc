@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/servicelist/ServiceListGeneratorServlet.class
-
- - link:ServiceListGeneratorServlet-asmified.java[Asmified]
-
-== References
-

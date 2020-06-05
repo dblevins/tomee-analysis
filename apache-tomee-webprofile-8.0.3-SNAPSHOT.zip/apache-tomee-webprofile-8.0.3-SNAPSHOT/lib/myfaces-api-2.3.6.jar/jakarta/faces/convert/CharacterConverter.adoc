@@ -1,6 +1,0 @@
-= jakarta/faces/convert/CharacterConverter.class
-
- - link:CharacterConverter-asmified.java[Asmified]
-
-== References
-

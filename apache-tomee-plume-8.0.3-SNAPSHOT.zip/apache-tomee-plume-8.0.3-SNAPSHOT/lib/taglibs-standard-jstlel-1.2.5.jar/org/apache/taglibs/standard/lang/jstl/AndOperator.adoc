@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/AndOperator.class
-
- - link:AndOperator-asmified.java[Asmified]
-
-== References
-

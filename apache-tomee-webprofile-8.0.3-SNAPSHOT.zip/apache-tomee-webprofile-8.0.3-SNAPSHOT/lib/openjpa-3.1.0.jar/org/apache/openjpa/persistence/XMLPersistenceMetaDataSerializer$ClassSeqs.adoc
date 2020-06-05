@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/XMLPersistenceMetaDataSerializer$ClassSeqs.class
-
- - link:XMLPersistenceMetaDataSerializer$ClassSeqs-asmified.java[Asmified]
-
-== References
-

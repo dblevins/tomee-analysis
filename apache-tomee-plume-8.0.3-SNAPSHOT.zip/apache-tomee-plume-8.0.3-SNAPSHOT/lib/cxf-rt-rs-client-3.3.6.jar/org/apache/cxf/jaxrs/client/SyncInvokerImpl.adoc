@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/SyncInvokerImpl.class
-
- - link:SyncInvokerImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/binding/impl/ExtractConsentFromRequestHandler.class
-
- - link:ExtractConsentFromRequestHandler-asmified.java[Asmified]
-
-== References
-

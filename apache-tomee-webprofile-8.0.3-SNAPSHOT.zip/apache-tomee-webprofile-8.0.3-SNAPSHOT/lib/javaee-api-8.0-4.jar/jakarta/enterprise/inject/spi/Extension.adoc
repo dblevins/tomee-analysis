@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/Extension.class
-
- - link:Extension-asmified.java[Asmified]
-
-== References
-

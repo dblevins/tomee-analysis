@@ -1,6 +1,0 @@
-= org/apache/activemq/Service.class
-
- - link:Service-asmified.java[Asmified]
-
-== References
-

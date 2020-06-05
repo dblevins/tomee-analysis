@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/PoolUtilities.class
-
- - link:PoolUtilities-asmified.java[Asmified]
-
-== References
-

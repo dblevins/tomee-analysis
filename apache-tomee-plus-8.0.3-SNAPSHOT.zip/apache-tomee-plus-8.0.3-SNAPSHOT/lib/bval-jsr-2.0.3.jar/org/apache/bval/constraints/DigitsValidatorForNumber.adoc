@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/DigitsValidatorForNumber.class
-
- - link:DigitsValidatorForNumber-asmified.java[Asmified]
-
-== References
-

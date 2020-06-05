@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/UniquePredicate.class
-
- - link:UniquePredicate-asmified.java[Asmified]
-
-== References
-

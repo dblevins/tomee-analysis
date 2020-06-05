@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/BitField.class
-
- - link:BitField-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/descriptors/FieldTransformation.class
-
- - link:FieldTransformation-asmified.java[Asmified]
-
-== References
-

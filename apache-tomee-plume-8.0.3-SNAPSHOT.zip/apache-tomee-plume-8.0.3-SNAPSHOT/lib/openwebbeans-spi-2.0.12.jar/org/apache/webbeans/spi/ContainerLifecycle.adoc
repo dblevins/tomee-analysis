@@ -1,6 +1,0 @@
-= org/apache/webbeans/spi/ContainerLifecycle.class
-
- - link:ContainerLifecycle-asmified.java[Asmified]
-
-== References
-

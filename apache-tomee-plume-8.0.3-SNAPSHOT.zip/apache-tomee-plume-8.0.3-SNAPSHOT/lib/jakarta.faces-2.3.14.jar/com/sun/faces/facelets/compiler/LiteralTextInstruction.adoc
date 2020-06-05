@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/compiler/LiteralTextInstruction.class
-
- - link:LiteralTextInstruction-asmified.java[Asmified]
-
-== References
-

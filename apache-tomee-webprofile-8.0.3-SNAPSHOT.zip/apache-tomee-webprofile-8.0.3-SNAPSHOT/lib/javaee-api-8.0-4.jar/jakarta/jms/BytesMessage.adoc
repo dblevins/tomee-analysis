@@ -1,6 +1,0 @@
-= jakarta/jms/BytesMessage.class
-
- - link:BytesMessage-asmified.java[Asmified]
-
-== References
-

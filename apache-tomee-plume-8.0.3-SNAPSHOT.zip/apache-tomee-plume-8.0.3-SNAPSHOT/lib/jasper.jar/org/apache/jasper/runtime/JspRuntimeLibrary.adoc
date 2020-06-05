@@ -1,6 +1,0 @@
-= org/apache/jasper/runtime/JspRuntimeLibrary.class
-
- - link:JspRuntimeLibrary-asmified.java[Asmified]
-
-== References
-

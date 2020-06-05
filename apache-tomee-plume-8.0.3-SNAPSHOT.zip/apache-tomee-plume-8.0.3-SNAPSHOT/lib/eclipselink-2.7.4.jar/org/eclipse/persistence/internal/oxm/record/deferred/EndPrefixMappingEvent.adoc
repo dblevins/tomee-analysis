@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/EndPrefixMappingEvent.class
-
- - link:EndPrefixMappingEvent-asmified.java[Asmified]
-
-== References
-

@@ -1,9 +1,0 @@
-= javax/enterprise/inject/spi/InjectionTargetFactory.class
-
- - link:InjectionTargetFactory-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.InjectionTarget - 1
- - javax.enterprise.inject.spi.Bean - 1
- - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 1

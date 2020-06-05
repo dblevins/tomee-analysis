@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/std/StdJdkSerializers$AtomicBooleanSerializer.class
-
- - link:StdJdkSerializers$AtomicBooleanSerializer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/LoadBalancerDrainingValve.class
-
- - link:LoadBalancerDrainingValve-asmified.java[Asmified]
-
-== References
-

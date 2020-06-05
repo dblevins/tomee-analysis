@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/DividedByExpression.class
-
- - link:DividedByExpression-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/NewEncryptedIDUnmarshaller.class
-
- - link:NewEncryptedIDUnmarshaller-asmified.java[Asmified]
-
-== References
-

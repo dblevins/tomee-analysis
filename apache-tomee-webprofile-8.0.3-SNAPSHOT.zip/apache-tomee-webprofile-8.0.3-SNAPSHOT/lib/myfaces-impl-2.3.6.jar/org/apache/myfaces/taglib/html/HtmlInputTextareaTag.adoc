@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlInputTextareaTag.class
-
- - link:HtmlInputTextareaTag-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/InitMethodInfo.class
-
- - link:InitMethodInfo-asmified.java[Asmified]
-
-== References
-

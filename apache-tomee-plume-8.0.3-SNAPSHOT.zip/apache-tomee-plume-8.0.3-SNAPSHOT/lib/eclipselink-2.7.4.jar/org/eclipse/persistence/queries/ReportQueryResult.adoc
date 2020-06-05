@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ReportQueryResult.class
-
- - link:ReportQueryResult-asmified.java[Asmified]
-
-== References
-

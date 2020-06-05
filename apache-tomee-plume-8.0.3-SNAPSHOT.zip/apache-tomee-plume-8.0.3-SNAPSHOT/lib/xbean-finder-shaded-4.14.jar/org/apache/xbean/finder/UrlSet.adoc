@@ -1,6 +1,0 @@
-= org/apache/xbean/finder/UrlSet.class
-
- - link:UrlSet-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/dom4j/DOM4JProvider.class
-
- - link:DOM4JProvider-asmified.java[Asmified]
-
-== References
-

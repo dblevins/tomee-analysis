@@ -1,6 +1,0 @@
-= com/sun/faces/application/WebPrintWriter.class
-
- - link:WebPrintWriter-asmified.java[Asmified]
-
-== References
-

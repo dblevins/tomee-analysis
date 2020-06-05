@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/ViewMetadataImpl.class
-
- - link:ViewMetadataImpl-asmified.java[Asmified]
-
-== References
-

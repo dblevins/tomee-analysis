@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/JndiEncBuilder$BeanManagerLazyReference.class
-
- - link:JndiEncBuilder$BeanManagerLazyReference-asmified.java[Asmified]
-
-== References
-

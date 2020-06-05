@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/Iteration.class
-
- - link:Iteration-asmified.java[Asmified]
-
-== References
-

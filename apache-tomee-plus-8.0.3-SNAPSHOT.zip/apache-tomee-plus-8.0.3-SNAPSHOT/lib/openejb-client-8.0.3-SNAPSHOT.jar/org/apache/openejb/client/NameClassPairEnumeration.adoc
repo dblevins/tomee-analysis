@@ -1,6 +1,0 @@
-= org/apache/openejb/client/NameClassPairEnumeration.class
-
- - link:NameClassPairEnumeration-asmified.java[Asmified]
-
-== References
-

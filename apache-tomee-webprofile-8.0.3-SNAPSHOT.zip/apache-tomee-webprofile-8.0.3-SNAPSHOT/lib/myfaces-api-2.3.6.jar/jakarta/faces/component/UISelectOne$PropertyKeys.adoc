@@ -1,6 +1,0 @@
-= jakarta/faces/component/UISelectOne$PropertyKeys.class
-
- - link:UISelectOne$PropertyKeys-asmified.java[Asmified]
-
-== References
-

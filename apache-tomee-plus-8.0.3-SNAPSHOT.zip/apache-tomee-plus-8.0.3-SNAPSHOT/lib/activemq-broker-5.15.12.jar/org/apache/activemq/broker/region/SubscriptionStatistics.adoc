@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/SubscriptionStatistics.class
-
- - link:SubscriptionStatistics-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/security/AuthorizationDestinationFilter.class
-
- - link:AuthorizationDestinationFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/AesCbcContentEncryptionAlgorithm.class
-
- - link:AesCbcContentEncryptionAlgorithm-asmified.java[Asmified]
-
-== References
-

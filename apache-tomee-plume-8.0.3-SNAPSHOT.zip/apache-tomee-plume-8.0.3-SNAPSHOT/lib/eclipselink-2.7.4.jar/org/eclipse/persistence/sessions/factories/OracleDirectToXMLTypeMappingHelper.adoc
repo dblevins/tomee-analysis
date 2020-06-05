@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/factories/OracleDirectToXMLTypeMappingHelper.class
-
- - link:OracleDirectToXMLTypeMappingHelper-asmified.java[Asmified]
-
-== References
-

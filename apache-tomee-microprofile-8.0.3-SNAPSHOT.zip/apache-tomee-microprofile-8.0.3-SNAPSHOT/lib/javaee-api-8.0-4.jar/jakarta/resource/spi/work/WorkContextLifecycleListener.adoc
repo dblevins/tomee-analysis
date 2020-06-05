@@ -1,6 +1,0 @@
-= jakarta/resource/spi/work/WorkContextLifecycleListener.class
-
- - link:WorkContextLifecycleListener-asmified.java[Asmified]
-
-== References
-

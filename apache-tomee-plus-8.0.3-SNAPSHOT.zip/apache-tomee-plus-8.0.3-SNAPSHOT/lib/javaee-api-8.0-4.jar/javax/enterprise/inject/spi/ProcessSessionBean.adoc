@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/ProcessSessionBean.class
-
- - link:ProcessSessionBean-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.ProcessManagedBean - 1
- - javax.enterprise.inject.spi.SessionBeanType - 1

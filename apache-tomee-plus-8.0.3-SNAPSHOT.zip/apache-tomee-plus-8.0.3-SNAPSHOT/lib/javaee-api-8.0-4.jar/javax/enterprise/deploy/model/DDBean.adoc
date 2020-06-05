@@ -1,9 +1,0 @@
-= javax/enterprise/deploy/model/DDBean.class
-
- - link:DDBean-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.deploy.model.XpathListener - 2
- - javax.enterprise.deploy.model.DDBean - 1
- - javax.enterprise.deploy.model.DDBeanRoot - 1

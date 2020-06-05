@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/Bean.class
-
- - link:Bean-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/BeforeBeanDiscovery.class
-
- - link:BeforeBeanDiscovery-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.AnnotatedType - 4
- - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 3

@@ -1,6 +1,0 @@
-= org/apache/webbeans/ejb/common/util/EjbValidator.class
-
- - link:EjbValidator-asmified.java[Asmified]
-
-== References
-

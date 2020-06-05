@@ -1,6 +1,0 @@
-= jakarta/persistence/OneToOne.class
-
- - link:OneToOne-asmified.java[Asmified]
-
-== References
-

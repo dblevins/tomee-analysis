@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/MdbContainerFactory.class
-
- - link:MdbContainerFactory-asmified.java[Asmified]
-
-== References
-

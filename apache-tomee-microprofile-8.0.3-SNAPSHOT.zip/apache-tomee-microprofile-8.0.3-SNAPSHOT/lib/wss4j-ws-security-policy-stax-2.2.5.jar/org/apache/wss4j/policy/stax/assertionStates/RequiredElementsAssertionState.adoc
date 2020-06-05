@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/RequiredElementsAssertionState.class
-
- - link:RequiredElementsAssertionState-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/AliasHeaderSuffix.class
-
- - link:AliasHeaderSuffix-asmified.java[Asmified]
-
-== References
-

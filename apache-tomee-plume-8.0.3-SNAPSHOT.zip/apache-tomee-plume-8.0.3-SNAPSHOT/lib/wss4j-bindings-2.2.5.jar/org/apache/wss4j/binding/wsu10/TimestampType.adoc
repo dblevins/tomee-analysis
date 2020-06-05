@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wsu10/TimestampType.class
-
- - link:TimestampType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/ComponentRule$ValueBindingMetadata.class
-
- - link:ComponentRule$ValueBindingMetadata-asmified.java[Asmified]
-
-== References
-

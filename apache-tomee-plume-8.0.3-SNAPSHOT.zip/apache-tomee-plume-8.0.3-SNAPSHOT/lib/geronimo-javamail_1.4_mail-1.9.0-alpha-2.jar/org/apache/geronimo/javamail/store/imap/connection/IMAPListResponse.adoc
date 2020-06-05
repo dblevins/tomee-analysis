@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/connection/IMAPListResponse.class
-
- - link:IMAPListResponse-asmified.java[Asmified]
-
-== References
-

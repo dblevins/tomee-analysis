@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/convert/MethodExpressionToMethodBinding.class
-
- - link:MethodExpressionToMethodBinding-asmified.java[Asmified]
-
-== References
-

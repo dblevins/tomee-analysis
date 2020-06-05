@@ -1,6 +1,0 @@
-= org/apache/openejb/core/managed/ManagedObjectHandler$RegistryId.class
-
- - link:ManagedObjectHandler$RegistryId-asmified.java[Asmified]
-
-== References
-

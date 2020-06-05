@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/remote/corba/sun/TransporterHelper.class
-
- - link:TransporterHelper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/JAXBContextInitializer.class
-
- - link:JAXBContextInitializer-asmified.java[Asmified]
-
-== References
-

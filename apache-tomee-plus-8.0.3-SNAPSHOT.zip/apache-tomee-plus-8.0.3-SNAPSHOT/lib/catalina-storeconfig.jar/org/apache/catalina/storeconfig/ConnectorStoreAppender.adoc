@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/ConnectorStoreAppender.class
-
- - link:ConnectorStoreAppender-asmified.java[Asmified]
-
-== References
-

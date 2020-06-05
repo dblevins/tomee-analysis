@@ -1,8 +1,0 @@
-= javax/persistence/ManyToMany.class
-
- - link:ManyToMany-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.FetchType - 2
- - javax.persistence.CascadeType - 1

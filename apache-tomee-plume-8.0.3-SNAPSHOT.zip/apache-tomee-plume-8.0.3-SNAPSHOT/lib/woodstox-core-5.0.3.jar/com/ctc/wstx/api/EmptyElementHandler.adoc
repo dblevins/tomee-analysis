@@ -1,6 +1,0 @@
-= com/ctc/wstx/api/EmptyElementHandler.class
-
- - link:EmptyElementHandler-asmified.java[Asmified]
-
-== References
-

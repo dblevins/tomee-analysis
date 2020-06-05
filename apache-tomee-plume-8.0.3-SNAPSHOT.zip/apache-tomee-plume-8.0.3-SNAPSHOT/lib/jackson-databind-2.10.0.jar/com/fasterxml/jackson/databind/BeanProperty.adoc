@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/BeanProperty.class
-
- - link:BeanProperty-asmified.java[Asmified]
-
-== References
-

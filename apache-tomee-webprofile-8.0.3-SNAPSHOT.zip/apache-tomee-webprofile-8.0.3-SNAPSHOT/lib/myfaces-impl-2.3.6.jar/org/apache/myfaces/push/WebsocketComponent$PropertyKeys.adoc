@@ -1,6 +1,0 @@
-= org/apache/myfaces/push/WebsocketComponent$PropertyKeys.class
-
- - link:WebsocketComponent$PropertyKeys-asmified.java[Asmified]
-
-== References
-

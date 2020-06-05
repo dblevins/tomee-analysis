@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCStatementBase.class
-
- - link:JDBCStatementBase-asmified.java[Asmified]
-
-== References
-

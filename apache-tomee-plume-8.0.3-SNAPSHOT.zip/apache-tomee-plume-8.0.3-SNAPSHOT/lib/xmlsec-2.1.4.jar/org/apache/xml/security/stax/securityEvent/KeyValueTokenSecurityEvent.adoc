@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/securityEvent/KeyValueTokenSecurityEvent.class
-
- - link:KeyValueTokenSecurityEvent-asmified.java[Asmified]
-
-== References
-

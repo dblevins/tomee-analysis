@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/jsf_core/ValueChangeListenerTag.class
-
- - link:ValueChangeListenerTag-asmified.java[Asmified]
-
-== References
-

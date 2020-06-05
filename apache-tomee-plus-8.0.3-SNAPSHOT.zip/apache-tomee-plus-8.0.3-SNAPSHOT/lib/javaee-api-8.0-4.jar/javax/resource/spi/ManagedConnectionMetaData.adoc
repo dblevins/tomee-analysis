@@ -1,7 +1,0 @@
-= javax/resource/spi/ManagedConnectionMetaData.class
-
- - link:ManagedConnectionMetaData-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 4

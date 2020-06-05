@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/NotBlank.class
-
- - link:NotBlank-asmified.java[Asmified]
-
-== References
-

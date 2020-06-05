@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/ser/impl/StringCollectionSerializer.class
-
- - link:StringCollectionSerializer-asmified.java[Asmified]
-
-== References
-

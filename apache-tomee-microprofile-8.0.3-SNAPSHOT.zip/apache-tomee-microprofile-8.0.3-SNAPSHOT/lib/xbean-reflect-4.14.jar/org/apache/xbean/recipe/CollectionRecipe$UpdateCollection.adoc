@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/CollectionRecipe$UpdateCollection.class
-
- - link:CollectionRecipe$UpdateCollection-asmified.java[Asmified]
-
-== References
-

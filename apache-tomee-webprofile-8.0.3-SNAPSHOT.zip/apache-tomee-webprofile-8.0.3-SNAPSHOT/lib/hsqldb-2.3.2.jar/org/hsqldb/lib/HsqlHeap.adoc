@@ -1,6 +1,0 @@
-= org/hsqldb/lib/HsqlHeap.class
-
- - link:HsqlHeap-asmified.java[Asmified]
-
-== References
-

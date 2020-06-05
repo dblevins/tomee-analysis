@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/UnwantedTokenException.class
-
- - link:UnwantedTokenException-asmified.java[Asmified]
-
-== References
-

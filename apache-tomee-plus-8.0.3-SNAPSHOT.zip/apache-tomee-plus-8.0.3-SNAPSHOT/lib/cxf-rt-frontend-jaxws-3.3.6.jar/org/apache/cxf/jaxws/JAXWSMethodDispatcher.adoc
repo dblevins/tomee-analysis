@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/JAXWSMethodDispatcher.class
-
- - link:JAXWSMethodDispatcher-asmified.java[Asmified]
-
-== References
-

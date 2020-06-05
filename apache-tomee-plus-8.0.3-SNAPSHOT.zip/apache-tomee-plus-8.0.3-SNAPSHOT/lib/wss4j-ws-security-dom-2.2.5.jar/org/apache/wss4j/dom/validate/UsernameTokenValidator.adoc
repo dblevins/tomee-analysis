@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/validate/UsernameTokenValidator.class
-
- - link:UsernameTokenValidator-asmified.java[Asmified]
-
-== References
-

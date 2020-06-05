@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/soap/impl/FaultElementImpl.class
-
- - link:FaultElementImpl-asmified.java[Asmified]
-
-== References
-

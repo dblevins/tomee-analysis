@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/SystemDefaults.class
-
- - link:SystemDefaults-asmified.java[Asmified]
-
-== References
-

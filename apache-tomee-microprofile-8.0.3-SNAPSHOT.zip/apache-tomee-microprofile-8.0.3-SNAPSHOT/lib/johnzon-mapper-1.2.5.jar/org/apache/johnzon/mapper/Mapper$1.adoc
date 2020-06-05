@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/Mapper$1.class
-
- - link:Mapper$1-asmified.java[Asmified]
-
-== References
-

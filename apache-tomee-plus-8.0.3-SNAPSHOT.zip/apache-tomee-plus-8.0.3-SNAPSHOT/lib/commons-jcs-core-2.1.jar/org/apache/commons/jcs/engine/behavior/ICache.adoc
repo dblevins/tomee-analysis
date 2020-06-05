@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/behavior/ICache.class
-
- - link:ICache-asmified.java[Asmified]
-
-== References
-

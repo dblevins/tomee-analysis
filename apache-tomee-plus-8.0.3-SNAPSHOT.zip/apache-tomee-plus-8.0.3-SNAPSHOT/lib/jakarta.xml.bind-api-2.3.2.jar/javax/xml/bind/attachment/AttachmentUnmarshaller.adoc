@@ -1,7 +1,0 @@
-= javax/xml/bind/attachment/AttachmentUnmarshaller.class
-
- - link:AttachmentUnmarshaller-asmified.java[Asmified]
-
-== References
-
- - javax.activation.DataHandler - 1

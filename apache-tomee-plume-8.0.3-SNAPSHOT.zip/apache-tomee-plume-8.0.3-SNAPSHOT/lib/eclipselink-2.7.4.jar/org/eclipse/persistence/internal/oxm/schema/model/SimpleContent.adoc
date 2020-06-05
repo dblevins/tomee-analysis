@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/schema/model/SimpleContent.class
-
- - link:SimpleContent-asmified.java[Asmified]
-
-== References
-

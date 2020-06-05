@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/BlockLogBuffer.class
-
- - link:BlockLogBuffer-asmified.java[Asmified]
-
-== References
-

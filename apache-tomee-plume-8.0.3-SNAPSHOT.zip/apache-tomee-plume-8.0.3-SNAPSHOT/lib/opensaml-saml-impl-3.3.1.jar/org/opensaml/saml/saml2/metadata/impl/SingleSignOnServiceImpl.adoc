@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/SingleSignOnServiceImpl.class
-
- - link:SingleSignOnServiceImpl-asmified.java[Asmified]
-
-== References
-

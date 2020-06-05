@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/cdi/FlowScopedContextImpl.class
-
- - link:FlowScopedContextImpl-asmified.java[Asmified]
-
-== References
-

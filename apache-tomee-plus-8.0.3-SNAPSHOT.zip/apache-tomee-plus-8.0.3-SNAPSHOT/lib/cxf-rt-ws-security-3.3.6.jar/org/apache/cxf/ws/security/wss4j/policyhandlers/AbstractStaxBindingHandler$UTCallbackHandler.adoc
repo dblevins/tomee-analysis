@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler$UTCallbackHandler.class
-
- - link:AbstractStaxBindingHandler$UTCallbackHandler-asmified.java[Asmified]
-
-== References
-

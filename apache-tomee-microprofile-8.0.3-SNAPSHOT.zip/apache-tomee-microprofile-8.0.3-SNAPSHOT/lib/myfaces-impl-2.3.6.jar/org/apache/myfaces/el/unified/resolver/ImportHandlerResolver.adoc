@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/ImportHandlerResolver.class
-
- - link:ImportHandlerResolver-asmified.java[Asmified]
-
-== References
-

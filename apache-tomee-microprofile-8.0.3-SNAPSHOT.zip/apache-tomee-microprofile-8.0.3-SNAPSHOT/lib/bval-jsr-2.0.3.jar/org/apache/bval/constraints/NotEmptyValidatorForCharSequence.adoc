@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/NotEmptyValidatorForCharSequence.class
-
- - link:NotEmptyValidatorForCharSequence-asmified.java[Asmified]
-
-== References
-

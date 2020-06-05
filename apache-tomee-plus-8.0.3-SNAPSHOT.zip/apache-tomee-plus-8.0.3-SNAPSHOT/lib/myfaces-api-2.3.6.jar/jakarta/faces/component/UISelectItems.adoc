@@ -1,6 +1,0 @@
-= jakarta/faces/component/UISelectItems.class
-
- - link:UISelectItems-asmified.java[Asmified]
-
-== References
-

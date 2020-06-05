@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/BeanDeserializer$BeanReferring.class
-
- - link:BeanDeserializer$BeanReferring-asmified.java[Asmified]
-
-== References
-

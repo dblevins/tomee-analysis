@@ -1,6 +1,0 @@
-= jakarta/faces/convert/BooleanConverter.class
-
- - link:BooleanConverter-asmified.java[Asmified]
-
-== References
-

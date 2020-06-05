@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Scan$Exclude$IfSystemProperty.class
-
- - link:Scan$Exclude$IfSystemProperty-asmified.java[Asmified]
-
-== References
-

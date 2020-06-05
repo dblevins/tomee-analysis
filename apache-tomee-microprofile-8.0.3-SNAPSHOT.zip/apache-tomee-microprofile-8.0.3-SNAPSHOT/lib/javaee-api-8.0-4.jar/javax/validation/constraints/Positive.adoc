@@ -1,9 +1,0 @@
-= javax/validation/constraints/Positive.class
-
- - link:Positive-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Payload - 1
- - javax.validation.Constraint - 1
- - javax.validation.constraints.Positive$List - 1

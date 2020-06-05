@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v1/MarshallerFactory.class
-
- - link:MarshallerFactory-asmified.java[Asmified]
-
-== References
-

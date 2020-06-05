@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/core/ValidateRegexTag.class
-
- - link:ValidateRegexTag-asmified.java[Asmified]
-
-== References
-

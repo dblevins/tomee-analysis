@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/config/DefaultOpenAPIConfig.class
-
- - link:DefaultOpenAPIConfig-asmified.java[Asmified]
-
-== References
-

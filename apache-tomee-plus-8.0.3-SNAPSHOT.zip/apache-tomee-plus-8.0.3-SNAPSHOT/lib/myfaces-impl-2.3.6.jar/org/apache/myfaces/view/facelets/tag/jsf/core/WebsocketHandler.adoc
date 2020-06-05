@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/WebsocketHandler.class
-
- - link:WebsocketHandler-asmified.java[Asmified]
-
-== References
-

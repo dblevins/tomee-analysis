@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/auxiliary/disk/behavior/IDiskCacheAttributes.class
-
- - link:IDiskCacheAttributes-asmified.java[Asmified]
-
-== References
-

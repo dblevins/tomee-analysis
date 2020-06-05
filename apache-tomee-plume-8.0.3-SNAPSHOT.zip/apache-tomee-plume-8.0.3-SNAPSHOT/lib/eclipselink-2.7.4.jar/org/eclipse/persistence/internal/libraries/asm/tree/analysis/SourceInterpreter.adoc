@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/analysis/SourceInterpreter.class
-
- - link:SourceInterpreter-asmified.java[Asmified]
-
-== References
-

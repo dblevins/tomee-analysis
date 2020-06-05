@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/LambdaExpression.class
-
- - link:LambdaExpression-asmified.java[Asmified]
-
-== References
-

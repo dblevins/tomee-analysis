@@ -1,6 +1,0 @@
-= org/apache/openjpa/datacache/DataCacheStoreManager$1.class
-
- - link:DataCacheStoreManager$1-asmified.java[Asmified]
-
-== References
-

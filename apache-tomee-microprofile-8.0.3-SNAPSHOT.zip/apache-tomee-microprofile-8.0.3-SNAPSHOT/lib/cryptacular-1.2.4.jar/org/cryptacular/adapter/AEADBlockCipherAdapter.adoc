@@ -1,6 +1,0 @@
-= org/cryptacular/adapter/AEADBlockCipherAdapter.class
-
- - link:AEADBlockCipherAdapter-asmified.java[Asmified]
-
-== References
-

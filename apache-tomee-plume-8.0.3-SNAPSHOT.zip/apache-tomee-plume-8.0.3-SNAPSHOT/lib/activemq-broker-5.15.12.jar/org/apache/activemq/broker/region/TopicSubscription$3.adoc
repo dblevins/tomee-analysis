@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/TopicSubscription$3.class
-
- - link:TopicSubscription$3-asmified.java[Asmified]
-
-== References
-

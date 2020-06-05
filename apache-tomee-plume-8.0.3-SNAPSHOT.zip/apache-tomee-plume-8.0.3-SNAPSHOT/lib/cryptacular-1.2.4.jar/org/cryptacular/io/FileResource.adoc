@@ -1,6 +1,0 @@
-= org/cryptacular/io/FileResource.class
-
- - link:FileResource-asmified.java[Asmified]
-
-== References
-

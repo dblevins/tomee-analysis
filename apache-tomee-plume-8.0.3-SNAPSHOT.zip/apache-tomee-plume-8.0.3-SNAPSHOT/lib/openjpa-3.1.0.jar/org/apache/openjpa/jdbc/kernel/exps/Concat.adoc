@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/Concat.class
-
- - link:Concat-asmified.java[Asmified]
-
-== References
-

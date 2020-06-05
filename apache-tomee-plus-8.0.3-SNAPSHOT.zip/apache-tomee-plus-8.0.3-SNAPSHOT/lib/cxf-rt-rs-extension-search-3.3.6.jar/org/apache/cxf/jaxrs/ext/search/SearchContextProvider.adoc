@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/SearchContextProvider.class
-
- - link:SearchContextProvider-asmified.java[Asmified]
-
-== References
-

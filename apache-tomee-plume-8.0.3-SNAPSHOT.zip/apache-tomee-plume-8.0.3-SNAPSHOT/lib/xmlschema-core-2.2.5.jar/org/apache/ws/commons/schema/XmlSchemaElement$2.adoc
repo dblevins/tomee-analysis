@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/XmlSchemaElement$2.class
-
- - link:XmlSchemaElement$2-asmified.java[Asmified]
-
-== References
-

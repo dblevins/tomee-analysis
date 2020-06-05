@@ -1,6 +1,0 @@
-= org/apache/catalina/filters/RemoteIpFilter.class
-
- - link:RemoteIpFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/impl/ReferenceContext.class
-
- - link:ReferenceContext-asmified.java[Asmified]
-
-== References
-

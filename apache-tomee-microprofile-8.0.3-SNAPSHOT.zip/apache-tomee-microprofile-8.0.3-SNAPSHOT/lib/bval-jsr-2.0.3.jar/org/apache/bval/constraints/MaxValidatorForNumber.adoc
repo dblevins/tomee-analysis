@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/MaxValidatorForNumber.class
-
- - link:MaxValidatorForNumber-asmified.java[Asmified]
-
-== References
-

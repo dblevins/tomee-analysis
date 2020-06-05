@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/identifier/DBIdentifierRule.class
-
- - link:DBIdentifierRule-asmified.java[Asmified]
-
-== References
-

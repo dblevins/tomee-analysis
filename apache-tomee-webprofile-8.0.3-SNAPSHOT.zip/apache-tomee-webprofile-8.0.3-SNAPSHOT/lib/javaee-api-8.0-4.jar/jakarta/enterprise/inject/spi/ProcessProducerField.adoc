@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/ProcessProducerField.class
-
- - link:ProcessProducerField-asmified.java[Asmified]
-
-== References
-

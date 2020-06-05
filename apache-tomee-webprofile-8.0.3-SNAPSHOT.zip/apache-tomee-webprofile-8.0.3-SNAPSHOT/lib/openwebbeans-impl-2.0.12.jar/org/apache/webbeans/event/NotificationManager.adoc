@@ -1,6 +1,0 @@
-= org/apache/webbeans/event/NotificationManager.class
-
- - link:NotificationManager-asmified.java[Asmified]
-
-== References
-

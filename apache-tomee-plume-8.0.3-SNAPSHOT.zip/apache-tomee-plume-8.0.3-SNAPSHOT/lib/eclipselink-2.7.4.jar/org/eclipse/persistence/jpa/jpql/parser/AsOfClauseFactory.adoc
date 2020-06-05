@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AsOfClauseFactory.class
-
- - link:AsOfClauseFactory-asmified.java[Asmified]
-
-== References
-

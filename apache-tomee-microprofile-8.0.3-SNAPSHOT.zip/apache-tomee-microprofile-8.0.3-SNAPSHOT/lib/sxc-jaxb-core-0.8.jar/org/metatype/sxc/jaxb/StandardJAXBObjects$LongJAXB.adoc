@@ -1,6 +1,0 @@
-= org/metatype/sxc/jaxb/StandardJAXBObjects$LongJAXB.class
-
- - link:StandardJAXBObjects$LongJAXB-asmified.java[Asmified]
-
-== References
-

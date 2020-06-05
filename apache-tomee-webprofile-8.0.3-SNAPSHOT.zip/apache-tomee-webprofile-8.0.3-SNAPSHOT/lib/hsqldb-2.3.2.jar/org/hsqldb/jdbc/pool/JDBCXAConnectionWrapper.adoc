@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/pool/JDBCXAConnectionWrapper.class
-
- - link:JDBCXAConnectionWrapper-asmified.java[Asmified]
-
-== References
-

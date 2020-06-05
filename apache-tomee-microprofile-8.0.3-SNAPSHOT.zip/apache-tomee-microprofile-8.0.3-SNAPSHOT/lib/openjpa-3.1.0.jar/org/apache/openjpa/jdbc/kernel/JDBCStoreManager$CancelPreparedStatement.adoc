@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/JDBCStoreManager$CancelPreparedStatement.class
-
- - link:JDBCStoreManager$CancelPreparedStatement-asmified.java[Asmified]
-
-== References
-

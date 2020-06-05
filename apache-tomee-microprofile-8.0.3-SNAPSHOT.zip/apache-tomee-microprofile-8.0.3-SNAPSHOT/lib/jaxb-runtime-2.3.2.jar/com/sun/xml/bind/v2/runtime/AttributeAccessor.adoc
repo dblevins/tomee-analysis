@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/AttributeAccessor.class
-
- - link:AttributeAccessor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/LastImageSubscriptionRecoveryPolicy.class
-
- - link:LastImageSubscriptionRecoveryPolicy-asmified.java[Asmified]
-
-== References
-

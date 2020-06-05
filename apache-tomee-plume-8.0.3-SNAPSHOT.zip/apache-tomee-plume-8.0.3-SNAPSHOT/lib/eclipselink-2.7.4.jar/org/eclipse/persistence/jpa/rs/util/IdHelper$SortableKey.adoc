@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/IdHelper$SortableKey.class
-
- - link:IdHelper$SortableKey-asmified.java[Asmified]
-
-== References
-

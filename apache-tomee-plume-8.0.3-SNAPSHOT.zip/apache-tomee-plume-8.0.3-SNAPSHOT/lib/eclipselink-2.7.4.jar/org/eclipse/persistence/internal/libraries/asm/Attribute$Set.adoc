@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/Attribute$Set.class
-
- - link:Attribute$Set-asmified.java[Asmified]
-
-== References
-

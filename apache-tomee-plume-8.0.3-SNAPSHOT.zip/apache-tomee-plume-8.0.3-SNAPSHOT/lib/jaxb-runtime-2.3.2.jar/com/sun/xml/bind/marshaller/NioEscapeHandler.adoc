@@ -1,6 +1,0 @@
-= com/sun/xml/bind/marshaller/NioEscapeHandler.class
-
- - link:NioEscapeHandler-asmified.java[Asmified]
-
-== References
-

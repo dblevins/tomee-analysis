@@ -1,6 +1,0 @@
-= javax/xml/transform/stax/StAXResult.class
-
- - link:StAXResult-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/HttpsURLConnectionFactory$1.class
-
- - link:HttpsURLConnectionFactory$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/soap/common/SOAPException.class
-
- - link:SOAPException-asmified.java[Asmified]
-
-== References
-

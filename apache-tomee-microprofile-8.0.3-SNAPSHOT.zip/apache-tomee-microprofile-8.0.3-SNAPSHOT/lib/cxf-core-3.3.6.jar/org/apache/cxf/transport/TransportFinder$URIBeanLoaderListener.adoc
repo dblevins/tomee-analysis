@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/TransportFinder$URIBeanLoaderListener.class
-
- - link:TransportFinder$URIBeanLoaderListener-asmified.java[Asmified]
-
-== References
-

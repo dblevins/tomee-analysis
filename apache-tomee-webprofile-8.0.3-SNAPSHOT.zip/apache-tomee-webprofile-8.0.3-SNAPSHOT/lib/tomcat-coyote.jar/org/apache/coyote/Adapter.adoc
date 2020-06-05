@@ -1,6 +1,0 @@
-= org/apache/coyote/Adapter.class
-
- - link:Adapter-asmified.java[Asmified]
-
-== References
-

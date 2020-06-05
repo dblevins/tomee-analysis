@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/TrimExpressionFactory.class
-
- - link:TrimExpressionFactory-asmified.java[Asmified]
-
-== References
-

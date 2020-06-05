@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/profile/impl/ChainingNameIdentifierGenerator.class
-
- - link:ChainingNameIdentifierGenerator-asmified.java[Asmified]
-
-== References
-

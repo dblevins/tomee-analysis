@@ -1,6 +1,0 @@
-= org/apache/openejb/junit/ApplicationRule$ApplicationOnlyApplicationComposers.class
-
- - link:ApplicationRule$ApplicationOnlyApplicationComposers-asmified.java[Asmified]
-
-== References
-

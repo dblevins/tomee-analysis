@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/GenericEntity.class
-
- - link:GenericEntity-asmified.java[Asmified]
-
-== References
-

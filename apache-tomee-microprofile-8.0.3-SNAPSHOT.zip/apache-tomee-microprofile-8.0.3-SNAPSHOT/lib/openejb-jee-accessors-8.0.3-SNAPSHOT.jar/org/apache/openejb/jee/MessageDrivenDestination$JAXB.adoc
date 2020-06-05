@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MessageDrivenDestination$JAXB.class
-
- - link:MessageDrivenDestination$JAXB-asmified.java[Asmified]
-
-== References
-

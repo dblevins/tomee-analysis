@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/JohnzonJsonb.class
-
- - link:JohnzonJsonb-asmified.java[Asmified]
-
-== References
-

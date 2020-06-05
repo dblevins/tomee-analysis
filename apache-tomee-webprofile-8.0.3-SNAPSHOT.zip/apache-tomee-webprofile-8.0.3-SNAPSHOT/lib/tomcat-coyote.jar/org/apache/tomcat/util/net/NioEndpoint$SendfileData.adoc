@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/NioEndpoint$SendfileData.class
-
- - link:NioEndpoint$SendfileData-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/EncryptedAssertionBuilder.class
-
- - link:EncryptedAssertionBuilder-asmified.java[Asmified]
-
-== References
-

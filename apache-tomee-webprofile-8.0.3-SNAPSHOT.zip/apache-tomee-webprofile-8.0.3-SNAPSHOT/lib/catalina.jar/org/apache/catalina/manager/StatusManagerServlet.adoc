@@ -1,6 +1,0 @@
-= org/apache/catalina/manager/StatusManagerServlet.class
-
- - link:StatusManagerServlet-asmified.java[Asmified]
-
-== References
-

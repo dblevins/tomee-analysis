@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/jdbc/LoggingConnectionDecorator$LoggingConnection$LoggingDatabaseMetaData.class
-
- - link:LoggingConnectionDecorator$LoggingConnection$LoggingDatabaseMetaData-asmified.java[Asmified]
-
-== References
-

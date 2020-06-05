@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/el/ValueExpressionMethodExpression.class
-
- - link:ValueExpressionMethodExpression-asmified.java[Asmified]
-
-== References
-

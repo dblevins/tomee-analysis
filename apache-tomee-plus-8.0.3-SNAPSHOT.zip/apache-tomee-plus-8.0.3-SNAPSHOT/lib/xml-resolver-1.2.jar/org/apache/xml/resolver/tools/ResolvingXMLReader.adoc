@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/tools/ResolvingXMLReader.class
-
- - link:ResolvingXMLReader-asmified.java[Asmified]
-
-== References
-

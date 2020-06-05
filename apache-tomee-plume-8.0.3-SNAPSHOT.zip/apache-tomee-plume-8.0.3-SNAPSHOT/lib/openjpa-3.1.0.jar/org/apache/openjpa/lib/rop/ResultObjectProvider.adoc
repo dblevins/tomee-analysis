@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/rop/ResultObjectProvider.class
-
- - link:ResultObjectProvider-asmified.java[Asmified]
-
-== References
-

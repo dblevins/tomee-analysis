@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/FluentIterable.class
-
- - link:FluentIterable-asmified.java[Asmified]
-
-== References
-

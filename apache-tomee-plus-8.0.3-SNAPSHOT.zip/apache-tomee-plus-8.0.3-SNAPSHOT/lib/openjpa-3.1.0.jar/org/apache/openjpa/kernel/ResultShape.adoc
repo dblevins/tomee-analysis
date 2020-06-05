@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/ResultShape.class
-
- - link:ResultShape-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomEEWebappLoader.class
-
- - link:TomEEWebappLoader-asmified.java[Asmified]
-
-== References
-

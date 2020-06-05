@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/ClasspathJmod.class
-
- - link:ClasspathJmod-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/ValueTableJDBCSeq.class
-
- - link:ValueTableJDBCSeq-asmified.java[Asmified]
-
-== References
-

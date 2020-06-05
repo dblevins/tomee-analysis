@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/AltJavaGenerator$1.class
-
- - link:AltJavaGenerator$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/format/PeriodParser.class
-
- - link:PeriodParser-asmified.java[Asmified]
-
-== References
-

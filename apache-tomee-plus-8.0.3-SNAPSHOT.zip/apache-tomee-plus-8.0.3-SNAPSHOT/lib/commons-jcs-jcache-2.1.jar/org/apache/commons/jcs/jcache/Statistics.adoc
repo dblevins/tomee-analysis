@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/Statistics.class
-
- - link:Statistics-asmified.java[Asmified]
-
-== References
-

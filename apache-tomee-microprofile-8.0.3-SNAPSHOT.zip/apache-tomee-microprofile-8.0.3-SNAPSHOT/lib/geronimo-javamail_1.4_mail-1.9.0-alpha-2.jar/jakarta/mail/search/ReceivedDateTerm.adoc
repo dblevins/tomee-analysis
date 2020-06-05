@@ -1,6 +1,0 @@
-= jakarta/mail/search/ReceivedDateTerm.class
-
- - link:ReceivedDateTerm-asmified.java[Asmified]
-
-== References
-

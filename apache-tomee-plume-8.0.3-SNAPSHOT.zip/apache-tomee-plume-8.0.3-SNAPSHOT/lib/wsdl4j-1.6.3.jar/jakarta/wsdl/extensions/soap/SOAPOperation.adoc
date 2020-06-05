@@ -1,6 +1,0 @@
-= jakarta/wsdl/extensions/soap/SOAPOperation.class
-
- - link:SOAPOperation-asmified.java[Asmified]
-
-== References
-

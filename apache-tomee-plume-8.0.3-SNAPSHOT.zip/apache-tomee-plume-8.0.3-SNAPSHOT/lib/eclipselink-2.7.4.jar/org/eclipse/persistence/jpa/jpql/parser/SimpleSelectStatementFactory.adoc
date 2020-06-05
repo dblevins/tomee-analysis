@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/SimpleSelectStatementFactory.class
-
- - link:SimpleSelectStatementFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/DescriptorNotFoundContentHandler.class
-
- - link:DescriptorNotFoundContentHandler-asmified.java[Asmified]
-
-== References
-

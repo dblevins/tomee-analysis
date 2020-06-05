@@ -1,7 +1,0 @@
-= javax/websocket/MessageHandler$Whole.class
-
- - link:MessageHandler$Whole-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.MessageHandler - 1

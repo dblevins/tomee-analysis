@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/implementations/TransformXPath$XPathNodeFilter.class
-
- - link:TransformXPath$XPathNodeFilter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/PCDataImpl.class
-
- - link:PCDataImpl-asmified.java[Asmified]
-
-== References
-

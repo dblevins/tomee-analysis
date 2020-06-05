@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/BasicDynaBean.class
-
- - link:BasicDynaBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/rt/core/OutTag.class
-
- - link:OutTag-asmified.java[Asmified]
-
-== References
-

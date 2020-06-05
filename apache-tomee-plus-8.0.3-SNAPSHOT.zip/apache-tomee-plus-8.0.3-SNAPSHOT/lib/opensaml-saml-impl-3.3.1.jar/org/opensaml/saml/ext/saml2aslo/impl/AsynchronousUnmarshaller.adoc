@@ -1,6 +1,0 @@
-= org/opensaml/saml/ext/saml2aslo/impl/AsynchronousUnmarshaller.class
-
- - link:AsynchronousUnmarshaller-asmified.java[Asmified]
-
-== References
-

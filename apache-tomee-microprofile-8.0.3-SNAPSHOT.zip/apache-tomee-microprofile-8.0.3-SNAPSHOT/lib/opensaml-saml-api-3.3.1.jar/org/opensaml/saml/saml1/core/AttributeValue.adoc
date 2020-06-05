@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/AttributeValue.class
-
- - link:AttributeValue-asmified.java[Asmified]
-
-== References
-

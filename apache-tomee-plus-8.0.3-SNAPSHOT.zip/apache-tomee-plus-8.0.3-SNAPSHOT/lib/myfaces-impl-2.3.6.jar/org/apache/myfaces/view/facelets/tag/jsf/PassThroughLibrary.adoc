@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/PassThroughLibrary.class
-
- - link:PassThroughLibrary-asmified.java[Asmified]
-
-== References
-

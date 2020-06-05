@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/AuthenticationQuery.class
-
- - link:AuthenticationQuery-asmified.java[Asmified]
-
-== References
-

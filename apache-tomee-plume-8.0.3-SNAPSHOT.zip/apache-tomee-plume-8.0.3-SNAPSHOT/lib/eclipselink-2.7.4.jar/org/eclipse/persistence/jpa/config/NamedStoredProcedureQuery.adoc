@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/NamedStoredProcedureQuery.class
-
- - link:NamedStoredProcedureQuery-asmified.java[Asmified]
-
-== References
-

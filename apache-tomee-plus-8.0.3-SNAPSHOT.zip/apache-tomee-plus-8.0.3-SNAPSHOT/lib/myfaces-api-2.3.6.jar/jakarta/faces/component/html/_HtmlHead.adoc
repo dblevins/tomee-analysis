@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_HtmlHead.class
-
- - link:_HtmlHead-asmified.java[Asmified]
-
-== References
-

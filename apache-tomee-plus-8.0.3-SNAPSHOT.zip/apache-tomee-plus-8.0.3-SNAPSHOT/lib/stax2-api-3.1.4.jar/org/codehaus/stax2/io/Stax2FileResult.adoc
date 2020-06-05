@@ -1,6 +1,0 @@
-= org/codehaus/stax2/io/Stax2FileResult.class
-
- - link:Stax2FileResult-asmified.java[Asmified]
-
-== References
-

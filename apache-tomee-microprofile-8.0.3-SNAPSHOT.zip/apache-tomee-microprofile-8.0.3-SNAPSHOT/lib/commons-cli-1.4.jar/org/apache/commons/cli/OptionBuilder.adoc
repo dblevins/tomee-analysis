@@ -1,6 +1,0 @@
-= org/apache/commons/cli/OptionBuilder.class
-
- - link:OptionBuilder-asmified.java[Asmified]
-
-== References
-

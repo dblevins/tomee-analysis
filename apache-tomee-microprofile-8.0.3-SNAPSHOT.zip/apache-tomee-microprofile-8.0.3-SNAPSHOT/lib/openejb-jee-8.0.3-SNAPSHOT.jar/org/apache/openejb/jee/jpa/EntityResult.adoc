@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jpa/EntityResult.class
-
- - link:EntityResult-asmified.java[Asmified]
-
-== References
-

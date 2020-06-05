@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlStylesheetRenderer.class
-
- - link:HtmlStylesheetRenderer-asmified.java[Asmified]
-
-== References
-

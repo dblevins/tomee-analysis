@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/AnnotationType.class
-
- - link:AnnotationType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/CycleRecoverableContextProxy.class
-
- - link:CycleRecoverableContextProxy-asmified.java[Asmified]
-
-== References
-

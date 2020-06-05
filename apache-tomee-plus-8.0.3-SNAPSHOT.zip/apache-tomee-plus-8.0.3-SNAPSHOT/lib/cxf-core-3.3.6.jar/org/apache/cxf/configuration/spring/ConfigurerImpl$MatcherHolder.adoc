@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/spring/ConfigurerImpl$MatcherHolder.class
-
- - link:ConfigurerImpl$MatcherHolder-asmified.java[Asmified]
-
-== References
-

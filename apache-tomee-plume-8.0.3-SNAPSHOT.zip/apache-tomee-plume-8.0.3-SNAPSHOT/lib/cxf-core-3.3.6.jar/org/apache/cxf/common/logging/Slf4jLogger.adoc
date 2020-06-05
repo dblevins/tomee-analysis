@@ -1,6 +1,0 @@
-= org/apache/cxf/common/logging/Slf4jLogger.class
-
- - link:Slf4jLogger-asmified.java[Asmified]
-
-== References
-

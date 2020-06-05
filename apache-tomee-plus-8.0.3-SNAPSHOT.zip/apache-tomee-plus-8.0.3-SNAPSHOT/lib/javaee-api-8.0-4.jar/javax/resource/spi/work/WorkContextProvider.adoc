@@ -1,7 +1,0 @@
-= javax/resource/spi/work/WorkContextProvider.class
-
- - link:WorkContextProvider-asmified.java[Asmified]
-
-== References
-
- - javax.resource.spi.work.WorkContext - 1

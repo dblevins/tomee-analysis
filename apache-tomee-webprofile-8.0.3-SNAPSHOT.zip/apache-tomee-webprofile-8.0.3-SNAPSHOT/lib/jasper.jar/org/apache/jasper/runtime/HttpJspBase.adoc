@@ -1,6 +1,0 @@
-= org/apache/jasper/runtime/HttpJspBase.class
-
- - link:HttpJspBase-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/el/ELUtils$Scope.class
-
- - link:ELUtils$Scope-asmified.java[Asmified]
-
-== References
-

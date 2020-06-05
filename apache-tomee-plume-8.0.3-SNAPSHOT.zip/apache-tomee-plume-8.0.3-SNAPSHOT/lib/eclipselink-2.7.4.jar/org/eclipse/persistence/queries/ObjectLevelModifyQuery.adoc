@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ObjectLevelModifyQuery.class
-
- - link:ObjectLevelModifyQuery-asmified.java[Asmified]
-
-== References
-

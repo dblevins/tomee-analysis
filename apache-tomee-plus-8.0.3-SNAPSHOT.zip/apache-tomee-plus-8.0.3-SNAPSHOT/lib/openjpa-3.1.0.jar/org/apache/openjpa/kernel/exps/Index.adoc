@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/exps/Index.class
-
- - link:Index-asmified.java[Asmified]
-
-== References
-

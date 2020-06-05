@@ -1,6 +1,0 @@
-= org/apache/openejb/OpenEjbContainer$Provider.class
-
- - link:OpenEjbContainer$Provider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/FaceletViewHandlingStrategy$NullWriter.class
-
- - link:FaceletViewHandlingStrategy$NullWriter-asmified.java[Asmified]
-
-== References
-

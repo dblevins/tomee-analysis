@@ -1,6 +1,0 @@
-= jakarta/jms/JMSConnectionFactoryDefinitions.class
-
- - link:JMSConnectionFactoryDefinitions-asmified.java[Asmified]
-
-== References
-

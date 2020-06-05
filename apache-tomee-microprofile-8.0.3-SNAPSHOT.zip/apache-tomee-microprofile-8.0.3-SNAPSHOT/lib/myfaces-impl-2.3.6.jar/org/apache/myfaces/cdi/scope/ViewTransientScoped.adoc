@@ -1,6 +1,0 @@
-= org/apache/myfaces/cdi/scope/ViewTransientScoped.class
-
- - link:ViewTransientScoped-asmified.java[Asmified]
-
-== References
-

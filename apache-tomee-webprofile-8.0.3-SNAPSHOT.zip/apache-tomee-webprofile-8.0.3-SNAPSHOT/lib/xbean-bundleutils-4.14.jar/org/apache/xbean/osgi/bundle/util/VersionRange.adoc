@@ -1,6 +1,0 @@
-= org/apache/xbean/osgi/bundle/util/VersionRange.class
-
- - link:VersionRange-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/IDPEntryBuilder.class
-
- - link:IDPEntryBuilder-asmified.java[Asmified]
-
-== References
-

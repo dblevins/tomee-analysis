@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/codegen/AccessLevel.class
-
- - link:AccessLevel-asmified.java[Asmified]
-
-== References
-

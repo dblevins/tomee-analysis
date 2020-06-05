@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/weaving/TransformerFactory.class
-
- - link:TransformerFactory-asmified.java[Asmified]
-
-== References
-

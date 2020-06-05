@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/creational/CreationalContextImpl.class
-
- - link:CreationalContextImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/InterfaceHandler.class
-
- - link:InterfaceHandler-asmified.java[Asmified]
-
-== References
-

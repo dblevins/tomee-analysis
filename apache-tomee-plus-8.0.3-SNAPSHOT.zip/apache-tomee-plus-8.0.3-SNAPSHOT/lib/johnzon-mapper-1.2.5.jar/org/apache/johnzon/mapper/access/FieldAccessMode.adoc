@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/access/FieldAccessMode.class
-
- - link:FieldAccessMode-asmified.java[Asmified]
-
-== References
-

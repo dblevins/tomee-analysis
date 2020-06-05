@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/IO.class
-
- - link:IO-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/json/JsonWriter.class
-
- - link:JsonWriter-asmified.java[Asmified]
-
-== References
-

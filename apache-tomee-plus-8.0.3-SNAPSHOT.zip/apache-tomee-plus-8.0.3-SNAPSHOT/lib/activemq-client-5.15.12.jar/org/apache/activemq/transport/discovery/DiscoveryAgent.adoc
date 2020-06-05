@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/discovery/DiscoveryAgent.class
-
- - link:DiscoveryAgent-asmified.java[Asmified]
-
-== References
-

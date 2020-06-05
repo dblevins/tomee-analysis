@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/dispatch/AptProblem.class
-
- - link:AptProblem-asmified.java[Asmified]
-
-== References
-

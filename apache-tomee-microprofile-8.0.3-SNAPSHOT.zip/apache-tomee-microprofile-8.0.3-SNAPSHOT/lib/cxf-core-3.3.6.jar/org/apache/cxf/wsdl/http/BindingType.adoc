@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/http/BindingType.class
-
- - link:BindingType-asmified.java[Asmified]
-
-== References
-

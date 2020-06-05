@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/FinalizingBrokerImpl.class
-
- - link:FinalizingBrokerImpl-asmified.java[Asmified]
-
-== References
-

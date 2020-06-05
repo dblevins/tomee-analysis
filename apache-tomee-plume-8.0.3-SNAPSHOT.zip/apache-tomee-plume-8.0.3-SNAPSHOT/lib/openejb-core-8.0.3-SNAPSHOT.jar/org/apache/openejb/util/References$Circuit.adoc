@@ -1,6 +1,0 @@
-= org/apache/openejb/util/References$Circuit.class
-
- - link:References$Circuit-asmified.java[Asmified]
-
-== References
-

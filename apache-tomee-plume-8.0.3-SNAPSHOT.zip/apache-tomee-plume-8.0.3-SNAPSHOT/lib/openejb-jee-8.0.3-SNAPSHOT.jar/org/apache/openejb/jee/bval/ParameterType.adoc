@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/ParameterType.class
-
- - link:ParameterType-asmified.java[Asmified]
-
-== References
-

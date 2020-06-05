@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/TypeLit$LitExpState.class
-
- - link:TypeLit$LitExpState-asmified.java[Asmified]
-
-== References
-

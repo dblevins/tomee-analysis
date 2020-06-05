@@ -1,6 +1,0 @@
-= org/apache/openejb/client/RoundRobinConnectionStrategy$1.class
-
- - link:RoundRobinConnectionStrategy$1-asmified.java[Asmified]
-
-== References
-

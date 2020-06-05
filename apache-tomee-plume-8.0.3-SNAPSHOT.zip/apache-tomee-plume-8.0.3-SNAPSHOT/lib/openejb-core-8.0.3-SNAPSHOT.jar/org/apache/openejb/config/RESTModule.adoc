@@ -1,6 +1,0 @@
-= org/apache/openejb/config/RESTModule.class
-
- - link:RESTModule-asmified.java[Asmified]
-
-== References
-

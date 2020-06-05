@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/ValidatorImpl.class
-
- - link:ValidatorImpl-asmified.java[Asmified]
-
-== References
-

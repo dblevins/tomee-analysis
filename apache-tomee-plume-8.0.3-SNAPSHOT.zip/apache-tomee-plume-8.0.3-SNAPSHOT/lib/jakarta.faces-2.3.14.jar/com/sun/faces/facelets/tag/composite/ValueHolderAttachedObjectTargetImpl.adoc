@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/ValueHolderAttachedObjectTargetImpl.class
-
- - link:ValueHolderAttachedObjectTargetImpl-asmified.java[Asmified]
-
-== References
-

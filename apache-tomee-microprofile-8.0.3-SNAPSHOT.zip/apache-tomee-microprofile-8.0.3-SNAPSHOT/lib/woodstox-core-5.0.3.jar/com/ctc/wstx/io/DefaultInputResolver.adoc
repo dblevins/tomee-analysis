@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/DefaultInputResolver.class
-
- - link:DefaultInputResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/config/DeploymentsResolver$ClasspathSearcher.class
-
- - link:DeploymentsResolver$ClasspathSearcher-asmified.java[Asmified]
-
-== References
-

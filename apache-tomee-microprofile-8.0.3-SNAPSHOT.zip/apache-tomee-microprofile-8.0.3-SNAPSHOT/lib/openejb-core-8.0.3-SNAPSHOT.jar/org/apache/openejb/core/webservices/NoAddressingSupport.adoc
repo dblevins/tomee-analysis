@@ -1,6 +1,0 @@
-= org/apache/openejb/core/webservices/NoAddressingSupport.class
-
- - link:NoAddressingSupport-asmified.java[Asmified]
-
-== References
-

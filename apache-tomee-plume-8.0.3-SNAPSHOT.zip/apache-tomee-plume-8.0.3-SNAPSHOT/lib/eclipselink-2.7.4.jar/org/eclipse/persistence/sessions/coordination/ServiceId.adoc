@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/coordination/ServiceId.class
-
- - link:ServiceId-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/PassthroughRenderer.class
-
- - link:PassthroughRenderer-asmified.java[Asmified]
-
-== References
-

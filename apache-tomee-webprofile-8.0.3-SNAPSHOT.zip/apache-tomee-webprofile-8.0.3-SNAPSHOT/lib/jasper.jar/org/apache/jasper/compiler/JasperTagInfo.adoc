@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/JasperTagInfo.class
-
- - link:JasperTagInfo-asmified.java[Asmified]
-
-== References
-

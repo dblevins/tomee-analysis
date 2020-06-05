@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/ObjectType.class
-
- - link:ObjectType-asmified.java[Asmified]
-
-== References
-

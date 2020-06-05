@@ -1,6 +1,0 @@
-= org/apache/xml/security/utils/JDKXPathFactory.class
-
- - link:JDKXPathFactory-asmified.java[Asmified]
-
-== References
-

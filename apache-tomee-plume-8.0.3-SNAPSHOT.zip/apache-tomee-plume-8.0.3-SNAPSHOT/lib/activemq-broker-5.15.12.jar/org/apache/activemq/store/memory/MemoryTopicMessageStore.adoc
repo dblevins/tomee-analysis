@@ -1,6 +1,0 @@
-= org/apache/activemq/store/memory/MemoryTopicMessageStore.class
-
- - link:MemoryTopicMessageStore-asmified.java[Asmified]
-
-== References
-

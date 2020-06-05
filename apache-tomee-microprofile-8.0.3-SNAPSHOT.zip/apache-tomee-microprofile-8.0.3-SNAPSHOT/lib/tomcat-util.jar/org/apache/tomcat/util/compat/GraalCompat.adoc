@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/compat/GraalCompat.class
-
- - link:GraalCompat-asmified.java[Asmified]
-
-== References
-

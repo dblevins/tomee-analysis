@@ -1,6 +1,0 @@
-= org/apache/catalina/webresources/TomcatJarInputStream.class
-
- - link:TomcatJarInputStream-asmified.java[Asmified]
-
-== References
-

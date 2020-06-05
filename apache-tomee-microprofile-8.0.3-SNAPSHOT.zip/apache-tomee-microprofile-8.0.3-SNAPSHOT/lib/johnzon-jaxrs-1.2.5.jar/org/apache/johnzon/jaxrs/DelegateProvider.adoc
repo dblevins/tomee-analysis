@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/DelegateProvider.class
-
- - link:DelegateProvider-asmified.java[Asmified]
-
-== References
-

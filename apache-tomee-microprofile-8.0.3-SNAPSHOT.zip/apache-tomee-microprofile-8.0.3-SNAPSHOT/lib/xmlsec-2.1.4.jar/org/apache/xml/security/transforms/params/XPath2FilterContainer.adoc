@@ -1,6 +1,0 @@
-= org/apache/xml/security/transforms/params/XPath2FilterContainer.class
-
- - link:XPath2FilterContainer-asmified.java[Asmified]
-
-== References
-

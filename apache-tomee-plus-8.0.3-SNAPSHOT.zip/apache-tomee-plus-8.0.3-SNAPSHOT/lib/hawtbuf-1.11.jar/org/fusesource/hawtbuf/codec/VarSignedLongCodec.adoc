@@ -1,6 +1,0 @@
-= org/fusesource/hawtbuf/codec/VarSignedLongCodec.class
-
- - link:VarSignedLongCodec-asmified.java[Asmified]
-
-== References
-

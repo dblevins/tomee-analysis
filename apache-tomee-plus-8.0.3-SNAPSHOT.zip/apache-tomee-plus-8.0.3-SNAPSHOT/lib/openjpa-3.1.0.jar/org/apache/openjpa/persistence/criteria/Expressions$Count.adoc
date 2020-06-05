@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Count.class
-
- - link:Expressions$Count-asmified.java[Asmified]
-
-== References
-

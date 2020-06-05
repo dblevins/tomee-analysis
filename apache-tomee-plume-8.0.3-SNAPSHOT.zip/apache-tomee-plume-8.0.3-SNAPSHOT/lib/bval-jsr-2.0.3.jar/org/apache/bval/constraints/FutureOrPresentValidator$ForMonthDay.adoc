@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/FutureOrPresentValidator$ForMonthDay.class
-
- - link:FutureOrPresentValidator$ForMonthDay-asmified.java[Asmified]
-
-== References
-

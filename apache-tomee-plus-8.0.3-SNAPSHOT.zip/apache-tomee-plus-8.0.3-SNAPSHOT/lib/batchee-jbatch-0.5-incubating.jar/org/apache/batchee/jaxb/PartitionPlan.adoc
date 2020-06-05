@@ -1,6 +1,0 @@
-= org/apache/batchee/jaxb/PartitionPlan.class
-
- - link:PartitionPlan-asmified.java[Asmified]
-
-== References
-

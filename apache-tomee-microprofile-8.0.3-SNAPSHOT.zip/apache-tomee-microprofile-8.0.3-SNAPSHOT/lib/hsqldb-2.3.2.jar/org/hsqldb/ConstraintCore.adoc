@@ -1,6 +1,0 @@
-= org/hsqldb/ConstraintCore.class
-
- - link:ConstraintCore-asmified.java[Asmified]
-
-== References
-

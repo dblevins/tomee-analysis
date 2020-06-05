@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/JDBCMessageStore$Duration.class
-
- - link:JDBCMessageStore$Duration-asmified.java[Asmified]
-
-== References
-

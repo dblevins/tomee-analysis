@@ -1,6 +1,0 @@
-= com/ibm/wsdl/extensions/http/HTTPUrlReplacementImpl.class
-
- - link:HTTPUrlReplacementImpl-asmified.java[Asmified]
-
-== References
-

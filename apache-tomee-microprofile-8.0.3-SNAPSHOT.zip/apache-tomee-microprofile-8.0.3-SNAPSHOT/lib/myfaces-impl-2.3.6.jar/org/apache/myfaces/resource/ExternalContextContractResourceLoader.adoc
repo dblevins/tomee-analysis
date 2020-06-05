@@ -1,6 +1,0 @@
-= org/apache/myfaces/resource/ExternalContextContractResourceLoader.class
-
- - link:ExternalContextContractResourceLoader-asmified.java[Asmified]
-
-== References
-

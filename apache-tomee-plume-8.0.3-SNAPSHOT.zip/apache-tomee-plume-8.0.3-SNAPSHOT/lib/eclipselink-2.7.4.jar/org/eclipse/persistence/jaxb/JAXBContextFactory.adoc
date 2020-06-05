@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBContextFactory.class
-
- - link:JAXBContextFactory-asmified.java[Asmified]
-
-== References
-

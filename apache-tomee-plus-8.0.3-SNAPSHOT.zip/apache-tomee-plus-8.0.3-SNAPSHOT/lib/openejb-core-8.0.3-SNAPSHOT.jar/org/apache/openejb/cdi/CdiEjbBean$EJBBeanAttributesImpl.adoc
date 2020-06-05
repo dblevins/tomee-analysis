@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/CdiEjbBean$EJBBeanAttributesImpl.class
-
- - link:CdiEjbBean$EJBBeanAttributesImpl-asmified.java[Asmified]
-
-== References
-

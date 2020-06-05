@@ -1,6 +1,0 @@
-= com/sun/istack/Pool.class
-
- - link:Pool-asmified.java[Asmified]
-
-== References
-

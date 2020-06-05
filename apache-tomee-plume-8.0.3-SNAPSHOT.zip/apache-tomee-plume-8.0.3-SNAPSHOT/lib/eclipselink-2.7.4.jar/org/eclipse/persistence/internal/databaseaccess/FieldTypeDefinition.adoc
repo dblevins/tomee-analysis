@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/databaseaccess/FieldTypeDefinition.class
-
- - link:FieldTypeDefinition-asmified.java[Asmified]
-
-== References
-

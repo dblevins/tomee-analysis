@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/Unmanaged$1.class
-
- - link:Unmanaged$1-asmified.java[Asmified]
-
-== References
-

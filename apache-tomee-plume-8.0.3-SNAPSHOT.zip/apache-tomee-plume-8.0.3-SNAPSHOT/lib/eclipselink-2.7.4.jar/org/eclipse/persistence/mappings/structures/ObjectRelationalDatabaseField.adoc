@@ -1,6 +1,0 @@
-= org/eclipse/persistence/mappings/structures/ObjectRelationalDatabaseField.class
-
- - link:ObjectRelationalDatabaseField-asmified.java[Asmified]
-
-== References
-

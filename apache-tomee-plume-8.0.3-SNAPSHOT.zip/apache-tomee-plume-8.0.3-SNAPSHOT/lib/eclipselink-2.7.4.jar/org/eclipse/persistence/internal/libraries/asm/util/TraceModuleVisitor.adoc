@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/TraceModuleVisitor.class
-
- - link:TraceModuleVisitor-asmified.java[Asmified]
-
-== References
-

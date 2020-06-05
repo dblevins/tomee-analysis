@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/el/fmt/FormatDateTag.class
-
- - link:FormatDateTag-asmified.java[Asmified]
-
-== References
-

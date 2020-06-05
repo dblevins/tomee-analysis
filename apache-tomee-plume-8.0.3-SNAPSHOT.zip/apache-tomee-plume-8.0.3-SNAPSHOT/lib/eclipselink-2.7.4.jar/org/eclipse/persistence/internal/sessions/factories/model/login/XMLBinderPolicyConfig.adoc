@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/login/XMLBinderPolicyConfig.class
-
- - link:XMLBinderPolicyConfig-asmified.java[Asmified]
-
-== References
-

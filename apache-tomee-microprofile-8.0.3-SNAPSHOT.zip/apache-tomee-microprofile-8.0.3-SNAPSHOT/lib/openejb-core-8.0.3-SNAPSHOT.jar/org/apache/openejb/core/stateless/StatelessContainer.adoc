@@ -1,7 +1,0 @@
-= org/apache/openejb/core/stateless/StatelessContainer.class
-
- - link:StatelessContainer-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.handler.MessageContext - 5

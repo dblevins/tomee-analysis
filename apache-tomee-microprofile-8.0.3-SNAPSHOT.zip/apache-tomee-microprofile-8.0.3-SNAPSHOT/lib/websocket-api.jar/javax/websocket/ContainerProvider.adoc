@@ -1,8 +1,0 @@
-= javax/websocket/ContainerProvider.class
-
- - link:ContainerProvider-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.WebSocketContainer - 5
- - javax.websocket.ContainerProvider - 3

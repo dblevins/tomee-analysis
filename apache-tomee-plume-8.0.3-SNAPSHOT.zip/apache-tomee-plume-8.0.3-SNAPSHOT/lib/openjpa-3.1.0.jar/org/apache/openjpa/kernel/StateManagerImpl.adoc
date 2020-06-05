@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/StateManagerImpl.class
-
- - link:StateManagerImpl-asmified.java[Asmified]
-
-== References
-

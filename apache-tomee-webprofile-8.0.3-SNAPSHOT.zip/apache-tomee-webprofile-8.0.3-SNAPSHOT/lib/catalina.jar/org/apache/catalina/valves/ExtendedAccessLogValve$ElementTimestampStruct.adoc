@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/ExtendedAccessLogValve$ElementTimestampStruct.class
-
- - link:ExtendedAccessLogValve$ElementTimestampStruct-asmified.java[Asmified]
-
-== References
-

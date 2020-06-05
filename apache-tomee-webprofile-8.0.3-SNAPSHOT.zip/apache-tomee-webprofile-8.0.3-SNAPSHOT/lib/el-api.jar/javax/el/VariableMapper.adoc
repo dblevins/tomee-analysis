@@ -1,7 +1,0 @@
-= javax/el/VariableMapper.class
-
- - link:VariableMapper-asmified.java[Asmified]
-
-== References
-
- - javax.el.ValueExpression - 3

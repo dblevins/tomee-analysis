@@ -1,6 +1,0 @@
-= javax/ws/rs/sse/SseEvent.class
-
- - link:SseEvent-asmified.java[Asmified]
-
-== References
-

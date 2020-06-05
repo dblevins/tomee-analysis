@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/model/core/Adapter.class
-
- - link:Adapter-asmified.java[Asmified]
-
-== References
-

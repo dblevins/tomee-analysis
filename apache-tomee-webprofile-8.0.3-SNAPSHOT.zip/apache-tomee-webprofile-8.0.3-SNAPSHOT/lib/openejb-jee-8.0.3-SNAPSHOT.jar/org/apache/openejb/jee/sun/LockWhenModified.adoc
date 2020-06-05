@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/LockWhenModified.class
-
- - link:LockWhenModified-asmified.java[Asmified]
-
-== References
-

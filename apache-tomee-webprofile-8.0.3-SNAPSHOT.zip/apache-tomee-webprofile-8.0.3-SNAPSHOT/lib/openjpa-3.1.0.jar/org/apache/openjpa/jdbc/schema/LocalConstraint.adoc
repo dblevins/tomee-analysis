@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/LocalConstraint.class
-
- - link:LocalConstraint-asmified.java[Asmified]
-
-== References
-

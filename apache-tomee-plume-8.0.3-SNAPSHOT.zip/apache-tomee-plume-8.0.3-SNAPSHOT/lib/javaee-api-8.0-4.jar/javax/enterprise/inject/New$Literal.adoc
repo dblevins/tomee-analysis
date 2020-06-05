@@ -1,9 +1,0 @@
-= javax/enterprise/inject/New$Literal.class
-
- - link:New$Literal-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.New$Literal - 7
- - javax.enterprise.inject.New - 3
- - javax.enterprise.util.AnnotationLiteral - 2

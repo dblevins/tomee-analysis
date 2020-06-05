@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/core/JsonTokenId.class
-
- - link:JsonTokenId-asmified.java[Asmified]
-
-== References
-

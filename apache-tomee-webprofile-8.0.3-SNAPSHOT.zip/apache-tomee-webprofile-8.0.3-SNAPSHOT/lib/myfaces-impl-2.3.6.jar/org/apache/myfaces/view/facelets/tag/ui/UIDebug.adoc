@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/UIDebug.class
-
- - link:UIDebug-asmified.java[Asmified]
-
-== References
-

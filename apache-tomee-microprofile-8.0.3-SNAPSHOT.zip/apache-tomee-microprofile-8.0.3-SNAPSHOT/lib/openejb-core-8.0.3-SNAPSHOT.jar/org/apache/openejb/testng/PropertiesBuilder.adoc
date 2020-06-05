@@ -1,6 +1,0 @@
-= org/apache/openejb/testng/PropertiesBuilder.class
-
- - link:PropertiesBuilder-asmified.java[Asmified]
-
-== References
-

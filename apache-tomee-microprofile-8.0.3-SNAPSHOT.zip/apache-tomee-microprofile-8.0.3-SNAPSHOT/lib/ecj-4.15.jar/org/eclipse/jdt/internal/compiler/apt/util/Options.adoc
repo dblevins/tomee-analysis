@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/util/Options.class
-
- - link:Options-asmified.java[Asmified]
-
-== References
-

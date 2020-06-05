@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/PluginInvalidInputException.class
-
- - link:PluginInvalidInputException-asmified.java[Asmified]
-
-== References
-

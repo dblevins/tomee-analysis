@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/ui/InsertHandler.class
-
- - link:InsertHandler-asmified.java[Asmified]
-
-== References
-

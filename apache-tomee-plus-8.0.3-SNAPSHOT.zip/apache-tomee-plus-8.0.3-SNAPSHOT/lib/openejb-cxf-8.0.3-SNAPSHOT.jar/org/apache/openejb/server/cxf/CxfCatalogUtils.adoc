@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/CxfCatalogUtils.class
-
- - link:CxfCatalogUtils-asmified.java[Asmified]
-
-== References
-

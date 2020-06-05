@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/QueueView.class
-
- - link:QueueView-asmified.java[Asmified]
-
-== References
-

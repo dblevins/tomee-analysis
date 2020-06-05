@@ -1,6 +1,0 @@
-= javax/transaction/RollbackException.class
-
- - link:RollbackException-asmified.java[Asmified]
-
-== References
-

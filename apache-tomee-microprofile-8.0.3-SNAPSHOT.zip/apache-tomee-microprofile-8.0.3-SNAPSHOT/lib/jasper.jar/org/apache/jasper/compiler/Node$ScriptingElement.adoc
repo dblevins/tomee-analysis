@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/Node$ScriptingElement.class
-
- - link:Node$ScriptingElement-asmified.java[Asmified]
-
-== References
-

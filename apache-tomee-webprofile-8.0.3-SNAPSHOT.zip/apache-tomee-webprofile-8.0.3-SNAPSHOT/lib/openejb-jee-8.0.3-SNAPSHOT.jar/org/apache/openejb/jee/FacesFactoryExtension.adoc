@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesFactoryExtension.class
-
- - link:FacesFactoryExtension-asmified.java[Asmified]
-
-== References
-

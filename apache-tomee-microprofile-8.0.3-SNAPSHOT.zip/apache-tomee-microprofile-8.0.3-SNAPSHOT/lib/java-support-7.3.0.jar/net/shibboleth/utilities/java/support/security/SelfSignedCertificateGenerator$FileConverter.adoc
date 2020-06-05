@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/security/SelfSignedCertificateGenerator$FileConverter.class
-
- - link:SelfSignedCertificateGenerator$FileConverter-asmified.java[Asmified]
-
-== References
-

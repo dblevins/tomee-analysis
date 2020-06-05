@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/ObjectNameEditor.class
-
- - link:ObjectNameEditor-asmified.java[Asmified]
-
-== References
-

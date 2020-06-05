@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/DisallowConcurrentExecution.class
-
- - link:DisallowConcurrentExecution-asmified.java[Asmified]
-
-== References
-

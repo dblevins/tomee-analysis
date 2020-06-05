@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/DefaultExecutionContext.class
-
- - link:DefaultExecutionContext-asmified.java[Asmified]
-
-== References
-

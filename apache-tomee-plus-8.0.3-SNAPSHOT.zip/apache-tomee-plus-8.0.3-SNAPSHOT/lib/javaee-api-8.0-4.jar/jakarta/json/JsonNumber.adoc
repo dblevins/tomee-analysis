@@ -1,6 +1,0 @@
-= jakarta/json/JsonNumber.class
-
- - link:JsonNumber-asmified.java[Asmified]
-
-== References
-

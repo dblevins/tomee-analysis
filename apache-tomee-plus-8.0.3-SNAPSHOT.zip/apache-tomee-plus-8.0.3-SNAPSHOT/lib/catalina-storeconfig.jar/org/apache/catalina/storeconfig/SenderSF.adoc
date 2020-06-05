@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/SenderSF.class
-
- - link:SenderSF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/ejb/Local.class
-
- - link:Local-asmified.java[Asmified]
-
-== References
-

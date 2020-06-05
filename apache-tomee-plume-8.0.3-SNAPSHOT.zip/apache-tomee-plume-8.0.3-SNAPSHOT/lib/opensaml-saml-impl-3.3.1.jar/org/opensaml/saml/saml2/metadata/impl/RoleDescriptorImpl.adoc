@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/RoleDescriptorImpl.class
-
- - link:RoleDescriptorImpl-asmified.java[Asmified]
-
-== References
-

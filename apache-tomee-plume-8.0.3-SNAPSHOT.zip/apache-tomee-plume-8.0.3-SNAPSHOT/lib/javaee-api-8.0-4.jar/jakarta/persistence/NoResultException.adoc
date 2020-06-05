@@ -1,6 +1,0 @@
-= jakarta/persistence/NoResultException.class
-
- - link:NoResultException-asmified.java[Asmified]
-
-== References
-

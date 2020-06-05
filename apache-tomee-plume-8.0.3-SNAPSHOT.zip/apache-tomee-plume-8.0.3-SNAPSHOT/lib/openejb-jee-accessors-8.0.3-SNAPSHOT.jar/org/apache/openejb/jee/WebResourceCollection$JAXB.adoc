@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/WebResourceCollection$JAXB.class
-
- - link:WebResourceCollection$JAXB-asmified.java[Asmified]
-
-== References
-

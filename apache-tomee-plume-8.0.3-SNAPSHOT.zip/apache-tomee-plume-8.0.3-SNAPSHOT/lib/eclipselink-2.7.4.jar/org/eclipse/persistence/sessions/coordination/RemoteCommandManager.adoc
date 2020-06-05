@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/coordination/RemoteCommandManager.class
-
- - link:RemoteCommandManager-asmified.java[Asmified]
-
-== References
-

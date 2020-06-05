@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/FacesValidator.class
-
- - link:FacesValidator-asmified.java[Asmified]
-
-== References
-

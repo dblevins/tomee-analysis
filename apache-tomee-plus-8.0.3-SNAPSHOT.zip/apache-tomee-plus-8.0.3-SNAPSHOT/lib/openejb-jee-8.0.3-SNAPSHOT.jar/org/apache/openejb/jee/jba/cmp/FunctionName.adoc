@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/FunctionName.class
-
- - link:FunctionName-asmified.java[Asmified]
-
-== References
-

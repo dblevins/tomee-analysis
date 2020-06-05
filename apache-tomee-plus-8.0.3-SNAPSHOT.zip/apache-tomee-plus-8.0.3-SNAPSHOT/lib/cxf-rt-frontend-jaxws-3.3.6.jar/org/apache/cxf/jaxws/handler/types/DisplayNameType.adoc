@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/types/DisplayNameType.class
-
- - link:DisplayNameType-asmified.java[Asmified]
-
-== References
-

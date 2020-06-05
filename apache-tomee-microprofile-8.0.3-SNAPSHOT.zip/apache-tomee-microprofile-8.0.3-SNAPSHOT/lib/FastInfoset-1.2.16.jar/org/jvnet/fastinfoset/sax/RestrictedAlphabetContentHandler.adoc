@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/sax/RestrictedAlphabetContentHandler.class
-
- - link:RestrictedAlphabetContentHandler-asmified.java[Asmified]
-
-== References
-

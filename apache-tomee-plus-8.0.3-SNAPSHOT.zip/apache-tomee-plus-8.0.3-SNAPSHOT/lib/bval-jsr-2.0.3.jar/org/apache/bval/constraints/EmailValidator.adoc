@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/EmailValidator.class
-
- - link:EmailValidator-asmified.java[Asmified]
-
-== References
-

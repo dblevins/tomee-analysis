@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl11/SchemaUtil.class
-
- - link:SchemaUtil-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/list/PageableCollection.class
-
- - link:PageableCollection-asmified.java[Asmified]
-
-== References
-

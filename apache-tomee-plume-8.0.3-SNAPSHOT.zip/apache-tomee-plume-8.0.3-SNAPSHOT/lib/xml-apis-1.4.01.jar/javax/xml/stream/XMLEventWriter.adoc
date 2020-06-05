@@ -1,6 +1,0 @@
-= javax/xml/stream/XMLEventWriter.class
-
- - link:XMLEventWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/websocket/server/ServerEndpointConfig$Configurator$PrivilegedLoadDefault.class
-
- - link:ServerEndpointConfig$Configurator$PrivilegedLoadDefault-asmified.java[Asmified]
-
-== References
-

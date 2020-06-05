@@ -1,7 +1,0 @@
-= javax/validation/Path$CrossParameterNode.class
-
- - link:Path$CrossParameterNode-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Path$Node - 1

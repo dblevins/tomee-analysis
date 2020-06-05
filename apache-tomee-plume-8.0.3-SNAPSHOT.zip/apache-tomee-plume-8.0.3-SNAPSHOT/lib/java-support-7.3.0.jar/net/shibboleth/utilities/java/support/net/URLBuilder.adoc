@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/URLBuilder.class
-
- - link:URLBuilder-asmified.java[Asmified]
-
-== References
-

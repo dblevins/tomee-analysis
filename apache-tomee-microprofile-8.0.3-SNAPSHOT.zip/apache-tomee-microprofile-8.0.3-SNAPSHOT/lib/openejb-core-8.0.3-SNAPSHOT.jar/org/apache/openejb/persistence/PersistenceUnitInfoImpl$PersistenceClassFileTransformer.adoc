@@ -1,6 +1,0 @@
-= org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer.class
-
- - link:PersistenceUnitInfoImpl$PersistenceClassFileTransformer-asmified.java[Asmified]
-
-== References
-

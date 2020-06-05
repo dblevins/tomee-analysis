@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/MeterImpl.class
-
- - link:MeterImpl-asmified.java[Asmified]
-
-== References
-

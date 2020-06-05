@@ -1,6 +1,0 @@
-= org/apache/catalina/LifecycleEvent.class
-
- - link:LifecycleEvent-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/MethodInsnNode.class
-
- - link:MethodInsnNode-asmified.java[Asmified]
-
-== References
-

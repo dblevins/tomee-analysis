@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/OperationResourceInfo.class
-
- - link:OperationResourceInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/HtmlInputHidden.class
-
- - link:HtmlInputHidden-asmified.java[Asmified]
-
-== References
-

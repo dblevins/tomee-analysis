@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/annotations/XmlWriteTransformers.class
-
- - link:XmlWriteTransformers-asmified.java[Asmified]
-
-== References
-

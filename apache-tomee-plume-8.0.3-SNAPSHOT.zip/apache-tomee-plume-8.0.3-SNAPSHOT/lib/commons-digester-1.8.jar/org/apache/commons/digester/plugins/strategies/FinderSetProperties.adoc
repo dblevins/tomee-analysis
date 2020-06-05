@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/strategies/FinderSetProperties.class
-
- - link:FinderSetProperties-asmified.java[Asmified]
-
-== References
-

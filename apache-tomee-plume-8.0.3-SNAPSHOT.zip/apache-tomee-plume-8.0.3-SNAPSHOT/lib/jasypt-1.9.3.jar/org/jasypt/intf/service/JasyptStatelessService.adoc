@@ -1,6 +1,0 @@
-= org/jasypt/intf/service/JasyptStatelessService.class
-
- - link:JasyptStatelessService-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/index/NodeAVL.class
-
- - link:NodeAVL-asmified.java[Asmified]
-
-== References
-

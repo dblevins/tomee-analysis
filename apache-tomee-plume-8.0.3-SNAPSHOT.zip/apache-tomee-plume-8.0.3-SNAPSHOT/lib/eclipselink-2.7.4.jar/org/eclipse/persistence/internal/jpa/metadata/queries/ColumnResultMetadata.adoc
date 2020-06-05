@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/queries/ColumnResultMetadata.class
-
- - link:ColumnResultMetadata-asmified.java[Asmified]
-
-== References
-

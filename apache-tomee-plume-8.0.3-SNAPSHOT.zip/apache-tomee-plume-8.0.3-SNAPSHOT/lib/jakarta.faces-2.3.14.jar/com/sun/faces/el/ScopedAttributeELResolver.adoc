@@ -1,6 +1,0 @@
-= com/sun/faces/el/ScopedAttributeELResolver.class
-
- - link:ScopedAttributeELResolver-asmified.java[Asmified]
-
-== References
-

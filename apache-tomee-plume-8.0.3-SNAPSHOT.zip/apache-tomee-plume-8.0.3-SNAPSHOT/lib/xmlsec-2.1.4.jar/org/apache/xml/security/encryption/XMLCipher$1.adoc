@@ -1,6 +1,0 @@
-= org/apache/xml/security/encryption/XMLCipher$1.class
-
- - link:XMLCipher$1-asmified.java[Asmified]
-
-== References
-

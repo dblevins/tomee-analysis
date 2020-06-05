@@ -1,6 +1,0 @@
-= org/apache/openjpa/slice/FinderTargetPolicy.class
-
- - link:FinderTargetPolicy-asmified.java[Asmified]
-
-== References
-

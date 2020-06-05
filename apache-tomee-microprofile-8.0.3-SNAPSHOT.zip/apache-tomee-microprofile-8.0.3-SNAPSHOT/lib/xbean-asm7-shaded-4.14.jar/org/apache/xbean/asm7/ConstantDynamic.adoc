@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/ConstantDynamic.class
-
- - link:ConstantDynamic-asmified.java[Asmified]
-
-== References
-

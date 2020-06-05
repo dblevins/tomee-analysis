@@ -1,6 +1,0 @@
-= com/sun/xml/messaging/saaj/util/transform/EfficientStreamingTransformer.class
-
- - link:EfficientStreamingTransformer-asmified.java[Asmified]
-
-== References
-

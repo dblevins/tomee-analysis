@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/ServiceQname.class
-
- - link:ServiceQname-asmified.java[Asmified]
-
-== References
-

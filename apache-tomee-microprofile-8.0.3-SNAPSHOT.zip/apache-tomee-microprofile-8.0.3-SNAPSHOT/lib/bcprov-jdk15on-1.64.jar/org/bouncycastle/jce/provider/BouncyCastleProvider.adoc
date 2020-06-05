@@ -1,6 +1,0 @@
-= org/bouncycastle/jce/provider/BouncyCastleProvider.class
-
- - link:BouncyCastleProvider-asmified.java[Asmified]
-
-== References
-

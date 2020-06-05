@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQMessageAuditNoSync.class
-
- - link:ActiveMQMessageAuditNoSync-asmified.java[Asmified]
-
-== References
-

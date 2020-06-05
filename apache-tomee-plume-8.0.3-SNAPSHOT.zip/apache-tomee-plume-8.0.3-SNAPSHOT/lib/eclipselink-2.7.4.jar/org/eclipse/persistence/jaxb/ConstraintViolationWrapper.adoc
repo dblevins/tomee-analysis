@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/ConstraintViolationWrapper.class
-
- - link:ConstraintViolationWrapper-asmified.java[Asmified]
-
-== References
-

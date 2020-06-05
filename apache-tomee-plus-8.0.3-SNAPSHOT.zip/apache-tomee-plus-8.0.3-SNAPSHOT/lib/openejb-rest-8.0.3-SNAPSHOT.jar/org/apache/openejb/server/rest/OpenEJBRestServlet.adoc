@@ -1,6 +1,0 @@
-= org/apache/openejb/server/rest/OpenEJBRestServlet.class
-
- - link:OpenEJBRestServlet-asmified.java[Asmified]
-
-== References
-

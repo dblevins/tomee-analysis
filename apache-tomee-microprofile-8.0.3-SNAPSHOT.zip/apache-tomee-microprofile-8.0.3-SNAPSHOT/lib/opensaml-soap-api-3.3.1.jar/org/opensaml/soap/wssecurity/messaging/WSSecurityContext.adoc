@@ -1,6 +1,0 @@
-= org/opensaml/soap/wssecurity/messaging/WSSecurityContext.class
-
- - link:WSSecurityContext-asmified.java[Asmified]
-
-== References
-

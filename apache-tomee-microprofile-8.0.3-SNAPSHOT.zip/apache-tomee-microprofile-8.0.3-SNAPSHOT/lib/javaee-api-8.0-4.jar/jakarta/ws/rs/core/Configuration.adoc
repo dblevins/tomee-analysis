@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Configuration.class
-
- - link:Configuration-asmified.java[Asmified]
-
-== References
-

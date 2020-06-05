@@ -1,6 +1,0 @@
-= org/apache/openejb/loader/provisining/HttpResolver.class
-
- - link:HttpResolver-asmified.java[Asmified]
-
-== References
-

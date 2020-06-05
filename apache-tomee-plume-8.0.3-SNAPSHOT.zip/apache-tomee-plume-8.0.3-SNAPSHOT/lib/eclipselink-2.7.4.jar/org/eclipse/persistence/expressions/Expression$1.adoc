@@ -1,6 +1,0 @@
-= org/eclipse/persistence/expressions/Expression$1.class
-
- - link:Expression$1-asmified.java[Asmified]
-
-== References
-

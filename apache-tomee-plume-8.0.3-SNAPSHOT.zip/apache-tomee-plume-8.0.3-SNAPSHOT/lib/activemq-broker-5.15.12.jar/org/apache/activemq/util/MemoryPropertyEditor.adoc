@@ -1,6 +1,0 @@
-= org/apache/activemq/util/MemoryPropertyEditor.class
-
- - link:MemoryPropertyEditor-asmified.java[Asmified]
-
-== References
-

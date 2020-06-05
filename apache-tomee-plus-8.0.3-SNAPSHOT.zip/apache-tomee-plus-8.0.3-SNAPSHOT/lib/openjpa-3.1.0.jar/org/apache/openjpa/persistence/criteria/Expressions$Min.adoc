@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Min.class
-
- - link:Expressions$Min-asmified.java[Asmified]
-
-== References
-

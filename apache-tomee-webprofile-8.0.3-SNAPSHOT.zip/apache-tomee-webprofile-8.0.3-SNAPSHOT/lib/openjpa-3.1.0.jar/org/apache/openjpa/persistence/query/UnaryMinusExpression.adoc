@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/UnaryMinusExpression.class
-
- - link:UnaryMinusExpression-asmified.java[Asmified]
-
-== References
-

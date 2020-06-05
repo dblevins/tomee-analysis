@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/EntityTypeLiteral.class
-
- - link:EntityTypeLiteral-asmified.java[Asmified]
-
-== References
-

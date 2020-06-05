@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/FieldConsumer.class
-
- - link:FieldConsumer-asmified.java[Asmified]
-
-== References
-

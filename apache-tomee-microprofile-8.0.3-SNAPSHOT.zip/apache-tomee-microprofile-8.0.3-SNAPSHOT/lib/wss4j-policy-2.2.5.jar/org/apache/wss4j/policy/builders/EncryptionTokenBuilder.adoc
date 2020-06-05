@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/EncryptionTokenBuilder.class
-
- - link:EncryptionTokenBuilder-asmified.java[Asmified]
-
-== References
-

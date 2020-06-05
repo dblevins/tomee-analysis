@@ -1,6 +1,0 @@
-= com/sun/faces/config/Verifier$ObjectType.class
-
- - link:Verifier$ObjectType-asmified.java[Asmified]
-
-== References
-

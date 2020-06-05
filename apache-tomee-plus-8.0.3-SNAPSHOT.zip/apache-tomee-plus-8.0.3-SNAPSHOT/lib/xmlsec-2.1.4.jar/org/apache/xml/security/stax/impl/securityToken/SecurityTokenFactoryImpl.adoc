@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/securityToken/SecurityTokenFactoryImpl.class
-
- - link:SecurityTokenFactoryImpl-asmified.java[Asmified]
-
-== References
-

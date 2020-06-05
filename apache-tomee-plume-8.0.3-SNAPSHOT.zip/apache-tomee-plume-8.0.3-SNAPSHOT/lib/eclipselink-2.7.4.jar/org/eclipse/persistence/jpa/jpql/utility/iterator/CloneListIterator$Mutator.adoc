@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/utility/iterator/CloneListIterator$Mutator.class
-
- - link:CloneListIterator$Mutator-asmified.java[Asmified]
-
-== References
-

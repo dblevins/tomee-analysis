@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/EncryptedData.class
-
- - link:EncryptedData-asmified.java[Asmified]
-
-== References
-

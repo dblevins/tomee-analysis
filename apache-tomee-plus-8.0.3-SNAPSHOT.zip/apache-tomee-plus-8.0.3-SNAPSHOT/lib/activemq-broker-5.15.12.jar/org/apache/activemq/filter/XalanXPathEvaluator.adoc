@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/XalanXPathEvaluator.class
-
- - link:XalanXPathEvaluator-asmified.java[Asmified]
-
-== References
-

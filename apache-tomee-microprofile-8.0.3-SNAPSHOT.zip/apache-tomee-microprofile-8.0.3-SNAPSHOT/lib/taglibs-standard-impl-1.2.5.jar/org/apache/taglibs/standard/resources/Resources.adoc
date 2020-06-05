@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/resources/Resources.class
-
- - link:Resources-asmified.java[Asmified]
-
-== References
-

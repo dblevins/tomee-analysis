@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$WsWriter.class
-
- - link:WsRemoteEndpointImplBase$WsWriter-asmified.java[Asmified]
-
-== References
-

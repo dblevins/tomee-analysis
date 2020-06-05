@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/UsesStatement.class
-
- - link:UsesStatement-asmified.java[Asmified]
-
-== References
-

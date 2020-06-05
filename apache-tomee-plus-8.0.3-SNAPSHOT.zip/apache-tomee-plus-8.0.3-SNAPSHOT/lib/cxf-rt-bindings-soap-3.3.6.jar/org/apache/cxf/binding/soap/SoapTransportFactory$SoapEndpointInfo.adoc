@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/SoapTransportFactory$SoapEndpointInfo.class
-
- - link:SoapTransportFactory$SoapEndpointInfo-asmified.java[Asmified]
-
-== References
-

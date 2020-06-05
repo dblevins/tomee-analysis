@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/https/CertConstraintsJaxBUtils.class
-
- - link:CertConstraintsJaxBUtils-asmified.java[Asmified]
-
-== References
-

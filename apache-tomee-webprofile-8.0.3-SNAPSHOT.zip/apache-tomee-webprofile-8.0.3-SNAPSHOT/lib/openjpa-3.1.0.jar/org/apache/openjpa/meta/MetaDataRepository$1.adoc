@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/MetaDataRepository$1.class
-
- - link:MetaDataRepository$1-asmified.java[Asmified]
-
-== References
-

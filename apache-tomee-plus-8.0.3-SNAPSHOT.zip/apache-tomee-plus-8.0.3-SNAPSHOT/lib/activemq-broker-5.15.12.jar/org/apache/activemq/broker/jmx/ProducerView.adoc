@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/ProducerView.class
-
- - link:ProducerView-asmified.java[Asmified]
-
-== References
-

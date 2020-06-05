@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ServiceReferenceInfo.class
-
- - link:ServiceReferenceInfo-asmified.java[Asmified]
-
-== References
-

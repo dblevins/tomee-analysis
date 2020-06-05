@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/SendfileData.class
-
- - link:SendfileData-asmified.java[Asmified]
-
-== References
-

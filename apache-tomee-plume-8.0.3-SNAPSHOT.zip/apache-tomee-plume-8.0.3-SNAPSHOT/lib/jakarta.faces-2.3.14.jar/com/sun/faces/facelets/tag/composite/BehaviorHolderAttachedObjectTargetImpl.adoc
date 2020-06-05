@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/composite/BehaviorHolderAttachedObjectTargetImpl.class
-
- - link:BehaviorHolderAttachedObjectTargetImpl-asmified.java[Asmified]
-
-== References
-

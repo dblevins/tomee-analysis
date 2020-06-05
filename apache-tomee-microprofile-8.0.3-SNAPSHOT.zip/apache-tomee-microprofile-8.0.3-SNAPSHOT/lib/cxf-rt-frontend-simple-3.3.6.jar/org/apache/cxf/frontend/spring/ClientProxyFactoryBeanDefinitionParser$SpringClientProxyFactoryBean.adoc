@@ -1,6 +1,0 @@
-= org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser$SpringClientProxyFactoryBean.class
-
- - link:ClientProxyFactoryBeanDefinitionParser$SpringClientProxyFactoryBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/WSDocInfo$TokenValue.class
-
- - link:WSDocInfo$TokenValue-asmified.java[Asmified]
-
-== References
-

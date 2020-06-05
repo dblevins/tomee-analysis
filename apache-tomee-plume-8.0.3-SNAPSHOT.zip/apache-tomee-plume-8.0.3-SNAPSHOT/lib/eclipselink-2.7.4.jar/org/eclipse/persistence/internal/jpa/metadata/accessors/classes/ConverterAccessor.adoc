@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/accessors/classes/ConverterAccessor.class
-
- - link:ConverterAccessor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/core/ResetValuesActionListenerHandler.class
-
- - link:ResetValuesActionListenerHandler-asmified.java[Asmified]
-
-== References
-

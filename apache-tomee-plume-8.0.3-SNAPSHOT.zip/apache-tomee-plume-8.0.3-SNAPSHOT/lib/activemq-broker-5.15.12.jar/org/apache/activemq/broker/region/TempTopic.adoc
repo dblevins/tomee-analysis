@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/TempTopic.class
-
- - link:TempTopic-asmified.java[Asmified]
-
-== References
-

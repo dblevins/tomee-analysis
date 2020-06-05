@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/AbstractJAXRSFactoryBean.class
-
- - link:AbstractJAXRSFactoryBean-asmified.java[Asmified]
-
-== References
-

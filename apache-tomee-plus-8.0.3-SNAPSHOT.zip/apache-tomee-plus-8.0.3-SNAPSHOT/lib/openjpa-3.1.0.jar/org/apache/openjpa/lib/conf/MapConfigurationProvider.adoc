@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/MapConfigurationProvider.class
-
- - link:MapConfigurationProvider-asmified.java[Asmified]
-
-== References
-

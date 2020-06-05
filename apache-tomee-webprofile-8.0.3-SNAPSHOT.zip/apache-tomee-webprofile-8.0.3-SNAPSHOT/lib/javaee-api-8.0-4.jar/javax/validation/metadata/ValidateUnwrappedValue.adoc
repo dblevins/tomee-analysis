@@ -1,7 +1,0 @@
-= javax/validation/metadata/ValidateUnwrappedValue.class
-
- - link:ValidateUnwrappedValue-asmified.java[Asmified]
-
-== References
-
- - javax.validation.metadata.ValidateUnwrappedValue - 26

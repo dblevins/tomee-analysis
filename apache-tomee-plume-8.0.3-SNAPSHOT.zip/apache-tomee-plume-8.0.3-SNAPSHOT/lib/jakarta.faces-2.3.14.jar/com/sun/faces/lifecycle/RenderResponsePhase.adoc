@@ -1,6 +1,0 @@
-= com/sun/faces/lifecycle/RenderResponsePhase.class
-
- - link:RenderResponsePhase-asmified.java[Asmified]
-
-== References
-

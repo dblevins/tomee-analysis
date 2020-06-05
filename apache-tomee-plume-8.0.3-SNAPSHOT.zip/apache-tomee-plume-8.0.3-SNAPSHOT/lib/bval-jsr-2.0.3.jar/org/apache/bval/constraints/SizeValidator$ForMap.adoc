@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/SizeValidator$ForMap.class
-
- - link:SizeValidator$ForMap-asmified.java[Asmified]
-
-== References
-

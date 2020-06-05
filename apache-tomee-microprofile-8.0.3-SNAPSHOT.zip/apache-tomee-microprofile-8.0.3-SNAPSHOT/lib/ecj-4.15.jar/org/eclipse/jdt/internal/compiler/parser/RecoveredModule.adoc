@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/parser/RecoveredModule.class
-
- - link:RecoveredModule-asmified.java[Asmified]
-
-== References
-

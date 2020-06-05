@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/StoredProcedureParameter.class
-
- - link:StoredProcedureParameter-asmified.java[Asmified]
-
-== References
-

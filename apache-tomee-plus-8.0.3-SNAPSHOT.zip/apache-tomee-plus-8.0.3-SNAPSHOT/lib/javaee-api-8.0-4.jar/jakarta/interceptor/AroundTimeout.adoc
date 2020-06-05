@@ -1,6 +1,0 @@
-= jakarta/interceptor/AroundTimeout.class
-
- - link:AroundTimeout-asmified.java[Asmified]
-
-== References
-

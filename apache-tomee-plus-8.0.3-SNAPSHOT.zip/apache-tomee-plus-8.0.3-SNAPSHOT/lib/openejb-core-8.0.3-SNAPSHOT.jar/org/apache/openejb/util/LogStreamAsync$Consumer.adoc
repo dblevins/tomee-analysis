@@ -1,6 +1,0 @@
-= org/apache/openejb/util/LogStreamAsync$Consumer.class
-
- - link:LogStreamAsync$Consumer-asmified.java[Asmified]
-
-== References
-

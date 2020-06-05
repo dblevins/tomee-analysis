@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotatedMethod$Serialization.class
-
- - link:AnnotatedMethod$Serialization-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/ManagementContext$JmxRegistry.class
-
- - link:ManagementContext$JmxRegistry-asmified.java[Asmified]
-
-== References
-

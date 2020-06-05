@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/impl/AddressingWSDLExtensionLoader.class
-
- - link:AddressingWSDLExtensionLoader-asmified.java[Asmified]
-
-== References
-

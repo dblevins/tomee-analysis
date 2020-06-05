@@ -1,6 +1,0 @@
-= org/opensaml/soap/client/http/HttpSOAPClient.class
-
- - link:HttpSOAPClient-asmified.java[Asmified]
-
-== References
-

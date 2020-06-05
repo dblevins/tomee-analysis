@@ -1,6 +1,0 @@
-= org/apache/myfaces/webapp/Jsp20FacesInitializer$1.class
-
- - link:Jsp20FacesInitializer$1-asmified.java[Asmified]
-
-== References
-

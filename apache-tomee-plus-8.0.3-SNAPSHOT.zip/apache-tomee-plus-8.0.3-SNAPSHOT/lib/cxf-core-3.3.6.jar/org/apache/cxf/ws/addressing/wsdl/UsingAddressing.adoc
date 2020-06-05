@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/wsdl/UsingAddressing.class
-
- - link:UsingAddressing-asmified.java[Asmified]
-
-== References
-

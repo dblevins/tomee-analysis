@@ -1,6 +1,0 @@
-= org/apache/commons/collections/DefaultMapEntry.class
-
- - link:DefaultMapEntry-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidationJob$ContainerElementConstraintsFrame.class
-
- - link:ValidationJob$ContainerElementConstraintsFrame-asmified.java[Asmified]
-
-== References
-

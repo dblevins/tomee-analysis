@@ -1,6 +1,0 @@
-= org/apache/openejb/config/TldScanner$2.class
-
- - link:TldScanner$2-asmified.java[Asmified]
-
-== References
-

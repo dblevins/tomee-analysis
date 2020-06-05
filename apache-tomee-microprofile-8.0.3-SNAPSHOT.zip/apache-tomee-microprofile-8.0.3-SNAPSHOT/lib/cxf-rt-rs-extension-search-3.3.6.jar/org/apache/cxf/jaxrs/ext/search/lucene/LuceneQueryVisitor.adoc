@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/lucene/LuceneQueryVisitor.class
-
- - link:LuceneQueryVisitor-asmified.java[Asmified]
-
-== References
-

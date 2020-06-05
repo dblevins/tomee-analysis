@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/profile/impl/AddStatusToResponse$StatusCodeMappingFunction.class
-
- - link:AddStatusToResponse$StatusCodeMappingFunction-asmified.java[Asmified]
-
-== References
-

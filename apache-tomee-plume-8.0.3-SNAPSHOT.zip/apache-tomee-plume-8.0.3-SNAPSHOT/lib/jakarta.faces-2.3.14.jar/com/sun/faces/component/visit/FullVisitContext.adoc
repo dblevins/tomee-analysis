@@ -1,6 +1,0 @@
-= com/sun/faces/component/visit/FullVisitContext.class
-
- - link:FullVisitContext-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/jasper/compiler/ELInterpreter.class
-
- - link:ELInterpreter-asmified.java[Asmified]
-
-== References
-

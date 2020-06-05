@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/ComponentTagHandlerDelegateImpl$CreateComponentDelegate.class
-
- - link:ComponentTagHandlerDelegateImpl$CreateComponentDelegate-asmified.java[Asmified]
-
-== References
-

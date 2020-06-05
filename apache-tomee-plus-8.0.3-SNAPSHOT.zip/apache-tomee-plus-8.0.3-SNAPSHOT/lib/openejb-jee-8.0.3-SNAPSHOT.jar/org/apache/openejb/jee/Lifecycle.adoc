@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Lifecycle.class
-
- - link:Lifecycle-asmified.java[Asmified]
-
-== References
-

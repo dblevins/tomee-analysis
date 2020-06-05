@@ -1,9 +1,0 @@
-= javax/validation/constraints/NotNull.class
-
- - link:NotNull-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Payload - 1
- - javax.validation.Constraint - 1
- - javax.validation.constraints.NotNull$List - 1

@@ -1,6 +1,0 @@
-= com/sun/istack/localization/LocalizableMessage.class
-
- - link:LocalizableMessage-asmified.java[Asmified]
-
-== References
-

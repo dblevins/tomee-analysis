@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/validate/BinarySecurityTokenValidatorImpl.class
-
- - link:BinarySecurityTokenValidatorImpl-asmified.java[Asmified]
-
-== References
-

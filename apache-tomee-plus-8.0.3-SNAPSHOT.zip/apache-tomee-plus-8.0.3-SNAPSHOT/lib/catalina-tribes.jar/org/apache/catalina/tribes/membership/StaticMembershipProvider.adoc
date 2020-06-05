@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/membership/StaticMembershipProvider.class
-
- - link:StaticMembershipProvider-asmified.java[Asmified]
-
-== References
-

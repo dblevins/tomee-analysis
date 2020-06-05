@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/jmx/ConnectionPool.class
-
- - link:ConnectionPool-asmified.java[Asmified]
-
-== References
-

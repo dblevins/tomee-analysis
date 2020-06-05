@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/builders/SignedElementsBuilder.class
-
- - link:SignedElementsBuilder-asmified.java[Asmified]
-
-== References
-

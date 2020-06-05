@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/PropertyNamingStrategy$UpperCamelCaseStrategy.class
-
- - link:PropertyNamingStrategy$UpperCamelCaseStrategy-asmified.java[Asmified]
-
-== References
-

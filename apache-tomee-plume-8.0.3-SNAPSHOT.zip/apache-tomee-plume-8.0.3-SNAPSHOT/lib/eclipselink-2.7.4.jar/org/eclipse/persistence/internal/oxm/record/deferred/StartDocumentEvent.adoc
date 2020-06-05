@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/StartDocumentEvent.class
-
- - link:StartDocumentEvent-asmified.java[Asmified]
-
-== References
-

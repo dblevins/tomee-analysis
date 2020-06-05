@@ -1,8 +1,0 @@
-= javax/faces/context/FacesContext$1.class
-
- - link:FacesContext$1-asmified.java[Asmified]
-
-== References
-
- - javax.faces.context.FacesContext - 3
- - javax.faces.context.FacesContext$1 - 1

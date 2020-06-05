@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/RequestAbstractType.class
-
- - link:RequestAbstractType-asmified.java[Asmified]
-
-== References
-

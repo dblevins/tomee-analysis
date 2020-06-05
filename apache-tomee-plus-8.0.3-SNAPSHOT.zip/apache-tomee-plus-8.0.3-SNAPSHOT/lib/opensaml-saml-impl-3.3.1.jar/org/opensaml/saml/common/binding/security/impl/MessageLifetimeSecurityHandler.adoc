@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/security/impl/MessageLifetimeSecurityHandler.class
-
- - link:MessageLifetimeSecurityHandler-asmified.java[Asmified]
-
-== References
-

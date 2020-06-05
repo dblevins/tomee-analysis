@@ -1,6 +1,0 @@
-= jakarta/ejb/spi/HandleDelegate.class
-
- - link:HandleDelegate-asmified.java[Asmified]
-
-== References
-

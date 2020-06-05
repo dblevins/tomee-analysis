@@ -1,6 +1,0 @@
-= org/apache/cxf/service/model/BindingMessageInfo.class
-
- - link:BindingMessageInfo-asmified.java[Asmified]
-
-== References
-

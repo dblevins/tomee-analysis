@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/engine/CacheEventQueueFactory.class
-
- - link:CacheEventQueueFactory-asmified.java[Asmified]
-
-== References
-

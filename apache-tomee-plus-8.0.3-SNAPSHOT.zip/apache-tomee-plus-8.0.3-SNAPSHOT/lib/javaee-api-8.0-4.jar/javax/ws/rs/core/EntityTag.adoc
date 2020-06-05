@@ -1,9 +1,0 @@
-= javax/ws/rs/core/EntityTag.class
-
- - link:EntityTag-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.EntityTag - 14
- - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 7
- - javax.ws.rs.ext.RuntimeDelegate - 3

@@ -1,7 +1,0 @@
-= javax/websocket/Encoder.class
-
- - link:Encoder-asmified.java[Asmified]
-
-== References
-
- - javax.websocket.EndpointConfig - 1

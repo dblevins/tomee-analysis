@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator.class
-
- - link:RequestImpl$VariantComparator-asmified.java[Asmified]
-
-== References
-

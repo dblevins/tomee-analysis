@@ -1,7 +1,0 @@
-= javax/resource/spi/ResourceAdapterInternalException.class
-
- - link:ResourceAdapterInternalException-asmified.java[Asmified]
-
-== References
-
- - javax.resource.ResourceException - 6

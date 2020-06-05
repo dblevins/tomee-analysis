@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/interceptors/HttpsTokenInterceptorProvider$HttpsTokenInInterceptor$1.class
-
- - link:HttpsTokenInterceptorProvider$HttpsTokenInInterceptor$1-asmified.java[Asmified]
-
-== References
-

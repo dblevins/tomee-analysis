@@ -1,7 +1,0 @@
-= javax/faces/component/_PrimitiveArrayIterator.class
-
- - link:_PrimitiveArrayIterator-asmified.java[Asmified]
-
-== References
-
- - javax.faces.component._PrimitiveArrayIterator - 1

@@ -1,6 +1,0 @@
-= jakarta/jms/ConnectionMetaData.class
-
- - link:ConnectionMetaData-asmified.java[Asmified]
-
-== References
-

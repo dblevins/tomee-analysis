@@ -1,6 +1,0 @@
-= javax/wsdl/extensions/soap12/SOAP12Binding.class
-
- - link:SOAP12Binding-asmified.java[Asmified]
-
-== References
-

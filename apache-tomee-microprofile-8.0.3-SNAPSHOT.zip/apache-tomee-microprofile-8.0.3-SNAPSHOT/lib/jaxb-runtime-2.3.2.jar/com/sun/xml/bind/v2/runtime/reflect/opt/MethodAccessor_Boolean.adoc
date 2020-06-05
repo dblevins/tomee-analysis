@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/opt/MethodAccessor_Boolean.class
-
- - link:MethodAccessor_Boolean-asmified.java[Asmified]
-
-== References
-

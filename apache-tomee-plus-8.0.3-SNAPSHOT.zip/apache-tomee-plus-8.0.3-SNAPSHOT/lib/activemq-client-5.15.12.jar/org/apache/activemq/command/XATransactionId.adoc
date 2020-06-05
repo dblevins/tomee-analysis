@@ -1,6 +1,0 @@
-= org/apache/activemq/command/XATransactionId.class
-
- - link:XATransactionId-asmified.java[Asmified]
-
-== References
-

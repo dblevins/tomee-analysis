@@ -1,6 +1,0 @@
-= org/apache/jasper/servlet/JspServlet.class
-
- - link:JspServlet-asmified.java[Asmified]
-
-== References
-

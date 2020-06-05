@@ -1,6 +1,0 @@
-= org/hsqldb/lib/FileAccess.class
-
- - link:FileAccess-asmified.java[Asmified]
-
-== References
-

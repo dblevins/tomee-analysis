@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/NavigationRule.class
-
- - link:NavigationRule-asmified.java[Asmified]
-
-== References
-

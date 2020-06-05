@@ -1,6 +1,0 @@
-= com/sun/faces/component/visit/PartialVisitContext.class
-
- - link:PartialVisitContext-asmified.java[Asmified]
-
-== References
-

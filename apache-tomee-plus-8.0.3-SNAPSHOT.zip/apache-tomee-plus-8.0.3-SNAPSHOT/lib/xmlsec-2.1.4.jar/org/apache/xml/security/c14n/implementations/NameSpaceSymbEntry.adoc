@@ -1,6 +1,0 @@
-= org/apache/xml/security/c14n/implementations/NameSpaceSymbEntry.class
-
- - link:NameSpaceSymbEntry-asmified.java[Asmified]
-
-== References
-

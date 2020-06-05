@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/SubjectInterceptor.class
-
- - link:SubjectInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/chrono/ISOChronology.class
-
- - link:ISOChronology-asmified.java[Asmified]
-
-== References
-

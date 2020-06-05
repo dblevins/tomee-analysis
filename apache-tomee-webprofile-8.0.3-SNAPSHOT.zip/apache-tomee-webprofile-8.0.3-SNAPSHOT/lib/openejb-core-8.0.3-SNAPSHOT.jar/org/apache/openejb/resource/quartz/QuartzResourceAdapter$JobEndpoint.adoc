@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/quartz/QuartzResourceAdapter$JobEndpoint.class
-
- - link:QuartzResourceAdapter$JobEndpoint-asmified.java[Asmified]
-
-== References
-

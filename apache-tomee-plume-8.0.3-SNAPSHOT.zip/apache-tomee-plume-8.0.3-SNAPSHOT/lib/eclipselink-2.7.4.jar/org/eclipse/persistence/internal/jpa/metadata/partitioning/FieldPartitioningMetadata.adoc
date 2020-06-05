@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/partitioning/FieldPartitioningMetadata.class
-
- - link:FieldPartitioningMetadata-asmified.java[Asmified]
-
-== References
-

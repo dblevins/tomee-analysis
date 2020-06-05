@@ -1,9 +1,0 @@
-= javax/enterprise/context/ApplicationScoped$Literal.class
-
- - link:ApplicationScoped$Literal-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.ApplicationScoped$Literal - 4
- - javax.enterprise.util.AnnotationLiteral - 2
- - javax.enterprise.context.ApplicationScoped - 2

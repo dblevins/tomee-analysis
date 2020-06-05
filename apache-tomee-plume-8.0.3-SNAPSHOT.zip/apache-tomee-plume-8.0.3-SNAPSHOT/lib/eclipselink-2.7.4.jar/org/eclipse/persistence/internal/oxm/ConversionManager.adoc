@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/ConversionManager.class
-
- - link:ConversionManager-asmified.java[Asmified]
-
-== References
-

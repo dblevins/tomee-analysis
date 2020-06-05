@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/CanonicalizationMethodType.class
-
- - link:CanonicalizationMethodType-asmified.java[Asmified]
-
-== References
-

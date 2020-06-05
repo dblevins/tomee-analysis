@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/InExpressionItemBNF.class
-
- - link:InExpressionItemBNF-asmified.java[Asmified]
-
-== References
-

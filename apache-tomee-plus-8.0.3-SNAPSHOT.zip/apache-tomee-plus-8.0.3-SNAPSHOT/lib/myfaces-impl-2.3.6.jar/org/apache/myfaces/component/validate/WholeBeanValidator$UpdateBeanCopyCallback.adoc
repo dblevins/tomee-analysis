@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/validate/WholeBeanValidator$UpdateBeanCopyCallback.class
-
- - link:WholeBeanValidator$UpdateBeanCopyCallback-asmified.java[Asmified]
-
-== References
-

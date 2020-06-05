@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/record/FormattedWriterRecord.class
-
- - link:FormattedWriterRecord-asmified.java[Asmified]
-
-== References
-

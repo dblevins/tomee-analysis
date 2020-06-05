@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/EntityDescriptorImpl.class
-
- - link:EntityDescriptorImpl-asmified.java[Asmified]
-
-== References
-

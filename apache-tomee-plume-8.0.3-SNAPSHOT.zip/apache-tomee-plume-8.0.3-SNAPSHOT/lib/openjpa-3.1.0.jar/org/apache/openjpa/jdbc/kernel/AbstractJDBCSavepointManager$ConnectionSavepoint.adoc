@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/AbstractJDBCSavepointManager$ConnectionSavepoint.class
-
- - link:AbstractJDBCSavepointManager$ConnectionSavepoint-asmified.java[Asmified]
-
-== References
-

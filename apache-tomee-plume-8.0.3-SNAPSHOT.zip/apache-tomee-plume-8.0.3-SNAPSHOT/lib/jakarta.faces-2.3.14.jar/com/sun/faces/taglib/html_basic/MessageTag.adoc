@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/MessageTag.class
-
- - link:MessageTag-asmified.java[Asmified]
-
-== References
-

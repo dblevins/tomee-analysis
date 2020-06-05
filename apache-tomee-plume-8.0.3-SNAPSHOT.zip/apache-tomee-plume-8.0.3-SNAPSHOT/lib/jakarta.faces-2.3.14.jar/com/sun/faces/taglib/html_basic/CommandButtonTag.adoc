@@ -1,6 +1,0 @@
-= com/sun/faces/taglib/html_basic/CommandButtonTag.class
-
- - link:CommandButtonTag-asmified.java[Asmified]
-
-== References
-

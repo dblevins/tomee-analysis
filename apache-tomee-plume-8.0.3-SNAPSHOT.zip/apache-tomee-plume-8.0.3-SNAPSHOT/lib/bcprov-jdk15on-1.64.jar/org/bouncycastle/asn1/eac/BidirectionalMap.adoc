@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/eac/BidirectionalMap.class
-
- - link:BidirectionalMap-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/RemappingClassAdapter.class
-
- - link:RemappingClassAdapter-asmified.java[Asmified]
-
-== References
-

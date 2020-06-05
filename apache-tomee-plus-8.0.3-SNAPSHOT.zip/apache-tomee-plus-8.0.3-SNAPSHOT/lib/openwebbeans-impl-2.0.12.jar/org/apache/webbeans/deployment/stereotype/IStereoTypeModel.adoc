@@ -1,6 +1,0 @@
-= org/apache/webbeans/deployment/stereotype/IStereoTypeModel.class
-
- - link:IStereoTypeModel-asmified.java[Asmified]
-
-== References
-

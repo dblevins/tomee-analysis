@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/HeaderImpl.class
-
- - link:HeaderImpl-asmified.java[Asmified]
-
-== References
-

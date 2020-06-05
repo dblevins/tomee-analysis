@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tlv/JstlFmtTLV$1.class
-
- - link:JstlFmtTLV$1-asmified.java[Asmified]
-
-== References
-

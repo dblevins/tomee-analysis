@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/EmptyNamespaceContext.class
-
- - link:EmptyNamespaceContext-asmified.java[Asmified]
-
-== References
-

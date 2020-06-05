@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/introspect/AnnotatedField$Serialization.class
-
- - link:AnnotatedField$Serialization-asmified.java[Asmified]
-
-== References
-

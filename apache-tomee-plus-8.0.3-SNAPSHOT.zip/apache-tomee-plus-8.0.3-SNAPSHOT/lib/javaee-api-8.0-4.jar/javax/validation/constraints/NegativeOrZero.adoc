@@ -1,9 +1,0 @@
-= javax/validation/constraints/NegativeOrZero.class
-
- - link:NegativeOrZero-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Payload - 1
- - javax.validation.constraints.NegativeOrZero$List - 1
- - javax.validation.Constraint - 1

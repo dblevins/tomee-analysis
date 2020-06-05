@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/problem/ProblemHandler.class
-
- - link:ProblemHandler-asmified.java[Asmified]
-
-== References
-

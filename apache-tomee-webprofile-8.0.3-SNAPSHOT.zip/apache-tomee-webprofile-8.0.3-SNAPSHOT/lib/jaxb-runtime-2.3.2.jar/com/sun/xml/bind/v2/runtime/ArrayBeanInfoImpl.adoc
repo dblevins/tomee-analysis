@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/ArrayBeanInfoImpl.class
-
- - link:ArrayBeanInfoImpl-asmified.java[Asmified]
-
-== References
-

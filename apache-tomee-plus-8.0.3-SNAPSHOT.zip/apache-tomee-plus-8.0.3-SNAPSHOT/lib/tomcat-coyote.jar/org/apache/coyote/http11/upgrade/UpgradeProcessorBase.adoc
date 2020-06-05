@@ -1,6 +1,0 @@
-= org/apache/coyote/http11/upgrade/UpgradeProcessorBase.class
-
- - link:UpgradeProcessorBase-asmified.java[Asmified]
-
-== References
-

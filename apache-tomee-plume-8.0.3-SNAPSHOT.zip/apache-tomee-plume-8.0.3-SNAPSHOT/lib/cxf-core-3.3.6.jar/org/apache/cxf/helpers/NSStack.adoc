@@ -1,6 +1,0 @@
-= org/apache/cxf/helpers/NSStack.class
-
- - link:NSStack-asmified.java[Asmified]
-
-== References
-

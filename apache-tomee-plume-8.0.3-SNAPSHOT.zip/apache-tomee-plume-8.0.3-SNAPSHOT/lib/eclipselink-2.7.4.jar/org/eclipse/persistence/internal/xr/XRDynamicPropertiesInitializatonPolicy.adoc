@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/XRDynamicPropertiesInitializatonPolicy.class
-
- - link:XRDynamicPropertiesInitializatonPolicy-asmified.java[Asmified]
-
-== References
-

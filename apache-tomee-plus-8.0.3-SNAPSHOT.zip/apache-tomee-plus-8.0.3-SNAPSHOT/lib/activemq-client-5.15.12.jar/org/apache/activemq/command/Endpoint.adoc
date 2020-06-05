@@ -1,6 +1,0 @@
-= org/apache/activemq/command/Endpoint.class
-
- - link:Endpoint-asmified.java[Asmified]
-
-== References
-

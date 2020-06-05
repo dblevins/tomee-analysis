@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/validation/Stax2ValidationUtils$2.class
-
- - link:Stax2ValidationUtils$2-asmified.java[Asmified]
-
-== References
-

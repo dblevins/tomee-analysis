@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/ByteEditor.class
-
- - link:ByteEditor-asmified.java[Asmified]
-
-== References
-

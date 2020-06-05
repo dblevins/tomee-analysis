@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/RequestFilterValve.class
-
- - link:RequestFilterValve-asmified.java[Asmified]
-
-== References
-

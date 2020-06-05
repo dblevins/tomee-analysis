@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/spring/BusWiringType.class
-
- - link:BusWiringType-asmified.java[Asmified]
-
-== References
-

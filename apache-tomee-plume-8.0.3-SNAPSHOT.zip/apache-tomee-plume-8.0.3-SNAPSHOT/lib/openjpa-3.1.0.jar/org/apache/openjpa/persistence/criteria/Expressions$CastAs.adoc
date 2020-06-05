@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$CastAs.class
-
- - link:Expressions$CastAs-asmified.java[Asmified]
-
-== References
-

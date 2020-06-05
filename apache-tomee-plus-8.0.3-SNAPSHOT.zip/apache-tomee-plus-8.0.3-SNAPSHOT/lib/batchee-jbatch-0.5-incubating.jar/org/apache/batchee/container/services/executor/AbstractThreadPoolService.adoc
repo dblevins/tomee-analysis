@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/executor/AbstractThreadPoolService.class
-
- - link:AbstractThreadPoolService-asmified.java[Asmified]
-
-== References
-

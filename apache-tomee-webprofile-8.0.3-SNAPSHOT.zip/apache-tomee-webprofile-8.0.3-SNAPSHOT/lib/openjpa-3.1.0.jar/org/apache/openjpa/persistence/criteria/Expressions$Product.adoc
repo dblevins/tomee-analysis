@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Product.class
-
- - link:Expressions$Product-asmified.java[Asmified]
-
-== References
-

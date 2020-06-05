@@ -1,6 +1,0 @@
-= org/apache/cxf/configuration/jsse/SSLUtils.class
-
- - link:SSLUtils-asmified.java[Asmified]
-
-== References
-

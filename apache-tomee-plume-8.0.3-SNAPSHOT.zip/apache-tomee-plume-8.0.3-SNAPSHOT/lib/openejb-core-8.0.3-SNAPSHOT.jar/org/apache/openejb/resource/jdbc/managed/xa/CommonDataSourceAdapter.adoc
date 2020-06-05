@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/managed/xa/CommonDataSourceAdapter.class
-
- - link:CommonDataSourceAdapter-asmified.java[Asmified]
-
-== References
-

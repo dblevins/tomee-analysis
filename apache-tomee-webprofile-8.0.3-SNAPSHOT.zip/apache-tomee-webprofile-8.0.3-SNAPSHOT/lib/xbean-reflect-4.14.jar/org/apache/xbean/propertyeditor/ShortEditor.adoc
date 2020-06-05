@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/ShortEditor.class
-
- - link:ShortEditor-asmified.java[Asmified]
-
-== References
-

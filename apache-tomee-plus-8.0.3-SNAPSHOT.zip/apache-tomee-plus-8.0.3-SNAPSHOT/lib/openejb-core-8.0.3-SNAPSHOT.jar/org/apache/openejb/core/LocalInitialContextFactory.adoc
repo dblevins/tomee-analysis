@@ -1,6 +1,0 @@
-= org/apache/openejb/core/LocalInitialContextFactory.class
-
- - link:LocalInitialContextFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/xml/bind/ValidationException.class
-
- - link:ValidationException-asmified.java[Asmified]
-
-== References
-
- - javax.xml.bind.ValidationException - 4
- - javax.xml.bind.JAXBException - 2

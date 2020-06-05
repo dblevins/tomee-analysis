@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/AuthenticationStatementUnmarshaller.class
-
- - link:AuthenticationStatementUnmarshaller-asmified.java[Asmified]
-
-== References
-

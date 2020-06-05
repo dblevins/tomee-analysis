@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/discovery/AfterBeanDiscoveryImpl.class
-
- - link:AfterBeanDiscoveryImpl-asmified.java[Asmified]
-
-== References
-

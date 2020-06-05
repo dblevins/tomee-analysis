@@ -1,6 +1,0 @@
-= org/apache/openjpa/enhance/PCClassFileTransformer.class
-
- - link:PCClassFileTransformer-asmified.java[Asmified]
-
-== References
-

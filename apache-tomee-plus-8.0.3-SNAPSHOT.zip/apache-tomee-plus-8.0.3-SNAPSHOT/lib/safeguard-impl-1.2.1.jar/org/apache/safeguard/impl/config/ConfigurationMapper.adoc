@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/config/ConfigurationMapper.class
-
- - link:ConfigurationMapper-asmified.java[Asmified]
-
-== References
-

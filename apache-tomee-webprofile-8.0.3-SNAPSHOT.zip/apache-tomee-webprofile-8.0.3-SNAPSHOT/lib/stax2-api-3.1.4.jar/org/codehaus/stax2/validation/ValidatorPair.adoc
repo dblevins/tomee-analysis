@@ -1,6 +1,0 @@
-= org/codehaus/stax2/validation/ValidatorPair.class
-
- - link:ValidatorPair-asmified.java[Asmified]
-
-== References
-

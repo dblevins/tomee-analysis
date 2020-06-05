@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/AttributedQNameType.class
-
- - link:AttributedQNameType-asmified.java[Asmified]
-
-== References
-

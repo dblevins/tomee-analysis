@@ -1,6 +1,0 @@
-= org/opensaml/security/x509/tls/ClientTLSValidationConfigurationCriterion.class
-
- - link:ClientTLSValidationConfigurationCriterion-asmified.java[Asmified]
-
-== References
-

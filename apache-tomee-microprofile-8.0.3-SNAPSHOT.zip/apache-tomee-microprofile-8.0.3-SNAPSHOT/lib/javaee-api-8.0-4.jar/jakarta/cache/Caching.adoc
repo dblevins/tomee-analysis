@@ -1,6 +1,0 @@
-= jakarta/cache/Caching.class
-
- - link:Caching-asmified.java[Asmified]
-
-== References
-

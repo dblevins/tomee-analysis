@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/MessageEvaluationContext.class
-
- - link:MessageEvaluationContext-asmified.java[Asmified]
-
-== References
-

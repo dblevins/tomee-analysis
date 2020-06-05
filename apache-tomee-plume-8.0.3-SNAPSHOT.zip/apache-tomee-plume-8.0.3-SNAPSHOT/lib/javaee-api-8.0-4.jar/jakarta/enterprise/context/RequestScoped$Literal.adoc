@@ -1,6 +1,0 @@
-= jakarta/enterprise/context/RequestScoped$Literal.class
-
- - link:RequestScoped$Literal-asmified.java[Asmified]
-
-== References
-

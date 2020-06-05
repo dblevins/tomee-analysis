@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/conf/ProductDerivations$1.class
-
- - link:ProductDerivations$1-asmified.java[Asmified]
-
-== References
-

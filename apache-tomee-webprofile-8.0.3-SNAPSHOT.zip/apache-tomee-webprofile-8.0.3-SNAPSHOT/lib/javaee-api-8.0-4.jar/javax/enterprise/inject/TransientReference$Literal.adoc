@@ -1,9 +1,0 @@
-= javax/enterprise/inject/TransientReference$Literal.class
-
- - link:TransientReference$Literal-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.TransientReference$Literal - 4
- - javax.enterprise.util.AnnotationLiteral - 2
- - javax.enterprise.inject.TransientReference - 2

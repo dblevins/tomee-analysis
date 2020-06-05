@@ -1,6 +1,0 @@
-= javax/security/enterprise/CallerPrincipal.class
-
- - link:CallerPrincipal-asmified.java[Asmified]
-
-== References
-

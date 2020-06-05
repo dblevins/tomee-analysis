@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ejbbnd/EJBJarBinding.class
-
- - link:EJBJarBinding-asmified.java[Asmified]
-
-== References
-

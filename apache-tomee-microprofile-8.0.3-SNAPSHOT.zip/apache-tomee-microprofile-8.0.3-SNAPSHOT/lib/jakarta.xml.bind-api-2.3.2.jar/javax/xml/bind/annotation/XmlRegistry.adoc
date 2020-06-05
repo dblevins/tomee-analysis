@@ -1,6 +1,0 @@
-= javax/xml/bind/annotation/XmlRegistry.class
-
- - link:XmlRegistry-asmified.java[Asmified]
-
-== References
-

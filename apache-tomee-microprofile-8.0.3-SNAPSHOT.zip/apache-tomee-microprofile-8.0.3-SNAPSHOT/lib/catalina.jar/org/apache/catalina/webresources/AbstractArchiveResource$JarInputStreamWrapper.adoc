@@ -1,6 +1,0 @@
-= org/apache/catalina/webresources/AbstractArchiveResource$JarInputStreamWrapper.class
-
- - link:AbstractArchiveResource$JarInputStreamWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider$DynamicInstance.class
-
- - link:JsonbJaxrsProvider$DynamicInstance-asmified.java[Asmified]
-
-== References
-

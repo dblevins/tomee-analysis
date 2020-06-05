@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/coordination/MetadataRefreshCommand.class
-
- - link:MetadataRefreshCommand-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/corespi/se/BaseSeContextsService.class
-
- - link:BaseSeContextsService-asmified.java[Asmified]
-
-== References
-

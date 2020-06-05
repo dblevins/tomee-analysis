@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/MetadataProcessor.class
-
- - link:MetadataProcessor-asmified.java[Asmified]
-
-== References
-

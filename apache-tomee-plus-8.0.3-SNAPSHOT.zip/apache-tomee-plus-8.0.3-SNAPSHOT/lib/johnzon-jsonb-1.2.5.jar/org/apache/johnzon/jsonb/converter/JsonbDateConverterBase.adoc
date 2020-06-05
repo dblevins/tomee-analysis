@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/converter/JsonbDateConverterBase.class
-
- - link:JsonbDateConverterBase-asmified.java[Asmified]
-
-== References
-

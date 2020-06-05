@@ -1,6 +1,0 @@
-= org/apache/activemq/util/ConsumerThread.class
-
- - link:ConsumerThread-asmified.java[Asmified]
-
-== References
-

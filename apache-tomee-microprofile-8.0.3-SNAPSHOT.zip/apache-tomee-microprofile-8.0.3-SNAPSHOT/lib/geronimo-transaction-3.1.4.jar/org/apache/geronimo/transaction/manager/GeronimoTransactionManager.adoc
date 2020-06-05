@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/GeronimoTransactionManager.class
-
- - link:GeronimoTransactionManager-asmified.java[Asmified]
-
-== References
-

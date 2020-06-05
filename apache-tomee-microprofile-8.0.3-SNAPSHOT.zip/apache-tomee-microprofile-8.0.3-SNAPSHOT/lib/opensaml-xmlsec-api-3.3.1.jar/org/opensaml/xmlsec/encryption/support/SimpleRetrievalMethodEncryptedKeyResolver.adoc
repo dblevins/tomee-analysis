@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/support/SimpleRetrievalMethodEncryptedKeyResolver.class
-
- - link:SimpleRetrievalMethodEncryptedKeyResolver-asmified.java[Asmified]
-
-== References
-

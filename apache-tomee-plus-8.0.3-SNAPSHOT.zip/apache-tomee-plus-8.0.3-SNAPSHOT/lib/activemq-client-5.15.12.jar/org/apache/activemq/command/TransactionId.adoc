@@ -1,6 +1,0 @@
-= org/apache/activemq/command/TransactionId.class
-
- - link:TransactionId-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/signature/InvalidSignatureValueException.class
-
- - link:InvalidSignatureValueException-asmified.java[Asmified]
-
-== References
-

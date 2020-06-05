@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessBeanAttributes.class
-
- - link:GProcessBeanAttributes-asmified.java[Asmified]
-
-== References
-

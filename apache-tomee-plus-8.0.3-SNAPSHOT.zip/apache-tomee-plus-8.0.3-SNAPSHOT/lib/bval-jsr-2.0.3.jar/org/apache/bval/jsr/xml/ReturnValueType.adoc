@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/ReturnValueType.class
-
- - link:ReturnValueType-asmified.java[Asmified]
-
-== References
-

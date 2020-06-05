@@ -1,6 +1,0 @@
-= jakarta/persistence/QueryHint.class
-
- - link:QueryHint-asmified.java[Asmified]
-
-== References
-

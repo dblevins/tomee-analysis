@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/mappings/XMLConverterMapping.class
-
- - link:XMLConverterMapping-asmified.java[Asmified]
-
-== References
-

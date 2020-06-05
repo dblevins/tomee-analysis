@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/features/FeatureResponseBuilderImpl.class
-
- - link:FeatureResponseBuilderImpl-asmified.java[Asmified]
-
-== References
-

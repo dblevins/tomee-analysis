@@ -1,6 +1,0 @@
-= jakarta/xml/bind/ValidationEventHandler.class
-
- - link:ValidationEventHandler-asmified.java[Asmified]
-
-== References
-

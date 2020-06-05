@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/SelectConstructor$ProjectionExpressionVisitor.class
-
- - link:SelectConstructor$ProjectionExpressionVisitor-asmified.java[Asmified]
-
-== References
-

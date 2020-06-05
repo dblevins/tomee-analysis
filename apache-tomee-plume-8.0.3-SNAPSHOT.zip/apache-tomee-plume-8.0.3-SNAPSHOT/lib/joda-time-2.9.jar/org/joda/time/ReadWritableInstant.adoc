@@ -1,6 +1,0 @@
-= org/joda/time/ReadWritableInstant.class
-
- - link:ReadWritableInstant-asmified.java[Asmified]
-
-== References
-

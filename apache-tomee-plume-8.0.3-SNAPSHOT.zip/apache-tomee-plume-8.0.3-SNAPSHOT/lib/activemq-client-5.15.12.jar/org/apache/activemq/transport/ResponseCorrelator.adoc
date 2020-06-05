@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/ResponseCorrelator.class
-
- - link:ResponseCorrelator-asmified.java[Asmified]
-
-== References
-

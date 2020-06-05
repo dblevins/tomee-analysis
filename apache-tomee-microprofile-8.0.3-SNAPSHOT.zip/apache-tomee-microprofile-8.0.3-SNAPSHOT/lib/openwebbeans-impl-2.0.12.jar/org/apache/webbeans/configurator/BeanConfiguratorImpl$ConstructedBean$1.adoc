@@ -1,6 +1,0 @@
-= org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1.class
-
- - link:BeanConfiguratorImpl$ConstructedBean$1-asmified.java[Asmified]
-
-== References
-

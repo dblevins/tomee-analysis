@@ -1,6 +1,0 @@
-= org/opensaml/saml/metadata/resolver/impl/MetadataQueryProtocolRequestURLBuilder.class
-
- - link:MetadataQueryProtocolRequestURLBuilder-asmified.java[Asmified]
-
-== References
-

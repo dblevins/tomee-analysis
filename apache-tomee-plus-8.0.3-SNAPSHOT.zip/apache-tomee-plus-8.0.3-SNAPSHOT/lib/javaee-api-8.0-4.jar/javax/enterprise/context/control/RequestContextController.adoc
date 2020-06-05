@@ -1,7 +1,0 @@
-= javax/enterprise/context/control/RequestContextController.class
-
- - link:RequestContextController-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.context.ContextNotActiveException - 1

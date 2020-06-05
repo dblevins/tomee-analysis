@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/cdi/DefaultCDIFacesFlowProvider.class
-
- - link:DefaultCDIFacesFlowProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/net/SocketEvent.class
-
- - link:SocketEvent-asmified.java[Asmified]
-
-== References
-

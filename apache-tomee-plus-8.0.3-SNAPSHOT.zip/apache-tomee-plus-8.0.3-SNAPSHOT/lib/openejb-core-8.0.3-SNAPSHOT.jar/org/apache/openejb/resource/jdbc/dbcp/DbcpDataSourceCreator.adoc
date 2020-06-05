@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/dbcp/DbcpDataSourceCreator.class
-
- - link:DbcpDataSourceCreator-asmified.java[Asmified]
-
-== References
-

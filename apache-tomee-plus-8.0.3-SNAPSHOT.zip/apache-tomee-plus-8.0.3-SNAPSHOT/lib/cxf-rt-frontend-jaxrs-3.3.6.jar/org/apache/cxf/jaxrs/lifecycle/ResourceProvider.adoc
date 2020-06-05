@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/lifecycle/ResourceProvider.class
-
- - link:ResourceProvider-asmified.java[Asmified]
-
-== References
-

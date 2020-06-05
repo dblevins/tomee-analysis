@@ -1,6 +1,0 @@
-= org/apache/activemq/AlreadyClosedException.class
-
- - link:AlreadyClosedException-asmified.java[Asmified]
-
-== References
-

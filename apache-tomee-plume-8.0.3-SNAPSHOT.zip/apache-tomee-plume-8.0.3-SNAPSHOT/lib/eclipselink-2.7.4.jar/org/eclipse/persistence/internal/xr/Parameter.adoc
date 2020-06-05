@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/Parameter.class
-
- - link:Parameter-asmified.java[Asmified]
-
-== References
-

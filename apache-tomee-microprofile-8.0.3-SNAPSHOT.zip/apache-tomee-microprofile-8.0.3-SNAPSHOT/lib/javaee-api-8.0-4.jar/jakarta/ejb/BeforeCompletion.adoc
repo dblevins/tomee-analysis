@@ -1,6 +1,0 @@
-= jakarta/ejb/BeforeCompletion.class
-
- - link:BeforeCompletion-asmified.java[Asmified]
-
-== References
-

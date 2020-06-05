@@ -1,6 +1,0 @@
-= org/apache/commons/codec/Encoder.class
-
- - link:Encoder-asmified.java[Asmified]
-
-== References
-

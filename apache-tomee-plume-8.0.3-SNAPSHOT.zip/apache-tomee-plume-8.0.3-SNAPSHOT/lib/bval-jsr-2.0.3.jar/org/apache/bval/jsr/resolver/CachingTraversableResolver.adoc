@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/resolver/CachingTraversableResolver.class
-
- - link:CachingTraversableResolver-asmified.java[Asmified]
-
-== References
-

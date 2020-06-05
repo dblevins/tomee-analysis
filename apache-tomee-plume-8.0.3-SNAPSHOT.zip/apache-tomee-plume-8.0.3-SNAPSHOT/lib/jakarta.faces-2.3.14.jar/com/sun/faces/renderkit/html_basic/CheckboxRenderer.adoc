@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/CheckboxRenderer.class
-
- - link:CheckboxRenderer-asmified.java[Asmified]
-
-== References
-

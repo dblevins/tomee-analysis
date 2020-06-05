@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/keyinfo/KeyInfoGeneratorManager.class
-
- - link:KeyInfoGeneratorManager-asmified.java[Asmified]
-
-== References
-

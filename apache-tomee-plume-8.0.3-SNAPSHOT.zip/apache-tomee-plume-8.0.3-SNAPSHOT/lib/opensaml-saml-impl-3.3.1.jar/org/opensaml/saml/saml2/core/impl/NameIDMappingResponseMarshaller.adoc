@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/NameIDMappingResponseMarshaller.class
-
- - link:NameIDMappingResponseMarshaller-asmified.java[Asmified]
-
-== References
-

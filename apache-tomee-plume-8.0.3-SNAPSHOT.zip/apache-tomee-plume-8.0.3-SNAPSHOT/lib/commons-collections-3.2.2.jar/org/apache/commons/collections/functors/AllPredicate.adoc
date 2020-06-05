@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/AllPredicate.class
-
- - link:AllPredicate-asmified.java[Asmified]
-
-== References
-

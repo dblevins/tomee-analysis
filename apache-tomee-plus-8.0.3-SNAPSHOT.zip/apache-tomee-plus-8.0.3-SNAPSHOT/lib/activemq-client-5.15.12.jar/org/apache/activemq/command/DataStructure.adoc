@@ -1,6 +1,0 @@
-= org/apache/activemq/command/DataStructure.class
-
- - link:DataStructure-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/util/proxy/LocalBeanProxyFactory.class
-
- - link:LocalBeanProxyFactory-asmified.java[Asmified]
-
-== References
-

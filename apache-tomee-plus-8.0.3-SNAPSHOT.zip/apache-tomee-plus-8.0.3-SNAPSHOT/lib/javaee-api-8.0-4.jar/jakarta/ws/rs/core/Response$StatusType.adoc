@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Response$StatusType.class
-
- - link:Response$StatusType-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonDoubleImpl.class
-
- - link:JsonDoubleImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/view/DestinationDotFilePlugin.class
-
- - link:DestinationDotFilePlugin-asmified.java[Asmified]
-
-== References
-

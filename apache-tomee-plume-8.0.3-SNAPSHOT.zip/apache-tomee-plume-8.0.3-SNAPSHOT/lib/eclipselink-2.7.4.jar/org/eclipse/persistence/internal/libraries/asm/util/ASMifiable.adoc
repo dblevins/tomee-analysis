@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/util/ASMifiable.class
-
- - link:ASMifiable-asmified.java[Asmified]
-
-== References
-

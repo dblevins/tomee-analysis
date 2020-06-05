@@ -1,6 +1,0 @@
-= org/apache/openejb/server/auth/ExactIPAddressPermission.class
-
- - link:ExactIPAddressPermission-asmified.java[Asmified]
-
-== References
-

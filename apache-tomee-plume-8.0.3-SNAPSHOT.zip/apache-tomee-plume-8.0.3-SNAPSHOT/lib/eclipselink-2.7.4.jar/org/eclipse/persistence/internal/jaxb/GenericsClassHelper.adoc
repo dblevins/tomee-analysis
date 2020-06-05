@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/GenericsClassHelper.class
-
- - link:GenericsClassHelper-asmified.java[Asmified]
-
-== References
-

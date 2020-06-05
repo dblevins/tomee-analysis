@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator$CaseInsensitiveMap.class
-
- - link:PropertyBasedCreator$CaseInsensitiveMap-asmified.java[Asmified]
-
-== References
-

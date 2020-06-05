@@ -1,9 +1,0 @@
-= javax/xml/ws/soap/Addressing.class
-
- - link:Addressing-asmified.java[Asmified]
-
-== References
-
- - javax.xml.ws.soap.AddressingFeature$Responses - 2
- - javax.xml.ws.soap.AddressingFeature - 1
- - javax.xml.ws.spi.WebServiceFeatureAnnotation - 1

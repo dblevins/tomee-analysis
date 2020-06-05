@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/AdditionalMetadataLocation.class
-
- - link:AdditionalMetadataLocation-asmified.java[Asmified]
-
-== References
-

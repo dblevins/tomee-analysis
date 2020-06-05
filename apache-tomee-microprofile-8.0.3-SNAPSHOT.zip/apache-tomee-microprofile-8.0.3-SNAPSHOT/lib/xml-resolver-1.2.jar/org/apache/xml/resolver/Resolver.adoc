@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/Resolver.class
-
- - link:Resolver-asmified.java[Asmified]
-
-== References
-

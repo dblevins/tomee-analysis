@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/ProducerMethodBean.class
-
- - link:ProducerMethodBean-asmified.java[Asmified]
-
-== References
-

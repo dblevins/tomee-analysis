@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/mappings/ManyToManyImpl.class
-
- - link:ManyToManyImpl-asmified.java[Asmified]
-
-== References
-

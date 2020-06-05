@@ -1,6 +1,0 @@
-= org/apache/activemq/store/jdbc/AbstractJDBCLocker.class
-
- - link:AbstractJDBCLocker-asmified.java[Asmified]
-
-== References
-

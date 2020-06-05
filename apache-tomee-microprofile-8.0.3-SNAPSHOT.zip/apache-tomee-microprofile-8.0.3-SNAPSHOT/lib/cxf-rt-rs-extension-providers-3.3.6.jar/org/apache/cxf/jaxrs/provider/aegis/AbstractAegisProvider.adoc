@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/aegis/AbstractAegisProvider.class
-
- - link:AbstractAegisProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/digester/WithDefaultsRulesWrapper.class
-
- - link:WithDefaultsRulesWrapper-asmified.java[Asmified]
-
-== References
-

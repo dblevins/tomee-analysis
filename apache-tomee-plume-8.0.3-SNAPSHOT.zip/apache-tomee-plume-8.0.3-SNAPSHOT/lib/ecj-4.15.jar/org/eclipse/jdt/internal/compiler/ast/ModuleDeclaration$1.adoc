@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/ModuleDeclaration$1.class
-
- - link:ModuleDeclaration$1-asmified.java[Asmified]
-
-== References
-

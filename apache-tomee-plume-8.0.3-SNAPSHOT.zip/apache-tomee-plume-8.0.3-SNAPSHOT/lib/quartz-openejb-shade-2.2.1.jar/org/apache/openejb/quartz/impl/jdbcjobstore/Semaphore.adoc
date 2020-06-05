@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/Semaphore.class
-
- - link:Semaphore-asmified.java[Asmified]
-
-== References
-

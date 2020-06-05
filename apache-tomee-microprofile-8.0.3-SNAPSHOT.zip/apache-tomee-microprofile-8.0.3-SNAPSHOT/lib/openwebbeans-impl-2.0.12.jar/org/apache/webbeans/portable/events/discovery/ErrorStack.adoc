@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/discovery/ErrorStack.class
-
- - link:ErrorStack-asmified.java[Asmified]
-
-== References
-

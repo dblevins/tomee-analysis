@@ -1,6 +1,0 @@
-= org/joda/time/Minutes.class
-
- - link:Minutes-asmified.java[Asmified]
-
-== References
-

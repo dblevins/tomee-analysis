@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/TomEEWebappClassLoader$PremptiveDirResourceSet.class
-
- - link:TomEEWebappClassLoader$PremptiveDirResourceSet-asmified.java[Asmified]
-
-== References
-

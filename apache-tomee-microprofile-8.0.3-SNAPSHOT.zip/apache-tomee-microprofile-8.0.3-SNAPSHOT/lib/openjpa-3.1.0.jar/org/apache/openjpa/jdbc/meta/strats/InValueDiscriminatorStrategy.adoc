@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/InValueDiscriminatorStrategy.class
-
- - link:InValueDiscriminatorStrategy-asmified.java[Asmified]
-
-== References
-

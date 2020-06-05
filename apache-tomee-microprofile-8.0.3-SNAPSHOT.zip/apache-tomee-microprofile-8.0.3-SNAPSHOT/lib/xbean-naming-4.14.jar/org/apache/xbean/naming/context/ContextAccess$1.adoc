@@ -1,6 +1,0 @@
-= org/apache/xbean/naming/context/ContextAccess$1.class
-
- - link:ContextAccess$1-asmified.java[Asmified]
-
-== References
-

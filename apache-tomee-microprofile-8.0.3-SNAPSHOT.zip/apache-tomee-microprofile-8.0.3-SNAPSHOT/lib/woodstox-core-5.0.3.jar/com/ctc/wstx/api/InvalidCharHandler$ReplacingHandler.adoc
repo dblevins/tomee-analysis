@@ -1,6 +1,0 @@
-= com/ctc/wstx/api/InvalidCharHandler$ReplacingHandler.class
-
- - link:InvalidCharHandler$ReplacingHandler-asmified.java[Asmified]
-
-== References
-

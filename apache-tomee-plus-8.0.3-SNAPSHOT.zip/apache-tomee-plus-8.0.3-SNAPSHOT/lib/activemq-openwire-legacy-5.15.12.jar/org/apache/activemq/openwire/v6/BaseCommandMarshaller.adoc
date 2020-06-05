@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v6/BaseCommandMarshaller.class
-
- - link:BaseCommandMarshaller-asmified.java[Asmified]
-
-== References
-

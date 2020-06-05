@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbProvider.class
-
- - link:TomEEJsonbProvider-asmified.java[Asmified]
-
-== References
-

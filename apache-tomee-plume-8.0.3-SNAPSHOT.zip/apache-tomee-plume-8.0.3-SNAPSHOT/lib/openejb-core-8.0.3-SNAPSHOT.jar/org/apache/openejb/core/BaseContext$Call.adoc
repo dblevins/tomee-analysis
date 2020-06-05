@@ -1,6 +1,0 @@
-= org/apache/openejb/core/BaseContext$Call.class
-
- - link:BaseContext$Call-asmified.java[Asmified]
-
-== References
-

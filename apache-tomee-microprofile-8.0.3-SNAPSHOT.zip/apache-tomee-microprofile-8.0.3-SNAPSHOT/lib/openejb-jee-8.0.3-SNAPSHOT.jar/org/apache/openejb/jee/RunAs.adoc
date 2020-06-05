@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/RunAs.class
-
- - link:RunAs-asmified.java[Asmified]
-
-== References
-

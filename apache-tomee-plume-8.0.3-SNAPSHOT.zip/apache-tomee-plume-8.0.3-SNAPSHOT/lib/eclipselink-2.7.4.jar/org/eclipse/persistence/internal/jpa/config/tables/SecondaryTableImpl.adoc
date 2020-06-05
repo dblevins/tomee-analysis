@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/tables/SecondaryTableImpl.class
-
- - link:SecondaryTableImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/WSSecTimestamp.class
-
- - link:WSSecTimestamp-asmified.java[Asmified]
-
-== References
-

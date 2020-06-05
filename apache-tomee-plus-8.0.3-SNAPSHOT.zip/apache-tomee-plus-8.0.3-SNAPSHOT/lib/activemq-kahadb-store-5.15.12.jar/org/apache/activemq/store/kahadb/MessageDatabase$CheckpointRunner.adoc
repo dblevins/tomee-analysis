@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MessageDatabase$CheckpointRunner.class
-
- - link:MessageDatabase$CheckpointRunner-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/HashBin$Marshaller.class
-
- - link:HashBin$Marshaller-asmified.java[Asmified]
-
-== References
-

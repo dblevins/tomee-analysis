@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/LocaleConfig.class
-
- - link:LocaleConfig-asmified.java[Asmified]
-
-== References
-

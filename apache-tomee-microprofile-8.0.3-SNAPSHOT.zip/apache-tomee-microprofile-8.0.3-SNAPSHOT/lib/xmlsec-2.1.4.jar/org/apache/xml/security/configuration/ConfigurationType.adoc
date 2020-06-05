@@ -1,6 +1,0 @@
-= org/apache/xml/security/configuration/ConfigurationType.class
-
- - link:ConfigurationType-asmified.java[Asmified]
-
-== References
-

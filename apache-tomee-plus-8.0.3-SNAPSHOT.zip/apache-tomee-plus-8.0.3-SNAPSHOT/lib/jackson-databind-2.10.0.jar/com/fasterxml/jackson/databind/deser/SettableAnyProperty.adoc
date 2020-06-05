@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/SettableAnyProperty.class
-
- - link:SettableAnyProperty-asmified.java[Asmified]
-
-== References
-

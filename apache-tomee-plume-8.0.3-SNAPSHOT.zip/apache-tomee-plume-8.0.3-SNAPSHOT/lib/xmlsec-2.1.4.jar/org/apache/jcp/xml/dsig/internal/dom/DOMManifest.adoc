@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMManifest.class
-
- - link:DOMManifest-asmified.java[Asmified]
-
-== References
-

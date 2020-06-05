@@ -1,6 +1,0 @@
-= org/hsqldb/index/NodeAVLDisk.class
-
- - link:NodeAVLDisk-asmified.java[Asmified]
-
-== References
-

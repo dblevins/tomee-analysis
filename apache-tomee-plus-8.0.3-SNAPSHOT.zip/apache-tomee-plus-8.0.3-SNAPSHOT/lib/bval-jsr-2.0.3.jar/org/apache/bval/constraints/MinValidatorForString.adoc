@@ -1,6 +1,0 @@
-= org/apache/bval/constraints/MinValidatorForString.class
-
- - link:MinValidatorForString-asmified.java[Asmified]
-
-== References
-

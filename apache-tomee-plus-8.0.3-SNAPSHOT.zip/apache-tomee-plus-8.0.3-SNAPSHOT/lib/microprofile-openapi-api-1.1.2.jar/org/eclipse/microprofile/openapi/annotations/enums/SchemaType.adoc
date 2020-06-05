@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/annotations/enums/SchemaType.class
-
- - link:SchemaType-asmified.java[Asmified]
-
-== References
-

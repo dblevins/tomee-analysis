@@ -1,6 +1,0 @@
-= org/apache/openjpa/ee/RegistryManagedRuntime$TransactionManagerRegistryFacade.class
-
- - link:RegistryManagedRuntime$TransactionManagerRegistryFacade-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/soap/wspolicy/OptionalBearing.class
-
- - link:OptionalBearing-asmified.java[Asmified]
-
-== References
-

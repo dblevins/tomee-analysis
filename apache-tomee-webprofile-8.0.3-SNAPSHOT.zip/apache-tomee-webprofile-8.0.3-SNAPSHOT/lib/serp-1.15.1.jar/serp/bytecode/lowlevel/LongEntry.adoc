@@ -1,6 +1,0 @@
-= serp/bytecode/lowlevel/LongEntry.class
-
- - link:LongEntry-asmified.java[Asmified]
-
-== References
-

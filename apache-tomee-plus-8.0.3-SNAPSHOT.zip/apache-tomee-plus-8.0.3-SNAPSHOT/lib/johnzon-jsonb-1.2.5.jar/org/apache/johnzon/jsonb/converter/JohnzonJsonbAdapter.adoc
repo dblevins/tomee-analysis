@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter.class
-
- - link:JohnzonJsonbAdapter-asmified.java[Asmified]
-
-== References
-

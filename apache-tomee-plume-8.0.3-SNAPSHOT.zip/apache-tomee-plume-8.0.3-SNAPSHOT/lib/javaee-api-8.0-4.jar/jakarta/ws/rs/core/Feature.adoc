@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/Feature.class
-
- - link:Feature-asmified.java[Asmified]
-
-== References
-

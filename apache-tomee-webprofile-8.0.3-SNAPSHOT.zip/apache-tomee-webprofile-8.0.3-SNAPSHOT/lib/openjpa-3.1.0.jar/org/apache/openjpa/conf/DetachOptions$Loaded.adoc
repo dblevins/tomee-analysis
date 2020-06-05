@@ -1,6 +1,0 @@
-= org/apache/openjpa/conf/DetachOptions$Loaded.class
-
- - link:DetachOptions$Loaded-asmified.java[Asmified]
-
-== References
-

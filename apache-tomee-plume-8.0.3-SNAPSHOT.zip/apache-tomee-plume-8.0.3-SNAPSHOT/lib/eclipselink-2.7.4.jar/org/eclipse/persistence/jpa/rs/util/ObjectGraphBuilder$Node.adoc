@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/ObjectGraphBuilder$Node.class
-
- - link:ObjectGraphBuilder$Node-asmified.java[Asmified]
-
-== References
-

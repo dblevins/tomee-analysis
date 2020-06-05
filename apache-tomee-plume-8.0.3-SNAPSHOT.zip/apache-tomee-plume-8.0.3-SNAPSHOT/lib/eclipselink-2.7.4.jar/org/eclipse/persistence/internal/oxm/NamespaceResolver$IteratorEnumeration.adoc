@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/NamespaceResolver$IteratorEnumeration.class
-
- - link:NamespaceResolver$IteratorEnumeration-asmified.java[Asmified]
-
-== References
-

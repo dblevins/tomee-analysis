@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/Serialization$ClassResolvingObjectInputStream.class
-
- - link:Serialization$ClassResolvingObjectInputStream-asmified.java[Asmified]
-
-== References
-

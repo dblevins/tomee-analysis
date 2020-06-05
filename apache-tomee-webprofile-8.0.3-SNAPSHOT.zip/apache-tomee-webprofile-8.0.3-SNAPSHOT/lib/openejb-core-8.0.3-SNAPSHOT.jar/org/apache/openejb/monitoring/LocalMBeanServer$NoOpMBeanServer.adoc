@@ -1,6 +1,0 @@
-= org/apache/openejb/monitoring/LocalMBeanServer$NoOpMBeanServer.class
-
- - link:LocalMBeanServer$NoOpMBeanServer-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/concurrent/BasicThreadFactory$1.class
-
- - link:BasicThreadFactory$1-asmified.java[Asmified]
-
-== References
-

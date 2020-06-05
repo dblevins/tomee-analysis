@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/AbstractSingleEncapsulatedExpression.class
-
- - link:AbstractSingleEncapsulatedExpression-asmified.java[Asmified]
-
-== References
-

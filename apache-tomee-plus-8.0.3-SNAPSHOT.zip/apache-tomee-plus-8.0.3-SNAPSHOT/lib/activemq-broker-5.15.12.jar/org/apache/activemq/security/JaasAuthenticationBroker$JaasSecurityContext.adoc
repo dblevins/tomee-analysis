@@ -1,6 +1,0 @@
-= org/apache/activemq/security/JaasAuthenticationBroker$JaasSecurityContext.class
-
- - link:JaasAuthenticationBroker$JaasSecurityContext-asmified.java[Asmified]
-
-== References
-

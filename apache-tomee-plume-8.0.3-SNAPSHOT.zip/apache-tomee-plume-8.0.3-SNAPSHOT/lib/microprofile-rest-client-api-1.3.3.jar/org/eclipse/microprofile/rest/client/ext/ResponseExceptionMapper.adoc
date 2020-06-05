@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper.class
-
- - link:ResponseExceptionMapper-asmified.java[Asmified]
-
-== References
-

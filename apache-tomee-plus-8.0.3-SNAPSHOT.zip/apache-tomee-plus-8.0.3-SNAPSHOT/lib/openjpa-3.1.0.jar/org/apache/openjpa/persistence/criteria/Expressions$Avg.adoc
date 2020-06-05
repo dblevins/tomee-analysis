@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$Avg.class
-
- - link:Expressions$Avg-asmified.java[Asmified]
-
-== References
-

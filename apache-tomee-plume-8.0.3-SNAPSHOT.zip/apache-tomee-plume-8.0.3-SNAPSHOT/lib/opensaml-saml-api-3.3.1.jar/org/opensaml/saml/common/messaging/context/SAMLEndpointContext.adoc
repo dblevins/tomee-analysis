@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/messaging/context/SAMLEndpointContext.class
-
- - link:SAMLEndpointContext-asmified.java[Asmified]
-
-== References
-

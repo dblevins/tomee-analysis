@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/EntityCache.class
-
- - link:EntityCache-asmified.java[Asmified]
-
-== References
-

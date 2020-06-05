@@ -1,6 +1,0 @@
-= org/apache/activemq/ActiveMQTopicPublisher.class
-
- - link:ActiveMQTopicPublisher-asmified.java[Asmified]
-
-== References
-

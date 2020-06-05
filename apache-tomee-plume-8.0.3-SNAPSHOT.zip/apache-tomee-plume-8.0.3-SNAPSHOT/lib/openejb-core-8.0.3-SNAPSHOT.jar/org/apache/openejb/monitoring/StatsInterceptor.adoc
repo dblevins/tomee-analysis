@@ -1,6 +1,0 @@
-= org/apache/openejb/monitoring/StatsInterceptor.class
-
- - link:StatsInterceptor-asmified.java[Asmified]
-
-== References
-

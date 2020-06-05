@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/BmpEntityContainerBuilder.class
-
- - link:BmpEntityContainerBuilder-asmified.java[Asmified]
-
-== References
-

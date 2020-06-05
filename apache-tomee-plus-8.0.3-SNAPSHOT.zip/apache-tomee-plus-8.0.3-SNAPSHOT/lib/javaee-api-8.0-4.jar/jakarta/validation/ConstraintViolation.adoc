@@ -1,6 +1,0 @@
-= jakarta/validation/ConstraintViolation.class
-
- - link:ConstraintViolation-asmified.java[Asmified]
-
-== References
-

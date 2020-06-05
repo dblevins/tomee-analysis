@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider.class
-
- - link:KeyEncryptionProvider-asmified.java[Asmified]
-
-== References
-

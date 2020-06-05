@@ -1,6 +1,0 @@
-= javax/xml/xpath/SecuritySupport$1.class
-
- - link:SecuritySupport$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/ECPoint.class
-
- - link:ECPoint-asmified.java[Asmified]
-
-== References
-

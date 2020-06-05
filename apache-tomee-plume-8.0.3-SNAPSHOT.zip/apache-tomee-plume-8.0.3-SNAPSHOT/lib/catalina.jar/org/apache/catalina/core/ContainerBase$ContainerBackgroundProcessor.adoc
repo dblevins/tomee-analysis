@@ -1,6 +1,0 @@
-= org/apache/catalina/core/ContainerBase$ContainerBackgroundProcessor.class
-
- - link:ContainerBase$ContainerBackgroundProcessor-asmified.java[Asmified]
-
-== References
-

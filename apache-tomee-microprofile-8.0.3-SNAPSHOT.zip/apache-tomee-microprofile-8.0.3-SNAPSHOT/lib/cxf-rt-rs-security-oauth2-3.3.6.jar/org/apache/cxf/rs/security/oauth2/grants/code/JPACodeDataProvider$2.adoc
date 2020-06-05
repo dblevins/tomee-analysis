@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/grants/code/JPACodeDataProvider$2.class
-
- - link:JPACodeDataProvider$2-asmified.java[Asmified]
-
-== References
-

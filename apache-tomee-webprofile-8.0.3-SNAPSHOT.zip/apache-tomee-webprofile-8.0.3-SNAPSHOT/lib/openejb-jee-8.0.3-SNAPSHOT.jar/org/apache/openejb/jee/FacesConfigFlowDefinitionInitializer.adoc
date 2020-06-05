@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesConfigFlowDefinitionInitializer.class
-
- - link:FacesConfigFlowDefinitionInitializer-asmified.java[Asmified]
-
-== References
-

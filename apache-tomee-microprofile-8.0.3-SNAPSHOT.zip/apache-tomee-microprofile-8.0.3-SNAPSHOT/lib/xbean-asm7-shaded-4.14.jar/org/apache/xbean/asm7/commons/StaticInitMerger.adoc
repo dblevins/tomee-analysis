@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/StaticInitMerger.class
-
- - link:StaticInitMerger-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/encryption/support/ChainingEncryptedKeyResolver.class
-
- - link:ChainingEncryptedKeyResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/result/ResultLob$LobResultTypes.class
-
- - link:ResultLob$LobResultTypes-asmified.java[Asmified]
-
-== References
-

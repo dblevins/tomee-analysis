@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/CachePolicyConfOther.class
-
- - link:CachePolicyConfOther-asmified.java[Asmified]
-
-== References
-

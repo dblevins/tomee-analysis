@@ -1,6 +1,0 @@
-= jakarta/faces/el/VariableResolver.class
-
- - link:VariableResolver-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/PolicyConstants.class
-
- - link:PolicyConstants-asmified.java[Asmified]
-
-== References
-

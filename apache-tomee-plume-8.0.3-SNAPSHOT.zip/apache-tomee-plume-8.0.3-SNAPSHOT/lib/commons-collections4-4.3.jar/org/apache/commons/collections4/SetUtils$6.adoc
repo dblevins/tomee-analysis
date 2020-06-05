@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/SetUtils$6.class
-
- - link:SetUtils$6-asmified.java[Asmified]
-
-== References
-

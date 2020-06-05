@@ -1,6 +1,0 @@
-= com/sun/faces/application/applicationimpl/InstanceFactory.class
-
- - link:InstanceFactory-asmified.java[Asmified]
-
-== References
-

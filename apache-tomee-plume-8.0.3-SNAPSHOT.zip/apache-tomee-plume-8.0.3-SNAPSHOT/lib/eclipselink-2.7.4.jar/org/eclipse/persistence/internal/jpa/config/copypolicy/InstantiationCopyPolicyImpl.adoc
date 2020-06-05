@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/copypolicy/InstantiationCopyPolicyImpl.class
-
- - link:InstantiationCopyPolicyImpl-asmified.java[Asmified]
-
-== References
-

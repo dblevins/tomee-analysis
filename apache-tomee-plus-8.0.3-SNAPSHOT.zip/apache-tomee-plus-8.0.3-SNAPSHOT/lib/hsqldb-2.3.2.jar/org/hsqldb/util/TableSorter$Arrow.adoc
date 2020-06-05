@@ -1,6 +1,0 @@
-= org/hsqldb/util/TableSorter$Arrow.class
-
- - link:TableSorter$Arrow-asmified.java[Asmified]
-
-== References
-

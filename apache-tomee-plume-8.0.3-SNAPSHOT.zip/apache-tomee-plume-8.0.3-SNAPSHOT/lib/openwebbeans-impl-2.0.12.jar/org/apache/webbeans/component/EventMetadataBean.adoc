@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/EventMetadataBean.class
-
- - link:EventMetadataBean-asmified.java[Asmified]
-
-== References
-

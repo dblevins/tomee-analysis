@@ -1,6 +1,0 @@
-= org/apache/cxf/io/CachedOutputStreamCallback.class
-
- - link:CachedOutputStreamCallback-asmified.java[Asmified]
-
-== References
-

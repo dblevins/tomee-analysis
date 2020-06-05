@@ -1,6 +1,0 @@
-= com/sun/xml/bind/v2/runtime/reflect/Lister$2.class
-
- - link:Lister$2-asmified.java[Asmified]
-
-== References
-

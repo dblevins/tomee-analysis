@@ -1,6 +1,0 @@
-= org/apache/commons/collections/iterators/AbstractMapIteratorDecorator.class
-
- - link:AbstractMapIteratorDecorator-asmified.java[Asmified]
-
-== References
-

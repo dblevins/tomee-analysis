@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/ClaimsType.class
-
- - link:ClaimsType-asmified.java[Asmified]
-
-== References
-

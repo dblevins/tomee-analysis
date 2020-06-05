@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/AssertionState$State.class
-
- - link:AssertionState$State-asmified.java[Asmified]
-
-== References
-

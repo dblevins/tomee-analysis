@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/impl/LinkedBlockingDeque$DescendingItr.class
-
- - link:LinkedBlockingDeque$DescendingItr-asmified.java[Asmified]
-
-== References
-

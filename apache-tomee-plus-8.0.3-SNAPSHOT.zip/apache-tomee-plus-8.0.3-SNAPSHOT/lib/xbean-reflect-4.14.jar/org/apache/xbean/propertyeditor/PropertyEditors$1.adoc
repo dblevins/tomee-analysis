@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/PropertyEditors$1.class
-
- - link:PropertyEditors$1-asmified.java[Asmified]
-
-== References
-

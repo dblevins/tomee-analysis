@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/AbstractJsonFactory.class
-
- - link:AbstractJsonFactory-asmified.java[Asmified]
-
-== References
-

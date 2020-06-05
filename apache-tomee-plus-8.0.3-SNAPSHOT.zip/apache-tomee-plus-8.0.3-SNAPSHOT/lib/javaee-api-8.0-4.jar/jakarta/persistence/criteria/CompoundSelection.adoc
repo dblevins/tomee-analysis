@@ -1,6 +1,0 @@
-= jakarta/persistence/criteria/CompoundSelection.class
-
- - link:CompoundSelection-asmified.java[Asmified]
-
-== References
-

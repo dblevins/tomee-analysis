@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/EnterpriseBeans.class
-
- - link:EnterpriseBeans-asmified.java[Asmified]
-
-== References
-

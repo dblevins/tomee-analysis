@@ -1,6 +1,0 @@
-= org/apache/bval/el/ELFacade$1.class
-
- - link:ELFacade$1-asmified.java[Asmified]
-
-== References
-

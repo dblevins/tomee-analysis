@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/TableName.class
-
- - link:TableName-asmified.java[Asmified]
-
-== References
-

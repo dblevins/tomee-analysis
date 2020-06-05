@@ -1,6 +1,0 @@
-= org/jvnet/staxex/StreamingDataHandler.class
-
- - link:StreamingDataHandler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/OrderedIntKeyHashMap$Values.class
-
- - link:OrderedIntKeyHashMap$Values-asmified.java[Asmified]
-
-== References
-

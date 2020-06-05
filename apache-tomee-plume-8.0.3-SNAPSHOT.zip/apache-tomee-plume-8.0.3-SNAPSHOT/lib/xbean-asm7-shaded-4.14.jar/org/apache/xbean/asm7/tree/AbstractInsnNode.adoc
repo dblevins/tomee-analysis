@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/AbstractInsnNode.class
-
- - link:AbstractInsnNode-asmified.java[Asmified]
-
-== References
-

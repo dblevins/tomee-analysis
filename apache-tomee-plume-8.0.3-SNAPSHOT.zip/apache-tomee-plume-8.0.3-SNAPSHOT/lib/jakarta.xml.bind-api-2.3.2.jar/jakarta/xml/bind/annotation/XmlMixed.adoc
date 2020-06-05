@@ -1,6 +1,0 @@
-= jakarta/xml/bind/annotation/XmlMixed.class
-
- - link:XmlMixed-asmified.java[Asmified]
-
-== References
-

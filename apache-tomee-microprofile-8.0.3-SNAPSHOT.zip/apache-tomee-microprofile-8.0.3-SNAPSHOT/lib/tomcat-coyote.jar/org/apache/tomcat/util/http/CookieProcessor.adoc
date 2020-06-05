@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/CookieProcessor.class
-
- - link:CookieProcessor-asmified.java[Asmified]
-
-== References
-

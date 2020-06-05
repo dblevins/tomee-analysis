@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/criterion/SignatureValidationConfigurationCriterion.class
-
- - link:SignatureValidationConfigurationCriterion-asmified.java[Asmified]
-
-== References
-

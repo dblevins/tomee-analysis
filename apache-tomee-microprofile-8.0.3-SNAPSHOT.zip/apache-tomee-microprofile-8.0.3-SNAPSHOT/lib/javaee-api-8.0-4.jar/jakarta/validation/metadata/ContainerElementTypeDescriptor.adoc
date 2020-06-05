@@ -1,6 +1,0 @@
-= jakarta/validation/metadata/ContainerElementTypeDescriptor.class
-
- - link:ContainerElementTypeDescriptor-asmified.java[Asmified]
-
-== References
-

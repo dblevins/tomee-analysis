@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/JAXRSServiceImpl.class
-
- - link:JAXRSServiceImpl-asmified.java[Asmified]
-
-== References
-

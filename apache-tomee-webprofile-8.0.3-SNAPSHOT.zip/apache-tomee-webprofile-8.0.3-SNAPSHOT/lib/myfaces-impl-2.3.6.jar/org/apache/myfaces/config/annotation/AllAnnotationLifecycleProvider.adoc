@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/annotation/AllAnnotationLifecycleProvider.class
-
- - link:AllAnnotationLifecycleProvider-asmified.java[Asmified]
-
-== References
-

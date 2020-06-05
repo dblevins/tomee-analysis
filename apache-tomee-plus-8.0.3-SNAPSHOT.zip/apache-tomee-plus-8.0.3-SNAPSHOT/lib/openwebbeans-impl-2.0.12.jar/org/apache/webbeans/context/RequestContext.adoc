@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/RequestContext.class
-
- - link:RequestContext-asmified.java[Asmified]
-
-== References
-

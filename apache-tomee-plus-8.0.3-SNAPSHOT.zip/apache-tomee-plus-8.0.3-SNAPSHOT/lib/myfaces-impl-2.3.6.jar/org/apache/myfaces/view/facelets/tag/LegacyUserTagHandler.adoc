@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/LegacyUserTagHandler.class
-
- - link:LegacyUserTagHandler-asmified.java[Asmified]
-
-== References
-

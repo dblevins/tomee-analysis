@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer$1.class
-
- - link:JavaSECMPInitializer$1-asmified.java[Asmified]
-
-== References
-

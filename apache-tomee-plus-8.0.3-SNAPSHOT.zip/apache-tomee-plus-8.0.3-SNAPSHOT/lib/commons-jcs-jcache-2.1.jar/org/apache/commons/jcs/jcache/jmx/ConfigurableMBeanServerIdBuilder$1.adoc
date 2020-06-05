@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/jcache/jmx/ConfigurableMBeanServerIdBuilder$1.class
-
- - link:ConfigurableMBeanServerIdBuilder$1-asmified.java[Asmified]
-
-== References
-

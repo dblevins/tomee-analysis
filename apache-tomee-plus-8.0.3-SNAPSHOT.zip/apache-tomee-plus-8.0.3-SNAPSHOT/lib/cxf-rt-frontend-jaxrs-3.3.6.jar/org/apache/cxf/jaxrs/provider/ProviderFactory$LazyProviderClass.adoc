@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/ProviderFactory$LazyProviderClass.class
-
- - link:ProviderFactory$LazyProviderClass-asmified.java[Asmified]
-
-== References
-

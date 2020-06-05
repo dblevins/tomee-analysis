@@ -1,6 +1,0 @@
-= org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrumentMBean.class
-
- - link:PreparedQueryCacheJMXInstrumentMBean-asmified.java[Asmified]
-
-== References
-

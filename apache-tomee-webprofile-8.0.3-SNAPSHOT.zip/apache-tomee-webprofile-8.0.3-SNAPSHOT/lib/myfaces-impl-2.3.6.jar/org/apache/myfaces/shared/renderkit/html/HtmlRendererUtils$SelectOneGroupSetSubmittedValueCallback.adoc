@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlRendererUtils$SelectOneGroupSetSubmittedValueCallback.class
-
- - link:HtmlRendererUtils$SelectOneGroupSetSubmittedValueCallback-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/core/JsonMergePatchImpl.class
-
- - link:JsonMergePatchImpl-asmified.java[Asmified]
-
-== References
-

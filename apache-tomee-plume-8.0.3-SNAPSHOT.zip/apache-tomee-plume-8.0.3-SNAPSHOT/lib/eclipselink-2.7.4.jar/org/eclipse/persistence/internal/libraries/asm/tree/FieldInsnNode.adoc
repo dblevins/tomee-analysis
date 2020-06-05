@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/tree/FieldInsnNode.class
-
- - link:FieldInsnNode-asmified.java[Asmified]
-
-== References
-

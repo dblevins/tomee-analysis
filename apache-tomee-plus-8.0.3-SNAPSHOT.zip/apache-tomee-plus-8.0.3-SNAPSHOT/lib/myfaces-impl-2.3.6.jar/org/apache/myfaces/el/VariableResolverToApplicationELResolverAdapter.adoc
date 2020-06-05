@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/VariableResolverToApplicationELResolverAdapter.class
-
- - link:VariableResolverToApplicationELResolverAdapter-asmified.java[Asmified]
-
-== References
-

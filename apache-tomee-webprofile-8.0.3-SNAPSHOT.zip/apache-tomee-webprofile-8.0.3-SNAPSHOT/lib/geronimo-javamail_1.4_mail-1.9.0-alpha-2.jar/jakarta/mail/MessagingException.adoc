@@ -1,6 +1,0 @@
-= jakarta/mail/MessagingException.class
-
- - link:MessagingException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/inject/InjectableMethod.class
-
- - link:InjectableMethod-asmified.java[Asmified]
-
-== References
-

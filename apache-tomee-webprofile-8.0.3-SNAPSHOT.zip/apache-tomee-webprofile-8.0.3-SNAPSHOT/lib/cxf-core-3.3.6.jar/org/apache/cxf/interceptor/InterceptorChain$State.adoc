@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/InterceptorChain$State.class
-
- - link:InterceptorChain$State-asmified.java[Asmified]
-
-== References
-

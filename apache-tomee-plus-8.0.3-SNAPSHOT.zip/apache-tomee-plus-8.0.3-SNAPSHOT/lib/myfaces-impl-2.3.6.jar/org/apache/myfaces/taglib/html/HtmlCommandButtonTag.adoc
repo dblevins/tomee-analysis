@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlCommandButtonTag.class
-
- - link:HtmlCommandButtonTag-asmified.java[Asmified]
-
-== References
-

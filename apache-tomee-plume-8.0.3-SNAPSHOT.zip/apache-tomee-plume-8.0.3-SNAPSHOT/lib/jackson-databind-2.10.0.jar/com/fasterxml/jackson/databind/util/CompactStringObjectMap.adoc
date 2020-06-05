@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/util/CompactStringObjectMap.class
-
- - link:CompactStringObjectMap-asmified.java[Asmified]
-
-== References
-

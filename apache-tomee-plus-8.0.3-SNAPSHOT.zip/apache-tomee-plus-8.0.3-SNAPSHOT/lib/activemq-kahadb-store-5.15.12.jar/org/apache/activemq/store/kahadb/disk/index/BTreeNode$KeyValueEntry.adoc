@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/index/BTreeNode$KeyValueEntry.class
-
- - link:BTreeNode$KeyValueEntry-asmified.java[Asmified]
-
-== References
-

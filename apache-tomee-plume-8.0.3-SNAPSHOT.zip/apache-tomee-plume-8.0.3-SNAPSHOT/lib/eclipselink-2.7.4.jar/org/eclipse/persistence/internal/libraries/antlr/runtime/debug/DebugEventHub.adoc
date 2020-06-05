@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/debug/DebugEventHub.class
-
- - link:DebugEventHub-asmified.java[Asmified]
-
-== References
-

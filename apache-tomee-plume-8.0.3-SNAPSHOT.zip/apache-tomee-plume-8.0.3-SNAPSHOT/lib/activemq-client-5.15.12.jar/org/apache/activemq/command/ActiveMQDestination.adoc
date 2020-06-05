@@ -1,6 +1,0 @@
-= org/apache/activemq/command/ActiveMQDestination.class
-
- - link:ActiveMQDestination-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/webbeans/util/JNDIUtil.class
-
- - link:JNDIUtil-asmified.java[Asmified]
-
-== References
-

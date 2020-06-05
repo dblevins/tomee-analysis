@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/Compatibility.class
-
- - link:Compatibility-asmified.java[Asmified]
-
-== References
-

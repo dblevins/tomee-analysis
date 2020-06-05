@@ -1,7 +1,0 @@
-= javax/faces/context/_MyFacesExternalContextHelper.class
-
- - link:_MyFacesExternalContextHelper-asmified.java[Asmified]
-
-== References
-
- - javax.faces.context.ExternalContext - 1

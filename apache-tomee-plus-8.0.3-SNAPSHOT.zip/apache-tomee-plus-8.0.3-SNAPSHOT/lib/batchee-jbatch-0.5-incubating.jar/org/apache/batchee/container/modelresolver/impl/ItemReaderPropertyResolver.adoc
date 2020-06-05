@@ -1,6 +1,0 @@
-= org/apache/batchee/container/modelresolver/impl/ItemReaderPropertyResolver.class
-
- - link:ItemReaderPropertyResolver-asmified.java[Asmified]
-
-== References
-

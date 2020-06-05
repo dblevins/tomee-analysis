@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$1.class
-
- - link:DefaultParamConverterProvider$1-asmified.java[Asmified]
-
-== References
-

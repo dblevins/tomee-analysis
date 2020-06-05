@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/InvokeDynamicInsnNode.class
-
- - link:InvokeDynamicInsnNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/InterceptorBindingBuilder$MethodCallbackComparator.class
-
- - link:InterceptorBindingBuilder$MethodCallbackComparator-asmified.java[Asmified]
-
-== References
-

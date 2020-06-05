@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/facelets/FaceletFunction.class
-
- - link:FaceletFunction-asmified.java[Asmified]
-
-== References
-

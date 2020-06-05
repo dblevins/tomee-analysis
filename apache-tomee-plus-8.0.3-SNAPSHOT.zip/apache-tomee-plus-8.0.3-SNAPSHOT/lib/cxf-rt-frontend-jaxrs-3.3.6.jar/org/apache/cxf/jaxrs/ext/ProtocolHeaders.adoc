@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/ProtocolHeaders.class
-
- - link:ProtocolHeaders-asmified.java[Asmified]
-
-== References
-

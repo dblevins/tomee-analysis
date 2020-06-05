@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/deser/std/NumberDeserializers$BigDecimalDeserializer.class
-
- - link:NumberDeserializers$BigDecimalDeserializer-asmified.java[Asmified]
-
-== References
-

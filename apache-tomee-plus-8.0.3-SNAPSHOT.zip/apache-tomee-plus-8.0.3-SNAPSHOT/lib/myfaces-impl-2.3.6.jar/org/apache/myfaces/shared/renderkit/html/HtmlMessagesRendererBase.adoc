@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase.class
-
- - link:HtmlMessagesRendererBase-asmified.java[Asmified]
-
-== References
-

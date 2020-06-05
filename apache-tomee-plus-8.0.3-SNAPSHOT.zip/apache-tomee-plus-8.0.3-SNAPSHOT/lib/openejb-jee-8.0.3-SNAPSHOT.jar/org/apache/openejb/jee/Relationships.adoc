@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Relationships.class
-
- - link:Relationships-asmified.java[Asmified]
-
-== References
-

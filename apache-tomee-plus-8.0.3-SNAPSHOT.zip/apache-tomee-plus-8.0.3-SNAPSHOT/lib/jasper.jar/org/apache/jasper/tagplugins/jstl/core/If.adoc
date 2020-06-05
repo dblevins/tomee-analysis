@@ -1,6 +1,0 @@
-= org/apache/jasper/tagplugins/jstl/core/If.class
-
- - link:If-asmified.java[Asmified]
-
-== References
-

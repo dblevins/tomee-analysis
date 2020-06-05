@@ -1,7 +1,0 @@
-= javax/jms/ConnectionMetaData.class
-
- - link:ConnectionMetaData-asmified.java[Asmified]
-
-== References
-
- - javax.jms.JMSException - 8

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/json/utils/JSONUtils$JettisonReader.class
-
- - link:JSONUtils$JettisonReader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/ForeignKeyMapping.class
-
- - link:ForeignKeyMapping-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/persistence/metamodel/IdentifiableType.class
-
- - link:IdentifiableType-asmified.java[Asmified]
-
-== References
-

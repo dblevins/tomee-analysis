@@ -1,6 +1,0 @@
-= com/sun/faces/application/view/ViewScopedCDIEventFireHelperImpl.class
-
- - link:ViewScopedCDIEventFireHelperImpl-asmified.java[Asmified]
-
-== References
-

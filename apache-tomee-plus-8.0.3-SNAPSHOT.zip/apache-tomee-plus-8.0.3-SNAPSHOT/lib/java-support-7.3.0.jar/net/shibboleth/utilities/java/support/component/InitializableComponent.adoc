@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/component/InitializableComponent.class
-
- - link:InitializableComponent-asmified.java[Asmified]
-
-== References
-

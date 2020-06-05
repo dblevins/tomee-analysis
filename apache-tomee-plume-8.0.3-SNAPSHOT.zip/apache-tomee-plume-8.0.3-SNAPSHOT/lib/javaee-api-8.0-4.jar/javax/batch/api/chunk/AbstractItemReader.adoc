@@ -1,7 +1,0 @@
-= javax/batch/api/chunk/AbstractItemReader.class
-
- - link:AbstractItemReader-asmified.java[Asmified]
-
-== References
-
- - javax.batch.api.chunk.ItemReader - 1

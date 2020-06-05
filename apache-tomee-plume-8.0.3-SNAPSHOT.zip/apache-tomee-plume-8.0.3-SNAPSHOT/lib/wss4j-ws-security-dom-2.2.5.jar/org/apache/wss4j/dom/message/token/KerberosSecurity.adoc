@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/token/KerberosSecurity.class
-
- - link:KerberosSecurity-asmified.java[Asmified]
-
-== References
-

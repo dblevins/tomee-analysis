@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/coordination/rmi/RMITransportManager.class
-
- - link:RMITransportManager-asmified.java[Asmified]
-
-== References
-

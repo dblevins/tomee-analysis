@@ -1,9 +1,0 @@
-= javax/jms/TopicConnectionFactory.class
-
- - link:TopicConnectionFactory-asmified.java[Asmified]
-
-== References
-
- - javax.jms.TopicConnection - 2
- - javax.jms.JMSException - 2
- - javax.jms.ConnectionFactory - 1

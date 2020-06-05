@@ -1,6 +1,0 @@
-= org/apache/neethi/builders/converters/AbstractOMConverter.class
-
- - link:AbstractOMConverter-asmified.java[Asmified]
-
-== References
-

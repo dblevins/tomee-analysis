@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/net/SimpleURLCanonicalizer.class
-
- - link:SimpleURLCanonicalizer-asmified.java[Asmified]
-
-== References
-

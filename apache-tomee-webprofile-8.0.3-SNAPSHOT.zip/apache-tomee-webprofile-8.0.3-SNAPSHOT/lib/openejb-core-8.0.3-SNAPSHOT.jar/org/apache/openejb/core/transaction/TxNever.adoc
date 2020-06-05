@@ -1,6 +1,0 @@
-= org/apache/openejb/core/transaction/TxNever.class
-
- - link:TxNever-asmified.java[Asmified]
-
-== References
-

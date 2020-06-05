@@ -1,7 +1,0 @@
-= javax/ws/rs/core/StreamingOutput.class
-
- - link:StreamingOutput-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.WebApplicationException - 1

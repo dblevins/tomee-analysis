@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/custom/AlgorithmSuiteLoader.class
-
- - link:AlgorithmSuiteLoader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= commonj/sdo/helper/XMLDocument.class
-
- - link:XMLDocument-asmified.java[Asmified]
-
-== References
-

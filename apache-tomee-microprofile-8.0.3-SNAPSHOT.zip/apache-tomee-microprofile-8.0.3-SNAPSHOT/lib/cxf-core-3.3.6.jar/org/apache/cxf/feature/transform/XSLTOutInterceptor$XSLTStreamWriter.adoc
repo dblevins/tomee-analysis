@@ -1,6 +1,0 @@
-= org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter.class
-
- - link:XSLTOutInterceptor$XSLTStreamWriter-asmified.java[Asmified]
-
-== References
-

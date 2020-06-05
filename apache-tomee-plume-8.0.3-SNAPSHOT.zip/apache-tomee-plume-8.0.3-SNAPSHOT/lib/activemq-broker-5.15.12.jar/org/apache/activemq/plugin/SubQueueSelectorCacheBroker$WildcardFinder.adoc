@@ -1,6 +1,0 @@
-= org/apache/activemq/plugin/SubQueueSelectorCacheBroker$WildcardFinder.class
-
- - link:SubQueueSelectorCacheBroker$WildcardFinder-asmified.java[Asmified]
-
-== References
-

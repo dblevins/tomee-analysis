@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ObjectInputStreamFiltered.class
-
- - link:ObjectInputStreamFiltered-asmified.java[Asmified]
-
-== References
-

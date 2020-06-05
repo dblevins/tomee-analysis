@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/control/OwbRequestContextController.class
-
- - link:OwbRequestContextController-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/connectionmanagerconfig/PoolingSupport.class
-
- - link:PoolingSupport-asmified.java[Asmified]
-
-== References
-

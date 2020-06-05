@@ -1,6 +1,0 @@
-= org/apache/activemq/thread/PooledTaskRunner$1.class
-
- - link:PooledTaskRunner$1-asmified.java[Asmified]
-
-== References
-

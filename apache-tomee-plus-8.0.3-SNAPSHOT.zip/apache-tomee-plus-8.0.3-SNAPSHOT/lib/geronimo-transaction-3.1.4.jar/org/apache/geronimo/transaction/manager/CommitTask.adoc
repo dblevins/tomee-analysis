@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/CommitTask.class
-
- - link:CommitTask-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/access/exception/InvalidArgumentException.class
-
- - link:InvalidArgumentException-asmified.java[Asmified]
-
-== References
-

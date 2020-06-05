@@ -1,6 +1,0 @@
-= org/jvnet/staxex/Base64Data.class
-
- - link:Base64Data-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/JAXBBinder.class
-
- - link:JAXBBinder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/LoginConfig$JAXB.class
-
- - link:LoginConfig$JAXB-asmified.java[Asmified]
-
-== References
-

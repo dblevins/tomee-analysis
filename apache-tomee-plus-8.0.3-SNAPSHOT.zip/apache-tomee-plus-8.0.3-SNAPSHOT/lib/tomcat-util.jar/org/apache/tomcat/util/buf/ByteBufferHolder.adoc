@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/buf/ByteBufferHolder.class
-
- - link:ByteBufferHolder-asmified.java[Asmified]
-
-== References
-

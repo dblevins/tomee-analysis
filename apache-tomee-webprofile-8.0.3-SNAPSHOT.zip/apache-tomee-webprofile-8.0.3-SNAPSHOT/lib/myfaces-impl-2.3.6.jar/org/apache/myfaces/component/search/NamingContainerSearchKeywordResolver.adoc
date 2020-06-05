@@ -1,6 +1,0 @@
-= org/apache/myfaces/component/search/NamingContainerSearchKeywordResolver.class
-
- - link:NamingContainerSearchKeywordResolver-asmified.java[Asmified]
-
-== References
-

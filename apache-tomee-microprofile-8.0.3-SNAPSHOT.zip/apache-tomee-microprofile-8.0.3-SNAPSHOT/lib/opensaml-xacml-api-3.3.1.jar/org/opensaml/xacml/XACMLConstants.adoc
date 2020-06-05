@@ -1,6 +1,0 @@
-= org/opensaml/xacml/XACMLConstants.class
-
- - link:XACMLConstants-asmified.java[Asmified]
-
-== References
-

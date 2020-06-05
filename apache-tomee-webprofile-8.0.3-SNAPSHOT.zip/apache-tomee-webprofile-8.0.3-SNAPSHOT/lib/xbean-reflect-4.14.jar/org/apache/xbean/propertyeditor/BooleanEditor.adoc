@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/BooleanEditor.class
-
- - link:BooleanEditor-asmified.java[Asmified]
-
-== References
-

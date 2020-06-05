@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/el/sql/TransactionTag.class
-
- - link:TransactionTag-asmified.java[Asmified]
-
-== References
-

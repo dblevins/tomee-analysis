@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter.class
-
- - link:OpenTracingFilter-asmified.java[Asmified]
-
-== References
-

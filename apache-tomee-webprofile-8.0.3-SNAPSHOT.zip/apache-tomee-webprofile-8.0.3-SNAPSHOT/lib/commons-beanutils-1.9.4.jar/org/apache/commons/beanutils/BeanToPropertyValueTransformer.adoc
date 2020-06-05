@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/BeanToPropertyValueTransformer.class
-
- - link:BeanToPropertyValueTransformer-asmified.java[Asmified]
-
-== References
-

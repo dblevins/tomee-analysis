@@ -1,6 +1,0 @@
-= org/apache/cxf/bus/spring/BusExtensionPostProcessor.class
-
- - link:BusExtensionPostProcessor-asmified.java[Asmified]
-
-== References
-

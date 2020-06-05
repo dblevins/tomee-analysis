@@ -1,6 +1,0 @@
-= jakarta/cache/annotation/CacheResult.class
-
- - link:CacheResult-asmified.java[Asmified]
-
-== References
-

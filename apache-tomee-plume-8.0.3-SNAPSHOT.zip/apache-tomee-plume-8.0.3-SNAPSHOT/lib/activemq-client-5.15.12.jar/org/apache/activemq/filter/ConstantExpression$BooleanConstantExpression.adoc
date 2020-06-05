@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/ConstantExpression$BooleanConstantExpression.class
-
- - link:ConstantExpression$BooleanConstantExpression-asmified.java[Asmified]
-
-== References
-

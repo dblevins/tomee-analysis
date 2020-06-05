@@ -1,6 +1,0 @@
-= jakarta/xml/bind/ServiceLoaderUtil.class
-
- - link:ServiceLoaderUtil-asmified.java[Asmified]
-
-== References
-

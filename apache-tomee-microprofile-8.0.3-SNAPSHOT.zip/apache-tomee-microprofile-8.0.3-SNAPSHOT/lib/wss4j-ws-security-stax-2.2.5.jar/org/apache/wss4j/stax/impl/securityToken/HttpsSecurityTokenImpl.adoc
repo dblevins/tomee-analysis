@@ -1,6 +1,0 @@
-= org/apache/wss4j/stax/impl/securityToken/HttpsSecurityTokenImpl.class
-
- - link:HttpsSecurityTokenImpl-asmified.java[Asmified]
-
-== References
-

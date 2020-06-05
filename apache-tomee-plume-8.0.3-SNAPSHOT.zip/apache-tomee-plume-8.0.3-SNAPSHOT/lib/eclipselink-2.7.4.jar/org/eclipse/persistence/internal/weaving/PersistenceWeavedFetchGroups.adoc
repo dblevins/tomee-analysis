@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/weaving/PersistenceWeavedFetchGroups.class
-
- - link:PersistenceWeavedFetchGroups-asmified.java[Asmified]
-
-== References
-

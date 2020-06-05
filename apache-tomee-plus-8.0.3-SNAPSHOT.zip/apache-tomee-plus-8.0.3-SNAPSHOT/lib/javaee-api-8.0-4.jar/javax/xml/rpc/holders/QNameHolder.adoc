@@ -1,7 +1,0 @@
-= javax/xml/rpc/holders/QNameHolder.class
-
- - link:QNameHolder-asmified.java[Asmified]
-
-== References
-
- - javax.xml.rpc.holders.Holder - 1

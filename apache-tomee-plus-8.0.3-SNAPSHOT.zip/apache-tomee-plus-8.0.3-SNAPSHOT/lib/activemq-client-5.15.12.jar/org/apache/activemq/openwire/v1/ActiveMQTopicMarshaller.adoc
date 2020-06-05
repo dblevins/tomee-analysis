@@ -1,6 +1,0 @@
-= org/apache/activemq/openwire/v1/ActiveMQTopicMarshaller.class
-
- - link:ActiveMQTopicMarshaller-asmified.java[Asmified]
-
-== References
-

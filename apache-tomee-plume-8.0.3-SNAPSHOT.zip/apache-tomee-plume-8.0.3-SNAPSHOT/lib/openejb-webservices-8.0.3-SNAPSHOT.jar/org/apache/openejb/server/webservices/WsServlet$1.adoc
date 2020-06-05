@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/WsServlet$1.class
-
- - link:WsServlet$1-asmified.java[Asmified]
-
-== References
-

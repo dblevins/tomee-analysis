@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/TransactionException.class
-
- - link:TransactionException-asmified.java[Asmified]
-
-== References
-

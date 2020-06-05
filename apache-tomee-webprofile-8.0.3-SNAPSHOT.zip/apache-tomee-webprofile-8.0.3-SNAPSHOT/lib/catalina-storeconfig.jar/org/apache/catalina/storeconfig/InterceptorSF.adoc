@@ -1,6 +1,0 @@
-= org/apache/catalina/storeconfig/InterceptorSF.class
-
- - link:InterceptorSF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/users/AbstractUser.class
-
- - link:AbstractUser-asmified.java[Asmified]
-
-== References
-

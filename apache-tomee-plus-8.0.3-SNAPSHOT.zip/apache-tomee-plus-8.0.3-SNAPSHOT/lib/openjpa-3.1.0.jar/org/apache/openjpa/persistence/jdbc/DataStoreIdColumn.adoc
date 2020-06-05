@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/DataStoreIdColumn.class
-
- - link:DataStoreIdColumn-asmified.java[Asmified]
-
-== References
-

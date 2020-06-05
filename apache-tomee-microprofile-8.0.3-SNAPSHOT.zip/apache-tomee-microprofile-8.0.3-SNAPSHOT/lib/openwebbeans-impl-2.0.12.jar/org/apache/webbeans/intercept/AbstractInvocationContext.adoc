@@ -1,6 +1,0 @@
-= org/apache/webbeans/intercept/AbstractInvocationContext.class
-
- - link:AbstractInvocationContext-asmified.java[Asmified]
-
-== References
-

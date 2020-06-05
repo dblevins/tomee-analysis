@@ -1,6 +1,0 @@
-= org/apache/openejb/core/Operation.class
-
- - link:Operation-asmified.java[Asmified]
-
-== References
-

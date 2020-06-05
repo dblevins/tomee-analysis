@@ -1,6 +1,0 @@
-= com/sun/activation/registries/LineTokenizer.class
-
- - link:LineTokenizer-asmified.java[Asmified]
-
-== References
-

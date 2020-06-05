@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/Assembler$ResourceAdapterReference.class
-
- - link:Assembler$ResourceAdapterReference-asmified.java[Asmified]
-
-== References
-

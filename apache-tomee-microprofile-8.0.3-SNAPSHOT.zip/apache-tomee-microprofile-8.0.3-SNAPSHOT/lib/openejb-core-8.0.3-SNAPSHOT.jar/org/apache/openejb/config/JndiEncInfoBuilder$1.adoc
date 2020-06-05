@@ -1,6 +1,0 @@
-= org/apache/openejb/config/JndiEncInfoBuilder$1.class
-
- - link:JndiEncInfoBuilder$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/mail/Session.class
-
- - link:Session-asmified.java[Asmified]
-
-== References
-

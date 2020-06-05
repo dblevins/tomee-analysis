@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/xml/XMLEntityMappingsWriter.class
-
- - link:XMLEntityMappingsWriter-asmified.java[Asmified]
-
-== References
-

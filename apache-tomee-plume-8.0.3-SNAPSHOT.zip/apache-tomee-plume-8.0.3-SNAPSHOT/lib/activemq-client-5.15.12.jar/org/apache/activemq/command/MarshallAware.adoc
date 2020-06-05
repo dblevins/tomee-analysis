@@ -1,6 +1,0 @@
-= org/apache/activemq/command/MarshallAware.class
-
- - link:MarshallAware-asmified.java[Asmified]
-
-== References
-

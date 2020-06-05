@@ -1,6 +1,0 @@
-= org/hsqldb/types/TimestampData.class
-
- - link:TimestampData-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/coordination/MetadataRefreshListener.class
-
- - link:MetadataRefreshListener-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/application/resource/ClasspathResourceHelper.class
-
- - link:ClasspathResourceHelper-asmified.java[Asmified]
-
-== References
-

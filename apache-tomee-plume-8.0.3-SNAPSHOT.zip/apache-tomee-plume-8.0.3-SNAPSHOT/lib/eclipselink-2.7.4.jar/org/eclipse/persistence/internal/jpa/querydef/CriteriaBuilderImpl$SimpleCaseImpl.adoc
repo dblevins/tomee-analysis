@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl$SimpleCaseImpl.class
-
- - link:CriteriaBuilderImpl$SimpleCaseImpl-asmified.java[Asmified]
-
-== References
-

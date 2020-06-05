@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/NullCapableValue.class
-
- - link:NullCapableValue-asmified.java[Asmified]
-
-== References
-

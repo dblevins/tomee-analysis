@@ -1,6 +1,0 @@
-= jakarta/resource/spi/SharingViolationException.class
-
- - link:SharingViolationException-asmified.java[Asmified]
-
-== References
-

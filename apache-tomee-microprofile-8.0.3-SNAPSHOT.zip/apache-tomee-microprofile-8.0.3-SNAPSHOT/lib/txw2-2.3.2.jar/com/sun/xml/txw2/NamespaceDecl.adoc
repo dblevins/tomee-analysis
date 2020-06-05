@@ -1,6 +1,0 @@
-= com/sun/xml/txw2/NamespaceDecl.class
-
- - link:NamespaceDecl-asmified.java[Asmified]
-
-== References
-

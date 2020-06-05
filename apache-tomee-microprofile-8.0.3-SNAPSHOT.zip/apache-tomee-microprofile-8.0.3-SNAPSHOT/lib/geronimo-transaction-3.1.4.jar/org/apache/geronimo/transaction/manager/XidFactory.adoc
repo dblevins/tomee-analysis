@@ -1,6 +1,0 @@
-= org/apache/geronimo/transaction/manager/XidFactory.class
-
- - link:XidFactory-asmified.java[Asmified]
-
-== References
-

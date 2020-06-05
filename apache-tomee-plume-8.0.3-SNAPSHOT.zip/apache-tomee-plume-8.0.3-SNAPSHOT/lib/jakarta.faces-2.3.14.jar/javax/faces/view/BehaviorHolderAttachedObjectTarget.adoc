@@ -1,7 +1,0 @@
-= javax/faces/view/BehaviorHolderAttachedObjectTarget.class
-
- - link:BehaviorHolderAttachedObjectTarget-asmified.java[Asmified]
-
-== References
-
- - javax.faces.view.AttachedObjectTarget - 1

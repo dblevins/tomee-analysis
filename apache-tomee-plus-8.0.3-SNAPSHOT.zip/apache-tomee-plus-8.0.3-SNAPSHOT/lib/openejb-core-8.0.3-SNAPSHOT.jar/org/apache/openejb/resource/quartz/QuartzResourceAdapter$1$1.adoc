@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/quartz/QuartzResourceAdapter$1$1.class
-
- - link:QuartzResourceAdapter$1$1-asmified.java[Asmified]
-
-== References
-

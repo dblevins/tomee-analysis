@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/ProxyMap.class
-
- - link:ProxyMap-asmified.java[Asmified]
-
-== References
-

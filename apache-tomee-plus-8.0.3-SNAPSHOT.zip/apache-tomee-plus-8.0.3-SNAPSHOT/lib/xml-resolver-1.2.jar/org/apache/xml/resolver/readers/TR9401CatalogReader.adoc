@@ -1,6 +1,0 @@
-= org/apache/xml/resolver/readers/TR9401CatalogReader.class
-
- - link:TR9401CatalogReader-asmified.java[Asmified]
-
-== References
-

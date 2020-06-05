@@ -1,6 +1,0 @@
-= org/apache/openejb/client/ConnectionManager.class
-
- - link:ConnectionManager-asmified.java[Asmified]
-
-== References
-

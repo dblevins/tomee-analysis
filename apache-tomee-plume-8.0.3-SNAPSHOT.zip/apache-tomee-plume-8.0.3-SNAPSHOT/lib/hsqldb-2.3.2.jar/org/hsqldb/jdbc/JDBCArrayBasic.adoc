@@ -1,6 +1,0 @@
-= org/hsqldb/jdbc/JDBCArrayBasic.class
-
- - link:JDBCArrayBasic-asmified.java[Asmified]
-
-== References
-

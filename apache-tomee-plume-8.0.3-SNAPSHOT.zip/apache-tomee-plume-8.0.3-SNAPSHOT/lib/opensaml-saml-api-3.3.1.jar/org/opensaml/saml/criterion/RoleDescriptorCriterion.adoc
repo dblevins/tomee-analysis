@@ -1,6 +1,0 @@
-= org/opensaml/saml/criterion/RoleDescriptorCriterion.class
-
- - link:RoleDescriptorCriterion-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/InsnList$InsnListIterator.class
-
- - link:InsnList$InsnListIterator-asmified.java[Asmified]
-
-== References
-

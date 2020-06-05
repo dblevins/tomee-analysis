@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/SwitchStatement$1StringSwitchCase.class
-
- - link:SwitchStatement$1StringSwitchCase-asmified.java[Asmified]
-
-== References
-

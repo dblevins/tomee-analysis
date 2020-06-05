@@ -1,6 +1,0 @@
-= org/bouncycastle/asn1/x509/qualified/BiometricData.class
-
- - link:BiometricData-asmified.java[Asmified]
-
-== References
-

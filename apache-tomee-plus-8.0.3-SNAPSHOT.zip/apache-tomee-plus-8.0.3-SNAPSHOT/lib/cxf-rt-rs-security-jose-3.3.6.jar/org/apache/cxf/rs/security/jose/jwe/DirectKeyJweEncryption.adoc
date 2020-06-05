@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/DirectKeyJweEncryption.class
-
- - link:DirectKeyJweEncryption-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/model/wadl/WadlGenerator.class
-
- - link:WadlGenerator-asmified.java[Asmified]
-
-== References
-

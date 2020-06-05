@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/ext/ResourceResolver.class
-
- - link:ResourceResolver-asmified.java[Asmified]
-
-== References
-

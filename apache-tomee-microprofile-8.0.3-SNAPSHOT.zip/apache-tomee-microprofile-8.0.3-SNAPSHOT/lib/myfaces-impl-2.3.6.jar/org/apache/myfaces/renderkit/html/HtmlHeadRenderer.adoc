@@ -1,6 +1,0 @@
-= org/apache/myfaces/renderkit/html/HtmlHeadRenderer.class
-
- - link:HtmlHeadRenderer-asmified.java[Asmified]
-
-== References
-

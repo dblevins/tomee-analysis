@@ -1,6 +1,0 @@
-= org/apache/openejb/cli/MainImpl.class
-
- - link:MainImpl-asmified.java[Asmified]
-
-== References
-

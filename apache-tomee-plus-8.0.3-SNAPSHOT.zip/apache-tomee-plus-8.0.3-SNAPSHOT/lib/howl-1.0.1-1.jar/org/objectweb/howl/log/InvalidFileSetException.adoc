@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/InvalidFileSetException.class
-
- - link:InvalidFileSetException-asmified.java[Asmified]
-
-== References
-

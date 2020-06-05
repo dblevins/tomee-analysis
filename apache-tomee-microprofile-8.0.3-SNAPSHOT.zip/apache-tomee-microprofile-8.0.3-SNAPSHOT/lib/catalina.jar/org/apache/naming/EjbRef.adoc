@@ -1,6 +1,0 @@
-= org/apache/naming/EjbRef.class
-
- - link:EjbRef-asmified.java[Asmified]
-
-== References
-

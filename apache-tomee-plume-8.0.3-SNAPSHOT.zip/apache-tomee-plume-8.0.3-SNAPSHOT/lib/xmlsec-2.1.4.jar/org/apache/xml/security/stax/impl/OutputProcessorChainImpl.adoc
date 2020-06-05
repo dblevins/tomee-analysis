@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/OutputProcessorChainImpl.class
-
- - link:OutputProcessorChainImpl-asmified.java[Asmified]
-
-== References
-

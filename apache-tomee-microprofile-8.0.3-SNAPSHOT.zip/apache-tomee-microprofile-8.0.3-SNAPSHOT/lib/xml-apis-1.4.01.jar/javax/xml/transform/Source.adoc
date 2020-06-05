@@ -1,6 +1,0 @@
-= javax/xml/transform/Source.class
-
- - link:Source-asmified.java[Asmified]
-
-== References
-

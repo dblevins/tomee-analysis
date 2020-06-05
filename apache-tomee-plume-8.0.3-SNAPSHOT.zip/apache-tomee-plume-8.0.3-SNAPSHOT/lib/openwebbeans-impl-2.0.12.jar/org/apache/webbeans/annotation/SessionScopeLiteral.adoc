@@ -1,6 +1,0 @@
-= org/apache/webbeans/annotation/SessionScopeLiteral.class
-
- - link:SessionScopeLiteral-asmified.java[Asmified]
-
-== References
-

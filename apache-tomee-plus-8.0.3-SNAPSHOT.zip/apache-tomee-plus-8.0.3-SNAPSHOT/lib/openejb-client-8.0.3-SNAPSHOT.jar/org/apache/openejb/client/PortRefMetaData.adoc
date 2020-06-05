@@ -1,6 +1,0 @@
-= org/apache/openejb/client/PortRefMetaData.class
-
- - link:PortRefMetaData-asmified.java[Asmified]
-
-== References
-

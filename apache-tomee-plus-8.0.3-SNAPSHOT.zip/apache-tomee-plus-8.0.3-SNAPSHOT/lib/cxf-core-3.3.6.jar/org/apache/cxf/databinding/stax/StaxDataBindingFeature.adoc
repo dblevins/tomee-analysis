@@ -1,6 +1,0 @@
-= org/apache/cxf/databinding/stax/StaxDataBindingFeature.class
-
- - link:StaxDataBindingFeature-asmified.java[Asmified]
-
-== References
-

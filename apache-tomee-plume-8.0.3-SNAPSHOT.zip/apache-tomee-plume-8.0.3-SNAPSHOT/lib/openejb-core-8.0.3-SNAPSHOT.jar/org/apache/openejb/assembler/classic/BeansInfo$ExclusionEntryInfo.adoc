@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/BeansInfo$ExclusionEntryInfo.class
-
- - link:BeansInfo$ExclusionEntryInfo-asmified.java[Asmified]
-
-== References
-

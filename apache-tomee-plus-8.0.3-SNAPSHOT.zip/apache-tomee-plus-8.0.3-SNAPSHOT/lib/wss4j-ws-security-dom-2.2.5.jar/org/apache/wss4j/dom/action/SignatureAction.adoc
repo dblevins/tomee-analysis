@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/action/SignatureAction.class
-
- - link:SignatureAction-asmified.java[Asmified]
-
-== References
-

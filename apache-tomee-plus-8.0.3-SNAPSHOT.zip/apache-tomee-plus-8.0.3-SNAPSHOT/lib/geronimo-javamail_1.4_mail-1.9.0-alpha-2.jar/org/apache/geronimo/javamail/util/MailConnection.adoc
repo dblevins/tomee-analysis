@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/util/MailConnection.class
-
- - link:MailConnection-asmified.java[Asmified]
-
-== References
-

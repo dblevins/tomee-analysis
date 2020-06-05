@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/access/behavior/IGroupCacheAccess.class
-
- - link:IGroupCacheAccess-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl.class
-
- - link:MicroProfileClientProxyImpl-asmified.java[Asmified]
-
-== References
-

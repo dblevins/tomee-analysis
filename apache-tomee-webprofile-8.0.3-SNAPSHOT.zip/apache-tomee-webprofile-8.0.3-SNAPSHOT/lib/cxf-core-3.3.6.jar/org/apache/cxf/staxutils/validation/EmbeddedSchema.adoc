@@ -1,6 +1,0 @@
-= org/apache/cxf/staxutils/validation/EmbeddedSchema.class
-
- - link:EmbeddedSchema-asmified.java[Asmified]
-
-== References
-

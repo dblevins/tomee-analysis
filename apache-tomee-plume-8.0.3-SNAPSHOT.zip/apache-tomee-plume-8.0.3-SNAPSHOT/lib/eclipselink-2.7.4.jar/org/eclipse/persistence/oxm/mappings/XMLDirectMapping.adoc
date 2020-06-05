@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/mappings/XMLDirectMapping.class
-
- - link:XMLDirectMapping-asmified.java[Asmified]
-
-== References
-

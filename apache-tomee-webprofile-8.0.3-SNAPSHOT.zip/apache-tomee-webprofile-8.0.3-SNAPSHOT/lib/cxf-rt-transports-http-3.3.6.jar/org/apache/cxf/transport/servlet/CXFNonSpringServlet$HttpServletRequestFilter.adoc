@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/servlet/CXFNonSpringServlet$HttpServletRequestFilter.class
-
- - link:CXFNonSpringServlet$HttpServletRequestFilter-asmified.java[Asmified]
-
-== References
-

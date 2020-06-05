@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/macs/VMPCMac.class
-
- - link:VMPCMac-asmified.java[Asmified]
-
-== References
-

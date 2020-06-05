@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/ldap/LdapQueryVisitor$1.class
-
- - link:LdapQueryVisitor$1-asmified.java[Asmified]
-
-== References
-

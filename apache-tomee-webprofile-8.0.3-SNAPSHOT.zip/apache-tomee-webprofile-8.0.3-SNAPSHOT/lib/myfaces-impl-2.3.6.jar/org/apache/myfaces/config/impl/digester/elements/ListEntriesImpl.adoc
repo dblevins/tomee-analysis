@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ListEntriesImpl.class
-
- - link:ListEntriesImpl-asmified.java[Asmified]
-
-== References
-

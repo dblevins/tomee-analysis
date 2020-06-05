@@ -1,6 +1,0 @@
-= org/apache/catalina/servlets/CGIServlet.class
-
- - link:CGIServlet-asmified.java[Asmified]
-
-== References
-

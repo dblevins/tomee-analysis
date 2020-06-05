@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/BinaryDataProvider$ReadingStreamingOutput.class
-
- - link:BinaryDataProvider$ReadingStreamingOutput-asmified.java[Asmified]
-
-== References
-

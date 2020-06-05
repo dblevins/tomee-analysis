@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/AnnotationInterceptors.class
-
- - link:AnnotationInterceptors-asmified.java[Asmified]
-
-== References
-

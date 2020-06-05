@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/DumperOptions.class
-
- - link:DumperOptions-asmified.java[Asmified]
-
-== References
-

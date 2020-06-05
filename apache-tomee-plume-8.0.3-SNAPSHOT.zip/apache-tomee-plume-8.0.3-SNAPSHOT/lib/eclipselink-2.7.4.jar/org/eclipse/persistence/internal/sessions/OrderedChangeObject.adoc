@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/OrderedChangeObject.class
-
- - link:OrderedChangeObject-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/neethi/builders/converters/OMToOMConverter.class
-
- - link:OMToOMConverter-asmified.java[Asmified]
-
-== References
-

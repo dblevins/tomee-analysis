@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/ContainerElementTypeType.class
-
- - link:ContainerElementTypeType-asmified.java[Asmified]
-
-== References
-

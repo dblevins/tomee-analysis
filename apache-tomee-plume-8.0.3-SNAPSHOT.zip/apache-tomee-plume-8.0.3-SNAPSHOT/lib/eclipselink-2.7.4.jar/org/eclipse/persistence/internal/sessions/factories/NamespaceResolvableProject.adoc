@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/NamespaceResolvableProject.class
-
- - link:NamespaceResolvableProject-asmified.java[Asmified]
-
-== References
-

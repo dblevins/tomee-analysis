@@ -1,6 +1,0 @@
-= org/apache/cxf/microprofile/client/MicroProfileServiceFactoryBean.class
-
- - link:MicroProfileServiceFactoryBean-asmified.java[Asmified]
-
-== References
-

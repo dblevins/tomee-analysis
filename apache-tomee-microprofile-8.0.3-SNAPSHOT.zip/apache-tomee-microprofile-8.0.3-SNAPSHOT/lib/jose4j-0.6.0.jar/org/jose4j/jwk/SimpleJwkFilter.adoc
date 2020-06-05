@@ -1,6 +1,0 @@
-= org/jose4j/jwk/SimpleJwkFilter.class
-
- - link:SimpleJwkFilter-asmified.java[Asmified]
-
-== References
-

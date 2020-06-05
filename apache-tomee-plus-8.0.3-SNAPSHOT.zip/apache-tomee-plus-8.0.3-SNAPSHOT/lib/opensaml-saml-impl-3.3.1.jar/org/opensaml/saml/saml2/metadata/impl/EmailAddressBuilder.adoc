@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/metadata/impl/EmailAddressBuilder.class
-
- - link:EmailAddressBuilder-asmified.java[Asmified]
-
-== References
-

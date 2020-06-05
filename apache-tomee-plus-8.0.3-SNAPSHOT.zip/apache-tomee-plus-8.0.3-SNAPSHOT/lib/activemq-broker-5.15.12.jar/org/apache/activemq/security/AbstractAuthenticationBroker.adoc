@@ -1,6 +1,0 @@
-= org/apache/activemq/security/AbstractAuthenticationBroker.class
-
- - link:AbstractAuthenticationBroker-asmified.java[Asmified]
-
-== References
-

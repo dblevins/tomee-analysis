@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/utils/counter/sampled/SampledCounterImpl$1.class
-
- - link:SampledCounterImpl$1-asmified.java[Asmified]
-
-== References
-

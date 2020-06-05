@@ -1,6 +1,0 @@
-= org/opensaml/soap/wstrust/KeySize.class
-
- - link:KeySize-asmified.java[Asmified]
-
-== References
-

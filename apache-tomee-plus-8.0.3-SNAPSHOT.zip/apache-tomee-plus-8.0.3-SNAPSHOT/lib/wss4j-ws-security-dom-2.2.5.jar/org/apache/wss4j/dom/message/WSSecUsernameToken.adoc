@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/message/WSSecUsernameToken.class
-
- - link:WSSecUsernameToken-asmified.java[Asmified]
-
-== References
-

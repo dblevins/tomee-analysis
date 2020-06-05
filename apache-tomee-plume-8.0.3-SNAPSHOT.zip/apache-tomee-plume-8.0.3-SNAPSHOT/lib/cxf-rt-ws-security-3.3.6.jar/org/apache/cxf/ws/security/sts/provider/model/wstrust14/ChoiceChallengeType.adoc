@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/wstrust14/ChoiceChallengeType.class
-
- - link:ChoiceChallengeType-asmified.java[Asmified]
-
-== References
-

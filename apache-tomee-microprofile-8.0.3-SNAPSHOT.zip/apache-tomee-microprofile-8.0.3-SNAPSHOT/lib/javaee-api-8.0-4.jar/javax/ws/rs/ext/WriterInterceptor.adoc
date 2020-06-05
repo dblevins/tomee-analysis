@@ -1,8 +1,0 @@
-= javax/ws/rs/ext/WriterInterceptor.class
-
- - link:WriterInterceptor-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.ext.WriterInterceptorContext - 1
- - javax.ws.rs.WebApplicationException - 1

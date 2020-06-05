@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/metadata/xml/XMLEntityMappings.class
-
- - link:XMLEntityMappings-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/annotation/AnnotationFinder.class
-
- - link:AnnotationFinder-asmified.java[Asmified]
-
-== References
-

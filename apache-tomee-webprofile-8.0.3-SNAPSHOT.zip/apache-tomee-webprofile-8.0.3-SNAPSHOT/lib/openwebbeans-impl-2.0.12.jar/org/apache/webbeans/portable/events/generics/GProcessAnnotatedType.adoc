@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/events/generics/GProcessAnnotatedType.class
-
- - link:GProcessAnnotatedType-asmified.java[Asmified]
-
-== References
-

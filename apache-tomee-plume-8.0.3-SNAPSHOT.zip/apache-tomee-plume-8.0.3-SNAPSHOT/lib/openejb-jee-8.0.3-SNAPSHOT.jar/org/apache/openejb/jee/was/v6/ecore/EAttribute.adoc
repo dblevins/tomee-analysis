@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/ecore/EAttribute.class
-
- - link:EAttribute-asmified.java[Asmified]
-
-== References
-

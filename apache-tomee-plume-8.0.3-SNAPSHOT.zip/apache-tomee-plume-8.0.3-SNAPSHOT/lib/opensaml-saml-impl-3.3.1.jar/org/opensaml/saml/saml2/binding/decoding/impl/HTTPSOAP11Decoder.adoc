@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/binding/decoding/impl/HTTPSOAP11Decoder.class
-
- - link:HTTPSOAP11Decoder-asmified.java[Asmified]
-
-== References
-

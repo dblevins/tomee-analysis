@@ -1,6 +1,0 @@
-= org/apache/catalina/ha/deploy/UndeployMessage.class
-
- - link:UndeployMessage-asmified.java[Asmified]
-
-== References
-

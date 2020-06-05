@@ -1,6 +1,0 @@
-= org/apache/commons/codec/digest/DigestUtils.class
-
- - link:DigestUtils-asmified.java[Asmified]
-
-== References
-

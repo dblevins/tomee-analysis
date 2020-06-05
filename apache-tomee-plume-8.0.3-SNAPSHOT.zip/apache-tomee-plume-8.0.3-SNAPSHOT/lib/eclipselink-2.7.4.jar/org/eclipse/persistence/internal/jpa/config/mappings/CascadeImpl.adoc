@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/config/mappings/CascadeImpl.class
-
- - link:CascadeImpl-asmified.java[Asmified]
-
-== References
-

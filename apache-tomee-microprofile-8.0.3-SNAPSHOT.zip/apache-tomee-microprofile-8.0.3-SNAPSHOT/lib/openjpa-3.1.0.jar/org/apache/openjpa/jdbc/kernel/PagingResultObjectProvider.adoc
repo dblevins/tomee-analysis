@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/PagingResultObjectProvider.class
-
- - link:PagingResultObjectProvider-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/HistogramImpl$1.class
-
- - link:HistogramImpl$1-asmified.java[Asmified]
-
-== References
-

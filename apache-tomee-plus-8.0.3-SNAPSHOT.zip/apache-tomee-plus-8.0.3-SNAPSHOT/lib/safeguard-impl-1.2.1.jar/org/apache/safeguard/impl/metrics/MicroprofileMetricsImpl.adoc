@@ -1,6 +1,0 @@
-= org/apache/safeguard/impl/metrics/MicroprofileMetricsImpl.class
-
- - link:MicroprofileMetricsImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/tribes/transport/nio/NioReceiverMBean.class
-
- - link:NioReceiverMBean-asmified.java[Asmified]
-
-== References
-

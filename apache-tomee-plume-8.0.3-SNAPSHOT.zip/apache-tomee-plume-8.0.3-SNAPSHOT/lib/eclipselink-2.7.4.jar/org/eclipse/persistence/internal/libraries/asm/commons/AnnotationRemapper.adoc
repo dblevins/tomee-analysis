@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/commons/AnnotationRemapper.class
-
- - link:AnnotationRemapper-asmified.java[Asmified]
-
-== References
-

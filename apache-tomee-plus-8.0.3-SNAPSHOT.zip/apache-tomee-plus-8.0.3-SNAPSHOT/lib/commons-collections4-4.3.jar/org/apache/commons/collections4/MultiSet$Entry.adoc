@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/MultiSet$Entry.class
-
- - link:MultiSet$Entry-asmified.java[Asmified]
-
-== References
-

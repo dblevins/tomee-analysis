@@ -1,6 +1,0 @@
-= org/apache/commons/collections/functors/NullIsFalsePredicate.class
-
- - link:NullIsFalsePredicate-asmified.java[Asmified]
-
-== References
-

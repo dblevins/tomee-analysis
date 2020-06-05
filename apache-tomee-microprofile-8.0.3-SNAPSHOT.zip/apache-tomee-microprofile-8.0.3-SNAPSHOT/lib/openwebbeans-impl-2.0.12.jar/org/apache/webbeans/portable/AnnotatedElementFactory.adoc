@@ -1,6 +1,0 @@
-= org/apache/webbeans/portable/AnnotatedElementFactory.class
-
- - link:AnnotatedElementFactory-asmified.java[Asmified]
-
-== References
-

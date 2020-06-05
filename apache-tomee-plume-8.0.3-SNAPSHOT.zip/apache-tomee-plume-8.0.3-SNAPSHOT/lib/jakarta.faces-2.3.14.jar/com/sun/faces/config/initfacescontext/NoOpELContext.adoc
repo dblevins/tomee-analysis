@@ -1,6 +1,0 @@
-= com/sun/faces/config/initfacescontext/NoOpELContext.class
-
- - link:NoOpELContext-asmified.java[Asmified]
-
-== References
-

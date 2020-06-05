@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/BinaryDataUnmarshalRecord.class
-
- - link:BinaryDataUnmarshalRecord-asmified.java[Asmified]
-
-== References
-

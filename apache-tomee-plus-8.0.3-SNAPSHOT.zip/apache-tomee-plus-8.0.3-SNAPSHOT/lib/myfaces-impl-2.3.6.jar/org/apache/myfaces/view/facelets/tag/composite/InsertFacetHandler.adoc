@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/composite/InsertFacetHandler.class
-
- - link:InsertFacetHandler-asmified.java[Asmified]
-
-== References
-

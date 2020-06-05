@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/resources/unversioned/PersistenceUnitResource.class
-
- - link:PersistenceUnitResource-asmified.java[Asmified]
-
-== References
-

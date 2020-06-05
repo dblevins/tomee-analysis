@@ -1,6 +1,0 @@
-= org/apache/openejb/util/helper/CommandHelper.class
-
- - link:CommandHelper-asmified.java[Asmified]
-
-== References
-

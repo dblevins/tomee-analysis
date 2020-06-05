@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/factory/DefaultBatchArtifactFactory$1.class
-
- - link:DefaultBatchArtifactFactory$1-asmified.java[Asmified]
-
-== References
-

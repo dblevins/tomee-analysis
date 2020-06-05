@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/lang/jstl/BooleanLiteral.class
-
- - link:BooleanLiteral-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/transport/nntp/NNTPReply.class
-
- - link:NNTPReply-asmified.java[Asmified]
-
-== References
-

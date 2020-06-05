@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/jcajce/provider/McEliece.class
-
- - link:McEliece-asmified.java[Asmified]
-
-== References
-

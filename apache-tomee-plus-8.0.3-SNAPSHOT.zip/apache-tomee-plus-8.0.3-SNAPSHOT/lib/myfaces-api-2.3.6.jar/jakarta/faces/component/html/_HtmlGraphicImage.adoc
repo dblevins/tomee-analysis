@@ -1,6 +1,0 @@
-= jakarta/faces/component/html/_HtmlGraphicImage.class
-
- - link:_HtmlGraphicImage-asmified.java[Asmified]
-
-== References
-

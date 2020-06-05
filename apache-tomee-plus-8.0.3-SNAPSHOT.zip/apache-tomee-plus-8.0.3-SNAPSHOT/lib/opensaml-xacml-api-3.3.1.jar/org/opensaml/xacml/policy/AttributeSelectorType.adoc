@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/AttributeSelectorType.class
-
- - link:AttributeSelectorType-asmified.java[Asmified]
-
-== References
-

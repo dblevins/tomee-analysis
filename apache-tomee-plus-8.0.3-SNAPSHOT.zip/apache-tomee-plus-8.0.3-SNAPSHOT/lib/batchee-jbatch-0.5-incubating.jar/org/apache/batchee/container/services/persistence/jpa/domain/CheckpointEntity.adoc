@@ -1,6 +1,0 @@
-= org/apache/batchee/container/services/persistence/jpa/domain/CheckpointEntity.class
-
- - link:CheckpointEntity-asmified.java[Asmified]
-
-== References
-

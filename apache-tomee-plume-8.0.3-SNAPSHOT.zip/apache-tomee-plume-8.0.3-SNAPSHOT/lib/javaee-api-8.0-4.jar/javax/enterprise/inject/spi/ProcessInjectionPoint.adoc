@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/ProcessInjectionPoint.class
-
- - link:ProcessInjectionPoint-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.InjectionPoint - 2
- - javax.enterprise.inject.spi.configurator.InjectionPointConfigurator - 1

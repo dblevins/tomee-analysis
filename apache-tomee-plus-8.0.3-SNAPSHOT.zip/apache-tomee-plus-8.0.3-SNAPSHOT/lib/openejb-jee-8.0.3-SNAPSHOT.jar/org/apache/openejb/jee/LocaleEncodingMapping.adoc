@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/LocaleEncodingMapping.class
-
- - link:LocaleEncodingMapping-asmified.java[Asmified]
-
-== References
-

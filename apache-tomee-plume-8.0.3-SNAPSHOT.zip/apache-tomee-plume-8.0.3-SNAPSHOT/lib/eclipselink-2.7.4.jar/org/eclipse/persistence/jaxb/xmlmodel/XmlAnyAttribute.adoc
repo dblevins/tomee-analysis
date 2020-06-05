@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute.class
-
- - link:XmlAnyAttribute-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/BinaryTypeBinding$ExternalAnnotationStatus.class
-
- - link:BinaryTypeBinding$ExternalAnnotationStatus-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= javax/transaction/xa/Xid.class
-
- - link:Xid-asmified.java[Asmified]
-
-== References
-

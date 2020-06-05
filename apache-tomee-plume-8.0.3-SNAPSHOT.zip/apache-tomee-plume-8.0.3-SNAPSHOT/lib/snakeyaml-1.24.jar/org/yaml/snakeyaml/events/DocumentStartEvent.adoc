@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/events/DocumentStartEvent.class
-
- - link:DocumentStartEvent-asmified.java[Asmified]
-
-== References
-

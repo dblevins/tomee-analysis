@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ObjectRecipe$MethodMember.class
-
- - link:ObjectRecipe$MethodMember-asmified.java[Asmified]
-
-== References
-

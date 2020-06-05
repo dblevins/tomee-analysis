@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/binding/security/impl/BaseSAMLSimpleSignatureSecurityHandler.class
-
- - link:BaseSAMLSimpleSignatureSecurityHandler-asmified.java[Asmified]
-
-== References
-

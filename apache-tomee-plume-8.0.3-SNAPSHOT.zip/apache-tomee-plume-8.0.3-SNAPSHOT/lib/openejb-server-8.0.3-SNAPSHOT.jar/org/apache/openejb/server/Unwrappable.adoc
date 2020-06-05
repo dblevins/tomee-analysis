@@ -1,6 +1,0 @@
-= org/apache/openejb/server/Unwrappable.class
-
- - link:Unwrappable-asmified.java[Asmified]
-
-== References
-

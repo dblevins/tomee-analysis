@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/common/JoseUtils.class
-
- - link:JoseUtils-asmified.java[Asmified]
-
-== References
-

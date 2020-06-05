@@ -1,7 +1,0 @@
-= javax/xml/soap/SOAPBodyElement.class
-
- - link:SOAPBodyElement-asmified.java[Asmified]
-
-== References
-
- - javax.xml.soap.SOAPElement - 1

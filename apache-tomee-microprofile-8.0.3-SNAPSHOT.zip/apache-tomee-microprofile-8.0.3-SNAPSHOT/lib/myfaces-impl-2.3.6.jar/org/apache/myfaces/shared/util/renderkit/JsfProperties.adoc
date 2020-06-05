@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/renderkit/JsfProperties.class
-
- - link:JsfProperties-asmified.java[Asmified]
-
-== References
-

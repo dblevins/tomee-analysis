@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/addressing/soap/DecoupledFaultHandler.class
-
- - link:DecoupledFaultHandler-asmified.java[Asmified]
-
-== References
-

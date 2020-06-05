@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/util/LeafNodeBuilderCustomizableContextImpl.class
-
- - link:LeafNodeBuilderCustomizableContextImpl-asmified.java[Asmified]
-
-== References
-

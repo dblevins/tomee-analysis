@@ -1,6 +1,0 @@
-= org/apache/commons/codec/language/Metaphone.class
-
- - link:Metaphone-asmified.java[Asmified]
-
-== References
-

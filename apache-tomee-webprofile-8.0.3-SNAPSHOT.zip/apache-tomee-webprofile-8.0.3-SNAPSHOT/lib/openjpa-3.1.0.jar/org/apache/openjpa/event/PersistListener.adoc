@@ -1,6 +1,0 @@
-= org/apache/openjpa/event/PersistListener.class
-
- - link:PersistListener-asmified.java[Asmified]
-
-== References
-

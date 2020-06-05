@@ -1,9 +1,0 @@
-= javax/validation/bootstrap/GenericBootstrap.class
-
- - link:GenericBootstrap-asmified.java[Asmified]
-
-== References
-
- - javax.validation.Configuration - 1
- - javax.validation.ValidationProviderResolver - 1
- - javax.validation.bootstrap.GenericBootstrap - 1

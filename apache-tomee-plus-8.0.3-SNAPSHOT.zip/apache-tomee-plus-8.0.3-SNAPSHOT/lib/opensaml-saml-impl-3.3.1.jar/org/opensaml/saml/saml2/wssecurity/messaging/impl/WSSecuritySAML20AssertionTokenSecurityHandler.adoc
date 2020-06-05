@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/wssecurity/messaging/impl/WSSecuritySAML20AssertionTokenSecurityHandler.class
-
- - link:WSSecuritySAML20AssertionTokenSecurityHandler-asmified.java[Asmified]
-
-== References
-

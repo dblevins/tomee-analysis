@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/annotation/JsonCreator$Mode.class
-
- - link:JsonCreator$Mode-asmified.java[Asmified]
-
-== References
-

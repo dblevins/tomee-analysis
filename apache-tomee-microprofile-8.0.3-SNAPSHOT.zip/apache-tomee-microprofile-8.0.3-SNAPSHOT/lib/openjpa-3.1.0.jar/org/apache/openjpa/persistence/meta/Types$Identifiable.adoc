@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/Types$Identifiable.class
-
- - link:Types$Identifiable-asmified.java[Asmified]
-
-== References
-

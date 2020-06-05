@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$LabelRule.class
-
- - link:ASMContentHandler$LabelRule-asmified.java[Asmified]
-
-== References
-

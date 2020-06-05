@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ResultTypeMarshaller.class
-
- - link:ResultTypeMarshaller-asmified.java[Asmified]
-
-== References
-

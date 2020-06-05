@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/ForeignKey.class
-
- - link:ForeignKey-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/transport/http/HttpDestinationConfig.class
-
- - link:HttpDestinationConfig-asmified.java[Asmified]
-
-== References
-

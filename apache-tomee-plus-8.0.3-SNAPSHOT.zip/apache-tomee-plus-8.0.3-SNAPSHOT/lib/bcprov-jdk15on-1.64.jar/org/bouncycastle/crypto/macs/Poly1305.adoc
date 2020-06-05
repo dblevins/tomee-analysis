@@ -1,6 +1,0 @@
-= org/bouncycastle/crypto/macs/Poly1305.class
-
- - link:Poly1305-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/jvnet/fastinfoset/sax/PrimitiveTypeContentHandler.class
-
- - link:PrimitiveTypeContentHandler-asmified.java[Asmified]
-
-== References
-

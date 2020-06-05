@@ -1,6 +1,0 @@
-= org/apache/openjpa/kernel/VersionAttachStrategy.class
-
- - link:VersionAttachStrategy-asmified.java[Asmified]
-
-== References
-

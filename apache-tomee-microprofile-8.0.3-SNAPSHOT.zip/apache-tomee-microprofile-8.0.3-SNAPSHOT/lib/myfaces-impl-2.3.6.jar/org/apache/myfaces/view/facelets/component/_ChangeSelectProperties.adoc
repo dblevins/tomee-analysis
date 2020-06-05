@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/component/_ChangeSelectProperties.class
-
- - link:_ChangeSelectProperties-asmified.java[Asmified]
-
-== References
-

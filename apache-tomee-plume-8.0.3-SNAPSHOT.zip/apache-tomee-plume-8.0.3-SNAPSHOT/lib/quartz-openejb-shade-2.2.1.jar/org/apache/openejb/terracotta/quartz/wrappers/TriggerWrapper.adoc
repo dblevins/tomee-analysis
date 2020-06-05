@@ -1,6 +1,0 @@
-= org/apache/openejb/terracotta/quartz/wrappers/TriggerWrapper.class
-
- - link:TriggerWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/Partial.class
-
- - link:Partial-asmified.java[Asmified]
-
-== References
-

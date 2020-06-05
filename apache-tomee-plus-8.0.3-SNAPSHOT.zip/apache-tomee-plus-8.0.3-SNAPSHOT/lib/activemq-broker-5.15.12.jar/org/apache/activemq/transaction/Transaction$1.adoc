@@ -1,6 +1,0 @@
-= org/apache/activemq/transaction/Transaction$1.class
-
- - link:Transaction$1-asmified.java[Asmified]
-
-== References
-

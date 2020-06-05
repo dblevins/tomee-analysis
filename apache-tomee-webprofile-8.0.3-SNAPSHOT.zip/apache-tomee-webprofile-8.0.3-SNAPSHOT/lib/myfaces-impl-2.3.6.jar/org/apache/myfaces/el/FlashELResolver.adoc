@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/FlashELResolver.class
-
- - link:FlashELResolver-asmified.java[Asmified]
-
-== References
-

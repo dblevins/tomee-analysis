@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/RequestScopedThreadContextListener.class
-
- - link:RequestScopedThreadContextListener-asmified.java[Asmified]
-
-== References
-

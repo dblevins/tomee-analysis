@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/core/impl/AudienceRestrictionMarshaller.class
-
- - link:AudienceRestrictionMarshaller-asmified.java[Asmified]
-
-== References
-

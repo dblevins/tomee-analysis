@@ -1,6 +1,0 @@
-= jakarta/persistence/spi/LoadState.class
-
- - link:LoadState-asmified.java[Asmified]
-
-== References
-

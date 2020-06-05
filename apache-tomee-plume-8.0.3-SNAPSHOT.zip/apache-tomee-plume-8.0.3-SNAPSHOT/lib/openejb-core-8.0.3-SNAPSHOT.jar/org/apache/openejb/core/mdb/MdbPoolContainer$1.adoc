@@ -1,6 +1,0 @@
-= org/apache/openejb/core/mdb/MdbPoolContainer$1.class
-
- - link:MdbPoolContainer$1-asmified.java[Asmified]
-
-== References
-

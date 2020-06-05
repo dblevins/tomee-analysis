@@ -1,8 +1,0 @@
-= javax/json/spi/JsonProvider$1.class
-
- - link:JsonProvider$1-asmified.java[Asmified]
-
-== References
-
- - javax.json.spi.JsonProvider - 5
- - javax.json.spi.JsonProvider$1 - 1

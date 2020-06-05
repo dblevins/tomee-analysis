@@ -1,6 +1,0 @@
-= com/sun/faces/el/ManagedBeanELResolver.class
-
- - link:ManagedBeanELResolver-asmified.java[Asmified]
-
-== References
-

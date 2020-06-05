@@ -1,6 +1,0 @@
-= org/apache/cxf/binding/soap/SoapVersionEditor.class
-
- - link:SoapVersionEditor-asmified.java[Asmified]
-
-== References
-

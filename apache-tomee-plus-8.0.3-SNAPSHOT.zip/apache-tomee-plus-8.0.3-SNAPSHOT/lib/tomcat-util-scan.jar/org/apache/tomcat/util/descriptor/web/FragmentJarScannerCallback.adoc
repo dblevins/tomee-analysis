@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/FragmentJarScannerCallback.class
-
- - link:FragmentJarScannerCallback-asmified.java[Asmified]
-
-== References
-

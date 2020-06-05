@@ -1,6 +1,0 @@
-= jakarta/mail/MessageAware.class
-
- - link:MessageAware-asmified.java[Asmified]
-
-== References
-

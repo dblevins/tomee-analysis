@@ -1,7 +1,0 @@
-= javax/persistence/CacheStoreMode.class
-
- - link:CacheStoreMode-asmified.java[Asmified]
-
-== References
-
- - javax.persistence.CacheStoreMode - 25

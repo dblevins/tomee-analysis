@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/data/KahaXATransactionId.class
-
- - link:KahaXATransactionId-asmified.java[Asmified]
-
-== References
-

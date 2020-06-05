@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/event/ContainerSystemPreDestroy.class
-
- - link:ContainerSystemPreDestroy-asmified.java[Asmified]
-
-== References
-

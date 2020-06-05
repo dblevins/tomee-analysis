@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/factories/model/property/PropertyConfig.class
-
- - link:PropertyConfig-asmified.java[Asmified]
-
-== References
-

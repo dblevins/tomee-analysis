@@ -1,6 +1,0 @@
-= org/hsqldb/persist/HsqlDatabaseProperties.class
-
- - link:HsqlDatabaseProperties-asmified.java[Asmified]
-
-== References
-

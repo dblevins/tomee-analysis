@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/changetracking/DeferredChangeDetectionPolicy.class
-
- - link:DeferredChangeDetectionPolicy-asmified.java[Asmified]
-
-== References
-

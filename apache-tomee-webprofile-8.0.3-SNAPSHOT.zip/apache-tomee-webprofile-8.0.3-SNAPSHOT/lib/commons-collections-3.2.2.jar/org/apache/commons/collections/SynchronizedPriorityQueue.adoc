@@ -1,6 +1,0 @@
-= org/apache/commons/collections/SynchronizedPriorityQueue.class
-
- - link:SynchronizedPriorityQueue-asmified.java[Asmified]
-
-== References
-

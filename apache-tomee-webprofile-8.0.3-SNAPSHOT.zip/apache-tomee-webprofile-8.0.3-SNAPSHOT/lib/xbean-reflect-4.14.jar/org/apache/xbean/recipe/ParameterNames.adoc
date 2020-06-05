@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ParameterNames.class
-
- - link:ParameterNames-asmified.java[Asmified]
-
-== References
-

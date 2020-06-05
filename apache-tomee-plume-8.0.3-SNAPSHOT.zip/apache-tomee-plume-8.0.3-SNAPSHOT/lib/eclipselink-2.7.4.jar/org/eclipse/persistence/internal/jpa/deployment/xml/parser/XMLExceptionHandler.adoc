@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/deployment/xml/parser/XMLExceptionHandler.class
-
- - link:XMLExceptionHandler-asmified.java[Asmified]
-
-== References
-

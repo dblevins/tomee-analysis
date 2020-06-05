@@ -1,6 +1,0 @@
-= org/apache/cxf/management/jmx/type/package-info.class
-
- - link:package-info-asmified.java[Asmified]
-
-== References
-

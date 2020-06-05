@@ -1,6 +1,0 @@
-= jakarta/jms/XATopicConnection.class
-
- - link:XATopicConnection-asmified.java[Asmified]
-
-== References
-

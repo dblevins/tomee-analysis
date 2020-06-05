@@ -1,6 +1,0 @@
-= org/apache/cxf/common/util/PropertiesLoaderUtils.class
-
- - link:PropertiesLoaderUtils-asmified.java[Asmified]
-
-== References
-

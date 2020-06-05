@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxb/io/DataReaderImpl$WSUIDValidationHandler.class
-
- - link:DataReaderImpl$WSUIDValidationHandler-asmified.java[Asmified]
-
-== References
-

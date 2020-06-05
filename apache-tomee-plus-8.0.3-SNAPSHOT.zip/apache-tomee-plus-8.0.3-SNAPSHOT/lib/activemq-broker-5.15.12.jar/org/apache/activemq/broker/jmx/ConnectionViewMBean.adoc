@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/ConnectionViewMBean.class
-
- - link:ConnectionViewMBean-asmified.java[Asmified]
-
-== References
-

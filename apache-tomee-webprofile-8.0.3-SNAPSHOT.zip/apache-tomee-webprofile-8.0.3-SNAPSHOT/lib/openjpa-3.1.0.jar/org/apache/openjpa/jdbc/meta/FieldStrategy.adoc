@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/FieldStrategy.class
-
- - link:FieldStrategy-asmified.java[Asmified]
-
-== References
-

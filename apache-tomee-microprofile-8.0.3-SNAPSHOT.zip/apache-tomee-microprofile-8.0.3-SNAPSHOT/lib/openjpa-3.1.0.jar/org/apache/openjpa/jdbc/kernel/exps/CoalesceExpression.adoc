@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/CoalesceExpression.class
-
- - link:CoalesceExpression-asmified.java[Asmified]
-
-== References
-

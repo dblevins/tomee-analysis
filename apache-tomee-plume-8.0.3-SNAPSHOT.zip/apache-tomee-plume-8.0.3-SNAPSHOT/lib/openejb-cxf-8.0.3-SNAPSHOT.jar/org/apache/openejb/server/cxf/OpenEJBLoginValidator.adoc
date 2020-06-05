@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/OpenEJBLoginValidator.class
-
- - link:OpenEJBLoginValidator-asmified.java[Asmified]
-
-== References
-

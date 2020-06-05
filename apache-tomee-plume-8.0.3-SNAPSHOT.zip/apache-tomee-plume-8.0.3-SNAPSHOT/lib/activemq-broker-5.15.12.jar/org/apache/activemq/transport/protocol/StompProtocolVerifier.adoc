@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/protocol/StompProtocolVerifier.class
-
- - link:StompProtocolVerifier-asmified.java[Asmified]
-
-== References
-

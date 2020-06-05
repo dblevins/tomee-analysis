@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl.class
-
- - link:WriterInterceptorContextImpl-asmified.java[Asmified]
-
-== References
-

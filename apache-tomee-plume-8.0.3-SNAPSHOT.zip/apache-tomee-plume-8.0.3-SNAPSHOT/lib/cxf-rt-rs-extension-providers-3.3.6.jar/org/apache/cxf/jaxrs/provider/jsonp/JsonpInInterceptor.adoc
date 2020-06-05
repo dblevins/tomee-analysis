@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/jsonp/JsonpInInterceptor.class
-
- - link:JsonpInInterceptor-asmified.java[Asmified]
-
-== References
-

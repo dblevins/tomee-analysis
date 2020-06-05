@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl11/NSManager.class
-
- - link:NSManager-asmified.java[Asmified]
-
-== References
-

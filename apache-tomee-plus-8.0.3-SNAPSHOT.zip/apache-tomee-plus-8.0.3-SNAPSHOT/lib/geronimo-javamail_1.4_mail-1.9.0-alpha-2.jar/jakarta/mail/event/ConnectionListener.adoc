@@ -1,6 +1,0 @@
-= jakarta/mail/event/ConnectionListener.class
-
- - link:ConnectionListener-asmified.java[Asmified]
-
-== References
-

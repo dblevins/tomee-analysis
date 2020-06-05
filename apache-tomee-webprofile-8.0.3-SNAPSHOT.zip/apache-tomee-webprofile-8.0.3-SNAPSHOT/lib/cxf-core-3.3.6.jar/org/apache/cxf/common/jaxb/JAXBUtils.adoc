@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBUtils.class
-
- - link:JAXBUtils-asmified.java[Asmified]
-
-== References
-

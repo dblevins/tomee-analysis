@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/cdi/CDIs.class
-
- - link:CDIs-asmified.java[Asmified]
-
-== References
-

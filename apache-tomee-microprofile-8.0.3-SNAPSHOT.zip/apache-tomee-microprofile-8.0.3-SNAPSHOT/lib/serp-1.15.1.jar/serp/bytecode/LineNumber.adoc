@@ -1,6 +1,0 @@
-= serp/bytecode/LineNumber.class
-
- - link:LineNumber-asmified.java[Asmified]
-
-== References
-

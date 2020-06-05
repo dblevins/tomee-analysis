@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/ResultSetType.class
-
- - link:ResultSetType-asmified.java[Asmified]
-
-== References
-

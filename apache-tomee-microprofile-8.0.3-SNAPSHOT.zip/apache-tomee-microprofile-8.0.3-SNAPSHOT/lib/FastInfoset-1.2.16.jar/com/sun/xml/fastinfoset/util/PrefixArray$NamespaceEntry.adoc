@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/util/PrefixArray$NamespaceEntry.class
-
- - link:PrefixArray$NamespaceEntry-asmified.java[Asmified]
-
-== References
-

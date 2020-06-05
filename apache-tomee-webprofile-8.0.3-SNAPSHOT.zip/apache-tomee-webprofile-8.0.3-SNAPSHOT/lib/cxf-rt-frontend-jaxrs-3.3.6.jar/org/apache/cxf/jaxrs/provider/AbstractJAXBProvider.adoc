@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.class
-
- - link:AbstractJAXBProvider-asmified.java[Asmified]
-
-== References
-

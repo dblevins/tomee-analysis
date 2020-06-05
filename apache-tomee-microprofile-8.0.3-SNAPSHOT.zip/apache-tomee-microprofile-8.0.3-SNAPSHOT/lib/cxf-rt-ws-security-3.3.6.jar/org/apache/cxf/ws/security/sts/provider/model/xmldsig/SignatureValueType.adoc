@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/sts/provider/model/xmldsig/SignatureValueType.class
-
- - link:SignatureValueType-asmified.java[Asmified]
-
-== References
-

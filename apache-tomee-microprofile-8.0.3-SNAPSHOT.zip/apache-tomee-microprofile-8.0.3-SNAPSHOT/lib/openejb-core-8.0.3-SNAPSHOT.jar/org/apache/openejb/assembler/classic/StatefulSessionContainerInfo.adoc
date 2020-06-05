@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/StatefulSessionContainerInfo.class
-
- - link:StatefulSessionContainerInfo-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/ClientProxyImpl$1.class
-
- - link:ClientProxyImpl$1-asmified.java[Asmified]
-
-== References
-

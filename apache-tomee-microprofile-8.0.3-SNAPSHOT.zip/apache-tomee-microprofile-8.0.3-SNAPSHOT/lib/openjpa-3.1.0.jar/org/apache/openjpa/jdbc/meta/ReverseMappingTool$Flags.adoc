@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/ReverseMappingTool$Flags.class
-
- - link:ReverseMappingTool$Flags-asmified.java[Asmified]
-
-== References
-

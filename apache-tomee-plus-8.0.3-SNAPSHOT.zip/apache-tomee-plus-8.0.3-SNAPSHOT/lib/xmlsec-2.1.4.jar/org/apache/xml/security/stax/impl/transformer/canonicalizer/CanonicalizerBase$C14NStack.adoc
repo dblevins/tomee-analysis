@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/transformer/canonicalizer/CanonicalizerBase$C14NStack.class
-
- - link:CanonicalizerBase$C14NStack-asmified.java[Asmified]
-
-== References
-

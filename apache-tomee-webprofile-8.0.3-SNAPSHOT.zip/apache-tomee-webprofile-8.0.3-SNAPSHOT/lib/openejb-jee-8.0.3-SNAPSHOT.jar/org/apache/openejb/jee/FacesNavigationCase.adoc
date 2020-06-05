@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/FacesNavigationCase.class
-
- - link:FacesNavigationCase-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/exc/InvalidFormatException.class
-
- - link:InvalidFormatException-asmified.java[Asmified]
-
-== References
-

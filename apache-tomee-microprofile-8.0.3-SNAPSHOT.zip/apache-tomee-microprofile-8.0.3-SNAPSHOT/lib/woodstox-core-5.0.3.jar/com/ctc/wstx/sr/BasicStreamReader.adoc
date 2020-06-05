@@ -1,6 +1,0 @@
-= com/ctc/wstx/sr/BasicStreamReader.class
-
- - link:BasicStreamReader-asmified.java[Asmified]
-
-== References
-

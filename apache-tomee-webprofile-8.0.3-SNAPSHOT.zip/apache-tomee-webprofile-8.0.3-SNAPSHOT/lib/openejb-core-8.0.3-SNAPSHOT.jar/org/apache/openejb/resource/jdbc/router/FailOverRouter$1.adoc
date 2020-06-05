@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/router/FailOverRouter$1.class
-
- - link:FailOverRouter$1-asmified.java[Asmified]
-
-== References
-

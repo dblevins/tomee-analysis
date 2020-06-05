@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMDigestMethod$WHIRLPOOL.class
-
- - link:DOMDigestMethod$WHIRLPOOL-asmified.java[Asmified]
-
-== References
-

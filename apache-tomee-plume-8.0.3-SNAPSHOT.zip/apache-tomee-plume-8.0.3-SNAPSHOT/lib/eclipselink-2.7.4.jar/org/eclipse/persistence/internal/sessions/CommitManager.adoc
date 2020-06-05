@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/sessions/CommitManager.class
-
- - link:CommitManager-asmified.java[Asmified]
-
-== References
-

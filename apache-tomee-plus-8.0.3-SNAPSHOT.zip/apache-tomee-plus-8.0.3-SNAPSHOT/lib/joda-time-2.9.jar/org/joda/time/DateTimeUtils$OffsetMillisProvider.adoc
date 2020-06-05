@@ -1,6 +1,0 @@
-= org/joda/time/DateTimeUtils$OffsetMillisProvider.class
-
- - link:DateTimeUtils$OffsetMillisProvider-asmified.java[Asmified]
-
-== References
-

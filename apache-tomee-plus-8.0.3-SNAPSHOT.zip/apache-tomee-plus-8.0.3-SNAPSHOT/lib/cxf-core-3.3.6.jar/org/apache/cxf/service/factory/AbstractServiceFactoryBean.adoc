@@ -1,6 +1,0 @@
-= org/apache/cxf/service/factory/AbstractServiceFactoryBean.class
-
- - link:AbstractServiceFactoryBean-asmified.java[Asmified]
-
-== References
-

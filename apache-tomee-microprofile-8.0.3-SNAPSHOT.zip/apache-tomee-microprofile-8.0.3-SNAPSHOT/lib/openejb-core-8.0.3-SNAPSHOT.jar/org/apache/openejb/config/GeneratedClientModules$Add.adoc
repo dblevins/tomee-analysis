@@ -1,6 +1,0 @@
-= org/apache/openejb/config/GeneratedClientModules$Add.class
-
- - link:GeneratedClientModules$Add-asmified.java[Asmified]
-
-== References
-

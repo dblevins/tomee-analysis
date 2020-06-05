@@ -1,6 +1,0 @@
-= org/apache/openejb/core/entity/EntityInstanceManager$SynchronizationWrapper.class
-
- - link:EntityInstanceManager$SynchronizationWrapper-asmified.java[Asmified]
-
-== References
-

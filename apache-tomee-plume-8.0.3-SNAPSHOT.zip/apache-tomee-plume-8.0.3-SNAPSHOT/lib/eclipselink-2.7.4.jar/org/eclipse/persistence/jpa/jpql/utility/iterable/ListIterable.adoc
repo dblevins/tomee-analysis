@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/utility/iterable/ListIterable.class
-
- - link:ListIterable-asmified.java[Asmified]
-
-== References
-

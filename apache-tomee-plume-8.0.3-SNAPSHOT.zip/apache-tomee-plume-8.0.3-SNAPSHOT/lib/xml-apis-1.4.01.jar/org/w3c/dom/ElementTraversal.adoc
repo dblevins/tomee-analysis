@@ -1,6 +1,0 @@
-= org/w3c/dom/ElementTraversal.class
-
- - link:ElementTraversal-asmified.java[Asmified]
-
-== References
-

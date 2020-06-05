@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/DecoderStateTables.class
-
- - link:DecoderStateTables-asmified.java[Asmified]
-
-== References
-

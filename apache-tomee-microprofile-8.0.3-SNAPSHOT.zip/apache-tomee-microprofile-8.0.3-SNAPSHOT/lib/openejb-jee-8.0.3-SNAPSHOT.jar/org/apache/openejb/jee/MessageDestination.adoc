@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/MessageDestination.class
-
- - link:MessageDestination-asmified.java[Asmified]
-
-== References
-

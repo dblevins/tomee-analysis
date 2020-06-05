@@ -1,6 +1,0 @@
-= jakarta/jws/WebResult.class
-
- - link:WebResult-asmified.java[Asmified]
-
-== References
-

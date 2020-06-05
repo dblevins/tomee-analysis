@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/FetchGroup.class
-
- - link:FetchGroup-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/parser/ParserImpl$ParseStreamStart.class
-
- - link:ParserImpl$ParseStreamStart-asmified.java[Asmified]
-
-== References
-

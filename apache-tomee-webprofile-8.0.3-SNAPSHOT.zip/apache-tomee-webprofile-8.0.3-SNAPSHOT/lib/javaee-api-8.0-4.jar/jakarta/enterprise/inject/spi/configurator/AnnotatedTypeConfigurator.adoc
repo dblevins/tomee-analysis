@@ -1,6 +1,0 @@
-= jakarta/enterprise/inject/spi/configurator/AnnotatedTypeConfigurator.class
-
- - link:AnnotatedTypeConfigurator-asmified.java[Asmified]
-
-== References
-

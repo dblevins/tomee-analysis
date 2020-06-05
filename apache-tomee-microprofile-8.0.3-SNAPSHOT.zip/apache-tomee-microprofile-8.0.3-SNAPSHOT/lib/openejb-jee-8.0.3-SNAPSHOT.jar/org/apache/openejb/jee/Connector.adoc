@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Connector.class
-
- - link:Connector-asmified.java[Asmified]
-
-== References
-

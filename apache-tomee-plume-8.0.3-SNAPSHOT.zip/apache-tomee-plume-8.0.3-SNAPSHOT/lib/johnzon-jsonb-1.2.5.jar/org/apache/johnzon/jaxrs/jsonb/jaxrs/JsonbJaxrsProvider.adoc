@@ -1,6 +1,0 @@
-= org/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider.class
-
- - link:JsonbJaxrsProvider-asmified.java[Asmified]
-
-== References
-

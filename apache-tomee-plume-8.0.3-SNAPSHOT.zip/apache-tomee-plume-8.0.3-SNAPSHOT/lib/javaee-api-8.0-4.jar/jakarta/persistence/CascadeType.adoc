@@ -1,6 +1,0 @@
-= jakarta/persistence/CascadeType.class
-
- - link:CascadeType-asmified.java[Asmified]
-
-== References
-

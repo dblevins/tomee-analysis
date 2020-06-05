@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/jba/cmp/AutoIncrementTemplate.class
-
- - link:AutoIncrementTemplate-asmified.java[Asmified]
-
-== References
-

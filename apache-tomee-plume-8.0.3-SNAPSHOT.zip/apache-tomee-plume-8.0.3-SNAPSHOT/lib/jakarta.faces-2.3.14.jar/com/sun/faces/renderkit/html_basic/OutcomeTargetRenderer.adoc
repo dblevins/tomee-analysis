@@ -1,6 +1,0 @@
-= com/sun/faces/renderkit/html_basic/OutcomeTargetRenderer.class
-
- - link:OutcomeTargetRenderer-asmified.java[Asmified]
-
-== References
-

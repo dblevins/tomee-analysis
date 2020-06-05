@@ -1,6 +1,0 @@
-= org/w3c/dom/css/CSSValue.class
-
- - link:CSSValue-asmified.java[Asmified]
-
-== References
-

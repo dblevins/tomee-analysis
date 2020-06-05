@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ConnectByClauseBNF.class
-
- - link:ConnectByClauseBNF-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/indirection/ProtectedValueHolder.class
-
- - link:ProtectedValueHolder-asmified.java[Asmified]
-
-== References
-

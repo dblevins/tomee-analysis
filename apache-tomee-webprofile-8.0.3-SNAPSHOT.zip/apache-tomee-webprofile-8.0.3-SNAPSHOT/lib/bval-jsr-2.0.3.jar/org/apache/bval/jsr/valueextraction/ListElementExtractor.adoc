@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/valueextraction/ListElementExtractor.class
-
- - link:ListElementExtractor-asmified.java[Asmified]
-
-== References
-

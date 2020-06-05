@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/SecurityConstraint.class
-
- - link:SecurityConstraint-asmified.java[Asmified]
-
-== References
-

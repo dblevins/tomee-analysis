@@ -1,6 +1,0 @@
-= org/apache/activemq/protobuf/compiler/FieldDescriptor.class
-
- - link:FieldDescriptor-asmified.java[Asmified]
-
-== References
-

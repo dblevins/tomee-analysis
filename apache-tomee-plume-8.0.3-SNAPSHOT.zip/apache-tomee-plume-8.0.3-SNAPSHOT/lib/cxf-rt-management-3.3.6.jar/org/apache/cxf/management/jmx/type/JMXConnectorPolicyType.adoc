@@ -1,6 +1,0 @@
-= org/apache/cxf/management/jmx/type/JMXConnectorPolicyType.class
-
- - link:JMXConnectorPolicyType-asmified.java[Asmified]
-
-== References
-

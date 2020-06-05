@@ -1,6 +1,0 @@
-= io/opentracing/ScopeManager.class
-
- - link:ScopeManager-asmified.java[Asmified]
-
-== References
-

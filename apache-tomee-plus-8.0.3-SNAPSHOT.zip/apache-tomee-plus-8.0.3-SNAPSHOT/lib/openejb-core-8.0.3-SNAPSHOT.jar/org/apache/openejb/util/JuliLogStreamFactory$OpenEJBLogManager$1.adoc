@@ -1,6 +1,0 @@
-= org/apache/openejb/util/JuliLogStreamFactory$OpenEJBLogManager$1.class
-
- - link:JuliLogStreamFactory$OpenEJBLogManager$1-asmified.java[Asmified]
-
-== References
-

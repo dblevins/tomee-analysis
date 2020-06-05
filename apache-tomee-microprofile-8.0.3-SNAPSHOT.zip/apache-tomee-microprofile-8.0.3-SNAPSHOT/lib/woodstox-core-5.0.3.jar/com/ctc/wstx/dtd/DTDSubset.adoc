@@ -1,6 +1,0 @@
-= com/ctc/wstx/dtd/DTDSubset.class
-
- - link:DTDSubset-asmified.java[Asmified]
-
-== References
-

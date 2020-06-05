@@ -1,6 +1,0 @@
-= org/opensaml/saml/common/SAMLObjectSupport.class
-
- - link:SAMLObjectSupport-asmified.java[Asmified]
-
-== References
-

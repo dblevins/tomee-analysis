@@ -1,6 +1,0 @@
-= org/apache/tomcat/websocket/AsyncChannelWrapperSecure$LongToIntegerFuture.class
-
- - link:AsyncChannelWrapperSecure$LongToIntegerFuture-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/util/StoreFacadeTypeRegistry.class
-
- - link:StoreFacadeTypeRegistry-asmified.java[Asmified]
-
-== References
-

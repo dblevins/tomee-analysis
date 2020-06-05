@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/BeanPropertyTagRule$DynamicPropertyMetadata.class
-
- - link:BeanPropertyTagRule$DynamicPropertyMetadata-asmified.java[Asmified]
-
-== References
-

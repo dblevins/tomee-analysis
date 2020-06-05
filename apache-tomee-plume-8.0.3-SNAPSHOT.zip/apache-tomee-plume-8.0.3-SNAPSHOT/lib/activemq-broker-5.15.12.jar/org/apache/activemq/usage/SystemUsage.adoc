@@ -1,6 +1,0 @@
-= org/apache/activemq/usage/SystemUsage.class
-
- - link:SystemUsage-asmified.java[Asmified]
-
-== References
-

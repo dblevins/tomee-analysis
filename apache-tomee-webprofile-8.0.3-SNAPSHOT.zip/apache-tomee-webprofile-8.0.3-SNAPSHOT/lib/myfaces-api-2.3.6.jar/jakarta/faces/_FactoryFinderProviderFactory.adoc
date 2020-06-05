@@ -1,6 +1,0 @@
-= jakarta/faces/_FactoryFinderProviderFactory.class
-
- - link:_FactoryFinderProviderFactory-asmified.java[Asmified]
-
-== References
-

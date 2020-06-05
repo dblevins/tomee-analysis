@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/ui/ComponentRef.class
-
- - link:ComponentRef-asmified.java[Asmified]
-
-== References
-

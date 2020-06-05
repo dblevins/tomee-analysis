@@ -1,6 +1,0 @@
-= org/opensaml/xacml/policy/impl/AttributeDesignatorTypeUnmarshaller.class
-
- - link:AttributeDesignatorTypeUnmarshaller-asmified.java[Asmified]
-
-== References
-

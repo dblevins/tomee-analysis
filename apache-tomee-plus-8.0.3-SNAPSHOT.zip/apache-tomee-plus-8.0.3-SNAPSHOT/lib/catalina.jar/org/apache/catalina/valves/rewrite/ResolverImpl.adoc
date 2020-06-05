@@ -1,6 +1,0 @@
-= org/apache/catalina/valves/rewrite/ResolverImpl.class
-
- - link:ResolverImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/monitoring/ManagedMBean$MBeanFeatureInfoComparator.class
-
- - link:ManagedMBean$MBeanFeatureInfoComparator-asmified.java[Asmified]
-
-== References
-

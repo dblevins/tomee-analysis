@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/Taglib.class
-
- - link:Taglib-asmified.java[Asmified]
-
-== References
-

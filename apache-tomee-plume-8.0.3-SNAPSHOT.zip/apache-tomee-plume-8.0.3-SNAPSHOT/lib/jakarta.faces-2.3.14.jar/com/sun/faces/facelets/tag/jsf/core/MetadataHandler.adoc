@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jsf/core/MetadataHandler.class
-
- - link:MetadataHandler-asmified.java[Asmified]
-
-== References
-

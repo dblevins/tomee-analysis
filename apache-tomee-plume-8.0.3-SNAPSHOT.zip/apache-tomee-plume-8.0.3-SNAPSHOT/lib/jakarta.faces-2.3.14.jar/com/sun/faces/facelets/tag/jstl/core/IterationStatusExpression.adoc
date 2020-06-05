@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/jstl/core/IterationStatusExpression.class
-
- - link:IterationStatusExpression-asmified.java[Asmified]
-
-== References
-

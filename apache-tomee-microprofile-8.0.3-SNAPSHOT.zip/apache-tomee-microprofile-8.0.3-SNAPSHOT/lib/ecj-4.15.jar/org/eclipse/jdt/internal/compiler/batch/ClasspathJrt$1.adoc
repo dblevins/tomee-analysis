@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/ClasspathJrt$1.class
-
- - link:ClasspathJrt$1-asmified.java[Asmified]
-
-== References
-

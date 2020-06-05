@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb3/RoleMapping.class
-
- - link:RoleMapping-asmified.java[Asmified]
-
-== References
-

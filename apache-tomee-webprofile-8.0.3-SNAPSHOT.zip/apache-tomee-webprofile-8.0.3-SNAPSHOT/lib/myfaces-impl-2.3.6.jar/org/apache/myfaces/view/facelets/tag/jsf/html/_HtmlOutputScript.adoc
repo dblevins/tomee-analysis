@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/tag/jsf/html/_HtmlOutputScript.class
-
- - link:_HtmlOutputScript-asmified.java[Asmified]
-
-== References
-

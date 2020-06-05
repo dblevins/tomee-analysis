@@ -1,8 +1,0 @@
-= javax/management/j2ee/statistics/JMSConnectionStats.class
-
- - link:JMSConnectionStats-asmified.java[Asmified]
-
-== References
-
- - javax.management.j2ee.statistics.JMSSessionStats - 1
- - javax.management.j2ee.statistics.Stats - 1

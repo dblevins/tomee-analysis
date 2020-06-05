@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/service/factory/MethodNameSoapActionServiceConfiguration.class
-
- - link:MethodNameSoapActionServiceConfiguration-asmified.java[Asmified]
-
-== References
-

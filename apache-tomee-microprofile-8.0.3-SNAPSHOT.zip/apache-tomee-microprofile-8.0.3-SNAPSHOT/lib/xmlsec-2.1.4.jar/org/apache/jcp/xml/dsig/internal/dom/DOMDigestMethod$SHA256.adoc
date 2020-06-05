@@ -1,6 +1,0 @@
-= org/apache/jcp/xml/dsig/internal/dom/DOMDigestMethod$SHA256.class
-
- - link:DOMDigestMethod$SHA256-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/ReverseMappingTool$ReverseCodeGenerator.class
-
- - link:ReverseMappingTool$ReverseCodeGenerator-asmified.java[Asmified]
-
-== References
-

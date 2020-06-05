@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/HashMapUtils.class
-
- - link:HashMapUtils-asmified.java[Asmified]
-
-== References
-

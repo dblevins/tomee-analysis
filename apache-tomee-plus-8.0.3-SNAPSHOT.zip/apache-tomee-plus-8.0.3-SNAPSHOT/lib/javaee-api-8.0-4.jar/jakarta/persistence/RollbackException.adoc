@@ -1,6 +1,0 @@
-= jakarta/persistence/RollbackException.class
-
- - link:RollbackException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/faces/push/WebsocketPushContext.class
-
- - link:WebsocketPushContext-asmified.java[Asmified]
-
-== References
-

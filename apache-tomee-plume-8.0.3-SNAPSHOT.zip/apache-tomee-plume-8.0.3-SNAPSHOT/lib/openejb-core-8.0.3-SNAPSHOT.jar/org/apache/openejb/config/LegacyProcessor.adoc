@@ -1,6 +1,0 @@
-= org/apache/openejb/config/LegacyProcessor.class
-
- - link:LegacyProcessor-asmified.java[Asmified]
-
-== References
-

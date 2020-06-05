@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/util/IDGenerator.class
-
- - link:IDGenerator-asmified.java[Asmified]
-
-== References
-

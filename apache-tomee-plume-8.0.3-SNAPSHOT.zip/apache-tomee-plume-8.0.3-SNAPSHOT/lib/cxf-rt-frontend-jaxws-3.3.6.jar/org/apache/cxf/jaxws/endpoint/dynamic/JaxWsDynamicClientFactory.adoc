@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/endpoint/dynamic/JaxWsDynamicClientFactory.class
-
- - link:JaxWsDynamicClientFactory-asmified.java[Asmified]
-
-== References
-

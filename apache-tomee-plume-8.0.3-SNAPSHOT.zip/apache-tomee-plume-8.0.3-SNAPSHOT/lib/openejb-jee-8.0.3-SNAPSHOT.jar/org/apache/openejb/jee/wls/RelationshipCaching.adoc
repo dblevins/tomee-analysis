@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/wls/RelationshipCaching.class
-
- - link:RelationshipCaching-asmified.java[Asmified]
-
-== References
-

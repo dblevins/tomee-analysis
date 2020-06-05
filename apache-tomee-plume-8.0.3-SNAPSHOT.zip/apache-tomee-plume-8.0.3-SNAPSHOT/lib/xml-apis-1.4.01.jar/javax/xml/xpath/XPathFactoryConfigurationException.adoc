@@ -1,6 +1,0 @@
-= javax/xml/xpath/XPathFactoryConfigurationException.class
-
- - link:XPathFactoryConfigurationException-asmified.java[Asmified]
-
-== References
-

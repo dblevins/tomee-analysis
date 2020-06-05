@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/WsConstants.class
-
- - link:WsConstants-asmified.java[Asmified]
-
-== References
-

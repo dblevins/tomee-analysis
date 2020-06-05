@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/openshift/OpenshiftPostgreSQLPropertiesProvider.class
-
- - link:OpenshiftPostgreSQLPropertiesProvider-asmified.java[Asmified]
-
-== References
-

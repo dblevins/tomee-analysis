@@ -1,6 +1,0 @@
-= jakarta/json/JsonValue$1.class
-
- - link:JsonValue$1-asmified.java[Asmified]
-
-== References
-

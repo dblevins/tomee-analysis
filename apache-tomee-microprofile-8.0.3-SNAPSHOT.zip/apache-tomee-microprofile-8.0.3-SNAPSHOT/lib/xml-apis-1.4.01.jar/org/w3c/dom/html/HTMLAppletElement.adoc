@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLAppletElement.class
-
- - link:HTMLAppletElement-asmified.java[Asmified]
-
-== References
-

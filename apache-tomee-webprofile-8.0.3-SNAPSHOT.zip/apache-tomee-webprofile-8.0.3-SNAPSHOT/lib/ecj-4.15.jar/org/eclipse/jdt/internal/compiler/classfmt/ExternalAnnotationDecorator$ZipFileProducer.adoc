@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/classfmt/ExternalAnnotationDecorator$ZipFileProducer.class
-
- - link:ExternalAnnotationDecorator$ZipFileProducer-asmified.java[Asmified]
-
-== References
-

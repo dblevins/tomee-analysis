@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/tcp/QualityOfServiceUtils.class
-
- - link:QualityOfServiceUtils-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/taglibs/standard/tag/common/fmt/LocaleUtil.class
-
- - link:LocaleUtil-asmified.java[Asmified]
-
-== References
-

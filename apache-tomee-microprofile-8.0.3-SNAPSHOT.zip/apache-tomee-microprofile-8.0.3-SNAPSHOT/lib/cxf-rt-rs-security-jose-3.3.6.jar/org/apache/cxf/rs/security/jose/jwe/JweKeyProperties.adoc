@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jwe/JweKeyProperties.class
-
- - link:JweKeyProperties-asmified.java[Asmified]
-
-== References
-

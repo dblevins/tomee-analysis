@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/dbws/ProviderHelper$1.class
-
- - link:ProviderHelper$1-asmified.java[Asmified]
-
-== References
-

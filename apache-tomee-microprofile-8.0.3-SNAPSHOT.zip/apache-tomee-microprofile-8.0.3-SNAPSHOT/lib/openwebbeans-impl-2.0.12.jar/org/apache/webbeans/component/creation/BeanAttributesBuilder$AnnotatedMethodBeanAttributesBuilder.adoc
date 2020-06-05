@@ -1,6 +1,0 @@
-= org/apache/webbeans/component/creation/BeanAttributesBuilder$AnnotatedMethodBeanAttributesBuilder.class
-
- - link:BeanAttributesBuilder$AnnotatedMethodBeanAttributesBuilder-asmified.java[Asmified]
-
-== References
-

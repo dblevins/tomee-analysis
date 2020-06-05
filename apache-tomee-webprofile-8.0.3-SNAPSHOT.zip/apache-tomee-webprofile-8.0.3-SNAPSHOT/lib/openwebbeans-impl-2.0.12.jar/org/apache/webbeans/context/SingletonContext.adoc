@@ -1,6 +1,0 @@
-= org/apache/webbeans/context/SingletonContext.class
-
- - link:SingletonContext-asmified.java[Asmified]
-
-== References
-

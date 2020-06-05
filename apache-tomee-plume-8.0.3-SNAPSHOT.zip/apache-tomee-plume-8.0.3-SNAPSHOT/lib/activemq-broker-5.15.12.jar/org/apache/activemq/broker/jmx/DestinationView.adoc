@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/DestinationView.class
-
- - link:DestinationView-asmified.java[Asmified]
-
-== References
-

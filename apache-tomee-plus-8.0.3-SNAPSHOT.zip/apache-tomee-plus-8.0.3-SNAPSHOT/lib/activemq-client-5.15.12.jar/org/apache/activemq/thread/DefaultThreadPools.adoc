@@ -1,6 +1,0 @@
-= org/apache/activemq/thread/DefaultThreadPools.class
-
- - link:DefaultThreadPools-asmified.java[Asmified]
-
-== References
-

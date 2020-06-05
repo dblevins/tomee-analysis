@@ -1,6 +1,0 @@
-= org/apache/openejb/cdi/CurrentCreationalContext.class
-
- - link:CurrentCreationalContext-asmified.java[Asmified]
-
-== References
-

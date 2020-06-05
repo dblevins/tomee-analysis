@@ -1,6 +1,0 @@
-= org/apache/commons/collections/collection/TransformedCollection.class
-
- - link:TransformedCollection-asmified.java[Asmified]
-
-== References
-

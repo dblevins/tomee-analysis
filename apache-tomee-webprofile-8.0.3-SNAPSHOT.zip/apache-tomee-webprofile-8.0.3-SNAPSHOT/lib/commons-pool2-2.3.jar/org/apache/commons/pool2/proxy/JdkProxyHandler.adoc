@@ -1,6 +1,0 @@
-= org/apache/commons/pool2/proxy/JdkProxyHandler.class
-
- - link:JdkProxyHandler-asmified.java[Asmified]
-
-== References
-

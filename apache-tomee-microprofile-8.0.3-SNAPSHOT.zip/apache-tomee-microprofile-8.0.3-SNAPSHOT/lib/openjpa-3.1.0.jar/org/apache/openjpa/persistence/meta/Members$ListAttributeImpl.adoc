@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/meta/Members$ListAttributeImpl.class
-
- - link:Members$ListAttributeImpl-asmified.java[Asmified]
-
-== References
-

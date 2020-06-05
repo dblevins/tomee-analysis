@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/DeserializationConfig.class
-
- - link:DeserializationConfig-asmified.java[Asmified]
-
-== References
-

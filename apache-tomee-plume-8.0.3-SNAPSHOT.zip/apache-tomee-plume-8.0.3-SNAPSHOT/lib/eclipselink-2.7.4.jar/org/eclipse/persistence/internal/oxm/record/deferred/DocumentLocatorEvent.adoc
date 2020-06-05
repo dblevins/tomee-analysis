@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/deferred/DocumentLocatorEvent.class
-
- - link:DocumentLocatorEvent-asmified.java[Asmified]
-
-== References
-

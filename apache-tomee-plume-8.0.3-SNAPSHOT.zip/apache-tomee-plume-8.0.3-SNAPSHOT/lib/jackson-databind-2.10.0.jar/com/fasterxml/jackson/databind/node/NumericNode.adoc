@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/node/NumericNode.class
-
- - link:NumericNode-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/algorithm/FloatEncodingAlgorithm.class
-
- - link:FloatEncodingAlgorithm-asmified.java[Asmified]
-
-== References
-

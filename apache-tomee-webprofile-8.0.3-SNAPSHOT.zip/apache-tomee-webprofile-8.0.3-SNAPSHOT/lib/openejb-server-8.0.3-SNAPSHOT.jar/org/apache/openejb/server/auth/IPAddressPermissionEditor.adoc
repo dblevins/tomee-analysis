@@ -1,6 +1,0 @@
-= org/apache/openejb/server/auth/IPAddressPermissionEditor.class
-
- - link:IPAddressPermissionEditor-asmified.java[Asmified]
-
-== References
-

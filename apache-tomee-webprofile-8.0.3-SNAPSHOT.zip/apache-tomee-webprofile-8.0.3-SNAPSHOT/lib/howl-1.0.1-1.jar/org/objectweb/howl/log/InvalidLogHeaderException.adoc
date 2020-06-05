@@ -1,6 +1,0 @@
-= org/objectweb/howl/log/InvalidLogHeaderException.class
-
- - link:InvalidLogHeaderException-asmified.java[Asmified]
-
-== References
-

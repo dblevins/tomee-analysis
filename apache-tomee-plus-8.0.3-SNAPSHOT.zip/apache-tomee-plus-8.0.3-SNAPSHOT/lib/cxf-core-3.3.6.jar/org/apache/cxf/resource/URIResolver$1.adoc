@@ -1,6 +1,0 @@
-= org/apache/cxf/resource/URIResolver$1.class
-
- - link:URIResolver$1-asmified.java[Asmified]
-
-== References
-

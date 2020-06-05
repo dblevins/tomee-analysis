@@ -1,6 +1,0 @@
-= org/eclipse/persistence/oxm/documentpreservation/AppendNewElementsOrderingPolicy.class
-
- - link:AppendNewElementsOrderingPolicy-asmified.java[Asmified]
-
-== References
-

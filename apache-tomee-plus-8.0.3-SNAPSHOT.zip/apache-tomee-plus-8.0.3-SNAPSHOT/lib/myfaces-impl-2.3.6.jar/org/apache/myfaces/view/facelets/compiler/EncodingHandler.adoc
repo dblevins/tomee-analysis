@@ -1,6 +1,0 @@
-= org/apache/myfaces/view/facelets/compiler/EncodingHandler.class
-
- - link:EncodingHandler-asmified.java[Asmified]
-
-== References
-

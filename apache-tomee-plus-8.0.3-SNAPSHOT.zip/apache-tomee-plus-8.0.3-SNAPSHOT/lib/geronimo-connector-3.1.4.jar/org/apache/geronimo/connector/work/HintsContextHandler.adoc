@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/work/HintsContextHandler.class
-
- - link:HintsContextHandler-asmified.java[Asmified]
-
-== References
-

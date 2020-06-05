@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/jdbc/ForeignKeyAction.class
-
- - link:ForeignKeyAction-asmified.java[Asmified]
-
-== References
-

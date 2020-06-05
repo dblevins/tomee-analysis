@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/DoesExistQuery.class
-
- - link:DoesExistQuery-asmified.java[Asmified]
-
-== References
-

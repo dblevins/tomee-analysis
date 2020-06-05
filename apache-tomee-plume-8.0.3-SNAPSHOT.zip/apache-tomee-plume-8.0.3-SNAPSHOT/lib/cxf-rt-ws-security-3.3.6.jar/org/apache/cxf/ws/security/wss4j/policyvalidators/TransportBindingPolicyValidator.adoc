@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyvalidators/TransportBindingPolicyValidator.class
-
- - link:TransportBindingPolicyValidator-asmified.java[Asmified]
-
-== References
-

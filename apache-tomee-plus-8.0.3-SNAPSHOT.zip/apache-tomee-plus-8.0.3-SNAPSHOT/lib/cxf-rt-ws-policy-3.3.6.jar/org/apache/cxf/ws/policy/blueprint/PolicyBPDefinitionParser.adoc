@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/blueprint/PolicyBPDefinitionParser.class
-
- - link:PolicyBPDefinitionParser-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/hsqldb/lib/FileUtil$FileSync.class
-
- - link:FileUtil$FileSync-asmified.java[Asmified]
-
-== References
-

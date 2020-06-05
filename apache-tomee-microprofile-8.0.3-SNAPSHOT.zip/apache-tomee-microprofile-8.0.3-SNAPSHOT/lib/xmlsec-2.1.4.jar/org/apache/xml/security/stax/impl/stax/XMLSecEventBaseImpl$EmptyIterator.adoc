@@ -1,6 +1,0 @@
-= org/apache/xml/security/stax/impl/stax/XMLSecEventBaseImpl$EmptyIterator.class
-
- - link:XMLSecEventBaseImpl$EmptyIterator-asmified.java[Asmified]
-
-== References
-

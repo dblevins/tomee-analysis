@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml1/core/impl/ConfirmationMethodBuilder.class
-
- - link:ConfirmationMethodBuilder-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/annotations/EvaluateAllEndpoints.class
-
- - link:EvaluateAllEndpoints-asmified.java[Asmified]
-
-== References
-

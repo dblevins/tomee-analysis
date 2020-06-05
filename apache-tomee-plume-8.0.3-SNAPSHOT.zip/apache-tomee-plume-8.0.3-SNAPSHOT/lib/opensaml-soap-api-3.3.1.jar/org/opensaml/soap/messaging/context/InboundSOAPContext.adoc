@@ -1,6 +1,0 @@
-= org/opensaml/soap/messaging/context/InboundSOAPContext.class
-
- - link:InboundSOAPContext-asmified.java[Asmified]
-
-== References
-

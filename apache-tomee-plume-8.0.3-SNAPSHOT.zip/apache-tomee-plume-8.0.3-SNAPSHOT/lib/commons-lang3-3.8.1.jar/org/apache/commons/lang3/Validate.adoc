@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/Validate.class
-
- - link:Validate-asmified.java[Asmified]
-
-== References
-

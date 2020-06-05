@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/jmx/AbortSlowConsumerStrategyViewMBean.class
-
- - link:AbortSlowConsumerStrategyViewMBean-asmified.java[Asmified]
-
-== References
-

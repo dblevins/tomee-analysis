@@ -1,6 +1,0 @@
-= org/apache/tomee/catalina/ContextValue.class
-
- - link:ContextValue-asmified.java[Asmified]
-
-== References
-

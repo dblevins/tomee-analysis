@@ -1,6 +1,0 @@
-= org/apache/batchee/container/modelresolver/impl/SplitPropertyResolver.class
-
- - link:SplitPropertyResolver-asmified.java[Asmified]
-
-== References
-

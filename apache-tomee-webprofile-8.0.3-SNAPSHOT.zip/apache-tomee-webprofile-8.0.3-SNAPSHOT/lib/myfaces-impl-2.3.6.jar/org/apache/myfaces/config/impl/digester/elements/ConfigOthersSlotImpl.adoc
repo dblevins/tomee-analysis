@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/impl/digester/elements/ConfigOthersSlotImpl.class
-
- - link:ConfigOthersSlotImpl-asmified.java[Asmified]
-
-== References
-

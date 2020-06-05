@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/NullMessageReference.class
-
- - link:NullMessageReference-asmified.java[Asmified]
-
-== References
-

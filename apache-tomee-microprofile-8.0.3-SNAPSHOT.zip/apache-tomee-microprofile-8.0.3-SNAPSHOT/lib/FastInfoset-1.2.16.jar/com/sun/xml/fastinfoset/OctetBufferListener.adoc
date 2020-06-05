@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/OctetBufferListener.class
-
- - link:OctetBufferListener-asmified.java[Asmified]
-
-== References
-

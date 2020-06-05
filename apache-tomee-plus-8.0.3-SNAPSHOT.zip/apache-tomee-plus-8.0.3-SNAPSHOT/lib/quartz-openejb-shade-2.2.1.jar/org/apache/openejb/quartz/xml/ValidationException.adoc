@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/xml/ValidationException.class
-
- - link:ValidationException-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/resource/spi/ConnectionDefinitions.class
-
- - link:ConnectionDefinitions-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/wss4j/common/kerberos/KerberosTokenDecoderException.class
-
- - link:KerberosTokenDecoderException-asmified.java[Asmified]
-
-== References
-

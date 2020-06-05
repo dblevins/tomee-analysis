@@ -1,6 +1,0 @@
-= org/apache/openejb/core/ivm/naming/JndiReference.class
-
- - link:JndiReference-asmified.java[Asmified]
-
-== References
-

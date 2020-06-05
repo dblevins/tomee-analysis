@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/IBinaryMethod.class
-
- - link:IBinaryMethod-asmified.java[Asmified]
-
-== References
-

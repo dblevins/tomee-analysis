@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig/KeyValueType.class
-
- - link:KeyValueType-asmified.java[Asmified]
-
-== References
-

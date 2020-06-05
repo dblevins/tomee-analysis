@@ -1,6 +1,0 @@
-= org/apache/commons/digester/RuleSetBase.class
-
- - link:RuleSetBase-asmified.java[Asmified]
-
-== References
-

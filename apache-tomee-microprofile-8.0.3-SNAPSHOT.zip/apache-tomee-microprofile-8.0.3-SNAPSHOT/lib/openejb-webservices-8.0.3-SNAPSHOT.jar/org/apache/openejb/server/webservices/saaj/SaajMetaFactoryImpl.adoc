@@ -1,6 +1,0 @@
-= org/apache/openejb/server/webservices/saaj/SaajMetaFactoryImpl.class
-
- - link:SaajMetaFactoryImpl-asmified.java[Asmified]
-
-== References
-

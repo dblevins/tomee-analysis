@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/MutexTransport.class
-
- - link:MutexTransport-asmified.java[Asmified]
-
-== References
-

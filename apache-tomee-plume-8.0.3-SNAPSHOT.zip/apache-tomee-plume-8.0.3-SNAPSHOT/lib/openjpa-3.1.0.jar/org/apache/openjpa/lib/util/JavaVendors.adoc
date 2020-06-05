@@ -1,6 +1,0 @@
-= org/apache/openjpa/lib/util/JavaVendors.class
-
- - link:JavaVendors-asmified.java[Asmified]
-
-== References
-

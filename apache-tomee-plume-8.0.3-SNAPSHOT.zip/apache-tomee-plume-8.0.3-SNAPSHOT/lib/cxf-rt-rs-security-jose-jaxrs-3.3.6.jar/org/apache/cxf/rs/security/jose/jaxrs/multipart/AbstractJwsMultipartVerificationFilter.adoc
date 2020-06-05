@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/jose/jaxrs/multipart/AbstractJwsMultipartVerificationFilter.class
-
- - link:AbstractJwsMultipartVerificationFilter-asmified.java[Asmified]
-
-== References
-

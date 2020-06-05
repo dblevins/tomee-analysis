@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/interceptors/HolderOutInterceptor.class
-
- - link:HolderOutInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/taglib/core/SelectItemTagBase.class
-
- - link:SelectItemTagBase-asmified.java[Asmified]
-
-== References
-

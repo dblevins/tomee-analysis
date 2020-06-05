@@ -1,6 +1,0 @@
-= org/apache/openejb/util/PerformanceTimer.class
-
- - link:PerformanceTimer-asmified.java[Asmified]
-
-== References
-

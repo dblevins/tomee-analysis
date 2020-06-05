@@ -1,6 +1,0 @@
-= org/w3c/dom/html/HTMLAnchorElement.class
-
- - link:HTMLAnchorElement-asmified.java[Asmified]
-
-== References
-

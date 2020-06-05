@@ -1,6 +1,0 @@
-= org/apache/geronimo/mail/james/mime4j/stream/ContentDescriptor.class
-
- - link:ContentDescriptor-asmified.java[Asmified]
-
-== References
-

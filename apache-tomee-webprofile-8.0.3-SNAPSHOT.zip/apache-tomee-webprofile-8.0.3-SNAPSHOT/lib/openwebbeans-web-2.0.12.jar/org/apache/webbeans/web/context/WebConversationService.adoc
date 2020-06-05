@@ -1,6 +1,0 @@
-= org/apache/webbeans/web/context/WebConversationService.class
-
- - link:WebConversationService-asmified.java[Asmified]
-
-== References
-

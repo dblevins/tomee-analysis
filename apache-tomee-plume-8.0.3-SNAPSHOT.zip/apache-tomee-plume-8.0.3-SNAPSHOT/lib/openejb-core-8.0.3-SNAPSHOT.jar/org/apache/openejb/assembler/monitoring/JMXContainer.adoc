@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/monitoring/JMXContainer.class
-
- - link:JMXContainer-asmified.java[Asmified]
-
-== References
-

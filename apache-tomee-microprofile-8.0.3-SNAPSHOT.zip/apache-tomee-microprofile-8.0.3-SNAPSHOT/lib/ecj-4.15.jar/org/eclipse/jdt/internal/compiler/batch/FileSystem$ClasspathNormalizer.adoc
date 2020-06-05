@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/batch/FileSystem$ClasspathNormalizer.class
-
- - link:FileSystem$ClasspathNormalizer-asmified.java[Asmified]
-
-== References
-

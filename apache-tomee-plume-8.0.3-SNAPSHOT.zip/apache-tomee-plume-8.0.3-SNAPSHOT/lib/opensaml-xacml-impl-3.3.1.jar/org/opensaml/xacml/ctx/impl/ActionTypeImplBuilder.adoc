@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ActionTypeImplBuilder.class
-
- - link:ActionTypeImplBuilder-asmified.java[Asmified]
-
-== References
-

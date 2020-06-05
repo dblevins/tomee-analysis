@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/httpclient/IdleConnectionSweeper$1.class
-
- - link:IdleConnectionSweeper$1-asmified.java[Asmified]
-
-== References
-

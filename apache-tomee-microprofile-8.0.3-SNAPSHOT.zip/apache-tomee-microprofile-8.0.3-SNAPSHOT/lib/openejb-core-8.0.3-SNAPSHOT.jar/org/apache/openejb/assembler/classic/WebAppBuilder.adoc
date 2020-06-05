@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/WebAppBuilder.class
-
- - link:WebAppBuilder-asmified.java[Asmified]
-
-== References
-

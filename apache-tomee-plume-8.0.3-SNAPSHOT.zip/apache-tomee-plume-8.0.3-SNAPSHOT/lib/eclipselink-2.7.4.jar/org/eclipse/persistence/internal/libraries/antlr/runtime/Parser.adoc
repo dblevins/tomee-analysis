@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/antlr/runtime/Parser.class
-
- - link:Parser-asmified.java[Asmified]
-
-== References
-

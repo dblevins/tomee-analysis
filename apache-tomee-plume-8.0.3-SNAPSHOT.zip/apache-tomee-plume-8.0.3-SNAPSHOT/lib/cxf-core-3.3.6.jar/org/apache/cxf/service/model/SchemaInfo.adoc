@@ -1,6 +1,0 @@
-= org/apache/cxf/service/model/SchemaInfo.class
-
- - link:SchemaInfo-asmified.java[Asmified]
-
-== References
-

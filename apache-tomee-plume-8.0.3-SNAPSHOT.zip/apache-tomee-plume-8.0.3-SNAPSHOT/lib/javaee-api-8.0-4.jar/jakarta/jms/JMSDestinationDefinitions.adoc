@@ -1,6 +1,0 @@
-= jakarta/jms/JMSDestinationDefinitions.class
-
- - link:JMSDestinationDefinitions-asmified.java[Asmified]
-
-== References
-

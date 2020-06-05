@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/descriptor/ReturnValueD.class
-
- - link:ReturnValueD-asmified.java[Asmified]
-
-== References
-

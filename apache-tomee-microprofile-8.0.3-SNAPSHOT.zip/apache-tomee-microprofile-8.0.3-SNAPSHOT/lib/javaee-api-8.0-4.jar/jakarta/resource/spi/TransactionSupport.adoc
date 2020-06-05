@@ -1,6 +1,0 @@
-= jakarta/resource/spi/TransactionSupport.class
-
- - link:TransactionSupport-asmified.java[Asmified]
-
-== References
-

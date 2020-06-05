@@ -1,6 +1,0 @@
-= org/apache/openejb/core/entity/EntrancyTracker$1.class
-
- - link:EntrancyTracker$1-asmified.java[Asmified]
-
-== References
-

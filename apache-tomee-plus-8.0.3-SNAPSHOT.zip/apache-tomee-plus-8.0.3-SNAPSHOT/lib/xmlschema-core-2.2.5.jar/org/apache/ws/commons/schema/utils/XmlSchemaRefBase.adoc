@@ -1,6 +1,0 @@
-= org/apache/ws/commons/schema/utils/XmlSchemaRefBase.class
-
- - link:XmlSchemaRefBase-asmified.java[Asmified]
-
-== References
-

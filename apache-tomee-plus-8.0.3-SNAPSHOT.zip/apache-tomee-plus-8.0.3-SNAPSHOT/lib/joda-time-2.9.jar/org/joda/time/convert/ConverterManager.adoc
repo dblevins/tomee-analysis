@@ -1,6 +1,0 @@
-= org/joda/time/convert/ConverterManager.class
-
- - link:ConverterManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/NoneClassStrategy.class
-
- - link:NoneClassStrategy-asmified.java[Asmified]
-
-== References
-

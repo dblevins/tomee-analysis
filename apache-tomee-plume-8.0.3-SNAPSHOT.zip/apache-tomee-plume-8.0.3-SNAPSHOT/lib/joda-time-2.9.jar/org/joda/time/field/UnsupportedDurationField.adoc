@@ -1,6 +1,0 @@
-= org/joda/time/field/UnsupportedDurationField.class
-
- - link:UnsupportedDurationField-asmified.java[Asmified]
-
-== References
-

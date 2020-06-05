@@ -1,6 +1,0 @@
-= org/apache/activemq/jndi/ActiveMQWASInitialContextFactory.class
-
- - link:ActiveMQWASInitialContextFactory-asmified.java[Asmified]
-
-== References
-

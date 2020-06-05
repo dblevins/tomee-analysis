@@ -1,6 +1,0 @@
-= com/sun/faces/application/resource/ResourceImpl.class
-
- - link:ResourceImpl-asmified.java[Asmified]
-
-== References
-

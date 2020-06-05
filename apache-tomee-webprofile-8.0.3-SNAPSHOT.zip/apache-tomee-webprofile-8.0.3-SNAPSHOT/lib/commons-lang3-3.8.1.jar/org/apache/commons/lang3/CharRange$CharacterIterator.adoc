@@ -1,6 +1,0 @@
-= org/apache/commons/lang3/CharRange$CharacterIterator.class
-
- - link:CharRange$CharacterIterator-asmified.java[Asmified]
-
-== References
-

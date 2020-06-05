@@ -1,6 +1,0 @@
-= org/apache/commons/digester/plugins/PluginManager.class
-
- - link:PluginManager-asmified.java[Asmified]
-
-== References
-

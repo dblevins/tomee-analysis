@@ -1,6 +1,0 @@
-= org/apache/cxf/interceptor/ClientOutFaultObserver.class
-
- - link:ClientOutFaultObserver-asmified.java[Asmified]
-
-== References
-

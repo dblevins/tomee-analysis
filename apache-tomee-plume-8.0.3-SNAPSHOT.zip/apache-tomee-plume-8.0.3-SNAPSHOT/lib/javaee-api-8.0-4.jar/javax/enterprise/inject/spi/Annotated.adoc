@@ -1,6 +1,0 @@
-= javax/enterprise/inject/spi/Annotated.class
-
- - link:Annotated-asmified.java[Asmified]
-
-== References
-

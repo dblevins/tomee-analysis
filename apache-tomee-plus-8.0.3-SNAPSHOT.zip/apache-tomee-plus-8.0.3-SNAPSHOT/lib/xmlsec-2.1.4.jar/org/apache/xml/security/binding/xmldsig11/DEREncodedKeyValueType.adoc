@@ -1,6 +1,0 @@
-= org/apache/xml/security/binding/xmldsig11/DEREncodedKeyValueType.class
-
- - link:DEREncodedKeyValueType-asmified.java[Asmified]
-
-== References
-

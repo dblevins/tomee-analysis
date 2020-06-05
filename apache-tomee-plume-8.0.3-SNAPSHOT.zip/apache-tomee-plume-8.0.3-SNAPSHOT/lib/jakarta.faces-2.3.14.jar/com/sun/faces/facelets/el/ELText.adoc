@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/el/ELText.class
-
- - link:ELText-asmified.java[Asmified]
-
-== References
-

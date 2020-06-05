@@ -1,6 +1,0 @@
-= org/apache/openejb/web/WebInitialContext.class
-
- - link:WebInitialContext-asmified.java[Asmified]
-
-== References
-

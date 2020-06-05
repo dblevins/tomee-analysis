@@ -1,6 +1,0 @@
-= org/apache/xml/security/c14n/implementations/XmlAttrStack.class
-
- - link:XmlAttrStack-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/catalina/authenticator/SingleSignOn.class
-
- - link:SingleSignOn-asmified.java[Asmified]
-
-== References
-

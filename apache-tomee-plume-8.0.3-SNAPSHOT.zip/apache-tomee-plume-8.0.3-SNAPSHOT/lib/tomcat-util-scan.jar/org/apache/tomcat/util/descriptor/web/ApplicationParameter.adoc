@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/descriptor/web/ApplicationParameter.class
-
- - link:ApplicationParameter-asmified.java[Asmified]
-
-== References
-

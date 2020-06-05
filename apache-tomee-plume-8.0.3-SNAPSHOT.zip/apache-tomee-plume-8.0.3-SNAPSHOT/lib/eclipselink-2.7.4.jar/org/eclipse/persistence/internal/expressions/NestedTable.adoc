@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/NestedTable.class
-
- - link:NestedTable-asmified.java[Asmified]
-
-== References
-

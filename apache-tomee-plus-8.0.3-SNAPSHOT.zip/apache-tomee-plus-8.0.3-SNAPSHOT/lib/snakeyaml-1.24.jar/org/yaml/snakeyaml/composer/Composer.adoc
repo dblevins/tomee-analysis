@@ -1,6 +1,0 @@
-= org/yaml/snakeyaml/composer/Composer.class
-
- - link:Composer-asmified.java[Asmified]
-
-== References
-

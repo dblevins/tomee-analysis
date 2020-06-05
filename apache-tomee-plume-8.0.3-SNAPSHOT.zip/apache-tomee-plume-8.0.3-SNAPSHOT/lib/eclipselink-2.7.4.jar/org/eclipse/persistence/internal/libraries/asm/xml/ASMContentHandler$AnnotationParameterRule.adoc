@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$AnnotationParameterRule.class
-
- - link:ASMContentHandler$AnnotationParameterRule-asmified.java[Asmified]
-
-== References
-

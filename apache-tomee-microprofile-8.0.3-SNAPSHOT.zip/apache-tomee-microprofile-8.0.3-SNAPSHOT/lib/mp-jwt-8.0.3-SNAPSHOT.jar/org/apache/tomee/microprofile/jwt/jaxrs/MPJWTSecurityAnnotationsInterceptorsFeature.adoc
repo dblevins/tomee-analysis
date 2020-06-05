@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/jaxrs/MPJWTSecurityAnnotationsInterceptorsFeature.class
-
- - link:MPJWTSecurityAnnotationsInterceptorsFeature-asmified.java[Asmified]
-
-== References
-

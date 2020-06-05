@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/rs/util/list/QueryList.class
-
- - link:QueryList-asmified.java[Asmified]
-
-== References
-

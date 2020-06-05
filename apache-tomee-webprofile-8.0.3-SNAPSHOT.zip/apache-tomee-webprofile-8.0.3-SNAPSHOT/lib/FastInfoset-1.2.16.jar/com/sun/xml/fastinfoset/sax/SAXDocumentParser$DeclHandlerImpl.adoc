@@ -1,6 +1,0 @@
-= com/sun/xml/fastinfoset/sax/SAXDocumentParser$DeclHandlerImpl.class
-
- - link:SAXDocumentParser$DeclHandlerImpl-asmified.java[Asmified]
-
-== References
-

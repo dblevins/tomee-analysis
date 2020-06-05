@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/schema/XMLSchemaParser$ForeignKeyInfo.class
-
- - link:XMLSchemaParser$ForeignKeyInfo-asmified.java[Asmified]
-
-== References
-

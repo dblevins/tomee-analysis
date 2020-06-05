@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jaxb/compiler/builder/TransformerPropertyBuilder.class
-
- - link:TransformerPropertyBuilder-asmified.java[Asmified]
-
-== References
-

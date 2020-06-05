@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/threads/LimitLatch.class
-
- - link:LimitLatch-asmified.java[Asmified]
-
-== References
-

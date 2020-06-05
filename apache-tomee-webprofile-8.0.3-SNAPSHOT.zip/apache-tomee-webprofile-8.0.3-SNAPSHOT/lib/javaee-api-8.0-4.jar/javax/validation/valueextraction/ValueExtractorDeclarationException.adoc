@@ -1,7 +1,0 @@
-= javax/validation/valueextraction/ValueExtractorDeclarationException.class
-
- - link:ValueExtractorDeclarationException-asmified.java[Asmified]
-
-== References
-
- - javax.validation.ValidationException - 5

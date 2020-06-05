@@ -1,6 +1,0 @@
-= org/apache/jasper/runtime/ProtectedFunctionMapper.class
-
- - link:ProtectedFunctionMapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/johnzon/jsonb/JsonbAccessMode$ReaderConverters.class
-
- - link:JsonbAccessMode$ReaderConverters-asmified.java[Asmified]
-
-== References
-

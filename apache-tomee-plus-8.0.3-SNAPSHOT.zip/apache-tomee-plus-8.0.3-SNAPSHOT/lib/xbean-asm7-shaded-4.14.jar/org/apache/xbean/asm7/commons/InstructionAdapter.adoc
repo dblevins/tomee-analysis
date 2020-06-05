@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/InstructionAdapter.class
-
- - link:InstructionAdapter-asmified.java[Asmified]
-
-== References
-

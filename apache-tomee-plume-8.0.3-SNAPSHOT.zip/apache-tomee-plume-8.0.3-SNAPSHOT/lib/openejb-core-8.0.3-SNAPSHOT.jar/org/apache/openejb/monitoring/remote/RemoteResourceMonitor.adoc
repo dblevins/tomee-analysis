@@ -1,6 +1,0 @@
-= org/apache/openejb/monitoring/remote/RemoteResourceMonitor.class
-
- - link:RemoteResourceMonitor-asmified.java[Asmified]
-
-== References
-

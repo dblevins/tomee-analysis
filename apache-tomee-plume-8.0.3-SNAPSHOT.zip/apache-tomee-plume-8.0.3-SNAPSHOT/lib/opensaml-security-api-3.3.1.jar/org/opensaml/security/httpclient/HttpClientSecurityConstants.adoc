@@ -1,6 +1,0 @@
-= org/opensaml/security/httpclient/HttpClientSecurityConstants.class
-
- - link:HttpClientSecurityConstants-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/batchee/container/ThreadRootController.class
-
- - link:ThreadRootController-asmified.java[Asmified]
-
-== References
-

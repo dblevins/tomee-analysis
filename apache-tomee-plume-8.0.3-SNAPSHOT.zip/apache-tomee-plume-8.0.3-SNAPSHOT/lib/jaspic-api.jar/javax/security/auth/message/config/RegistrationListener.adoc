@@ -1,6 +1,0 @@
-= javax/security/auth/message/config/RegistrationListener.class
-
- - link:RegistrationListener-asmified.java[Asmified]
-
-== References
-

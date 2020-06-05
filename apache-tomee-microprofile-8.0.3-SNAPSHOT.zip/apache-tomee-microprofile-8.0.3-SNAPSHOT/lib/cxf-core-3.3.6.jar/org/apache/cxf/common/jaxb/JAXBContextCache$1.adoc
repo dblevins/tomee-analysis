@@ -1,6 +1,0 @@
-= org/apache/cxf/common/jaxb/JAXBContextCache$1.class
-
- - link:JAXBContextCache$1-asmified.java[Asmified]
-
-== References
-

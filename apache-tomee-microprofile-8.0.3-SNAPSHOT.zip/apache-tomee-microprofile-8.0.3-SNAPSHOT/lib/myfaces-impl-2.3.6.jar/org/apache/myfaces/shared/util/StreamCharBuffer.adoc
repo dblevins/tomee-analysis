@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/StreamCharBuffer.class
-
- - link:StreamCharBuffer-asmified.java[Asmified]
-
-== References
-

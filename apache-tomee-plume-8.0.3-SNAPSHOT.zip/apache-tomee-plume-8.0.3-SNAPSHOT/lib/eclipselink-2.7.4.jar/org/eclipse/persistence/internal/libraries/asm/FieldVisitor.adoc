@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/FieldVisitor.class
-
- - link:FieldVisitor-asmified.java[Asmified]
-
-== References
-

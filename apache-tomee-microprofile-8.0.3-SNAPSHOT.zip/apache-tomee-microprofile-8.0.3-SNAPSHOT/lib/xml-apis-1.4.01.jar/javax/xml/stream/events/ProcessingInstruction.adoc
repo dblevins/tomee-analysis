@@ -1,6 +1,0 @@
-= javax/xml/stream/events/ProcessingInstruction.class
-
- - link:ProcessingInstruction-asmified.java[Asmified]
-
-== References
-

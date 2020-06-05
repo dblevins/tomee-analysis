@@ -1,6 +1,0 @@
-= com/fasterxml/jackson/databind/annotation/JsonSerialize$Inclusion.class
-
- - link:JsonSerialize$Inclusion-asmified.java[Asmified]
-
-== References
-

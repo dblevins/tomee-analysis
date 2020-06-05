@@ -1,6 +1,0 @@
-= org/opensaml/xacml/ctx/impl/ResponseTypeMarshaller.class
-
- - link:ResponseTypeMarshaller-asmified.java[Asmified]
-
-== References
-

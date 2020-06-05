@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/env/AccessRuleSet.class
-
- - link:AccessRuleSet-asmified.java[Asmified]
-
-== References
-

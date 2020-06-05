@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/MethodWriter.class
-
- - link:MethodWriter-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/ServiceImpl.class
-
- - link:ServiceImpl-asmified.java[Asmified]
-
-== References
-

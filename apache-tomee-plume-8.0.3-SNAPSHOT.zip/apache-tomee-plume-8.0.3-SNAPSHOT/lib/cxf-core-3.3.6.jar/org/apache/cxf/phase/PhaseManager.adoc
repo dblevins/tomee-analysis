@@ -1,6 +1,0 @@
-= org/apache/cxf/phase/PhaseManager.class
-
- - link:PhaseManager-asmified.java[Asmified]
-
-== References
-

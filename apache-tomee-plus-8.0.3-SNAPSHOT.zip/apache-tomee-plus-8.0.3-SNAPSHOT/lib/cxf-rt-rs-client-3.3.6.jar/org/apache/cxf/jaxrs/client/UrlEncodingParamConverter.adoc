@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/client/UrlEncodingParamConverter.class
-
- - link:UrlEncodingParamConverter-asmified.java[Asmified]
-
-== References
-

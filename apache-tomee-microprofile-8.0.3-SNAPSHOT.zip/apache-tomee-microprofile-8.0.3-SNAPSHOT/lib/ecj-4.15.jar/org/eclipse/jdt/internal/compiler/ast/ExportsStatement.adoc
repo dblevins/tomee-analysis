@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/ExportsStatement.class
-
- - link:ExportsStatement-asmified.java[Asmified]
-
-== References
-

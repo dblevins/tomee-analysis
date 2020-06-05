@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/annotation/AnnotationConfigurator.class
-
- - link:AnnotationConfigurator-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/io/CachedWriter$LoadingCharArrayWriter.class
-
- - link:CachedWriter$LoadingCharArrayWriter-asmified.java[Asmified]
-
-== References
-

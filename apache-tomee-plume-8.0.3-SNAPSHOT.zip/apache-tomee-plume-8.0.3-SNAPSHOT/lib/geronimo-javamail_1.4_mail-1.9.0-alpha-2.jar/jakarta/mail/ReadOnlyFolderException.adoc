@@ -1,6 +1,0 @@
-= jakarta/mail/ReadOnlyFolderException.class
-
- - link:ReadOnlyFolderException-asmified.java[Asmified]
-
-== References
-

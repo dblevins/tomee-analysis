@@ -1,6 +1,0 @@
-= org/apache/wss4j/dom/action/TimestampAction.class
-
- - link:TimestampAction-asmified.java[Asmified]
-
-== References
-

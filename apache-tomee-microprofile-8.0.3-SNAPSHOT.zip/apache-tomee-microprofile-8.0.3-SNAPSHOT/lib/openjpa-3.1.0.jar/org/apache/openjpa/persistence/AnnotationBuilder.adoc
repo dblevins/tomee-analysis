@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/AnnotationBuilder.class
-
- - link:AnnotationBuilder-asmified.java[Asmified]
-
-== References
-

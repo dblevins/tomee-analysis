@@ -1,6 +1,0 @@
-= jakarta/faces/event/AjaxBehaviorListener.class
-
- - link:AjaxBehaviorListener-asmified.java[Asmified]
-
-== References
-

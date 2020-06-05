@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/disk/journal/DataFile.class
-
- - link:DataFile-asmified.java[Asmified]
-
-== References
-

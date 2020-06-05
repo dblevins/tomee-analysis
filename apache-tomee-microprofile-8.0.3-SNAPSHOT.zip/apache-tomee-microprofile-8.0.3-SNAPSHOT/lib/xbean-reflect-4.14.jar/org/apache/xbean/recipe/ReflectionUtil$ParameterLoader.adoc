@@ -1,6 +1,0 @@
-= org/apache/xbean/recipe/ReflectionUtil$ParameterLoader.class
-
- - link:ReflectionUtil$ParameterLoader-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/validation/constraints/PositiveOrZero$List.class
-
- - link:PositiveOrZero$List-asmified.java[Asmified]
-
-== References
-

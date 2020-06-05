@@ -1,6 +1,0 @@
-= javax/enterprise/inject/spi/DefinitionException.class
-
- - link:DefinitionException-asmified.java[Asmified]
-
-== References
-

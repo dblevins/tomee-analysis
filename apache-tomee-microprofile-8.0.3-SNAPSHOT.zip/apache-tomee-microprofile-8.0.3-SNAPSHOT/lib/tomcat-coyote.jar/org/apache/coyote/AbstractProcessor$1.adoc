@@ -1,6 +1,0 @@
-= org/apache/coyote/AbstractProcessor$1.class
-
- - link:AbstractProcessor$1-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/DestinationInterceptor.class
-
- - link:DestinationInterceptor-asmified.java[Asmified]
-
-== References
-

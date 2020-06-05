@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/ui/UIDebug.class
-
- - link:UIDebug-asmified.java[Asmified]
-
-== References
-

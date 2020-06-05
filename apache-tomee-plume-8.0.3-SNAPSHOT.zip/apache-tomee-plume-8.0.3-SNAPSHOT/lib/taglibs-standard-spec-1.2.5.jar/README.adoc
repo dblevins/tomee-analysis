@@ -1,2 +1,0 @@
-= apache-tomee-plume-8.0.3-SNAPSHOT/lib/taglibs-standard-spec-1.2.5.jar
-

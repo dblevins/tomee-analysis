@@ -1,6 +1,0 @@
-= org/apache/myfaces/flow/builder/FlowBuilderImpl.class
-
- - link:FlowBuilderImpl-asmified.java[Asmified]
-
-== References
-

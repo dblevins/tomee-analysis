@@ -1,6 +1,0 @@
-= org/apache/openejb/sxc/FacesConfigXml.class
-
- - link:FacesConfigXml-asmified.java[Asmified]
-
-== References
-

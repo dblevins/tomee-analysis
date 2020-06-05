@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser$selectItem_return.class
-
- - link:JPQLParser$selectItem_return-asmified.java[Asmified]
-
-== References
-

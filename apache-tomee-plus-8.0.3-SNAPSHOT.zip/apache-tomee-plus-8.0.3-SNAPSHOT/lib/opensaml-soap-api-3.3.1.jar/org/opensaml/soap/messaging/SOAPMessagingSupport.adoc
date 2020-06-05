@@ -1,6 +1,0 @@
-= org/opensaml/soap/messaging/SOAPMessagingSupport.class
-
- - link:SOAPMessagingSupport-asmified.java[Asmified]
-
-== References
-

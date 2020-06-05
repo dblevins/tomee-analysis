@@ -1,9 +1,0 @@
-= javax/ws/rs/core/Form.class
-
- - link:Form-asmified.java[Asmified]
-
-== References
-
- - javax.ws.rs.core.MultivaluedMap - 10
- - javax.ws.rs.core.Form - 3
- - javax.ws.rs.core.Form$1 - 2

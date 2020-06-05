@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/policy/selector/MaximalAlternativeSelector.class
-
- - link:MaximalAlternativeSelector-asmified.java[Asmified]
-
-== References
-

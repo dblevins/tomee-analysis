@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/InterceptorBindingBuilder$Type.class
-
- - link:InterceptorBindingBuilder$Type-asmified.java[Asmified]
-
-== References
-

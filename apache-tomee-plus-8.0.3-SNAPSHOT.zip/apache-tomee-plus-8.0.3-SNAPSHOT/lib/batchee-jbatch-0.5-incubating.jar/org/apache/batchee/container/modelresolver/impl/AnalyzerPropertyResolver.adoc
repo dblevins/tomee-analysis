@@ -1,6 +1,0 @@
-= org/apache/batchee/container/modelresolver/impl/AnalyzerPropertyResolver.class
-
- - link:AnalyzerPropertyResolver-asmified.java[Asmified]
-
-== References
-

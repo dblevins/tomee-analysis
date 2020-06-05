@@ -1,6 +1,0 @@
-= org/eclipse/persistence/exceptions/i18n/SDOExceptionResource.class
-
- - link:SDOExceptionResource-asmified.java[Asmified]
-
-== References
-

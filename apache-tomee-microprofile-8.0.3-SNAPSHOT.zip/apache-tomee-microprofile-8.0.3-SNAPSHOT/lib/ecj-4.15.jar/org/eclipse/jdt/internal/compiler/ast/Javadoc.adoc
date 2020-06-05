@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/ast/Javadoc.class
-
- - link:Javadoc-asmified.java[Asmified]
-
-== References
-

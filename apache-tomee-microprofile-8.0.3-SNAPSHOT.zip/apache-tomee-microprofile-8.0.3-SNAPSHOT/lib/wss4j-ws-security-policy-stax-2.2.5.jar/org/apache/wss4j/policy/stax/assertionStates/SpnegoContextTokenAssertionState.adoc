@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/stax/assertionStates/SpnegoContextTokenAssertionState.class
-
- - link:SpnegoContextTokenAssertionState-asmified.java[Asmified]
-
-== References
-

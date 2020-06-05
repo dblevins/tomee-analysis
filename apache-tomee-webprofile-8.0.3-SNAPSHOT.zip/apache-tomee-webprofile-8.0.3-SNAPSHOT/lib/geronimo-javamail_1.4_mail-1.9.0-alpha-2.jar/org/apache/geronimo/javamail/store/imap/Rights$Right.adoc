@@ -1,6 +1,0 @@
-= org/apache/geronimo/javamail/store/imap/Rights$Right.class
-
- - link:Rights$Right-asmified.java[Asmified]
-
-== References
-

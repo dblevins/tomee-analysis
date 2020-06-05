@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/xml/ClassType.class
-
- - link:ClassType-asmified.java[Asmified]
-
-== References
-

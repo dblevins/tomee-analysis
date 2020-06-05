@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/lookup/ReferenceBinding$3.class
-
- - link:ReferenceBinding$3-asmified.java[Asmified]
-
-== References
-

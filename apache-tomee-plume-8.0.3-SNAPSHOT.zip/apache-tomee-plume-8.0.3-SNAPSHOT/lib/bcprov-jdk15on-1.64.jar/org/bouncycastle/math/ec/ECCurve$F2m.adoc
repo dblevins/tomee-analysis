@@ -1,6 +1,0 @@
-= org/bouncycastle/math/ec/ECCurve$F2m.class
-
- - link:ECCurve$F2m-asmified.java[Asmified]
-
-== References
-

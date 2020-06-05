@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/policy/interceptors/WSSecurityInterceptorProvider.class
-
- - link:WSSecurityInterceptorProvider-asmified.java[Asmified]
-
-== References
-

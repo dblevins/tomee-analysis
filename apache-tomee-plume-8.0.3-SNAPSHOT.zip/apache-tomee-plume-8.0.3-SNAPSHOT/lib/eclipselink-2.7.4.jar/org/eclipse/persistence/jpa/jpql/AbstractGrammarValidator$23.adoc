@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/AbstractGrammarValidator$23.class
-
- - link:AbstractGrammarValidator$23-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= jakarta/ws/rs/client/Invocation$Builder.class
-
- - link:Invocation$Builder-asmified.java[Asmified]
-
-== References
-

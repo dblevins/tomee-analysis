@@ -1,6 +1,0 @@
-= org/apache/openejb/config/AppInfoBuilder$2.class
-
- - link:AppInfoBuilder$2-asmified.java[Asmified]
-
-== References
-

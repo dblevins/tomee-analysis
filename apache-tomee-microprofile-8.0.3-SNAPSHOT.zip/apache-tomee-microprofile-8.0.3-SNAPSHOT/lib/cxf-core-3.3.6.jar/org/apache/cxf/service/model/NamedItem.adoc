@@ -1,6 +1,0 @@
-= org/apache/cxf/service/model/NamedItem.class
-
- - link:NamedItem-asmified.java[Asmified]
-
-== References
-

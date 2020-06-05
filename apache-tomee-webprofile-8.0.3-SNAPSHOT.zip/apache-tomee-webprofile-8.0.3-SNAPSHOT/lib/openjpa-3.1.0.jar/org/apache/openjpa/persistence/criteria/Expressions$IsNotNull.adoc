@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/Expressions$IsNotNull.class
-
- - link:Expressions$IsNotNull-asmified.java[Asmified]
-
-== References
-

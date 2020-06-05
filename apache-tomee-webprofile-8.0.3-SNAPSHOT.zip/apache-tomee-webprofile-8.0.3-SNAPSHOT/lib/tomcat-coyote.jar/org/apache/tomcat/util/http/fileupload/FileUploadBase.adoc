@@ -1,6 +1,0 @@
-= org/apache/tomcat/util/http/fileupload/FileUploadBase.class
-
- - link:FileUploadBase-asmified.java[Asmified]
-
-== References
-

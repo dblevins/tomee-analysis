@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/oejb2/ServiceCompletionType.class
-
- - link:ServiceCompletionType-asmified.java[Asmified]
-
-== References
-

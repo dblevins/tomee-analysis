@@ -1,6 +1,0 @@
-= org/apache/openejb/util/Join$MethodCallback.class
-
- - link:Join$MethodCallback-asmified.java[Asmified]
-
-== References
-

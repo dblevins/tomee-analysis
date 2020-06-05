@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle.class
-
- - link:TriggerPersistenceDelegate$TriggerPropertyBundle-asmified.java[Asmified]
-
-== References
-

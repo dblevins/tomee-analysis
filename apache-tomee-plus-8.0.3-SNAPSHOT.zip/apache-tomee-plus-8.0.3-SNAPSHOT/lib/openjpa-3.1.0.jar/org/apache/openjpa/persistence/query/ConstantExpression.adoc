@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/ConstantExpression.class
-
- - link:ConstantExpression-asmified.java[Asmified]
-
-== References
-

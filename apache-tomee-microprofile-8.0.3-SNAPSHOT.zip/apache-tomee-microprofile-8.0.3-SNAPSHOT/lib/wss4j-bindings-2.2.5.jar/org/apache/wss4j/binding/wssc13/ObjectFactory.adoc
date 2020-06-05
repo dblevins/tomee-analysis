@@ -1,6 +1,0 @@
-= org/apache/wss4j/binding/wssc13/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

@@ -1,7 +1,0 @@
-= javax/mail/internet/InternetHeaders$HeaderLineEnumeration.class
-
- - link:InternetHeaders$HeaderLineEnumeration-asmified.java[Asmified]
-
-== References
-
- - javax.mail.Header - 3

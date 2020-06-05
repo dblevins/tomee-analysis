@@ -1,6 +1,0 @@
-= jakarta/activation/ActivationDataFlavor.class
-
- - link:ActivationDataFlavor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= com/ctc/wstx/util/WordResolver$Builder.class
-
- - link:WordResolver$Builder-asmified.java[Asmified]
-
-== References
-

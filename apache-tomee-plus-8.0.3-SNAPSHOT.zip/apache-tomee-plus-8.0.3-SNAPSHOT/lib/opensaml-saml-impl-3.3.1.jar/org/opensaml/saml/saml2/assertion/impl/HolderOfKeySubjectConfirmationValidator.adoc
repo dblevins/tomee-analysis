@@ -1,6 +1,0 @@
-= org/opensaml/saml/saml2/assertion/impl/HolderOfKeySubjectConfirmationValidator.class
-
- - link:HolderOfKeySubjectConfirmationValidator-asmified.java[Asmified]
-
-== References
-

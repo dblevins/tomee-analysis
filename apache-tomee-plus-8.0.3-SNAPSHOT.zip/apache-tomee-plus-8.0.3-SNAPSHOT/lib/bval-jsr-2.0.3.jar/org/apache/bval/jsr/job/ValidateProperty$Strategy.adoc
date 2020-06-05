@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/job/ValidateProperty$Strategy.class
-
- - link:ValidateProperty$Strategy-asmified.java[Asmified]
-
-== References
-

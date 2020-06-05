@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/collection/ClassIndexedSet$ClassIndexedSetIterator.class
-
- - link:ClassIndexedSet$ClassIndexedSetIterator-asmified.java[Asmified]
-
-== References
-

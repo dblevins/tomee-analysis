@@ -1,6 +1,0 @@
-= org/apache/openejb/assembler/classic/ResourceEnvReferenceInfo.class
-
- - link:ResourceEnvReferenceInfo-asmified.java[Asmified]
-
-== References
-

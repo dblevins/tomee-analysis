@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyvalidators/RequiredElementsPolicyValidator.class
-
- - link:RequiredElementsPolicyValidator-asmified.java[Asmified]
-
-== References
-

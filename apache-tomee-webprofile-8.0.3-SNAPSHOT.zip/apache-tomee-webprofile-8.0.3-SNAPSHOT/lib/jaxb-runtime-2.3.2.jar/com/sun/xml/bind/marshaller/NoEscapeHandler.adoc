@@ -1,6 +1,0 @@
-= com/sun/xml/bind/marshaller/NoEscapeHandler.class
-
- - link:NoEscapeHandler-asmified.java[Asmified]
-
-== References
-

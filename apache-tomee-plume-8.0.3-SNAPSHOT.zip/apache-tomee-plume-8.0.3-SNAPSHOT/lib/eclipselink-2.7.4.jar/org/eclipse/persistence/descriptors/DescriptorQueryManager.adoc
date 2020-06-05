@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/DescriptorQueryManager.class
-
- - link:DescriptorQueryManager-asmified.java[Asmified]
-
-== References
-

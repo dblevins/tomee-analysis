@@ -1,9 +1,0 @@
-= javax/enterprise/inject/Typed$Literal.class
-
- - link:Typed$Literal-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.Typed$Literal - 7
- - javax.enterprise.util.AnnotationLiteral - 2
- - javax.enterprise.inject.Typed - 2

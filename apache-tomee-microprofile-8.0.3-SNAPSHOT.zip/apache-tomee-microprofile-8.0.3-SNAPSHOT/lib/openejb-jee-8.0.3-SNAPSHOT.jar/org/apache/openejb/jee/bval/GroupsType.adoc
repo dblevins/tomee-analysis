@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/GroupsType.class
-
- - link:GroupsType-asmified.java[Asmified]
-
-== References
-

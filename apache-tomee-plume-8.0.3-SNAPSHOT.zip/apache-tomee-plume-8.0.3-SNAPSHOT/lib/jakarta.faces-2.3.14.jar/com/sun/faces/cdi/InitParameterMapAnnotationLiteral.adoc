@@ -1,6 +1,0 @@
-= com/sun/faces/cdi/InitParameterMapAnnotationLiteral.class
-
- - link:InitParameterMapAnnotationLiteral-asmified.java[Asmified]
-
-== References
-

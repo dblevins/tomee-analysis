@@ -1,6 +1,0 @@
-= org/apache/cxf/rs/security/oauth2/tokens/hawk/HawkAccessTokenValidator.class
-
- - link:HawkAccessTokenValidator-asmified.java[Asmified]
-
-== References
-

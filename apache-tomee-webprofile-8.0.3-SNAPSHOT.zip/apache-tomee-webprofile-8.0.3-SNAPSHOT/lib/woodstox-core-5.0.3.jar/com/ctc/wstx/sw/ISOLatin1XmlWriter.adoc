@@ -1,6 +1,0 @@
-= com/ctc/wstx/sw/ISOLatin1XmlWriter.class
-
- - link:ISOLatin1XmlWriter-asmified.java[Asmified]
-
-== References
-

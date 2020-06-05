@@ -1,6 +1,0 @@
-= jakarta/servlet/jsp/jstl/tlv/PermittedTaglibsTLV$PermittedTaglibsHandler.class
-
- - link:PermittedTaglibsTLV$PermittedTaglibsHandler-asmified.java[Asmified]
-
-== References
-

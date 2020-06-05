@@ -1,6 +1,0 @@
-= org/joda/time/format/DateTimeParserBucket$SavedState.class
-
- - link:DateTimeParserBucket$SavedState-asmified.java[Asmified]
-
-== References
-

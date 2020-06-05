@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/bval/ObjectFactory.class
-
- - link:ObjectFactory-asmified.java[Asmified]
-
-== References
-

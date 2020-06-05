@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/config/WriteTransformer.class
-
- - link:WriteTransformer-asmified.java[Asmified]
-
-== References
-

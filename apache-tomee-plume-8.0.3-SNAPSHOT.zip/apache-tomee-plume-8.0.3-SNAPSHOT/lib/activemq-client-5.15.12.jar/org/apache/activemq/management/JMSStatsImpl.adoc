@@ -1,6 +1,0 @@
-= org/apache/activemq/management/JMSStatsImpl.class
-
- - link:JMSStatsImpl-asmified.java[Asmified]
-
-== References
-

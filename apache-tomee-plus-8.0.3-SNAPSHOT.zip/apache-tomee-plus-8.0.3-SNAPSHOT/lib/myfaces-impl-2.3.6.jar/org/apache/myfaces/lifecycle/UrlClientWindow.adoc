@@ -1,6 +1,0 @@
-= org/apache/myfaces/lifecycle/UrlClientWindow.class
-
- - link:UrlClientWindow-asmified.java[Asmified]
-
-== References
-

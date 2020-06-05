@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/was/v6/xmi/Import.class
-
- - link:Import-asmified.java[Asmified]
-
-== References
-

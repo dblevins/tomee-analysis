@@ -1,6 +1,0 @@
-= org/eclipse/persistence/sessions/server/ReadConnectionPool.class
-
- - link:ReadConnectionPool-asmified.java[Asmified]
-
-== References
-

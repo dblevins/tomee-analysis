@@ -1,6 +1,0 @@
-= org/apache/tomee/microprofile/jwt/cdi/JsonbProducer.class
-
- - link:JsonbProducer-asmified.java[Asmified]
-
-== References
-

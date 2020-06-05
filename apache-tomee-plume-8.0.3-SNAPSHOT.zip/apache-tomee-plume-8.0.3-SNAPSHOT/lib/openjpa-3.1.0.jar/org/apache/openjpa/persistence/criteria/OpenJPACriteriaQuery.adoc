@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/criteria/OpenJPACriteriaQuery.class
-
- - link:OpenJPACriteriaQuery-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/invalidation/NoExpiryCacheInvalidationPolicy.class
-
- - link:NoExpiryCacheInvalidationPolicy-asmified.java[Asmified]
-
-== References
-

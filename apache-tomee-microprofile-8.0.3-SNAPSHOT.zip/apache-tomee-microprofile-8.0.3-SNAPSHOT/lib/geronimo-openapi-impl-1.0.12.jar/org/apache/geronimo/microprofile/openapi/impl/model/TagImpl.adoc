@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/openapi/impl/model/TagImpl.class
-
- - link:TagImpl-asmified.java[Asmified]
-
-== References
-

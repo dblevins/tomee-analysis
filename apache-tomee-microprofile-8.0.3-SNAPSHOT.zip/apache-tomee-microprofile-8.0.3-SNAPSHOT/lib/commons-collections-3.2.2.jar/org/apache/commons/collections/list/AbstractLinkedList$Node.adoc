@@ -1,6 +1,0 @@
-= org/apache/commons/collections/list/AbstractLinkedList$Node.class
-
- - link:AbstractLinkedList$Node-asmified.java[Asmified]
-
-== References
-

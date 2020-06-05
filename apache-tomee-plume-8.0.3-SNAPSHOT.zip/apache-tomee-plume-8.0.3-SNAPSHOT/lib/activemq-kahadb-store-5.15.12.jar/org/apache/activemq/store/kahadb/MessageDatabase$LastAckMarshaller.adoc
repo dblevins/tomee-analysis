@@ -1,6 +1,0 @@
-= org/apache/activemq/store/kahadb/MessageDatabase$LastAckMarshaller.class
-
- - link:MessageDatabase$LastAckMarshaller-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.class
-
- - link:AbstractRequestContextImpl-asmified.java[Asmified]
-
-== References
-

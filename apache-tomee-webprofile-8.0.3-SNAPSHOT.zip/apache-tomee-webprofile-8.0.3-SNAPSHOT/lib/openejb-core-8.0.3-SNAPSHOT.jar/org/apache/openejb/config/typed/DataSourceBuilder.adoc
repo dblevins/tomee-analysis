@@ -1,6 +1,0 @@
-= org/apache/openejb/config/typed/DataSourceBuilder.class
-
- - link:DataSourceBuilder-asmified.java[Asmified]
-
-== References
-

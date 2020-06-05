@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/ActivationSpecNamedXAResourceFactory.class
-
- - link:ActivationSpecNamedXAResourceFactory-asmified.java[Asmified]
-
-== References
-

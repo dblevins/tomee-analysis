@@ -1,6 +1,0 @@
-= org/apache/openejb/client/Observers.class
-
- - link:Observers-asmified.java[Asmified]
-
-== References
-

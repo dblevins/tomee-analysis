@@ -1,6 +1,0 @@
-= org/apache/myfaces/el/unified/resolver/GuiceResolver.class
-
- - link:GuiceResolver-asmified.java[Asmified]
-
-== References
-

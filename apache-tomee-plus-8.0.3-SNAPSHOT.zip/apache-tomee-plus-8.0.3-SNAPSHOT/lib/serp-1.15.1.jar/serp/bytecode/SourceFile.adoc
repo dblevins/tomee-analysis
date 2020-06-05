@@ -1,6 +1,0 @@
-= serp/bytecode/SourceFile.class
-
- - link:SourceFile-asmified.java[Asmified]
-
-== References
-

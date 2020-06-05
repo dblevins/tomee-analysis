@@ -1,6 +1,0 @@
-= org/apache/myfaces/shared/util/renderkit/ClientBehaviorEvents.class
-
- - link:ClientBehaviorEvents-asmified.java[Asmified]
-
-== References
-

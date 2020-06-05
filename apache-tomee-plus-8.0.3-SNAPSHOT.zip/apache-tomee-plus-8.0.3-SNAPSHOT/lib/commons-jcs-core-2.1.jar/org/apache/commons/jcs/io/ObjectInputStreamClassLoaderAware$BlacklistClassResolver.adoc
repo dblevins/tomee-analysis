@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/io/ObjectInputStreamClassLoaderAware$BlacklistClassResolver.class
-
- - link:ObjectInputStreamClassLoaderAware$BlacklistClassResolver-asmified.java[Asmified]
-
-== References
-

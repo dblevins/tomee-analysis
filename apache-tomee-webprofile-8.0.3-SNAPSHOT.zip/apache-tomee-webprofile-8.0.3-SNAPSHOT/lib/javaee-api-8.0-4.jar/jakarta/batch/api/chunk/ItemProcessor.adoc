@@ -1,6 +1,0 @@
-= jakarta/batch/api/chunk/ItemProcessor.class
-
- - link:ItemProcessor-asmified.java[Asmified]
-
-== References
-

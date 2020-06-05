@@ -1,6 +1,0 @@
-= org/apache/xbean/propertyeditor/CharacterEditor.class
-
- - link:CharacterEditor-asmified.java[Asmified]
-
-== References
-

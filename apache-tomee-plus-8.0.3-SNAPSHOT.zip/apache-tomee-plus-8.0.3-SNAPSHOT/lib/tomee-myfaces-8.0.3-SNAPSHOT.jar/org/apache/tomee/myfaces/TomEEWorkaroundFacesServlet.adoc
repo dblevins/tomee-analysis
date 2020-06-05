@@ -1,6 +1,0 @@
-= org/apache/tomee/myfaces/TomEEWorkaroundFacesServlet.class
-
- - link:TomEEWorkaroundFacesServlet-asmified.java[Asmified]
-
-== References
-

@@ -1,8 +1,0 @@
-= javax/enterprise/inject/spi/AnnotatedMember.class
-
- - link:AnnotatedMember-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.spi.Annotated - 1
- - javax.enterprise.inject.spi.AnnotatedType - 1

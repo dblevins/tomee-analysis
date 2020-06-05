@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/AuthConstraint.class
-
- - link:AuthConstraint-asmified.java[Asmified]
-
-== References
-

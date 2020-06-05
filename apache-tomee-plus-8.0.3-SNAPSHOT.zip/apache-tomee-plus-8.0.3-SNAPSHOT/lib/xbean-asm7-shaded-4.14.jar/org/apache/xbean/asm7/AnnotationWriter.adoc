@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/AnnotationWriter.class
-
- - link:AnnotationWriter-asmified.java[Asmified]
-
-== References
-

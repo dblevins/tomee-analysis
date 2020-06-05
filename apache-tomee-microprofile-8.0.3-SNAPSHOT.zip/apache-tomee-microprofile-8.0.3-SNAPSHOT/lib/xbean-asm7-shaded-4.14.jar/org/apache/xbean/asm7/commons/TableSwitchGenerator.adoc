@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/commons/TableSwitchGenerator.class
-
- - link:TableSwitchGenerator-asmified.java[Asmified]
-
-== References
-

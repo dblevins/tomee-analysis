@@ -1,6 +1,0 @@
-= org/hsqldb/persist/DataFileCacheSession.class
-
- - link:DataFileCacheSession-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/tomee/common/LegacyAnnotationProcessor.class
-
- - link:LegacyAnnotationProcessor-asmified.java[Asmified]
-
-== References
-

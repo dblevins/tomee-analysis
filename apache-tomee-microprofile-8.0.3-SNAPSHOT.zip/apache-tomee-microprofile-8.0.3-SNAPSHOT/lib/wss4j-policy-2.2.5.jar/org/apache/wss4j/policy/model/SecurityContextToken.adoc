@@ -1,6 +1,0 @@
-= org/apache/wss4j/policy/model/SecurityContextToken.class
-
- - link:SecurityContextToken-asmified.java[Asmified]
-
-== References
-

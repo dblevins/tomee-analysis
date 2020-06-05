@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/xml/SimpleNamespaceContext.class
-
- - link:SimpleNamespaceContext-asmified.java[Asmified]
-
-== References
-

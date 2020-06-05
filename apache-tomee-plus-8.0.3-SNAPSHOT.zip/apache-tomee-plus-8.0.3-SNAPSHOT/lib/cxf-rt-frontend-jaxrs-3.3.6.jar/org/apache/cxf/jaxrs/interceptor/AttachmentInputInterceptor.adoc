@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/interceptor/AttachmentInputInterceptor.class
-
- - link:AttachmentInputInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/core/security/AbstractSecurityService$User.class
-
- - link:AbstractSecurityService$User-asmified.java[Asmified]
-
-== References
-

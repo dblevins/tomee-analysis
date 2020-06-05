@@ -1,6 +1,0 @@
-= com/ctc/wstx/io/InputBootstrapper.class
-
- - link:InputBootstrapper-asmified.java[Asmified]
-
-== References
-

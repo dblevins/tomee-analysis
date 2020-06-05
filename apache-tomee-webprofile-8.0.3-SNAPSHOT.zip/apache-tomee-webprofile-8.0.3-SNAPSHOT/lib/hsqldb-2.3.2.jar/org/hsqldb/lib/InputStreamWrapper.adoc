@@ -1,6 +1,0 @@
-= org/hsqldb/lib/InputStreamWrapper.class
-
- - link:InputStreamWrapper-asmified.java[Asmified]
-
-== References
-

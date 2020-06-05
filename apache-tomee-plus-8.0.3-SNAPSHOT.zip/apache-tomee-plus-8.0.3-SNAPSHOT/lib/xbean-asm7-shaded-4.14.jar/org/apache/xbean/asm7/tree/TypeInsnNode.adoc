@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/tree/TypeInsnNode.class
-
- - link:TypeInsnNode-asmified.java[Asmified]
-
-== References
-

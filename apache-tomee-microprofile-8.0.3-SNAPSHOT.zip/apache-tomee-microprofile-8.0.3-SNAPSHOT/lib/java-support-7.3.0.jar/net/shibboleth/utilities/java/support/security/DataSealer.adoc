@@ -1,6 +1,0 @@
-= net/shibboleth/utilities/java/support/security/DataSealer.class
-
- - link:DataSealer-asmified.java[Asmified]
-
-== References
-

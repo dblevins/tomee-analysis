@@ -1,6 +1,0 @@
-= jakarta/ws/rs/core/EntityTag.class
-
- - link:EntityTag-asmified.java[Asmified]
-
-== References
-

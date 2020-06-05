@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/expressions/FunctionExpression$1.class
-
- - link:FunctionExpression$1-asmified.java[Asmified]
-
-== References
-

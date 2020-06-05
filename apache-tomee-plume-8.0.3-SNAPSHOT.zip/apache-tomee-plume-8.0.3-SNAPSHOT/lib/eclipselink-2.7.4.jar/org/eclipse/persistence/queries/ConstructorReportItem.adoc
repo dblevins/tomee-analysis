@@ -1,6 +1,0 @@
-= org/eclipse/persistence/queries/ConstructorReportItem.class
-
- - link:ConstructorReportItem-asmified.java[Asmified]
-
-== References
-

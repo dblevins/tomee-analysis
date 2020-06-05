@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/osgi/BundleUtils.class
-
- - link:BundleUtils-asmified.java[Asmified]
-
-== References
-

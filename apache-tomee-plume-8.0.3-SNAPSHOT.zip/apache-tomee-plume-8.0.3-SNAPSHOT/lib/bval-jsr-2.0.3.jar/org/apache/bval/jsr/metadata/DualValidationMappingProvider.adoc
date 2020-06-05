@@ -1,6 +1,0 @@
-= org/apache/bval/jsr/metadata/DualValidationMappingProvider.class
-
- - link:DualValidationMappingProvider-asmified.java[Asmified]
-
-== References
-

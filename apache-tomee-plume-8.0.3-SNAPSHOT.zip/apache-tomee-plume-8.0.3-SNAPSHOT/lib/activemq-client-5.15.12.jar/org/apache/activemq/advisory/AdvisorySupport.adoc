@@ -1,6 +1,0 @@
-= org/apache/activemq/advisory/AdvisorySupport.class
-
- - link:AdvisorySupport-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/xml/security/encryption/EncryptionProperty.class
-
- - link:EncryptionProperty-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jpa/jpql/ObjectLevelReadQueryVisitor.class
-
- - link:ObjectLevelReadQueryVisitor-asmified.java[Asmified]
-
-== References
-

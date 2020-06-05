@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/HandlerChain.class
-
- - link:HandlerChain-asmified.java[Asmified]
-
-== References
-

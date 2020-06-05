@@ -1,6 +1,0 @@
-= org/apache/openejb/util/AnnotationFinder$Filter.class
-
- - link:AnnotationFinder$Filter-asmified.java[Asmified]
-
-== References
-

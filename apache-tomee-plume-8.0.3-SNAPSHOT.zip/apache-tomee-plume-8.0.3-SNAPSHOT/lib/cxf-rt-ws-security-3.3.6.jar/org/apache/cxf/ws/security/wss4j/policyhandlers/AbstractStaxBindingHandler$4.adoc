@@ -1,6 +1,0 @@
-= org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler$4.class
-
- - link:AbstractStaxBindingHandler$4-asmified.java[Asmified]
-
-== References
-

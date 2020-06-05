@@ -1,6 +1,0 @@
-= org/apache/commons/collections/map/StaticBucketMap$KeyIterator.class
-
- - link:StaticBucketMap$KeyIterator-asmified.java[Asmified]
-
-== References
-

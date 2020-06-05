@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxrs/ext/search/client/SearchConditionBuilder.class
-
- - link:SearchConditionBuilder-asmified.java[Asmified]
-
-== References
-

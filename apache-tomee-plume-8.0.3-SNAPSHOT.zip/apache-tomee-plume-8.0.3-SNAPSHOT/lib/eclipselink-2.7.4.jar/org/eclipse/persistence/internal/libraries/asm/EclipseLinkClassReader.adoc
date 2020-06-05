@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/EclipseLinkClassReader.class
-
- - link:EclipseLinkClassReader-asmified.java[Asmified]
-
-== References
-

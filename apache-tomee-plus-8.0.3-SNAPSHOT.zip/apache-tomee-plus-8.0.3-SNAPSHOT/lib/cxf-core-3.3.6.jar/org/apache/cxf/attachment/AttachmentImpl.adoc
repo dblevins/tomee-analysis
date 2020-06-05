@@ -1,6 +1,0 @@
-= org/apache/cxf/attachment/AttachmentImpl.class
-
- - link:AttachmentImpl-asmified.java[Asmified]
-
-== References
-

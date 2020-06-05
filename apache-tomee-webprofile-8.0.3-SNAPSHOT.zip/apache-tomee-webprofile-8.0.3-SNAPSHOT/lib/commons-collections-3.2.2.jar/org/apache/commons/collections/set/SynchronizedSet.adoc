@@ -1,6 +1,0 @@
-= org/apache/commons/collections/set/SynchronizedSet.class
-
- - link:SynchronizedSet-asmified.java[Asmified]
-
-== References
-

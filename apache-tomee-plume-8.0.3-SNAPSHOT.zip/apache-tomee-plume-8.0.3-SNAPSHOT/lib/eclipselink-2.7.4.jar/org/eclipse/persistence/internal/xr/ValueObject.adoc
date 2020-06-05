@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/xr/ValueObject.class
-
- - link:ValueObject-asmified.java[Asmified]
-
-== References
-

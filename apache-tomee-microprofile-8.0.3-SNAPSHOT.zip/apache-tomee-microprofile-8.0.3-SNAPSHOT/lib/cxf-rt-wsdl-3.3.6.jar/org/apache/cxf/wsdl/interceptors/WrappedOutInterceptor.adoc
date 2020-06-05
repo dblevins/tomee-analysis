@@ -1,6 +1,0 @@
-= org/apache/cxf/wsdl/interceptors/WrappedOutInterceptor.class
-
- - link:WrappedOutInterceptor-asmified.java[Asmified]
-
-== References
-

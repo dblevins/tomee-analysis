@@ -1,6 +1,0 @@
-= org/apache/openejb/math/stat/descriptive/moment/FirstMoment.class
-
- - link:FirstMoment-asmified.java[Asmified]
-
-== References
-

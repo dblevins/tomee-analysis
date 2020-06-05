@@ -1,6 +1,0 @@
-= org/apache/openejb/resource/jdbc/FailoverDataSource.class
-
- - link:FailoverDataSource-asmified.java[Asmified]
-
-== References
-

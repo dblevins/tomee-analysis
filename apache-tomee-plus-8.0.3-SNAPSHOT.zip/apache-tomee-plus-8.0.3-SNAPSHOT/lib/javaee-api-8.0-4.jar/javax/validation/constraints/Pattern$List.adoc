@@ -1,7 +1,0 @@
-= javax/validation/constraints/Pattern$List.class
-
- - link:Pattern$List-asmified.java[Asmified]
-
-== References
-
- - javax.validation.constraints.Pattern - 1

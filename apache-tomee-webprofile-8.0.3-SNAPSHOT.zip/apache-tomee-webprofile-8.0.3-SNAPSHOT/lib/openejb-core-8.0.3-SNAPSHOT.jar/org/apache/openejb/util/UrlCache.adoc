@@ -1,6 +1,0 @@
-= org/apache/openejb/util/UrlCache.class
-
- - link:UrlCache-asmified.java[Asmified]
-
-== References
-

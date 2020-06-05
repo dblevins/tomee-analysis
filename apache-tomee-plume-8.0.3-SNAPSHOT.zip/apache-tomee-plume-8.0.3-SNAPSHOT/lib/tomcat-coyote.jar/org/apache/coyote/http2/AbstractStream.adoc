@@ -1,6 +1,0 @@
-= org/apache/coyote/http2/AbstractStream.class
-
- - link:AbstractStream-asmified.java[Asmified]
-
-== References
-

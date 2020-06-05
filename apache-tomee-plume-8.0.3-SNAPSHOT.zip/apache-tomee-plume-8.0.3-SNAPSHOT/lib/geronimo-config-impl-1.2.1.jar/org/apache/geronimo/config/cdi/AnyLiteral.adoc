@@ -1,6 +1,0 @@
-= org/apache/geronimo/config/cdi/AnyLiteral.class
-
- - link:AnyLiteral-asmified.java[Asmified]
-
-== References
-

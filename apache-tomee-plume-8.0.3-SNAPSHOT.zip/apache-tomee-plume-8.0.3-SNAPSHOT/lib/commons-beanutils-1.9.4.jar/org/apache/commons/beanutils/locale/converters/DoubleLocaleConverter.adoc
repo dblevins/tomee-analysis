@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/locale/converters/DoubleLocaleConverter.class
-
- - link:DoubleLocaleConverter-asmified.java[Asmified]
-
-== References
-

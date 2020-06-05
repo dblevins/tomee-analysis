@@ -1,6 +1,0 @@
-= org/apache/commons/collections4/functors/AndPredicate.class
-
- - link:AndPredicate-asmified.java[Asmified]
-
-== References
-

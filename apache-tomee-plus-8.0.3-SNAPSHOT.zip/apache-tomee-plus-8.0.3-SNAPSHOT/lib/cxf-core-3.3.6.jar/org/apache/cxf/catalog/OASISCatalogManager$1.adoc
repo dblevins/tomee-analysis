@@ -1,6 +1,0 @@
-= org/apache/cxf/catalog/OASISCatalogManager$1.class
-
- - link:OASISCatalogManager$1-asmified.java[Asmified]
-
-== References
-

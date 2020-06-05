@@ -1,6 +1,0 @@
-= org/apache/cxf/io/CachedOutputStream$TransferableFileInputStream.class
-
- - link:CachedOutputStream$TransferableFileInputStream-asmified.java[Asmified]
-
-== References
-

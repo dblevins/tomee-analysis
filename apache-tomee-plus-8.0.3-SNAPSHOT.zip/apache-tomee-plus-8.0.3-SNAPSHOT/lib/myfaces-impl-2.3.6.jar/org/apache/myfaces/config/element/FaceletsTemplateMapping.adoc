@@ -1,6 +1,0 @@
-= org/apache/myfaces/config/element/FaceletsTemplateMapping.class
-
- - link:FaceletsTemplateMapping-asmified.java[Asmified]
-
-== References
-

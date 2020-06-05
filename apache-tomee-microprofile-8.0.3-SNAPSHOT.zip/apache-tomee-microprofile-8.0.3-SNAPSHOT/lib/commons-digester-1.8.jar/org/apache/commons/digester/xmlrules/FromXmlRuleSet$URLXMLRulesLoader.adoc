@@ -1,6 +1,0 @@
-= org/apache/commons/digester/xmlrules/FromXmlRuleSet$URLXMLRulesLoader.class
-
- - link:FromXmlRuleSet$URLXMLRulesLoader-asmified.java[Asmified]
-
-== References
-

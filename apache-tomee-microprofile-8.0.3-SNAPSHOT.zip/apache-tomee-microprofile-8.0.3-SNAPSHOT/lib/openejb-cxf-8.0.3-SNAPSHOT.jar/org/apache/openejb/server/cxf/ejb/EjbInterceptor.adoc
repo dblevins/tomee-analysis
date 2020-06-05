@@ -1,6 +1,0 @@
-= org/apache/openejb/server/cxf/ejb/EjbInterceptor.class
-
- - link:EjbInterceptor-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/CalendarIntervalScheduleBuilder.class
-
- - link:CalendarIntervalScheduleBuilder-asmified.java[Asmified]
-
-== References
-

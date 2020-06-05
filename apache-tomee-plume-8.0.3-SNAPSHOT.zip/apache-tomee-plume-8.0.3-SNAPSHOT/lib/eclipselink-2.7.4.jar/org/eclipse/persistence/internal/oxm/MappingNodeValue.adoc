@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/MappingNodeValue.class
-
- - link:MappingNodeValue-asmified.java[Asmified]
-
-== References
-

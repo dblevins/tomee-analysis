@@ -1,6 +1,0 @@
-= jakarta/ejb/SessionBean.class
-
- - link:SessionBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/activemq/util/Handler.class
-
- - link:Handler-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/persistence/descriptors/DescriptorEventManager.class
-
- - link:DescriptorEventManager-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openejb/server/rest/OpenEJBRestRuntimeException.class
-
- - link:OpenEJBRestRuntimeException-asmified.java[Asmified]
-
-== References
-

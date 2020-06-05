@@ -1,6 +1,0 @@
-= org/apache/xbean/asm7/MethodWriter.class
-
- - link:MethodWriter-asmified.java[Asmified]
-
-== References
-

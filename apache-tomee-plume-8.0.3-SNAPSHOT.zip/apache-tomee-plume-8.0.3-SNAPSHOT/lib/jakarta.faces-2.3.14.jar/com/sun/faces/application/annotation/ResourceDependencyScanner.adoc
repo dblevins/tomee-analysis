@@ -1,6 +1,0 @@
-= com/sun/faces/application/annotation/ResourceDependencyScanner.class
-
- - link:ResourceDependencyScanner-asmified.java[Asmified]
-
-== References
-

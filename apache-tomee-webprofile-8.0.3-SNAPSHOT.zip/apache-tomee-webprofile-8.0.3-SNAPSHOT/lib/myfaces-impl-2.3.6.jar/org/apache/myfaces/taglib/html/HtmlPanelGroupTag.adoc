@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlPanelGroupTag.class
-
- - link:HtmlPanelGroupTag-asmified.java[Asmified]
-
-== References
-

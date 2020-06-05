@@ -1,6 +1,0 @@
-= org/eclipse/microprofile/openapi/models/PathItem.class
-
- - link:PathItem-asmified.java[Asmified]
-
-== References
-

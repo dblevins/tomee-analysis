@@ -1,6 +1,0 @@
-= org/apache/openejb/jee/sun/EntityMapping.class
-
- - link:EntityMapping-asmified.java[Asmified]
-
-== References
-

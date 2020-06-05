@@ -1,6 +1,0 @@
-= org/opensaml/xmlsec/impl/BasicSignatureSigningParametersResolver.class
-
- - link:BasicSignatureSigningParametersResolver-asmified.java[Asmified]
-
-== References
-

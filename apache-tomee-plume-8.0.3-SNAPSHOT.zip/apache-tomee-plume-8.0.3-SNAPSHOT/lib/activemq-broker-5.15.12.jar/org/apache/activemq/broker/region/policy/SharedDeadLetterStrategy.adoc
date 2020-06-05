@@ -1,6 +1,0 @@
-= org/apache/activemq/broker/region/policy/SharedDeadLetterStrategy.class
-
- - link:SharedDeadLetterStrategy-asmified.java[Asmified]
-
-== References
-

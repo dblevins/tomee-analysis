@@ -1,6 +1,0 @@
-= javax/el/MethodInfo.class
-
- - link:MethodInfo-asmified.java[Asmified]
-
-== References
-

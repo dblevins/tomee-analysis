@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/BindVariableAndExpression.class
-
- - link:BindVariableAndExpression-asmified.java[Asmified]
-
-== References
-

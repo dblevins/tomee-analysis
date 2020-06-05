@@ -1,6 +1,0 @@
-= org/apache/tomcat/jdbc/pool/ConnectionPool$ConnectionFuture.class
-
- - link:ConnectionPool$ConnectionFuture-asmified.java[Asmified]
-
-== References
-

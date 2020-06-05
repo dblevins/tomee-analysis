@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/jaxb/CustomAccessorAttributeAccessor.class
-
- - link:CustomAccessorAttributeAccessor-asmified.java[Asmified]
-
-== References
-

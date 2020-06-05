@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/ConvertUtilsBean.class
-
- - link:ConvertUtilsBean-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/eclipse/jdt/internal/compiler/apt/model/ElementsImpl.class
-
- - link:ElementsImpl-asmified.java[Asmified]
-
-== References
-

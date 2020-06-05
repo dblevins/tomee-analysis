@@ -1,6 +1,0 @@
-= org/apache/commons/beanutils/WrapDynaClass$2.class
-
- - link:WrapDynaClass$2-asmified.java[Asmified]
-
-== References
-

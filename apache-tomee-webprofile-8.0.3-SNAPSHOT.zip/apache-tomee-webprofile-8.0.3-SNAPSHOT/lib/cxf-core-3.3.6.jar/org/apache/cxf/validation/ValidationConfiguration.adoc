@@ -1,6 +1,0 @@
-= org/apache/cxf/validation/ValidationConfiguration.class
-
- - link:ValidationConfiguration-asmified.java[Asmified]
-
-== References
-

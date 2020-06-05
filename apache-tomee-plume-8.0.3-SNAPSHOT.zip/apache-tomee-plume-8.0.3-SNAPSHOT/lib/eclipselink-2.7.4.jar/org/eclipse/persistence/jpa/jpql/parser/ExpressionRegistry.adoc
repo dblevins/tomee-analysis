@@ -1,6 +1,0 @@
-= org/eclipse/persistence/jpa/jpql/parser/ExpressionRegistry.class
-
- - link:ExpressionRegistry-asmified.java[Asmified]
-
-== References
-

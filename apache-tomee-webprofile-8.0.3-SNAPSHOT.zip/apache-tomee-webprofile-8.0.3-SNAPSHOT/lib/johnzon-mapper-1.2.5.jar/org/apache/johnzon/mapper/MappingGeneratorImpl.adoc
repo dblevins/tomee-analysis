@@ -1,6 +1,0 @@
-= org/apache/johnzon/mapper/MappingGeneratorImpl.class
-
- - link:MappingGeneratorImpl-asmified.java[Asmified]
-
-== References
-

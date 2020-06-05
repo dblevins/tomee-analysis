@@ -1,6 +1,0 @@
-= org/apache/geronimo/connector/outbound/transactionlog/LogXAResourceInsertionInterceptor.class
-
- - link:LogXAResourceInsertionInterceptor-asmified.java[Asmified]
-
-== References
-

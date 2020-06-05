@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/JobWrapper.class
-
- - link:JobWrapper-asmified.java[Asmified]
-
-== References
-

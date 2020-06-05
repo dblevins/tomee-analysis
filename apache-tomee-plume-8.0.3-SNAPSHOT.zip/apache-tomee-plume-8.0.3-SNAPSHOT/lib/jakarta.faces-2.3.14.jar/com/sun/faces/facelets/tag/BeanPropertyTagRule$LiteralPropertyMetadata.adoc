@@ -1,6 +1,0 @@
-= com/sun/faces/facelets/tag/BeanPropertyTagRule$LiteralPropertyMetadata.class
-
- - link:BeanPropertyTagRule$LiteralPropertyMetadata-asmified.java[Asmified]
-
-== References
-

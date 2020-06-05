@@ -1,7 +1,0 @@
-= javax/enterprise/inject/ResolutionException.class
-
- - link:ResolutionException-asmified.java[Asmified]
-
-== References
-
- - javax.enterprise.inject.InjectionException - 5

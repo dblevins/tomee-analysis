@@ -1,6 +1,0 @@
-= org/apache/openjpa/meta/Extensions$HashKey.class
-
- - link:Extensions$HashKey-asmified.java[Asmified]
-
-== References
-

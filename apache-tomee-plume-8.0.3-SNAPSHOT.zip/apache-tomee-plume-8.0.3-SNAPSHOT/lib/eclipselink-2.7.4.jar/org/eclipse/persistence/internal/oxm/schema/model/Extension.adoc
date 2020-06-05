@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/schema/model/Extension.class
-
- - link:Extension-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/persistence/query/AnyExpression.class
-
- - link:AnyExpression-asmified.java[Asmified]
-
-== References
-

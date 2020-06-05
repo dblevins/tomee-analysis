@@ -1,6 +1,0 @@
-= org/apache/commons/jcs/utils/timing/ElapsedTimer.class
-
- - link:ElapsedTimer-asmified.java[Asmified]
-
-== References
-

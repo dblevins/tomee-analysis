@@ -1,6 +1,0 @@
-= org/bouncycastle/pqc/crypto/newhope/Reduce.class
-
- - link:Reduce-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/DispatchImpl.class
-
- - link:DispatchImpl-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/myfaces/taglib/html/HtmlSelectManyCheckboxTag.class
-
- - link:HtmlSelectManyCheckboxTag-asmified.java[Asmified]
-
-== References
-

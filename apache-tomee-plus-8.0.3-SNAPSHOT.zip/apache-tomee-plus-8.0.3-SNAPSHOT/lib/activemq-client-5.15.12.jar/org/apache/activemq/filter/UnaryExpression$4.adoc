@@ -1,6 +1,0 @@
-= org/apache/activemq/filter/UnaryExpression$4.class
-
- - link:UnaryExpression$4-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/kernel/exps/MatchesExpression.class
-
- - link:MatchesExpression-asmified.java[Asmified]
-
-== References
-

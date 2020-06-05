@@ -1,6 +1,0 @@
-= org/apache/openejb/quartz/simpl/TriggerWrapper.class
-
- - link:TriggerWrapper-asmified.java[Asmified]
-
-== References
-

@@ -1,6 +1,0 @@
-= org/joda/time/format/InternalParser.class
-
- - link:InternalParser-asmified.java[Asmified]
-
-== References
-

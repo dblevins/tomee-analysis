@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/oxm/record/XMLRecord$1.class
-
- - link:XMLRecord$1-asmified.java[Asmified]
-
-== References
-

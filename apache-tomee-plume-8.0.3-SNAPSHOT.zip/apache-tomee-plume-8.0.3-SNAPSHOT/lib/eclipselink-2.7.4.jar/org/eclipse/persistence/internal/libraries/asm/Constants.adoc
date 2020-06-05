@@ -1,6 +1,0 @@
-= org/eclipse/persistence/internal/libraries/asm/Constants.class
-
- - link:Constants-asmified.java[Asmified]
-
-== References
-

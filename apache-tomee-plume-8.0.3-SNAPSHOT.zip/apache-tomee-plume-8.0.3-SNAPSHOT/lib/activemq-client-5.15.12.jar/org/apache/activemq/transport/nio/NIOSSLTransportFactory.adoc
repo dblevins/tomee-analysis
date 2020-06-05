@@ -1,6 +1,0 @@
-= org/apache/activemq/transport/nio/NIOSSLTransportFactory.class
-
- - link:NIOSSLTransportFactory-asmified.java[Asmified]
-
-== References
-

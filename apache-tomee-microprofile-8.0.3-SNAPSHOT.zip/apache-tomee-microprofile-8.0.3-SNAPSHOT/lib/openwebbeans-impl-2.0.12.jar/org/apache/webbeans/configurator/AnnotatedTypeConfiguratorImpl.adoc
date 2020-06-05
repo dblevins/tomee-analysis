@@ -1,6 +1,0 @@
-= org/apache/webbeans/configurator/AnnotatedTypeConfiguratorImpl.class
-
- - link:AnnotatedTypeConfiguratorImpl-asmified.java[Asmified]
-
-== References
-

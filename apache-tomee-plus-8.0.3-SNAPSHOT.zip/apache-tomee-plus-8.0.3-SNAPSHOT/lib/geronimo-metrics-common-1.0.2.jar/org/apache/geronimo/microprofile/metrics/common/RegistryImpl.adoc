@@ -1,6 +1,0 @@
-= org/apache/geronimo/microprofile/metrics/common/RegistryImpl.class
-
- - link:RegistryImpl-asmified.java[Asmified]
-
-== References
-

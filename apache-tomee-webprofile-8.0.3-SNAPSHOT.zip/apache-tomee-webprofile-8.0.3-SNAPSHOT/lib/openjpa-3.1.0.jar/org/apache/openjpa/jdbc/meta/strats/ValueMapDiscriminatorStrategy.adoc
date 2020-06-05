@@ -1,6 +1,0 @@
-= org/apache/openjpa/jdbc/meta/strats/ValueMapDiscriminatorStrategy.class
-
- - link:ValueMapDiscriminatorStrategy-asmified.java[Asmified]
-
-== References
-

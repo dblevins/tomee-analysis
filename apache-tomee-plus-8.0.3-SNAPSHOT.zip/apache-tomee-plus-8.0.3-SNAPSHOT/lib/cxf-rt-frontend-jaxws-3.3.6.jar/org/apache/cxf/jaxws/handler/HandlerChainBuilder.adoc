@@ -1,6 +1,0 @@
-= org/apache/cxf/jaxws/handler/HandlerChainBuilder.class
-
- - link:HandlerChainBuilder-asmified.java[Asmified]
-
-== References
-
