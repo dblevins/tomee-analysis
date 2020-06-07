@@ -1,0 +1,7 @@
+|===
+| Line | File 
+|  `annotationVisitor1.visit(null, "javax.persistence.Embeddable");`  | link:https://github.com/dblevins/tomee-analysis/blob/master/apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openjpa-3.1.0.jar/org/apache/openjpa/persistence/meta/AnnotationProcessor6-asmified.java#L32[org/apache/openjpa/persistence/meta/AnnotationProcessor6:32]  
+|  `annotationVisitor1.visit(null, "javax.persistence.Entity");`  | link:https://github.com/dblevins/tomee-analysis/blob/master/apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openjpa-3.1.0.jar/org/apache/openjpa/persistence/meta/AnnotationProcessor6-asmified.java#L31[org/apache/openjpa/persistence/meta/AnnotationProcessor6:31]  
+|  `annotationVisitor1.visit(null, "javax.persistence.MappedSuperclass");`  | link:https://github.com/dblevins/tomee-analysis/blob/master/apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openjpa-3.1.0.jar/org/apache/openjpa/persistence/meta/AnnotationProcessor6-asmified.java#L33[org/apache/openjpa/persistence/meta/AnnotationProcessor6:33]  
+|===
+

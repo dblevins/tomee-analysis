@@ -1,0 +1,7 @@
+|===
+| Line | File 
+|  `methodVisitor.visitLdcInsn("javax.");`  | link:https://github.com/dblevins/tomee-analysis/blob/master/apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/cxf-core-3.3.6.jar/org/apache/cxf/common/injection/ResourceInjector-asmified.java#L141[org/apache/cxf/common/injection/ResourceInjector:141]  
+|  `methodVisitor.visitLdcInsn("javax.");`  | link:https://github.com/dblevins/tomee-analysis/blob/master/apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/cxf-rt-databinding-jaxb-3.3.6.jar/org/apache/cxf/jaxb/JAXBContextInitializer-asmified.java#L987[org/apache/cxf/jaxb/JAXBContextInitializer:987]  
+|  `methodVisitor.visitLdcInsn("javax.");`  | link:https://github.com/dblevins/tomee-analysis/blob/master/apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/cxf-rt-databinding-jaxb-3.3.6.jar/org/apache/cxf/jaxb/JAXBContextInitializer-asmified.java#L1165[org/apache/cxf/jaxb/JAXBContextInitializer:1165]  
+|===
+
