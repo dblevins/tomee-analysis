@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/activation/CommandInfo$Beans$1", null, "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/activation/CommandInfo$Beans", "instantiate", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;");
+classWriter.visitOuterClass("jakarta/activation/CommandInfo$Beans", "instantiate", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;");
 
 classWriter.visitInnerClass("jakarta/activation/CommandInfo$Beans", "jakarta/activation/CommandInfo", "Beans", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
 

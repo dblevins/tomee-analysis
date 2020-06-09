@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_SUPER, "jakarta/servlet/jsp/jstl/tlv/PageParser$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljavax/xml/parsers/SAXParserFactory;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/servlet/jsp/jstl/tlv/PageParser", "<init>", "(Z)V");
+classWriter.visitOuterClass("jakarta/servlet/jsp/jstl/tlv/PageParser", "<init>", "(Z)V");
 
 classWriter.visitInnerClass("jakarta/servlet/jsp/jstl/tlv/PageParser$1", null, null, 0);
 

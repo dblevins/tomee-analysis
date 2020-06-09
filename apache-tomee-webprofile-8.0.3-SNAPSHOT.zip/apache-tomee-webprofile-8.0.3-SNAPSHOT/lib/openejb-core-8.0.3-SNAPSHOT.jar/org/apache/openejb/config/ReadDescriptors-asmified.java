@@ -957,7 +957,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitInsn(ICONST_0);
-methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/jakarta/validation/configuration");
+methodVisitor.visitLdcInsn("http://jboss.org/xml/ns/javax/validation/configuration");
 methodVisitor.visitInsn(AASTORE);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/config/sys/JaxbOpenejb", "unmarshal", "(Ljava/lang/Class;Ljava/io/InputStream;ZLjava/lang/String;[Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/jee/bval/ValidationConfigType");

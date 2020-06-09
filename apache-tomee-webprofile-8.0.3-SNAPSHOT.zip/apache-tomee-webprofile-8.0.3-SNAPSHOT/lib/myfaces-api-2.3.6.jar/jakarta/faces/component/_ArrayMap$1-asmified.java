@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/faces/component/_ArrayMap$1", "Ljava/util/AbstractSet<Ljava/util/Map$Entry<TK;TV;>;>;", "java/util/AbstractSet", null);
 
-classWriter.visitOuterClass("javax/faces/component/_ArrayMap", "entrySet", "()Ljava/util/Set;");
+classWriter.visitOuterClass("jakarta/faces/component/_ArrayMap", "entrySet", "()Ljava/util/Set;");
 
 classWriter.visitInnerClass("jakarta/faces/component/_ArrayMap$1", null, null, 0);
 

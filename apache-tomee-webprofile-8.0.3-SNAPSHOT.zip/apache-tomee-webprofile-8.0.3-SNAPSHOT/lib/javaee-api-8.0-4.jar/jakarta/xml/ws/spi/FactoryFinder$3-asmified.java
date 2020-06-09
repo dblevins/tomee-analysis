@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/xml/ws/spi/FactoryFinder$3", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/Object;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/xml/ws/spi/FactoryFinder", "find", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+classWriter.visitOuterClass("jakarta/xml/ws/spi/FactoryFinder", "find", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
 
 classWriter.visitInnerClass("jakarta/xml/ws/spi/FactoryFinder$3", null, null, ACC_STATIC);
 

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/ws/rs/core/MediaType$1", "Ljava/lang/Object;Ljava/util/Comparator<Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/util/Comparator" });
 
-classWriter.visitOuterClass("javax/ws/rs/core/MediaType", "createParametersMap", "(Ljava/util/Map;)Ljava/util/TreeMap;");
+classWriter.visitOuterClass("jakarta/ws/rs/core/MediaType", "createParametersMap", "(Ljava/util/Map;)Ljava/util/TreeMap;");
 
 classWriter.visitInnerClass("jakarta/ws/rs/core/MediaType$1", null, null, ACC_STATIC);
 

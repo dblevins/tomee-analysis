@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/security/jacc/PolicyConfigurationFactory$1", null, "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("javax/security/jacc/PolicyConfigurationFactory", "getPolicyConfigurationFactory", "()Ljakarta/security/jacc/PolicyConfigurationFactory;");
+classWriter.visitOuterClass("jakarta/security/jacc/PolicyConfigurationFactory", "getPolicyConfigurationFactory", "()Ljakarta/security/jacc/PolicyConfigurationFactory;");
 
 classWriter.visitInnerClass("jakarta/security/jacc/PolicyConfigurationFactory$1", null, null, ACC_STATIC);
 

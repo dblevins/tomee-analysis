@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/faces/component/UIWebsocket$1", "Ljava/lang/Object;Ljava/util/Collection<Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/util/Collection" });
 
-classWriter.visitOuterClass("javax/faces/component/UIWebsocket", "getEventNames", "()Ljava/util/Collection;");
+classWriter.visitOuterClass("jakarta/faces/component/UIWebsocket", "getEventNames", "()Ljava/util/Collection;");
 
 classWriter.visitInnerClass("jakarta/faces/component/UIWebsocket$1", null, null, 0);
 

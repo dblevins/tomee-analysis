@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/faces/convert/_MessageUtils$1", null, "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("javax/faces/convert/_MessageUtils", "getBundle", "(Ljakarta/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;)Ljava/util/ResourceBundle;");
+classWriter.visitOuterClass("jakarta/faces/convert/_MessageUtils", "getBundle", "(Ljakarta/faces/context/FacesContext;Ljava/util/Locale;Ljava/lang/String;)Ljava/util/ResourceBundle;");
 
 classWriter.visitInnerClass("jakarta/faces/convert/_MessageUtils$1", null, null, ACC_STATIC);
 

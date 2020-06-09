@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/xml/bind/JAXBContext$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/ClassLoader;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/xml/bind/JAXBContext", "getContextClassLoader", "()Ljava/lang/ClassLoader;");
+classWriter.visitOuterClass("jakarta/xml/bind/JAXBContext", "getContextClassLoader", "()Ljava/lang/ClassLoader;");
 
 classWriter.visitInnerClass("jakarta/xml/bind/JAXBContext$1", null, null, 0);
 

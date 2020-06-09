@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/faces/validator/BeanValidator$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljava/lang/ClassLoader;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("javax/faces/validator/BeanValidator", "postSetValidationGroups", "()V");
+classWriter.visitOuterClass("jakarta/faces/validator/BeanValidator", "postSetValidationGroups", "()V");
 
 classWriter.visitInnerClass("jakarta/faces/validator/BeanValidator$1", null, null, 0);
 

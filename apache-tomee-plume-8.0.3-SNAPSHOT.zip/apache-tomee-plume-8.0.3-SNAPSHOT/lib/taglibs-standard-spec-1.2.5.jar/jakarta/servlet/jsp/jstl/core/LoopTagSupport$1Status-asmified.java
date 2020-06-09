@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_SUPER, "jakarta/servlet/jsp/jstl/core/LoopTagSupport$1Status", null, "java/lang/Object", new String[] { "jakarta/servlet/jsp/jstl/core/LoopTagStatus" });
 
-classWriter.visitOuterClass("javax/servlet/jsp/jstl/core/LoopTagSupport", "getLoopStatus", "()Ljakarta/servlet/jsp/jstl/core/LoopTagStatus;");
+classWriter.visitOuterClass("jakarta/servlet/jsp/jstl/core/LoopTagSupport", "getLoopStatus", "()Ljakarta/servlet/jsp/jstl/core/LoopTagStatus;");
 
 classWriter.visitInnerClass("jakarta/servlet/jsp/jstl/core/LoopTagSupport$1Status", null, "Status", 0);
 

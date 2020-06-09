@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/xml/bind/ContextFinder$4", null, "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/xml/bind/ContextFinder", "getClassClassLoader", "(Ljava/lang/Class;)Ljava/lang/ClassLoader;");
+classWriter.visitOuterClass("jakarta/xml/bind/ContextFinder", "getClassClassLoader", "(Ljava/lang/Class;)Ljava/lang/ClassLoader;");
 
 classWriter.visitInnerClass("jakarta/xml/bind/ContextFinder$4", null, null, 0);
 

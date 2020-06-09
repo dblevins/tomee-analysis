@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/servlet/jsp/jstl/fmt/JakartaInline$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/ClassLoader;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/servlet/jsp/jstl/fmt/JakartaInline", "getClassLoaderCheckingPrivilege", "()Ljava/lang/ClassLoader;");
+classWriter.visitOuterClass("jakarta/servlet/jsp/jstl/fmt/JakartaInline", "getClassLoaderCheckingPrivilege", "()Ljava/lang/ClassLoader;");
 
 classWriter.visitInnerClass("jakarta/servlet/jsp/jstl/fmt/JakartaInline$1", null, null, ACC_STATIC);
 

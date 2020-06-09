@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/activation/SecuritySupport$5", null, "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("javax/activation/SecuritySupport", "openStream", "(Ljava/net/URL;)Ljava/io/InputStream;");
+classWriter.visitOuterClass("jakarta/activation/SecuritySupport", "openStream", "(Ljava/net/URL;)Ljava/io/InputStream;");
 
 classWriter.visitInnerClass("jakarta/activation/SecuritySupport$5", null, null, ACC_STATIC);
 

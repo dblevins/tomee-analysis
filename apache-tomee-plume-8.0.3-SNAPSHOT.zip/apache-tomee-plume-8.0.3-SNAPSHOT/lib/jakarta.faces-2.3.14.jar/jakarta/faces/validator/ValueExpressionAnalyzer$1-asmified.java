@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/faces/validator/ValueExpressionAnalyzer$1", null, "jakarta/el/ELContext", null);
 
-classWriter.visitOuterClass("javax/faces/validator/ValueExpressionAnalyzer", "decorateELContext", "(Ljakarta/el/ELContext;Ljakarta/el/ELResolver;)Ljakarta/el/ELContext;");
+classWriter.visitOuterClass("jakarta/faces/validator/ValueExpressionAnalyzer", "decorateELContext", "(Ljakarta/el/ELContext;Ljakarta/el/ELResolver;)Ljakarta/el/ELContext;");
 
 classWriter.visitInnerClass("jakarta/faces/validator/ValueExpressionAnalyzer$1", null, null, 0);
 

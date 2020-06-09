@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/servlet/http/HttpServletRequest$1", null, "java/lang/Object", new String[] { "jakarta/servlet/http/HttpServletMapping" });
 
-classWriter.visitOuterClass("javax/servlet/http/HttpServletRequest", "getHttpServletMapping", "()Ljakarta/servlet/http/HttpServletMapping;");
+classWriter.visitOuterClass("jakarta/servlet/http/HttpServletRequest", "getHttpServletMapping", "()Ljakarta/servlet/http/HttpServletMapping;");
 
 classWriter.visitInnerClass("jakarta/servlet/http/HttpServletRequest$1", null, null, 0);
 

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/faces/component/_MethodBindingToMethodExpression$1", "Ljava/lang/Object;Ljakarta/faces/component/_MethodBindingToMethodExpression$Invoker<Ljakarta/el/MethodInfo;>;", "java/lang/Object", new String[] { "jakarta/faces/component/_MethodBindingToMethodExpression$Invoker" });
 
-classWriter.visitOuterClass("javax/faces/component/_MethodBindingToMethodExpression", "getMethodInfo", "(Ljakarta/el/ELContext;)Ljakarta/el/MethodInfo;");
+classWriter.visitOuterClass("jakarta/faces/component/_MethodBindingToMethodExpression", "getMethodInfo", "(Ljakarta/el/ELContext;)Ljakarta/el/MethodInfo;");
 
 classWriter.visitInnerClass("jakarta/faces/component/_MethodBindingToMethodExpression$1", null, null, 0);
 

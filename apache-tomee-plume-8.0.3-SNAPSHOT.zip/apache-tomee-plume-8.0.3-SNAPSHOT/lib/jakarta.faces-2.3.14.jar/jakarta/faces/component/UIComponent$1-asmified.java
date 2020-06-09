@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/faces/component/UIComponent$1", "Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/util/Map" });
 
-classWriter.visitOuterClass("javax/faces/component/UIComponent", "wrapBundleAsMap", "(Ljava/util/ResourceBundle;)Ljava/util/Map;");
+classWriter.visitOuterClass("jakarta/faces/component/UIComponent", "wrapBundleAsMap", "(Ljava/util/ResourceBundle;)Ljava/util/Map;");
 
 classWriter.visitInnerClass("jakarta/faces/component/UIComponent$1", null, null, 0);
 

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/ws/rs/core/Form$1", "Ljakarta/ws/rs/core/AbstractMultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", "jakarta/ws/rs/core/AbstractMultivaluedMap", null);
 
-classWriter.visitOuterClass("javax/ws/rs/core/Form", "<init>", "()V");
+classWriter.visitOuterClass("jakarta/ws/rs/core/Form", "<init>", "()V");
 
 classWriter.visitInnerClass("jakarta/ws/rs/core/Form$1", null, null, 0);
 

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/servlet/jsp/el/ImplicitObjectELResolver$ScopeManager$8", "Ljakarta/servlet/jsp/el/ImplicitObjectELResolver$ScopeMap<[Ljava/lang/String;>;", "jakarta/servlet/jsp/el/ImplicitObjectELResolver$ScopeMap", null);
 
-classWriter.visitOuterClass("javax/servlet/jsp/el/ImplicitObjectELResolver$ScopeManager", "getParamValues", "()Ljava/util/Map;");
+classWriter.visitOuterClass("jakarta/servlet/jsp/el/ImplicitObjectELResolver$ScopeManager", "getParamValues", "()Ljava/util/Map;");
 
 classWriter.visitInnerClass("jakarta/servlet/jsp/el/ImplicitObjectELResolver$ScopeManager", "jakarta/servlet/jsp/el/ImplicitObjectELResolver", "ScopeManager", ACC_PRIVATE | ACC_STATIC);
 

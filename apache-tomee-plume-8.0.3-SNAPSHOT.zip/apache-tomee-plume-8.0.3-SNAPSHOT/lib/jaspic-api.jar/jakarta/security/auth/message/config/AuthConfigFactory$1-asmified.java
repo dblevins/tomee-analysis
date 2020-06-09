@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/security/auth/message/config/AuthConfigFactory$1", "Ljava/lang/Object;Ljava/security/PrivilegedExceptionAction<Ljakarta/security/auth/message/config/AuthConfigFactory;>;", "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("javax/security/auth/message/config/AuthConfigFactory", "getFactory", "()Ljakarta/security/auth/message/config/AuthConfigFactory;");
+classWriter.visitOuterClass("jakarta/security/auth/message/config/AuthConfigFactory", "getFactory", "()Ljakarta/security/auth/message/config/AuthConfigFactory;");
 
 classWriter.visitInnerClass("jakarta/security/auth/message/config/AuthConfigFactory$1", null, null, ACC_STATIC);
 

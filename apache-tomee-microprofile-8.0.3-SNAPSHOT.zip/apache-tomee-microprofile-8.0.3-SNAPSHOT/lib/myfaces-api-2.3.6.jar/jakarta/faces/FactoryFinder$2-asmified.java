@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/faces/FactoryFinder$2", null, "java/lang/Object", new String[] { "java/security/PrivilegedExceptionAction" });
 
-classWriter.visitOuterClass("javax/faces/FactoryFinder", "getClassLoader", "()Ljava/lang/ClassLoader;");
+classWriter.visitOuterClass("jakarta/faces/FactoryFinder", "getClassLoader", "()Ljava/lang/ClassLoader;");
 
 classWriter.visitInnerClass("jakarta/faces/FactoryFinder$2", null, null, ACC_STATIC);
 

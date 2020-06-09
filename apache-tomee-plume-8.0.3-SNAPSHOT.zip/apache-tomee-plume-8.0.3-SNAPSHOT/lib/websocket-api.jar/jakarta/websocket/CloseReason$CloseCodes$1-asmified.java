@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/websocket/CloseReason$CloseCodes$1", null, "java/lang/Object", new String[] { "jakarta/websocket/CloseReason$CloseCode" });
 
-classWriter.visitOuterClass("javax/websocket/CloseReason$CloseCodes", "getCloseCode", "(I)Ljakarta/websocket/CloseReason$CloseCode;");
+classWriter.visitOuterClass("jakarta/websocket/CloseReason$CloseCodes", "getCloseCode", "(I)Ljakarta/websocket/CloseReason$CloseCode;");
 
 classWriter.visitInnerClass("jakarta/websocket/CloseReason$CloseCodes", "jakarta/websocket/CloseReason", "CloseCodes", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
 

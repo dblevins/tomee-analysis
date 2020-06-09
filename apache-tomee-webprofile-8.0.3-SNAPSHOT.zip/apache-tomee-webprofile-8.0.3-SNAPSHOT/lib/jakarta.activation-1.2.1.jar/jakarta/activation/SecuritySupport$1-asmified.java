@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/activation/SecuritySupport$1", null, "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/activation/SecuritySupport", "getContextClassLoader", "()Ljava/lang/ClassLoader;");
+classWriter.visitOuterClass("jakarta/activation/SecuritySupport", "getContextClassLoader", "()Ljava/lang/ClassLoader;");
 
 classWriter.visitInnerClass("jakarta/activation/SecuritySupport$1", null, null, ACC_STATIC);
 

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_SUPER, "jakarta/activation/DataHandler$1", null, "java/lang/Object", new String[] { "java/lang/Runnable" });
 
-classWriter.visitOuterClass("javax/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;");
+classWriter.visitOuterClass("jakarta/activation/DataHandler", "getInputStream", "()Ljava/io/InputStream;");
 
 classWriter.visitInnerClass("jakarta/activation/DataHandler$1", null, null, 0);
 

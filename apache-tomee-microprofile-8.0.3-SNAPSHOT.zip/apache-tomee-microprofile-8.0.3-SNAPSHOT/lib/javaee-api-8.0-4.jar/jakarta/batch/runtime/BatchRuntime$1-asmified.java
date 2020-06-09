@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_6, ACC_FINAL | ACC_SUPER, "jakarta/batch/runtime/BatchRuntime$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljakarta/batch/operations/JobOperator;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/batch/runtime/BatchRuntime", "getJobOperator", "()Ljakarta/batch/operations/JobOperator;");
+classWriter.visitOuterClass("jakarta/batch/runtime/BatchRuntime", "getJobOperator", "()Ljakarta/batch/operations/JobOperator;");
 
 classWriter.visitInnerClass("jakarta/batch/runtime/BatchRuntime$1", null, null, ACC_STATIC);
 

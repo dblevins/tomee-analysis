@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/json/spi/JsonProvider$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljakarta/json/spi/JsonProvider;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/json/spi/JsonProvider", "provider", "()Ljakarta/json/spi/JsonProvider;");
+classWriter.visitOuterClass("jakarta/json/spi/JsonProvider", "provider", "()Ljakarta/json/spi/JsonProvider;");
 
 classWriter.visitInnerClass("jakarta/json/spi/JsonProvider$1", null, null, ACC_STATIC);
 

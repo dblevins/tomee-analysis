@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/faces/component/UISelectOne$1", null, "java/lang/Object", new String[] { "jakarta/faces/component/visit/VisitCallback" });
 
-classWriter.visitOuterClass("javax/faces/component/UISelectOne", "processValidators", "(Ljakarta/faces/context/FacesContext;)V");
+classWriter.visitOuterClass("jakarta/faces/component/UISelectOne", "processValidators", "(Ljakarta/faces/context/FacesContext;)V");
 
 classWriter.visitInnerClass("jakarta/faces/component/UISelectOne$1", null, null, 0);
 

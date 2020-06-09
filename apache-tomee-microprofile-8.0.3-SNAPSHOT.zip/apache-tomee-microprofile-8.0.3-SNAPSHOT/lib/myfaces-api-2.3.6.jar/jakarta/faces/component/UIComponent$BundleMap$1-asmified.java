@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/faces/component/UIComponent$BundleMap$1", "Ljava/lang/Object;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/util/Map$Entry" });
 
-classWriter.visitOuterClass("javax/faces/component/UIComponent$BundleMap", "entrySet", "()Ljava/util/Set;");
+classWriter.visitOuterClass("jakarta/faces/component/UIComponent$BundleMap", "entrySet", "()Ljava/util/Set;");
 
 classWriter.visitInnerClass("jakarta/faces/component/UIComponent$BundleMap", "jakarta/faces/component/UIComponent", "BundleMap", ACC_PRIVATE | ACC_STATIC);
 
