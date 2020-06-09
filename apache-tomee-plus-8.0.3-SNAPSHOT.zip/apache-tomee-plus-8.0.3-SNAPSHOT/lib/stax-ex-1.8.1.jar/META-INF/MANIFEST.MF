@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1545923610249
+Build-Jdk: 11
+Built-By: default
+Bundle-Description: Extensions to JSR-173 StAX API.; Jarkata Enabled
+Bundle-DocURL: https://www.eclipse.org
+Bundle-License: http://www.eclipse.org/org/documents/edl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: Extended StAX API Jakarta
+Bundle-SymbolicName: org.jvnet.staxex.stax-ex.jakarta
+Bundle-Vendor: Eclipse Foundation
+Bundle-Version: 1.8.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.jvnet.staxex;uses:="jakarta.activation,javax.xml.n
+ amespace,javax.xml.stream";version="1.8.1",org.jvnet.staxex.util;uses
+ :="jakarta.xml.bind.attachment,javax.xml.namespace,javax.xml.stream,o
+ rg.w3c.dom";version="1.8.1"
+Implementation-Build-Id: 1.8.1-acf3f94, 2018-12-27T15:12:49+0000
+Implementation-Title: Extended StAX API
+Implementation-URL: https://projects.eclipse.org/projects/ee4j/stax-ex
+Implementation-Vendor: Eclipse Foundation
+Implementation-Vendor-Id: org.jvnet.staxex
+Implementation-Version: 1.8.1
+Import-Package: jakarta.activation;version="[1.2,2)",jakarta.xml.bind.
+ attachment;version="[2.3,3)",javax.xml.namespace,javax.xml.stream,org
+ .jvnet.staxex,org.w3c.dom
+Tool: Bnd-3.5.0.201709291849
+

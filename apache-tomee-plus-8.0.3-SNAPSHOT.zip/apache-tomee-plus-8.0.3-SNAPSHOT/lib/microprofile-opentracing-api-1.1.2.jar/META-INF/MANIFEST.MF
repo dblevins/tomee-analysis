@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1581495725367
+Build-Jdk: 1.8.0_202
+Built-By: default
+Bundle-License: Apache License, Version 2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MicroProfile OpenTracing Bundle Jakarta
+Bundle-SymbolicName: org.eclipse.microprofile.opentracing.jakarta
+Bundle-Version: 1.1.2
+Created-By: 1.8.0_202 (AdoptOpenJdk)
+Export-Package: org.eclipse.microprofile.opentracing;version="1.0";use
+ s:="jakarta.enterprise.util,jakarta.interceptor,jakarta.ws.rs.client"
+Import-Package: jakarta.enterprise.util;version="[1.1,2)",jakarta.inte
+ rceptor;version="[1.2,2)",jakarta.ws.rs.client;version="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-2.4.1.201501161923
+

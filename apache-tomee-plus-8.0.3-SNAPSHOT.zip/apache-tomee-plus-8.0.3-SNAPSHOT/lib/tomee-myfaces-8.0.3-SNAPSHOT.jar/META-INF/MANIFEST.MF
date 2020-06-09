@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.tomee.myfaces
+Bnd-LastModified: 1591729278589
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: TomEE :: MyFaces Jakarta
+Bundle-SymbolicName: org.apache.tomee.myfaces.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.tomee.myfaces;version="8.0.3.SNAPSHOT";uses
+ :="jakarta.faces.context,jakarta.servlet,jakarta.servlet.annotation,o
+ rg.apache.myfaces.config,org.apache.myfaces.config.annotation,org.apa
+ che.myfaces.config.element,org.apache.myfaces.spi,org.apache.myfaces.
+ spi.impl"
+Implementation-Title: TomEE :: TomEE :: MyFaces
+Implementation-URL: http://tomee.apache.org/tomee/tomee-myfaces
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: jakarta.faces;version="[2.3,3)",jakarta.faces.context;
+ version="[2.3,3)",jakarta.faces.webapp;version="[2.3,3)",jakarta.serv
+ let,jakarta.servlet.annotation,org.apache.catalina,org.apache.catalin
+ a.core,org.apache.myfaces.config;version="[2.3,3)",org.apache.myfaces
+ .config.annotation;version="[2.3,3)",org.apache.myfaces.config.elemen
+ t;version="[2.3,3)",org.apache.myfaces.config.impl.digester.elements;
+ version="[2.3,3)",org.apache.myfaces.ee;version="[2.3,3)",org.apache.
+ myfaces.shared.util,org.apache.myfaces.shared_impl.webapp.webxml;vers
+ ion="[2.3,3)",org.apache.myfaces.spi;version="[2.3,3)",org.apache.myf
+ aces.spi.impl;version="[2.3,3)",org.apache.myfaces.webapp;version="[2
+ .3,3)",org.apache.openejb.assembler.classic;version="[8.0,9)",org.apa
+ che.openejb.config;version="[8.0,9)",org.apache.openejb.loader,org.ap
+ ache.openejb.log;version="[8.0,9)",org.apache.openejb.util;version="[
+ 8.0,9)",org.apache.openejb.util.reflection;version="[8.0,9)",org.apac
+ he.xbean.finder;version="[4.14,5)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: TomEE :: MyFaces
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

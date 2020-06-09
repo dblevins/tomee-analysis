@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.rs.wadl
+Bnd-LastModified: 1585152563369
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF JAX-RS Service Description; Jarkata Ena
+ bled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF JAX-RS Service Description Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-rs-service-description.jaka
+ rta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.jaxrs.model.wadl;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.servlet;version="[0,4.1)";resolution:=optional
+ ,jakarta.xml.bind;version="[0,3)",jakarta.xml.bind.annotation;version
+ ="[0,3)",jakarta.ws.rs;version="[2.1,3)",jakarta.ws.rs.container;vers
+ ion="[2.1,3)",jakarta.ws.rs.core;version="[2.1,3)",jakarta.ws.rs.ext;
+ version="[2.1,3)",javax.xml.datatype,javax.xml.namespace,javax.xml.pa
+ rsers,javax.xml.stream,javax.xml.transform,javax.xml.transform.dom,ja
+ vax.xml.transform.stream,org.apache.cxf;version="[3.3,4)",org.apache.
+ cxf.common.jaxb;version="[3.3,4)",org.apache.cxf.common.logging;versi
+ on="[3.3,4)",org.apache.cxf.common.util;version="[3.3,4)",org.apache.
+ cxf.common.xmlschema;version="[3.3,4)",org.apache.cxf.endpoint;versio
+ n="[3.3,4)",org.apache.cxf.helpers;version="[3.3,4)",org.apache.cxf.j
+ axrs;version="[3.3,4)",org.apache.cxf.jaxrs.ext;version="[3.3,4)",org
+ .apache.cxf.jaxrs.ext.multipart;version="[3.3,4)",org.apache.cxf.jaxr
+ s.ext.xml;version="[3.3,4)",org.apache.cxf.jaxrs.impl;version="[3.3,4
+ )",org.apache.cxf.jaxrs.model;version="[3.3,4)",org.apache.cxf.jaxrs.
+ model.doc;version="[3.3,4)",org.apache.cxf.jaxrs.provider;version="[3
+ .3,4)",org.apache.cxf.jaxrs.utils;version="[3.3,4)",org.apache.cxf.ja
+ xrs.utils.schemas;version="[3.3,4)",org.apache.cxf.message;version="[
+ 3.3,4)",org.apache.cxf.service;version="[3.3,4)",org.apache.cxf.servi
+ ce.model;version="[3.3,4)",org.apache.cxf.staxutils;version="[3.3,4)"
+ ,org.apache.ws.commons.schema;version="[2.2,3)",org.w3c.dom
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

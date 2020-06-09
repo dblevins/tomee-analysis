@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Automatic-Module-Name: jakarta.activation
+Bnd-LastModified: 1542752026736
+Build-Jdk: 1.8.0_181
+Built-By: default
+Bundle-Description: JavaBeans Activation Framework; Jarkata Enabled
+Bundle-DocURL: https://www.eclipse.org
+Bundle-License: http://www.eclipse.org/org/documents/edl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: JavaBeans Activation Framework Jakarta
+Bundle-SymbolicName: com.sun.activation.jakarta.activation.jakarta
+Bundle-Vendor: Eclipse Foundation
+Bundle-Version: 1.2.1
+Created-By: 1.8.0_181 (Oracle Corporation)
+DynamicImport-Package: *
+Export-Package: jakarta.activation;uses:="com.sun.activation.registrie
+ s";version="1.2",com.sun.activation.registries;version="1.2.1",com.su
+ n.activation.viewers;uses:="jakarta.activation";version="1.2.1"
+Extension-Name: jakarta.activation
+Implementation-Title: javax.activation
+Implementation-Vendor: Eclipse Foundation
+Implementation-Vendor-Id: com.sun
+Implementation-Version: 1.2.1
+Import-Package: com.sun.activation.registries;version="1.2",com.sun.ac
+ tivation.viewers;version="1.2",jakarta.activation;version="1.2"
+Specification-Title: JavaBeans(TM) Activation Framework Specification
+Specification-Vendor: Eclipse Foundation
+Specification-Version: 1.2
+Tool: Bnd-0.0.357
+

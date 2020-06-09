@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.xbean.finder.shaded
+Bnd-LastModified: 1558615178763
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: XBean is a plugin based server architecture.; Jark
+ ata Enabled
+Bundle-DocURL: http://geronimo.apache.org/maven/xbean/4.14/xbean-finde
+ r-shaded
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache XBean :: Finder shaded (repackaged) Jakarta
+Bundle-SymbolicName: org.apache.xbean.finder-shaded.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 4.14.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.xbean.finder;version="4.14";uses:="org.apac
+ he.xbean.asm7,org.apache.xbean.asm7.shade.commons,org.apache.xbean.fi
+ nder.archive,org.apache.xbean.finder.filter,org.apache.xbean.osgi.bun
+ dle.util,org.osgi.framework,org.osgi.service.packageadmin",org.apache
+ .xbean.finder.archive;version="4.14";uses:="org.apache.xbean.finder.f
+ ilter,org.apache.xbean.osgi.bundle.util,org.osgi.framework,org.osgi.s
+ ervice.packageadmin",org.apache.xbean.finder.filter;version="4.14",or
+ g.apache.xbean.finder.util;version="4.14"
+Implementation-Title: Apache XBean :: Finder shaded (repackaged)
+Implementation-URL: http://geronimo.apache.org/maven/xbean/4.14/xbean-
+ finder-shaded
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.xbean
+Implementation-Version: 4.14
+Import-Package: org.apache.xbean.asm7;version="[7.0,8.0)",org.apache.x
+ bean.asm7.commons;version="[7.0,8.0)",org.apache.xbean.asm7.shade.com
+ mons;version="[7.0,8.0)",org.apache.xbean.osgi.bundle.util;version="[
+ 4.14,5)",org.osgi.framework;version="[1.6,2)",org.osgi.service.packag
+ eadmin;version="[1.2,2)",org.slf4j;version="[1.5,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Specification-Title: Apache XBean :: Finder shaded (repackaged)
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 4.14
+Tool: Bnd-4.0.0.201805111645
+

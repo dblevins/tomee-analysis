@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.management
+Bnd-LastModified: 1585152414300
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime Management; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime Management Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-management.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.tracing;version="3.3.6",org.apache.cxf.
+ management.jmx;version="3.3.6",org.apache.cxf.management.jmx.type;ver
+ sion="3.3.6",org.apache.cxf.management.jmx.export.runtime;version="3.
+ 3.6",org.apache.cxf.management.utils;version="3.3.6",org.apache.cxf.m
+ anagement.persistence;version="3.3.6",org.apache.cxf.management.count
+ ers;version="3.3.6",org.apache.cxf.management.interceptor;version="3.
+ 3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.xml.bind;version="[0,3)",jakarta.xml.bind.anno
+ tation;version="[0,3)",jakarta.annotation;version="[1.2,2)",sun.rmi.r
+ egistry;resolution:=optional,javax.management,javax.management.modelm
+ bean,javax.management.remote,javax.management.remote.rmi,javax.xml.na
+ mespace,org.apache.cxf;version="[3.3,4)",org.apache.cxf.bus;version="
+ [3.3,4)",org.apache.cxf.buslifecycle;version="[3.3,4)",org.apache.cxf
+ .common.injection;version="[3.3,4)",org.apache.cxf.common.logging;ver
+ sion="[3.3,4)",org.apache.cxf.common.util;version="[3.3,4)",org.apach
+ e.cxf.endpoint;version="[3.3,4)",org.apache.cxf.feature;version="[3.3
+ ,4)",org.apache.cxf.helpers;version="[3.3,4)",org.apache.cxf.intercep
+ tor;version="[3.3,4)",org.apache.cxf.io;version="[3.3,4)",org.apache.
+ cxf.management;version="[3.3,4)",org.apache.cxf.management.annotation
+ ;version="[3.3,4)",org.apache.cxf.management.counters,org.apache.cxf.
+ management.interceptor,org.apache.cxf.management.jmx.export.runtime,o
+ rg.apache.cxf.management.jmx.type,org.apache.cxf.management.persisten
+ ce,org.apache.cxf.message;version="[3.3,4)",org.apache.cxf.phase;vers
+ ion="[3.3,4)",org.apache.cxf.service;version="[3.3,4)",org.apache.cxf
+ .service.model;version="[3.3,4)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

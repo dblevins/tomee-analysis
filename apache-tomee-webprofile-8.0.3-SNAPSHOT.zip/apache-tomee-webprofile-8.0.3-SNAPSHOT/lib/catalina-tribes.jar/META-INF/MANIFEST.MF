@@ -1,0 +1,55 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711036125
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-tribes Jakarta
+Bundle-SymbolicName: org.apache.tomcat-tribes.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: org.apache.catalina.tribes;uses:="javax.management,org
+ .apache.catalina.tribes.group,org.apache.catalina.tribes.io",org.apac
+ he.catalina.tribes.group;uses:="javax.management,org.apache.catalina.
+ tribes,org.apache.catalina.tribes.util",org.apache.catalina.tribes.gr
+ oup.interceptors;uses:="org.apache.catalina.tribes,org.apache.catalin
+ a.tribes.group,org.apache.catalina.tribes.io,org.apache.catalina.trib
+ es.membership,org.apache.catalina.tribes.util",org.apache.catalina.tr
+ ibes.io;uses:="org.apache.catalina.tribes,org.apache.catalina.tribes.
+ util",org.apache.catalina.tribes.jmx;uses:="javax.management,org.apac
+ he.catalina.tribes,org.apache.catalina.tribes.util",org.apache.catali
+ na.tribes.membership;uses:="org.apache.catalina.tribes,org.apache.cat
+ alina.tribes.group,org.apache.catalina.tribes.util",org.apache.catali
+ na.tribes.tipis;uses:="org.apache.catalina.tribes,org.apache.catalina
+ .tribes.group,org.apache.catalina.tribes.util",org.apache.catalina.tr
+ ibes.transport;uses:="org.apache.catalina.tribes,org.apache.catalina.
+ tribes.io,org.apache.catalina.tribes.util",org.apache.catalina.tribes
+ .transport.bio;uses:="org.apache.catalina.tribes,org.apache.catalina.
+ tribes.io,org.apache.catalina.tribes.transport,org.apache.catalina.tr
+ ibes.util",org.apache.catalina.tribes.transport.nio;uses:="org.apache
+ .catalina.tribes,org.apache.catalina.tribes.io,org.apache.catalina.tr
+ ibes.transport,org.apache.catalina.tribes.util",org.apache.catalina.t
+ ribes.util;uses:="org.apache.catalina.tribes,org.apache.catalina.trib
+ es.membership,org.apache.juli.logging"
+Implementation-Title: Apache Tomcat
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 9.0.35
+Import-Package: javax.crypto,javax.crypto.spec,javax.management,javax.
+ net.ssl,javax.security.auth.x500,org.apache.catalina.tribes,org.apach
+ e.catalina.tribes.group,org.apache.catalina.tribes.group.interceptors
+ ,org.apache.catalina.tribes.io,org.apache.catalina.tribes.jmx,org.apa
+ che.catalina.tribes.membership,org.apache.catalina.tribes.transport,o
+ rg.apache.catalina.tribes.transport.nio,org.apache.catalina.tribes.ut
+ il,org.apache.juli.logging,org.apache.tomcat.util.json,org.apache.tom
+ cat.util.net.jsse
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Private-Package: org.apache.catalina.tribes.membership.cloud
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache Tomcat
+Specification-Vendor: Apache Software Foundation
+Specification-Version: 9.0
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+

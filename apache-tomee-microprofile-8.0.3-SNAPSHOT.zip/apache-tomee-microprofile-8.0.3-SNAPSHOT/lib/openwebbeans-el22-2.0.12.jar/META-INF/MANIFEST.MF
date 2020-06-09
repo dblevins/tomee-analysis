@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1569830540689
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: Apache OpenWebBeans EL 2.2 integration; Jarkata En
+ abled
+Bundle-DocURL: http://apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: EL 2.2 plugin Jakarta
+Bundle-SymbolicName: openwebbeans-el22.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.12
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.webbeans.el22;version="2.0.12";uses:="jakar
+ ta.el,jakarta.enterprise.inject.spi,org.apache.webbeans.container,org
+ .apache.webbeans.el,org.apache.webbeans.spi.adaptor"
+Implementation-Title: EL 2.2 plugin
+Implementation-URL: openwebbeans.apache.org/openwebbeans-el22
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.0.12
+Import-Package: jakarta.el;version="2.2",jakarta.enterprise.context;ve
+ rsion="[2.0,3)",jakarta.enterprise.context.spi;version="[2.0,3)",jaka
+ rta.enterprise.inject.spi;version="[2.0,3)",org.apache.webbeans.compo
+ nent;version="[2.0,3)";resolution:=optional,org.apache.webbeans.confi
+ g;version="[2.0,3)";resolution:=optional,org.apache.webbeans.containe
+ r;version="[2.0,3)";resolution:=optional,org.apache.webbeans.context.
+ creational;version="[2.0,3)";resolution:=optional,org.apache.webbeans
+ .el;version="[2.0,3)";resolution:=optional,org.apache.webbeans.spi.ad
+ aptor;version="[2.0,3)";resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: EL 2.2 plugin
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.0.12
+Tool: Bnd-3.3.0.201609221906
+

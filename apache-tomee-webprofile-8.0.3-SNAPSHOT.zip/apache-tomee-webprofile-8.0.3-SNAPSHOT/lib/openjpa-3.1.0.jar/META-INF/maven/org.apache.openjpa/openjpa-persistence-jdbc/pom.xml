@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+<!--
+    Maven release plugin requires the project tag to be on a single line.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.apache.openjpa</groupId>
+        <artifactId>openjpa-parent</artifactId>
+        <version>3.1.0</version>
+    </parent>
+
+    <artifactId>openjpa-persistence-jdbc</artifactId>
+    <packaging>jar</packaging>
+    <name>OpenJPA Persistence JDBC</name>
+    <description>OpenJPA Persistence JDBC</description>
+
+    <profiles>
+        <!-- Profile for testing with test-dynamic-enhancer -->
+        <profile>
+            <id>test-dynamic-enhancer</id>
+
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <build.enhance>false</build.enhance>
+                <openjpa.DynamicEnhancementAgent>true</openjpa.DynamicEnhancementAgent>
+                <surefire.jvm.args>-Dopenjpa.RuntimeUnenhancedClasses=unsupported ${test.jvm.arguments}</surefire.jvm.args>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <includes>
+                                <include>org/apache/openjpa/persistence/enhance/DynamicEnhancementSuite.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+
+
+
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.openjpa</groupId>
+            <artifactId>openjpa-jdbc</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.openjpa</groupId>
+            <artifactId>openjpa-persistence</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta-regexp</groupId>
+            <artifactId>jakarta-regexp</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- Required for org.apache.openjpa.persistence.xmlmapping tests -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>simple-jndi</groupId>
+            <artifactId>simple-jndi</artifactId>
+            <version>0.11.4.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>process-test-classes</phase>
+                        <configuration>
+                            <target>
+                                <ant antfile="src/main/ant/enhancer.xml" target="enhance" inheritRefs="true">
+                                    <property name="maven.test.skip" value="${maven.test.skip}" />
+                                    <property name="test" value="${test}" />
+                                    <property name="outdir" value="${project.build.outputDirectory}" />
+                                    <property name="project.build.testOutputDirectory" value="${project.build.testOutputDirectory}" />
+                                    <property name="openjpa.Log" value="${openjpa.Log}" />
+                                    <property name="build.enhance" value="${build.enhance}" />
+                                </ant>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>${surefire.jvm.args}</argLine>
+                    <excludes>
+                        <!-- exclude classes that end with 'Test'; these
+                             are not test cases per OpenJPA standards -->
+                        <exclude>org/apache/openjpa/**/*Test.java</exclude>
+
+                        <!-- exclude classes that include a $; inner classes
+                             are not test cases per OpenJPA standards -->
+                        <exclude>org/apache/openjpa/**/*$*.class</exclude>
+
+                        <!-- exclude "no xsd" test until a workaround is figured out (OPENJPA-513)  -->
+                        <exclude>org/apache/openjpa/persistence/xml/TestPersistenceUnitWithoutXSD.java</exclude>
+
+                        <!-- exclude new tests that aren't passing yet -->
+                        <exclude>org/apache/openjpa/persistence/kernel/TestOpenResultsCommit.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/query/TestQuotedNumbersInFilters2.java</exclude>
+
+                        <exclude>org/apache/openjpa/persistence/kernel/TestEJBEmbedded.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/annotations/TestAdvAnnot.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/annotations/TestDDCallbackMethods.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/annotations/TestEJBEmbedded.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/annotations/TestEntityListenerAnnot.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/annotations/TestEntityOrderBy.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/annotations/TestPropertyAccess.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/annotations/TestVersion.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/querycache/TestQueryCache.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/conf/TestOpenJPAConfiguration.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestCacheMultiThreadedLoad.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestConcurrentDataCache.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestDistributedKodoDataCache.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestFlushDataCache.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestJPQL2Queries.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestJPQL2ResultsAndResultClasses.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestJPQLRelationProjections.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestLocalCache.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestMutableParameters.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestPCParametersInQueries.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestQueryResultTypes.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestResultShapes.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/datacache/TestUniteratedQueryResult.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/enhance/TestClone.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/enhance/TestDynamicStorageGenerator.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/enhance/TestNoNoArgs.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/enhance/TestSubclassedBehavior.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/entityoperation/TestCascades.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestEvents.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestFakeRemoteEvents.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestLifecycleEventManager.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestLocalRemoteEvents.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestOrphanedKeyAction.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestTCPRemoteClassChanges.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestTCPRemoteEvents.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestTCPRemoteEventsDuration.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestTCPRemoteRecovery.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/event/TestTCPRemoteRecoveryTransmitAdds.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestByteArrayAppId.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestCircularFK.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestDataStoreTrips.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestEfficientAttach.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestEJBAutoIncrement.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestEmbeddedPessimisticLocking.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestIncrementalJDBCFlushes.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestOperationOrderUpdateManager.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestPagingResultObjectProvider.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestRawSQL.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestSQLListenerTestCase.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/kernel/TestUnknownSubclass.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/mapping/TestCompositeIdTraversalInSQLMapping.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/mapping/TestNativeQueries.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestBuildSchema.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestDFG.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestEagerDistinct.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestEagerOuterToManyJoins.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestEJBByteArray.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestEJBColumnIOMappings.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestEJBConstantJoinOnSameRefTable.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestEJBDateVersion.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestEJBEager.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestEJBOuterJoinValues.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestIntermediate.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestIrregularJoins.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestJDBCType.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestJoinToBaseClass.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestLocators.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestLRSProxies.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestMappedByKeyMaps.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestMetaDataValueIndicator.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestMultiDFG.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestMultiTableMappings.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestMultiTableSelfCollection.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestNoClassColumn.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestRawField.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/TestStateImage.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/horizontal/TestLockGroupsWithHorizontalBaseType.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/horizontal/TestQueryAgainstEntireMappedHierarchy.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/tableperclass/TestUnionPlaceholderTypes.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/vertical/TestJoinSubclasses.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/vertical/TestSubclassJoinExtent.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/vertical/TestSubclassJoinGetObjectById.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/meta/vertical/TestSubclassJoinRelations.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/query/TestEJBQLSelectNPlusOne.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/query/TestNamedSQLQueries.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/query/TestSQLQueries.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/query/TestStringFunctions.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestClassDBSequenceFactory.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestDBSequenceFactory.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestDynamicSchemaFactory.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestJDBCListener.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestLazySchemaFactory.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestPerClassSequenceFactory.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestSchema.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestSchemaClone.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestSequenceGeneratorEnsureCapacityCall.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestXMLSchemaParser.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jdbc/schema/TestXMLSchemaSerializer.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jpql/clauses/TestBulkUpdate.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/jpql/expressions/TestEJBQLCondExpression.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/Test2EJBConcurrency.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestAbstractMappedAppIdSuper.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestArrayValues2.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestBigDecimals.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestBrokerFactoryPooling.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestConnectionRetainMode.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestDependentFields2.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestDetachedStateManager.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestEJBIncrementalFlushes.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestEJBNoPersistentFields.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestEJBObjectCollections.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestEJBRetainValues.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestEJBTransactions.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestFetchGroupsExtent.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestFetchPlan.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestFieldRange.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestFieldRange2.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestGetObjectsById.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestIncrementalFlushes.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestInstanceCallbacks.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestMultiThreaded.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestNTW.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestOptimisticLockGroups.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestPersistenceManager.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestPersistenceManagerFactoryImpl.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestPersistentMaps.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestRestoreValues.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestRetainValuesInOptimistic.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestSavepointEmbedded.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestSavepointEmbeddedPreFlush.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestSecondClassValues.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestSerialize.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestSpecialNumbers.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/kernel/TestSpecialNumbers2.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/meta/TestClassMetaData.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/meta/TestFieldDeclarationOrder.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/meta/TestNonPersistentFields.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/meta/TestOrderBy.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/meta/TestPersistentClasses.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/meta/TestSequenceAssigned.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/meta/TestValueStrategies.java</exclude>
+                        <exclude>org/apache/openjpa/persistence/meta/TestXMLPersistenceMetaDataSerializer.java</exclude>
+                        <!-- TestPMMemory creates heapdumps etc and there's no real asserts within the test.  -->
+                        <exclude>org/apache/openjpa/persistence/kernel/TestPMMemory.java</exclude>
+
+                        <exclude>org/apache/openjpa/persistence/meta/TestExternalValues.java</exclude>
+
+                        <!-- Exclude subclassing tests   -->
+                        <exclude>org/apache/openjpa/**/TestUnenhanced*.java</exclude>
+
+                        <!-- Exclude tests that fail due to the dynamic enhancer -->
+                        <exclude>org/apache/openjpa/enhance/TestEnhancementConfiguration.java</exclude>
+                        <exclude>org/apache/openjpa/enhance/TestRelationToUnlistedClass.java</exclude>
+                        <exclude>org/apache/openjpa/kernel/TestDynamicClassRegistration.java</exclude>
+
+                        <!-- TestEJBTransactionalClass tests nothing -->
+                        <exclude>org/apache/openjpa/persistence/kernel/TestEJBTransactionalClass.java</exclude>
+                        <!-- Exclude JEST tests for now -->
+                        <exclude>org/apache/openjpa/persistence/jest/Test*.java</exclude>
+                        <!-- Exclude TestAudit OPENJPA-2232 -->
+                        <exclude>org/apache/openjpa/audit/TestAudit.java</exclude>
+
+                        <!-- this test fails randomly and noone did fix it since 2010 -->
+                        <exclude>org/apache/openjpa/persistence/datacache/TestDataCacheBehavesIdentical.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1393568260724
+Build-Jdk: 1.7.0_25
+Built-By: tatu
+Bundle-Description: tax2 API is an extension to basic Stax 1.0 API tha
+ t adds significant new functionality, such as full-featured bi-direct
+ ion validation interface and high-performance Typed Access API.; Jark
+ ata Enabled
+Bundle-DocURL: http://fasterxml.com
+Bundle-License: http://www.opensource.org/licenses/bsd-license.php
+Bundle-ManifestVersion: 2
+Bundle-Name: Stax2 API Jakarta
+Bundle-SymbolicName: stax2-api.jakarta
+Bundle-Vendor: fasterml.com
+Bundle-Version: 3.1.4
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.codehaus.stax2;uses:="org.codehaus.stax2.validatio
+ n,javax.xml.stream,org.codehaus.stax2.typed,javax.xml.namespace";vers
+ ion="3.1.4",org.codehaus.stax2.evt;uses:="javax.xml.stream.events,org
+ .codehaus.stax2,javax.xml.stream";version="3.1.4",org.codehaus.stax2.
+ io;uses:="javax.xml.transform";version="3.1.4",org.codehaus.stax2.osg
+ i;uses:="org.codehaus.stax2,org.codehaus.stax2.validation";version="3
+ .1.4",org.codehaus.stax2.ri;uses:="javax.xml.namespace,javax.xml.stre
+ am,org.codehaus.stax2.ri.evt,org.codehaus.stax2.evt,javax.xml.stream.
+ events,org.codehaus.stax2,javax.xml.stream.util,org.codehaus.stax2.ut
+ il,org.codehaus.stax2.validation,org.codehaus.stax2.typed,org.codehau
+ s.stax2.ri.typed";version="3.1.4",org.codehaus.stax2.ri.dom;uses:="or
+ g.codehaus.stax2,javax.xml.transform.dom,org.codehaus.stax2.ri,org.co
+ dehaus.stax2.validation,org.w3c.dom,org.codehaus.stax2.typed,org.code
+ haus.stax2.ri.typed,javax.xml.namespace,javax.xml.stream";version="3.
+ 1.4",org.codehaus.stax2.ri.evt;uses:="org.codehaus.stax2,javax.xml.st
+ ream,javax.xml.stream.events,javax.xml.namespace,org.codehaus.stax2.e
+ vt,org.codehaus.stax2.ri,javax.xml.stream.util";version="3.1.4",org.c
+ odehaus.stax2.ri.typed;uses:="org.codehaus.stax2.ri,org.codehaus.stax
+ 2.typed,javax.xml.namespace";version="3.1.4",org.codehaus.stax2.typed
+ ;uses:="javax.xml.stream,javax.xml.namespace";version="3.1.4",org.cod
+ ehaus.stax2.util;uses:="org.codehaus.stax2,javax.xml.stream,javax.xml
+ .stream.util,org.codehaus.stax2.validation,org.codehaus.stax2.typed,j
+ avax.xml.namespace";version="3.1.4",org.codehaus.stax2.validation;use
+ s:="javax.xml.stream,javax.xml.namespace";version="3.1.4"
+Import-Package: javax.xml.namespace,javax.xml.stream,javax.xml.stream.
+ events,javax.xml.stream.util,javax.xml.transform,javax.xml.transform.
+ dom,org.w3c.dom
+Tool: Bnd-1.50.0
+

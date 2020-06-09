@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.5.4
+Built-By: default
+Build-Jdk: 11
+Build-Id: 2.3.2
+Build-Version: JAXB RI 2.3.2
+Git-Revision: ae93d95
+Git-Url: scm:git:ssh://git@github.com/eclipse-ee4j/jaxb-ri/jaxb-txw-pare
+ nt/txw2
+Implementation-Title: TXW Runtime
+Implementation-Vendor: Oracle
+Implementation-Vendor-Id: com.oracle
+Implementation-Version: 2.3.2
+Major-Version: 2.3.2
+Specification-Title: Java Architecture for XML Binding
+Specification-Version: 2.3
+

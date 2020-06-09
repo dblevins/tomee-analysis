@@ -1,0 +1,63 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.wss4j.common
+Bnd-LastModified: 1584113260949
+Build-Jdk: 1.8.0_232
+Built-By: coheig
+Bundle-Description: Apache WSS4J parent pom; Jarkata Enabled
+Bundle-DocURL: http://ws.apache.org/wss4j
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache WSS4J WS-Security Common Jakarta
+Bundle-SymbolicName: org.apache.wss4j.wss4j-ws-security-common.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.2.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.wss4j.common;version="2.2.5",org.apache.wss
+ 4j.common.bsp;version="2.2.5",org.apache.wss4j.common.cache;version="
+ 2.2.5",org.apache.wss4j.common.crypto;version="2.2.5",org.apache.wss4
+ j.common.derivedKey;version="2.2.5",org.apache.wss4j.common.ext;versi
+ on="2.2.5",org.apache.wss4j.common.kerberos;version="2.2.5",org.apach
+ e.wss4j.common.principal;version="2.2.5",org.apache.wss4j.common.saml
+ ;version="2.2.5",org.apache.wss4j.common.saml.bean;version="2.2.5",or
+ g.apache.wss4j.common.saml.builder;version="2.2.5",org.apache.wss4j.c
+ ommon.spnego;version="2.2.5",org.apache.wss4j.common.token;version="2
+ .2.5",org.apache.wss4j.common.util;version="2.2.5"
+Implementation-Title: Apache WSS4J WS-Security Common
+Implementation-URL: https://ws.apache.org/wss4j/wss4j-ws-security-comm
+ on/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.2.5
+Import-Package: org.joda.time;version="[1.6,3)",net.shibboleth.utiliti
+ es.java.support.xml;resolution:=optional,javax.crypto,javax.crypto.sp
+ ec,jakarta.mail.internet;version="[1.4,2)",javax.security.auth,javax.
+ security.auth.callback,javax.security.auth.kerberos,javax.security.au
+ th.login,javax.security.auth.x500,javax.xml.crypto,javax.xml.crypto.d
+ om,javax.xml.crypto.dsig,javax.xml.crypto.dsig.keyinfo,javax.xml.name
+ space,javax.xml.transform,javax.xml.transform.dom,javax.xml.transform
+ .sax,javax.xml.transform.stream,net.sf.ehcache;version="[2.10,3)";res
+ olution:=optional,net.sf.ehcache.config;version="[2.10,3)";resolution
+ :=optional,org.apache.jcp.xml.dsig.internal.dom;version="[2.1,3)",org
+ .apache.xml.security;version="[2.1,3)",org.apache.xml.security.algori
+ thms;version="[2.1,3)",org.apache.xml.security.encryption;version="[2
+ .1,3)",org.apache.xml.security.exceptions;version="[2.1,3)",org.apach
+ e.xml.security.stax.ext;version="[2.1,3)",org.apache.xml.security.sta
+ x.impl.util;version="[2.1,3)",org.apache.xml.security.utils;version="
+ [2.1,3)",org.bouncycastle.asn1;version="[1.64,2)";resolution:=optiona
+ l,org.bouncycastle.asn1.x509;version="[1.64,2)";resolution:=optional,
+ org.ietf.jgss,org.jasypt.encryption.pbe,org.opensaml.core.config,org.
+ opensaml.core.config.provider,org.opensaml.core.xml,org.opensaml.core
+ .xml.config,org.opensaml.core.xml.io,org.opensaml.core.xml.schema,org
+ .opensaml.core.xml.schema.impl,org.opensaml.saml.common,org.opensaml.
+ saml.config,org.opensaml.saml.ext.saml2delrestrict,org.opensaml.saml.
+ saml1.core,org.opensaml.saml.saml2.core,org.opensaml.saml.security.im
+ pl,org.opensaml.security,org.opensaml.security.credential,org.opensam
+ l.security.x509,org.opensaml.xmlsec.keyinfo,org.opensaml.xmlsec.keyin
+ fo.impl,org.opensaml.xmlsec.signature,org.opensaml.xmlsec.signature.s
+ upport,org.slf4j;version="[1.7,2)",org.w3c.dom,org.xml.sax
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache WSS4J WS-Security Common
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.2.5
+Tool: Bnd-2.4.1.201501161923
+

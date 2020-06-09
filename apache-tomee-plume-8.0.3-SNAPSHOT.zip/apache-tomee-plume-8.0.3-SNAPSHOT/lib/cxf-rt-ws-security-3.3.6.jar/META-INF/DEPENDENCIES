@@ -1,0 +1,147 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache CXF
+
+
+From: 'an unknown organization'
+  - Guava: Google Core Libraries for Java (https://github.com/google/guava/guava) com.google.guava:guava:bundle:20.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Metrics Core (http://metrics.dropwizard.io/metrics-core/) io.dropwizard.metrics:metrics-core:bundle:3.2.6
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0.html)
+  - Cryptacular Library (http://www.cryptacular.org) org.cryptacular:cryptacular:jar:1.2.4
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/lgpl-3.0.txt)
+  - WSDL4J (http://sf.net/projects/wsdl4j) wsdl4j:wsdl4j:jar:1.6.3
+    License: CPL  (http://www.opensource.org/licenses/cpl1.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org/)
+  - XML Commons Resolver Component (http://xml.apache.org/commons/components/resolver/) xml-resolver:xml-resolver:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Eclipse Foundation' (https://www.eclipse.org)
+  - istack common utility code runtime (https://projects.eclipse.org/projects/ee4j/istack-commons/istack-commons-runtime) com.sun.istack:istack-commons-runtime:jar:3.0.8
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - fastinfoset (https://projects.eclipse.org/projects/ee4j.jaxb-impl/FastInfoset) com.sun.xml.fastinfoset:FastInfoset:jar:1.2.16
+    License: Apache License, Version 2.0  (http://www.opensource.org/licenses/apache2.0.php)    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - JavaBeans Activation Framework API jar (https://github.com/eclipse-ee4j/jaf/jakarta.activation-api) jakarta.activation:jakarta.activation-api:jar:1.2.1
+    License: EDL 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - jakarta.xml.bind-api (https://github.com/eclipse-ee4j/jaxb-api/jakarta.xml.bind-api) jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - Extended StAX API (https://projects.eclipse.org/projects/ee4j/stax-ex) org.jvnet.staxex:stax-ex:jar:1.8.1
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+From: 'FasterXML' (http://fasterxml.com)
+  - Woodstox (https://github.com/FasterXML/woodstox) com.fasterxml.woodstox:woodstox-core:bundle:5.0.3
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'fasterxml.com' (http://fasterxml.com)
+  - Stax2 API (http://wiki.fasterxml.com/WoodstoxStax2) org.codehaus.woodstox:stax2-api:bundle:3.1.4
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+
+From: 'Joda.org' (http://www.joda.org)
+  - Joda-Time (http://www.joda.org/joda-time/) joda-time:joda-time:jar:2.9
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - JAXB Runtime (https://javaee.github.io/jaxb-v2/jaxb-runtime-parent/jaxb-runtime/) org.glassfish.jaxb:jaxb-runtime:jar:2.3.2
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - TXW2 Runtime (https://javaee.github.io/jaxb-v2/jaxb-txw-parent/txw2/) org.glassfish.jaxb:txw2:jar:2.3.2
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+From: 'OW2' (http://www.ow2.org/)
+  - asm (http://asm.ow2.org/) org.ow2.asm:asm:jar:7.1
+    License: BSD  (http://asm.ow2.org/license.html)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.29
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'Shibboleth Consortium' (https://shibboleth.net)
+  - java-support (http://shibboleth.net/java-support/) net.shibboleth.utilities:java-support:jar:7.3.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: Core (http://shibboleth.net/opensaml-core/) org.opensaml:opensaml-core:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: Profile API (http://shibboleth.net/opensaml-profile-api/) org.opensaml:opensaml-profile-api:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: SAML Provider API (http://shibboleth.net/opensaml-saml-api/) org.opensaml:opensaml-saml-api:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: SAML Provider Implementations (http://shibboleth.net/opensaml-saml-impl/) org.opensaml:opensaml-saml-impl:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: Security API (http://shibboleth.net/opensaml-security-api/) org.opensaml:opensaml-security-api:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: Security Implementation (http://shibboleth.net/opensaml-security-impl/) org.opensaml:opensaml-security-impl:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: SOAP Provider API (http://shibboleth.net/opensaml-soap-api/) org.opensaml:opensaml-soap-api:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: XACML Provider API (http://shibboleth.net/opensaml-xacml-api/) org.opensaml:opensaml-xacml-api:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: XACML Provider Implementations (http://shibboleth.net/opensaml-xacml-impl/) org.opensaml:opensaml-xacml-impl:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: SAML XACML Profile API (http://shibboleth.net/opensaml-xacml-saml-api/) org.opensaml:opensaml-xacml-saml-api:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: SAML XACML Profile Implementation (http://shibboleth.net/opensaml-xacml-saml-impl/) org.opensaml:opensaml-xacml-saml-impl:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: XML Security API (http://shibboleth.net/opensaml-xmlsec-api/) org.opensaml:opensaml-xmlsec-api:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenSAML :: XML Security Implementation (http://shibboleth.net/opensaml-xmlsec-impl/) org.opensaml:opensaml-xmlsec-impl:jar:3.3.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Terracotta, Inc.' (http://www.terracotta.org)
+  - ehcache (http://ehcache.org) net.sf.ehcache:ehcache:jar:2.10.6
+    License: The Apache Software License, Version 2.0  (src/assemble/EHCACHE-CORE-LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org)
+  - Geronimo JavaMail 1.4 :: Mail (http://geronimo.apache.org/maven/javamail/geronimo-javamail_1.4_mail/1.8.4/geronimo-javamail_1.4_mail) org.apache.geronimo.javamail:geronimo-javamail_1.4_mail:bundle:1.8.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Neethi (http://ws.apache.org/neethi/) org.apache.neethi:neethi:bundle:3.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Commons Codec (https://commons.apache.org/proper/commons-codec/) commons-codec:commons-codec:jar:1.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Core (https://cxf.apache.org) org.apache.cxf:cxf-core:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime SOAP Binding (https://cxf.apache.org) org.apache.cxf:cxf-rt-bindings-soap:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime XML Binding (https://cxf.apache.org) org.apache.cxf:cxf-rt-bindings-xml:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime JAXB DataBinding (https://cxf.apache.org) org.apache.cxf:cxf-rt-databinding-jaxb:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime JAX-WS Frontend (https://cxf.apache.org) org.apache.cxf:cxf-rt-frontend-jaxws:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime Simple Frontend (https://cxf.apache.org) org.apache.cxf:cxf-rt-frontend-simple:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime Security functionality (https://cxf.apache.org) org.apache.cxf:cxf-rt-security:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime SAML Security functionality (https://cxf.apache.org) org.apache.cxf:cxf-rt-security-saml:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime Core for WSDL (https://cxf.apache.org) org.apache.cxf:cxf-rt-wsdl:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XML Security for Java (https://santuario.apache.org/) org.apache.santuario:xmlsec:bundle:2.1.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - XmlSchema Core (https://ws.apache.org/commons/xmlschema20/xmlschema-core/) org.apache.ws.xmlschema:xmlschema-core:bundle:2.2.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache WSS4J WS-Security Bindings (https://ws.apache.org/wss4j/wss4j-bindings/) org.apache.wss4j:wss4j-bindings:jar:2.2.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache WSS4J WS-SecurityPolicy model (https://ws.apache.org/wss4j/wss4j-policy/) org.apache.wss4j:wss4j-policy:jar:2.2.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache WSS4J WS-Security Common (https://ws.apache.org/wss4j/wss4j-ws-security-common/) org.apache.wss4j:wss4j-ws-security-common:jar:2.2.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache WSS4J DOM WS-Security (https://ws.apache.org/wss4j/wss4j-ws-security-dom/) org.apache.wss4j:wss4j-ws-security-dom:jar:2.2.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache WSS4J Streaming WS-SecurityPolicy (https://ws.apache.org/wss4j/wss4j-ws-security-policy-stax/) org.apache.wss4j:wss4j-ws-security-policy-stax:jar:2.2.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache WSS4J Streaming WS-Security (https://ws.apache.org/wss4j/wss4j-ws-security-stax/) org.apache.wss4j:wss4j-ws-security-stax:jar:2.2.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The JASYPT team' (http://www.jasypt.org)
+  - JASYPT: Java Simplified Encryption (http://www.jasypt.org) org.jasypt:jasypt:jar:1.9.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

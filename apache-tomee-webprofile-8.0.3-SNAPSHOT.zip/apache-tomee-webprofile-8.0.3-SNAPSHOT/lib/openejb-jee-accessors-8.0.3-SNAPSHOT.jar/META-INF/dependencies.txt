@@ -1,0 +1,13 @@
+openejb-jee-8.0.3-SNAPSHOT.jar
+ pom.xml
+  jakarta.activation-1.2.1.jar
+  jakarta.xml.bind-api-2.3.2.jar
+   jakarta.activation-api-1.2.1.jar
+  jaxb-runtime-2.3.2.jar
+   FastInfoset-1.2.16.jar
+   istack-commons-runtime-3.0.8.jar
+   stax-ex-1.8.1.jar
+   txw2-2.3.2.jar
+openejb-loader-8.0.3-SNAPSHOT.jar
+sxc-jaxb-core-0.8.jar
+ sxc-runtime-0.8.jar

@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1564352198969
+Build-Jdk: 1.8.0_202
+Built-By: chtompki
+Bundle-Description: Apache Commons BeanUtils provides an easy-to-use b
+ ut flexible wrapper around reflection and introspection.; Jarkata Ena
+ bled
+Bundle-DocURL: https://commons.apache.org/proper/commons-beanutils/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons BeanUtils Jakarta
+Bundle-SymbolicName: org.apache.commons.commons-beanutils.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.9.4
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.beanutils;version="1.9.4",org.apach
+ e.commons.beanutils.converters;version="1.9.4",org.apache.commons.bea
+ nutils.expression;version="1.9.4",org.apache.commons.beanutils.locale
+ ;version="1.9.4",org.apache.commons.beanutils.locale.converters;versi
+ on="1.9.4"
+Implementation-Build: UNKNOWN_BRANCH@r??????; 2019-07-28 22:14:44+0000
+Implementation-Title: Apache Commons BeanUtils
+Implementation-URL: https://commons.apache.org/proper/commons-beanutil
+ s/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 1.9.4
+Import-Package: org.apache.commons.collections,org.apache.commons.coll
+ ections.comparators,org.apache.commons.collections.keyvalue,org.apach
+ e.commons.logging
+Include-Resource: META-INF/NOTICE.txt=NOTICE.txt,META-INF/LICENSE.txt=
+ LICENSE.txt
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Specification-Title: Apache Commons BeanUtils
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.9.4
+Tool: Bnd-3.5.0.201709291849
+X-Compile-Source-JDK: 1.6
+X-Compile-Target-JDK: 1.6
+

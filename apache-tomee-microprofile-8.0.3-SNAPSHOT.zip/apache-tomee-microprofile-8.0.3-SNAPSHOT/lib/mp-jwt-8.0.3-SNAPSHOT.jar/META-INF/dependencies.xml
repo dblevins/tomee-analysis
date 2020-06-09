@@ -1,0 +1,4 @@
+<dependencies>
+  <dependency groupId="org.bitbucket.b_c" artifactId="jose4j" version="0.6.0" file-name="jose4j-0.6.0.jar"/>
+  <dependency groupId="org.slf4j" artifactId="slf4j-api" version="1.7.21" file-name="slf4j-api-1.7.21.jar"/>
+</dependencies>

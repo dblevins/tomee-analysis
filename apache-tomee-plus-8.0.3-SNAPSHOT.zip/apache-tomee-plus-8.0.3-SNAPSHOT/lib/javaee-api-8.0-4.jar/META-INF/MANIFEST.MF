@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.8.0_201
+Built-By: jgallimore
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.apache.openejb.javaee.api.activator.MultiActivat
+ or
+Bundle-ManifestVersion: 2
+Bundle-Name: TomEE :: JavaEE 8 Full API Jakarta
+Bundle-SymbolicName: org.apache.tomee.javaee-api.jakarta;singleton=tru
+ e
+Created-By: Apache Maven 3.6.0
+Export-Package: javax.xml,jakarta.xml.ws,jakarta.xml.ws.handler,jakart
+ a.xml.ws.handler.soap,jakarta.xml.ws.spi,jakarta.xml.ws.http,jakarta.
+ xml.ws.soap,jakarta.xml.soap,javax.xml.namespace,javax.xml.registry,j
+ avax.xml.registry.infomodel,javax.xml.rpc,javax.xml.rpc.encoding,java
+ x.xml.rpc.handler,javax.xml.rpc.handler.soap,javax.xml.rpc.holders,ja
+ vax.xml.rpc.server,javax.xml.rpc.soap,javax.xml.stream,javax.xml.stre
+ am.events,javax.xml.stream.util,jakarta.xml.bind,jakarta.xml.bind.ann
+ otation,jakarta.xml.bind.annotation.adapters,jakarta.xml.bind.attachm
+ ent,jakarta.xml.bind.helpers,jakarta.xml.bind.util,jakarta.annotation
+ ,jakarta.annotation.security,jakarta.ejb,jakarta.ejb.spi,jakarta.inte
+ rceptor,jakarta.resource,jakarta.resource.cci,jakarta.resource.spi,ja
+ karta.resource.spi.endpoint,jakarta.resource.spi.security,jakarta.res
+ ource.spi.work,jakarta.enterprise,javax.enterprise.deploy,javax.enter
+ prise.deploy.model,javax.enterprise.deploy.model.exceptions,javax.ent
+ erprise.deploy.shared,javax.enterprise.deploy.shared.factories,javax.
+ enterprise.deploy.spi,javax.enterprise.deploy.spi.exceptions,javax.en
+ terprise.deploy.spi.factories,javax.enterprise.deploy.spi.status,java
+ x.management,javax.management.j2ee,javax.management.j2ee.statistics,j
+ avax.security,jakarta.security.jacc,jakarta.jms,jakarta.persistence,j
+ akarta.persistence.spi,jakarta.transaction,javax.transaction.xa,jakar
+ ta.jws,jakarta.jws.soap
+Implementation-Title: TomEE :: JavaEE 8 Full API
+Implementation-URL: https://www.apache.org/javaee-api/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0-4
+Import-Package: org.apache.geronimo.osgi.registry.api;resolution:=opti
+ onal
+Private-Package: org.apache.geronimo.osgi.locator
+Specification-Title: TomEE :: JavaEE 8 Full API
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0
+

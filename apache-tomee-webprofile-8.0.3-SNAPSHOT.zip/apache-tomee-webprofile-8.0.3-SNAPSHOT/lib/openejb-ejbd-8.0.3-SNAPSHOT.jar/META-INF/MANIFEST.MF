@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.server.ejbd
+Bnd-LastModified: 1591729267194
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Server :: EJBd Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-ejbd.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Server :: EJBd
+Implementation-URL: http://tomee.apache.org/server/openejb-ejbd
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: jakarta.ejb,jakarta.jms,javax.naming,jakarta.resource,
+ javax.security.auth.login,javax.sql,jakarta.validation,javax.xml.name
+ space,org.apache.openejb;version="[8.0,9)",org.apache.openejb.client;
+ version="[8.0,9)",org.apache.openejb.client.serializer;version="[8.0,
+ 9)",org.apache.openejb.core;version="[8.0,9)",org.apache.openejb.core
+ .ivm;version="[8.0,9)",org.apache.openejb.core.ivm.naming;version="[8
+ .0,9)",org.apache.openejb.core.webservices;version="[8.0,9)",org.apac
+ he.openejb.loader,org.apache.openejb.resource.jdbc;version="[8.0,9)",
+ org.apache.openejb.server,org.apache.openejb.server.context,org.apach
+ e.openejb.server.stream,org.apache.openejb.spi;version="[8.0,9)",org.
+ apache.openejb.util;version="[8.0,9)",org.apache.openejb.util.proxy;v
+ ersion="[8.0,9)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Server :: EJBd
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

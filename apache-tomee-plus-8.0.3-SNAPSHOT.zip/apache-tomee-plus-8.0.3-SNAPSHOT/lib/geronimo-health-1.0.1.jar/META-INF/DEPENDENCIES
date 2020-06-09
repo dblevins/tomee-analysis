@@ -1,0 +1,27 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Geronimo Health :: Microprofile
+
+
+From: 'an unknown organization'
+  - javax.inject (http://code.google.com/p/atinject/) javax.inject:javax.inject:jar:1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Eclipse Foundation' (http://www.eclipse.org/)
+  - MicroProfile Health API (http://microprofile.io/microprofile-health-api) org.eclipse.microprofile.health:microprofile-health-api:jar:1.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'OSGi Alliance' (http://www.osgi.org/)
+  - org.osgi:org.osgi.annotation.versioning (http://www.osgi.org/) org.osgi:org.osgi.annotation.versioning:jar:1.0.0
+    License: Apache License, Version 2.0  (http://opensource.org/licenses/apache2.0.php)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Geronimo Health :: Common (https://www.apache.org/geronimo-health-parent/geronimo-health-common/) org.apache.geronimo:geronimo-health-common:bundle:1.0.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

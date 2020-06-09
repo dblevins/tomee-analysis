@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1486304049321
+Build-Jdk: 1.7.0_55
+Built-By: thomas
+Bundle-Description: Apache Commons JCS is a distributed, versatile cac
+ hing system.; Jarkata Enabled
+Bundle-DocURL: http://commons.apache.org/proper/commons-jcs/commons-jc
+ s-jcache/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons JCS :: JCache Jakarta
+Bundle-SymbolicName: org.apache.commons.jcs.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.1.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.jcs.jcache;version="2.1",org.apache
+ .commons.jcs.jcache.cdi;version="2.1",org.apache.commons.jcs.jcache.j
+ mx;version="2.1",org.apache.commons.jcs.jcache.lang;version="2.1",org
+ .apache.commons.jcs.jcache.proxy;version="2.1",org.apache.commons.jcs
+ .jcache.serialization;version="2.1",org.apache.commons.jcs.jcache.thr
+ ead;version="2.1"
+Implementation-Build: tags/commons-jcs-2.1/commons-jcs-jcache@r1781747
+ ; 2017-02-05 14:18:57+0100
+Implementation-Title: Apache Commons JCS :: JCache
+Implementation-URL: http://commons.apache.org/proper/commons-jcs/commo
+ ns-jcs-jcache/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.1
+Import-Package: jakarta.annotation,javax.cache,javax.cache.annotation,
+ javax.cache.configuration,javax.cache.event,javax.cache.expiry,javax.
+ cache.integration,javax.cache.management,javax.cache.processor,javax.
+ cache.spi,jakarta.enterprise.context,jakarta.enterprise.context.spi,j
+ akarta.enterprise.event,jakarta.enterprise.inject,jakarta.enterprise.
+ inject.spi,jakarta.enterprise.util,jakarta.inject,jakarta.interceptor
+ ,javax.management,org.apache.commons.jcs.engine,org.apache.commons.jc
+ s.engine.behavior,org.apache.commons.jcs.engine.control,org.apache.co
+ mmons.jcs.engine.control.event.behavior,org.apache.commons.jcs.utils.
+ serialization,org.apache.commons.lang3.text
+Include-Resource: /Users/thomas/Dev/workspace/jcs-2.1-RC/target/checko
+ ut/commons-jcs-jcache/target/classes/META-INF/services/javax.cache.sp
+ i.CachingProvider=src/main/resources/META-INF/services/javax.cache.sp
+ i.CachingProvider,/Users/thomas/Dev/workspace/jcs-2.1-RC/target/check
+ out/commons-jcs-jcache/target/classes/META-INF/services/javax.enterpr
+ ise.inject.spi.Extension=src/main/resources/META-INF/services/javax.e
+ nterprise.inject.spi.Extension,META-INF/DEPENDENCIES=target/maven-sha
+ red-archive-resources/META-INF/DEPENDENCIES,META-INF/LICENSE=target/m
+ aven-shared-archive-resources/META-INF/LICENSE,META-INF/NOTICE=target
+ /maven-shared-archive-resources/META-INF/NOTICE
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Specification-Title: Apache Commons JCS :: JCache
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.1
+Tool: Bnd-3.0.0.201509101326
+X-Compile-Source-JDK: 1.6
+X-Compile-Target-JDK: 1.6
+

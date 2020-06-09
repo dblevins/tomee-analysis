@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1426003883344
+Build-Jdk: 1.6.0_65
+Built-By: jeremy
+Bundle-Description: An implementation of the JSP Standard Tag Library 
+ (JSTL) Specification API.; Jarkata Enabled
+Bundle-DocURL: http://tomcat.apache.org/taglibs/standard-1.2.5/taglibs
+ -standard-spec
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Standard Taglib Specification API Jakarta
+Bundle-SymbolicName: org.apache.taglibs.taglibs-standard-spec.jakarta;
+ singleton=true
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: jakarta.servlet.jsp.jstl.tlv;uses:="javax.xml.parsers,
+ jakarta.servlet.jsp.tagext,org.xml.sax.helpers,org.xml.sax";version="
+ 1.2",jakarta.servlet.jsp.jstl.fmt;uses:="jakarta.servlet,jakarta.serv
+ let.jsp.jstl.core,jakarta.servlet.jsp,jakarta.servlet.http";version="
+ 1.2",jakarta.servlet.jsp.jstl.core;uses:="jakarta.servlet.jsp.tagext,
+ jakarta.servlet.jsp,jakarta.servlet,jakarta.servlet.http,jakarta.el";
+ version="1.2",jakarta.servlet.jsp.jstl.sql;version="1.2"
+Implementation-Title: Apache Standard Taglib Specification API
+Implementation-Version: 1.2.5
+Import-Package: jakarta.el,jakarta.servlet,jakarta.servlet.http,jakart
+ a.servlet.jsp,jakarta.servlet.jsp.jstl.core;version="1.2",jakarta.ser
+ vlet.jsp.jstl.fmt;version="1.2",jakarta.servlet.jsp.jstl.sql;version=
+ "1.2",jakarta.servlet.jsp.jstl.tlv;version="1.2",jakarta.servlet.jsp.
+ tagext,javax.xml.parsers,org.xml.sax,org.xml.sax.helpers
+Specification-Title: JSR-052 JavaServer Pages Standard Tag Library Spe
+ cification
+Specification-Vendor: Sun Microsystems, Inc.
+Specification-Version: 1.2
+Tool: Bnd-0.0.357
+

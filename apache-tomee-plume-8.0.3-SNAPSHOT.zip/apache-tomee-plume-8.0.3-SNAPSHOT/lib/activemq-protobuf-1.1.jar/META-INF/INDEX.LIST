@@ -1,0 +1,14 @@
+JarIndex-Version: 1.0
+
+activemq-protobuf-1.1.jar
+META-INF
+META-INF/maven
+META-INF/maven/org.apache.activemq.protobuf
+META-INF/maven/org.apache.activemq.protobuf/activemq-protobuf
+org
+org/apache
+org/apache/activemq
+org/apache/activemq/protobuf
+org/apache/activemq/protobuf/compiler
+org/apache/activemq/protobuf/compiler/parser
+

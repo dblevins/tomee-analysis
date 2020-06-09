@@ -1,0 +1,77 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.frontend.simple
+Bnd-LastModified: 1585152478720
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.apache.cxf.frontend.blueprint.Activator
+Bundle-Description: Apache CXF Runtime Simple Frontend; Jarkata Enable
+ d
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime Simple Frontend Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-frontend-simple.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.frontend;version="3.3.6",org.apache.cxf
+ .frontend.blueprint;version="3.3.6",org.apache.cxf.frontend.spring;ve
+ rsion="3.3.6",org.apache.cxf.simple;version="3.3.6",org.apache.cxf.en
+ dpoint.dynamic;version="3.3.6"
+Export-Service: org.apache.aries.blueprint.NamespaceHandler;osgi.servi
+ ce.blueprint.namespace="http://cxf.apache.org/blueprint/simple"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: org.apache.aries.blueprint;version="[1.0,2)";resolutio
+ n:=optional,org.apache.aries.blueprint.mutable;version="[1.0,2)";reso
+ lution:=optional,com.sun.tools.xjc.reader.internalizer;resolution:=op
+ tional,org.springframework.beans;resolution:=optional;version="[3.1,6
+ )",org.springframework.beans.factory;resolution:=optional;version="[3
+ .1,6)",org.springframework.beans.factory.config;resolution:=optional;
+ version="[3.1,6)",org.springframework.beans.factory.support;resolutio
+ n:=optional;version="[3.1,6)",org.springframework.beans.factory.xml;r
+ esolution:=optional;version="[3.1,6)",org.springframework.context;res
+ olution:=optional;version="[3.1,6)",jakarta.xml.bind;version="[0,3)",
+ javax.wsdl,javax.wsdl.extensions,javax.wsdl.extensions.schema,javax.w
+ sdl.extensions.soap,javax.wsdl.extensions.soap12,javax.wsdl.factory,j
+ avax.wsdl.xml,javax.xml.namespace,javax.xml.stream,javax.xml.stream.u
+ til,javax.xml.transform,javax.xml.transform.dom,org.apache.cxf;versio
+ n="[3.3,4)",org.apache.cxf.binding;version="[3.3,4)",org.apache.cxf.b
+ inding.soap;version="[3.3,4)",org.apache.cxf.binding.soap.interceptor
+ ;version="[3.3,4)",org.apache.cxf.binding.soap.model;version="[3.3,4)
+ ",org.apache.cxf.bus.blueprint;version="[3.3,4)",org.apache.cxf.bus.s
+ pring;version="[3.3,4)",org.apache.cxf.catalog;version="[3.3,4)",org.
+ apache.cxf.common.classloader;version="[3.3,4)",org.apache.cxf.common
+ .i18n;version="[3.3,4)",org.apache.cxf.common.injection;version="[3.3
+ ,4)",org.apache.cxf.common.jaxb;version="[3.3,4)",org.apache.cxf.comm
+ on.logging;version="[3.3,4)",org.apache.cxf.common.util;version="[3.3
+ ,4)",org.apache.cxf.common.xmlschema;version="[3.3,4)",org.apache.cxf
+ .configuration;version="[3.3,4)",org.apache.cxf.configuration.bluepri
+ nt;version="[3.3,4)",org.apache.cxf.configuration.security;version="[
+ 3.3,4)",org.apache.cxf.configuration.spring;version="[3.3,4)",org.apa
+ che.cxf.databinding;version="[3.3,4)",org.apache.cxf.endpoint;version
+ ="[3.3,4)",org.apache.cxf.feature;version="[3.3,4)",org.apache.cxf.fr
+ ontend,org.apache.cxf.helpers;version="[3.3,4)",org.apache.cxf.interc
+ eptor;version="[3.3,4)",org.apache.cxf.jaxb;version="[3.3,4)";resolut
+ ion:=optional,org.apache.cxf.message;version="[3.3,4)",org.apache.cxf
+ .phase;version="[3.3,4)",org.apache.cxf.resource;version="[3.3,4)",or
+ g.apache.cxf.service;version="[3.3,4)",org.apache.cxf.service.factory
+ ;version="[3.3,4)",org.apache.cxf.service.invoker;version="[3.3,4)",o
+ rg.apache.cxf.service.model;version="[3.3,4)",org.apache.cxf.staxutil
+ s;version="[3.3,4)",org.apache.cxf.transport;version="[3.3,4)",org.ap
+ ache.cxf.transport.common.gzip;version="[3.3,4)",org.apache.cxf.ws.ad
+ dressing;version="[3.3,4)",org.apache.cxf.wsdl;version="[3.3,4)",org.
+ apache.cxf.wsdl.service.factory;version="[3.3,4)",org.apache.cxf.wsdl
+ 11;version="[3.3,4)",org.apache.ws.commons.schema;version="[2.2,3)",o
+ rg.apache.ws.commons.schema.extensions;version="[2.2,3)",org.osgi.fra
+ mework;version="[1.7,2)",org.osgi.service.blueprint.container;version
+ ="[1.0,2)";resolution:=optional,org.osgi.service.blueprint.reflect;ve
+ rsion="[1.0,2)";resolution:=optional,org.w3c.dom,org.xml.sax,org.xml.
+ sax.helpers
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

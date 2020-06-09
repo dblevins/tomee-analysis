@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1537916309912
+Build-Jdk: 1.8.0_162
+Built-By: genie.microprofile
+Bundle-License: Apache License, Version 2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MicroProfile JWT Auth Bundle Jakarta
+Bundle-SymbolicName: org.eclipse.microprofile.jwt.jakarta
+Bundle-Version: 1.1.1
+Created-By: 1.8.0_162 (Oracle Corporation)
+Export-Package: org.eclipse.microprofile.auth;version="1.0",org.eclips
+ e.microprofile.jwt;version="1.0";uses:="jakarta.enterprise.util,jakar
+ ta.inject",org.eclipse.microprofile.jwt.config;version="1.1.1"
+Import-Package: jakarta.enterprise.util;version="[1.1,2)",jakarta.inje
+ ct,jakarta.json;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.4.0.201707252008
+

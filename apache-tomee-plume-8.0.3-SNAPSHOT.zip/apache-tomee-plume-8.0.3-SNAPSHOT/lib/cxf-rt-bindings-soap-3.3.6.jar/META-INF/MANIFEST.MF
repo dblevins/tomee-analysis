@@ -1,0 +1,71 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.binding.soap
+Bnd-LastModified: 1585152312154
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.apache.cxf.binding.soap.blueprint.Activator
+Bundle-Description: Apache CXF Runtime SOAP Binding; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime SOAP Binding Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-bindings-soap.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.binding.soap;version="3.3.6",org.apache
+ .cxf.binding.soap.saaj;version="3.3.6",org.apache.cxf.binding.soap.mo
+ del;version="3.3.6",org.apache.cxf.binding.soap.wsdl11;version="3.3.6
+ ",org.apache.cxf.binding.soap.jms.interceptor;version="3.3.6",org.apa
+ che.cxf.binding.soap.wsdl.extensions;version="3.3.6",org.apache.cxf.b
+ inding.soap.interceptor;version="3.3.6",org.apache.cxf.binding.soap.b
+ lueprint;version="3.3.6",org.apache.cxf.binding.soap.spring;version="
+ 3.3.6"
+Export-Service: org.apache.aries.blueprint.NamespaceHandler;osgi.servi
+ ce.blueprint.namespace="http://cxf.apache.org/blueprint/bindings/soap
+ "
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.xml.soap;version="[1.3,2)",jakarta.activation;
+ version="[0,2)",org.apache.aries.blueprint;version="[1.0,2)";resoluti
+ on:=optional,org.apache.aries.blueprint.mutable;version="[1.0,2)";res
+ olution:=optional,org.springframework.beans;resolution:=optional;vers
+ ion="[3.1,6)",org.springframework.beans.factory.xml;resolution:=optio
+ nal;version="[3.1,6)",jakarta.xml.bind.annotation;version="[0,3)",jak
+ arta.jws.soap,javax.wsdl,javax.wsdl.extensions,javax.wsdl.extensions.
+ mime,javax.wsdl.extensions.soap,javax.wsdl.extensions.soap12,javax.xm
+ l.namespace,javax.xml.stream,javax.xml.stream.events,javax.xml.transf
+ orm,javax.xml.transform.dom,javax.xml.validation,javax.xml.xpath,org.
+ apache.cxf;version="[3.3,4)",org.apache.cxf.annotations;version="[3.3
+ ,4)",org.apache.cxf.attachment;version="[3.3,4)",org.apache.cxf.bindi
+ ng;version="[3.3,4)",org.apache.cxf.binding.soap,org.apache.cxf.bindi
+ ng.soap.interceptor,org.apache.cxf.binding.soap.jms.interceptor,org.a
+ pache.cxf.binding.soap.model,org.apache.cxf.binding.soap.wsdl.extensi
+ ons,org.apache.cxf.bus.blueprint;version="[3.3,4)",org.apache.cxf.com
+ mon.i18n;version="[3.3,4)",org.apache.cxf.common.injection;version="[
+ 3.3,4)",org.apache.cxf.common.logging;version="[3.3,4)",org.apache.cx
+ f.common.util;version="[3.3,4)",org.apache.cxf.common.xmlschema;versi
+ on="[3.3,4)",org.apache.cxf.configuration.blueprint;version="[3.3,4)"
+ ,org.apache.cxf.configuration.spring;version="[3.3,4)",org.apache.cxf
+ .databinding;version="[3.3,4)",org.apache.cxf.endpoint;version="[3.3,
+ 4)",org.apache.cxf.headers;version="[3.3,4)",org.apache.cxf.helpers;v
+ ersion="[3.3,4)",org.apache.cxf.interceptor;version="[3.3,4)",org.apa
+ che.cxf.io;version="[3.3,4)",org.apache.cxf.message;version="[3.3,4)"
+ ,org.apache.cxf.phase;version="[3.3,4)",org.apache.cxf.service;versio
+ n="[3.3,4)",org.apache.cxf.service.model;version="[3.3,4)",org.apache
+ .cxf.staxutils;version="[3.3,4)",org.apache.cxf.transport;version="[3
+ .3,4)",org.apache.cxf.ws.addressing;version="[3.3,4)",org.apache.cxf.
+ wsdl;version="[3.3,4)",org.apache.cxf.wsdl.binding;version="[3.3,4)",
+ org.apache.cxf.wsdl.interceptors;version="[3.3,4)",org.apache.cxf.wsd
+ l11;version="[3.3,4)",org.apache.ws.commons.schema;version="[2.2,3)",
+ org.osgi.framework;version="[1.7,2)",org.osgi.service.blueprint.conta
+ iner;version="[1.0,2)";resolution:=optional,org.osgi.service.blueprin
+ t.reflect;version="[1.0,2)";resolution:=optional,org.w3c.dom,org.xml.
+ sax
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

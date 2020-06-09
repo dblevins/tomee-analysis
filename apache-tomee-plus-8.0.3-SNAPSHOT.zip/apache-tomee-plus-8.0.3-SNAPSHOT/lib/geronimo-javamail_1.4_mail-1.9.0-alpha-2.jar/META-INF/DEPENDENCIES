@@ -1,0 +1,17 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Geronimo JavaMail 1.4 :: Mail
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org)
+  - Geronimo JavaMail 1.4 :: Provider (http://geronimo.apache.org/maven/javamail/geronimo-javamail_1.4_provider/1.9.0-alpha-2/geronimo-javamail_1.4_provider) org.apache.geronimo.javamail:geronimo-javamail_1.4_provider:bundle:1.9.0-alpha-2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Geronimo JavaMail Spec 1.4 (http://geronimo.apache.org/maven/specs/geronimo-javamail_1.4_spec/1.7.2-alpha-1) org.apache.geronimo.specs:geronimo-javamail_1.4_spec:bundle:1.7.2-alpha-1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

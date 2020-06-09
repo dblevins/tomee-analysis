@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1569830561454
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: Apache OpenWebBeans Java EE Web and Serlvet plugin
+ ; Jarkata Enabled
+Bundle-DocURL: http://apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Web plugin Jakarta
+Bundle-SymbolicName: openwebbeans-web.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.12
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.webbeans.servlet;version="2.0.12";uses:="ja
+ karta.servlet,jakarta.servlet.http,org.apache.webbeans.spi",org.apach
+ e.webbeans.web.context;version="2.0.12";uses:="jakarta.enterprise.con
+ text,jakarta.enterprise.context.spi,jakarta.servlet,jakarta.servlet.h
+ ttp,org.apache.webbeans.config,org.apache.webbeans.context,org.apache
+ .webbeans.conversation,org.apache.webbeans.spi",org.apache.webbeans.w
+ eb.lifecycle;version="2.0.12";uses:="jakarta.servlet,org.apache.webbe
+ ans.config,org.apache.webbeans.lifecycle",org.apache.webbeans.web.lif
+ ecycle.test;version="2.0.12";uses:="jakarta.servlet,jakarta.servlet.d
+ escriptor,jakarta.servlet.http,org.apache.webbeans.lifecycle",org.apa
+ che.webbeans.web.scanner;version="2.0.12";uses:="jakarta.servlet,org.
+ apache.webbeans.corespi.scanner,org.apache.webbeans.corespi.scanner.x
+ bean",org.apache.webbeans.web.util;version="2.0.12";uses:="jakarta.se
+ rvlet"
+Implementation-Title: Web plugin
+Implementation-URL: openwebbeans.apache.org/openwebbeans-web
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.0.12
+Import-Package: jakarta.servlet.jsp;version="2.1",jakarta.servlet;vers
+ ion="2.4",jakarta.servlet.descriptor;version="2.4",jakarta.servlet.ht
+ tp;version="2.4",jakarta.el;version="2.2",jakarta.enterprise.context;
+ version="[2.0,3)",jakarta.enterprise.context.spi;version="[2.0,3)",ja
+ karta.enterprise.inject.spi;version="[2.0,3)",jakarta.inject;version=
+ "[1.0,2)",org.apache.webbeans.annotation;version="[2.0,3)",org.apache
+ .webbeans.component;version="[2.0,3)",org.apache.webbeans.config;vers
+ ion="[2.0,3)",org.apache.webbeans.container;version="[2.0,3)",org.apa
+ che.webbeans.context;version="[2.0,3)",org.apache.webbeans.conversati
+ on;version="[2.0,3)",org.apache.webbeans.corespi.scanner;version="[2.
+ 0,3)",org.apache.webbeans.corespi.scanner.xbean;version="[2.0,3)",org
+ .apache.webbeans.corespi.se;version="[2.0,3)",org.apache.webbeans.el;
+ version="[2.0,3)",org.apache.webbeans.event;version="[2.0,3)",org.apa
+ che.webbeans.exception;version="[2.0,3)",org.apache.webbeans.intercep
+ t;version="[2.0,3)",org.apache.webbeans.lifecycle;version="[2.0,3)",o
+ rg.apache.webbeans.logger;version="[2.0,3)",org.apache.webbeans.porta
+ ble;version="[2.0,3)",org.apache.webbeans.spi;version="[2.0,3)";resol
+ ution:=optional,org.apache.webbeans.spi.adaptor;version="[2.0,3)";res
+ olution:=optional,org.apache.webbeans.util;version="[2.0,3)",org.apac
+ he.webbeans.web.context;version="[2.0,3)",org.apache.webbeans.web.uti
+ l;version="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Web plugin
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.0.12
+Tool: Bnd-3.3.0.201609221906
+

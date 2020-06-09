@@ -1,0 +1,67 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Commons JCS :: Core
+
+
+From: 'an unknown organization'
+  - antlr  antlr:antlr:jar:2.7.2
+
+  - commons-beanutils  commons-beanutils:commons-beanutils:jar:1.7.0
+
+  - Codec  commons-codec:commons-codec:jar:1.2
+
+  - dom4j  dom4j:dom4j:jar:1.1
+
+  - servlet-api  javax.servlet:servlet-api:jar:2.5
+
+  - oro  oro:oro:jar:2.0.8
+
+
+From: 'Apache Software Foundation' (http://jakarta.apache.org/)
+  - HttpClient (http://jakarta.apache.org/httpcomponents/httpclient-3.x/) commons-httpclient:commons-httpclient:jar:3.1
+    License: Apache License  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'Apache Software Foundation' (http://velocity.apache.org/)
+  - VelocityTools (http://velocity.apache.org/tools/devel/) org.apache.velocity:velocity-tools:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org/)
+  - Struts Core (http://struts.apache.org) org.apache.struts:struts-core:jar:1.3.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Struts Taglib (http://struts.apache.org) org.apache.struts:struts-taglib:jar:1.3.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Struts Tiles (http://struts.apache.org) org.apache.struts:struts-tiles:jar:1.3.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Steve Ditlinger' (http://sslext.sourceforge.net/)
+  - sslext  sslext:sslext:jar:1.2-0
+    License: Apache Software License, Version 1.1  (http://www.apache.org/licenses/LICENSE-1.1)
+
+From: 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Commons Chain (http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/) commons-chain:commons-chain:jar:1.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Collections (http://jakarta.apache.org/commons/collections/) commons-collections:commons-collections:jar:3.2
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Digester (http://jakarta.apache.org/commons/digester/) commons-digester:commons-digester:jar:1.8
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Validator (http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/) commons-validator:commons-validator:jar:1.3.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons DBCP (http://commons.apache.org/dbcp/) commons-dbcp:commons-dbcp:jar:1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Lang (http://commons.apache.org/lang/) commons-lang:commons-lang:jar:2.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Logging (http://commons.apache.org/proper/commons-logging/) commons-logging:commons-logging:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Pool (http://commons.apache.org/pool/) commons-pool:commons-pool:jar:1.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Velocity (http://velocity.apache.org/engine/releases/velocity-1.6.2/) org.apache.velocity:velocity:jar:1.6.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

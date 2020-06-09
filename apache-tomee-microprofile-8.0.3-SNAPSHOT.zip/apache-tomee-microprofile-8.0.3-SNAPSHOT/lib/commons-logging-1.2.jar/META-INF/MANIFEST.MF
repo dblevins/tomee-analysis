@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1404583913415
+Build-Jdk: 1.7.0_55
+Built-By: tn
+Bundle-Description: Apache Commons Logging is a thin adapter allowing 
+ configurable bridging to other,    well known logging systems.; Jarka
+ ta Enabled
+Bundle-DocURL: http://commons.apache.org/proper/commons-logging/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons Logging Jakarta
+Bundle-SymbolicName: org.apache.commons.logging.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.logging;version="1.2",org.apache.co
+ mmons.logging.impl;version="1.2"
+Implementation-Build: tags/LOGGING_1_2_RC2@r1608092; 2014-07-05 20:11:
+ 44+0200
+Implementation-Title: Apache Commons Logging
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 1.2
+Import-Package: jakarta.servlet;version="[2.1.0,3.0.0)";resolution:=op
+ tional,org.apache.avalon.framework.logger;version="[4.1.3,4.1.5]";res
+ olution:=optional,org.apache.log;version="[1.0.1,1.0.1]";resolution:=
+ optional,org.apache.log4j;version="[1.2.15,2.0.0)";resolution:=option
+ al
+Include-Resource: META-INF/NOTICE.txt=NOTICE.txt,META-INF/LICENSE.txt=
+ LICENSE.txt
+Specification-Title: Apache Commons Logging
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.2
+Tool: Bnd-2.1.0.20130426-122213
+X-Compile-Source-JDK: 1.2
+X-Compile-Target-JDK: 1.2
+

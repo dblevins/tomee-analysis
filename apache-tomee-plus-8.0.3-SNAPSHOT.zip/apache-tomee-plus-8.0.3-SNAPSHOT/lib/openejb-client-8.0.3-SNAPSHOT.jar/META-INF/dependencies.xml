@@ -1,0 +1,16 @@
+<dependencies>
+  <dependency groupId="org.apache.geronimo.javamail" artifactId="geronimo-javamail_1.4_mail" version="1.9.0-alpha-2" file-name="geronimo-javamail_1.4_mail-1.9.0-alpha-2.jar"/>
+  <dependency groupId="org.apache.tomee" artifactId="javaee-api" version="8.0-4" file-name="javaee-api-8.0-4.jar"/>
+  <dependency groupId="org.apache.tomee.bom" artifactId="jaxb-runtime" version="8.0.3-SNAPSHOT" file-name="pom.xml">
+    <dependency groupId="com.sun.activation" artifactId="jakarta.activation" version="1.2.1" file-name="jakarta.activation-1.2.1.jar"/>
+    <dependency groupId="jakarta.xml.bind" artifactId="jakarta.xml.bind-api" version="2.3.2" file-name="jakarta.xml.bind-api-2.3.2.jar">
+      <dependency groupId="jakarta.activation" artifactId="jakarta.activation-api" version="1.2.1" file-name="jakarta.activation-api-1.2.1.jar"/>
+    </dependency>
+    <dependency groupId="org.glassfish.jaxb" artifactId="jaxb-runtime" version="2.3.2" file-name="jaxb-runtime-2.3.2.jar">
+      <dependency groupId="com.sun.istack" artifactId="istack-commons-runtime" version="3.0.8" file-name="istack-commons-runtime-3.0.8.jar"/>
+      <dependency groupId="com.sun.xml.fastinfoset" artifactId="FastInfoset" version="1.2.16" file-name="FastInfoset-1.2.16.jar"/>
+      <dependency groupId="org.glassfish.jaxb" artifactId="txw2" version="2.3.2" file-name="txw2-2.3.2.jar"/>
+      <dependency groupId="org.jvnet.staxex" artifactId="stax-ex" version="1.8.1" file-name="stax-ex-1.8.1.jar"/>
+    </dependency>
+  </dependency>
+</dependencies>

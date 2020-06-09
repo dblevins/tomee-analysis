@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.rs.security.jose.jaxrs
+Bnd-LastModified: 1585152807500
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime JOSE JAX-RS; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime JOSE JAX-RS Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-rs-security-jose-jaxrs.jaka
+ rta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.rs.security.jose.jaxrs;version="3.3.6",
+ org.apache.cxf.rs.security.jose.jaxrs.multipart;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.activation;version="[0,2)",jakarta.annotation;
+ version="[1.2,2)",javax.crypto,javax.security.auth,javax.security.aut
+ h.x500,jakarta.ws.rs;version="[2.1,3)",jakarta.ws.rs.client;version="
+ [2.1,3)",jakarta.ws.rs.container;version="[2.1,3)",jakarta.ws.rs.core
+ ;version="[2.1,3)",jakarta.ws.rs.ext;version="[2.1,3)",org.apache.cxf
+ .attachment;version="[3.3,4)",org.apache.cxf.common.logging;version="
+ [3.3,4)",org.apache.cxf.common.security;version="[3.3,4)",org.apache.
+ cxf.common.util;version="[3.3,4)",org.apache.cxf.configuration.securi
+ ty;version="[3.3,4)",org.apache.cxf.endpoint;version="[3.3,4)",org.ap
+ ache.cxf.helpers;version="[3.3,4)",org.apache.cxf.io;version="[3.3,4)
+ ",org.apache.cxf.jaxrs.ext.multipart;version="[3.3,4)",org.apache.cxf
+ .jaxrs.json.basic;version="[3.3,4)",org.apache.cxf.jaxrs.utils;versio
+ n="[3.3,4)",org.apache.cxf.jaxrs.utils.multipart;version="[3.3,4)",or
+ g.apache.cxf.message;version="[3.3,4)",org.apache.cxf.phase;version="
+ [3.3,4)",org.apache.cxf.rs.security.jose.common;version="[3.3,4)",org
+ .apache.cxf.rs.security.jose.jwa;version="[3.3,4)",org.apache.cxf.rs.
+ security.jose.jwe;version="[3.3,4)",org.apache.cxf.rs.security.jose.j
+ wk;version="[3.3,4)",org.apache.cxf.rs.security.jose.jws;version="[3.
+ 3,4)",org.apache.cxf.rs.security.jose.jwt;version="[3.3,4)",org.apach
+ e.cxf.rt.security.claims;version="[3.3,4)",org.apache.cxf.rt.security
+ .crypto;version="[3.3,4)",org.apache.cxf.security;version="[3.3,4)",o
+ rg.apache.cxf.service.model;version="[3.3,4)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

@@ -1,0 +1,65 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1478772341836
+Build-Jdk: 1.8.0_91
+Built-By: gnodet
+Bundle-Description: Apache Geronimo J2CA Connector Framework; Jarkata 
+ Enabled
+Bundle-DocURL: http://geronimo.apache.org/maven/components/geronimo-co
+ nnector/3.1.4
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Geronimo TxManager :: Connector Jakarta
+Bundle-SymbolicName: org.apache.geronimo.components.geronimo-connector
+ .jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.1.4
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.geronimo.connector.outbound.connectiontrack
+ ing;uses:="org.apache.geronimo.connector.outbound,jakarta.resource,or
+ g.slf4j,jakarta.resource.spi,org.apache.geronimo.transaction.manager,
+ jakarta.transaction";version="3.0",org.apache.geronimo.connector.outb
+ ound.security;version="3.0",org.apache.geronimo.connector.work;uses:=
+ "jakarta.resource.spi.work,org.apache.geronimo.connector.work.pool,or
+ g.apache.geronimo.transaction.manager,javax.transaction.xa,jakarta.tr
+ ansaction,org.slf4j,jakarta.resource";version="3.0",org.apache.geroni
+ mo.connector.work.pool;uses:="jakarta.resource.spi.work,org.apache.ge
+ ronimo.connector.work,org.slf4j";version="3.0",org.apache.geronimo.co
+ nnector;uses:="org.apache.geronimo.transaction.manager,javax.transact
+ ion.xa,jakarta.transaction,jakarta.resource.spi,jakarta.resource,jaka
+ rta.resource.spi.endpoint,jakarta.validation,org.apache.geronimo.conn
+ ector.outbound,jakarta.resource.spi.work,org.apache.geronimo.connecto
+ r.work";version="3.0",org.apache.geronimo.connector.outbound;uses:="o
+ rg.apache.geronimo.connector.outbound.connectionmanagerconfig,org.apa
+ che.geronimo.transaction.manager,jakarta.resource.spi,jakarta.resourc
+ e,org.slf4j,javax.security.auth,org.apache.geronimo.connector.outboun
+ d.connectiontracking,jakarta.transaction,javax.transaction.xa,org.apa
+ che.geronimo.connector";version="3.0",org.apache.geronimo.connector.o
+ utbound.transactionlog;uses:="org.apache.geronimo.transaction.manager
+ ,javax.transaction.xa,jakarta.resource,jakarta.resource.spi,org.apach
+ e.geronimo.connector.outbound";version="3.0",org.apache.geronimo.conn
+ ector.outbound.connectionmanagerconfig;uses:="org.apache.geronimo.con
+ nector.outbound,jakarta.transaction,org.apache.geronimo.connector.out
+ bound.transactionlog";version="3.0"
+Implementation-Title: Geronimo TxManager :: Connector
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.geronimo.components
+Implementation-Version: 3.1.4
+Import-Package: jakarta.resource;version="[1.6,2)",jakarta.resource.sp
+ i;version="[1.6,2)",jakarta.resource.spi.endpoint;version="[1.6,2)",j
+ akarta.resource.spi.work;version="[1.6,2)",javax.security.auth,jakart
+ a.transaction;version="[1.1,2)",javax.transaction.xa;version="[1.1,2)
+ ",jakarta.validation;version="[1.0,2)",org.apache.geronimo.connector;
+ version="[3.0,4)",org.apache.geronimo.connector.outbound;version="[3.
+ 0,4)",org.apache.geronimo.connector.outbound.connectionmanagerconfig;
+ version="[3.0,4)",org.apache.geronimo.connector.outbound.connectiontr
+ acking;version="[3.0,4)",org.apache.geronimo.connector.outbound.secur
+ ity;version="[3.0,4)",org.apache.geronimo.connector.outbound.transact
+ ionlog;version="[3.0,4)",org.apache.geronimo.connector.work;version="
+ [3.0,4)",org.apache.geronimo.connector.work.pool;version="[3.0,4)",or
+ g.apache.geronimo.transaction.manager;version="[3.0,4)",org.slf4j;ver
+ sion="[1.5,2)"
+Specification-Title: Geronimo TxManager :: Connector
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.1.4
+Tool: Bnd-0.0.357
+

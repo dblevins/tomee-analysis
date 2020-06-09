@@ -1,0 +1,2 @@
+jose4j-0.6.0.jar
+slf4j-api-1.7.21.jar

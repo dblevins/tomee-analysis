@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.commons.collections4
+Bnd-LastModified: 1545829942144
+Build-Jdk: 1.8.0_191
+Built-By: solomax
+Bundle-Description: The Apache Commons Collections package contains ty
+ pes that extend and augment the Java Collections Framework.; Jarkata 
+ Enabled
+Bundle-DocURL: http://commons.apache.org/proper/commons-collections/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons Collections Jakarta
+Bundle-SymbolicName: org.apache.commons.commons-collections4.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 4.3.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.collections4;version="4.3",org.apac
+ he.commons.collections4.bag;version="4.3",org.apache.commons.collecti
+ ons4.bidimap;version="4.3",org.apache.commons.collections4.collection
+ ;version="4.3",org.apache.commons.collections4.comparators;version="4
+ .3",org.apache.commons.collections4.functors;version="4.3",org.apache
+ .commons.collections4.iterators;version="4.3",org.apache.commons.coll
+ ections4.keyvalue;version="4.3",org.apache.commons.collections4.list;
+ version="4.3",org.apache.commons.collections4.map;version="4.3",org.a
+ pache.commons.collections4.multimap;version="4.3",org.apache.commons.
+ collections4.multiset;version="4.3",org.apache.commons.collections4.p
+ roperties;version="4.3",org.apache.commons.collections4.queue;version
+ ="4.3",org.apache.commons.collections4.sequence;version="4.3",org.apa
+ che.commons.collections4.set;version="4.3",org.apache.commons.collect
+ ions4.splitmap;version="4.3",org.apache.commons.collections4.trie;ver
+ sion="4.3",org.apache.commons.collections4.trie.analyzer;version="4.3
+ "
+Implementation-Title: Apache Commons Collections
+Implementation-URL: http://commons.apache.org/proper/commons-collectio
+ ns/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.commons
+Implementation-Version: 4.3
+Import-Package: org.w3c.dom
+Include-Resource: META-INF/NOTICE.txt=NOTICE.txt,META-INF/LICENSE.txt=
+ LICENSE.txt
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache Commons Collections
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 4.3
+Tool: Bnd-3.5.0.201709291849
+

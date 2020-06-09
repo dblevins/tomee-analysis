@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.databinding.jaxb
+Bnd-LastModified: 1585152306440
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime JAXB DataBinding; Jarkata Enabl
+ ed
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime JAXB DataBinding Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-databinding-jaxb.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.jaxb;version="3.3.6",org.apache.cxf.jax
+ b.attachment;version="3.3.6",org.apache.cxf.jaxb.io;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.activation;version="[0,2)",jakarta.xml.bind;ve
+ rsion="[0,3)",jakarta.xml.bind.annotation;version="[0,3)",jakarta.xml
+ .bind.annotation.adapters;version="[0,3)",jakarta.xml.bind.attachment
+ ;version="[0,3)",javax.xml.stream;version="[0,2)",javax.xml.stream.ut
+ il;version="[0,2)",javax.xml.datatype,javax.xml.namespace,javax.xml.t
+ ransform.dom,javax.xml.transform.stream,javax.xml.validation,org.apac
+ he.cxf.annotations;version="[3.3,4)",org.apache.cxf.attachment;versio
+ n="[3.3,4)",org.apache.cxf.common.classloader;version="[3.3,4)",org.a
+ pache.cxf.common.i18n;version="[3.3,4)",org.apache.cxf.common.injecti
+ on;version="[3.3,4)",org.apache.cxf.common.jaxb;version="[3.3,4)",org
+ .apache.cxf.common.logging;version="[3.3,4)",org.apache.cxf.common.ut
+ il;version="[3.3,4)",org.apache.cxf.common.xmlschema;version="[3.3,4)
+ ",org.apache.cxf.databinding;version="[3.3,4)",org.apache.cxf.helpers
+ ;version="[3.3,4)",org.apache.cxf.interceptor;version="[3.3,4)",org.a
+ pache.cxf.jaxb,org.apache.cxf.jaxb.attachment,org.apache.cxf.jaxb.io,
+ org.apache.cxf.message;version="[3.3,4)",org.apache.cxf.phase;version
+ ="[3.3,4)",org.apache.cxf.resource;version="[3.3,4)",org.apache.cxf.s
+ ervice;version="[3.3,4)",org.apache.cxf.service.factory;version="[3.3
+ ,4)",org.apache.cxf.service.model;version="[3.3,4)",org.apache.cxf.st
+ axutils;version="[3.3,4)",org.apache.cxf.ws.addressing;version="[3.3,
+ 4)",org.apache.cxf.ws.addressing.wsdl;version="[3.3,4)",org.apache.ws
+ .commons.schema;version="[2.2,3)",org.apache.ws.commons.schema.utils;
+ version="[2.2,3)",org.w3c.dom,org.xml.sax
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

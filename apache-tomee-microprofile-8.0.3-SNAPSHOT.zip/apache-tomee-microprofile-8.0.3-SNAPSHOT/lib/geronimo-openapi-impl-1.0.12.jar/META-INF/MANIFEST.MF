@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: Geronimo OpenAPI :: Implementation
+Automatic-Module-Name: org.apache.geronimo.microprofile.openapi
+Implementation-Version: 1.0.12
+Built-By: struberg
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Geronimo OpenAPI :: Implementation
+Implementation-Vendor-Id: org.apache.geronimo
+Implementation-Vendor: The Apache Software Foundation
+Created-By: Apache Maven 3.6.2
+Build-Jdk: 1.8.0_232
+Specification-Version: 1.0
+Implementation-URL: https://www.apache.org/geronimo-openapi/geronimo-o
+ penapi-impl/
+

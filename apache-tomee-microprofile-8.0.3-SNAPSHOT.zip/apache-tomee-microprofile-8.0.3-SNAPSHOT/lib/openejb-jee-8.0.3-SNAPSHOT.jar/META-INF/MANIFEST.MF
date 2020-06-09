@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.openejb-jee
+Bnd-LastModified: 1591729239290
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Container :: Java EE Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-jee.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Container :: Java EE
+Implementation-URL: http://tomee.apache.org/container/openejb-jee
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: jakarta.persistence,jakarta.validation.executable,jaka
+ rta.xml.bind,jakarta.xml.bind.annotation,jakarta.xml.bind.annotation.
+ adapters,javax.xml.datatype,javax.xml.namespace,javax.xml.parsers,jav
+ ax.xml.transform,javax.xml.transform.sax,javax.xml.transform.stream,j
+ avax.xml.validation,org.w3c.dom,org.w3c.dom.ls,org.xml.sax,org.xml.sa
+ x.helpers,org.apache.geronimo.specs.jpa;resolution:=optional,org.apac
+ he.geronimo.specs.activation;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Container :: Java EE
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

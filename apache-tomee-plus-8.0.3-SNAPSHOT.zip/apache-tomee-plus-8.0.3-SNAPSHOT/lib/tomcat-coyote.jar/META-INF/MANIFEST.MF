@@ -1,0 +1,74 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711044031
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-coyote Jakarta
+Bundle-SymbolicName: org.apache.tomcat-coyote.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: org.apache.coyote;uses:="javax.management,jakarta.serv
+ let,jakarta.servlet.http,org.apache.coyote.http11.upgrade,org.apache.
+ juli.logging,org.apache.tomcat,org.apache.tomcat.util.buf,org.apache.
+ tomcat.util.collections,org.apache.tomcat.util.http,org.apache.tomcat
+ .util.log,org.apache.tomcat.util.modeler,org.apache.tomcat.util.net",
+ org.apache.coyote.ajp;uses:="org.apache.coyote,org.apache.juli.loggin
+ g,org.apache.tomcat.util.buf,org.apache.tomcat.util.net,org.apache.to
+ mcat.util.res",org.apache.coyote.http11;uses:="org.apache.coyote,org.
+ apache.juli.logging,org.apache.tomcat.util.buf,org.apache.tomcat.util
+ .http.parser,org.apache.tomcat.util.net,org.apache.tomcat.util.res",o
+ rg.apache.coyote.http11.filters;uses:="org.apache.coyote,org.apache.c
+ oyote.http11,org.apache.juli.logging,org.apache.tomcat.util.buf,org.a
+ pache.tomcat.util.net",org.apache.coyote.http11.upgrade;uses:="jakart
+ a.servlet,jakarta.servlet.http,org.apache.coyote,org.apache.juli.logg
+ ing,org.apache.tomcat.util.net",org.apache.coyote.http2;uses:="jakart
+ a.servlet.http,org.apache.coyote,org.apache.coyote.http11,org.apache.
+ coyote.http11.upgrade,org.apache.tomcat.util.net,org.apache.tomcat.ut
+ il.res",org.apache.tomcat.util.bcel.classfile,org.apache.tomcat.util.
+ http;uses:="jakarta.servlet.http,org.apache.tomcat.util.buf",org.apac
+ he.tomcat.util.http.fileupload;uses:="org.apache.tomcat.util.http.fil
+ eupload.util",org.apache.tomcat.util.http.fileupload.disk;uses:="org.
+ apache.tomcat.util.http.fileupload",org.apache.tomcat.util.http.fileu
+ pload.servlet;uses:="jakarta.servlet.http,org.apache.tomcat.util.http
+ .fileupload",org.apache.tomcat.util.http.fileupload.util;uses:="org.a
+ pache.tomcat.util.http.fileupload",org.apache.tomcat.util.http.parser
+ ;uses:="org.apache.tomcat.util.buf,org.apache.tomcat.util.http",org.a
+ pache.tomcat.util.log;uses:="org.apache.juli.logging",org.apache.tomc
+ at.util.modeler;uses:="javax.management,javax.management.modelmbean",
+ org.apache.tomcat.util.net;uses:="javax.management,javax.net.ssl,org.
+ apache.juli.logging,org.apache.tomcat.jni,org.apache.tomcat.util.coll
+ ections,org.apache.tomcat.util.net.openssl,org.apache.tomcat.util.net
+ .openssl.ciphers,org.apache.tomcat.util.res,org.apache.tomcat.util.th
+ reads",org.apache.tomcat.util.net.openssl;uses:="javax.net.ssl,org.ap
+ ache.juli.logging,org.apache.tomcat.util.net",org.apache.tomcat.util.
+ net.openssl.ciphers
+Implementation-Title: Apache Tomcat
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 9.0.35
+Import-Package: javax.crypto,javax.crypto.spec,javax.management,javax.
+ management.loading,javax.management.modelmbean,javax.net.ssl,javax.se
+ curity.auth.x500,javax.security.cert,jakarta.servlet,jakarta.servlet.
+ http,org.apache.coyote,org.apache.coyote.ajp,org.apache.coyote.http11
+ ,org.apache.coyote.http11.filters,org.apache.coyote.http11.upgrade,or
+ g.apache.juli.logging,org.apache.tomcat,org.apache.tomcat.jni,org.apa
+ che.tomcat.util,org.apache.tomcat.util.buf,org.apache.tomcat.util.cod
+ ec.binary,org.apache.tomcat.util.collections,org.apache.tomcat.util.c
+ ompat,org.apache.tomcat.util.digester,org.apache.tomcat.util.file,org
+ .apache.tomcat.util.http,org.apache.tomcat.util.http.fileupload.util,
+ org.apache.tomcat.util.http.parser,org.apache.tomcat.util.log,org.apa
+ che.tomcat.util.net.openssl.ciphers,org.apache.tomcat.util.res,org.ap
+ ache.tomcat.util.security,org.apache.tomcat.util.threads
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Private-Package: org.apache.tomcat.util.bcel,org.apache.tomcat.util.ht
+ tp.fileupload.impl,org.apache.tomcat.util.http.fileupload.util.mime,o
+ rg.apache.tomcat.util.modeler.modules,org.apache.tomcat.util.net.jsse
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache Tomcat
+Specification-Vendor: Apache Software Foundation
+Specification-Version: 9.0
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+

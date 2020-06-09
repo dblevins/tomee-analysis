@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: Geronimo OpenTracing
+Automatic-Module-Name: org.apache.geronimo.opentracing
+Implementation-Version: 1.0.0
+Built-By: rmannibucau
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Geronimo OpenTracing
+Implementation-Vendor-Id: org.apache.geronimo
+Implementation-Vendor: The Apache Software Foundation
+Created-By: Apache Maven 3.5.4
+Build-Jdk: 1.8.0_161
+Specification-Version: 1.0
+Implementation-URL: https://www.apache.org/geronimo-opentracing/
+

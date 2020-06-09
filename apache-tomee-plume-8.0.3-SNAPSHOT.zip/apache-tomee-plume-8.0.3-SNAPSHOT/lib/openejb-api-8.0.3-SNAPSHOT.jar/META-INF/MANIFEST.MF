@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.container.api
+Bnd-LastModified: 1591729229306
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Container :: API Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-api.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Container :: API
+Implementation-URL: http://tomee.apache.org/container/openejb-api
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: javax.management,jakarta.persistence
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Container :: API
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

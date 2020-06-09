@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1569830583003
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: Apache OpenWebBeans Java EE EJB plugin; Jarkata En
+ abled
+Bundle-DocURL: http://apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: EJB plugin Jakarta
+Bundle-SymbolicName: openwebbeans-ejb.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.12
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.webbeans.ejb.common.component;version="2.0.
+ 12";uses:="jakarta.enterprise.context.spi,jakarta.enterprise.inject.s
+ pi,org.apache.webbeans.component,org.apache.webbeans.config,org.apach
+ e.webbeans.container",org.apache.webbeans.ejb.common.util;version="2.
+ 0.12";uses:="jakarta.enterprise.inject.spi,org.apache.webbeans.ejb.co
+ mmon.component",org.apache.webbeans.ejb.plugin;version="2.0.12";uses:
+ ="org.apache.webbeans.plugins,org.apache.webbeans.spi.plugins"
+Implementation-Title: EJB plugin
+Implementation-URL: openwebbeans.apache.org/openwebbeans-ejb
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.0.12
+Import-Package: jakarta.decorator;version="[2.0,3)",jakarta.ejb;versio
+ n="[3.1,4)",jakarta.enterprise.context;version="[2.0,3)",jakarta.ente
+ rprise.context.spi;version="[2.0,3)",jakarta.enterprise.inject.spi;ve
+ rsion="[2.0,3)",jakarta.interceptor;version="[1.2,2)",org.apache.webb
+ eans.component;version="[2.0,3)",org.apache.webbeans.config;version="
+ [2.0,3)",org.apache.webbeans.container;version="[2.0,3)",org.apache.w
+ ebbeans.ejb.common.component;version="[2.0,3)",org.apache.webbeans.ej
+ b.common.util;version="[2.0,3)",org.apache.webbeans.event;version="[2
+ .0,3)",org.apache.webbeans.exception;version="[2.0,3)",org.apache.web
+ beans.plugins;version="[2.0,3)",org.apache.webbeans.portable;version=
+ "[2.0,3)",org.apache.webbeans.spi;version="[2.0,3)";resolution:=optio
+ nal,org.apache.webbeans.spi.plugins;version="[2.0,3)";resolution:=opt
+ ional,org.apache.webbeans.util;version="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: EJB plugin
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.0.12
+Tool: Bnd-3.3.0.201609221906
+

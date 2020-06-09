@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1505484388116
+Build-Jdk: 1.8.0_121
+Built-By: starksm
+Bundle-License: Apache License, Version 2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MicroProfile Health Check Bundle Jakarta
+Bundle-SymbolicName: org.eclipse.microprofile.health.jakarta
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_121 (Oracle Corporation)
+Export-Package: org.eclipse.microprofile.health;version="1.0";uses:="j
+ akarta.inject,org.eclipse.microprofile.health.spi",org.eclipse.microp
+ rofile.health.spi;version="1.0";uses:="org.eclipse.microprofile.healt
+ h"
+Import-Package: jakarta.inject,org.eclipse.microprofile.health;version
+ ="[1.0,2)",org.eclipse.microprofile.health.spi;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.4.0.201707252008
+

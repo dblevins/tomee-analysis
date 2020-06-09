@@ -1,0 +1,62 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.rs.search
+Bnd-LastModified: 1585152763126
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF JAX-RS Extensions: Search; Jarkata Enab
+ led
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF JAX-RS Extensions: Search Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-rs-extension-search.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.jaxrs.ext.search;version="3.3.6",org.ap
+ ache.cxf.jaxrs.ext.search.lucene;version="3.3.6",org.apache.cxf.jaxrs
+ .ext.search.ldap;version="3.3.6",org.apache.cxf.jaxrs.ext.search.jpa;
+ version="3.3.6",org.apache.cxf.jaxrs.ext.search.fiql;version="3.3.6",
+ org.apache.cxf.jaxrs.ext.search.tika;version="3.3.6",org.apache.cxf.j
+ axrs.ext.search.visitor;version="3.3.6",org.apache.cxf.jaxrs.ext.sear
+ ch.odata;version="3.3.6",org.apache.cxf.jaxrs.ext.search.hbase;versio
+ n="3.3.6",org.apache.cxf.jaxrs.ext.search.collections;version="3.3.6"
+ ,org.apache.cxf.jaxrs.ext.search.client;version="3.3.6",org.apache.cx
+ f.jaxrs.ext.search.sql;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.persistence;resolution:=optional;version="[2.0
+ ,3)",jakarta.persistence.criteria;resolution:=optional;version="[2.0,
+ 3)",jakarta.persistence.metamodel;resolution:=optional;version="[2.0,
+ 3)",org.apache.tika.detect;resolution:=optional;version="[1.24,2)",or
+ g.apache.tika.exception;resolution:=optional;version="[1.24,2)",org.a
+ pache.tika.metadata;resolution:=optional;version="[1.24,2)",org.apach
+ e.tika.mime;resolution:=optional;version="[1.24,2)",org.apache.tika.p
+ arser;resolution:=optional;version="[1.24,2)",org.apache.tika.sax;res
+ olution:=optional;version="[1.24,2)",jakarta.ws.rs.core;version="[2.1
+ ,3)",jakarta.ws.rs.ext;version="[2.1,3)",javax.xml.datatype,org.apach
+ e.cxf.common.classloader;version="[3.3,4)",org.apache.cxf.common.logg
+ ing;version="[3.3,4)",org.apache.cxf.common.util;version="[3.3,4)",or
+ g.apache.cxf.helpers;version="[3.3,4)",org.apache.cxf.jaxrs.ext;versi
+ on="[3.3,4)",org.apache.cxf.jaxrs.ext.search,org.apache.cxf.jaxrs.ext
+ .search.client,org.apache.cxf.jaxrs.ext.search.collections,org.apache
+ .cxf.jaxrs.ext.search.fiql,org.apache.cxf.jaxrs.ext.search.sql,org.ap
+ ache.cxf.jaxrs.ext.search.visitor,org.apache.cxf.jaxrs.provider;versi
+ on="[3.3,4)",org.apache.cxf.jaxrs.utils;version="[3.3,4)",org.apache.
+ cxf.message;version="[3.3,4)",org.apache.cxf.phase;version="[3.3,4)",
+ org.apache.hadoop.hbase.filter;resolution:=optional,org.apache.lucene
+ .analysis;resolution:=optional,org.apache.lucene.document;resolution:
+ =optional,org.apache.lucene.index;resolution:=optional,org.apache.luc
+ ene.search;resolution:=optional,org.apache.lucene.util;resolution:=op
+ tional,org.apache.olingo.odata2.api.edm;version="[2.0,3)";resolution:
+ =optional,org.apache.olingo.odata2.api.exception;version="[2.0,3)";re
+ solution:=optional,org.apache.olingo.odata2.api.uri.expression;versio
+ n="[2.0,3)";resolution:=optional,org.apache.olingo.odata2.core.uri.ex
+ pression;resolution:=optional,org.xml.sax
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

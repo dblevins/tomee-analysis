@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711027219
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-websocket Jakarta
+Bundle-SymbolicName: org.apache.tomcat-websocket.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: org.apache.tomcat.websocket;uses:="javax.net.ssl,jakar
+ ta.websocket,org.apache.juli.logging,org.apache.tomcat,org.apache.tom
+ cat.util.res",org.apache.tomcat.websocket.server;uses:="jakarta.servl
+ et,jakarta.servlet.annotation,jakarta.servlet.http,jakarta.websocket,
+ jakarta.websocket.server,org.apache.coyote.http11.upgrade,org.apache.
+ juli.logging,org.apache.tomcat.util.net,org.apache.tomcat.websocket"
+Implementation-Title: Apache Tomcat
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 9.0.35
+Import-Package: javax.net.ssl,jakarta.servlet,jakarta.servlet.annotati
+ on,jakarta.servlet.http,jakarta.websocket,jakarta.websocket.server,or
+ g.apache.coyote.http11.upgrade,org.apache.juli.logging,org.apache.tom
+ cat,org.apache.tomcat.util,org.apache.tomcat.util.buf,org.apache.tomc
+ at.util.codec.binary,org.apache.tomcat.util.collections,org.apache.to
+ mcat.util.compat,org.apache.tomcat.util.net,org.apache.tomcat.util.re
+ s,org.apache.tomcat.util.security,org.apache.tomcat.util.threads
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Private-Package: org.apache.tomcat.websocket.pojo
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache Tomcat
+Specification-Vendor: Apache Software Foundation
+Specification-Version: 9.0
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+

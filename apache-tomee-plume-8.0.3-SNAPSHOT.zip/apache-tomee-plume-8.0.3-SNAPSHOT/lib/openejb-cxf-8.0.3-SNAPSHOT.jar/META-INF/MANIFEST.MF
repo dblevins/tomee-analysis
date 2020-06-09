@@ -1,0 +1,74 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.server.cxf
+Bnd-LastModified: 1591729284140
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Server :: CXF Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-cxf.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Server :: CXF
+Implementation-URL: http://tomee.apache.org/server/openejb-cxf
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: jakarta.ejb,jakarta.enterprise.context,jakarta.enterpr
+ ise.context.spi,jakarta.enterprise.inject.spi,jakarta.interceptor,jav
+ ax.management,javax.management.openmbean,javax.naming,javax.security.
+ auth.callback,javax.security.auth.login,jakarta.servlet,jakarta.servl
+ et.http,javax.xml.namespace,jakarta.xml.soap,javax.xml.stream,javax.x
+ ml.transform,javax.xml.transform.dom,jakarta.xml.ws,jakarta.xml.ws.ha
+ ndler,jakarta.xml.ws.soap,jakarta.xml.ws.wsaddressing,org.apache.cxf;
+ version="[3.3,4)",org.apache.cxf.binding;version="[3.3,4)",org.apache
+ .cxf.binding.soap;version="[3.3,4)",org.apache.cxf.binding.soap.inter
+ ceptor;version="[3.3,4)",org.apache.cxf.binding.soap.saaj;version="[3
+ .3,4)",org.apache.cxf.catalog;version="[3.3,4)",org.apache.cxf.common
+ .injection;version="[3.3,4)",org.apache.cxf.common.logging;version="[
+ 3.3,4)",org.apache.cxf.databinding;version="[3.3,4)",org.apache.cxf.e
+ ndpoint;version="[3.3,4)",org.apache.cxf.frontend;version="[3.3,4)",o
+ rg.apache.cxf.interceptor;version="[3.3,4)",org.apache.cxf.jaxws;vers
+ ion="[3.3,4)",org.apache.cxf.jaxws.context;version="[3.3,4)",org.apac
+ he.cxf.jaxws.handler;version="[3.3,4)",org.apache.cxf.jaxws.handler.l
+ ogical;version="[3.3,4)",org.apache.cxf.jaxws.handler.soap;version="[
+ 3.3,4)",org.apache.cxf.jaxws.interceptors;version="[3.3,4)",org.apach
+ e.cxf.jaxws.support;version="[3.3,4)",org.apache.cxf.message;version=
+ "[3.3,4)",org.apache.cxf.phase;version="[3.3,4)",org.apache.cxf.resou
+ rce;version="[3.3,4)",org.apache.cxf.service;version="[3.3,4)",org.ap
+ ache.cxf.service.invoker;version="[3.3,4)",org.apache.cxf.service.mod
+ el;version="[3.3,4)",org.apache.cxf.staxutils;version="[3.3,4)",org.a
+ pache.cxf.transport;version="[3.3,4)",org.apache.cxf.transport.http;v
+ ersion="[3.3,4)",org.apache.cxf.ws.security.wss4j;version="[3.3,4)",o
+ rg.apache.cxf.wsdl.service.factory;version="[3.3,4)",org.apache.opene
+ jb;version="[8.0,9)",org.apache.openejb.api.internal;version="[8.0,9)
+ ",org.apache.openejb.api.jmx,org.apache.openejb.assembler.classic;ver
+ sion="[8.0,9)",org.apache.openejb.assembler.classic.util;version="[8.
+ 0,9)",org.apache.openejb.config;version="[8.0,9)",org.apache.openejb.
+ config.sys;version="[8.0,9)",org.apache.openejb.core.ivm.naming;versi
+ on="[8.0,9)",org.apache.openejb.core.security;version="[8.0,9)",org.a
+ pache.openejb.core.webservices;version="[8.0,9)",org.apache.openejb.l
+ oader,org.apache.openejb.monitoring;version="[8.0,9)",org.apache.open
+ ejb.server,org.apache.openejb.server.cxf.transport.util,org.apache.op
+ enejb.server.httpd,org.apache.openejb.server.webservices,org.apache.o
+ penejb.server.webservices.saaj,org.apache.openejb.spi;version="[8.0,9
+ )",org.apache.openejb.util;version="[8.0,9)",org.apache.webbeans.comp
+ onent;version="[2.0,3)",org.apache.webbeans.config;version="[2.0,3)",
+ org.apache.webbeans.container;version="[2.0,3)",org.apache.webbeans.c
+ ontext.creational;version="[2.0,3)",org.apache.webbeans.inject;versio
+ n="[2.0,3)",org.apache.webbeans.util;version="[2.0,3)",org.apache.wss
+ 4j.common.ext;version="[2.2,3)",org.apache.wss4j.dom.handler;version=
+ "[2.2,3)",org.apache.wss4j.dom.message.token;version="[2.2,3)",org.ap
+ ache.wss4j.dom.validate;version="[2.2,3)",org.apache.xbean.recipe;ver
+ sion="[4.14,5)",org.w3c.dom
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Server :: CXF
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

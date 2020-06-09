@@ -1,0 +1,2 @@
+javaee-api-8.0-4.jar
+mbean-annotation-api-8.0.3-SNAPSHOT.jar

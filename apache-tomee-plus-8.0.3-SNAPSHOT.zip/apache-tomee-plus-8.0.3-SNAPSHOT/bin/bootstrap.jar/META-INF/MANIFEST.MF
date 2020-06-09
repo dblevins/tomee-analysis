@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Main-Class: org.apache.catalina.startup.Bootstrap
+Specification-Title: Apache Tomcat Bootstrap
+Specification-Version: 9.0
+Specification-Vendor: Apache Software Foundation
+Implementation-Title: Apache Tomcat Bootstrap
+Implementation-Version: 9.0.35
+Implementation-Vendor: Apache Software Foundation
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+Class-Path: commons-daemon.jar
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.3.0 generiert 
+Siehe <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+Generiert: 2019.08.12 um 11:46:34 AM CEST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://xmlns.jcp.org/xml/ns/validation/configuration">
+    <schemaBindings map="false">
+      <package name="org.apache.bval.jsr.xml"/>
+    </schemaBindings>
+    <bindings scd="~tns:validation-configType">
+      <class ref="org.apache.bval.jsr.xml.ValidationConfigType"/>
+    </bindings>
+    <bindings scd="~tns:executable-validationType">
+      <class ref="org.apache.bval.jsr.xml.ExecutableValidationType"/>
+    </bindings>
+    <bindings scd="~tns:default-validated-executable-typesType">
+      <class ref="org.apache.bval.jsr.xml.DefaultValidatedExecutableTypesType"/>
+    </bindings>
+    <bindings scd="~tns:propertyType">
+      <class ref="org.apache.bval.jsr.xml.PropertyType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://xmlns.jcp.org/xml/ns/validation/mapping">
+    <schemaBindings map="false">
+      <package name="org.apache.bval.jsr.xml"/>
+    </schemaBindings>
+    <bindings scd="~tns:constraint-mappingsType">
+      <class ref="org.apache.bval.jsr.xml.ConstraintMappingsType"/>
+    </bindings>
+    <bindings scd="~tns:payloadType">
+      <class ref="org.apache.bval.jsr.xml.PayloadType"/>
+    </bindings>
+    <bindings scd="~tns:groupsType">
+      <class ref="org.apache.bval.jsr.xml.GroupsType"/>
+    </bindings>
+    <bindings scd="~tns:groupSequenceType">
+      <class ref="org.apache.bval.jsr.xml.GroupSequenceType"/>
+    </bindings>
+    <bindings scd="~tns:groupConversionType">
+      <class ref="org.apache.bval.jsr.xml.GroupConversionType"/>
+    </bindings>
+    <bindings scd="~tns:validated-byType">
+      <class ref="org.apache.bval.jsr.xml.ValidatedByType"/>
+    </bindings>
+    <bindings scd="~tns:constraintType">
+      <class ref="org.apache.bval.jsr.xml.ConstraintType"/>
+    </bindings>
+    <bindings scd="~tns:elementType">
+      <class ref="org.apache.bval.jsr.xml.ElementType"/>
+    </bindings>
+    <bindings scd="~tns:containerElementTypeType">
+      <class ref="org.apache.bval.jsr.xml.ContainerElementTypeType"/>
+    </bindings>
+    <bindings scd="~tns:classType">
+      <class ref="org.apache.bval.jsr.xml.ClassType"/>
+    </bindings>
+    <bindings scd="~tns:beanType">
+      <class ref="org.apache.bval.jsr.xml.BeanType"/>
+    </bindings>
+    <bindings scd="~tns:annotationType">
+      <class ref="org.apache.bval.jsr.xml.AnnotationType"/>
+    </bindings>
+    <bindings scd="~tns:getterType">
+      <class ref="org.apache.bval.jsr.xml.GetterType"/>
+    </bindings>
+    <bindings scd="~tns:methodType">
+      <class ref="org.apache.bval.jsr.xml.MethodType"/>
+    </bindings>
+    <bindings scd="~tns:constructorType">
+      <class ref="org.apache.bval.jsr.xml.ConstructorType"/>
+    </bindings>
+    <bindings scd="~tns:parameterType">
+      <class ref="org.apache.bval.jsr.xml.ParameterType"/>
+    </bindings>
+    <bindings scd="~tns:returnValueType">
+      <class ref="org.apache.bval.jsr.xml.ReturnValueType"/>
+    </bindings>
+    <bindings scd="~tns:crossParameterType">
+      <class ref="org.apache.bval.jsr.xml.CrossParameterType"/>
+    </bindings>
+    <bindings scd="~tns:constraint-definitionType">
+      <class ref="org.apache.bval.jsr.xml.ConstraintDefinitionType"/>
+    </bindings>
+    <bindings scd="~tns:fieldType">
+      <class ref="org.apache.bval.jsr.xml.FieldType"/>
+    </bindings>
+  </bindings>
+</bindings>
+

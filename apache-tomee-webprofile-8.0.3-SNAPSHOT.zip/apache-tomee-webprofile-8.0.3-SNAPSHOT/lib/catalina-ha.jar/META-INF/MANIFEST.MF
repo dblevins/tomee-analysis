@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711037094
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-catalina-ha Jakarta
+Bundle-SymbolicName: org.apache.tomcat-catalina-ha.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: org.apache.catalina.ha;uses:="jakarta.servlet.http,org
+ .apache.catalina,org.apache.catalina.tribes,org.apache.catalina.tribe
+ s.io,org.apache.tomcat.util.digester",org.apache.catalina.ha.authenti
+ cator;uses:="org.apache.catalina,org.apache.catalina.authenticator,or
+ g.apache.catalina.ha,org.apache.catalina.ha.session,org.apache.catali
+ na.tribes.tipis",org.apache.catalina.ha.backend;uses:="javax.manageme
+ nt,org.apache.catalina",org.apache.catalina.ha.context;uses:="jakarta
+ .servlet,org.apache.catalina,org.apache.catalina.core,org.apache.cata
+ lina.tribes.tipis",org.apache.catalina.ha.deploy;uses:="javax.managem
+ ent,org.apache.catalina,org.apache.catalina.ha,org.apache.catalina.tr
+ ibes",org.apache.catalina.ha.session;uses:="jakarta.servlet,org.apach
+ e.catalina,org.apache.catalina.connector,org.apache.catalina.ha,org.a
+ pache.catalina.session,org.apache.catalina.tribes,org.apache.catalina
+ .tribes.io,org.apache.catalina.tribes.tipis,org.apache.catalina.valve
+ s,org.apache.juli.logging,org.apache.tomcat.util.collections,org.apac
+ he.tomcat.util.res",org.apache.catalina.ha.tcp;uses:="jakarta.servlet
+ ,org.apache.catalina,org.apache.catalina.connector,org.apache.catalin
+ a.ha,org.apache.catalina.ha.session,org.apache.catalina.tribes,org.ap
+ ache.catalina.util,org.apache.catalina.valves,org.apache.juli.logging
+ ,org.apache.tomcat.util.res"
+Implementation-Title: Apache Tomcat
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 9.0.35
+Import-Package: javax.management,jakarta.servlet,jakarta.servlet.http,
+ org.apache.catalina,org.apache.catalina.authenticator,org.apache.cata
+ lina.connector,org.apache.catalina.core,org.apache.catalina.ha,org.ap
+ ache.catalina.ha.session,org.apache.catalina.ha.tcp,org.apache.catali
+ na.realm,org.apache.catalina.session,org.apache.catalina.tribes,org.a
+ pache.catalina.tribes.group,org.apache.catalina.tribes.group.intercep
+ tors,org.apache.catalina.tribes.io,org.apache.catalina.tribes.tipis,o
+ rg.apache.catalina.util,org.apache.catalina.valves,org.apache.juli.lo
+ gging,org.apache.tomcat.util,org.apache.tomcat.util.buf,org.apache.to
+ mcat.util.collections,org.apache.tomcat.util.digester,org.apache.tomc
+ at.util.modeler,org.apache.tomcat.util.res
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache Tomcat
+Specification-Vendor: Apache Software Foundation
+Specification-Version: 9.0
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+

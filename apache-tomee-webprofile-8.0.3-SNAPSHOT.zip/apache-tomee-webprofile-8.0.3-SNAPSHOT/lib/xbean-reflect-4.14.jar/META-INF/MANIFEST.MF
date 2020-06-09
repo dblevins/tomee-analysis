@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.xbean.reflect
+Bnd-LastModified: 1558615114952
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: xbean-reflect provides very flexible ways to creat
+ e objects and graphs of objects for DI frameworks; Jarkata Enabled
+Bundle-DocURL: http://geronimo.apache.org/maven/xbean/4.14/xbean-refle
+ ct
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache XBean :: Reflect Jakarta
+Bundle-SymbolicName: org.apache.xbean.reflect.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 4.14.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.xbean.propertyeditor;version="4.14",org.apa
+ che.xbean.recipe;version="4.14";uses:="org.apache.xbean.propertyedito
+ r"
+Implementation-Title: Apache XBean :: Reflect
+Implementation-Version: 4.14
+Import-Package: org.apache.log4j;resolution:=optional,org.apache.commo
+ ns.logging;resolution:=optional,org.objectweb.asm;resolution:=optiona
+ l;version="[7.0,8.0)",org.apache.xbean.asm7;resolution:=optional;vers
+ ion="[7.0,8.0)",javax.management,javax.naming,org.objectweb.asm.commo
+ ns;resolution:=optional;version="[7.0,8.0)",org.apache.xbean.asm7.com
+ mons;resolution:=optional;version="[7.0,8.0)",org.apache.xbean.asm7.s
+ hade.commons;resolution:=optional;version="[7.0,8.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-4.0.0.201805111645
+

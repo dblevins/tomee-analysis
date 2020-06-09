@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.server.rest
+Bnd-LastModified: 1591729269095
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Server :: REST Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-rest.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Server :: REST
+Implementation-URL: http://tomee.apache.org/server/openejb-rest
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: javax.naming,jakarta.servlet,jakarta.servlet.http,jaka
+ rta.ws.rs,jakarta.ws.rs.container,jakarta.ws.rs.core,jakarta.ws.rs.ex
+ t,org.apache.openejb;version="[8.0,9)",org.apache.openejb.assembler.c
+ lassic;version="[8.0,9)",org.apache.openejb.assembler.classic.event;v
+ ersion="[8.0,9)",org.apache.openejb.assembler.classic.util;version="[
+ 8.0,9)",org.apache.openejb.core;version="[8.0,9)",org.apache.openejb.
+ loader,org.apache.openejb.observer,org.apache.openejb.server,org.apac
+ he.openejb.server.httpd,org.apache.openejb.server.httpd.util,org.apac
+ he.openejb.spi;version="[8.0,9)",org.apache.openejb.util;version="[8.
+ 0,9)",org.apache.webbeans.config;version="[2.0,3)",org.apache.webbean
+ s.container;version="[2.0,3)",org.apache.xbean.finder;version="[4.14,
+ 5)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Server :: REST
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

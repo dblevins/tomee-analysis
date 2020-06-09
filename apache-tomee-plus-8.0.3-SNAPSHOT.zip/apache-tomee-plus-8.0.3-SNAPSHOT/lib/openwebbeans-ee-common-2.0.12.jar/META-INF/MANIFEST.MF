@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1569830521230
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: Apache OpenWebBeans Java EE Common; Jarkata Enable
+ d
+Bundle-DocURL: http://apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: EE Common plugin Jakarta
+Bundle-SymbolicName: openwebbeans-ee-common.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.12
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.webbeans.ee.common.services;version="2.0.12
+ ";uses:="org.apache.webbeans.exception,org.apache.webbeans.spi"
+Implementation-Title: EE Common plugin
+Implementation-URL: openwebbeans.apache.org/openwebbeans-ee-common
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.0.12
+Import-Package: org.apache.webbeans.exception;version="[2.0,3)",org.ap
+ ache.webbeans.spi;version="[2.0,3)";resolution:=optional,org.apache.w
+ ebbeans.util;version="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: EE Common plugin
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.0.12
+Tool: Bnd-3.3.0.201609221906
+

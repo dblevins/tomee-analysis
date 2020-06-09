@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.xbean.osgi.utilities
+Bnd-LastModified: 1558615009070
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: XBean is a plugin based server architecture.; Jark
+ ata Enabled
+Bundle-DocURL: http://geronimo.apache.org/maven/xbean/4.14/xbean-bundl
+ eutils
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache XBean OSGI Bundle Utilities Jakarta
+Bundle-SymbolicName: org.apache.xbean.bundleutils.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 4.14.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.xbean.osgi.bundle.util;version="4.14";uses:
+ ="org.osgi.framework,org.osgi.service.packageadmin",org.apache.xbean.
+ osgi.bundle.util.equinox;version="4.14";uses:="org.apache.xbean.osgi.
+ bundle.util,org.osgi.framework",org.apache.xbean.osgi.bundle.util.jar
+ ;version="4.14";uses:="org.osgi.framework"
+Implementation-Title: Apache XBean OSGI Bundle Utilities
+Implementation-Version: 4.14
+Import-Package: org.eclipse.osgi.service.urlconversion;resolution:=opt
+ ional;version="[1.0,2)",org.osgi.framework.wiring;resolution:=optiona
+ l;version="[1.0,2)",org.osgi.framework;version="[1.6,2)",org.osgi.ser
+ vice.packageadmin;version="[1.2,2)",org.slf4j;version="[1.5,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-4.0.0.201805111645
+

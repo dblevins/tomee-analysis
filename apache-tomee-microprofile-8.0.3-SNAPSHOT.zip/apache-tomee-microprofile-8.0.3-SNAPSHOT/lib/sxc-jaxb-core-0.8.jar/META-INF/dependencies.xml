@@ -1,0 +1,13 @@
+<dependencies>
+  <dependency groupId="com.sun.xml.bind" artifactId="jaxb-impl" version="2.1.2" file-name="jaxb-impl-2.1.2.jar" optional="true">
+    <dependency groupId="javax.xml.bind" artifactId="jaxb-api" version="2.1" file-name="jaxb-api-2.1.jar">
+      <dependency groupId="javax.activation" artifactId="activation" version="1.1" file-name="activation-1.1.jar"/>
+    </dependency>
+  </dependency>
+  <dependency groupId="com.sun.xml.bind" artifactId="jaxb-xjc" version="2.1.2" file-name="jaxb-xjc-2.1.2.jar" optional="true"/>
+  <dependency groupId="org.eclipse.jdt" artifactId="core" version="3.2.0.658" file-name="core-3.2.0.658.jar" optional="true"/>
+  <dependency groupId="org.metatype.sxc" artifactId="sxc-core" version="0.8" file-name="sxc-core-0.8.jar" optional="true"/>
+  <dependency groupId="org.metatype.sxc" artifactId="sxc-runtime" version="0.8" file-name="sxc-runtime-0.8.jar">
+    <dependency groupId="stax" artifactId="stax-api" version="1.0.1" file-name="stax-api-1.0.1.jar"/>
+  </dependency>
+</dependencies>

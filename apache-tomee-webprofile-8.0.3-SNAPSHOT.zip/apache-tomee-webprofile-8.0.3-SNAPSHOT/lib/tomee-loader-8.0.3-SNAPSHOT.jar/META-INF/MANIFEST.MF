@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.tomee.loader
+Bnd-LastModified: 1591729274532
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: TomEE :: Loader Jakarta
+Bundle-SymbolicName: org.apache.tomee.loader.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.tomee.loader;version="8.0.3.SNAPSHOT";uses:
+ ="jakarta.servlet,jakarta.servlet.http,org.apache.catalina,org.apache
+ .catalina.core,org.apache.tomcat,org.apache.tomcat.util.scan,org.apac
+ he.tomee.loader.filter",org.apache.tomee.loader.filter;version="8.0.3
+ .SNAPSHOT",org.apache.tomee.loader.listener;version="8.0.3.SNAPSHOT";
+ uses:="org.apache.catalina",org.apache.tomee.loader.log;version="8.0.
+ 3.SNAPSHOT";uses:="org.apache.juli.logging"
+Implementation-Title: TomEE :: TomEE :: Loader
+Implementation-URL: http://tomee.apache.org/tomee/tomee-loader
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: javax.management,javax.management.remote,jakarta.servl
+ et,jakarta.servlet.http,org.apache.catalina,org.apache.catalina.core,
+ org.apache.juli.logging,org.apache.log4j;version="[1.2,2)",org.apache
+ .logging.log4j;version="[2.0,3)",org.apache.openejb.config;version="[
+ 8.0,9)",org.apache.openejb.loader,org.apache.openejb.util;version="[8
+ .0,9)",org.apache.tomcat,org.apache.tomcat.util.scan,org.apache.tomee
+ .loader.filter;version="[8.0,9)",org.apache.xbean.finder;version="[4.
+ 14,5)",org.apache.xbean.finder.filter;version="[4.14,5)",org.slf4j;ve
+ rsion="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: TomEE :: Loader
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

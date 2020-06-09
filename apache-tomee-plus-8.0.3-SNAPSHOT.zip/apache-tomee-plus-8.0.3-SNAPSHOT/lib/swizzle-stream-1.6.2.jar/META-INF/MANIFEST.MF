@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: dblevins
+Build-Jdk: 1.6.0_37
+Specification-Title: Swizzle :: Stream
+Specification-Version: 1.6.2
+Specification-Vendor: The Codehaus Foundation
+Implementation-Title: Swizzle :: Stream
+Implementation-Version: 1.6.2
+Implementation-Vendor-Id: org.codehaus.swizzle
+Implementation-Vendor: The Codehaus Foundation
+

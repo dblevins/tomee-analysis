@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.binding.xml
+Bnd-LastModified: 1585152427283
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime XML Binding; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime XML Binding Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-bindings-xml.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.binding.xml;version="3.3.6",org.apache.
+ cxf.binding.xml.wsdl11;version="3.3.6",org.apache.cxf.binding.xml.int
+ erceptor;version="3.3.6",org.apache.cxf.bindings.xformat;version="3.3
+ .6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.xml.bind;version="[0,3)",jakarta.xml.bind.anno
+ tation;version="[0,3)",javax.wsdl;resolution:=optional,javax.wsdl.ext
+ ensions;resolution:=optional,javax.wsdl.extensions.http;resolution:=o
+ ptional,javax.xml.namespace,javax.xml.stream,org.apache.cxf;version="
+ [3.3,4)",org.apache.cxf.binding;version="[3.3,4)",org.apache.cxf.bind
+ ing.xml,org.apache.cxf.binding.xml.interceptor,org.apache.cxf.binding
+ s.xformat,org.apache.cxf.common.i18n;version="[3.3,4)",org.apache.cxf
+ .common.injection;version="[3.3,4)",org.apache.cxf.common.logging;ver
+ sion="[3.3,4)",org.apache.cxf.common.util;version="[3.3,4)",org.apach
+ e.cxf.endpoint;version="[3.3,4)",org.apache.cxf.helpers;version="[3.3
+ ,4)",org.apache.cxf.interceptor;version="[3.3,4)",org.apache.cxf.mess
+ age;version="[3.3,4)",org.apache.cxf.service.model;version="[3.3,4)",
+ org.apache.cxf.staxutils;version="[3.3,4)",org.apache.cxf.tools.commo
+ n;version="[3.3,4)";resolution:=optional,org.apache.cxf.tools.validat
+ or;version="[3.3,4)";resolution:=optional,org.apache.cxf.transport;ve
+ rsion="[3.3,4)",org.apache.cxf.wsdl;version="[3.3,4)";resolution:=opt
+ ional,org.apache.cxf.wsdl.http;version="[3.3,4)",org.apache.cxf.wsdl.
+ interceptors;version="[3.3,4)";resolution:=optional,org.w3c.dom
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

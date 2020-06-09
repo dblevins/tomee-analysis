@@ -1,0 +1,94 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1486300764700
+Build-Jdk: 1.7.0_55
+Built-By: thomas
+Bundle-Description: Apache Commons JCS is a distributed, versatile cac
+ hing system.; Jarkata Enabled
+Bundle-DocURL: http://commons.apache.org/proper/commons-jcs/commons-jc
+ s-core/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons JCS :: Core Jakarta
+Bundle-SymbolicName: org.apache.commons.jcs.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.1.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.jcs;version="2.1",org.apache.common
+ s.jcs.access;version="2.1",org.apache.commons.jcs.access.behavior;ver
+ sion="2.1",org.apache.commons.jcs.access.exception;version="2.1",org.
+ apache.commons.jcs.admin;version="2.1",org.apache.commons.jcs.admin.s
+ ervlet;version="2.1",org.apache.commons.jcs.auxiliary;version="2.1",o
+ rg.apache.commons.jcs.auxiliary.disk;version="2.1",org.apache.commons
+ .jcs.auxiliary.disk.behavior;version="2.1",org.apache.commons.jcs.aux
+ iliary.disk.block;version="2.1",org.apache.commons.jcs.auxiliary.disk
+ .indexed;version="2.1",org.apache.commons.jcs.auxiliary.disk.jdbc;ver
+ sion="2.1",org.apache.commons.jcs.auxiliary.disk.jdbc.dsfactory;versi
+ on="2.1",org.apache.commons.jcs.auxiliary.disk.jdbc.hsql;version="2.1
+ ",org.apache.commons.jcs.auxiliary.disk.jdbc.mysql;version="2.1",org.
+ apache.commons.jcs.auxiliary.disk.jdbc.mysql.util;version="2.1",org.a
+ pache.commons.jcs.auxiliary.lateral;version="2.1",org.apache.commons.
+ jcs.auxiliary.lateral.behavior;version="2.1",org.apache.commons.jcs.a
+ uxiliary.lateral.socket.tcp;version="2.1",org.apache.commons.jcs.auxi
+ liary.lateral.socket.tcp.behavior;version="2.1",org.apache.commons.jc
+ s.auxiliary.remote;version="2.1",org.apache.commons.jcs.auxiliary.rem
+ ote.behavior;version="2.1",org.apache.commons.jcs.auxiliary.remote.ht
+ tp.behavior;version="2.1",org.apache.commons.jcs.auxiliary.remote.htt
+ p.client;version="2.1",org.apache.commons.jcs.auxiliary.remote.http.c
+ lient.behavior;version="2.1",org.apache.commons.jcs.auxiliary.remote.
+ http.server;version="2.1",org.apache.commons.jcs.auxiliary.remote.ser
+ ver;version="2.1",org.apache.commons.jcs.auxiliary.remote.server.beha
+ vior;version="2.1",org.apache.commons.jcs.auxiliary.remote.util;versi
+ on="2.1",org.apache.commons.jcs.auxiliary.remote.value;version="2.1",
+ org.apache.commons.jcs.engine;version="2.1",org.apache.commons.jcs.en
+ gine.behavior;version="2.1",org.apache.commons.jcs.engine.control;ver
+ sion="2.1",org.apache.commons.jcs.engine.control.event;version="2.1",
+ org.apache.commons.jcs.engine.control.event.behavior;version="2.1",or
+ g.apache.commons.jcs.engine.control.group;version="2.1",org.apache.co
+ mmons.jcs.engine.logging;version="2.1",org.apache.commons.jcs.engine.
+ logging.behavior;version="2.1",org.apache.commons.jcs.engine.match;ve
+ rsion="2.1",org.apache.commons.jcs.engine.match.behavior;version="2.1
+ ",org.apache.commons.jcs.engine.memory;version="2.1",org.apache.commo
+ ns.jcs.engine.memory.behavior;version="2.1",org.apache.commons.jcs.en
+ gine.memory.fifo;version="2.1",org.apache.commons.jcs.engine.memory.l
+ ru;version="2.1",org.apache.commons.jcs.engine.memory.mru;version="2.
+ 1",org.apache.commons.jcs.engine.memory.shrinking;version="2.1",org.a
+ pache.commons.jcs.engine.memory.soft;version="2.1",org.apache.commons
+ .jcs.engine.memory.util;version="2.1",org.apache.commons.jcs.engine.s
+ tats;version="2.1",org.apache.commons.jcs.engine.stats.behavior;versi
+ on="2.1",org.apache.commons.jcs.io;version="2.1",org.apache.commons.j
+ cs.utils.access;version="2.1",org.apache.commons.jcs.utils.config;ver
+ sion="2.1",org.apache.commons.jcs.utils.discovery;version="2.1",org.a
+ pache.commons.jcs.utils.discovery.behavior;version="2.1",org.apache.c
+ ommons.jcs.utils.net;version="2.1",org.apache.commons.jcs.utils.props
+ ;version="2.1",org.apache.commons.jcs.utils.serialization;version="2.
+ 1",org.apache.commons.jcs.utils.servlet;version="2.1",org.apache.comm
+ ons.jcs.utils.struct;version="2.1",org.apache.commons.jcs.utils.threa
+ dpool;version="2.1",org.apache.commons.jcs.utils.timing;version="2.1"
+ ,org.apache.commons.jcs.utils.zip;version="2.1"
+Implementation-Build: tags/commons-jcs-2.1/commons-jcs-core@r1781747; 
+ 2017-02-05 14:18:57+0100
+Implementation-Title: Apache Commons JCS :: Core
+Implementation-URL: http://commons.apache.org/proper/commons-jcs/commo
+ ns-jcs-core/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.1
+Import-Package: javax.management,javax.naming,jakarta.servlet,jakarta.
+ servlet.http,javax.sql,org.apache.commons.dbcp.cpdsadapter,org.apache
+ .commons.dbcp.datasources,org.apache.commons.httpclient,org.apache.co
+ mmons.httpclient.methods,org.apache.commons.httpclient.params,org.apa
+ che.commons.logging,org.apache.velocity,org.apache.velocity.context,o
+ rg.apache.velocity.runtime.log,org.apache.velocity.tools.view
+Include-Resource: META-INF/DEPENDENCIES=target/maven-shared-archive-re
+ sources/META-INF/DEPENDENCIES,META-INF/LICENSE=target/maven-shared-ar
+ chive-resources/META-INF/LICENSE,META-INF/NOTICE=target/maven-shared-
+ archive-resources/META-INF/NOTICE
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Specification-Title: Apache Commons JCS :: Core
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.1
+Tool: Bnd-3.0.0.201509101326
+X-Compile-Source-JDK: 1.6
+X-Compile-Target-JDK: 1.6
+

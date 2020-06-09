@@ -1,0 +1,67 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.8.0_242
+Bundle-Description: Apache Johnzon is an implementation of JSR-353 (Ja
+ vaTM API for JSON Processing).; Jarkata Enabled
+Bundle-DocURL: http://johnzon.apache.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Johnzon :: JSON-B Implementation Jakarta
+Bundle-SymbolicName: org.apache.johnzon.jsonb.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.5
+Export-Package: org.apache.johnzon.jaxrs.jsonb.jaxrs;uses:="jakarta.an
+ notation,jakarta.json.bind,jakarta.ws.rs,jakarta.ws.rs.core,jakarta.w
+ s.rs.ext";version="1.2.5",org.apache.johnzon.jsonb;uses:="jakarta.jso
+ n,jakarta.json.bind,jakarta.json.bind.config,jakarta.json.bind.spi,ja
+ karta.json.spi,jakarta.json.stream,org.apache.johnzon.jsonb.api.exper
+ imental,org.apache.johnzon.jsonb.spi,org.apache.johnzon.mapper,org.ap
+ ache.johnzon.mapper.access,org.apache.johnzon.mapper.internal";versio
+ n="1.2.5",org.apache.johnzon.jsonb.serializer;uses:="jakarta.json,jak
+ arta.json.bind.serializer,jakarta.json.spi,jakarta.json.stream,org.ap
+ ache.johnzon.mapper";version="1.2.5",org.apache.johnzon.jsonb.spi;ver
+ sion="1.2.5",org.apache.johnzon.jsonb.reflect;version="1.2.5",org.apa
+ che.johnzon.jsonb.converter;uses:="jakarta.json.bind.adapter,jakarta.
+ json.bind.annotation,org.apache.johnzon.mapper";version="1.2.5",org.a
+ pache.johnzon.jsonb.order;version="1.2.5",org.apache.johnzon.jsonb.ap
+ i.experimental;uses:="jakarta.json,jakarta.json.stream";version="1.2.
+ 5",org.apache.johnzon.jsonb.extension;uses:="jakarta.json";version="1
+ .2.5",org.apache.johnzon.jsonb.cdi;uses:="jakarta.enterprise.inject.s
+ pi,org.apache.johnzon.jsonb";version="1.2.5",org.apache.johnzon.jsonb
+ .factory;uses:="org.apache.johnzon.jsonb.spi";version="1.2.5"
+Implementation-Title: Johnzon :: JSON-B Implementation
+Implementation-URL: http://johnzon.apache.org/johnzon-jsonb
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.johnzon
+Implementation-Version: 1.2.5
+Import-Package: jakarta.ws.rs;resolution:=optional;version="[2.1,3)",j
+ akarta.ws.rs.core;resolution:=optional;version="[2.1,3)",jakarta.ws.r
+ s.ext;resolution:=optional;version="[2.1,3)",jakarta.annotation,jakar
+ ta.enterprise.context.spi;version="[2.0,3)";resolution:=optional,jaka
+ rta.enterprise.event;version="[2.0,3)";resolution:=optional,jakarta.e
+ nterprise.inject.spi;version="[2.0,3)";resolution:=optional,jakarta.j
+ son,jakarta.json.bind,jakarta.json.bind.adapter,jakarta.json.bind.ann
+ otation,jakarta.json.bind.config,jakarta.json.bind.serializer,jakarta
+ .json.bind.spi,jakarta.json.spi,jakarta.json.stream,org.apache.johnzo
+ n.core;version="[1.2,2)",org.apache.johnzon.jsonb,org.apache.johnzon.
+ jsonb.api.experimental,org.apache.johnzon.jsonb.cdi,org.apache.johnzo
+ n.jsonb.converter,org.apache.johnzon.jsonb.factory,org.apache.johnzon
+ .jsonb.order,org.apache.johnzon.jsonb.reflect,org.apache.johnzon.json
+ b.serializer,org.apache.johnzon.jsonb.spi,org.apache.johnzon.mapper;v
+ ersion="[1.2,2)",org.apache.johnzon.mapper.access;version="[1.2,2)",o
+ rg.apache.johnzon.mapper.converter;version="[1.2,2)",org.apache.johnz
+ on.mapper.internal;version="[1.2,2)",org.apache.johnzon.mapper.jsonp;
+ version="[1.2,2)",org.apache.johnzon.mapper.reflection;version="[1.2,
+ 2)",org.apache.johnzon.mapper.util;version="[1.2,2)"
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="jakarta.jso
+ n.bind.spi.JsonbProvider"
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.service
+ loader.registrar)",osgi.contract;osgi.contract=JavaAnnotation;filter:
+ ="(&(osgi.contract=JavaAnnotation)(version=1.3.0))",osgi.contract;osg
+ i.contract=JavaJSONB;filter:="(&(osgi.contract=JavaJSONB)(version=1.0
+ .0))",osgi.contract;osgi.contract=JavaJSONP;filter:="(&(osgi.contract
+ =JavaJSONP)(version=1.1.0))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(vers
+ ion=1.8))"
+Specification-Title: Johnzon :: JSON-B Implementation
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.2.5
+

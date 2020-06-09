@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.geronimo.microprofile.metrics.common
+Bnd-LastModified: 1546442030053
+Build-Jdk: 1.8.0_191
+Built-By: rmannibucau
+Bundle-Description: Apache Geronimo implementation of the Microprofile
+  Metrics Specification; Jarkata Enabled
+Bundle-DocURL: http://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Geronimo Metrics :: Common Jakarta
+Bundle-SymbolicName: org.apache.geronimo.metrics-common.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.0.2
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.geronimo.microprofile.metrics.common;uses:=
+ "jakarta.json.bind.annotation,org.eclipse.microprofile.metrics";versi
+ on="1.0.2",org.apache.geronimo.microprofile.metrics.common.jaxrs;uses
+ :="jakarta.ws.rs,jakarta.ws.rs.core,org.apache.geronimo.microprofile.
+ metrics.common.prometheus,org.eclipse.microprofile.metrics";version="
+ 1.0.2",org.apache.geronimo.microprofile.metrics.common.expdecay;versi
+ on="1.0.2",org.apache.geronimo.microprofile.metrics.common.prometheus
+ ;uses:="org.eclipse.microprofile.metrics";version="1.0.2"
+Implementation-Title: Geronimo Metrics :: Common
+Implementation-URL: https://www.apache.org/geronimo-metrics-parent/ger
+ onimo-metrics-common/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.geronimo
+Implementation-Version: 1.0.2
+Import-Package: jakarta.json.bind.annotation;version="[1.0,2)",jakarta
+ .ws.rs;version="[1.1,2)",jakarta.ws.rs.core;version="[1.1,2)",org.apa
+ che.geronimo.microprofile.metrics.common.expdecay,org.apache.geronimo
+ .microprofile.metrics.common.prometheus,org.eclipse.microprofile.metr
+ ics;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Geronimo Metrics :: Common
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.0.2
+Tool: Bnd-4.0.0.201805111645
+

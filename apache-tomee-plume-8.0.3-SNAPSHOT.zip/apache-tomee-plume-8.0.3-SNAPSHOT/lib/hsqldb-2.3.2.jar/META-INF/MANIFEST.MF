@@ -1,0 +1,103 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.4
+Bnd-LastModified: 1392333881219
+Build-Vendor: blaine
+Bundle-Description: HyperSQL Lightweight 100% Java SQL Database Engine
+ ; Jarkata Enabled
+Bundle-ManifestVersion: 2
+Bundle-Name: HSQLDB Jakarta
+Bundle-SymbolicName: org.hsqldb.hsqldb.jakarta
+Bundle-Version: 2.3.2
+Created-By: 1.6.0_30 (Sun Microsystems Inc.)
+Export-Package: org.hsqldb;uses:="org.hsqldb.server,org.hsqldb.jdbc,or
+ g.hsqldb.types,org.hsqldb.rowio,org.hsqldb.result,org.hsqldb.persist,
+ org.hsqldb.error,org.hsqldb.navigator,org.hsqldb.map,org.hsqldb.lib,o
+ rg.hsqldb.rights,org.hsqldb.index,org.hsqldb.dbinfo,org.hsqldb.lib.ja
+ va,org.hsqldb.scriptio",org.hsqldb.auth;uses:="org.hsqldb.types,org.h
+ sqldb.jdbc,org.hsqldb.lib,javax.security.auth.callback,javax.security
+ .auth.login,javax.security.auth,javax.naming.directory,javax.naming,j
+ avax.naming.ldap,javax.net.ssl",org.hsqldb.dbinfo;uses:="org.hsqldb.r
+ ights,org.hsqldb.resources,org.hsqldb,org.hsqldb.map,org.hsqldb.persi
+ st,org.hsqldb.lib,org.hsqldb.types,org.hsqldb.result,org.hsqldb.index
+ ",org.hsqldb.error;uses:="org.hsqldb.resources,org.hsqldb,org.hsqldb.
+ result,org.hsqldb.lib",org.hsqldb.index;uses:="org.hsqldb.persist,org
+ .hsqldb.types,org.hsqldb,org.hsqldb.navigator,org.hsqldb.rights,org.h
+ sqldb.error,org.hsqldb.lib,org.hsqldb.rowio",org.hsqldb.jdbc;uses:="o
+ rg.hsqldb.types,org.hsqldb,org.hsqldb.navigator,org.hsqldb.result,org
+ .hsqldb.lib.java,org.hsqldb.lib,org.hsqldb.error,javax.sql,org.hsqldb
+ .persist,javax.naming,javax.naming.spi,org.hsqldb.jdbc.pool,javax.xml
+ .parsers,org.w3c.dom,org.xml.sax,javax.xml.stream,javax.xml.transform
+ .stax,javax.xml.transform.dom,org.w3c.dom.bootstrap,javax.xml.transfo
+ rm,jakarta.xml.bind.util,javax.xml.transform.stream,javax.xml.transfo
+ rm.sax",org.hsqldb.jdbc.pool;uses:="javax.sql,org.hsqldb.jdbc,org.hsq
+ ldb.lib,javax.naming,javax.transaction.xa,org.hsqldb,org.hsqldb.error
+ ",org.hsqldb.lib;uses:="org.hsqldb.lib.java,org.hsqldb.map,org.hsqldb
+ ",org.hsqldb.lib.java,org.hsqldb.lib.tar;uses:="org.hsqldb.lib",org.h
+ sqldb.lib.tar.rb,org.hsqldb.map;uses:="org.hsqldb.lib,org.hsqldb.type
+ s",org.hsqldb.navigator;uses:="org.hsqldb,org.hsqldb.error,org.hsqldb
+ .rowio,org.hsqldb.result,org.hsqldb.types,org.hsqldb.lib,org.hsqldb.i
+ ndex,org.hsqldb.persist",org.hsqldb.persist;uses:="org.hsqldb,org.hsq
+ ldb.error,org.hsqldb.map,org.hsqldb.rowio,org.hsqldb.lib,javax.crypto
+ .spec,javax.crypto,org.hsqldb.scriptio,org.hsqldb.types,org.hsqldb.re
+ sult,org.hsqldb.navigator,org.hsqldb.rights,org.hsqldb.index,org.hsql
+ db.lib.tar,org.hsqldb.dbinfo,org.hsqldb.lib.java",org.hsqldb.resource
+ s;uses:="org.hsqldb.lib",org.hsqldb.result;uses:="org.hsqldb.persist,
+ org.hsqldb.types,org.hsqldb.error,org.hsqldb,org.hsqldb.navigator,org
+ .hsqldb.map,org.hsqldb.rowio,org.hsqldb.lib",org.hsqldb.rights;uses:=
+ "org.hsqldb.types,org.hsqldb.error,org.hsqldb,org.hsqldb.lib,org.hsql
+ db.result",org.hsqldb.rowio;uses:="org.hsqldb.types,org.hsqldb.error,
+ org.hsqldb,org.hsqldb.lib,org.hsqldb.map,org.hsqldb.persist",org.hsql
+ db.sample,org.hsqldb.scriptio;uses:="org.hsqldb.persist,org.hsqldb,or
+ g.hsqldb.error,org.hsqldb.rowio,org.hsqldb.lib,org.hsqldb.types,org.h
+ sqldb.map,org.hsqldb.result,org.hsqldb.navigator",org.hsqldb.server;u
+ ses:="org.hsqldb.persist,org.hsqldb.jdbc,org.hsqldb.error,org.hsqldb,
+ javax.net,javax.security.cert,javax.net.ssl,org.hsqldb.lib,org.hsqldb
+ .types,org.hsqldb.result,org.hsqldb.resources,org.hsqldb.lib.java,org
+ .hsqldb.map,org.hsqldb.rowio,org.hsqldb.navigator,jakarta.servlet,jak
+ arta.servlet.http",org.hsqldb.types;uses:="org.hsqldb.jdbc,org.hsqldb
+ .error,org.hsqldb,org.hsqldb.lib,org.hsqldb.map,org.hsqldb.result,org
+ .hsqldb.lib.java,org.hsqldb.persist,org.hsqldb.rights",org.hsqldb.uti
+ l;uses:="javax.swing,javax.swing.border,org.hsqldb.lib.java,org.hsqld
+ b.lib,javax.swing.tree,javax.swing.table,javax.swing.event"
+Implementation-Title: Standard runtime
+Implementation-Vendor: The HSQL Development Group
+Implementation-Version: 2.3.2
+Import-Package: javax.crypto;resolution:=optional,javax.crypto.spec;re
+ solution:=optional,javax.naming;resolution:=optional,javax.naming.dir
+ ectory;resolution:=optional,javax.naming.ldap;resolution:=optional,ja
+ vax.naming.spi;resolution:=optional,javax.net;resolution:=optional,ja
+ vax.net.ssl;resolution:=optional,javax.security.auth;resolution:=opti
+ onal,javax.security.auth.callback;resolution:=optional,javax.security
+ .auth.login;resolution:=optional,javax.security.cert;resolution:=opti
+ onal,jakarta.servlet;resolution:=optional,jakarta.servlet.http;resolu
+ tion:=optional,javax.sql;resolution:=optional,javax.swing;resolution:
+ =optional,javax.swing.border;resolution:=optional,javax.swing.event;r
+ esolution:=optional,javax.swing.table;resolution:=optional,javax.swin
+ g.tree;resolution:=optional,javax.transaction.xa;resolution:=optional
+ ,jakarta.xml.bind.util;resolution:=optional,javax.xml.parsers;resolut
+ ion:=optional,javax.xml.stream;resolution:=optional,javax.xml.transfo
+ rm;resolution:=optional,javax.xml.transform.dom;resolution:=optional,
+ javax.xml.transform.sax;resolution:=optional,javax.xml.transform.stax
+ ;resolution:=optional,javax.xml.transform.stream;resolution:=optional
+ ,org.hsqldb;resolution:=optional,org.hsqldb.auth;resolution:=optional
+ ,org.hsqldb.dbinfo;resolution:=optional,org.hsqldb.error;resolution:=
+ optional,org.hsqldb.index;resolution:=optional,org.hsqldb.jdbc;resolu
+ tion:=optional,org.hsqldb.jdbc.pool;resolution:=optional,org.hsqldb.l
+ ib;resolution:=optional,org.hsqldb.lib.java;resolution:=optional,org.
+ hsqldb.lib.tar;resolution:=optional,org.hsqldb.lib.tar.rb;resolution:
+ =optional,org.hsqldb.map;resolution:=optional,org.hsqldb.navigator;re
+ solution:=optional,org.hsqldb.persist;resolution:=optional,org.hsqldb
+ .resources;resolution:=optional,org.hsqldb.result;resolution:=optiona
+ l,org.hsqldb.rights;resolution:=optional,org.hsqldb.rowio;resolution:
+ =optional,org.hsqldb.sample;resolution:=optional,org.hsqldb.scriptio;
+ resolution:=optional,org.hsqldb.server;resolution:=optional,org.hsqld
+ b.types;resolution:=optional,org.hsqldb.util;resolution:=optional,org
+ .w3c.dom;resolution:=optional,org.w3c.dom.bootstrap;resolution:=optio
+ nal,org.xml.sax;resolution:=optional
+Main-Class: org.hsqldb.util.DatabaseManagerSwing
+Originally-Created-By: 1.6.0_30-b12 (Sun Microsystems Inc.)
+Specification-Title: HSQLDB
+Specification-Vendor: The HSQL Development Group
+Specification-Version: 2.3.2
+Tool: Bnd-0.0.384
+

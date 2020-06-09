@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.rs.security.cors
+Bnd-LastModified: 1585152855595
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF RS Cross-Origin Resource Sharing; Jarka
+ ta Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF RS Cross-Origin Resource Sharing Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-rs-security-cors.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.rs.security.cors;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.annotation;version="[1.2,2)",jakarta.ws.rs.con
+ tainer;version="[2.1,3)",jakarta.ws.rs.core;version="[2.1,3)",jakarta
+ .ws.rs.ext;version="[2.1,3)",org.apache.cxf.common.util;version="[3.3
+ ,4)",org.apache.cxf.interceptor;version="[3.3,4)",org.apache.cxf.jaxr
+ s.impl;version="[3.3,4)",org.apache.cxf.jaxrs.model;version="[3.3,4)"
+ ,org.apache.cxf.jaxrs.utils;version="[3.3,4)",org.apache.cxf.message;
+ version="[3.3,4)",org.apache.cxf.phase;version="[3.3,4)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

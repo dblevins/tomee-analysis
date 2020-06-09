@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.server.http
+Bnd-LastModified: 1591729268388
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Server :: Http Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-http.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Server :: Http
+Implementation-URL: http://tomee.apache.org/server/openejb-http
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: org.mortbay.jetty;resolution:=optional;version="[6.1,7
+ )",org.mortbay.jetty.handler;resolution:=optional;version="[6.1,7)",o
+ rg.mortbay.jetty.nio;resolution:=optional;version="[6.1,7)",org.mortb
+ ay.jetty.servlet;resolution:=optional;version="[6.1,7)",jakarta.enter
+ prise.context,jakarta.enterprise.context.spi,javax.security.auth.logi
+ n,jakarta.servlet,jakarta.servlet.http,javax.xml.transform,javax.xml.
+ transform.stream,org.apache.commons.fileupload;version="[1.3,2)";reso
+ lution:=optional,org.apache.commons.fileupload.disk;version="[1.3,2)"
+ ;resolution:=optional,org.apache.commons.fileupload.servlet;version="
+ [1.3,2)";resolution:=optional,org.apache.openejb;version="[8.0,9)",or
+ g.apache.openejb.assembler.classic;version="[8.0,9)",org.apache.opene
+ jb.cdi;version="[8.0,9)",org.apache.openejb.client;version="[8.0,9)",
+ org.apache.openejb.core;version="[8.0,9)",org.apache.openejb.loader,o
+ rg.apache.openejb.server,org.apache.openejb.server.context,org.apache
+ .openejb.server.ejbd,org.apache.openejb.server.stream,org.apache.open
+ ejb.spi;version="[8.0,9)",org.apache.openejb.util;version="[8.0,9)",o
+ rg.apache.openejb.web;version="[8.0,9)",org.apache.webbeans.config;ve
+ rsion="[2.0,3)",org.apache.webbeans.container;version="[2.0,3)",org.a
+ pache.webbeans.el;version="[2.0,3)",org.apache.webbeans.spi;version="
+ [2.0,3)",org.apache.webbeans.util;version="[2.0,3)",org.apache.webbea
+ ns.web.context;version="[2.0,3)",org.apache.webbeans.web.lifecycle.te
+ st;version="[2.0,3)",org.apache.xbean.recipe;version="[4.14,5)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Server :: Http
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

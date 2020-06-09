@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711025594
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-websocket-api Jakarta
+Bundle-SymbolicName: org.apache.tomcat-websocket-api.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: jakarta.websocket,jakarta.websocket.server;uses:="jaka
+ rta.websocket"
+Import-Package: jakarta.websocket,org.apache.tomcat.websocket,org.apac
+ he.tomcat.websocket.server
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+
+Name: javax/websocket/
+Implementation-Title: javax.websocket
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 1.1.FR
+Specification-Title: WebSocket
+Specification-Vendor: Oracle, Inc.
+Specification-Version: 1.1
+

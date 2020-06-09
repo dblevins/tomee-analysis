@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1569830602353
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: Apache OpenWebBeans Java EE Utility; Jarkata Enabl
+ ed
+Bundle-DocURL: http://apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Java EE plugin Jakarta
+Bundle-SymbolicName: openwebbeans-ee.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.12
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.webbeans.ee.beans;version="2.0.12";uses:="j
+ akarta.inject,jakarta.transaction,jakarta.validation,org.apache.webbe
+ ans.component,org.apache.webbeans.config",org.apache.webbeans.ee.even
+ t;version="2.0.12";uses:="jakarta.enterprise.event,jakarta.enterprise
+ .inject.spi"
+Implementation-Title: Java EE plugin
+Implementation-URL: openwebbeans.apache.org/openwebbeans-ee
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.0.12
+Import-Package: jakarta.enterprise.event;version="[2.0,3)",jakarta.ent
+ erprise.inject.spi;version="[2.0,3)",jakarta.inject;version="[1.0,2)"
+ ,jakarta.transaction;version="[1.1,2)",jakarta.validation;version="[1
+ .0,2)",org.apache.webbeans.component;version="[2.0,3)",org.apache.web
+ beans.config;version="[2.0,3)",org.apache.webbeans.event;version="[2.
+ 0,3)",org.apache.webbeans.logger;version="[2.0,3)",org.apache.webbean
+ s.portable;version="[2.0,3)",org.apache.webbeans.spi;version="[2.0,3)
+ ";resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Java EE plugin
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.0.12
+Tool: Bnd-3.3.0.201609221906
+

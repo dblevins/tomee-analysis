@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.rs.client.mp
+Bnd-LastModified: 1585152878308
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.apache.cxf.jaxrs.client.blueprint.Activator
+Bundle-Description: Apache CXF MicroProfile Client; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF MicroProfile Client Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-rs-mp-client.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.microprofile.client;version="3.3.6",org
+ .apache.cxf.microprofile.client.proxy;version="3.3.6",org.apache.cxf.
+ microprofile.client.config;version="3.3.6",org.apache.cxf.microprofil
+ e.client.spi;version="3.3.6",org.apache.cxf.microprofile.client.cdi;v
+ ersion="3.3.6"
+Export-Service: org.apache.aries.blueprint.NamespaceHandler;osgi.servi
+ ce.blueprint.namespace="http://cxf.apache.org/blueprint/jaxrs-client"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.annotation;version="[1.2,2)",jakarta.enterpris
+ e.context;version="[1.1,2)",jakarta.enterprise.context.spi;version="[
+ 1.1,2)",jakarta.enterprise.event;version="[1.1,2)",jakarta.enterprise
+ .inject;version="[1.1,2)",jakarta.enterprise.inject.spi;version="[1.1
+ ,2)",jakarta.enterprise.util;version="[1.1,2)",jakarta.interceptor;ve
+ rsion="[1.2,2)",javax.net.ssl,jakarta.ws.rs;version="[2.1,3)",jakarta
+ .ws.rs.client;version="[2.1,3)",jakarta.ws.rs.core;version="[2.1,3)",
+ jakarta.ws.rs.ext;version="[2.1,3)",org.apache.cxf;version="[3.3,4)",
+ org.apache.cxf.common.classloader;version="[3.3,4)",org.apache.cxf.co
+ mmon.i18n;version="[3.3,4)",org.apache.cxf.common.logging;version="[3
+ .3,4)",org.apache.cxf.common.util;version="[3.3,4)",org.apache.cxf.co
+ nfiguration.jsse;version="[3.3,4)",org.apache.cxf.endpoint;version="[
+ 3.3,4)",org.apache.cxf.helpers;version="[3.3,4)",org.apache.cxf.inter
+ ceptor;version="[3.3,4)",org.apache.cxf.jaxrs;version="[3.3,4)",org.a
+ pache.cxf.jaxrs.client;version="[3.3,4)",org.apache.cxf.jaxrs.client.
+ blueprint;version="[3.3,4)",org.apache.cxf.jaxrs.client.spec;version=
+ "[3.3,4)",org.apache.cxf.jaxrs.impl;version="[3.3,4)",org.apache.cxf.
+ jaxrs.model;version="[3.3,4)",org.apache.cxf.jaxrs.provider;version="
+ [3.3,4)",org.apache.cxf.jaxrs.provider.jsrjsonp;version="[3.3,4)",org
+ .apache.cxf.jaxrs.utils;version="[3.3,4)",org.apache.cxf.message;vers
+ ion="[3.3,4)",org.apache.cxf.microprofile.client,org.apache.cxf.micro
+ profile.client.cdi,org.apache.cxf.microprofile.client.config,org.apac
+ he.cxf.microprofile.client.proxy,org.apache.cxf.phase;version="[3.3,4
+ )",org.apache.cxf.transport.http;version="[3.3,4)",org.apache.cxf.tra
+ nsports.http.configuration;version="[3.3,4)",org.eclipse.microprofile
+ .config;version="[1.0,2)",org.eclipse.microprofile.rest.client;versio
+ n="[1.3,2)",org.eclipse.microprofile.rest.client.annotation;version="
+ [1.1,2)",org.eclipse.microprofile.rest.client.ext;version="[1.1,2)",o
+ rg.eclipse.microprofile.rest.client.inject;version="[1.2,2)",org.ecli
+ pse.microprofile.rest.client.spi;version="[1.1,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

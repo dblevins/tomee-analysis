@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: david
+Build-Jdk: 1.4.2_09
+Extension-Name: howl
+Specification-Title: HOWL is a logger implementation providing feature
+ s required by the JOTM project. HOWL uses unformatted
+        binary 
+ logs to maximize performance and specifies a journalization API with 
+ methods necessary to support JOTM
+        recovery operations.
+Specification-Vendor: ObjectWeb HOWL
+Implementation-Vendor: ObjectWeb HOWL
+Implementation-Title: howl
+Implementation-Version: 1.0.1-1
+Main-Class: org.objectweb.howl.log.Version
+

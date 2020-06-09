@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.server.cxf.transport
+Bnd-LastModified: 1591729269741
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Server :: CXF Transport Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-cxf-transport.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Server :: CXF Transport
+Implementation-URL: http://tomee.apache.org/server/openejb-cxf-transpo
+ rt
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: javax.management,org.apache.cxf;version="[3.3,4)",org.
+ apache.cxf.binding;version="[3.3,4)",org.apache.cxf.bus;version="[3.3
+ ,4)",org.apache.cxf.common.logging;version="[3.3,4)",org.apache.cxf.c
+ ommon.util;version="[3.3,4)",org.apache.cxf.databinding;version="[3.3
+ ,4)",org.apache.cxf.endpoint;version="[3.3,4)",org.apache.cxf.feature
+ ;version="[3.3,4)",org.apache.cxf.interceptor;version="[3.3,4)",org.a
+ pache.cxf.management;version="[3.3,4)",org.apache.cxf.management.coun
+ ters;version="[3.3,4)",org.apache.cxf.management.jmx;version="[3.3,4)
+ ",org.apache.cxf.message;version="[3.3,4)",org.apache.cxf.service.mod
+ el;version="[3.3,4)",org.apache.cxf.transport.http;version="[3.3,4)",
+ org.apache.openejb;version="[8.0,9)",org.apache.openejb.assembler.cla
+ ssic;version="[8.0,9)",org.apache.openejb.assembler.classic.event;ver
+ sion="[8.0,9)",org.apache.openejb.assembler.classic.util;version="[8.
+ 0,9)",org.apache.openejb.loader,org.apache.openejb.monitoring;version
+ ="[8.0,9)",org.apache.openejb.observer,org.apache.openejb.util;versio
+ n="[8.0,9)",org.apache.openejb.util.classloader;version="[8.0,9)",org
+ .apache.openejb.util.reflection;version="[8.0,9)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Server :: CXF Transport
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

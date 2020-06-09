@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1426003903857
+Build-Jdk: 1.6.0_65
+Built-By: jeremy
+Bundle-Description: Support JSTL 1.0 tags using the original EL implem
+ entation.; Jarkata Enabled
+Bundle-DocURL: http://tomcat.apache.org/taglibs/standard-1.2.5/taglibs
+ -standard-jstlel
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Standard Taglib 1.0 EL Support Jakarta
+Bundle-SymbolicName: org.apache.taglibs.standard-jstlel.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.taglibs.standard.lang.jstl.parser;uses:="or
+ g.apache.taglibs.standard.lang.jstl";version="1.2",org.apache.taglibs
+ .standard.lang.support;uses:="jakarta.servlet.jsp.tagext,jakarta.serv
+ let.jsp,org.apache.taglibs.standard.lang.jstl";version="1.2",org.apac
+ he.taglibs.standard.lang.jstl;uses:="org.apache.taglibs.standard.lang
+ .jstl.parser,jakarta.servlet,jakarta.servlet.jsp,org.apache.taglibs.s
+ tandard.lang.support,jakarta.servlet.jsp.tagext,jakarta.servlet.http"
+ ;version="1.2",org.apache.taglibs.standard.tag.el.fmt;uses:="org.apac
+ he.taglibs.standard.lang.support,jakarta.servlet.jsp.tagext,org.apach
+ e.taglibs.standard.tag.common.fmt,jakarta.servlet.jsp,jakarta.servlet
+ .jsp.jstl.fmt";version="1.2",org.apache.taglibs.standard.tag.el.sql;u
+ ses:="org.apache.taglibs.standard.lang.support,org.apache.taglibs.sta
+ ndard.tag.common.sql,jakarta.servlet.jsp.tagext,jakarta.servlet.jsp";
+ version="1.2",org.apache.taglibs.standard.tag.el.xml;uses:="org.apach
+ e.taglibs.standard.tag.common.xml,jakarta.servlet.jsp.tagext,org.apac
+ he.taglibs.standard.tag.el.core,jakarta.servlet.jsp,org.apache.taglib
+ s.standard.tag.common.core,org.xml.sax,javax.xml.transform";version="
+ 1.2",org.apache.taglibs.standard.tlv.el;uses:="org.apache.taglibs.sta
+ ndard.tlv,org.apache.taglibs.standard.lang.support";version="1.2",org
+ .apache.taglibs.standard.tag.el.core;uses:="org.apache.taglibs.standa
+ rd.lang.support,org.apache.taglibs.standard.tag.common.core,jakarta.s
+ ervlet.jsp.tagext,jakarta.servlet.jsp,jakarta.servlet.jsp.jstl.core";
+ version="1.2"
+Implementation-Title: Apache Standard Taglib 1.0 EL Support
+Implementation-Version: 1.2.5
+Import-Package: jakarta.servlet,jakarta.servlet.http,jakarta.servlet.j
+ sp,jakarta.servlet.jsp.jstl.core,jakarta.servlet.jsp.jstl.fmt,jakarta
+ .servlet.jsp.tagext,javax.xml.transform,org.apache.taglibs.standard.l
+ ang.jstl;version="1.2",org.apache.taglibs.standard.lang.jstl.parser;v
+ ersion="1.2",org.apache.taglibs.standard.lang.support;version="1.2",o
+ rg.apache.taglibs.standard.tag.common.core,org.apache.taglibs.standar
+ d.tag.common.fmt,org.apache.taglibs.standard.tag.common.sql,org.apach
+ e.taglibs.standard.tag.common.xml,org.apache.taglibs.standard.tag.el.
+ core;version="1.2",org.apache.taglibs.standard.tag.el.fmt;version="1.
+ 2",org.apache.taglibs.standard.tag.el.sql;version="1.2",org.apache.ta
+ glibs.standard.tag.el.xml;version="1.2",org.apache.taglibs.standard.t
+ lv,org.apache.taglibs.standard.tlv.el;version="1.2",org.xml.sax
+Tool: Bnd-0.0.357
+

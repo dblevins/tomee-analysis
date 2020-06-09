@@ -1,0 +1,4 @@
+<dependencies>
+  <dependency groupId="org.apache.tomee" artifactId="javaee-api" version="8.0-4" file-name="javaee-api-8.0-4.jar"/>
+  <dependency groupId="org.apache.tomee" artifactId="mbean-annotation-api" version="8.0.3-SNAPSHOT" file-name="mbean-annotation-api-8.0.3-SNAPSHOT.jar"/>
+</dependencies>

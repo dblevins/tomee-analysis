@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1569830686385
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: Apache OpenWebBeans JSF integration; Jarkata Enabl
+ ed
+Bundle-DocURL: http://apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: JSF-2 plugin Jakarta
+Bundle-SymbolicName: openwebbeans-jsf.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.12
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.webbeans.jsf;version="2.0.12";uses:="jakart
+ a.el,jakarta.faces,jakarta.faces.application,jakarta.faces.component,
+ jakarta.faces.context,jakarta.servlet.http,org.apache.webbeans.config
+ ,org.apache.webbeans.web.context"
+Implementation-Title: JSF-2 plugin
+Implementation-URL: openwebbeans.apache.org/openwebbeans-jsf
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.0.12
+Import-Package: jakarta.servlet.http;version="2.4",jakarta.el;version=
+ "2.2",jakarta.faces;version="2.0";resolution:=optional,jakarta.faces.
+ application;version="2.0";resolution:=optional,jakarta.faces.componen
+ t;version="2.0";resolution:=optional,jakarta.faces.context;version="2
+ .0";resolution:=optional,jakarta.faces.event;version="2.0";resolution
+ :=optional,jakarta.enterprise.context;version="[2.0,3)",org.apache.we
+ bbeans.config;version="[2.0,3)",org.apache.webbeans.container;version
+ ="[2.0,3)",org.apache.webbeans.conversation;version="[2.0,3)",org.apa
+ che.webbeans.util;version="[2.0,3)",org.apache.webbeans.web.context;v
+ ersion="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: JSF-2 plugin
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.0.12
+Tool: Bnd-3.3.0.201609221906
+

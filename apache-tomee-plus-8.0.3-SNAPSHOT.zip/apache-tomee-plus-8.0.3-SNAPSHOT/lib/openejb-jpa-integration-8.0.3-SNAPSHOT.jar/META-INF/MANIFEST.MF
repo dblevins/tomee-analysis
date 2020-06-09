@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.container.jpa
+Bnd-LastModified: 1591729232690
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Container :: JPA Integration Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-jpa-integration.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Container :: JPA Integration
+Implementation-URL: http://tomee.apache.org/container/openejb-jpa-inte
+ gration
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: javax.management,jakarta.transaction;version="[1.2,2)"
+ ;resolution:=optional,org.apache.geronimo.transaction.manager;version
+ ="[3.0,4)",org.apache.xbean.asm7;version="[7.1,8)",org.eclipse.persis
+ tence.config;resolution:=optional,org.eclipse.persistence.descriptors
+ ;resolution:=optional,org.eclipse.persistence.internal.databaseaccess
+ ;resolution:=optional,org.eclipse.persistence.internal.helper;resolut
+ ion:=optional,org.eclipse.persistence.internal.sessions;resolution:=o
+ ptional,org.eclipse.persistence.mappings;resolution:=optional,org.ecl
+ ipse.persistence.platform.server;resolution:=optional,org.eclipse.per
+ sistence.sequencing;resolution:=optional,org.eclipse.persistence.serv
+ ices;resolution:=optional,org.eclipse.persistence.services.mbean;reso
+ lution:=optional,org.eclipse.persistence.sessions;resolution:=optiona
+ l,org.eclipse.persistence.transaction;resolution:=optional,org.hibern
+ ate.cfg;version="[5.4,6)";resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Container :: JPA Integration
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

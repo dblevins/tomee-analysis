@@ -1,0 +1,78 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1426003889688
+Build-Jdk: 1.6.0_65
+Built-By: jeremy
+Bundle-Description: An implementation of the JSP Standard Tag Library 
+ (JSTL).; Jarkata Enabled
+Bundle-DocURL: http://tomcat.apache.org/taglibs/standard-1.2.5/taglibs
+ -standard-impl
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Standard Taglib Implementation Jakarta
+Bundle-SymbolicName: org.apache.taglibs.standard-impl.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.taglibs.standard.tlv;uses:="org.apache.tagl
+ ibs.standard.resources,javax.xml.parsers,jakarta.servlet.jsp.tagext,o
+ rg.apache.taglibs.standard.util,org.xml.sax.helpers,org.xml.sax";vers
+ ion="1.2",org.apache.taglibs.standard.tag.common.core;uses:="jakarta.
+ servlet.jsp.tagext,jakarta.servlet.jsp,org.apache.taglibs.standard.re
+ sources,jakarta.el,jakarta.servlet.jsp.jstl.core,jakarta.servlet,jaka
+ rta.servlet.http,org.apache.taglibs.standard.util";version="1.2",org.
+ apache.taglibs.standard;version="1.2",org.apache.taglibs.standard.tag
+ .common.xml;uses:="org.apache.xml.utils,org.apache.xpath,javax.xml.tr
+ ansform,jakarta.servlet.jsp.tagext,org.apache.xpath.objects,org.apach
+ e.taglibs.standard.util,jakarta.servlet.jsp,org.apache.xml.dtm,jakart
+ a.servlet.jsp.jstl.core,org.w3c.dom,jakarta.servlet,org.apache.taglib
+ s.standard.resources,jakarta.servlet.http,org.apache.taglibs.standard
+ .tag.common.core,javax.xml.parsers,javax.xml.transform.dom,org.xml.sa
+ x,javax.xml.transform.sax,javax.xml.transform.stream";version="1.2",o
+ rg.apache.taglibs.standard.tei;uses:="jakarta.servlet.jsp.tagext";ver
+ sion="1.2",org.apache.taglibs.standard.tag.common.sql;uses:="javax.na
+ ming,javax.sql,jakarta.servlet.jsp.jstl.core,org.apache.taglibs.stand
+ ard.resources,jakarta.servlet.jsp,jakarta.servlet.jsp.tagext,jakarta.
+ servlet.jsp.jstl.sql,org.apache.taglibs.standard.tag.common.core";ver
+ sion="1.2",org.apache.taglibs.standard.functions;uses:="org.apache.ta
+ glibs.standard.resources,org.apache.taglibs.standard.util,jakarta.ser
+ vlet.jsp";version="1.2",org.apache.taglibs.standard.resources;version
+ ="1.2",org.apache.taglibs.standard.tag.rt.xml;uses:="org.apache.tagli
+ bs.standard.tag.common.xml,jakarta.servlet.jsp,org.xml.sax,javax.xml.
+ transform";version="1.2",org.apache.taglibs.standard.tag.common.fmt;u
+ ses:="org.apache.taglibs.standard.tag.common.core,jakarta.servlet,jak
+ arta.servlet.jsp.jstl.fmt,jakarta.servlet.jsp.jstl.core,jakarta.servl
+ et.jsp.tagext,jakarta.servlet.jsp,jakarta.servlet.http,org.apache.tag
+ libs.standard.resources";version="1.2",org.apache.taglibs.standard.ta
+ g.rt.fmt;uses:="org.apache.taglibs.standard.tag.common.fmt,jakarta.se
+ rvlet.jsp,jakarta.servlet.jsp.jstl.fmt";version="1.2",org.apache.tagl
+ ibs.standard.tag.rt.sql;uses:="org.apache.taglibs.standard.tag.common
+ .sql,jakarta.servlet.jsp";version="1.2",org.apache.taglibs.standard.t
+ ag.rt.core;uses:="org.apache.taglibs.standard.tag.common.core,jakarta
+ .servlet.jsp.jstl.core,jakarta.servlet.jsp.tagext,jakarta.servlet.jsp
+ ";version="1.2",org.apache.taglibs.standard.util;uses:="jakarta.servl
+ et.jsp,jakarta.servlet,jakarta.el,javax.xml.parsers,javax.xml.transfo
+ rm,javax.xml.transform.sax,org.apache.taglibs.standard.resources,org.
+ xml.sax,jakarta.servlet.http,javax.xml.transform.stream,org.w3c.dom";
+ version="1.2"
+Implementation-Title: Apache Standard Taglib Implementation
+Implementation-Version: 1.2.5
+Import-Package: jakarta.el,javax.naming,jakarta.servlet,jakarta.servle
+ t.http,jakarta.servlet.jsp,jakarta.servlet.jsp.jstl.core,jakarta.serv
+ let.jsp.jstl.fmt,jakarta.servlet.jsp.jstl.sql,jakarta.servlet.jsp.tag
+ ext,javax.sql,javax.xml.parsers,javax.xml.transform,javax.xml.transfo
+ rm.dom,javax.xml.transform.sax,javax.xml.transform.stream,org.apache.
+ taglibs.standard;version="1.2",org.apache.taglibs.standard.functions;
+ version="1.2",org.apache.taglibs.standard.resources;version="1.2",org
+ .apache.taglibs.standard.tag.common.core;version="1.2",org.apache.tag
+ libs.standard.tag.common.fmt;version="1.2",org.apache.taglibs.standar
+ d.tag.common.sql;version="1.2",org.apache.taglibs.standard.tag.common
+ .xml;version="1.2",org.apache.taglibs.standard.tag.rt.core;version="1
+ .2",org.apache.taglibs.standard.tag.rt.fmt;version="1.2",org.apache.t
+ aglibs.standard.tag.rt.sql;version="1.2",org.apache.taglibs.standard.
+ tag.rt.xml;version="1.2",org.apache.taglibs.standard.tei;version="1.2
+ ",org.apache.taglibs.standard.tlv;version="1.2",org.apache.taglibs.st
+ andard.util;version="1.2",org.apache.xml.dtm,org.apache.xml.utils,org
+ .apache.xpath,org.apache.xpath.objects,org.w3c.dom,org.xml.sax,org.xm
+ l.sax.helpers
+Tool: Bnd-0.0.357
+

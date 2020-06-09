@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1403278358253
+Build-Jdk: 1.7.0_45
+Built-By: chirino
+Bundle-Description: HawtBuf: a rich byte buffer library; Jarkata Enabl
+ ed
+Bundle-DocURL: http://fusesource.com/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: hawtbuf Jakarta
+Bundle-SymbolicName: org.fusesource.hawtbuf.hawtbuf.jakarta
+Bundle-Vendor: FuseSource, Corp.
+Bundle-Version: 1.11.0
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: org.fusesource.hawtbuf;version="1.11",org.fusesource.h
+ awtbuf.codec;uses:="org.fusesource.hawtbuf";version="1.11"
+Implementation-Title: hawtbuf
+Implementation-Vendor: FuseSource, Corp.
+Implementation-Vendor-Id: org.fusesource.hawtbuf
+Implementation-Version: 1.11
+Specification-Title: hawtbuf
+Specification-Vendor: FuseSource, Corp.
+Specification-Version: 1.11
+Tool: Bnd-1.15.0
+

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Title: OpenEJB :: Dependencies :: Quartz Shade
+Implementation-Version: 2.2.1
+Implementation-Vendor-Id: org.apache.openejb.shade
+Built-By: andy
+Build-Jdk: 1.7.0_55
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: OpenEJB :: Dependencies :: Quartz Shade
+Created-By: Apache Maven 3.2.1
+Specification-Version: 2.2.1
+Archiver-Version: Plexus Archiver
+

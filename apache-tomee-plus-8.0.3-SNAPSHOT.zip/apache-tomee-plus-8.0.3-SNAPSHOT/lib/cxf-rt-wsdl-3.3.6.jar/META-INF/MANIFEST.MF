@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.wsdl
+Bnd-LastModified: 1585152292467
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime Core for WSDL Based Technologie
+ s; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime Core for WSDL Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-wsdl.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.wsdl11;version="3.3.6",org.apache.cxf.w
+ sdl;version="3.3.6",org.apache.cxf.wsdl.interceptors;version="3.3.6",
+ org.apache.cxf.wsdl.binding;version="3.3.6",org.apache.cxf.wsdl.servi
+ ce.factory;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.xml.bind;version="[0,3)",jakarta.xml.bind.anno
+ tation;version="[0,3)",jakarta.xml.bind.annotation.adapters;version="
+ [0,3)",jakarta.annotation;version="[1.2,2)",javax.wsdl,javax.wsdl.ext
+ ensions,javax.wsdl.extensions.mime,javax.wsdl.extensions.schema,javax
+ .wsdl.extensions.soap,javax.wsdl.extensions.soap12,javax.wsdl.factory
+ ,javax.wsdl.xml,javax.xml.namespace,javax.xml.stream,javax.xml.stream
+ .util,javax.xml.transform,javax.xml.transform.dom,org.apache.cxf;vers
+ ion="[3.3,4)",org.apache.cxf.annotations;version="[3.3,4)",org.apache
+ .cxf.binding;version="[3.3,4)",org.apache.cxf.catalog;version="[3.3,4
+ )",org.apache.cxf.common.classloader;version="[3.3,4)",org.apache.cxf
+ .common.i18n;version="[3.3,4)",org.apache.cxf.common.injection;versio
+ n="[3.3,4)",org.apache.cxf.common.jaxb;version="[3.3,4)",org.apache.c
+ xf.common.logging;version="[3.3,4)",org.apache.cxf.common.util;versio
+ n="[3.3,4)",org.apache.cxf.common.xmlschema;version="[3.3,4)",org.apa
+ che.cxf.configuration;version="[3.3,4)",org.apache.cxf.databinding;ve
+ rsion="[3.3,4)",org.apache.cxf.databinding.source.mime;version="[3.3,
+ 4)",org.apache.cxf.endpoint;version="[3.3,4)",org.apache.cxf.feature;
+ version="[3.3,4)",org.apache.cxf.helpers;version="[3.3,4)",org.apache
+ .cxf.interceptor;version="[3.3,4)",org.apache.cxf.message;version="[3
+ .3,4)",org.apache.cxf.phase;version="[3.3,4)",org.apache.cxf.resource
+ ;version="[3.3,4)",org.apache.cxf.service;version="[3.3,4)",org.apach
+ e.cxf.service.factory;version="[3.3,4)",org.apache.cxf.service.invoke
+ r;version="[3.3,4)",org.apache.cxf.service.model;version="[3.3,4)",or
+ g.apache.cxf.staxutils;version="[3.3,4)",org.apache.cxf.staxutils.tra
+ nsform;version="[3.3,4)",org.apache.cxf.transport;version="[3.3,4)",o
+ rg.apache.cxf.ws.addressing;version="[3.3,4)",org.apache.cxf.wsdl,org
+ .apache.cxf.wsdl.binding,org.apache.cxf.wsdl11,org.apache.ws.commons.
+ schema;version="[2.2,3)",org.apache.ws.commons.schema.constants;versi
+ on="[2.2,3)",org.apache.ws.commons.schema.extensions;version="[2.2,3)
+ ",org.apache.ws.commons.schema.resolver;version="[2.2,3)",org.apache.
+ ws.commons.schema.utils;version="[2.2,3)",org.w3c.dom,org.w3c.dom.boo
+ tstrap,org.w3c.dom.ls,org.xml.sax
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

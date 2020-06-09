@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: Apache Safeguard :: Implementation
+Implementation-Version: 1.2.1
+Archiver-Version: Plexus Archiver
+Built-By: rmannibucau
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Apache Safeguard :: Implementation
+Implementation-Vendor-Id: org.apache.geronimo.safeguard
+Implementation-Vendor: The Apache Software Foundation
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_191
+Specification-Version: 1.2
+Implementation-URL: https://www.apache.org/safeguard-parent/safeguard-
+ impl/
+

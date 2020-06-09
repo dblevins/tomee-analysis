@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1578066593988
+Build-Jdk: 1.8.0_232
+Built-By: coheig
+Bundle-Description: Commons XMLSchema is a light weight schema object 
+ model that can be used to manipulate or        generate XML schema.; 
+ Jarkata Enabled
+Bundle-DocURL: http://ws.apache.org/xmlschema/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: XmlSchema Core Jakarta
+Bundle-SymbolicName: org.apache.ws.xmlschema.core.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.2.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.ws.commons.schema;version="2.2.5",org.apach
+ e.ws.commons.schema.constants;version="2.2.5",org.apache.ws.commons.s
+ chema.extensions;version="2.2.5",org.apache.ws.commons.schema.resolve
+ r;version="2.2.5",org.apache.ws.commons.schema.utils;version="2.2.5"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Import-Package: javax.xml,javax.xml.namespace,javax.xml.parsers,javax.
+ xml.transform,javax.xml.transform.dom,javax.xml.transform.sax,javax.x
+ ml.transform.stream,org.w3c.dom,org.xml.sax
+Specification-Vendor: The Apache Software Foundation
+Tool: Bnd-2.1.0.20130426-122213
+

@@ -1,0 +1,68 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1581026248211
+Build-Jdk: 1.8.0_201
+Build-Jdk-Spec: 1.8
+Built-By: dfisher
+Bundle-Description: The spectacular complement to the Bouncy Castle cr
+ ypto API for Java.; Jarkata Enabled
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt, http:/
+ /www.gnu.org/licenses/lgpl-3.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Cryptacular Library Jakarta
+Bundle-SymbolicName: org.cryptacular.jakarta
+Bundle-Version: 1.2.4
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.cryptacular.util;uses:="javax.crypto,org.bouncycas
+ tle.asn1.x509,org.bouncycastle.crypto,org.bouncycastle.crypto.modes,o
+ rg.bouncycastle.crypto.prng,org.bouncycastle.crypto.prng.drbg,org.cry
+ ptacular,org.cryptacular.codec,org.cryptacular.generator,org.cryptacu
+ lar.io,org.cryptacular.x509";version="1.2.4",org.cryptacular.bean;use
+ s:="javax.crypto,org.bouncycastle.crypto,org.bouncycastle.crypto.mode
+ s,org.cryptacular,org.cryptacular.adapter,org.cryptacular.codec,org.c
+ ryptacular.generator,org.cryptacular.io,org.cryptacular.spec";version
+ ="1.2.4",org.cryptacular;uses:="javax.crypto,org.cryptacular.codec";v
+ ersion="1.2.4",org.cryptacular.codec;uses:="org.cryptacular";version=
+ "1.2.4",org.cryptacular.io;uses:="org.cryptacular.codec";version="1.2
+ .4",org.cryptacular.spec;uses:="org.bouncycastle.crypto,org.bouncycas
+ tle.crypto.modes,org.cryptacular.codec";version="1.2.4",org.cryptacul
+ ar.adapter;uses:="org.bouncycastle.crypto,org.bouncycastle.crypto.mod
+ es,org.bouncycastle.crypto.params,org.cryptacular";version="1.2.4",or
+ g.cryptacular.pbe;uses:="org.bouncycastle.asn1.pkcs,org.bouncycastle.
+ crypto,org.cryptacular.spec";version="1.2.4",org.cryptacular.generato
+ r;uses:="javax.crypto,org.bouncycastle.crypto,org.cryptacular.spec";v
+ ersion="1.2.4",org.cryptacular.generator.sp80038a;uses:="javax.crypto
+ ,org.bouncycastle.crypto,org.cryptacular.generator,org.cryptacular.sp
+ ec";version="1.2.4",org.cryptacular.generator.sp80038d;uses:="org.cry
+ ptacular.generator";version="1.2.4",org.cryptacular.x509;uses:="org.b
+ ouncycastle.asn1,org.bouncycastle.asn1.x509,org.cryptacular";version=
+ "1.2.4",org.cryptacular.x509.dn;uses:="javax.security.auth.x500";vers
+ ion="1.2.4",org.cryptacular.asn;uses:="org.bouncycastle.crypto.params
+ ,org.cryptacular";version="1.2.4"
+Import-Package: javax.crypto,javax.crypto.spec,javax.security.auth.x50
+ 0,org.bouncycastle.asn1;version="[1.64,2)",org.bouncycastle.asn1.pkcs
+ ;version="[1.64,2)",org.bouncycastle.asn1.x500;version="[1.64,2)",org
+ .bouncycastle.asn1.x509;version="[1.64,2)",org.bouncycastle.asn1.x9;v
+ ersion="[1.64,2)",org.bouncycastle.crypto;version="[1.64,2)",org.boun
+ cycastle.crypto.digests;version="[1.64,2)",org.bouncycastle.crypto.en
+ gines;version="[1.64,2)",org.bouncycastle.crypto.generators;version="
+ [1.64,2)",org.bouncycastle.crypto.io;version="[1.64,2)",org.bouncycas
+ tle.crypto.macs;version="[1.64,2)",org.bouncycastle.crypto.modes;vers
+ ion="[1.64,2)",org.bouncycastle.crypto.paddings;version="[1.64,2)",or
+ g.bouncycastle.crypto.params;version="[1.64,2)",org.bouncycastle.cryp
+ to.prng;version="[1.64,2)",org.bouncycastle.crypto.prng.drbg;version=
+ "[1.64,2)",org.bouncycastle.crypto.signers;version="[1.64,2)",org.bou
+ ncycastle.crypto.util;version="[1.64,2)",org.bouncycastle.jcajce.prov
+ ider.asymmetric.dsa;version="[1.64,2)",org.bouncycastle.jcajce.provid
+ er.asymmetric.ec;version="[1.64,2)",org.bouncycastle.jcajce.provider.
+ asymmetric.rsa;version="[1.64,2)",org.bouncycastle.jcajce.provider.as
+ ymmetric.util;version="[1.64,2)",org.bouncycastle.jce.spec;version="[
+ 1.64,2)",org.bouncycastle.math.ec;version="[1.64,2)",org.bouncycastle
+ .util;version="[1.64,2)",org.bouncycastle.util.io;version="[1.64,2)",
+ org.cryptacular,org.cryptacular.adapter,org.cryptacular.asn,org.crypt
+ acular.codec,org.cryptacular.generator,org.cryptacular.generator.sp80
+ 038a,org.cryptacular.generator.sp80038d,org.cryptacular.io,org.crypta
+ cular.pbe,org.cryptacular.spec,org.cryptacular.util,org.cryptacular.x
+ 509,org.cryptacular.x509.dn
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-4.2.0.201903051501
+

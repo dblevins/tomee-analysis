@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.server.webservices
+Bnd-LastModified: 1591729282880
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Server :: Webservices Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-webservices.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Server :: Webservices
+Implementation-URL: http://tomee.apache.org/server/openejb-webservices
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: javax.naming,jakarta.servlet,jakarta.servlet.http,java
+ x.wsdl,javax.wsdl.extensions.soap,javax.xml.namespace,javax.xml.rpc,j
+ avax.xml.rpc.handler,javax.xml.rpc.server,jakarta.xml.soap;version="[
+ 1.4,2)",org.apache.openejb;version="[8.0,9)",org.apache.openejb.assem
+ bler.classic;version="[8.0,9)",org.apache.openejb.assembler.classic.e
+ vent;version="[8.0,9)",org.apache.openejb.assembler.classic.util;vers
+ ion="[8.0,9)",org.apache.openejb.config;version="[8.0,9)",org.apache.
+ openejb.core;version="[8.0,9)",org.apache.openejb.core.webservices;ve
+ rsion="[8.0,9)",org.apache.openejb.loader,org.apache.openejb.observer
+ ,org.apache.openejb.server,org.apache.openejb.server.httpd,org.apache
+ .openejb.server.httpd.util,org.apache.openejb.spi;version="[8.0,9)",o
+ rg.apache.openejb.util;version="[8.0,9)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Server :: Webservices
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

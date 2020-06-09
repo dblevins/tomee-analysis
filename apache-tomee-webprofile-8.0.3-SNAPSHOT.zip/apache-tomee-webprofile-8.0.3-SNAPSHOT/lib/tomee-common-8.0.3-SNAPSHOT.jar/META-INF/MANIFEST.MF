@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.tomee.common
+Bnd-LastModified: 1591729272968
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: This module contains the classes that will be adde
+ d to the common class loader; Jarkata Enabled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: TomEE :: Common Jakarta
+Bundle-SymbolicName: org.apache.tomee.common.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.tomee.common;version="8.0.3.SNAPSHOT";uses:
+ ="javax.naming,javax.naming.spi,org.apache.catalina.core",org.apache.
+ tomee.installer;version="8.0.3.SNAPSHOT";uses:="org.codehaus.swizzle.
+ stream"
+Implementation-Title: TomEE :: TomEE :: Common
+Implementation-URL: http://tomee.apache.org/tomee/tomee-common
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: jakarta.annotation,jakarta.ejb,javax.naming,javax.nami
+ ng.spi,jakarta.persistence,jakarta.transaction,javax.xml.namespace,ja
+ karta.xml.ws,org.apache.catalina.core,org.apache.naming,org.apache.op
+ enejb;version="[8.0,9)",org.apache.openejb.assembler.classic;version=
+ "[8.0,9)",org.apache.openejb.core;version="[8.0,9)",org.apache.openej
+ b.core.ivm;version="[8.0,9)",org.apache.openejb.core.ivm.naming;versi
+ on="[8.0,9)",org.apache.openejb.jpa.integration,org.apache.openejb.lo
+ ader,org.apache.openejb.spi;version="[8.0,9)",org.apache.openejb.util
+ ;version="[8.0,9)",org.codehaus.swizzle.stream
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: TomEE :: Common
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

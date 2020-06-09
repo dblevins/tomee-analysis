@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711040250
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-util-scan Jakarta
+Bundle-SymbolicName: org.apache.tomcat-util-scan.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: org.apache.tomcat.util.descriptor;uses:="org.apache.ju
+ li.logging,org.apache.tomcat.util.digester,org.xml.sax,org.xml.sax.ex
+ t",org.apache.tomcat.util.descriptor.tagplugin;uses:="jakarta.servlet
+ ,org.xml.sax",org.apache.tomcat.util.descriptor.tld;uses:="jakarta.se
+ rvlet.jsp.tagext,org.apache.tomcat,org.apache.tomcat.util.digester,or
+ g.xml.sax",org.apache.tomcat.util.descriptor.web;uses:="jakarta.servl
+ et,jakarta.servlet.descriptor,org.apache.juli.logging,org.apache.tomc
+ at,org.apache.tomcat.util.digester,org.apache.tomcat.util.res,org.xml
+ .sax",org.apache.tomcat.util.digester;uses:="javax.xml.parsers,org.ap
+ ache.juli.logging,org.apache.tomcat.util,org.apache.tomcat.util.res,o
+ rg.xml.sax,org.xml.sax.ext",org.apache.tomcat.util.scan;uses:="jakart
+ a.servlet,org.apache.tomcat"
+Implementation-Title: Apache Tomcat
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 9.0.35
+Import-Package: jakarta.servlet,jakarta.servlet.annotation,jakarta.ser
+ vlet.descriptor,jakarta.servlet.jsp,jakarta.servlet.jsp.tagext,javax.
+ xml.parsers,org.apache.juli.logging,org.apache.tomcat,org.apache.tomc
+ at.util,org.apache.tomcat.util.buf,org.apache.tomcat.util.compat,org.
+ apache.tomcat.util.descriptor,org.apache.tomcat.util.digester,org.apa
+ che.tomcat.util.file,org.apache.tomcat.util.res,org.apache.tomcat.uti
+ l.scan,org.apache.tomcat.util.security,org.xml.sax,org.xml.sax.ext,or
+ g.xml.sax.helpers
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache Tomcat
+Specification-Vendor: Apache Software Foundation
+Specification-Version: 9.0
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+

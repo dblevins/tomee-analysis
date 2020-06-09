@@ -1,0 +1,69 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1546007285704
+Build-Jdk: 11
+Built-By: default
+Bundle-Description: Open source Reference Implementation of JSR-67: SO
+ AP with Attachments API for Java (SAAJ MR: 1.4); Jarkata Enabled
+Bundle-DocURL: http://www.oracle.com/
+Bundle-License: http://www.eclipse.org/org/documents/edl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: saaj-impl Jakarta
+Bundle-SymbolicName: com.sun.xml.messaging.saaj.impl.jakarta
+Bundle-Vendor: Oracle Corporation
+Bundle-Version: 1.5.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.sun.xml.messaging.saaj.client.p2p;uses:="jakarta.x
+ ml.soap";version="1.5.1",com.sun.xml.messaging.saaj.soap.name;uses:="
+ javax.xml.namespace,jakarta.xml.soap,org.w3c.dom";version="1.5.1",com
+ .sun.xml.messaging.saaj.soap.ver1_1;uses:="com.sun.xml.messaging.saaj
+ ,com.sun.xml.messaging.saaj.packaging.mime.internet,com.sun.xml.messa
+ ging.saaj.soap,com.sun.xml.messaging.saaj.soap.name,javax.xml.namespa
+ ce,jakarta.xml.soap,javax.xml.stream,org.w3c.dom";version="1.5.1",com
+ .sun.xml.messaging.saaj.soap.ver1_2;uses:="com.sun.xml.messaging.saaj
+ ,com.sun.xml.messaging.saaj.packaging.mime.internet,com.sun.xml.messa
+ ging.saaj.soap,com.sun.xml.messaging.saaj.soap.name,javax.xml.namespa
+ ce,jakarta.xml.soap,javax.xml.stream,org.w3c.dom";version="1.5.1",com
+ .sun.xml.messaging.saaj.soap;uses:="com.sun.xml.messaging.saaj,com.su
+ n.xml.messaging.saaj.packaging.mime.internet,com.sun.xml.messaging.sa
+ aj.util,com.sun.xml.messaging.saaj.util.stax,jakarta.activation,javax
+ .xml.namespace,jakarta.xml.soap,javax.xml.stream,javax.xml.transform,
+ org.jvnet.mimepull,org.jvnet.staxex.util,org.w3c.dom";version="1.5.1"
+ ,com.sun.xml.messaging.saaj.soap.dynamic;uses:="com.sun.xml.messaging
+ .saaj.soap,jakarta.xml.soap";version="1.5.1",com.sun.xml.messaging.sa
+ aj.util;uses:="javax.xml.parsers,jakarta.xml.soap,javax.xml.transform
+ ,javax.xml.transform.stream,org.w3c.dom,org.xml.sax,org.xml.sax.ext,o
+ rg.xml.sax.helpers";version="1.5.1",com.sun.xml.messaging.saaj.util.s
+ tax;uses:="jakarta.activation,jakarta.xml.bind.attachment,javax.xml.n
+ amespace,jakarta.xml.soap,javax.xml.stream,org.jvnet.staxex,org.jvnet
+ .staxex.util,org.w3c.dom";version="1.5.1",com.sun.xml.messaging.saaj.
+ util.transform;uses:="javax.xml.transform";version="1.5.1",com.sun.xm
+ l.messaging.saaj.packaging.mime.internet;uses:="com.sun.xml.messaging
+ .saaj.packaging.mime,com.sun.xml.messaging.saaj.util,jakarta.activati
+ on,org.jvnet.mimepull";version="1.5.1",com.sun.xml.messaging.saaj.pac
+ kaging.mime;uses:="com.sun.xml.messaging.saaj.packaging.mime.internet
+ ,jakarta.activation";version="1.5.1",com.sun.xml.messaging.saaj.packa
+ ging.mime.util;version="1.5.1",com.sun.xml.messaging.saaj;uses:="java
+ x.xml.namespace,jakarta.xml.soap,javax.xml.stream,javax.xml.transform
+ ";version="1.5.1"
+Implementation-Build-Id: 1.5.1 - UNKNOWN-927a64a, 2018-12-28T14:25:41+
+ 0000
+Implementation-Title: saaj-impl
+Implementation-URL: https://projects.eclipse.org/projects/ee4j/saaj-im
+ pl
+Implementation-Vendor: Oracle Corporation
+Implementation-Vendor-Id: com.sun.xml.messaging.saaj
+Implementation-Version: 1.5.1
+Import-Package: jakarta.activation,jakarta.xml.bind.attachment,com.sun
+ .xml.messaging.saaj,com.sun.xml.messaging.saaj.packaging.mime,com.sun
+ .xml.messaging.saaj.packaging.mime.internet,com.sun.xml.messaging.saa
+ j.packaging.mime.util,com.sun.xml.messaging.saaj.soap.dynamic,com.sun
+ .xml.messaging.saaj.soap.name,com.sun.xml.messaging.saaj.util,com.sun
+ .xml.messaging.saaj.util.transform,javax.imageio,javax.imageio.stream
+ ,javax.xml.namespace,javax.xml.parsers,jakarta.xml.soap;version="[1.4
+ ,2)",javax.xml.stream,javax.xml.transform,javax.xml.transform.dom,jav
+ ax.xml.transform.sax,javax.xml.transform.stax,javax.xml.transform.str
+ eam,org.jvnet.mimepull;version="[1.9,2)",org.jvnet.staxex;version="[1
+ .8,2)",org.jvnet.staxex.util;version="[1.8,2)",org.w3c.dom,org.xml.sa
+ x,org.xml.sax.ext,org.xml.sax.helpers
+Tool: Bnd-3.5.0.201709291849
+

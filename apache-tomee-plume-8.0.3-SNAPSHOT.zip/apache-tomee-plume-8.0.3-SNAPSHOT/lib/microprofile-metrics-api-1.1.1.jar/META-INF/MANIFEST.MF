@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1523971327668
+Build-Jdk: 1.8.0_162
+Built-By: genie.microprofile
+Bundle-License: Apache License, Version 2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MicroProfile Metrics Bundle Jakarta
+Bundle-SymbolicName: org.eclipse.microprofile.metrics.jakarta
+Bundle-Version: 1.1.1
+Created-By: 1.8.0_162 (Oracle Corporation)
+Export-Package: org.eclipse.microprofile.metrics;version="1.0",org.ecl
+ ipse.microprofile.metrics.annotation;version="1.0";uses:="jakarta.ent
+ erprise.util,jakarta.inject,jakarta.interceptor,org.eclipse.microprof
+ ile.metrics"
+Import-Package: jakarta.enterprise.util;version="[1.1,2)",jakarta.inje
+ ct,jakarta.interceptor;version="[1.2,2)",org.eclipse.microprofile.met
+ rics;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.4.0.201707252008
+

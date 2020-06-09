@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.8.0_242
+Bundle-Description: Apache Johnzon is an implementation of JSR-353 (Ja
+ vaTM API for JSON Processing).; Jarkata Enabled
+Bundle-DocURL: http://johnzon.apache.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Johnzon :: JAX-RS Jakarta
+Bundle-SymbolicName: org.apache.johnzon.jaxrs.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.5
+Export-Package: org.apache.johnzon.jaxrs;uses:="jakarta.json,jakarta.j
+ son.stream,jakarta.ws.rs,jakarta.ws.rs.core,jakarta.ws.rs.ext,org.apa
+ che.johnzon.mapper,org.apache.johnzon.mapper.access,org.w3c.dom";vers
+ ion="1.2.5",org.apache.johnzon.jaxrs.xml;uses:="javax.xml.stream,org.
+ w3c.dom";version="1.2.5"
+Implementation-Title: Johnzon :: JAX-RS
+Implementation-URL: http://johnzon.apache.org/johnzon-jaxrs
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.johnzon
+Implementation-Version: 1.2.5
+Import-Package: jakarta.json,jakarta.json.stream,jakarta.ws.rs,jakarta
+ .ws.rs.core,jakarta.ws.rs.ext,javax.xml.stream,org.apache.johnzon.jax
+ rs.xml,org.apache.johnzon.mapper;version="[1.2,2)",org.apache.johnzon
+ .mapper.access;version="[1.2,2)",org.apache.johnzon.mapper.internal;v
+ ersion="[1.2,2)",org.w3c.dom
+Require-Capability: osgi.contract;osgi.contract=JavaJSONP;filter:="(&(
+ osgi.contract=JavaJSONP)(version=1.1.0))",osgi.contract;osgi.contract
+ =JavaJAXRS;filter:="(&(osgi.contract=JavaJAXRS)(version=2.1.0))",osgi
+ .ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Johnzon :: JAX-RS
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.2.5
+

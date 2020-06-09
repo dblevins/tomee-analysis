@@ -1,0 +1,78 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.wss4j.stax
+Bnd-LastModified: 1584113385045
+Build-Jdk: 1.8.0_232
+Built-By: coheig
+Bundle-Description: Apache WSS4J parent pom; Jarkata Enabled
+Bundle-DocURL: http://ws.apache.org/wss4j
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache WSS4J Streaming WS-Security Jakarta
+Bundle-SymbolicName: org.apache.wss4j.wss4j-ws-security-stax.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.2.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.wss4j.stax.ext;version="2.2.5",org.apache.w
+ ss4j.stax.impl;version="2.2.5",org.apache.wss4j.stax.impl.processor.i
+ nput;version="2.2.5",org.apache.wss4j.stax.impl.processor.output;vers
+ ion="2.2.5",org.apache.wss4j.stax.impl.resourceResolvers;version="2.2
+ .5",org.apache.wss4j.stax.impl.securityToken;version="2.2.5",org.apac
+ he.wss4j.stax.impl.transformer;version="2.2.5",org.apache.wss4j.stax.
+ securityEvent;version="2.2.5",org.apache.wss4j.stax.securityToken;ver
+ sion="2.2.5",org.apache.wss4j.stax.setup;version="2.2.5",org.apache.w
+ ss4j.stax.utils;version="2.2.5",org.apache.wss4j.stax.validate;versio
+ n="2.2.5"
+Implementation-Title: Apache WSS4J Streaming WS-Security
+Implementation-URL: https://ws.apache.org/wss4j/wss4j-ws-security-stax
+ /
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.2.5
+Import-Package: javax.crypto,javax.crypto.spec,javax.security.auth,jav
+ ax.security.auth.callback,javax.security.auth.kerberos,javax.security
+ .auth.login,javax.security.auth.x500,jakarta.xml.bind,javax.xml.names
+ pace,javax.xml.parsers,javax.xml.stream,javax.xml.stream.events,javax
+ .xml.transform,javax.xml.transform.stream,javax.xml.validation,org.ap
+ ache.wss4j.binding.wss10;version="[2.2,3)",org.apache.wss4j.binding.w
+ ss11;version="[2.2,3)",org.apache.wss4j.binding.wssc;version="[2.2,3)
+ ",org.apache.wss4j.binding.wssc13;version="[2.2,3)",org.apache.wss4j.
+ binding.wssc200502;version="[2.2,3)",org.apache.wss4j.binding.wsu10;v
+ ersion="[2.2,3)",org.apache.wss4j.common;version="[2.2,3)",org.apache
+ .wss4j.common.bsp;version="[2.2,3)",org.apache.wss4j.common.cache;ver
+ sion="[2.2,3)",org.apache.wss4j.common.crypto;version="[2.2,3)",org.a
+ pache.wss4j.common.derivedKey;version="[2.2,3)",org.apache.wss4j.comm
+ on.ext;version="[2.2,3)",org.apache.wss4j.common.kerberos;version="[2
+ .2,3)",org.apache.wss4j.common.principal;version="[2.2,3)",org.apache
+ .wss4j.common.saml;version="[2.2,3)",org.apache.wss4j.common.saml.bea
+ n;version="[2.2,3)",org.apache.wss4j.common.util;version="[2.2,3)",or
+ g.apache.xml.security.algorithms;version="[2.1,3)",org.apache.xml.sec
+ urity.binding.excc14n;version="[2.1,3)",org.apache.xml.security.bindi
+ ng.xmldsig;version="[2.1,3)",org.apache.xml.security.binding.xmldsig1
+ 1;version="[2.1,3)",org.apache.xml.security.binding.xmlenc;version="[
+ 2.1,3)",org.apache.xml.security.binding.xmlenc11;version="[2.1,3)",or
+ g.apache.xml.security.binding.xop;version="[2.1,3)",org.apache.xml.se
+ curity.encryption;version="[2.1,3)",org.apache.xml.security.exception
+ s;version="[2.1,3)",org.apache.xml.security.stax.config;version="[2.1
+ ,3)",org.apache.xml.security.stax.ext;version="[2.1,3)",org.apache.xm
+ l.security.stax.ext.stax;version="[2.1,3)",org.apache.xml.security.st
+ ax.impl;version="[2.1,3)",org.apache.xml.security.stax.impl.algorithm
+ s;version="[2.1,3)",org.apache.xml.security.stax.impl.processor.input
+ ;version="[2.1,3)",org.apache.xml.security.stax.impl.processor.output
+ ;version="[2.1,3)",org.apache.xml.security.stax.impl.resourceResolver
+ s;version="[2.1,3)",org.apache.xml.security.stax.impl.securityToken;v
+ ersion="[2.1,3)",org.apache.xml.security.stax.impl.transformer;versio
+ n="[2.1,3)",org.apache.xml.security.stax.impl.transformer.canonicaliz
+ er;version="[2.1,3)",org.apache.xml.security.stax.impl.util;version="
+ [2.1,3)",org.apache.xml.security.stax.securityEvent;version="[2.1,3)"
+ ,org.apache.xml.security.stax.securityToken;version="[2.1,3)",org.apa
+ che.xml.security.utils;version="[2.1,3)",org.joda.time;version="[2.9,
+ 3)",org.opensaml.saml.common,org.opensaml.saml.saml2.core,org.opensam
+ l.security.credential,org.opensaml.security.x509,org.opensaml.xmlsec.
+ signature,org.opensaml.xmlsec.signature.support,org.slf4j;version="[1
+ .7,2)",org.w3c.dom,org.w3c.dom.ls,org.xml.sax
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache WSS4J Streaming WS-Security
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.2.5
+Tool: Bnd-2.4.1.201501161923
+

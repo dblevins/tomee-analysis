@@ -1,0 +1,78 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.microprofile.jwt
+Bnd-LastModified: 1591729286324
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Microprofile JWT Jakarta
+Bundle-SymbolicName: org.apache.tomee.mp-jwt.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.tomee.microprofile.jwt;version="8.0.3.SNAPS
+ HOT";uses:="jakarta.servlet,jakarta.servlet.annotation,jakarta.servle
+ t.http,jakarta.validation,jakarta.ws.rs.core,jakarta.ws.rs.ext,org.ap
+ ache.openejb.util,org.apache.tomee.microprofile.jwt.config,org.apache
+ .tomee.microprofile.jwt.principal,org.eclipse.microprofile.auth,org.e
+ clipse.microprofile.jwt,org.jose4j.jwk",org.apache.tomee.microprofile
+ .jwt.bval;version="8.0.3.SNAPSHOT";uses:="jakarta.annotation,jakarta.
+ interceptor,jakarta.validation,jakarta.validation.executable,jakarta.
+ ws.rs.container,jakarta.ws.rs.core,jakarta.ws.rs.ext,org.apache.bval.
+ cdi,org.apache.bval.jsr.descriptor,org.apache.openejb.util.proxy,org.
+ apache.xbean.asm7,org.eclipse.microprofile.jwt",org.apache.tomee.micr
+ oprofile.jwt.cdi;version="8.0.3.SNAPSHOT";uses:="jakarta.enterprise.c
+ ontext,jakarta.enterprise.context.spi,jakarta.enterprise.event,jakart
+ a.enterprise.inject,jakarta.enterprise.inject.spi,jakarta.enterprise.
+ util,jakarta.json.bind,org.eclipse.microprofile.jwt",org.apache.tomee
+ .microprofile.jwt.config;version="8.0.3.SNAPSHOT";uses:="jakarta.ente
+ rprise.context,jakarta.enterprise.event,jakarta.servlet,org.jose4j.jw
+ k",org.apache.tomee.microprofile.jwt.jaxrs;version="8.0.3.SNAPSHOT";u
+ ses:="jakarta.ws.rs.container,jakarta.ws.rs.core,jakarta.ws.rs.ext,or
+ g.apache.openejb.observer,org.apache.openejb.server.cxf.rs.event",org
+ .apache.tomee.microprofile.jwt.principal;version="8.0.3.SNAPSHOT";use
+ s:="javax.security.auth,org.apache.openejb.spi,org.eclipse.microprofi
+ le.jwt,org.jose4j.jwt"
+Implementation-Title: TomEE :: Microprofile JWT
+Implementation-URL: http://tomee.apache.org/mp-jwt
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: jakarta.annotation,jakarta.annotation.security,jakarta
+ .enterprise.context,jakarta.enterprise.context.spi,jakarta.enterprise
+ .event,jakarta.enterprise.inject,jakarta.enterprise.inject.spi,jakart
+ a.enterprise.inject.spi.configurator,jakarta.enterprise.util,jakarta.
+ inject,jakarta.interceptor,jakarta.json,jakarta.json.bind,jakarta.jso
+ n.bind.spi,jakarta.json.stream,javax.security.auth,jakarta.servlet,ja
+ karta.servlet.annotation,jakarta.servlet.http,jakarta.validation,jaka
+ rta.validation.constraintvalidation,jakarta.validation.executable,jak
+ arta.validation.metadata,jakarta.ws.rs.container,jakarta.ws.rs.core,j
+ akarta.ws.rs.ext,org.apache.bval.cdi,org.apache.bval.jsr,org.apache.b
+ val.jsr.descriptor,org.apache.bval.jsr.metadata,org.apache.bval.jsr.u
+ til,org.apache.bval.util,org.apache.bval.util.reflection,org.apache.c
+ atalina,org.apache.catalina.connector,org.apache.openejb.cdi;version=
+ "[8.0,9)",org.apache.openejb.dyni;version="[8.0,9)",org.apache.openej
+ b.loader,org.apache.openejb.observer,org.apache.openejb.server.cxf.rs
+ .event,org.apache.openejb.spi;version="[8.0,9)",org.apache.openejb.ut
+ il;version="[8.0,9)",org.apache.openejb.util.proxy;version="[8.0,9)",
+ org.apache.tomee.catalina;version="[8.0,9)",org.apache.tomee.micropro
+ file.jwt;version="[8.0,9)",org.apache.tomee.microprofile.jwt.config;v
+ ersion="[8.0,9)",org.apache.tomee.microprofile.jwt.principal;version=
+ "[8.0,9)",org.apache.xbean.asm7;version="[7.1,8)",org.apache.xbean.pr
+ opertyeditor;version="[4.14,5)",org.eclipse.microprofile.auth;version
+ ="[1.0,2)",org.eclipse.microprofile.config;version="[1.0,2)",org.ecli
+ pse.microprofile.jwt;version="[1.0,2)",org.jose4j.jwa;version="[0.6,1
+ )",org.jose4j.jwk;version="[0.6,1)",org.jose4j.jwt;version="[0.6,1)",
+ org.jose4j.jwt.consumer;version="[0.6,1)",org.jose4j.jwx;version="[0.
+ 6,1)",org.jose4j.keys.resolvers;version="[0.6,1)",org.jose4j.lang;ver
+ sion="[0.6,1)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Microprofile JWT
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

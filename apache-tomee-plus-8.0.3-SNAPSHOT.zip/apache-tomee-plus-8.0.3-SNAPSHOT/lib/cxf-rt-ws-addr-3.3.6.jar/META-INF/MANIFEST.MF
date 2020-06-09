@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.ws.addr
+Bnd-LastModified: 1585152490252
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.apache.cxf.ws.addressing.blueprint.Activator
+Bundle-Description: Apache CXF Runtime WS Addressing; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime WS Addressing Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-ws-addr.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.ws.addressing.soap;version="3.3.6",org.
+ apache.cxf.ws.addressing.policy;version="3.3.6",org.apache.cxf.ws.add
+ ressing.blueprint;version="3.3.6",org.apache.cxf.ws.addressing.spring
+ ;version="3.3.6"
+Export-Service: org.apache.aries.blueprint.NamespaceHandler;osgi.servi
+ ce.blueprint.namespace="http://cxf.apache.org/ws/addressing"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: org.springframework.beans.factory.xml;resolution:=opti
+ onal;version="[3.1,6)",org.apache.aries.blueprint;version="[1.0,2)";r
+ esolution:=optional,jakarta.xml.ws;version="[0,3)",jakarta.xml.bind;v
+ ersion="[0,3)",javax.wsdl,javax.wsdl.extensions,javax.xml.namespace,o
+ rg.apache.cxf;version="[3.3,4)",org.apache.cxf.binding;version="[3.3,
+ 4)",org.apache.cxf.binding.soap;version="[3.3,4)",org.apache.cxf.bind
+ ing.soap.interceptor;version="[3.3,4)",org.apache.cxf.binding.soap.mo
+ del;version="[3.3,4)",org.apache.cxf.bus.blueprint;version="[3.3,4)",
+ org.apache.cxf.common.i18n;version="[3.3,4)",org.apache.cxf.common.in
+ jection;version="[3.3,4)",org.apache.cxf.common.jaxb;version="[3.3,4)
+ ",org.apache.cxf.common.logging;version="[3.3,4)",org.apache.cxf.comm
+ on.util;version="[3.3,4)",org.apache.cxf.configuration.blueprint;vers
+ ion="[3.3,4)",org.apache.cxf.configuration.spring;version="[3.3,4)",o
+ rg.apache.cxf.databinding;version="[3.3,4)",org.apache.cxf.endpoint;v
+ ersion="[3.3,4)",org.apache.cxf.feature;version="[3.3,4)",org.apache.
+ cxf.headers;version="[3.3,4)",org.apache.cxf.helpers;version="[3.3,4)
+ ",org.apache.cxf.interceptor;version="[3.3,4)",org.apache.cxf.io;vers
+ ion="[3.3,4)",org.apache.cxf.jaxb;version="[3.3,4)",org.apache.cxf.me
+ ssage;version="[3.3,4)",org.apache.cxf.phase;version="[3.3,4)",org.ap
+ ache.cxf.service;version="[3.3,4)",org.apache.cxf.service.model;versi
+ on="[3.3,4)",org.apache.cxf.transport;version="[3.3,4)",org.apache.cx
+ f.workqueue;version="[3.3,4)",org.apache.cxf.ws.addressing;version="[
+ 3.3,4)",org.apache.cxf.ws.addressing.soap,org.apache.cxf.ws.addressin
+ g.v200403;version="[3.3,4)",org.apache.cxf.ws.addressing.v200408;vers
+ ion="[3.3,4)",org.apache.cxf.ws.addressing.wsdl;version="[3.3,4)",org
+ .apache.cxf.ws.policy;version="[3.3,4)",org.apache.cxf.ws.policy.buil
+ der.primitive;version="[3.3,4)",org.apache.cxf.wsdl;version="[3.3,4)"
+ ,org.apache.neethi;version="[3.1,4)",org.apache.neethi.builders;versi
+ on="[3.1,4)",org.apache.neethi.builders.xml;version="[3.1,4)",org.osg
+ i.framework;version="[1.7,2)",org.osgi.service.blueprint.reflect;vers
+ ion="[1.0,2)";resolution:=optional,org.w3c.dom
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

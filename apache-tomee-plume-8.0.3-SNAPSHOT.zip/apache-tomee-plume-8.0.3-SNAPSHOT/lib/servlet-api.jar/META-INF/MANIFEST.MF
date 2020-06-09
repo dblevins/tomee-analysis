@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711023719
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-servlet-api Jakarta
+Bundle-SymbolicName: org.apache.tomcat-servlet-api.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: jakarta.servlet;uses:="jakarta.servlet.annotation,jaka
+ rta.servlet.descriptor",jakarta.servlet.annotation;uses:="jakarta.ser
+ vlet",jakarta.servlet.descriptor,jakarta.servlet.http;uses:="jakarta.
+ servlet",jakarta.servlet.resources
+Import-Package: jakarta.servlet,jakarta.servlet.annotation,jakarta.ser
+ vlet.descriptor,org.apache.catalina.connector
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+
+Name: javax/servlet/
+Implementation-Title: javax.servlet
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 4.0.FR
+Specification-Title: Java API for Servlets
+Specification-Vendor: Sun Microsystems, Inc.
+Specification-Version: 4.0
+

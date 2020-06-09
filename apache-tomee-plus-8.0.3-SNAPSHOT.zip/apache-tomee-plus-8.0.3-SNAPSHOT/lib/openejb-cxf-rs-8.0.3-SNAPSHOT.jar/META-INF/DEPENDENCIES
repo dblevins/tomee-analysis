@@ -1,0 +1,221 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+TomEE :: Server :: CXF RS
+
+
+From: 'an unknown organization'
+  - Serp (http://serp.sourceforge.net) net.sourceforge.serp:serp:jar:1.15.1
+    License: BSD  (LICENSE.txt)
+  - SXC JAXB :: Core (http://nexus.sonatype.org/oss-repository-hosting.html/sxc/sxc-jaxb-core) org.metatype.sxc:sxc-jaxb-core:jar:0.8
+
+  - SXC Runtime (http://nexus.sonatype.org/oss-repository-hosting.html/sxc/sxc-runtime) org.metatype.sxc:sxc-runtime:jar:0.8
+
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - OpenJPA Aggregate Jar (http://openjpa.apache.org/openjpa) org.apache.openjpa:openjpa:bundle:3.1.0
+    License: Apache Software License 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Eclipse Foundation' (https://www.eclipse.org)
+  - JavaBeans Activation Framework (https://github.com/eclipse-ee4j/jaf/jakarta.activation) com.sun.activation:jakarta.activation:jar:1.2.1
+    License: EDL 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - istack common utility code runtime (https://projects.eclipse.org/projects/ee4j/istack-commons/istack-commons-runtime) com.sun.istack:istack-commons-runtime:jar:3.0.8
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - fastinfoset (https://projects.eclipse.org/projects/ee4j.jaxb-impl/FastInfoset) com.sun.xml.fastinfoset:FastInfoset:jar:1.2.16
+    License: Apache License, Version 2.0  (http://www.opensource.org/licenses/apache2.0.php)    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - jakarta.xml.bind-api (https://github.com/eclipse-ee4j/jaxb-api/jakarta.xml.bind-api) jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - Extended StAX API (https://projects.eclipse.org/projects/ee4j/stax-ex) org.jvnet.staxex:stax-ex:jar:1.8.1
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+From: 'FasterXML' (http://fasterxml.com)
+  - Woodstox (https://github.com/FasterXML/woodstox) com.fasterxml.woodstox:woodstox-core:bundle:5.0.3
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'FasterXML' (http://fasterxml.com/)
+  - Jackson-annotations (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-annotations:bundle:2.10.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackson-core (https://github.com/FasterXML/jackson-core) com.fasterxml.jackson.core:jackson-core:bundle:2.10.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jackson-databind (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-databind:bundle:2.10.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'fasterxml.com' (http://fasterxml.com)
+  - Stax2 API (http://wiki.fasterxml.com/WoodstoxStax2) org.codehaus.woodstox:stax2-api:bundle:3.1.4
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+
+From: 'FuseSource, Corp.' (http://fusesource.com/)
+  - hawtbuf (http://hawtbuf.fusesource.org/hawtbuf) org.fusesource.hawtbuf:hawtbuf:bundle:1.11
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'ObjectWeb HOWL' (http://forge.objectweb.org/projects/howl)
+  - HOWL logger (http://forge.objectweb.org/projects/howl/) org.objectweb.howl:howl:jar:1.0.1-1
+    License: BSD 
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - JAXB Runtime (https://javaee.github.io/jaxb-v2/jaxb-runtime-parent/jaxb-runtime/) org.glassfish.jaxb:jaxb-runtime:jar:2.3.2
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - TXW2 Runtime (https://javaee.github.io/jaxb-v2/jaxb-txw-parent/txw2/) org.glassfish.jaxb:txw2:jar:2.3.2
+    License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.21
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - SLF4J JDK14 Binding (http://www.slf4j.org) org.slf4j:slf4j-jdk14:jar:1.7.21
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (http://apache.org)
+  - Java EE plugin (openwebbeans.apache.org/openwebbeans-ee) org.apache.openwebbeans:openwebbeans-ee:jar:2.0.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - EE Common plugin (openwebbeans.apache.org/openwebbeans-ee-common) org.apache.openwebbeans:openwebbeans-ee-common:jar:2.0.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - EJB plugin (openwebbeans.apache.org/openwebbeans-ejb) org.apache.openwebbeans:openwebbeans-ejb:jar:2.0.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - EL 2.2 plugin (openwebbeans.apache.org/openwebbeans-el22) org.apache.openwebbeans:openwebbeans-el22:jar:2.0.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenWebBeans Core (openwebbeans.apache.org/openwebbeans-impl) org.apache.openwebbeans:openwebbeans-impl:jar:2.0.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - SPI definition (openwebbeans.apache.org/openwebbeans-spi) org.apache.openwebbeans:openwebbeans-spi:jar:2.0.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Web plugin (openwebbeans.apache.org/openwebbeans-web) org.apache.openwebbeans:openwebbeans-web:jar:2.0.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org)
+  - Geronimo TxManager :: Connector (http://geronimo.apache.org/maven/components/geronimo-connector/3.1.4) org.apache.geronimo.components:geronimo-connector:bundle:3.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo TxManager :: Transaction (http://geronimo.apache.org/maven/components/geronimo-transaction/3.1.4) org.apache.geronimo.components:geronimo-transaction:bundle:3.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo JavaMail 1.4 :: Mail (http://geronimo.apache.org/maven/javamail/geronimo-javamail_1.4_mail/1.9.0-alpha-2/geronimo-javamail_1.4_mail) org.apache.geronimo.javamail:geronimo-javamail_1.4_mail:bundle:1.9.0-alpha-2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - J2EE Connector 1.6 (http://geronimo.apache.org/maven/specs/geronimo-j2ee-connector_1.6_spec/1.0) org.apache.geronimo.specs:geronimo-j2ee-connector_1.6_spec:bundle:1.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: ASM shaded (repackaged) (http://geronimo.apache.org/maven/xbean/4.14/xbean-asm7-shaded) org.apache.xbean:xbean-asm7-shaded:bundle:4.14
+    License: $license.name  (http://asm.ow2.org/license.html)    License: $license.name  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean OSGI Bundle Utilities (http://geronimo.apache.org/maven/xbean/4.14/xbean-bundleutils) org.apache.xbean:xbean-bundleutils:bundle:4.14
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Finder shaded (repackaged) (http://geronimo.apache.org/maven/xbean/4.14/xbean-finder-shaded) org.apache.xbean:xbean-finder-shaded:jar:4.14
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Naming (http://geronimo.apache.org/maven/xbean/4.14/xbean-naming) org.apache.xbean:xbean-naming:bundle:4.14
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Reflect (http://geronimo.apache.org/maven/xbean/4.14/xbean-reflect) org.apache.xbean:xbean-reflect:bundle:4.14
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Commons Collections (http://commons.apache.org/collections/) commons-collections:commons-collections:jar:3.2.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Logging (http://commons.apache.org/proper/commons-logging/) commons-logging:commons-logging:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ Protocol Buffers Implementation and Compiler (http://activemq.apache.org/activemq-protobuf) org.apache.activemq.protobuf:activemq-protobuf:maven-plugin:1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons DBCP (http://commons.apache.org/dbcp/) org.apache.commons:commons-dbcp2:jar:2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Pool (http://commons.apache.org/proper/commons-pool/) org.apache.commons:commons-pool2:jar:2.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenEJB :: Dependencies :: Quartz Shade (http://www.apache.org/quartz-openejb-shade/) org.apache.openejb.shade:quartz-openejb-shade:jar:2.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Commons CLI (http://commons.apache.org/proper/commons-cli/) commons-cli:commons-cli:jar:1.4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: Broker (http://activemq.apache.org/activemq-broker) org.apache.activemq:activemq-broker:jar:5.15.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: Client (http://activemq.apache.org/activemq-client) org.apache.activemq:activemq-client:bundle:5.15.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: JDBC Store (http://activemq.apache.org/activemq-jdbc-store) org.apache.activemq:activemq-jdbc-store:jar:5.15.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: KahaDB Store (http://activemq.apache.org/activemq-kahadb-store) org.apache.activemq:activemq-kahadb-store:jar:5.15.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: Openwire Legacy Support (http://activemq.apache.org/activemq-openwire-legacy) org.apache.activemq:activemq-openwire-legacy:jar:5.15.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: RA (http://activemq.apache.org/activemq-ra) org.apache.activemq:activemq-ra:jar:5.15.12
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache BVal :: bval-jsr (http://bval.apache.org/bval-jsr/) org.apache.bval:bval-jsr:jar:2.0.3
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Collections (http://commons.apache.org/proper/commons-collections/) org.apache.commons:commons-collections4:jar:4.3
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Lang (http://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.8.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Core (https://cxf.apache.org) org.apache.cxf:cxf-core:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime JAX-RS Frontend (https://cxf.apache.org) org.apache.cxf:cxf-rt-frontend-jaxrs:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime Management (https://cxf.apache.org) org.apache.cxf:cxf-rt-management:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF JAX-RS Client (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-client:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF JAX-RS Extensions: Providers (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-extension-providers:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF JAX-RS Extensions: Search (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-extension-search:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF JAX-RS Extensions: JSON Basic (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-json-basic:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF RS Cross-Origin Resource Sharing (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-security-cors:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime JOSE Core (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-security-jose:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime JOSE JAX-RS (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-security-jose-jaxrs:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime OAuth 2.0 (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-security-oauth2:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF JAX-RS Service Description (https://cxf.apache.org) org.apache.cxf:cxf-rt-rs-service-description:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime Security functionality (https://cxf.apache.org) org.apache.cxf:cxf-rt-security:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime HTTP Transport (https://cxf.apache.org) org.apache.cxf:cxf-rt-transports-http:bundle:3.3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Johnzon :: Core (http://johnzon.apache.org/johnzon-core) org.apache.johnzon:johnzon-core:bundle:1.2.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Johnzon :: JAX-RS (http://johnzon.apache.org/johnzon-jaxrs) org.apache.johnzon:johnzon-jaxrs:bundle:1.2.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Johnzon :: JSON-B Implementation (http://johnzon.apache.org/johnzon-jsonb) org.apache.johnzon:johnzon-jsonb:bundle:1.2.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Johnzon :: Mapper (http://johnzon.apache.org/johnzon-mapper) org.apache.johnzon:johnzon-mapper:bundle:1.2.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: JavaEE 8 Full API (https://www.apache.org/javaee-api/) org.apache.tomee:javaee-api:jar:8.0-4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Container :: MBean Annotation API (http://tomee.apache.org/container/mbean-annotation-api) org.apache.tomee:mbean-annotation-api:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Container :: API (http://tomee.apache.org/container/openejb-api) org.apache.tomee:openejb-api:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Server :: Client (http://tomee.apache.org/server/openejb-client) org.apache.tomee:openejb-client:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Container :: Core (http://tomee.apache.org/container/openejb-core) org.apache.tomee:openejb-core:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Server :: CXF Transport (http://tomee.apache.org/server/openejb-cxf-transport) org.apache.tomee:openejb-cxf-transport:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Server :: EJBd (http://tomee.apache.org/server/openejb-ejbd) org.apache.tomee:openejb-ejbd:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Server :: Http (http://tomee.apache.org/server/openejb-http) org.apache.tomee:openejb-http:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Container :: Java Agent (http://tomee.apache.org/container/openejb-javaagent) org.apache.tomee:openejb-javaagent:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Container :: Java EE (http://tomee.apache.org/container/openejb-jee) org.apache.tomee:openejb-jee:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Container :: Java EE Accessors (http://tomee.apache.org/container/openejb-jee-accessors) org.apache.tomee:openejb-jee-accessors:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Container :: JPA Integration (http://tomee.apache.org/container/openejb-jpa-integration) org.apache.tomee:openejb-jpa-integration:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Container :: Loader (http://tomee.apache.org/container/openejb-loader) org.apache.tomee:openejb-loader:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Server :: REST (http://tomee.apache.org/server/openejb-rest) org.apache.tomee:openejb-rest:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: Server :: Core (http://tomee.apache.org/server/openejb-server) org.apache.tomee:openejb-server:jar:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TomEE :: BOMs :: JAXB Runtime (http://tomee.apache.org/boms/jaxb-runtime) org.apache.tomee.bom:jaxb-runtime:pom:8.0.3-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - XmlSchema Core (https://ws.apache.org/commons/xmlschema20/xmlschema-core/) org.apache.ws.xmlschema:xmlschema-core:bundle:2.2.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Codehaus Foundation' (http://www.codehaus.org/)
+  - Swizzle :: Stream (http://swizzle.codehaus.org/swizzle-stream) org.codehaus.swizzle:swizzle-stream:jar:1.6.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The HSQL Development Group' (http://hsqldb.org)
+  - HyperSQL Database (http://hsqldb.org) org.hsqldb:hsqldb:jar:2.3.2
+    License: HSQLDB License, a BSD open source license  (http://hsqldb.org/web/hsqlLicense.html)
+
+
+
+

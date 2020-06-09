@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: Apache BVal :: bval-jsr
+Implementation-Version: 2.0.3
+Built-By: andraschko
+Specification-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.bval
+Specification-Title: Bean Validation
+Implementation-Vendor: The Apache Software Foundation
+Main-Class: org.apache.bval.util.BValVersion
+Implementation-Build: 7f1e1fcc21
+Created-By: Apache Maven 3.6.1
+Build-Jdk: 1.8.0_222
+Implementation-URL: http://bval.apache.org/bval-jsr/
+Specification-Version: 2.0
+

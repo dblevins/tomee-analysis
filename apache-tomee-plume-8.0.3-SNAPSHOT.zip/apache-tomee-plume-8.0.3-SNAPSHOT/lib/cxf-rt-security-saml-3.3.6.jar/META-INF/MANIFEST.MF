@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.security.saml
+Bnd-LastModified: 1585152674785
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime SAML Security functionality; Ja
+ rkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime SAML Security functionality Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-security-saml.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.rt.security.saml.xacml;version="3.3.6",
+ org.apache.cxf.rt.security.saml.xacml2;version="3.3.6",org.apache.cxf
+ .rt.security.saml.utils;version="3.3.6",org.apache.cxf.rt.security.sa
+ ml.interceptor;version="3.3.6",org.apache.cxf.rt.security.saml.claims
+ ;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: org.opensaml.core.xml;version="[3.1,4)",org.opensaml.c
+ ore.xml.config;version="[3.1,4)",org.opensaml.saml.common;version="[3
+ .1,4)",org.opensaml.saml.saml1.core;version="[3.1,4)",org.opensaml.sa
+ ml.saml2.core;version="[3.1,4)",org.opensaml.xacml;version="[3.1,4)",
+ org.opensaml.xacml.ctx;version="[3.1,4)",org.opensaml.xacml.profile.s
+ aml;version="[3.1,4)",javax.security.auth,javax.security.auth.callbac
+ k,javax.xml.namespace,org.apache.cxf.common.logging;version="[3.3,4)"
+ ,org.apache.cxf.common.security;version="[3.3,4)",org.apache.cxf.conf
+ iguration.security;version="[3.3,4)",org.apache.cxf.helpers;version="
+ [3.3,4)",org.apache.cxf.interceptor;version="[3.3,4)",org.apache.cxf.
+ interceptor.security;version="[3.3,4)",org.apache.cxf.message;version
+ ="[3.3,4)",org.apache.cxf.phase;version="[3.3,4)",org.apache.cxf.rt.s
+ ecurity.claims;version="[3.3,4)",org.apache.cxf.rt.security.saml.clai
+ ms,org.apache.cxf.rt.security.saml.utils,org.apache.cxf.rt.security.s
+ aml.xacml,org.apache.cxf.rt.security.utils;version="[3.3,4)",org.apac
+ he.cxf.security;version="[3.3,4)",org.apache.wss4j.common.ext;version
+ ="[2.2,3)",org.apache.wss4j.common.principal;version="[2.2,3)",org.ap
+ ache.wss4j.common.saml;version="[2.2,3)",org.apache.wss4j.common.util
+ ;version="[2.2,3)",org.apache.wss4j.dom.handler;version="[2.2,3)",org
+ .apache.wss4j.dom.message.token;version="[2.2,3)",org.apache.wss4j.do
+ m.validate;version="[2.2,3)",org.joda.time;version="[2.9,3)",org.w3c.
+ dom
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

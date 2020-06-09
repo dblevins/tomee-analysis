@@ -1,0 +1,19 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Geronimo Microprofile Configuration :: Impl
+
+
+From: 'Eclipse Foundation' (http://www.eclipse.org/)
+  - MicroProfile Config API (http://microprofile.io/microprofile-config-api) org.eclipse.microprofile.config:microprofile-config-api:jar:1.3
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'OSGi Alliance' (http://www.osgi.org/)
+  - org.osgi:org.osgi.annotation.versioning (http://www.osgi.org/) org.osgi:org.osgi.annotation.versioning:jar:1.0.0
+    License: Apache License, Version 2.0  (http://opensource.org/licenses/apache2.0.php)
+
+
+
+

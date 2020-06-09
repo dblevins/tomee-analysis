@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1546001179192
+Build-Jdk: 11
+Built-By: default
+Bundle-Description: Provides a streaming API to access attachments par
+ ts in a MIME message.; Jarkata Enabled
+Bundle-DocURL: https://www.eclipse.org
+Bundle-License: http://www.eclipse.org/org/documents/edl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: MIME streaming extension Jakarta
+Bundle-SymbolicName: org.jvnet.mimepull.jakarta
+Bundle-Vendor: Eclipse Foundation
+Bundle-Version: 1.9.11
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.jvnet.mimepull;version="1.9.11"
+Implementation-Build-Id: 1.9.11-5a60527, 2018-12-28T12:45:24+0000
+Implementation-Vendor: Oracle Corporation
+Tool: Bnd-3.5.0.201709291849
+

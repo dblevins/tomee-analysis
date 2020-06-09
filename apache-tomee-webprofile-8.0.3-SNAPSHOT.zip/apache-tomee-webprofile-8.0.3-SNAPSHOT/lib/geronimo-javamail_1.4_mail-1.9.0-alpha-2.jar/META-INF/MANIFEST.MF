@@ -1,0 +1,59 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1443073177940
+Build-Jdk: 1.8.0_45
+Built-By: rmannibu
+Bundle-Activator: org.apache.geronimo.mail.Activator
+Bundle-Description: Geronimmo JavaMail Bundle.; Jarkata Enabled
+Bundle-DocURL: http://geronimo.apache.org/maven/javamail/geronimo-java
+ mail_1.4_mail/1.9.0-alpha-2/geronimo-javamail_1.4_mail
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Geronimo JavaMail 1.4 :: Mail Jakarta
+Bundle-SymbolicName: org.apache.geronimo.javamail.geronimo-javamail_1.
+ 4_mail.jakarta;singleton=true
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.9.0.alpha-2
+Created-By: Apache Maven Bundle Plugin
+Export-Package: jakarta.mail.internet;uses:="jakarta.mail,jakarta.acti
+ vation,org.apache.geronimo.mail.james.mime4j.codec";version="1.4",jak
+ arta.mail.event;uses:="jakarta.mail";version="1.4",jakarta.mail.util;
+ uses:="jakarta.mail.internet,jakarta.activation";version="1.4",jakart
+ a.mail;uses:="jakarta.mail.event,jakarta.mail.search,jakarta.activati
+ on";version="1.4",jakarta.mail.search;uses:="jakarta.mail";version="1
+ .4",org.apache.geronimo.javamail.handlers;uses:="javax.imageio.stream
+ ,javax.imageio,javax.imageio.metadata,jakarta.activation,jakarta.mail
+ .internet,jakarta.mail";version="1.4",org.apache.geronimo.javamail.st
+ ore.imap;uses:="jakarta.mail,org.apache.geronimo.javamail.store.imap.
+ connection,jakarta.mail.event,jakarta.mail.search,jakarta.mail.intern
+ et,jakarta.activation";version="1.4",org.apache.geronimo.javamail.sto
+ re.nntp;uses:="jakarta.mail,org.apache.geronimo.javamail.transport.nn
+ tp,jakarta.mail.event,org.apache.geronimo.javamail.store.nntp.newsrc,
+ jakarta.mail.internet";version="1.4",org.apache.geronimo.javamail.sto
+ re.pop3.connection;uses:="jakarta.mail,org.apache.geronimo.javamail.s
+ tore.pop3";version="1.4",org.apache.geronimo.javamail.store.imap.conn
+ ection;uses:="jakarta.mail,org.apache.geronimo.javamail.store.imap,ja
+ karta.mail.internet,jakarta.mail.search";version="1.4",org.apache.ger
+ onimo.javamail.store.nntp.newsrc;version="1.4",org.apache.geronimo.ja
+ vamail.store.pop3;uses:="jakarta.mail,jakarta.mail.event,org.apache.g
+ eronimo.javamail.store.pop3.connection,jakarta.mail.internet";version
+ ="1.4",org.apache.geronimo.javamail.transport.nntp;uses:="jakarta.mai
+ l,jakarta.mail.internet,jakarta.mail.event";version="1.4",org.apache.
+ geronimo.javamail.transport.smtp;uses:="jakarta.mail,jakarta.mail.int
+ ernet,jakarta.mail.event";version="1.4",org.apache.geronimo.mail.hand
+ lers;uses:="jakarta.activation,jakarta.mail,jakarta.mail.internet";ve
+ rsion="1.4"
+Implementation-Title: Geronimo JavaMail 1.4 :: Mail
+Implementation-Version: 1.9.0-alpha-2
+Import-Package: jakarta.activation;version="[1.1,2)",javax.imageio;res
+ olution:=optional,javax.imageio.metadata;resolution:=optional,javax.i
+ mageio.stream;resolution:=optional,javax.net,javax.net.ssl;resolution
+ :=optional,javax.security.auth.callback;resolution:=optional,javax.se
+ curity.sasl;resolution:=optional,org.apache.geronimo.mail.james.mime4
+ j.codec,org.apache.geronimo.osgi.registry.api;resolution:=optional,or
+ g.osgi.framework;version="[1.5,2)",org.osgi.service.log;version="[1.3
+ ,2)",org.osgi.util.tracker;version="[1.4,2)"
+Specification-Title: JSR-919 Javamail API 1.4 merged bundle
+Specification-Vendor: Sun Microsystems, Inc.
+Specification-Version: 1.4
+Tool: Bnd-1.50.0
+

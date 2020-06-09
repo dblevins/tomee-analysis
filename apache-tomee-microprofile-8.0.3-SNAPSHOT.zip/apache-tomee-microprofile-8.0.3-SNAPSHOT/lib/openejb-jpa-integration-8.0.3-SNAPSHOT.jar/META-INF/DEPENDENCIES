@@ -1,0 +1,71 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+TomEE :: Container :: JPA Integration
+
+
+From: 'an unknown organization'
+  - AntLR Parser Generator (http://www.antlr.org/) antlr:antlr:jar:2.7.7
+    License: BSD License  (http://www.antlr.org/license.html)
+  - javax.persistence-api (https://github.com/javaee/jpa-spec) javax.persistence:javax.persistence-api:jar:2.2
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - Byte Buddy (without dependencies) (https://bytebuddy.net/byte-buddy) net.bytebuddy:byte-buddy:jar:1.10.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - dom4j (http://dom4j.github.io/) org.dom4j:dom4j:jar:2.1.1
+    License: BSD 3-clause New License  (https://github.com/dom4j/dom4j/blob/master/LICENSE)
+  - Extended StAX API (http://stax-ex.java.net/) org.jvnet.staxex:stax-ex:jar:1.8
+    License: Dual license consisting of the CDDL v1.1 and GPL v2  (https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html)
+
+From: 'Eclipse.org - EclipseLink Project' (http://www.eclipse.org/eclipselink)
+  - SDO API (http://www.eclipse.org/eclipselink) org.eclipse.persistence:commonj.sdo:jar:2.1.1
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - EclipseLink (non-OSGi) (http://www.eclipse.org/eclipselink) org.eclipse.persistence:eclipselink:jar:2.7.4
+    License: Eclipse Public License v. 2.0  (http://www.eclipse.org/legal/epl-v20.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - Java Persistence (http://www.eclipse.org/eclipselink) org.eclipse.persistence:jakarta.persistence:jar:2.2.2
+    License: Eclipse Public License v. 2.0  (http://www.eclipse.org/legal/epl-v20.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+From: 'fasterxml.com' (https://fasterxml.com)
+  - ClassMate (https://github.com/FasterXML/java-classmate) com.fasterxml:classmate:bundle:1.5.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Hibernate.org' (http://hibernate.org)
+  - Hibernate ORM - hibernate-core (http://hibernate.org/orm) org.hibernate:hibernate-core:jar:5.4.10.Final
+    License: GNU Library General Public License v2.1 or later  (http://www.opensource.org/licenses/LGPL-2.1)
+  - Hibernate ORM - hibernate-entitymanager (http://hibernate.org/orm) org.hibernate:hibernate-entitymanager:jar:5.4.10.Final
+    License: GNU Library General Public License v2.1 or later  (http://www.opensource.org/licenses/LGPL-2.1)
+  - Hibernate Commons Annotations (http://hibernate.org) org.hibernate.common:hibernate-commons-annotations:jar:5.1.0.Final
+    License: GNU Library General Public License v2.1 or later  (http://www.opensource.org/licenses/LGPL-2.1)
+
+From: 'JBoss by Red Hat' (http://www.jboss.org)
+  - Java Annotation Indexer (http://www.jboss.org/jandex) org.jboss:jandex:bundle:2.1.1.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Java Transaction API (http://www.jboss.org/jboss-transaction-api_1.2_spec) org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.1.1.Final
+    License: Common Development and Distribution License  (http://repository.jboss.org/licenses/cddl.txt)    License: GNU General Public License, Version 2 with the Classpath Exception  (http://repository.jboss.org/licenses/gpl-2.0-ce.txt)
+
+From: 'Oracle' (http://www.oracle.com)
+  - JavaBeans Activation Framework API jar (http://java.net/all/javax.activation-api/) javax.activation:javax.activation-api:jar:1.2.0
+    License: CDDL/GPLv2+CE  (https://github.com/javaee/activation/blob/master/LICENSE.txt)
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - istack common utility code runtime (http://java.net/istack-commons/istack-commons-runtime/) com.sun.istack:istack-commons-runtime:jar:3.0.7
+    License: CDDL 1.1  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - jaxb-api (https://github.com/javaee/jaxb-spec/jaxb-api) javax.xml.bind:jaxb-api:jar:2.3.1
+    License: CDDL 1.1  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)    License: GPL2 w/ CPE  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)
+  - JAXB Runtime (http://jaxb.java.net/jaxb-runtime-parent/jaxb-runtime) org.glassfish.jaxb:jaxb-runtime:jar:2.3.1
+    License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - TXW2 Runtime (http://jaxb.java.net/jaxb-txw-parent/txw2) org.glassfish.jaxb:txw2:jar:2.3.1
+    License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+
+From: 'Oracle Corpration' (http://www.oracle.com)
+  - fastinfoset (http://fi.java.net) com.sun.xml.fastinfoset:FastInfoset:jar:1.2.15
+    License: Apache License, Version 2.0  (http://www.opensource.org/licenses/apache2.0.php)
+
+From: 'Shigeru Chiba, www.javassist.org'
+  - Javassist (http://www.javassist.org/) org.javassist:javassist:bundle:3.24.0-GA
+    License: MPL 1.1  (http://www.mozilla.org/MPL/MPL-1.1.html)    License: LGPL 2.1  (http://www.gnu.org/licenses/lgpl-2.1.html)    License: Apache License 2.0  (http://www.apache.org/licenses/)
+
+
+
+

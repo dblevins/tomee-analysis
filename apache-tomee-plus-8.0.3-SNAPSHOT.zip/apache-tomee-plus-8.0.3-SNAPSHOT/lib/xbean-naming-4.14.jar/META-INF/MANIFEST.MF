@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.xbean.naming
+Bnd-LastModified: 1558615072626
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: xbean-naming implements a flexible non-persistent 
+ jndi provider; Jarkata Enabled
+Bundle-DocURL: http://geronimo.apache.org/maven/xbean/4.14/xbean-namin
+ g
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache XBean :: Naming Jakarta
+Bundle-SymbolicName: org.apache.xbean.naming.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 4.14.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.xbean.naming.context;version="4.14";uses:="
+ javax.naming",org.apache.xbean.naming.global;version="4.14";uses:="ja
+ vax.naming,javax.naming.spi",org.apache.xbean.naming.java;version="4.
+ 14";uses:="org.apache.xbean.naming.global",org.apache.xbean.naming.re
+ ference;version="4.14";uses:="javax.naming,javax.naming.spi"
+Implementation-Title: Apache XBean :: Naming
+Implementation-Version: 4.14
+Import-Package: javax.naming,javax.naming.spi
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-4.0.0.201805111645
+

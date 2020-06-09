@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: Geronimo Microprofile Configuration :: Impl
+Implementation-Version: 1.2.1
+Archiver-Version: Plexus Archiver
+Built-By: rmannibucau
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Geronimo Microprofile Configuration :: Impl
+Implementation-Vendor-Id: org.apache.geronimo.config
+Implementation-Vendor: The Apache Software Foundation
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_191
+Specification-Version: 1.2
+Implementation-URL: https://www.apache.org/geronimo-config/geronimo-co
+ nfig-impl/
+

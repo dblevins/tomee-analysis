@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.8.0_242
+Bundle-Description: Apache Johnzon is an implementation of JSR-353 (Ja
+ vaTM API for JSON Processing).; Jarkata Enabled
+Bundle-DocURL: http://johnzon.apache.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Johnzon :: Mapper Jakarta
+Bundle-SymbolicName: org.apache.johnzon.mapper.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.5
+Export-Package: org.apache.johnzon.mapper;uses:="jakarta.json,jakarta.
+ json.spi,jakarta.json.stream,org.apache.johnzon.core,org.apache.johnz
+ on.mapper.access,org.apache.johnzon.mapper.internal,org.apache.johnzo
+ n.mapper.reflection";version="1.2.5",org.apache.johnzon.mapper.jsonp;
+ uses:="jakarta.json,jakarta.json.stream";version="1.2.5",org.apache.j
+ ohnzon.mapper.access;uses:="org.apache.johnzon.mapper";version="1.2.5
+ ",org.apache.johnzon.mapper.number;version="1.2.5",org.apache.johnzon
+ .mapper.util;version="1.2.5",org.apache.johnzon.mapper.converter;uses
+ :="org.apache.johnzon.mapper";version="1.2.5",org.apache.johnzon.mapp
+ er.reflection;uses:="org.apache.johnzon.mapper";version="1.2.5",org.a
+ pache.johnzon.mapper.internal;uses:="org.apache.johnzon.mapper";versi
+ on="1.2.5"
+Implementation-Title: Johnzon :: Mapper
+Implementation-URL: http://johnzon.apache.org/johnzon-mapper
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.johnzon
+Implementation-Version: 1.2.5
+Import-Package: jakarta.json,jakarta.json.spi,jakarta.json.stream,org.
+ apache.johnzon.core;version="[1.2,2)",org.apache.johnzon.mapper,org.a
+ pache.johnzon.mapper.access,org.apache.johnzon.mapper.converter,org.a
+ pache.johnzon.mapper.internal,org.apache.johnzon.mapper.number,org.ap
+ ache.johnzon.mapper.reflection,org.apache.johnzon.mapper.util
+Require-Capability: osgi.contract;osgi.contract=JavaJSONP;filter:="(&(
+ osgi.contract=JavaJSONP)(version=1.1.0))",osgi.ee;filter:="(&(osgi.ee
+ =JavaSE)(version=1.8))"
+Specification-Title: Johnzon :: Mapper
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.2.5
+

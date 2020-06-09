@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.mp-common
+Bnd-LastModified: 1591729287530
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: TomEE :: MicroProfile Common Jakarta
+Bundle-SymbolicName: org.apache.tomee.mp-common.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.tomee.microprofile;version="8.0.3.SNAPSHOT"
+ ;uses:="org.apache.openejb.config.event,org.apache.openejb.observer,o
+ rg.apache.openejb.observer.event,org.apache.openejb.spi,org.apache.to
+ mee.catalina.event",org.apache.tomee.microprofile.config;version="8.0
+ .3.SNAPSHOT";uses:="jakarta.enterprise.inject.spi,jakarta.ws.rs.core,
+ org.apache.geronimo.microprofile.openapi.cdi,org.eclipse.microprofile
+ .config.spi,org.eclipse.microprofile.openapi.models"
+Implementation-Title: TomEE :: TomEE :: MicroProfile Common
+Implementation-URL: http://tomee.apache.org/tomee/tomee-microprofile/m
+ p-common
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: com.fasterxml.jackson.databind;version="[2.10,3)",jaka
+ rta.enterprise.event,jakarta.enterprise.inject,jakarta.enterprise.inj
+ ect.spi,jakarta.json,jakarta.servlet,jakarta.ws.rs,jakarta.ws.rs.core
+ ,org.apache.geronimo.microprofile.common.jaxrs;version="[1.0,2)",org.
+ apache.geronimo.microprofile.impl.health.cdi,org.apache.geronimo.micr
+ oprofile.metrics.common.jaxrs;version="[1.0,2)",org.apache.geronimo.m
+ icroprofile.metrics.jaxrs,org.apache.geronimo.microprofile.openapi.cd
+ i,org.apache.geronimo.microprofile.openapi.config,org.apache.geronimo
+ .microprofile.openapi.impl.filter,org.apache.geronimo.microprofile.op
+ enapi.impl.loader,org.apache.geronimo.microprofile.openapi.impl.loade
+ r.yaml,org.apache.geronimo.microprofile.openapi.impl.model,org.apache
+ .geronimo.microprofile.openapi.impl.processor,org.apache.geronimo.mic
+ roprofile.openapi.impl.processor.spi,org.apache.geronimo.microprofile
+ .openapi.jaxrs,org.apache.openejb;version="[8.0,9)",org.apache.openej
+ b.assembler.classic;version="[8.0,9)",org.apache.openejb.config.event
+ ;version="[8.0,9)",org.apache.openejb.loader,org.apache.openejb.obser
+ ver,org.apache.openejb.observer.event,org.apache.openejb.spi;version=
+ "[8.0,9)",org.apache.openejb.util;version="[8.0,9)",org.apache.tomee.
+ catalina.event;version="[8.0,9)",org.apache.tomee.installer;version="
+ [8.0,9)",org.eclipse.microprofile.config.spi;version="[1.3,2)",org.ec
+ lipse.microprofile.openapi;version="[1.0,2)",org.eclipse.microprofile
+ .openapi.models;version="[1.0,2)",org.eclipse.microprofile.rest.clien
+ t.inject;version="[1.2,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: TomEE :: MicroProfile Common
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

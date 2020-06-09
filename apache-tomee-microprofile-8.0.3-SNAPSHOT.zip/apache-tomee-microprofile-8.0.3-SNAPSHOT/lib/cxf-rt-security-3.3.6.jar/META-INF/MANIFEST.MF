@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.security
+Bnd-LastModified: 1585152529164
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime Security functionality; Jarkata
+  Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime Security functionality Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-security.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.rt.security.crypto;version="3.3.6",org.
+ apache.cxf.rt.security;version="3.3.6",org.apache.cxf.rt.security.uti
+ ls;version="3.3.6",org.apache.cxf.rt.security.rs;version="3.3.6",org.
+ apache.cxf.rt.security.claims;version="3.3.6",org.apache.cxf.rt.secur
+ ity.claims.interceptor;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: javax.crypto,javax.crypto.spec,javax.security.auth,jav
+ ax.security.auth.callback,javax.xml.stream,org.apache.cxf;version="[3
+ .3,4)",org.apache.cxf.common.classloader;version="[3.3,4)",org.apache
+ .cxf.common.logging;version="[3.3,4)",org.apache.cxf.common.util;vers
+ ion="[3.3,4)",org.apache.cxf.helpers;version="[3.3,4)",org.apache.cxf
+ .interceptor;version="[3.3,4)",org.apache.cxf.interceptor.security;ve
+ rsion="[3.3,4)",org.apache.cxf.message;version="[3.3,4)",org.apache.c
+ xf.phase;version="[3.3,4)",org.apache.cxf.resource;version="[3.3,4)",
+ org.apache.cxf.rt.security.claims,org.apache.cxf.security;version="[3
+ .3,4)",org.apache.cxf.security.claims.authorization;version="[3.3,4)"
+ ,org.apache.cxf.service;version="[3.3,4)",org.apache.cxf.service.invo
+ ker;version="[3.3,4)",org.apache.cxf.service.model;version="[3.3,4)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

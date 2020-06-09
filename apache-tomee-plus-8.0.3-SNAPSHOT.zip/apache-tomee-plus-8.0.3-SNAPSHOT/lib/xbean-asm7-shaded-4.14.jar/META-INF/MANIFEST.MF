@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.xbean.asm7.shaded
+Bnd-LastModified: 1558615093042
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: Repackaged and shaded asm jars; Jarkata Enabled
+Bundle-DocURL: http://geronimo.apache.org/maven/xbean/4.14/xbean-asm7-
+ shaded
+Bundle-License: http://asm.ow2.org/license.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache XBean :: ASM shaded (repackaged) Jakarta
+Bundle-SymbolicName: org.apache.xbean.asm7-shaded.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 4.14.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.xbean.asm7.shade.commons;version=7.1,org.ap
+ ache.xbean.asm7;version=7.1,org.apache.xbean.asm7.signature;version=7
+ .1,org.apache.xbean.asm7.commons;version=7.1,org.apache.xbean.asm7.tr
+ ee;version=7.1
+Implementation-Title: Apache XBean :: ASM shaded (repackaged)
+Implementation-Version: 4.14
+Import-Package: org.apache.xbean.asm7.shade.commons;version="[7.1,7.1]
+ ",org.apache.xbean.asm7;version="[7.1,7.1]",org.apache.xbean.asm7.sig
+ nature;version="[7.1,7.1]",org.apache.xbean.asm7.commons;version="[7.
+ 1,7.1]",org.apache.xbean.asm7.tree;version="[7.1,7.1]"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-4.0.0.201805111645
+

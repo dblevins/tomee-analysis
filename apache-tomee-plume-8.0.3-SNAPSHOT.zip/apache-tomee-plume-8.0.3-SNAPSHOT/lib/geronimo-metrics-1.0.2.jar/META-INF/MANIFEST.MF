@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: Geronimo Metrics :: Impl
+Automatic-Module-Name: org.apache.geronimo.microprofile.metrics
+Implementation-Version: 1.0.2
+Built-By: rmannibucau
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Geronimo Metrics :: Impl
+Implementation-Vendor-Id: org.apache.geronimo
+Implementation-Vendor: The Apache Software Foundation
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_191
+Specification-Version: 1.0
+Implementation-URL: https://www.apache.org/geronimo-metrics-parent/ger
+ onimo-metrics/
+

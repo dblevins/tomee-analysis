@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.rs.providers
+Bnd-LastModified: 1585152556748
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF JAX-RS Extensions: Providers; Jarkata E
+ nabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF JAX-RS Extensions: Providers Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-rs-extension-providers.jaka
+ rta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.jaxrs.provider.dom4j;version="3.3.6",or
+ g.apache.cxf.jaxrs.provider.jsrjsonp;version="3.3.6",org.apache.cxf.j
+ axrs.provider.atom;version="3.3.6",org.apache.cxf.jaxrs.provider.aegi
+ s;version="3.3.6",org.apache.cxf.jaxrs.provider.json;version="3.3.6",
+ org.apache.cxf.jaxrs.provider.json.utils;version="3.3.6",org.apache.c
+ xf.jaxrs.provider.jsonp;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.servlet;version="[0,4.1)";resolution:=optional
+ ,jakarta.servlet.http;version="[0,4.1)";resolution:=optional,jakarta.
+ xml.bind;version="[0,3)",jakarta.xml.bind.annotation.adapters;version
+ ="[0,3)",jakarta.json;version="[1.1,2)";resolution:=optional,jakarta.
+ ws.rs;version="[2.1,3)",jakarta.ws.rs.core;version="[2.1,3)",jakarta.
+ ws.rs.ext;version="[2.1,3)",javax.xml.namespace,javax.xml.stream,org.
+ apache.abdera;version="[1.1,2)";resolution:=optional,org.apache.abder
+ a.factory;version="[1.1,2)";resolution:=optional,org.apache.abdera.mo
+ del;version="[1.1,2)";resolution:=optional,org.apache.abdera.parser;v
+ ersion="[1.1,2)";resolution:=optional,org.apache.abdera.writer;versio
+ n="[1.1,2)";resolution:=optional,org.apache.cxf.aegis;version="[3.3,4
+ )";resolution:=optional,org.apache.cxf.aegis.type;version="[3.3,4)";r
+ esolution:=optional,org.apache.cxf.common.jaxb;version="[3.3,4)",org.
+ apache.cxf.common.logging;version="[3.3,4)",org.apache.cxf.common.uti
+ l;version="[3.3,4)",org.apache.cxf.helpers;version="[3.3,4)",org.apac
+ he.cxf.interceptor;version="[3.3,4)",org.apache.cxf.io;version="[3.3,
+ 4)",org.apache.cxf.jaxrs.ext;version="[3.3,4)",org.apache.cxf.jaxrs.j
+ son.basic;version="[3.3,4)";resolution:=optional,org.apache.cxf.jaxrs
+ .provider;version="[3.3,4)",org.apache.cxf.jaxrs.provider.json.utils,
+ org.apache.cxf.jaxrs.utils;version="[3.3,4)",org.apache.cxf.message;v
+ ersion="[3.3,4)",org.apache.cxf.phase;version="[3.3,4)",org.apache.cx
+ f.staxutils;version="[3.3,4)",org.apache.cxf.staxutils.transform;vers
+ ion="[3.3,4)",org.codehaus.jettison;version="[1.4,2)";resolution:=opt
+ ional,org.codehaus.jettison.badgerfish;version="[1.4,2)";resolution:=
+ optional,org.codehaus.jettison.json;version="[1.4,2)";resolution:=opt
+ ional,org.codehaus.jettison.mapped;version="[1.4,2)";resolution:=opti
+ onal,org.codehaus.jettison.util;version="[1.4,2)";resolution:=optiona
+ l,org.dom4j;resolution:=optional,org.dom4j.io;resolution:=optional,or
+ g.w3c.dom;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

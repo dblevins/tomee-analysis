@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.server.hsql
+Bnd-LastModified: 1591729271767
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: Server :: Hsql Jakarta
+Bundle-SymbolicName: org.apache.tomee.openejb-hsql.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Implementation-Title: TomEE :: Server :: Hsql
+Implementation-URL: http://tomee.apache.org/server/openejb-hsql
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: javax.naming,javax.sql,org.apache.openejb.loader,org.a
+ pache.openejb.resource.jdbc.plugin;version="[8.0,9)",org.apache.opene
+ jb.server,org.apache.openejb.spi;version="[8.0,9)",org.apache.openejb
+ .util;version="[8.0,9)",org.hsqldb,org.hsqldb.persist,org.hsqldb.serv
+ er
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: Server :: Hsql
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

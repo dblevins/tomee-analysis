@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711046719
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-jasper Jakarta
+Bundle-SymbolicName: org.apache.tomcat-jasper.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: org.apache.jasper;uses:="jakarta.servlet,jakarta.servl
+ et.jsp.tagext,org.apache.jasper.compiler,org.apache.jasper.servlet,or
+ g.apache.tomcat,org.apache.tomcat.util.descriptor.tld,org.apache.tool
+ s.ant",org.apache.jasper.compiler;uses:="jakarta.el,jakarta.servlet,j
+ akarta.servlet.jsp.tagext,org.apache.jasper,org.apache.jasper.compile
+ r.tagplugin,org.apache.jasper.servlet,org.apache.jasper.util,org.apac
+ he.tomcat,org.apache.tomcat.util.descriptor.tld,org.apache.tools.ant,
+ org.xml.sax",org.apache.jasper.compiler.tagplugin,org.apache.jasper.e
+ l;uses:="jakarta.el,jakarta.servlet.jsp.el",org.apache.jasper.runtime
+ ;uses:="jakarta.el,jakarta.servlet,jakarta.servlet.http,jakarta.servl
+ et.jsp,jakarta.servlet.jsp.el,jakarta.servlet.jsp.tagext,org.apache.j
+ asper,org.apache.jasper.el,org.apache.tomcat",org.apache.jasper.secur
+ ity,org.apache.jasper.servlet;uses:="jakarta.servlet,jakarta.servlet.
+ descriptor,jakarta.servlet.http,jakarta.servlet.jsp.tagext,org.apache
+ .jasper,org.apache.jasper.compiler,org.apache.jasper.util,org.apache.
+ tomcat,org.apache.tomcat.util.descriptor.tld,org.xml.sax",org.apache.
+ jasper.tagplugins.jstl;uses:="jakarta.servlet,jakarta.servlet.http,ja
+ karta.servlet.jsp",org.apache.jasper.tagplugins.jstl.core;uses:="jaka
+ rta.servlet.jsp,org.apache.jasper.compiler.tagplugin",org.apache.jasp
+ er.util;uses:="org.xml.sax,org.xml.sax.helpers"
+Implementation-Title: Apache Tomcat
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 9.0.35
+Import-Package: jakarta.el,jakarta.servlet,jakarta.servlet.descriptor,
+ jakarta.servlet.http,jakarta.servlet.jsp,jakarta.servlet.jsp.el,jakar
+ ta.servlet.jsp.tagext,javax.xml.parsers,javax.xml.stream,org.apache.e
+ l.util,org.apache.jasper,org.apache.jasper.compiler,org.apache.jasper
+ .compiler.tagplugin,org.apache.jasper.el,org.apache.jasper.runtime,or
+ g.apache.jasper.security,org.apache.jasper.servlet,org.apache.jasper.
+ tagplugins.jstl,org.apache.jasper.util,org.apache.juli.logging,org.ap
+ ache.tomcat,org.apache.tomcat.util.descriptor,org.apache.tomcat.util.
+ descriptor.tagplugin,org.apache.tomcat.util.descriptor.tld,org.apache
+ .tomcat.util.descriptor.web,org.apache.tomcat.util.digester,org.apach
+ e.tomcat.util.scan,org.apache.tomcat.util.security,org.apache.tools.a
+ nt,org.apache.tools.ant.taskdefs,org.apache.tools.ant.types,org.apach
+ e.tools.ant.util,org.eclipse.jdt.core.compiler,org.eclipse.jdt.intern
+ al.compiler,org.eclipse.jdt.internal.compiler.classfmt,org.eclipse.jd
+ t.internal.compiler.env,org.eclipse.jdt.internal.compiler.impl,org.ec
+ lipse.jdt.internal.compiler.problem,org.graalvm.nativeimage,org.xml.s
+ ax,org.xml.sax.ext,org.xml.sax.helpers
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Private-Package: org.apache.jasper.resources
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache Tomcat
+Specification-Vendor: Apache Software Foundation
+Specification-Version: 9.0
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+

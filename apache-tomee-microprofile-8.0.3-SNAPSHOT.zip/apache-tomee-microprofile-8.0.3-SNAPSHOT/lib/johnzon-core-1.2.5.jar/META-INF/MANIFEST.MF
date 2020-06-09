@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.8.0_242
+Bundle-Description: Apache Johnzon is an implementation of JSR-353 (Ja
+ vaTM API for JSON Processing).; Jarkata Enabled
+Bundle-DocURL: http://johnzon.apache.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Johnzon :: Core Jakarta
+Bundle-SymbolicName: org.apache.johnzon.core.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.5
+Export-Package: org.apache.johnzon.core;uses:="jakarta.json,jakarta.js
+ on.spi,jakarta.json.stream";version="1.2.5",org.apache.johnzon.core.u
+ til;version="1.2.5"
+Implementation-Title: Johnzon :: Core
+Implementation-URL: http://johnzon.apache.org/johnzon-core
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.johnzon
+Implementation-Version: 1.2.5
+Import-Package: jakarta.json,jakarta.json.spi,jakarta.json.stream,org.
+ apache.johnzon.core.util
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="jakarta.jso
+ n.spi.JsonProvider"
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.service
+ loader.registrar)",osgi.contract;osgi.contract=JavaJSONP;filter:="(&(
+ osgi.contract=JavaJSONP)(version=1.1.0))",osgi.ee;filter:="(&(osgi.ee
+ =JavaSE)(version=1.8))"
+Specification-Title: Johnzon :: Core
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.2.5
+

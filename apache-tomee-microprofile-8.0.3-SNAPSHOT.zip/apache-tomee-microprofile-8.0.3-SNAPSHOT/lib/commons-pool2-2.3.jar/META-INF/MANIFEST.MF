@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1419629658781
+Build-Jdk: 1.7.0_71
+Built-By: psteitz
+Bundle-Description: Apache Commons Object Pooling Library; Jarkata Ena
+ bled
+Bundle-DocURL: http://commons.apache.org/proper/commons-pool/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons Pool Jakarta
+Bundle-SymbolicName: org.apache.commons.pool2.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.3.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.pool2;version="2.3",org.apache.comm
+ ons.pool2.impl;version="2.3",org.apache.commons.pool2.proxy;version="
+ 2.3"
+Implementation-Build: tags/POOL_2_3_RC2@r1648018; 2014-12-26 21:34:15+
+ 0000
+Implementation-Title: Apache Commons Pool
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.3
+Import-Package: net.sf.cglib.proxy;resolution:=optional,javax.manageme
+ nt
+Include-Resource: META-INF/LICENSE.txt=LICENSE.txt,META-INF/NOTICE.txt
+ =NOTICE.txt
+Specification-Title: Apache Commons Pool
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.3
+Tool: Bnd-2.1.0.20130426-122213
+X-Compile-Source-JDK: 1.6
+X-Compile-Target-JDK: 1.6
+

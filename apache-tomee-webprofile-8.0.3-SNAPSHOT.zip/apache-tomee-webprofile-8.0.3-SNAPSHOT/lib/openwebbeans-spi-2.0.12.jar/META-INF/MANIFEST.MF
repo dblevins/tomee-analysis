@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Bnd-LastModified: 1569830451291
+Build-Jdk: 1.8.0_202
+Built-By: rmannibucau
+Bundle-Description: Apache OpenWebBeans Service Provider Interfaces; J
+ arkata Enabled
+Bundle-DocURL: http://apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: SPI definition Jakarta
+Bundle-SymbolicName: openwebbeans-spi.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.12
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.webbeans.spi;version="2.0.12";uses:="jakart
+ a.enterprise.context,jakarta.enterprise.context.spi,jakarta.enterpris
+ e.event,jakarta.enterprise.inject.spi,jakarta.transaction,jakarta.val
+ idation,org.apache.webbeans.spi.api",org.apache.webbeans.spi.adaptor;
+ version="2.0.12";uses:="jakarta.el",org.apache.webbeans.spi.api;versi
+ on="2.0.12",org.apache.webbeans.spi.plugins;version="2.0.12";uses:="j
+ akarta.enterprise.context.spi,jakarta.enterprise.inject.spi"
+Implementation-Title: SPI definition
+Implementation-URL: openwebbeans.apache.org/openwebbeans-spi
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.0.12
+Import-Package: jakarta.el;version="2.2";resolution:=optional,jakarta.
+ enterprise.context;version="[2.0,3)",jakarta.enterprise.context.spi;v
+ ersion="[2.0,3)",jakarta.enterprise.event;version="[2.0,3)",jakarta.e
+ nterprise.inject.spi;version="[2.0,3)",jakarta.transaction;version="[
+ 1.1,2)";resolution:=optional,jakarta.validation;version="[1.0,2)";res
+ olution:=optional,org.apache.webbeans.spi.api;version="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: SPI definition
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.0.12
+Tool: Bnd-3.3.0.201609221906
+

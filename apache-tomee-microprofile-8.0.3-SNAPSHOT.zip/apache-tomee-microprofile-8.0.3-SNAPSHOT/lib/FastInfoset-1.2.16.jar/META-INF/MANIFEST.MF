@@ -1,0 +1,69 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1545921168695
+Build-Jdk: 11
+Built-By: default
+Bundle-Description: Open Source implementation of the Fast Infoset Sta
+ ndard for Binary XML (http://www.itu.int/ITU-T/asn1/).; Jarkata Enabl
+ ed
+Bundle-DocURL: https://www.eclipse.org
+Bundle-License: http://www.opensource.org/licenses/apache2.0.php, http
+ ://www.eclipse.org/org/documents/edl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: fastinfoset Jakarta
+Bundle-SymbolicName: com.sun.xml.fastinfoset.FastInfoset.jakarta
+Bundle-Vendor: Eclipse Foundation
+Bundle-Version: 1.2.16
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.sun.xml.fastinfoset.algorithm;uses:="org.jvnet.fas
+ tinfoset";version="1.2.16",com.sun.xml.fastinfoset.tools;uses:="com.s
+ un.xml.fastinfoset.util,com.sun.xml.fastinfoset.vocab,javax.xml.strea
+ m,org.jvnet.fastinfoset,org.xml.sax,org.xml.sax.ext,org.xml.sax.helpe
+ rs";version="1.2.16",com.sun.xml.fastinfoset.sax;uses:="com.sun.xml.f
+ astinfoset,com.sun.xml.fastinfoset.algorithm,com.sun.xml.fastinfoset.
+ util,org.jvnet.fastinfoset,org.jvnet.fastinfoset.sax,org.xml.sax,org.
+ xml.sax.ext";version="1.2.16",com.sun.xml.fastinfoset;uses:="com.sun.
+ xml.fastinfoset.util,com.sun.xml.fastinfoset.vocab,javax.xml.namespac
+ e,org.jvnet.fastinfoset,org.xml.sax.helpers";version="1.2.16",com.sun
+ .xml.fastinfoset.vocab;uses:="com.sun.xml.fastinfoset.util,org.jvnet.
+ fastinfoset";version="1.2.16",com.sun.xml.fastinfoset.util;uses:="com
+ .sun.xml.fastinfoset,javax.xml.namespace,org.jvnet.fastinfoset";versi
+ on="1.2.16",com.sun.xml.fastinfoset.org.apache.xerces.util;version="1
+ .2.16",com.sun.xml.fastinfoset.stax.events;uses:="javax.xml.namespace
+ ,javax.xml.stream,javax.xml.stream.events,javax.xml.stream.util";vers
+ ion="1.2.16",com.sun.xml.fastinfoset.stax.util;uses:="javax.xml.names
+ pace,javax.xml.stream";version="1.2.16",com.sun.xml.fastinfoset.stax;
+ uses:="com.sun.xml.fastinfoset,com.sun.xml.fastinfoset.sax,com.sun.xm
+ l.fastinfoset.util,javax.xml.namespace,javax.xml.stream,org.jvnet.fas
+ tinfoset,org.jvnet.fastinfoset.stax";version="1.2.16",com.sun.xml.fas
+ tinfoset.stax.factory;uses:="javax.xml.namespace,javax.xml.stream,jav
+ ax.xml.stream.events,javax.xml.stream.util,javax.xml.transform";versi
+ on="1.2.16",com.sun.xml.fastinfoset.alphabet;version="1.2.16",com.sun
+ .xml.fastinfoset.dom;uses:="com.sun.xml.fastinfoset,com.sun.xml.fasti
+ nfoset.util,org.jvnet.fastinfoset,org.w3c.dom";version="1.2.16",org.j
+ vnet.fastinfoset;uses:="javax.xml.transform.sax,org.xml.sax,org.xml.s
+ ax.ext";version="1.2.16",org.jvnet.fastinfoset.sax;uses:="org.jvnet.f
+ astinfoset,org.xml.sax,org.xml.sax.ext";version="1.2.16",org.jvnet.fa
+ stinfoset.sax.helpers;uses:="org.jvnet.fastinfoset.sax,org.xml.sax,or
+ g.xml.sax.ext,org.xml.sax.helpers";version="1.2.16",org.jvnet.fastinf
+ oset.stax;uses:="javax.xml.stream";version="1.2.16"
+Extension-Name: com.sun.xml.fastinfoset
+Implementation-Build-Id: 1.2.16-df8b153, 2018-12-27T14:31:11+0000
+Implementation-Title: Fast Infoset Implementation
+Implementation-Vendor: Oracle Corporation
+Implementation-Vendor-Id: com.sun.xml.fastinfoset
+Implementation-Version: 1.2.16
+Import-Package: com.sun.xml.fastinfoset,com.sun.xml.fastinfoset.algori
+ thm,com.sun.xml.fastinfoset.alphabet,com.sun.xml.fastinfoset.dom,com.
+ sun.xml.fastinfoset.org.apache.xerces.util,com.sun.xml.fastinfoset.sa
+ x,com.sun.xml.fastinfoset.stax,com.sun.xml.fastinfoset.stax.events,co
+ m.sun.xml.fastinfoset.stax.util,com.sun.xml.fastinfoset.tools,com.sun
+ .xml.fastinfoset.util,com.sun.xml.fastinfoset.vocab,javax.xml.namespa
+ ce,javax.xml.parsers,javax.xml.stream,javax.xml.stream.events,javax.x
+ ml.stream.util,javax.xml.transform,javax.xml.transform.dom,javax.xml.
+ transform.sax,javax.xml.transform.stream,org.jvnet.fastinfoset,org.jv
+ net.fastinfoset.sax,org.jvnet.fastinfoset.stax,org.w3c.dom,org.xml.sa
+ x,org.xml.sax.ext,org.xml.sax.helpers
+Specification-Title: ITU-T Rec. X.891 | ISO/IEC 24824-1 (Fast Infoset)
+Specification-Version: 1.0
+Tool: Bnd-3.5.0.201709291849
+

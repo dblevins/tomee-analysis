@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.rs.security.jose
+Bnd-LastModified: 1585152799280
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime JOSE Core; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime JOSE Core Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-rs-security-jose.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.rs.security.jose.jws;version="3.3.6",or
+ g.apache.cxf.rs.security.jose.jwt;version="3.3.6",org.apache.cxf.rs.s
+ ecurity.jose.jwa;version="3.3.6",org.apache.cxf.rs.security.jose.jwk;
+ version="3.3.6",org.apache.cxf.rs.security.jose.jwe;version="3.3.6",o
+ rg.apache.cxf.rs.security.jose.common;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: javax.crypto,javax.crypto.spec,javax.security.auth,org
+ .apache.cxf;version="[3.3,4)",org.apache.cxf.common.classloader;versi
+ on="[3.3,4)",org.apache.cxf.common.logging;version="[3.3,4)",org.apac
+ he.cxf.common.util;version="[3.3,4)",org.apache.cxf.helpers;version="
+ [3.3,4)",org.apache.cxf.jaxrs.json.basic;version="[3.3,4)",org.apache
+ .cxf.message;version="[3.3,4)",org.apache.cxf.phase;version="[3.3,4)"
+ ,org.apache.cxf.resource;version="[3.3,4)",org.apache.cxf.rs.security
+ .jose.common,org.apache.cxf.rs.security.jose.jwa,org.apache.cxf.rs.se
+ curity.jose.jwe,org.apache.cxf.rs.security.jose.jwk,org.apache.cxf.rs
+ .security.jose.jws,org.apache.cxf.rs.security.jose.jwt,org.apache.cxf
+ .rt.security.crypto;version="[3.3,4)",org.apache.cxf.rt.security.rs;v
+ ersion="[3.3,4)",org.bouncycastle.crypto;version="[1.64,2)";resolutio
+ n:=optional,org.bouncycastle.crypto.digests;version="[1.64,2)";resolu
+ tion:=optional,org.bouncycastle.crypto.generators;version="[1.64,2)";
+ resolution:=optional,org.bouncycastle.crypto.params;version="[1.64,2)
+ ";resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

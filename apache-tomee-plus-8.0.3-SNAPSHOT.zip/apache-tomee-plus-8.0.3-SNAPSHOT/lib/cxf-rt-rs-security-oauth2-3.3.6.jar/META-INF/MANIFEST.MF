@@ -1,0 +1,75 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.cxf.rs.security.oauth2
+Bnd-LastModified: 1585152827563
+Build-Jdk: 1.8.0_241
+Built-By: dkulp
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Apache CXF Runtime OAuth 2.0; Jarkata Enabled
+Bundle-DocURL: http://cxf.apache.org
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF Runtime OAuth 2.0 Jakarta
+Bundle-SymbolicName: org.apache.cxf.cxf-rt-rs-security-oauth2.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.rs.security.oauth2.filters;version="3.3
+ .6",org.apache.cxf.rs.security.oauth2.grants.jwt;version="3.3.6",org.
+ apache.cxf.rs.security.oauth2.grants.owner;version="3.3.6",org.apache
+ .cxf.rs.security.oauth2.grants.refresh;version="3.3.6",org.apache.cxf
+ .rs.security.oauth2.grants;version="3.3.6",org.apache.cxf.rs.security
+ .oauth2.grants.code;version="3.3.6",org.apache.cxf.rs.security.oauth2
+ .grants.clientcred;version="3.3.6",org.apache.cxf.rs.security.oauth2.
+ provider;version="3.3.6",org.apache.cxf.rs.security.oauth2.utils.cryp
+ to;version="3.3.6",org.apache.cxf.rs.security.oauth2.utils;version="3
+ .3.6",org.apache.cxf.rs.security.oauth2.common;version="3.3.6",org.ap
+ ache.cxf.rs.security.oauth2.tokens.refresh;version="3.3.6",org.apache
+ .cxf.rs.security.oauth2.tokens.bearer;version="3.3.6",org.apache.cxf.
+ rs.security.oauth2.tokens.hawk;version="3.3.6",org.apache.cxf.rs.secu
+ rity.oauth2.client;version="3.3.6",org.apache.cxf.rs.security.oauth2.
+ services;version="3.3.6"
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3.6
+Import-Package: jakarta.servlet.http;version="[0,4.1)";resolution:=opt
+ ional,jakarta.xml.bind.annotation;version="[0,3)",jakarta.annotation;
+ version="[1.2,2)",jakarta.persistence;resolution:=optional;version="[
+ 2.0,3)",jakarta.persistence.metamodel;resolution:=optional;version="[
+ 2.0,3)",javax.cache;version="[1.1,2)";resolution:=optional,javax.cach
+ e.configuration;version="[1.1,2)";resolution:=optional,javax.cache.sp
+ i;version="[1.1,2)";resolution:=optional,javax.crypto,javax.security.
+ auth,javax.security.auth.x500,jakarta.ws.rs;version="[2.1,3)",jakarta
+ .ws.rs.client;version="[2.1,3)",jakarta.ws.rs.container;version="[2.1
+ ,3)",jakarta.ws.rs.core;version="[2.1,3)",jakarta.ws.rs.ext;version="
+ [2.1,3)",org.apache.cxf;version="[3.3,4)",org.apache.cxf.common.loggi
+ ng;version="[3.3,4)",org.apache.cxf.common.security;version="[3.3,4)"
+ ,org.apache.cxf.common.util;version="[3.3,4)",org.apache.cxf.configur
+ ation.security;version="[3.3,4)",org.apache.cxf.helpers;version="[3.3
+ ,4)",org.apache.cxf.interceptor;version="[3.3,4)",org.apache.cxf.inte
+ rceptor.security;version="[3.3,4)",org.apache.cxf.jaxrs;version="[3.3
+ ,4)",org.apache.cxf.jaxrs.client;version="[3.3,4)",org.apache.cxf.jax
+ rs.ext;version="[3.3,4)",org.apache.cxf.jaxrs.impl;version="[3.3,4)",
+ org.apache.cxf.jaxrs.json.basic;version="[3.3,4)",org.apache.cxf.jaxr
+ s.model;version="[3.3,4)",org.apache.cxf.jaxrs.provider;version="[3.3
+ ,4)",org.apache.cxf.jaxrs.utils;version="[3.3,4)",org.apache.cxf.mess
+ age;version="[3.3,4)",org.apache.cxf.phase;version="[3.3,4)",org.apac
+ he.cxf.rs.security.jose.jaxrs;version="[3.3,4)",org.apache.cxf.rs.sec
+ urity.jose.jwa;version="[3.3,4)",org.apache.cxf.rs.security.jose.jwe;
+ version="[3.3,4)",org.apache.cxf.rs.security.jose.jws;version="[3.3,4
+ )",org.apache.cxf.rs.security.jose.jwt;version="[3.3,4)",org.apache.c
+ xf.rs.security.oauth2.client,org.apache.cxf.rs.security.oauth2.common
+ ,org.apache.cxf.rs.security.oauth2.grants,org.apache.cxf.rs.security.
+ oauth2.grants.code,org.apache.cxf.rs.security.oauth2.grants.refresh,o
+ rg.apache.cxf.rs.security.oauth2.provider,org.apache.cxf.rs.security.
+ oauth2.services,org.apache.cxf.rs.security.oauth2.tokens.bearer,org.a
+ pache.cxf.rs.security.oauth2.tokens.hawk,org.apache.cxf.rs.security.o
+ auth2.tokens.refresh,org.apache.cxf.rs.security.oauth2.utils,org.apac
+ he.cxf.rs.security.oauth2.utils.crypto,org.apache.cxf.rt.security.cry
+ pto;version="[3.3,4)",org.apache.cxf.security;version="[3.3,4)",org.a
+ pache.cxf.security.transport;version="[3.3,4)",org.apache.cxf.transpo
+ rt.http.auth;version="[3.3,4)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3.6
+Tool: Bnd-4.2.0.201903051501
+

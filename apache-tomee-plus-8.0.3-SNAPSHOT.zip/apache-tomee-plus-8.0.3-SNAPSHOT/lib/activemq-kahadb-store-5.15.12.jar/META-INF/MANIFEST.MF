@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: ActiveMQ :: KahaDB Store
+Implementation-Version: 5.15.12
+Archiver-Version: Plexus Archiver
+Built-By: jbonofre
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: ActiveMQ :: KahaDB Store
+Implementation-Vendor-Id: org.apache.activemq
+Created-By: Apache Maven 3.6.2
+Build-Jdk: 1.8.0_172
+Specification-Version: 5.15.12
+Implementation-Vendor: The Apache Software Foundation
+

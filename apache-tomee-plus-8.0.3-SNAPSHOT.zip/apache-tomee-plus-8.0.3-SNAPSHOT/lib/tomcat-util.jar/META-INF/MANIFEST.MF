@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.14
+Bnd-LastModified: 1588711039063
+Bundle-ManifestVersion: 2
+Bundle-Name: tomcat-util Jakarta
+Bundle-SymbolicName: org.apache.tomcat-util.jakarta
+Bundle-Version: 9.0.35
+Created-By: 1.8.0_252 (AdoptOpenJDK)
+DSTAMP: 20200505
+Export-Package: org.apache.tomcat.util;uses:="org.apache.tomcat.util.r
+ es",org.apache.tomcat.util.buf;uses:="org.apache.tomcat.util.res",org
+ .apache.tomcat.util.codec.binary;uses:="org.apache.tomcat.util.res",o
+ rg.apache.tomcat.util.collections,org.apache.tomcat.util.compat;uses:
+ ="javax.net.ssl",org.apache.tomcat.util.file,org.apache.tomcat.util.r
+ es,org.apache.tomcat.util.security,org.apache.tomcat.util.threads;use
+ s:="org.apache.tomcat.util.res"
+Implementation-Title: Apache Tomcat
+Implementation-Vendor: Apache Software Foundation
+Implementation-Version: 9.0.35
+Import-Package: javax.net.ssl,org.apache.juli.logging,org.apache.tomca
+ t.util.buf,org.apache.tomcat.util.compat,org.apache.tomcat.util.res,o
+ rg.apache.tomcat.util.security,org.graalvm.nativeimage,sun.misc
+Originally-Created-By: 1.8.0_252-b09 (AdoptOpenJDK)
+Private-Package: org.apache.tomcat.util.json,org.apache.tomcat.util.th
+ reads.res
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache Tomcat
+Specification-Vendor: Apache Software Foundation
+Specification-Version: 9.0
+TODAY: May 5 2020
+TSTAMP: 2136
+Tool: Bnd-5.0.1.202003231327
+X-Compile-Source-JDK: 8
+X-Compile-Target-JDK: 8
+

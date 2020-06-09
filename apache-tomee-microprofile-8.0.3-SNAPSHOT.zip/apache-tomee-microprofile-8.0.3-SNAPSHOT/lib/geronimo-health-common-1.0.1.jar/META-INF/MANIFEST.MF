@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.geronimo.microprofile.health.common
+Bnd-LastModified: 1545053927070
+Build-Jdk: 1.8.0_191
+Built-By: rmannibucau
+Bundle-Description: Apache Geronimo implementation of the Microprofile
+  Health Specification; Jarkata Enabled
+Bundle-DocURL: http://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Geronimo Health :: Common Jakarta
+Bundle-SymbolicName: org.apache.geronimo.health-common.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.0.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.geronimo.microprofile.common.jaxrs;uses:="j
+ akarta.ws.rs,jakarta.ws.rs.core,org.apache.geronimo.microprofile.comm
+ on.registry,org.eclipse.microprofile.health";version="1.0.1",org.apac
+ he.geronimo.microprofile.common.registry;uses:="org.eclipse.microprof
+ ile.health";version="1.0.1"
+Implementation-Title: Geronimo Health :: Common
+Implementation-URL: https://www.apache.org/geronimo-health-parent/gero
+ nimo-health-common/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.geronimo
+Implementation-Version: 1.0.1
+Import-Package: jakarta.json.bind.annotation;version="[1.0,2)",jakarta
+ .ws.rs;version="[1.1,2)",jakarta.ws.rs.core;version="[1.1,2)",org.apa
+ che.geronimo.microprofile.common.registry,org.eclipse.microprofile.he
+ alth;version="[1.0,2)",org.eclipse.microprofile.health.spi;version="[
+ 1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Geronimo Health :: Common
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.0.1
+Tool: Bnd-4.0.0.201805111645
+

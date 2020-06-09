@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: Geronimo Health :: Microprofile
+Automatic-Module-Name: org.apache.geronimo.microprofile.health
+Implementation-Version: 1.0.1
+Built-By: rmannibucau
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Geronimo Health :: Microprofile
+Implementation-Vendor-Id: org.apache.geronimo
+Implementation-Vendor: The Apache Software Foundation
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_191
+Specification-Version: 1.0
+Implementation-URL: https://www.apache.org/geronimo-health-parent/gero
+ nimo-health/
+

@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.wss4j.bindings
+Bnd-LastModified: 1584113111731
+Build-Jdk: 1.8.0_232
+Built-By: coheig
+Bundle-Description: Apache WSS4J parent pom; Jarkata Enabled
+Bundle-DocURL: http://ws.apache.org/wss4j
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache WSS4J WS-Security Bindings Jakarta
+Bundle-SymbolicName: org.apache.wss4j.wss4j-bindings.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.2.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.wss4j.binding.wss10;version="2.2.5",org.apa
+ che.wss4j.binding.wss11;version="2.2.5",org.apache.wss4j.binding.wssc
+ ;version="2.2.5",org.apache.wss4j.binding.wssc13;version="2.2.5",org.
+ apache.wss4j.binding.wssc200502;version="2.2.5",org.apache.wss4j.bind
+ ing.wsu10;version="2.2.5"
+Implementation-Title: Apache WSS4J WS-Security Bindings
+Implementation-URL: https://ws.apache.org/wss4j/wss4j-bindings/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.2.5
+Import-Package: jakarta.xml.bind,jakarta.xml.bind.annotation,jakarta.x
+ ml.bind.annotation.adapters,javax.xml.namespace,org.apache.xml.securi
+ ty.binding.xmlenc;version="[2.1,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Apache WSS4J WS-Security Bindings
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.2.5
+Tool: Bnd-2.4.1.201501161923
+

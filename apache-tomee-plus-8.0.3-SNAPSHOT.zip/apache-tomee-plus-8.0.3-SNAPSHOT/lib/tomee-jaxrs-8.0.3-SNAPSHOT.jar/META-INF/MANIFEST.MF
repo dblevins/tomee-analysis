@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.tomee.tomee.jaxrs
+Bnd-LastModified: 1591729277381
+Build-Jdk: 1.8.0_242
+Built-By: dblevins
+Bundle-Description: Apache OpenEJB is an open source, modular, configu
+ rable and extensible EJB Container System and EJB Server.; Jarkata En
+ abled
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache TomEE :: TomEE :: RS Web Services Jakarta
+Bundle-SymbolicName: org.apache.tomee.jaxrs.jakarta
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 8.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.tomee.webservices;version="8.0.3.SNAPSHOT";
+ uses:="jakarta.servlet,org.apache.openejb.observer,org.apache.openejb
+ .server.cxf.rs,org.apache.openejb.server.httpd,org.apache.openejb.ser
+ ver.rest,org.apache.openejb.spi,org.apache.tomee.catalina.event"
+Implementation-Title: TomEE :: TomEE :: RS Web Services
+Implementation-URL: http://tomee.apache.org/tomee/tomee-jaxrs
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.tomee
+Implementation-Version: 8.0.3-SNAPSHOT
+Import-Package: jakarta.servlet,jakarta.servlet.http,org.apache.catali
+ na,org.apache.catalina.connector,org.apache.catalina.core,org.apache.
+ openejb.assembler.classic;version="[8.0,9)",org.apache.openejb.loader
+ ,org.apache.openejb.observer,org.apache.openejb.server.cxf.rs,org.apa
+ che.openejb.server.httpd,org.apache.openejb.server.httpd.util,org.apa
+ che.openejb.server.rest,org.apache.openejb.spi;version="[8.0,9)",org.
+ apache.openejb.util;version="[8.0,9)",org.apache.tomcat.util.descript
+ or.web,org.apache.tomee.catalina.environment;version="[8.0,9)",org.ap
+ ache.tomee.catalina.event;version="[8.0,9)",org.apache.tomee.catalina
+ .registration;version="[8.0,9)",org.apache.tomee.loader;version="[8.0
+ ,9)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: TomEE :: TomEE :: RS Web Services
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 8.0.3-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+
