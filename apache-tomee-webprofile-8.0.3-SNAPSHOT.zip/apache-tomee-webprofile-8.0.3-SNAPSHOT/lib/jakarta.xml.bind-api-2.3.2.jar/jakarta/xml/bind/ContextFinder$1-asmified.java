@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/xml/bind/ContextFinder$1", "Ljakarta/xml/bind/ServiceLoaderUtil$ExceptionHandler<Ljakarta/xml/bind/JAXBException;>;", "jakarta/xml/bind/ServiceLoaderUtil$ExceptionHandler", null);
 
-classWriter.visitOuterClass("javax/xml/bind/ContextFinder", null, null);
+classWriter.visitOuterClass("jakarta/xml/bind/ContextFinder", null, null);
 
 classWriter.visitInnerClass("jakarta/xml/bind/ContextFinder$1", null, null, 0);
 

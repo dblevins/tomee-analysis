@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_SUPER | ACC_SYNTHETIC, "jakarta/mail/Session$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/mail/Session", null, null);
+classWriter.visitOuterClass("jakarta/mail/Session", null, null);
 
 classWriter.visitInnerClass("jakarta/mail/Session$1", "jakarta/mail/Session", null, ACC_STATIC | ACC_SYNTHETIC);
 

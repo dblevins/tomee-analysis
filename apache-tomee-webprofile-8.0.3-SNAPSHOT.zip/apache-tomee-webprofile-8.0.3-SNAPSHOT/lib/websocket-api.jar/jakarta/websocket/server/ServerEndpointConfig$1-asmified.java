@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER | ACC_SYNTHETIC, "jakarta/websocket/server/ServerEndpointConfig$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/websocket/server/ServerEndpointConfig", null, null);
+classWriter.visitOuterClass("jakarta/websocket/server/ServerEndpointConfig", null, null);
 
 classWriter.visitInnerClass("jakarta/websocket/server/ServerEndpointConfig$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 

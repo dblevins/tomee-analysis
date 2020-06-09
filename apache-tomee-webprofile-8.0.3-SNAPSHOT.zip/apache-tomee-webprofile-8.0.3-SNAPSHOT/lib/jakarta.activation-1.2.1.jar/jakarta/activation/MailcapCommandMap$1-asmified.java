@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/activation/MailcapCommandMap$1", null, "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/activation/MailcapCommandMap", null, null);
+classWriter.visitOuterClass("jakarta/activation/MailcapCommandMap", null, null);
 
 classWriter.visitInnerClass("jakarta/activation/MailcapCommandMap$1", null, null, ACC_STATIC);
 

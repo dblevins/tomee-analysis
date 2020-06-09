@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER | ACC_SYNTHETIC, "jakarta/servlet/jsp/el/ImplicitObjectELResolver$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/servlet/jsp/el/ImplicitObjectELResolver", null, null);
+classWriter.visitOuterClass("jakarta/servlet/jsp/el/ImplicitObjectELResolver", null, null);
 
 classWriter.visitInnerClass("jakarta/servlet/jsp/el/ImplicitObjectELResolver$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 

@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/json/JsonValue$1", null, "java/lang/Object", new String[] { "jakarta/json/JsonValue" });
 
-classWriter.visitOuterClass("javax/json/JsonValue", null, null);
+classWriter.visitOuterClass("jakarta/json/JsonValue", null, null);
 
 classWriter.visitInnerClass("jakarta/json/JsonValue$1", null, null, ACC_STATIC);
 

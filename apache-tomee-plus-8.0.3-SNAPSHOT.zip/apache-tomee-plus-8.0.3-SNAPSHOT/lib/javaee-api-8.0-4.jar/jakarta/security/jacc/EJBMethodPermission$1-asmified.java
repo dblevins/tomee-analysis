@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/security/jacc/EJBMethodPermission$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/security/jacc/EJBMethodPermission", null, null);
+classWriter.visitOuterClass("jakarta/security/jacc/EJBMethodPermission", null, null);
 
 classWriter.visitInnerClass("jakarta/security/jacc/EJBMethodPermission$1", null, null, ACC_STATIC);
 

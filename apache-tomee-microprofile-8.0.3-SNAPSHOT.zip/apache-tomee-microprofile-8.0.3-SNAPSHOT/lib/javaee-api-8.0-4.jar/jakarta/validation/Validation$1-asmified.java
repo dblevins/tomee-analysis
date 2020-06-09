@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER | ACC_SYNTHETIC, "jakarta/validation/Validation$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/validation/Validation", null, null);
+classWriter.visitOuterClass("jakarta/validation/Validation", null, null);
 
 classWriter.visitInnerClass("jakarta/validation/Validation$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 

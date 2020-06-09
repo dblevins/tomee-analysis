@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/el/BeanELResolver$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/el/BeanELResolver", null, null);
+classWriter.visitOuterClass("jakarta/el/BeanELResolver", null, null);
 
 classWriter.visitInnerClass("jakarta/el/BeanELResolver$1", null, null, ACC_STATIC);
 

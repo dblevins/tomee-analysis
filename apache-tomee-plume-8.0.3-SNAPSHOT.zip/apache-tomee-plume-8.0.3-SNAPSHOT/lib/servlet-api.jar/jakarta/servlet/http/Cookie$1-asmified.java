@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/servlet/http/Cookie$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/Boolean;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/servlet/http/Cookie", null, null);
+classWriter.visitOuterClass("jakarta/servlet/http/Cookie", null, null);
 
 classWriter.visitInnerClass("jakarta/servlet/http/Cookie$1", null, null, ACC_STATIC);
 

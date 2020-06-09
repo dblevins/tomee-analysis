@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_SUPER | ACC_SYNTHETIC, "jakarta/servlet/jsp/jstl/tlv/ScriptFreeTLV$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/servlet/jsp/jstl/tlv/ScriptFreeTLV", null, null);
+classWriter.visitOuterClass("jakarta/servlet/jsp/jstl/tlv/ScriptFreeTLV", null, null);
 
 classWriter.visitInnerClass("jakarta/servlet/jsp/jstl/tlv/ScriptFreeTLV$1", "jakarta/servlet/jsp/jstl/tlv/ScriptFreeTLV", null, ACC_STATIC | ACC_SYNTHETIC);
 

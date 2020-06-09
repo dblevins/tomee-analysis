@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER, "jakarta/xml/bind/util/JAXBSource$1", null, "java/lang/Object", new String[] { "org/xml/sax/XMLReader" });
 
-classWriter.visitOuterClass("javax/xml/bind/util/JAXBSource", null, null);
+classWriter.visitOuterClass("jakarta/xml/bind/util/JAXBSource", null, null);
 
 classWriter.visitInnerClass("jakarta/xml/bind/util/JAXBSource$1", null, null, 0);
 

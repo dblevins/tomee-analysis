@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/faces/component/visit/VisitContext$1", "Ljava/util/AbstractCollection<Ljava/lang/String;>;", "java/util/AbstractCollection", null);
 
-classWriter.visitOuterClass("javax/faces/component/visit/VisitContext", null, null);
+classWriter.visitOuterClass("jakarta/faces/component/visit/VisitContext", null, null);
 
 classWriter.visitInnerClass("jakarta/faces/component/visit/VisitContext$1", null, null, ACC_STATIC);
 

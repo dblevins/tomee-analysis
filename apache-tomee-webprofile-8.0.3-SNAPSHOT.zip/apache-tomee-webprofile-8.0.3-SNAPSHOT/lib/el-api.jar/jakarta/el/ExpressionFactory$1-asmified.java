@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/el/ExpressionFactory$1", "Ljava/lang/Object;Ljava/security/PrivilegedAction<Ljava/lang/String;>;", "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/el/ExpressionFactory", null, null);
+classWriter.visitOuterClass("jakarta/el/ExpressionFactory", null, null);
 
 classWriter.visitInnerClass("jakarta/el/ExpressionFactory$1", null, null, ACC_STATIC);
 

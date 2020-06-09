@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/faces/component/UIComponentBase$1", "Ljava/lang/Object;Ljava/util/Iterator<Ljakarta/faces/component/UIComponent;>;", "java/lang/Object", new String[] { "java/util/Iterator" });
 
-classWriter.visitOuterClass("javax/faces/component/UIComponentBase", null, null);
+classWriter.visitOuterClass("jakarta/faces/component/UIComponentBase", null, null);
 
 classWriter.visitInnerClass("jakarta/faces/component/UIComponentBase$1", null, null, ACC_STATIC);
 

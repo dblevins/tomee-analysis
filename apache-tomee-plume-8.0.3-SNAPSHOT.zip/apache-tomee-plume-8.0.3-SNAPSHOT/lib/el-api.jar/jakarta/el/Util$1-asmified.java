@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER | ACC_SYNTHETIC, "jakarta/el/Util$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/el/Util", null, null);
+classWriter.visitOuterClass("jakarta/el/Util", null, null);
 
 classWriter.visitInnerClass("jakarta/el/Util$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 

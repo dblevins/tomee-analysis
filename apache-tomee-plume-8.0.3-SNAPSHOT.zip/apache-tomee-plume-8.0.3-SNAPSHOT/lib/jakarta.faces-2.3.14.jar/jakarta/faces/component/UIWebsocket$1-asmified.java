@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/faces/component/UIWebsocket$1", "Ljava/util/ArrayList<Ljava/lang/String;>;", "java/util/ArrayList", null);
 
-classWriter.visitOuterClass("javax/faces/component/UIWebsocket", null, null);
+classWriter.visitOuterClass("jakarta/faces/component/UIWebsocket", null, null);
 
 classWriter.visitInnerClass("jakarta/faces/component/UIWebsocket$1", null, null, ACC_STATIC);
 

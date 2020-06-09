@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER | ACC_SYNTHETIC, "jakarta/faces/component/UINamingContainer$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/faces/component/UINamingContainer", null, null);
+classWriter.visitOuterClass("jakarta/faces/component/UINamingContainer", null, null);
 
 classWriter.visitInnerClass("jakarta/faces/component/UINamingContainer$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 

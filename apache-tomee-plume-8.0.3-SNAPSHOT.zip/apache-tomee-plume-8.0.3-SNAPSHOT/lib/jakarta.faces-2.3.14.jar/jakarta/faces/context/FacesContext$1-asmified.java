@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "jakarta/faces/context/FacesContext$1", "Ljava/lang/ThreadLocal<Ljakarta/faces/context/FacesContext;>;", "java/lang/ThreadLocal", null);
 
-classWriter.visitOuterClass("javax/faces/context/FacesContext", null, null);
+classWriter.visitOuterClass("jakarta/faces/context/FacesContext", null, null);
 
 classWriter.visitInnerClass("jakarta/faces/context/FacesContext$1", null, null, ACC_STATIC);
 

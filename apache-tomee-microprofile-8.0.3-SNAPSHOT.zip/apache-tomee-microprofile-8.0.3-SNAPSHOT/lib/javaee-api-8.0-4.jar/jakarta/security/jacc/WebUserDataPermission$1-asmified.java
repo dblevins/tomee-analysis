@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_SUPER | ACC_SYNTHETIC, "jakarta/security/jacc/WebUserDataPermission$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/security/jacc/WebUserDataPermission", null, null);
+classWriter.visitOuterClass("jakarta/security/jacc/WebUserDataPermission", null, null);
 
 classWriter.visitInnerClass("jakarta/security/jacc/WebUserDataPermission$1", "jakarta/security/jacc/WebUserDataPermission", null, ACC_STATIC | ACC_SYNTHETIC);
 

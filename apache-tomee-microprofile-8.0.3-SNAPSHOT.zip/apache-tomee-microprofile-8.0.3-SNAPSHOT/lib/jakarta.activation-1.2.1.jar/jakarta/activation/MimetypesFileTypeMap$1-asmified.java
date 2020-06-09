@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "jakarta/activation/MimetypesFileTypeMap$1", null, "java/lang/Object", new String[] { "java/security/PrivilegedAction" });
 
-classWriter.visitOuterClass("javax/activation/MimetypesFileTypeMap", null, null);
+classWriter.visitOuterClass("jakarta/activation/MimetypesFileTypeMap", null, null);
 
 classWriter.visitInnerClass("jakarta/activation/MimetypesFileTypeMap$1", null, null, ACC_STATIC);
 

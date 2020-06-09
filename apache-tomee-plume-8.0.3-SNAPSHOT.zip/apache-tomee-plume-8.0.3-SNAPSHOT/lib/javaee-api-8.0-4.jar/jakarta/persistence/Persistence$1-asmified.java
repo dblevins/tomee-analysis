@@ -24,7 +24,7 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_SUPER | ACC_SYNTHETIC, "jakarta/persistence/Persistence$1", null, "java/lang/Object", null);
 
-classWriter.visitOuterClass("javax/persistence/Persistence", null, null);
+classWriter.visitOuterClass("jakarta/persistence/Persistence", null, null);
 
 classWriter.visitInnerClass("jakarta/persistence/Persistence$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
