@@ -3060,7 +3060,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
         var stage; // temp value for stage
         var match; // temp value for match
         while (s < scripts.length) {
-            if (typeof scripts[s].src === 'string' && scripts[s].src.match('\/javax\.faces\.resource\/jsf\.js\?.*ln=javax\.faces')) {
+            if (typeof scripts[s].src === 'string' && scripts[s].src.match('\/jakarta\.faces\.resource\/jsf\.js\?.*ln=jakarta\.faces')) {
                 script = scripts[s].src;
                 break;
             }
