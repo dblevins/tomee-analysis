@@ -18,7 +18,7 @@ X-Compile-Source-JDK: 8
 X-Compile-Target-JDK: 8
 
 Name: javax/el/
-Implementation-Title: javax.el
+Implementation-Title: jakarta.el
 Implementation-Vendor: Apache Software Foundation
 Implementation-Version: 3.0.FR
 Specification-Title: Expression Language

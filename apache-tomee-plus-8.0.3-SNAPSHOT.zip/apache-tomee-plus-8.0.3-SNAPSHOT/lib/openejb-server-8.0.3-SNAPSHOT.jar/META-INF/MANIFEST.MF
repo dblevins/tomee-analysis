@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Automatic-Module-Name: org.apache.tomee.server.core
-Bnd-LastModified: 1591990379982
-Build-Jdk: 1.8.0_242
-Built-By: dblevins
+Bnd-LastModified: 1592021275517
+Build-Jdk: 1.8.0_191
+Built-By: buildslave
 Bundle-Activator: org.apache.openejb.server.osgi.Activator
 Bundle-Description: Apache OpenEJB is an open source, modular, configu
  rable and extensible EJB Container System and EJB Server.; Jarkata En

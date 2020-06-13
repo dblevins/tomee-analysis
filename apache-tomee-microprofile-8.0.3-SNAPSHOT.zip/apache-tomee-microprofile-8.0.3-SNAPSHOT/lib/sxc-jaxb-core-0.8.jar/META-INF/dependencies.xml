@@ -1,7 +1,7 @@
 <dependencies>
   <dependency groupId="com.sun.xml.bind" artifactId="jaxb-impl" version="2.1.2" file-name="jaxb-impl-2.1.2.jar" optional="true">
-    <dependency groupId="javax.xml.bind" artifactId="jaxb-api" version="2.1" file-name="jaxb-api-2.1.jar">
-      <dependency groupId="javax.activation" artifactId="activation" version="1.1" file-name="activation-1.1.jar"/>
+    <dependency groupId="jakarta.xml.bind" artifactId="jaxb-api" version="2.1" file-name="jaxb-api-2.1.jar">
+      <dependency groupId="jakarta.activation" artifactId="activation" version="1.1" file-name="activation-1.1.jar"/>
     </dependency>
   </dependency>
   <dependency groupId="com.sun.xml.bind" artifactId="jaxb-xjc" version="2.1.2" file-name="jaxb-xjc-2.1.2.jar" optional="true"/>

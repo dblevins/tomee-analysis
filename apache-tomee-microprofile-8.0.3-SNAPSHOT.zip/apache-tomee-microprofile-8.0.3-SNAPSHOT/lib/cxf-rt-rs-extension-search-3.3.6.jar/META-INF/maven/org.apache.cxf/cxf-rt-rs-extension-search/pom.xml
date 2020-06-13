@@ -33,7 +33,7 @@
     <properties>
         <cxf.module.name>org.apache.cxf.rs.search</cxf.module.name>
         <cxf.osgi.import>
-            javax.persistence*;resolution:=optional,
+            jakarta.persistence*;resolution:=optional,
             org.apache.tika.*;resolution:=optional
         </cxf.osgi.import>
     </properties>
@@ -49,7 +49,7 @@
             <version>${project.version}</version>
             <exclusions>
                <exclusion>
-                    <groupId>javax.validation</groupId>
+                    <groupId>jakarta.validation</groupId>
                     <artifactId>validation-api</artifactId>
                </exclusion>
             </exclusions>
@@ -106,7 +106,7 @@
                     <artifactId>poi-ooxml</artifactId>                
                 </exclusion>
                 <exclusion>
-                    <groupId>javax.xml.bind</groupId>
+                    <groupId>jakarta.xml.bind</groupId>
                     <artifactId>jaxb-api</artifactId>
                 </exclusion>
                 <exclusion>
@@ -139,7 +139,7 @@
             <scope>test</scope>
             <exclusions>
                 <exclusion>
-                    <groupId>javax.xml.bind</groupId>
+                    <groupId>jakarta.xml.bind</groupId>
                     <artifactId>jaxb-api</artifactId>
                 </exclusion>
             </exclusions>

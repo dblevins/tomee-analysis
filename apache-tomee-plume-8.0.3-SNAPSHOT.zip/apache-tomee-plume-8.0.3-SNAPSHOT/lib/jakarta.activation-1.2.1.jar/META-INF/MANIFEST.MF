@@ -18,7 +18,7 @@ Export-Package: jakarta.activation;uses:="com.sun.activation.registrie
  s";version="1.2",com.sun.activation.registries;version="1.2.1",com.su
  n.activation.viewers;uses:="jakarta.activation";version="1.2.1"
 Extension-Name: jakarta.activation
-Implementation-Title: javax.activation
+Implementation-Title: jakarta.activation
 Implementation-Vendor: Eclipse Foundation
 Implementation-Vendor-Id: com.sun
 Implementation-Version: 1.2.1

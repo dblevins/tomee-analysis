@@ -20,7 +20,7 @@ X-Compile-Source-JDK: 8
 X-Compile-Target-JDK: 8
 
 Name: javax/websocket/
-Implementation-Title: javax.websocket
+Implementation-Title: jakarta.websocket
 Implementation-Vendor: Apache Software Foundation
 Implementation-Version: 1.1.FR
 Specification-Title: WebSocket

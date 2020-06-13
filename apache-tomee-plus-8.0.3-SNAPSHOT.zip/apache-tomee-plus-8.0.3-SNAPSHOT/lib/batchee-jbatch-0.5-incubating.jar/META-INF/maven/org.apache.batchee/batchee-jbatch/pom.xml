@@ -101,12 +101,12 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <groupId>javax.batch</groupId>
-          <artifactId>javax.batch-api</artifactId>
+          <groupId>jakarta.batch</groupId>
+          <artifactId>jakarta.batch-api</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>javax.inject</groupId>
-          <artifactId>javax.inject</artifactId>
+          <groupId>jakarta.inject</groupId>
+          <artifactId>jakarta.inject</artifactId>
         </exclusion>
         <exclusion>
           <groupId>com.ibm.jbatch</groupId>
@@ -121,8 +121,8 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <groupId>javax.batch</groupId>
-          <artifactId>javax.batch-api</artifactId>
+          <groupId>jakarta.batch</groupId>
+          <artifactId>jakarta.batch-api</artifactId>
         </exclusion>
       </exclusions>
     </dependency>

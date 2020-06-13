@@ -111,7 +111,7 @@
     </dependency>
 
     <dependency>
-      <groupId>javax.servlet</groupId>
+      <groupId>jakarta.servlet</groupId>
       <artifactId>servlet-api</artifactId>
       <optional>true</optional>
     </dependency>

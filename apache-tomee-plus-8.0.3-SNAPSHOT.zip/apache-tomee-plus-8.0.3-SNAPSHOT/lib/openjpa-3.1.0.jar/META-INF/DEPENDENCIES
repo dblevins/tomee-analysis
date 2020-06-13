@@ -9,7 +9,7 @@ OpenJPA Aggregate Jar
 From: 'an unknown organization'
   - JAXB RI (https://jaxb.dev.java.net/) com.sun.xml.bind:jaxb-impl:jar:2.2.1
     License: CDDL 1.0  (https://glassfish.dev.java.net/public/CDDL+GPL.html)    License: GPL2 w/ CPE  (https://glassfish.dev.java.net/public/CDDL+GPL.html)
-  - JAXB API bundle for GlassFish V3 (https://jaxb.dev.java.net/) javax.xml.bind:jaxb-api:jar:2.2.1
+  - JAXB API bundle for GlassFish V3 (https://jaxb.dev.java.net/) jakarta.xml.bind:jaxb-api:jar:2.2.1
     License: CDDL 1.0  (https://glassfish.dev.java.net/public/CDDL+GPL.html)    License: GPL2 w/ CPE  (https://glassfish.dev.java.net/public/CDDL+GPL.html)
   - Streaming API for XML  javax.xml.stream:stax-api:jar:1.0-2
     License: GNU General Public Library  (http://www.gnu.org/licenses/gpl.txt)    License: COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0  (http://www.sun.com/cddl/cddl.html)

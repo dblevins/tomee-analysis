@@ -7,7 +7,7 @@ Geronimo Health :: Microprofile
 
 
 From: 'an unknown organization'
-  - javax.inject (http://code.google.com/p/atinject/) javax.inject:javax.inject:jar:1
+  - jakarta.inject (http://code.google.com/p/atinject/) jakarta.inject:jakarta.inject:jar:1
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
 From: 'Eclipse Foundation' (http://www.eclipse.org/)

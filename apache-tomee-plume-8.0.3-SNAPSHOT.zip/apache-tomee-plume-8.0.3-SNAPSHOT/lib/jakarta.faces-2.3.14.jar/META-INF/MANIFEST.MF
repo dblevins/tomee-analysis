@@ -227,7 +227,7 @@ Export-Package: jakarta.faces;version="2.3",jakarta.faces.annotation;v
  ses:="jakarta.faces.context",com.sun.faces.vendor;version="2.3";uses:
  ="com.sun.faces.spi,jakarta.servlet",com.sun.faces.xhtml;version="2.3
  "
-Extension-Name: javax.faces
+Extension-Name: jakarta.faces
 Implementation-Title: Mojarra
 Implementation-Vendor: Eclipse
 Implementation-Vendor-Id: org.glassfish

@@ -119,13 +119,13 @@
                             <Specification-Version>${spec.version}</Specification-Version>
                             <Export-Package>${api.package}.*; version=${spec.version}.${impl.version}</Export-Package>
                             <Import-Package>
-                                javax.activation;version=!,
-                                javax.xml.bind;version="[${spec.version},3)",
-                                javax.xml.bind.annotation;version="[${spec.version},3)",
-                                javax.xml.bind.annotation.adapters;version="[${spec.version},3)",
-                                javax.xml.bind.attachment;version="[${spec.version},3)",
-                                javax.xml.bind.helpers;version="[${spec.version},3)",
-                                javax.xml.bind.util;version="[${spec.version},3)",
+                                jakarta.activation;version=!,
+                                jakarta.xml.bind;version="[${spec.version},3)",
+                                jakarta.xml.bind.annotation;version="[${spec.version},3)",
+                                jakarta.xml.bind.annotation.adapters;version="[${spec.version},3)",
+                                jakarta.xml.bind.attachment;version="[${spec.version},3)",
+                                jakarta.xml.bind.helpers;version="[${spec.version},3)",
+                                jakarta.xml.bind.util;version="[${spec.version},3)",
                                 javax.xml.datatype,
                                 javax.xml.namespace,
                                 javax.xml.parsers,

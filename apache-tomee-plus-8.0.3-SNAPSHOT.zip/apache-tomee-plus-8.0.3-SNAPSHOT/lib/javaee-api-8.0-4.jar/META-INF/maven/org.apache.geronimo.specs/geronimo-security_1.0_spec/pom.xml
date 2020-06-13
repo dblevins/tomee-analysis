@@ -86,7 +86,7 @@
                 <version>3.5.0</version>
                 <configuration>
                     <instructions>
-                        <Export-Package>javax.security.enterprise*;version=1.0</Export-Package>
+                        <Export-Package>jakarta.security.enterprise*;version=1.0</Export-Package>
                         <Provide-Capability><![CDATA[
                             osgi.contract;osgi.contract=JavaSecurity;uses:="${packages;NAMED;javax.*}";version:List<Version>='1.0'
                         ]]></Provide-Capability>

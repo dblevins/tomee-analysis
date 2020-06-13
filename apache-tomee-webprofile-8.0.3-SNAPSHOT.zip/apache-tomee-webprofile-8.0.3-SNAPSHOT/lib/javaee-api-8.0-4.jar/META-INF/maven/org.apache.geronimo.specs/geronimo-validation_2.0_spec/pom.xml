@@ -99,13 +99,13 @@
                         <Specification-Title>JSR-380 Bean Validation API</Specification-Title>
                         <Specification-Vendor>Sun Microsystems, Inc.</Specification-Vendor>
                         <Specification-Version>2.0</Specification-Version>
-                        <Export-Package>javax.validation*;version=2.0</Export-Package>
+                        <Export-Package>jakarta.validation*;version=2.0</Export-Package>
                         <Automatic-Module-Name>java.validation</Automatic-Module-Name>
                         <Provide-Capability><![CDATA[
                            osgi.contract;osgi.contract=JavaBeanValidation;uses:="${packages;NAMED;javax.*}";version:List<Version>='2.0,1.1,1.0'
                         ]]></Provide-Capability>
                         <Require-Capability><![CDATA[
-                          osgi.serviceloader;filter:="(osgi.serviceloader=javax.validation.spi.ValidationProvider)";cardinality:=multiple,
+                          osgi.serviceloader;filter:="(osgi.serviceloader=jakarta.validation.spi.ValidationProvider)";cardinality:=multiple,
                           osgi.extender;filter:="(osgi.extender=osgi.serviceloader.processor)"
                         ]]></Require-Capability>
                     </instructions>

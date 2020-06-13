@@ -107,7 +107,7 @@
                         <Specification-Title>JSR-919 Javamail API 1.4</Specification-Title>
                         <Specification-Vendor>Sun Microsystems, Inc.</Specification-Vendor>
                         <Specification-Version>1.4</Specification-Version>
-                        <Export-Package>javax.mail*;version=1.4,org.apache.geronimo.mail.util;version=1.4,org.apache.geronimo.mail.handlers;version=1.4</Export-Package>
+                        <Export-Package>jakarta.mail*;version=1.4,org.apache.geronimo.mail.util;version=1.4,org.apache.geronimo.mail.handlers;version=1.4</Export-Package>
                         <Import-Package>org.apache.geronimo.osgi.registry.api;resolution:=optional,*</Import-Package>
                         <Private-Package>org.apache.geronimo.osgi.locator,org.apache.geronimo.mail</Private-Package>
                         <Bundle-Activator>org.apache.geronimo.mail.Activator</Bundle-Activator>

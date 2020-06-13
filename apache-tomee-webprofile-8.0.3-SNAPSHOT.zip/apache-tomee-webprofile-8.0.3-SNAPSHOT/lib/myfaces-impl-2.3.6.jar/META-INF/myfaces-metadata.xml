@@ -157,7 +157,7 @@ are fired instead at the end of the "apply request values" phase.
     <property>
       <name>actionExpression</name>
       <jspName>action</jspName>
-      <className>javax.el.MethodExpression</className>
+      <className>jakarta.el.MethodExpression</className>
       <stateHolder>true</stateHolder>
       <desc>The action to take when this command is invoked</desc>
       <longDesc>
@@ -842,7 +842,7 @@ href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF S
     <property>
       <name>actionExpression</name>
       <jspName>action</jspName>
-      <className>javax.el.MethodExpression</className>
+      <className>jakarta.el.MethodExpression</className>
       <stateHolder>true</stateHolder>
       <desc>no description</desc>
       <methodBindingSignature>
@@ -939,7 +939,7 @@ Specification</a> for further details.
     <property>
       <name>afterPhaseListener</name>
       <jspName>afterPhase</jspName>
-      <className>javax.el.MethodExpression</className>
+      <className>jakarta.el.MethodExpression</className>
       <stateHolder>true</stateHolder>
       <desc>MethodBinding pointing to a method that takes a javax</desc>
       <longDesc>MethodBinding pointing to a method that takes a jakarta.faces.event.PhaseEvent and returns void, called after every
@@ -952,7 +952,7 @@ phase except for restore view.</longDesc>
     <property>
       <name>beforePhaseListener</name>
       <jspName>beforePhase</jspName>
-      <className>javax.el.MethodExpression</className>
+      <className>jakarta.el.MethodExpression</className>
       <stateHolder>true</stateHolder>
       <desc>MethodBinding pointing to a method that takes a javax</desc>
       <longDesc>MethodBinding pointing to a method that takes a jakarta.faces.event.PhaseEvent and returns void, called before
@@ -9002,14 +9002,14 @@ Unless otherwise specified, all attributes accept static values or EL expression
     </longDesc>
     <attribute>
       <name>type</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The fully qualified class name of the ActionListener class</desc>
       <longDesc>The fully qualified class name of the ActionListener class.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>binding</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Value binding expression that evaluates to an object that implements javax</desc>
       <longDesc>Value binding expression that evaluates to an object that implements jakarta.faces.event.ActionListener.</longDesc>
       <deferredValueType>jakarta.faces.event.ActionListener</deferredValueType>
@@ -9048,14 +9048,14 @@ Unless otherwise specified, all attributes accept static values or EL expression
     </longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The name of the attribute</desc>
       <longDesc>The name of the attribute.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>value</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The attribute's value</desc>
       <longDesc>The attribute's value.</longDesc>
       <deferredValueType>java.lang.Object</deferredValueType>
@@ -9072,14 +9072,14 @@ Unless otherwise specified, all attributes accept static values or EL expression
     <longDesc>This tag creates an instance of the specified Converter, and associates it with the nearest parent UIComponent.</longDesc>
     <attribute>
       <name>converterId</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The converter's registered ID</desc>
       <longDesc>The converter's registered ID.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>binding</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>A ValueExpression that evaluates to a Converter</desc>
       <longDesc>A ValueExpression that evaluates to a Converter.</longDesc>
       <deferredValueType>jakarta.faces.convert.Converter</deferredValueType>
@@ -9108,7 +9108,7 @@ will not be present before the render phase and value bindings that reference to
     </longDesc>
     <attribute>
       <name>basename</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The base name of the resource bundle</desc>
       <longDesc>The base name of the resource bundle.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
@@ -9132,14 +9132,14 @@ will not be present before the render phase and value bindings that reference to
     <longDesc>Register a PhaseListener instance</longDesc>
     <attribute>
       <name>type</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Class name of the PhaseListener to be created and registered</desc>
       <longDesc>Class name of the PhaseListener to be created and registered.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>binding</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Value binding expression that evaluates to a PhaseListener</desc>
       <longDesc>Value binding expression that evaluates to a PhaseListener.</longDesc>
       <deferredValueType>jakarta.faces.event.PhaseListener</deferredValueType>
@@ -9156,7 +9156,7 @@ will not be present before the render phase and value bindings that reference to
     <longDesc></longDesc>
     <attribute>
       <name>target</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>ValueExpression for the destination of the value attribute</desc>
       <longDesc>ValueExpression for the destination of the value attribute.</longDesc>
@@ -9164,7 +9164,7 @@ will not be present before the render phase and value bindings that reference to
     </attribute>
     <attribute>
       <name>value</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>ValueExpression for the value of the target attribute</desc>
       <longDesc>ValueExpression for the value of the target attribute.</longDesc>
@@ -9202,14 +9202,14 @@ Unless otherwise specified, all attributes accept static values or EL expression
     </longDesc>
     <attribute>
       <name>validatorId</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The registered ID of the desired Validator</desc>
       <longDesc>The registered ID of the desired Validator.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>binding</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>A ValueExpression that evaluates to an implementation of the javax</desc>
       <longDesc>A ValueExpression that evaluates to an implementation of the jakarta.faces.validator.Validator interface.</longDesc>
       <deferredValueType>jakarta.faces.validator.Validator</deferredValueType>
@@ -9241,14 +9241,14 @@ Unless otherwise specified, all attributes accept static values or EL expression
     </longDesc>
     <attribute>
       <name>type</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The name of a Java class that implements ValueChangeListener</desc>
       <longDesc>The name of a Java class that implements ValueChangeListener.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>binding</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Value binding expression that evaluates to an implementation of the javax</desc>
       <longDesc>Value binding expression that evaluates to an implementation of the jakarta.faces.event.ValueChangeListener
 interface.</longDesc>
@@ -9266,14 +9266,14 @@ interface.</longDesc>
     <longDesc></longDesc>
     <attribute>
       <name>escape</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>If true, generated markup is escaped</desc>
       <longDesc>If true, generated markup is escaped. Default: false.</longDesc>
       <deferredValueType>java.lang.Boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>rendered</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on
 any subsequent form submit</desc>
       <longDesc>Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on
@@ -9355,7 +9355,7 @@ ViewDeclarationLanguage.retargetAttachedObjects. AttachedObjectTargetHandler gro
 common behavior</longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>Indicate the name of the attribute that the component should expose
 to page authors</desc>
@@ -9365,7 +9365,7 @@ to page authors.</longDesc>
     </attribute>
     <attribute>
       <name>targets</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
@@ -9393,20 +9393,20 @@ to page authors.</longDesc>
     <longDesc></longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>no description</desc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>targets</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>default</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>If this property is set and the attribute does not have any
 value (null), the value set on this property is returned as default
 instead null</desc>
@@ -9417,14 +9417,14 @@ instead null.</longDesc>
     </attribute>
     <attribute>
       <name>displayName</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>required</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>
 <![CDATA[
 Indicate if the attribute is required or not
@@ -9445,40 +9445,40 @@ not ProjectStage.Production when a composite component is created.</p>
     </attribute>
     <attribute>
       <name>preferred</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>expert</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>shortDescription</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>method-signature</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>type</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>hidden</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The "hidden" flag is used to identify features that are intended only 
 for tool use, and which should not be exposed to humans</desc>
       <longDesc>The "hidden" flag is used to identify features that are intended only 
@@ -9488,7 +9488,7 @@ Only available if ProjectStage is Development.</longDesc>
     </attribute>
     <attribute>
       <name>targetAttributeName</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
@@ -9504,7 +9504,7 @@ Only available if ProjectStage is Development.</longDesc>
     <longDesc></longDesc>
     <attribute>
       <name>event</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>This attribute is used as the target event 
 name, so client behaviors pointing to "name" 
@@ -9521,7 +9521,7 @@ words, this is the "real" event name.</longDesc>
     </attribute>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>This attribute represents the source event name 
 that is used when instances of the composite 
@@ -9534,7 +9534,7 @@ words, this is the "logical" event name.</longDesc>
     </attribute>
     <attribute>
       <name>default</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Indicate this clientBehavior description is the one
 that has to be taken by default</desc>
       <longDesc>Indicate this clientBehavior description is the one
@@ -9545,7 +9545,7 @@ a composite component interface description.</longDesc>
     </attribute>
     <attribute>
       <name>targets</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Contains a list of clientIds separated by spaces that 
 identify the component(s) that will be used to attach 
 client behaviors from the composite component</desc>
@@ -9596,21 +9596,21 @@ bean descriptor map as a Map&lt;String, PropertyDescriptor&gt;
     </longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>displayName</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>required</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>
 <![CDATA[
 Indicate if the attribute is required or not
@@ -9632,28 +9632,28 @@ not ProjectStage.Production when a composite component is created.
     </attribute>
     <attribute>
       <name>preferred</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>expert</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>shortDescription</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>hidden</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The "hidden" flag is used to identify features that are intended only 
 for tool use, and which should not be exposed to humans</desc>
       <longDesc>The "hidden" flag is used to identify features that are intended only 
@@ -9693,7 +9693,7 @@ Only available if ProjectStage is Development.</longDesc>
     <longDesc>Insert or move the facet from the composite component body to the expected location.</longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>The name that identify the current facet</desc>
       <longDesc>The name that identify the current facet.</longDesc>
@@ -9701,7 +9701,7 @@ Only available if ProjectStage is Development.</longDesc>
     </attribute>
     <attribute>
       <name>required</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Define if the facet to be inserted is required or not for every instance of
 this composite component</desc>
       <longDesc>Define if the facet to be inserted is required or not for every instance of
@@ -9720,49 +9720,49 @@ this composite component.</longDesc>
     <longDesc></longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>componentType</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>displayName</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>preferred</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>expert</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>shortDescription</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Only available if ProjectStage is Development</desc>
       <longDesc>Only available if ProjectStage is Development.</longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>hidden</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The "hidden" flag is used to identify features that are intended only 
 for tool use, and which should not be exposed to humans</desc>
       <longDesc>The "hidden" flag is used to identify features that are intended only 
@@ -9782,7 +9782,7 @@ Only available if ProjectStage is Development.</longDesc>
     <longDesc>Render the facet defined on the composite component body to the current location</longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>The name that identify the current facet</desc>
       <longDesc>The name that identify the current facet.</longDesc>
@@ -9790,7 +9790,7 @@ Only available if ProjectStage is Development.</longDesc>
     </attribute>
     <attribute>
       <name>required</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Define if the facet to be inserted is required or not for every instance of
 this composite component</desc>
       <longDesc>Define if the facet to be inserted is required or not for every instance of
@@ -9876,70 +9876,70 @@ to define a target for a behavior. See comment inside apply() method.</li>
     </longDesc>
     <attribute>
       <name>disabled</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.Boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>event</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>execute</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.Object</deferredValueType>
     </attribute>
     <attribute>
       <name>immediate</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.Boolean</deferredValueType>
     </attribute>
     <attribute>
       <name>listener</name>
-      <className>javax.el.MethodExpression</className>
+      <className>jakarta.el.MethodExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredMethodSignature>public void m(jakarta.faces.event.AjaxBehaviorEvent evt) " + "throws jakarta.faces.event.AbortProcessingException</deferredMethodSignature>
     </attribute>
     <attribute>
       <name>onevent</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>onerror</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>render</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.Object</deferredValueType>
     </attribute>
     <attribute>
       <name>delay</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
     <attribute>
       <name>resetValues</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <deferredValueType>java.lang.Boolean</deferredValueType>
     </attribute>
@@ -9956,7 +9956,7 @@ to define a target for a behavior. See comment inside apply() method.</li>
 instead set the ValueExpression on the UIComponent. 
 
 See jakarta.faces.component.UIComponent#getAttributes()
-See jakarta.faces.component.UIComponent#setValueExpression(java.lang.String, javax.el.ValueExpression)</longDesc>
+See jakarta.faces.component.UIComponent#setValueExpression(java.lang.String, jakarta.el.ValueExpression)</longDesc>
     <tagClass>org.apache.myfaces.taglib.core.AttributeTag</tagClass>
   </faceletTag>
   <faceletTag>
@@ -10018,13 +10018,13 @@ action.</longDesc>
     <longDesc>Registers a listener for a given system event class on the UIComponent associated with this tag.</longDesc>
     <attribute>
       <name>listener</name>
-      <className>javax.el.MethodExpression</className>
+      <className>jakarta.el.MethodExpression</className>
       <desc>no description</desc>
       <deferredMethodSignature>public void listener(jakarta.faces.event.ComponentSystemEvent evt) " + "throws jakarta.faces.event.AbortProcessingException</deferredMethodSignature>
     </attribute>
     <attribute>
       <name>type</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <deferredValueType>java.lang.String</deferredValueType>
     </attribute>
@@ -10100,7 +10100,7 @@ attributes of the current request.</longDesc>
     </attribute>
     <attribute>
       <name>render</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.Object</deferredValueType>
@@ -10117,7 +10117,7 @@ attributes of the current request.</longDesc>
     <componentClass>jakarta.faces.component.UISelectItems</componentClass>
     <attribute>
       <name>noSelectionValue</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Is either an EL expression pointing to the element in the value collection
 whose value should be marked as a "no selection" item, or a literal string
 that exactly matches the value of the item in the collection that must be 
@@ -10257,7 +10257,7 @@ one or many f:viewParam tags.</longDesc>
     <longDesc></longDesc>
     <attribute>
       <name>channel</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>no description</desc>
       <longDesc></longDesc>
       <deferredValueType>java.lang.String</deferredValueType>
@@ -10421,7 +10421,7 @@ specified.</longDesc>
     </attribute>
     <attribute>
       <name>items</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Collection of items to iterate over</desc>
       <longDesc>Collection of items to iterate over.</longDesc>
     </attribute>
@@ -10514,7 +10514,7 @@ whatever type the value expression evaluates to.</longDesc>
     </attribute>
     <attribute>
       <name>value</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>Expression to be evaluated</desc>
       <longDesc>Expression to be evaluated.</longDesc>
       <deferredValueType>java.lang.Object</deferredValueType>
@@ -10568,7 +10568,7 @@ whatever type the value expression evaluates to.</longDesc>
     <longDesc>TODO: REFACTOR - This class could easily use a common parent with DecoratorHandler</longDesc>
     <attribute>
       <name>template</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The resolvable URI of the template to use</desc>
       <longDesc>The resolvable URI of the template to use. The content within the composition tag will 
 be used in populating the template specified.</longDesc>
@@ -10594,7 +10594,7 @@ it with some external logic as provided by the template.
 TODO: REFACTOR - This class could easily use a common parent with CompositionHandler</longDesc>
     <attribute>
       <name>template</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <desc>The resolvable URI of the template to use</desc>
       <longDesc>The resolvable URI of the template to use. The content within the decorate tag 
 will be used in populating the template specified.</longDesc>
@@ -10613,7 +10613,7 @@ will be used in populating the template specified.</longDesc>
 This includes composition and decorate tags.</longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>The literal name for this definition</desc>
       <longDesc>
@@ -10647,7 +10647,7 @@ tags to pass EL expressions/values to the target page.
     </longDesc>
     <attribute>
       <name>src</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>A literal or EL expression that specifies the target Facelet that you 
 would like to include into your document</desc>
@@ -10667,7 +10667,7 @@ would like to include into your document.</longDesc>
     <longDesc>The insert tag is used within your templates to declare spots of replicable data.</longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>
 <![CDATA[
@@ -10696,7 +10696,7 @@ that the whole template client will be inserted.
     <longDesc></longDesc>
     <attribute>
       <name>name</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>The name of the variable to pass to the included Facelet</desc>
       <longDesc>The name of the variable to pass to the included Facelet.</longDesc>
@@ -10704,7 +10704,7 @@ that the whole template client will be inserted.
     </attribute>
     <attribute>
       <name>value</name>
-      <className>javax.el.ValueExpression</className>
+      <className>jakarta.el.ValueExpression</className>
       <required>true</required>
       <desc>The literal or EL expression value to assign to the named variable</desc>
       <longDesc>The literal or EL expression value to assign to the named variable.</longDesc>
@@ -12538,7 +12538,7 @@ Wrap exception caused by calls to EL expressions, so information like
 the location, expression string and tag name can be retrieved by
 the ExceptionHandler implementation and used to output meaningful information about itself.
 
-<p>Note in some cases this will wrap the original javax.el.ELException,
+<p>Note in some cases this will wrap the original jakarta.el.ELException,
 so the information will not be on the stack trace unless ExceptionHandler
 retrieve checking if the exception implements ContextAware interface and calling getWrapped() method.
 </p>

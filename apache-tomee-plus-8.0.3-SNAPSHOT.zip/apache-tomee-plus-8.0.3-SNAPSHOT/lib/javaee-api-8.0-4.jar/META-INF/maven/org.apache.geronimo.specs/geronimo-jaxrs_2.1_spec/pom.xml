@@ -65,14 +65,14 @@
             <Specification-Title>JSR-370 Java RESTful Web Services 2.1</Specification-Title>
             <Specification-Vendor>Sun Microsystems, Inc.</Specification-Vendor>
             <Specification-Version>1.1</Specification-Version>
-            <Export-Package>javax.ws.rs*;version=2.1</Export-Package>
+            <Export-Package>jakarta.ws.rs*;version=2.1</Export-Package>
             <Provide-Capability><![CDATA[
                osgi.contract;osgi.contract=JavaJAXRS;uses:="${packages;NAMED;javax.*}";version:List<Version>='2.1,2.0,1.1'
             ]]></Provide-Capability>
             <Require-Capability><![CDATA[
-              osgi.serviceloader;filter:="(osgi.serviceloader=javax.ws.rs.client.ClientBuilder)";cardinality:=multiple,
-              osgi.serviceloader;filter:="(osgi.serviceloader=javax.ws.rs.ext.RuntimeDelegate)";cardinality:=multiple,
-              osgi.serviceloader;filter:="(osgi.serviceloader=javax.ws.rs.sse.SseEventSource.Builder)";cardinality:=multiple,
+              osgi.serviceloader;filter:="(osgi.serviceloader=jakarta.ws.rs.client.ClientBuilder)";cardinality:=multiple,
+              osgi.serviceloader;filter:="(osgi.serviceloader=jakarta.ws.rs.ext.RuntimeDelegate)";cardinality:=multiple,
+              osgi.serviceloader;filter:="(osgi.serviceloader=jakarta.ws.rs.sse.SseEventSource.Builder)";cardinality:=multiple,
               osgi.extender;filter:="(osgi.extender=osgi.serviceloader.processor)"
             ]]></Require-Capability>
           </instructions>

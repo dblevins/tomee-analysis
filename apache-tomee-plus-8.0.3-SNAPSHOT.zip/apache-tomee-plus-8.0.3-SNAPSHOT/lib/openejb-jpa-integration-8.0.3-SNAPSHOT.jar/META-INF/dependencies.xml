@@ -4,14 +4,14 @@
     <dependency groupId="org.eclipse.persistence" artifactId="jakarta.persistence" version="2.2.2" file-name="jakarta.persistence-2.2.2.jar" optional="true"/>
   </dependency>
   <dependency groupId="org.hibernate" artifactId="hibernate-entitymanager" version="5.4.10.Final" file-name="hibernate-entitymanager-5.4.10.Final.jar" optional="true">
-    <dependency groupId="javax.persistence" artifactId="javax.persistence-api" version="2.2" file-name="javax.persistence-api-2.2.jar" optional="true"/>
+    <dependency groupId="jakarta.persistence" artifactId="jakarta.persistence-api" version="2.2" file-name="jakarta.persistence-api-2.2.jar" optional="true"/>
     <dependency groupId="net.bytebuddy" artifactId="byte-buddy" version="1.10.2" file-name="byte-buddy-1.10.2.jar" optional="true"/>
     <dependency groupId="org.dom4j" artifactId="dom4j" version="2.1.1" file-name="dom4j-2.1.1.jar" optional="true"/>
     <dependency groupId="org.hibernate" artifactId="hibernate-core" version="5.4.10.Final" file-name="hibernate-core-5.4.10.Final.jar" optional="true">
       <dependency groupId="antlr" artifactId="antlr" version="2.7.7" file-name="antlr-2.7.7.jar" optional="true"/>
       <dependency groupId="com.fasterxml" artifactId="classmate" version="1.5.1" file-name="classmate-1.5.1.jar" optional="true"/>
-      <dependency groupId="javax.activation" artifactId="javax.activation-api" version="1.2.0" file-name="javax.activation-api-1.2.0.jar" optional="true"/>
-      <dependency groupId="javax.xml.bind" artifactId="jaxb-api" version="2.3.1" file-name="jaxb-api-2.3.1.jar" optional="true"/>
+      <dependency groupId="jakarta.activation" artifactId="jakarta.activation-api" version="1.2.0" file-name="jakarta.activation-api-1.2.0.jar" optional="true"/>
+      <dependency groupId="jakarta.xml.bind" artifactId="jaxb-api" version="2.3.1" file-name="jaxb-api-2.3.1.jar" optional="true"/>
       <dependency groupId="org.glassfish.jaxb" artifactId="jaxb-runtime" version="2.3.1" file-name="jaxb-runtime-2.3.1.jar" optional="true">
         <dependency groupId="com.sun.istack" artifactId="istack-commons-runtime" version="3.0.7" file-name="istack-commons-runtime-3.0.7.jar" optional="true"/>
         <dependency groupId="com.sun.xml.fastinfoset" artifactId="FastInfoset" version="1.2.15" file-name="FastInfoset-1.2.15.jar" optional="true"/>

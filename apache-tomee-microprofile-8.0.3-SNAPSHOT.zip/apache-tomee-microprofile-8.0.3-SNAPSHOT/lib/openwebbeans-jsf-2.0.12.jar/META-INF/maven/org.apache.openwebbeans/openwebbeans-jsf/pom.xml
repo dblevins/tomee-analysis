@@ -89,7 +89,7 @@
                     <instructions>
                         <Import-Package>
                             jakarta.servlet.*;version="${osgi.servlet.range}",
-                            javax.el.*;version="${osgi.el.range}",
+                            jakarta.el.*;version="${osgi.el.range}",
                             jakarta.faces.*;version="${osgi.faces.range}",
                             *
                         </Import-Package>

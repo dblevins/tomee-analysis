@@ -329,7 +329,7 @@
       <display-name>Application Action</display-name>
       <icon/>
       <property-name>action</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 java.lang.Object action()
@@ -353,7 +353,7 @@
       <display-name>Action Listener</display-name>
       <icon/>
       <property-name>actionListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void actionListener(jakarta.faces.event.ActionEvent)
@@ -1466,7 +1466,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -1491,7 +1491,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -2933,7 +2933,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -2958,7 +2958,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -3320,7 +3320,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Application Action</display-name>
       <icon/>
       <property-name>action</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 java.lang.Object action()
@@ -3344,7 +3344,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Action Listener</display-name>
       <icon/>
       <property-name>actionListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void actionListener(jakarta.faces.event.ActionEvent)
@@ -3385,7 +3385,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Application Action</display-name>
       <icon/>
       <property-name>actionExpression</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 java.lang.Object action()
@@ -3894,7 +3894,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -3919,7 +3919,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -4620,7 +4620,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -4645,7 +4645,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -4987,7 +4987,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -5012,7 +5012,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -5826,7 +5826,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Application Action</display-name>
       <icon/>
       <property-name>action</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 java.lang.Object action()
@@ -5850,7 +5850,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Action Listener</display-name>
       <icon/>
       <property-name>actionListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void actionListener(jakarta.faces.event.ActionEvent)
@@ -6491,7 +6491,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Application Action</display-name>
       <icon/>
       <property-name>action</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 java.lang.Object action()
@@ -6515,7 +6515,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Action Listener</display-name>
       <icon/>
       <property-name>actionListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void actionListener(jakarta.faces.event.ActionEvent)
@@ -7142,7 +7142,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Application Action</display-name>
       <icon/>
       <property-name>action</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 java.lang.Object action()
@@ -7166,7 +7166,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Action Listener</display-name>
       <icon/>
       <property-name>actionListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void actionListener(jakarta.faces.event.ActionEvent)
@@ -9290,7 +9290,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -9315,7 +9315,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -10070,7 +10070,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -10095,7 +10095,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -10431,7 +10431,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -10456,7 +10456,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -11225,7 +11225,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -11250,7 +11250,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -12003,7 +12003,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -12028,7 +12028,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -17677,7 +17677,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -17702,7 +17702,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -18419,7 +18419,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -18444,7 +18444,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -19227,7 +19227,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -19252,7 +19252,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -19983,7 +19983,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -20008,7 +20008,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -20729,7 +20729,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -20754,7 +20754,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -21472,7 +21472,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -21497,7 +21497,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)
@@ -22207,7 +22207,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Validator</display-name>
       <icon/>
       <property-name>validator</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void validate(jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object)
@@ -22232,7 +22232,7 @@ https://javaserverfaces-spec-public.dev.java.net/issues/show_bug.cgi?id=447
       <display-name>Value Change Listener</display-name>
       <icon/>
       <property-name>valueChangeListener</property-name>
-      <property-class>javax.el.MethodExpression</property-class>
+      <property-class>jakarta.el.MethodExpression</property-class>
       <property-extension>
         <method-signature>
                 void valueChange(jakarta.faces.event.ValueChangeEvent)

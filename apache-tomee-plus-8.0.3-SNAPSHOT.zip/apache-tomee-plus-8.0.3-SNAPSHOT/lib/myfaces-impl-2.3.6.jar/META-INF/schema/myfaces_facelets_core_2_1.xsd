@@ -865,7 +865,7 @@ Unless otherwise specified, all attributes accept static values or EL expression
 instead set the ValueExpression on the UIComponent. 
 
 See jakarta.faces.component.UIComponent#getAttributes()
-See jakarta.faces.component.UIComponent#setValueExpression(java.lang.String, javax.el.ValueExpression)</p>]]></xs:documentation>
+See jakarta.faces.component.UIComponent#setValueExpression(java.lang.String, jakarta.el.ValueExpression)</p>]]></xs:documentation>
               <xs:documentation>tag-class: org.apache.myfaces.view.facelets.tag.jsf.core.AttributeHandler</xs:documentation>
           <xs:documentation>body-content: JSP</xs:documentation>
         </xs:annotation>

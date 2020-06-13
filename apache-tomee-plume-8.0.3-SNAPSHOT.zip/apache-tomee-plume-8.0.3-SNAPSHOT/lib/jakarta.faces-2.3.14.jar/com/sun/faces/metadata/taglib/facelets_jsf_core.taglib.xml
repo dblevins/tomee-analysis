@@ -2020,7 +2020,7 @@ of POJOs.
             values</em>.</p>
 
             <p>Obtain a reference to
-            a <code>javax.validation.Validator</code> instance using the
+            a <code>jakarta.validation.Validator</code> instance using the
             same steps described in the javadoc
             for <code>jakarta.faces.validator.BeanValidator.validate()</code>.
             Let the instance be called <em>beanValidator</em> for

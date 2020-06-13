@@ -49,7 +49,7 @@
   <properties>
     <siteId>specs/${project.artifactId}</siteId>
 
-    <geronimo.osgi.export.pkg>javax.enterprise.concurrent*</geronimo.osgi.export.pkg>
+    <geronimo.osgi.export.pkg>jakarta.enterprise.concurrent*</geronimo.osgi.export.pkg>
     <geronimo.osgi.export.version>1.0</geronimo.osgi.export.version>
   </properties>
 
@@ -67,7 +67,7 @@
         <version>2.0.1</version>
         <configuration>
           <instructions>
-            <Export-Package>javax.enterprise.concurrent*;version=1.0</Export-Package>
+            <Export-Package>jakarta.enterprise.concurrent*;version=1.0</Export-Package>
           </instructions>
         </configuration>
       </plugin>

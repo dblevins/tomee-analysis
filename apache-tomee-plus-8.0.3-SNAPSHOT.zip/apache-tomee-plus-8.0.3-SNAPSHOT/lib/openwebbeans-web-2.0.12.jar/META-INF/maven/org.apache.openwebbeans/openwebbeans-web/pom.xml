@@ -122,7 +122,7 @@
                         <Import-Package>
                             jakarta.servlet.jsp*;version="2.1",
                             jakarta.servlet.*;version="${osgi.servlet.range}",
-                            javax.el.*;version="${osgi.el.range}",
+                            jakarta.el.*;version="${osgi.el.range}",
                             *
                         </Import-Package>
                     </instructions>

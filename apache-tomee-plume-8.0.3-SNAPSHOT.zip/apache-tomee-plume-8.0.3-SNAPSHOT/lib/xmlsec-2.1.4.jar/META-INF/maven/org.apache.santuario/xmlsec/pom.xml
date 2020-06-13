@@ -424,7 +424,7 @@
                                 <systemPropertyVariables>
                                     <product.version>${project.version}</product.version>
                                     <log4j.configuration>log4j-xmlsec.xml</log4j.configuration>
-                                    <!--<javax.xml.bind.JAXBContext>${xmlsec.jaxb.context.class}</javax.xml.bind.JAXBContext>-->
+                                    <!--<jakarta.xml.bind.JAXBContext>${xmlsec.jaxb.context.class}</jakarta.xml.bind.JAXBContext>-->
                                 </systemPropertyVariables>
                             </configuration>
                         </plugin>
@@ -468,7 +468,7 @@
                                 <systemPropertyVariables>
                                     <product.version>${project.version}</product.version>
                                     <log4j.configuration>log4j-xmlsec.xml</log4j.configuration>
-                                    <!--<javax.xml.bind.JAXBContext>${xmlsec.jaxb.context.class}</javax.xml.bind.JAXBContext>-->
+                                    <!--<jakarta.xml.bind.JAXBContext>${xmlsec.jaxb.context.class}</jakarta.xml.bind.JAXBContext>-->
                                 </systemPropertyVariables>
                             </configuration>
                         </plugin>

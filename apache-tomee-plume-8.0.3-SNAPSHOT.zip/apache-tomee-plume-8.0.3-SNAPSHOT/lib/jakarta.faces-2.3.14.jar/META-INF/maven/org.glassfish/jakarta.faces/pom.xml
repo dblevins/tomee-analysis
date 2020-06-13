@@ -100,7 +100,7 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.validation</groupId>
+            <groupId>jakarta.validation</groupId>
             <artifactId>validation-api</artifactId>
             <version>2.0.1.Final</version>
             <scope>provided</scope>
@@ -156,7 +156,7 @@
         
         <dependency>
             <groupId>org.glassfish.web</groupId>
-            <artifactId>javax.el</artifactId>
+            <artifactId>jakarta.el</artifactId>
             <version>2.2.3</version>
             <scope>test</scope>
         </dependency>
@@ -242,7 +242,7 @@
                             <aggregations>
                                 <aggregation>
                                     <includes>
-                                        <include>${project.basedir}/src/main/resources/META-INF/resources/javax.faces/jsf-uncompressed.js</include>
+                                        <include>${project.basedir}/src/main/resources/META-INF/resources/jakarta.faces/jsf-uncompressed.js</include>
                                     </includes>
                                     <output>${project.build.directory}/generated-resources/yui/jsf.js</output>
                                 </aggregation>
@@ -251,7 +251,7 @@
                                 <include>*.js</include>
                             </includes>
                             <sourceDirectory>${project.build.directory}/generated-resources/yui</sourceDirectory>
-                            <outputDirectory>${project.build.directory}/generated-resources/yui/META-INF/resources/javax.faces/</outputDirectory>
+                            <outputDirectory>${project.build.directory}/generated-resources/yui/META-INF/resources/jakarta.faces/</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -312,7 +312,7 @@
                         <Implementation-Vendor>Eclipse</Implementation-Vendor> 
                         <Implementation-Vendor-Id>org.glassfish</Implementation-Vendor-Id>
                         
-                        <Extension-Name>javax.faces</Extension-Name>
+                        <Extension-Name>jakarta.faces</Extension-Name>
                         
                         <Export-Package>
                             jakarta.faces.*;version=2.3,
@@ -324,19 +324,19 @@
                             com.sun.faces.*,
                             jakarta.servlet.annotation.*;resolution:=optional,
                             jakarta.servlet.*,
-                            javax.el.*,
-                            javax.inject.*,
+                            jakarta.el.*,
+                            jakarta.inject.*,
                             javax.enterprise.inject.*,
                             javax.enterprise.util.*,
                             javax.enterprise.context.*,
                             javax.annotation.processing.*,
                             javax.annotation.*;version="[1.0.0,2.0.0)",
                             javax.crypto.*,
-                            javax.websocket.*;resolution:=optional,
-                            javax.json.*;resolution:=optional,
-                            javax.validation.*;resolution:=optional,
+                            jakarta.websocket.*;resolution:=optional,
+                            jakarta.json.*;resolution:=optional,
+                            jakarta.validation.*;resolution:=optional,
                             javax.enterprise.event;resolution:=optional,
-                            javax.ejb.*;resolution:=optional,
+                            jakarta.ejb.*;resolution:=optional,
                             jakarta.persistence.*;resolution:=optional,
                             javax.xml.*,
                             org.w3c.dom.*,

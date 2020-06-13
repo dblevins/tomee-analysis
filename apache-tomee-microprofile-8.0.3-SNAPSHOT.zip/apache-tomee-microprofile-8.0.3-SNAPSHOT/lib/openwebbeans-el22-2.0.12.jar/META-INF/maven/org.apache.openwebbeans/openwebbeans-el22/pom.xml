@@ -93,7 +93,7 @@
                 <configuration>
                     <instructions>
                         <Import-Package>
-                            javax.el.*;version="${osgi.el.range}",
+                            jakarta.el.*;version="${osgi.el.range}",
                             *
                         </Import-Package>
                     </instructions>

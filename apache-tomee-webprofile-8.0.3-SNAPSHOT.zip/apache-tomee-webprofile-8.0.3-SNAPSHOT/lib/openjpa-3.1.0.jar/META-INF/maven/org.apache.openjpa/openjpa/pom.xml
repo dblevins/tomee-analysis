@@ -130,11 +130,11 @@
                             org.apache.log4j.*;resolution:=optional,
                             org.slf4j.*;resolution:=optional,
                             org.apache.commons.logging.*;resolution:=optional,
-                            javax.activation.xa*;resolution:=optional,
+                            jakarta.activation.xa*;resolution:=optional,
                             jakarta.jms.*;version="[1.1.0,1.2)";resolution:=optional,
                             javax.transaction.*;version="[1.1,1.3)";resolution:=optional,
-                            javax.validation.*;version="[1.0.0,1.1)";resolution:=optional,
-                            javax.xml.bind.*;resolution:=optional,
+                            jakarta.validation.*;version="[1.0.0,1.1)";resolution:=optional,
+                            jakarta.xml.bind.*;resolution:=optional,
                             serp.*;resolution:=optional,
                             jakarta.persistence.*;version="[1.1.0,2.2)",
                             *
@@ -164,14 +164,14 @@
             <!--
                  Need to exclude jaxb, so the following will not get included
                  as compile depends in the aggregate JAR by the shade plugin:
-                     javax.xml.bind:jaxb-api:jar:2.0
-                     javax.xml.bind:jsr173_api:jar:1.0
-                     javax.activation:activation:jar:1.1
+                     jakarta.xml.bind:jaxb-api:jar:2.0
+                     jakarta.xml.bind:jsr173_api:jar:1.0
+                     jakarta.activation:activation:jar:1.1
                      com.sun.xml.bind:jaxb-impl:jar:2.0.5
             -->
             <exclusions>
                 <exclusion>
-                    <groupId>javax.xml.bind</groupId>
+                    <groupId>jakarta.xml.bind</groupId>
                     <artifactId>jaxb-api</artifactId>
                 </exclusion>
                 <exclusion>
@@ -182,17 +182,17 @@
         </dependency>
         <!-- Need to manually add back optional openjpa-jdbc depends -->
         <dependency>
-            <groupId>javax.xml.bind</groupId>
+            <groupId>jakarta.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
             <scope>compile</scope>
             <optional>true</optional>
             <exclusions>
                 <exclusion>
-                    <groupId>javax.xml.bind</groupId>
+                    <groupId>jakarta.xml.bind</groupId>
                     <artifactId>jsr173_api</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>javax.activation</groupId>
+                    <groupId>jakarta.activation</groupId>
                     <artifactId>activation</artifactId>
                 </exclusion>
             </exclusions>
@@ -204,11 +204,11 @@
             <optional>true</optional>
             <exclusions>
                 <exclusion>
-                    <groupId>javax.xml.bind</groupId>
+                    <groupId>jakarta.xml.bind</groupId>
                     <artifactId>jsr173_api</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>javax.activation</groupId>
+                    <groupId>jakarta.activation</groupId>
                     <artifactId>activation</artifactId>
                 </exclusion>
             </exclusions>

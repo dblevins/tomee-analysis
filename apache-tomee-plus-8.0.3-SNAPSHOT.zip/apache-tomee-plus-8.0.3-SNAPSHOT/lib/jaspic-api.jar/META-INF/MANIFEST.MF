@@ -26,7 +26,7 @@ X-Compile-Source-JDK: 8
 X-Compile-Target-JDK: 8
 
 Name: javax/security/auth/message
-Implementation-Title: javax.security.auth.message
+Implementation-Title: jakarta.security.auth.message
 Implementation-Vendor: Apache Software Foundation
 Implementation-Version: 1.1.FR
 Specification-Title: Java Authentication SPI for Containers

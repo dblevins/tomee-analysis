@@ -22,7 +22,7 @@ X-Compile-Source-JDK: 8
 X-Compile-Target-JDK: 8
 
 Name: javax/servlet/
-Implementation-Title: javax.servlet
+Implementation-Title: jakarta.servlet
 Implementation-Vendor: Apache Software Foundation
 Implementation-Version: 4.0.FR
 Specification-Title: Java API for Servlets

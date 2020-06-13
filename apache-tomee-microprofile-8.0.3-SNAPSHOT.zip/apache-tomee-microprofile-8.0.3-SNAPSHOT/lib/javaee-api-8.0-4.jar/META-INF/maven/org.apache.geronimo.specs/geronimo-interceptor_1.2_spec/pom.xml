@@ -63,7 +63,7 @@
                 <version>3.5.0</version>
                 <configuration>
                     <instructions>
-                        <Export-Package>javax.interceptor*;version=1.2</Export-Package>
+                        <Export-Package>jakarta.interceptor*;version=1.2</Export-Package>
                         <Provide-Capability><![CDATA[
                             osgi.contract;osgi.contract=JavaInterceptor;uses:="${packages;NAMED;javax.*}";version:List<Version>='1.2,1.1'
                         ]]></Provide-Capability>
