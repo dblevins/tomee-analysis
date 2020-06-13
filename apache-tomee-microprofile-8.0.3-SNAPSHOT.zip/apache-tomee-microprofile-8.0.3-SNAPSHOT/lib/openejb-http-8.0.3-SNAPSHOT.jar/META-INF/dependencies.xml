@@ -85,7 +85,7 @@
     <dependency groupId="org.apache.tomee" artifactId="openejb-client" version="8.0.3-SNAPSHOT" file-name="openejb-client-8.0.3-SNAPSHOT.jar"/>
   </dependency>
   <dependency groupId="org.mortbay.jetty" artifactId="jetty-embedded" version="6.1.7" file-name="jetty-embedded-6.1.7.jar" optional="true">
-    <dependency groupId="javax.servlet.jsp" artifactId="jsp-api" version="2.1" file-name="jsp-api-2.1.jar" optional="true"/>
+    <dependency groupId="jakarta.servlet.jsp" artifactId="jsp-api" version="2.1" file-name="jsp-api-2.1.jar" optional="true"/>
     <dependency groupId="org.mortbay.jetty" artifactId="jetty" version="6.1.7" file-name="jetty-6.1.7.jar" optional="true">
       <dependency groupId="org.mortbay.jetty" artifactId="jetty-util" version="6.1.7" file-name="jetty-util-6.1.7.jar" optional="true"/>
     </dependency>

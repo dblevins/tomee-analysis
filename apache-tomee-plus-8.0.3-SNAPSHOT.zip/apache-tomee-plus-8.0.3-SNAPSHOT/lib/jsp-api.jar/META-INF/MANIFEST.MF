@@ -23,7 +23,7 @@ X-Compile-Source-JDK: 8
 X-Compile-Target-JDK: 8
 
 Name: javax/servlet/jsp/
-Implementation-Title: javax.servlet.jsp
+Implementation-Title: jakarta.servlet.jsp
 Implementation-Vendor: Apache Software Foundation
 Implementation-Version: 2.3.FR
 Specification-Title: Java API for JavaServer Pages

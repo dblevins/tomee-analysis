@@ -315,15 +315,15 @@
                         <Extension-Name>javax.faces</Extension-Name>
                         
                         <Export-Package>
-                            javax.faces.*;version=2.3,
+                            jakarta.faces.*;version=2.3,
                             com.sun.faces.*;version=2.3
                         </Export-Package>
                         
                         <Import-Package>
-                            javax.faces.*,
+                            jakarta.faces.*,
                             com.sun.faces.*,
-                            javax.servlet.annotation.*;resolution:=optional,
-                            javax.servlet.*,
+                            jakarta.servlet.annotation.*;resolution:=optional,
+                            jakarta.servlet.*,
                             javax.el.*,
                             javax.inject.*,
                             javax.enterprise.inject.*,
@@ -363,7 +363,7 @@
                             resolution:=optional;cardinality:=multiple,
                             osgi.serviceloader;filter:="(osgi.serviceloader=com.sun.faces.util.cdi11.CDIUtil)";
                             resolution:=optional;cardinality:=multiple,
-                            osgi.serviceloader;filter:="(osgi.serviceloader=javax.faces.application.ApplicationConfigurationPopulator)";
+                            osgi.serviceloader;filter:="(osgi.serviceloader=jakarta.faces.application.ApplicationConfigurationPopulator)";
                             resolution:=optional;cardinality:=multiple,
                             osgi.extender;filter:="(osgi.extender=osgi.serviceloader.processor)";resolution:=optional
                         </Require-Capability>

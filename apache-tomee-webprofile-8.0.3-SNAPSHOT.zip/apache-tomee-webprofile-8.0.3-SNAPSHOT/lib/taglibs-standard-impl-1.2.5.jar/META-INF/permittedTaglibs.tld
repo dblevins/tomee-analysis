@@ -29,7 +29,7 @@
 
     <validator>
         <validator-class>
-            javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV
+            jakarta.servlet.jsp.jstl.tlv.PermittedTaglibsTLV
         </validator-class>
         <init-param>
             <description>

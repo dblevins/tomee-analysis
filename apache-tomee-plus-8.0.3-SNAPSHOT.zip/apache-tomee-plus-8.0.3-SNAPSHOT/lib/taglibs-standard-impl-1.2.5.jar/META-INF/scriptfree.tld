@@ -31,7 +31,7 @@
             Validates prohibitions against scripting elements.
         </description>
         <validator-class>
-            javax.servlet.jsp.jstl.tlv.ScriptFreeTLV
+            jakarta.servlet.jsp.jstl.tlv.ScriptFreeTLV
         </validator-class>
         <init-param>
             <description>

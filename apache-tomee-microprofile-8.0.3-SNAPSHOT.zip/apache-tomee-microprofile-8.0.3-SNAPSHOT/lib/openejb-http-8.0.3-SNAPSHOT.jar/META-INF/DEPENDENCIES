@@ -7,7 +7,7 @@ TomEE :: Server :: Http
 
 
 From: 'an unknown organization'
-  - jsp-api  javax.servlet.jsp:jsp-api:jar:2.1
+  - jsp-api  jakarta.servlet.jsp:jsp-api:jar:2.1
 
   - Serp (http://serp.sourceforge.net) net.sourceforge.serp:serp:jar:1.15.1
     License: BSD  (LICENSE.txt)

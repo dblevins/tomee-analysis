@@ -44,59 +44,59 @@
   <tag-handler-delegate-factory>org.apache.myfaces.view.facelets.tag.jsf.TagHandlerDelegateFactoryImpl</tag-handler-delegate-factory>
 </factory>
 <behavior>
-  <behavior-id>javax.faces.behavior.Ajax</behavior-id>
-  <behavior-class>javax.faces.component.behavior.AjaxBehavior</behavior-class>
+  <behavior-id>jakarta.faces.behavior.Ajax</behavior-id>
+  <behavior-class>jakarta.faces.component.behavior.AjaxBehavior</behavior-class>
 </behavior>
 <converter>
   <converter-for-class>java.math.BigDecimal</converter-for-class>
-  <converter-class>javax.faces.convert.BigDecimalConverter</converter-class>
+  <converter-class>jakarta.faces.convert.BigDecimalConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.math.BigInteger</converter-for-class>
-  <converter-class>javax.faces.convert.BigIntegerConverter</converter-class>
+  <converter-class>jakarta.faces.convert.BigIntegerConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Boolean</converter-for-class>
-  <converter-class>javax.faces.convert.BooleanConverter</converter-class>
+  <converter-class>jakarta.faces.convert.BooleanConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Byte</converter-for-class>
-  <converter-class>javax.faces.convert.ByteConverter</converter-class>
+  <converter-class>jakarta.faces.convert.ByteConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Character</converter-for-class>
-  <converter-class>javax.faces.convert.CharacterConverter</converter-class>
+  <converter-class>jakarta.faces.convert.CharacterConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Double</converter-for-class>
-  <converter-class>javax.faces.convert.DoubleConverter</converter-class>
+  <converter-class>jakarta.faces.convert.DoubleConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Enum</converter-for-class>
-  <converter-class>javax.faces.convert.EnumConverter</converter-class>
+  <converter-class>jakarta.faces.convert.EnumConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Float</converter-for-class>
-  <converter-class>javax.faces.convert.FloatConverter</converter-class>
+  <converter-class>jakarta.faces.convert.FloatConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Integer</converter-for-class>
-  <converter-class>javax.faces.convert.IntegerConverter</converter-class>
+  <converter-class>jakarta.faces.convert.IntegerConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Long</converter-for-class>
-  <converter-class>javax.faces.convert.LongConverter</converter-class>
+  <converter-class>jakarta.faces.convert.LongConverter</converter-class>
 </converter>
 <converter>
   <converter-for-class>java.lang.Short</converter-for-class>
-  <converter-class>javax.faces.convert.ShortConverter</converter-class>
+  <converter-class>jakarta.faces.convert.ShortConverter</converter-class>
 </converter>
 
 
   <component>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <component-type>javax.faces.Column</component-type>
-    <component-class>javax.faces.component.UIColumn</component-class>
+    <component-type>jakarta.faces.Column</component-type>
+    <component-class>jakarta.faces.component.UIColumn</component-class>
     <facet>
         <facet-name>footer</facet-name>
     </facet>
@@ -121,16 +121,16 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Column</component-family>
+      <component-family>jakarta.faces.Column</component-family>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[UICommand is a base abstraction for components that implement ActionSource.]]></description>
-    <component-type>javax.faces.Command</component-type>
-    <component-class>javax.faces.component.UICommand</component-class>
+    <component-type>jakarta.faces.Command</component-type>
+    <component-class>jakarta.faces.component.UICommand</component-class>
     <property>
          <description><![CDATA[A boolean value that identifies the phase during which action events
 should fire.
@@ -165,7 +165,7 @@ is functionally equivalent to a reference to an action method that returns the s
     <property>
          <description><![CDATA[]]></description>
          <property-name>actionListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -185,11 +185,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Command</component-family>
-      <renderer-type>javax.faces.Button</renderer-type>
+      <component-family>jakarta.faces.Command</component-family>
+      <renderer-type>jakarta.faces.Button</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -250,8 +250,8 @@ DataModel is <i>not</i> fetched, and the saved state of the child components is 
 </p>
 see Javadoc of the <a href="http://java.sun.com/j2ee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>
 for more information.]]></description>
-    <component-type>javax.faces.Data</component-type>
-    <component-class>javax.faces.component.UIData</component-class>
+    <component-type>jakarta.faces.Data</component-type>
+    <component-class>jakarta.faces.component.UIData</component-class>
     <facet>
         <facet-name>footer</facet-name>
     </facet>
@@ -266,7 +266,7 @@ The value referenced by the EL expression can be of any type.
 <ul>
 <li>A value of type DataModel is used directly.</li>
 <li>Array-like parameters of type array-of-Object, java.util.List, java.sql.ResultSet or
-javax.servlet.jsp.jstl.sql.Result are wrapped in a corresponding DataModel that knows how to iterate over the
+jakarta.servlet.jsp.jstl.sql.Result are wrapped in a corresponding DataModel that knows how to iterate over the
 elements.</li>
 <li>Other values are wrapped in a DataModel as a single row.</li>
 </ul>
@@ -332,17 +332,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Data</component-family>
-      <renderer-type>javax.faces.Table</renderer-type>
+      <component-family>jakarta.faces.Data</component-family>
+      <renderer-type>jakarta.faces.Table</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <component-type>javax.faces.Form</component-type>
-    <component-class>javax.faces.component.UIForm</component-class>
+    <component-type>jakarta.faces.Form</component-type>
+    <component-class>jakarta.faces.component.UIForm</component-class>
     <property>
          <property-name>prependId</property-name>
          <property-class>boolean</property-class>
@@ -366,11 +366,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Form</component-family>
-      <renderer-type>javax.faces.Form</renderer-type>
+      <component-family>jakarta.faces.Form</component-family>
+      <renderer-type>jakarta.faces.Form</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -379,8 +379,8 @@ component. The id is not necessarily unique across all components in the current
 See the javadoc for this class in the
 <a href="http://java.sun.com/j2ee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>
 for further details.]]></description>
-    <component-type>javax.faces.Graphic</component-type>
-    <component-class>javax.faces.component.UIGraphic</component-class>
+    <component-type>jakarta.faces.Graphic</component-type>
+    <component-class>jakarta.faces.component.UIGraphic</component-class>
     <property>
          <description><![CDATA[An alias for the "value" attribute.]]></description>
          <property-name>url</property-name>
@@ -412,17 +412,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Graphic</component-family>
-      <renderer-type>javax.faces.Image</renderer-type>
+      <component-family>jakarta.faces.Graphic</component-family>
+      <renderer-type>jakarta.faces.Image</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.ImportConstants</component-type>
-    <component-class>javax.faces.component.UIImportConstants</component-class>
+    <component-type>jakarta.faces.ImportConstants</component-type>
+    <component-class>jakarta.faces.component.UIImportConstants</component-class>
     <property>
          <property-name>type</property-name>
          <property-class>java.lang.String</property-class>
@@ -449,16 +449,16 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.ImportConstants</component-family>
+      <component-family>jakarta.faces.ImportConstants</component-family>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Displays a value to the user.]]></description>
-    <component-type>javax.faces.Output</component-type>
-    <component-class>javax.faces.component.UIOutput</component-class>
+    <component-type>jakarta.faces.Output</component-type>
+    <component-class>jakarta.faces.component.UIOutput</component-class>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
          <property-name>value</property-name>
@@ -473,7 +473,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -493,11 +493,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
-      <renderer-type>javax.faces.Text</renderer-type>
+      <component-family>jakarta.faces.Output</component-family>
+      <renderer-type>jakarta.faces.Text</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -506,8 +506,8 @@ component. The id is not necessarily unique across all components in the current
 See the javadoc for this class in the <a href="http://java.sun.com/j2ee/javaserverfaces/1.2/docs/api/index.html">JSF
 Specification</a> for further details.
 <p>]]></description>
-    <component-type>javax.faces.Input</component-type>
-    <component-class>javax.faces.component.UIInput</component-class>
+    <component-type>jakarta.faces.Input</component-type>
+    <component-class>jakarta.faces.component.UIInput</component-class>
     <property>
          <description><![CDATA[A boolean value that identifies the phase during which action events should fire.
 <p>
@@ -556,7 +556,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -570,7 +570,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -586,7 +586,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -606,11 +606,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Input</component-family>
-      <renderer-type>javax.faces.Text</renderer-type>
+      <component-family>jakarta.faces.Input</component-family>
+      <renderer-type>jakarta.faces.Text</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -619,8 +619,8 @@ child components.
 <p>
 See the javadocs for interface NamingContainer for further details.
 </p>]]></description>
-    <component-type>javax.faces.NamingContainer</component-type>
-    <component-class>javax.faces.component.UINamingContainer</component-class>
+    <component-type>jakarta.faces.NamingContainer</component-type>
+    <component-class>jakarta.faces.component.UINamingContainer</component-class>
     <property>
          <description><![CDATA[A boolean value that indicates whether this component should be rendered. Default value: true.]]></description>
          <property-name>rendered</property-name>
@@ -639,16 +639,16 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.NamingContainer</component-family>
+      <component-family>jakarta.faces.NamingContainer</component-family>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.OutcomeTarget</component-type>
-    <component-class>javax.faces.component.UIOutcomeTarget</component-class>
+    <component-type>jakarta.faces.OutcomeTarget</component-type>
+    <component-class>jakarta.faces.component.UIOutcomeTarget</component-class>
     <property>
          <property-name>outcome</property-name>
          <property-class>java.lang.String</property-class>
@@ -678,7 +678,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -698,17 +698,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.OutcomeTarget</component-family>
-      <renderer-type>javax.faces.Text</renderer-type>
+      <component-family>jakarta.faces.OutcomeTarget</component-family>
+      <renderer-type>jakarta.faces.Text</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.Panel</component-type>
-    <component-class>javax.faces.component.UIPanel</component-class>
+    <component-type>jakarta.faces.Panel</component-type>
+    <component-class>jakarta.faces.component.UIPanel</component-class>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
 component. The id is not necessarily unique across all components in the current view.]]></description>
@@ -727,10 +727,10 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Panel</component-family>
+      <component-family>jakarta.faces.Panel</component-family>
     </component-extension>
   </component>    
   <component>
@@ -743,8 +743,8 @@ See the javadoc for this class in the
 <a href="http://java.sun.com/j2ee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>
 for further details.
 </p>]]></description>
-    <component-type>javax.faces.SelectBoolean</component-type>
-    <component-class>javax.faces.component.UISelectBoolean</component-class>
+    <component-type>jakarta.faces.SelectBoolean</component-type>
+    <component-class>jakarta.faces.component.UISelectBoolean</component-class>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
          <property-name>value</property-name>
@@ -798,7 +798,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -812,7 +812,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[An expression that specifies the Converter for this component.
@@ -823,7 +823,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -843,11 +843,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectBoolean</component-family>
-      <renderer-type>javax.faces.Checkbox</renderer-type>
+      <component-family>jakarta.faces.SelectBoolean</component-family>
+      <renderer-type>jakarta.faces.Checkbox</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -862,8 +862,8 @@ subclasses that extend this base functionality, and they do have tag classes.
 See the javadoc for this class in the <a href="http://java.sun.com/j2ee/javaserverfaces/1.2/docs/api/index.html">JSF
 Specification</a> for further details.
 </p>]]></description>
-    <component-type>javax.faces.SelectMany</component-type>
-    <component-class>javax.faces.component.UISelectMany</component-class>
+    <component-type>jakarta.faces.SelectMany</component-type>
+    <component-class>jakarta.faces.component.UISelectMany</component-class>
     <property>
          <property-name>hideNoSelectionOption</property-name>
          <property-class>boolean</property-class>
@@ -920,7 +920,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -934,7 +934,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -950,7 +950,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -970,11 +970,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectMany</component-family>
-      <renderer-type>javax.faces.Listbox</renderer-type>
+      <component-family>jakarta.faces.SelectMany</component-family>
+      <renderer-type>jakarta.faces.Listbox</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -987,8 +987,8 @@ options that the user can choose from.
 See the javadoc for this class in the <a
 href="http://java.sun.com/j2ee/javaserverfaces/1.1_01/docs/api/index.html">JSF Specification</a> for further details.
 </p>]]></description>
-    <component-type>javax.faces.SelectOne</component-type>
-    <component-class>javax.faces.component.UISelectOne</component-class>
+    <component-type>jakarta.faces.SelectOne</component-type>
+    <component-class>jakarta.faces.component.UISelectOne</component-class>
     <property>
          <property-name>hideNoSelectionOption</property-name>
          <property-class>boolean</property-class>
@@ -1041,7 +1041,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -1055,7 +1055,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -1071,7 +1071,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -1091,17 +1091,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectOne</component-family>
-      <renderer-type>javax.faces.Menu</renderer-type>
+      <component-family>jakarta.faces.SelectOne</component-family>
+      <renderer-type>jakarta.faces.Menu</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.ViewAction</component-type>
-    <component-class>javax.faces.component.UIViewAction</component-class>
+    <component-type>jakarta.faces.ViewAction</component-type>
+    <component-class>jakarta.faces.component.UIViewAction</component-class>
     <property>
          <property-name>immediate</property-name>
          <property-class>boolean</property-class>
@@ -1113,7 +1113,7 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[]]></description>
          <property-name>actionListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <property-name>phase</property-name>
@@ -1141,10 +1141,10 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.ViewAction</component-family>
+      <component-family>jakarta.faces.ViewAction</component-family>
     </component-extension>
   </component>    
   <component>
@@ -1152,8 +1152,8 @@ component. The id is not necessarily unique across all components in the current
 params: maxlength and for, but no property getter and setter founded here. 
 If maxlength is used, we can put something like this: 
 JSFJspProperty(name = "maxlength", returnType = "java.lang.String")]]></description>
-    <component-type>javax.faces.ViewParameter</component-type>
-    <component-class>javax.faces.component.UIViewParameter</component-class>
+    <component-type>jakarta.faces.ViewParameter</component-type>
+    <component-class>jakarta.faces.component.UIViewParameter</component-class>
     <property>
          <description><![CDATA[The max number or characters allowed for this param]]></description>
          <property-name>maxlength</property-name>
@@ -1197,7 +1197,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -1211,7 +1211,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -1227,7 +1227,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -1242,11 +1242,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.ViewParameter</component-family>
-      <renderer-type>javax.faces.Text</renderer-type>
+      <component-family>jakarta.faces.ViewParameter</component-family>
+      <renderer-type>jakarta.faces.Text</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -1258,16 +1258,16 @@ Unless otherwise specified, all attributes accept static values or EL expression
 See the javadoc for this class in the <a href="http://java.sun.com/j2ee/javaserverfaces/1.2/docs/api/index.html">JSF
 Specification</a> for further details.
 </p>]]></description>
-    <component-type>javax.faces.ViewRoot</component-type>
-    <component-class>javax.faces.component.UIViewRoot</component-class>
+    <component-type>jakarta.faces.ViewRoot</component-type>
+    <component-class>jakarta.faces.component.UIViewRoot</component-class>
     <property>
-         <description><![CDATA[MethodBinding pointing to a method that takes a javax.faces.event.PhaseEvent and returns void, called after every
+         <description><![CDATA[MethodBinding pointing to a method that takes a jakarta.faces.event.PhaseEvent and returns void, called after every
 phase except for restore view.]]></description>
          <property-name>afterPhaseListener</property-name>
          <property-class>javax.el.MethodExpression</property-class>
     </property>
     <property>
-         <description><![CDATA[MethodBinding pointing to a method that takes a javax.faces.event.PhaseEvent and returns void, called before
+         <description><![CDATA[MethodBinding pointing to a method that takes a jakarta.faces.event.PhaseEvent and returns void, called before
 every phase except for restore view.]]></description>
          <property-name>beforePhaseListener</property-name>
          <property-class>javax.el.MethodExpression</property-class>
@@ -1290,14 +1290,14 @@ Defaults to the default locale specified in the faces configuration file.
          <property-class>boolean</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.ViewRoot</component-family>
+      <component-family>jakarta.faces.ViewRoot</component-family>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[UIMessage is the base component class for components
 that display a single message on behalf of a component.]]></description>
-    <component-type>javax.faces.Message</component-type>
-    <component-class>javax.faces.component.UIMessage</component-class>
+    <component-type>jakarta.faces.Message</component-type>
+    <component-class>jakarta.faces.component.UIMessage</component-class>
     <property>
          <description><![CDATA[The ID of the component whose attached FacesMessage object (if present) 
 should be diplayed by this component.
@@ -1339,18 +1339,18 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Message</component-family>
-      <renderer-type>javax.faces.Message</renderer-type>
+      <component-family>jakarta.faces.Message</component-family>
+      <renderer-type>jakarta.faces.Message</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[UIMessage is the base component class for components
 that display a multiple messages on behalf of a component.]]></description>
-    <component-type>javax.faces.Messages</component-type>
-    <component-class>javax.faces.component.UIMessages</component-class>
+    <component-type>jakarta.faces.Messages</component-type>
+    <component-class>jakarta.faces.component.UIMessages</component-class>
     <property>
          <description><![CDATA[Specifies whether only messages (FacesMessage objects) not associated with a
 specific component should be displayed, ie whether messages should be ignored
@@ -1397,11 +1397,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Messages</component-family>
-      <renderer-type>javax.faces.Messages</renderer-type>
+      <component-family>jakarta.faces.Messages</component-family>
+      <renderer-type>jakarta.faces.Messages</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -1411,8 +1411,8 @@ renderer of that parent component.
 <p>
 Unless otherwise specified, all attributes accept static values or EL expressions.
 </p>]]></description>
-    <component-type>javax.faces.Parameter</component-type>
-    <component-class>javax.faces.component.UIParameter</component-class>
+    <component-type>jakarta.faces.Parameter</component-type>
+    <component-class>jakarta.faces.component.UIParameter</component-class>
     <property>
          <description><![CDATA[The value of this component.]]></description>
          <property-name>value</property-name>
@@ -1436,10 +1436,10 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Parameter</component-family>
+      <component-family>jakarta.faces.Parameter</component-family>
     </component-extension>
   </component>    
   <component>
@@ -1452,8 +1452,8 @@ Unless otherwise specified, all attributes accept static values or EL expression
 UISelectItem should be nestetd inside a UISelectMany or UISelectOne component, and results in the addition of a
 SelectItem instance to the list of available options for the parent component
 </p>]]></description>
-    <component-type>javax.faces.SelectItem</component-type>
-    <component-class>javax.faces.component.UISelectItem</component-class>
+    <component-type>jakarta.faces.SelectItem</component-type>
+    <component-class>jakarta.faces.component.UISelectItem</component-class>
     <property>
          <description><![CDATA[The initial value of this component.]]></description>
          <property-name>value</property-name>
@@ -1507,10 +1507,10 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectItem</component-family>
+      <component-family>jakarta.faces.SelectItem</component-family>
     </component-extension>
   </component>    
   <component>
@@ -1526,8 +1526,8 @@ UISelectItems should be nested inside a UISelectMany or UISelectOne component,
 and results in  the addition of one ore more SelectItem instance to the list of available options
 for the parent component
 </p>]]></description>
-    <component-type>javax.faces.SelectItems</component-type>
-    <component-class>javax.faces.component.UISelectItems</component-class>
+    <component-type>jakarta.faces.SelectItems</component-type>
+    <component-class>jakarta.faces.component.UISelectItems</component-class>
     <property>
          <description><![CDATA[The initial value of this component.]]></description>
          <property-name>value</property-name>
@@ -1582,16 +1582,16 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectItems</component-family>
+      <component-family>jakarta.faces.SelectItems</component-family>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.Websocket</component-type>
-    <component-class>javax.faces.component.UIWebsocket</component-class>
+    <component-type>jakarta.faces.Websocket</component-type>
+    <component-class>jakarta.faces.component.UIWebsocket</component-class>
     <property>
          <property-name>channel</property-name>
          <property-class>java.lang.String</property-class>
@@ -1639,19 +1639,19 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Script</component-family>
-      <renderer-type>javax.faces.Websocket</renderer-type>
+      <component-family>jakarta.faces.Script</component-family>
+      <renderer-type>jakarta.faces.Websocket</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders as an HTML input tag with its type set to "hidden".
 Unless otherwise specified, all attributes accept static values
 or EL expressions.]]></description>
-    <component-type>javax.faces.HtmlInputHidden</component-type>
-    <component-class>javax.faces.component.html.HtmlInputHidden</component-class>
+    <component-type>jakarta.faces.HtmlInputHidden</component-type>
+    <component-class>jakarta.faces.component.html.HtmlInputHidden</component-class>
     <property>
          <description><![CDATA[A boolean value that identifies the phase during which action events should fire.
 <p>
@@ -1700,7 +1700,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -1714,7 +1714,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -1730,7 +1730,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -1750,17 +1750,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Input</component-family>
-      <renderer-type>javax.faces.Hidden</renderer-type>
+      <component-family>jakarta.faces.Input</component-family>
+      <renderer-type>jakarta.faces.Hidden</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.OutputBody</component-type>
-    <component-class>javax.faces.component.html.HtmlBody</component-class>
+    <component-type>jakarta.faces.OutputBody</component-type>
+    <component-class>jakarta.faces.component.html.HtmlBody</component-class>
     <property>
          <description><![CDATA[HTML: Script to be invoked when the page is loaded]]></description>
          <property-name>onload</property-name>
@@ -1863,11 +1863,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
-      <renderer-type>javax.faces.Body</renderer-type>
+      <component-family>jakarta.faces.Output</component-family>
+      <renderer-type>jakarta.faces.Body</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -1882,8 +1882,8 @@ The non-facet child components of this column are re-rendered on each table row
 to generate the content of the cell. Those child components can reference the "var"
 attribute of the containing h:dataTable to generate appropriate output for each row.
 </p>]]></description>
-    <component-type>javax.faces.HtmlColumn</component-type>
-    <component-class>javax.faces.component.html.HtmlColumn</component-class>
+    <component-type>jakarta.faces.HtmlColumn</component-type>
+    <component-class>jakarta.faces.component.html.HtmlColumn</component-class>
     <facet>
         <facet-name>footer</facet-name>
     </facet>
@@ -1930,16 +1930,16 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Column</component-family>
+      <component-family>jakarta.faces.Column</component-family>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[This tag renders as an HTML input element.]]></description>
-    <component-type>javax.faces.HtmlCommandButton</component-type>
-    <component-class>javax.faces.component.html.HtmlCommandButton</component-class>
+    <component-type>jakarta.faces.HtmlCommandButton</component-type>
+    <component-class>jakarta.faces.component.html.HtmlCommandButton</component-class>
     <property>
          <description><![CDATA[HTML: The URL of an image that renders in place of the button.]]></description>
          <property-name>image</property-name>
@@ -2118,7 +2118,7 @@ is functionally equivalent to a reference to an action method that returns the s
     <property>
          <description><![CDATA[]]></description>
          <property-name>actionListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -2138,17 +2138,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Command</component-family>
-      <renderer-type>javax.faces.Button</renderer-type>
+      <component-family>jakarta.faces.Command</component-family>
+      <renderer-type>jakarta.faces.Button</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[This tag renders as an HTML a element.]]></description>
-    <component-type>javax.faces.HtmlCommandLink</component-type>
-    <component-class>javax.faces.component.html.HtmlCommandLink</component-class>
+    <component-type>jakarta.faces.HtmlCommandLink</component-type>
+    <component-class>jakarta.faces.component.html.HtmlCommandLink</component-class>
     <property>
          <description><![CDATA[When true, this element cannot receive focus.]]></description>
          <property-name>disabled</property-name>
@@ -2331,7 +2331,7 @@ is functionally equivalent to a reference to an action method that returns the s
     <property>
          <description><![CDATA[]]></description>
          <property-name>actionListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -2351,17 +2351,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Command</component-family>
-      <renderer-type>javax.faces.Link</renderer-type>
+      <component-family>jakarta.faces.Command</component-family>
+      <renderer-type>jakarta.faces.Link</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.HtmlCommandScript</component-type>
-    <component-class>javax.faces.component.html.HtmlCommandScript</component-class>
+    <component-type>jakarta.faces.HtmlCommandScript</component-type>
+    <component-class>jakarta.faces.component.html.HtmlCommandScript</component-class>
     <property>
          <property-name>autorun</property-name>
          <property-class>boolean</property-class>
@@ -2425,7 +2425,7 @@ is functionally equivalent to a reference to an action method that returns the s
     <property>
          <description><![CDATA[]]></description>
          <property-name>actionListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -2445,11 +2445,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Command</component-family>
-      <renderer-type>javax.faces.Script</renderer-type>
+      <component-family>jakarta.faces.Command</component-family>
+      <renderer-type>jakarta.faces.Script</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -2462,8 +2462,8 @@ to specify header and footer rows.
 The non-facet children of this component are expected to be
 h:column components which describe the columns of the table.
 </p>]]></description>
-    <component-type>javax.faces.HtmlDataTable</component-type>
-    <component-class>javax.faces.component.html.HtmlDataTable</component-class>
+    <component-type>jakarta.faces.HtmlDataTable</component-type>
+    <component-class>jakarta.faces.component.html.HtmlDataTable</component-class>
     <facet>
         <description><![CDATA[The facet associated to the Caption.]]></description>
         <facet-name>caption</facet-name>
@@ -2657,7 +2657,7 @@ The value referenced by the EL expression can be of any type.
 <ul>
 <li>A value of type DataModel is used directly.</li>
 <li>Array-like parameters of type array-of-Object, java.util.List, java.sql.ResultSet or
-javax.servlet.jsp.jstl.sql.Result are wrapped in a corresponding DataModel that knows how to iterate over the
+jakarta.servlet.jsp.jstl.sql.Result are wrapped in a corresponding DataModel that knows how to iterate over the
 elements.</li>
 <li>Other values are wrapped in a DataModel as a single row.</li>
 </ul>
@@ -2723,17 +2723,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Data</component-family>
-      <renderer-type>javax.faces.Table</renderer-type>
+      <component-family>jakarta.faces.Data</component-family>
+      <renderer-type>jakarta.faces.Table</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.OutputDoctype</component-type>
-    <component-class>javax.faces.component.html.HtmlDoctype</component-class>
+    <component-type>jakarta.faces.OutputDoctype</component-type>
+    <component-class>jakarta.faces.component.html.HtmlDoctype</component-class>
     <property>
          <description><![CDATA[]]></description>
          <property-name>public</property-name>
@@ -2763,7 +2763,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -2783,17 +2783,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
-      <renderer-type>javax.faces.Doctype</renderer-type>
+      <component-family>jakarta.faces.Output</component-family>
+      <renderer-type>jakarta.faces.Doctype</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders an HTML form element.]]></description>
-    <component-type>javax.faces.HtmlForm</component-type>
-    <component-class>javax.faces.component.html.HtmlForm</component-class>
+    <component-type>jakarta.faces.HtmlForm</component-type>
+    <component-class>jakarta.faces.component.html.HtmlForm</component-class>
     <property>
          <description><![CDATA[HTML: Provides a comma-separated list of content types that the 
 server processing this form can handle.]]></description>
@@ -2930,11 +2930,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Form</component-family>
-      <renderer-type>javax.faces.Form</renderer-type>
+      <component-family>jakarta.faces.Form</component-family>
+      <renderer-type>jakarta.faces.Form</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -2943,8 +2943,8 @@ component. The id is not necessarily unique across all components in the current
 The value attribute specifies the url of the image to be displayed;
 see the documentation for attribute "url" for more details.
 </p>]]></description>
-    <component-type>javax.faces.HtmlGraphicImage</component-type>
-    <component-class>javax.faces.component.html.HtmlGraphicImage</component-class>
+    <component-type>jakarta.faces.HtmlGraphicImage</component-type>
+    <component-class>jakarta.faces.component.html.HtmlGraphicImage</component-class>
     <property>
          <description><![CDATA[HTML: Overrides the natural height of this image, by specifying height in pixels.]]></description>
          <property-name>height</property-name>
@@ -3097,17 +3097,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Graphic</component-family>
-      <renderer-type>javax.faces.Image</renderer-type>
+      <component-family>jakarta.faces.Graphic</component-family>
+      <renderer-type>jakarta.faces.Image</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.OutputHead</component-type>
-    <component-class>javax.faces.component.html.HtmlHead</component-class>
+    <component-type>jakarta.faces.OutputHead</component-type>
+    <component-class>jakarta.faces.component.html.HtmlHead</component-class>
     <property>
          <description><![CDATA[HTML: The direction of text display, either 'ltr' (left-to-right) or 'rtl' (right-to-left).]]></description>
          <property-name>dir</property-name>
@@ -3130,17 +3130,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
-      <renderer-type>javax.faces.Head</renderer-type>
+      <component-family>jakarta.faces.Output</component-family>
+      <renderer-type>jakarta.faces.Head</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders a HTML input element.]]></description>
-    <component-type>javax.faces.HtmlInputFile</component-type>
-    <component-class>javax.faces.component.html.HtmlInputFile</component-class>
+    <component-type>jakarta.faces.HtmlInputFile</component-type>
+    <component-class>jakarta.faces.component.html.HtmlInputFile</component-class>
     <property>
          <description><![CDATA[HTML: The maximum number of characters allowed to be entered.]]></description>
          <property-name>maxlength</property-name>
@@ -3342,7 +3342,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -3356,7 +3356,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -3372,7 +3372,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -3392,17 +3392,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Input</component-family>
-      <renderer-type>javax.faces.File</renderer-type>
+      <component-family>jakarta.faces.Input</component-family>
+      <renderer-type>jakarta.faces.File</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders as an HTML input tag with its type set to "password".]]></description>
-    <component-type>javax.faces.HtmlInputSecret</component-type>
-    <component-class>javax.faces.component.html.HtmlInputSecret</component-class>
+    <component-type>jakarta.faces.HtmlInputSecret</component-type>
+    <component-class>jakarta.faces.component.html.HtmlInputSecret</component-class>
     <property>
          <description><![CDATA[HTML: The maximum number of characters allowed to be entered.]]></description>
          <property-name>maxlength</property-name>
@@ -3611,7 +3611,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -3625,7 +3625,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -3641,7 +3641,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -3661,17 +3661,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Input</component-family>
-      <renderer-type>javax.faces.Secret</renderer-type>
+      <component-family>jakarta.faces.Input</component-family>
+      <renderer-type>jakarta.faces.Secret</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders a HTML input element.]]></description>
-    <component-type>javax.faces.HtmlInputText</component-type>
-    <component-class>javax.faces.component.html.HtmlInputText</component-class>
+    <component-type>jakarta.faces.HtmlInputText</component-type>
+    <component-class>jakarta.faces.component.html.HtmlInputText</component-class>
     <property>
          <description><![CDATA[HTML: The maximum number of characters allowed to be entered.]]></description>
          <property-name>maxlength</property-name>
@@ -3873,7 +3873,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -3887,7 +3887,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -3903,7 +3903,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -3923,17 +3923,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Input</component-family>
-      <renderer-type>javax.faces.Text</renderer-type>
+      <component-family>jakarta.faces.Input</component-family>
+      <renderer-type>jakarta.faces.Text</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders a HTML textarea element.]]></description>
-    <component-type>javax.faces.HtmlInputTextarea</component-type>
-    <component-class>javax.faces.component.html.HtmlInputTextarea</component-class>
+    <component-type>jakarta.faces.HtmlInputTextarea</component-type>
+    <component-class>jakarta.faces.component.html.HtmlInputTextarea</component-class>
     <property>
          <description><![CDATA[HTML: The width of this element, in characters.]]></description>
          <property-name>cols</property-name>
@@ -4122,7 +4122,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -4136,7 +4136,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -4152,7 +4152,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -4172,18 +4172,18 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Input</component-family>
-      <renderer-type>javax.faces.Textarea</renderer-type>
+      <component-family>jakarta.faces.Input</component-family>
+      <renderer-type>jakarta.faces.Textarea</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders text displaying information about the first FacesMessage
           that is assigned to the component referenced by the "for" attribute.]]></description>
-    <component-type>javax.faces.HtmlMessage</component-type>
-    <component-class>javax.faces.component.html.HtmlMessage</component-class>
+    <component-type>jakarta.faces.HtmlMessage</component-type>
+    <component-class>jakarta.faces.component.html.HtmlMessage</component-class>
     <property>
          <description><![CDATA[HTML: CSS styling instructions.]]></description>
          <property-name>style</property-name>
@@ -4301,11 +4301,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Message</component-family>
-      <renderer-type>javax.faces.Message</renderer-type>
+      <component-family>jakarta.faces.Message</component-family>
+      <renderer-type>jakarta.faces.Message</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -4320,8 +4320,8 @@ assigned to the component referenced by the "for" attribute
 are displayed.</li>
 <li>else all messages are displayed.</li>
 </ul>]]></description>
-    <component-type>javax.faces.HtmlMessages</component-type>
-    <component-class>javax.faces.component.html.HtmlMessages</component-class>
+    <component-type>jakarta.faces.HtmlMessages</component-type>
+    <component-class>jakarta.faces.component.html.HtmlMessages</component-class>
     <property>
          <description><![CDATA[The layout: "table" or "list". Default: list]]></description>
          <property-name>layout</property-name>
@@ -4450,17 +4450,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Messages</component-family>
-      <renderer-type>javax.faces.Messages</renderer-type>
+      <component-family>jakarta.faces.Messages</component-family>
+      <renderer-type>jakarta.faces.Messages</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.HtmlOutcomeTargetButton</component-type>
-    <component-class>javax.faces.component.html.HtmlOutcomeTargetButton</component-class>
+    <component-type>jakarta.faces.HtmlOutcomeTargetButton</component-type>
+    <component-class>jakarta.faces.component.html.HtmlOutcomeTargetButton</component-class>
     <property>
          <description><![CDATA[HTML: the value to put as image attribute]]></description>
          <property-name>image</property-name>
@@ -4606,7 +4606,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -4626,17 +4626,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.OutcomeTarget</component-family>
-      <renderer-type>javax.faces.Button</renderer-type>
+      <component-family>jakarta.faces.OutcomeTarget</component-family>
+      <renderer-type>jakarta.faces.Button</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[]]></description>
-    <component-type>javax.faces.HtmlOutcomeTargetLink</component-type>
-    <component-class>javax.faces.component.html.HtmlOutcomeTargetLink</component-class>
+    <component-type>jakarta.faces.HtmlOutcomeTargetLink</component-type>
+    <component-class>jakarta.faces.component.html.HtmlOutcomeTargetLink</component-class>
     <property>
          <description><![CDATA[HTML: Sets the access key for this element.]]></description>
          <property-name>accesskey</property-name>
@@ -4814,7 +4814,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -4834,19 +4834,19 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.OutcomeTarget</component-family>
-      <renderer-type>javax.faces.Link</renderer-type>
+      <component-family>jakarta.faces.OutcomeTarget</component-family>
+      <renderer-type>jakarta.faces.Link</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders as text, applying the child f:param values to the value attribute as a MessageFormat string.
 
 If this element has an ID or CSS style properties, the text is wrapped in a span element.]]></description>
-    <component-type>javax.faces.HtmlOutputFormat</component-type>
-    <component-class>javax.faces.component.html.HtmlOutputFormat</component-class>
+    <component-type>jakarta.faces.HtmlOutputFormat</component-type>
+    <component-class>jakarta.faces.component.html.HtmlOutputFormat</component-class>
     <property>
          <description><![CDATA[HTML: An advisory title for this element.  Often used by the user agent as a tooltip.]]></description>
          <property-name>title</property-name>
@@ -4898,7 +4898,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -4918,19 +4918,19 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
-      <renderer-type>javax.faces.Format</renderer-type>
+      <component-family>jakarta.faces.Output</component-family>
+      <renderer-type>jakarta.faces.Format</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders a HTML label element.
 
 In addition to the JSF specification, MyFaces allows it to directly give an output text via the "value" attribute.]]></description>
-    <component-type>javax.faces.HtmlOutputLabel</component-type>
-    <component-class>javax.faces.component.html.HtmlOutputLabel</component-class>
+    <component-type>jakarta.faces.HtmlOutputLabel</component-type>
+    <component-class>jakarta.faces.component.html.HtmlOutputLabel</component-class>
     <property>
          <description><![CDATA[The client ID of the target input element of this label.]]></description>
          <property-name>for</property-name>
@@ -5057,7 +5057,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -5077,11 +5077,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
-      <renderer-type>javax.faces.Label</renderer-type>
+      <component-family>jakarta.faces.Output</component-family>
+      <renderer-type>jakarta.faces.Label</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -5089,8 +5089,8 @@ component. The id is not necessarily unique across all components in the current
 
 Child f:param elements are added to the href attribute as query parameters.  Other children
 are rendered as the link text or image.]]></description>
-    <component-type>javax.faces.HtmlOutputLink</component-type>
-    <component-class>javax.faces.component.html.HtmlOutputLink</component-class>
+    <component-type>jakarta.faces.HtmlOutputLink</component-type>
+    <component-class>jakarta.faces.component.html.HtmlOutputLink</component-class>
     <property>
          <description><![CDATA[HTML: Sets the access key for this element.]]></description>
          <property-name>accesskey</property-name>
@@ -5253,7 +5253,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -5273,19 +5273,19 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
-      <renderer-type>javax.faces.Link</renderer-type>
+      <component-family>jakarta.faces.Output</component-family>
+      <renderer-type>jakarta.faces.Link</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Renders the value of the associated UIOutput component.
 
 If this element has an ID or CSS style properties, the text is wrapped in a span element.]]></description>
-    <component-type>javax.faces.HtmlOutputText</component-type>
-    <component-class>javax.faces.component.html.HtmlOutputText</component-class>
+    <component-type>jakarta.faces.HtmlOutputText</component-type>
+    <component-class>jakarta.faces.component.html.HtmlOutputText</component-class>
     <property>
          <description><![CDATA[Indicates whether rendered markup should be escaped.
 Default: true]]></description>
@@ -5337,7 +5337,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -5357,11 +5357,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
-      <renderer-type>javax.faces.Text</renderer-type>
+      <component-family>jakarta.faces.Output</component-family>
+      <renderer-type>jakarta.faces.Text</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -5371,8 +5371,8 @@ Children of this element are rendered as cells in the table, filling
 rows from left to right.  Facets named "header" and "footer" are optional
 and specify the content of the thead and tfoot rows, respectively.
 </p>]]></description>
-    <component-type>javax.faces.HtmlPanelGrid</component-type>
-    <component-class>javax.faces.component.html.HtmlPanelGrid</component-class>
+    <component-type>jakarta.faces.HtmlPanelGrid</component-type>
+    <component-class>jakarta.faces.component.html.HtmlPanelGrid</component-class>
     <property>
          <description><![CDATA[HTML: The background color of this element.]]></description>
          <property-name>bgcolor</property-name>
@@ -5572,19 +5572,19 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Panel</component-family>
-      <renderer-type>javax.faces.Grid</renderer-type>
+      <component-family>jakarta.faces.Panel</component-family>
+      <renderer-type>jakarta.faces.Grid</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[This element is used to group other components where the specification requires one child element.
 
 If any of the HTML or CSS attributes are set, its content is rendered within a span element.]]></description>
-    <component-type>javax.faces.HtmlPanelGroup</component-type>
-    <component-class>javax.faces.component.html.HtmlPanelGroup</component-class>
+    <component-type>jakarta.faces.HtmlPanelGroup</component-type>
+    <component-class>jakarta.faces.component.html.HtmlPanelGroup</component-class>
     <property>
          <description><![CDATA[The type of layout markup to use when rendering this group. If the value is "block"
 the renderer must produce an HTML "div" element. Otherwise HTML "span" element must be produced.]]></description>
@@ -5669,11 +5669,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Panel</component-family>
-      <renderer-type>javax.faces.Group</renderer-type>
+      <component-family>jakarta.faces.Panel</component-family>
+      <renderer-type>jakarta.faces.Group</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -5684,8 +5684,8 @@ Renders as an HTML input tag with its type set to "checkbox", and
 its name attribute set to the id. The "checked" attribute is rendered
 if the value of this component is true.
 </p>]]></description>
-    <component-type>javax.faces.HtmlSelectBooleanCheckbox</component-type>
-    <component-class>javax.faces.component.html.HtmlSelectBooleanCheckbox</component-class>
+    <component-type>jakarta.faces.HtmlSelectBooleanCheckbox</component-type>
+    <component-class>jakarta.faces.component.html.HtmlSelectBooleanCheckbox</component-class>
     <property>
          <description><![CDATA[HTML: Sets the access key for this element.]]></description>
          <property-name>accesskey</property-name>
@@ -5867,7 +5867,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -5881,7 +5881,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[An expression that specifies the Converter for this component.
@@ -5892,7 +5892,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -5912,11 +5912,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectBoolean</component-family>
-      <renderer-type>javax.faces.Checkbox</renderer-type>
+      <component-family>jakarta.faces.SelectBoolean</component-family>
+      <renderer-type>jakarta.faces.Checkbox</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -5942,8 +5942,8 @@ new collection object of the appropriate type. The new collection
 object contains the value of each child SelectItem object that
 is currently selected.
 </p>]]></description>
-    <component-type>javax.faces.HtmlSelectManyCheckbox</component-type>
-    <component-class>javax.faces.component.html.HtmlSelectManyCheckbox</component-class>
+    <component-type>jakarta.faces.HtmlSelectManyCheckbox</component-type>
+    <component-class>jakarta.faces.component.html.HtmlSelectManyCheckbox</component-class>
     <property>
          <description><![CDATA[HTML: Specifies the width of the border of this element, in pixels.  Deprecated in HTML 4.01.]]></description>
          <property-name>border</property-name>
@@ -6160,7 +6160,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -6174,7 +6174,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -6190,7 +6190,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -6210,11 +6210,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectMany</component-family>
-      <renderer-type>javax.faces.Checkbox</renderer-type>
+      <component-family>jakarta.faces.SelectMany</component-family>
+      <renderer-type>jakarta.faces.Checkbox</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -6243,8 +6243,8 @@ selected initially. During the update phase, the property is set
 to contain a "collection" of values for those child SelectItem
 objects that are currently selected.
 </p>]]></description>
-    <component-type>javax.faces.HtmlSelectManyListbox</component-type>
-    <component-class>javax.faces.component.html.HtmlSelectManyListbox</component-class>
+    <component-type>jakarta.faces.HtmlSelectManyListbox</component-type>
+    <component-class>jakarta.faces.component.html.HtmlSelectManyListbox</component-class>
     <property>
          <description><![CDATA[see JSF Spec.]]></description>
          <property-name>size</property-name>
@@ -6440,7 +6440,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -6454,7 +6454,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -6470,7 +6470,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -6490,11 +6490,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectMany</component-family>
-      <renderer-type>javax.faces.Listbox</renderer-type>
+      <component-family>jakarta.faces.SelectMany</component-family>
+      <renderer-type>jakarta.faces.Listbox</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -6520,8 +6520,8 @@ selected initially. During the update phase, the property is set
 to contain a "collection" of values for those child SelectItem
 objects that are currently selected.
 </p>]]></description>
-    <component-type>javax.faces.HtmlSelectManyMenu</component-type>
-    <component-class>javax.faces.component.html.HtmlSelectManyMenu</component-class>
+    <component-type>jakarta.faces.HtmlSelectManyMenu</component-type>
+    <component-class>jakarta.faces.component.html.HtmlSelectManyMenu</component-class>
     <property>
          <description><![CDATA[HTML: Sets the access key for this element.]]></description>
          <property-name>accesskey</property-name>
@@ -6711,7 +6711,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -6725,7 +6725,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -6741,7 +6741,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -6761,11 +6761,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectMany</component-family>
-      <renderer-type>javax.faces.Menu</renderer-type>
+      <component-family>jakarta.faces.SelectMany</component-family>
+      <renderer-type>jakarta.faces.Menu</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -6792,8 +6792,8 @@ On submit of the enclosing form, the value attribute's bound
 property is updated to contain the "value" property from the
 chosen SelectItem.
 </p>]]></description>
-    <component-type>javax.faces.HtmlSelectOneListbox</component-type>
-    <component-class>javax.faces.component.html.HtmlSelectOneListbox</component-class>
+    <component-type>jakarta.faces.HtmlSelectOneListbox</component-type>
+    <component-class>jakarta.faces.component.html.HtmlSelectOneListbox</component-class>
     <property>
          <description><![CDATA[see JSF Spec.]]></description>
          <property-name>size</property-name>
@@ -6985,7 +6985,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -6999,7 +6999,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -7015,7 +7015,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -7035,11 +7035,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectOne</component-family>
-      <renderer-type>javax.faces.Listbox</renderer-type>
+      <component-family>jakarta.faces.SelectOne</component-family>
+      <renderer-type>jakarta.faces.Listbox</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -7060,8 +7060,8 @@ objects.
 On submit of the enclosing form, the value attribute's bound property
 is updated to contain the "value" property from the chosen SelectItem.
 </p>]]></description>
-    <component-type>javax.faces.HtmlSelectOneMenu</component-type>
-    <component-class>javax.faces.component.html.HtmlSelectOneMenu</component-class>
+    <component-type>jakarta.faces.HtmlSelectOneMenu</component-type>
+    <component-class>jakarta.faces.component.html.HtmlSelectOneMenu</component-class>
     <property>
          <description><![CDATA[HTML: Sets the access key for this element.]]></description>
          <property-name>accesskey</property-name>
@@ -7247,7 +7247,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -7261,7 +7261,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -7277,7 +7277,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -7297,11 +7297,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectOne</component-family>
-      <renderer-type>javax.faces.Menu</renderer-type>
+      <component-family>jakarta.faces.SelectOne</component-family>
+      <renderer-type>jakarta.faces.Menu</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -7320,8 +7320,8 @@ match the "value" property of one of the child SelectItem objects.
 On submit of the enclosing form, the value attribute's bound property
 is updated to contain the "value" property from the chosen SelectItem.
 </p>]]></description>
-    <component-type>javax.faces.HtmlSelectOneRadio</component-type>
-    <component-class>javax.faces.component.html.HtmlSelectOneRadio</component-class>
+    <component-type>jakarta.faces.HtmlSelectOneRadio</component-type>
+    <component-class>jakarta.faces.component.html.HtmlSelectOneRadio</component-class>
     <property>
          <description><![CDATA[Width in pixels of the border to be drawn around the table containing the options list.]]></description>
          <property-name>border</property-name>
@@ -7530,7 +7530,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -7544,7 +7544,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -7560,7 +7560,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -7580,17 +7580,17 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.SelectOne</component-family>
-      <renderer-type>javax.faces.Radio</renderer-type>
+      <component-family>jakarta.faces.SelectOne</component-family>
+      <renderer-type>jakarta.faces.Radio</renderer-type>
     </component-extension>
   </component>    
   <component>
     <description><![CDATA[Dummy class that is used as a container for resources 
 (see JSF 2.0 rev A UIViewRoot.addComponentResource javadoc)]]></description>
-    <component-type>javax.faces.ComponentResourceContainer</component-type>
+    <component-type>jakarta.faces.ComponentResourceContainer</component-type>
     <component-class>org.apache.myfaces.component.ComponentResourceContainer</component-class>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -7610,10 +7610,10 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Panel</component-family>
+      <component-family>jakarta.faces.Panel</component-family>
     </component-extension>
   </component>    
   <component>
@@ -7677,7 +7677,7 @@ The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <property-name>validator</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Text which will be shown if validation fails.]]></description>
@@ -7691,7 +7691,7 @@ component is not equal to the value which the "value" expression for this compon
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></description>
          <property-name>valueChangeListener</property-name>
-         <property-class>javax.faces.el.MethodBinding</property-class>
+         <property-class>jakarta.faces.el.MethodBinding</property-class>
     </property>
     <property>
          <description><![CDATA[Gets The initial value of this component.]]></description>
@@ -7707,7 +7707,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -7727,11 +7727,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Input</component-family>
-      <renderer-type>javax.faces.Text</renderer-type>
+      <component-family>jakarta.faces.Input</component-family>
+      <renderer-type>jakarta.faces.Text</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -7781,7 +7781,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -7801,10 +7801,10 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
+      <component-family>jakarta.faces.Output</component-family>
       <renderer-type>org.apache.myfaces.WebsocketComponent</renderer-type>
     </component-extension>
   </component>    
@@ -7831,7 +7831,7 @@ is an EL expression, the result of evaluating the expression must be an object t
 implements the Converter interface.
 </p>]]></description>
          <property-name>converter</property-name>
-         <property-class>javax.faces.convert.Converter</property-class>
+         <property-class>jakarta.faces.convert.Converter</property-class>
     </property>
     <property>
          <description><![CDATA[Get a string which uniquely identifies this UIComponent within the scope of the nearest ancestor NamingContainer
@@ -7851,10 +7851,10 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Output</component-family>
+      <component-family>jakarta.faces.Output</component-family>
       <renderer-type>org.apache.myfaces.WebsocketInit</renderer-type>
     </component-extension>
   </component>    
@@ -7912,7 +7912,7 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
       <component-family>facelets</component-family>
@@ -8031,11 +8031,11 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
-      <component-family>javax.faces.Panel</component-family>
-      <renderer-type>javax.faces.passthrough.Element</renderer-type>
+      <component-family>jakarta.faces.Panel</component-family>
+      <renderer-type>jakarta.faces.passthrough.Element</renderer-type>
     </component-extension>
   </component>    
   <component>
@@ -8054,7 +8054,7 @@ component. The id is not necessarily unique across all components in the current
     <property>
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <property-name>binding</property-name>
-         <property-class>javax.faces.component.UIComponent</property-class>
+         <property-class>jakarta.faces.component.UIComponent</property-class>
     </property>
     <component-extension>
       <component-family>facelets</component-family>
@@ -8095,28 +8095,28 @@ By default, when the debug tag is used, you may launch the debug window with
   </component>    
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.BigDecimal</converter-id>
-    <converter-class>javax.faces.convert.BigDecimalConverter</converter-class>
+    <converter-id>jakarta.faces.BigDecimal</converter-id>
+    <converter-class>jakarta.faces.convert.BigDecimalConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.BigInteger</converter-id>
-    <converter-class>javax.faces.convert.BigIntegerConverter</converter-class>
+    <converter-id>jakarta.faces.BigInteger</converter-id>
+    <converter-class>jakarta.faces.convert.BigIntegerConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Boolean</converter-id>
-    <converter-class>javax.faces.convert.BooleanConverter</converter-class>
+    <converter-id>jakarta.faces.Boolean</converter-id>
+    <converter-class>jakarta.faces.convert.BooleanConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Byte</converter-id>
-    <converter-class>javax.faces.convert.ByteConverter</converter-class>
+    <converter-id>jakarta.faces.Byte</converter-id>
+    <converter-class>jakarta.faces.convert.ByteConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Character</converter-id>
-    <converter-class>javax.faces.convert.CharacterConverter</converter-class>
+    <converter-id>jakarta.faces.Character</converter-id>
+    <converter-class>jakarta.faces.convert.CharacterConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[This tag associates a date time converter with the nearest parent UIComponent.
@@ -8124,33 +8124,33 @@ By default, when the debug tag is used, you may launch the debug window with
 Unless otherwise specified, all attributes accept static values or EL expressions.
 
 see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.DateTime</converter-id>
-    <converter-class>javax.faces.convert.DateTimeConverter</converter-class>
+    <converter-id>jakarta.faces.DateTime</converter-id>
+    <converter-class>jakarta.faces.convert.DateTimeConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Double</converter-id>
-    <converter-class>javax.faces.convert.DoubleConverter</converter-class>
+    <converter-id>jakarta.faces.Double</converter-id>
+    <converter-class>jakarta.faces.convert.DoubleConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/j2ee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Enum</converter-id>
-    <converter-class>javax.faces.convert.EnumConverter</converter-class>
+    <converter-id>jakarta.faces.Enum</converter-id>
+    <converter-class>jakarta.faces.convert.EnumConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Float</converter-id>
-    <converter-class>javax.faces.convert.FloatConverter</converter-class>
+    <converter-id>jakarta.faces.Float</converter-id>
+    <converter-class>jakarta.faces.convert.FloatConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Integer</converter-id>
-    <converter-class>javax.faces.convert.IntegerConverter</converter-class>
+    <converter-id>jakarta.faces.Integer</converter-id>
+    <converter-class>jakarta.faces.convert.IntegerConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Long</converter-id>
-    <converter-class>javax.faces.convert.LongConverter</converter-class>
+    <converter-id>jakarta.faces.Long</converter-id>
+    <converter-class>jakarta.faces.convert.LongConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[This tag creates a number formatting converter and associates it
@@ -8159,22 +8159,22 @@ with the nearest parent UIComponent.
 Unless otherwise specified, all attributes accept static values or EL expressions.
 
 see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Number</converter-id>
-    <converter-class>javax.faces.convert.NumberConverter</converter-class>
+    <converter-id>jakarta.faces.Number</converter-id>
+    <converter-class>jakarta.faces.convert.NumberConverter</converter-class>
   </converter>
   <converter>
     <description><![CDATA[see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <converter-id>javax.faces.Short</converter-id>
-    <converter-class>javax.faces.convert.ShortConverter</converter-class>
+    <converter-id>jakarta.faces.Short</converter-id>
+    <converter-class>jakarta.faces.convert.ShortConverter</converter-class>
   </converter>
   <validator>
     <description><![CDATA[<p>
-<strong>BeanValidator</strong> is a {@link javax.faces.validator.Validator}
+<strong>BeanValidator</strong> is a {@link jakarta.faces.validator.Validator}
 that doesn't do any validation itself, but delegates validation logic to
 Bean Validation.
 </p>]]></description>
-    <validator-id>javax.faces.Bean</validator-id>
-    <validator-class>javax.faces.validator.BeanValidator</validator-class>
+    <validator-id>jakarta.faces.Bean</validator-id>
+    <validator-class>jakarta.faces.validator.BeanValidator</validator-class>
   </validator>
   <validator>
     <description><![CDATA[Creates a validator and associateds it with the nearest parent
@@ -8186,8 +8186,8 @@ Commonly associated with a h:inputText entity.
 Unless otherwise specified, all attributes accept static values or EL expressions.
 
 see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <validator-id>javax.faces.DoubleRange</validator-id>
-    <validator-class>javax.faces.validator.DoubleRangeValidator</validator-class>
+    <validator-id>jakarta.faces.DoubleRange</validator-id>
+    <validator-class>jakarta.faces.validator.DoubleRangeValidator</validator-class>
   </validator>
   <validator>
     <description><![CDATA[Creates a validator and associateds it with the nearest parent
@@ -8200,8 +8200,8 @@ Commonly associated with a h:inputText entity.
 Unless otherwise specified, all attributes accept static values or EL expressions.
 
 see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <validator-id>javax.faces.Length</validator-id>
-    <validator-class>javax.faces.validator.LengthValidator</validator-class>
+    <validator-id>jakarta.faces.Length</validator-id>
+    <validator-class>jakarta.faces.validator.LengthValidator</validator-class>
   </validator>
   <validator>
     <description><![CDATA[Creates a validator and associateds it with the nearest parent
@@ -8213,12 +8213,12 @@ Commonly associated with a h:inputText entity.
 Unless otherwise specified, all attributes accept static values or EL expressions.
 
 see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
-    <validator-id>javax.faces.LongRange</validator-id>
-    <validator-class>javax.faces.validator.LongRangeValidator</validator-class>
+    <validator-id>jakarta.faces.LongRange</validator-id>
+    <validator-class>jakarta.faces.validator.LongRangeValidator</validator-class>
   </validator>
   <validator>
     <description><![CDATA[<p>
-  <strong>RegexValidator</strong> is a {@link javax.faces.validator.Validator}
+  <strong>RegexValidator</strong> is a {@link jakarta.faces.validator.Validator}
   that checks the value of the corresponding component against specified
   pattern using Java regular expression syntax.
 
@@ -8239,7 +8239,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
   </li>
   <li>
     If no pattern has been set, or pattern resolves to <code>null</code> or an
-    empty String, throw a {@link javax.faces.validator.ValidatorException}
+    empty String, throw a {@link jakarta.faces.validator.ValidatorException}
     with a {@link #PATTERN_NOT_SET_MESSAGE_ID} message.
   </li>
   <li>
@@ -8249,19 +8249,19 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
   </li>
   <li>
     If a <code>pattern</code> property has been configured on this
-    {@link javax.faces.validator.Validator}, check the passed value against this pattern.
+    {@link jakarta.faces.validator.Validator}, check the passed value against this pattern.
     If value does not match pattern throw a {@link ValidatorException}
     containing a {@link #NOT_MATCHED_MESSAGE_ID} message.
   </li>
 </ul>]]></description>
-    <validator-id>javax.faces.RegularExpression</validator-id>
-    <validator-class>javax.faces.validator.RegexValidator</validator-class>
+    <validator-id>jakarta.faces.RegularExpression</validator-id>
+    <validator-class>jakarta.faces.validator.RegexValidator</validator-class>
   </validator>
   <validator>
     <description><![CDATA[Check if a value is empty, in the same way as set UIInput required 
 property to true (including all rules related to this property).]]></description>
-    <validator-id>javax.faces.Required</validator-id>
-    <validator-class>javax.faces.validator.RequiredValidator</validator-class>
+    <validator-id>jakarta.faces.Required</validator-id>
+    <validator-class>jakarta.faces.validator.RequiredValidator</validator-class>
   </validator>
   <render-kit>
     <render-kit-id>HTML_BASIC</render-kit-id>
@@ -8272,197 +8272,197 @@ property to true (including all rules related to this property).]]></description
         <renderer-class>org.apache.myfaces.view.facelets.component.RepeatRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Command</component-family>
-        <renderer-type>javax.faces.Button</renderer-type>
+        <component-family>jakarta.faces.Command</component-family>
+        <renderer-type>jakarta.faces.Button</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlButtonRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Command</component-family>
-        <renderer-type>javax.faces.Link</renderer-type>
+        <component-family>jakarta.faces.Command</component-family>
+        <renderer-type>jakarta.faces.Link</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlLinkRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Command</component-family>
-        <renderer-type>javax.faces.Script</renderer-type>
+        <component-family>jakarta.faces.Command</component-family>
+        <renderer-type>jakarta.faces.Script</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlCommandScriptRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Data</component-family>
-        <renderer-type>javax.faces.Table</renderer-type>
+        <component-family>jakarta.faces.Data</component-family>
+        <renderer-type>jakarta.faces.Table</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlTableRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Form</component-family>
-        <renderer-type>javax.faces.Form</renderer-type>
+        <component-family>jakarta.faces.Form</component-family>
+        <renderer-type>jakarta.faces.Form</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlFormRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Graphic</component-family>
-        <renderer-type>javax.faces.Image</renderer-type>
+        <component-family>jakarta.faces.Graphic</component-family>
+        <renderer-type>jakarta.faces.Image</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlImageRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Input</component-family>
-        <renderer-type>javax.faces.File</renderer-type>
+        <component-family>jakarta.faces.Input</component-family>
+        <renderer-type>jakarta.faces.File</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlInputFileRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Input</component-family>
-        <renderer-type>javax.faces.Hidden</renderer-type>
+        <component-family>jakarta.faces.Input</component-family>
+        <renderer-type>jakarta.faces.Hidden</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlHiddenRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Input</component-family>
-        <renderer-type>javax.faces.Secret</renderer-type>
+        <component-family>jakarta.faces.Input</component-family>
+        <renderer-type>jakarta.faces.Secret</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlSecretRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Input</component-family>
-        <renderer-type>javax.faces.Text</renderer-type>
+        <component-family>jakarta.faces.Input</component-family>
+        <renderer-type>jakarta.faces.Text</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlTextRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Input</component-family>
-        <renderer-type>javax.faces.Textarea</renderer-type>
+        <component-family>jakarta.faces.Input</component-family>
+        <renderer-type>jakarta.faces.Textarea</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlTextareaRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Messages</component-family>
-        <renderer-type>javax.faces.Messages</renderer-type>
+        <component-family>jakarta.faces.Messages</component-family>
+        <renderer-type>jakarta.faces.Messages</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlMessagesRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Message</component-family>
-        <renderer-type>javax.faces.Message</renderer-type>
+        <component-family>jakarta.faces.Message</component-family>
+        <renderer-type>jakarta.faces.Message</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlMessageRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.NamingContainer</component-family>
-        <renderer-type>javax.faces.Composite</renderer-type>
+        <component-family>jakarta.faces.NamingContainer</component-family>
+        <renderer-type>jakarta.faces.Composite</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlCompositeComponentRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.OutcomeTarget</component-family>
-        <renderer-type>javax.faces.Button</renderer-type>
+        <component-family>jakarta.faces.OutcomeTarget</component-family>
+        <renderer-type>jakarta.faces.Button</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlOutcomeTargetButtonRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.OutcomeTarget</component-family>
-        <renderer-type>javax.faces.Link</renderer-type>
+        <component-family>jakarta.faces.OutcomeTarget</component-family>
+        <renderer-type>jakarta.faces.Link</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlLinkRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.Body</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.Body</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlBodyRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.CompositeFacet</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.CompositeFacet</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlCompositeFacetRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.Doctype</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.Doctype</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlDoctypeRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.Format</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.Format</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlFormatRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.Head</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.Head</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlHeadRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.Label</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.Label</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlLabelRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.Link</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.Link</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlLinkRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.Text</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.Text</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlTextRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.resource.Script</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.resource.Script</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlScriptRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
-        <renderer-type>javax.faces.resource.Stylesheet</renderer-type>
+        <component-family>jakarta.faces.Output</component-family>
+        <renderer-type>jakarta.faces.resource.Stylesheet</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlStylesheetRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Output</component-family>
+        <component-family>jakarta.faces.Output</component-family>
         <renderer-type>org.apache.myfaces.WebsocketInit</renderer-type>
         <renderer-class>org.apache.myfaces.push.WebsocketInitRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Panel</component-family>
-        <renderer-type>javax.faces.Grid</renderer-type>
+        <component-family>jakarta.faces.Panel</component-family>
+        <renderer-type>jakarta.faces.Grid</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlGridRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Panel</component-family>
-        <renderer-type>javax.faces.Group</renderer-type>
+        <component-family>jakarta.faces.Panel</component-family>
+        <renderer-type>jakarta.faces.Group</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlGroupRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Panel</component-family>
-        <renderer-type>javax.faces.passthrough.Element</renderer-type>
+        <component-family>jakarta.faces.Panel</component-family>
+        <renderer-type>jakarta.faces.passthrough.Element</renderer-type>
         <renderer-class>org.apache.myfaces.view.facelets.component.JsfElementRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.Script</component-family>
-        <renderer-type>javax.faces.Websocket</renderer-type>
+        <component-family>jakarta.faces.Script</component-family>
+        <renderer-type>jakarta.faces.Websocket</renderer-type>
         <renderer-class>org.apache.myfaces.push.WebsocketComponentRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.SelectBoolean</component-family>
-        <renderer-type>javax.faces.Checkbox</renderer-type>
+        <component-family>jakarta.faces.SelectBoolean</component-family>
+        <renderer-type>jakarta.faces.Checkbox</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlCheckboxRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.SelectMany</component-family>
-        <renderer-type>javax.faces.Checkbox</renderer-type>
+        <component-family>jakarta.faces.SelectMany</component-family>
+        <renderer-type>jakarta.faces.Checkbox</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlCheckboxRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.SelectMany</component-family>
-        <renderer-type>javax.faces.Listbox</renderer-type>
+        <component-family>jakarta.faces.SelectMany</component-family>
+        <renderer-type>jakarta.faces.Listbox</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlListboxRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.SelectMany</component-family>
-        <renderer-type>javax.faces.Menu</renderer-type>
+        <component-family>jakarta.faces.SelectMany</component-family>
+        <renderer-type>jakarta.faces.Menu</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlMenuRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.SelectOne</component-family>
-        <renderer-type>javax.faces.Listbox</renderer-type>
+        <component-family>jakarta.faces.SelectOne</component-family>
+        <renderer-type>jakarta.faces.Listbox</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlListboxRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.SelectOne</component-family>
-        <renderer-type>javax.faces.Menu</renderer-type>
+        <component-family>jakarta.faces.SelectOne</component-family>
+        <renderer-type>jakarta.faces.Menu</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlMenuRenderer</renderer-class>
       </renderer>
       <renderer>
-        <component-family>javax.faces.SelectOne</component-family>
-        <renderer-type>javax.faces.Radio</renderer-type>
+        <component-family>jakarta.faces.SelectOne</component-family>
+        <renderer-type>jakarta.faces.Radio</renderer-type>
         <renderer-class>org.apache.myfaces.renderkit.html.HtmlRadioRenderer</renderer-class>
       </renderer>
     <client-behavior-renderer>
-        <client-behavior-renderer-type>javax.faces.behavior.Ajax</client-behavior-renderer-type>
+        <client-behavior-renderer-type>jakarta.faces.behavior.Ajax</client-behavior-renderer-type>
         <client-behavior-renderer-class>org.apache.myfaces.renderkit.html.HtmlAjaxBehaviorRenderer</client-behavior-renderer-class>
     </client-behavior-renderer>
   </render-kit>

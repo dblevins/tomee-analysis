@@ -60,7 +60,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -124,7 +124,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -143,7 +143,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -164,7 +164,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -177,7 +177,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -195,20 +195,20 @@ Specification</a> for further details.
       <body-content>JSP</body-content>
       
       <attribute>
-         <description><![CDATA[MethodBinding pointing to a method that takes a javax.faces.event.PhaseEvent and returns void, called after every
+         <description><![CDATA[MethodBinding pointing to a method that takes a jakarta.faces.event.PhaseEvent and returns void, called after every
 phase except for restore view.]]></description>
          <name>afterPhase</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.PhaseEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.PhaseEvent )</method-signature>
 
         </deferred-method>
       </attribute>
       <attribute>
-         <description><![CDATA[MethodBinding pointing to a method that takes a javax.faces.event.PhaseEvent and returns void, called before
+         <description><![CDATA[MethodBinding pointing to a method that takes a jakarta.faces.event.PhaseEvent and returns void, called before
 every phase except for restore view.]]></description>
          <name>beforePhase</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.PhaseEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.PhaseEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -265,7 +265,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -287,7 +287,7 @@ SelectItem instance to the list of available options for the parent component
          <description><![CDATA[The initial value of this component.]]></description>
          <name>value</name>
          <deferred-value>
-             <type>javax.faces.model.SelectItem</type>
+             <type>jakarta.faces.model.SelectItem</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -344,7 +344,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -426,7 +426,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -495,7 +495,7 @@ Default based on setting of timeStyle and dateStyle.]]></description>
          <description><![CDATA[A ValueExpression that evaluates to a DateTimeConverter.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.convert.DateTimeConverter</type>
+             <type>jakarta.faces.convert.DateTimeConverter</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -594,7 +594,7 @@ number, currency, and percent.  Default: number.]]></description>
          <description><![CDATA[A ValueExpression that evaluates to a NumberConverter.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.convert.NumberConverter</type>
+             <type>jakarta.faces.convert.NumberConverter</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -631,7 +631,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
          <description><![CDATA[A ValueExpression that evaluates to a DoubleRangeValidator.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.validator.DoubleRangeValidator</type>
+             <type>jakarta.faces.validator.DoubleRangeValidator</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -668,7 +668,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
          <description><![CDATA[A ValueExpression that evaluates to a LengthValidator.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.validator.LengthValidator</type>
+             <type>jakarta.faces.validator.LengthValidator</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -704,13 +704,13 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
          <description><![CDATA[A ValueExpression that evaluates to a LongRangeValidator.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.validator.LongRangeValidator</type>
+             <type>jakarta.faces.validator.LongRangeValidator</type>
          </deferred-value>
       </attribute>
    </tag>
    <tag>
       <description><![CDATA[<p>
-  <strong>RegexValidator</strong> is a {@link javax.faces.validator.Validator}
+  <strong>RegexValidator</strong> is a {@link jakarta.faces.validator.Validator}
   that checks the value of the corresponding component against specified
   pattern using Java regular expression syntax.
 
@@ -731,7 +731,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
   </li>
   <li>
     If no pattern has been set, or pattern resolves to <code>null</code> or an
-    empty String, throw a {@link javax.faces.validator.ValidatorException}
+    empty String, throw a {@link jakarta.faces.validator.ValidatorException}
     with a {@link #PATTERN_NOT_SET_MESSAGE_ID} message.
   </li>
   <li>
@@ -741,7 +741,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
   </li>
   <li>
     If a <code>pattern</code> property has been configured on this
-    {@link javax.faces.validator.Validator}, check the passed value against this pattern.
+    {@link jakarta.faces.validator.Validator}, check the passed value against this pattern.
     If value does not match pattern throw a {@link ValidatorException}
     containing a {@link #NOT_MATCHED_MESSAGE_ID} message.
   </li>
@@ -762,7 +762,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
          <description><![CDATA[A ValueExpression that evaluates to a RegexValidator.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.validator.RegexValidator</type>
+             <type>jakarta.faces.validator.RegexValidator</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -775,7 +775,7 @@ Unless otherwise specified, all attributes accept static values or EL expression
 
 see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/index.html">JSF Specification</a>]]></description>
       <name>facet</name>
-      <tag-class>javax.faces.webapp.FacetTag</tag-class>
+      <tag-class>jakarta.faces.webapp.FacetTag</tag-class>
       <body-content>JSP</body-content>
       <attribute>
          <description><![CDATA[The name of the facet to be created. This must be a static value.]]></description>
@@ -802,11 +802,11 @@ Unless otherwise specified, all attributes accept static values or EL expression
          </deferred-value>
       </attribute>
       <attribute>
-         <description><![CDATA[Value binding expression that evaluates to an object that implements javax.faces.event.ActionListener.]]></description>
+         <description><![CDATA[Value binding expression that evaluates to an object that implements jakarta.faces.event.ActionListener.]]></description>
          <name>binding</name>
          <required>false</required>
          <deferred-value>
-             <type>javax.faces.event.ActionListener</type>
+             <type>jakarta.faces.event.ActionListener</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -868,7 +868,7 @@ Unless otherwise specified, all attributes accept static values or EL expression
          <name>binding</name>
          <required>false</required>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -919,7 +919,7 @@ will not be present before the render phase and value bindings that reference to
          <name>binding</name>
          <required>false</required>
          <deferred-value>
-             <type>javax.faces.event.PhaseListener</type>
+             <type>jakarta.faces.event.PhaseListener</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -975,11 +975,11 @@ Unless otherwise specified, all attributes accept static values or EL expression
          </deferred-value>
       </attribute>
       <attribute>
-         <description><![CDATA[A ValueExpression that evaluates to an implementation of the javax.faces.validator.Validator interface.]]></description>
+         <description><![CDATA[A ValueExpression that evaluates to an implementation of the jakarta.faces.validator.Validator interface.]]></description>
          <name>binding</name>
          <required>false</required>
          <deferred-value>
-             <type>javax.faces.validator.Validator</type>
+             <type>jakarta.faces.validator.Validator</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -1007,12 +1007,12 @@ Unless otherwise specified, all attributes accept static values or EL expression
          </deferred-value>
       </attribute>
       <attribute>
-         <description><![CDATA[Value binding expression that evaluates to an implementation of the javax.faces.event.ValueChangeListener
+         <description><![CDATA[Value binding expression that evaluates to an implementation of the jakarta.faces.event.ValueChangeListener
 interface.]]></description>
          <name>binding</name>
          <required>false</required>
          <deferred-value>
-             <type>javax.faces.event.ValueChangeListener</type>
+             <type>jakarta.faces.event.ValueChangeListener</type>
          </deferred-value>
       </attribute>
    </tag>

@@ -267,12 +267,12 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                 this.requestParams = new Array();
                 for (var i=0; i<dataArray.length; i++) {
                     var nameValue = dataArray[i].split("=");
-                    if (nameValue[0] === this.context.namingContainerPrefix + "javax.faces.source" ||
-                        nameValue[0] === this.context.namingContainerPrefix + "javax.faces.partial.event" ||
-                        nameValue[0] === this.context.namingContainerPrefix + "javax.faces.partial.execute" ||
-                        nameValue[0] === this.context.namingContainerPrefix + "javax.faces.partial.render" ||
-                        nameValue[0] === this.context.namingContainerPrefix + "javax.faces.partial.ajax" ||
-                        nameValue[0] === this.context.namingContainerPrefix + "javax.faces.behavior.event") {
+                    if (nameValue[0] === this.context.namingContainerPrefix + "jakarta.faces.source" ||
+                        nameValue[0] === this.context.namingContainerPrefix + "jakarta.faces.partial.event" ||
+                        nameValue[0] === this.context.namingContainerPrefix + "jakarta.faces.partial.execute" ||
+                        nameValue[0] === this.context.namingContainerPrefix + "jakarta.faces.partial.render" ||
+                        nameValue[0] === this.context.namingContainerPrefix + "jakarta.faces.partial.ajax" ||
+                        nameValue[0] === this.context.namingContainerPrefix + "jakarta.faces.behavior.event") {
                         input = document.createElement("input");
                         input.setAttribute("type", "hidden");
                         input.setAttribute("id", nameValue[0]);
@@ -1329,7 +1329,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
          * @ignore
          */
         var getEncodedUrlElement = function getEncodedUrlElement(form) {
-            var encodedUrlElement = form['javax.faces.encodedURL'];
+            var encodedUrlElement = form['jakarta.faces.encodedURL'];
 
             if (encodedUrlElement) {
                 return encodedUrlElement;
@@ -1337,7 +1337,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                 var formElements = form.elements;
                 for (var i = 0, length = formElements.length; i < length; i++) {
                     var formElement = formElements[i];
-                    if (formElement.name && (formElement.name.indexOf('javax.faces.encodedURL') >= 0)) {
+                    if (formElement.name && (formElement.name.indexOf('jakarta.faces.encodedURL') >= 0)) {
                         return formElement;
                     }
                 }
@@ -1354,7 +1354,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
          * @param context An object containing the request context, including the following properties:
          * the source element, per call onerror callback function, per call onevent callback function, the render
          * instructions, the submitting form ID, the naming container ID and naming container prefix.
-         * @param hiddenStateFieldName The hidden state field name, e.g. javax.faces.ViewState or javax.faces.ClientWindow 
+         * @param hiddenStateFieldName The hidden state field name, e.g. jakarta.faces.ViewState or jakarta.faces.ClientWindow 
          */
         var updateHiddenStateFields = function updateHiddenStateFields(updateElement, context, hiddenStateFieldName) {
             var firstChild = updateElement.firstChild;
@@ -1377,7 +1377,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
         /**
          * Find hidden state field for a given form.
          * @param form The form to find hidden state field in.
-         * @param hiddenStateFieldName The hidden state field name, e.g. javax.faces.ViewState or javax.faces.ClientWindow 
+         * @param hiddenStateFieldName The hidden state field name, e.g. jakarta.faces.ViewState or jakarta.faces.ClientWindow 
          * @param namingContainerPrefix The naming container prefix, if any (the view root ID suffixed with separator character).
          * @ignore
          */
@@ -1416,14 +1416,14 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
             var scripts = []; // temp holding value for array of script nodes
 
             id = updateElement.getAttribute('id');
-            var viewStateRegex = new RegExp(context.namingContainerPrefix + "javax.faces.ViewState" + jsf.separatorchar + ".+$");
-            var windowIdRegex = new RegExp(context.namingContainerPrefix + "javax.faces.ClientWindow" + jsf.separatorchar + ".+$");
+            var viewStateRegex = new RegExp(context.namingContainerPrefix + "jakarta.faces.ViewState" + jsf.separatorchar + ".+$");
+            var windowIdRegex = new RegExp(context.namingContainerPrefix + "jakarta.faces.ClientWindow" + jsf.separatorchar + ".+$");
 
             if (id.match(viewStateRegex)) {
-                updateHiddenStateFields(updateElement, context, "javax.faces.ViewState");
+                updateHiddenStateFields(updateElement, context, "jakarta.faces.ViewState");
                 return;
             } else if (id.match(windowIdRegex)) {
-                updateHiddenStateFields(updateElement, context, "javax.faces.ClientWindow");
+                updateHiddenStateFields(updateElement, context, "jakarta.faces.ClientWindow");
                 return;
             }
 
@@ -1437,7 +1437,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
             var src = markup;
 
             // If our special render all markup is present..
-            if (id === "javax.faces.ViewRoot" || id === "javax.faces.ViewBody") {
+            if (id === "jakarta.faces.ViewRoot" || id === "jakarta.faces.ViewBody") {
 
                 // spec790: If UIViewRoot is currently being updated,
                 // then it means that ajax navigation has taken place.
@@ -1480,9 +1480,9 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                 } else {  // replace body contents with innerHTML - note, script handling happens within function
                     elementReplaceStr(docBody, "body", src);
                 }
-            } else if (id === "javax.faces.ViewHead") {
-                throw new Error("javax.faces.ViewHead not supported - browsers cannot reliably replace the head's contents");
-            } else if (id === "javax.faces.Resource") {
+            } else if (id === "jakarta.faces.ViewHead") {
+                throw new Error("jakarta.faces.ViewHead not supported - browsers cannot reliably replace the head's contents");
+            } else if (id === "jakarta.faces.Resource") {
                 runStylesheets(src);
                 scripts = getScripts(src);
                 runScripts(scripts);
@@ -2177,9 +2177,9 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * <li>If the <code>source</code> argument is a <code>string</code>, find the
              * DOM element for that <code>string</code> identifier.
              * <li>If the DOM element could not be determined, throw an error.</li>
-             * <li class="changed_added_2_3">If the <code>javax.faces.ViewState</code> 
+             * <li class="changed_added_2_3">If the <code>jakarta.faces.ViewState</code> 
              * element could not be found, throw an error.</li>
-             * <li class="changed_added_2_3">If the ID of the <code>javax.faces.ViewState</code> 
+             * <li class="changed_added_2_3">If the ID of the <code>jakarta.faces.ViewState</code> 
              * element has a <code>&lt;VIEW_ROOT_CONTAINER_CLIENT_ID&gt;&lt;SEP&gt;</code>
              * prefix, where &lt;SEP&gt; is the currently configured
              * <code>UINamingContainer.getSeparatorChar()</code> and
@@ -2203,20 +2203,20 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * <th>value</th>
              * </tr>
              * <tr>
-             * <td><code>javax.faces.ViewState</code></td>
-             * <td><code>Contents of javax.faces.ViewState hidden field.  This is included when
+             * <td><code>jakarta.faces.ViewState</code></td>
+             * <td><code>Contents of jakarta.faces.ViewState hidden field.  This is included when
              * {@link jsf.getViewState} is used.</code></td>
              * </tr>
              * <tr>
-             * <td><code>javax.faces.partial.ajax</code></td>
+             * <td><code>jakarta.faces.partial.ajax</code></td>
              * <td><code>true</code></td>
              * </tr>
              * <tr>
-             * <td><code>javax.faces.source</code></td>
+             * <td><code>jakarta.faces.source</code></td>
              * <td><code>The identifier of the element that triggered this request.</code></td>
              * </tr>
              * <tr class="changed_added_2_2">
-             * <td><code>javax.faces.ClientWindow</code></td>
+             * <td><code>jakarta.faces.ClientWindow</code></td>
 
              * <td><code>Call jsf.getClientWindow(), passing the current
              * form.  If the return is non-null, it must be set as the
@@ -2234,29 +2234,29 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * argument. If <code>options.execute</code> exists:
              * <ul>
              * <li>If the keyword <code>@none</code> is present, do not create and send
-             * the post data argument <code>javax.faces.partial.execute</code>.</li>
+             * the post data argument <code>jakarta.faces.partial.execute</code>.</li>
              * <li>If the keyword <code>@all</code> is present, create the post data argument with
-             * the name <code>javax.faces.partial.execute</code> and the value <code>@all</code>.</li>
+             * the name <code>jakarta.faces.partial.execute</code> and the value <code>@all</code>.</li>
              * <li>Otherwise, there are specific identifiers that need to be sent.  Create the post
-             * data argument with the name <code>javax.faces.partial.execute</code> and the value as a
+             * data argument with the name <code>jakarta.faces.partial.execute</code> and the value as a
              * space delimited <code>string</code> of client identifiers.</li>
              * </ul>
              * </li>
              * <li>If <code>options.execute</code> does not exist, create the post data argument with the
-             * name <code>javax.faces.partial.execute</code> and the value as the identifier of the
+             * name <code>jakarta.faces.partial.execute</code> and the value as the identifier of the
              * element that caused this request.</li>
              * <li>If <code>options.render</code> exists:
              * <ul>
              * <li>If the keyword <code>@none</code> is present, do not create and send
-             * the post data argument <code>javax.faces.partial.render</code>.</li>
+             * the post data argument <code>jakarta.faces.partial.render</code>.</li>
              * <li>If the keyword <code>@all</code> is present, create the post data argument with
-             * the name <code>javax.faces.partial.render</code> and the value <code>@all</code>.</li>
+             * the name <code>jakarta.faces.partial.render</code> and the value <code>@all</code>.</li>
              * <li>Otherwise, there are specific identifiers that need to be sent.  Create the post
-             * data argument with the name <code>javax.faces.partial.render</code> and the value as a
+             * data argument with the name <code>jakarta.faces.partial.render</code> and the value as a
              * space delimited <code>string</code> of client identifiers.</li>
              * </ul>
              * <li>If <code>options.render</code> does not exist do not create and send the
-             * post data argument <code>javax.faces.partial.render</code>.</li>
+             * post data argument <code>jakarta.faces.partial.render</code>.</li>
 
              * <li class="changed_added_2_2">If
              * <code>options.delay</code> exists let it be the value
@@ -2272,7 +2272,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * <li class="changed_added_2_2">If
              * <code>options.resetValues</code> exists and its value is
              * <code>true</code>, ensure a post data argument with the
-             * name <code>javax.faces.partial.resetValues</code> and the
+             * name <code>jakarta.faces.partial.resetValues</code> and the
              * value <code>true</code> is sent in addition to the other
              * post data arguments.  This will cause
              * <code>UIViewRoot.resetValues()</code> to be called,
@@ -2304,7 +2304,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * </ul>
              * </li>
              * <li>Encode the set of post data arguments. <span class="changed_added_2_3">
-             * If the <code>javax.faces.ViewState</code> element has a namespace prefix, then
+             * If the <code>jakarta.faces.ViewState</code> element has a namespace prefix, then
              * make sure that all post data arguments are prefixed with this namespace prefix.
              * </span></li>
              * <li>Join the encoded view state with the encoded set of post data arguments
@@ -2321,7 +2321,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * <li>Set the request header with the name: <code>Faces-Request</code> and the
              * value: <code>partial/ajax</code>.</li>
              * <li>Determine the <code>posting URL</code> as follows: If the hidden field
-             * <code>javax.faces.encodedURL</code> is present in the submitting form, use its
+             * <code>jakarta.faces.encodedURL</code> is present in the submitting form, use its
              * value as the <code>posting URL</code>.  Otherwise, use the <code>action</code>
              * property of the <code>form</code> element as the <code>URL</code>.</li>
 
@@ -2427,7 +2427,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * <td><code>resetValues</code></td>
 
              * <td>If true, ensure a post data argument with the name
-             * javax.faces.partial.resetValues and the value true is
+             * jakarta.faces.partial.resetValues and the value true is
              * sent in addition to the other post data arguments. This
              * will cause UIViewRoot.resetValues() to be called, passing
              * the value of the "render" attribute. Note: do not use any
@@ -2508,7 +2508,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                     throw new Error("jsf.ajax.request: Method must be called within a form");
                 }
 
-                viewStateElement = getHiddenStateField(form, "javax.faces.ViewState");
+                viewStateElement = getHiddenStateField(form, "jakarta.faces.ViewState");
                 if (!viewStateElement) {
                     throw new Error("jsf.ajax.request: Form has no view state element");
                 }
@@ -2519,7 +2519,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                 var viewState = jsf.getViewState(form);
 
                 // Set up additional arguments to be used in the request..
-                // Make sure "javax.faces.source" is set up.
+                // Make sure "jakarta.faces.source" is set up.
                 // If there were "execute" ids specified, make sure we
                 // include the identifier of the source element in the
                 // "execute" list.  If there were no "execute" ids
@@ -2527,22 +2527,22 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
 
                 var args = {};
 
-                var namingContainerPrefix = viewStateElement.name.substring(0, viewStateElement.name.indexOf("javax.faces.ViewState"));
+                var namingContainerPrefix = viewStateElement.name.substring(0, viewStateElement.name.indexOf("jakarta.faces.ViewState"));
 
-                args[namingContainerPrefix + "javax.faces.source"] = element.id;
+                args[namingContainerPrefix + "jakarta.faces.source"] = element.id;
 
                 if (event && !!event.type) {
-                    args[namingContainerPrefix + "javax.faces.partial.event"] = event.type;
+                    args[namingContainerPrefix + "jakarta.faces.partial.event"] = event.type;
                 }
 
                 if ("resetValues" in options) {
-                    args[namingContainerPrefix + "javax.faces.partial.resetValues"] = options.resetValues;
+                    args[namingContainerPrefix + "jakarta.faces.partial.resetValues"] = options.resetValues;
                 }
 
                 // If we have 'execute' identifiers:
                 // Handle any keywords that may be present.
                 // If @none present anywhere, do not send the
-                // "javax.faces.partial.execute" parameter.
+                // "jakarta.faces.partial.execute" parameter.
                 // The 'execute' and 'render' lists must be space
                 // delimited.
 
@@ -2563,11 +2563,11 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                         } else {
                             options.execute = "@all";
                         }
-                        args[namingContainerPrefix + "javax.faces.partial.execute"] = options.execute;
+                        args[namingContainerPrefix + "jakarta.faces.partial.execute"] = options.execute;
                     }
                 } else {
                     options.execute = element.name + " " + element.id;
-                    args[namingContainerPrefix + "javax.faces.partial.execute"] = options.execute;
+                    args[namingContainerPrefix + "jakarta.faces.partial.execute"] = options.execute;
                 }
 
                 if (options.render) {
@@ -2583,7 +2583,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                         } else {
                             options.render = "@all";
                         }
-                        args[namingContainerPrefix + "javax.faces.partial.render"] = options.render;
+                        args[namingContainerPrefix + "jakarta.faces.partial.render"] = options.render;
                     }
                 }
                 var explicitlyDoNotDelay = ((typeof options.delay == 'undefined') || (typeof options.delay == 'string') &&
@@ -2653,7 +2653,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                     }
                 }
 
-                args[namingContainerPrefix + "javax.faces.partial.ajax"] = "true";
+                args[namingContainerPrefix + "jakarta.faces.partial.ajax"] = "true";
                 args["method"] = "POST";
 
                 // Determine the posting url
@@ -2671,7 +2671,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
                     ajaxEngine.context.onevent = onevent;
                     ajaxEngine.context.onerror = onerror;
                     ajaxEngine.context.sourceid = element.id;
-                    ajaxEngine.context.render = args[namingContainerPrefix + "javax.faces.partial.render"] || "";
+                    ajaxEngine.context.render = args[namingContainerPrefix + "jakarta.faces.partial.render"] || "";
                     ajaxEngine.context.namingContainerPrefix = namingContainerPrefix;
                     ajaxEngine.sendRequest();
 
@@ -2720,8 +2720,8 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * will be used when updating the contents of the DOM element as specified by the
              * <code>&lt;update&gt;</code> element identifier.
              * <li>If an <code>&lt;update&gt;</code> element is found in the response
-             * with the identifier <code>javax.faces.ViewRoot</code>:
-             * <pre><code>&lt;update id="javax.faces.ViewRoot"&gt;
+             * with the identifier <code>jakarta.faces.ViewRoot</code>:
+             * <pre><code>&lt;update id="jakarta.faces.ViewRoot"&gt;
              *    &lt;![CDATA[...]]&gt;
              * &lt;/update&gt;</code></pre>
              * Update the entire DOM replacing the appropriate <code>head</code> and/or
@@ -2730,14 +2730,14 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * <li class="changed_modified_2_2">If an
              * <code>&lt;update&gt;</code> element is found in the 
              * response with an identifier containing
-             * <code>javax.faces.ViewState</code>:
+             * <code>jakarta.faces.ViewState</code>:
 
-             * <pre><code>&lt;update id="&lt;VIEW_ROOT_CONTAINER_CLIENT_ID&gt;&lt;SEP&gt;javax.faces.ViewState&lt;SEP&gt;&lt;UNIQUE_PER_VIEW_NUMBER&gt;"&gt;
+             * <pre><code>&lt;update id="&lt;VIEW_ROOT_CONTAINER_CLIENT_ID&gt;&lt;SEP&gt;jakarta.faces.ViewState&lt;SEP&gt;&lt;UNIQUE_PER_VIEW_NUMBER&gt;"&gt;
              *    &lt;![CDATA[...]]&gt;
              * &lt;/update&gt;</code></pre>
 
              * locate and update the submitting form's
-             * <code>javax.faces.ViewState</code> value with the
+             * <code>jakarta.faces.ViewState</code> value with the
              * <code>CDATA</code> contents from the response.
              * &lt;SEP&gt; is the currently configured
              * <code>UINamingContainer.getSeparatorChar()</code>.
@@ -2749,7 +2749,7 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * view state.  This requirement is simply to satisfy XML
              * correctness in parity with what is done in the
              * corresponding non-partial JSF view.  Locate and update
-             * the <code>javax.faces.ViewState</code> value for all
+             * the <code>jakarta.faces.ViewState</code> value for all
              * JSF forms covered in the <code>render</code> target
              * list whose ID starts with the same 
              * &lt;VIEW_ROOT_CONTAINER_CLIENT_ID&gt; value.</li>
@@ -2757,14 +2757,14 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * <li class="changed_added_2_2">If an
              * <code>update</code> element is found in the response with
              * an identifier containing
-             * <code>javax.faces.ClientWindow</code>:
+             * <code>jakarta.faces.ClientWindow</code>:
 
-             * <pre><code>&lt;update id="&lt;VIEW_ROOT_CONTAINER_CLIENT_ID&gt;&lt;SEP&gt;javax.faces.ClientWindow&lt;SEP&gt;&lt;UNIQUE_PER_VIEW_NUMBER&gt;"&gt;
+             * <pre><code>&lt;update id="&lt;VIEW_ROOT_CONTAINER_CLIENT_ID&gt;&lt;SEP&gt;jakarta.faces.ClientWindow&lt;SEP&gt;&lt;UNIQUE_PER_VIEW_NUMBER&gt;"&gt;
              *    &lt;![CDATA[...]]&gt;
              * &lt;/update&gt;</code></pre>
 
              * locate and update the submitting form's
-             * <code>javax.faces.ClientWindow</code> value with the
+             * <code>jakarta.faces.ClientWindow</code> value with the
              * <code>CDATA</code> contents from the response.
              * &lt;SEP&gt; is the currently configured
              * <code>UINamingContainer.getSeparatorChar()</code>.
@@ -2776,14 +2776,14 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * view state.  This requirement is simply to satisfy XML
              * correctness in parity with what is done in the
              * corresponding non-partial JSF view.  Locate and update
-             * the <code>javax.faces.ClientWindow</code> value for all
+             * the <code>jakarta.faces.ClientWindow</code> value for all
              * JSF forms covered in the <code>render</code> target
              * list whose ID starts with the same 
              * &lt;VIEW_ROOT_CONTAINER_CLIENT_ID&gt; value.</li>
 
              * <li class="changed_added_2_3">If an <code>update</code> element is found in the response with the
-             * identifier <code>javax.faces.Resource</code>:
-             * <pre><code>&lt;update id="javax.faces.Resource"&gt;
+             * identifier <code>jakarta.faces.Resource</code>:
+             * <pre><code>&lt;update id="jakarta.faces.Resource"&gt;
              *    &lt;![CDATA[...]]&gt;
              * &lt;/update&gt;</code></pre>
              * append any element found in the <code>CDATA</code> contents which is absent in the document to the
@@ -2791,15 +2791,15 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
              * </li>
 
              * <li>If an <code>update</code> element is found in the response with the identifier
-             * <code>javax.faces.ViewHead</code>:
-             * <pre><code>&lt;update id="javax.faces.ViewHead"&gt;
+             * <code>jakarta.faces.ViewHead</code>:
+             * <pre><code>&lt;update id="jakarta.faces.ViewHead"&gt;
              *    &lt;![CDATA[...]]&gt;
              * &lt;/update&gt;</code></pre>
              * update the document's <code>head</code> section with the <code>CDATA</code>
              * contents from the response.</li>
              * <li>If an <code>update</code> element is found in the response with the identifier
-             * <code>javax.faces.ViewBody</code>:
-             * <pre><code>&lt;update id="javax.faces.ViewBody"&gt;
+             * <code>jakarta.faces.ViewBody</code>:
+             * <pre><code>&lt;update id="jakarta.faces.ViewBody"&gt;
              *    &lt;![CDATA[...]]&gt;
              * &lt;/update&gt;</code></pre>
              * update the document's <code>body</code> section with the <code>CDATA</code>
@@ -3045,8 +3045,8 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
      *
      * @returns String <code>String</code> representing the current state of the
      * running application in a typical product development lifecycle.  Refer
-     * to <code>javax.faces.application.Application.getProjectStage</code> and
-     * <code>javax.faces.application.ProjectStage</code>.
+     * to <code>jakarta.faces.application.Application.getProjectStage</code> and
+     * <code>jakarta.faces.application.ProjectStage</code>.
      * @function jsf.getProjectStage
      */
     jsf.getProjectStage = function() {
@@ -3185,10 +3185,10 @@ if (!((jsf && jsf.specversion && jsf.specversion >= 23000 ) &&
      */
     jsf.getClientWindow = function(node) {
         var FORM = "form";
-        var WIN_ID = "javax.faces.ClientWindow";
+        var WIN_ID = "jakarta.faces.ClientWindow";
 
         /**
-         * Find javax.faces.ClientWindow field for a given form.
+         * Find jakarta.faces.ClientWindow field for a given form.
          * @param form
          * @ignore
          */
@@ -3717,7 +3717,7 @@ mojarra.ab = function ab(s, e, n, ex, re, op) {
     }
 
     if (n) {
-        op["javax.faces.behavior.event"] = n;
+        op["jakarta.faces.behavior.event"] = n;
     }
 
     if (ex) {

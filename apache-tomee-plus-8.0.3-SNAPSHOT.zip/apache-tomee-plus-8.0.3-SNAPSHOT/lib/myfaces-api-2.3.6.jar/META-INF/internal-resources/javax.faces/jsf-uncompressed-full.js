@@ -6700,7 +6700,7 @@ _MF_CLS(_PFX_XHR + "_AjaxRequest", _MF_OBJECT, /** @lends myfaces._impl.xhrCore.
     _ajaxType:"POST",
 
     //CONSTANTS
-    ENCODED_URL:"javax.faces.encodedURL",
+    ENCODED_URL:"jakarta.faces.encodedURL",
     /*
      * constants used internally
      */
@@ -6814,7 +6814,7 @@ _MF_CLS(_PFX_XHR + "_AjaxRequest", _MF_OBJECT, /** @lends myfaces._impl.xhrCore.
     },
 
     _applyClientWindowId:function () {
-        var clientWindow = this._Dom.getNamedElementFromForm(this._sourceForm, "javax.faces.ClientWindow");
+        var clientWindow = this._Dom.getNamedElementFromForm(this._sourceForm, "jakarta.faces.ClientWindow");
         //pass through if exists already set by _Impl
         if ('undefined' != typeof this._context._mfInternal._clientWindow) {
             this._context._mfInternal._clientWindowOld = clientWindow.value;
@@ -6830,7 +6830,7 @@ _MF_CLS(_PFX_XHR + "_AjaxRequest", _MF_OBJECT, /** @lends myfaces._impl.xhrCore.
     _restoreClientWindowId:function () {
         //we have to reset the client window back to its original state
 
-        var clientWindow = this._Dom.getNamedElementFromForm(this._sourceForm, "javax.faces.ClientWindow");
+        var clientWindow = this._Dom.getNamedElementFromForm(this._sourceForm, "jakarta.faces.ClientWindow");
         if(!clientWindow) {
             return;
         }
@@ -6958,7 +6958,7 @@ _MF_CLS(_PFX_XHR + "_AjaxRequest", _MF_OBJECT, /** @lends myfaces._impl.xhrCore.
     /**
      * Spec. 13.3.1
      * Collect and encode input elements.
-     * Additionally the hidden element javax.faces.ViewState
+     * Additionally the hidden element jakarta.faces.ViewState
      *
      *
      * @return  an element of formDataWrapper
@@ -7136,14 +7136,14 @@ _MF_CLS(_PFX_XHR+"_IFrameRequest", myfaces._impl.xhrCore._AjaxRequest,
      * @constant
      * @description request marker that the request is an iframe based request
      */
-    //JX_PART_IFRAME: "javax.faces.partial.iframe",
+    //JX_PART_IFRAME: "jakarta.faces.partial.iframe",
     /**
      * @constant
      * @description request marker that the request is an apache myfaces iframe request based request
      */
-    MF_PART_IFRAME: "javax.faces.transport.iframe",
+    MF_PART_IFRAME: "jakarta.faces.transport.iframe",
 
-    MF_PART_FACES_REQUEST: "javax.faces.request",
+    MF_PART_FACES_REQUEST: "jakarta.faces.request",
 
 
     constructor_: function(args) {
@@ -7235,12 +7235,12 @@ _MF_SINGLTN(_PFX_XHR + "_AjaxResponse", _MF_OBJECT, /** @lends myfaces._impl.xhr
     CMD_REDIRECT: "redirect",
 
     /*other constants*/
-    P_VIEWSTATE: "javax.faces.ViewState",
-    P_CLIENTWINDOW: "javax.faces.ClientWindow",
-    P_VIEWROOT: "javax.faces.ViewRoot",
-    P_VIEWHEAD: "javax.faces.ViewHead",
-    P_VIEWBODY: "javax.faces.ViewBody",
-    P_RESOURCE: "javax.faces.Resource",
+    P_VIEWSTATE: "jakarta.faces.ViewState",
+    P_CLIENTWINDOW: "jakarta.faces.ClientWindow",
+    P_VIEWROOT: "jakarta.faces.ViewRoot",
+    P_VIEWHEAD: "jakarta.faces.ViewHead",
+    P_VIEWBODY: "jakarta.faces.ViewBody",
+    P_RESOURCE: "jakarta.faces.Resource",
 
     /**
      * uses response to start Html element replacement
@@ -7418,7 +7418,7 @@ _MF_SINGLTN(_PFX_XHR + "_AjaxResponse", _MF_OBJECT, /** @lends myfaces._impl.xhr
         var _Dom = this._Dom;
         var prefix = this._getPrefix(context);
 
-        //in IE7 looking up form elements with complex names (such as 'javax.faces.ViewState') fails in certain cases
+        //in IE7 looking up form elements with complex names (such as 'jakarta.faces.ViewState') fails in certain cases
         //iterate through the form elements to find the element, instead
         var fieldsFound = [];
 
@@ -7470,7 +7470,7 @@ _MF_SINGLTN(_PFX_XHR + "_AjaxResponse", _MF_OBJECT, /** @lends myfaces._impl.xhr
      * @param context the client context holding all request context data and some internal data
      * @param elem the root to start with, must be a dom node not an identifier
      * @param value the new value
-     * @param identifier the identifier for the client artifact aka javax.faces.ViewState, ClientWindowId etc...
+     * @param identifier the identifier for the client artifact aka jakarta.faces.ViewState, ClientWindowId etc...
      *
      * @private
      */
@@ -8552,15 +8552,15 @@ _MF_SINGLTN(_PFX_CORE + "Impl", _MF_OBJECT, /**  @lends myfaces._impl.core.Impl.
      * [STATIC] constants
      */
 
-    P_PARTIAL_SOURCE:"javax.faces.source",
-    P_VIEWSTATE:"javax.faces.ViewState",
-    P_CLIENTWINDOW:"javax.faces.ClientWindow",
-    P_AJAX:"javax.faces.partial.ajax",
-    P_EXECUTE:"javax.faces.partial.execute",
-    P_RENDER:"javax.faces.partial.render",
-    P_EVT:"javax.faces.partial.event",
-    P_WINDOW_ID:"javax.faces.ClientWindow",
-    P_RESET_VALUES:"javax.faces.partial.resetValues",
+    P_PARTIAL_SOURCE:"jakarta.faces.source",
+    P_VIEWSTATE:"jakarta.faces.ViewState",
+    P_CLIENTWINDOW:"jakarta.faces.ClientWindow",
+    P_AJAX:"jakarta.faces.partial.ajax",
+    P_EXECUTE:"jakarta.faces.partial.execute",
+    P_RENDER:"jakarta.faces.partial.render",
+    P_EVT:"jakarta.faces.partial.event",
+    P_WINDOW_ID:"jakarta.faces.ClientWindow",
+    P_RESET_VALUES:"jakarta.faces.partial.resetValues",
 
     /* message types */
     ERROR:"error",
@@ -8588,7 +8588,7 @@ _MF_SINGLTN(_PFX_CORE + "Impl", _MF_OBJECT, /**  @lends myfaces._impl.core.Impl.
 
     /**
      * collect and encode data for a given form element (must be of type form)
-     * find the javax.faces.ViewState element and encode its value as well!
+     * find the jakarta.faces.ViewState element and encode its value as well!
      * return a concatenated string of the encoded values!
      *
      * @throws Error in case of the given element not being of type form!
@@ -8745,18 +8745,18 @@ _MF_SINGLTN(_PFX_CORE + "Impl", _MF_OBJECT, /**  @lends myfaces._impl.core.Impl.
         */
 
         /**
-         * binding contract the javax.faces.source must be set
+         * binding contract the jakarta.faces.source must be set
          */
         passThrgh[this.P_PARTIAL_SOURCE] = elementId;
 
         /**
-         * javax.faces.partial.ajax must be set to true
+         * jakarta.faces.partial.ajax must be set to true
          */
         passThrgh[this.P_AJAX] = true;
 
         /**
          * if resetValues is set to true
-         * then we have to set javax.faces.resetValues as well
+         * then we have to set jakarta.faces.resetValues as well
          * as pass through parameter
          * the value has to be explicitly true, according to
          * the specs jsdoc
@@ -9454,7 +9454,7 @@ if (!window.jsf) {
          * </li>
          *
          * @return {String} the current project state emitted by the server side method:
-         * <i>javax.faces.application.Application.getProjectStage()</i>
+         * <i>jakarta.faces.application.Application.getProjectStage()</i>
          */
         this.getProjectStage = function() {
             var impl = myfaces._impl.core._Runtime.getGlobalConfig("jsfAjaxImpl", myfaces._impl.core.Impl);
@@ -9463,7 +9463,7 @@ if (!window.jsf) {
 
         /**
          * collect and encode data for a given form element (must be of type form)
-         * find the javax.faces.ViewState element and encode its value as well!
+         * find the jakarta.faces.ViewState element and encode its value as well!
          * return a concatenated string of the encoded values!
          *
          * @throws an exception in case of the given element not being of type form!

@@ -99,7 +99,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -115,7 +115,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -133,7 +133,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -152,7 +152,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -278,7 +278,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -345,7 +345,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -567,7 +567,7 @@ is functionally equivalent to a reference to an action method that returns the s
           <xs:attribute name="actionListener" >
             <xs:annotation>
               <xs:documentation><![CDATA[]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ActionEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ActionEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -586,7 +586,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -815,7 +815,7 @@ is functionally equivalent to a reference to an action method that returns the s
           <xs:attribute name="actionListener" >
             <xs:annotation>
               <xs:documentation><![CDATA[]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ActionEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ActionEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -834,7 +834,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -929,7 +929,7 @@ is functionally equivalent to a reference to an action method that returns the s
           <xs:attribute name="actionListener" >
             <xs:annotation>
               <xs:documentation><![CDATA[]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ActionEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ActionEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -948,7 +948,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1187,7 +1187,7 @@ The value referenced by the EL expression can be of any type.
 <ul>
 <li>A value of type DataModel is used directly.</li>
 <li>Array-like parameters of type array-of-Object, java.util.List, java.sql.ResultSet or
-javax.servlet.jsp.jstl.sql.Result are wrapped in a corresponding DataModel that knows how to iterate over the
+jakarta.servlet.jsp.jstl.sql.Result are wrapped in a corresponding DataModel that knows how to iterate over the
 elements.</li>
 <li>Other values are wrapped in a DataModel as a single row.</li>
 </ul>
@@ -1255,7 +1255,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1303,7 +1303,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -1322,7 +1322,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1494,7 +1494,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1689,7 +1689,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1719,7 +1719,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1964,7 +1964,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -1980,7 +1980,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -1998,7 +1998,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -2017,7 +2017,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -2269,7 +2269,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -2285,7 +2285,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -2303,7 +2303,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -2322,7 +2322,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -2567,7 +2567,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -2583,7 +2583,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -2601,7 +2601,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -2620,7 +2620,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -2850,7 +2850,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -2866,7 +2866,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -2884,7 +2884,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -2903,7 +2903,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -3050,7 +3050,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -3217,7 +3217,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -3403,7 +3403,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -3422,7 +3422,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -3646,7 +3646,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -3665,7 +3665,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -3741,7 +3741,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -3760,7 +3760,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -3926,7 +3926,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -3945,7 +3945,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -4155,7 +4155,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -4174,7 +4174,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -4250,7 +4250,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -4269,7 +4269,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -4518,7 +4518,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -4631,7 +4631,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -4861,7 +4861,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -4877,7 +4877,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="converter" >
@@ -4889,7 +4889,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -4908,7 +4908,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -5196,7 +5196,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -5212,7 +5212,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -5230,7 +5230,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -5249,7 +5249,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -5515,7 +5515,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -5531,7 +5531,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -5549,7 +5549,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -5568,7 +5568,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -5825,7 +5825,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -5841,7 +5841,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -5859,7 +5859,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -5878,7 +5878,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -6136,7 +6136,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -6152,7 +6152,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -6170,7 +6170,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -6189,7 +6189,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -6435,7 +6435,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -6451,7 +6451,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -6469,7 +6469,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -6488,7 +6488,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -6758,7 +6758,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -6774,7 +6774,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -6792,7 +6792,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -6811,7 +6811,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -6821,7 +6821,7 @@ component. The id is not necessarily unique across all components in the current
         <xs:annotation>
               <xs:documentation><![CDATA[TODO: DOCUMENT ME!
 <p>
-This tag is backed using a javax.faces.component.UIOutput component instance.
+This tag is backed using a jakarta.faces.component.UIOutput component instance.
 In other words, instances of this component class are created when it is resolved
 a Resource annotation, so there is no concrete class or specific tag handler for it,
 but there exists a concrete renderer for it.
@@ -6867,7 +6867,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -6887,7 +6887,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -6896,7 +6896,7 @@ component. The id is not necessarily unique across all components in the current
         <xs:annotation>
               <xs:documentation><![CDATA[TODO: DOCUMENT ME! This class is just for documentation purposes
 <p>
-This tag is backed using a javax.faces.component.UIOutput component instance.
+This tag is backed using a jakarta.faces.component.UIOutput component instance.
 In other words, instances of this component class are created when it is resolved
 a Resource annotation, so there is no concrete class or specific tag handler for it,
 but there exists a concrete renderer for it.
@@ -6936,7 +6936,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -6956,7 +6956,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>

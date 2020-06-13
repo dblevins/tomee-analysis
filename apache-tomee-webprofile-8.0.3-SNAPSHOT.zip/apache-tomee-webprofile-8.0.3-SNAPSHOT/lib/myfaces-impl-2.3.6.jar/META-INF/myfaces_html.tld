@@ -96,7 +96,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -115,7 +115,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -136,7 +136,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -156,7 +156,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -222,7 +222,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -471,7 +471,7 @@ is functionally equivalent to a reference to an action method that returns the s
          <description><![CDATA[]]></description>
          <name>actionListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ActionEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ActionEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -492,7 +492,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -749,7 +749,7 @@ is functionally equivalent to a reference to an action method that returns the s
          <description><![CDATA[]]></description>
          <name>actionListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ActionEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ActionEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -770,7 +770,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -871,7 +871,7 @@ is functionally equivalent to a reference to an action method that returns the s
          <description><![CDATA[]]></description>
          <name>actionListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ActionEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ActionEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -892,7 +892,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -1156,7 +1156,7 @@ The value referenced by the EL expression can be of any type.
 <ul>
 <li>A value of type DataModel is used directly.</li>
 <li>Array-like parameters of type array-of-Object, java.util.List, java.sql.ResultSet or
-javax.servlet.jsp.jstl.sql.Result are wrapped in a corresponding DataModel that knows how to iterate over the
+jakarta.servlet.jsp.jstl.sql.Result are wrapped in a corresponding DataModel that knows how to iterate over the
 elements.</li>
 <li>Other values are wrapped in a DataModel as a single row.</li>
 </ul>
@@ -1215,7 +1215,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -1405,7 +1405,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -1621,7 +1621,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -1894,7 +1894,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -1913,7 +1913,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -1934,7 +1934,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -1954,7 +1954,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -2235,7 +2235,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -2254,7 +2254,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -2275,7 +2275,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -2295,7 +2295,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -2568,7 +2568,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -2587,7 +2587,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -2608,7 +2608,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -2628,7 +2628,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -2884,7 +2884,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -2903,7 +2903,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -2924,7 +2924,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -2944,7 +2944,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -3105,7 +3105,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -3287,7 +3287,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -3366,7 +3366,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -3386,7 +3386,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -3570,7 +3570,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -3590,7 +3590,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -3825,7 +3825,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -3845,7 +3845,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -3924,7 +3924,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -3944,7 +3944,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -4221,7 +4221,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -4342,7 +4342,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -4597,7 +4597,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -4616,7 +4616,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -4630,7 +4630,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -4650,7 +4650,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -4970,7 +4970,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -4989,7 +4989,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -5010,7 +5010,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -5030,7 +5030,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -5324,7 +5324,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -5343,7 +5343,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -5364,7 +5364,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -5384,7 +5384,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -5668,7 +5668,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -5687,7 +5687,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -5708,7 +5708,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -5728,7 +5728,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -6013,7 +6013,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -6032,7 +6032,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -6053,7 +6053,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -6073,7 +6073,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -6345,7 +6345,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -6364,7 +6364,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -6385,7 +6385,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -6405,7 +6405,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>
@@ -6705,7 +6705,7 @@ The method is expected to have the prototype
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></description>
          <name>validator</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -6724,7 +6724,7 @@ The phase in which this method is invoked can be controlled via the immediate at
 </p>]]></description>
          <name>valueChangeListener</name>
         <deferred-method>
-            <method-signature>void myMethod( javax.faces.event.ValueChangeEvent )</method-signature>
+            <method-signature>void myMethod( jakarta.faces.event.ValueChangeEvent )</method-signature>
 
         </deferred-method>
       </attribute>
@@ -6745,7 +6745,7 @@ implements the Converter interface.
 </p>]]></description>
          <name>converter</name>
          <deferred-value>
-             <type>javax.faces.convert.Converter</type>
+             <type>jakarta.faces.convert.Converter</type>
          </deferred-value>
       </attribute>
       <attribute>
@@ -6765,7 +6765,7 @@ component. The id is not necessarily unique across all components in the current
          <description><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></description>
          <name>binding</name>
          <deferred-value>
-             <type>javax.faces.component.UIComponent</type>
+             <type>jakarta.faces.component.UIComponent</type>
          </deferred-value>
       </attribute>
    </tag>

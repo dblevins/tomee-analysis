@@ -74,7 +74,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -110,7 +110,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -140,7 +140,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="actionListener" >
             <xs:annotation>
               <xs:documentation><![CDATA[]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ActionEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ActionEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="phase" >
@@ -171,7 +171,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -236,7 +236,7 @@ a validation error for the component.
 The method is expected to have the prototype
 </p>
 <code>public void aMethod(FacesContext, UIComponent,Object)</code>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.context.FacesContext, jakarta.faces.component.UIComponent, java.lang.Object )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="validatorMessage" >
@@ -252,7 +252,7 @@ component is not equal to the value which the "value" expression for this compon
 <p>
 The phase in which this method is invoked can be controlled via the immediate attribute.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( javax.faces.event.ValueChangeEvent )]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: void myMethod( jakarta.faces.event.ValueChangeEvent )]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="value" >
@@ -270,7 +270,7 @@ specified, an instance of the converter type registered with that id is used. Wh
 is an EL expression, the result of evaluating the expression must be an object that
 implements the Converter interface.
 </p>]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="id" >
@@ -283,7 +283,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -326,7 +326,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -353,7 +353,7 @@ SelectItem instance to the list of available options for the parent component
           <xs:attribute name="value" >
             <xs:annotation>
               <xs:documentation><![CDATA[The initial value of this component.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.model.SelectItem]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.model.SelectItem]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="itemDisabled" >
@@ -404,7 +404,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -412,7 +412,7 @@ component. The id is not necessarily unique across all components in the current
     <xs:element name="validateBean">
         <xs:annotation>
           <xs:documentation><![CDATA[<p>
-<strong>BeanValidator</strong> is a {@link javax.faces.validator.Validator}
+<strong>BeanValidator</strong> is a {@link jakarta.faces.validator.Validator}
 that doesn't do any validation itself, but delegates validation logic to
 Bean Validation.
 </p>]]></xs:documentation>
@@ -445,7 +445,7 @@ Bean Validation.
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a BeanValidator.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.validator.BeanValidator]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.validator.BeanValidator]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -496,7 +496,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a DoubleRangeValidator.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.validator.DoubleRangeValidator]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.validator.DoubleRangeValidator]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -548,7 +548,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a LengthValidator.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.validator.LengthValidator]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.validator.LengthValidator]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -599,7 +599,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a LongRangeValidator.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.validator.LongRangeValidator]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.validator.LongRangeValidator]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -607,7 +607,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
     <xs:element name="validateRegex">
         <xs:annotation>
           <xs:documentation><![CDATA[<p>
-  <strong>RegexValidator</strong> is a {@link javax.faces.validator.Validator}
+  <strong>RegexValidator</strong> is a {@link jakarta.faces.validator.Validator}
   that checks the value of the corresponding component against specified
   pattern using Java regular expression syntax.
 
@@ -628,7 +628,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
   </li>
   <li>
     If no pattern has been set, or pattern resolves to <code>null</code> or an
-    empty String, throw a {@link javax.faces.validator.ValidatorException}
+    empty String, throw a {@link jakarta.faces.validator.ValidatorException}
     with a {@link #PATTERN_NOT_SET_MESSAGE_ID} message.
   </li>
   <li>
@@ -638,7 +638,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
   </li>
   <li>
     If a <code>pattern</code> property has been configured on this
-    {@link javax.faces.validator.Validator}, check the passed value against this pattern.
+    {@link jakarta.faces.validator.Validator}, check the passed value against this pattern.
     If value does not match pattern throw a {@link ValidatorException}
     containing a {@link #NOT_MATCHED_MESSAGE_ID} message.
   </li>
@@ -672,7 +672,7 @@ see Javadoc of <a href="http://java.sun.com/javaee/javaserverfaces/1.2/docs/api/
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a RegexValidator.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.validator.RegexValidator]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.validator.RegexValidator]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -704,7 +704,7 @@ property to true (including all rules related to this property).]]></xs:document
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a RequiredValidator.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.validator.RequiredValidator]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.validator.RequiredValidator]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -717,8 +717,8 @@ property to true (including all rules related to this property).]]></xs:document
 Unless otherwise specified, all attributes accept static values or EL expressions.
 </p><p>Register an ActionListener instance on the UIComponent associated with the closest parent UIComponent custom action.
 
-See javax.faces.event.ActionListener
-See javax.faces.component.ActionSource</p>]]></xs:documentation>
+See jakarta.faces.event.ActionListener
+See jakarta.faces.component.ActionSource</p>]]></xs:documentation>
               <xs:documentation>tag-class: org.apache.myfaces.view.facelets.tag.jsf.core.ActionListenerHandler</xs:documentation>
           <xs:documentation>body-content: JSP</xs:documentation>
         </xs:annotation>
@@ -742,8 +742,8 @@ See javax.faces.component.ActionSource</p>]]></xs:documentation>
           </xs:attribute>
           <xs:attribute name="binding" >
             <xs:annotation>
-              <xs:documentation><![CDATA[Value binding expression that evaluates to an object that implements javax.faces.event.ActionListener.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.event.ActionListener]]></xs:documentation>
+              <xs:documentation><![CDATA[Value binding expression that evaluates to an object that implements jakarta.faces.event.ActionListener.]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.event.ActionListener]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -806,7 +806,7 @@ to define a target for a behavior. See comment inside apply() method.</li>
           <xs:attribute name="listener" >
             <xs:annotation>
               <xs:documentation><![CDATA[]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: public void m(javax.faces.event.AjaxBehaviorEvent evt) " + "throws javax.faces.event.AbortProcessingException]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: public void m(jakarta.faces.event.AjaxBehaviorEvent evt) " + "throws jakarta.faces.event.AbortProcessingException]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="onevent" >
@@ -864,8 +864,8 @@ Unless otherwise specified, all attributes accept static values or EL expression
 </p><p>Sets the specified name and attribute on the parent UIComponent. If the "value" specified is not a literal, it will
 instead set the ValueExpression on the UIComponent. 
 
-See javax.faces.component.UIComponent#getAttributes()
-See javax.faces.component.UIComponent#setValueExpression(java.lang.String, javax.el.ValueExpression)</p>]]></xs:documentation>
+See jakarta.faces.component.UIComponent#getAttributes()
+See jakarta.faces.component.UIComponent#setValueExpression(java.lang.String, javax.el.ValueExpression)</p>]]></xs:documentation>
               <xs:documentation>tag-class: org.apache.myfaces.view.facelets.tag.jsf.core.AttributeHandler</xs:documentation>
           <xs:documentation>body-content: JSP</xs:documentation>
         </xs:annotation>
@@ -971,7 +971,7 @@ Default based on setting of timeStyle and dateStyle.]]></xs:documentation>
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a DateTimeConverter.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.DateTimeConverter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.DateTimeConverter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1003,7 +1003,7 @@ Default based on setting of timeStyle and dateStyle.]]></xs:documentation>
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a Converter.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.Converter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.Converter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1103,7 +1103,7 @@ number, currency, and percent.  Default: number.]]></xs:documentation>
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[A ValueExpression that evaluates to a NumberConverter.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.convert.NumberConverter]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.convert.NumberConverter]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1122,7 +1122,7 @@ number, currency, and percent.  Default: number.]]></xs:documentation>
           <xs:attribute name="listener" >
             <xs:annotation>
               <xs:documentation><![CDATA[]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Method Signature: public void listener(javax.faces.event.ComponentSystemEvent evt) " + "throws javax.faces.event.AbortProcessingException]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Method Signature: public void listener(jakarta.faces.event.ComponentSystemEvent evt) " + "throws jakarta.faces.event.AbortProcessingException]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="type" >
@@ -1239,7 +1239,7 @@ attributes of the current request.</p>]]></xs:documentation>
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Value binding expression that evaluates to a PhaseListener.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.event.PhaseListener]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.event.PhaseListener]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1359,7 +1359,7 @@ component. The id is not necessarily unique across all components in the current
           <xs:attribute name="binding" >
             <xs:annotation>
               <xs:documentation><![CDATA[Identifies a backing bean property (of type UIComponent or appropriate subclass) to bind " + "to this component instance. This value must be an EL expression.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.component.UIComponent]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.component.UIComponent]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1445,8 +1445,8 @@ action.</p>]]></xs:documentation>
           </xs:attribute>
           <xs:attribute name="binding" >
             <xs:annotation>
-              <xs:documentation><![CDATA[A ValueExpression that evaluates to an implementation of the javax.faces.validator.Validator interface.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.validator.Validator]]></xs:documentation>
+              <xs:documentation><![CDATA[A ValueExpression that evaluates to an implementation of the jakarta.faces.validator.Validator interface.]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.validator.Validator]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1488,9 +1488,9 @@ action.</p>]]></xs:documentation>
           </xs:attribute>
           <xs:attribute name="binding" >
             <xs:annotation>
-              <xs:documentation><![CDATA[Value binding expression that evaluates to an implementation of the javax.faces.event.ValueChangeListener
+              <xs:documentation><![CDATA[Value binding expression that evaluates to an implementation of the jakarta.faces.event.ValueChangeListener
 interface.]]></xs:documentation>
-              <xs:documentation><![CDATA[Deferred Value Type: javax.faces.event.ValueChangeListener]]></xs:documentation>
+              <xs:documentation><![CDATA[Deferred Value Type: jakarta.faces.event.ValueChangeListener]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:complexType>
@@ -1566,13 +1566,13 @@ Defaults to the default locale specified in the faces configuration file.
           </xs:attribute>
           <xs:attribute name="beforePhase" >
             <xs:annotation>
-              <xs:documentation><![CDATA[MethodBinding pointing to a method that takes a javax.faces.event.PhaseEvent and returns void, called before
+              <xs:documentation><![CDATA[MethodBinding pointing to a method that takes a jakarta.faces.event.PhaseEvent and returns void, called before
 every phase except for restore view.]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>
           <xs:attribute name="afterPhase" >
             <xs:annotation>
-              <xs:documentation><![CDATA[MethodBinding pointing to a method that takes a javax.faces.event.PhaseEvent and returns void, called after every
+              <xs:documentation><![CDATA[MethodBinding pointing to a method that takes a jakarta.faces.event.PhaseEvent and returns void, called after every
 phase except for restore view.]]></xs:documentation>
             </xs:annotation>
           </xs:attribute>

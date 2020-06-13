@@ -210,7 +210,7 @@
           <instructions>
             <Import-Package>
             javax.servlet;resolution:=optional,
-            javax.servlet.http;resolution:=optional,
+            jakarta.servlet.http;resolution:=optional,
             javax.sql;resolution:=optional,
             javax.mail;resolution:=optional,
             javax.mail.internet;resolution:=optional,
