@@ -474,7 +474,7 @@
           class-name="org.apache.openejb.core.mdb.MdbContainerFactory">
 
     ResourceAdapter Default JMS Resource Adapter
-    MessageListenerInterface javax.jms.MessageListener
+    MessageListenerInterface jakarta.jms.MessageListener
     ActivationSpecClass org.apache.openejb.resource.activemq.TomEEMessageActivationSpec
     InstanceLimit 10
     FailOnUnknownActivationSpec true
@@ -679,7 +679,7 @@
   <ServiceProvider
           id="Default JMS Connection Factory"
           service="Resource"
-          types="javax.jms.ConnectionFactory, javax.jms.QueueConnectionFactory, javax.jms.TopicConnectionFactory, QueueConnectionFactory, TopicConnectionFactory"
+          types="jakarta.jms.ConnectionFactory, jakarta.jms.QueueConnectionFactory, jakarta.jms.TopicConnectionFactory, QueueConnectionFactory, TopicConnectionFactory"
           class-name="org.apache.openejb.resource.activemq.jms2.TomEEManagedConnectionFactory">
 
     ResourceAdapter Default JMS Resource Adapter
@@ -704,7 +704,7 @@
   <ServiceProvider
           id="Default Queue"
           service="Resource"
-          types="javax.jms.Queue, Queue, javax.jms.Destination"
+          types="jakarta.jms.Queue, Queue, jakarta.jms.Destination"
           constructor="destination"
           class-name="org.apache.activemq.command.ActiveMQQueue">
 
@@ -716,7 +716,7 @@
   <ServiceProvider
           id="Default Topic"
           service="Resource"
-          types="javax.jms.Topic, Topic, javax.jms.Destination"
+          types="jakarta.jms.Topic, Topic, jakarta.jms.Destination"
           constructor="destination"
           class-name="org.apache.activemq.command.ActiveMQTopic">
 

@@ -1382,7 +1382,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            javax.jms.ConnectionFactory, javax.jms.QueueConnectionFactory, or javax.jms.TopicConnectionFactory
+            jakarta.jms.ConnectionFactory, jakarta.jms.QueueConnectionFactory, or jakarta.jms.TopicConnectionFactory
             
           </xsd:documentation>
         </xsd:annotation>
@@ -1525,7 +1525,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            javax.jms.Queue or javax.jms.Topic
+            jakarta.jms.Queue or jakarta.jms.Topic
             
           </xsd:documentation>
         </xsd:annotation>
@@ -2239,7 +2239,7 @@
         <resource-env-ref>
         <resource-env-ref-name>jms/StockQueue
         </resource-env-ref-name>
-        <resource-env-ref-type>javax.jms.Queue
+        <resource-env-ref-type>jakarta.jms.Queue
         </resource-env-ref-type>
         </resource-env-ref>
         
@@ -2899,7 +2899,7 @@
         <message-destination-ref>
         <message-destination-ref-name>jms/StockQueue
         </message-destination-ref-name>
-        <message-destination-type>javax.jms.Queue
+        <message-destination-type>jakarta.jms.Queue
         </message-destination-type>
         <message-destination-usage>Consumes
         </message-destination-usage>
@@ -2987,7 +2987,7 @@
         
         Example: 
         
-        <message-destination-type>javax.jms.Queue
+        <message-destination-type>jakarta.jms.Queue
         </message-destination-type>
         
         ]]>

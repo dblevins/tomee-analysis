@@ -26,7 +26,7 @@ from a single ActiveMQDestination POJO{html} |
     | messageSelector | _java.lang.String_ | {html}{html} |
     | noLocal | _java.lang.String_ | {html}{html} |
     | password | _java.lang.String_ | {html}{html} |
-    | resourceAdapter | _javax.resource.spi.ResourceAdapter_ | {html}{html} |
+    | resourceAdapter | _jakarta.resource.spi.ResourceAdapter_ | {html}{html} |
     | subscriptionDurability | _java.lang.String_ | {html}{html} |
     | subscriptionName | _java.lang.String_ | {html}{html} |
     | trustStore | _java.lang.String_ | {html}{html} |
@@ -58,7 +58,7 @@ h4. Properties
     | queuePrefetch | _java.lang.Integer_ | {html}{html} |
     | redeliveryBackOffMultiplier | _java.lang.Double_ | {html}{html} |
     | redeliveryUseExponentialBackOff | _java.lang.Boolean_ | {html}{html} |
-    | resourceAdapter | _javax.resource.spi.ResourceAdapter_ | {html}{html} |
+    | resourceAdapter | _jakarta.resource.spi.ResourceAdapter_ | {html}{html} |
     | serverUrl | _java.lang.String_ | {html}{html} |
     | topicPrefetch | _java.lang.Integer_ | {html}{html} |
     | trustStore | _java.lang.String_ | {html}{html} |

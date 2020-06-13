@@ -83,7 +83,7 @@
                         <Export-Package>org.apache.geronimo.transaction*;version=3.0</Export-Package>
                         <Import-Package>
                             org.objectweb.howl*;resolution:=optional,
-                            javax.resource.spi;version="1.5",
+                            jakarta.resource.spi;version="1.5",
                             *
                         </Import-Package>
                     </instructions>
