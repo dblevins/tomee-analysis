@@ -120,9 +120,9 @@
                 <configuration>
                     <instructions>
                         <Import-Package>
-                            jakarta.servlet.jsp*;version="2.1",
-                            jakarta.servlet.*;version="${osgi.servlet.range}",
-                            jakarta.el.*;version="${osgi.el.range}",
+                            javax.servlet.jsp*;version="2.1",
+                            javax.servlet.*;version="${osgi.servlet.range}",
+                            javax.el.*;version="${osgi.el.range}",
                             *
                         </Import-Package>
                     </instructions>

@@ -57,7 +57,7 @@
                 <version>3.5.0</version>
                 <configuration>
                     <instructions>
-                        <Export-Package>jakarta.inject*;version=1.0</Export-Package>
+                        <Export-Package>javax.inject*;version=1.0</Export-Package>
                         <Provide-Capability><![CDATA[
                             osgi.contract;osgi.contract=JavaInject;uses:="${packages;NAMED;javax.*}";version:List<Version>='1.0'
                         ]]></Provide-Capability>

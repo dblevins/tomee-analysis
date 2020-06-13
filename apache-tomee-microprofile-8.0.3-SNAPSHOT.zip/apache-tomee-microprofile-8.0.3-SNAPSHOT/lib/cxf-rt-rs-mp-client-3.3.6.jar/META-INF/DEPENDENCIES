@@ -7,7 +7,7 @@ Apache CXF
 
 
 From: 'an unknown organization'
-  - jakarta.inject (http://code.google.com/p/atinject/) jakarta.inject:jakarta.inject:jar:1
+  - javax.inject (http://code.google.com/p/atinject/) javax.inject:javax.inject:jar:1
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
 From: 'Eclipse Foundation' (http://www.eclipse.org/)
@@ -27,7 +27,7 @@ From: 'Eclipse Foundation' (https://www.eclipse.org)
     License: Eclipse Distribution License - v 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
 
 From: 'Eclipse Foundation' (https://www.eclipse.org/org/foundation/)
-  - jakarta.ws.rs-api (https://github.com/eclipse-ee4j/jaxrs-api) jakarta.ws.rs:jakarta.ws.rs-api:bundle:2.1.5
+  - javax.ws.rs-api (https://github.com/eclipse-ee4j/jaxrs-api) jakarta.ws.rs:jakarta.ws.rs-api:bundle:2.1.5
     License: EPL 2.0  (http://www.eclipse.org/legal/epl-2.0)    License: GPL2 w/ CPE  (https://www.gnu.org/software/classpath/license.html)
 
 From: 'FasterXML' (http://fasterxml.com)
@@ -43,7 +43,7 @@ From: 'GlassFish Community' (https://javaee.github.io/glassfish)
     License: CDDL + GPLv2 with classpath exception  (https://github.com/javaee/javax.annotation/blob/master/LICENSE)
 
 From: 'Oracle' (http://www.oracle.com)
-  - JSR 374 (JSON Processing) API (https://javaee.github.io/jsonp) jakarta.json:jakarta.json-api:bundle:1.1.4
+  - JSR 374 (JSON Processing) API (https://javaee.github.io/jsonp) javax.json:javax.json-api:bundle:1.1.4
     License: Dual license consisting of the CDDL v1.1 and GPL v2  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)
 
 From: 'Oracle Corporation' (http://www.oracle.com/)

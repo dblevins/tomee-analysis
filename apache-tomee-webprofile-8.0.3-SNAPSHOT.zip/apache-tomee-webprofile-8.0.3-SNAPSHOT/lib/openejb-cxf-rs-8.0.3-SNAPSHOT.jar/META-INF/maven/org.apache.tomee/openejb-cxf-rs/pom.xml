@@ -98,12 +98,12 @@
           <artifactId>geronimo-javamail_1.4_spec</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>jakarta.ws.rs</groupId>
+          <groupId>javax.ws.rs</groupId>
           <artifactId>jsr311-api</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>jakarta.ws.rs</groupId>
-          <artifactId>jakarta.ws.rs-api</artifactId>
+          <groupId>javax.ws.rs</groupId>
+          <artifactId>javax.ws.rs-api</artifactId>
         </exclusion>
         <exclusion>
           <groupId>jakarta.ws.rs</groupId>

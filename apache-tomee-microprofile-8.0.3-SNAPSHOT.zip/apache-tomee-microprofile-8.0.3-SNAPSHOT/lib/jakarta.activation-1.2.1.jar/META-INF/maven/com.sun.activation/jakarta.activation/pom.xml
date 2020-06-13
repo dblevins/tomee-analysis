@@ -37,10 +37,10 @@
 	    JavaBeans(TM) Activation Framework Specification
 	</activation.specificationTitle>
 	<activation.implementationTitle>
-	    jakarta.activation
+	    javax.activation
 	</activation.implementationTitle>
 	<activation.packages.export>
-	    jakarta.activation.*; version=${activation.spec.version},
+	    javax.activation.*; version=${activation.spec.version},
 	    com.sun.activation.*; version=${activation.osgiversion}
 	</activation.packages.export>
 	<findbugs.skip>
@@ -149,7 +149,7 @@
 				    <packages>javax.*</packages>
 				</group>
 			    </groups>
-			    <subpackages>jakarta.activation</subpackages>
+			    <subpackages>javax.activation</subpackages>
 			    <!--
 				Links to Java SE javadocs.
 

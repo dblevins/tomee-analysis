@@ -88,8 +88,8 @@
                         <Specification-Title>JSR-115 Java Authorization Contract for Containers</Specification-Title>
                         <Specification-Vendor>Sun Microsystems, Inc.</Specification-Vendor>
                         <Specification-Version>1.4</Specification-Version>
-                        <Export-Package>jakarta.security.jacc*;version=1.4</Export-Package>
-                        <Import-Package>jakarta.servlet*;resolution:=optional;version=2.5,org.apache.geronimo.osgi.registry.api;resolution:=optional,*</Import-Package>
+                        <Export-Package>javax.security.jacc*;version=1.4</Export-Package>
+                        <Import-Package>javax.servlet*;resolution:=optional;version=2.5,org.apache.geronimo.osgi.registry.api;resolution:=optional,*</Import-Package>
                         <Private-Package>org.apache.geronimo.osgi.locator</Private-Package>
                         <Bundle-Activator>org.apache.geronimo.osgi.locator.Activator</Bundle-Activator>
                     </instructions>

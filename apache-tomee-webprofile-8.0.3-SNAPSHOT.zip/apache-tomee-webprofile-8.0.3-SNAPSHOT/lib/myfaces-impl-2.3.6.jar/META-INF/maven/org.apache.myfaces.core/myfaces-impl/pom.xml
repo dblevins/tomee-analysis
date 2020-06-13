@@ -98,7 +98,7 @@
                         <exclude>src/main/resources/META-INF/services/org.apache.myfaces.config.annotation.LifecycleProvider</exclude>
                         <exclude>src/main/resources/META-INF/services/org.apache.myfaces.spi.InjectionProvider</exclude>
                         <exclude>src/main/resources/META-INF/services/javax.enterprise.inject.spi.Extension</exclude>
-                        <exclude>src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer</exclude>
+                        <exclude>src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer</exclude>
 
                         <!-- This file probably needs a license, but I don't know if it's safe to put it in there -->
                         <exclude>src/test/resources/org/apache/myfaces/context/nestedScriptCDATA.xml</exclude>
@@ -189,7 +189,7 @@
                            <jsfVersion>12</jsfVersion>
                            <templateTagName>tagClass12.vm</templateTagName>
                            <packageContains>org.apache</packageContains>
-                           <typePrefix>jakarta.faces</typePrefix>
+                           <typePrefix>javax.faces</typePrefix>
                            <modelIds>
                                <modelId>myfaces-api</modelId>
                            </modelIds>
@@ -744,17 +744,17 @@
                                     javax.annotation,
                                     javax.crypto,
                                     javax.crypto.spec,
-                                    jakarta.ejb;resolution:=optional,
-                                    jakarta.el;version="[1.0.0, 3.1.0)",
+                                    javax.ejb;resolution:=optional,
+                                    javax.el;version="[1.0.0, 3.1.0)",
                                     javax.naming,
-                                    jakarta.persistence;version="[1.0.0, 2.1)";resolution:=optional,
+                                    javax.persistence;version="[1.0.0, 2.1)";resolution:=optional,
                                     javax.portlet;version="[1.0.0, 2.1)";resolution:=optional,
-                                    jakarta.servlet;version="[3, 5)",
-                                    jakarta.servlet.http;version="[3, 5)",
-                                    jakarta.servlet.jsp;version="[2.2.0, 3.1)",
-                                    jakarta.servlet.jsp.jstl.core;version="[1.1.2, 2.0.0)",
-                                    jakarta.servlet.jsp.tagext;version="[2.1.0, 3.1)",
-                                    jakarta.servlet.annotation;version="[3, 5)";resolution:=optional,
+                                    javax.servlet;version="[3, 5)",
+                                    javax.servlet.http;version="[3, 5)",
+                                    javax.servlet.jsp;version="[2.2.0, 3.1)",
+                                    javax.servlet.jsp.jstl.core;version="[1.1.2, 2.0.0)",
+                                    javax.servlet.jsp.tagext;version="[2.1.0, 3.1)",
+                                    javax.servlet.annotation;version="[3, 5)";resolution:=optional,
                                     javax.xml.parsers,
                                     org.apache;resolution:=optional,
                                     org.apache.commons.beanutils;version="[1.8.3, 2.0.0)",
@@ -767,7 +767,7 @@
                                     org.apache.jasper.el;resolution:=optional,
                                     org.apache.el;resolution:=optional,
                                     org.apache.tomcat;resolution:=optional,
-                                    jakarta.faces.*;version="${project.version}",
+                                    javax.faces.*;version="${project.version}",
                                     *
                                 </Import-Package>
                             </instructions>
@@ -1147,11 +1147,11 @@
 
         <!-- JSTL 1.2 -->
         <dependency>
-            <groupId>jakarta.servlet</groupId>
+            <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
 
-        <!-- el 2.2 (jakarta.el.*) -->
+        <!-- el 2.2 (javax.el.*) -->
         <!--
             NOTE that we are also compatible with el 1.0, but we need to use el 2.2 as
             compile-dependency, because our ValueExpression wrappers need to support getValueReference().
@@ -1161,7 +1161,7 @@
             <artifactId>geronimo-el_2.2_spec</artifactId>
         </dependency>
 
-        <!-- bean-validation 1.0 (jakarta.validation.*) -->
+        <!-- bean-validation 1.0 (javax.validation.*) -->
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-validation_1.0_spec</artifactId>

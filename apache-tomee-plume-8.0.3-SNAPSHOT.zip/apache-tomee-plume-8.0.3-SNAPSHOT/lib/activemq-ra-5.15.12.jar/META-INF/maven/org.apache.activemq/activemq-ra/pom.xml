@@ -31,7 +31,7 @@
 
   <properties>
     <activemq.osgi.import.pkg>
-      jakarta.resource*;resolution:=optional,
+      javax.resource*;resolution:=optional,
       *
     </activemq.osgi.import.pkg>
     <activemq.osgi.export>

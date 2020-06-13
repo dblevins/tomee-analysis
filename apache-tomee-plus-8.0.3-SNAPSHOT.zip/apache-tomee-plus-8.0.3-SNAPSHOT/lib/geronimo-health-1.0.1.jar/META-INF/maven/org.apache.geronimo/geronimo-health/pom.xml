@@ -96,8 +96,8 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <groupId>jakarta.inject</groupId>
-          <artifactId>jakarta.inject</artifactId>
+          <groupId>javax.inject</groupId>
+          <artifactId>javax.inject</artifactId>
         </exclusion>
       </exclusions>
     </dependency>

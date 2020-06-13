@@ -108,11 +108,11 @@
                     <instructions>
                         <Import-Package>
                             javax.annotation.*;version="1.2",
-                            jakarta.inject.*;version="1.0",
-                            jakarta.decorator.*;version="[1.1,1.2]",
+                            javax.inject.*;version="1.0",
+                            javax.decorator.*;version="[1.1,1.2]",
                             javax.enterprise.*;version="[1.1,1.2]",
-                            jakarta.interceptor.*;version="1.2",
-                            jakarta.el.*;version="${osgi.el.range}",
+                            javax.interceptor.*;version="1.2",
+                            javax.el.*;version="${osgi.el.range}",
                             *
                         </Import-Package>
                     </instructions>

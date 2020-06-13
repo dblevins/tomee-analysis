@@ -61,7 +61,7 @@
                 <configuration>
                     <instructions>
                         <Import-Package>
-                            jakarta.el.*;version="${osgi.el.range}";resolution:=optional,
+                            javax.el.*;version="${osgi.el.range}";resolution:=optional,
                             *
                         </Import-Package>
                     </instructions>

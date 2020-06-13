@@ -33,14 +33,14 @@
     <properties>
         <cxf.module.name>org.apache.cxf.frontend.jaxrs</cxf.module.name>
         <cxf.osgi.import>
-            jakarta.servlet*;version="${cxf.osgi.jakarta.servlet.version}",
-            jakarta.activation;version="${cxf.osgi.jakarta.activation.version}",
+            javax.servlet*;version="${cxf.osgi.javax.servlet.version}",
+            javax.activation;version="${cxf.osgi.javax.activation.version}",
             org.apache.aries*;version="${cxf.aries.version.range}";resolution:=optional,
             org.springframework*;resolution:="optional";version="${cxf.osgi.spring.version}",
-            jakarta.validation*;resolution:=optional;version="${cxf.validation.api.package.version}",
-            jakarta.ws.rs.client;version="[2.0,3)",
-            jakarta.ws.rs*;version="[1.0,3)",
-            jakarta.xml.bind*;version="${cxf.osgi.javax.bind.version}",
+            javax.validation*;resolution:=optional;version="${cxf.validation.api.package.version}",
+            javax.ws.rs.client;version="[2.0,3)",
+            javax.ws.rs*;version="[1.0,3)",
+            javax.xml.bind*;version="${cxf.osgi.javax.bind.version}",
             javax.annotation*;version="${cxf.osgi.javax.annotation.version}"
         </cxf.osgi.import>
         <cxf.osgi.export>
@@ -54,7 +54,7 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>jakarta.validation</groupId>
+            <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
             <optional>true</optional>
         </dependency>
@@ -120,8 +120,8 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>jakarta.servlet</groupId>
-            <artifactId>jakarta.servlet-api</artifactId>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
             <version>${cxf.servlet-api.version}</version>
             <scope>provided</scope>
             <optional>true</optional>

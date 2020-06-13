@@ -49,8 +49,8 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>jakarta.faces</groupId>
-      <artifactId>jakarta.faces-api</artifactId>
+      <groupId>javax.faces</groupId>
+      <artifactId>javax.faces-api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>

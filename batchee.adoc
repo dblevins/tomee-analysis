@@ -1,6 +1,0 @@
-|===
-| Line | File 
-|  `methodVisitor.visitLdcInsn("javax.transaction.global.timeout = {0}");`  | link:https://github.com/dblevins/tomee-analysis/blob/master/apache-tomee-plus-8.0.3-SNAPSHOT.zip/apache-tomee-plus-8.0.3-SNAPSHOT/lib/batchee-jbatch-0.5-incubating.jar/org/apache/batchee/container/impl/controller/chunk/ChunkStepController-asmified.java#L2190[org/apache/batchee/container/impl/controller/chunk/ChunkStepController:2190]  
-|  `methodVisitor.visitLdcInsn("javax.transaction.global.timeout");`  | link:https://github.com/dblevins/tomee-analysis/blob/master/apache-tomee-plus-8.0.3-SNAPSHOT.zip/apache-tomee-plus-8.0.3-SNAPSHOT/lib/batchee-jbatch-0.5-incubating.jar/org/apache/batchee/container/impl/controller/chunk/ChunkStepController-asmified.java#L2180[org/apache/batchee/container/impl/controller/chunk/ChunkStepController:2180]  
-|===
-

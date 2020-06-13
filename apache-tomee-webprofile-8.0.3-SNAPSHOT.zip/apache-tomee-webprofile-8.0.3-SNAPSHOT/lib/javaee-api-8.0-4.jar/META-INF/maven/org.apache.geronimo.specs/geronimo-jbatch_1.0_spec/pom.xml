@@ -75,9 +75,9 @@
                     <instructions>
                         <Specification-Version>1.0</Specification-Version>
                         <Specification-Title>JSR-352 JBatch 1.0</Specification-Title>
-                        <Export-Package>jakarta.batch*;version=1.0</Export-Package>
+                        <Export-Package>javax.batch*;version=1.0</Export-Package>
                         <Import-Package>
-                            jakarta.inject;resolution:=optional,
+                            javax.inject;resolution:=optional,
                             javax.enterprise.util;resolution:=optional,
                             *
                         </Import-Package>
@@ -85,7 +85,7 @@
                            osgi.contract;osgi.contract=JavaBatch;uses:="${packages;NAMED;javax.*}";version:List<Version>='1.0'
                         ]]></Provide-Capability>
                         <Require-Capability><![CDATA[
-                          osgi.serviceloader;filter:="(osgi.serviceloader=jakarta.batch.operations.JobOperator)";cardinality:=multiple,
+                          osgi.serviceloader;filter:="(osgi.serviceloader=javax.batch.operations.JobOperator)";cardinality:=multiple,
                           osgi.extender;filter:="(osgi.extender=osgi.serviceloader.processor)"
                         ]]></Require-Capability>
                         <_contract>JavaCDI;resolution:=optional, JavaInject;resolution:=optional</_contract>

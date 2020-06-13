@@ -87,7 +87,7 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Export-Package>jakarta.jms*;version=2.0</Export-Package>
+                        <Export-Package>javax.jms*;version=2.0</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>

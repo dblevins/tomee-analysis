@@ -118,7 +118,7 @@
         <configuration>
           <instructions>
             <Import-Package>
-              jakarta.ws.rs.*;resolution:=optional,
+              javax.ws.rs.*;resolution:=optional,
               *
             </Import-Package>
             <Require-Capability>
@@ -131,7 +131,7 @@
               JavaJSONB,
               JavaJSONP
             </_contract>
-            <Provide-Capability>osgi.serviceloader;osgi.serviceloader=jakarta.json.bind.spi.JsonbProvider</Provide-Capability>
+            <Provide-Capability>osgi.serviceloader;osgi.serviceloader=javax.json.bind.spi.JsonbProvider</Provide-Capability>
           </instructions>
         </configuration>
         <dependencies>

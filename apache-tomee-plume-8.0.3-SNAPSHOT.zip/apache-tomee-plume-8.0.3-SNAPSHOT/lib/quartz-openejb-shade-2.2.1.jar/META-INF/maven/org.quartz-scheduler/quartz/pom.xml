@@ -209,14 +209,14 @@
           <manifestLocation>${project.build.directory}</manifestLocation>
           <instructions>
             <Import-Package>
-            jakarta.servlet;resolution:=optional,
-            jakarta.servlet.http;resolution:=optional,
+            javax.servlet;resolution:=optional,
+            javax.servlet.http;resolution:=optional,
             javax.sql;resolution:=optional,
-            jakarta.mail;resolution:=optional,
-            jakarta.mail.internet;resolution:=optional,
+            javax.mail;resolution:=optional,
+            javax.mail.internet;resolution:=optional,
             javax.transaction;resolution:=optional,
-            jakarta.ejb;resolution:=optional,
-            jakarta.jms;resolution:=optional,
+            javax.ejb;resolution:=optional,
+            javax.jms;resolution:=optional,
             org.terracotta.toolkit.*;resolution:=optional,
             weblogic.jdbc.*;resolution:=optional,
             oracle.sql;resolution:=optional,

@@ -33,10 +33,10 @@
   <properties>
     <cxf.module.name>org.apache.cxf.rs.security.oauth2</cxf.module.name>
     <cxf.osgi.import>
-      jakarta.servlet*;version="${cxf.osgi.jakarta.servlet.version}",
-      jakarta.xml.bind*;version="${cxf.osgi.javax.bind.version}",
+      javax.servlet*;version="${cxf.osgi.javax.servlet.version}",
+      javax.xml.bind*;version="${cxf.osgi.javax.bind.version}",
       javax.annotation*;version="${cxf.osgi.javax.annotation.version}",
-      jakarta.persistence*;resolution:=optional
+      javax.persistence*;resolution:=optional
     </cxf.osgi.import>
     <compilerArguments>-Aopenjpa.source=7 -Aopenjpa.metamodel=true</compilerArguments>
   </properties>
@@ -124,7 +124,7 @@
       <optional>true</optional>
         <exclusions>
             <exclusion>
-                <groupId>jakarta.xml.bind</groupId>
+                <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
             </exclusion>
         </exclusions> 
@@ -185,7 +185,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.hibernate.jakarta.persistence</groupId>
+      <groupId>org.hibernate.javax.persistence</groupId>
       <artifactId>hibernate-jpa-2.1-api</artifactId>
       <version>${cxf.hibernate.jpa.version}</version>
       <scope>test</scope>

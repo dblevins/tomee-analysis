@@ -7,7 +7,7 @@ Apache CXF
 
 
 From: 'an unknown organization'
-  - Bean Validation API (http://beanvalidation.org) jakarta.validation:validation-api:jar:1.1.0.Final
+  - Bean Validation API (http://beanvalidation.org) javax.validation:validation-api:jar:1.1.0.Final
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
 From: 'Apache Software Foundation' (http://www.apache.org/)

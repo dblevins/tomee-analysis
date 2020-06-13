@@ -9,7 +9,7 @@ TomEE :: Container :: JPA Integration
 From: 'an unknown organization'
   - AntLR Parser Generator (http://www.antlr.org/) antlr:antlr:jar:2.7.7
     License: BSD License  (http://www.antlr.org/license.html)
-  - jakarta.persistence-api (https://github.com/javaee/jpa-spec) jakarta.persistence:jakarta.persistence-api:jar:2.2
+  - javax.persistence-api (https://github.com/javaee/jpa-spec) javax.persistence:javax.persistence-api:jar:2.2
     License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
   - Byte Buddy (without dependencies) (https://bytebuddy.net/byte-buddy) net.bytebuddy:byte-buddy:jar:1.10.2
     License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
@@ -45,13 +45,13 @@ From: 'JBoss by Red Hat' (http://www.jboss.org)
     License: Common Development and Distribution License  (http://repository.jboss.org/licenses/cddl.txt)    License: GNU General Public License, Version 2 with the Classpath Exception  (http://repository.jboss.org/licenses/gpl-2.0-ce.txt)
 
 From: 'Oracle' (http://www.oracle.com)
-  - JavaBeans Activation Framework API jar (http://java.net/all/jakarta.activation-api/) jakarta.activation:jakarta.activation-api:jar:1.2.0
+  - JavaBeans Activation Framework API jar (http://java.net/all/javax.activation-api/) javax.activation:javax.activation-api:jar:1.2.0
     License: CDDL/GPLv2+CE  (https://github.com/javaee/activation/blob/master/LICENSE.txt)
 
 From: 'Oracle Corporation' (http://www.oracle.com/)
   - istack common utility code runtime (http://java.net/istack-commons/istack-commons-runtime/) com.sun.istack:istack-commons-runtime:jar:3.0.7
     License: CDDL 1.1  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)
-  - jaxb-api (https://github.com/javaee/jaxb-spec/jaxb-api) jakarta.xml.bind:jaxb-api:jar:2.3.1
+  - jaxb-api (https://github.com/javaee/jaxb-spec/jaxb-api) javax.xml.bind:jaxb-api:jar:2.3.1
     License: CDDL 1.1  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)    License: GPL2 w/ CPE  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)
   - JAXB Runtime (http://jaxb.java.net/jaxb-runtime-parent/jaxb-runtime) org.glassfish.jaxb:jaxb-runtime:jar:2.3.1
     License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)

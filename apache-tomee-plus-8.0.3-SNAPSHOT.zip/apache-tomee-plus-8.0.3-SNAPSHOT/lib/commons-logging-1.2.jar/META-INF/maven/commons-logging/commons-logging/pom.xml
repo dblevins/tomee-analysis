@@ -385,7 +385,7 @@ under the License.
                 -->
                   <log4j12>${log4j:log4j:jar}</log4j12>
                   <logkit>${logkit:logkit:jar}</logkit>
-                  <servlet-api>${jakarta.servlet:servlet-api:jar}</servlet-api>
+                  <servlet-api>${javax.servlet:servlet-api:jar}</servlet-api>
                   <commons-logging>target/${project.build.finalName}.jar</commons-logging>
                   <commons-logging-api>target/${project.artifactId}-api-${project.version}.jar</commons-logging-api>
                   <commons-logging-adapters>target/${project.artifactId}-adapters-${project.version}.jar</commons-logging-adapters>
@@ -462,7 +462,7 @@ under the License.
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>jakarta.servlet</groupId>
+      <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
       <version>2.3</version>
       <scope>provided</scope>
@@ -538,7 +538,7 @@ under the License.
     <failsafe.runorder>filesystem</failsafe.runorder>
     
     <commons.osgi.import>
-      jakarta.servlet;version="[2.1.0, 3.0.0)";resolution:=optional,
+      javax.servlet;version="[2.1.0, 3.0.0)";resolution:=optional,
       org.apache.avalon.framework.logger;version="[4.1.3, 4.1.5]";resolution:=optional,
       org.apache.log;version="[1.0.1, 1.0.1]";resolution:=optional,
       org.apache.log4j;version="[1.2.15, 2.0.0)";resolution:=optional

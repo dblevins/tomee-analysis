@@ -15,7 +15,7 @@ From: 'an unknown organization'
 
   - dom4j  dom4j:dom4j:jar:1.1
 
-  - servlet-api  jakarta.servlet:servlet-api:jar:2.5
+  - servlet-api  javax.servlet:servlet-api:jar:2.5
 
   - oro  oro:oro:jar:2.0.8
 

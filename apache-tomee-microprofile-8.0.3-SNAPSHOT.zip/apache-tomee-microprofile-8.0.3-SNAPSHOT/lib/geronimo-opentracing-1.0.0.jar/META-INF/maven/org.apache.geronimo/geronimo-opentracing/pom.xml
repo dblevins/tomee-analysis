@@ -124,8 +124,8 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <groupId>jakarta.inject</groupId>
-          <artifactId>jakarta.inject</artifactId>
+          <groupId>javax.inject</groupId>
+          <artifactId>javax.inject</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -140,8 +140,8 @@
           <artifactId>microprofile-opentracing-api</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>jakarta.ws.rs</groupId>
-          <artifactId>jakarta.ws.rs-api</artifactId>
+          <groupId>javax.ws.rs</groupId>
+          <artifactId>javax.ws.rs-api</artifactId>
         </exclusion>
         <exclusion>
           <groupId>io.opentracing</groupId>

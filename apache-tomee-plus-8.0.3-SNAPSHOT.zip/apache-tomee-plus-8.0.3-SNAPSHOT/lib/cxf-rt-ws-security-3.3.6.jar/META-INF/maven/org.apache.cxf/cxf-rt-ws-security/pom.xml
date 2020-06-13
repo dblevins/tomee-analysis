@@ -33,12 +33,12 @@
     <properties>
         <cxf.module.name>org.apache.cxf.ws.security</cxf.module.name>
         <cxf.osgi.import>
-            jakarta.xml.soap;version="${cxf.osgi.saaj.version}",
-            jakarta.activation;version="${cxf.osgi.jakarta.activation.version}",
+            javax.xml.soap;version="${cxf.osgi.saaj.version}",
+            javax.activation;version="${cxf.osgi.javax.activation.version}",
             net.sf.ehcache*;resolution:=optional;version="[2.5, 3.0.0)",
             org.opensaml*;version="${cxf.opensaml.osgi.version.range}",
-            jakarta.xml.ws*;version="${cxf.osgi.jakarta.xml.ws.version}",
-            jakarta.xml.bind*;version="${cxf.osgi.javax.bind.version}",
+            javax.xml.ws*;version="${cxf.osgi.javax.xml.ws.version}",
+            javax.xml.bind*;version="${cxf.osgi.javax.bind.version}",
             javax.annotation*;version="${cxf.osgi.javax.annotation.version}"
         </cxf.osgi.import>
     </properties>

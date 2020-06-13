@@ -135,16 +135,16 @@
                             org.apache.geronimo.javamail.authentication
                         </Private-Package>
                         <Export-Package>
-                            jakarta.mail*;version=1.4,
+                            javax.mail*;version=1.4,
                             org.apache.geronimo.javamail.handlers*;version=1.4,
                             org.apache.geronimo.javamail.store*;version=1.4,
                             org.apache.geronimo.javamail.transport*;version=1.4,
                             org.apache.geronimo.mail.handlers*;version=1.4,
                         </Export-Package>
                         <Import-Package>
-                            jakarta.activation,
+                            javax.activation,
                             javax.net,
-                            jakarta.mail*,
+                            javax.mail*,
                             javax.imageio*;resolution:="optional",
                             javax.net.ssl*;resolution:="optional",
                             javax.security.sasl*;resolution:="optional",
