@@ -193,7 +193,7 @@
     # `Flushable` and calling `flush()`.  See `SweepInterval` for details on
     # how flush is performed.
     #
-    #     import javax.annotation.Resource;
+    #     import jakarta.annotation.Resource;
     #     import jakarta.ejb.SessionContext;
     #     import jakarta.ejb.Stateless;
     #     import java.io.Flushable;

@@ -3,4 +3,4 @@
 Javax references:
 
  - 39 references in link:CLASSES.adoc[classes]
- - 63 references in link:RESOURCES.adoc[resources]
+ - 24 references in link:RESOURCES.adoc[resources]
