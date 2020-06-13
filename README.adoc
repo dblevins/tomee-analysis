@@ -1,1 +1,6 @@
+= TomEE javax-to-jakarta Analysis
 
+Javax references:
+
+ - 170 references in link:CLASSES.adoc[classes]
+ - 5883 references in link:RESOURCES.adoc[resources]
