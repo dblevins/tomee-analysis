@@ -33,7 +33,7 @@ classWriter.visitInnerClass("jakarta/faces/component/UIViewRoot$DoResetValues", 
 classWriter.visitInnerClass("jakarta/faces/component/UIViewRoot$PropertyKeys", "jakarta/faces/component/UIViewRoot", "PropertyKeys", ACC_FINAL | ACC_STATIC | ACC_ENUM);
 
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "METADATA_FACET_NAME", "Ljava/lang/String;", null, "javax_faces_metadata");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "METADATA_FACET_NAME", "Ljava/lang/String;", null, "jakarta_faces_metadata");
 fieldVisitor.visitEnd();
 }
 {
@@ -65,7 +65,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOCATION_IDENTIFIER_PREFIX", "Ljava/lang/String;", null, "javax_faces_location_");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOCATION_IDENTIFIER_PREFIX", "Ljava/lang/String;", null, "jakarta_faces_location_");
 fieldVisitor.visitEnd();
 }
 {

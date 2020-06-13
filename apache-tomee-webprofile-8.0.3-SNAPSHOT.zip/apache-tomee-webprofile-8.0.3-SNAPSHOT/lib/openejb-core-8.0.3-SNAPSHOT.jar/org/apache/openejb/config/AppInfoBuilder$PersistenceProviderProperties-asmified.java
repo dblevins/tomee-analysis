@@ -83,7 +83,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "DEF
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORCE_PROVIDER_ENV", "Ljava/lang/String;", null, "openejb.jpa.force.javax.persistence.provider");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "FORCE_PROVIDER_ENV", "Ljava/lang/String;", null, "openejb.jpa.force.jakarta.persistence.provider");
 fieldVisitor.visitEnd();
 }
 {

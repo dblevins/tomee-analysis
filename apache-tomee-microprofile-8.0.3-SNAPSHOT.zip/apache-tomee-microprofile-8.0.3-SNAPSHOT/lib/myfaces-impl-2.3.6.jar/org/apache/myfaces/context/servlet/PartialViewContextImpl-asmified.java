@@ -35,7 +35,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PAR
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PARTIAL_AJAX_REQ", "Ljava/lang/String;", null, "javax.faces.partial.ajax");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "PARTIAL_AJAX_REQ", "Ljava/lang/String;", null, "jakarta.faces.partial.ajax");
 fieldVisitor.visitEnd();
 }
 {

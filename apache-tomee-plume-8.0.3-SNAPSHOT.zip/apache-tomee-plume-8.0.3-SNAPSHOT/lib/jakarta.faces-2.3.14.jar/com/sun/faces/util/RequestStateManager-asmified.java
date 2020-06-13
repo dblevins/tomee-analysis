@@ -89,7 +89,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "PROC
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RENDERED_RESOURCE_DEPENDENCIES", "Ljava/lang/String;", null, "/javax.faces.resource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RENDERED_RESOURCE_DEPENDENCIES", "Ljava/lang/String;", null, "/jakarta.faces.resource");
 fieldVisitor.visitEnd();
 }
 {

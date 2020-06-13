@@ -39,7 +39,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INIT
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_PREFIX", "Ljava/lang/String;", null, "javax_faces_location_");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_PREFIX", "Ljava/lang/String;", null, "jakarta_faces_location_");
 fieldVisitor.visitEnd();
 }
 {

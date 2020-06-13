@@ -69,7 +69,7 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MET
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "RESOURCE_CONTRACT_SUFFIX", "Ljava/lang/String;", null, "/javax.faces.contract.xml");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "RESOURCE_CONTRACT_SUFFIX", "Ljava/lang/String;", null, "/jakarta.faces.contract.xml");
 fieldVisitor.visitEnd();
 }
 {

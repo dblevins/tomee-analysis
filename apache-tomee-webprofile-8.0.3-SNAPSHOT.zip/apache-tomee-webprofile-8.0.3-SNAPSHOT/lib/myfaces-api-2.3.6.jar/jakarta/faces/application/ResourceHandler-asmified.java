@@ -37,7 +37,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESO
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESOURCE_IDENTIFIER", "Ljava/lang/String;", null, "/javax.faces.resource");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "RESOURCE_IDENTIFIER", "Ljava/lang/String;", null, "/jakarta.faces.resource");
 fieldVisitor.visitEnd();
 }
 {

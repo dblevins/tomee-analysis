@@ -51,7 +51,7 @@ fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "COMP
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "METADATA_FACET_NAME", "Ljava/lang/String;", null, "javax_faces_metadata");
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "METADATA_FACET_NAME", "Ljava/lang/String;", null, "jakarta_faces_metadata");
 fieldVisitor.visitEnd();
 }
 {
@@ -127,19 +127,19 @@ fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_TRANSIENT, "listenerSucc
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_PREFIX", "Ljava/lang/String;", null, "javax_faces_location_");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_PREFIX", "Ljava/lang/String;", null, "jakarta_faces_location_");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_HEAD", "Ljava/lang/String;", null, "javax_faces_location_head");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_HEAD", "Ljava/lang/String;", null, "jakarta_faces_location_head");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_BODY", "Ljava/lang/String;", null, "javax_faces_location_body");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_BODY", "Ljava/lang/String;", null, "jakarta_faces_location_body");
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_FORM", "Ljava/lang/String;", null, "javax_faces_location_form");
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "JAVAX_FACES_LOCATION_FORM", "Ljava/lang/String;", null, "jakarta_faces_location_form");
 fieldVisitor.visitEnd();
 }
 {
