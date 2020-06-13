@@ -46,7 +46,7 @@ annotationVisitor0.visitEnd();
 }
 {
 annotationVisitor0 = classWriter.visitAnnotation("Ljakarta/xml/ws/spi/WebServiceFeatureAnnotation;", true);
-annotationVisitor0.visit("id", "javax.xml.ws.RespectBindingFeature");
+annotationVisitor0.visit("id", "jakarta.xml.ws.RespectBindingFeature");
 annotationVisitor0.visit("bean", Type.getType("Ljakarta/xml/ws/RespectBindingFeature;"));
 annotationVisitor0.visitEnd();
 }

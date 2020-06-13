@@ -28,9 +28,9 @@ classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/persistence/
 annotationVisitor0 = classWriter.visitAnnotation("Ljavax/annotation/processing/SupportedAnnotationTypes;", true);
 {
 AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
-annotationVisitor1.visit(null, "javax.persistence.Entity");
-annotationVisitor1.visit(null, "javax.persistence.Embeddable");
-annotationVisitor1.visit(null, "javax.persistence.MappedSuperclass");
+annotationVisitor1.visit(null, "jakarta.persistence.Entity");
+annotationVisitor1.visit(null, "jakarta.persistence.Embeddable");
+annotationVisitor1.visit(null, "jakarta.persistence.MappedSuperclass");
 annotationVisitor1.visitEnd();
 }
 annotationVisitor0.visitEnd();

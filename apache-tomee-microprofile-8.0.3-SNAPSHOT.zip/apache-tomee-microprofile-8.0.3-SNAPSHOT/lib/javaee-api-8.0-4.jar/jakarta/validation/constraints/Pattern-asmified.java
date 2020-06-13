@@ -84,7 +84,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "message", "()Ljava/lang/String;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visit(null, "{javax.validation.constraints.Pattern.message}");
+annotationVisitor0.visit(null, "{jakarta.validation.constraints.Pattern.message}");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

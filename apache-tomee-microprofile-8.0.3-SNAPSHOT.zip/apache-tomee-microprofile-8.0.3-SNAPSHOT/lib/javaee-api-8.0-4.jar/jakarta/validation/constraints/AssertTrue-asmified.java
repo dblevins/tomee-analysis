@@ -66,7 +66,7 @@ classWriter.visitInnerClass("jakarta/validation/constraints/AssertTrue$List", "j
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "message", "()Ljava/lang/String;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visit(null, "{javax.validation.constraints.AssertTrue.message}");
+annotationVisitor0.visit(null, "{jakarta.validation.constraints.AssertTrue.message}");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();

@@ -66,7 +66,7 @@ classWriter.visitInnerClass("jakarta/validation/constraints/Negative$List", "jak
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "message", "()Ljava/lang/String;", null, null);
 {
 annotationVisitor0 = methodVisitor.visitAnnotationDefault();
-annotationVisitor0.visit(null, "{javax.validation.constraints.Negative.message}");
+annotationVisitor0.visit(null, "{jakarta.validation.constraints.Negative.message}");
 annotationVisitor0.visitEnd();
 }
 methodVisitor.visitEnd();
