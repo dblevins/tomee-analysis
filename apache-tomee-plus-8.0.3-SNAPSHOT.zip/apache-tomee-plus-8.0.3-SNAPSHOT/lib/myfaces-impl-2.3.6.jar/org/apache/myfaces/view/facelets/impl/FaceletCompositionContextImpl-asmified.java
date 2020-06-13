@@ -2090,7 +2090,7 @@ Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFNULL, label2);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getId", "()Ljava/lang/String;", false);
-methodVisitor.visitLdcInsn("javax_faces_location_");
+methodVisitor.visitLdcInsn("jakarta_faces_location_");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFEQ, label2);
 methodVisitor.visitVarInsn(ALOAD, 5);

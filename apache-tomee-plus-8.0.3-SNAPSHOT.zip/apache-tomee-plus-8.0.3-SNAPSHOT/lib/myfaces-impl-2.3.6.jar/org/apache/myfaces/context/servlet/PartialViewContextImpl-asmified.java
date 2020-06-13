@@ -244,7 +244,7 @@ methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/context/servlet/PartialViewContextImpl", "_facesContext", "Ljakarta/faces/context/FacesContext;");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getExternalContext", "()Ljakarta/faces/context/ExternalContext;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/ExternalContext", "getRequestParameterMap", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax.faces.partial.ajax");
+methodVisitor.visitLdcInsn("jakarta.faces.partial.ajax");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
 methodVisitor.visitVarInsn(ASTORE, 2);

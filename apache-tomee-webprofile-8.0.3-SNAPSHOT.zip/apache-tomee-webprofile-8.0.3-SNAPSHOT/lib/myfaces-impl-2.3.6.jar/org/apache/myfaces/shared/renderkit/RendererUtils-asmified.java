@@ -3348,7 +3348,7 @@ methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitLabel(label1);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("/javax.faces.resource");
+methodVisitor.visitLdcInsn("/jakarta.faces.resource");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "contains", "(Ljava/lang/CharSequence;)Z", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label2);

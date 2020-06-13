@@ -112,7 +112,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visitAnnotation", "(Ljava/lang/String;Z)Lorg/eclipse/persistence/internal/libraries/asm/AnnotationVisitor;", null, null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("Ljavax/persistence");
+methodVisitor.visitLdcInsn("Ljakarta/persistence");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);

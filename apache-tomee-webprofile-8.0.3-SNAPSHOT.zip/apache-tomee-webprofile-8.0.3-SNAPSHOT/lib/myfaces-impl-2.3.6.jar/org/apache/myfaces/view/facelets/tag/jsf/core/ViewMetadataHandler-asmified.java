@@ -86,7 +86,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/F
 Label label6 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label6);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getFacet", "(Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
@@ -101,7 +101,7 @@ methodVisitor.visitInsn(ACONST_NULL);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Application", "createComponent", "(Ljakarta/faces/context/FacesContext;Ljava/lang/String;Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "setId", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
@@ -118,7 +118,7 @@ methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/l
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getFacets", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
@@ -127,7 +127,7 @@ methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/v
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("facelets.FACET_NAME");
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 3);

@@ -130,7 +130,7 @@ methodVisitor.visitJumpInsn(IFNE, label4);
 methodVisitor.visitVarInsn(ILOAD, 3);
 Label label5 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label5);
-methodVisitor.visitLdcInsn("javax_faces_developmentstage_messages");
+methodVisitor.visitLdcInsn("jakarta_faces_developmentstage_messages");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getId", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);

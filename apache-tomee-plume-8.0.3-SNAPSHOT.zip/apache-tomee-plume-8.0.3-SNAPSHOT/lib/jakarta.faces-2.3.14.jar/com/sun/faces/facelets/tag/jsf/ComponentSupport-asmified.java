@@ -242,7 +242,7 @@ methodVisitor.visitJumpInsn(IFEQ, label5);
 methodVisitor.visitVarInsn(ALOAD, 5);
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", "()Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label5);
 methodVisitor.visitLabel(label6);

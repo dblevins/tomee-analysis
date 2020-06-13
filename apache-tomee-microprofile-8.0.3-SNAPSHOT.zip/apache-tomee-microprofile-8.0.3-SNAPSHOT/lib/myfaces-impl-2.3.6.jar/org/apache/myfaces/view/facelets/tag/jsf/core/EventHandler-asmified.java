@@ -122,7 +122,7 @@ methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/view/facelets/FaceletContext", "getFacesContext", "()Ljakarta/faces/context/FacesContext;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguage", "isBuildingViewMetadata", "(Ljakarta/faces/context/FacesContext;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label1);
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getAttributes", "()Ljava/util/Map;", false);
 methodVisitor.visitLdcInsn("facelets.FACET_NAME");

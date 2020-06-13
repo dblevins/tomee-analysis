@@ -949,7 +949,7 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"com/sun/faces/config/
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/util/Util", "getCurrentLoader", "(Ljava/lang/Object;)Ljava/lang/ClassLoader;", false);
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/config/WebConfiguration", "META_INF_CONTRACTS_DIR", "Ljava/lang/String;");
-methodVisitor.visitLdcInsn("/javax.faces.contract.xml");
+methodVisitor.visitLdcInsn("/jakarta.faces.contract.xml");
 methodVisitor.visitFieldInsn(GETSTATIC, "com/sun/faces/facelets/util/Classpath$SearchAdvice", "AllMatches", "Lcom/sun/faces/facelets/util/Classpath$SearchAdvice;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "com/sun/faces/facelets/util/Classpath", "search", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Lcom/sun/faces/facelets/util/Classpath$SearchAdvice;)[Ljava/net/URL;", false);
 methodVisitor.visitVarInsn(ASTORE, 6);
@@ -982,7 +982,7 @@ methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitInsn(IADD);
 methodVisitor.visitVarInsn(ISTORE, 12);
 methodVisitor.visitVarInsn(ALOAD, 11);
-methodVisitor.visitLdcInsn("/javax.faces.contract.xml");
+methodVisitor.visitLdcInsn("/jakarta.faces.contract.xml");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "indexOf", "(Ljava/lang/String;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 13);
 methodVisitor.visitVarInsn(ILOAD, 12);

@@ -244,7 +244,7 @@ methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitLabel(label3);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"jakarta/faces/context/PartialViewContext"}, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("/javax.faces.resource");
+methodVisitor.visitLdcInsn("/jakarta.faces.resource");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitLabel(label4);

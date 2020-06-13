@@ -5443,7 +5443,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Applicat
 methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/html/HtmlMessages");
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("javax_faces_developmentstage_messages");
+methodVisitor.visitLdcInsn("jakarta_faces_developmentstage_messages");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/html/HtmlMessages", "setId", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("Project Stage[Development]: Unhandled Messages");

@@ -2358,7 +2358,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/application/Applicat
 methodVisitor.visitTypeInsn(CHECKCAST, "jakarta/faces/component/html/HtmlMessages");
 methodVisitor.visitVarInsn(ASTORE, 2);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax_faces_developmentstage_messages");
+methodVisitor.visitLdcInsn("jakarta_faces_developmentstage_messages");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/html/HtmlMessages", "setId", "(Ljava/lang/String;)V", false);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getRenderKit", "()Ljakarta/faces/render/RenderKit;", false);

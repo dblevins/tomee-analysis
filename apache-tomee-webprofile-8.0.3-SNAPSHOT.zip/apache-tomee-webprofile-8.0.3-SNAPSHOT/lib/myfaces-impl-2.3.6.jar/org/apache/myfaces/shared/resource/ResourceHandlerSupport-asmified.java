@@ -68,7 +68,7 @@ methodVisitor.visitEnd();
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResourceIdentifier", "()Ljava/lang/String;", null, null);
 methodVisitor.visitCode();
-methodVisitor.visitLdcInsn("/javax.faces.resource");
+methodVisitor.visitLdcInsn("/jakarta.faces.resource");
 methodVisitor.visitInsn(ARETURN);
 methodVisitor.visitMaxs(1, 1);
 methodVisitor.visitEnd();

@@ -114,7 +114,7 @@ methodVisitor.visitEnd();
 methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getMetadataFacet", "(Ljakarta/faces/component/UIViewRoot;)Ljava/util/Optional;", "(Ljakarta/faces/component/UIViewRoot;)Ljava/util/Optional<Ljakarta/faces/component/UIComponent;>;", null);
 methodVisitor.visitCode();
 methodVisitor.visitVarInsn(ALOAD, 0);
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getFacet", "(Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Optional", "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", false);
 methodVisitor.visitInsn(ARETURN);

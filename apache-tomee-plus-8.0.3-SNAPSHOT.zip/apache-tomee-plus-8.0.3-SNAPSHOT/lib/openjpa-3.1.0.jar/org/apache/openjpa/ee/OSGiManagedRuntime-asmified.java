@@ -67,7 +67,7 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/ee/OSGiManagedR
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "listener", "Lorg/osgi/framework/ServiceListener;");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/ee/OSGiManagedRuntime", "listener", "Lorg/osgi/framework/ServiceListener;");
-methodVisitor.visitLdcInsn("(objectClass=javax.transaction.TransactionManager)");
+methodVisitor.visitLdcInsn("(objectClass=jakarta.transaction.TransactionManager)");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/osgi/framework/BundleContext", "addServiceListener", "(Lorg/osgi/framework/ServiceListener;Ljava/lang/String;)V", true);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitLdcInsn("jakarta.transaction.TransactionManager");

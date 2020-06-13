@@ -1170,7 +1170,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/Options"
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/config/AppInfoBuilder$PersistenceProviderProperties", "providerEnv", "Ljava/lang/String;");
 methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getOptions", "()Lorg/apache/openejb/loader/Options;", false);
-methodVisitor.visitLdcInsn("openejb.jpa.force.javax.persistence.provider");
+methodVisitor.visitLdcInsn("openejb.jpa.force.jakarta.persistence.provider");
 methodVisitor.visitInsn(ICONST_1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/Options", "get", "(Ljava/lang/String;Z)Z", false);
 methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/config/AppInfoBuilder$PersistenceProviderProperties", "forceProviderEnv", "Z");

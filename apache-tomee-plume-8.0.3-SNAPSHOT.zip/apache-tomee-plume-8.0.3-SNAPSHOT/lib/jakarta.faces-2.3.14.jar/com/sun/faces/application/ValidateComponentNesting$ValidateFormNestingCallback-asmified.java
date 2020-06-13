@@ -63,7 +63,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponen
 methodVisitor.visitLdcInsn("Form");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "endsWith", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label0);
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getId", "()Ljava/lang/String;", false);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);

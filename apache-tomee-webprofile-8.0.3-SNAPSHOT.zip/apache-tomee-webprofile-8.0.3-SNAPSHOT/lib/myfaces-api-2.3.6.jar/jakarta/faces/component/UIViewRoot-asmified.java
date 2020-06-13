@@ -279,7 +279,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponen
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
-methodVisitor.visitLdcInsn("javax_faces_location_");
+methodVisitor.visitLdcInsn("jakarta_faces_location_");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
@@ -1253,7 +1253,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax_faces_location_head");
+methodVisitor.visitLdcInsn("jakarta_faces_location_head");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "setId", "(Ljava/lang/String;)V", false);
 Label label2 = new Label();
 methodVisitor.visitJumpInsn(GOTO, label2);
@@ -1265,7 +1265,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label3 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label3);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax_faces_location_body");
+methodVisitor.visitLdcInsn("jakarta_faces_location_body");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "setId", "(Ljava/lang/String;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label3);
@@ -1276,7 +1276,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label4 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label4);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax_faces_location_form");
+methodVisitor.visitLdcInsn("jakarta_faces_location_form");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "setId", "(Ljava/lang/String;)V", false);
 methodVisitor.visitJumpInsn(GOTO, label2);
 methodVisitor.visitLabel(label4);
@@ -1285,7 +1285,7 @@ methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
 methodVisitor.visitInsn(DUP);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
-methodVisitor.visitLdcInsn("javax_faces_location_");
+methodVisitor.visitLdcInsn("jakarta_faces_location_");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);

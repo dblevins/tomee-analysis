@@ -150,7 +150,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("/javax.faces.resource");
+methodVisitor.visitLdcInsn("/jakarta.faces.resource");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "contains", "(Ljava/lang/CharSequence;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(2, 2);

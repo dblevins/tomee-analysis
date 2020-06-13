@@ -174,7 +174,7 @@ methodVisitor.visitInsn(AALOAD);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URL", "toExternalForm", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 5);
-methodVisitor.visitLdcInsn("/javax.faces.contract.xml");
+methodVisitor.visitLdcInsn("/jakarta.faces.contract.xml");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "lastIndexOf", "(Ljava/lang/String;)I", false);
 methodVisitor.visitVarInsn(ISTORE, 6);
 methodVisitor.visitVarInsn(ALOAD, 5);

@@ -145,7 +145,7 @@ methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label0);
 methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
 methodVisitor.visitVarInsn(ALOAD, 1);
-methodVisitor.visitLdcInsn("/javax.faces.resource");
+methodVisitor.visitLdcInsn("/jakarta.faces.resource");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "contains", "(Ljava/lang/CharSequence;)Z", false);
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(3, 2);
@@ -171,7 +171,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("/javax.faces.resource");
+methodVisitor.visitLdcInsn("/jakarta.faces.resource");
 methodVisitor.visitInvokeDynamicInsn("apply", "()Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESTATIC, "jakarta/faces/application/ResourceHandler", "lambda$markResourceRendered$0", "(Ljava/lang/Object;)Ljava/lang/Object;", false), Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;")});
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
@@ -200,7 +200,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toStrin
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
-methodVisitor.visitLdcInsn("/javax.faces.resource");
+methodVisitor.visitLdcInsn("/jakarta.faces.resource");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
 methodVisitor.visitVarInsn(ASTORE, 5);

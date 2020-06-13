@@ -315,7 +315,7 @@ methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitTypeInsn(INSTANCEOF, "jakarta/faces/component/UIViewRoot");
 methodVisitor.visitJumpInsn(IFEQ, label8);
 methodVisitor.visitVarInsn(ALOAD, 2);
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIComponent", "getFacet", "(Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitVarInsn(ASTORE, 9);
 methodVisitor.visitVarInsn(ALOAD, 9);

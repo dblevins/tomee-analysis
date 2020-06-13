@@ -76,7 +76,7 @@ methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Lja
 Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label0);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("javax_faces_metadata");
+methodVisitor.visitLdcInsn("jakarta_faces_metadata");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "jakarta/faces/component/UIViewRoot", "getFacet", "(Ljava/lang/String;)Ljakarta/faces/component/UIComponent;", false);
 methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 4);
