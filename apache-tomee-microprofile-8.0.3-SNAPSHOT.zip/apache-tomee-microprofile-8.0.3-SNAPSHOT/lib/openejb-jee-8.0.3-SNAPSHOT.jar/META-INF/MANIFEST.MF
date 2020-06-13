@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Automatic-Module-Name: org.apache.tomee.openejb-jee
-Bnd-LastModified: 1591729239290
+Bnd-LastModified: 1591990353696
 Build-Jdk: 1.8.0_242
 Built-By: dblevins
 Bundle-Description: Apache OpenEJB is an open source, modular, configu
