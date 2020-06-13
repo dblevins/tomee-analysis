@@ -267,7 +267,7 @@ methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/webbeans/intercept/NormalSc
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 5);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("org.apache.webbeans.proxy.mapping.javax.enterprise.context.ApplicationScoped");
+methodVisitor.visitLdcInsn("org.apache.webbeans.proxy.mapping.jakarta.enterprise.context.ApplicationScoped");
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/cdi/ThreadSingletonServiceImpl", "cachedApplicationScoped", "Z");
 Label label16 = new Label();
@@ -284,7 +284,7 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/cd
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("org.apache.webbeans.proxy.mapping.javax.enterprise.context.RequestScoped");
+methodVisitor.visitLdcInsn("org.apache.webbeans.proxy.mapping.jakarta.enterprise.context.RequestScoped");
 methodVisitor.visitVarInsn(ILOAD, 4);
 Label label18 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label18);
@@ -303,7 +303,7 @@ methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/cd
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
 methodVisitor.visitInsn(POP);
 methodVisitor.visitVarInsn(ALOAD, 3);
-methodVisitor.visitLdcInsn("org.apache.webbeans.proxy.mapping.javax.enterprise.context.SessionScoped");
+methodVisitor.visitLdcInsn("org.apache.webbeans.proxy.mapping.jakarta.enterprise.context.SessionScoped");
 methodVisitor.visitVarInsn(ILOAD, 4);
 Label label20 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label20);
