@@ -57,8 +57,8 @@ moduleVisitor.visitExport("com/sun/xml/bind/v2/schemagen/episode", 0);
 moduleVisitor.visitExport("com/sun/xml/bind/v2/schemagen/xmlschema", 0);
 moduleVisitor.visitExport("com/sun/xml/bind/v2/util", 0);
 moduleVisitor.visitOpen("com/sun/xml/bind/v2/model/nav", 0, new String[] { "com.sun.tools.xjc" });
-moduleVisitor.visitUse("javax/xml/bind/JAXBContextFactory");
-moduleVisitor.visitProvide("javax/xml/bind/JAXBContextFactory",  new String[] { "com/sun/xml/bind/v2/JAXBContextFactory" });
+moduleVisitor.visitUse("jakarta/xml/bind/JAXBContextFactory");
+moduleVisitor.visitProvide("jakarta/xml/bind/JAXBContextFactory",  new String[] { "com/sun/xml/bind/v2/JAXBContextFactory" });
 moduleVisitor.visitEnd();
 }
 classWriter.visitEnd();

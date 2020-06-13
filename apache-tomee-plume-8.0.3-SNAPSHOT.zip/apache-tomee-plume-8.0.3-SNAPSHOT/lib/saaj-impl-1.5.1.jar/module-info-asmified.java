@@ -43,10 +43,10 @@ moduleVisitor.visitExport("com/sun/xml/messaging/saaj/soap/name", 0);
 moduleVisitor.visitExport("com/sun/xml/messaging/saaj/util", 0);
 moduleVisitor.visitExport("com/sun/xml/messaging/saaj/util/stax", 0);
 moduleVisitor.visitExport("com/sun/xml/messaging/saaj/util/transform", 0);
-moduleVisitor.visitProvide("javax/xml/soap/MessageFactory",  new String[] { "com/sun/xml/messaging/saaj/soap/ver1_1/SOAPMessageFactory1_1Impl" });
-moduleVisitor.visitProvide("javax/xml/soap/SAAJMetaFactory",  new String[] { "com/sun/xml/messaging/saaj/soap/SAAJMetaFactoryImpl" });
-moduleVisitor.visitProvide("javax/xml/soap/SOAPConnectionFactory",  new String[] { "com/sun/xml/messaging/saaj/client/p2p/HttpSOAPConnectionFactory" });
-moduleVisitor.visitProvide("javax/xml/soap/SOAPFactory",  new String[] { "com/sun/xml/messaging/saaj/soap/ver1_1/SOAPFactory1_1Impl" });
+moduleVisitor.visitProvide("jakarta/xml/soap/MessageFactory",  new String[] { "com/sun/xml/messaging/saaj/soap/ver1_1/SOAPMessageFactory1_1Impl" });
+moduleVisitor.visitProvide("jakarta/xml/soap/SAAJMetaFactory",  new String[] { "com/sun/xml/messaging/saaj/soap/SAAJMetaFactoryImpl" });
+moduleVisitor.visitProvide("jakarta/xml/soap/SOAPConnectionFactory",  new String[] { "com/sun/xml/messaging/saaj/client/p2p/HttpSOAPConnectionFactory" });
+moduleVisitor.visitProvide("jakarta/xml/soap/SOAPFactory",  new String[] { "com/sun/xml/messaging/saaj/soap/ver1_1/SOAPFactory1_1Impl" });
 moduleVisitor.visitEnd();
 }
 classWriter.visitEnd();
