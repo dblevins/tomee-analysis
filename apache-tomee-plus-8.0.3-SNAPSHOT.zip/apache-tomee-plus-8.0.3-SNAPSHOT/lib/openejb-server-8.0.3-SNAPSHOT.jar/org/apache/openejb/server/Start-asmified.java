@@ -280,7 +280,7 @@ methodVisitor.visitJumpInsn(GOTO, label3);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/openejb/server/Start", "java/util/ArrayList", "java/util/Set", "java/util/Iterator", "java/lang/Object", "java/util/Map$Entry", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
 methodVisitor.visitVarInsn(ALOAD, 6);
-methodVisitor.visitLdcInsn("^(java|javax|os|sun|user|file|awt|line|path)\\..*");
+methodVisitor.visitLdcInsn("^(java|javax|jakarta|os|sun|user|file|awt|line|path)\\..*");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "matches", "(Ljava/lang/String;)Z", false);
 methodVisitor.visitJumpInsn(IFNE, label3);
 methodVisitor.visitVarInsn(ALOAD, 1);

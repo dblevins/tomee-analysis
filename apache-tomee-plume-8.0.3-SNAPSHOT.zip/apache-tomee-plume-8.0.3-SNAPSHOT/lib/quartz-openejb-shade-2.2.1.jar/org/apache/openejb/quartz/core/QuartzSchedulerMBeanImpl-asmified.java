@@ -22,9 +22,9 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", null, "javax/management/StandardMBean", new String[] { "javax/management/NotificationEmitter", "org/apache/openejb/quartz/core/jmx/QuartzSchedulerMBean", "org/apache/openejb/quartz/JobListener", "org/apache/openejb/quartz/SchedulerListener" });
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", null, "javax/management/StandardMBean", new String[] { "javax/management/NotificationEmitter", "org/apache/openejb/quartz/core/jmx/QuartzSchedulerMBean", "org/apache/openejb/quartz/JobListener", "org/apache/openejb/quartz/SchedulerListener" });
 
-classWriter.visitInnerClass("org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$1", "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", null, ACC_STATIC | ACC_SYNTHETIC);
+classWriter.visitInnerClass("org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 classWriter.visitInnerClass("org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "Emitter", ACC_PRIVATE);
 
@@ -1061,6 +1061,10 @@ Label label0 = new Label();
 methodVisitor.visitJumpInsn(IFNE, label0);
 methodVisitor.visitVarInsn(ALOAD, 2);
 methodVisitor.visitLdcInsn("javax.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("jakarta.");
 methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
 Label label1 = new Label();
 methodVisitor.visitJumpInsn(IFEQ, label1);

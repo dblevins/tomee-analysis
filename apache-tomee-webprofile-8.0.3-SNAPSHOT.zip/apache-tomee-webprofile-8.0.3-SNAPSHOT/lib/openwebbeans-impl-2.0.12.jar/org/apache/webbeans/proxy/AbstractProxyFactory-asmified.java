@@ -337,6 +337,11 @@ methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/proxy/Abstract
 methodVisitor.visitVarInsn(ASTORE, 1);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("jakarta.");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/proxy/AbstractProxyFactory", "fixPreservedPackage", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
 methodVisitor.visitLdcInsn("sun.misc.");
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/webbeans/proxy/AbstractProxyFactory", "fixPreservedPackage", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
 methodVisitor.visitVarInsn(ASTORE, 1);

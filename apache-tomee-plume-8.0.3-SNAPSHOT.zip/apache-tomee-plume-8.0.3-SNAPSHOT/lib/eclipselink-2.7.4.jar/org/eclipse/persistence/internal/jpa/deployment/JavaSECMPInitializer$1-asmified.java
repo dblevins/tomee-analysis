@@ -29,11 +29,11 @@ classWriter.visitOuterClass("org/eclipse/persistence/internal/jpa/deployment/Jav
 classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer$1", null, null, 0);
 
 {
-fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$transformer", "Ljakarta/persistence/spi/ClassTransformer;", null, null);
 fieldVisitor.visitEnd();
 }
 {
-fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_SYNTHETIC, "val$transformer", "Ljakarta/persistence/spi/ClassTransformer;", null, null);
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer;", null, null);
 fieldVisitor.visitEnd();
 }
 {

@@ -24,9 +24,9 @@ AnnotationVisitor annotationVisitor0;
 
 classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer", null, "org/eclipse/persistence/internal/jpa/deployment/JPAInitializer", null);
 
-classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer$1", null, null, 0);
-
 classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer$TempEntityLoader", "org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer", "TempEntityLoader", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer$1", null, null, 0);
 
 {
 fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_STATIC, "globalInstrumentation", "Ljava/lang/instrument/Instrumentation;", null, null);
@@ -51,17 +51,6 @@ fieldVisitor.visitEnd();
 {
 fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "initializationLock", "Ljava/lang/Object;", null, null);
 fieldVisitor.visitEnd();
-}
-{
-methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
-methodVisitor.visitCode();
-methodVisitor.visitTypeInsn(NEW, "java/lang/Object");
-methodVisitor.visitInsn(DUP);
-methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
-methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer", "initializationLock", "Ljava/lang/Object;");
-methodVisitor.visitInsn(RETURN);
-methodVisitor.visitMaxs(2, 0);
-methodVisitor.visitEnd();
 }
 {
 methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isInContainer", "()Z", null, null);
@@ -159,6 +148,7 @@ methodVisitor.visitInsn(ICONST_2);
 methodVisitor.visitLdcInsn("weaver");
 methodVisitor.visitLdcInsn("cmp_init_initialize_from_agent");
 methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
 methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/logging/SessionLog", "log", "(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", true);
 methodVisitor.visitLabel(label7);
 methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
@@ -195,9 +185,11 @@ methodVisitor.visitLabel(label1);
 methodVisitor.visitJumpInsn(GOTO, label5);
 methodVisitor.visitLabel(label2);
 methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 4);
 methodVisitor.visitVarInsn(ALOAD, 3);
 methodVisitor.visitInsn(MONITOREXIT);
 methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 4);
 methodVisitor.visitInsn(ATHROW);
 methodVisitor.visitLabel(label5);
 methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
@@ -221,7 +213,7 @@ methodVisitor.visitInsn(DUP);
 methodVisitor.visitVarInsn(ALOAD, 0);
 methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer", "<init>", "(Ljava/lang/ClassLoader;)V", false);
 methodVisitor.visitInsn(ARETURN);
-methodVisitor.visitMaxs(5, 4);
+methodVisitor.visitMaxs(5, 5);
 methodVisitor.visitEnd();
 }
 {
@@ -567,6 +559,17 @@ methodVisitor.visitCode();
 methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer", "usesAgent", "Z");
 methodVisitor.visitInsn(IRETURN);
 methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer", "initializationLock", "Ljava/lang/Object;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 0);
 methodVisitor.visitEnd();
 }
 classWriter.visitEnd();

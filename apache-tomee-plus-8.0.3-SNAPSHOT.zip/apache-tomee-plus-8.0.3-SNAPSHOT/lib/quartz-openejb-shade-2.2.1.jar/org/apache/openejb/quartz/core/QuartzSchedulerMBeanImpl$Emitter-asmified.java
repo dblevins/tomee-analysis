@@ -22,11 +22,11 @@ RecordComponentVisitor recordComponentVisitor;
 MethodVisitor methodVisitor;
 AnnotationVisitor annotationVisitor0;
 
-classWriter.visit(V1_6, ACC_SUPER, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", null, "javax/management/NotificationBroadcasterSupport", null);
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", null, "javax/management/NotificationBroadcasterSupport", null);
 
 classWriter.visitInnerClass("org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$Emitter", "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", "Emitter", ACC_PRIVATE);
 
-classWriter.visitInnerClass("org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$1", "org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl", null, ACC_STATIC | ACC_SYNTHETIC);
+classWriter.visitInnerClass("org/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
 
 {
 fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/apache/openejb/quartz/core/QuartzSchedulerMBeanImpl;", null, null);
